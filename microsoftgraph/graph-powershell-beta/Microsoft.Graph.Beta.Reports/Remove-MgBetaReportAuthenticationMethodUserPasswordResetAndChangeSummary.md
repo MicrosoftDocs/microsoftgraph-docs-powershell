@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportauthenticationmethoduserpasswordresetandchangesummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property userPasswordResetsAndChangesSummary for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -378,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -434,27 +444,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportauthenticationmethoduserpasswordresetandchangesummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportauthenticationmethoduserpasswordresetandchangesummary)

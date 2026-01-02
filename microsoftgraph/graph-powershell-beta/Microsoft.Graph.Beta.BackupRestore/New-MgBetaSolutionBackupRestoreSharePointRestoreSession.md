@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreSharePointRestoreSession
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaSolutionBackupRestoreSharePointRestoreSession
 
 Create a new sharePointRestoreSession object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSharePointRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSharePointRestoreSession?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -26,8 +23,10 @@ Create a new sharePointRestoreSession object.
 New-MgBetaSolutionBackupRestoreSharePointRestoreSession [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-CompletedDateTime <datetime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <datetime>] [-RestoreJobType <string>]
+ [-Error <IMicrosoftGraphPublicError>]
+ [-GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>] [-Id <string>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
+ [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]
  [-SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]
  [-SiteRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest[]>]
@@ -54,6 +53,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new sharePointRestoreSession object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -214,6 +223,28 @@ To construct, see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublicError
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -GranularSiteRestoreArtifacts
+
+.
+To construct, see NOTES section for GRANULARSITERESTOREARTIFACTS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGranularSiteRestoreArtifact[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -602,7 +633,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSharePointRestoreSession>`: sharePointRestoreSession
+BODYPARAMETER <IMicrosoftGraphSharePointRestoreSession>: sharePointRestoreSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletedDateTime <DateTime?>]: The time of completion of the restore session.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -610,9 +641,10 @@ BODYPARAMETER `<IMicrosoftGraphSharePointRestoreSession>`: sharePointRestoreSess
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [CreatedDateTime <DateTime?>]: The time of creation of the restore session.
@@ -643,6 +675,19 @@ This property is read-only.
   [Status <String>]: restoreSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
+    [BrowseSessionId <String>]: 
+    [CompletionDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
+    [RestoredItemKey <String>]: 
+    [RestoredItemPath <String>]: 
+    [RestoredItemWebUrl <String>]: 
+    [StartDateTime <DateTime?>]: 
+    [Status <String>]: artifactRestoreStatus
+    [WebUrl <String>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [SiteId <String>]: 
   [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
     [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
     [DestinationType <String>]: destinationType
@@ -695,18 +740,19 @@ Read-only.
     [SiteIds <String[]>]: The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation.
     [SiteWebUrls <String[]>]: The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -722,18 +768,33 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+GRANULARSITERESTOREARTIFACTS <IMicrosoftGraphGranularSiteRestoreArtifact[]>: .
+  [BrowseSessionId <String>]: 
+  [CompletionDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
+  [RestoredItemKey <String>]: 
+  [RestoredItemPath <String>]: 
+  [RestoredItemWebUrl <String>]: 
+  [StartDateTime <DateTime?>]: 
+  [Status <String>]: artifactRestoreStatus
+  [WebUrl <String>]: 
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [SiteId <String>]: 
+
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount
+RESTORESESSIONARTIFACTCOUNT <IMicrosoftGraphRestoreSessionArtifactCount>: restoreSessionArtifactCount
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Completed <Int32?>]: The number of artifacts whose restoration completed.
   [Failed <Int32?>]: The number of artifacts whose restoration failed.
@@ -773,9 +834,10 @@ Read-only.
         [Application <IMicrosoftGraphIdentity>]: identity
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         [Device <IMicrosoftGraphIdentity>]: identity
         [User <IMicrosoftGraphIdentity>]: identity
       [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
@@ -799,9 +861,10 @@ SITERESTOREARTIFACTSBULKADDITIONREQUESTS <IMicrosoftGraphSiteRestoreArtifactsBul
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [CreatedDateTime <DateTime?>]: The time when the bulk request was created.
@@ -842,28 +905,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaSolutionBackupRestoreSharePointRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresession)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresession)
+- [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta)

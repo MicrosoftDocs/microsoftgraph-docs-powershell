@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementRoleDefinition
 ---
@@ -13,10 +13,7 @@ title: New-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
 
-Create a new deviceAndAppManagementRoleDefinition object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
+Create new navigation property to roleDefinitions for deviceManagement
 
 ## SYNTAX
 
@@ -49,20 +46,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new deviceAndAppManagementRoleDefinition object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+Create new navigation property to roleDefinitions for deviceManagement
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -90,10 +78,6 @@ isBuiltIn = $true
 }
 
 New-MgDeviceManagementRoleDefinition -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementRoleDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -520,7 +504,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRoleDefinition>`: The Role Definition resource.
+BODYPARAMETER <IMicrosoftGraphRoleDefinition>: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
 There are two types of roles, built-in and custom.
@@ -537,10 +521,13 @@ Set to True if it is built-in, or set to False if it is a custom role definition
   [RoleAssignments <IMicrosoftGraphRoleAssignment[]>]: List of Role assignments for this role definition.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Description <String>]: Description of the Role Assignment.
-    [DisplayName <String>]: The display or friendly name of the role Assignment.
-    [ResourceScopes <String[]>]: List of ids of role scope member security groups.
- These are IDs from Azure Active Directory.
+    [Description <String>]: Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
+    [DisplayName <String>]: Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
+    [ResourceScopes <String[]>]: Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
     [RoleDefinition <IMicrosoftGraphRoleDefinition>]: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
@@ -557,10 +544,13 @@ These must match the actionName that is defined as part of the rolePermission.
 ROLEASSIGNMENTS <IMicrosoftGraphRoleAssignment[]>: List of Role assignments for this role definition.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Description <String>]: Description of the Role Assignment.
-  [DisplayName <String>]: The display or friendly name of the role Assignment.
-  [ResourceScopes <String[]>]: List of ids of role scope member security groups.
- These are IDs from Azure Active Directory.
+  [Description <String>]: Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
+  [DisplayName <String>]: Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
+  [ResourceScopes <String[]>]: Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
   [RoleDefinition <IMicrosoftGraphRoleDefinition>]: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
@@ -591,27 +581,4 @@ These must match the actionName that is defined as part of the rolePermission.
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition)

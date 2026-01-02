@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotesectionpage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserOnenoteSectionPage
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaUserOnenoteSectionPage
 ## SYNOPSIS
 
 Create new navigation property to pages for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserOnenoteSectionPage](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenoteSectionPage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,13 +74,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to pages for users
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite,  |
-| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
-| Application | Notes.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -270,7 +269,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -698,7 +697,7 @@ HelpMessage: ''
 
 ### -Self
 
-
+.
 
 ```yaml
 Type: System.String
@@ -779,7 +778,7 @@ HelpMessage: ''
 
 ### -UserTags
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -860,7 +859,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnenotePage>`: onenotePage
+BODYPARAMETER <IMicrosoftGraphOnenotePage>: onenotePage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: 
   [Self <String>]: 
@@ -892,9 +891,10 @@ Read-only.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [DisplayName <String>]: 
@@ -969,7 +969,7 @@ Read-only.
   [Title <String>]: The title of the page.
   [UserTags <String[]>]: 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -983,23 +983,24 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   [SiteId <String>]: The unique identifier of site
   [UserId <String>]: The unique identifier of user
 
-LINKS `<IMicrosoftGraphPageLinks>`: pageLinks
+LINKS <IMicrosoftGraphPageLinks>: pageLinks
   [(Any) <Object>]: This indicates any property can be added to this object.
   [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Href <String>]: The URL of the link.
   [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
 
-PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
+PARENTNOTEBOOK <IMicrosoftGraphNotebook>: notebook
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [DisplayName <String>]: 
@@ -1098,16 +1099,17 @@ Nullable.
 Read-only.
   [UserRole <String>]: onenoteUserRole
 
-PARENTSECTION `<IMicrosoftGraphOnenoteSection>`: onenoteSection
+PARENTSECTION <IMicrosoftGraphOnenoteSection>: onenoteSection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [DisplayName <String>]: 
@@ -1210,27 +1212,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaUserOnenoteSectionPage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotesectionpage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotesectionpage)

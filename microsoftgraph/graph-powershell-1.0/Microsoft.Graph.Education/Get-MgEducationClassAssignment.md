@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassAssignment
 ---
@@ -17,9 +17,6 @@ Get the properties and relationships of an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, the response value for the status property is unknownFutureValue.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -65,37 +62,19 @@ Only teachers, students, and applications with application permissions can perfo
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, the response value for the status property is unknownFutureValue.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite, EduAssignments.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All, EduAssignments.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get assignments
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignment -EducationClassId $educationClassId
 
-```
-This example will get assignments
-
-### Example 2: Get assignments using $expand options
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignment -EducationClassId $educationClassId -ExpandProperty "resources" 
-
-```
-This example will get assignments using $expand options
-
+Get-MgEducationClassAssignment -EducationClassId $educationClassId -ExpandProperty "resources"
 
 ## PARAMETERS
 
@@ -584,12 +563,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
+  [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
   [EducationCategoryId <String>]: The unique identifier of educationCategory
   [EducationClassId <String>]: The unique identifier of educationClass
   [EducationGradingCategoryId <String>]: The unique identifier of educationGradingCategory
+  [EducationGradingSchemeId <String>]: The unique identifier of educationGradingScheme
   [EducationModuleId <String>]: The unique identifier of educationModule
   [EducationModuleResourceId <String>]: The unique identifier of educationModuleResource
   [EducationOutcomeId <String>]: The unique identifier of educationOutcome
@@ -597,35 +578,16 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [EducationSchoolId <String>]: The unique identifier of educationSchool
   [EducationSubmissionId <String>]: The unique identifier of educationSubmission
   [EducationSubmissionResourceId <String>]: The unique identifier of educationSubmissionResource
+  [EducationSubmissionResourceId1 <String>]: The unique identifier of educationSubmissionResource
   [EducationUserId <String>]: The unique identifier of educationUser
   [ReadingAssignmentSubmissionId <String>]: The unique identifier of readingAssignmentSubmission
+  [ReadingCoachPassageId <String>]: The unique identifier of readingCoachPassage
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
+  [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
 
 
 ## RELATED LINKS
 
-- [Get-MgEducationClassAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-list-assignments?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignment)
+- [](https://learn.microsoft.com/graph/api/educationassignment-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/educationclass-list-assignments?view=graph-rest-1.0)

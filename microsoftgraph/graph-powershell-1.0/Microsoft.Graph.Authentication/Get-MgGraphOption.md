@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/get-mgenvironment
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGraphOption
 ---
@@ -43,6 +43,7 @@ EnableWAMForMSGraph
                 True
 
 Confirms if WAM support has been enabled.
+Web Account Manager is enabled by default on Windows systems and cannot be disabled.
 
 ## PARAMETERS
 
@@ -59,10 +60,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Authentication.IGraphOption
 
+{{ Fill in the Description }}
 
 ## NOTES
 
-
+Web Account Manager is enabled by default on Windows systems and cannot be disabled.
+Setting the `EnableWAMForMSGraph` option no longer has any effect.
 
 
 ## RELATED LINKS

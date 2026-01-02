@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserPassword
 ---
@@ -14,11 +14,8 @@ title: Update-MgBetaUserPassword
 ## SYNOPSIS
 
 Update the signed-in user's password.
-Any user can update their password without belonging to any administrator role.To update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
+Any user can update their password without belonging to any administrator role.\r\nTo update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
 See Example 3: Update the passwordProfile of a user and reset their password.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserPassword?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,13 +71,12 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the signed-in user's password.
-Any user can update their password without belonging to any administrator role.To update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
+Any user can update their password without belonging to any administrator role.\r\nTo update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
 See Example 3: Update the passwordProfile of a user and reset their password.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -91,10 +87,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserPassword -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaUserPassword Cmdlet.
-
 
 ## PARAMETERS
 
@@ -127,7 +119,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -198,7 +190,7 @@ HelpMessage: ''
 
 ### -CurrentPassword
 
-
+.
 
 ```yaml
 Type: System.String
@@ -316,7 +308,7 @@ HelpMessage: ''
 
 ### -NewPassword
 
-
+.
 
 ```yaml
 Type: System.String
@@ -530,38 +522,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CurrentPassword <String>]: 
   [NewPassword <String>]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-changepassword?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword)
+- [](https://learn.microsoft.com/graph/api/user-changepassword?view=graph-rest-beta)

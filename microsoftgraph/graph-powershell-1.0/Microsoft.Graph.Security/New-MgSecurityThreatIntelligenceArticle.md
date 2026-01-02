@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencearticle
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityThreatIntelligenceArticle
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityThreatIntelligenceArticle
 ## SYNOPSIS
 
 Create new navigation property to articles for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to articles for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -559,12 +566,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+BODY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of this formattedContent.
   [Format <String>]: contentFormat
 
-BODYPARAMETER `<IMicrosoftGraphSecurityArticle>`: article
+BODYPARAMETER <IMicrosoftGraphSecurityArticle>: article
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -601,7 +608,7 @@ Read-only.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+SUMMARY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of this formattedContent.
   [Format <String>]: contentFormat
@@ -609,27 +616,4 @@ SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 
 ## RELATED LINKS
 
-- [New-MgSecurityThreatIntelligenceArticle](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencearticle)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencearticle)

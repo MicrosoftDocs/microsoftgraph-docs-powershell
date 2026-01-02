@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatesummary
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary
 ---
@@ -13,10 +13,7 @@ title: Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary
 
 ## SYNOPSIS
 
-Read properties and relationships of the deviceConfigurationDeviceStateSummary object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta)
+The device configuration device state summary for this account.
 
 ## SYNTAX
 
@@ -36,28 +33,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read properties and relationships of the deviceConfigurationDeviceStateSummary object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
+The device configuration device state summary for this account.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary
-
-```
-This example shows how to use the Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary Cmdlet.
-
 
 ## PARAMETERS
 
@@ -297,27 +281,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatesummary)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatesummary-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatesummary)

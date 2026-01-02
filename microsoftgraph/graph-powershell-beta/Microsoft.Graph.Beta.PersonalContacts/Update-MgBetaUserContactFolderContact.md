@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.PersonalContacts
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserContactFolderContact
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserContactFolderContact
 ## SYNOPSIS
 
 Update the navigation property contacts in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderContact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -97,13 +94,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property contacts in users
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Contacts.ReadWrite,  |
-| Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
-| Application | Contacts.ReadWrite,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -879,7 +878,7 @@ HelpMessage: ''
 
 ### -IsFavorite
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1677,7 +1676,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphContact>`: contact
+BODYPARAMETER <IMicrosoftGraphContact>: contact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item.
   [ChangeKey <String>]: Identifies the version of the item.
@@ -1795,7 +1794,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-FLAG `<IMicrosoftGraphFollowupFlag>`: followupFlag
+FLAG <IMicrosoftGraphFollowupFlag>: followupFlag
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletedDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1807,7 +1806,7 @@ See below for possible values.
   [FlagStatus <String>]: followupFlagStatus
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   [ContactFolderId <String>]: The unique identifier of contactFolder
   [ContactFolderId1 <String>]: The unique identifier of contactFolder
   [ContactId <String>]: The unique identifier of contact
@@ -1825,7 +1824,7 @@ PHONES <IMicrosoftGraphPhone[]>: Phone numbers associated with the contact, for 
   [Number <String>]: The phone number.
   [Type <String>]: phoneType
 
-PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
+PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1859,27 +1858,4 @@ WEBSITES <IMicrosoftGraphWebsite[]>: Web sites associated with the contact.
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserContactFolderContact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact)

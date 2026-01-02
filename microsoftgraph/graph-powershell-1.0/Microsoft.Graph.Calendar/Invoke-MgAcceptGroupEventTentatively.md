@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptgroupeventtentatively
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgAcceptGroupEventTentatively
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgAcceptGroupEventTentatively
 Tentatively accept the specified event in a user calendar.
 If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupEventTentatively](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaAcceptGroupEventTentatively?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,6 +74,16 @@ Tentatively accept the specified event in a user calendar.
 If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -108,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -157,7 +164,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -485,7 +492,7 @@ HelpMessage: ''
 
 ### -SendResponse
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -566,7 +573,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1In5HfGroupsGroupIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1In5HfGroupsGroupIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [ProposedNewTime <IMicrosoftGraphTimeSlot>]: timeSlot
@@ -579,20 +586,27 @@ See below for more possible values.
     [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [SendResponse <Boolean?>]: 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
   [CalendarPermissionId <String>]: The unique identifier of calendarPermission
+  [CheckInClaimCalendarEventId <String>]: The unique identifier of checkInClaim
   [EventId <String>]: The unique identifier of event
   [ExtensionId <String>]: The unique identifier of extension
+  [FixtureMapId <String>]: The unique identifier of fixtureMap
+  [FootprintMapId <String>]: The unique identifier of footprintMap
   [GroupId <String>]: The unique identifier of group
+  [LevelMapId <String>]: The unique identifier of levelMap
   [PlaceId <String>]: The unique identifier of place
   [RoomId <String>]: The unique identifier of room
+  [SectionMapId <String>]: The unique identifier of sectionMap
+  [UnitMapId <String>]: The unique identifier of unitMap
   [User <String>]: Usage: User='{User}'
   [UserId <String>]: The unique identifier of user
+  [WorkspaceId <String>]: The unique identifier of workspace
 
-PROPOSEDNEWTIME `<IMicrosoftGraphTimeSlot>`: timeSlot
+PROPOSEDNEWTIME <IMicrosoftGraphTimeSlot>: timeSlot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -604,28 +618,5 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [Invoke-MgAcceptGroupEventTentatively](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptgroupeventtentatively)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptgroupeventtentatively)
+- [](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0)

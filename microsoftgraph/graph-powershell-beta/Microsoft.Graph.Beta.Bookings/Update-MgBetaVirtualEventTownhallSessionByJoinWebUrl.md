@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhallsessionbyjoinweburl
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaVirtualEventTownhallSessionByJoinWebUrl
 ---
@@ -31,12 +31,12 @@ Update-MgBetaVirtualEventTownhallSessionByJoinWebUrl -JoinWebUrl <string>
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
  [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
- [-Id <string>] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
+ [-ExpiryDateTime <datetime>] [-Id <string>] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
  [-JoinInformation <IMicrosoftGraphItemBody>]
  [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinWebUrl1 <string>]
- [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
- [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-RecordAutomatically]
- [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
+ [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>] [-MeetingOptionsWebUrl <string>]
+ [-MeetingSpokenLanguageTag <string>] [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
+ [-RecordAutomatically] [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
  [-ShareMeetingChatHistoryDefault <string>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
  [-Subject <string>] [-VideoOnDemandWebUrl <string>] [-VideoTeleconferenceId <string>]
  [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Break] [-Headers <IDictionary>]
@@ -59,12 +59,12 @@ Update-MgBetaVirtualEventTownhallSessionByJoinWebUrl -InputObject <IBookingsIden
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
  [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
- [-Id <string>] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
+ [-ExpiryDateTime <datetime>] [-Id <string>] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
  [-JoinInformation <IMicrosoftGraphItemBody>]
  [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
- [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
- [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-RecordAutomatically]
- [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
+ [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>] [-MeetingOptionsWebUrl <string>]
+ [-MeetingSpokenLanguageTag <string>] [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
+ [-RecordAutomatically] [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
  [-ShareMeetingChatHistoryDefault <string>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
  [-Subject <string>] [-VideoOnDemandWebUrl <string>] [-VideoTeleconferenceId <string>]
  [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Break] [-Headers <IDictionary>]
@@ -102,6 +102,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property sessions in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -751,6 +761,35 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ExpiryDateTime
+
+Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Headers
 
 Optional headers that will be added to the request.
@@ -1063,9 +1102,64 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -MeetingOptionsWebUrl
+
+Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -MeetingSpokenLanguageTag
+
+Specifies the spoken language used during the meeting for recording and transcription purposes.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Presenters
 
-
+.
 To construct, see NOTES section for PRESENTERS properties and create a hash table.
 
 ```yaml
@@ -1183,7 +1277,7 @@ HelpMessage: ''
 
 ### -Registrations
 
-
+.
 To construct, see NOTES section for REGISTRATIONS properties and create a hash table.
 
 ```yaml
@@ -1502,9 +1596,10 @@ If set, the maximum supported length is 256 characters.
     [Identity <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [RegistrantId <String>]: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
@@ -1529,7 +1624,7 @@ Read-only.
   [TotalParticipantCount <Int32?>]: Total number of participants.
 Read-only.
 
-AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
+AUDIOCONFERENCING <IMicrosoftGraphAudioConferencing>: audioConferencing
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConferenceId <String>]: The conference id of the online meeting.
   [DialinUrl <String>]: A URL to the externally-accessible web page that contains dial-in information.
@@ -1538,7 +1633,7 @@ AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
   [TollNumber <String>]: The toll number that connects to the Audio Conference Provider.
   [TollNumbers <String[]>]: List of toll numbers that are displayed in the meeting invite.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventSession>`: virtualEventSession
+BODYPARAMETER <IMicrosoftGraphVirtualEventSession>: virtualEventSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
   [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
@@ -1580,9 +1675,10 @@ If set, the maximum supported length is 256 characters.
       [Identity <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [RegistrantId <String>]: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
@@ -1623,6 +1719,9 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+  [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
   [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
   [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
@@ -1646,6 +1745,9 @@ Read-only.
     [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
     [Scope <String>]: lobbyBypassScope
+  [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+  [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
   [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
   [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
   [Subject <String>]: The subject of the online meeting.
@@ -1711,25 +1813,25 @@ Only appears when the registrant is registered in Microsoft Entra ID.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [VideoOnDemandWebUrl <String>]: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MessageId <String>]: The unique identifier for a message in a Microsoft Teams channel.
   [ReplyChainMessageId <String>]: The ID of the reply message.
   [ThreadId <String>]: The unique identifier for a thread in Microsoft Teams.
 
-CHATRESTRICTIONS `<IMicrosoftGraphChatRestrictions>`: chatRestrictions
+CHATRESTRICTIONS <IMicrosoftGraphChatRestrictions>: chatRestrictions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
 
-ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1751,12 +1853,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [VirtualEventTownhallId <String>]: The unique identifier of virtualEventTownhall
   [VirtualEventWebinarId <String>]: The unique identifier of virtualEventWebinar
 
-JOININFORMATION `<IMicrosoftGraphItemBody>`: itemBody
+JOININFORMATION <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-JOINMEETINGIDSETTINGS `<IMicrosoftGraphJoinMeetingIdSettings>`: joinMeetingIdSettings
+JOINMEETINGIDSETTINGS <IMicrosoftGraphJoinMeetingIdSettings>: joinMeetingIdSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsPasscodeRequired <Boolean?>]: Indicates whether a passcode is required to join a meeting when using joinMeetingId.
 Optional.
@@ -1767,7 +1869,7 @@ Read-only.
  Optional.
 Read-only.
 
-LOBBYBYPASSSETTINGS `<IMicrosoftGraphLobbyBypassSettings>`: lobbyBypassSettings
+LOBBYBYPASSSETTINGS <IMicrosoftGraphLobbyBypassSettings>: lobbyBypassSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
@@ -1780,9 +1882,10 @@ Read-only.
   [Identity <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]: virtualEventPresenterDetails
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Bio <IMicrosoftGraphItemBody>]: itemBody
@@ -1874,6 +1977,9 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+    [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
     [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
     [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
@@ -1894,6 +2000,9 @@ Read-only.
       [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
       [Scope <String>]: lobbyBypassScope
+    [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+    [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
     [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
     [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
     [Subject <String>]: The subject of the online meeting.
@@ -2012,9 +2121,10 @@ Read-only.
         [Identity <IMicrosoftGraphIdentity>]: identity
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         [RegistrantId <String>]: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
@@ -2055,6 +2165,9 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+    [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
     [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
     [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
@@ -2078,6 +2191,9 @@ Read-only.
       [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
       [Scope <String>]: lobbyBypassScope
+    [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+    [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
     [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
     [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
     [Subject <String>]: The subject of the online meeting.
@@ -2117,14 +2233,14 @@ Read-only.
   [UserId <String>]: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
-STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProtectionValues
+WATERMARKPROTECTION <IMicrosoftGraphWatermarkProtectionValues>: watermarkProtectionValues
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabledForContentSharing <Boolean?>]: Indicates whether to apply a watermark to any shared content.
   [IsEnabledForVideo <Boolean?>]: Indicates whether to apply a watermark to everyone's video feed.
@@ -2132,27 +2248,4 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 
 ## RELATED LINKS
 
-- [Update-MgBetaVirtualEventTownhallSessionByJoinWebUrl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhallsessionbyjoinweburl)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhallsessionbyjoinweburl)

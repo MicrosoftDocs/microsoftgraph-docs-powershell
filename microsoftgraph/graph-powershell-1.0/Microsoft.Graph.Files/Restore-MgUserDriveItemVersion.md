@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mguserdriveitemversion
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgUserDriveItemVersion
 ---
@@ -13,11 +13,8 @@ title: Restore-MgUserDriveItemVersion
 
 ## SYNOPSIS
 
-Restore a previous version of a DriveItem to be the current version.
-This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaUserDriveItemVersion?view=graph-powershell-beta)
+Restore a previous version of a driveItem to be the current version.
+This operation creates a new version with the contents of the previous version, and it preserves all existing versions of the file.
 
 ## SYNTAX
 
@@ -48,8 +45,18 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Restore a previous version of a DriveItem to be the current version.
-This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+Restore a previous version of a driveItem to be the current version.
+This operation creates a new version with the contents of the previous version, and it preserves all existing versions of the file.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -423,7 +430,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -452,28 +459,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Restore-MgUserDriveItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mguserdriveitemversion)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mguserdriveitemversion)
+- [](https://learn.microsoft.com/graph/api/driveitemversion-restoreversion?view=graph-rest-1.0)

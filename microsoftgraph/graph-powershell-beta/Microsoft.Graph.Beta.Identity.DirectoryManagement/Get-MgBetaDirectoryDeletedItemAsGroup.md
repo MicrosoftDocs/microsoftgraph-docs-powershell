@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydeleteditemasgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryDeletedItemAsGroup
 ---
@@ -14,10 +14,7 @@ title: Get-MgBetaDirectoryDeletedItemAsGroup
 ## SYNOPSIS
 
 Retrieve a list of recently deleted directory objects from deleted items.
-The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- externalUserProfile- group- pendingExternalUserProfile- servicePrincipal- user
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryDeletedItemAsGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItemAsGroup?view=graph-powershell-1.0)
+The following types are supported:\r\n- administrativeUnit\r\n- application\r\n- agentIdentityBlueprint\r\n- agentIdentity\r\n- agentIdentityBlueprintPrincipal\r\n- agentUser\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- externalUserProfile\r\n- group\r\n- pendingExternalUserProfile\r\n- servicePrincipal\r\n- user
 
 ## SYNTAX
 
@@ -59,31 +56,21 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve a list of recently deleted directory objects from deleted items.
-The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- externalUserProfile- group- pendingExternalUserProfile- servicePrincipal- user
+The following types are supported:\r\n- administrativeUnit\r\n- application\r\n- agentIdentityBlueprint\r\n- agentIdentity\r\n- agentIdentityBlueprintPrincipal\r\n- agentUser\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- externalUserProfile\r\n- group\r\n- pendingExternalUserProfile\r\n- servicePrincipal\r\n- user
 
 ## EXAMPLES
-### Example 1: Retrieve deleted groups
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDirectoryDeletedItemAsGroup
 
-```
-This example will retrieve deleted groups
-
-### Example 2: Retrieve the count of deleted user objects and order the results by the deletedDateTime property
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Get-MgBetaDirectoryDeletedItemAsGroup -CountVariable CountVar -Sort "deletedDateTime asc" -Property "id,displayName,deletedDateTime" 
-
-```
-This example will retrieve the count of deleted user objects and order the results by the deleteddatetime property
-
+Get-MgBetaDirectoryDeletedItemAsGroup -CountVariable CountVar -Sort "deletedDateTime asc" -Property "id,displayName,deletedDateTime"
 
 ## PARAMETERS
 
@@ -545,7 +532,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -583,6 +570,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrgContactId <String>]: The unique identifier of orgContact
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
+  [OrganizationalBrandingThemeId <String>]: The unique identifier of organizationalBrandingTheme
+  [OrganizationalBrandingThemeLocalizationLocale <String>]: The unique identifier of organizationalBrandingThemeLocalization
   [OutboundSharedUserProfileUserId <String>]: The unique identifier of outboundSharedUserProfile
   [PendingExternalUserProfileId <String>]: The unique identifier of pendingExternalUserProfile
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
@@ -603,27 +592,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDirectoryDeletedItemAsGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydeleteditemasgroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydeleteditemasgroup)
+- [](https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-beta)

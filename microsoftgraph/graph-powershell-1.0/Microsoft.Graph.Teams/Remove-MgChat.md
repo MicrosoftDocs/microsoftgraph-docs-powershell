@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchat
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgChat
 ---
@@ -15,9 +15,6 @@ title: Remove-MgChat
 
 Soft-delete a chat.
 When invoked with delegated permissions, this operation only works for tenant admins and Teams service admins.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,26 +48,13 @@ This cmdlet has the following aliases,
 Soft-delete a chat.
 When invoked with delegated permissions, this operation only works for tenant admins and Teams service admins.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ManageDeletion.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ManageDeletion.Chat, Chat.ManageDeletion.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgChat -ChatId $chatId
-
-```
-This example shows how to use the Remove-MgChat Cmdlet.
-
 
 ## PARAMETERS
 
@@ -402,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -442,27 +426,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchat)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchat)
+- [](https://learn.microsoft.com/graph/api/chat-delete?view=graph-rest-1.0)

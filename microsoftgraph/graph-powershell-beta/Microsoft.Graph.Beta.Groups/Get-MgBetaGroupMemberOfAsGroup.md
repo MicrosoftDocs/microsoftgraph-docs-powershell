@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberofasgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupMemberOfAsGroup
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaGroupMemberOfAsGroup
 Get groups and administrative units that the group is a direct member of.
 This operation is not transitive.
 Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberOfAsGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberOfAsGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -65,18 +62,12 @@ This operation is not transitive.
 Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
 ## EXAMPLES
-### Example 2: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
-Get-MgBetaGroupMemberOfAsGroup -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual 
-
-
-```
-This example shows how to use the Get-MgBetaGroupMemberOfAsGroup Cmdlet.
-
+Get-MgBetaGroupMemberOfAsGroup -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual
 
 ## PARAMETERS
 
@@ -587,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -614,27 +605,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupMemberOfAsGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberofasgroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberofasgroup)
+- [](https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdeviceassigntomailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToMailboxSetting
 ---
@@ -79,6 +79,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update property mailboxSettings value.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -767,7 +777,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTOMATICREPLIESSETTING `<IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
+AUTOMATICREPLIESSETTING <IMicrosoftGraphAutomaticRepliesSetting>: automaticRepliesSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExternalAudience <String>]: externalAudienceScope
   [ExternalReplyMessage <String>]: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
@@ -781,7 +791,7 @@ See below for possible values.
   [ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [Status <String>]: automaticRepliesStatus
 
-BODYPARAMETER `<IMicrosoftGraphMailboxSettings>`: mailboxSettings
+BODYPARAMETER <IMicrosoftGraphMailboxSettings>: mailboxSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ArchiveFolder <String>]: Folder ID of an archive folder for the user.
 Read-only.
@@ -820,8 +830,9 @@ The language component follows 2-letter codes as defined in ISO 639-1, and the c
       [Name <String>]: The name of a time zone.
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
+  [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
   [AuthenticationConditionApplicationAppId <String>]: The unique identifier of authenticationConditionApplication
@@ -834,6 +845,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [AuthenticationMethodModes <String[]>]: Usage: authenticationMethodModes={authenticationMethodModes}
   [AuthenticationStrengthPolicyId <String>]: The unique identifier of authenticationStrengthPolicy
   [AuthorizationPolicyId <String>]: The unique identifier of authorizationPolicy
+  [B2BManagementPolicyId <String>]: The unique identifier of b2bManagementPolicy
   [B2CIdentityUserFlowId <String>]: The unique identifier of b2cIdentityUserFlow
   [B2XIdentityUserFlowId <String>]: The unique identifier of b2xIdentityUserFlow
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -853,6 +865,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
+  [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
   [GroupId <String>]: The unique identifier of group
   [HardwareOathAuthenticationMethodId <String>]: The unique identifier of hardwareOathAuthenticationMethod
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -873,6 +886,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
   [NamedLocationId <String>]: The unique identifier of namedLocation
   [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
+  [OnPremAuthenticationPolicyId <String>]: The unique identifier of onPremAuthenticationPolicy
   [OrganizationId <String>]: The unique identifier of organization
   [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod
   [PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
@@ -882,6 +896,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
+  [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
   [RiskyServicePrincipalId <String>]: The unique identifier of riskyServicePrincipal
   [RiskyUserHistoryItemId <String>]: The unique identifier of riskyUserHistoryItem
@@ -891,6 +906,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ServicePrincipalCreationConditionSetId <String>]: The unique identifier of servicePrincipalCreationConditionSet
   [ServicePrincipalCreationPolicyId <String>]: The unique identifier of servicePrincipalCreationPolicy
   [ServicePrincipalRiskDetectionId <String>]: The unique identifier of servicePrincipalRiskDetection
+  [SignInIdentifierBaseName <String>]: The unique identifier of signInIdentifierBase
   [SoftwareOathAuthenticationMethodId <String>]: The unique identifier of softwareOathAuthenticationMethod
   [TemporaryAccessPassAuthenticationMethodId <String>]: The unique identifier of temporaryAccessPassAuthenticationMethod
   [ThreatAssessmentRequestId <String>]: The unique identifier of threatAssessmentRequest
@@ -906,16 +922,19 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
+  [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
+  [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-LANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+LANGUAGE <IMicrosoftGraphLocaleInfo>: localeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: A name representing the user's locale in natural language, for example, 'English (United States)'.
   [Locale <String>]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
+WORKINGHOURS <IMicrosoftGraphWorkingHours>: workingHours
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DaysOfWeek <String[]>]: The days of the week on which the user works.
   [EndTime <String>]: The time of the day that the user stops working.
@@ -928,27 +947,4 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdeviceassigntomailboxsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdeviceassigntomailboxsetting)

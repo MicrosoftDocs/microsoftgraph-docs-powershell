@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenario
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBusinessScenario
 ---
@@ -72,18 +72,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a businessScenario object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.BusinessScenario
 
@@ -95,10 +86,6 @@ $params = @{
 }
 
 Update-MgBetaSolutionBusinessScenario -BusinessScenarioId $businessScenarioId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaSolutionBusinessScenario Cmdlet.
-
 
 ## PARAMETERS
 
@@ -712,7 +699,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBusinessScenario>`: businessScenario
+BODYPARAMETER <IMicrosoftGraphBusinessScenario>: businessScenario
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -721,9 +708,10 @@ Read-only.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [CreatedDateTime <DateTime?>]: The date and time when the scenario was created.
@@ -913,6 +901,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [HasChat <Boolean?>]: 
       [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -1016,35 +1005,37 @@ Optional.
 To avoid conflicts, the recommended value for the unique name is a reverse domain name format, owned by the author of the scenario.
 For example, a scenario authored by Contoso.com would have a unique name that starts with com.contoso.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
+INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
   [UniqueName <String>]: Alternate key of businessScenario
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PLANNER `<IMicrosoftGraphBusinessScenarioPlanner>`: businessScenarioPlanner
+PLANNER <IMicrosoftGraphBusinessScenarioPlanner>: businessScenarioPlanner
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1059,9 +1050,10 @@ Read-only.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [CreatedDateTime <DateTime?>]: The date and time when the plan configuration was created.
@@ -1231,6 +1223,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
     [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    [HasChat <Boolean?>]: 
     [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
@@ -1334,27 +1327,5 @@ Optional.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBusinessScenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenario)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/businessscenario-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenario)
+- [](https://learn.microsoft.com/graph/api/businessscenario-update?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootchild
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDriveRootChild
 ---
@@ -14,9 +14,6 @@ title: New-MgDriveRootChild
 ## SYNOPSIS
 
 Create new navigation property to children for drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -108,6 +105,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to children for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1739,7 +1746,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ANALYTICS `<IMicrosoftGraphItemAnalytics>`: itemAnalytics
+ANALYTICS <IMicrosoftGraphItemAnalytics>: itemAnalytics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2580,7 +2587,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -2717,6 +2724,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
                 [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
                 [FormatName <String>]: For a list of possible values see formatName values.
+          [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+            [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+            [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+            [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+            [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+            [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+            [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+            [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+            [ProvisioningType <String>]: cloudPcProvisioningType
+            [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+            [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+            [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
           [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -3425,6 +3480,14 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
+            [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [DisplayName <String>]: The name of the role.
+              [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
             [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
               [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -4261,6 +4324,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+              [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [IsCloudManaged <Boolean?>]: 
               [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -4971,7 +5039,8 @@ Nullable.
               [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
             [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -5086,8 +5155,8 @@ Read-only.
                 [Setting <String>]: The setting that is being reported
                 [SettingName <String>]: Localized/user friendly setting name that is being reported
                 [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-                  [DisplayName <String>]: Not yet documented
-                  [Id <String>]: Not yet documented
+                  [DisplayName <String>]: 
+                  [Id <String>]: 
                   [SourceType <String>]: settingSourceType
                 [State <String>]: complianceStatus
                 [UserEmail <String>]: UserEmail
@@ -5152,7 +5221,17 @@ Read-only.
               [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
               [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
               [TpmVersion <String>]: The security version number of the Boot Application
-              [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+              [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
               [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
             [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
             [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -5173,6 +5252,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
             [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
             [ManagementAgent <ManagementAgentType?>]: managementAgentType
+            [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
             [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -6182,8 +6262,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -6772,7 +6852,7 @@ Read-only.
   [ItemActivityStats <IMicrosoftGraphItemActivityStat[]>]: 
   [LastSevenDays <IMicrosoftGraphItemActivityStat>]: itemActivityStat
 
-AUDIO `<IMicrosoftGraphAudio>`: audio
+AUDIO <IMicrosoftGraphAudio>: audio
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Album <String>]: The title of the album for this audio file.
   [AlbumArtist <String>]: The artist named on the album for the audio file.
@@ -6791,7 +6871,7 @@ AUDIO `<IMicrosoftGraphAudio>`: audio
   [TrackCount <Int32?>]: The total number of tracks on the original disc for this audio file.
   [Year <Int32?>]: The year the audio file was recorded.
 
-BODYPARAMETER `<IMicrosoftGraphDriveItem>`: driveItem
+BODYPARAMETER <IMicrosoftGraphDriveItem>: driveItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -7610,7 +7690,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -7747,6 +7827,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
           [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
           [FormatName <String>]: For a list of possible values see formatName values.
+    [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+      [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+      [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+      [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+      [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+      [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+      [ProvisioningType <String>]: cloudPcProvisioningType
+      [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+      [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+      [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
     [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -8492,6 +8620,14 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [DisplayName <String>]: The name of the role.
+        [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
       [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -9328,6 +9464,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+        [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [IsCloudManaged <Boolean?>]: 
         [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -10038,7 +10179,8 @@ Nullable.
         [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
       [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -10153,8 +10295,8 @@ Read-only.
           [Setting <String>]: The setting that is being reported
           [SettingName <String>]: Localized/user friendly setting name that is being reported
           [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-            [DisplayName <String>]: Not yet documented
-            [Id <String>]: Not yet documented
+            [DisplayName <String>]: 
+            [Id <String>]: 
             [SourceType <String>]: settingSourceType
           [State <String>]: complianceStatus
           [UserEmail <String>]: UserEmail
@@ -10219,7 +10361,17 @@ Read-only.
         [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
         [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
         [TpmVersion <String>]: The security version number of the Boot Application
-        [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+        [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
         [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
       [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
       [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -10240,6 +10392,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
       [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
       [ManagementAgent <ManagementAgentType?>]: managementAgentType
+      [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
       [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -11249,8 +11402,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11824,7 +11977,7 @@ Read-only.
     [Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]: Represents a collection of worksheets associated with the workbook.
 Read-only.
 
-BUNDLE `<IMicrosoftGraphBundle>`: bundle
+BUNDLE <IMicrosoftGraphBundle>: bundle
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Album <IMicrosoftGraphAlbum>]: album
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -12652,7 +12805,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -12789,6 +12942,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
           [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
           [FormatName <String>]: For a list of possible values see formatName values.
+    [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+      [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+      [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+      [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+      [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+      [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+      [ProvisioningType <String>]: cloudPcProvisioningType
+      [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+      [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+      [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
     [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -13534,6 +13735,14 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [DisplayName <String>]: The name of the role.
+        [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
       [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -14370,6 +14579,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+        [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [IsCloudManaged <Boolean?>]: 
         [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -15080,7 +15294,8 @@ Nullable.
         [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
       [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -15195,8 +15410,8 @@ Read-only.
           [Setting <String>]: The setting that is being reported
           [SettingName <String>]: Localized/user friendly setting name that is being reported
           [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-            [DisplayName <String>]: Not yet documented
-            [Id <String>]: Not yet documented
+            [DisplayName <String>]: 
+            [Id <String>]: 
             [SourceType <String>]: settingSourceType
           [State <String>]: complianceStatus
           [UserEmail <String>]: UserEmail
@@ -15261,7 +15476,17 @@ Read-only.
         [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
         [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
         [TpmVersion <String>]: The security version number of the Boot Application
-        [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+        [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
         [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
       [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
       [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -15282,6 +15507,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
       [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
       [ManagementAgent <ManagementAgentType?>]: managementAgentType
+      [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
       [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -16291,8 +16517,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -16866,7 +17092,7 @@ Read-only.
     [Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]: Represents a collection of worksheets associated with the workbook.
 Read-only.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -16877,7 +17103,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-CREATEDBYUSER `<IMicrosoftGraphUser>`: Represents a Microsoft Entra user account.
+CREATEDBYUSER <IMicrosoftGraphUser>: Represents a Microsoft Entra user account.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -17693,7 +17919,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -17830,6 +18056,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
         [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
         [FormatName <String>]: For a list of possible values see formatName values.
+  [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+    [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+    [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+    [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+    [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+    [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+    [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+    [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+    [ProvisioningType <String>]: cloudPcProvisioningType
+    [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+    [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+    [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
   [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -19205,6 +19479,14 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [DisplayName <String>]: The name of the role.
+      [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
     [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -19988,6 +20270,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+      [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [IsCloudManaged <Boolean?>]: 
       [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -20688,7 +20975,8 @@ Nullable.
       [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
     [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -20803,8 +21091,8 @@ Read-only.
         [Setting <String>]: The setting that is being reported
         [SettingName <String>]: Localized/user friendly setting name that is being reported
         [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-          [DisplayName <String>]: Not yet documented
-          [Id <String>]: Not yet documented
+          [DisplayName <String>]: 
+          [Id <String>]: 
           [SourceType <String>]: settingSourceType
         [State <String>]: complianceStatus
         [UserEmail <String>]: UserEmail
@@ -20869,7 +21157,17 @@ Read-only.
       [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
       [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
       [TpmVersion <String>]: The security version number of the Boot Application
-      [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+      [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
       [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
     [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
     [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -20890,6 +21188,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
     [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
     [ManagementAgent <ManagementAgentType?>]: managementAgentType
+    [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
     [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -21899,8 +22198,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -21910,11 +22209,11 @@ Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-DELETED `<IMicrosoftGraphDeleted>`: deleted
+DELETED <IMicrosoftGraphDeleted>: deleted
   [(Any) <Object>]: This indicates any property can be added to this object.
   [State <String>]: Represents the state of the deleted item.
 
-FILE `<IMicrosoftGraphFile>`: file
+FILE <IMicrosoftGraphFile>: file
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Hashes <IMicrosoftGraphHashes>]: hashes
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -21931,14 +22230,14 @@ This is determined by logic on the server and might not be the value provided wh
 Read-only.
   [ProcessingMetadata <Boolean?>]: 
 
-FILESYSTEMINFO `<IMicrosoftGraphFileSystemInfo>`: fileSystemInfo
+FILESYSTEMINFO <IMicrosoftGraphFileSystemInfo>: fileSystemInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The UTC date and time the file was created on a client.
   [LastAccessedDateTime <DateTime?>]: The UTC date and time the file was last accessed.
 Available for the recent file list only.
   [LastModifiedDateTime <DateTime?>]: The UTC date and time the file was last modified on a client.
 
-FOLDER `<IMicrosoftGraphFolder>`: folder
+FOLDER <IMicrosoftGraphFolder>: folder
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChildCount <Int32?>]: Number of children contained immediately within this container.
   [View <IMicrosoftGraphFolderView>]: folderView
@@ -21948,7 +22247,7 @@ FOLDER `<IMicrosoftGraphFolder>`: folder
 Otherwise, items should be sorted ascending.
     [ViewType <String>]: The type of view that should be used to represent the folder.
 
-IMAGE `<IMicrosoftGraphImage>`: image
+IMAGE <IMicrosoftGraphImage>: image
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Height <Int32?>]: Optional.
 Height of the image, in pixels.
@@ -21957,7 +22256,7 @@ Read-only.
 Width of the image, in pixels.
 Read-only.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -21983,7 +22282,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -21994,7 +22293,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-LASTMODIFIEDBYUSER `<IMicrosoftGraphUser>`: Represents a Microsoft Entra user account.
+LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: Represents a Microsoft Entra user account.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -22810,7 +23109,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -22947,6 +23246,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
         [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
         [FormatName <String>]: For a list of possible values see formatName values.
+  [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+    [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+    [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+    [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+    [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+    [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+    [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+    [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+    [ProvisioningType <String>]: cloudPcProvisioningType
+    [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+    [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+    [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
   [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -24322,6 +24669,14 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [DisplayName <String>]: The name of the role.
+      [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
     [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -25105,6 +25460,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+      [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [IsCloudManaged <Boolean?>]: 
       [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -25805,7 +26165,8 @@ Nullable.
       [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
     [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -25920,8 +26281,8 @@ Read-only.
         [Setting <String>]: The setting that is being reported
         [SettingName <String>]: Localized/user friendly setting name that is being reported
         [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-          [DisplayName <String>]: Not yet documented
-          [Id <String>]: Not yet documented
+          [DisplayName <String>]: 
+          [Id <String>]: 
           [SourceType <String>]: settingSourceType
         [State <String>]: complianceStatus
         [UserEmail <String>]: UserEmail
@@ -25986,7 +26347,17 @@ Read-only.
       [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
       [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
       [TpmVersion <String>]: The security version number of the Boot Application
-      [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+      [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
       [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
     [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
     [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -26007,6 +26378,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
     [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
     [ManagementAgent <ManagementAgentType?>]: managementAgentType
+    [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
     [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -27016,8 +27388,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -27027,7 +27399,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-LISTITEM `<IMicrosoftGraphListItem>`: listItem
+LISTITEM <IMicrosoftGraphListItem>: listItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -27846,7 +28218,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -27983,6 +28355,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
           [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
           [FormatName <String>]: For a list of possible values see formatName values.
+    [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+      [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+      [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+      [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+      [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+      [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+      [ProvisioningType <String>]: cloudPcProvisioningType
+      [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+      [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+      [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
     [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -29305,6 +29725,14 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [DisplayName <String>]: The name of the role.
+        [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
       [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -30088,6 +30516,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+        [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [IsCloudManaged <Boolean?>]: 
         [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -30788,7 +31221,8 @@ Nullable.
         [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
       [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -30903,8 +31337,8 @@ Read-only.
           [Setting <String>]: The setting that is being reported
           [SettingName <String>]: Localized/user friendly setting name that is being reported
           [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-            [DisplayName <String>]: Not yet documented
-            [Id <String>]: Not yet documented
+            [DisplayName <String>]: 
+            [Id <String>]: 
             [SourceType <String>]: settingSourceType
           [State <String>]: complianceStatus
           [UserEmail <String>]: UserEmail
@@ -30969,7 +31403,17 @@ Read-only.
         [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
         [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
         [TpmVersion <String>]: The security version number of the Boot Application
-        [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+        [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
         [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
       [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
       [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -30990,6 +31434,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
       [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
       [ManagementAgent <ManagementAgentType?>]: managementAgentType
+      [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
       [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -31999,8 +32444,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -32060,7 +32505,7 @@ Read-only.
 Read-only.
     [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
 
-LOCATION `<IMicrosoftGraphGeoCoordinates>`: geoCoordinates
+LOCATION <IMicrosoftGraphGeoCoordinates>: geoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Altitude <Double?>]: Optional.
 The altitude (height), in feet,  above sea level for the item.
@@ -32072,16 +32517,16 @@ Read-only.
 The longitude, in decimal, for the item.
 Read-only.
 
-MALWARE `<IMicrosoftGraphMalware>`: malware
+MALWARE <IMicrosoftGraphMalware>: malware
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Contains the virus details for the malware facet.
 
-PACKAGE `<IMicrosoftGraphPackage>`: package
+PACKAGE <IMicrosoftGraphPackage>: package
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: A string indicating the type of package.
 While oneNote is the only currently defined value, you should expect other package types to be returned and handle them accordingly.
 
-PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
+PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -32110,7 +32555,7 @@ The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
-PENDINGOPERATIONS `<IMicrosoftGraphPendingOperations>`: pendingOperations
+PENDINGOPERATIONS <IMicrosoftGraphPendingOperations>: pendingOperations
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PendingContentUpdate <IMicrosoftGraphPendingContentUpdate>]: pendingContentUpdate
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -32209,7 +32654,7 @@ Read-only.
   [ShareId <String>]: A unique token that can be used to access this shared item via the shares API.
 Read-only.
 
-PHOTO `<IMicrosoftGraphPhoto>`: photo
+PHOTO <IMicrosoftGraphPhoto>: photo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CameraMake <String>]: Camera manufacturer.
 Read-only.
@@ -32230,7 +32675,7 @@ Writable on OneDrive Personal.
   [TakenDateTime <DateTime?>]: Represents the date and time the photo was taken.
 Read-only.
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+PUBLICATION <IMicrosoftGraphPublicationFacet>: publicationFacet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CheckedOutBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -32248,7 +32693,7 @@ Read-only.
   [VersionId <String>]: The unique identifier for the version that is visible to the current caller.
 Read-only.
 
-REMOTEITEM `<IMicrosoftGraphRemoteItem>`: remoteItem
+REMOTEITEM <IMicrosoftGraphRemoteItem>: remoteItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -32372,7 +32817,7 @@ Read-only.
   [WebUrl <String>]: URL that displays the resource in the browser.
 Read-only.
 
-RETENTIONLABEL `<IMicrosoftGraphItemRetentionLabel>`: itemRetentionLabel
+RETENTIONLABEL <IMicrosoftGraphItemRetentionLabel>: itemRetentionLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -32409,12 +32854,12 @@ Read-only.
     [IsRecordLocked <Boolean?>]: Specifies whether the item is locked.
 Read-write.
 
-SEARCHRESULT `<IMicrosoftGraphSearchResult>`: searchResult
+SEARCHRESULT <IMicrosoftGraphSearchResult>: searchResult
   [(Any) <Object>]: This indicates any property can be added to this object.
   [OnClickTelemetryUrl <String>]: A callback URL that can be used to record telemetry information.
 The application should issue a GET on this URL if the user interacts with this item to improve the quality of results.
 
-SHARED `<IMicrosoftGraphShared>`: shared
+SHARED <IMicrosoftGraphShared>: shared
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Owner <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -32433,7 +32878,7 @@ Read-only.
   [SharedDateTime <DateTime?>]: The UTC date and time when the item was shared.
 Read-only.
 
-SHAREPOINTIDS `<IMicrosoftGraphSharepointIds>`: sharepointIds
+SHAREPOINTIDS <IMicrosoftGraphSharepointIds>: sharepointIds
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ListId <String>]: The unique identifier (guid) for the item's list in SharePoint.
   [ListItemId <String>]: An integer identifier for the item within the containing list.
@@ -32443,7 +32888,7 @@ SHAREPOINTIDS `<IMicrosoftGraphSharepointIds>`: sharepointIds
   [TenantId <String>]: The unique identifier (guid) for the tenancy.
   [WebId <String>]: The unique identifier (guid) for the item's site (SPWeb).
 
-SPECIALFOLDER `<IMicrosoftGraphSpecialFolder>`: specialFolder
+SPECIALFOLDER <IMicrosoftGraphSpecialFolder>: specialFolder
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Name <String>]: The unique identifier for this item in the /drive/special collection
 
@@ -32560,7 +33005,7 @@ Read-only.
   [Content <Byte[]>]: The content stream for this version of the item.
   [Size <Int64?>]: Indicates the size of the content stream for this version of the item.
 
-VIDEO `<IMicrosoftGraphVideo>`: video
+VIDEO <IMicrosoftGraphVideo>: video
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AudioBitsPerSample <Int32?>]: Number of audio bits per sample.
   [AudioChannels <Int32?>]: Number of audio channels.
@@ -32573,7 +33018,7 @@ VIDEO `<IMicrosoftGraphVideo>`: video
   [Height <Int32?>]: Height of the video, in pixels.
   [Width <Int32?>]: Width of the video, in pixels.
 
-WORKBOOK `<IMicrosoftGraphWorkbook>`: workbook
+WORKBOOK <IMicrosoftGraphWorkbook>: workbook
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -32891,27 +33336,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDriveRootChild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootchild)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootchild)

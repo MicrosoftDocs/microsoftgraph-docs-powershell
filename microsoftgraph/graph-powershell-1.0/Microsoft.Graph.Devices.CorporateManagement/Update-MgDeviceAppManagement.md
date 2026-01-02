@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagement
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceAppManagement
 ## SYNOPSIS
 
 Update the properties of a deviceAppManagement object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,18 +63,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a deviceAppManagement object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -86,10 +74,6 @@ $params = @{
 }
 
 Update-MgDeviceAppManagement -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceAppManagement Cmdlet.
-
 
 ## PARAMETERS
 
@@ -838,6 +822,7 @@ Read-only.
   [ManagedBrowser <ManagedBrowserType?>]: Type of managed browser
   [ManagedBrowserToOpenLinksRequired <Boolean?>]: Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
   [MaximumPinRetries <Int32?>]: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
+Valid values 1 to 65535
   [MinimumPinLength <Int32?>]: Minimum pin length required for an app-level pin if PinRequired is set to True
   [MinimumRequiredAppVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
   [MinimumRequiredOSVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
@@ -875,12 +860,12 @@ When this property is configured, ManagedBrowserToOpenLinksRequired should be tr
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [ConfigurationDeployedUserCount <Int32?>]: Not yet documented
-    [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: Not yet documented
+    [ConfigurationDeployedUserCount <Int32?>]: 
+    [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: 
       [ConfigurationAppliedUserCount <Int32?>]: Number of users the policy is applied.
       [MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]: The identifier for a mobile app.
-    [DisplayName <String>]: Not yet documented
-    [LastRefreshTime <DateTime?>]: Not yet documented
+    [DisplayName <String>]: 
+    [LastRefreshTime <DateTime?>]: 
     [Version <String>]: Version of the entity.
   [DisableAppEncryptionIfDeviceEncryptionIsEnabled <Boolean?>]: When this setting is enabled, app level encryption is disabled if device level encryption is enabled
   [EncryptAppData <Boolean?>]: Indicates whether application data for managed apps should be encrypted
@@ -888,7 +873,7 @@ Read-only.
   [MinimumWarningPatchVersion <String>]: Define the oldest recommended Android security patch level a user can have for secure access to the app.
   [ScreenCaptureBlocked <Boolean?>]: Indicates whether a managed user can take screen captures of managed apps
 
-BODYPARAMETER `<IMicrosoftGraphDeviceAppManagement>`: Singleton entity that acts as a container for all device app management functionality.
+BODYPARAMETER <IMicrosoftGraphDeviceAppManagement>: Singleton entity that acts as a container for all device app management functionality.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -911,6 +896,7 @@ Read-only.
     [ManagedBrowser <ManagedBrowserType?>]: Type of managed browser
     [ManagedBrowserToOpenLinksRequired <Boolean?>]: Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
     [MaximumPinRetries <Int32?>]: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
+Valid values 1 to 65535
     [MinimumPinLength <Int32?>]: Minimum pin length required for an app-level pin if PinRequired is set to True
     [MinimumRequiredAppVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
     [MinimumRequiredOSVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
@@ -948,12 +934,12 @@ When this property is configured, ManagedBrowserToOpenLinksRequired should be tr
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [ConfigurationDeployedUserCount <Int32?>]: Not yet documented
-      [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: Not yet documented
+      [ConfigurationDeployedUserCount <Int32?>]: 
+      [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: 
         [ConfigurationAppliedUserCount <Int32?>]: Number of users the policy is applied.
         [MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]: The identifier for a mobile app.
-      [DisplayName <String>]: Not yet documented
-      [LastRefreshTime <DateTime?>]: Not yet documented
+      [DisplayName <String>]: 
+      [LastRefreshTime <DateTime?>]: 
       [Version <String>]: Version of the entity.
     [DisableAppEncryptionIfDeviceEncryptionIsEnabled <Boolean?>]: When this setting is enabled, app level encryption is disabled if device level encryption is enabled
     [EncryptAppData <Boolean?>]: Indicates whether application data for managed apps should be encrypted
@@ -973,6 +959,7 @@ Read-only.
     [ManagedBrowser <ManagedBrowserType?>]: Type of managed browser
     [ManagedBrowserToOpenLinksRequired <Boolean?>]: Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
     [MaximumPinRetries <Int32?>]: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
+Valid values 1 to 65535
     [MinimumPinLength <Int32?>]: Minimum pin length required for an app-level pin if PinRequired is set to True
     [MinimumRequiredAppVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
     [MinimumRequiredOSVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
@@ -1031,6 +1018,7 @@ Read-only.
     [ManagedBrowser <ManagedBrowserType?>]: Type of managed browser
     [ManagedBrowserToOpenLinksRequired <Boolean?>]: Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
     [MaximumPinRetries <Int32?>]: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
+Valid values 1 to 65535
     [MinimumPinLength <Int32?>]: Minimum pin length required for an app-level pin if PinRequired is set to True
     [MinimumRequiredAppVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
     [MinimumRequiredOSVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
@@ -1338,9 +1326,9 @@ Read-only.
   [VppTokens <IMicrosoftGraphVppToken[]>]: List of Vpp tokens for this organization.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [AppleId <String>]: The Apple ID associated with the given Apple Volume Purchase Program Token.
+    [AppleId <String>]: The apple Id associated with the given Apple Volume Purchase Program Token.
     [AutomaticallyUpdateApps <Boolean?>]: Whether or not apps for the VPP token will be automatically updated.
-    [CountryOrRegion <String>]: The country or region associated with the Apple Volume Purchase Program Token.
+    [CountryOrRegion <String>]: Whether or not apps for the VPP token will be automatically updated.
     [ExpirationDateTime <DateTime?>]: The expiration date time of the Apple Volume Purchase Program Token.
     [LastModifiedDateTime <DateTime?>]: Last modification date time associated with the Apple Volume Purchase Program Token.
     [LastSyncDateTime <DateTime?>]: The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
@@ -1400,30 +1388,36 @@ The RMS template allows the IT admin to configure the details about who has acce
     [Version <String>]: Version of the entity.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DaysWithoutContactBeforeUnenroll <Int32?>]: Offline interval before app data is wiped (days)
+    [DaysWithoutContactBeforeUnenroll <Int32?>]: Offline interval before app data is wiped (days) .
+Valid values 0 to 999
     [MdmEnrollmentUrl <String>]: Enrollment url for the MDM
     [MinutesOfInactivityBeforeDeviceLock <Int32?>]: Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.
   Range is an integer X where 0 <= X <= 999.
+Valid values 0 to 999
     [NumberOfPastPinsRemembered <Int32?>]: Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused.
 The largest number you can configure for this policy setting is 50.
 The lowest number you can configure for this policy setting is 0.
 If this policy is set to 0, then storage of previous PINs is not required.
 This node was added in Windows 10, version 1511.
 Default is 0.
+Valid values 0 to 50
     [PasswordMaximumAttemptCount <Int32?>]: The number of authentication failures allowed before the device will be wiped.
 A value of 0 disables device wipe functionality.
 Range is an integer X where 4 <= X <= 16 for desktop and 0 <= X <= 999 for mobile devices.
+Valid values 0 to 999
     [PinExpirationDays <Int32?>]: Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it.
 The largest number you can configure for this policy setting is 730.
 The lowest number you can configure for this policy setting is 0.
 If this policy is set to 0, then the user's PIN will never expire.
 This node was added in Windows 10, version 1511.
 Default is 0.
+Valid values 0 to 730
     [PinLowercaseLetters <WindowsInformationProtectionPinCharacterRequirements?>]: Pin Character Requirements
     [PinMinimumLength <Int32?>]: Integer value that sets the minimum number of characters required for the PIN.
 Default value is 4.
 The lowest number you can configure for this policy setting is 4.
 The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
+Valid values 0 to 127
     [PinSpecialCharacters <WindowsInformationProtectionPinCharacterRequirements?>]: Pin Character Requirements
     [PinUppercaseLetters <WindowsInformationProtectionPinCharacterRequirements?>]: Pin Character Requirements
     [RevokeOnMdmHandoffDisabled <Boolean?>]: New property in RS2, pending documentation
@@ -1442,6 +1436,7 @@ DEFAULTMANAGEDAPPPROTECTIONS <IMicrosoftGraphDefaultManagedAppProtection[]>: Def
   [ManagedBrowser <ManagedBrowserType?>]: Type of managed browser
   [ManagedBrowserToOpenLinksRequired <Boolean?>]: Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
   [MaximumPinRetries <Int32?>]: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
+Valid values 1 to 65535
   [MinimumPinLength <Int32?>]: Minimum pin length required for an app-level pin if PinRequired is set to True
   [MinimumRequiredAppVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
   [MinimumRequiredOSVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
@@ -1479,12 +1474,12 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [ConfigurationDeployedUserCount <Int32?>]: Not yet documented
-    [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: Not yet documented
+    [ConfigurationDeployedUserCount <Int32?>]: 
+    [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: 
       [ConfigurationAppliedUserCount <Int32?>]: Number of users the policy is applied.
       [MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]: The identifier for a mobile app.
-    [DisplayName <String>]: Not yet documented
-    [LastRefreshTime <DateTime?>]: Not yet documented
+    [DisplayName <String>]: 
+    [LastRefreshTime <DateTime?>]: 
     [Version <String>]: Version of the entity.
   [DisableAppEncryptionIfDeviceEncryptionIsEnabled <Boolean?>]: When this setting is enabled, app level encryption is disabled if device level encryption is enabled.
 (Android only)
@@ -1520,6 +1515,7 @@ Read-only.
   [ManagedBrowser <ManagedBrowserType?>]: Type of managed browser
   [ManagedBrowserToOpenLinksRequired <Boolean?>]: Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
   [MaximumPinRetries <Int32?>]: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
+Valid values 1 to 65535
   [MinimumPinLength <Int32?>]: Minimum pin length required for an app-level pin if PinRequired is set to True
   [MinimumRequiredAppVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
   [MinimumRequiredOSVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
@@ -1556,12 +1552,12 @@ When this property is configured, ManagedBrowserToOpenLinksRequired should be tr
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [ConfigurationDeployedUserCount <Int32?>]: Not yet documented
-    [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: Not yet documented
+    [ConfigurationDeployedUserCount <Int32?>]: 
+    [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: 
       [ConfigurationAppliedUserCount <Int32?>]: Number of users the policy is applied.
       [MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]: The identifier for a mobile app.
-    [DisplayName <String>]: Not yet documented
-    [LastRefreshTime <DateTime?>]: Not yet documented
+    [DisplayName <String>]: 
+    [LastRefreshTime <DateTime?>]: 
     [Version <String>]: Version of the entity.
   [FaceIdBlocked <Boolean?>]: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
   [MinimumRequiredSdkVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
@@ -1875,21 +1871,21 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [ConfigurationDeployedUserCount <Int32?>]: Not yet documented
-    [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: Not yet documented
+    [ConfigurationDeployedUserCount <Int32?>]: 
+    [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: 
       [ConfigurationAppliedUserCount <Int32?>]: Number of users the policy is applied.
       [MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]: The identifier for a mobile app.
-    [DisplayName <String>]: Not yet documented
-    [LastRefreshTime <DateTime?>]: Not yet documented
+    [DisplayName <String>]: 
+    [LastRefreshTime <DateTime?>]: 
     [Version <String>]: Version of the entity.
   [IsAssigned <Boolean?>]: Indicates if the policy is deployed to any inclusion groups or not.
 
 VPPTOKENS <IMicrosoftGraphVppToken[]>: List of Vpp tokens for this organization.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AppleId <String>]: The Apple ID associated with the given Apple Volume Purchase Program Token.
+  [AppleId <String>]: The apple Id associated with the given Apple Volume Purchase Program Token.
   [AutomaticallyUpdateApps <Boolean?>]: Whether or not apps for the VPP token will be automatically updated.
-  [CountryOrRegion <String>]: The country or region associated with the Apple Volume Purchase Program Token.
+  [CountryOrRegion <String>]: Whether or not apps for the VPP token will be automatically updated.
   [ExpirationDateTime <DateTime?>]: The expiration date time of the Apple Volume Purchase Program Token.
   [LastModifiedDateTime <DateTime?>]: Last modification date time associated with the Apple Volume Purchase Program Token.
   [LastSyncDateTime <DateTime?>]: The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
@@ -1978,30 +1974,36 @@ The RMS template allows the IT admin to configure the details about who has acce
   [Version <String>]: Version of the entity.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DaysWithoutContactBeforeUnenroll <Int32?>]: Offline interval before app data is wiped (days)
+  [DaysWithoutContactBeforeUnenroll <Int32?>]: Offline interval before app data is wiped (days) .
+Valid values 0 to 999
   [MdmEnrollmentUrl <String>]: Enrollment url for the MDM
   [MinutesOfInactivityBeforeDeviceLock <Int32?>]: Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.
   Range is an integer X where 0 <= X <= 999.
+Valid values 0 to 999
   [NumberOfPastPinsRemembered <Int32?>]: Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused.
 The largest number you can configure for this policy setting is 50.
 The lowest number you can configure for this policy setting is 0.
 If this policy is set to 0, then storage of previous PINs is not required.
 This node was added in Windows 10, version 1511.
 Default is 0.
+Valid values 0 to 50
   [PasswordMaximumAttemptCount <Int32?>]: The number of authentication failures allowed before the device will be wiped.
 A value of 0 disables device wipe functionality.
 Range is an integer X where 4 <= X <= 16 for desktop and 0 <= X <= 999 for mobile devices.
+Valid values 0 to 999
   [PinExpirationDays <Int32?>]: Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it.
 The largest number you can configure for this policy setting is 730.
 The lowest number you can configure for this policy setting is 0.
 If this policy is set to 0, then the user's PIN will never expire.
 This node was added in Windows 10, version 1511.
 Default is 0.
+Valid values 0 to 730
   [PinLowercaseLetters <WindowsInformationProtectionPinCharacterRequirements?>]: Pin Character Requirements
   [PinMinimumLength <Int32?>]: Integer value that sets the minimum number of characters required for the PIN.
 Default value is 4.
 The lowest number you can configure for this policy setting is 4.
 The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
+Valid values 0 to 127
   [PinSpecialCharacters <WindowsInformationProtectionPinCharacterRequirements?>]: Pin Character Requirements
   [PinUppercaseLetters <WindowsInformationProtectionPinCharacterRequirements?>]: Pin Character Requirements
   [RevokeOnMdmHandoffDisabled <Boolean?>]: New property in RS2, pending documentation
@@ -2010,27 +2012,5 @@ The largest number you can configure must be less than the number configured in 
 
 ## RELATED LINKS
 
-- [Update-MgDeviceAppManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-apps-deviceappmanagement-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement)
+- [](https://learn.microsoft.com/graph/api/intune-policyset-deviceappmanagement-update?view=graph-rest-1.0)

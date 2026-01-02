@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/move-mgbetagroupplannerplantocontainer
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Move-MgBetaGroupPlannerPlanToContainer
 ---
@@ -72,6 +72,16 @@ This cmdlet has the following aliases,
 Move a planner plan object from one planner plan container to another.
 Planner plans can only be moved from a user container to a group container.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -103,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -486,7 +496,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1N253R0GroupsGroupIdPlannerPlansPlannerplanIdMicrosoftGraphMovetocontainerPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1N253R0GroupsGroupIdPlannerPlansPlannerplanIdMicrosoftGraphMovetocontainerPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Container <IMicrosoftGraphPlannerPlanContainer>]: plannerPlanContainer
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -496,7 +506,7 @@ Optional.
     [Url <String>]: The full canonical URL of the container.
 Optional.
 
-CONTAINER `<IMicrosoftGraphPlannerPlanContainer>`: plannerPlanContainer
+CONTAINER <IMicrosoftGraphPlannerPlanContainer>: plannerPlanContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContainerId <String>]: The identifier of the resource that contains the plan.
 Optional.
@@ -504,7 +514,7 @@ Optional.
   [Url <String>]: The full canonical URL of the container.
 Optional.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
@@ -517,28 +527,5 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Move-MgBetaGroupPlannerPlanToContainer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/move-mgbetagroupplannerplantocontainer)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/move-mgbetagroupplannerplantocontainer)
+- [](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta)

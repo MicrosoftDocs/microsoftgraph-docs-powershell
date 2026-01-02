@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaGroupThread
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaGroupThread
 ## SYNOPSIS
 
 Delete conversationThread.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 
 Delete conversationThread.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Remove-MgBetaGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId
-
-```
-This example shows how to use the Remove-MgBetaGroupThread Cmdlet.
-
 
 ## PARAMETERS
 
@@ -421,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -448,27 +432,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread)
+- [](https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-beta)

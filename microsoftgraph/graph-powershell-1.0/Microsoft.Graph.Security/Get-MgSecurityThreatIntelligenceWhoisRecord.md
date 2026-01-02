@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecord
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityThreatIntelligenceWhoisRecord
 ---
@@ -14,11 +14,8 @@ title: Get-MgSecurityThreatIntelligenceWhoisRecord
 ## SYNOPSIS
 
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
-- Specify an id value to get the corresponding whoisRecord.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-beta)
+Specify the desired whoisRecord in one of the following two ways:\r\n- Identify a host and get its current whoisRecord.
+\r\n- Specify an id value to get the corresponding whoisRecord.
 
 ## SYNTAX
 
@@ -60,21 +57,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
-- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:\r\n- Identify a host and get its current whoisRecord.
+\r\n- Specify an id value to get the corresponding whoisRecord.
 
 ## EXAMPLES
-### Example 1: Get the whoisRecord resource using its id property
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityThreatIntelligenceWhoisRecord -WhoisRecordId $whoisRecordId
-
-```
-This example will get the whoisrecord resource using its id property
-
 
 ## PARAMETERS
 
@@ -536,7 +528,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -569,6 +561,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [HostPortId <String>]: The unique identifier of hostPort
   [HostSslCertificateId <String>]: The unique identifier of hostSslCertificate
   [HostTrackerId <String>]: The unique identifier of hostTracker
+  [IdentityAccountsId <String>]: The unique identifier of identityAccounts
   [IncidentId <String>]: The unique identifier of incident
   [IntelligenceProfileId <String>]: The unique identifier of intelligenceProfile
   [IntelligenceProfileIndicatorId <String>]: The unique identifier of intelligenceProfileIndicator
@@ -586,6 +579,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecureScoreId <String>]: The unique identifier of secureScore
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun
@@ -609,28 +603,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSecurityThreatIntelligenceWhoisRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecord)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-threatintelligence-list-whoisrecords?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecord)
+- [](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/security-threatintelligence-list-whoisrecords?view=graph-rest-1.0)

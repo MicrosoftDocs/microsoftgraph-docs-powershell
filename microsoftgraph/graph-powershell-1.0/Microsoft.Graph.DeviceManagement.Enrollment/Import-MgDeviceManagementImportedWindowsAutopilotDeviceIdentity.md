@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 ---
@@ -13,10 +13,7 @@ title: Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 
 ## SYNOPSIS
 
-Not yet documented
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Import-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Import-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
+Invoke action import
 
 ## SYNTAX
 
@@ -49,20 +46,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Not yet documented
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
+Invoke action import
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
@@ -90,10 +78,6 @@ $params = @{
 
 Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity -BodyParameter $params
 
-```
-This example shows how to use the Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -119,7 +103,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -247,7 +231,7 @@ HelpMessage: ''
 
 ### -ImportedWindowsAutopilotDeviceIdentities
 
-
+.
 To construct, see NOTES section for IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
@@ -404,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ImportedWindowsAutopilotDeviceIdentities <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -441,27 +425,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentity-import?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity)

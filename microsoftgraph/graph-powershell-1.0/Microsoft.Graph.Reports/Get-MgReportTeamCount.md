@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportTeamCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportTeamCount
 ## SYNOPSIS
 
 Get the number of teams of a particular type in an instance of Microsoft Teams.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the number of teams of a particular type in an instance of Microsoft Teams.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -333,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -360,28 +367,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportTeamCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getteamsteamcounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getteamsteamcounts?view=graph-rest-1.0)

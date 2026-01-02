@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementandroidmanagedappprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceAppManagementAndroidManagedAppProtection
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceAppManagementAndroidManagedAppProtection
 ## SYNOPSIS
 
 Create new navigation property to androidManagedAppProtections for deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -112,13 +109,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to androidManagedAppProtections for deviceAppManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -869,6 +868,7 @@ HelpMessage: ''
 ### -CustomBrowserDisplayName
 
 Friendly name of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
 
 ```yaml
 Type: System.String
@@ -889,7 +889,8 @@ HelpMessage: ''
 
 ### -CustomBrowserPackageId
 
-Unique identifier of a custom browser to open weblink on Android.
+Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
 
 ```yaml
 Type: System.String
@@ -2609,7 +2610,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphAndroidManagedAppProtection>`: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device
+BODYPARAMETER <IMicrosoftGraphAndroidManagedAppProtection>: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppGroupType <TargetedManagedAppGroupType?>]: Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
   [Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
@@ -2710,7 +2711,9 @@ Read-only.
   [BlockAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
   [ConnectToVpnOnLaunch <Boolean?>]: Whether the app should connect to the configured VPN on launch.
   [CustomBrowserDisplayName <String>]: Friendly name of the preferred custom browser to open weblink on Android.
-  [CustomBrowserPackageId <String>]: Unique identifier of a custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+  [CustomBrowserPackageId <String>]: Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   [CustomDialerAppDisplayName <String>]: Friendly name of a custom dialer app to click-to-open a phone number on Android.
   [CustomDialerAppPackageId <String>]: PackageId of a custom dialer app to click-to-open a phone number on Android.
   [DeployedAppCount <Int32?>]: Count of apps to which the current policy is deployed.
@@ -2751,7 +2754,7 @@ If enabled list of approved keyboards must be provided as well.
   [WarnAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning
   [WipeAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
 
-DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2771,27 +2774,4 @@ EXEMPTEDAPPPACKAGES <IMicrosoftGraphKeyValuePair[]>: App packages in this list w
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceAppManagementAndroidManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementandroidmanagedappprotection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementandroidmanagedappprotection)

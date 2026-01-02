@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgserviceprincipalriskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalRiskDetection
 ---
@@ -14,9 +14,6 @@ title: Get-MgServicePrincipalRiskDetection
 ## SYNOPSIS
 
 Read the properties and relationships of a servicePrincipalRiskDetection object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a servicePrincipalRiskDetection object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskEvent.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskEvent.Read.All,  |
-
 ## EXAMPLES
-### Example: Get a specific risk detection object
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgServicePrincipalRiskDetection -ServicePrincipalRiskDetectionId $servicePrincipalRiskDetectionId
-
-```
-This example will get a specific risk detection object
-
 
 ## PARAMETERS
 
@@ -541,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -566,6 +550,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
+  [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
   [HomeRealmDiscoveryPolicyId <String>]: The unique identifier of homeRealmDiscoveryPolicy
   [IdentityApiConnectorId <String>]: The unique identifier of identityApiConnector
   [IdentityProviderBaseId <String>]: The unique identifier of identityProviderBase
@@ -601,33 +586,13 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
+  [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 
 ## RELATED LINKS
 
-- [Get-MgServicePrincipalRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgserviceprincipalriskdetection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipalriskdetection-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgserviceprincipalriskdetection)
+- [](https://learn.microsoft.com/graph/api/serviceprincipalriskdetection-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-1.0)

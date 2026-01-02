@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementdevicecompliancepolicyscheduledretirestate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaDeviceManagementDeviceCompliancePolicyScheduledRetireState
 ---
@@ -49,13 +49,15 @@ This cmdlet has the following aliases,
 
 Invoke action setScheduledRetireState
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -82,7 +84,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -210,7 +212,7 @@ HelpMessage: ''
 
 ### -ManagedDeviceIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -337,7 +339,7 @@ HelpMessage: ''
 
 ### -ScopedToAllDevices
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -429,7 +431,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZtf0R2DevicemanagementDevicecompliancepoliciesMicrosoftGraphSetscheduledretirestatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZtf0R2DevicemanagementDevicecompliancepoliciesMicrosoftGraphSetscheduledretirestatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ManagedDeviceIds <String[]>]: 
   [ScopedToAllDevices <Boolean?>]: 
@@ -438,27 +440,4 @@ BODYPARAMETER `<IPathsZtf0R2DevicemanagementDevicecompliancepoliciesMicrosoftGra
 
 ## RELATED LINKS
 
-- [Set-MgBetaDeviceManagementDeviceCompliancePolicyScheduledRetireState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementdevicecompliancepolicyscheduledretirestate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementdevicecompliancepolicyscheduledretirestate)

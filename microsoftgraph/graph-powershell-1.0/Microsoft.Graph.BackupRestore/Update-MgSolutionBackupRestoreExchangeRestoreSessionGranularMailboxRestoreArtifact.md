@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangerestoresessiongranularmailboxrestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact
 ---
@@ -14,9 +14,6 @@ title: Update-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestor
 ## SYNOPSIS
 
 Update the navigation property granularMailboxRestoreArtifacts in solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -78,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property granularMailboxRestoreArtifacts in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -631,7 +638,7 @@ HelpMessage: ''
 
 ### -SearchResponseId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -766,7 +773,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGranularMailboxRestoreArtifact>`: granularMailboxRestoreArtifact
+BODYPARAMETER <IMicrosoftGraphGranularMailboxRestoreArtifact>: granularMailboxRestoreArtifact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RestoredFolderId <String>]: The new restored folder identifier for the user.
   [RestoredItemCount <Int32?>]: The number of items that are being restored in the folder.
@@ -815,7 +822,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+      [ProtectionSources <String>]: protectionSource
       [Status <String>]: protectionUnitStatus
     [Tags <String>]: restorePointTags
   [StartDateTime <DateTime?>]: The time when restoration of restore artifact is started.
@@ -826,7 +837,7 @@ Read-only.
 Don't use.
   [SearchResponseId <String>]: .
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -842,7 +853,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -871,7 +882,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
   [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-RESTOREPOINT `<IMicrosoftGraphRestorePoint>`: restorePoint
+RESTOREPOINT <IMicrosoftGraphRestorePoint>: restorePoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -913,34 +924,15 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [OffboardRequestedDateTime <DateTime?>]: The date and time when protection unit offboard was requested.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
+    [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
   [Tags <String>]: restorePointTags
 
 
 ## RELATED LINKS
 
-- [Update-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangerestoresessiongranularmailboxrestoreartifact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangerestoresessiongranularmailboxrestoreartifact)

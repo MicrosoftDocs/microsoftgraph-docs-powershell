@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserSetting
 ## SYNOPSIS
 
 Update the navigation property settings in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,18 +74,10 @@ This cmdlet has the following aliases,
 
 Update the navigation property settings in users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Users
 
 $params = @{
@@ -97,11 +86,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserSetting -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserSetting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -602,7 +586,7 @@ HelpMessage: ''
 
 ### -Windows
 
-
+.
 To construct, see NOTES section for WINDOWS properties and create a hash table.
 
 ```yaml
@@ -662,7 +646,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserSettings>`: userSettings
+BODYPARAMETER <IMicrosoftGraphUserSettings>: userSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -770,7 +754,7 @@ Refers to the user's Windows device that modified the object at the specified da
     [SettingType <String>]: windowsSettingType
     [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -793,7 +777,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WindowsSettingId <String>]: The unique identifier of windowsSetting
   [WindowsSettingInstanceId <String>]: The unique identifier of windowsSettingInstance
 
-ITEMINSIGHTS `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
+ITEMINSIGHTS <IMicrosoftGraphUserInsightsSettings>: userInsightsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -801,7 +785,7 @@ Read-only.
 The default value is true.
 Optional.
 
-SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
+SHIFTPREFERENCES <IMicrosoftGraphShiftPreferences>: shiftPreferences
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -854,7 +838,7 @@ Required.
       [StartTime <String>]: Start time for the time range.
     [TimeZone <String>]: Specifies the time zone for the indicated time.
 
-STORAGE `<IMicrosoftGraphUserStorage>`: userStorage
+STORAGE <IMicrosoftGraphUserStorage>: userStorage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -895,26 +879,4 @@ Refers to the user's Windows device that modified the object at the specified da
 
 ## RELATED LINKS
 
-- [Update-MgUserSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting)

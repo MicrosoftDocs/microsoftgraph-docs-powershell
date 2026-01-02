@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgroupagent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaOnPremisePublishingProfileAgentGroupAgent
 ---
@@ -72,13 +72,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to agents for onPremisesPublishingProfiles
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.HybridAuthentication, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -553,7 +555,8 @@ HelpMessage: ''
 
 ### -SupportedPublishingTypes
 
-Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, adAdministration.
+Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, intunePfx, oflineDomainJoin, unknownFutureValue, privateAccess.
+Use the Prefer: include-unknown-enum-members request header to get the following values from this evolvable enum: privateAccess.
 
 ```yaml
 Type: System.String[]
@@ -652,7 +655,8 @@ Read-only
     [MachineName <String>]: The name of the machine that the agent is running on.
 Read-only
     [Status <String>]: agentStatus
-    [SupportedPublishingTypes <String[]>]: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, adAdministration.
+    [SupportedPublishingTypes <String[]>]: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, intunePfx, oflineDomainJoin, unknownFutureValue, privateAccess.
+Use the Prefer: include-unknown-enum-members request header to get the following values from this evolvable enum: privateAccess.
   [DisplayName <String>]: Display name of the onPremisesAgentGroup.
   [IsDefault <Boolean?>]: Indicates if the onPremisesAgentGroup is the default agent group.
 Only a single agent group can be the default onPremisesAgentGroup and is set by the system.
@@ -669,7 +673,7 @@ Nullable.
     [ResourceName <String>]: Name of the publishedResource.
   [PublishingType <String>]: onPremisesPublishingType
 
-BODYPARAMETER `<IMicrosoftGraphOnPremisesAgent>`: onPremisesAgent
+BODYPARAMETER <IMicrosoftGraphOnPremisesAgent>: onPremisesAgent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -701,9 +705,10 @@ Read-only
   [MachineName <String>]: The name of the machine that the agent is running on.
 Read-only
   [Status <String>]: agentStatus
-  [SupportedPublishingTypes <String[]>]: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, adAdministration.
+  [SupportedPublishingTypes <String[]>]: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, intunePfx, oflineDomainJoin, unknownFutureValue, privateAccess.
+Use the Prefer: include-unknown-enum-members request header to get the following values from this evolvable enum: privateAccess.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -730,6 +735,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -743,27 +749,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaOnPremisePublishingProfileAgentGroupAgent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgroupagent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgroupagent)

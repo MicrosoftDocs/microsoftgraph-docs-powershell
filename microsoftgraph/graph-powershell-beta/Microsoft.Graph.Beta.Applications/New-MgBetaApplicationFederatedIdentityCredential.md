@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationfederatedidentitycredential
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaApplicationFederatedIdentityCredential
 ---
@@ -13,12 +13,9 @@ title: New-MgBetaApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
 
-Create a new federatedIdentityCredential object for an application.
-By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
-Maximum of 20 objects can be added to an application.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)
+Create a new federatedIdentityCredential object for an agentIdentityBlueprint.
+By configuring a trust relationship between your Microsoft Entra agent identity blueprint registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
+Maximum of 20 objects can be added to an agentIdentityBlueprint.
 
 ## SYNTAX
 
@@ -73,22 +70,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new federatedIdentityCredential object for an application.
-By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
-Maximum of 20 objects can be added to an application.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+Create a new federatedIdentityCredential object for an agentIdentityBlueprint.
+By configuring a trust relationship between your Microsoft Entra agent identity blueprint registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
+Maximum of 20 objects can be added to an agentIdentityBlueprint.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -102,10 +90,6 @@ $params = @{
 }
 
 New-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaApplicationFederatedIdentityCredential Cmdlet.
-
 
 ## PARAMETERS
 
@@ -681,7 +665,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFederatedIdentityCredential>`: federatedIdentityCredential
+BODYPARAMETER <IMicrosoftGraphFederatedIdentityCredential>: federatedIdentityCredential
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -721,7 +705,7 @@ It has a limit of 600 characters.
 If subject is defined, claimsMatchingExpression must be null.
 Supports $filter (eq).
 
-CLAIMSMATCHINGEXPRESSION `<IMicrosoftGraphFederatedIdentityExpression>`: federatedIdentityExpression
+CLAIMSMATCHINGEXPRESSION <IMicrosoftGraphFederatedIdentityExpression>: federatedIdentityExpression
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LanguageVersion <Int32?>]: Indicated the language version to be used.
 Should always be set to 1.
@@ -729,7 +713,7 @@ Required.
   [Value <String>]: Indicates the configured expression.
 Required.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -756,6 +740,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -769,27 +754,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaApplicationFederatedIdentityCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationfederatedidentitycredential)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-post-federatedidentitycredentials?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationfederatedidentitycredential)
+- [](https://learn.microsoft.com/graph/api/agentidentityblueprint-post-federatedidentitycredentials?view=graph-rest-beta)

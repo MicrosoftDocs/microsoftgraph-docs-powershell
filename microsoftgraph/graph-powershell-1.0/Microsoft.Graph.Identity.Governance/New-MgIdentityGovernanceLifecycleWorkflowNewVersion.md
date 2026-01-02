@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflownewversion
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernanceLifecycleWorkflowNewVersion
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityGovernanceLifecycleWorkflowNewVersion
 ## SYNOPSIS
 
 Create a new version of the workflow object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 
 Create a new version of the workflow object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a new version of a workflow
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -132,12 +120,7 @@ $params = @{
 
 New-MgIdentityGovernanceLifecycleWorkflowNewVersion -WorkflowId $workflowId -BodyParameter $params
 
-```
-This example will create a new version of a workflow
-
-### Example 2: Create a new version of a task with customized email
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -199,10 +182,6 @@ $params = @{
 
 New-MgIdentityGovernanceLifecycleWorkflowNewVersion -WorkflowId $workflowId -BodyParameter $params
 
-```
-This example will create a new version of a task with customized email
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -234,7 +213,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -590,7 +569,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Fqilt9IdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceCreatenewversionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Fqilt9IdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceCreatenewversionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Workflow <IMicrosoftGraphIdentityGovernanceWorkflow>]: workflow
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1411,7 +1390,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1548,6 +1527,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
             [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
             [FormatName <String>]: For a list of possible values see formatName values.
+      [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+        [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+        [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+        [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+        [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+        [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+        [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+        [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+        [ProvisioningType <String>]: cloudPcProvisioningType
+        [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+        [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+        [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
       [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -2923,6 +2950,14 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [DisplayName <String>]: The name of the role.
+          [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
         [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3706,6 +3741,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+          [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [IsCloudManaged <Boolean?>]: 
           [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -4406,7 +4446,8 @@ Nullable.
           [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
         [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -4521,8 +4562,8 @@ Read-only.
             [Setting <String>]: The setting that is being reported
             [SettingName <String>]: Localized/user friendly setting name that is being reported
             [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-              [DisplayName <String>]: Not yet documented
-              [Id <String>]: Not yet documented
+              [DisplayName <String>]: 
+              [Id <String>]: 
               [SourceType <String>]: settingSourceType
             [State <String>]: complianceStatus
             [UserEmail <String>]: UserEmail
@@ -4587,7 +4628,17 @@ Read-only.
           [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
           [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
           [TpmVersion <String>]: The security version number of the Boot Application
-          [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+          [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
           [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
         [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
         [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -4608,6 +4659,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
         [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
         [ManagementAgent <ManagementAgentType?>]: managementAgentType
+        [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
         [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -5617,8 +5669,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5672,16 +5724,37 @@ Value is null if task execution has not yet started.Supports $filter(lt, le, gt,
         [Subject <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
         [Task <IMicrosoftGraphIdentityGovernanceTask>]: task
     [DeletedDateTime <DateTime?>]: When the workflow was deleted.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
-    [ExecutionScope <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]: The unique identifier of the Microsoft Entra identity that last modified the workflow object.
+    [ExecutionScope <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]: The list of users that meet the workflowExecutionConditions of a workflow.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [CompletedDateTime <DateTime?>]: The date time that the workflow execution for a user completed.
 Value is null if the workflow hasn't completed.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
       [FailedTasksCount <Int32?>]: The number of tasks that failed in the workflow execution.
       [ProcessingStatus <String>]: lifecycleWorkflowProcessingStatus
+      [ReprocessedRuns <IMicrosoftGraphIdentityGovernanceRun[]>]: The related reprocessed workflow run.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [ActivatedOnScope <IMicrosoftGraphIdentityGovernanceActivationScope>]: activationScope
+          [(Any) <Object>]: This indicates any property can be added to this object.
+        [CompletedDateTime <DateTime?>]: The date time that the run completed.
+Value is null if the workflow hasn't completed.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+        [FailedTasksCount <Int32?>]: The number of tasks that failed in the run execution.
+        [FailedUsersCount <Int32?>]: The number of users that failed in the run execution.
+        [LastUpdatedDateTime <DateTime?>]: The datetime that the run was last updated.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+        [ProcessingStatus <String>]: lifecycleWorkflowProcessingStatus
+        [ReprocessedRuns <IMicrosoftGraphIdentityGovernanceRun[]>]: The related reprocessed workflow run.
+        [ScheduledDateTime <DateTime?>]: The date time that the run is scheduled to be executed for a workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+        [StartedDateTime <DateTime?>]: The date time that the run execution started.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+        [SuccessfulUsersCount <Int32?>]: The number of successfully completed users in the run.
+        [TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]: The related taskProcessingResults.
+        [TotalTasksCount <Int32?>]: 
+        [TotalUnprocessedTasksCount <Int32?>]: The total number of unprocessed tasks in the run execution.
+        [TotalUsersCount <Int32?>]: The total number of users in the workflow execution.
+        [UserProcessingResults <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]: The associated individual user execution.
+        [WorkflowExecutionType <String>]: workflowExecutionType
       [ScheduledDateTime <DateTime?>]: The date time that the workflow is scheduled to be executed for a user.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
       [StartedDateTime <DateTime?>]: The date time that the workflow execution started.
-Value is null if the workflow execution has not started.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+Value is null if the workflow execution hasn't started.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
       [Subject <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
       [TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]: The associated individual task execution.
       [TotalTasksCount <Int32?>]: The total number of tasks that in the workflow execution.
@@ -5692,23 +5765,6 @@ Value is null if the workflow execution has not started.Supports $filter(lt, le,
     [NextScheduleRunDateTime <DateTime?>]: The date time when the workflow is expected to run next based on the schedule interval, if there are any users matching the execution conditions.
 Supports $filter(lt,gt) and $orderby.
     [Runs <IMicrosoftGraphIdentityGovernanceRun[]>]: Workflow runs.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [CompletedDateTime <DateTime?>]: The date time that the run completed.
-Value is null if the workflow hasn't completed.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
-      [FailedTasksCount <Int32?>]: The number of tasks that failed in the run execution.
-      [FailedUsersCount <Int32?>]: The number of users that failed in the run execution.
-      [LastUpdatedDateTime <DateTime?>]: The datetime that the run was last updated.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
-      [ProcessingStatus <String>]: lifecycleWorkflowProcessingStatus
-      [ScheduledDateTime <DateTime?>]: The date time that the run is scheduled to be executed for a workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
-      [StartedDateTime <DateTime?>]: The date time that the run execution started.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
-      [SuccessfulUsersCount <Int32?>]: The number of successfully completed users in the run.
-      [TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]: The related taskProcessingResults.
-      [TotalTasksCount <Int32?>]: 
-      [TotalUnprocessedTasksCount <Int32?>]: The total number of unprocessed tasks in the run execution.
-      [TotalUsersCount <Int32?>]: The total number of users in the workflow execution.
-      [UserProcessingResults <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]: The associated individual user execution.
-      [WorkflowExecutionType <String>]: workflowExecutionType
     [TaskReports <IMicrosoftGraphIdentityGovernanceTaskReport[]>]: Represents the aggregation of task execution data for tasks within a workflow object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -5758,7 +5814,7 @@ Can't be true for a disabled workflow (where isEnabled is false).
       [Tasks <IMicrosoftGraphIdentityGovernanceTask[]>]: The tasks in the workflow.
       [VersionNumber <Int32?>]: The version of the workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -5804,6 +5860,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [PrivilegedAccessGroupEligibilityScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupEligibilityScheduleInstance
   [PrivilegedAccessGroupEligibilityScheduleRequestId <String>]: The unique identifier of privilegedAccessGroupEligibilityScheduleRequest
   [RunId <String>]: The unique identifier of run
+  [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
@@ -5827,7 +5884,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-WORKFLOW `<IMicrosoftGraphIdentityGovernanceWorkflow>`: workflow
+WORKFLOW <IMicrosoftGraphIdentityGovernanceWorkflow>: workflow
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Category <String>]: lifecycleWorkflowCategory
   [CreatedBy <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
@@ -6646,7 +6703,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -6783,6 +6840,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
           [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
           [FormatName <String>]: For a list of possible values see formatName values.
+    [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+      [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+      [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+      [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+      [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+      [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+      [ProvisioningType <String>]: cloudPcProvisioningType
+      [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+      [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+      [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
     [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -8158,6 +8263,14 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [DisplayName <String>]: The name of the role.
+        [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
       [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -8941,6 +9054,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+        [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [IsCloudManaged <Boolean?>]: 
         [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -9641,7 +9759,8 @@ Nullable.
         [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
       [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -9756,8 +9875,8 @@ Read-only.
           [Setting <String>]: The setting that is being reported
           [SettingName <String>]: Localized/user friendly setting name that is being reported
           [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-            [DisplayName <String>]: Not yet documented
-            [Id <String>]: Not yet documented
+            [DisplayName <String>]: 
+            [Id <String>]: 
             [SourceType <String>]: settingSourceType
           [State <String>]: complianceStatus
           [UserEmail <String>]: UserEmail
@@ -9822,7 +9941,17 @@ Read-only.
         [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
         [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
         [TpmVersion <String>]: The security version number of the Boot Application
-        [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+        [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
         [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
       [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
       [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -9843,6 +9972,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
       [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
       [ManagementAgent <ManagementAgentType?>]: managementAgentType
+      [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
       [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -10852,8 +10982,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -10907,16 +11037,37 @@ Value is null if task execution has not yet started.Supports $filter(lt, le, gt,
       [Subject <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
       [Task <IMicrosoftGraphIdentityGovernanceTask>]: task
   [DeletedDateTime <DateTime?>]: When the workflow was deleted.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
-  [ExecutionScope <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]: The unique identifier of the Microsoft Entra identity that last modified the workflow object.
+  [ExecutionScope <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]: The list of users that meet the workflowExecutionConditions of a workflow.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [CompletedDateTime <DateTime?>]: The date time that the workflow execution for a user completed.
 Value is null if the workflow hasn't completed.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
     [FailedTasksCount <Int32?>]: The number of tasks that failed in the workflow execution.
     [ProcessingStatus <String>]: lifecycleWorkflowProcessingStatus
+    [ReprocessedRuns <IMicrosoftGraphIdentityGovernanceRun[]>]: The related reprocessed workflow run.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [ActivatedOnScope <IMicrosoftGraphIdentityGovernanceActivationScope>]: activationScope
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [CompletedDateTime <DateTime?>]: The date time that the run completed.
+Value is null if the workflow hasn't completed.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+      [FailedTasksCount <Int32?>]: The number of tasks that failed in the run execution.
+      [FailedUsersCount <Int32?>]: The number of users that failed in the run execution.
+      [LastUpdatedDateTime <DateTime?>]: The datetime that the run was last updated.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+      [ProcessingStatus <String>]: lifecycleWorkflowProcessingStatus
+      [ReprocessedRuns <IMicrosoftGraphIdentityGovernanceRun[]>]: The related reprocessed workflow run.
+      [ScheduledDateTime <DateTime?>]: The date time that the run is scheduled to be executed for a workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+      [StartedDateTime <DateTime?>]: The date time that the run execution started.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+      [SuccessfulUsersCount <Int32?>]: The number of successfully completed users in the run.
+      [TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]: The related taskProcessingResults.
+      [TotalTasksCount <Int32?>]: 
+      [TotalUnprocessedTasksCount <Int32?>]: The total number of unprocessed tasks in the run execution.
+      [TotalUsersCount <Int32?>]: The total number of users in the workflow execution.
+      [UserProcessingResults <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]: The associated individual user execution.
+      [WorkflowExecutionType <String>]: workflowExecutionType
     [ScheduledDateTime <DateTime?>]: The date time that the workflow is scheduled to be executed for a user.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
     [StartedDateTime <DateTime?>]: The date time that the workflow execution started.
-Value is null if the workflow execution has not started.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+Value is null if the workflow execution hasn't started.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
     [Subject <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
     [TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]: The associated individual task execution.
     [TotalTasksCount <Int32?>]: The total number of tasks that in the workflow execution.
@@ -10927,23 +11078,6 @@ Value is null if the workflow execution has not started.Supports $filter(lt, le,
   [NextScheduleRunDateTime <DateTime?>]: The date time when the workflow is expected to run next based on the schedule interval, if there are any users matching the execution conditions.
 Supports $filter(lt,gt) and $orderby.
   [Runs <IMicrosoftGraphIdentityGovernanceRun[]>]: Workflow runs.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [CompletedDateTime <DateTime?>]: The date time that the run completed.
-Value is null if the workflow hasn't completed.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
-    [FailedTasksCount <Int32?>]: The number of tasks that failed in the run execution.
-    [FailedUsersCount <Int32?>]: The number of users that failed in the run execution.
-    [LastUpdatedDateTime <DateTime?>]: The datetime that the run was last updated.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
-    [ProcessingStatus <String>]: lifecycleWorkflowProcessingStatus
-    [ScheduledDateTime <DateTime?>]: The date time that the run is scheduled to be executed for a workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
-    [StartedDateTime <DateTime?>]: The date time that the run execution started.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
-    [SuccessfulUsersCount <Int32?>]: The number of successfully completed users in the run.
-    [TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]: The related taskProcessingResults.
-    [TotalTasksCount <Int32?>]: 
-    [TotalUnprocessedTasksCount <Int32?>]: The total number of unprocessed tasks in the run execution.
-    [TotalUsersCount <Int32?>]: The total number of users in the workflow execution.
-    [UserProcessingResults <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]: The associated individual user execution.
-    [WorkflowExecutionType <String>]: workflowExecutionType
   [TaskReports <IMicrosoftGraphIdentityGovernanceTaskReport[]>]: Represents the aggregation of task execution data for tasks within a workflow object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -10996,27 +11130,5 @@ Can't be true for a disabled workflow (where isEnabled is false).
 
 ## RELATED LINKS
 
-- [New-MgIdentityGovernanceLifecycleWorkflowNewVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflownewversion)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-createnewversion?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflownewversion)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-createnewversion?view=graph-rest-1.0)

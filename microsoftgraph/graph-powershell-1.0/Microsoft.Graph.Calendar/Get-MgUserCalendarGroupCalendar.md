@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcalendar
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserCalendarGroupCalendar
 ---
@@ -17,9 +17,6 @@ The calendars in the calendar group.
 Navigation property.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,23 +44,13 @@ Navigation property.
 Read-only.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read.Shared, Calendars.Read,  |
-| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read.Shared, Calendars.Read,  |
-| Application | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
-
 ## EXAMPLES
-### Example 1: Using the Get-MgUserCalendarGroupCalendar Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Calendar
 # A UPN can also be used as -UserId.
 Get-MgUserCalendarGroupCalendar -UserId $userId -CalendarGroupId $calendarGroupId
-```
-This example shows how to use the Get-MgUserCalendarGroupCalendar Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -517,26 +504,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgUserCalendarGroupCalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcalendar)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcalendar)

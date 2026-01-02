@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupbyuniquename
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgGroupByUniqueName
 ---
@@ -14,13 +14,10 @@ title: Remove-MgGroupByUniqueName
 ## SYNOPSIS
 
 Delete a group.
-When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.
+When deleted, both Microsoft 365 and security groups are moved to a temporary container and can be restored within 30 days.
 After that time, they're permanently deleted.
-This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
+This doesn't apply to Distribution groups which are permanently deleted immediately.
 To learn more, see deletedItems.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupByUniqueName?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,10 +49,20 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a group.
-When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.
+When deleted, both Microsoft 365 and security groups are moved to a temporary container and can be restored within 30 days.
 After that time, they're permanently deleted.
-This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
+This doesn't apply to Distribution groups which are permanently deleted immediately.
 To learn more, see deletedItems.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -387,7 +394,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -411,28 +418,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgGroupByUniqueName](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupbyuniquename)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupbyuniquename)
+- [](https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-1.0)

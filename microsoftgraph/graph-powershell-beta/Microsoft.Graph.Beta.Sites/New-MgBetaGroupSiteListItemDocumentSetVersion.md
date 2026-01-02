@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelistitemdocumentsetversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupSiteListItemDocumentSetVersion
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaGroupSiteListItemDocumentSetVersion
 ## SYNOPSIS
 
 Create new navigation property to documentSetVersions for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to documentSetVersions for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -796,7 +803,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDocumentSetVersion>`: documentSetVersion
+BODYPARAMETER <IMicrosoftGraphDocumentSetVersion>: documentSetVersion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -807,9 +814,10 @@ Read-only.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [LastModifiedDateTime <DateTime?>]: Date and time when the version was last modified.
@@ -834,18 +842,19 @@ Read-only.
   [ShouldCaptureMinorVersion <Boolean?>]: If true, minor versions of items are also captured; otherwise, only major versions are captured.
 The default value is false.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -882,6 +891,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [OnenotePageId <String>]: The unique identifier of onenotePage
   [OnenoteResourceId <String>]: The unique identifier of onenoteResource
   [OnenoteSectionId <String>]: The unique identifier of onenoteSection
+  [OperationId <String>]: Usage: operationId='{operationId}'
   [PageTemplateId <String>]: The unique identifier of pageTemplate
   [Path <String>]: Usage: path='{path}'
   [PermissionId <String>]: The unique identifier of permission
@@ -911,27 +921,29 @@ ITEMS <IMicrosoftGraphDocumentSetVersionItem[]>: Items within the document set t
   [Title <String>]: The title of the item.
   [VersionId <String>]: The version ID of the item.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+PUBLICATION <IMicrosoftGraphPublicationFacet>: publicationFacet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CheckedOutBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [Level <String>]: The state of publication for this document.
@@ -943,27 +955,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupSiteListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelistitemdocumentsetversion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelistitemdocumentsetversion)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 12/05/2025
+ms.date: 01/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserDefaultCalendar
 ---
@@ -15,9 +15,6 @@ title: Get-MgUserDefaultCalendar
 
 The user's primary calendar.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendar?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,18 +47,13 @@ The user's primary calendar.
 Read-only.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Calendar
 
 # A UPN can also be used as -UserId.
 Get-MgUserDefaultCalendar -UserId $userId
-```
-This example shows how to use the Get-MgUserDefaultCalendar Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -351,42 +343,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
   [CalendarPermissionId <String>]: The unique identifier of calendarPermission
+  [CheckInClaimCalendarEventId <String>]: The unique identifier of checkInClaim
   [EventId <String>]: The unique identifier of event
   [ExtensionId <String>]: The unique identifier of extension
+  [FixtureMapId <String>]: The unique identifier of fixtureMap
+  [FootprintMapId <String>]: The unique identifier of footprintMap
   [GroupId <String>]: The unique identifier of group
+  [LevelMapId <String>]: The unique identifier of levelMap
   [PlaceId <String>]: The unique identifier of place
   [RoomId <String>]: The unique identifier of room
+  [SectionMapId <String>]: The unique identifier of sectionMap
+  [UnitMapId <String>]: The unique identifier of unitMap
   [User <String>]: Usage: User='{User}'
   [UserId <String>]: The unique identifier of user
+  [WorkspaceId <String>]: The unique identifier of workspace
 
 
 ## RELATED LINKS
 
-- [Get-MgUserDefaultCalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar)
