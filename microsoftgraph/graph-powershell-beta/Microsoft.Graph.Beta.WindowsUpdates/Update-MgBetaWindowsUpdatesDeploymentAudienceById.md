@@ -87,8 +87,9 @@ You can also use the method updateAudience to update the deploymentAudience.
 | Application | WindowsUpdates.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
@@ -109,6 +110,10 @@ removeExclusions = @(
 }
 
 Update-MgBetaWindowsUpdatesDeploymentAudienceById -DeploymentId $deploymentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaWindowsUpdatesDeploymentAudienceById Cmdlet.
+
 
 ## PARAMETERS
 

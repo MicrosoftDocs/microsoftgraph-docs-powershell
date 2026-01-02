@@ -60,16 +60,6 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -538,6 +528,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelretainedmessage)
 - [](https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-beta)
+
 
 
 

@@ -59,12 +59,17 @@ This cmdlet has the following aliases,
 Retrieve a list of monthly print usage summaries, grouped by user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportMonthlyPrintUsageByUser
+
+```
+This example shows how to use the Get-MgReportMonthlyPrintUsageByUser Cmdlet.
+
 
 ## PARAMETERS
 

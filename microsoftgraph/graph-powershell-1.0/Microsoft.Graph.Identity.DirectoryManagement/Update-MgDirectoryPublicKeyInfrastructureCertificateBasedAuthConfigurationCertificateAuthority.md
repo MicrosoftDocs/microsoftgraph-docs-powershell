@@ -91,16 +91,6 @@ Update certificateAuthorityDetail
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PublicKeyInfrastructure.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -903,6 +893,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
 - [](https://learn.microsoft.com/graph/api/certificateauthoritydetail-update?view=graph-rest-1.0)
+
 
 
 
