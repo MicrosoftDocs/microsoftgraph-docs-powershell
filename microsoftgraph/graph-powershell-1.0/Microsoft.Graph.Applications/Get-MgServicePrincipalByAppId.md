@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalByAppId
 
 Retrieve the properties and relationships of a servicePrincipal object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

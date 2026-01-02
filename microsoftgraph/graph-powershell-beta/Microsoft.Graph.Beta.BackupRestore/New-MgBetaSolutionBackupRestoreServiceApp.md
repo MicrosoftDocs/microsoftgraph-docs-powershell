@@ -15,6 +15,9 @@ title: New-MgBetaSolutionBackupRestoreServiceApp
 
 Create a new serviceApp.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreServiceApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

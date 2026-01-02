@@ -15,6 +15,9 @@ title: Get-MgPrintPrinterJobTaskCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJobTaskCount](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobTaskCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

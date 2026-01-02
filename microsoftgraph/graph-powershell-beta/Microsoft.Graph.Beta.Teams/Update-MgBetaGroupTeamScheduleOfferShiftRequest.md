@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamScheduleOfferShiftRequest
 
 Update the navigation property offerShiftRequests in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -16,6 +16,9 @@ title: Get-MgUserActivityHistoryItem
 Optional.
 NavigationProperty/Containment; navigation property to the activity's historyItems.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivityHistoryItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

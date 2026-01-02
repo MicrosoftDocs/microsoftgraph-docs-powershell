@@ -15,6 +15,9 @@ title: Get-MgBetaPlannerBucket
 
 Retrieve the properties and relationships of a plannerBucket object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucket?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

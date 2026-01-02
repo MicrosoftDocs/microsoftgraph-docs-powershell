@@ -15,6 +15,9 @@ title: New-MgDirectoryDeviceLocalCredential
 
 Create new navigation property to deviceLocalCredentials for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryDeviceLocalCredential?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
