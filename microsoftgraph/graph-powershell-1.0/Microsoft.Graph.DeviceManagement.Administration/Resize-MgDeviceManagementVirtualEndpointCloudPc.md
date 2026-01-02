@@ -80,16 +80,6 @@ Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -534,6 +524,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/resize-mgdevicemanagementvirtualendpointcloudpc)
 - [](https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-1.0)
+
 
 
 

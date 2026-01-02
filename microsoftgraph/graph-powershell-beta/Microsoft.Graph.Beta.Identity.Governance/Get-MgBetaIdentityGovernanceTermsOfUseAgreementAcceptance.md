@@ -92,16 +92,6 @@ This cmdlet has the following aliases,
 
 Represents the current status of a user's response to a company's customizable terms of use agreement.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AgreementAcceptanceId
@@ -763,6 +753,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreementacceptance)
 - [](https://learn.microsoft.com/graph/api/agreement-list-acceptances?view=graph-rest-beta)
+
 
 
 
