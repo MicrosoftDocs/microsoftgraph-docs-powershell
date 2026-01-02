@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactbulkadditionrequest
@@ -556,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
+INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -591,3 +591,25 @@ INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactbulkadditionrequest)
 - [](https://learn.microsoft.com/graph/api/driverestoreartifactsbulkadditionrequest-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-list-driverestoreartifactsbulkadditionrequests?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
