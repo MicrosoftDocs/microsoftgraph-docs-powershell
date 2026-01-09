@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 01/09/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIdentity
 ---
@@ -15,9 +15,6 @@ title: Update-MgSecurityIdentity
 
 Update the navigation property identities in security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentity](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentity?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -25,6 +22,9 @@ Update the navigation property identities in security
 ```
 Update-MgSecurityIdentity [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-HealthIssues <IMicrosoftGraphSecurityHealthIssue[]>] [-Id <string>]
+ [-IdentityAccounts <IMicrosoftGraphSecurityIdentityAccounts[]>]
+ [-SensorCandidateActivationConfiguration <IMicrosoftGraphSecuritySensorCandidateActivationConfiguration>]
+ [-SensorCandidates <IMicrosoftGraphSecuritySensorCandidate[]>]
  [-Sensors <IMicrosoftGraphSecuritySensor[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -49,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property identities in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -245,6 +255,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IdentityAccounts
+
+Represents an identity's details in the context of Microsoft Defender for Identity.
+To construct, see NOTES section for IDENTITYACCOUNTS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIdentityAccounts[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -330,6 +362,50 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SensorCandidateActivationConfiguration
+
+sensorCandidateActivationConfiguration
+To construct, see NOTES section for SENSORCANDIDATEACTIVATIONCONFIGURATION properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySensorCandidateActivationConfiguration
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -SensorCandidates
+
+Represents Microsoft Defender for Identity sensors that are ready to be activated.
+To construct, see NOTES section for SENSORCANDIDATES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySensorCandidate[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Sensors
 
 Represents a customer's Microsoft Defender for Identity sensors.
@@ -404,7 +480,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIdentityContainer>`: identityContainer
+BODYPARAMETER <IMicrosoftGraphSecurityIdentityContainer>: identityContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -433,6 +509,31 @@ These commands run in sequence for the single recommended fix.
     [SensorDnsNames <String[]>]: A list of the DNS names of the sensors the health issue is related to.
     [Severity <String>]: healthIssueSeverity
     [Status <String>]: healthIssueStatus
+  [IdentityAccounts <IMicrosoftGraphSecurityIdentityAccounts[]>]: Represents an identity's details in the context of Microsoft Defender for Identity.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Accounts <IMicrosoftGraphSecurityAccount[]>]: Collection of accounts of the identity in different identity providers.
+      [Actions <String[]>]: List of the type of action.
+The possible values are: disable, enable, forcePasswordReset, revokeAllSessions, requireUserToSignInAgain, markUserAsCompromised, unknownFutureValue.
+      [Identifier <String>]: The account ID.
+      [IdentityProvider <String>]: identityProvider
+    [CloudSecurityIdentifier <String>]: The cloud security identifier of the identityAccount.
+    [DisplayName <String>]: The  Active Directory display name of the identityAccount.
+    [Domain <String>]: The Active Directory domain name of the identityAccount.
+    [IsEnabled <Boolean?>]: Boolean indicating if the identityAccounts is enabled.
+    [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier of the identityAccount.
+  [SensorCandidateActivationConfiguration <IMicrosoftGraphSecuritySensorCandidateActivationConfiguration>]: sensorCandidateActivationConfiguration
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ActivationMode <String>]: sensorCandidateActivationMode
+  [SensorCandidates <IMicrosoftGraphSecuritySensorCandidate[]>]: Represents Microsoft Defender for Identity sensors that are ready to be activated.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ComputerDnsName <String>]: The DNS name of the computer associated with the sensor.
+    [LastSeenDateTime <DateTime?>]: The date and time when the sensor was last seen.
+    [SenseClientVersion <String>]: The version of the Defender for Identity sensor client.
+Supports $filter (eq).
   [Sensors <IMicrosoftGraphSecuritySensor[]>]: Represents a customer's Microsoft Defender for Identity sensors.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -483,6 +584,34 @@ These commands run in sequence for the single recommended fix.
   [SensorDnsNames <String[]>]: A list of the DNS names of the sensors the health issue is related to.
   [Severity <String>]: healthIssueSeverity
   [Status <String>]: healthIssueStatus
+
+IDENTITYACCOUNTS <IMicrosoftGraphSecurityIdentityAccounts[]>: Represents an identity's details in the context of Microsoft Defender for Identity.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Accounts <IMicrosoftGraphSecurityAccount[]>]: Collection of accounts of the identity in different identity providers.
+    [Actions <String[]>]: List of the type of action.
+The possible values are: disable, enable, forcePasswordReset, revokeAllSessions, requireUserToSignInAgain, markUserAsCompromised, unknownFutureValue.
+    [Identifier <String>]: The account ID.
+    [IdentityProvider <String>]: identityProvider
+  [CloudSecurityIdentifier <String>]: The cloud security identifier of the identityAccount.
+  [DisplayName <String>]: The  Active Directory display name of the identityAccount.
+  [Domain <String>]: The Active Directory domain name of the identityAccount.
+  [IsEnabled <Boolean?>]: Boolean indicating if the identityAccounts is enabled.
+  [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier of the identityAccount.
+
+SENSORCANDIDATEACTIVATIONCONFIGURATION <IMicrosoftGraphSecuritySensorCandidateActivationConfiguration>: sensorCandidateActivationConfiguration
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ActivationMode <String>]: sensorCandidateActivationMode
+
+SENSORCANDIDATES <IMicrosoftGraphSecuritySensorCandidate[]>: Represents Microsoft Defender for Identity sensors that are ready to be activated.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ComputerDnsName <String>]: The DNS name of the computer associated with the sensor.
+  [LastSeenDateTime <DateTime?>]: The date and time when the sensor was last seen.
+  [SenseClientVersion <String>]: The version of the Defender for Identity sensor client.
+Supports $filter (eq).
 
 SENSORS <IMicrosoftGraphSecuritySensor[]>: Represents a customer's Microsoft Defender for Identity sensors.
   [Id <String>]: The unique identifier for an entity.
@@ -536,27 +665,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgSecurityIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity)

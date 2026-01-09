@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamtagmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 12/05/2025
+ms.date: 01/09/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaTeamTagMember
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaTeamTagMember
 ## SYNOPSIS
 
 Delete a member from a standard tag in a team.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamTagMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 
 Delete a member from a standard tag in a team.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamworkTag.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamworkTag.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -TeamworkTagMemberId $teamworkTagMemberId
-
-```
-This example shows how to use the Remove-MgBetaTeamTagMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -442,7 +426,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -492,27 +476,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaTeamTagMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamtagmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworktagmember-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamtagmember)
+- [](https://learn.microsoft.com/graph/api/teamworktagmember-delete?view=graph-rest-beta)

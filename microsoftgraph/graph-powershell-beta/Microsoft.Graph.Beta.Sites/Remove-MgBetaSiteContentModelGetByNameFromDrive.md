@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontentmodelgetbynamefromdrive
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 12/05/2025
+ms.date: 01/09/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSiteContentModelGetByNameFromDrive
 ---
@@ -70,6 +70,16 @@ This cmdlet has the following aliases,
 
 Remove a contentModel from a SharePoint document library.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -101,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -172,7 +182,7 @@ HelpMessage: ''
 
 ### -DriveId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -504,11 +514,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsRz8LlpSitesSiteIdContentmodelsMicrosoftGraphGetbynameModelnameMicrosoftGraphRemovefromdrivePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsRz8LlpSitesSiteIdContentmodelsMicrosoftGraphGetbynameModelnameMicrosoftGraphRemovefromdrivePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -545,6 +555,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [OnenotePageId <String>]: The unique identifier of onenotePage
   [OnenoteResourceId <String>]: The unique identifier of onenoteResource
   [OnenoteSectionId <String>]: The unique identifier of onenoteSection
+  [OperationId <String>]: Usage: operationId='{operationId}'
   [PageTemplateId <String>]: The unique identifier of pageTemplate
   [Path <String>]: Usage: path='{path}'
   [PermissionId <String>]: The unique identifier of permission
@@ -572,28 +583,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaSiteContentModelGetByNameFromDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontentmodelgetbynamefromdrive)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contentmodel-removefromdrive?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontentmodelgetbynamefromdrive)
+- [](https://learn.microsoft.com/graph/api/contentmodel-removefromdrive?view=graph-rest-beta)

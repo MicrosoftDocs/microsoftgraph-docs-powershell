@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarregistrationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 12/05/2025
+ms.date: 01/09/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaVirtualEventWebinarRegistrationConfiguration
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaVirtualEventWebinarRegistrationConfiguration
 ## SYNOPSIS
 
 Update the navigation property registrationConfiguration in solutions
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventWebinarRegistrationConfiguration](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarRegistrationConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property registrationConfiguration in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -323,7 +330,7 @@ HelpMessage: ''
 
 ### -IsManualApprovalEnabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -350,7 +357,7 @@ HelpMessage: ''
 
 ### -IsWaitlistEnabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -598,7 +605,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>`: virtualEventWebinarRegistrationConfiguration
+BODYPARAMETER <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>: virtualEventWebinarRegistrationConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Capacity <Int32?>]: Total capacity of the virtual event.
   [Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>]: Registration questions.
@@ -613,7 +620,7 @@ Read-only.
   [IsManualApprovalEnabled <Boolean?>]: 
   [IsWaitlistEnabled <Boolean?>]: 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -645,27 +652,4 @@ The default value is false.
 
 ## RELATED LINKS
 
-- [Update-MgBetaVirtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarregistrationconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarregistrationconfiguration)

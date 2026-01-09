@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserbyuserprincipalname
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 12/05/2025
+ms.date: 01/09/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserByUserPrincipalName
 ---
@@ -14,13 +14,11 @@ title: Remove-MgBetaUserByUserPrincipalName
 ## SYNOPSIS
 
 Delete a user object.
- When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them.
+If the ID specified in the request URL is that of an agentUser object, this request deletes the agent user.
+When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them.
 The user is also restored to any groups they were a member of.
 After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
 To manage the deleted user object, see deletedItems.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Users/Remove-MgUserByUserPrincipalName?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,10 +50,21 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a user object.
- When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them.
+If the ID specified in the request URL is that of an agentUser object, this request deletes the agent user.
+When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them.
 The user is also restored to any groups they were a member of.
 After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
 To manage the deleted user object, see deletedItems.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -387,7 +396,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -420,28 +429,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserbyuserprincipalname)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserbyuserprincipalname)
+- [](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-beta)

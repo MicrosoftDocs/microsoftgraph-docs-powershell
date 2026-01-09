@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 12/05/2025
+ms.date: 01/09/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaReportSlaAzureAdAuthentication
 ---
@@ -46,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property azureADAuthentication in reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -386,7 +396,7 @@ Values are truncated, not rounded, so the actual value is always equal to or hig
 Values are expressed as a percentage of availability for the tenant.
   [StartDate <DateTime?>]: The start date for the calendar month for which SLA attainment is measured.
 
-BODYPARAMETER `<IMicrosoftGraphAzureAdAuthentication>`: azureADAuthentication
+BODYPARAMETER <IMicrosoftGraphAzureAdAuthentication>: azureADAuthentication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -400,27 +410,4 @@ Values are expressed as a percentage of availability for the tenant.
 
 ## RELATED LINKS
 
-- [Update-MgBetaReportSlaAzureAdAuthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserbyuserprincipalname
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 12/05/2025
+ms.date: 01/09/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserByUserPrincipalName
 ---
@@ -13,15 +13,13 @@ title: Get-MgBetaUserByUserPrincipalName
 
 ## SYNOPSIS
 
-Retrieve the properties and relationships of user object.
-This operation returns by default only a subset of the more commonly used properties for each user.
+Retrieve the properties and relationships of a user object.
+If the ID specified is that of an agentUser, the API returns the properties of the agentUser object.
+This operation returns by default only a subset of the more commonly used properties.
 These default properties are noted in the Properties section.
-To get properties that are not returned by default, do a GET operation for the user and specify the properties in a $select OData query option.
+To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
 Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Users/Get-MgUserByUserPrincipalName?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,20 +48,23 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Retrieve the properties and relationships of user object.
-This operation returns by default only a subset of the more commonly used properties for each user.
+Retrieve the properties and relationships of a user object.
+If the ID specified is that of an agentUser, the API returns the properties of the agentUser object.
+This operation returns by default only a subset of the more commonly used properties.
 These default properties are noted in the Properties section.
-To get properties that are not returned by default, do a GET operation for the user and specify the properties in a $select OData query option.
+To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
 Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadBasic.All, User.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, User.Read.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadBasic.All, DeviceManagementApps.ReadWrite.All, User.ReadWrite.All, User.Read.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementServiceConfig.ReadWrite.All, User.ReadWrite.CrossCloud, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementServiceConfig.Read.All, DeviceManagementApps.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -353,7 +354,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -386,28 +387,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserbyuserprincipalname)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserbyuserprincipalname)
+- [](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-beta)

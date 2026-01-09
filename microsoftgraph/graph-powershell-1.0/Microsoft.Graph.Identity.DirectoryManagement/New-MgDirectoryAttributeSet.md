@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 01/09/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDirectoryAttributeSet
 ---
@@ -14,9 +14,6 @@ title: New-MgDirectoryAttributeSet
 ## SYNOPSIS
 
 Create a new attributeSet object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,18 +46,9 @@ This cmdlet has the following aliases,
 
 Create a new attributeSet object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CustomSecAttributeDefinition.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CustomSecAttributeDefinition.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -71,10 +59,6 @@ $params = @{
 }
 
 New-MgDirectoryAttributeSet -BodyParameter $params
-
-```
-This example shows how to use the New-MgDirectoryAttributeSet Cmdlet.
-
 
 ## PARAMETERS
 
@@ -433,7 +417,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAttributeSet>`: attributeSet
+BODYPARAMETER <IMicrosoftGraphAttributeSet>: attributeSet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -448,27 +432,5 @@ Can be changed later.
 
 ## RELATED LINKS
 
-- [New-MgDirectoryAttributeSet](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset)
+- [](https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0)

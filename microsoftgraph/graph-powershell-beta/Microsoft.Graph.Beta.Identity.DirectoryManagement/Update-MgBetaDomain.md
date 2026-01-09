@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 01/09/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDomain
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaDomain
 
 Update the properties of domain object.
 Only verified domains can be updated.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -90,18 +87,9 @@ This cmdlet has the following aliases,
 Update the properties of domain object.
 Only verified domains can be updated.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Domain.ReadWrite.All, Directory.AccessAsUser.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Domain.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -115,10 +103,6 @@ $params = @{
 }
 
 Update-MgBetaDomain -DomainId $domainId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDomain Cmdlet.
-
 
 ## PARAMETERS
 
@@ -156,7 +140,7 @@ The value is either Managed or Federated.
 Managed indicates a cloud managed domain where Microsoft Entra ID performs user authentication.
 Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services.
 Not nullable.
-To update this property in delegated scenarios, the calling app must be assigned the Directory.AccessAsUser.All delegated permission.
+To update this property in delegated scenarios, the calling app must be assigned the Domain-InternalFederation.ReadWrite.All permission.
 
 ```yaml
 Type: System.String
@@ -834,7 +818,7 @@ HelpMessage: ''
 
 ### -SharedEmailDomainInvitations
 
-
+.
 To construct, see NOTES section for SHAREDEMAILDOMAININVITATIONS properties and create a hash table.
 
 ```yaml
@@ -1005,7 +989,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDomain>`: domain
+BODYPARAMETER <IMicrosoftGraphDomain>: domain
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1014,7 +998,7 @@ The value is either Managed or Federated.
 Managed indicates a cloud managed domain where Microsoft Entra ID performs user authentication.
 Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services.
 Not nullable.
- To update this property in delegated scenarios, the calling app must be assigned the Directory.AccessAsUser.All delegated permission.
+ To update this property in delegated scenarios, the calling app must be assigned the Domain-InternalFederation.ReadWrite.All permission.
   [AvailabilityStatus <String>]: This property is always null except when the verify action is used.
 When the verify action is used, a domain entity is returned in the response.
 The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
@@ -1170,7 +1154,7 @@ For a list of statuses, see certificateUpdateResult status.
     [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -1208,6 +1192,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrgContactId <String>]: The unique identifier of orgContact
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
+  [OrganizationalBrandingThemeId <String>]: The unique identifier of organizationalBrandingTheme
+  [OrganizationalBrandingThemeLocalizationLocale <String>]: The unique identifier of organizationalBrandingThemeLocalization
   [OutboundSharedUserProfileUserId <String>]: The unique identifier of outboundSharedUserProfile
   [PendingExternalUserProfileId <String>]: The unique identifier of pendingExternalUserProfile
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
@@ -1225,7 +1211,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
 
-ROOTDOMAIN `<IMicrosoftGraphDomain>`: domain
+ROOTDOMAIN <IMicrosoftGraphDomain>: domain
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1234,7 +1220,7 @@ The value is either Managed or Federated.
 Managed indicates a cloud managed domain where Microsoft Entra ID performs user authentication.
 Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services.
 Not nullable.
- To update this property in delegated scenarios, the calling app must be assigned the Directory.AccessAsUser.All delegated permission.
+ To update this property in delegated scenarios, the calling app must be assigned the Domain-InternalFederation.ReadWrite.All permission.
   [AvailabilityStatus <String>]: This property is always null except when the verify action is used.
 When the verify action is used, a domain entity is returned in the response.
 The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
@@ -1363,7 +1349,7 @@ Read-only.
   [InvitationDomain <String>]: 
   [InvitationStatus <String>]: 
 
-STATE `<IMicrosoftGraphDomainState>`: domainState
+STATE <IMicrosoftGraphDomainState>: domainState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastActionDateTime <DateTime?>]: Timestamp for when the last activity occurred.
 The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
@@ -1391,27 +1377,5 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain)
+- [](https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-beta)

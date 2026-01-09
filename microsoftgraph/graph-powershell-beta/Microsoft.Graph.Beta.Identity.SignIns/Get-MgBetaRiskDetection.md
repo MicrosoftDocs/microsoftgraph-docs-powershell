@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 01/09/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaRiskDetection
 ---
@@ -13,10 +13,7 @@ title: Get-MgBetaRiskDetection
 
 ## SYNOPSIS
 
-Retrieve the properties of a collection of riskDetection objects.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskDetection?view=graph-powershell-1.0)
+Retrieve the properties of a riskDetection object.
 
 ## SYNTAX
 
@@ -56,19 +53,12 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Retrieve the properties of a collection of riskDetection objects.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskEvent.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskEvent.Read.All,  |
+Retrieve the properties of a riskDetection object.
 
 ## EXAMPLES
-### Example 1: Get all riskDetections
-```powershell
+
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -All | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
 
@@ -82,12 +72,9 @@ Jason Mayer     unlikelyTravel                medium    4/21/2022 10:42:04 PM
 Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
 Alice Su        unfamiliarFeatures            low       5/2/2022 12:01:44 AM
 Alice Su        unlikelyTravel                low       5/2/2022 2:16:22 AM
-```
 
-This command returns a list of all users.
+### EXAMPLE 2
 
-### Example 2: Get riskDetections by user displayname
-```powershell
 Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "UserDisplayname eq 'Jason Mayer'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
 
@@ -99,12 +86,9 @@ Jason Mayer     anonymizedIPAddress           high      4/21/2022 9:50:28 PM
 Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
 Jason Mayer     unlikelyTravel                medium    4/21/2022 10:42:04 PM
 Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
-```
 
-This command returns all risk detections for the specified user 
+### EXAMPLE 3
 
-### Example 3: Get riskDetections by risk type
-```powershell
 Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "RiskType eq 'anonymizedIPAddress'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
 
@@ -113,12 +97,9 @@ UserDisplayName RiskType            RiskLevel DetectedDateTime
 Jason Mayer     anonymizedIPAddress high      4/21/2022 9:50:28 PM
 Jason Mayer     anonymizedIPAddress medium    4/19/2022 10:44:40 PM
 Alex  Su        anonymizedIPAddress high      6/9/2022 4:31:19 AM
-```
 
-This command returns all risk detections for the anonymizedIPAddress risk detection
+### EXAMPLE 4
 
-### Example 4: Get all riskDetections for a particular user with high risk
-```powershell
 Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "UserDisplayName eq 'Jason Mayer' and Risklevel eq 'high'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
 
@@ -126,8 +107,6 @@ UserDisplayName RiskType                      RiskLevel DetectedDateTime
 --------------- --------                      --------- ----------------
 Jason Mayer     anonymizedIPAddress           high      4/21/2022 9:50:28 PM
 Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
-```
-This command returns all risk detections with high risks for the specified user 
 
 ## PARAMETERS
 
@@ -589,8 +568,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
+  [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
   [AuthenticationConditionApplicationAppId <String>]: The unique identifier of authenticationConditionApplication
@@ -603,6 +583,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [AuthenticationMethodModes <String[]>]: Usage: authenticationMethodModes={authenticationMethodModes}
   [AuthenticationStrengthPolicyId <String>]: The unique identifier of authenticationStrengthPolicy
   [AuthorizationPolicyId <String>]: The unique identifier of authorizationPolicy
+  [B2BManagementPolicyId <String>]: The unique identifier of b2bManagementPolicy
   [B2CIdentityUserFlowId <String>]: The unique identifier of b2cIdentityUserFlow
   [B2XIdentityUserFlowId <String>]: The unique identifier of b2xIdentityUserFlow
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -622,6 +603,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
+  [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
   [GroupId <String>]: The unique identifier of group
   [HardwareOathAuthenticationMethodId <String>]: The unique identifier of hardwareOathAuthenticationMethod
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -642,6 +624,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
   [NamedLocationId <String>]: The unique identifier of namedLocation
   [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
+  [OnPremAuthenticationPolicyId <String>]: The unique identifier of onPremAuthenticationPolicy
   [OrganizationId <String>]: The unique identifier of organization
   [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod
   [PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
@@ -651,6 +634,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
+  [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
   [RiskyServicePrincipalId <String>]: The unique identifier of riskyServicePrincipal
   [RiskyUserHistoryItemId <String>]: The unique identifier of riskyUserHistoryItem
@@ -660,6 +644,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ServicePrincipalCreationConditionSetId <String>]: The unique identifier of servicePrincipalCreationConditionSet
   [ServicePrincipalCreationPolicyId <String>]: The unique identifier of servicePrincipalCreationPolicy
   [ServicePrincipalRiskDetectionId <String>]: The unique identifier of servicePrincipalRiskDetection
+  [SignInIdentifierBaseName <String>]: The unique identifier of signInIdentifierBase
   [SoftwareOathAuthenticationMethodId <String>]: The unique identifier of softwareOathAuthenticationMethod
   [TemporaryAccessPassAuthenticationMethodId <String>]: The unique identifier of temporaryAccessPassAuthenticationMethod
   [ThreatAssessmentRequestId <String>]: The unique identifier of threatAssessmentRequest
@@ -675,32 +660,14 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
+  [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
+  [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 
 ## RELATED LINKS
 
-- [Get-MgBetaRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskdetection-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection)
+- [](https://learn.microsoft.com/graph/api/riskdetection-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/riskdetection-list?view=graph-rest-beta)

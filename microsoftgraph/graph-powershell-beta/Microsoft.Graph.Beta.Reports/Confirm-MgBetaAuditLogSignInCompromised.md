@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 12/05/2025
+ms.date: 01/09/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaAuditLogSignInCompromised
 ---
@@ -17,9 +17,6 @@ Allow admins to mark an event in the Microsoft Entra sign-in logs as risky.
 Events marked as risky by an admin are immediately flagged as high risk in Microsoft Entra ID Protection, overriding previous risk states.
 Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
 For details about investigating Identity Protection risks, see How to investigate risk.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgAuditLogSignInCompromised](/powershell/module/Microsoft.Graph.Reports/Confirm-MgAuditLogSignInCompromised?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,18 +53,9 @@ Events marked as risky by an admin are immediately flagged as high risk in Micro
 Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
 For details about investigating Identity Protection risks, see How to investigate risk.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskyUser.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskEvent.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
@@ -80,10 +68,6 @@ $params = @{
 }
 
 Confirm-MgBetaAuditLogSignInCompromised -BodyParameter $params
-
-```
-This example shows how to use the Confirm-MgBetaAuditLogSignInCompromised Cmdlet.
-
 
 ## PARAMETERS
 
@@ -110,7 +94,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -322,7 +306,7 @@ HelpMessage: ''
 
 ### -RequestIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -415,34 +399,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RequestIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Confirm-MgBetaAuditLogSignInCompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised)
+- [](https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-beta)
