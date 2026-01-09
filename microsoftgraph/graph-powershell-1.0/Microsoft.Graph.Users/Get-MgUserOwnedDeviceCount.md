@@ -390,7 +390,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevicecount)
+- [Get-MgUserOwnedDeviceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevicecount)
 
 
 

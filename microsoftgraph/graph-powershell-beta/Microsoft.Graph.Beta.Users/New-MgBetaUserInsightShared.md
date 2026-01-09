@@ -781,7 +781,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightshared)
+- [New-MgBetaUserInsightShared](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightshared)
 
 
 

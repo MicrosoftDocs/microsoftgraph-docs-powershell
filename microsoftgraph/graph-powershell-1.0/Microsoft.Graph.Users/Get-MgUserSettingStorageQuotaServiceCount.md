@@ -367,7 +367,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingstoragequotaservicecount)
+- [Get-MgUserSettingStorageQuotaServiceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingstoragequotaservicecount)
 
 
 

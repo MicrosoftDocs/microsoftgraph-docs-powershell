@@ -517,7 +517,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaonpremisepublishingprofileconnectorgroupapplicationlogo)
+- [Set-MgBetaOnPremisePublishingProfileConnectorGroupApplicationLogo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaonpremisepublishingprofileconnectorgroupapplicationlogo)
 
 
 

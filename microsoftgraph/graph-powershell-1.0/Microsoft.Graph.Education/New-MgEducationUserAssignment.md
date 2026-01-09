@@ -1439,7 +1439,7 @@ If the value is null, the student uploaded the resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignment)
+- [New-MgEducationUserAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignment)
 
 
 
