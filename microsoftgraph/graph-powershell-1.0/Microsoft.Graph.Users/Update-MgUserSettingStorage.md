@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstorage
@@ -491,7 +491,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphUserStorage>: userStorage
+BODYPARAMETER `<IMicrosoftGraphUserStorage>`: userStorage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -512,7 +512,7 @@ Read-only.
     [Total <Int64?>]: 
     [Used <Int64?>]: 
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -535,7 +535,7 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [WindowsSettingId <String>]: The unique identifier of windowsSetting
   [WindowsSettingInstanceId <String>]: The unique identifier of windowsSettingInstance
 
-QUOTA <IMicrosoftGraphUnifiedStorageQuota>: unifiedStorageQuota
+QUOTA `<IMicrosoftGraphUnifiedStorageQuota>`: unifiedStorageQuota
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -556,3 +556,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstorage)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

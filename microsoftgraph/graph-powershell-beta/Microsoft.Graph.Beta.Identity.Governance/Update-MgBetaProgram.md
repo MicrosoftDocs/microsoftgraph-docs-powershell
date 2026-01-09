@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogram
@@ -550,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphProgram>: program
+BODYPARAMETER `<IMicrosoftGraphProgram>`: program
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -626,7 +626,7 @@ For example, in the access reviews decisions API, this property might record the
     [Type <String>]: Type of the resource, indicating whether it is a group or an app.
   [Status <String>]: The life cycle status of the control.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -740,3 +740,25 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogram)
 - [](https://learn.microsoft.com/graph/api/program-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
