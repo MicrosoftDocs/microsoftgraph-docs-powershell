@@ -50,6 +50,14 @@ Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
 This is applicable for a RBAC application that supports multiple principals and scopes.
 The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- Defender (Microsoft Defender XDR Unified RBAC)
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

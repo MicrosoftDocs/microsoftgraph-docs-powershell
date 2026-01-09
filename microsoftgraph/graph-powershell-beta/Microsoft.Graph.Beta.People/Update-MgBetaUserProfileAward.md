@@ -78,6 +78,14 @@ This cmdlet has the following aliases,
 
 Update the properties of a personAward object from a user's profile.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | User.ReadWrite,  |
+| Application | User.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
