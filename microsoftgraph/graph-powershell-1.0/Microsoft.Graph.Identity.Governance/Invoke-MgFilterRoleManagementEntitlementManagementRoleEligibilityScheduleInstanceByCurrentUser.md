@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 
 Get the instances of eligible roles for the calling principal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -552,6 +542,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterrolemanagemententitlementmanagementroleeligibilityscheduleinstancebycurrentuser)
 - [](https://learn.microsoft.com/graph/api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser?view=graph-rest-1.0)
+
 
 
 

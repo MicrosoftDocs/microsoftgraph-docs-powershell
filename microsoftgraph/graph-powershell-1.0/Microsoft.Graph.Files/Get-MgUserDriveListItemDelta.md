@@ -84,16 +84,6 @@ If an item was renamed twice, it only shows up once, with its latest name.\rThe 
 You should use the last occurrence you see.
 Items with this property should be removed from your local state.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -690,6 +680,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistitemdelta)
 - [](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0)
+
 
 
 

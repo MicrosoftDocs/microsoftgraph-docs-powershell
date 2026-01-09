@@ -81,16 +81,6 @@ Only users and role-enabled groups can be members of directory roles.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, User.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Application.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -507,6 +497,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberobject)
 - [](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
+
 
 
 

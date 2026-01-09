@@ -68,16 +68,6 @@ Read the properties and relationships of a certificateBasedAuthPki object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PublicKeyInfrastructure.Read.All, PublicKeyInfrastructure.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -576,6 +566,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
 - [](https://learn.microsoft.com/graph/api/certificatebasedauthpki-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/publickeyinfrastructureroot-list-certificatebasedauthconfigurations?view=graph-rest-1.0)
+
+
 
 
 

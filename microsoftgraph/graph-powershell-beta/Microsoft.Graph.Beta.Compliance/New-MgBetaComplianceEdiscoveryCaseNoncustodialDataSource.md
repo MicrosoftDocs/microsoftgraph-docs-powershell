@@ -83,8 +83,9 @@ Create a new noncustodialDataSource object.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Add a noncustodial data source user or group mailbox with an email
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -98,7 +99,12 @@ $params = @{
 
 New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will add a noncustodial data source user or group mailbox with an email
+
+### Example 2: Add a noncustodial data source site with a URL
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -113,6 +119,10 @@ $params = @{
 }
 
 New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
+
+```
+This example will add a noncustodial data source site with a url
+
 
 ## PARAMETERS
 

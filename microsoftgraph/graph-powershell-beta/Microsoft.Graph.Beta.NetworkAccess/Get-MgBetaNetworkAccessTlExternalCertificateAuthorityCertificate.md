@@ -66,12 +66,17 @@ Get a externalCertificateAuthorityCertificate object.
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate Cmdlet.
+
 
 ## PARAMETERS
 

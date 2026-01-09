@@ -56,12 +56,17 @@ After a completeMigration request is made, you can't import more messages into t
 You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Complete-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Complete-MgBetaTeamChannelMigration Cmdlet.
+
 
 ## PARAMETERS
 
