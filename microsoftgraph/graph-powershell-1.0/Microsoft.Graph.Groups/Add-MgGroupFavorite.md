@@ -17,6 +17,9 @@ Add the group to the list of the current user's favorite groups.
 The group shows up in Outlook and Teams favorites.
 Supported for Microsoft 365 groups only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupFavorite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Add (Default)

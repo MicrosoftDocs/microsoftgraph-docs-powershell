@@ -15,6 +15,9 @@ title: Copy-MgGroupOnenoteNotebookSectionToSectionGroup
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaGroupOnenoteNotebookSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Copy-MgBetaGroupOnenoteNotebookSectionToSectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

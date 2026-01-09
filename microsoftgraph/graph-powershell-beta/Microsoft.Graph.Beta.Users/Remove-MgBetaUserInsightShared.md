@@ -15,6 +15,9 @@ title: Remove-MgBetaUserInsightShared
 
 Delete navigation property shared for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/Remove-MgUserInsightShared?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

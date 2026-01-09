@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel
 
 Get a sensitivity label available for the entire tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

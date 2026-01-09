@@ -20,6 +20,9 @@ To get properties that are not returned by default, do a GET operation for the u
 Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
 Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserByUserPrincipalName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

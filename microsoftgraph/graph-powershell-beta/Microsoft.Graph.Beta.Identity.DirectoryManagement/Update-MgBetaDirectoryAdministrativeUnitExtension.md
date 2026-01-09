@@ -15,6 +15,9 @@ title: Update-MgBetaDirectoryAdministrativeUnitExtension
 
 Update the navigation property extensions in directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryAdministrativeUnitExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryAdministrativeUnitExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

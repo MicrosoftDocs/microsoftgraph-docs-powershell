@@ -15,6 +15,9 @@ title: Get-MgEducationSchoolClassByRef
 
 Get the educationClass resources owned by an educationSchool.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryObject
 
 Retrieve the properties and relationships of a directoryObject object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

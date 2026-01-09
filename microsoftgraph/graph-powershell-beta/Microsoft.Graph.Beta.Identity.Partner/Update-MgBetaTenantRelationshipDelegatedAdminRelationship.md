@@ -16,6 +16,9 @@ title: Update-MgBetaTenantRelationshipDelegatedAdminRelationship
 Update the properties of a delegatedAdminRelationship object.
 The following restrictions apply:\r- You can update this relationship when its status property is created.\r- You can update the autoExtendDuration property when status is either created or active.\r- You can only remove the Microsoft Entra Global Administrator role when the status property is active, which indicates a long-running operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

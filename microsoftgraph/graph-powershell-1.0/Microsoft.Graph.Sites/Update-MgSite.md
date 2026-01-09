@@ -15,6 +15,9 @@ title: Update-MgSite
 
 Update entity in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
