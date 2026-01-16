@@ -54,16 +54,6 @@ Update the properties of a photoUpdateSettings object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PeopleSettings.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -408,6 +398,7 @@ Optional.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplephotoupdatesetting)
 - [](https://learn.microsoft.com/graph/api/photoupdatesettings-update?view=graph-rest-beta)
+
 
 
 

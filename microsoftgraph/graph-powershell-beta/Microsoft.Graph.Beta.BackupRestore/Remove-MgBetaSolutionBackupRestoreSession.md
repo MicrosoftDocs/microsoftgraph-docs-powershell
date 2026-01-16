@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Delete a draft restoreSessionBase object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -429,6 +419,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresession)
 - [](https://learn.microsoft.com/graph/api/restoresessionbase-delete?view=graph-rest-beta)
+
 
 
 

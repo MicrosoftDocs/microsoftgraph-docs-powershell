@@ -56,16 +56,6 @@ Delete an externalCertificateAuthorityCertificate object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -427,6 +417,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
 - [](https://learn.microsoft.com/graph/api/networkaccess-externalcertificateauthoritycertificate-delete?view=graph-rest-beta)
+
 
 
 
