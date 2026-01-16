@@ -1476,7 +1476,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementandroidmanagedappprotection)
+- [New-MgDeviceAppManagementAndroidManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementandroidmanagedappprotection)
 
 
 

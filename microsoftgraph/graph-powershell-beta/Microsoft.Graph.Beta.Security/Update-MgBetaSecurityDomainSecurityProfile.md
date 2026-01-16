@@ -1003,7 +1003,7 @@ Required
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydomainsecurityprofile)
+- [Update-MgBetaSecurityDomainSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydomainsecurityprofile)
 
 
 

@@ -619,7 +619,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolder)
+- [Get-MgUserMailFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolder)
 
 
 

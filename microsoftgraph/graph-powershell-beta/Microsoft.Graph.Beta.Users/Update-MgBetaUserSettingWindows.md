@@ -658,7 +658,7 @@ Refers to the user's Windows device that modified the object at the specified da
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingwindows)
+- [Update-MgBetaUserSettingWindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingwindows)
 
 
 

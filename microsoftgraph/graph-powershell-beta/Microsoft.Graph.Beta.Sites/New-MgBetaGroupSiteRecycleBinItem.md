@@ -27034,7 +27034,7 @@ For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiterecyclebinitem)
+- [New-MgBetaGroupSiteRecycleBinItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiterecyclebinitem)
 
 
 

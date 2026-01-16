@@ -374,7 +374,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserlicensedetailcount)
+- [Get-MgBetaUserLicenseDetailCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserlicensedetailcount)
 
 
 

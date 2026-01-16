@@ -2292,7 +2292,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcontenttype)
+- [New-MgGroupDriveListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcontenttype)
 
 
 

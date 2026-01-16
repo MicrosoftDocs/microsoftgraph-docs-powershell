@@ -836,7 +836,7 @@ SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticle)
+- [Update-MgSecurityThreatIntelligenceArticle](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticle)
 
 
 

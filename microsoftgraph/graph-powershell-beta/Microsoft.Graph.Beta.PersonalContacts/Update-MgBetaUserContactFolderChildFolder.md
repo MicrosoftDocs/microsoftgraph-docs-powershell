@@ -1107,7 +1107,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolderchildfolder)
+- [Update-MgBetaUserContactFolderChildFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolderchildfolder)
 
 
 
