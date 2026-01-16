@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationUserDelta
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaEducationUserDelta
 
 Get newly created or updated educationUser without having to perform a full read of the entire collection.
 See Use delta query for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,26 +39,13 @@ This cmdlet has the following aliases,
 Get newly created or updated educationUser without having to perform a full read of the entire collection.
 See Use delta query for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.ReadWrite, EduRoster.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.ReadBasic.All, EduRoster.WriteWrite.All, EduRoster.ReadWrite.All, EduRoster.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationUserDelta
-
-```
-This example shows how to use the Get-MgBetaEducationUserDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -473,27 +457,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaEducationUserDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserdelta)
+- [](https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-beta)

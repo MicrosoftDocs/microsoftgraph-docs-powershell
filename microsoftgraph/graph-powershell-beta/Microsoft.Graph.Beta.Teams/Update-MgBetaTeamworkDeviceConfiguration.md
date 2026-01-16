@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTeamworkDeviceConfiguration
 ---
@@ -85,6 +85,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property configuration in teamwork
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -807,7 +817,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceConfiguration>`: teamworkDeviceConfiguration
+BODYPARAMETER <IMicrosoftGraphTeamworkDeviceConfiguration>: teamworkDeviceConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -832,9 +842,10 @@ Each vendor has a unique ID.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [CreatedDateTime <DateTime?>]: The UTC date and time when the device configuration document was created.
@@ -946,7 +957,7 @@ This is a common scenario in a hybrid environment where an on-premises Exchange 
       [IsHideMeetingNamesEnabled <Boolean?>]: True if hiding meeting names is enabled.
       [IsSendLogsAndFeedbackEnabled <Boolean?>]: True if sending logs and feedback is enabled.
 
-CAMERACONFIGURATION `<IMicrosoftGraphTeamworkCameraConfiguration>`: teamworkCameraConfiguration
+CAMERACONFIGURATION <IMicrosoftGraphTeamworkCameraConfiguration>: teamworkCameraConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Cameras <IMicrosoftGraphTeamworkPeripheral[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -963,18 +974,19 @@ Each vendor has a unique ID.
     [IsContentEnhancementEnabled <Boolean?>]: True if the content enhancement is enabled.
   [DefaultContentCamera <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DISPLAYCONFIGURATION `<IMicrosoftGraphTeamworkDisplayConfiguration>`: teamworkDisplayConfiguration
+DISPLAYCONFIGURATION <IMicrosoftGraphTeamworkDisplayConfiguration>: teamworkDisplayConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConfiguredDisplays <IMicrosoftGraphTeamworkConfiguredPeripheral[]>]: The list of configured displays.
 Applicable only for Microsoft Teams Rooms devices.
@@ -1009,7 +1021,7 @@ Applicable only for Teams Rooms devices.
 If isDualDisplayModeEnabled is true, then the content will be displayed on both front of room screens instead of just the one screen, when it is shared via the HDMI ingest module on the Microsoft Teams Rooms device.
 Applicable only for Teams Rooms devices.
 
-HARDWARECONFIGURATION `<IMicrosoftGraphTeamworkHardwareConfiguration>`: teamworkHardwareConfiguration
+HARDWARECONFIGURATION <IMicrosoftGraphTeamworkHardwareConfiguration>: teamworkHardwareConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Compute <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1023,7 +1035,7 @@ Each vendor has a unique ID.
   [HdmiIngest <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
   [ProcessorModel <String>]: The CPU model on the device.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1070,18 +1082,19 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-MICROPHONECONFIGURATION `<IMicrosoftGraphTeamworkMicrophoneConfiguration>`: teamworkMicrophoneConfiguration
+MICROPHONECONFIGURATION <IMicrosoftGraphTeamworkMicrophoneConfiguration>: teamworkMicrophoneConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultMicrophone <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1096,7 +1109,7 @@ Each vendor has a unique ID.
 False if the microphone is not optional and the health state of the device should be computed.
   [Microphones <IMicrosoftGraphTeamworkPeripheral[]>]: 
 
-SOFTWAREVERSIONS `<IMicrosoftGraphTeamworkDeviceSoftwareVersions>`: teamworkDeviceSoftwareVersions
+SOFTWAREVERSIONS <IMicrosoftGraphTeamworkDeviceSoftwareVersions>: teamworkDeviceSoftwareVersions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdminAgentSoftwareVersion <String>]: The software version for the admin agent running on the device.
   [FirmwareSoftwareVersion <String>]: The software version for the firmware running on the device.
@@ -1104,7 +1117,7 @@ SOFTWAREVERSIONS `<IMicrosoftGraphTeamworkDeviceSoftwareVersions>`: teamworkDevi
   [PartnerAgentSoftwareVersion <String>]: The software version for the partner agent running on the device.
   [TeamsClientSoftwareVersion <String>]: The software version for the Teams client running on the device.
 
-SPEAKERCONFIGURATION `<IMicrosoftGraphTeamworkSpeakerConfiguration>`: teamworkSpeakerConfiguration
+SPEAKERCONFIGURATION <IMicrosoftGraphTeamworkSpeakerConfiguration>: teamworkSpeakerConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultCommunicationSpeaker <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1122,7 +1135,7 @@ Used to compute the health state if the communication speaker is not optional.
 Used to compute the health state if the speaker is not optional.
   [Speakers <IMicrosoftGraphTeamworkPeripheral[]>]: 
 
-SYSTEMCONFIGURATION `<IMicrosoftGraphTeamworkSystemConfiguration>`: teamworkSystemConfiguration
+SYSTEMCONFIGURATION <IMicrosoftGraphTeamworkSystemConfiguration>: teamworkSystemConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTimeConfiguration <IMicrosoftGraphTeamworkDateTimeConfiguration>]: teamworkDateTimeConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1155,7 +1168,7 @@ Write-Only.
     [SecondaryDns <String>]: A secondary DNS is used when the primary DNS is not available.
     [SubnetMask <String>]: A subnet mask is a number that distinguishes the network address and the host address within an IP address.
 
-TEAMSCLIENTCONFIGURATION `<IMicrosoftGraphTeamworkTeamsClientConfiguration>`: teamworkTeamsClientConfiguration
+TEAMSCLIENTCONFIGURATION <IMicrosoftGraphTeamworkTeamsClientConfiguration>: teamworkTeamsClientConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccountConfiguration <IMicrosoftGraphTeamworkAccountConfiguration>]: teamworkAccountConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1179,27 +1192,4 @@ This is a common scenario in a hybrid environment where an on-premises Exchange 
 
 ## RELATED LINKS
 
-- [Update-MgBetaTeamworkDeviceConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration)

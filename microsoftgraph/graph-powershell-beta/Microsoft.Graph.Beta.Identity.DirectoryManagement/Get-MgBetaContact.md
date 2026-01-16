@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaContact
 ---
@@ -15,16 +15,13 @@ title: Get-MgBetaContact
 
 Get the properties and relationships of an organizational contact object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContact?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
 
 ```
 Get-MgBetaContact [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter <string>]
- [-Search <string>] [-Sort <string[]>] [-Top <int>] [-ConsistencyLevel <string>]
+ [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ConsistencyLevel <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
@@ -58,27 +55,16 @@ This cmdlet has the following aliases,
 
 Get the properties and relationships of an organizational contact object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OrgContact.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OrgContact.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Retrieve contact objects in the directory 
 
-```powershell
+### EXAMPLE 1
+
 Get-MgBetaContact | Format-List Id, DisplayName, Mail, MailNickname
 
 Id           : 5d58402b-3cb2-4b17-b913-299a72c84204
 DisplayName  : Bob Kelly (TAILSPIN)
 Mail         : bobk@tailspintoys.com
 MailNickname : BobKTAILSPIN
-```
-
-This example retrieves all contact objects in the directory.
 
 ## PARAMETERS
 
@@ -467,6 +453,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Skip
+
+Skip the first n items
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Sort
 
 Order items by property values
@@ -541,7 +548,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -579,6 +586,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrgContactId <String>]: The unique identifier of orgContact
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
+  [OrganizationalBrandingThemeId <String>]: The unique identifier of organizationalBrandingTheme
+  [OrganizationalBrandingThemeLocalizationLocale <String>]: The unique identifier of organizationalBrandingThemeLocalization
   [OutboundSharedUserProfileUserId <String>]: The unique identifier of outboundSharedUserProfile
   [PendingExternalUserProfileId <String>]: The unique identifier of pendingExternalUserProfile
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
@@ -599,28 +608,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaContact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontact)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/orgcontact-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/orgcontact-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontact)
+- [](https://learn.microsoft.com/graph/api/orgcontact-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/orgcontact-list?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationunbilled
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: Export-MgReportPartnerBillingReconciliationUnbilled
 ---
@@ -14,9 +14,6 @@ title: Export-MgReportPartnerBillingReconciliationUnbilled
 ## SYNOPSIS
 
 Export the unbilled invoice reconciliation data for a specific billing period and a given currency.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Export-MgBetaReportPartnerBillingReconciliationUnbilled](/powershell/module/Microsoft.Graph.Beta.Reports/Export-MgBetaReportPartnerBillingReconciliationUnbilled?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,9 +48,8 @@ This cmdlet has the following aliases,
 Export the unbilled invoice reconciliation data for a specific billing period and a given currency.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
@@ -64,10 +60,6 @@ $params = @{
 }
 
 Export-MgReportPartnerBillingReconciliationUnbilled -BodyParameter $params
-
-```
-This example shows how to use the Export-MgReportPartnerBillingReconciliationUnbilled Cmdlet.
-
 
 ## PARAMETERS
 
@@ -136,7 +128,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -201,7 +193,7 @@ HelpMessage: ''
 
 ### -CurrencyCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -420,7 +412,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsFucohkReportsPartnersBillingReconciliationUnbilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsFucohkReportsPartnersBillingReconciliationUnbilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AttributeSet <String>]: attributeSet
   [BillingPeriod <String>]: billingPeriod
@@ -429,27 +421,5 @@ BODYPARAMETER `<IPathsFucohkReportsPartnersBillingReconciliationUnbilledMicrosof
 
 ## RELATED LINKS
 
-- [Export-MgReportPartnerBillingReconciliationUnbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationunbilled)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-unbilledreconciliation-export?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationunbilled)
+- [](https://learn.microsoft.com/graph/api/partners-billing-unbilledreconciliation-export?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetasiteonenotesectiontosectiongroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaSiteOnenoteSectionToSectionGroup
 ---
@@ -15,9 +15,6 @@ title: Copy-MgBetaSiteOnenoteSectionToSectionGroup
 
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgSiteOnenoteSectionToSectionGroup](/powershell/module/Microsoft.Graph.Notes/Copy-MgSiteOnenoteSectionToSectionGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -75,13 +72,15 @@ This cmdlet has the following aliases,
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite,  |
-| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
-| Application | Notes.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -114,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -185,7 +184,7 @@ HelpMessage: ''
 
 ### -GroupId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -275,7 +274,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -420,7 +419,7 @@ HelpMessage: ''
 
 ### -RenameAs
 
-
+.
 
 ```yaml
 Type: System.String
@@ -469,7 +468,7 @@ HelpMessage: ''
 
 ### -SiteCollectionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -529,7 +528,7 @@ HelpMessage: ''
 
 ### -SiteId1
 
-
+.
 
 ```yaml
 Type: System.String
@@ -604,7 +603,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths8ExbssSitesSiteIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths8ExbssSitesSiteIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupId <String>]: 
   [Id <String>]: 
@@ -612,7 +611,7 @@ BODYPARAMETER `<IPaths8ExbssSitesSiteIdOnenoteSectionsOnenotesectionIdMicrosoftG
   [SiteCollectionId <String>]: 
   [SiteId <String>]: 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -629,28 +628,5 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Copy-MgBetaSiteOnenoteSectionToSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetasiteonenotesectiontosectiongroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetasiteonenotesectiontosectiongroup)
+- [](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-beta)

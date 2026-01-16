@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementwindowsinformationprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementWindowsInformationProtectionPolicy
 ---
@@ -13,10 +13,7 @@ title: Update-MgDeviceAppManagementWindowsInformationProtectionPolicy
 
 ## SYNOPSIS
 
-Update the properties of a windowsInformationProtectionPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-beta)
+Update the navigation property windowsInformationProtectionPolicies in deviceAppManagement
 
 ## SYNTAX
 
@@ -131,20 +128,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a windowsInformationProtectionPolicy object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+Update the navigation property windowsInformationProtectionPolicies in deviceAppManagement
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -284,10 +272,6 @@ daysWithoutContactBeforeUnenroll = 0
 }
 
 Update-MgDeviceAppManagementWindowsInformationProtectionPolicy -WindowsInformationProtectionPolicyId $windowsInformationProtectionPolicyId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceAppManagementWindowsInformationProtectionPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -501,7 +485,8 @@ HelpMessage: ''
 
 ### -DaysWithoutContactBeforeUnenroll
 
-Offline interval before app data is wiped (days)
+Offline interval before app data is wiped (days) .
+Valid values 0 to 999
 
 ```yaml
 Type: System.Int32
@@ -1185,6 +1170,7 @@ HelpMessage: ''
 
 Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.
 Range is an integer X where 0 <= X <= 999.
+Valid values 0 to 999
 
 ```yaml
 Type: System.Int32
@@ -1245,6 +1231,7 @@ The lowest number you can configure for this policy setting is 0.
 If this policy is set to 0, then storage of previous PINs is not required.
 This node was added in Windows 10, version 1511.
 Default is 0.
+Valid values 0 to 50
 
 ```yaml
 Type: System.Int32
@@ -1274,6 +1261,7 @@ HelpMessage: ''
 The number of authentication failures allowed before the device will be wiped.
 A value of 0 disables device wipe functionality.
 Range is an integer X where 4 <= X <= 16 for desktop and 0 <= X <= 999 for mobile devices.
+Valid values 0 to 999
 
 ```yaml
 Type: System.Int32
@@ -1306,6 +1294,7 @@ The lowest number you can configure for this policy setting is 0.
 If this policy is set to 0, then the user's PIN will never expire.
 This node was added in Windows 10, version 1511.
 Default is 0.
+Valid values 0 to 730
 
 ```yaml
 Type: System.Int32
@@ -1363,6 +1352,7 @@ Integer value that sets the minimum number of characters required for the PIN.
 Default value is 4.
 The lowest number you can configure for this policy setting is 4.
 The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
+Valid values 0 to 127
 
 ```yaml
 Type: System.Int32
@@ -1864,7 +1854,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsInformationProtectionPolicy>`: Policy for Windows information protection without MDM
+BODYPARAMETER <IMicrosoftGraphWindowsInformationProtectionPolicy>: Policy for Windows information protection without MDM
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]: Navigation property to list of security groups targeted for policy.
     [Id <String>]: The unique identifier for an entity.
@@ -1944,36 +1934,42 @@ The RMS template allows the IT admin to configure the details about who has acce
   [Version <String>]: Version of the entity.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DaysWithoutContactBeforeUnenroll <Int32?>]: Offline interval before app data is wiped (days)
+  [DaysWithoutContactBeforeUnenroll <Int32?>]: Offline interval before app data is wiped (days) .
+Valid values 0 to 999
   [MdmEnrollmentUrl <String>]: Enrollment url for the MDM
   [MinutesOfInactivityBeforeDeviceLock <Int32?>]: Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.
   Range is an integer X where 0 <= X <= 999.
+Valid values 0 to 999
   [NumberOfPastPinsRemembered <Int32?>]: Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused.
 The largest number you can configure for this policy setting is 50.
 The lowest number you can configure for this policy setting is 0.
 If this policy is set to 0, then storage of previous PINs is not required.
 This node was added in Windows 10, version 1511.
 Default is 0.
+Valid values 0 to 50
   [PasswordMaximumAttemptCount <Int32?>]: The number of authentication failures allowed before the device will be wiped.
 A value of 0 disables device wipe functionality.
 Range is an integer X where 4 <= X <= 16 for desktop and 0 <= X <= 999 for mobile devices.
+Valid values 0 to 999
   [PinExpirationDays <Int32?>]: Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it.
 The largest number you can configure for this policy setting is 730.
 The lowest number you can configure for this policy setting is 0.
 If this policy is set to 0, then the user's PIN will never expire.
 This node was added in Windows 10, version 1511.
 Default is 0.
+Valid values 0 to 730
   [PinLowercaseLetters <WindowsInformationProtectionPinCharacterRequirements?>]: Pin Character Requirements
   [PinMinimumLength <Int32?>]: Integer value that sets the minimum number of characters required for the PIN.
 Default value is 4.
 The lowest number you can configure for this policy setting is 4.
 The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
+Valid values 0 to 127
   [PinSpecialCharacters <WindowsInformationProtectionPinCharacterRequirements?>]: Pin Character Requirements
   [PinUppercaseLetters <WindowsInformationProtectionPinCharacterRequirements?>]: Pin Character Requirements
   [RevokeOnMdmHandoffDisabled <Boolean?>]: New property in RS2, pending documentation
   [WindowsHelloForBusinessBlocked <Boolean?>]: Boolean value that sets Windows Hello for Business as a method for signing into Windows.
 
-DATARECOVERYCERTIFICATE `<IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>`: Windows Information Protection DataRecoveryCertificate
+DATARECOVERYCERTIFICATE <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>: Windows Information Protection DataRecoveryCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Certificate <Byte[]>]: Data recovery Certificate
   [Description <String>]: Data recovery Certificate description
@@ -2033,7 +2029,7 @@ This is because some critical enterprise applications may have compatibility pro
   [ProductName <String>]: The product name.
   [PublisherName <String>]: The publisher name
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -2097,27 +2093,4 @@ SMBAUTOENCRYPTEDFILEEXTENSIONS <IMicrosoftGraphWindowsInformationProtectionResou
 
 ## RELATED LINKS
 
-- [Update-MgDeviceAppManagementWindowsInformationProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementwindowsinformationprotectionpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionpolicy-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementwindowsinformationprotectionpolicy)

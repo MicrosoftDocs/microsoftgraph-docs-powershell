@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetahavegroupteamchannel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaHaveGroupTeamChannel
 ---
@@ -13,10 +13,7 @@ title: Invoke-MgBetaHaveGroupTeamChannel
 
 ## SYNOPSIS
 
-Determine whether a user has access to a shared channel.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgHaveGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveGroupTeamChannel?view=graph-powershell-1.0)
+Determine whether a user has access to a channel.
 
 ## SYNTAX
 
@@ -47,7 +44,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Determine whether a user has access to a shared channel.
+Determine whether a user has access to a channel.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -377,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -427,28 +434,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaHaveGroupTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetahavegroupteamchannel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-doesuserhaveaccess?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetahavegroupteamchannel)
+- [](https://learn.microsoft.com/graph/api/channel-doesuserhaveaccess?view=graph-rest-beta)

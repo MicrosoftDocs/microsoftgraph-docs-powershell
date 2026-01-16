@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistroom
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPlaceAsRoomListRoom
 ---
@@ -15,9 +15,6 @@ title: New-MgPlaceAsRoomListRoom
 
 Create new navigation property to rooms for places
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -26,10 +23,10 @@ Create new navigation property to rooms for places
 New-MgPlaceAsRoomListRoom -PlaceId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
  [-AudioDeviceName <string>] [-BookingType <string>] [-Building <string>] [-Capacity <int>]
- [-DisplayDeviceName <string>] [-DisplayName <string>] [-EmailAddress <string>]
- [-FloorLabel <string>] [-FloorNumber <int>]
+ [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayDeviceName <string>] [-DisplayName <string>]
+ [-EmailAddress <string>] [-FloorLabel <string>] [-FloorNumber <int>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
- [-Label <string>] [-Nickname <string>] [-Phone <string>] [-Tags <string[]>]
+ [-Label <string>] [-Nickname <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>]
  [-VideoDeviceName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -52,10 +49,10 @@ New-MgPlaceAsRoomListRoom -PlaceId <string> -BodyParameter <IMicrosoftGraphRoom>
 New-MgPlaceAsRoomListRoom -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
  [-AudioDeviceName <string>] [-BookingType <string>] [-Building <string>] [-Capacity <int>]
- [-DisplayDeviceName <string>] [-DisplayName <string>] [-EmailAddress <string>]
- [-FloorLabel <string>] [-FloorNumber <int>]
+ [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayDeviceName <string>] [-DisplayName <string>]
+ [-EmailAddress <string>] [-FloorLabel <string>] [-FloorNumber <int>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
- [-Label <string>] [-Nickname <string>] [-Phone <string>] [-Tags <string[]>]
+ [-Label <string>] [-Nickname <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>]
  [-VideoDeviceName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -80,6 +77,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to rooms for places
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -275,6 +282,34 @@ Specifies the capacity of the room.
 ```yaml
 Type: System.Int32
 DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CheckIns
+
+.
+To construct, see NOTES section for CHECKINS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCheckInClaim[]
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -601,7 +636,7 @@ HelpMessage: ''
 
 ### -IsWheelChairAccessible
 
-Specifies whether the room is wheelchair accessible.
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -628,7 +663,7 @@ HelpMessage: ''
 
 ### -Label
 
-Specifies a descriptive label for the room, for example, a number or name.
+.
 
 ```yaml
 Type: System.String
@@ -656,6 +691,33 @@ HelpMessage: ''
 ### -Nickname
 
 Specifies a nickname for the room, for example, 'conf room'.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ParentId
+
+.
 
 ```yaml
 Type: System.String
@@ -821,7 +883,7 @@ HelpMessage: ''
 
 ### -Tags
 
-Specifies other features of the room, for example, details like the type of view or furniture type.
+.
 
 ```yaml
 Type: System.String[]
@@ -929,7 +991,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -938,7 +1000,7 @@ It's a free-format string value, for example, 'United States'.
   [State <String>]: The state.
   [Street <String>]: The street.
 
-BODYPARAMETER `<IMicrosoftGraphRoom>`: room
+BODYPARAMETER <IMicrosoftGraphRoom>: room
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -948,6 +1010,10 @@ It's a free-format string value, for example, 'United States'.
     [PostalCode <String>]: The postal code.
     [State <String>]: The state.
     [Street <String>]: The street.
+  [CheckIns <IMicrosoftGraphCheckInClaim[]>]: 
+    [CalendarEventId <String>]: 
+    [CheckInMethod <String>]: checkInMethod
+    [CreatedDateTime <DateTime?>]: 
   [DisplayName <String>]: The name associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -957,7 +1023,11 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     [AltitudeAccuracy <Double?>]: The accuracy of the altitude.
     [Latitude <Double?>]: The latitude of the location.
     [Longitude <Double?>]: The longitude of the location.
+  [IsWheelChairAccessible <Boolean?>]: 
+  [Label <String>]: 
+  [ParentId <String>]: 
   [Phone <String>]: The phone number of the place.
+  [Tags <String[]>]: 
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [AudioDeviceName <String>]: Specifies the name of the audio device in the room.
@@ -968,13 +1038,15 @@ Read-only.
   [EmailAddress <String>]: Email address of the room.
   [FloorLabel <String>]: Specifies a descriptive label for the floor, for example, P.
   [FloorNumber <Int32?>]: Specifies the floor number that the room is on.
-  [IsWheelChairAccessible <Boolean?>]: Specifies whether the room is wheelchair accessible.
-  [Label <String>]: Specifies a descriptive label for the room, for example, a number or name.
   [Nickname <String>]: Specifies a nickname for the room, for example, 'conf room'.
-  [Tags <String[]>]: Specifies other features of the room, for example, details like the type of view or furniture type.
   [VideoDeviceName <String>]: Specifies the name of the video device in the room.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+CHECKINS <IMicrosoftGraphCheckInClaim[]>: .
+  [CalendarEventId <String>]: 
+  [CheckInMethod <String>]: checkInMethod
+  [CreatedDateTime <DateTime?>]: 
+
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
@@ -983,43 +1055,27 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Latitude <Double?>]: The latitude of the location.
   [Longitude <Double?>]: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
   [CalendarPermissionId <String>]: The unique identifier of calendarPermission
+  [CheckInClaimCalendarEventId <String>]: The unique identifier of checkInClaim
   [EventId <String>]: The unique identifier of event
   [ExtensionId <String>]: The unique identifier of extension
+  [FixtureMapId <String>]: The unique identifier of fixtureMap
+  [FootprintMapId <String>]: The unique identifier of footprintMap
   [GroupId <String>]: The unique identifier of group
+  [LevelMapId <String>]: The unique identifier of levelMap
   [PlaceId <String>]: The unique identifier of place
   [RoomId <String>]: The unique identifier of room
+  [SectionMapId <String>]: The unique identifier of sectionMap
+  [UnitMapId <String>]: The unique identifier of unitMap
   [User <String>]: Usage: User='{User}'
   [UserId <String>]: The unique identifier of user
+  [WorkspaceId <String>]: The unique identifier of workspace
 
 
 ## RELATED LINKS
 
-- [New-MgPlaceAsRoomListRoom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistroom)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistroom)

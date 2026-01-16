@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/import-mgbetarolemanagementdevicemanagementresourcenamespaceresourceaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
 ---
@@ -72,6 +72,16 @@ This cmdlet has the following aliases,
 
 Invoke action importResourceActions
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -103,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -174,7 +184,7 @@ HelpMessage: ''
 
 ### -Format
 
-
+.
 
 ```yaml
 Type: System.String
@@ -292,7 +302,7 @@ HelpMessage: ''
 
 ### -OverwriteResourceNamespace
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -431,7 +441,7 @@ HelpMessage: ''
 
 ### -Value
 
-
+.
 
 ```yaml
 Type: System.String
@@ -512,13 +522,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1A0X10XRolemanagementDevicemanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1A0X10XRolemanagementDevicemanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Format <String>]: 
   [OverwriteResourceNamespace <Boolean?>]: 
   [Value <String>]: 
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -550,27 +560,4 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/import-mgbetarolemanagementdevicemanagementresourcenamespaceresourceaction)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/import-mgbetarolemanagementdevicemanagementresourcenamespaceresourceaction)

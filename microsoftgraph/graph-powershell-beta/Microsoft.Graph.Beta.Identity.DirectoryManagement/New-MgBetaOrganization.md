@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaOrganization
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaOrganization
 ## SYNOPSIS
 
 Add new entity to organization
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgOrganization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,6 +64,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Add new entity to organization
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1133,7 +1140,7 @@ The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
   [ServicePlanId <String>]: A GUID that identifies the service plan.
 For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
 
-BODYPARAMETER `<IMicrosoftGraphOrganization>`: organization
+BODYPARAMETER <IMicrosoftGraphOrganization>: organization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1170,8 +1177,8 @@ Read-only.
     [ContentCustomization <IMicrosoftGraphContentCustomization>]: contentCustomization
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AttributeCollection <IMicrosoftGraphKeyValue[]>]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-        [Key <String>]: Contains the name of the field that a value is associated with.
-        [Value <String>]: Contains the corresponding value for the specified key.
+        [Key <String>]: Key.
+        [Value <String>]: Value.
       [AttributeCollectionRelativeUrl <String>]: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
       [RegistrationCampaign <IMicrosoftGraphKeyValue[]>]: Represents content options to customize during MFA proofup interruptions.
       [RegistrationCampaignRelativeUrl <String>]: The relative URL of the content options to customize during MFA proofup interruptions.
@@ -1310,13 +1317,110 @@ Read-only.
 This text must be a Unicode, without links or code, and can't exceed 64 characters.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [Themes <IMicrosoftGraphOrganizationalBrandingTheme[]>]: Collection of branding themes for the tenant.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [IsDefaultTheme <Boolean?>]: Indicates whether the theme is set as the default branding theme for the entire tenant and includes all applications within the tenant.
+When set to true, this theme is automatically applied to any application that does not have a specific theme assigned.
+This property is useful for enforcing consistent branding across multiple apps without configuring each one individually.
+Optional.
+      [Localizations <IMicrosoftGraphOrganizationalBrandingThemeLocalization[]>]: Represents a locale-based branding theme.
+        [AccountResetCredentials <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [CustomText <String>]: A string to replace the default visual element text that is displayed on the login page.
+The text must be in Unicode format.
+Maximum length: 256.
+          [CustomUrl <String>]: A custom URL to replace the default URL of the visual element hyperlink.
+This URL must be in ASCII format or non-ASCII characters must be URL encoded.
+Maximum length: 128.
+          [IsHidden <Boolean?>]: Option to hide the visual element on the login page.
+        [BackgroundImage <Byte[]>]: Image that appears as the background of the sign-in page.
+The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
+A smaller image will reduce bandwidth requirements and make the page load faster.
+Optional.
+        [BackgroundImageRelativeUrl <String>]: A relative url for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+        [BannerLogo <Byte[]>]: A banner version of your company logo that appears on the sign-in page.
+The allowed types are PNG or JPEG not larger than 245 x 36 pixels.
+We recommend using a transparent image with no padding around the logo.
+Optional.
+        [BannerLogoRelativeUrl <String>]: A relative url for the bannerLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+        [CannotAccessYourAccount <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+        [CdnHosts <String[]>]: A list of available CDN base urls that are serving the assets of the current resource.
+There are several CDNs used to provide redundancy hence eliminating Single Point of Failure for blob properties of this resource.
+Read-only.
+Optional.
+        [ContentCustomization <IMicrosoftGraphContentCustomization>]: contentCustomization
+        [CustomCss <Byte[]>]: CSS styling that appears on the sign-in page.
+The allowed format is .css format only and not larger than 25KB.
+Optional.
+        [CustomCssRelativeUrl <String>]: A relative url for the customCSS property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+        [Favicon <Byte[]>]: A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
+Optional.
+        [FaviconRelativeUrl <String>]: A relative url for the favicon property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+        [ForgotMyPassword <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+        [HeaderBackgroundColor <String>]: The RGB color to apply to customize the color of the header.
+Optional.
+        [HeaderLogo <Byte[]>]: A company logo that appears in the header of the sign-in page.
+The allowed types are PNG or JPEG not larger than 245 x 36 pixels.
+We recommend using a transparent image with no padding around the logo.
+Optional.
+        [HeaderLogoRelativeUrl <String>]: A relative url for the headerLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+        [Locale <String>]: An identifier that represents the locale specified using culture names.
+Culture names follow the RFC 1766 standard in the format 'languagecode2-country/regioncode2'.
+The portion 'languagecode2' is a lowercase two-letter code derived from ISO 639-1 and 'country/regioncode2' is an uppercase two-letter code derived from ISO 3166.
+For example, U.S.
+English is en-US.
+You can't create the default branding by setting the value of locale to the String types 0 or default.
+ NOTE: Multiple branding for a single locale are currently not supported.
+        [LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]: loginPageLayoutConfiguration
+        [PageBackgroundColor <String>]: Color that appears in place of the background image in low-bandwidth connections.
+We recommend that you use the primary color of your banner logo or your organization color.
+Specify this in hexadecimal format, for example, white is #FFFFFF.
+Optional.
+        [PrivacyAndCookies <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+        [ResetItNow <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+        [SignInPageText <String>]: Text that appears at the bottom of the sign-in box.
+Use this to communicate additional information, such as the phone number to your help desk or a legal statement.
+This text must be in Unicode format and not exceed 1024 characters.
+Optional.
+        [SquareLogo <Byte[]>]: A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
+Optional.
+        [SquareLogoDark <Byte[]>]: A square dark version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
+Optional.
+        [SquareLogoDarkRelativeUrl <String>]: A relative url for the squareLogoDark property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+        [SquareLogoRelativeUrl <String>]: A relative url for the squareLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+        [TermsOfUse <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+        [UsernameHintText <String>]: A string that appears as the hint in the username text box on the sign-in screen.
+This text must be Unicode, contain no links or code, and can't exceed 64 characters.
+Optional.
+      [Name <String>]: The name of the branding theme.
+Up to 120 characters.
+Required.
   [BusinessPhones <String[]>]: Telephone number for the organization.
 Although this property is a string collection, only one number can be set.
   [CertificateBasedAuthConfiguration <IMicrosoftGraphCertificateBasedAuthConfiguration[]>]: Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [CertificateAuthorities <IMicrosoftGraphCertificateAuthority[]>]: Collection of certificate authorities which creates a trusted certificate chain.
+    [CertificateAuthorities <IMicrosoftGraphCertificateAuthority[]>]: Collection of certificate authorities that creates a trusted certificate chain.
       [Certificate <Byte[]>]: Required.
 The base64 encoded string representing the public certificate.
       [CertificateRevocationListUrl <String>]: The URL of the certificate revocation list.
@@ -1436,7 +1540,7 @@ Not nullable.
     [Name <String>]: The domain name; for example, contoso.com.
     [Type <String>]: For example, Managed.
 
-BRANDING `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
+BRANDING <IMicrosoftGraphOrganizationalBranding>: organizationalBranding
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BackgroundColor <String>]: Color that appears in place of the background image in low-bandwidth connections.
 We recommend that you use the primary color of your banner logo or your organization color.
@@ -1457,8 +1561,8 @@ Read-only.
   [ContentCustomization <IMicrosoftGraphContentCustomization>]: contentCustomization
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AttributeCollection <IMicrosoftGraphKeyValue[]>]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-      [Key <String>]: Contains the name of the field that a value is associated with.
-      [Value <String>]: Contains the corresponding value for the specified key.
+      [Key <String>]: Key.
+      [Value <String>]: Value.
     [AttributeCollectionRelativeUrl <String>]: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
     [RegistrationCampaign <IMicrosoftGraphKeyValue[]>]: Represents content options to customize during MFA proofup interruptions.
     [RegistrationCampaignRelativeUrl <String>]: The relative URL of the content options to customize during MFA proofup interruptions.
@@ -1597,12 +1701,109 @@ Read-only.
 This text must be a Unicode, without links or code, and can't exceed 64 characters.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [Themes <IMicrosoftGraphOrganizationalBrandingTheme[]>]: Collection of branding themes for the tenant.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [IsDefaultTheme <Boolean?>]: Indicates whether the theme is set as the default branding theme for the entire tenant and includes all applications within the tenant.
+When set to true, this theme is automatically applied to any application that does not have a specific theme assigned.
+This property is useful for enforcing consistent branding across multiple apps without configuring each one individually.
+Optional.
+    [Localizations <IMicrosoftGraphOrganizationalBrandingThemeLocalization[]>]: Represents a locale-based branding theme.
+      [AccountResetCredentials <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [CustomText <String>]: A string to replace the default visual element text that is displayed on the login page.
+The text must be in Unicode format.
+Maximum length: 256.
+        [CustomUrl <String>]: A custom URL to replace the default URL of the visual element hyperlink.
+This URL must be in ASCII format or non-ASCII characters must be URL encoded.
+Maximum length: 128.
+        [IsHidden <Boolean?>]: Option to hide the visual element on the login page.
+      [BackgroundImage <Byte[]>]: Image that appears as the background of the sign-in page.
+The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
+A smaller image will reduce bandwidth requirements and make the page load faster.
+Optional.
+      [BackgroundImageRelativeUrl <String>]: A relative url for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+      [BannerLogo <Byte[]>]: A banner version of your company logo that appears on the sign-in page.
+The allowed types are PNG or JPEG not larger than 245 x 36 pixels.
+We recommend using a transparent image with no padding around the logo.
+Optional.
+      [BannerLogoRelativeUrl <String>]: A relative url for the bannerLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+      [CannotAccessYourAccount <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+      [CdnHosts <String[]>]: A list of available CDN base urls that are serving the assets of the current resource.
+There are several CDNs used to provide redundancy hence eliminating Single Point of Failure for blob properties of this resource.
+Read-only.
+Optional.
+      [ContentCustomization <IMicrosoftGraphContentCustomization>]: contentCustomization
+      [CustomCss <Byte[]>]: CSS styling that appears on the sign-in page.
+The allowed format is .css format only and not larger than 25KB.
+Optional.
+      [CustomCssRelativeUrl <String>]: A relative url for the customCSS property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+      [Favicon <Byte[]>]: A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
+Optional.
+      [FaviconRelativeUrl <String>]: A relative url for the favicon property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+      [ForgotMyPassword <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+      [HeaderBackgroundColor <String>]: The RGB color to apply to customize the color of the header.
+Optional.
+      [HeaderLogo <Byte[]>]: A company logo that appears in the header of the sign-in page.
+The allowed types are PNG or JPEG not larger than 245 x 36 pixels.
+We recommend using a transparent image with no padding around the logo.
+Optional.
+      [HeaderLogoRelativeUrl <String>]: A relative url for the headerLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+      [Locale <String>]: An identifier that represents the locale specified using culture names.
+Culture names follow the RFC 1766 standard in the format 'languagecode2-country/regioncode2'.
+The portion 'languagecode2' is a lowercase two-letter code derived from ISO 639-1 and 'country/regioncode2' is an uppercase two-letter code derived from ISO 3166.
+For example, U.S.
+English is en-US.
+You can't create the default branding by setting the value of locale to the String types 0 or default.
+ NOTE: Multiple branding for a single locale are currently not supported.
+      [LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]: loginPageLayoutConfiguration
+      [PageBackgroundColor <String>]: Color that appears in place of the background image in low-bandwidth connections.
+We recommend that you use the primary color of your banner logo or your organization color.
+Specify this in hexadecimal format, for example, white is #FFFFFF.
+Optional.
+      [PrivacyAndCookies <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+      [ResetItNow <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+      [SignInPageText <String>]: Text that appears at the bottom of the sign-in box.
+Use this to communicate additional information, such as the phone number to your help desk or a legal statement.
+This text must be in Unicode format and not exceed 1024 characters.
+Optional.
+      [SquareLogo <Byte[]>]: A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
+Optional.
+      [SquareLogoDark <Byte[]>]: A square dark version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
+Optional.
+      [SquareLogoDarkRelativeUrl <String>]: A relative url for the squareLogoDark property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+      [SquareLogoRelativeUrl <String>]: A relative url for the squareLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+Optional.
+      [TermsOfUse <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
+      [UsernameHintText <String>]: A string that appears as the hint in the username text box on the sign-in screen.
+This text must be Unicode, contain no links or code, and can't exceed 64 characters.
+Optional.
+    [Name <String>]: The name of the branding theme.
+Up to 120 characters.
+Required.
 
 CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfiguration[]>: Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [CertificateAuthorities <IMicrosoftGraphCertificateAuthority[]>]: Collection of certificate authorities which creates a trusted certificate chain.
+  [CertificateAuthorities <IMicrosoftGraphCertificateAuthority[]>]: Collection of certificate authorities that creates a trusted certificate chain.
     [Certificate <Byte[]>]: Required.
 The base64 encoded string representing the public certificate.
     [CertificateRevocationListUrl <String>]: The URL of the certificate revocation list.
@@ -1614,7 +1815,7 @@ Read-only.
     [IssuerSki <String>]: The subject key identifier of the certificate, calculated from the certificate value.
 Read-only.
 
-CERTIFICATECONNECTORSETTING `<IMicrosoftGraphCertificateConnectorSetting>`: Certificate connector settings.
+CERTIFICATECONNECTORSETTING <IMicrosoftGraphCertificateConnectorSetting>: Certificate connector settings.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CertExpiryTime <DateTime?>]: Certificate expire time
   [ConnectorVersion <String>]: Version of certificate connector
@@ -1623,7 +1824,7 @@ CERTIFICATECONNECTORSETTING `<IMicrosoftGraphCertificateConnectorSetting>`: Cert
   [LastUploadVersion <Int64?>]: Version of last uploaded certificate connector
   [Status <Int32?>]: Certificate connector status
 
-DIRECTORYSIZEQUOTA `<IMicrosoftGraphDirectorySizeQuota>`: directorySizeQuota
+DIRECTORYSIZEQUOTA <IMicrosoftGraphDirectorySizeQuota>: directorySizeQuota
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Total <Int32?>]: Total amount of the directory quota.
   [Used <Int32?>]: Used amount of the directory quota.
@@ -1633,7 +1834,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-PARTNERINFORMATION `<IMicrosoftGraphPartnerInformation>`: partnerInformation
+PARTNERINFORMATION <IMicrosoftGraphPartnerInformation>: partnerInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CommerceUrl <String>]: 
   [CompanyName <String>]: 
@@ -1644,7 +1845,7 @@ PARTNERINFORMATION `<IMicrosoftGraphPartnerInformation>`: partnerInformation
   [SupportTelephones <String[]>]: 
   [SupportUrl <String>]: 
 
-PRIVACYPROFILE `<IMicrosoftGraphPrivacyProfile>`: privacyProfile
+PRIVACYPROFILE <IMicrosoftGraphPrivacyProfile>: privacyProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContactEmail <String>]: A valid smtp email address for the privacy statement contact.
 Not required.
@@ -1660,7 +1861,7 @@ See a detailed description of each value.
   [ProvisioningStatus <String>]: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
   [Service <String>]: The name of the service; for example, 'AccessControlS2S'
 
-SETTINGS `<IMicrosoftGraphOrganizationSettings>`: organizationSettings
+SETTINGS <IMicrosoftGraphOrganizationSettings>: organizationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1699,27 +1900,4 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [New-MgBetaOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganization)

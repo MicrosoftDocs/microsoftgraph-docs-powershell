@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfolder
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserMailFolderChildFolder
 ---
@@ -14,9 +14,6 @@ title: Get-MgUserMailFolderChildFolder
 ## SYNOPSIS
 
 The collection of child folders in the mailFolder.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,30 +59,20 @@ This cmdlet has the following aliases,
 The collection of child folders in the mailFolder.
 
 ## EXAMPLES
-### Example 1: List mail folders
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId
 
-```
-This example will list mail folders
-
-### Example 2: Include hidden child folders under a specified mail folder
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
-Get-MgUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId -Includehiddenfolders true 
-
-```
-This example will include hidden child folders under a specified mail folder
-
+Get-MgUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId -Includehiddenfolders true
 
 ## PARAMETERS
 
@@ -622,7 +609,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -635,26 +622,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserMailFolderChildFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfolder)

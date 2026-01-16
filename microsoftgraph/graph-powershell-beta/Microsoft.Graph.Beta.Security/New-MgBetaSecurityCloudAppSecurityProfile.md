@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycloudappsecurityprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 12/05/2025
+ms.date: 01/16/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityCloudAppSecurityProfile
 ---
@@ -51,6 +51,16 @@ This cmdlet has the following aliases,
 
 Create new navigation property to cloudAppSecurityProfiles for security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -76,7 +86,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -97,7 +107,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -183,7 +193,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -204,7 +214,7 @@ HelpMessage: ''
 
 ### -DeploymentPackageUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -225,7 +235,7 @@ HelpMessage: ''
 
 ### -DestinationServiceName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -331,7 +341,7 @@ HelpMessage: ''
 
 ### -IsSigned
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -352,7 +362,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -373,7 +383,7 @@ HelpMessage: ''
 
 ### -Manifest
 
-
+.
 
 ```yaml
 Type: System.String
@@ -394,7 +404,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -436,7 +446,7 @@ HelpMessage: ''
 
 ### -Platform
 
-
+.
 
 ```yaml
 Type: System.String
@@ -457,7 +467,7 @@ HelpMessage: ''
 
 ### -PolicyName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -541,7 +551,7 @@ HelpMessage: ''
 
 ### -Publisher
 
-
+.
 
 ```yaml
 Type: System.String
@@ -584,7 +594,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-
+.
 
 ```yaml
 Type: System.String
@@ -605,7 +615,7 @@ HelpMessage: ''
 
 ### -Tags
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -626,7 +636,7 @@ HelpMessage: ''
 
 ### -Type
 
-
+.
 
 ```yaml
 Type: System.String
@@ -719,7 +729,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudAppSecurityProfile>`: cloudAppSecurityProfile
+BODYPARAMETER <IMicrosoftGraphCloudAppSecurityProfile>: cloudAppSecurityProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -748,7 +758,7 @@ Required
     [Vendor <String>]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -760,27 +770,4 @@ Required
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityCloudAppSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycloudappsecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycloudappsecurityprofile)
