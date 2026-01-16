@@ -1122,7 +1122,7 @@ HelpMessage: ''
 
 ### -Presenters
 
-.
+
 To construct, see NOTES section for PRESENTERS properties and create a hash table.
 
 ```yaml
@@ -1240,7 +1240,7 @@ HelpMessage: ''
 
 ### -Registrations
 
-.
+
 To construct, see NOTES section for REGISTRATIONS properties and create a hash table.
 
 ```yaml

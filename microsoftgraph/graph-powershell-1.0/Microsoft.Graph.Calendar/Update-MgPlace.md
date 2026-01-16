@@ -207,7 +207,7 @@ HelpMessage: ''
 
 ### -CheckIns
 
-.
+
 To construct, see NOTES section for CHECKINS properties and create a hash table.
 
 ```yaml
@@ -431,7 +431,7 @@ HelpMessage: ''
 
 ### -IsWheelChairAccessible
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -458,7 +458,7 @@ HelpMessage: ''
 
 ### -Label
 
-.
+
 
 ```yaml
 Type: System.String
@@ -485,7 +485,7 @@ HelpMessage: ''
 
 ### -ParentId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -651,7 +651,7 @@ HelpMessage: ''
 
 ### -Tags
 
-.
+
 
 ```yaml
 Type: System.String[]
