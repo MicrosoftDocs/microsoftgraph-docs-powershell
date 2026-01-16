@@ -15,6 +15,9 @@ title: New-MgUserTeamworkAssociatedTeam
 
 Create new navigation property to associatedTeams for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

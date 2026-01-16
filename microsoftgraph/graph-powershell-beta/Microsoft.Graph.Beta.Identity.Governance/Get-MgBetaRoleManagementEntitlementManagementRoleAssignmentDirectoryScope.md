@@ -17,6 +17,9 @@ The directory object that is the scope of the assignment.
 Read-only.
 Supports $expand for the directory provider.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScope?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

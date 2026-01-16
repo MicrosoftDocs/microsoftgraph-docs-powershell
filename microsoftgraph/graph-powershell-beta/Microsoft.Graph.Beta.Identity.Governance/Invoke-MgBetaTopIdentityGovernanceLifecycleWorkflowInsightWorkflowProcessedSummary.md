@@ -17,6 +17,9 @@ Provide a summary of the workflows processed the most, known as top workflows, f
 Workflow basic details are given, along with run information.
 For information about tasks processed, see insights: topTasksProcessedSummary.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Top (Default)

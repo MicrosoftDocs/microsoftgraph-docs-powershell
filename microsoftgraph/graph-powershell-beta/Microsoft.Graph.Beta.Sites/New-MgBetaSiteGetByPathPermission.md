@@ -15,6 +15,9 @@ title: New-MgBetaSiteGetByPathPermission
 
 Create new navigation property to permissions for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Sites/New-MgSiteGetByPathPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

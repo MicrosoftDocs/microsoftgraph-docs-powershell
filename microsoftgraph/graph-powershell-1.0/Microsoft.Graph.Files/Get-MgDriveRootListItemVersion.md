@@ -15,6 +15,9 @@ title: Get-MgDriveRootListItemVersion
 
 The list of previous versions of the list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

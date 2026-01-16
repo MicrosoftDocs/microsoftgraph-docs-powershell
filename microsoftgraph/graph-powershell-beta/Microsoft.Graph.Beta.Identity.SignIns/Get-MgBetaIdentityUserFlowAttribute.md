@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityUserFlowAttribute
 
 Retrieve the properties and relationships of a identityUserFlowAttribute object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
