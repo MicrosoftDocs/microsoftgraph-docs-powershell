@@ -59,6 +59,14 @@ Retrieve the properties and relationships of a channel.
 This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Channel.ReadBasic.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All, ChannelSettings.ReadWrite.All, ChannelSettings.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelSettings.Read.Group, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All, ChannelSettings.ReadWrite.Group, ChannelSettings.ReadWrite.All, ChannelSettings.Read.All, Channel.ReadBasic.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -86,6 +86,14 @@ This cmdlet has the following aliases,
 
 A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelMember.Read.All, ChannelMember.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMember.Read.Group, ChannelMember.ReadWrite.Group, ChannelMember.ReadWrite.All, ChannelMember.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

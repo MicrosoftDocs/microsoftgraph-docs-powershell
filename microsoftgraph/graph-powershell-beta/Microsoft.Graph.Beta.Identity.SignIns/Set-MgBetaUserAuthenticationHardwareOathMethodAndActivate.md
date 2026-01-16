@@ -74,6 +74,14 @@ This cmdlet has the following aliases,
 Assign and activate a hardware token at the same time.
 This operation requires the device ID to activate it.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
