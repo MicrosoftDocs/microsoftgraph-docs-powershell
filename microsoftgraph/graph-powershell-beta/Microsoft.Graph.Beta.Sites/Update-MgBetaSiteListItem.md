@@ -96,16 +96,6 @@ Update the navigation property items in sites
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -53502,6 +53492,7 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitem)
+
 
 
 

@@ -73,12 +73,17 @@ You can't create custom languages in self-service sign-up user flows.
 | Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityB2XUserFlowLanguage -B2xIdentityUserFlowId $b2xIdentityUserFlowId
+
+```
+This example shows how to use the Get-MgBetaIdentityB2XUserFlowLanguage Cmdlet.
+
 
 ## PARAMETERS
 

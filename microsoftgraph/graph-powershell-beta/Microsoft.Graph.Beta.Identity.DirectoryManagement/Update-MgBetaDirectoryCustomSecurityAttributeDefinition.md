@@ -88,8 +88,9 @@ Update the properties of a customSecurityAttributeDefinition object.
 | Application | CustomSecAttributeDefinition.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update a custom security attribute
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -99,7 +100,12 @@ $params = @{
 
 Update-MgBetaDirectoryCustomSecurityAttributeDefinition -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update a custom security attribute
+
+### Example 2: Update the predefined values for a custom security attribute
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -110,7 +116,12 @@ $params = @{
 
 Update-MgBetaDirectoryCustomSecurityAttributeDefinition -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will update the predefined values for a custom security attribute
+
+### Example 3: Deactivate a custom security attribute
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -119,6 +130,10 @@ $params = @{
 }
 
 Update-MgBetaDirectoryCustomSecurityAttributeDefinition -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -BodyParameter $params
+
+```
+This example will deactivate a custom security attribute
+
 
 ## PARAMETERS
 

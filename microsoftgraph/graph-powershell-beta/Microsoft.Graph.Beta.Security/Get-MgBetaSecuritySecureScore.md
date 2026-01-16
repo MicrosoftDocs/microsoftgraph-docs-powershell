@@ -67,12 +67,17 @@ Measurements of tenants’ security posture to help protect them from threats.
 | Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
-Get-MgBetaSecuritySecureScore -Top 1
+Get-MgBetaSecuritySecureScore -Top 1 
+
+```
+This example shows how to use the Get-MgBetaSecuritySecureScore Cmdlet.
+
 
 ## PARAMETERS
 

@@ -116,9 +116,9 @@ Create new navigation property to events for users
 | Application | Calendars.ReadWrite,  |
 
 ## EXAMPLES
+### Example 1: Create an event in a specific calendar
 
-### EXAMPLE 1
-
+```powershell
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
@@ -152,9 +152,14 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
+```
+This example shows how to use the New-MgUserCalendarEvent Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
+### Example 2: Create and enable an event as an online meeting
+
+```powershell
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
@@ -189,6 +194,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
+```
+This example shows how to use the New-MgUserCalendarEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
