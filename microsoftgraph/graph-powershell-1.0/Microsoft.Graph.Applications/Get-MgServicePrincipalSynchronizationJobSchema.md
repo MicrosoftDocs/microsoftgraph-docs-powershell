@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Retrieve the schema for a given synchronization job or template.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All, CustomSecAttributeProvisioning.ReadWrite.All, CustomSecAttributeProvisioning.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomSecAttributeProvisioning.Read.All, Synchronization.ReadWrite.All, Synchronization.Read.All, CustomSecAttributeProvisioning.ReadWrite.All, Application.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
