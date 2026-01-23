@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting
@@ -730,7 +730,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphUserSettings>: userSettings
+BODYPARAMETER `<IMicrosoftGraphUserSettings>`: userSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -886,21 +886,21 @@ Refers to the user's Windows device that modified the object at the specified da
     [SettingType <String>]: windowsSettingType
     [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
 
-CONTACTMERGESUGGESTIONS <IMicrosoftGraphContactMergeSuggestions>: contactMergeSuggestions
+CONTACTMERGESUGGESTIONS `<IMicrosoftGraphContactMergeSuggestions>`: contactMergeSuggestions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [IsEnabled <Boolean?>]: true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled.
 Default value is true.
 
-EXCHANGE <IMicrosoftGraphExchangeSettings>: exchangeSettings
+EXCHANGE `<IMicrosoftGraphExchangeSettings>`: exchangeSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [InPlaceArchiveMailboxId <String>]: 
   [PrimaryMailboxId <String>]: The unique identifier for the user's primary mailbox.
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -930,7 +930,7 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [WindowsSettingId <String>]: The unique identifier of windowsSetting
   [WindowsSettingInstanceId <String>]: The unique identifier of windowsSettingInstance
 
-ITEMINSIGHTS <IMicrosoftGraphUserInsightsSettings>: userInsightsSettings
+ITEMINSIGHTS `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -938,7 +938,7 @@ Read-only.
 The default value is true.
 Optional.
 
-REGIONALANDLANGUAGESETTINGS <IMicrosoftGraphRegionalAndLanguageSettings>: regionalAndLanguageSettings
+REGIONALANDLANGUAGESETTINGS `<IMicrosoftGraphRegionalAndLanguageSettings>`: regionalAndLanguageSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -975,7 +975,7 @@ For example, it would specify 'fr' for the neutral French culture, but not 'fr-F
 Returned by default.
 Read only.
 
-SHIFTPREFERENCES <IMicrosoftGraphShiftPreferences>: shiftPreferences
+SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1029,7 +1029,7 @@ Required.
       [StartTime <String>]: Start time for the time range.
     [TimeZone <String>]: Specifies the time zone for the indicated time.
 
-STORAGE <IMicrosoftGraphUserStorage>: userStorage
+STORAGE `<IMicrosoftGraphUserStorage>`: userStorage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1073,3 +1073,25 @@ Refers to the user's Windows device that modified the object at the specified da
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskattachmentuploadsession
@@ -537,7 +537,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTACHMENTINFO <IMicrosoftGraphAttachmentInfo>: attachmentInfo
+ATTACHMENTINFO `<IMicrosoftGraphAttachmentInfo>`: attachmentInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AttachmentType <String>]: attachmentType
   [ContentType <String>]: The nature of the data in the attachment.
@@ -548,7 +548,7 @@ Required.
   [Size <Int64?>]: The length of the attachment in bytes.
 Required.
 
-BODYPARAMETER <IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AttachmentInfo <IMicrosoftGraphAttachmentInfo>]: attachmentInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -561,7 +561,7 @@ Required.
     [Size <Int64?>]: The length of the attachment in bytes.
 Required.
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -596,3 +596,25 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskattachmentuploadsession)
 - [](https://learn.microsoft.com/graph/api/taskfileattachment-createuploadsession?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
