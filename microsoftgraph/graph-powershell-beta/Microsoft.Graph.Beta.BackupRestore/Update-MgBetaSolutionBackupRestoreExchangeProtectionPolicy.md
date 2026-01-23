@@ -120,7 +120,7 @@ HelpMessage: ''
 
 ### -BillingPolicyId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -588,7 +588,7 @@ HelpMessage: ''
 
 ### -MailboxProtectionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for MAILBOXPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml

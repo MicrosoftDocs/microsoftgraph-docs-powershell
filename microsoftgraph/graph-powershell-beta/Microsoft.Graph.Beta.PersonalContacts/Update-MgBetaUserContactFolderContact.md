@@ -879,7 +879,7 @@ HelpMessage: ''
 
 ### -IsFavorite
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

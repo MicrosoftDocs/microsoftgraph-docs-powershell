@@ -84,7 +84,7 @@ HelpMessage: ''
 
 ### -Body
 
-.
+
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -149,7 +149,7 @@ HelpMessage: ''
 
 ### -DelegatedUserEmail
 
-.
+
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ HelpMessage: ''
 
 ### -Locale
 
-.
+
 
 ```yaml
 Type: System.String
@@ -254,7 +254,7 @@ HelpMessage: ''
 
 ### -ProtectedContents
 
-.
+
 To construct, see NOTES section for PROTECTEDCONTENTS properties and create a hash table.
 
 ```yaml
@@ -361,7 +361,7 @@ HelpMessage: ''
 
 ### -SupportedContentFormats
 
-.
+
 
 ```yaml
 Type: System.String[]

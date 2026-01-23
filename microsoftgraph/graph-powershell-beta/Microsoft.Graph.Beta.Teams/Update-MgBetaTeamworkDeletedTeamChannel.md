@@ -385,7 +385,7 @@ HelpMessage: ''
 
 ### -EnabledApps
 
-.
+
 To construct, see NOTES section for ENABLEDAPPS properties and create a hash table.
 
 ```yaml

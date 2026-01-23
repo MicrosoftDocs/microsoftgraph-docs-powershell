@@ -205,7 +205,7 @@ HelpMessage: ''
 
 ### -BrowseSessions
 
-.
+
 To construct, see NOTES section for BROWSESESSIONS properties and create a hash table.
 
 ```yaml
@@ -293,7 +293,7 @@ HelpMessage: ''
 
 ### -DriveProtectionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for DRIVEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -510,7 +510,7 @@ HelpMessage: ''
 
 ### -MailboxProtectionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for MAILBOXPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -532,7 +532,7 @@ HelpMessage: ''
 
 ### -OneDriveForBusinessBrowseSessions
 
-.
+
 To construct, see NOTES section for ONEDRIVEFORBUSINESSBROWSESESSIONS properties and create a hash table.
 
 ```yaml
@@ -815,7 +815,7 @@ HelpMessage: ''
 
 ### -SharePointBrowseSessions
 
-.
+
 To construct, see NOTES section for SHAREPOINTBROWSESESSIONS properties and create a hash table.
 
 ```yaml
@@ -925,7 +925,7 @@ HelpMessage: ''
 
 ### -SiteProtectionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for SITEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml

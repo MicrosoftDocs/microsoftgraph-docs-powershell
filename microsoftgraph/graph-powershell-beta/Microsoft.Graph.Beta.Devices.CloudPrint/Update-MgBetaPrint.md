@@ -226,7 +226,7 @@ HelpMessage: ''
 
 ### -Operations
 
-.
+
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -270,7 +270,7 @@ HelpMessage: ''
 
 ### -PrinterShares
 
-.
+
 To construct, see NOTES section for PRINTERSHARES properties and create a hash table.
 
 ```yaml
@@ -443,7 +443,7 @@ HelpMessage: ''
 
 ### -TaskDefinitions
 
-.
+
 To construct, see NOTES section for TASKDEFINITIONS properties and create a hash table.
 
 ```yaml

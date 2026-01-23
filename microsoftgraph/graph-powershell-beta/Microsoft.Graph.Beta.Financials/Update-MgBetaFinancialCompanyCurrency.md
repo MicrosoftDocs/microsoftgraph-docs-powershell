@@ -109,7 +109,7 @@ HelpMessage: ''
 
 ### -AmountDecimalPlaces
 
-.
+
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ HelpMessage: ''
 
 ### -AmountRoundingPrecision
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -212,7 +212,7 @@ HelpMessage: ''
 
 ### -Code
 
-.
+
 
 ```yaml
 Type: System.String
@@ -315,7 +315,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -405,7 +405,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -460,7 +460,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -572,7 +572,7 @@ HelpMessage: ''
 
 ### -Symbol
 
-.
+
 
 ```yaml
 Type: System.String
