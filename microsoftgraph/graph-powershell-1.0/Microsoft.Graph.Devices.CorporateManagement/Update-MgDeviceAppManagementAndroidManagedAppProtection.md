@@ -15,6 +15,9 @@ title: Update-MgDeviceAppManagementAndroidManagedAppProtection
 
 Update the navigation property androidManagedAppProtections in deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
