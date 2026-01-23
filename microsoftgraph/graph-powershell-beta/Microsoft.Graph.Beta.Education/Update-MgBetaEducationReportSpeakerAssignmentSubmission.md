@@ -1037,7 +1037,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationreportspeakerassignmentsubmission)
+- [Update-MgBetaEducationReportSpeakerAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationreportspeakerassignmentsubmission)
 
 
 

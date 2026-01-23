@@ -405,7 +405,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogcustomworkflowextensioncount)
+- [Get-MgEntitlementManagementCatalogCustomWorkflowExtensionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogcustomworkflowextensioncount)
 
 
 

@@ -370,7 +370,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivecount)
+- [Get-MgUserDriveCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivecount)
 
 
 

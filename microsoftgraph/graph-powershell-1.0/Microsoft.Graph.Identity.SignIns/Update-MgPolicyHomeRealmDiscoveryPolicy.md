@@ -731,8 +731,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyhomerealmdiscoverypolicy)
-- [](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-update?view=graph-rest-1.0)
+- [Update-MgPolicyHomeRealmDiscoveryPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyhomerealmdiscoverypolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-update?view=graph-rest-1.0)
 
 
 

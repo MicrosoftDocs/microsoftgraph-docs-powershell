@@ -408,7 +408,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincidentalertcount)
+- [Get-MgSecurityIncidentAlertCount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincidentalertcount)
 
 
 

@@ -761,7 +761,7 @@ By default, all push endpoint types (Windows, iOS, Android and WebPush) are enab
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification)
+- [Update-MgBetaUserNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification)
 
 
 

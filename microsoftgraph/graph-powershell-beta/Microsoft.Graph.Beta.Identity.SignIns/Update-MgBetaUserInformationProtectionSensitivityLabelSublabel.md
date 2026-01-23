@@ -1143,7 +1143,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotectionsensitivitylabelsublabel)
+- [Update-MgBetaUserInformationProtectionSensitivityLabelSublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotectionsensitivitylabelsublabel)
 
 
 

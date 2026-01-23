@@ -460,7 +460,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceprofileindicator)
+- [New-MgSecurityThreatIntelligenceProfileIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceprofileindicator)
 
 
 

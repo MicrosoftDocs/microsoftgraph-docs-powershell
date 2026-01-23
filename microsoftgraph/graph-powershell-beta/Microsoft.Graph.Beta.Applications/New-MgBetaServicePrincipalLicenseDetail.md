@@ -614,7 +614,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipallicensedetail)
+- [New-MgBetaServicePrincipalLicenseDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipallicensedetail)
 
 
 

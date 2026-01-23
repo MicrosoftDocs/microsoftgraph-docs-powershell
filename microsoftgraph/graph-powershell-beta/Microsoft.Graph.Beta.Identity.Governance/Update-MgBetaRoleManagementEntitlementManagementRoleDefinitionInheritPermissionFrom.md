@@ -1023,7 +1023,7 @@ Not supported for custom roles.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroledefinitioninheritpermissionfrom)
+- [Update-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroledefinitioninheritpermissionfrom)
 
 
 

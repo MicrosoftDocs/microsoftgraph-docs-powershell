@@ -816,7 +816,7 @@ Read only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting)
+- [Update-MgBetaUserSettingRegionalAndLanguageSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting)
 
 
 

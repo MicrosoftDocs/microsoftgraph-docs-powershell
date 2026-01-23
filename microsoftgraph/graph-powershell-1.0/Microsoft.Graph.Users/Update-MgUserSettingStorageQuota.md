@@ -700,7 +700,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstoragequota)
+- [Update-MgUserSettingStorageQuota](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstoragequota)
 
 
 

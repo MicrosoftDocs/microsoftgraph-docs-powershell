@@ -629,7 +629,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail)
+- [Update-MgUserLicenseDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail)
 
 
 

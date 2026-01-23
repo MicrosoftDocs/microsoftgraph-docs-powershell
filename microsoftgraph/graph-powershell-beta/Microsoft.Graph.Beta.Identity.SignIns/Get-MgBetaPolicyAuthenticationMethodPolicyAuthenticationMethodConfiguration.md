@@ -642,8 +642,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
-- [](https://learn.microsoft.com/graph/api/externalauthenticationmethodconfiguration-get?view=graph-rest-beta)
+- [Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalauthenticationmethodconfiguration-get?view=graph-rest-beta)
 
 
 

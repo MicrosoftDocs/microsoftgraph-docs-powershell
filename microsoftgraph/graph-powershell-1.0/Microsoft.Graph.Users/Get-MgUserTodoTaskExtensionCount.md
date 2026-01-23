@@ -402,7 +402,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskextensioncount)
+- [Get-MgUserTodoTaskExtensionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskextensioncount)
 
 
 

@@ -494,8 +494,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaaccessreviewinstance)
-- [](https://learn.microsoft.com/graph/api/accessreview-stop?view=graph-rest-beta)
+- [Stop-MgBetaAccessReviewInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaaccessreviewinstance)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreview-stop?view=graph-rest-beta)
 
 
 

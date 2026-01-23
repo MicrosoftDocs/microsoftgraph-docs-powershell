@@ -1240,7 +1240,7 @@ Possible values: onetime, weekly, monthly, quarterly, halfyearly or annual.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewinstance)
+- [New-MgBetaAccessReviewInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewinstance)
 
 
 

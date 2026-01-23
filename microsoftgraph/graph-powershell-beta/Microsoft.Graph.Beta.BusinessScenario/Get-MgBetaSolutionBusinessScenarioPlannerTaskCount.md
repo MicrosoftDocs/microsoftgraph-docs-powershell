@@ -348,7 +348,7 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskcount)
+- [Get-MgBetaSolutionBusinessScenarioPlannerTaskCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskcount)
 
 
 

@@ -569,8 +569,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning)
-- [](https://learn.microsoft.com/graph/api/provisioningobjectsummary-list?view=graph-rest-1.0)
+- [Get-MgAuditLogProvisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/provisioningobjectsummary-list?view=graph-rest-1.0)
 
 
 
