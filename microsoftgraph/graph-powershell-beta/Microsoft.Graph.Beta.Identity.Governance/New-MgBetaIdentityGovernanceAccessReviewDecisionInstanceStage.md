@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdecisioninstancestage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 12/05/2025
+ms.date: 01/23/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage
 ---
@@ -75,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to stages for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -642,7 +652,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewStage>`: accessReviewStage
+BODYPARAMETER <IMicrosoftGraphAccessReviewStage>: accessReviewStage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -655,9 +665,10 @@ Read-only.
     [AppliedBy <IMicrosoftGraphUserIdentity>]: userIdentity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
       [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
     [AppliedDateTime <DateTime?>]: The timestamp when the approval decision was applied.
@@ -665,6 +676,7 @@ The DatetimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $select.
 Read-only.
+    [ApplyDescription <String>]: The description of the apply result.
     [ApplyResult <String>]: The result of applying the decision.
 Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound, and ApplyNotSupported.
 Supports $select, $orderby, and $filter (eq only).
@@ -712,6 +724,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
           [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+          [ReviewerId <String>]: 
+          [ScopeType <String>]: accessReviewReviewerScopeType
         [CreatedBy <IMicrosoftGraphUserIdentity>]: userIdentity
         [CreatedDateTime <DateTime?>]: Timestamp when the access review series was created.
 Supports $select.
@@ -894,12 +908,19 @@ Possible values: Initializing, NotStarted, Starting, InProgress, Completing, Com
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
     [Justification <String>]: Justification left by the reviewer when they made the decision.
+    [Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]: accessReviewInstanceDecisionItemPermission
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Description <String>]: The description of the permission.
+      [DisplayName <String>]: The display name of the permission.
+      [Id <String>]: The identifier of the permission.
+      [Type <String>]: The type of the permission.
     [Principal <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [PrincipalLink <String>]: Link to the principal object.
 For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9.
 Read-only.
@@ -915,10 +936,11 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
     [Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]: accessReviewInstanceDecisionItemResource
       [(Any) <Object>]: This indicates any property can be added to this object.
+      [Description <String>]: Description of the resource
       [DisplayName <String>]: Display name of the resource
       [Id <String>]: Resource ID
       [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
     [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -958,9 +980,10 @@ Read-only.
   [AppliedBy <IMicrosoftGraphUserIdentity>]: userIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
     [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
   [AppliedDateTime <DateTime?>]: The timestamp when the approval decision was applied.
@@ -968,6 +991,7 @@ The DatetimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $select.
 Read-only.
+  [ApplyDescription <String>]: The description of the apply result.
   [ApplyResult <String>]: The result of applying the decision.
 Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound, and ApplyNotSupported.
 Supports $select, $orderby, and $filter (eq only).
@@ -1015,6 +1039,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
         [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+        [ReviewerId <String>]: 
+        [ScopeType <String>]: accessReviewReviewerScopeType
       [CreatedBy <IMicrosoftGraphUserIdentity>]: userIdentity
       [CreatedDateTime <DateTime?>]: Timestamp when the access review series was created.
 Supports $select.
@@ -1219,12 +1245,19 @@ Possible values: Initializing, NotStarted, Starting, InProgress, Completing, Com
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
   [Justification <String>]: Justification left by the reviewer when they made the decision.
+  [Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]: accessReviewInstanceDecisionItemPermission
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Description <String>]: The description of the permission.
+    [DisplayName <String>]: The display name of the permission.
+    [Id <String>]: The identifier of the permission.
+    [Type <String>]: The type of the permission.
   [Principal <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [PrincipalLink <String>]: Link to the principal object.
 For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9.
 Read-only.
@@ -1240,10 +1273,11 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
   [Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]: accessReviewInstanceDecisionItemResource
     [(Any) <Object>]: This indicates any property can be added to this object.
+    [Description <String>]: Description of the resource
     [DisplayName <String>]: Display name of the resource
     [Id <String>]: Resource ID
     [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
   [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -1264,8 +1298,10 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+  [ReviewerId <String>]: 
+  [ScopeType <String>]: accessReviewReviewerScopeType
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1277,9 +1313,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceId <String>]: The unique identifier of accessPackageResource
   [AccessPackageResourceRequestId <String>]: The unique identifier of accessPackageResourceRequest
   [AccessPackageResourceRoleId <String>]: The unique identifier of accessPackageResourceRole
+  [AccessPackageResourceRoleId1 <String>]: The unique identifier of accessPackageResourceRole
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
+  [AccessPackageSuggestionId <String>]: The unique identifier of accessPackageSuggestion
   [AccessReviewDecisionId <String>]: The unique identifier of accessReviewDecision
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
@@ -1298,10 +1337,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AppConsentRequestId <String>]: The unique identifier of appConsentRequest
   [ApprovalId <String>]: The unique identifier of approval
   [ApprovalStepId <String>]: The unique identifier of approvalStep
+  [AvailableAccessPackageId <String>]: The unique identifier of availableAccessPackage
   [BusinessFlowTemplateId <String>]: The unique identifier of businessFlowTemplate
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
@@ -1314,6 +1355,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [GovernanceRoleAssignmentRequestId <String>]: The unique identifier of governanceRoleAssignmentRequest
   [GovernanceRoleDefinitionId <String>]: The unique identifier of governanceRoleDefinition
   [GovernanceRoleSettingId <String>]: The unique identifier of governanceRoleSetting
+  [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [ObjectId <String>]: Alternate key of accessPackageSubject
@@ -1339,6 +1381,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ProgramId <String>]: The unique identifier of program
   [RbacApplicationId <String>]: The unique identifier of rbacApplication
   [RunId <String>]: The unique identifier of run
+  [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
@@ -1375,31 +1418,10 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+  [ReviewerId <String>]: 
+  [ScopeType <String>]: accessReviewReviewerScopeType
 
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdecisioninstancestage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdecisioninstancestage)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 12/05/2025
+ms.date: 01/23/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEducationClassAssignmentSetting
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaEducationClassAssignmentSetting
 
 Update the properties of an educationAssignmentSettings object.
 Only teachers can update these settings.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,18 +76,9 @@ This cmdlet has the following aliases,
 Update the properties of an educationAssignmentSettings object.
 Only teachers can update these settings.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -100,12 +88,7 @@ $params = @{
 
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgBetaEducationClassAssignmentSetting Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -127,10 +110,6 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaEducationClassAssignmentSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -632,7 +611,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentSettings>`: educationAssignmentSettings
+BODYPARAMETER <IMicrosoftGraphEducationAssignmentSettings>: educationAssignmentSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -643,7 +622,7 @@ Read-only.
     [DisplayName <String>]: The name of the grading scheme.
     [Grades <IMicrosoftGraphEducationGradingSchemeGrade[]>]: The grades that make up the scheme.
       [DefaultPercentage <Single?>]: The midpoint of the grade range.
-      [DisplayName <String>]: The name of the grading scheme.
+      [DisplayName <String>]: The name of this individual grade.
       [MinPercentage <Single?>]: The minimum percentage of the total points needed to achieve this grade.
     [HidePointsDuringGrading <Boolean?>]: The display setting for the UI.
 Indicates whether teachers can grade with points in addition to letter grades.
@@ -657,14 +636,14 @@ Read-only.
 If true, the animation doesn't show.
 The default value is false.
 
-DEFAULTGRADINGSCHEME `<IMicrosoftGraphEducationGradingScheme>`: educationGradingScheme
+DEFAULTGRADINGSCHEME <IMicrosoftGraphEducationGradingScheme>: educationGradingScheme
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: The name of the grading scheme.
   [Grades <IMicrosoftGraphEducationGradingSchemeGrade[]>]: The grades that make up the scheme.
     [DefaultPercentage <Single?>]: The midpoint of the grade range.
-    [DisplayName <String>]: The name of the grading scheme.
+    [DisplayName <String>]: The name of this individual grade.
     [MinPercentage <Single?>]: The minimum percentage of the total points needed to achieve this grade.
   [HidePointsDuringGrading <Boolean?>]: The display setting for the UI.
 Indicates whether teachers can grade with points in addition to letter grades.
@@ -681,12 +660,12 @@ Read-only.
   [DisplayName <String>]: The name of the grading scheme.
   [Grades <IMicrosoftGraphEducationGradingSchemeGrade[]>]: The grades that make up the scheme.
     [DefaultPercentage <Single?>]: The midpoint of the grade range.
-    [DisplayName <String>]: The name of the grading scheme.
+    [DisplayName <String>]: The name of this individual grade.
     [MinPercentage <Single?>]: The minimum percentage of the total points needed to achieve this grade.
   [HidePointsDuringGrading <Boolean?>]: The display setting for the UI.
 Indicates whether teachers can grade with points in addition to letter grades.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -711,27 +690,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaEducationClassAssignmentSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting)
+- [](https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-beta)

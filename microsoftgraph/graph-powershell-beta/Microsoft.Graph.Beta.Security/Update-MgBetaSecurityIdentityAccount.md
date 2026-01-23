@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityaccount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 12/05/2025
+ms.date: 01/23/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityIdentityAccount
 ---
@@ -70,11 +70,21 @@ This cmdlet has the following aliases,
 
 Update the navigation property identityAccounts in security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -Accounts
 
-
+.
 To construct, see NOTES section for ACCOUNTS properties and create a hash table.
 
 ```yaml
@@ -178,7 +188,7 @@ HelpMessage: ''
 
 ### -CloudSecurityIdentifier
 
-
+.
 
 ```yaml
 Type: System.String
@@ -227,7 +237,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -254,7 +264,7 @@ HelpMessage: ''
 
 ### -Domain
 
-
+.
 
 ```yaml
 Type: System.String
@@ -427,7 +437,7 @@ HelpMessage: ''
 
 ### -IsEnabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -454,7 +464,7 @@ HelpMessage: ''
 
 ### -OnPremisesSecurityIdentifier
 
-
+.
 
 ```yaml
 Type: System.String
@@ -625,7 +635,7 @@ ACCOUNTS <IMicrosoftGraphSecurityAccount[]>: .
   [Identifier <String>]: 
   [IdentityProvider <String>]: identityProvider
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIdentityAccounts>`: identityAccounts
+BODYPARAMETER <IMicrosoftGraphSecurityIdentityAccounts>: identityAccounts
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -639,7 +649,7 @@ Read-only.
   [IsEnabled <Boolean?>]: 
   [OnPremisesSecurityIdentifier <String>]: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -741,27 +751,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityIdentityAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityaccount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityaccount)

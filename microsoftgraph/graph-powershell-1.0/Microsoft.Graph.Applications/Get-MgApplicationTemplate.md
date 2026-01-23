@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 12/05/2025
+ms.date: 01/23/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationTemplate
 ---
@@ -14,9 +14,6 @@ title: Get-MgApplicationTemplate
 ## SYNOPSIS
 
 Retrieve the properties of an applicationTemplate object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,17 +56,12 @@ This cmdlet has the following aliases,
 Retrieve the properties of an applicationTemplate object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationTemplate
-
-```
-This example shows how to use the Get-MgApplicationTemplate Cmdlet.
-
 
 ## PARAMETERS
 
@@ -531,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -560,28 +552,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgApplicationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/applicationtemplate-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate)
+- [](https://learn.microsoft.com/graph/api/applicationtemplate-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-1.0)

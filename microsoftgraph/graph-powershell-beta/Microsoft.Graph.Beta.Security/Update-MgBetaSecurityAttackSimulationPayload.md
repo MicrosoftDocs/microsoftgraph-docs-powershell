@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationpayload
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 12/05/2025
+ms.date: 01/23/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityAttackSimulationPayload
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecurityAttackSimulationPayload
 ## SYNOPSIS
 
 Update the navigation property payloads in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationPayload?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -81,6 +78,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property payloads in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1072,7 +1079,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPayload>`: payload
+BODYPARAMETER <IMicrosoftGraphPayload>: payload
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1126,7 +1133,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Technique <String>]: simulationAttackTechnique
   [Theme <String>]: payloadTheme
 
-CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+CREATEDBY <IMicrosoftGraphEmailIdentity>: emailIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1135,7 +1142,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Email <String>]: Email address of the user.
 
-DETAIL `<IMicrosoftGraphPayloadDetail>`: payloadDetail
+DETAIL <IMicrosoftGraphPayloadDetail>: payloadDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Coachmarks <IMicrosoftGraphPayloadCoachmark[]>]: 
     [CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]: coachmarkLocation
@@ -1151,7 +1158,7 @@ DETAIL `<IMicrosoftGraphPayloadDetail>`: payloadDetail
   [Content <String>]: Payload content details.
   [PhishingUrl <String>]: The phishing URL used to target a user.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -1250,7 +1257,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>: emailIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1262,27 +1269,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityAttackSimulationPayload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationpayload)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationpayload)

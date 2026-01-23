@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebook
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 01/23/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceAppManagementManagedEBook
 ---
@@ -13,10 +13,7 @@ title: New-MgDeviceAppManagementManagedEBook
 
 ## SYNOPSIS
 
-Create a new iosVppEBook object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
+Create new navigation property to managedEBooks for deviceAppManagement
 
 ## SYNTAX
 
@@ -53,20 +50,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new iosVppEBook object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
+Create new navigation property to managedEBooks for deviceAppManagement
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -96,10 +84,6 @@ usedLicenseCount =
 }
 
 New-MgDeviceAppManagementManagedEBook -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceAppManagementManagedEBook Cmdlet.
-
 
 ## PARAMETERS
 
@@ -696,7 +680,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphManagedEBook>`: An abstract class containing the base properties for Managed eBook.
+BODYPARAMETER <IMicrosoftGraphManagedEBook>: An abstract class containing the base properties for Managed eBook.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -760,7 +744,7 @@ Read-only.
   [OSVersion <String>]: OS Version.
   [UserName <String>]: Device User Name.
 
-INSTALLSUMMARY `<IMicrosoftGraphEBookInstallSummary>`: Contains properties for the installation summary of a book for a device.
+INSTALLSUMMARY <IMicrosoftGraphEBookInstallSummary>: Contains properties for the installation summary of a book for a device.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -771,7 +755,7 @@ Read-only.
   [NotInstalledDeviceCount <Int32?>]: Number of Devices that does not have this book installed.
   [NotInstalledUserCount <Int32?>]: Number of Users that did not install this book.
 
-LARGECOVER `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+LARGECOVER <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: Indicates the content mime type.
   [Value <Byte[]>]: The byte array that contains the actual content.
@@ -798,27 +782,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDeviceAppManagementManagedEBook](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebook)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-books-iosvppebook-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebook)

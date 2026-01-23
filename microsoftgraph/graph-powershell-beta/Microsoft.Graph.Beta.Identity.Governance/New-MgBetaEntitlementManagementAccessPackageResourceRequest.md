@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 12/05/2025
+ms.date: 01/23/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEntitlementManagementAccessPackageResourceRequest
 ---
@@ -51,18 +51,10 @@ This cmdlet has the following aliases,
 Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, update of a resource, or the removal of a resource from a catalog.
 A resource must be included in an access package catalog before a role of that resource can be added to an access package.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a new access package resource request
 
-```powershell
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All', 'Group.ReadWrite.All'
 $accessPackageResource = @{
   "originSystem" = "AadGroup "
@@ -81,10 +73,7 @@ RequestState          : Delivered
 RequestStatus         : Fulfilled
 RequestType           : AdminAdd
 Requestor             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
-AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}                                                            
-```
-
-This example creates a new resource request for addition of a resource to an access package catalog.
+AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}
 
 ## PARAMETERS
 
@@ -219,7 +208,7 @@ HelpMessage: ''
 
 ### -ExecuteImmediately
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -497,7 +486,7 @@ HelpMessage: ''
 
 ### -RequestStatus
 
-
+.
 
 ```yaml
 Type: System.String
@@ -611,7 +600,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGERESOURCE `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
+ACCESSPACKAGERESOURCE <IMicrosoftGraphAccessPackageResource>: accessPackageResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -686,12 +675,29 @@ Read-only.
   [OriginId <String>]: The unique identifier of the resource in the origin system.
 In the case of a Microsoft Entra group, originId is the identifier of the group.
 Supports $filter (eq).
-  [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+  [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup or CustomDataProvidedResource.
 Supports $filter (eq).
   [ResourceType <String>]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
+  [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+    [Data <IMicrosoftGraphCustomExtensionData>]: customExtensionData
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+    [Source <String>]: The source of the access data.
+This should be set to the customdataprovidedresource's name when creating the session.
+    [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+      [TotalBytesUploaded <Int64?>]: total bytes uploaded in this session
+    [Status <String>]: customDataProvidedResourceUploadStatus
+    [Type <String>]: Schematized form of the expected CSV columns in the uploaded file.
+The only possible value currently is: accessReviewDataUploadTriggerCallbackData
   [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRequest>`: accessPackageResourceRequest
+BODYPARAMETER <IMicrosoftGraphAccessPackageResourceRequest>: accessPackageResourceRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -770,9 +776,26 @@ Read-only.
     [OriginId <String>]: The unique identifier of the resource in the origin system.
 In the case of a Microsoft Entra group, originId is the identifier of the group.
 Supports $filter (eq).
-    [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+    [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup or CustomDataProvidedResource.
 Supports $filter (eq).
     [ResourceType <String>]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
+    [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+      [Data <IMicrosoftGraphCustomExtensionData>]: customExtensionData
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+      [Source <String>]: The source of the access data.
+This should be set to the customdataprovidedresource's name when creating the session.
+      [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+        [TotalBytesUploaded <Int64?>]: total bytes uploaded in this session
+      [Status <String>]: customDataProvidedResourceUploadStatus
+      [Type <String>]: Schematized form of the expected CSV columns in the uploaded file.
+The only possible value currently is: accessReviewDataUploadTriggerCallbackData
     [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
   [CatalogId <String>]: The unique ID of the access package catalog.
   [ExecuteImmediately <Boolean?>]: 
@@ -832,7 +855,7 @@ Alternate key.
     [SubjectLifecycle <String>]: accessPackageSubjectLifecycle
     [Type <String>]: The resource type of the subject.
 
-REQUESTOR `<IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
+REQUESTOR <IMicrosoftGraphAccessPackageSubject>: accessPackageSubject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -882,27 +905,5 @@ Alternate key.
 
 ## RELATED LINKS
 
-- [New-MgBetaEntitlementManagementAccessPackageResourceRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest)
+- [](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta)

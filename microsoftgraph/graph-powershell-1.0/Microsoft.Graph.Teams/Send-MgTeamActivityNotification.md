@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 01/23/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgTeamActivityNotification
 ---
@@ -14,10 +14,7 @@ title: Send-MgTeamActivityNotification
 ## SYNOPSIS
 
 Send an activity feed notification in the scope of a team.
-For more information about sending notifications and the requirements for doing so, seesending Teams activity notifications.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamActivityNotification?view=graph-powershell-beta)
+For more information about sending notifications and the requirements for doing so, see\r\nsending Teams activity notifications.
 
 ## SYNTAX
 
@@ -77,20 +74,11 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Send an activity feed notification in the scope of a team.
-For more information about sending notifications and the requirements for doing so, seesending Teams activity notifications.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsActivity.Send,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsActivity.Send.Group, TeamsActivity.Send,  |
+For more information about sending notifications and the requirements for doing so, see\r\nsending Teams activity notifications.
 
 ## EXAMPLES
-### Example 1: Notify a user about pending finance approval requests
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -117,12 +105,7 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify a user about pending finance approval requests
-
-### Example 2: Notify a user about a channel tab
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
@@ -153,12 +136,7 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify a user about a channel tab
-
-### Example 3: Notify a user about a channel tab using user principal name
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Teams
 
@@ -189,12 +167,7 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify a user about a channel tab using user principal name
-
-### Example 4: Notify a user about an event using custom topic
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Teams
 
@@ -222,12 +195,7 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify a user about an event using custom topic
-
-### Example 5: Notify the team members about pending finance approval requests
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Teams
 
@@ -254,12 +222,7 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify the team members about pending finance approval requests
-
-### Example 6: Notify the channel members about pending finance approval requests
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Teams
 
@@ -287,12 +250,7 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify the channel members about pending finance approval requests
-
-### Example 7: Notify about pending finance approval requests in channel message reply location
-
-```powershell
+### EXAMPLE 7
 
 Import-Module Microsoft.Graph.Teams
 
@@ -323,15 +281,11 @@ $params = @{
 
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify about pending finance approval requests in channel message reply location
-
-
 ## PARAMETERS
 
 ### -ActivityType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -385,7 +339,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -434,7 +388,7 @@ HelpMessage: ''
 
 ### -ChainId
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -546,7 +500,7 @@ HelpMessage: ''
 
 ### -IconId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -789,7 +743,7 @@ HelpMessage: ''
 
 ### -TeamsAppId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -816,7 +770,7 @@ HelpMessage: ''
 
 ### -TemplateParameters
 
-
+.
 To construct, see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
 
 ```yaml
@@ -926,7 +880,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityType <String>]: 
   [ChainId <Int64?>]: 
@@ -950,7 +904,7 @@ If the value is text, this must be a plain text value.
     [WebUrl <String>]: The link the user clicks when they select the notification.
 Optional when source is entityUrl; required when source is text.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -987,7 +941,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
+PREVIEWTEXT <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -996,7 +950,7 @@ TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair[]>: .
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
+TOPIC <IMicrosoftGraphTeamworkActivityTopic>: teamworkActivityTopic
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Source <String>]: teamworkActivityTopicSource
   [Value <String>]: The topic value.
@@ -1008,27 +962,5 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [Send-MgTeamActivityNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-sendactivitynotification?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification)
+- [](https://learn.microsoft.com/graph/api/team-sendactivitynotification?view=graph-rest-1.0)
