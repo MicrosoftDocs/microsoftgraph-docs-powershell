@@ -82,8 +82,9 @@ Update the properties of a tokenLifetimePolicy object.
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -96,6 +97,10 @@ isOrganizationDefault = $true
 }
 
 Update-MgPolicyTokenLifetimePolicy -TokenLifetimePolicyId $tokenLifetimePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyTokenLifetimePolicy Cmdlet.
+
 
 ## PARAMETERS
 

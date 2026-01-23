@@ -61,12 +61,17 @@ This cmdlet has the following aliases,
 Represents an end user's notification for an attack simulation training.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityAttackSimulationEndUserNotification
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationEndUserNotification Cmdlet.
+
 
 ## PARAMETERS
 

@@ -79,8 +79,9 @@ Reset a user's PIN and generate a new temporary PIN that's represented by a qrPi
 | Application | UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 Update-MgBetaUserAuthenticationQrCodePinMethodPin -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserAuthenticationQrCodePinMethodPin Cmdlet.
+
 
 ## PARAMETERS
 

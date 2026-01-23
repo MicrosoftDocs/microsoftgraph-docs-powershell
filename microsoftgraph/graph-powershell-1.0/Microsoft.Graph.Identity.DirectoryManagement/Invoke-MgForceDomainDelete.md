@@ -87,8 +87,9 @@ To verify deletion of a domain, you can perform a get domain operation.
 | Application | Domain.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 Invoke-MgForceDomainDelete -DomainId $domainId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgForceDomainDelete Cmdlet.
+
 
 ## PARAMETERS
 

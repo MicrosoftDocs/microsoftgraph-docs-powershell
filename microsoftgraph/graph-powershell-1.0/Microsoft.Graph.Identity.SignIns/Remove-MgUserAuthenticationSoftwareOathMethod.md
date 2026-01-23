@@ -59,12 +59,17 @@ Delete a user's Software OATH token authentication method object.
 | Application | UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgUserAuthenticationSoftwareOathMethod -UserId $userId -SoftwareOathAuthenticationMethodId $softwareOathAuthenticationMethodId
+
+```
+This example shows how to use the Remove-MgUserAuthenticationSoftwareOathMethod Cmdlet.
+
 
 ## PARAMETERS
 

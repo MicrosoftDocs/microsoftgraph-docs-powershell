@@ -70,12 +70,17 @@ Read the properties and relationships of a windowsHelloForBusinessAuthentication
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod Cmdlet.
+
 
 ## PARAMETERS
 
