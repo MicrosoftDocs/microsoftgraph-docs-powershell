@@ -268,7 +268,7 @@ HelpMessage: ''
 
 ### -Children
 
-.
+
 To construct, see NOTES section for CHILDREN properties and create a hash table.
 
 ```yaml

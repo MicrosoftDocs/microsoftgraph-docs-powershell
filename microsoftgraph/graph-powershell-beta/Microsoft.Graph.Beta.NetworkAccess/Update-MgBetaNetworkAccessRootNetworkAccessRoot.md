@@ -82,7 +82,7 @@ HelpMessage: ''
 
 ### -Alerts
 
-.
+
 To construct, see NOTES section for ALERTS properties and create a hash table.
 
 ```yaml
@@ -235,7 +235,7 @@ HelpMessage: ''
 
 ### -ForwardingPolicies
 
-.
+
 To construct, see NOTES section for FORWARDINGPOLICIES properties and create a hash table.
 
 ```yaml
@@ -257,7 +257,7 @@ HelpMessage: ''
 
 ### -ForwardingProfiles
 
-.
+
 To construct, see NOTES section for FORWARDINGPROFILES properties and create a hash table.
 
 ```yaml
@@ -536,7 +536,7 @@ HelpMessage: ''
 
 ### -ThreatIntelligencePolicies
 
-.
+
 To construct, see NOTES section for THREATINTELLIGENCEPOLICIES properties and create a hash table.
 
 ```yaml
