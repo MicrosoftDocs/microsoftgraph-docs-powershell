@@ -87,8 +87,9 @@ Create new navigation property to interests for users
 | Application | User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
@@ -103,6 +104,10 @@ webUrl = "https://www.chelseafc.com"
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileInterest -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileInterest Cmdlet.
+
 
 ## PARAMETERS
 

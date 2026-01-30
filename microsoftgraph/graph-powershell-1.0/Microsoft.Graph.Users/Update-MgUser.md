@@ -212,10 +212,13 @@ Update the properties of a user object.
 | Application | User.ReadWrite.All, User.ReadWrite.CrossCloud, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, Directory.ReadWrite.All, User-Mail.ReadWrite.All, User-PasswordProfile.ReadWrite.All, User-Phone.ReadWrite.All, User.EnableDisableAccount.All, User.ManageIdentities.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update a user's display name
 
-### EXAMPLE 1
-
+```powershell
 Update-MgUser -UserId '2a1fa0b8-87d6-4f39-be8d-68d0db617b02' -DisplayName 'Kristi Laar'
+```
+
+This example updates the specified user's display name.
 
 ## PARAMETERS
 

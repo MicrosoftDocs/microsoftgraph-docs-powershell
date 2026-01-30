@@ -68,12 +68,17 @@ The list of detected apps associated with a device.
 | Application | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Get-MgDeviceManagementDetectedApp
+
+```
+This example shows how to use the Get-MgDeviceManagementDetectedApp Cmdlet.
+
 
 ## PARAMETERS
 
