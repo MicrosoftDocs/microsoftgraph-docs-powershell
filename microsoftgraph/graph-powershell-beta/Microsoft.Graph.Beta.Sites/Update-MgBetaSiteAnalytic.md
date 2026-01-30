@@ -35320,7 +35320,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteanalytic)
+- [Update-MgBetaSiteAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteanalytic)
 
 
 

@@ -1026,7 +1026,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharepermission)
+- [Update-MgSharePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharepermission)
 
 
 

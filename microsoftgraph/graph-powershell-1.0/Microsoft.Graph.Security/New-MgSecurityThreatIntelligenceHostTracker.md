@@ -1028,7 +1028,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehosttracker)
+- [New-MgSecurityThreatIntelligenceHostTracker](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehosttracker)
 
 
 

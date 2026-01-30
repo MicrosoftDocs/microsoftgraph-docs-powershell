@@ -611,8 +611,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationemailmethod)
-- [](https://learn.microsoft.com/graph/api/emailauthenticationmethod-update?view=graph-rest-1.0)
+- [Update-MgUserAuthenticationEmailMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationemailmethod)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/emailauthenticationmethod-update?view=graph-rest-1.0)
 
 
 

@@ -381,7 +381,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrantcount)
+- [Get-MgChatPermissionGrantCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrantcount)
 
 
 

@@ -635,7 +635,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem)
+- [Get-MgUserTodoTaskChecklistItem](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem)
 
 
 
