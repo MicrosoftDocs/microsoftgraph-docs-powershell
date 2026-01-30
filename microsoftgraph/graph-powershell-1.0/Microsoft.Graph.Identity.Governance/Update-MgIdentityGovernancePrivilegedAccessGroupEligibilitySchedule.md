@@ -81,16 +81,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property eligibilitySchedules in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessId
@@ -11160,6 +11150,7 @@ Required.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupeligibilityschedule)
+
 
 
 

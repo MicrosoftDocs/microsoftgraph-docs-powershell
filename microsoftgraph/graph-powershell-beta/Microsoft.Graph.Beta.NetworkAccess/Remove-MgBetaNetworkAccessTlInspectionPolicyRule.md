@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Delete a tlsInspectionRule object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -439,6 +429,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesstlinspectionpolicyrule)
 - [](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionrule-delete?view=graph-rest-beta)
+
 
 
 

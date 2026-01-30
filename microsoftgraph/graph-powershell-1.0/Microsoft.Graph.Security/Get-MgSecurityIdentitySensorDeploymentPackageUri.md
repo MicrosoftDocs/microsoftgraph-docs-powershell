@@ -48,16 +48,6 @@ You can use this URL to download the installer to install the sensor on a server
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -253,6 +243,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentpackageuri)
+
 
 
 

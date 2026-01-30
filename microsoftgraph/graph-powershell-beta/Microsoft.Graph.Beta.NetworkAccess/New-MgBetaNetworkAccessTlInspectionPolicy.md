@@ -57,16 +57,6 @@ Create a new tlsInspectionPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -533,6 +523,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlinspectionpolicy)
 - [](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-post-tlsinspectionpolicies?view=graph-rest-beta)
+
 
 
 
