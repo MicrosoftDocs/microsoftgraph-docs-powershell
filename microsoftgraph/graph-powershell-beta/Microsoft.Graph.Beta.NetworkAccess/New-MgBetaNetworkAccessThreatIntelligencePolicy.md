@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessthreatintelligencepolicy
@@ -498,7 +498,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphNetworkaccessThreatIntelligencePolicy>: threatIntelligencePolicy
+BODYPARAMETER `<IMicrosoftGraphNetworkaccessThreatIntelligencePolicy>`: threatIntelligencePolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description.
   [Name <String>]: Policy name.
@@ -519,7 +519,7 @@ POLICYRULES <IMicrosoftGraphNetworkaccessPolicyRule[]>: Represents the definitio
 Read-only.
   [Name <String>]: Name.
 
-SETTINGS <IMicrosoftGraphNetworkaccessThreatIntelligencePolicySettings>: threatIntelligencePolicySettings
+SETTINGS `<IMicrosoftGraphNetworkaccessThreatIntelligencePolicySettings>`: threatIntelligencePolicySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultAction <String>]: threatIntelligenceAction
 
@@ -528,3 +528,25 @@ SETTINGS <IMicrosoftGraphNetworkaccessThreatIntelligencePolicySettings>: threatI
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessthreatintelligencepolicy)
 - [](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-post-threatintelligencepolicies?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
