@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Get windows from users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserWindowsSettings.Read, UserWindowsSettings.Read.All,  |
+| Delegated (personal Microsoft account) | UserWindowsSettings.Read,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
