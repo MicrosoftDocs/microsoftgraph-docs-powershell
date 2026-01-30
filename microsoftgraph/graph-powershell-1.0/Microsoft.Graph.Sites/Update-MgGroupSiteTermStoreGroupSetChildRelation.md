@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroupsetchildrelation
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupSiteTermStoreGroupSetChildRelation
 ---
@@ -14,9 +14,6 @@ title: Update-MgGroupSiteTermStoreGroupSetChildRelation
 ## SYNOPSIS
 
 Update the navigation property relations in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteTermStoreGroupSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreGroupSetChildRelation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -213,6 +210,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property relations in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1429,7 +1436,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTermStoreRelation>`: relation
+BODYPARAMETER <IMicrosoftGraphTermStoreRelation>: relation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1482,7 +1489,7 @@ Read-only.
   [Set <IMicrosoftGraphTermStoreSet>]: set
   [ToTerm <IMicrosoftGraphTermStoreTerm>]: term
 
-FROMTERM `<IMicrosoftGraphTermStoreTerm>`: term
+FROMTERM <IMicrosoftGraphTermStoreTerm>: term
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1534,7 +1541,7 @@ Read-only.
     [ToTerm <IMicrosoftGraphTermStoreTerm>]: term
   [Set <IMicrosoftGraphTermStoreSet>]: set
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -1579,7 +1586,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-SET `<IMicrosoftGraphTermStoreSet>`: set
+SET <IMicrosoftGraphTermStoreSet>: set
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1630,7 +1637,7 @@ Read-only.
   [Relations <IMicrosoftGraphTermStoreRelation[]>]: Indicates which terms have been pinned or reused directly under the set.
   [Terms <IMicrosoftGraphTermStoreTerm[]>]: All the terms under the set.
 
-TOTERM `<IMicrosoftGraphTermStoreTerm>`: term
+TOTERM <IMicrosoftGraphTermStoreTerm>: term
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1685,27 +1692,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgGroupSiteTermStoreGroupSetChildRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroupsetchildrelation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroupsetchildrelation)

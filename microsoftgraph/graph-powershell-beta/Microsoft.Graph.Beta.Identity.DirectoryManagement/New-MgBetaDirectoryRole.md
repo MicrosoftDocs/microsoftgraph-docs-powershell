@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryRole
 ---
@@ -17,9 +17,6 @@ Activate a directory role.
 To read a directory role or update its members, it must first be activated in the tenant.
 The Company Administrators and the implicit user directory roles (User, Guest User, and Restricted Guest User roles) are activated by default.
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRole?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,18 +54,9 @@ To read a directory role or update its members, it must first be activated in th
 The Company Administrators and the implicit user directory roles (User, Guest User, and Restricted Guest User roles) are activated by default.
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.ReadWrite.Directory,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.ReadWrite.Directory,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -77,10 +65,6 @@ $params = @{
 }
 
 New-MgBetaDirectoryRole -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaDirectoryRole Cmdlet.
-
 
 ## PARAMETERS
 
@@ -534,7 +518,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryRole>`: directoryRole
+BODYPARAMETER <IMicrosoftGraphDirectoryRole>: directoryRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -569,9 +553,10 @@ Read-only.
     [RoleMemberInfo <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
 MEMBERS <IMicrosoftGraphDirectoryObject[]>: Users that are members of this directory role.
 HTTP Methods: GET, POST, DELETE.
@@ -593,34 +578,13 @@ Read-only.
   [RoleMemberInfo <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryRole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole)
+- [](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-beta)

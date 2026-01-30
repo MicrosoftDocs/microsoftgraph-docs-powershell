@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasitegetbypathonenote
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSiteGetByPathOnenote
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSiteGetByPathOnenote
 ## SYNOPSIS
 
 Update the navigation property onenote in sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Notes/Update-MgSiteGetByPathOnenote?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property onenote in sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -671,7 +678,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnenote>`: onenote
+BODYPARAMETER <IMicrosoftGraphOnenote>: onenote
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -683,9 +690,10 @@ Nullable.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [DisplayName <String>]: 
@@ -819,7 +827,7 @@ Nullable.
 Read-only.
 Nullable.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -841,9 +849,10 @@ Nullable.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [DisplayName <String>]: 
@@ -993,9 +1002,10 @@ Read-only.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [DisplayName <String>]: 
@@ -1088,9 +1098,10 @@ Nullable.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [DisplayName <String>]: 
@@ -1198,9 +1209,10 @@ Nullable.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [DisplayName <String>]: 
@@ -1303,27 +1315,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSiteGetByPathOnenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasitegetbypathonenote)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasitegetbypathonenote)

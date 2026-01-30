@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententitlementmanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaScheduleRoleManagementEntitlementManagement
 ---
@@ -37,6 +37,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve both roleAssignmentScheduleInstances and roleEligibilityScheduleInstances.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -488,28 +498,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaScheduleRoleManagementEntitlementManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententitlementmanagement)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplication-rolescheduleinstances?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententitlementmanagement)
+- [](https://learn.microsoft.com/graph/api/rbacapplication-rolescheduleinstances?view=graph-rest-beta)

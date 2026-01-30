@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgpineducationclassmodule
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgPinEducationClassModule
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgPinEducationClassModule
 Pin an educationModule in the class work list.
 This action sets the isPinned property to true for an educationModule.
 Only teachers can perform this action and only one module at a time can be pinned in the class work list.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaPinEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaPinEducationClassModule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,26 +50,13 @@ Pin an educationModule in the class work list.
 This action sets the isPinned property to true for an educationModule.
 Only teachers can perform this action and only one module at a time can be pinned in the class work list.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduCurricula.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduCurricula.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Invoke-MgPinEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
-
-```
-This example shows how to use the Invoke-MgPinEducationClassModule Cmdlet.
-
 
 ## PARAMETERS
 
@@ -383,12 +367,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
+  [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
   [EducationCategoryId <String>]: The unique identifier of educationCategory
   [EducationClassId <String>]: The unique identifier of educationClass
   [EducationGradingCategoryId <String>]: The unique identifier of educationGradingCategory
+  [EducationGradingSchemeId <String>]: The unique identifier of educationGradingScheme
   [EducationModuleId <String>]: The unique identifier of educationModule
   [EducationModuleResourceId <String>]: The unique identifier of educationModuleResource
   [EducationOutcomeId <String>]: The unique identifier of educationOutcome
@@ -396,34 +382,15 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [EducationSchoolId <String>]: The unique identifier of educationSchool
   [EducationSubmissionId <String>]: The unique identifier of educationSubmission
   [EducationSubmissionResourceId <String>]: The unique identifier of educationSubmissionResource
+  [EducationSubmissionResourceId1 <String>]: The unique identifier of educationSubmissionResource
   [EducationUserId <String>]: The unique identifier of educationUser
   [ReadingAssignmentSubmissionId <String>]: The unique identifier of readingAssignmentSubmission
+  [ReadingCoachPassageId <String>]: The unique identifier of readingCoachPassage
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
+  [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
 
 
 ## RELATED LINKS
 
-- [Invoke-MgPinEducationClassModule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgpineducationclassmodule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgpineducationclassmodule)
+- [](https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-1.0)

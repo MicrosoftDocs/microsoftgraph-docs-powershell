@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitemcheckout
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDriveItemCheckout
 ---
@@ -18,9 +18,6 @@ This action releases a driveItem resource that was previously checked out.
 Any changes made to the item while it was checked out are discarded.
 The same user that performed the checkout must discard it.
 Another alternative is to use application permissions.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemCheckout](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemCheckout?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,26 +54,13 @@ Any changes made to the item while it was checked out are discarded.
 The same user that performed the checkout must discard it.
 Another alternative is to use application permissions.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
-| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Files
 
 Remove-MgDriveItemCheckout -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example shows how to use the Remove-MgDriveItemCheckout Cmdlet.
-
 
 ## PARAMETERS
 
@@ -408,7 +392,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -437,27 +421,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgDriveItemCheckout](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitemcheckout)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-discardcheckout?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitemcheckout)
+- [](https://learn.microsoft.com/graph/api/driveitem-discardcheckout?view=graph-rest-1.0)

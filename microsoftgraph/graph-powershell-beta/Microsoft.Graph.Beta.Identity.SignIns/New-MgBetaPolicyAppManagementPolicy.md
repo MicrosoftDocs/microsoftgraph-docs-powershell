@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyAppManagementPolicy
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaPolicyAppManagementPolicy
 ## SYNOPSIS
 
 Create an appManagementPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,18 +48,9 @@ This cmdlet has the following aliases,
 
 Create an appManagementPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -113,10 +101,6 @@ $params = @{
 }
 
 New-MgBetaPolicyAppManagementPolicy -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPolicyAppManagementPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -565,7 +549,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-BODYPARAMETER `<IMicrosoftGraphAppManagementPolicy>`: appManagementPolicy
+BODYPARAMETER <IMicrosoftGraphAppManagementPolicy>: appManagementPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description for this policy.
 Required.
@@ -630,7 +614,7 @@ For existing applications, the enforcement date can be retroactively applied.
           [State <String>]: appManagementRestrictionState
         [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
 
-RESTRICTIONS `<IMicrosoftGraphCustomAppManagementConfiguration>`: customAppManagementConfiguration
+RESTRICTIONS <IMicrosoftGraphCustomAppManagementConfiguration>: customAppManagementConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: 
     [CertificateBasedApplicationConfigurationIds <String[]>]: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
@@ -682,27 +666,5 @@ For existing applications, the enforcement date can be retroactively applied.
 
 ## RELATED LINKS
 
-- [New-MgBetaPolicyAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/appmanagementpolicy-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy)
+- [](https://learn.microsoft.com/graph/api/appmanagementpolicy-post?view=graph-rest-beta)

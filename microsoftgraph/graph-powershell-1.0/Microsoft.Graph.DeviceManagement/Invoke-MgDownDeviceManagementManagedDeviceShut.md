@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgdowndevicemanagementmanageddeviceshut
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgDownDeviceManagementManagedDeviceShut
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgDownDeviceManagementManagedDeviceShut
 ## SYNOPSIS
 
 Shut down device
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Invoke-MgBetaDownDeviceManagementManagedDeviceShut?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 
 Shut down device
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Invoke-MgDownDeviceManagementManagedDeviceShut -ManagedDeviceId $managedDeviceId
-
-```
-This example shows how to use the Invoke-MgDownDeviceManagementManagedDeviceShut Cmdlet.
-
 
 ## PARAMETERS
 
@@ -379,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -417,27 +401,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgDownDeviceManagementManagedDeviceShut](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgdowndevicemanagementmanageddeviceshut)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-shutdown?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgdowndevicemanagementmanageddeviceshut)

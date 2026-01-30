@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaChat
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaChat
 ## SYNOPSIS
 
 Update the properties of a chat object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgChat](/powershell/module/Microsoft.Graph.Teams/Update-MgChat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -87,18 +84,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a chat object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChatSettings.ReadWrite.Chat, Chat.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -107,10 +95,6 @@ $params = @{
 }
 
 Update-MgBetaChat -ChatId $chatId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaChat Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1009,7 +993,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphChat>`: chat
+BODYPARAMETER <IMicrosoftGraphChat>: chat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1019,9 +1003,10 @@ Read-only.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [CreatedDateTime <DateTime?>]: Date and time at which the chat was created.
@@ -1195,7 +1180,7 @@ Always set to en-us.
     [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
       [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
       [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1206,16 +1191,18 @@ For example, a user's display name, a team name.
         [Conversation <IMicrosoftGraphTeamworkConversationIdentity>]: teamworkConversationIdentity
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
           [ConversationIdentityType <String>]: teamworkConversationIdentityType
         [Tag <IMicrosoftGraphTeamworkTagIdentity>]: teamworkTagIdentity
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
       [Actions <String>]: chatMessageActions
       [ModifiedDateTime <DateTime?>]: The date and time when the message was modified.
@@ -1265,9 +1252,10 @@ Link to the message in Microsoft Teams.
     [Organizer <IMicrosoftGraphTeamworkUserIdentity>]: teamworkUserIdentity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [UserIdentityType <String>]: teamworkUserIdentityType
       [UserPrincipalName <String>]: User principal name (UPN) of the user.
   [Operations <IMicrosoftGraphTeamsAsyncOperation[]>]: A collection of all the Teams async operations that ran or are running on the chat.
@@ -1339,18 +1327,19 @@ Only available for group chats.
 The URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1444,9 +1433,10 @@ Content type, such as image/png, image/jpg.
         [Application <IMicrosoftGraphIdentity>]: identity
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         [Device <IMicrosoftGraphIdentity>]: identity
         [User <IMicrosoftGraphIdentity>]: identity
       [DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition[]>]: Dashboard cards specified in the Teams app manifest.
@@ -1486,7 +1476,7 @@ Required.
     [ExternalId <String>]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   [TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]: teamsAppDefinition
 
-LASTMESSAGEPREVIEW `<IMicrosoftGraphChatMessageInfo>`: chatMessageInfo
+LASTMESSAGEPREVIEW <IMicrosoftGraphChatMessageInfo>: chatMessageInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1502,9 +1492,10 @@ Read-only.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [IsDeleted <Boolean?>]: If set to true, the original message has been deleted.
@@ -1568,9 +1559,10 @@ Version number of the chat message.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
@@ -1592,7 +1584,7 @@ Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1603,16 +1595,18 @@ For example, a user's display name, a team name.
       [Conversation <IMicrosoftGraphTeamworkConversationIdentity>]: teamworkConversationIdentity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         [ConversationIdentityType <String>]: teamworkConversationIdentityType
       [Tag <IMicrosoftGraphTeamworkTagIdentity>]: teamworkTagIdentity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
     [Actions <String>]: chatMessageActions
     [ModifiedDateTime <DateTime?>]: The date and time when the message was modified.
@@ -1656,16 +1650,17 @@ Only applies to channel chat messages, not chat messages in a chat.
   [WebUrl <String>]: Read-only.
 Link to the message in Microsoft Teams.
 
-ONLINEMEETINGINFO `<IMicrosoftGraphTeamworkOnlineMeetingInfo>`: teamworkOnlineMeetingInfo
+ONLINEMEETINGINFO <IMicrosoftGraphTeamworkOnlineMeetingInfo>: teamworkOnlineMeetingInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalendarEventId <String>]: The identifier of the calendar event associated with the meeting.
   [JoinWebUrl <String>]: The URL which can be clicked on to join or uniquely identify the meeting.
   [Organizer <IMicrosoftGraphTeamworkUserIdentity>]: teamworkUserIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [UserIdentityType <String>]: teamworkUserIdentityType
     [UserPrincipalName <String>]: User principal name (UPN) of the user.
 
@@ -1752,9 +1747,10 @@ Version number of the chat message.
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
@@ -1776,7 +1772,7 @@ Always set to en-us.
     [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
       [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
       [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1787,16 +1783,18 @@ For example, a user's display name, a team name.
         [Conversation <IMicrosoftGraphTeamworkConversationIdentity>]: teamworkConversationIdentity
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
           [ConversationIdentityType <String>]: teamworkConversationIdentityType
         [Tag <IMicrosoftGraphTeamworkTagIdentity>]: teamworkTagIdentity
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
       [Actions <String>]: chatMessageActions
       [ModifiedDateTime <DateTime?>]: The date and time when the message was modified.
@@ -1893,9 +1891,10 @@ Content type, such as image/png, image/jpg.
         [Application <IMicrosoftGraphIdentity>]: identity
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-          [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         [Device <IMicrosoftGraphIdentity>]: identity
         [User <IMicrosoftGraphIdentity>]: identity
       [DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition[]>]: Dashboard cards specified in the Teams app manifest.
@@ -1939,7 +1938,7 @@ Because this property is deprecated, we recommend expanding teamsApp to retrieve
   [WebUrl <String>]: Deep link URL of the tab instance.
 Read only.
 
-VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
+VIEWPOINT <IMicrosoftGraphChatViewpoint>: chatViewpoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsHidden <Boolean?>]: Indicates whether the chat is hidden for the current user.
   [LastMessageReadDateTime <DateTime?>]: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
@@ -1947,27 +1946,5 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
 
 ## RELATED LINKS
 
-- [Update-MgBetaChat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachat)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-patch?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachat)
+- [](https://learn.microsoft.com/graph/api/chat-patch?view=graph-rest-beta)

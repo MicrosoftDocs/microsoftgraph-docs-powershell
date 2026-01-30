@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationsynchronization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaApplicationSynchronization
 ---
@@ -14,9 +14,6 @@ title: Set-MgBetaApplicationSynchronization
 ## SYNOPSIS
 
 Update the navigation property synchronization in applications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationSynchronization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property synchronization in applications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -546,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSynchronization>`: synchronization
+BODYPARAMETER <IMicrosoftGraphSynchronization>: synchronization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -797,7 +804,7 @@ Unless mentioned explicitly, metadata values shouldn't be changed.
       [Value <String>]: Value of the metadata property.
     [Schema <IMicrosoftGraphSynchronizationSchema>]: synchronizationSchema
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -824,6 +831,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -1226,27 +1234,4 @@ Must match one of the directory definitions in synchronizationSchema.
 
 ## RELATED LINKS
 
-- [Set-MgBetaApplicationSynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationsynchronization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationsynchronization)

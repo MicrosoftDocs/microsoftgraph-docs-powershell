@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTeamScheduleOpenShift
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaTeamScheduleOpenShift
 ## SYNOPSIS
 
 Create an instance of an openShift object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ This cmdlet has the following aliases,
 
 Create an instance of an openShift object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -127,10 +115,6 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleOpenShift -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeamScheduleOpenShift Cmdlet.
-
 
 ## PARAMETERS
 
@@ -741,16 +725,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOpenShift>`: openShift
+BODYPARAMETER <IMicrosoftGraphOpenShift>: openShift
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -797,18 +782,19 @@ Required.
 Required.
     [TeamId <String>]: ID of the team.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DRAFTOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
+DRAFTOPENSHIFT <IMicrosoftGraphOpenShiftItem>: openShiftItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Activities <IMicrosoftGraphShiftActivity[]>]: An incremental part of a shift which can cover details of when and where an employee is during their shift.
 For example, an assignment or a scheduled break or lunch.
@@ -835,7 +821,7 @@ Required.
   [Theme <String>]: scheduleEntityTheme
   [OpenSlotCount <Int32?>]: Count of the number of slots for the given open shift.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -882,25 +868,26 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-SCHEDULINGGROUPINFO `<IMicrosoftGraphSchedulingGroupInfo>`: schedulingGroupInfo
+SCHEDULINGGROUPINFO <IMicrosoftGraphSchedulingGroupInfo>: schedulingGroupInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: The code for the schedulingGroup.
   [DisplayName <String>]: The display name for the schedulingGroup.
 Required.
   [SchedulingGroupId <String>]: ID of the schedulingGroup.
 
-SHAREDOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
+SHAREDOPENSHIFT <IMicrosoftGraphOpenShiftItem>: openShiftItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Activities <IMicrosoftGraphShiftActivity[]>]: An incremental part of a shift which can cover details of when and where an employee is during their shift.
 For example, an assignment or a scheduled break or lunch.
@@ -927,7 +914,7 @@ Required.
   [Theme <String>]: scheduleEntityTheme
   [OpenSlotCount <Int32?>]: Count of the number of slots for the given open shift.
 
-TEAMINFO `<IMicrosoftGraphShiftsTeamInfo>`: shiftsTeamInfo
+TEAMINFO <IMicrosoftGraphShiftsTeamInfo>: shiftsTeamInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name for the team.
 Required.
@@ -936,27 +923,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgBetaTeamScheduleOpenShift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/openshift-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift)
+- [](https://learn.microsoft.com/graph/api/openshift-post?view=graph-rest-beta)

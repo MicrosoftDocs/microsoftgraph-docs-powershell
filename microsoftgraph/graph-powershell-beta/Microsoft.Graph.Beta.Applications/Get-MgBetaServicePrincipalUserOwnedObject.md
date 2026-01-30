@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaluserownedobject
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalUserOwnedObject
 ---
@@ -49,6 +49,20 @@ This cmdlet has the following aliases,
 Retrieve a list of recently deleted application and group objects owned by the specified user.
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+{{ Add output here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -74,7 +88,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -287,7 +301,7 @@ HelpMessage: ''
 
 ### -Type
 
-
+.
 
 ```yaml
 Type: System.String
@@ -308,7 +322,7 @@ HelpMessage: ''
 
 ### -UserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -379,7 +393,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ob0K0NServiceprincipalsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ob0K0NServiceprincipalsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: 
   [UserId <String>]:
@@ -387,28 +401,5 @@ BODYPARAMETER `<IPaths1Ob0K0NServiceprincipalsMicrosoftGraphGetuserownedobjectsP
 
 ## RELATED LINKS
 
-- [Get-MgBetaServicePrincipalUserOwnedObject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaluserownedobject)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaluserownedobject)
+- [](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)

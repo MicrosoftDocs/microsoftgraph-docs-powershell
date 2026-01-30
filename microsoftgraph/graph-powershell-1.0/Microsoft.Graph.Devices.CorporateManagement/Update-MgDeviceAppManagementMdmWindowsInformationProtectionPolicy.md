@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmdmwindowsinformationprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
 ---
@@ -13,10 +13,7 @@ title: Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
 
 ## SYNOPSIS
 
-Update the properties of a mdmWindowsInformationProtectionPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-beta)
+Update the navigation property mdmWindowsInformationProtectionPolicies in deviceAppManagement
 
 ## SYNTAX
 
@@ -115,20 +112,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a mdmWindowsInformationProtectionPolicy object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
+Update the navigation property mdmWindowsInformationProtectionPolicies in deviceAppManagement
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -258,10 +246,6 @@ isAssigned = $true
 }
 
 Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy -MdmWindowsInformationProtectionPolicyId $mdmWindowsInformationProtectionPolicyId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1497,7 +1481,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-DATARECOVERYCERTIFICATE `<IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>`: Windows Information Protection DataRecoveryCertificate
+DATARECOVERYCERTIFICATE <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>: Windows Information Protection DataRecoveryCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Certificate <Byte[]>]: Data recovery Certificate
   [Description <String>]: Data recovery Certificate description
@@ -1557,7 +1541,7 @@ This is because some critical enterprise applications may have compatibility pro
   [ProductName <String>]: The product name.
   [PublisherName <String>]: The publisher name
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -1621,27 +1605,4 @@ SMBAUTOENCRYPTEDFILEEXTENSIONS <IMicrosoftGraphWindowsInformationProtectionResou
 
 ## RELATED LINKS
 
-- [Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmdmwindowsinformationprotectionpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-mam-mdmwindowsinformationprotectionpolicy-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmdmwindowsinformationprotectionpolicy)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescorecontrolprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecuritySecureScoreControlProfile
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecuritySecureScoreControlProfile
 ## SYNOPSIS
 
 Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySecureScoreControlProfile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -83,18 +80,9 @@ This cmdlet has the following aliases,
 
 Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityEvents.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityEvents.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -103,10 +91,6 @@ $params = @{
 }
 
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaSecuritySecureScoreControlProfile Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1014,7 +998,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlProfile
+BODYPARAMETER <IMicrosoftGraphSecureScoreControlProfile>: secureScoreControlProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1072,7 +1056,7 @@ CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate[]>: Flag to in
   [UpdatedBy <String>]: ID of the user who updated tenant state
   [UpdatedDateTime <DateTime?>]: Time at which control state was updated
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -1171,7 +1155,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -1183,27 +1167,5 @@ Required
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecuritySecureScoreControlProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescorecontrolprofile)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescorecontrolprofile)
+- [](https://learn.microsoft.com/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)

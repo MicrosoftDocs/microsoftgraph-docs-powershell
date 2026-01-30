@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightmonthly
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaReportUserInsightMonthly
 ---
@@ -52,6 +52,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property monthly in reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -272,7 +282,7 @@ HelpMessage: ''
 
 ### -InactiveUsers
 
-
+.
 To construct, see NOTES section for INACTIVEUSERS properties and create a hash table.
 
 ```yaml
@@ -294,7 +304,7 @@ HelpMessage: ''
 
 ### -InactiveUsersByApplication
 
-
+.
 To construct, see NOTES section for INACTIVEUSERSBYAPPLICATION properties and create a hash table.
 
 ```yaml
@@ -338,7 +348,7 @@ HelpMessage: ''
 
 ### -MfaRegisteredUsers
 
-
+.
 To construct, see NOTES section for MFAREGISTEREDUSERS properties and create a hash table.
 
 ```yaml
@@ -597,7 +607,7 @@ Supports $filter (eq).
   [SuccessCount <Int64?>]: Number of successful authentication requests.
 Supports $filter (eq).
 
-BODYPARAMETER `<IMicrosoftGraphMonthlyUserInsightMetricsRoot>`: monthlyUserInsightMetricsRoot
+BODYPARAMETER <IMicrosoftGraphMonthlyUserInsightMetricsRoot>: monthlyUserInsightMetricsRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -816,27 +826,4 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [Update-MgBetaReportUserInsightMonthly](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightmonthly)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightmonthly)

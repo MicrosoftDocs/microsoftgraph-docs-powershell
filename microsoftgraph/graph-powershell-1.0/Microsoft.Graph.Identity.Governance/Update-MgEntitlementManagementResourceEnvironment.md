@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironment
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEntitlementManagementResourceEnvironment
 ---
@@ -75,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property resourceEnvironments in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -715,7 +725,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceEnvironment>`: accessPackageResourceEnvironment
+BODYPARAMETER <IMicrosoftGraphAccessPackageResourceEnvironment>: accessPackageResourceEnvironment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -783,11 +793,11 @@ Read-only.
       [OriginSystem <String>]: The origin system for the scope.
       [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
 
-CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
+CONNECTIONINFO <IMicrosoftGraphConnectionInfo>: connectionInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Url <String>]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -833,6 +843,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [PrivilegedAccessGroupEligibilityScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupEligibilityScheduleInstance
   [PrivilegedAccessGroupEligibilityScheduleRequestId <String>]: The unique identifier of privilegedAccessGroupEligibilityScheduleRequest
   [RunId <String>]: The unique identifier of run
+  [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
@@ -928,27 +939,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgEntitlementManagementResourceEnvironment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironment)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDeviceManagementRoleDefinition
 ---
@@ -13,10 +13,7 @@ title: Remove-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
 
-Deletes a roleDefinition.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
+Delete navigation property roleDefinitions for deviceManagement
 
 ## SYNTAX
 
@@ -47,28 +44,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Deletes a roleDefinition.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+Delete navigation property roleDefinitions for deviceManagement
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Remove-MgDeviceManagementRoleDefinition -RoleDefinitionId $roleDefinitionId
-
-```
-This example shows how to use the Remove-MgDeviceManagementRoleDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -400,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -422,7 +406,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [ResourceOperationId <String>]: The unique identifier of resourceOperation
   [RoleAssignmentId <String>]: The unique identifier of roleAssignment
   [RoleDefinitionId <String>]: The unique identifier of roleDefinition
-  [TelecomExpenseManagementPartnerId <String>]: The unique identifier of telecomExpenseManagementPartner
   [TermsAndConditionsAcceptanceStatusId <String>]: The unique identifier of termsAndConditionsAcceptanceStatus
   [TermsAndConditionsAssignmentId <String>]: The unique identifier of termsAndConditionsAssignment
   [TermsAndConditionsId <String>]: The unique identifier of termsAndConditions
@@ -432,27 +415,4 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgDeviceManagementRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementroledefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementroledefinition)

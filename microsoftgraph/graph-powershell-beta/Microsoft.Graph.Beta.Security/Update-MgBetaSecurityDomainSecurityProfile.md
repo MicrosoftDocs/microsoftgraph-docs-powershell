@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydomainsecurityprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityDomainSecurityProfile
 ---
@@ -78,11 +78,21 @@ This cmdlet has the following aliases,
 
 Update the navigation property domainSecurityProfiles in security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -136,7 +146,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -163,7 +173,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -261,7 +271,7 @@ HelpMessage: ''
 
 ### -CountHits
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -288,7 +298,7 @@ HelpMessage: ''
 
 ### -CountInOrg
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -315,7 +325,7 @@ HelpMessage: ''
 
 ### -DomainCategories
 
-
+.
 To construct, see NOTES section for DOMAINCATEGORIES properties and create a hash table.
 
 ```yaml
@@ -343,7 +353,7 @@ HelpMessage: ''
 
 ### -DomainRegisteredDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -397,7 +407,7 @@ HelpMessage: ''
 
 ### -FirstSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -543,7 +553,7 @@ HelpMessage: ''
 
 ### -LastSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -570,7 +580,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -710,7 +720,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-
+.
 
 ```yaml
 Type: System.String
@@ -737,7 +747,7 @@ HelpMessage: ''
 
 ### -Tags
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -846,7 +856,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDomainSecurityProfile>`: domainSecurityProfile
+BODYPARAMETER <IMicrosoftGraphDomainSecurityProfile>: domainSecurityProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -885,7 +895,7 @@ DOMAINCATEGORIES <IMicrosoftGraphReputationCategory[]>: .
   [Name <String>]: 
   [Vendor <String>]: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -984,14 +994,14 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-REGISTRANT `<IMicrosoftGraphDomainRegistrant>`: domainRegistrant
+REGISTRANT <IMicrosoftGraphDomainRegistrant>: domainRegistrant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CountryOrRegionCode <String>]: 
   [Organization <String>]: 
   [Url <String>]: 
   [Vendor <String>]: 
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -1003,27 +1013,4 @@ Required
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityDomainSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydomainsecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydomainsecurityprofile)

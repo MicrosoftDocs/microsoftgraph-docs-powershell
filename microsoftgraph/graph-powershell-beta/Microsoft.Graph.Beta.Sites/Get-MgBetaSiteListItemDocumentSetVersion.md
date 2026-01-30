@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdocumentsetversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSiteListItemDocumentSetVersion
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSiteListItemDocumentSetVersion
 ## SYNOPSIS
 
 Read the properties and relationships of a documentSetVersion object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a documentSetVersion object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Read.All, Sites.Selected, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.Selected, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId
-
-```
-This example shows how to use the Get-MgBetaSiteListItemDocumentSetVersion Cmdlet.
-
 
 ## PARAMETERS
 
@@ -622,7 +606,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -659,6 +643,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [OnenotePageId <String>]: The unique identifier of onenotePage
   [OnenoteResourceId <String>]: The unique identifier of onenoteResource
   [OnenoteSectionId <String>]: The unique identifier of onenoteSection
+  [OperationId <String>]: Usage: operationId='{operationId}'
   [PageTemplateId <String>]: The unique identifier of pageTemplate
   [Path <String>]: Usage: path='{path}'
   [PermissionId <String>]: The unique identifier of permission
@@ -686,28 +671,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSiteListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdocumentsetversion)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdocumentsetversion)
+- [](https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-beta)

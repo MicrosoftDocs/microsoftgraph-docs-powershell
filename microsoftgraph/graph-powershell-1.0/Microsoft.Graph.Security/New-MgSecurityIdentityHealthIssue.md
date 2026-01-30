@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentityhealthissue
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityIdentityHealthIssue
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityIdentityHealthIssue
 ## SYNOPSIS
 
 Create new navigation property to healthIssues for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityIdentityHealthIssue](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIdentityHealthIssue?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to healthIssues for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -645,7 +652,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityHealthIssue>`: healthIssue
+BODYPARAMETER <IMicrosoftGraphSecurityHealthIssue>: healthIssue
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -675,27 +682,4 @@ These commands run in sequence for the single recommended fix.
 
 ## RELATED LINKS
 
-- [New-MgSecurityIdentityHealthIssue](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentityhealthissue)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentityhealthissue)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaWindowsUpdatesPolicy
 ---
@@ -50,18 +50,9 @@ This cmdlet has the following aliases,
 
 Create a new updatePolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WindowsUpdates.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
@@ -97,10 +88,6 @@ $params = @{
 }
 
 New-MgBetaWindowsUpdatesPolicy -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaWindowsUpdatesPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -523,7 +510,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUDIENCE `<IMicrosoftGraphWindowsUpdatesDeploymentAudience>`: deploymentAudience
+AUDIENCE <IMicrosoftGraphWindowsUpdatesDeploymentAudience>: deploymentAudience
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -553,7 +540,7 @@ Read-only.
 Read-only.
   [Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]: Specifies the assets to include in the audience.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesUpdatePolicy>`: updatePolicy
+BODYPARAMETER <IMicrosoftGraphWindowsUpdatesUpdatePolicy>: updatePolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -734,7 +721,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 It can only be set to true on automatic policies that target monthly security updates.
         [OfferAsOptional <Boolean?>]: Specifies whether the update is offered as Optional rather than Required.
 
-DEPLOYMENTSETTINGS `<IMicrosoftGraphWindowsUpdatesDeploymentSettings>`: deploymentSettings
+DEPLOYMENTSETTINGS <IMicrosoftGraphWindowsUpdatesDeploymentSettings>: deploymentSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentApplicability <IMicrosoftGraphWindowsUpdatesContentApplicabilitySettings>]: contentApplicabilitySettings
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -777,27 +764,5 @@ It can only be set to true on automatic policies that target monthly security up
 
 ## RELATED LINKS
 
-- [New-MgBetaWindowsUpdatesPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/adminwindowsupdates-post-updatepolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicy)
+- [](https://learn.microsoft.com/graph/api/adminwindowsupdates-post-updatepolicies?view=graph-rest-beta)

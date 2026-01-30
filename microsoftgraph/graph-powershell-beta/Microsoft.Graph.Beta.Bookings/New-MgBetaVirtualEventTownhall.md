@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaVirtualEventTownhall
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaVirtualEventTownhall
 ## SYNOPSIS
 
 Create a new virtualEventTownhall object in draft mode.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventTownhall](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventTownhall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,6 +53,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new virtualEventTownhall object in draft mode.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -674,16 +681,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventTownhall>`: virtualEventTownhall
+BODYPARAMETER <IMicrosoftGraphVirtualEventTownhall>: virtualEventTownhall
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>]: communicationsIdentitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
     [ApplicationInstance <IMicrosoftGraphIdentity>]: identity
@@ -800,6 +808,9 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+      [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
       [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
       [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
@@ -820,6 +831,9 @@ Read-only.
         [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
         [Scope <String>]: lobbyBypassScope
+      [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+      [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
       [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
       [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
       [Subject <String>]: The subject of the online meeting.
@@ -876,9 +890,10 @@ Read-only.
   [Audience <String>]: meetingAudience
   [CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]: Identity information of the coorganizers of the town hall.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [TenantId <String>]: The user's tenant ID.
   [InvitedAttendees <IMicrosoftGraphIdentity[]>]: The attendees invited to the town hall.
 The supported identities are: communicationsUserIdentity and communicationsGuestIdentity.
@@ -887,19 +902,21 @@ The isInviteOnly property can only be true if the value of the audience property
 
 COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity[]>: Identity information of the coorganizers of the town hall.
   [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-  [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+  [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [TenantId <String>]: The user's tenant ID.
 
-CREATEDBY `<IMicrosoftGraphCommunicationsIdentitySet>`: communicationsIdentitySet
+CREATEDBY <IMicrosoftGraphCommunicationsIdentitySet>: communicationsIdentitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
   [ApplicationInstance <IMicrosoftGraphIdentity>]: identity
@@ -911,12 +928,12 @@ This property is read-only.
   [OnPremises <IMicrosoftGraphIdentity>]: identity
   [Phone <IMicrosoftGraphIdentity>]: identity
 
-DESCRIPTION `<IMicrosoftGraphItemBody>`: itemBody
+DESCRIPTION <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -935,9 +952,10 @@ If set, the maximum supported length is 256 characters.
 INVITEDATTENDEES <IMicrosoftGraphIdentity[]>: The attendees invited to the town hall.
 The supported identities are: communicationsUserIdentity and communicationsGuestIdentity.
   [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-  [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+  [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
 PRESENTERS <IMicrosoftGraphVirtualEventPresenter[]>: The virtual event presenters.
   [Id <String>]: The unique identifier for an entity.
@@ -946,9 +964,10 @@ Read-only.
   [Identity <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]: virtualEventPresenterDetails
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Bio <IMicrosoftGraphItemBody>]: itemBody
@@ -1040,6 +1059,9 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+    [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
     [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
     [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
@@ -1060,6 +1082,9 @@ Read-only.
       [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
       [Scope <String>]: lobbyBypassScope
+    [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+    [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
     [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
     [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
     [Subject <String>]: The subject of the online meeting.
@@ -1152,9 +1177,10 @@ If set, the maximum supported length is 256 characters.
       [Identity <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [RegistrantId <String>]: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
@@ -1195,6 +1221,9 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+  [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
   [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
   [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
@@ -1218,6 +1247,9 @@ Read-only.
     [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
     [Scope <String>]: lobbyBypassScope
+  [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+  [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
   [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
   [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
   [Subject <String>]: The subject of the online meeting.
@@ -1283,11 +1315,11 @@ Only appears when the registrant is registered in Microsoft Entra ID.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [VideoOnDemandWebUrl <String>]: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
-SETTINGS `<IMicrosoftGraphVirtualEventSettings>`: virtualEventSettings
+SETTINGS <IMicrosoftGraphVirtualEventSettings>: virtualEventSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAttendeeEmailNotificationEnabled <Boolean?>]: Indicates whether virtual event attendees receive email notifications.
 
-STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -1297,28 +1329,5 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [New-MgBetaVirtualEventTownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall)
+- [](https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta)

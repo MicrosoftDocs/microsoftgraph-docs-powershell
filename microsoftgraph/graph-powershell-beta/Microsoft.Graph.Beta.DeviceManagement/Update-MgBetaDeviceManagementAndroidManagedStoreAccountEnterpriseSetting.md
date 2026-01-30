@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 ---
@@ -26,6 +26,7 @@ Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
  [-CompanyCodes <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>] [-DeviceOwnerManagementEnabled]
  [-EnrollmentTarget <string>] [-Id <string>] [-LastAppSyncDateTime <datetime>]
  [-LastAppSyncStatus <string>] [-LastModifiedDateTime <datetime>]
+ [-ManagedGooglePlayEnterpriseType <ManagedGooglePlayEnterpriseType>]
  [-ManagedGooglePlayInitialScopeTagIds <string[]>] [-OwnerOrganizationName <string>]
  [-OwnerUserPrincipalName <string>] [-TargetGroupIds <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
@@ -53,13 +54,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property androidManagedStoreAccountEnterpriseSettings in deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -403,6 +406,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ManagedGooglePlayEnterpriseType
+
+Bind Type of the tenant with the Google EMM API
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedGooglePlayEnterpriseType
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ManagedGooglePlayInitialScopeTagIds
 
 Initial scope tags for MGP apps
@@ -624,7 +648,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings>`: Enterprise settings for an Android managed store account.
+BODYPARAMETER <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings>: Enterprise settings for an Android managed store account.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -642,6 +666,7 @@ Read-only.
   [LastAppSyncDateTime <DateTime?>]: Last completion time for app sync
   [LastAppSyncStatus <String>]: Sync status of the tenant with the Google EMM API
   [LastModifiedDateTime <DateTime?>]: Last modification time for Android enterprise settings
+  [ManagedGooglePlayEnterpriseType <ManagedGooglePlayEnterpriseType?>]: Bind Type of the tenant with the Google EMM API
   [ManagedGooglePlayInitialScopeTagIds <String[]>]: Initial scope tags for MGP apps
   [OwnerOrganizationName <String>]: Organization name used when onboarding Android Enterprise
   [OwnerUserPrincipalName <String>]: Owner UPN that created the enterprise
@@ -658,27 +683,4 @@ COMPANYCODES <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>: Company codes for 
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting)

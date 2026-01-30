@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetadetermineteamworkifinteractionisallowed
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed
 ---
@@ -49,9 +49,8 @@ This cmdlet has the following aliases,
 Determine if a specified Microsoft Teams interaction is allowed between the signed-in user and specified users.
 
 ## EXAMPLES
-### Example 1: Determine if the signed-in user can create a chat with another user in the same tenant using their ID
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -67,12 +66,7 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-```
-This example will determine if the signed-in user can create a chat with another user in the same tenant using their id
-
-### Example 2: Determine if the signed-in user can create a chat with another user in a different tenant using their ID and tenant ID
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -89,12 +83,7 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-```
-This example will determine if the signed-in user can create a chat with another user in a different tenant using their id and tenant id
-
-### Example 3: Determine if the signed-in user can create a chat with another user using their user principal name
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -110,12 +99,7 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-```
-This example will determine if the signed-in user can create a chat with another user using their user principal name
-
-### Example 4: Determine if the signed-in user can create a chat with another user using their email
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -131,12 +115,7 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-```
-This example will determine if the signed-in user can create a chat with another user using their email
-
-### Example 5: Determine if the signed-in user can create a chat with three other users
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -159,10 +138,6 @@ $params = @{
 }
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
-
-```
-This example will determine if the signed-in user can create a chat with three other users
-
 
 ## PARAMETERS
 
@@ -189,7 +164,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -423,7 +398,7 @@ HelpMessage: ''
 
 ### -Users
 
-
+.
 To construct, see NOTES section for USERS properties and create a hash table.
 
 ```yaml
@@ -495,45 +470,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Go7X3MTeamworkMicrosoftGraphDetermineifinteractionisallowedPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1Go7X3MTeamworkMicrosoftGraphDetermineifinteractionisallowedPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [InteractionType <String>]: teamworkInteractionType
   [Users <IMicrosoftGraphIdentity[]>]: 
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
 USERS <IMicrosoftGraphIdentity[]>: .
   [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-  [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+  [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetadetermineteamworkifinteractionisallowed)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamwork-determineifinteractionisallowed?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetadetermineteamworkifinteractionisallowed)
+- [](https://learn.microsoft.com/graph/api/teamwork-determineifinteractionisallowed?view=graph-rest-beta)

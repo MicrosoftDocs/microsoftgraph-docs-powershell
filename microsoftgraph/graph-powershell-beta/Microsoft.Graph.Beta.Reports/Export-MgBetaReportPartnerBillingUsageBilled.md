@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusagebilled
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Export-MgBetaReportPartnerBillingUsageBilled
 ---
@@ -14,9 +14,6 @@ title: Export-MgBetaReportPartnerBillingUsageBilled
 ## SYNOPSIS
 
 Export the billed Azure usage data.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Export-MgReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Reports/Export-MgReportPartnerBillingUsageBilled?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,18 +47,9 @@ This cmdlet has the following aliases,
 
 Export the billed Azure usage data.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PartnerBilling.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PartnerBilling.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
@@ -71,10 +59,6 @@ $params = @{
 }
 
 Export-MgBetaReportPartnerBillingUsageBilled -BodyParameter $params
-
-```
-This example shows how to use the Export-MgBetaReportPartnerBillingUsageBilled Cmdlet.
-
 
 ## PARAMETERS
 
@@ -122,7 +106,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -250,7 +234,7 @@ HelpMessage: ''
 
 ### -InvoiceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -406,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ij96IaReportsPartnersBillingUsageBilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ij96IaReportsPartnersBillingUsageBilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AttributeSet <String>]: attributeSet
   [InvoiceId <String>]:
@@ -414,27 +398,5 @@ BODYPARAMETER `<IPaths1Ij96IaReportsPartnersBillingUsageBilledMicrosoftGraphPart
 
 ## RELATED LINKS
 
-- [Export-MgBetaReportPartnerBillingUsageBilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusagebilled)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-billedusage-export?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusagebilled)
+- [](https://learn.microsoft.com/graph/api/partners-billing-billedusage-export?view=graph-rest-beta)

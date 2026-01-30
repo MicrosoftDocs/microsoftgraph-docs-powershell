@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplateschema
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalSynchronizationTemplateSchema
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaServicePrincipalSynchronizationTemplateSchema
 ## SYNOPSIS
 
 Default synchronization schema for the jobs based on this template.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,13 +46,15 @@ This cmdlet has the following aliases,
 
 Default synchronization schema for the jobs based on this template.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -366,7 +365,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -393,6 +392,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -406,27 +406,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaServicePrincipalSynchronizationTemplateSchema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplateschema)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplateschema)

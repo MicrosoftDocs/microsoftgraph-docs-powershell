@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessSetting
 ---
@@ -24,6 +24,7 @@ Update-MgBetaNetworkAccessSetting [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>]
  [-ConditionalAccess <IMicrosoftGraphNetworkaccessConditionalAccessSettings>]
  [-CrossTenantAccess <IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>]
+ [-CustomBlockPage <IMicrosoftGraphNetworkaccessCustomBlockPage>]
  [-ForwardingOptions <IMicrosoftGraphNetworkaccessForwardingOptions>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -48,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property settings in networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -166,6 +177,28 @@ To construct, see NOTES section for CROSSTENANTACCESS properties and create a ha
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNetworkaccessCrossTenantAccessSettings
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CustomBlockPage
+
+customBlockPage
+To construct, see NOTES section for CUSTOMBLOCKPAGE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNetworkaccessCustomBlockPage
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -425,7 +458,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessSettings>`: settings
+BODYPARAMETER <IMicrosoftGraphNetworkaccessSettings>: settings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -439,25 +472,40 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [NetworkPacketTaggingStatus <String>]: status
+  [CustomBlockPage <IMicrosoftGraphNetworkaccessCustomBlockPage>]: customBlockPage
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Configuration <IMicrosoftGraphNetworkaccessBlockPageConfigurationBase>]: blockPageConfigurationBase
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [State <String>]: status
   [ForwardingOptions <IMicrosoftGraphNetworkaccessForwardingOptions>]: forwardingOptions
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [SkipDnsLookupState <String>]: status
 
-CONDITIONALACCESS `<IMicrosoftGraphNetworkaccessConditionalAccessSettings>`: conditionalAccessSettings
+CONDITIONALACCESS <IMicrosoftGraphNetworkaccessConditionalAccessSettings>: conditionalAccessSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [SignalingStatus <String>]: status
 
-CROSSTENANTACCESS `<IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>`: crossTenantAccessSettings
+CROSSTENANTACCESS <IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>: crossTenantAccessSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [NetworkPacketTaggingStatus <String>]: status
 
-FORWARDINGOPTIONS `<IMicrosoftGraphNetworkaccessForwardingOptions>`: forwardingOptions
+CUSTOMBLOCKPAGE <IMicrosoftGraphNetworkaccessCustomBlockPage>: customBlockPage
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Configuration <IMicrosoftGraphNetworkaccessBlockPageConfigurationBase>]: blockPageConfigurationBase
+    [(Any) <Object>]: This indicates any property can be added to this object.
+  [State <String>]: status
+
+FORWARDINGOPTIONS <IMicrosoftGraphNetworkaccessForwardingOptions>: forwardingOptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -466,27 +514,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaNetworkAccessSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssetting)

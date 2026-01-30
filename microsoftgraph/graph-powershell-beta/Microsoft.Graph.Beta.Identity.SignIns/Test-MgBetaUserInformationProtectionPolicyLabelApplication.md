@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetauserinformationprotectionpolicylabelapplication
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaUserInformationProtectionPolicyLabelApplication
 ---
@@ -74,13 +74,15 @@ Compute the information protection label that should be applied and return the s
 This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
 Given contentInfo, which includes existing content metadata key/value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | InformationProtectionPolicy.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | InformationProtectionPolicy.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -113,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -497,7 +499,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsUqg0TfUsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsUqg0TfUsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentInfo <IMicrosoftGraphContentInfo>]: contentInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -518,7 +520,7 @@ The message appears in administrative logs.
     [ExtendedProperties <IMicrosoftGraphKeyValuePair[]>]: Extended properties will be parsed and returned in the standard MIP labeled metadata format as part of the label information.
     [LabelId <String>]: The GUID of the label that should be applied to the information.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphContentInfo>: contentInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Format <String>]: contentFormat
   [Identifier <String>]: Identifier used for Azure Information Protection Analytics.
@@ -527,8 +529,9 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
     [Value <String>]: Value for this key-value pair
   [State <String>]: contentState
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
+  [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
   [AuthenticationConditionApplicationAppId <String>]: The unique identifier of authenticationConditionApplication
@@ -541,6 +544,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [AuthenticationMethodModes <String[]>]: Usage: authenticationMethodModes={authenticationMethodModes}
   [AuthenticationStrengthPolicyId <String>]: The unique identifier of authenticationStrengthPolicy
   [AuthorizationPolicyId <String>]: The unique identifier of authorizationPolicy
+  [B2BManagementPolicyId <String>]: The unique identifier of b2bManagementPolicy
   [B2CIdentityUserFlowId <String>]: The unique identifier of b2cIdentityUserFlow
   [B2XIdentityUserFlowId <String>]: The unique identifier of b2xIdentityUserFlow
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -560,6 +564,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
+  [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
   [GroupId <String>]: The unique identifier of group
   [HardwareOathAuthenticationMethodId <String>]: The unique identifier of hardwareOathAuthenticationMethod
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -580,6 +585,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
   [NamedLocationId <String>]: The unique identifier of namedLocation
   [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
+  [OnPremAuthenticationPolicyId <String>]: The unique identifier of onPremAuthenticationPolicy
   [OrganizationId <String>]: The unique identifier of organization
   [PasswordAuthenticationMethodId <String>]: The unique identifier of passwordAuthenticationMethod
   [PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
@@ -589,6 +595,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
+  [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
   [RiskyServicePrincipalId <String>]: The unique identifier of riskyServicePrincipal
   [RiskyUserHistoryItemId <String>]: The unique identifier of riskyUserHistoryItem
@@ -598,6 +605,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ServicePrincipalCreationConditionSetId <String>]: The unique identifier of servicePrincipalCreationConditionSet
   [ServicePrincipalCreationPolicyId <String>]: The unique identifier of servicePrincipalCreationPolicy
   [ServicePrincipalRiskDetectionId <String>]: The unique identifier of servicePrincipalRiskDetection
+  [SignInIdentifierBaseName <String>]: The unique identifier of signInIdentifierBase
   [SoftwareOathAuthenticationMethodId <String>]: The unique identifier of softwareOathAuthenticationMethod
   [TemporaryAccessPassAuthenticationMethodId <String>]: The unique identifier of temporaryAccessPassAuthenticationMethod
   [ThreatAssessmentRequestId <String>]: The unique identifier of threatAssessmentRequest
@@ -613,9 +621,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
+  [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
+  [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-LABELINGOPTIONS `<IMicrosoftGraphLabelingOptions>`: labelingOptions
+LABELINGOPTIONS <IMicrosoftGraphLabelingOptions>: labelingOptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: assignmentMethod
   [DowngradeJustification <IMicrosoftGraphDowngradeJustification>]: downgradeJustification
@@ -631,28 +642,5 @@ The message appears in administrative logs.
 
 ## RELATED LINKS
 
-- [Test-MgBetaUserInformationProtectionPolicyLabelApplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetauserinformationprotectionpolicylabelapplication)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetauserinformationprotectionpolicylabelapplication)
+- [](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta)

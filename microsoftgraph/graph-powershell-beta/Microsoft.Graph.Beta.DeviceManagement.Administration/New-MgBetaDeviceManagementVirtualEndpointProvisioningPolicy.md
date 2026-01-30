@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointprovisioningpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 ## SYNOPSIS
 
 Create a new cloudPcProvisioningPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,18 +57,9 @@ This cmdlet has the following aliases,
 
 Create a new cloudPcProvisioningPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -109,10 +97,6 @@ $params = @{
 }
 
 New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -779,7 +763,7 @@ HelpMessage: ''
 
 ### -ScopeIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -1218,8 +1202,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -1539,8 +1523,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -2131,7 +2115,7 @@ Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
         [PhoneType <String>]: authenticationPhoneType
@@ -2651,7 +2635,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -8804,8 +8788,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
     [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -8957,20 +8941,20 @@ Read-only.
   [Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]: cloudPcManagementAssignmentTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-AUTOPATCH `<IMicrosoftGraphCloudPcProvisioningPolicyAutopatch>`: cloudPcProvisioningPolicyAutopatch
+AUTOPATCH <IMicrosoftGraphCloudPcProvisioningPolicyAutopatch>: cloudPcProvisioningPolicyAutopatch
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AutopatchGroupId <String>]: The unique identifier (ID) of a Windows Autopatch group.
 An Autopatch group is a logical container or unit that groups several Microsoft Entra groups and software update policies.
 Devices with the same Autopatch group ID share unified software update management.
 The default value is null that indicates that no Autopatch group is associated with the provisioning policy.
 
-AUTOPILOTCONFIGURATION `<IMicrosoftGraphCloudPcAutopilotConfiguration>`: cloudPcAutopilotConfiguration
+AUTOPILOTCONFIGURATION <IMicrosoftGraphCloudPcAutopilotConfiguration>: cloudPcAutopilotConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplicationTimeoutInMinutes <Int32?>]: 
   [DevicePreparationProfileId <String>]: 
   [OnFailureDeviceAccessDenied <Boolean?>]: 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningPolicy
+BODYPARAMETER <IMicrosoftGraphCloudPcProvisioningPolicy>: cloudPcProvisioningPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -9300,8 +9284,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -9621,8 +9605,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -10213,7 +10197,7 @@ Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
           [PhoneType <String>]: authenticationPhoneType
@@ -10733,7 +10717,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -16886,8 +16870,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
       [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -17118,18 +17102,18 @@ This can only be entered if the IT admin chooses Microsoft Entra joined as the d
 If you enter a regionName, leave the onPremisesConnectionId property empty.
   [Type <String>]: cloudPcDomainJoinType
 
-MICROSOFTMANAGEDDESKTOP `<IMicrosoftGraphMicrosoftManagedDesktop>`: microsoftManagedDesktop
+MICROSOFTMANAGEDDESKTOP <IMicrosoftGraphMicrosoftManagedDesktop>: microsoftManagedDesktop
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ManagedType <String>]: microsoftManagedDesktopType
   [Profile <String>]: The name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.
   [Type <String>]: microsoftManagedDesktopType
 
-WINDOWSSETTING `<IMicrosoftGraphCloudPcWindowsSetting>`: cloudPcWindowsSetting
+WINDOWSSETTING <IMicrosoftGraphCloudPcWindowsSetting>: cloudPcWindowsSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Locale <String>]: The Windows language or region tag to use for language pack configuration and localization of the Cloud PC.
 The default value is en-US, which corresponds to English (United States).
 
-WINDOWSSETTINGS `<IMicrosoftGraphCloudPcWindowsSettings>`: cloudPcWindowsSettings
+WINDOWSSETTINGS <IMicrosoftGraphCloudPcWindowsSettings>: cloudPcWindowsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Language <String>]: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC.
 The default value is en-US, which corresponds to English (United States).
@@ -17137,27 +17121,5 @@ The default value is en-US, which corresponds to English (United States).
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointprovisioningpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-post-provisioningpolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointprovisioningpolicy)
+- [](https://learn.microsoft.com/graph/api/virtualendpoint-post-provisioningpolicies?view=graph-rest-beta)

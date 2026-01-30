@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjobondemand
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 01/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaServicePrincipalSynchronizationJobOnDemand
 ---
@@ -16,9 +16,6 @@ title: New-MgBetaServicePrincipalSynchronizationJobOnDemand
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
 No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationJobOnDemand?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,18 +76,9 @@ Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
 No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Provision users from Microsoft Entra ID to third-party applications
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -110,12 +98,7 @@ $params = @{
 
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 
-```
-This example will provision users from microsoft entra id to third-party applications
-
-### Example 2: Sync on-demand from Active Directory to Microsoft Entra ID (Microsoft Entra Cloud Sync)
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -135,12 +118,7 @@ $params = @{
 
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 
-```
-This example will sync on-demand from active directory to microsoft entra id (microsoft entra cloud sync)
-
-### Example 3: Provision a group and two of its members on demand
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -171,10 +149,6 @@ $params = @{
 }
 
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
-
-```
-This example will provision a group and two of its members on demand
-
 
 ## PARAMETERS
 
@@ -207,7 +181,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -369,7 +343,7 @@ HelpMessage: ''
 
 ### -Parameters
 
-
+.
 To construct, see NOTES section for PARAMETERS properties and create a hash table.
 
 ```yaml
@@ -590,7 +564,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>]: 
     [RuleId <String>]: The identifier of the synchronizationRule to be applied.
@@ -607,7 +581,7 @@ Can be one of the following: An onPremisesDistinguishedName for synchronization 
 Can be one of the following: user for synchronizing between Active Directory and Azure AD.User for synchronizing a user between Microsoft Entra ID and a third-party application.
 Worker for synchronization a user between Workday and either Active Directory or Azure AD.Group for synchronizing a group between Microsoft Entra ID and a third-party application.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -634,6 +608,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -662,27 +637,5 @@ Worker for synchronization a user between Workday and either Active Directory or
 
 ## RELATED LINKS
 
-- [New-MgBetaServicePrincipalSynchronizationJobOnDemand](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjobondemand)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjobondemand)
+- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-beta)
