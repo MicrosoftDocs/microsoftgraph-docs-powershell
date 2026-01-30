@@ -15,6 +15,9 @@ title: Update-MgSecurityAttackSimulationLandingPageDetail
 
 Update the navigation property details in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationLandingPageDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

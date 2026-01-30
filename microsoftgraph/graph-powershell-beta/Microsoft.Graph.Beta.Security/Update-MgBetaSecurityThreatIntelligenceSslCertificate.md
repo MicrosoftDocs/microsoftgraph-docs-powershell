@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityThreatIntelligenceSslCertificate
 
 Update the navigation property sslCertificates in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

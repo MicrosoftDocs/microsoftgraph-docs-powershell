@@ -15,6 +15,9 @@ title: Set-MgBetaGroupDriveRootSensitivityLabel
 
 Invoke action assignSensitivityLabel
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveRootSensitivityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

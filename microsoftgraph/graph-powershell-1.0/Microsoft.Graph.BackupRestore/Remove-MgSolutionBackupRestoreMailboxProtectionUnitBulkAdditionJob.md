@@ -15,6 +15,9 @@ title: Remove-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob
 
 Delete navigation property mailboxProtectionUnitsBulkAdditionJobs for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

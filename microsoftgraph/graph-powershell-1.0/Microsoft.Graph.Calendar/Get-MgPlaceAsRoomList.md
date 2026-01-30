@@ -15,6 +15,9 @@ title: Get-MgPlaceAsRoomList
 
 Get the item of type microsoft.graph.place as microsoft.graph.roomList
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomList](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

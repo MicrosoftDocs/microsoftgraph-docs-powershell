@@ -15,6 +15,9 @@ title: Update-MgOrganizationExtension
 
 Update the navigation property extensions in organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaOrganizationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

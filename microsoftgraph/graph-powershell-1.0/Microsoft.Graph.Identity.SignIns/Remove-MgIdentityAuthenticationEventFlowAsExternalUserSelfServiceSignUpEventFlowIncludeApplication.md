@@ -15,6 +15,9 @@ title: Remove-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEv
 
 Delete navigation property includeApplications for identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

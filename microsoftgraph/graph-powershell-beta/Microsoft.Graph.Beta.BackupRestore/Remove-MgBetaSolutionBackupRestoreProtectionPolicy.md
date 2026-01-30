@@ -16,6 +16,9 @@ title: Remove-MgBetaSolutionBackupRestoreProtectionPolicy
 Delete a protection policy.
 Read the properties and relationships of a protectionPolicyBase object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

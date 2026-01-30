@@ -15,6 +15,9 @@ title: Update-MgBetaSiteList
 
 Update the navigation property lists in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
