@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationFederatedIdentityCredential
 ---
@@ -13,7 +13,7 @@ title: Get-MgApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
 
-Read the properties and relationships of a federatedIdentityCredential object.
+Read the properties and relationships of a federatedIdentityCredential object assigned to an application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
@@ -58,7 +58,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read the properties and relationships of a federatedIdentityCredential object.
+Read the properties and relationships of a federatedIdentityCredential object assigned to an application.
 
 **Permissions**
 
@@ -75,7 +75,7 @@ Read the properties and relationships of a federatedIdentityCredential object.
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId
+Get-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId
 
 ```
 This example shows how to use the Get-MgApplicationFederatedIdentityCredential Cmdlet.
@@ -600,7 +600,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Get-MgApplicationFederatedIdentityCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-list-federatedidentitycredentials?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-list?view=graph-rest-1.0)
 
 
 

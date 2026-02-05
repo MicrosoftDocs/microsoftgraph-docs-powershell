@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/clear-mgbetaapplicationverifiedpublisher
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Clear-MgBetaApplicationVerifiedPublisher
 ---
@@ -13,7 +13,7 @@ title: Clear-MgBetaApplicationVerifiedPublisher
 
 ## SYNOPSIS
 
-Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
+Unset the verifiedPublisher previously set on an agentIdentityBlueprint, removing all verified publisher properties.
 For more information, see Publisher verification.
 
 > [!NOTE]
@@ -48,7 +48,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
+Unset the verifiedPublisher previously set on an agentIdentityBlueprint, removing all verified publisher properties.
 For more information, see Publisher verification.
 
 ## EXAMPLES
@@ -401,6 +401,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -415,7 +416,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Clear-MgBetaApplicationVerifiedPublisher](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/clear-mgbetaapplicationverifiedpublisher)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-unsetverifiedpublisher?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentidentityblueprint-unsetverifiedpublisher?view=graph-rest-beta)
 
 
 

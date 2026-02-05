@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportnoncompliantdeviceandsettingreport
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport
 ---
@@ -13,7 +13,7 @@ title: Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport
 
 ## SYNOPSIS
 
-Not yet documented
+Invoke action getNoncompliantDevicesAndSettingsReport
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport?view=graph-powershell-beta)
@@ -51,7 +51,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Not yet documented
+Invoke action getNoncompliantDevicesAndSettingsReport
 
 **Permissions**
 
@@ -630,7 +630,6 @@ BODYPARAMETER `<IPaths11Lc6EuDevicemanagementReportsMicrosoftGraphGetnoncomplian
 ## RELATED LINKS
 
 - [Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportnoncompliantdeviceandsettingreport)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getnoncompliantdevicesandsettingsreport?view=graph-rest-1.0)
 
 
 

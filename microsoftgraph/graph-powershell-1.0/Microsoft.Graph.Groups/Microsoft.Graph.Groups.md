@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Groups
-Module Guid: 86e2fc36-d4fe-4390-bbfc-3c7f8f698c3c
+Module Guid: 61a40854-c717-40d4-b07d-af940338e7f3
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.groups/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -206,6 +206,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupMemberWithLicenseErrorCountAsServicePrincipal](Get-MgGroupMemberWithLicenseErrorCountAsServicePrincipal.md)
 
 ### [Get-MgGroupMemberWithLicenseErrorCountAsUser](Get-MgGroupMemberWithLicenseErrorCountAsUser.md)
+
+### [Get-MgGroupOnPremiseSyncBehavior](Get-MgGroupOnPremiseSyncBehavior.md)
 
 ### [Get-MgGroupOwner](Get-MgGroupOwner.md)
 
@@ -493,6 +495,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgGroupMemberDirectoryObjectByRef](Remove-MgGroupMemberDirectoryObjectByRef.md)
 
+### [Remove-MgGroupOnPremiseSyncBehavior](Remove-MgGroupOnPremiseSyncBehavior.md)
+
 ### [Remove-MgGroupOwnerDirectoryObjectByRef](Remove-MgGroupOwnerDirectoryObjectByRef.md)
 
 ### [Remove-MgGroupPermissionGrant](Remove-MgGroupPermissionGrant.md)
@@ -542,6 +546,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgGroupExtension](Update-MgGroupExtension.md)
 
 ### [Update-MgGroupLifecyclePolicy](Update-MgGroupLifecyclePolicy.md)
+
+### [Update-MgGroupOnPremiseSyncBehavior](Update-MgGroupOnPremiseSyncBehavior.md)
 
 ### [Update-MgGroupPermissionGrant](Update-MgGroupPermissionGrant.md)
 

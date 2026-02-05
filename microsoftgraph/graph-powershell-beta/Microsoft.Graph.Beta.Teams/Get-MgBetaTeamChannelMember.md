@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamChannelMember
 ---
@@ -13,8 +13,9 @@ title: Get-MgBetaTeamChannelMember
 
 ## SYNOPSIS
 
-A collection of membership records associated with the channel.
-It includes both direct and indirect members of shared channels.
+Retrieve a single conversationMember (direct or indirect) from the allMembers collection using the membership ID.
+This API provides access to the following member types:\r- *Direct members*: Users who are added directly to the channel, including users from other tenants (cross-tenant).\r- *Indirect members*: Users who are members of a team with which the channel is shared, including teams in the same tenant or in a different tenant (cross-tenant).
+When you retrieve an indirect member, the @microsoft.graph.originalSourceMembershipUrl property identifies the original source team, which indicates that the user is an indirect member of the shared channel.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelMember?view=graph-powershell-1.0)
@@ -88,8 +89,9 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-A collection of membership records associated with the channel.
-It includes both direct and indirect members of shared channels.
+Retrieve a single conversationMember (direct or indirect) from the allMembers collection using the membership ID.
+This API provides access to the following member types:\r- *Direct members*: Users who are added directly to the channel, including users from other tenants (cross-tenant).\r- *Indirect members*: Users who are members of a team with which the channel is shared, including teams in the same tenant or in a different tenant (cross-tenant).
+When you retrieve an indirect member, the @microsoft.graph.originalSourceMembershipUrl property identifies the original source team, which indicates that the user is an indirect member of the shared channel.
 
 **Permissions**
 
@@ -772,6 +774,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgBetaTeamChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-get-allmembers?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/channel-get-members?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/channel-list-allmembers?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/channel-list-members?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDevice
 ---
@@ -366,7 +366,7 @@ HelpMessage: ''
 
 Ownership of the device.
 Intune sets this property.
-Possible values are: unknown, company, personal.
+The possible values are: unknown, company, personal.
 
 ```yaml
 Type: System.String
@@ -457,7 +457,7 @@ HelpMessage: ''
 
 Enrollment type of the device.
 Intune sets this property.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+The possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
 NOTE: This property might return other values apart from those listed.
 
 ```yaml
@@ -684,7 +684,7 @@ HelpMessage: ''
 
 The management channel of the device.
 This property is set by Intune.
-Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
+The possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
 
 ```yaml
 Type: System.String
@@ -1281,7 +1281,7 @@ Supports $filter (eq, ne, not, startsWith).
 Set to null.
   [DeviceOwnership <String>]: Ownership of the device.
 Intune sets this property.
-Possible values are: unknown, company, personal.
+The possible values are: unknown, company, personal.
   [DeviceVersion <Int32?>]: For internal use only.
   [DisplayName <String>]: The display name for the device.
 Maximum length is 256 characters.
@@ -1292,7 +1292,7 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
   [EnrollmentType <String>]: Enrollment type of the device.
 Intune sets this property.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+The possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
 NOTE: This property might return other values apart from those listed.
   [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the device.
 Read-only.
@@ -1315,7 +1315,7 @@ Returned only on $select.
 This property can only be updated by Intune.
   [ManagementType <String>]: The management channel of the device.
 This property is set by Intune.
-Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
+The possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
   [Manufacturer <String>]: Manufacturer of the device.
 Read-only.
   [MdmAppId <String>]: Application identifier used to register device into MDM.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdevicemanagementintentsettingreport
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementReportDeviceManagementIntentSettingReport
 ---
@@ -13,7 +13,7 @@ title: Get-MgDeviceManagementReportDeviceManagementIntentSettingReport
 
 ## SYNOPSIS
 
-Not yet documented
+Invoke action getDeviceManagementIntentSettingsReport
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport?view=graph-powershell-beta)
@@ -51,7 +51,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Not yet documented
+Invoke action getDeviceManagementIntentSettingsReport
 
 **Permissions**
 
@@ -630,7 +630,6 @@ BODYPARAMETER `<IPathsTbh0H2DevicemanagementReportsMicrosoftGraphGetdevicemanage
 ## RELATED LINKS
 
 - [Get-MgDeviceManagementReportDeviceManagementIntentSettingReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdevicemanagementintentsettingreport)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdevicemanagementintentsettingsreport?view=graph-rest-1.0)
 
 
 

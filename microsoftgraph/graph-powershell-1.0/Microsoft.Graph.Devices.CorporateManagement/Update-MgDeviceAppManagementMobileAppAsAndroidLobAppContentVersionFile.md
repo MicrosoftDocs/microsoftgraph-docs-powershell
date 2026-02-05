@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappasandroidlobappcontentversionfile
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile
 ---
@@ -326,7 +326,7 @@ HelpMessage: ''
 
 ### -ManifestInputFile
 
-Input File for Manifest (The manifest information.)
+Input File for Manifest (Indicates the manifest information, containing file metadata.)
 
 ```yaml
 Type: System.String
@@ -434,7 +434,7 @@ HelpMessage: ''
 
 ### -Name
 
-the file name.
+Indicates the name of the file.
 
 ```yaml
 Type: System.String
@@ -546,7 +546,7 @@ HelpMessage: ''
 
 ### -Size
 
-The size of the file prior to encryption.
+Indicates the original size of the file, in bytes.
 
 ```yaml
 Type: System.Int64
@@ -573,7 +573,7 @@ HelpMessage: ''
 
 ### -SizeEncrypted
 
-The size of the file after encryption.
+Indicates the size of the file after encryption, in bytes.
 
 ```yaml
 Type: System.Int64
@@ -688,10 +688,10 @@ Read-only.
   [IsDependency <Boolean?>]: Indicates whether this content file is a dependency for the main content file.
 TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
 Defaults to FALSE.
-  [Manifest <Byte[]>]: The manifest information.
-  [Name <String>]: the file name.
-  [Size <Int64?>]: The size of the file prior to encryption.
-  [SizeEncrypted <Int64?>]: The size of the file after encryption.
+  [Manifest <Byte[]>]: Indicates the manifest information, containing file metadata.
+  [Name <String>]: Indicates the name of the file.
+  [Size <Int64?>]: Indicates the original size of the file, in bytes.
+  [SizeEncrypted <Int64?>]: Indicates the size of the file after encryption, in bytes.
   [UploadState <String>]: Contains properties for upload request states.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter

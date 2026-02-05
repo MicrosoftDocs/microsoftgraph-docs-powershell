@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderuserconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserMailFolderUserConfiguration
 ---
@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get userConfigurations from users
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MailboxConfigItem.Read, MailboxConfigItem.ReadWrite,  |
+| Delegated (personal Microsoft account) | MailboxConfigItem.Read, MailboxConfigItem.ReadWrite,  |
+| Application | MailboxConfigItem.Read, MailboxConfigItem.ReadWrite,  |
 
 ## PARAMETERS
 

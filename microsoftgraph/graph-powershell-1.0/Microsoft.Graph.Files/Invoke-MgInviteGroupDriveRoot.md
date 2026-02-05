@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitegroupdriveroot
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgInviteGroupDriveRoot
 ---
@@ -13,7 +13,8 @@ title: Invoke-MgInviteGroupDriveRoot
 
 ## SYNOPSIS
 
-Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link.
+Send a sharing invitation for a driveItem.
+A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaInviteGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaInviteGroupDriveRoot?view=graph-powershell-beta)
@@ -74,7 +75,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link.
+Send a sharing invitation for a driveItem.
+A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
 
 ## PARAMETERS
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementandroidmanagedappprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementAndroidManagedAppProtection
 ---
@@ -1179,6 +1179,7 @@ HelpMessage: ''
 ### -CustomBrowserDisplayName
 
 Friendly name of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
 
 ```yaml
 Type: System.String
@@ -1205,7 +1206,8 @@ HelpMessage: ''
 
 ### -CustomBrowserPackageId
 
-Unique identifier of a custom browser to open weblink on Android.
+Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
 
 ```yaml
 Type: System.String
@@ -3484,7 +3486,9 @@ Read-only.
   [BlockAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
   [ConnectToVpnOnLaunch <Boolean?>]: Whether the app should connect to the configured VPN on launch.
   [CustomBrowserDisplayName <String>]: Friendly name of the preferred custom browser to open weblink on Android.
-  [CustomBrowserPackageId <String>]: Unique identifier of a custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+  [CustomBrowserPackageId <String>]: Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   [CustomDialerAppDisplayName <String>]: Friendly name of a custom dialer app to click-to-open a phone number on Android.
   [CustomDialerAppPackageId <String>]: PackageId of a custom dialer app to click-to-open a phone number on Android.
   [DeployedAppCount <Int32?>]: Count of apps to which the current policy is deployed.

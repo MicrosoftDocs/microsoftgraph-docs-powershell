@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgBetaDriveItem
 ---
@@ -13,7 +13,7 @@ title: Restore-MgBetaDriveItem
 
 ## SYNOPSIS
 
-Restore a driveItem that has been deleted and is currently in the recycle bin.
+Restore a deleted driveItem that is currently in the recycle bin.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Restore-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveItem?view=graph-powershell-1.0)
@@ -71,7 +71,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Restore a driveItem that has been deleted and is currently in the recycle bin.
+Restore a deleted driveItem that is currently in the recycle bin.
 
 ## EXAMPLES
 ### Example 1: Code snippet

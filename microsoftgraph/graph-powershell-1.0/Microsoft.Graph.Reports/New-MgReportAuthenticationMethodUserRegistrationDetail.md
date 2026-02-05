@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgReportAuthenticationMethodUserRegistrationDetail
 ---
@@ -541,7 +541,7 @@ HelpMessage: ''
 ### -SystemPreferredAuthenticationMethods
 
 Collection of authentication methods that the system determined to be the most secure authentication methods among the registered methods for second factor authentication.
-Possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice, sms, none, unknownFutureValue.
+The possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice, sms, none, unknownFutureValue.
 Supports $filter (any with eq).
 
 ```yaml
@@ -730,7 +730,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [MethodsRegistered <String[]>]: Collection of authentication methods registered, such as mobilePhone, email, passKeyDeviceBound.
 Supports $filter (any with eq).
   [SystemPreferredAuthenticationMethods <String[]>]: Collection of authentication methods that the system determined to be the most secure authentication methods among the registered methods for second factor authentication.
-Possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice, sms, none, unknownFutureValue.
+The possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice, sms, none, unknownFutureValue.
 Supports $filter (any with eq).
   [UserDisplayName <String>]: The user display name, such as Adele Vance.
 Supports $filter (eq, startsWith) and $orderby.

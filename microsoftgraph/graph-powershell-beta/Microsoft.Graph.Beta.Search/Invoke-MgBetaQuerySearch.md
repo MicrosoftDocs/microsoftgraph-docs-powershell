@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaQuerySearch
 ---
@@ -460,7 +460,7 @@ Optional.
 This property is only applicable to entityType=message.
 Optional.
     [EntityTypes <String[]>]: One or more types of resources expected in the response.
-Possible values are: list, site, listItem, message, event, drive, driveItem, person, externalItem, acronym, bookmark, chatMessage.
+The possible values are: list, site, listItem, message, event, drive, driveItem, person, externalItem, acronym, bookmark, chatMessage.
 For details about combinations of two or more entity types that are supported in the same search request, see known limitations.
 Required.
     [Fields <String[]>]: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from content that Microsoft 365 Copilot connectors bring in.
@@ -496,6 +496,10 @@ This property is optional.
     [SharePointOneDriveOptions <IMicrosoftGraphSharePointOneDriveOptions>]: sharePointOneDriveOptions
       [(Any) <Object>]: This indicates any property can be added to this object.
       [IncludeContent <String>]: searchContent
+      [IncludeHiddenContent <Boolean?>]: Indicates whether the search results include content that is normally hidden, such as archived content and SharePoint Embedded (RaaS).
+The default value is false, which prevents hidden content from being returned.
+You can also optionally include KQL to scope your query for hidden content to specific content types.
+For more information, see Search hidden content.
     [Size <Int32?>]: The size of the page to be retrieved.
 The maximum value is 500.
 Optional.
@@ -564,7 +568,7 @@ Optional.
 This property is only applicable to entityType=message.
 Optional.
   [EntityTypes <String[]>]: One or more types of resources expected in the response.
-Possible values are: list, site, listItem, message, event, drive, driveItem, person, externalItem, acronym, bookmark, chatMessage.
+The possible values are: list, site, listItem, message, event, drive, driveItem, person, externalItem, acronym, bookmark, chatMessage.
 For details about combinations of two or more entity types that are supported in the same search request, see known limitations.
 Required.
   [Fields <String[]>]: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from content that Microsoft 365 Copilot connectors bring in.
@@ -600,6 +604,10 @@ This property is optional.
   [SharePointOneDriveOptions <IMicrosoftGraphSharePointOneDriveOptions>]: sharePointOneDriveOptions
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IncludeContent <String>]: searchContent
+    [IncludeHiddenContent <Boolean?>]: Indicates whether the search results include content that is normally hidden, such as archived content and SharePoint Embedded (RaaS).
+The default value is false, which prevents hidden content from being returned.
+You can also optionally include KQL to scope your query for hidden content to specific content types.
+For more information, see Search hidden content.
   [Size <Int32?>]: The size of the page to be retrieved.
 The maximum value is 500.
 Optional.

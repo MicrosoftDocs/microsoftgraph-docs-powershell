@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuser
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgRiskyUser
 ---
@@ -248,7 +248,7 @@ HelpMessage: ''
 ### -IsDeleted
 
 Indicates whether the user is deleted.
-Possible values are: true, false.
+The possible values are: true, false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -560,7 +560,7 @@ Read-only.
   [History <IMicrosoftGraphRiskyUserHistoryItem[]>]: The activity related to user risk level change
     [History <IMicrosoftGraphRiskyUserHistoryItem[]>]: The activity related to user risk level change
     [IsDeleted <Boolean?>]: Indicates whether the user is deleted.
-Possible values are: true, false.
+The possible values are: true, false.
     [IsProcessing <Boolean?>]: Indicates whether the backend is processing a user's risky state.
     [RiskDetail <String>]: riskDetail
     [RiskLastUpdatedDateTime <DateTime?>]: The date and time that the risky user was last updated.
@@ -579,7 +579,7 @@ Read-only.
     [InitiatedBy <String>]: The ID of actor that does the operation.
     [UserId <String>]: The ID of the user.
   [IsDeleted <Boolean?>]: Indicates whether the user is deleted.
-Possible values are: true, false.
+The possible values are: true, false.
   [IsProcessing <Boolean?>]: Indicates whether the backend is processing a user's risky state.
   [RiskDetail <String>]: riskDetail
   [RiskLastUpdatedDateTime <DateTime?>]: The date and time that the risky user was last updated.
@@ -593,7 +593,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 HISTORY <IMicrosoftGraphRiskyUserHistoryItem[]>: The activity related to user risk level change
   [History <IMicrosoftGraphRiskyUserHistoryItem[]>]: The activity related to user risk level change
   [IsDeleted <Boolean?>]: Indicates whether the user is deleted.
-Possible values are: true, false.
+The possible values are: true, false.
   [IsProcessing <Boolean?>]: Indicates whether the backend is processing a user's risky state.
   [RiskDetail <String>]: riskDetail
   [RiskLastUpdatedDateTime <DateTime?>]: The date and time that the risky user was last updated.

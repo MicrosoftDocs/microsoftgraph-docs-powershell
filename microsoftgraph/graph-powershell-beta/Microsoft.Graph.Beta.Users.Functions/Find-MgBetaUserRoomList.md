@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Functions
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgBetaUserRoomList
 ---
@@ -15,7 +15,7 @@ title: Find-MgBetaUserRoomList
 
 Get the room lists defined in a tenant, as represented by their emailAddress objects.
 Tenants can organize meeting rooms into room lists.
-In this API, each meeting room and room list is represented by an emailAddress instance.You can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
+In this API, each meeting room and room list is represented by an emailAddress instance.\rYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 Get the room lists defined in a tenant, as represented by their emailAddress objects.
 Tenants can organize meeting rooms into room lists.
-In this API, each meeting room and room list is represented by an emailAddress instance.You can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
+In this API, each meeting room and room list is represented by an emailAddress instance.\rYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
 
 **Permissions**
 

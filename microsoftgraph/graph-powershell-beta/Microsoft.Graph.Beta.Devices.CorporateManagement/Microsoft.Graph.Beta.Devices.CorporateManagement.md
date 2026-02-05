@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-Module Guid: f1ab6db4-1464-45f2-9b64-8352e2bd2fd2
+Module Guid: 79d09d6c-0f2c-458d-9ad9-52b0f113e3e6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devices.corporatemanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -283,6 +283,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount.md)
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScriptCount.md)
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
@@ -366,6 +372,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScriptCount.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
 
@@ -457,6 +469,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount.md)
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScriptCount.md)
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
@@ -496,6 +514,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScriptCount.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
 
@@ -537,6 +561,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFileCount.md)
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScriptCount.md)
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
@@ -576,6 +606,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScriptCount.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
 
@@ -617,6 +653,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount.md)
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScriptCount.md)
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
@@ -656,6 +698,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScriptCount.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
 
@@ -731,6 +779,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount.md)
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScriptCount.md)
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
@@ -771,6 +825,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount.md)
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScriptCount.md)
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
@@ -810,6 +870,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScriptCount.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
 
@@ -878,6 +944,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScript](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScript.md)
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScriptCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScriptCount.md)
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
 
@@ -1485,6 +1557,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
 
+### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScript.md)
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
@@ -1502,6 +1576,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+
+### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScript.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
 
@@ -1523,6 +1599,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
 
+### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScript.md)
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
@@ -1532,6 +1610,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+
+### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScript.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
 
@@ -1543,6 +1623,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
 
+### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScript.md)
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
@@ -1552,6 +1634,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+
+### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScript.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
 
@@ -1563,6 +1647,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
 
+### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScript.md)
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
@@ -1572,6 +1658,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+
+### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScript.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
 
@@ -1591,6 +1679,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
 
+### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScript.md)
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
@@ -1601,6 +1691,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
 
+### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScript.md)
+
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
@@ -1610,6 +1702,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+
+### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScript.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
 
@@ -1626,6 +1720,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
+
+### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScript](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScript.md)
 
 ### [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
 
@@ -1815,6 +1911,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
 
+### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScript.md)
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
@@ -1832,6 +1930,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+
+### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScript.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
 
@@ -1853,6 +1953,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
 
+### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScript.md)
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
@@ -1862,6 +1964,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+
+### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScript.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
 
@@ -1873,6 +1977,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
 
+### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScript.md)
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
@@ -1882,6 +1988,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+
+### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScript.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
 
@@ -1893,6 +2001,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
 
+### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScript.md)
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
@@ -1902,6 +2012,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+
+### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScript.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
 
@@ -1921,6 +2033,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
 
+### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScript.md)
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
@@ -1931,6 +2045,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
 
+### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScript.md)
+
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
@@ -1940,6 +2056,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+
+### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScript.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
 
@@ -1956,6 +2074,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
+
+### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScript](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScript.md)
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
 
@@ -2219,6 +2339,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
 
+### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionScript.md)
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
@@ -2236,6 +2358,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+
+### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionScript.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
 
@@ -2257,6 +2381,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
 
+### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionScript.md)
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
@@ -2266,6 +2392,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+
+### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionScript.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
 
@@ -2277,6 +2405,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
 
+### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScript.md)
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
@@ -2286,6 +2416,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+
+### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionScript.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
 
@@ -2297,6 +2429,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
 
+### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionScript.md)
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
@@ -2306,6 +2440,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+
+### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionScript.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
 
@@ -2325,6 +2461,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
 
+### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionScript.md)
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
@@ -2335,6 +2473,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
 
+### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionScript.md)
+
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
@@ -2344,6 +2484,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+
+### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionScript.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
 
@@ -2360,6 +2502,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
+
+### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScript](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionScript.md)
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
 

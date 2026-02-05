@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicestatus
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDeviceManagementDeviceConfigurationDeviceStatus
 ---
@@ -13,7 +13,7 @@ title: Remove-MgDeviceManagementDeviceConfigurationDeviceStatus
 
 ## SYNOPSIS
 
-Deletes a deviceConfigurationDeviceStatus.
+Delete navigation property deviceStatuses for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Deletes a deviceConfigurationDeviceStatus.
+Delete navigation property deviceStatuses for deviceManagement
 
 **Permissions**
 
@@ -461,7 +461,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgDeviceManagementDeviceConfigurationDeviceStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicestatus)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatus-delete?view=graph-rest-1.0)
 
 
 

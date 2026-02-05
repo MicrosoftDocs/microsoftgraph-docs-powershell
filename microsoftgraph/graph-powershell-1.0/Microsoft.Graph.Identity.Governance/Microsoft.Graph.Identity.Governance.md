@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: ebae2592-ac7c-4309-9632-c8f9175b1cfe
+Module Guid: bc600355-2c08-41b8-846c-d4409270aff5
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -667,6 +667,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunCount](Get-MgIdentityGovernanceLifecycleWorkflowRunCount.md)
 
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRun.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRun.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRunCount](Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRunCount.md)
+
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
@@ -688,6 +694,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultCount](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultCount.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRunCount](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRunCount.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubject](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubject.md)
 
@@ -790,6 +802,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultCount](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultCount.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRunCount](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRunCount.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject.md)
 
@@ -1270,6 +1288,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Initialize-MgIdentityGovernanceLifecycleWorkflow](Initialize-MgIdentityGovernanceLifecycleWorkflow.md)
 
 ### [Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
+
+### [Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowWithScope](Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowWithScope.md)
+
+### [Initialize-MgIdentityGovernanceLifecycleWorkflowWithScope](Initialize-MgIdentityGovernanceLifecycleWorkflowWithScope.md)
 
 ### [Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation.md)
 

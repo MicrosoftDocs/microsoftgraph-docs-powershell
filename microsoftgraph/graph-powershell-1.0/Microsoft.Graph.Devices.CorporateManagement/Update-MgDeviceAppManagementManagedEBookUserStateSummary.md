@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookuserstatesummary
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementManagedEBookUserStateSummary
 ---
@@ -13,7 +13,7 @@ title: Update-MgDeviceAppManagementManagedEBookUserStateSummary
 
 ## SYNOPSIS
 
-Update the properties of a userInstallStateSummary object.
+Update the navigation property userStateSummary in deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-beta)
@@ -75,7 +75,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a userInstallStateSummary object.
+Update the navigation property userStateSummary in deviceAppManagement
 
 **Permissions**
 
@@ -730,7 +730,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgDeviceAppManagementManagedEBookUserStateSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookuserstatesummary)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-update?view=graph-rest-1.0)
 
 
 

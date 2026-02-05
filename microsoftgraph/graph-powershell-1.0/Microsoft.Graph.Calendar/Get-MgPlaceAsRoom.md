@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroom
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceAsRoom
 ---
@@ -13,12 +13,8 @@ title: Get-MgPlaceAsRoom
 
 ## SYNOPSIS
 
-Get a collection of the specified type of place objects defined in the tenant.
-For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.
-A place object can be one of the following types: Both room and roomList are derived from the place object.
-By default, this operation returns 100 places per page.
-Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
-See details for how they compare.
+Get a collection of the specified type of place objects defined in a tenant.
+You can do the following for a given tenant:\r- List all buildings.\r- List all floors.\r- List all sections.\r- List all desks.\r- List all rooms.\r- List all workspaces.\r- List all room lists.\r- List rooms in a specific room list.\r- List workspaces in a specific room list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoom?view=graph-powershell-beta)
@@ -61,12 +57,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get a collection of the specified type of place objects defined in the tenant.
-For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.
-A place object can be one of the following types: Both room and roomList are derived from the place object.
-By default, this operation returns 100 places per page.
-Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
-See details for how they compare.
+Get a collection of the specified type of place objects defined in a tenant.
+You can do the following for a given tenant:\r- List all buildings.\r- List all floors.\r- List all sections.\r- List all desks.\r- List all rooms.\r- List all workspaces.\r- List all room lists.\r- List rooms in a specific room list.\r- List workspaces in a specific room list.
 
 ## EXAMPLES
 ### Example 1: List all the rooms defined in the tenant
@@ -546,13 +538,20 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
   [CalendarPermissionId <String>]: The unique identifier of calendarPermission
+  [CheckInClaimCalendarEventId <String>]: The unique identifier of checkInClaim
   [EventId <String>]: The unique identifier of event
   [ExtensionId <String>]: The unique identifier of extension
+  [FixtureMapId <String>]: The unique identifier of fixtureMap
+  [FootprintMapId <String>]: The unique identifier of footprintMap
   [GroupId <String>]: The unique identifier of group
+  [LevelMapId <String>]: The unique identifier of levelMap
   [PlaceId <String>]: The unique identifier of place
   [RoomId <String>]: The unique identifier of room
+  [SectionMapId <String>]: The unique identifier of sectionMap
+  [UnitMapId <String>]: The unique identifier of unitMap
   [User <String>]: Usage: User='{User}'
   [UserId <String>]: The unique identifier of user
+  [WorkspaceId <String>]: The unique identifier of workspace
 
 
 ## RELATED LINKS

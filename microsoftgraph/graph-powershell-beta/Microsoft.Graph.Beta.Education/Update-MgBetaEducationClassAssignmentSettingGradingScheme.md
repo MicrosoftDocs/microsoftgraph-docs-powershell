@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsettinggradingscheme
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEducationClassAssignmentSettingGradingScheme
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaEducationClassAssignmentSettingGradingScheme
 ## SYNOPSIS
 
 Update the navigation property gradingSchemes in education
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentSettingGradingScheme](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSettingGradingScheme?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -582,14 +585,14 @@ Read-only.
   [DisplayName <String>]: The name of the grading scheme.
   [Grades <IMicrosoftGraphEducationGradingSchemeGrade[]>]: The grades that make up the scheme.
     [DefaultPercentage <Single?>]: The midpoint of the grade range.
-    [DisplayName <String>]: The name of the grading scheme.
+    [DisplayName <String>]: The name of this individual grade.
     [MinPercentage <Single?>]: The minimum percentage of the total points needed to achieve this grade.
   [HidePointsDuringGrading <Boolean?>]: The display setting for the UI.
 Indicates whether teachers can grade with points in addition to letter grades.
 
 GRADES <IMicrosoftGraphEducationGradingSchemeGrade[]>: The grades that make up the scheme.
   [DefaultPercentage <Single?>]: The midpoint of the grade range.
-  [DisplayName <String>]: The name of the grading scheme.
+  [DisplayName <String>]: The name of this individual grade.
   [MinPercentage <Single?>]: The minimum percentage of the total points needed to achieve this grade.
 
 INPUTOBJECT `<IEducationIdentity>`: Identity Parameter

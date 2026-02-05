@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetagroupdriverootversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgBetaGroupDriveRootVersion
 ---
@@ -13,8 +13,8 @@ title: Restore-MgBetaGroupDriveRootVersion
 
 ## SYNOPSIS
 
-Restore a previous version of a DriveItem to be the current version.
-This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+Restore a previous version of a driveItem to be the current version.
+This operation creates a new version with the contents of the previous version, and it preserves all existing versions of the file.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgGroupDriveRootVersion?view=graph-powershell-1.0)
@@ -48,8 +48,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Restore a previous version of a DriveItem to be the current version.
-This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+Restore a previous version of a driveItem to be the current version.
+This operation creates a new version with the contents of the previous version, and it preserves all existing versions of the file.
 
 ## PARAMETERS
 
@@ -433,7 +433,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Restore-MgBetaGroupDriveRootVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetagroupdriverootversion)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitemversion-restoreversion?view=graph-rest-beta)
 
 
 

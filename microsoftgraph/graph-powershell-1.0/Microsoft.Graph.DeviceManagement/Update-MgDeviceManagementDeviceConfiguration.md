@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementDeviceConfiguration
 ---
@@ -13,7 +13,7 @@ title: Update-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
 
-Update the properties of a sharedPCConfiguration object.
+Update the navigation property deviceConfigurations in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -81,7 +81,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a sharedPCConfiguration object.
+Update the navigation property deviceConfigurations in deviceManagement
 
 **Permissions**
 
@@ -973,7 +973,6 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgDeviceManagementDeviceConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-sharedpcconfiguration-update?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistroom
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlaceAsRoomListRoom
 ---
@@ -27,14 +27,15 @@ Update-MgBetaPlaceAsRoomListRoom -PlaceId <string> -RoomId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-AudioDeviceName <string>] [-BookingType <string>]
  [-Building <string>] [-Capacity <int>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
- [-DisplayDeviceName <string>] [-DisplayName <string>] [-EmailAddress <string>]
- [-FloorLabel <string>] [-FloorNumber <int>]
+ [-Children <IMicrosoftGraphPlace[]>] [-DisplayDeviceName <string>] [-DisplayName <string>]
+ [-EmailAddress <string>] [-FloorLabel <string>] [-FloorNumber <int>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsTeamsEnabled]
  [-IsWheelChairAccessible] [-Label <string>] [-Nickname <string>] [-ParentId <string>]
- [-Phone <string>] [-PlaceId1 <string>] [-Tags <string[]>] [-VideoDeviceName <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Phone <string>] [-PlaceId1 <string>] [-Tags <string[]>] [-TeamsEnabledState <string>]
+ [-VideoDeviceName <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -44,14 +45,14 @@ Update-MgBetaPlaceAsRoomListRoom -InputObject <ICalendarIdentity> [-PlaceId <str
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-AudioDeviceName <string>] [-BookingType <string>]
  [-Building <string>] [-Capacity <int>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
- [-DisplayDeviceName <string>] [-DisplayName <string>] [-EmailAddress <string>]
- [-FloorLabel <string>] [-FloorNumber <int>]
+ [-Children <IMicrosoftGraphPlace[]>] [-DisplayDeviceName <string>] [-DisplayName <string>]
+ [-EmailAddress <string>] [-FloorLabel <string>] [-FloorNumber <int>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsTeamsEnabled]
  [-IsWheelChairAccessible] [-Label <string>] [-Nickname <string>] [-ParentId <string>]
- [-Phone <string>] [-Tags <string[]>] [-VideoDeviceName <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Phone <string>] [-Tags <string[]>] [-TeamsEnabledState <string>] [-VideoDeviceName <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -304,6 +305,34 @@ To construct, see NOTES section for CHECKINS properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCheckInClaim[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Children
+
+A collection of children places that is only used in the Upsert places API.
+To construct, see NOTES section for CHILDREN properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlace[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -828,7 +857,7 @@ HelpMessage: ''
 
 ### -PlaceId1
 
-An alternate immutable unique identifier of the place.
+An alternative immutable unique identifier of the room.
 Read-only.
 
 ```yaml
@@ -987,6 +1016,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -TeamsEnabledState
+
+placeFeatureEnablement
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -VideoDeviceName
 
 The name of the video device that is available in the room.
@@ -1100,21 +1156,32 @@ For more information, see the iCalUId property in event.
     [CreatedDateTime <DateTime?>]: The date and time when the checkInClaim object was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [Children <IMicrosoftGraphPlace[]>]: A collection of children places that is only used in the Upsert places API.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
+    [CheckIns <IMicrosoftGraphCheckInClaim[]>]: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+    [Children <IMicrosoftGraphPlace[]>]: A collection of children places that is only used in the Upsert places API.
+    [DisplayName <String>]: The name that is associated with the place.
+    [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Accuracy <Double?>]: The accuracy of the latitude and longitude.
+As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
+      [Altitude <Double?>]: The altitude of the location.
+      [AltitudeAccuracy <Double?>]: The accuracy of the altitude.
+      [Latitude <Double?>]: The latitude of the location.
+      [Longitude <Double?>]: The longitude of the location.
+    [IsWheelChairAccessible <Boolean?>]: Indicates whether the place is wheelchair accessible.
+    [Label <String>]: User-defined description of the place.
+    [ParentId <String>]: The ID of a parent place.
+    [Phone <String>]: The phone number of the place.
+    [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Accuracy <Double?>]: The accuracy of the latitude and longitude.
-As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    [Altitude <Double?>]: The altitude of the location.
-    [AltitudeAccuracy <Double?>]: The accuracy of the altitude.
-    [Latitude <Double?>]: The latitude of the location.
-    [Longitude <Double?>]: The longitude of the location.
   [IsWheelChairAccessible <Boolean?>]: Indicates whether the place is wheelchair accessible.
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
-  [PlaceId <String>]: An alternate immutable unique identifier of the place.
-Read-only.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1130,6 +1197,9 @@ This email address is used for booking.
 For example, 1 for first floor, 2 for second floor, and so on.
   [IsTeamsEnabled <Boolean?>]: Indicates whether the room is configured with the Microsoft Teams Rooms system.
   [Nickname <String>]: A short, friendly name for the room, often used for easier identification or display in UI.
+  [PlaceId <String>]: An alternative immutable unique identifier of the room.
+Read-only.
+  [TeamsEnabledState <String>]: placeFeatureEnablement
   [VideoDeviceName <String>]: The name of the video device that is available in the room.
 
 CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
@@ -1139,6 +1209,42 @@ For more information, see the iCalUId property in event.
   [CreatedDateTime <DateTime?>]: The date and time when the checkInClaim object was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+
+CHILDREN <IMicrosoftGraphPlace[]>: A collection of children places that is only used in the Upsert places API.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [City <String>]: The city.
+    [CountryOrRegion <String>]: The country or region.
+It's a free-format string value, for example, 'United States'.
+    [PostOfficeBox <String>]: The post office box number.
+    [PostalCode <String>]: The postal code.
+    [State <String>]: The state.
+    [Street <String>]: The street.
+    [Type <String>]: physicalAddressType
+  [CheckIns <IMicrosoftGraphCheckInClaim[]>]: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+    [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
+For more information, see the iCalUId property in event.
+    [CheckInMethod <String>]: checkInMethod
+    [CreatedDateTime <DateTime?>]: The date and time when the checkInClaim object was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [Children <IMicrosoftGraphPlace[]>]: A collection of children places that is only used in the Upsert places API.
+  [DisplayName <String>]: The name that is associated with the place.
+  [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Accuracy <Double?>]: The accuracy of the latitude and longitude.
+As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
+    [Altitude <Double?>]: The altitude of the location.
+    [AltitudeAccuracy <Double?>]: The accuracy of the altitude.
+    [Latitude <Double?>]: The latitude of the location.
+    [Longitude <Double?>]: The longitude of the location.
+  [IsWheelChairAccessible <Boolean?>]: Indicates whether the place is wheelchair accessible.
+  [Label <String>]: User-defined description of the place.
+  [ParentId <String>]: The ID of a parent place.
+  [Phone <String>]: The phone number of the place.
+  [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
 GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1157,9 +1263,16 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [CheckInClaimCalendarEventId <String>]: The unique identifier of checkInClaim
   [EventId <String>]: The unique identifier of event
   [ExtensionId <String>]: The unique identifier of extension
+  [FixtureMapId <String>]: The unique identifier of fixtureMap
+  [FootprintMapId <String>]: The unique identifier of footprintMap
   [GroupId <String>]: The unique identifier of group
+  [Id <String>]: Usage: id='{id}'
+  [LevelMapId <String>]: The unique identifier of levelMap
   [PlaceId <String>]: The unique identifier of place
+  [PlaceId1 <String>]: The unique identifier of place
   [RoomId <String>]: The unique identifier of room
+  [SectionMapId <String>]: The unique identifier of sectionMap
+  [UnitMapId <String>]: The unique identifier of unitMap
   [User <String>]: Usage: User='{User}'
   [UserId <String>]: The unique identifier of user
   [WorkspaceId <String>]: The unique identifier of workspace

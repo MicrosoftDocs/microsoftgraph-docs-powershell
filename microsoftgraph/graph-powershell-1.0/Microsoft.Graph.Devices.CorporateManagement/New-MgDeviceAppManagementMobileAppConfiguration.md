@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceAppManagementMobileAppConfiguration
 ---
@@ -13,7 +13,7 @@ title: New-MgDeviceAppManagementMobileAppConfiguration
 
 ## SYNOPSIS
 
-Create a new iosMobileAppConfiguration object.
+Create new navigation property to mobileAppConfigurations for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
@@ -56,7 +56,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new iosMobileAppConfiguration object.
+Create new navigation property to mobileAppConfigurations for deviceAppManagement
 
 **Permissions**
 
@@ -754,7 +754,6 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgDeviceAppManagementMobileAppConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-apps-iosmobileappconfiguration-create?view=graph-rest-1.0)
 
 
 

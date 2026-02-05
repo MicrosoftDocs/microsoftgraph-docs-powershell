@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgServicePrincipal
 ---
@@ -804,7 +804,7 @@ HelpMessage: ''
 ### -DisabledByMicrosoftStatus
 
 Specifies whether Microsoft has disabled the registered application.
-Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
+The possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
 Supports $filter (eq, ne, not).
 
 ```yaml
@@ -1761,14 +1761,14 @@ HelpMessage: ''
 ### -ServicePrincipalType
 
 Identifies whether the service principal represents an application, a managed identity, or a legacy application.
-This is set by Microsoft Entra ID internally.
+This property is set by Microsoft Entra ID internally.
 The servicePrincipalType property can be set to three different values: Application - A service principal that represents an application or service.
 The appId property identifies the associated app registration, and matches the appId of an application, possibly from a different tenant.
 If the associated app registration is missing, tokens aren't issued for the service principal.ManagedIdentity - A service principal that represents a managed identity.
 Service principals representing managed identities can be granted access and permissions, but can't be updated or modified directly.Legacy - A service principal that represents an app created before app registrations, or through legacy experiences.
 A legacy service principal can have credentials, service principal names, reply URLs, and other properties that are editable by an authorized user, but doesn't have an associated app registration.
 The appId value doesn't associate the service principal with an app registration.
-The service principal can only be used in the tenant where it was created.SocialIdp - For internal use.
+The service principal can only be used in the tenant where it was created.ServiceIdentity - A service principal that represents an agent identity.SocialIdp - For internal use.
 
 ```yaml
 Type: System.String
@@ -2366,7 +2366,7 @@ End-user portals such MyApps displays the application description in this field.
 The maximum allowed size is 1,024 characters.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
   [DisabledByMicrosoftStatus <String>]: Specifies whether Microsoft has disabled the registered application.
-Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
+The possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
  Supports $filter (eq, ne, not).
   [DisplayName <String>]: The display name for the service principal.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
@@ -2561,6 +2561,7 @@ For applications that aren't SAML, don't write or otherwise rely on this propert
 Read-only.
     [IsRemoteDesktopProtocolEnabled <Boolean?>]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
     [TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
+<br/<Supports $expand.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Display name for the target device group.
@@ -2584,14 +2585,14 @@ For example,Client apps can specify a resource URI that is based on the values o
 Not nullable.
  Supports $filter (eq, not, ge, le, startsWith).
   [ServicePrincipalType <String>]: Identifies whether the service principal represents an application, a managed identity, or a legacy application.
-This is set by Microsoft Entra ID internally.
+This property is set by Microsoft Entra ID internally.
 The servicePrincipalType property can be set to three different values: Application - A service principal that represents an application or service.
 The appId property identifies the associated app registration, and matches the appId of an application, possibly from a different tenant.
 If the associated app registration is missing, tokens aren't issued for the service principal.ManagedIdentity - A service principal that represents a managed identity.
 Service principals representing managed identities can be granted access and permissions, but can't be updated or modified directly.Legacy - A service principal that represents an app created before app registrations, or through legacy experiences.
 A legacy service principal can have credentials, service principal names, reply URLs, and other properties that are editable by an authorized user, but doesn't have an associated app registration.
 The appId value doesn't associate the service principal with an app registration.
-The service principal can only be used in the tenant where it was created.SocialIdp - For internal use.
+The service principal can only be used in the tenant where it was created.ServiceIdentity - A service principal that represents an agent identity.SocialIdp - For internal use.
   [SignInAudience <String>]: Specifies the Microsoft accounts that are supported for the current application.
 Read-only.
 Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Microsoft Entra tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Microsoft Entra tenant (multitenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Microsoft Entra tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
@@ -3154,6 +3155,7 @@ REMOTEDESKTOPSECURITYCONFIGURATION `<IMicrosoftGraphRemoteDesktopSecurityConfigu
 Read-only.
   [IsRemoteDesktopProtocolEnabled <Boolean?>]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
   [TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
+<br/<Supports $expand.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Display name for the target device group.

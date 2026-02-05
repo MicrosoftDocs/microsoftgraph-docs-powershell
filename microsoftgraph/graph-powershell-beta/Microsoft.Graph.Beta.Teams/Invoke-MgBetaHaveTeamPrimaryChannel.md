@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetahaveteamprimarychannel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaHaveTeamPrimaryChannel
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgBetaHaveTeamPrimaryChannel
 
 ## SYNOPSIS
 
-Determine whether a user has access to a shared channel.
+Determine whether a user has access to a channel.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgHaveTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamPrimaryChannel?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Determine whether a user has access to a shared channel.
+Determine whether a user has access to a channel.
 
 ## PARAMETERS
 

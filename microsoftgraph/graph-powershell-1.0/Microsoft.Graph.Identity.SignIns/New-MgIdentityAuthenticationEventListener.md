@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityAuthenticationEventListener
 ---
@@ -26,8 +26,8 @@ You can create one of the following subtypes that are derived from authenticatio
 ```
 New-MgIdentityAuthenticationEventListener [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AuthenticationEventsFlowId <string>]
- [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Id <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-DisplayName <string>] [-Id <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -213,6 +213,27 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DisplayName
+
+The display name of the listener.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -456,6 +477,7 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication[]>]: 
         [AppId <String>]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+  [DisplayName <String>]: The display name of the listener.
 
 CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
   [(Any) <Object>]: This indicates any property can be added to this object.

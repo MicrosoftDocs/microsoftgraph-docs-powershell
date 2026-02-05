@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentityaccount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityIdentityAccount
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaSecurityIdentityAccount
 ## SYNOPSIS
 
 Get identityAccounts from security
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentityAccount?view=graph-powershell-1.0)
 
 ## SYNTAX
 

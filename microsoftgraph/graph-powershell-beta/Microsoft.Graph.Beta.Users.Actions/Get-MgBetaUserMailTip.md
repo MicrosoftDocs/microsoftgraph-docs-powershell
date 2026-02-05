@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermailtip
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserMailTip
 ---
@@ -14,7 +14,7 @@ title: Get-MgBetaUserMailTip
 ## SYNOPSIS
 
 Get the MailTips of one or more recipients as available to the signed-in user.
-Note that by making a POST call to the getMailTips action, you can request specific types of MailTips tobe returned for more than one recipient at one time.
+Note that by making a POST call to the getMailTips action, you can request specific types of MailTips to\rbe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the MailTips of one or more recipients as available to the signed-in user.
-Note that by making a POST call to the getMailTips action, you can request specific types of MailTips tobe returned for more than one recipient at one time.
+Note that by making a POST call to the getMailTips action, you can request specific types of MailTips to\rbe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
 
 **Permissions**

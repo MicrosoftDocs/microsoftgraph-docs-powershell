@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfolderdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.PersonalContacts
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserContactFolderChildFolderDelta
 ---
@@ -14,8 +14,8 @@ title: Get-MgBetaUserContactFolderChildFolderDelta
 ## SYNOPSIS
 
 Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
-A delta function call for contact folders in a mailbox is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contact folders.
-This allows you to maintain and synchronize a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
+A delta function call for contact folders in a mailbox is similar to a GET request, except that by appropriately \rapplying state tokens in one or more of these calls, \ryou can query for incremental changes in the contact folders.
+This allows you to maintain and synchronize \ra local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderDelta](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolderDelta?view=graph-powershell-1.0)
@@ -53,8 +53,8 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
-A delta function call for contact folders in a mailbox is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contact folders.
-This allows you to maintain and synchronize a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
+A delta function call for contact folders in a mailbox is similar to a GET request, except that by appropriately \rapplying state tokens in one or more of these calls, \ryou can query for incremental changes in the contact folders.
+This allows you to maintain and synchronize \ra local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
 ## PARAMETERS
 

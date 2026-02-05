@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetasubscribedsku
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSubscribedSku
 ---
@@ -122,7 +122,7 @@ HelpMessage: ''
 
 The target class for this SKU.
 Only SKUs with target class User are assignable.
-Possible values are: User, Company.
+The possible values are: User, Company.
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ HelpMessage: ''
 
 Enabled indicates that the prepaidUnits property has at least one unit that is enabled.
 LockedOut indicates that the customer canceled their subscription.
-Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
+The possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
 
 ```yaml
 Type: System.String
@@ -589,10 +589,10 @@ Read-only.
   [AccountName <String>]: The name of the account this SKU belongs to.
   [AppliesTo <String>]: The target class for this SKU.
 Only SKUs with target class User are assignable.
-Possible values are: User, Company.
+The possible values are: User, Company.
   [CapabilityStatus <String>]: Enabled indicates that the prepaidUnits property has at least one unit that is enabled.
 LockedOut indicates that the customer canceled their subscription.
-Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
+The possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
   [ConsumedUnits <Int32?>]: The number of licenses that have been assigned.
   [PrepaidUnits <IMicrosoftGraphLicenseUnitsDetail>]: licenseUnitsDetail
     [(Any) <Object>]: This indicates any property can be added to this object.

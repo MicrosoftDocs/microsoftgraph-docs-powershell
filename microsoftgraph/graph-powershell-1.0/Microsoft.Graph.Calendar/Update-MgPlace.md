@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlace
 ---
@@ -13,8 +13,8 @@ title: Update-MgPlace
 
 ## SYNOPSIS
 
-Update the properties of place object, which can be a room or roomList.
-You can identify the room or roomList by specifying the id or emailAddress property.
+Update the properties of place object that can be a building, floor, section, desk, room, workspace, or roomList.
+You can identify the place by specifying the id property.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlace?view=graph-powershell-beta)
@@ -26,8 +26,10 @@ You can identify the room or roomList by specifying the id or emailAddress prope
 ```
 Update-MgPlace -PlaceId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
- [-DisplayName <string>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>]
- [-Phone <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayName <string>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
+ [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -47,8 +49,10 @@ Update-MgPlace -PlaceId <string> -BodyParameter <IMicrosoftGraphPlace>
 ```
 Update-MgPlace -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
- [-DisplayName <string>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>]
- [-Phone <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayName <string>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
+ [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -70,8 +74,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of place object, which can be a room or roomList.
-You can identify the room or roomList by specifying the id or emailAddress property.
+Update the properties of place object that can be a building, floor, section, desk, room, workspace, or roomList.
+You can identify the place by specifying the id property.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -201,6 +205,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -CheckIns
+
+A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+To construct, see NOTES section for CHECKINS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCheckInClaim[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Confirm
 
 Prompts you for confirmation before running the cmdlet.
@@ -225,7 +257,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-The name associated with the place.
+The name that is associated with the place.
 
 ```yaml
 Type: System.String
@@ -397,6 +429,87 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IsWheelChairAccessible
+
+Indicates whether the place is wheelchair accessible.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Label
+
+User-defined description of the place.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ParentId
+
+The ID of a parent place.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Phone
 
 The phone number of the place.
@@ -536,6 +649,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Tags
+
+Custom tags that are associated with the place for categorization or filtering.
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -613,7 +753,14 @@ It's a free-format string value, for example, 'United States'.
     [PostalCode <String>]: The postal code.
     [State <String>]: The state.
     [Street <String>]: The street.
-  [DisplayName <String>]: The name associated with the place.
+  [CheckIns <IMicrosoftGraphCheckInClaim[]>]: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+    [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
+For more information, see the iCalUId property in event.
+    [CheckInMethod <String>]: checkInMethod
+    [CreatedDateTime <DateTime?>]: The date and time when the checkInClaim object was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Accuracy <Double?>]: The accuracy of the latitude and longitude.
@@ -622,7 +769,19 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     [AltitudeAccuracy <Double?>]: The accuracy of the altitude.
     [Latitude <Double?>]: The latitude of the location.
     [Longitude <Double?>]: The longitude of the location.
+  [IsWheelChairAccessible <Boolean?>]: Indicates whether the place is wheelchair accessible.
+  [Label <String>]: User-defined description of the place.
+  [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
+
+CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
+  [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
+For more information, see the iCalUId property in event.
+  [CheckInMethod <String>]: checkInMethod
+  [CreatedDateTime <DateTime?>]: The date and time when the checkInClaim object was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -638,13 +797,20 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
   [CalendarPermissionId <String>]: The unique identifier of calendarPermission
+  [CheckInClaimCalendarEventId <String>]: The unique identifier of checkInClaim
   [EventId <String>]: The unique identifier of event
   [ExtensionId <String>]: The unique identifier of extension
+  [FixtureMapId <String>]: The unique identifier of fixtureMap
+  [FootprintMapId <String>]: The unique identifier of footprintMap
   [GroupId <String>]: The unique identifier of group
+  [LevelMapId <String>]: The unique identifier of levelMap
   [PlaceId <String>]: The unique identifier of place
   [RoomId <String>]: The unique identifier of room
+  [SectionMapId <String>]: The unique identifier of sectionMap
+  [UnitMapId <String>]: The unique identifier of unitMap
   [User <String>]: Usage: User='{User}'
   [UserId <String>]: The unique identifier of user
+  [WorkspaceId <String>]: The unique identifier of workspace
 
 
 ## RELATED LINKS

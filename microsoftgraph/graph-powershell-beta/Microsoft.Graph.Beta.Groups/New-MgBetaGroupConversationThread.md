@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthread
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupConversationThread
 ---
@@ -15,7 +15,7 @@ title: New-MgBetaGroupConversationThread
 
 Create a new thread in the specified conversation.
 A thread and post are created as specified.
-Use reply thread to further postto that thread.
+Use reply thread to further post\rto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
@@ -79,7 +79,7 @@ This cmdlet has the following aliases,
 
 Create a new thread in the specified conversation.
 A thread and post are created as specified.
-Use reply thread to further postto that thread.
+Use reply thread to further post\rto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 

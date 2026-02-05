@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausercalendargroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserCalendarGroup
 ---
@@ -638,14 +638,14 @@ Nullable.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [AllowedOnlineMeetingProviders <String[]>]: Represent the online meeting service providers that can be used to create online meetings in this calendar.
-Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
+The possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
     [CalendarGroupId <String>]: The calendarGroup in which to create the calendar.
 If the user has never explicitly set a group for the calendar, this property is  null.
     [CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]: The permissions of the users with whom the calendar is shared.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [AllowedRoles <String[]>]: List of allowed sharing or delegating permission levels for the calendar.
-Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
+The possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
       [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Address <String>]: The email address of an entity instance.
@@ -922,14 +922,14 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [AllowedOnlineMeetingProviders <String[]>]: Represent the online meeting service providers that can be used to create online meetings in this calendar.
-Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
+The possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
   [CalendarGroupId <String>]: The calendarGroup in which to create the calendar.
 If the user has never explicitly set a group for the calendar, this property is  null.
   [CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]: The permissions of the users with whom the calendar is shared.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [AllowedRoles <String[]>]: List of allowed sharing or delegating permission levels for the calendar.
-Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
+The possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
     [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Address <String>]: The email address of an entity instance.
@@ -1200,9 +1200,16 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [CheckInClaimCalendarEventId <String>]: The unique identifier of checkInClaim
   [EventId <String>]: The unique identifier of event
   [ExtensionId <String>]: The unique identifier of extension
+  [FixtureMapId <String>]: The unique identifier of fixtureMap
+  [FootprintMapId <String>]: The unique identifier of footprintMap
   [GroupId <String>]: The unique identifier of group
+  [Id <String>]: Usage: id='{id}'
+  [LevelMapId <String>]: The unique identifier of levelMap
   [PlaceId <String>]: The unique identifier of place
+  [PlaceId1 <String>]: The unique identifier of place
   [RoomId <String>]: The unique identifier of room
+  [SectionMapId <String>]: The unique identifier of sectionMap
+  [UnitMapId <String>]: The unique identifier of unitMap
   [User <String>]: Usage: User='{User}'
   [UserId <String>]: The unique identifier of user
   [WorkspaceId <String>]: The unique identifier of workspace

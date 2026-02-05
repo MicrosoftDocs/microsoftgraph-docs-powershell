@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensor
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityIdentitySensor
 ---
@@ -27,8 +27,8 @@ New-MgSecurityIdentitySensor [-ResponseHeadersVariable <string>] [-AdditionalPro
  [-CreatedDateTime <datetime>] [-DeploymentStatus <string>] [-DisplayName <string>]
  [-DomainName <string>] [-HealthIssues <IMicrosoftGraphSecurityHealthIssue[]>]
  [-HealthStatus <string>] [-Id <string>] [-OpenHealthIssuesCount <long>] [-SensorType <string>]
- [-Settings <IMicrosoftGraphSecuritySensorSettings>] [-Version <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-ServiceStatus <string>] [-Settings <IMicrosoftGraphSecuritySensorSettings>] [-Version <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -481,6 +481,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ServiceStatus
+
+serviceStatus
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Settings
 
 sensorSettings
@@ -614,6 +635,7 @@ These commands run in sequence for the single recommended fix.
   [HealthStatus <String>]: sensorHealthStatus
   [OpenHealthIssuesCount <Int64?>]: This field displays the count of health issues related to this sensor.
   [SensorType <String>]: sensorType
+  [ServiceStatus <String>]: serviceStatus
   [Settings <IMicrosoftGraphSecuritySensorSettings>]: sensorSettings
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Description <String>]: Description of the sensor.

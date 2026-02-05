@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSite
 ---
@@ -13,7 +13,7 @@ title: Get-MgSite
 
 ## SYNOPSIS
 
-Retrieve properties and relationships for a site resource.A site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a site resource.\rA site resource represents a team site in SharePoint.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)
@@ -56,7 +56,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Retrieve properties and relationships for a site resource.A site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a site resource.\rA site resource represents a team site in SharePoint.
 
 **Permissions**
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalytictime
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDriveItemAnalyticTime
 ---
@@ -13,7 +13,7 @@ title: Get-MgDriveItemAnalyticTime
 
 ## SYNOPSIS
 
-Get itemAnalytics about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval API.
+Get itemAnalytics about the views that took place under this resource.\rThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\rFor a custom time range or interval, use the getActivitiesByInterval API.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemAnalyticTime?view=graph-powershell-beta)
@@ -45,7 +45,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get itemAnalytics about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval API.
+Get itemAnalytics about the views that took place under this resource.\rThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\rFor a custom time range or interval, use the getActivitiesByInterval API.
 
 **Permissions**
 

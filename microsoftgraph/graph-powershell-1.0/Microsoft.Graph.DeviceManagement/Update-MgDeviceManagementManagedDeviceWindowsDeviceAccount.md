@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsdeviceaccount
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount
 ---
@@ -13,7 +13,7 @@ title: Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount
 
 ## SYNOPSIS
 
-Not yet documented
+Invoke action updateWindowsDeviceAccount
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
@@ -73,7 +73,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Not yet documented
+Invoke action updateWindowsDeviceAccount
 
 **Permissions**
 
@@ -523,14 +523,14 @@ BODYPARAMETER `<IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicros
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]: updateWindowsDeviceAccountActionParameter
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [CalendarSyncEnabled <Boolean?>]: Not yet documented
+    [CalendarSyncEnabled <Boolean?>]: 
     [DeviceAccount <IMicrosoftGraphWindowsDeviceAccount>]: windowsDeviceAccount
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [Password <String>]: Not yet documented
-    [DeviceAccountEmail <String>]: Not yet documented
-    [ExchangeServer <String>]: Not yet documented
-    [PasswordRotationEnabled <Boolean?>]: Not yet documented
-    [SessionInitiationProtocalAddress <String>]: Not yet documented
+      [Password <String>]: 
+    [DeviceAccountEmail <String>]: 
+    [ExchangeServer <String>]: 
+    [PasswordRotationEnabled <Boolean?>]: 
+    [SessionInitiationProtocalAddress <String>]: 
 
 INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
@@ -569,20 +569,19 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER `<IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>`: updateWindowsDeviceAccountActionParameter
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [CalendarSyncEnabled <Boolean?>]: Not yet documented
+  [CalendarSyncEnabled <Boolean?>]: 
   [DeviceAccount <IMicrosoftGraphWindowsDeviceAccount>]: windowsDeviceAccount
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [Password <String>]: Not yet documented
-  [DeviceAccountEmail <String>]: Not yet documented
-  [ExchangeServer <String>]: Not yet documented
-  [PasswordRotationEnabled <Boolean?>]: Not yet documented
-  [SessionInitiationProtocalAddress <String>]: Not yet documented
+    [Password <String>]: 
+  [DeviceAccountEmail <String>]: 
+  [ExchangeServer <String>]: 
+  [PasswordRotationEnabled <Boolean?>]: 
+  [SessionInitiationProtocalAddress <String>]:
 
 
 ## RELATED LINKS
 
 - [Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsdeviceaccount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-updatewindowsdeviceaccount?view=graph-rest-1.0)
 
 
 

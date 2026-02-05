@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostwhoi
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityThreatIntelligenceHostWhoi
 ---
@@ -14,8 +14,8 @@ title: Get-MgSecurityThreatIntelligenceHostWhoi
 ## SYNOPSIS
 
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
-- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:\r- Identify a host and get its current whoisRecord.
+\r- Specify an id value to get the corresponding whoisRecord.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostWhoi](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostWhoi?view=graph-powershell-beta)
@@ -49,8 +49,8 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
-- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:\r- Identify a host and get its current whoisRecord.
+\r- Specify an id value to get the corresponding whoisRecord.
 
 ## EXAMPLES
 ### Example 1: Get the whoisRecord resource for the specified host
@@ -368,6 +368,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [DepartmentTemplateId <String>]: The unique identifier of departmentTemplate
   [DispositionReviewStageNumber <String>]: The unique identifier of dispositionReviewStage
   [EdiscoveryCaseId <String>]: The unique identifier of ediscoveryCase
+  [EdiscoveryCaseMemberId <String>]: The unique identifier of ediscoveryCaseMember
   [EdiscoveryCustodianId <String>]: The unique identifier of ediscoveryCustodian
   [EdiscoveryNoncustodialDataSourceId <String>]: The unique identifier of ediscoveryNoncustodialDataSource
   [EdiscoveryReviewSetId <String>]: The unique identifier of ediscoveryReviewSet
@@ -386,6 +387,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [HostPortId <String>]: The unique identifier of hostPort
   [HostSslCertificateId <String>]: The unique identifier of hostSslCertificate
   [HostTrackerId <String>]: The unique identifier of hostTracker
+  [IdentityAccountsId <String>]: The unique identifier of identityAccounts
   [IncidentId <String>]: The unique identifier of incident
   [IntelligenceProfileId <String>]: The unique identifier of intelligenceProfile
   [IntelligenceProfileIndicatorId <String>]: The unique identifier of intelligenceProfileIndicator
@@ -403,6 +405,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecureScoreId <String>]: The unique identifier of secureScore
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun

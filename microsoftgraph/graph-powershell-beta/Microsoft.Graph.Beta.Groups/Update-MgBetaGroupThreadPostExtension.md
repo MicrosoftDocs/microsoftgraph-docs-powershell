@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaGroupThreadPostExtension
 ---
@@ -13,7 +13,7 @@ title: Update-MgBetaGroupThreadPostExtension
 
 ## SYNOPSIS
 
-Update an open extension (openTypeExtension object) on a supported resource type.- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.- Otherwise, that property and its data are added to the extension.
+Update an open extension (openTypeExtension object) on a supported resource type.\r- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\r- Otherwise, that property and its data are added to the extension.
 The data in an extension can be primitive types or arrays of primitive types.
 The operation behaves differently for resources that are directory objects vs other resources.
 For the list of resources that support open extensions, see the table in the Permissions section.
@@ -71,7 +71,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update an open extension (openTypeExtension object) on a supported resource type.- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.- Otherwise, that property and its data are added to the extension.
+Update an open extension (openTypeExtension object) on a supported resource type.\r- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\r- Otherwise, that property and its data are added to the extension.
 The data in an extension can be primitive types or arrays of primitive types.
 The operation behaves differently for resources that are directory objects vs other resources.
 For the list of resources that support open extensions, see the table in the Permissions section.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteampermissiongrant
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgTeamPermissionGrant
 ---
@@ -405,7 +405,7 @@ HelpMessage: ''
 ### -PermissionType
 
 The type of permission.
-Possible values are: Application, Delegated.
+The possible values are: Application, Delegated.
 Read-only.
 
 ```yaml
@@ -640,7 +640,7 @@ Read-only.
   [Permission <String>]: The name of the resource-specific permission.
 Read-only.
   [PermissionType <String>]: The type of permission.
-Possible values are: Application, Delegated.
+The possible values are: Application, Delegated.
 Read-only.
   [ResourceAppId <String>]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.

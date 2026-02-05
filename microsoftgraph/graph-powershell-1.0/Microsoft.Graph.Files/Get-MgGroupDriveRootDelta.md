@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupDriveRootDelta
 ---
@@ -14,9 +14,9 @@ title: Get-MgGroupDriveRootDelta
 ## SYNOPSIS
 
 Track changes in a driveItem and its children over time.
-Your app begins by calling delta without any parameters.The service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink, as described below.Your app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
-After you have finished receiving all the changes, you may apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
-Deleted items are returned with the deleted facet.Items with this property set should be removed from your local state.
+Your app begins by calling delta without any parameters.\rThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink, as described below.\rYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
+After you have finished receiving all the changes, you may apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootDelta](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootDelta?view=graph-powershell-beta)
@@ -74,9 +74,9 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Track changes in a driveItem and its children over time.
-Your app begins by calling delta without any parameters.The service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink, as described below.Your app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
-After you have finished receiving all the changes, you may apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
-Deleted items are returned with the deleted facet.Items with this property set should be removed from your local state.
+Your app begins by calling delta without any parameters.\rThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink, as described below.\rYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
+After you have finished receiving all the changes, you may apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
 
 ## PARAMETERS
 

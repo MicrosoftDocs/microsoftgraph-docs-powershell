@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaExternalIndustryDataOperation
 ---
@@ -13,9 +13,7 @@ title: Get-MgBetaExternalIndustryDataOperation
 
 ## SYNOPSIS
 
-Read the properties and relationships of a longRunningOperation object.
-This API allows you to retrieve the details and status of the following long-running Microsoft Graph API operations.
-The possible states of the long-running operation are notStarted, running, succeeded, failed, unknownFutureValue where succeeded and failed are terminal states.
+Read the properties and relationships of a fileValidateOperation object.
 
 ## SYNTAX
 
@@ -56,9 +54,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read the properties and relationships of a longRunningOperation object.
-This API allows you to retrieve the details and status of the following long-running Microsoft Graph API operations.
-The possible states of the long-running operation are notStarted, running, succeeded, failed, unknownFutureValue where succeeded and failed are terminal states.
+Read the properties and relationships of a fileValidateOperation object.
 
 **Permissions**
 
@@ -568,7 +564,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgBetaExternalIndustryDataOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoperation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/longrunningoperation-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-filevalidateoperation-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-filevalidateoperation-list?view=graph-rest-beta)
 
 

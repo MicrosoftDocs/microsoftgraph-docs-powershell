@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicetemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryTemplateDeviceTemplate
 ---
@@ -673,7 +673,7 @@ Also supports $filter (eq, ne, not, startsWith).
 Set to null.
     [DeviceOwnership <String>]: Ownership of the device.
 Intune sets this property.
-Possible values are: unknown, company, personal.
+The possible values are: unknown, company, personal.
     [DeviceTemplate <IMicrosoftGraphDeviceTemplate[]>]: Device template used to instantiate this device.
 Nullable.
 Read-only.
@@ -689,7 +689,7 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 Intune sets this property.
     [EnrollmentType <String>]: Enrollment type of the device.
 Intune sets this property.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+The possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
 NOTE: This property might return other values apart from those listed.
     [ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]: onPremisesExtensionAttributes
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -731,7 +731,7 @@ This property can only be updated by Intune.
 Only returned if the user signs in with a Microsoft account as part of Project Rome.
     [ManagementType <String>]: Management channel of the device.
 Intune sets this property.
-Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
+The possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
     [Manufacturer <String>]: Manufacturer of the device.
 Read-only.
     [MdmAppId <String>]: Application identifier used to register device into MDM.
@@ -869,7 +869,7 @@ Also supports $filter (eq, ne, not, startsWith).
 Set to null.
   [DeviceOwnership <String>]: Ownership of the device.
 Intune sets this property.
-Possible values are: unknown, company, personal.
+The possible values are: unknown, company, personal.
   [DeviceTemplate <IMicrosoftGraphDeviceTemplate[]>]: Device template used to instantiate this device.
 Nullable.
 Read-only.
@@ -912,7 +912,7 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 Intune sets this property.
   [EnrollmentType <String>]: Enrollment type of the device.
 Intune sets this property.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+The possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
 NOTE: This property might return other values apart from those listed.
   [ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]: onPremisesExtensionAttributes
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -954,7 +954,7 @@ This property can only be updated by Intune.
 Only returned if the user signs in with a Microsoft account as part of Project Rome.
   [ManagementType <String>]: Management channel of the device.
 Intune sets this property.
-Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
+The possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
   [Manufacturer <String>]: Manufacturer of the device.
 Read-only.
   [MdmAppId <String>]: Application identifier used to register device into MDM.

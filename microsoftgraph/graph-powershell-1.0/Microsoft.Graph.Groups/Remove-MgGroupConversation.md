@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversation
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgGroupConversation
 ---
@@ -446,7 +446,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgGroupConversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-conversation?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversation-delete?view=graph-rest-1.0)
 
 
 

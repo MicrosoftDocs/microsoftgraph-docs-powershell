@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproduct
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaWindowsUpdatesProduct
 ---
@@ -603,7 +603,7 @@ Read-only.
       [UpdateBuildRevision <Int32?>]: The update build revision number of the product revision.
 Read-only.
     [Product <String>]: The product of the revision.
-Possible values are: Windows 10, Windows 11.
+The possible values are: Windows 10, Windows 11.
 Read-only.
     [ReleaseDateTime <DateTime?>]: The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -715,7 +715,7 @@ Read-only.
     [UpdateBuildRevision <Int32?>]: The update build revision number of the product revision.
 Read-only.
   [Product <String>]: The product of the revision.
-Possible values are: Windows 10, Windows 11.
+The possible values are: Windows 10, Windows 11.
 Read-only.
   [ReleaseDateTime <DateTime?>]: The release date for the content.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.

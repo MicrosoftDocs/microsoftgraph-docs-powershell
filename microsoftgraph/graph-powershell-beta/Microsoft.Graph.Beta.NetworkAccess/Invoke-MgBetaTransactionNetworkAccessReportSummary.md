@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetatransactionnetworkaccessreportsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaTransactionNetworkAccessReportSummary
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgBetaTransactionNetworkAccessReportSummary
 
 ## SYNOPSIS
 
-Get the total number of transactions and the number of blocked transactions, grouped by traffic type.
+Get the total number of transactions and the number of blocked transactions in Global Secure Access, grouped by traffic type.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the total number of transactions and the number of blocked transactions, grouped by traffic type.
+Get the total number of transactions and the number of blocked transactions in Global Secure Access, grouped by traffic type.
 
 **Permissions**
 

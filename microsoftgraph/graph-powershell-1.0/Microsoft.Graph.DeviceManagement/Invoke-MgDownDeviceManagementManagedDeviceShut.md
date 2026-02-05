@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgdowndevicemanagementmanageddeviceshut
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgDownDeviceManagementManagedDeviceShut
 ---
@@ -418,7 +418,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgDownDeviceManagementManagedDeviceShut](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgdowndevicemanagementmanageddeviceshut)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-shutdown?view=graph-rest-1.0)
 
 
 

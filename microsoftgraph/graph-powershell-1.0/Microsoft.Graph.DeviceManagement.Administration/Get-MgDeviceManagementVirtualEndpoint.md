@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpoint
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementVirtualEndpoint
 ---
@@ -13,7 +13,7 @@ title: Get-MgDeviceManagementVirtualEndpoint
 
 ## SYNOPSIS
 
-Virtual endpoint
+Get virtualEndpoint from deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpoint](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpoint?view=graph-powershell-beta)
@@ -36,7 +36,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Virtual endpoint
+Get virtualEndpoint from deviceManagement
 
 ## PARAMETERS
 

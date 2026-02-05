@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-Module Guid: 66f3bd3b-bd1b-48bb-aa49-567f6fb1c5ff
+Module Guid: 94b6364e-f250-410f-8999-0430914788fd
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.directorymanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -218,6 +218,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaContactMemberOfCountAsAdministrativeUnit](Get-MgBetaContactMemberOfCountAsAdministrativeUnit.md)
 
 ### [Get-MgBetaContactMemberOfCountAsGroup](Get-MgBetaContactMemberOfCountAsGroup.md)
+
+### [Get-MgBetaContactOnPremiseSyncBehavior](Get-MgBetaContactOnPremiseSyncBehavior.md)
 
 ### [Get-MgBetaContactServiceProvisioningError](Get-MgBetaContactServiceProvisioningError.md)
 
@@ -883,6 +885,32 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaOrganizationBrandingSquareLogoDark](Get-MgBetaOrganizationBrandingSquareLogoDark.md)
 
+### [Get-MgBetaOrganizationBrandingTheme](Get-MgBetaOrganizationBrandingTheme.md)
+
+### [Get-MgBetaOrganizationBrandingTheme](Get-MgBetaOrganizationBrandingTheme.md)
+
+### [Get-MgBetaOrganizationBrandingThemeCount](Get-MgBetaOrganizationBrandingThemeCount.md)
+
+### [Get-MgBetaOrganizationBrandingThemeLocalization](Get-MgBetaOrganizationBrandingThemeLocalization.md)
+
+### [Get-MgBetaOrganizationBrandingThemeLocalization](Get-MgBetaOrganizationBrandingThemeLocalization.md)
+
+### [Get-MgBetaOrganizationBrandingThemeLocalizationBackgroundImage](Get-MgBetaOrganizationBrandingThemeLocalizationBackgroundImage.md)
+
+### [Get-MgBetaOrganizationBrandingThemeLocalizationBannerLogo](Get-MgBetaOrganizationBrandingThemeLocalizationBannerLogo.md)
+
+### [Get-MgBetaOrganizationBrandingThemeLocalizationCount](Get-MgBetaOrganizationBrandingThemeLocalizationCount.md)
+
+### [Get-MgBetaOrganizationBrandingThemeLocalizationCustomCss](Get-MgBetaOrganizationBrandingThemeLocalizationCustomCss.md)
+
+### [Get-MgBetaOrganizationBrandingThemeLocalizationFavicon](Get-MgBetaOrganizationBrandingThemeLocalizationFavicon.md)
+
+### [Get-MgBetaOrganizationBrandingThemeLocalizationHeaderLogo](Get-MgBetaOrganizationBrandingThemeLocalizationHeaderLogo.md)
+
+### [Get-MgBetaOrganizationBrandingThemeLocalizationSquareLogo](Get-MgBetaOrganizationBrandingThemeLocalizationSquareLogo.md)
+
+### [Get-MgBetaOrganizationBrandingThemeLocalizationSquareLogoDark](Get-MgBetaOrganizationBrandingThemeLocalizationSquareLogoDark.md)
+
 ### [Get-MgBetaOrganizationById](Get-MgBetaOrganizationById.md)
 
 ### [Get-MgBetaOrganizationCount](Get-MgBetaOrganizationCount.md)
@@ -1073,6 +1101,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaOrganizationBrandingLocalization](New-MgBetaOrganizationBrandingLocalization.md)
 
+### [New-MgBetaOrganizationBrandingTheme](New-MgBetaOrganizationBrandingTheme.md)
+
+### [New-MgBetaOrganizationBrandingThemeLocalization](New-MgBetaOrganizationBrandingThemeLocalization.md)
+
 ### [New-MgBetaOrganizationExtension](New-MgBetaOrganizationExtension.md)
 
 ### [New-MgBetaSubscribedSku](New-MgBetaSubscribedSku.md)
@@ -1106,6 +1138,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaAdminPeopleProfileSourceBySourceId](Remove-MgBetaAdminPeopleProfileSourceBySourceId.md)
 
 ### [Remove-MgBetaAdminPeoplePronoun](Remove-MgBetaAdminPeoplePronoun.md)
+
+### [Remove-MgBetaContact](Remove-MgBetaContact.md)
+
+### [Remove-MgBetaContactOnPremiseSyncBehavior](Remove-MgBetaContactOnPremiseSyncBehavior.md)
 
 ### [Remove-MgBetaContract](Remove-MgBetaContract.md)
 
@@ -1261,6 +1297,24 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaOrganizationBrandingSquareLogoDark](Remove-MgBetaOrganizationBrandingSquareLogoDark.md)
 
+### [Remove-MgBetaOrganizationBrandingTheme](Remove-MgBetaOrganizationBrandingTheme.md)
+
+### [Remove-MgBetaOrganizationBrandingThemeLocalization](Remove-MgBetaOrganizationBrandingThemeLocalization.md)
+
+### [Remove-MgBetaOrganizationBrandingThemeLocalizationBackgroundImage](Remove-MgBetaOrganizationBrandingThemeLocalizationBackgroundImage.md)
+
+### [Remove-MgBetaOrganizationBrandingThemeLocalizationBannerLogo](Remove-MgBetaOrganizationBrandingThemeLocalizationBannerLogo.md)
+
+### [Remove-MgBetaOrganizationBrandingThemeLocalizationCustomCss](Remove-MgBetaOrganizationBrandingThemeLocalizationCustomCss.md)
+
+### [Remove-MgBetaOrganizationBrandingThemeLocalizationFavicon](Remove-MgBetaOrganizationBrandingThemeLocalizationFavicon.md)
+
+### [Remove-MgBetaOrganizationBrandingThemeLocalizationHeaderLogo](Remove-MgBetaOrganizationBrandingThemeLocalizationHeaderLogo.md)
+
+### [Remove-MgBetaOrganizationBrandingThemeLocalizationSquareLogo](Remove-MgBetaOrganizationBrandingThemeLocalizationSquareLogo.md)
+
+### [Remove-MgBetaOrganizationBrandingThemeLocalizationSquareLogoDark](Remove-MgBetaOrganizationBrandingThemeLocalizationSquareLogoDark.md)
+
 ### [Remove-MgBetaOrganizationExtension](Remove-MgBetaOrganizationExtension.md)
 
 ### [Remove-MgBetaOrganizationPartnerInformation](Remove-MgBetaOrganizationPartnerInformation.md)
@@ -1309,6 +1363,20 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgBetaOrganizationBrandingSquareLogoDark](Set-MgBetaOrganizationBrandingSquareLogoDark.md)
 
+### [Set-MgBetaOrganizationBrandingThemeLocalizationBackgroundImage](Set-MgBetaOrganizationBrandingThemeLocalizationBackgroundImage.md)
+
+### [Set-MgBetaOrganizationBrandingThemeLocalizationBannerLogo](Set-MgBetaOrganizationBrandingThemeLocalizationBannerLogo.md)
+
+### [Set-MgBetaOrganizationBrandingThemeLocalizationCustomCss](Set-MgBetaOrganizationBrandingThemeLocalizationCustomCss.md)
+
+### [Set-MgBetaOrganizationBrandingThemeLocalizationFavicon](Set-MgBetaOrganizationBrandingThemeLocalizationFavicon.md)
+
+### [Set-MgBetaOrganizationBrandingThemeLocalizationHeaderLogo](Set-MgBetaOrganizationBrandingThemeLocalizationHeaderLogo.md)
+
+### [Set-MgBetaOrganizationBrandingThemeLocalizationSquareLogo](Set-MgBetaOrganizationBrandingThemeLocalizationSquareLogo.md)
+
+### [Set-MgBetaOrganizationBrandingThemeLocalizationSquareLogoDark](Set-MgBetaOrganizationBrandingThemeLocalizationSquareLogoDark.md)
+
 ### [Set-MgBetaOrganizationMobileDeviceManagementAuthority](Set-MgBetaOrganizationMobileDeviceManagementAuthority.md)
 
 ### [Test-MgBetaAdministrativeUnitProperty](Test-MgBetaAdministrativeUnitProperty.md)
@@ -1352,6 +1420,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaAdminPeopleProfileSourceBySourceId](Update-MgBetaAdminPeopleProfileSourceBySourceId.md)
 
 ### [Update-MgBetaAdminPeoplePronoun](Update-MgBetaAdminPeoplePronoun.md)
+
+### [Update-MgBetaContact](Update-MgBetaContact.md)
+
+### [Update-MgBetaContactOnPremiseSyncBehavior](Update-MgBetaContactOnPremiseSyncBehavior.md)
 
 ### [Update-MgBetaContract](Update-MgBetaContract.md)
 
@@ -1464,6 +1536,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaOrganizationBranding](Update-MgBetaOrganizationBranding.md)
 
 ### [Update-MgBetaOrganizationBrandingLocalization](Update-MgBetaOrganizationBrandingLocalization.md)
+
+### [Update-MgBetaOrganizationBrandingTheme](Update-MgBetaOrganizationBrandingTheme.md)
+
+### [Update-MgBetaOrganizationBrandingThemeLocalization](Update-MgBetaOrganizationBrandingThemeLocalization.md)
 
 ### [Update-MgBetaOrganizationExtension](Update-MgBetaOrganizationExtension.md)
 

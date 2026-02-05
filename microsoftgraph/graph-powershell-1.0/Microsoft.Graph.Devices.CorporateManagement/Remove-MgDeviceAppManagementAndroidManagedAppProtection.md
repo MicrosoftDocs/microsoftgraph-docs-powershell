@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementandroidmanagedappprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDeviceAppManagementAndroidManagedAppProtection
 ---
@@ -13,7 +13,7 @@ title: Remove-MgDeviceAppManagementAndroidManagedAppProtection
 
 ## SYNOPSIS
 
-Deletes a androidManagedAppProtection.
+Delete navigation property androidManagedAppProtections for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Deletes a androidManagedAppProtection.
+Delete navigation property androidManagedAppProtections for deviceAppManagement
 
 **Permissions**
 
@@ -443,7 +443,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgDeviceAppManagementAndroidManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementandroidmanagedappprotection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-delete?view=graph-rest-1.0)
 
 
 

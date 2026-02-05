@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicysettingstatesummary
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
 ---
@@ -13,7 +13,7 @@ title: Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
 
 ## SYNOPSIS
 
-Update the properties of a deviceCompliancePolicySettingStateSummary object.
+Update the navigation property deviceCompliancePolicySettingStateSummaries in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-beta)
@@ -83,7 +83,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a deviceCompliancePolicySettingStateSummary object.
+Update the navigation property deviceCompliancePolicySettingStateSummaries in deviceManagement
 
 **Permissions**
 
@@ -303,7 +303,7 @@ HelpMessage: ''
 
 ### -DeviceComplianceSettingStates
 
-Not yet documented
+
 To construct, see NOTES section for DEVICECOMPLIANCESETTINGSTATES properties and create a hash table.
 
 ```yaml
@@ -811,7 +811,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicySettingStateSummary>`: Devi
 Read-only.
   [CompliantDeviceCount <Int32?>]: Number of compliant devices
   [ConflictDeviceCount <Int32?>]: Number of conflict devices
-  [DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>]: Not yet documented
+  [DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [ComplianceGracePeriodExpirationDateTime <DateTime?>]: The DateTime when device compliance grace period expires
@@ -834,7 +834,7 @@ Read-only.
   [SettingName <String>]: Name of the setting.
   [UnknownDeviceCount <Int32?>]: Number of unknown devices
 
-DEVICECOMPLIANCESETTINGSTATES <IMicrosoftGraphDeviceComplianceSettingState[]>: Not yet documented
+DEVICECOMPLIANCESETTINGSTATES <IMicrosoftGraphDeviceComplianceSettingState[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [ComplianceGracePeriodExpirationDateTime <DateTime?>]: The DateTime when device compliance grace period expires
@@ -888,7 +888,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicysettingstatesummary)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update?view=graph-rest-1.0)
 
 
 

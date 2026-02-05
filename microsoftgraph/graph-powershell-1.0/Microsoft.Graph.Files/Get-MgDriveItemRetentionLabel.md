@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemretentionlabel
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDriveItemRetentionLabel
 ---
@@ -13,8 +13,8 @@ title: Get-MgDriveItemRetentionLabel
 
 ## SYNOPSIS
 
-Information about retention label and settings enforced on the driveItem.
-Read-write.
+Get metadata information for a retention label applied on a driveItem.
+For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemRetentionLabel?view=graph-powershell-beta)
@@ -46,8 +46,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Information about retention label and settings enforced on the driveItem.
-Read-write.
+Get metadata information for a retention label applied on a driveItem.
+For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
 ## PARAMETERS
 
@@ -388,6 +388,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgDriveItemRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemretentionlabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-getretentionlabel?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementauditevent
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementAuditEvent
 ---
@@ -13,7 +13,7 @@ title: New-MgDeviceManagementAuditEvent
 
 ## SYNOPSIS
 
-Create a new auditEvent object.
+Create new navigation property to auditEvents for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new auditEvent object.
+Create new navigation property to auditEvents for deviceManagement
 
 **Permissions**
 
@@ -716,7 +716,6 @@ RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
 ## RELATED LINKS
 
 - [New-MgDeviceManagementAuditEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementauditevent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-create?view=graph-rest-1.0)
 
 
 

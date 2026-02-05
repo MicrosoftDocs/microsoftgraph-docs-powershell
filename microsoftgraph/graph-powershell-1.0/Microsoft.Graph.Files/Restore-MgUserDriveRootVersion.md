@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mguserdriverootversion
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgUserDriveRootVersion
 ---
@@ -13,8 +13,8 @@ title: Restore-MgUserDriveRootVersion
 
 ## SYNOPSIS
 
-Restore a previous version of a DriveItem to be the current version.
-This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+Restore a previous version of a driveItem to be the current version.
+This operation creates a new version with the contents of the previous version, and it preserves all existing versions of the file.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaUserDriveRootVersion?view=graph-powershell-beta)
@@ -48,8 +48,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Restore a previous version of a DriveItem to be the current version.
-This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+Restore a previous version of a driveItem to be the current version.
+This operation creates a new version with the contents of the previous version, and it preserves all existing versions of the file.
 
 ## PARAMETERS
 
@@ -432,7 +432,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Restore-MgUserDriveRootVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mguserdriverootversion)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitemversion-restoreversion?view=graph-rest-1.0)
 
 
 

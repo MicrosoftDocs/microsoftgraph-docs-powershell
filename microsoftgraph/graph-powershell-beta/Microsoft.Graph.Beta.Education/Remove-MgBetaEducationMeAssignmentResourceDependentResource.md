@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentresourcedependentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaEducationMeAssignmentResourceDependentResource
 ---
@@ -14,6 +14,9 @@ title: Remove-MgBetaEducationMeAssignmentResourceDependentResource
 ## SYNOPSIS
 
 Delete navigation property dependentResources for education
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationMeAssignmentResourceDependentResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeAssignmentResourceDependentResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 

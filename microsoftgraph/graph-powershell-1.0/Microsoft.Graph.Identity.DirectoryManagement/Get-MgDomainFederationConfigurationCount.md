@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfigurationcount
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDomainFederationConfigurationCount
 ---
@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the number of the resource
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain-InternalFederation.Read.All, Domain-InternalFederation.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain-InternalFederation.Read.All, Domain-InternalFederation.ReadWrite.All,  |
 
 ## PARAMETERS
 

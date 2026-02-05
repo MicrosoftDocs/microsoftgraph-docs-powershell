@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaexecutesecurityincidenttaskresponseaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction
 ---
@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 
 Execute a remediation action on a Microsoft Defender XDR incident task.
 Only the following actionType values are supported for automated execution: collectInvestigationPackage, isolateDevice, unRestrictAppExecution, unIsolateDevice, restrictAppExecution, runAntiVirusScan, stopAndQuarantineFile, submitIocRule.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction -IncidentTaskId $incidentTaskId
 
 ## PARAMETERS
 
@@ -461,7 +469,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaexecutesecurityincidenttaskresponseaction)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/security-incidenttask-executeresponseaction?view=graph-rest-beta)
-
 
 
 

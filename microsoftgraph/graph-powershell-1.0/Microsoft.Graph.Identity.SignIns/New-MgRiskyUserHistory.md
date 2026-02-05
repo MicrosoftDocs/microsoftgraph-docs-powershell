@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuserhistory
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgRiskyUserHistory
 ---
@@ -382,7 +382,7 @@ HelpMessage: ''
 ### -IsDeleted
 
 Indicates whether the user is deleted.
-Possible values are: true, false.
+The possible values are: true, false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -802,7 +802,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskyUserHistoryItem>`: riskyUserHistoryItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [History <IMicrosoftGraphRiskyUserHistoryItem[]>]: The activity related to user risk level change
   [IsDeleted <Boolean?>]: Indicates whether the user is deleted.
-Possible values are: true, false.
+The possible values are: true, false.
   [IsProcessing <Boolean?>]: Indicates whether the backend is processing a user's risky state.
   [RiskDetail <String>]: riskDetail
   [RiskLastUpdatedDateTime <DateTime?>]: The date and time that the risky user was last updated.
@@ -824,7 +824,7 @@ Read-only.
 HISTORY <IMicrosoftGraphRiskyUserHistoryItem[]>: The activity related to user risk level change
   [History <IMicrosoftGraphRiskyUserHistoryItem[]>]: The activity related to user risk level change
   [IsDeleted <Boolean?>]: Indicates whether the user is deleted.
-Possible values are: true, false.
+The possible values are: true, false.
   [IsProcessing <Boolean?>]: Indicates whether the backend is processing a user's risky state.
   [RiskDetail <String>]: riskDetail
   [RiskLastUpdatedDateTime <DateTime?>]: The date and time that the risky user was last updated.
@@ -868,6 +868,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
+  [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
   [HomeRealmDiscoveryPolicyId <String>]: The unique identifier of homeRealmDiscoveryPolicy
   [IdentityApiConnectorId <String>]: The unique identifier of identityApiConnector
   [IdentityProviderBaseId <String>]: The unique identifier of identityProviderBase
@@ -903,6 +904,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
+  [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 

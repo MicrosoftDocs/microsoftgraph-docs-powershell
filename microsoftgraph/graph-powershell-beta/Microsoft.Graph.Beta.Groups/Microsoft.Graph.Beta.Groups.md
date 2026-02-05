@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Groups
-Module Guid: 3909ec29-dc34-471d-92ab-54ec9588767e
+Module Guid: 8194f77d-4e37-4e82-9c07-9409f37391db
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.groups/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -222,6 +222,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupMemberWithLicenseErrorCountAsServicePrincipal](Get-MgBetaGroupMemberWithLicenseErrorCountAsServicePrincipal.md)
 
 ### [Get-MgBetaGroupMemberWithLicenseErrorCountAsUser](Get-MgBetaGroupMemberWithLicenseErrorCountAsUser.md)
+
+### [Get-MgBetaGroupOnPremiseSyncBehavior](Get-MgBetaGroupOnPremiseSyncBehavior.md)
 
 ### [Get-MgBetaGroupOwner](Get-MgBetaGroupOwner.md)
 
@@ -535,6 +537,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaGroupMemberDirectoryObjectByRef](Remove-MgBetaGroupMemberDirectoryObjectByRef.md)
 
+### [Remove-MgBetaGroupOnPremiseSyncBehavior](Remove-MgBetaGroupOnPremiseSyncBehavior.md)
+
 ### [Remove-MgBetaGroupOwnerDirectoryObjectByRef](Remove-MgBetaGroupOwnerDirectoryObjectByRef.md)
 
 ### [Remove-MgBetaGroupPasswordSingleSignOnCredential](Remove-MgBetaGroupPasswordSingleSignOnCredential.md)
@@ -594,6 +598,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaGroupExtension](Update-MgBetaGroupExtension.md)
 
 ### [Update-MgBetaGroupLifecyclePolicy](Update-MgBetaGroupLifecyclePolicy.md)
+
+### [Update-MgBetaGroupOnPremiseSyncBehavior](Update-MgBetaGroupOnPremiseSyncBehavior.md)
 
 ### [Update-MgBetaGroupPermissionGrant](Update-MgBetaGroupPermissionGrant.md)
 

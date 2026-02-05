@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarpresenter
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgVirtualEventWebinarPresenter
 ---
@@ -14,7 +14,7 @@ title: New-MgVirtualEventWebinarPresenter
 ## SYNOPSIS
 
 Create a new virtualEventPresenter object on a virtual event.
-Currently, the following types of virtual events are supported: - virtualEventTownhall- virtualEventWebinar
+Currently, the following types of virtual events are supported: \r- virtualEventTownhall\r- virtualEventWebinar
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarPresenter?view=graph-powershell-beta)
@@ -73,7 +73,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new virtualEventPresenter object on a virtual event.
-Currently, the following types of virtual events are supported: - virtualEventTownhall- virtualEventWebinar
+Currently, the following types of virtual events are supported: \r- virtualEventTownhall\r- virtualEventWebinar
 
 ## EXAMPLES
 ### Example 1: Create an in-tenant presenter on a **virtualEventWebinar**

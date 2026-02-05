@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessSetting
 ---
@@ -24,6 +24,7 @@ Update-MgBetaNetworkAccessSetting [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>]
  [-ConditionalAccess <IMicrosoftGraphNetworkaccessConditionalAccessSettings>]
  [-CrossTenantAccess <IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>]
+ [-CustomBlockPage <IMicrosoftGraphNetworkaccessCustomBlockPage>]
  [-ForwardingOptions <IMicrosoftGraphNetworkaccessForwardingOptions>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -166,6 +167,28 @@ To construct, see NOTES section for CROSSTENANTACCESS properties and create a ha
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNetworkaccessCrossTenantAccessSettings
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CustomBlockPage
+
+customBlockPage
+To construct, see NOTES section for CUSTOMBLOCKPAGE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNetworkaccessCustomBlockPage
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -439,6 +462,13 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [NetworkPacketTaggingStatus <String>]: status
+  [CustomBlockPage <IMicrosoftGraphNetworkaccessCustomBlockPage>]: customBlockPage
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Configuration <IMicrosoftGraphNetworkaccessBlockPageConfigurationBase>]: blockPageConfigurationBase
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [State <String>]: status
   [ForwardingOptions <IMicrosoftGraphNetworkaccessForwardingOptions>]: forwardingOptions
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
@@ -456,6 +486,14 @@ CROSSTENANTACCESS `<IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>`: cro
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [NetworkPacketTaggingStatus <String>]: status
+
+CUSTOMBLOCKPAGE `<IMicrosoftGraphNetworkaccessCustomBlockPage>`: customBlockPage
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Configuration <IMicrosoftGraphNetworkaccessBlockPageConfigurationBase>]: blockPageConfigurationBase
+    [(Any) <Object>]: This indicates any property can be added to this object.
+  [State <String>]: status
 
 FORWARDINGOPTIONS `<IMicrosoftGraphNetworkaccessForwardingOptions>`: forwardingOptions
   [(Any) <Object>]: This indicates any property can be added to this object.

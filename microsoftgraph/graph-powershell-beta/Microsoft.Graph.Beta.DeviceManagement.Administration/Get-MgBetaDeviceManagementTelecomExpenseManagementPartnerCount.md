@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementtelecomexpensemanagementpartnercount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementTelecomExpenseManagementPartnerCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaDeviceManagementTelecomExpenseManagementPartnerCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementTelecomExpenseManagementPartnerCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTelecomExpenseManagementPartnerCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 

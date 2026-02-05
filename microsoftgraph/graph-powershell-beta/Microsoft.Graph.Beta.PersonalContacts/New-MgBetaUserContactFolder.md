@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolder
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.PersonalContacts
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserContactFolder
 ---
@@ -792,7 +792,12 @@ It's a free-format string value, for example, 'United States'.
       [State <String>]: The state.
       [Street <String>]: The street.
       [Type <String>]: physicalAddressType
+    [PrimaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Address <String>]: The email address of an entity instance.
+      [Name <String>]: The display name of an entity instance.
     [Profession <String>]: The contact's profession.
+    [SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -801,6 +806,7 @@ Read-only.
       [Value <String>]: A property value.
     [SpouseName <String>]: The name of the contact's spouse/partner.
     [Surname <String>]: The contact's surname.
+    [TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [Title <String>]: The contact's title.
     [Websites <IMicrosoftGraphWebsite[]>]: Web sites associated with the contact.
       [Address <String>]: The URL of the website.
@@ -919,7 +925,12 @@ It's a free-format string value, for example, 'United States'.
       [State <String>]: The state.
       [Street <String>]: The street.
       [Type <String>]: physicalAddressType
+    [PrimaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Address <String>]: The email address of an entity instance.
+      [Name <String>]: The display name of an entity instance.
     [Profession <String>]: The contact's profession.
+    [SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -928,6 +939,7 @@ Read-only.
       [Value <String>]: A property value.
     [SpouseName <String>]: The name of the contact's spouse/partner.
     [Surname <String>]: The contact's surname.
+    [TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [Title <String>]: The contact's title.
     [Websites <IMicrosoftGraphWebsite[]>]: Web sites associated with the contact.
       [Address <String>]: The URL of the website.
@@ -1036,7 +1048,12 @@ It's a free-format string value, for example, 'United States'.
     [State <String>]: The state.
     [Street <String>]: The street.
     [Type <String>]: physicalAddressType
+  [PrimaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Address <String>]: The email address of an entity instance.
+    [Name <String>]: The display name of an entity instance.
   [Profession <String>]: The contact's profession.
+  [SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -1045,6 +1062,7 @@ Read-only.
     [Value <String>]: A property value.
   [SpouseName <String>]: The name of the contact's spouse/partner.
   [Surname <String>]: The contact's surname.
+  [TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [Title <String>]: The contact's title.
   [Websites <IMicrosoftGraphWebsite[]>]: Web sites associated with the contact.
     [Address <String>]: The URL of the website.

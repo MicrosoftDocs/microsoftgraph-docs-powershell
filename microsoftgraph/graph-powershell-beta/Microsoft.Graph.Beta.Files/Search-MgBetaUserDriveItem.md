@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetauserdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Search-MgBetaUserDriveItem
 ---
@@ -13,7 +13,7 @@ title: Search-MgBetaUserDriveItem
 
 ## SYNOPSIS
 
-Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
+Search the hierarchy of items for items matching a query.\rYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Search-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/Search-MgUserDriveItem?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
+Search the hierarchy of items for items matching a query.\rYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
 ## PARAMETERS
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaShareListContentType
 ---
@@ -1045,10 +1045,10 @@ Read-only.
     [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
       [Formula <String>]: The formula used to compute the value for this column.
       [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
     [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -1142,8 +1142,8 @@ Read-only.
         [LastModifiedDateTime <DateTime?>]: Last date and time of term modification.
 Read-only.
         [Properties <IMicrosoftGraphKeyValue[]>]: Collection of properties on the term.
-          [Key <String>]: Contains the name of the field that a value is associated with.
-          [Value <String>]: Contains the corresponding value for the specified key.
+          [Key <String>]: Key.
+          [Value <String>]: Value.
         [Relations <IMicrosoftGraphTermStoreRelation[]>]: To indicate which terms are related to the current term as either pinned or reused.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1276,10 +1276,10 @@ Read-only.
     [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
       [Formula <String>]: The formula used to compute the value for this column.
       [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
     [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -1373,8 +1373,8 @@ Read-only.
         [LastModifiedDateTime <DateTime?>]: Last date and time of term modification.
 Read-only.
         [Properties <IMicrosoftGraphKeyValue[]>]: Collection of properties on the term.
-          [Key <String>]: Contains the name of the field that a value is associated with.
-          [Value <String>]: Contains the corresponding value for the specified key.
+          [Key <String>]: Key.
+          [Value <String>]: Value.
         [Relations <IMicrosoftGraphTermStoreRelation[]>]: To indicate which terms are related to the current term as either pinned or reused.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1508,10 +1508,10 @@ Read-only.
     [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
       [Formula <String>]: The formula used to compute the value for this column.
       [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
     [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -1605,8 +1605,8 @@ Read-only.
         [LastModifiedDateTime <DateTime?>]: Last date and time of term modification.
 Read-only.
         [Properties <IMicrosoftGraphKeyValue[]>]: Collection of properties on the term.
-          [Key <String>]: Contains the name of the field that a value is associated with.
-          [Value <String>]: Contains the corresponding value for the specified key.
+          [Key <String>]: Key.
+          [Value <String>]: Value.
         [Relations <IMicrosoftGraphTermStoreRelation[]>]: To indicate which terms are related to the current term as either pinned or reused.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1732,10 +1732,10 @@ Read-only.
   [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
     [Formula <String>]: The formula used to compute the value for this column.
     [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
   [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -1829,8 +1829,8 @@ Read-only.
       [LastModifiedDateTime <DateTime?>]: Last date and time of term modification.
 Read-only.
       [Properties <IMicrosoftGraphKeyValue[]>]: Collection of properties on the term.
-        [Key <String>]: Contains the name of the field that a value is associated with.
-        [Value <String>]: Contains the corresponding value for the specified key.
+        [Key <String>]: Key.
+        [Value <String>]: Value.
       [Relations <IMicrosoftGraphTermStoreRelation[]>]: To indicate which terms are related to the current term as either pinned or reused.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1894,10 +1894,10 @@ Read-only.
   [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
     [Formula <String>]: The formula used to compute the value for this column.
     [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
   [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -1991,8 +1991,8 @@ Read-only.
       [LastModifiedDateTime <DateTime?>]: Last date and time of term modification.
 Read-only.
       [Properties <IMicrosoftGraphKeyValue[]>]: Collection of properties on the term.
-        [Key <String>]: Contains the name of the field that a value is associated with.
-        [Value <String>]: Contains the corresponding value for the specified key.
+        [Key <String>]: Key.
+        [Value <String>]: Value.
       [Relations <IMicrosoftGraphTermStoreRelation[]>]: To indicate which terms are related to the current term as either pinned or reused.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2066,10 +2066,10 @@ Read-only.
     [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
       [Formula <String>]: The formula used to compute the value for this column.
       [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
     [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -2160,8 +2160,8 @@ Read-only.
         [LastModifiedDateTime <DateTime?>]: Last date and time of term modification.
 Read-only.
         [Properties <IMicrosoftGraphKeyValue[]>]: Collection of properties on the term.
-          [Key <String>]: Contains the name of the field that a value is associated with.
-          [Value <String>]: Contains the corresponding value for the specified key.
+          [Key <String>]: Key.
+          [Value <String>]: Value.
         [Relations <IMicrosoftGraphTermStoreRelation[]>]: To indicate which terms are related to the current term as either pinned or reused.
           [Id <String>]: The unique identifier for an entity.
 Read-only.

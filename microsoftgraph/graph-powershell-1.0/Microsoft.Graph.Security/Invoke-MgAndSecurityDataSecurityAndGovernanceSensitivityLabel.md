@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgandsecuritydatasecurityandgovernancesensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel
 ---
@@ -58,6 +58,27 @@ Computes the rights and inheritance for sensitivity labels based on the input co
 | Delegated (work or school account) | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	delegatedUserEmail = "String"
+	locale = "String"
+	protectedContents = @(
+		@{
+			"@odata.type" = "microsoft.graph.protectedContent"
+		}
+	)
+	supportedContentFormats = @(
+	"String"
+)
+}
+
+Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel -BodyParameter $params
 
 ## PARAMETERS
 
@@ -452,7 +473,6 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 - [Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgandsecuritydatasecurityandgovernancesensitivitylabel)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-1.0)
-
 
 
 

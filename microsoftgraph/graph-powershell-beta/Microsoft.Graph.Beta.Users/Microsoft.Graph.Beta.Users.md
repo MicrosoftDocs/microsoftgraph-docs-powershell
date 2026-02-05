@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users
-Module Guid: 6a0dc944-778c-470f-90a8-e5da9fbdab9d
+Module Guid: 686caed1-8b3e-42af-bed7-44d0f7444ded
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.users/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -148,6 +148,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserOauth2PermissionGrant](Get-MgBetaUserOauth2PermissionGrant.md)
 
 ### [Get-MgBetaUserOauth2PermissionGrantCount](Get-MgBetaUserOauth2PermissionGrantCount.md)
+
+### [Get-MgBetaUserOnPremiseSyncBehavior](Get-MgBetaUserOnPremiseSyncBehavior.md)
 
 ### [Get-MgBetaUserOutlookMasterCategory](Get-MgBetaUserOutlookMasterCategory.md)
 
@@ -495,6 +497,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaUserNotification](Remove-MgBetaUserNotification.md)
 
+### [Remove-MgBetaUserOnPremiseSyncBehavior](Remove-MgBetaUserOnPremiseSyncBehavior.md)
+
 ### [Remove-MgBetaUserOutlookMasterCategory](Remove-MgBetaUserOutlookMasterCategory.md)
 
 ### [Remove-MgBetaUserOutlookTask](Remove-MgBetaUserOutlookTask.md)
@@ -596,6 +600,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserMailboxSetting](Update-MgBetaUserMailboxSetting.md)
 
 ### [Update-MgBetaUserNotification](Update-MgBetaUserNotification.md)
+
+### [Update-MgBetaUserOnPremiseSyncBehavior](Update-MgBetaUserOnPremiseSyncBehavior.md)
 
 ### [Update-MgBetaUserOutlookMasterCategory](Update-MgBetaUserOutlookMasterCategory.md)
 

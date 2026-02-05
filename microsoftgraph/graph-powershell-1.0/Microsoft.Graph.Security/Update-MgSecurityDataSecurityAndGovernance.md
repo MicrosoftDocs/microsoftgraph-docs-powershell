@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritydatasecurityandgovernance
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityDataSecurityAndGovernance
 ---
@@ -412,6 +412,7 @@ Read-only.
     [AutoTooltip <String>]: 
     [Description <String>]: 
     [DisplayName <String>]: 
+    [HasProtection <Boolean?>]: 
     [IsDefault <Boolean?>]: 
     [IsEndpointProtectionEnabled <Boolean?>]: 
     [IsScopedToUser <Boolean?>]: 
@@ -441,6 +442,7 @@ Read-only.
   [AutoTooltip <String>]: 
   [Description <String>]: 
   [DisplayName <String>]: 
+  [HasProtection <Boolean?>]: 
   [IsDefault <Boolean?>]: 
   [IsEndpointProtectionEnabled <Boolean?>]: 
   [IsScopedToUser <Boolean?>]: 

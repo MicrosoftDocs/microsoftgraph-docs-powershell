@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDomain
 ---
@@ -94,7 +94,7 @@ Only verified domains can be updated.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Domain.ReadWrite.All, Directory.AccessAsUser.All,  |
+| Delegated (work or school account) | Domain.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Domain.ReadWrite.All,  |
 
@@ -156,7 +156,7 @@ The value is either Managed or Federated.
 Managed indicates a cloud managed domain where Microsoft Entra ID performs user authentication.
 Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services.
 Not nullable.
-To update this property in delegated scenarios, the calling app must be assigned the Directory.AccessAsUser.All delegated permission.
+To update this property in delegated scenarios, the calling app must be assigned the Domain-InternalFederation.ReadWrite.All permission.
 
 ```yaml
 Type: System.String
@@ -1014,7 +1014,7 @@ The value is either Managed or Federated.
 Managed indicates a cloud managed domain where Microsoft Entra ID performs user authentication.
 Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services.
 Not nullable.
- To update this property in delegated scenarios, the calling app must be assigned the Directory.AccessAsUser.All delegated permission.
+ To update this property in delegated scenarios, the calling app must be assigned the Domain-InternalFederation.ReadWrite.All permission.
   [AvailabilityStatus <String>]: This property is always null except when the verify action is used.
 When the verify action is used, a domain entity is returned in the response.
 The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
@@ -1208,6 +1208,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrgContactId <String>]: The unique identifier of orgContact
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
+  [OrganizationalBrandingThemeId <String>]: The unique identifier of organizationalBrandingTheme
+  [OrganizationalBrandingThemeLocalizationLocale <String>]: The unique identifier of organizationalBrandingThemeLocalization
   [OutboundSharedUserProfileUserId <String>]: The unique identifier of outboundSharedUserProfile
   [PendingExternalUserProfileId <String>]: The unique identifier of pendingExternalUserProfile
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
@@ -1234,7 +1236,7 @@ The value is either Managed or Federated.
 Managed indicates a cloud managed domain where Microsoft Entra ID performs user authentication.
 Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services.
 Not nullable.
- To update this property in delegated scenarios, the calling app must be assigned the Directory.AccessAsUser.All delegated permission.
+ To update this property in delegated scenarios, the calling app must be assigned the Domain-InternalFederation.ReadWrite.All permission.
   [AvailabilityStatus <String>]: This property is always null except when the verify action is used.
 When the verify action is used, a domain entity is returned in the response.
 The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.

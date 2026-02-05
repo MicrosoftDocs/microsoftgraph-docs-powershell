@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplephotoupdatesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminPeoplePhotoUpdateSetting
 ---
@@ -53,6 +53,22 @@ Update the properties of a photoUpdateSettings object.
 | Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PeopleSettings.ReadWrite.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.photoUpdateSettings"
+	source = "String"
+	allowedRoles = @(
+	"String"
+)
+}
+
+Update-MgBetaAdminPeoplePhotoUpdateSetting -BodyParameter $params
 
 ## PARAMETERS
 
@@ -398,7 +414,6 @@ Optional.
 
 - [Update-MgBetaAdminPeoplePhotoUpdateSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplephotoupdatesetting)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/photoupdatesettings-update?view=graph-rest-beta)
-
 
 
 

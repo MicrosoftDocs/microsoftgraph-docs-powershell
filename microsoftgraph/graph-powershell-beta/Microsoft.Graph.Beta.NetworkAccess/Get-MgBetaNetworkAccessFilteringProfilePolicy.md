@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessFilteringProfilePolicy
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaNetworkAccessFilteringProfilePolicy
 
 ## SYNOPSIS
 
-Get a tlsInspectionPolicyLink object.
+Read the properties and relationships of a threatIntelligencePolicyLink object.
 
 ## SYNTAX
 
@@ -76,7 +76,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get a tlsInspectionPolicyLink object.
+Read the properties and relationships of a threatIntelligencePolicyLink object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -630,7 +630,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgBetaNetworkAccessFilteringProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofilepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicylink-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-list-policy?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-list?view=graph-rest-beta)
 

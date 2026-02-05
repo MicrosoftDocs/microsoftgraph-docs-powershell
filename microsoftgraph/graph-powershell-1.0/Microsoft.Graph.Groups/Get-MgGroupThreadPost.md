@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpost
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupThreadPost
 ---
@@ -662,7 +662,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupThreadPost](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpost)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/post-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-1.0)
 
 
 

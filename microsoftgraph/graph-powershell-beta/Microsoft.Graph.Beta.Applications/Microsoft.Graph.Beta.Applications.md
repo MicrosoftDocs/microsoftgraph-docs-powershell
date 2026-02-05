@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Applications
-Module Guid: dc0ae187-2bdc-4ddd-aed7-d7c44334363d
+Module Guid: 8ad533e8-809f-45b6-8143-6b1808f2a0c2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.applications/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -270,6 +270,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupCount](Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupCount.md)
 
 ### [Get-MgBetaOnPremisePublishingProfilePublishedResourceCount](Get-MgBetaOnPremisePublishingProfilePublishedResourceCount.md)
+
+### [Get-MgBetaOnPremisePublishingProfileSensor](Get-MgBetaOnPremisePublishingProfileSensor.md)
+
+### [Get-MgBetaOnPremisePublishingProfileSensor](Get-MgBetaOnPremisePublishingProfileSensor.md)
+
+### [Get-MgBetaOnPremisePublishingProfileSensorCount](Get-MgBetaOnPremisePublishingProfileSensorCount.md)
 
 ### [Get-MgBetaServicePrincipal](Get-MgBetaServicePrincipal.md)
 
@@ -633,6 +639,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef](New-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef.md)
 
+### [New-MgBetaOnPremisePublishingProfileSensor](New-MgBetaOnPremisePublishingProfileSensor.md)
+
 ### [New-MgBetaServicePrincipal](New-MgBetaServicePrincipal.md)
 
 ### [New-MgBetaServicePrincipalAppRoleAssignedTo](New-MgBetaServicePrincipalAppRoleAssignedTo.md)
@@ -756,6 +764,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaOnPremisePublishingProfilePublishedResource](Remove-MgBetaOnPremisePublishingProfilePublishedResource.md)
 
 ### [Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupOnPremiseAgentGroupByRef](Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupOnPremiseAgentGroupByRef.md)
+
+### [Remove-MgBetaOnPremisePublishingProfileSensor](Remove-MgBetaOnPremisePublishingProfileSensor.md)
 
 ### [Remove-MgBetaServicePrincipal](Remove-MgBetaServicePrincipal.md)
 
@@ -898,6 +908,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaOnPremisePublishingProfileConnectorGroup](Update-MgBetaOnPremisePublishingProfileConnectorGroup.md)
 
 ### [Update-MgBetaOnPremisePublishingProfilePublishedResource](Update-MgBetaOnPremisePublishingProfilePublishedResource.md)
+
+### [Update-MgBetaOnPremisePublishingProfileSensor](Update-MgBetaOnPremisePublishingProfileSensor.md)
 
 ### [Update-MgBetaServicePrincipal](Update-MgBetaServicePrincipal.md)
 

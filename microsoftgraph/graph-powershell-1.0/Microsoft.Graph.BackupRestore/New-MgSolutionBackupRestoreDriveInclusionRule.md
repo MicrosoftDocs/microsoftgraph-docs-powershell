@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoredriveinclusionrule
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSolutionBackupRestoreDriveInclusionRule
 ---
@@ -314,7 +314,7 @@ HelpMessage: ''
 
 ### -IsAutoApplyEnabled
 
-
+true indicates that the protection rule is dynamic; false that it's static.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -562,7 +562,7 @@ For example, in the access reviews decisions API, this property might record the
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [IsAutoApplyEnabled <Boolean?>]: 
+  [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
   [Status <String>]: protectionRuleStatus

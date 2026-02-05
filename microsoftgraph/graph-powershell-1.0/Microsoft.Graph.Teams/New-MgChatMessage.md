@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgChatMessage
 ---
@@ -13,7 +13,8 @@ title: New-MgChatMessage
 
 ## SYNOPSIS
 
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified chat.
+This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessage?view=graph-powershell-beta)
@@ -87,7 +88,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified chat.
+This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 
 **Permissions**
 
@@ -1616,7 +1618,7 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 - [New-MgChatMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-post?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0)
 
 
 

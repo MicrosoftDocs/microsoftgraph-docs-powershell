@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Reports
-Module Guid: 505c7d05-b5fc-4ba5-911f-56d8f08c41ca
+Module Guid: d4a14483-a8d2-4847-afdb-48f834045b3c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.reports/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -158,6 +158,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceManagementReportEncryptionReportForDevice](Get-MgBetaDeviceManagementReportEncryptionReportForDevice.md)
 
 ### [Get-MgBetaDeviceManagementReportEnrollmentConfigurationPolicyByDevice](Get-MgBetaDeviceManagementReportEnrollmentConfigurationPolicyByDevice.md)
+
+### [Get-MgBetaDeviceManagementReportEnrollmentTimeGroupingFailureReport](Get-MgBetaDeviceManagementReportEnrollmentTimeGroupingFailureReport.md)
 
 ### [Get-MgBetaDeviceManagementReportExportJob](Get-MgBetaDeviceManagementReportExportJob.md)
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users.Actions
-Module Guid: 19edd085-fa67-4543-8aed-debbe8287246
+Module Guid: 40d40af6-f2c6-4095-a1e2-578f9eb7147c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.users.actions/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -24,6 +24,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Convert-MgBetaUserExternalToInternalMemberUser](Convert-MgBetaUserExternalToInternalMemberUser.md)
 
 ### [Export-MgBetaUserPersonalData](Export-MgBetaUserPersonalData.md)
+
+### [Find-MgBetaUserMeetingLocation](Find-MgBetaUserMeetingLocation.md)
 
 ### [Find-MgBetaUserMeetingTime](Find-MgBetaUserMeetingTime.md)
 

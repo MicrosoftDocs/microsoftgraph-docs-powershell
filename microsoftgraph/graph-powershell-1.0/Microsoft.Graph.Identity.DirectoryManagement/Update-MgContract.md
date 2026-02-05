@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontract
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgContract
 ---
@@ -202,7 +202,7 @@ HelpMessage: ''
 ### -ContractType
 
 Type of contract.
-Possible values are: SyndicationPartner, BreadthPartner, ResellerPartner.
+The possible values are: SyndicationPartner, BreadthPartner, ResellerPartner.
 See more in the table below.
 
 ```yaml
@@ -609,7 +609,7 @@ Always null when the object hasn't been deleted.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [ContractType <String>]: Type of contract.
-Possible values are:  SyndicationPartner, BreadthPartner, ResellerPartner.
+The possible values are:  SyndicationPartner, BreadthPartner, ResellerPartner.
 See more in the table below.
   [CustomerId <String>]: The unique identifier for the customer tenant referenced by this partnership.
 Corresponds to the id property of the customer tenant's organization resource.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgscandevicemanagementmanageddevicewindowsdefender
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender
 
 ## SYNOPSIS
 
-Not yet documented
+Invoke action windowsDefenderScan
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender?view=graph-powershell-beta)
@@ -71,7 +71,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Not yet documented
+Invoke action windowsDefenderScan
 
 **Permissions**
 
@@ -548,7 +548,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgscandevicemanagementmanageddevicewindowsdefender)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-windowsdefenderscan?view=graph-rest-1.0)
 
 
 

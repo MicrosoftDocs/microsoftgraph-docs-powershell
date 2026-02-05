@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementwindowsautopilotdeviceidentity
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementWindowsAutopilotDeviceIdentity
 ---
@@ -13,7 +13,7 @@ title: New-MgDeviceManagementWindowsAutopilotDeviceIdentity
 
 ## SYNOPSIS
 
-Create a new windowsAutopilotDeviceIdentity object.
+Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
@@ -53,7 +53,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new windowsAutopilotDeviceIdentity object.
+Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
 
 **Permissions**
 
@@ -767,7 +767,6 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgDeviceManagementWindowsAutopilotDeviceIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementwindowsautopilotdeviceidentity)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-create?view=graph-rest-1.0)
 
 
 

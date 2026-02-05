@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentgradingscheme
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationMeAssignmentGradingScheme
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaEducationMeAssignmentGradingScheme
 ## SYNOPSIS
 
 When set, enables users to configure custom string grades based on the percentage of total points earned on this assignment.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentGradingScheme](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentGradingScheme?view=graph-powershell-1.0)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSearchBookmark
 ---
@@ -668,7 +668,7 @@ HelpMessage: ''
 ### -Platforms
 
 List of devices and operating systems that are able to view this bookmark.
-Possible values are: android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, unknown, androidASOP, androidMobileApplicationManagement, iOSMobileApplicationManagement, unknownFutureValue.
+The possible values are: android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, unknown, androidASOP, androidMobileApplicationManagement, iOSMobileApplicationManagement, unknownFutureValue.
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Support.DevicePlatformType[]
@@ -990,7 +990,7 @@ Each language tag value follows the pattern {language}-{region}.
 For example, en-us is English as used in the United States.
 For the list of possible values, see Supported language tags.
   [Platforms <DevicePlatformType[]>]: List of devices and operating systems that are able to view this bookmark.
-Possible values are: android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, unknown, androidASOP, androidMobileApplicationManagement, iOSMobileApplicationManagement, unknownFutureValue.
+The possible values are: android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, unknown, androidASOP, androidMobileApplicationManagement, iOSMobileApplicationManagement, unknownFutureValue.
   [PowerAppIds <String[]>]: List of Power Apps associated with this bookmark.
 If users add existing Power Apps to a bookmark, they can complete tasks directly on the search results page, such as entering vacation time or reporting expenses.
   [State <String>]: answerState

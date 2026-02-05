@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetasignreportauthenticationmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaSignReportAuthenticationMethod
 ---
@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Gets a list of the number of successful sign ins for each authentication method that is available.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Invoke-MgBetaSignReportAuthenticationMethod -Period $periodId
 
 ## PARAMETERS
 
@@ -521,7 +529,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [Invoke-MgBetaSignReportAuthenticationMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetasignreportauthenticationmethod)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersigninsbyauthmethodsummary?view=graph-rest-beta)
-
 
 
 

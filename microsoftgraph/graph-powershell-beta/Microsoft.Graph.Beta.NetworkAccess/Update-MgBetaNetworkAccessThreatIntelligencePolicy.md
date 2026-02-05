@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessthreatintelligencepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessThreatIntelligencePolicy
 ---
@@ -81,6 +81,26 @@ Update the properties of a threatIntelligencePolicy object.
 | Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.networkaccess.threatIntelligencePolicy"
+	id = "a8352c78-90c6-4edd-aaca-9dc4292e7750"
+	name = "Threat Intel Policy"
+	description = ""
+	version = "1.0.0"
+	lastModifiedDateTime = [System.DateTime]::Parse("2025-06-18T17:34:25.8207682Z")
+	settings = @{
+		defaultAction = "allow"
+	}
+}
+
+Update-MgBetaNetworkAccessThreatIntelligencePolicy -ThreatIntelligencePolicyId $threatIntelligencePolicyId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -689,7 +709,6 @@ SETTINGS `<IMicrosoftGraphNetworkaccessThreatIntelligencePolicySettings>`: threa
 
 - [Update-MgBetaNetworkAccessThreatIntelligencePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessthreatintelligencepolicy)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicy-update?view=graph-rest-beta)
-
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionsensitivitylabelsublabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel
 ---
@@ -24,10 +24,11 @@ New-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -GroupId <strin
  -SensitivityLabelId <string> -SiteId <string> [-ResponseHeadersVariable <string>]
  [-ActionSource <string>] [-AdditionalProperties <hashtable>] [-ApplicableTo <string>]
  [-ApplicationMode <string>] [-AutoTooltip <string>] [-Color <string>] [-Description <string>]
- [-DisplayName <string>] [-Id <string>] [-IsDefault] [-IsEnabled] [-IsEndpointProtectionEnabled]
- [-IsScopedToUser] [-Locale <string>] [-Name <string>] [-Priority <int>]
- [-Rights <IMicrosoftGraphUsageRightsIncluded>] [-Sublabels <IMicrosoftGraphSensitivityLabel[]>]
- [-ToolTip <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-DisplayName <string>] [-HasProtection] [-Id <string>] [-IsDefault] [-IsEnabled]
+ [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-Locale <string>] [-Name <string>]
+ [-Priority <int>] [-Rights <IMicrosoftGraphUsageRightsIncluded>]
+ [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -49,8 +50,8 @@ New-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -GroupId <strin
 New-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <string>] [-ActionSource <string>] [-AdditionalProperties <hashtable>]
  [-ApplicableTo <string>] [-ApplicationMode <string>] [-AutoTooltip <string>] [-Color <string>]
- [-Description <string>] [-DisplayName <string>] [-Id <string>] [-IsDefault] [-IsEnabled]
- [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-Locale <string>] [-Name <string>]
+ [-Description <string>] [-DisplayName <string>] [-HasProtection] [-Id <string>] [-IsDefault]
+ [-IsEnabled] [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-Locale <string>] [-Name <string>]
  [-Priority <int>] [-Rights <IMicrosoftGraphUsageRightsIncluded>]
  [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -385,6 +386,33 @@ ParameterSets:
 - Name: Create
   Position: Named
   IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HasProtection
+
+
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -990,6 +1018,7 @@ Read-only.
   [Color <String>]: 
   [Description <String>]: 
   [DisplayName <String>]: 
+  [HasProtection <Boolean?>]: 
   [IsDefault <Boolean?>]: 
   [IsEnabled <Boolean?>]: 
   [IsEndpointProtectionEnabled <Boolean?>]: 
@@ -1044,6 +1073,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [OnenotePageId <String>]: The unique identifier of onenotePage
   [OnenoteResourceId <String>]: The unique identifier of onenoteResource
   [OnenoteSectionId <String>]: The unique identifier of onenoteSection
+  [OperationId <String>]: Usage: operationId='{operationId}'
   [PageTemplateId <String>]: The unique identifier of pageTemplate
   [Path <String>]: Usage: path='{path}'
   [PermissionId <String>]: The unique identifier of permission
@@ -1086,6 +1116,7 @@ Read-only.
   [Color <String>]: 
   [Description <String>]: 
   [DisplayName <String>]: 
+  [HasProtection <Boolean?>]: 
   [IsDefault <Boolean?>]: 
   [IsEnabled <Boolean?>]: 
   [IsEndpointProtectionEnabled <Boolean?>]: 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementComplianceManagementPartner
 ---
@@ -13,7 +13,7 @@ title: New-MgDeviceManagementComplianceManagementPartner
 
 ## SYNOPSIS
 
-Create a new complianceManagementPartner object.
+Create new navigation property to complianceManagementPartners for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
@@ -53,7 +53,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new complianceManagementPartner object.
+Create new navigation property to complianceManagementPartners for deviceManagement
 
 **Permissions**
 
@@ -647,7 +647,6 @@ MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment
 ## RELATED LINKS
 
 - [New-MgDeviceManagementComplianceManagementPartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-create?view=graph-rest-1.0)
 
 
 

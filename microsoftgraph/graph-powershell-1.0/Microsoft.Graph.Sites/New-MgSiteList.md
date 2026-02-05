@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelist
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSiteList
 ---
@@ -1200,6 +1200,59 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+    [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+        [Content <Byte[]>]: The content of the recording.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+      [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+        [Content <Byte[]>]: The content of the transcript.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
     [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -1341,7 +1394,7 @@ Supports $filter (eq, ne, not, startsWith).
 Set to null.
           [DeviceOwnership <String>]: Ownership of the device.
 Intune sets this property.
-Possible values are: unknown, company, personal.
+The possible values are: unknown, company, personal.
           [DeviceVersion <Int32?>]: For internal use only.
           [DisplayName <String>]: The display name for the device.
 Maximum length is 256 characters.
@@ -1352,7 +1405,7 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
           [EnrollmentType <String>]: Enrollment type of the device.
 Intune sets this property.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+The possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
 NOTE: This property might return other values apart from those listed.
           [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the device.
 Read-only.
@@ -1375,7 +1428,7 @@ Returned only on $select.
 This property can only be updated by Intune.
           [ManagementType <String>]: The management channel of the device.
 This property is set by Intune.
-Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
+The possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
           [Manufacturer <String>]: Manufacturer of the device.
 Read-only.
           [MdmAppId <String>]: Application identifier used to register device into MDM.
@@ -1522,12 +1575,12 @@ Supports $filter (eq, not, ge, le, startsWith).
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [AllowedOnlineMeetingProviders <String[]>]: Represent the online meeting service providers that can be used to create online meetings in this calendar.
-Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
+The possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
       [CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]: The permissions of the users with whom the calendar is shared.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AllowedRoles <String[]>]: List of allowed sharing or delegating permission levels for the calendar.
-Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
+The possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
         [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Address <String>]: The email address of the person or entity.
@@ -1998,7 +2051,7 @@ Read-only.
         [Permission <String>]: The name of the resource-specific permission.
 Read-only.
         [PermissionType <String>]: The type of permission.
-Possible values are: Application, Delegated.
+The possible values are: Application, Delegated.
 Read-only.
         [ResourceAppId <String>]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
@@ -2056,6 +2109,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
           [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
           [FormatName <String>]: For a list of possible values see formatName values.
+    [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+      [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+      [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+      [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+      [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+      [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+      [ProvisioningType <String>]: cloudPcProvisioningType
+      [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+      [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+      [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
     [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -2188,6 +2289,7 @@ Read-only.
         [AutoTooltip <String>]: 
         [Description <String>]: 
         [DisplayName <String>]: 
+        [HasProtection <Boolean?>]: 
         [IsDefault <Boolean?>]: 
         [IsEndpointProtectionEnabled <Boolean?>]: 
         [IsScopedToUser <Boolean?>]: 
@@ -2493,6 +2595,7 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The ID of the content type.
             [Name <String>]: The name of the content type.
+          [Deleted <IMicrosoftGraphDeleted>]: deleted
           [DocumentSetVersions <IMicrosoftGraphDocumentSetVersion[]>]: Version information for a document set version created by a user.
             [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2823,7 +2926,7 @@ Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [CalculationMode <String>]: Returns the calculation mode used in the workbook.
-Possible values are: Automatic, AutomaticExceptTables, Manual.
+The possible values are: Automatic, AutomaticExceptTables, Manual.
           [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2850,7 +2953,7 @@ Read-only.
             [Scope <String>]: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
             [Type <String>]: The type of reference is associated with the name.
-Possible values are: String, Integer, Double, Boolean, Range.
+The possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
             [Value <IMicrosoftGraphJson>]: Json
             [Visible <Boolean?>]: Indicates whether the object is visible.
@@ -3106,7 +3209,7 @@ Read-only.
 The possible values are: PinYin, StrokeCount.
 Read-only.
                 [Style <String>]: A constant value that represents the Table style.
-Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
                 [Worksheet <IMicrosoftGraphWorkbookWorksheet>]: workbookWorksheet
               [Visibility <String>]: The visibility of the worksheet.
@@ -3168,6 +3271,14 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [DisplayName <String>]: The name of the role.
+        [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
       [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3256,10 +3367,10 @@ Read-only.
         [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
           [Formula <String>]: The formula used to compute the value for this column.
           [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
         [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
           [(Any) <Object>]: This indicates any property can be added to this object.
           [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -4179,6 +4290,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+        [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [IsCloudManaged <Boolean?>]: 
         [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -4416,7 +4532,7 @@ Read-only.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
         [Visibility <String>]: Specifies the group join policy and group content visibility for groups.
-Possible values are: Private, Public, or HiddenMembership.
+The possible values are: Private, Public, or HiddenMembership.
 HiddenMembership can be set only for Microsoft 365 groups when the groups are created.
 It can't be updated later.
 Other values of visibility can be updated after group creation.
@@ -4879,7 +4995,8 @@ Nullable.
         [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
       [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -4994,8 +5111,8 @@ Read-only.
           [Setting <String>]: The setting that is being reported
           [SettingName <String>]: Localized/user friendly setting name that is being reported
           [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-            [DisplayName <String>]: Not yet documented
-            [Id <String>]: Not yet documented
+            [DisplayName <String>]: 
+            [Id <String>]: 
             [SourceType <String>]: settingSourceType
           [State <String>]: complianceStatus
           [UserEmail <String>]: UserEmail
@@ -5060,7 +5177,17 @@ Read-only.
         [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
         [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
         [TpmVersion <String>]: The security version number of the Boot Application
-        [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+        [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
         [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
       [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
       [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -5081,6 +5208,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
       [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
       [ManagementAgent <ManagementAgentType?>]: managementAgentType
+      [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
       [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -5224,6 +5352,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
 Read-only.
 Returned only on $select.
 Supports $filter (eq including on null values).
+    [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
     [OnPremisesSyncEnabled <Boolean?>]: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Microsoft Entra ID.
 Read-only.
 Returned only on $select.
@@ -5272,7 +5401,7 @@ If set, the maximum supported length is 256 characters.
           [Identity <IMicrosoftGraphIdentity>]: identity
           [RegistrationId <String>]: Unique identifier of a virtualEventRegistration that is available to all participants registered for the virtualEventWebinar.
           [Role <String>]: Role of the attendee.
-Possible values are: None, Attendee, Presenter, and Organizer.
+The possible values are: None, Attendee, Presenter, and Organizer.
           [TotalAttendanceInSeconds <Int32?>]: Total duration of the attendances in seconds.
         [ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>]: The external information of a virtual event.
 Returned only for event organizers or coorganizers.
@@ -5306,6 +5435,9 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+      [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
       [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
       [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
@@ -5326,7 +5458,13 @@ Read-only.
         [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
         [Scope <String>]: lobbyBypassScope
+      [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+      [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
       [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
+      [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [SensitivityLabelId <String>]: The ID of the sensitivity label that is applied to the Teams meeting.
       [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
       [Subject <String>]: The subject of the online meeting.
       [VideoTeleconferenceId <String>]: The video teleconferencing ID.
@@ -5372,52 +5510,8 @@ Optional.
         [Organizer <IMicrosoftGraphMeetingParticipantInfo>]: meetingParticipantInfo
       [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-        [Content <Byte[]>]: The content of the recording.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
       [StartDateTime <DateTime?>]: The meeting start time in UTC.
       [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-        [Content <Byte[]>]: The content of the transcript.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
     [OtherMails <String[]>]: A list of other email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -5553,6 +5647,11 @@ Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, 
         [ExpiryDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
         [Message <IMicrosoftGraphItemBody>]: itemBody
         [PublishedDateTime <DateTime?>]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+      [WorkLocation <IMicrosoftGraphUserWorkLocation>]: userWorkLocation
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [PlaceId <String>]: Identifier of the place, if applicable.
+        [Source <String>]: workLocationSource
+        [WorkLocationType <String>]: workLocationType
     [Print <IMicrosoftGraphUserPrint>]: userPrint
       [(Any) <Object>]: This indicates any property can be added to this object.
       [RecentPrinterShares <IMicrosoftGraphPrinterShare[]>]: 
@@ -5578,10 +5677,10 @@ Valid values are described in the following table.
 Read-only.
           [IsPageRangeSupported <Boolean?>]: True if the printer supports printing by page ranges; false otherwise.
           [LeftMargins <Int32[]>]: A list of supported left margins(in microns) for the printer.
-          [MediaColors <String[]>]: The media (i.e., paper) colors supported by the printer.
+          [MediaColors <String[]>]: The media (for example, paper) colors supported by the printer.
           [MediaSizes <String[]>]: The media sizes supported by the printer.
 Supports standard size names for ISO and ANSI media sizes.
-Valid values are in the following table.
+For the list of supported values, see mediaSizes values.
           [MediaTypes <String[]>]: The media types supported by the printer.
           [MultipageLayouts <String[]>]: The presentation directions supported by the printer.
 Supported values are described in the following table.
@@ -5897,7 +5996,7 @@ Read-only.
           [State <String>]: 
           [Total <Int64?>]: 
           [Used <Int64?>]: 
-      [Windows <IMicrosoftGraphWindowsSetting[]>]: 
+      [Windows <IMicrosoftGraphWindowsSetting[]>]: The Windows settings of the user stored in the cloud.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Instances <IMicrosoftGraphWindowsSettingInstance[]>]: A collection of setting values for a given windowsSetting.
@@ -5913,6 +6012,34 @@ Refers to the user's Windows device that modified the object at the specified da
         [PayloadType <String>]: The type of setting payloads contained in the instances navigation property.
         [SettingType <String>]: windowsSettingType
         [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
+      [WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>]: workHoursAndLocationsSetting
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [MaxSharedWorkLocationDetails <String>]: maxWorkLocationDetails
+        [Occurrences <IMicrosoftGraphWorkPlanOccurrence[]>]: Collection of work plan occurrences.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+          [RecurrenceId <String>]: The identifier of the parent recurrence pattern that generated this occurrence.
+The value is null for time-off occurrences because they don't have a parent recurrence.
+          [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [TimeOffDetails <IMicrosoftGraphTimeOffDetails>]: timeOffDetails
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [IsAllDay <Boolean?>]: Indicates whether the time-off entry spans the entire day.
+            [Subject <String>]: The subject or reason for the time-off entry.
+          [WorkLocationType <String>]: workLocationType
+        [Recurrences <IMicrosoftGraphWorkPlanRecurrence[]>]: Collection of recurring work plans defined by the user.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+          [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+          [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [WorkLocationType <String>]: workLocationType
     [ShowInAddressList <Boolean?>]: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.
@@ -6141,10 +6268,10 @@ Read-only.
   [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
     [Formula <String>]: The formula used to compute the value for this column.
     [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
   [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -6315,10 +6442,10 @@ Read-only.
     [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
       [Formula <String>]: The formula used to compute the value for this column.
       [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
     [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -6625,6 +6752,68 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+  [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+      [Content <Byte[]>]: The content of the recording.
+Read-only.
+      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+      [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Application <IMicrosoftGraphIdentity>]: identity
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+        [Device <IMicrosoftGraphIdentity>]: identity
+        [User <IMicrosoftGraphIdentity>]: identity
+      [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+    [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+      [Content <Byte[]>]: The content of the transcript.
+Read-only.
+      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+      [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+      [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+      [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
   [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -6766,7 +6955,7 @@ Supports $filter (eq, ne, not, startsWith).
 Set to null.
         [DeviceOwnership <String>]: Ownership of the device.
 Intune sets this property.
-Possible values are: unknown, company, personal.
+The possible values are: unknown, company, personal.
         [DeviceVersion <Int32?>]: For internal use only.
         [DisplayName <String>]: The display name for the device.
 Maximum length is 256 characters.
@@ -6777,7 +6966,7 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
         [EnrollmentType <String>]: Enrollment type of the device.
 Intune sets this property.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+The possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
 NOTE: This property might return other values apart from those listed.
         [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the device.
 Read-only.
@@ -6800,7 +6989,7 @@ Returned only on $select.
 This property can only be updated by Intune.
         [ManagementType <String>]: The management channel of the device.
 This property is set by Intune.
-Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
+The possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
         [Manufacturer <String>]: Manufacturer of the device.
 Read-only.
         [MdmAppId <String>]: Application identifier used to register device into MDM.
@@ -6947,12 +7136,12 @@ Supports $filter (eq, not, ge, le, startsWith).
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [AllowedOnlineMeetingProviders <String[]>]: Represent the online meeting service providers that can be used to create online meetings in this calendar.
-Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
+The possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
     [CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]: The permissions of the users with whom the calendar is shared.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [AllowedRoles <String[]>]: List of allowed sharing or delegating permission levels for the calendar.
-Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
+The possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
       [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Address <String>]: The email address of the person or entity.
@@ -7246,15 +7435,6 @@ Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
           [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [Application <IMicrosoftGraphIdentity>]: identity
-              [(Any) <Object>]: This indicates any property can be added to this object.
-              [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-              [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-            [Device <IMicrosoftGraphIdentity>]: identity
-            [User <IMicrosoftGraphIdentity>]: identity
           [Description <String>]: Verbose description of the application.
           [DisplayName <String>]: The name of the app provided by the app developer.
           [LastModifiedDateTime <DateTime?>]: 
@@ -7432,7 +7612,7 @@ Read-only.
       [Permission <String>]: The name of the resource-specific permission.
 Read-only.
       [PermissionType <String>]: The type of permission.
-Possible values are: Application, Delegated.
+The possible values are: Application, Delegated.
 Read-only.
       [ResourceAppId <String>]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
@@ -7490,6 +7670,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
         [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
         [FormatName <String>]: For a list of possible values see formatName values.
+  [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+    [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+    [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+    [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+    [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+    [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+    [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+    [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+    [ProvisioningType <String>]: cloudPcProvisioningType
+    [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+    [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+    [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
   [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -7622,6 +7850,7 @@ Read-only.
       [AutoTooltip <String>]: 
       [Description <String>]: 
       [DisplayName <String>]: 
+      [HasProtection <Boolean?>]: 
       [IsDefault <Boolean?>]: 
       [IsEndpointProtectionEnabled <Boolean?>]: 
       [IsScopedToUser <Boolean?>]: 
@@ -7927,6 +8156,7 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The ID of the content type.
           [Name <String>]: The name of the content type.
+        [Deleted <IMicrosoftGraphDeleted>]: deleted
         [DocumentSetVersions <IMicrosoftGraphDocumentSetVersion[]>]: Version information for a document set version created by a user.
           [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -8257,7 +8487,7 @@ Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [CalculationMode <String>]: Returns the calculation mode used in the workbook.
-Possible values are: Automatic, AutomaticExceptTables, Manual.
+The possible values are: Automatic, AutomaticExceptTables, Manual.
         [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -8284,7 +8514,7 @@ Read-only.
           [Scope <String>]: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
           [Type <String>]: The type of reference is associated with the name.
-Possible values are: String, Integer, Double, Boolean, Range.
+The possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
           [Value <IMicrosoftGraphJson>]: Json
           [Visible <Boolean?>]: Indicates whether the object is visible.
@@ -8540,7 +8770,7 @@ Read-only.
 The possible values are: PinYin, StrokeCount.
 Read-only.
               [Style <String>]: A constant value that represents the Table style.
-Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
               [Worksheet <IMicrosoftGraphWorkbookWorksheet>]: workbookWorksheet
             [Visibility <String>]: The visibility of the worksheet.
@@ -8600,10 +8830,10 @@ Read-only.
         [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
           [Formula <String>]: The formula used to compute the value for this column.
           [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
         [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
           [(Any) <Object>]: This indicates any property can be added to this object.
           [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -8865,6 +9095,14 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [DisplayName <String>]: The name of the role.
+      [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
     [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -9648,6 +9886,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+      [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [IsCloudManaged <Boolean?>]: 
       [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -9885,7 +10128,7 @@ Read-only.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
       [Visibility <String>]: Specifies the group join policy and group content visibility for groups.
-Possible values are: Private, Public, or HiddenMembership.
+The possible values are: Private, Public, or HiddenMembership.
 HiddenMembership can be set only for Microsoft 365 groups when the groups are created.
 It can't be updated later.
 Other values of visibility can be updated after group creation.
@@ -10348,7 +10591,8 @@ Nullable.
       [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
     [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -10463,8 +10707,8 @@ Read-only.
         [Setting <String>]: The setting that is being reported
         [SettingName <String>]: Localized/user friendly setting name that is being reported
         [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-          [DisplayName <String>]: Not yet documented
-          [Id <String>]: Not yet documented
+          [DisplayName <String>]: 
+          [Id <String>]: 
           [SourceType <String>]: settingSourceType
         [State <String>]: complianceStatus
         [UserEmail <String>]: UserEmail
@@ -10529,7 +10773,17 @@ Read-only.
       [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
       [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
       [TpmVersion <String>]: The security version number of the Boot Application
-      [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+      [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
       [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
     [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
     [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -10550,6 +10804,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
     [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
     [ManagementAgent <ManagementAgentType?>]: managementAgentType
+    [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
     [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -10693,6 +10948,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
 Read-only.
 Returned only on $select.
 Supports $filter (eq including on null values).
+  [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
   [OnPremisesSyncEnabled <Boolean?>]: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Microsoft Entra ID.
 Read-only.
 Returned only on $select.
@@ -10741,7 +10997,7 @@ If set, the maximum supported length is 256 characters.
         [Identity <IMicrosoftGraphIdentity>]: identity
         [RegistrationId <String>]: Unique identifier of a virtualEventRegistration that is available to all participants registered for the virtualEventWebinar.
         [Role <String>]: Role of the attendee.
-Possible values are: None, Attendee, Presenter, and Organizer.
+The possible values are: None, Attendee, Presenter, and Organizer.
         [TotalAttendanceInSeconds <Int32?>]: Total duration of the attendances in seconds.
       [ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>]: The external information of a virtual event.
 Returned only for event organizers or coorganizers.
@@ -10775,6 +11031,9 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+    [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
     [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
     [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
@@ -10795,7 +11054,13 @@ Read-only.
       [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
       [Scope <String>]: lobbyBypassScope
+    [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+    [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
     [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
+    [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [SensitivityLabelId <String>]: The ID of the sensitivity label that is applied to the Teams meeting.
     [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
     [Subject <String>]: The subject of the online meeting.
     [VideoTeleconferenceId <String>]: The video teleconferencing ID.
@@ -10841,52 +11106,8 @@ Optional.
       [Organizer <IMicrosoftGraphMeetingParticipantInfo>]: meetingParticipantInfo
     [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-      [Content <Byte[]>]: The content of the recording.
-Read-only.
-      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-      [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-      [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
     [StartDateTime <DateTime?>]: The meeting start time in UTC.
     [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-      [Content <Byte[]>]: The content of the transcript.
-Read-only.
-      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-      [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-      [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-      [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
   [OtherMails <String[]>]: A list of other email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -11022,6 +11243,11 @@ Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, 
       [ExpiryDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
       [Message <IMicrosoftGraphItemBody>]: itemBody
       [PublishedDateTime <DateTime?>]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+    [WorkLocation <IMicrosoftGraphUserWorkLocation>]: userWorkLocation
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [PlaceId <String>]: Identifier of the place, if applicable.
+      [Source <String>]: workLocationSource
+      [WorkLocationType <String>]: workLocationType
   [Print <IMicrosoftGraphUserPrint>]: userPrint
     [(Any) <Object>]: This indicates any property can be added to this object.
     [RecentPrinterShares <IMicrosoftGraphPrinterShare[]>]: 
@@ -11047,10 +11273,10 @@ Valid values are described in the following table.
 Read-only.
         [IsPageRangeSupported <Boolean?>]: True if the printer supports printing by page ranges; false otherwise.
         [LeftMargins <Int32[]>]: A list of supported left margins(in microns) for the printer.
-        [MediaColors <String[]>]: The media (i.e., paper) colors supported by the printer.
+        [MediaColors <String[]>]: The media (for example, paper) colors supported by the printer.
         [MediaSizes <String[]>]: The media sizes supported by the printer.
 Supports standard size names for ISO and ANSI media sizes.
-Valid values are in the following table.
+For the list of supported values, see mediaSizes values.
         [MediaTypes <String[]>]: The media types supported by the printer.
         [MultipageLayouts <String[]>]: The presentation directions supported by the printer.
 Supported values are described in the following table.
@@ -11366,7 +11592,7 @@ Read-only.
         [State <String>]: 
         [Total <Int64?>]: 
         [Used <Int64?>]: 
-    [Windows <IMicrosoftGraphWindowsSetting[]>]: 
+    [Windows <IMicrosoftGraphWindowsSetting[]>]: The Windows settings of the user stored in the cloud.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Instances <IMicrosoftGraphWindowsSettingInstance[]>]: A collection of setting values for a given windowsSetting.
@@ -11382,6 +11608,34 @@ Refers to the user's Windows device that modified the object at the specified da
       [PayloadType <String>]: The type of setting payloads contained in the instances navigation property.
       [SettingType <String>]: windowsSettingType
       [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
+    [WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>]: workHoursAndLocationsSetting
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [MaxSharedWorkLocationDetails <String>]: maxWorkLocationDetails
+      [Occurrences <IMicrosoftGraphWorkPlanOccurrence[]>]: Collection of work plan occurrences.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+        [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+        [RecurrenceId <String>]: The identifier of the parent recurrence pattern that generated this occurrence.
+The value is null for time-off occurrences because they don't have a parent recurrence.
+        [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+        [TimeOffDetails <IMicrosoftGraphTimeOffDetails>]: timeOffDetails
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [IsAllDay <Boolean?>]: Indicates whether the time-off entry spans the entire day.
+          [Subject <String>]: The subject or reason for the time-off entry.
+        [WorkLocationType <String>]: workLocationType
+      [Recurrences <IMicrosoftGraphWorkPlanRecurrence[]>]: Collection of recurring work plans defined by the user.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+        [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+        [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+        [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+        [WorkLocationType <String>]: workLocationType
   [ShowInAddressList <Boolean?>]: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.
@@ -11670,6 +11924,59 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+    [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+        [Content <Byte[]>]: The content of the recording.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+      [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+        [Content <Byte[]>]: The content of the transcript.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
     [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -11811,7 +12118,7 @@ Supports $filter (eq, ne, not, startsWith).
 Set to null.
           [DeviceOwnership <String>]: Ownership of the device.
 Intune sets this property.
-Possible values are: unknown, company, personal.
+The possible values are: unknown, company, personal.
           [DeviceVersion <Int32?>]: For internal use only.
           [DisplayName <String>]: The display name for the device.
 Maximum length is 256 characters.
@@ -11822,7 +12129,7 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
           [EnrollmentType <String>]: Enrollment type of the device.
 Intune sets this property.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+The possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
 NOTE: This property might return other values apart from those listed.
           [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the device.
 Read-only.
@@ -11845,7 +12152,7 @@ Returned only on $select.
 This property can only be updated by Intune.
           [ManagementType <String>]: The management channel of the device.
 This property is set by Intune.
-Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
+The possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
           [Manufacturer <String>]: Manufacturer of the device.
 Read-only.
           [MdmAppId <String>]: Application identifier used to register device into MDM.
@@ -11992,12 +12299,12 @@ Supports $filter (eq, not, ge, le, startsWith).
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [AllowedOnlineMeetingProviders <String[]>]: Represent the online meeting service providers that can be used to create online meetings in this calendar.
-Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
+The possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
       [CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]: The permissions of the users with whom the calendar is shared.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AllowedRoles <String[]>]: List of allowed sharing or delegating permission levels for the calendar.
-Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
+The possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
         [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Address <String>]: The email address of the person or entity.
@@ -12468,7 +12775,7 @@ Read-only.
         [Permission <String>]: The name of the resource-specific permission.
 Read-only.
         [PermissionType <String>]: The type of permission.
-Possible values are: Application, Delegated.
+The possible values are: Application, Delegated.
 Read-only.
         [ResourceAppId <String>]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
@@ -12526,6 +12833,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
           [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
           [FormatName <String>]: For a list of possible values see formatName values.
+    [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+      [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+      [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+      [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+      [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+      [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+      [ProvisioningType <String>]: cloudPcProvisioningType
+      [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+      [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+      [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
     [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -12658,6 +13013,7 @@ Read-only.
         [AutoTooltip <String>]: 
         [Description <String>]: 
         [DisplayName <String>]: 
+        [HasProtection <Boolean?>]: 
         [IsDefault <Boolean?>]: 
         [IsEndpointProtectionEnabled <Boolean?>]: 
         [IsScopedToUser <Boolean?>]: 
@@ -12762,6 +13118,14 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [DisplayName <String>]: The name of the role.
+        [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
       [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -13013,6 +13377,7 @@ Read-only.
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Id <String>]: The ID of the content type.
                   [Name <String>]: The name of the content type.
+                [Deleted <IMicrosoftGraphDeleted>]: deleted
                 [DocumentSetVersions <IMicrosoftGraphDocumentSetVersion[]>]: Version information for a document set version created by a user.
                   [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
                     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -13343,7 +13708,7 @@ Read-only.
                   [Id <String>]: The unique identifier for an entity.
 Read-only.
                   [CalculationMode <String>]: Returns the calculation mode used in the workbook.
-Possible values are: Automatic, AutomaticExceptTables, Manual.
+The possible values are: Automatic, AutomaticExceptTables, Manual.
                 [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
                   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -13370,7 +13735,7 @@ Read-only.
                   [Scope <String>]: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
                   [Type <String>]: The type of reference is associated with the name.
-Possible values are: String, Integer, Double, Boolean, Range.
+The possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
                   [Value <IMicrosoftGraphJson>]: Json
                   [Visible <Boolean?>]: Indicates whether the object is visible.
@@ -13626,7 +13991,7 @@ Read-only.
 The possible values are: PinYin, StrokeCount.
 Read-only.
                       [Style <String>]: A constant value that represents the Table style.
-Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
                       [Worksheet <IMicrosoftGraphWorkbookWorksheet>]: workbookWorksheet
                     [Visibility <String>]: The visibility of the worksheet.
@@ -13670,10 +14035,10 @@ Read-only.
         [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
           [Formula <String>]: The formula used to compute the value for this column.
           [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
         [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
           [(Any) <Object>]: This indicates any property can be added to this object.
           [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -14628,6 +14993,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+        [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [IsCloudManaged <Boolean?>]: 
         [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -14865,7 +15235,7 @@ Read-only.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
         [Visibility <String>]: Specifies the group join policy and group content visibility for groups.
-Possible values are: Private, Public, or HiddenMembership.
+The possible values are: Private, Public, or HiddenMembership.
 HiddenMembership can be set only for Microsoft 365 groups when the groups are created.
 It can't be updated later.
 Other values of visibility can be updated after group creation.
@@ -15328,7 +15698,8 @@ Nullable.
         [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
       [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -15443,8 +15814,8 @@ Read-only.
           [Setting <String>]: The setting that is being reported
           [SettingName <String>]: Localized/user friendly setting name that is being reported
           [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-            [DisplayName <String>]: Not yet documented
-            [Id <String>]: Not yet documented
+            [DisplayName <String>]: 
+            [Id <String>]: 
             [SourceType <String>]: settingSourceType
           [State <String>]: complianceStatus
           [UserEmail <String>]: UserEmail
@@ -15509,7 +15880,17 @@ Read-only.
         [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
         [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
         [TpmVersion <String>]: The security version number of the Boot Application
-        [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+        [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
         [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
       [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
       [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -15530,6 +15911,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
       [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
       [ManagementAgent <ManagementAgentType?>]: managementAgentType
+      [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
       [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -15673,6 +16055,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
 Read-only.
 Returned only on $select.
 Supports $filter (eq including on null values).
+    [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
     [OnPremisesSyncEnabled <Boolean?>]: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Microsoft Entra ID.
 Read-only.
 Returned only on $select.
@@ -15721,7 +16104,7 @@ If set, the maximum supported length is 256 characters.
           [Identity <IMicrosoftGraphIdentity>]: identity
           [RegistrationId <String>]: Unique identifier of a virtualEventRegistration that is available to all participants registered for the virtualEventWebinar.
           [Role <String>]: Role of the attendee.
-Possible values are: None, Attendee, Presenter, and Organizer.
+The possible values are: None, Attendee, Presenter, and Organizer.
           [TotalAttendanceInSeconds <Int32?>]: Total duration of the attendances in seconds.
         [ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>]: The external information of a virtual event.
 Returned only for event organizers or coorganizers.
@@ -15755,6 +16138,9 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+      [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
       [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
       [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
@@ -15775,7 +16161,13 @@ Read-only.
         [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
         [Scope <String>]: lobbyBypassScope
+      [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+      [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
       [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
+      [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [SensitivityLabelId <String>]: The ID of the sensitivity label that is applied to the Teams meeting.
       [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
       [Subject <String>]: The subject of the online meeting.
       [VideoTeleconferenceId <String>]: The video teleconferencing ID.
@@ -15821,52 +16213,8 @@ Optional.
         [Organizer <IMicrosoftGraphMeetingParticipantInfo>]: meetingParticipantInfo
       [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-        [Content <Byte[]>]: The content of the recording.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
       [StartDateTime <DateTime?>]: The meeting start time in UTC.
       [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-        [Content <Byte[]>]: The content of the transcript.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
     [OtherMails <String[]>]: A list of other email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -16002,6 +16350,11 @@ Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, 
         [ExpiryDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
         [Message <IMicrosoftGraphItemBody>]: itemBody
         [PublishedDateTime <DateTime?>]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+      [WorkLocation <IMicrosoftGraphUserWorkLocation>]: userWorkLocation
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [PlaceId <String>]: Identifier of the place, if applicable.
+        [Source <String>]: workLocationSource
+        [WorkLocationType <String>]: workLocationType
     [Print <IMicrosoftGraphUserPrint>]: userPrint
       [(Any) <Object>]: This indicates any property can be added to this object.
       [RecentPrinterShares <IMicrosoftGraphPrinterShare[]>]: 
@@ -16027,10 +16380,10 @@ Valid values are described in the following table.
 Read-only.
           [IsPageRangeSupported <Boolean?>]: True if the printer supports printing by page ranges; false otherwise.
           [LeftMargins <Int32[]>]: A list of supported left margins(in microns) for the printer.
-          [MediaColors <String[]>]: The media (i.e., paper) colors supported by the printer.
+          [MediaColors <String[]>]: The media (for example, paper) colors supported by the printer.
           [MediaSizes <String[]>]: The media sizes supported by the printer.
 Supports standard size names for ISO and ANSI media sizes.
-Valid values are in the following table.
+For the list of supported values, see mediaSizes values.
           [MediaTypes <String[]>]: The media types supported by the printer.
           [MultipageLayouts <String[]>]: The presentation directions supported by the printer.
 Supported values are described in the following table.
@@ -16346,7 +16699,7 @@ Read-only.
           [State <String>]: 
           [Total <Int64?>]: 
           [Used <Int64?>]: 
-      [Windows <IMicrosoftGraphWindowsSetting[]>]: 
+      [Windows <IMicrosoftGraphWindowsSetting[]>]: The Windows settings of the user stored in the cloud.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Instances <IMicrosoftGraphWindowsSettingInstance[]>]: A collection of setting values for a given windowsSetting.
@@ -16362,6 +16715,34 @@ Refers to the user's Windows device that modified the object at the specified da
         [PayloadType <String>]: The type of setting payloads contained in the instances navigation property.
         [SettingType <String>]: windowsSettingType
         [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
+      [WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>]: workHoursAndLocationsSetting
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [MaxSharedWorkLocationDetails <String>]: maxWorkLocationDetails
+        [Occurrences <IMicrosoftGraphWorkPlanOccurrence[]>]: Collection of work plan occurrences.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+          [RecurrenceId <String>]: The identifier of the parent recurrence pattern that generated this occurrence.
+The value is null for time-off occurrences because they don't have a parent recurrence.
+          [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [TimeOffDetails <IMicrosoftGraphTimeOffDetails>]: timeOffDetails
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [IsAllDay <Boolean?>]: Indicates whether the time-off entry spans the entire day.
+            [Subject <String>]: The subject or reason for the time-off entry.
+          [WorkLocationType <String>]: workLocationType
+        [Recurrences <IMicrosoftGraphWorkPlanRecurrence[]>]: Collection of recurring work plans defined by the user.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+          [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+          [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [WorkLocationType <String>]: workLocationType
     [ShowInAddressList <Boolean?>]: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.
@@ -16747,6 +17128,59 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+    [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+        [Content <Byte[]>]: The content of the recording.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+      [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+        [Content <Byte[]>]: The content of the transcript.
+Read-only.
+        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
     [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -16888,7 +17322,7 @@ Supports $filter (eq, ne, not, startsWith).
 Set to null.
           [DeviceOwnership <String>]: Ownership of the device.
 Intune sets this property.
-Possible values are: unknown, company, personal.
+The possible values are: unknown, company, personal.
           [DeviceVersion <Int32?>]: For internal use only.
           [DisplayName <String>]: The display name for the device.
 Maximum length is 256 characters.
@@ -16899,7 +17333,7 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
           [EnrollmentType <String>]: Enrollment type of the device.
 Intune sets this property.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+The possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
 NOTE: This property might return other values apart from those listed.
           [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the device.
 Read-only.
@@ -16922,7 +17356,7 @@ Returned only on $select.
 This property can only be updated by Intune.
           [ManagementType <String>]: The management channel of the device.
 This property is set by Intune.
-Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
+The possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
           [Manufacturer <String>]: Manufacturer of the device.
 Read-only.
           [MdmAppId <String>]: Application identifier used to register device into MDM.
@@ -17069,12 +17503,12 @@ Supports $filter (eq, not, ge, le, startsWith).
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [AllowedOnlineMeetingProviders <String[]>]: Represent the online meeting service providers that can be used to create online meetings in this calendar.
-Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
+The possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
       [CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]: The permissions of the users with whom the calendar is shared.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AllowedRoles <String[]>]: List of allowed sharing or delegating permission levels for the calendar.
-Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
+The possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
         [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Address <String>]: The email address of the person or entity.
@@ -17545,7 +17979,7 @@ Read-only.
         [Permission <String>]: The name of the resource-specific permission.
 Read-only.
         [PermissionType <String>]: The type of permission.
-Possible values are: Application, Delegated.
+The possible values are: Application, Delegated.
 Read-only.
         [ResourceAppId <String>]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
@@ -17603,6 +18037,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
           [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
           [FormatName <String>]: For a list of possible values see formatName values.
+    [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+      [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+      [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+      [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+      [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+      [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+      [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+      [ProvisioningType <String>]: cloudPcProvisioningType
+      [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+      [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+      [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
     [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -17735,6 +18217,7 @@ Read-only.
         [AutoTooltip <String>]: 
         [Description <String>]: 
         [DisplayName <String>]: 
+        [HasProtection <Boolean?>]: 
         [IsDefault <Boolean?>]: 
         [IsEndpointProtectionEnabled <Boolean?>]: 
         [IsScopedToUser <Boolean?>]: 
@@ -18314,7 +18797,7 @@ Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [CalculationMode <String>]: Returns the calculation mode used in the workbook.
-Possible values are: Automatic, AutomaticExceptTables, Manual.
+The possible values are: Automatic, AutomaticExceptTables, Manual.
           [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -18341,7 +18824,7 @@ Read-only.
             [Scope <String>]: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
             [Type <String>]: The type of reference is associated with the name.
-Possible values are: String, Integer, Double, Boolean, Range.
+The possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
             [Value <IMicrosoftGraphJson>]: Json
             [Visible <Boolean?>]: Indicates whether the object is visible.
@@ -18597,7 +19080,7 @@ Read-only.
 The possible values are: PinYin, StrokeCount.
 Read-only.
                 [Style <String>]: A constant value that represents the Table style.
-Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
                 [Worksheet <IMicrosoftGraphWorkbookWorksheet>]: workbookWorksheet
               [Visibility <String>]: The visibility of the worksheet.
@@ -18657,10 +19140,10 @@ Read-only.
           [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
             [Formula <String>]: The formula used to compute the value for this column.
             [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
           [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
             [(Any) <Object>]: This indicates any property can be added to this object.
             [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -18925,6 +19408,14 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [DisplayName <String>]: The name of the role.
+        [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
       [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
         [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -19708,6 +20199,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+        [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [IsCloudManaged <Boolean?>]: 
         [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -19945,7 +20441,7 @@ Read-only.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
         [Visibility <String>]: Specifies the group join policy and group content visibility for groups.
-Possible values are: Private, Public, or HiddenMembership.
+The possible values are: Private, Public, or HiddenMembership.
 HiddenMembership can be set only for Microsoft 365 groups when the groups are created.
 It can't be updated later.
 Other values of visibility can be updated after group creation.
@@ -20408,7 +20904,8 @@ Nullable.
         [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
       [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -20523,8 +21020,8 @@ Read-only.
           [Setting <String>]: The setting that is being reported
           [SettingName <String>]: Localized/user friendly setting name that is being reported
           [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-            [DisplayName <String>]: Not yet documented
-            [Id <String>]: Not yet documented
+            [DisplayName <String>]: 
+            [Id <String>]: 
             [SourceType <String>]: settingSourceType
           [State <String>]: complianceStatus
           [UserEmail <String>]: UserEmail
@@ -20589,7 +21086,17 @@ Read-only.
         [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
         [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
         [TpmVersion <String>]: The security version number of the Boot Application
-        [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+        [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
         [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
       [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
       [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -20610,6 +21117,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
       [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
       [ManagementAgent <ManagementAgentType?>]: managementAgentType
+      [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
       [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -20753,6 +21261,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
 Read-only.
 Returned only on $select.
 Supports $filter (eq including on null values).
+    [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
     [OnPremisesSyncEnabled <Boolean?>]: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Microsoft Entra ID.
 Read-only.
 Returned only on $select.
@@ -20801,7 +21310,7 @@ If set, the maximum supported length is 256 characters.
           [Identity <IMicrosoftGraphIdentity>]: identity
           [RegistrationId <String>]: Unique identifier of a virtualEventRegistration that is available to all participants registered for the virtualEventWebinar.
           [Role <String>]: Role of the attendee.
-Possible values are: None, Attendee, Presenter, and Organizer.
+The possible values are: None, Attendee, Presenter, and Organizer.
           [TotalAttendanceInSeconds <Int32?>]: Total duration of the attendances in seconds.
         [ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>]: The external information of a virtual event.
 Returned only for event organizers or coorganizers.
@@ -20835,6 +21344,9 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+      [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
       [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
       [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
@@ -20855,7 +21367,13 @@ Read-only.
         [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
         [Scope <String>]: lobbyBypassScope
+      [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+      [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
       [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
+      [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [SensitivityLabelId <String>]: The ID of the sensitivity label that is applied to the Teams meeting.
       [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
       [Subject <String>]: The subject of the online meeting.
       [VideoTeleconferenceId <String>]: The video teleconferencing ID.
@@ -20901,52 +21419,8 @@ Optional.
         [Organizer <IMicrosoftGraphMeetingParticipantInfo>]: meetingParticipantInfo
       [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-        [Content <Byte[]>]: The content of the recording.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
       [StartDateTime <DateTime?>]: The meeting start time in UTC.
       [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-        [Content <Byte[]>]: The content of the transcript.
-Read-only.
-        [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-        [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-        [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-        [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-        [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-        [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
     [OtherMails <String[]>]: A list of other email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -21082,6 +21556,11 @@ Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, 
         [ExpiryDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
         [Message <IMicrosoftGraphItemBody>]: itemBody
         [PublishedDateTime <DateTime?>]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+      [WorkLocation <IMicrosoftGraphUserWorkLocation>]: userWorkLocation
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [PlaceId <String>]: Identifier of the place, if applicable.
+        [Source <String>]: workLocationSource
+        [WorkLocationType <String>]: workLocationType
     [Print <IMicrosoftGraphUserPrint>]: userPrint
       [(Any) <Object>]: This indicates any property can be added to this object.
       [RecentPrinterShares <IMicrosoftGraphPrinterShare[]>]: 
@@ -21107,10 +21586,10 @@ Valid values are described in the following table.
 Read-only.
           [IsPageRangeSupported <Boolean?>]: True if the printer supports printing by page ranges; false otherwise.
           [LeftMargins <Int32[]>]: A list of supported left margins(in microns) for the printer.
-          [MediaColors <String[]>]: The media (i.e., paper) colors supported by the printer.
+          [MediaColors <String[]>]: The media (for example, paper) colors supported by the printer.
           [MediaSizes <String[]>]: The media sizes supported by the printer.
 Supports standard size names for ISO and ANSI media sizes.
-Valid values are in the following table.
+For the list of supported values, see mediaSizes values.
           [MediaTypes <String[]>]: The media types supported by the printer.
           [MultipageLayouts <String[]>]: The presentation directions supported by the printer.
 Supported values are described in the following table.
@@ -21426,7 +21905,7 @@ Read-only.
           [State <String>]: 
           [Total <Int64?>]: 
           [Used <Int64?>]: 
-      [Windows <IMicrosoftGraphWindowsSetting[]>]: 
+      [Windows <IMicrosoftGraphWindowsSetting[]>]: The Windows settings of the user stored in the cloud.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Instances <IMicrosoftGraphWindowsSettingInstance[]>]: A collection of setting values for a given windowsSetting.
@@ -21442,6 +21921,34 @@ Refers to the user's Windows device that modified the object at the specified da
         [PayloadType <String>]: The type of setting payloads contained in the instances navigation property.
         [SettingType <String>]: windowsSettingType
         [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
+      [WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>]: workHoursAndLocationsSetting
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [MaxSharedWorkLocationDetails <String>]: maxWorkLocationDetails
+        [Occurrences <IMicrosoftGraphWorkPlanOccurrence[]>]: Collection of work plan occurrences.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+          [RecurrenceId <String>]: The identifier of the parent recurrence pattern that generated this occurrence.
+The value is null for time-off occurrences because they don't have a parent recurrence.
+          [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [TimeOffDetails <IMicrosoftGraphTimeOffDetails>]: timeOffDetails
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [IsAllDay <Boolean?>]: Indicates whether the time-off entry spans the entire day.
+            [Subject <String>]: The subject or reason for the time-off entry.
+          [WorkLocationType <String>]: workLocationType
+        [Recurrences <IMicrosoftGraphWorkPlanRecurrence[]>]: Collection of recurring work plans defined by the user.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+          [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+          [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+          [WorkLocationType <String>]: workLocationType
     [ShowInAddressList <Boolean?>]: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.
@@ -21648,6 +22155,7 @@ Read-only.
 Read-only.
   [Analytics <IMicrosoftGraphItemAnalytics>]: itemAnalytics
   [ContentType <IMicrosoftGraphContentTypeInfo>]: contentTypeInfo
+  [Deleted <IMicrosoftGraphDeleted>]: deleted
   [DocumentSetVersions <IMicrosoftGraphDocumentSetVersion[]>]: Version information for a document set version created by a user.
     [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -21779,6 +22287,68 @@ Must be a valid hex color
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
+  [AdhocCalls <IMicrosoftGraphAdhocCall[]>]: Ad hoc calls associated with the user.
+Read-only.
+Nullable.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of a call.
+Read-only.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CallId <String>]: The unique identifier for the call that is related to this recording.
+Read-only.
+      [Content <Byte[]>]: The content of the recording.
+Read-only.
+      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+      [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [EndDateTime <DateTime?>]: Date and time at which the recording ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Application <IMicrosoftGraphIdentity>]: identity
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+        [Device <IMicrosoftGraphIdentity>]: identity
+        [User <IMicrosoftGraphIdentity>]: identity
+      [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
+Read-only.
+    [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of a call.
+Read-only.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CallId <String>]: The unique identifier for the call that is related to this transcript.
+Read-only.
+      [Content <Byte[]>]: The content of the transcript.
+Read-only.
+      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+      [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+      [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
+Read-only.
+      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
+      [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
+Read-only.
+      [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
+Read-only.
   [AgeGroup <String>]: Sets the age group of the user.
 Allowed values: null, Minor, NotAdult, and Adult.
 For more information, see legal age group property definitions.
@@ -21920,7 +22490,7 @@ Supports $filter (eq, ne, not, startsWith).
 Set to null.
         [DeviceOwnership <String>]: Ownership of the device.
 Intune sets this property.
-Possible values are: unknown, company, personal.
+The possible values are: unknown, company, personal.
         [DeviceVersion <Int32?>]: For internal use only.
         [DisplayName <String>]: The display name for the device.
 Maximum length is 256 characters.
@@ -21931,7 +22501,7 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
         [EnrollmentType <String>]: Enrollment type of the device.
 Intune sets this property.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+The possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
 NOTE: This property might return other values apart from those listed.
         [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the device.
 Read-only.
@@ -21954,7 +22524,7 @@ Returned only on $select.
 This property can only be updated by Intune.
         [ManagementType <String>]: The management channel of the device.
 This property is set by Intune.
-Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
+The possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
         [Manufacturer <String>]: Manufacturer of the device.
 Read-only.
         [MdmAppId <String>]: Application identifier used to register device into MDM.
@@ -22101,12 +22671,12 @@ Supports $filter (eq, not, ge, le, startsWith).
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [AllowedOnlineMeetingProviders <String[]>]: Represent the online meeting service providers that can be used to create online meetings in this calendar.
-Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
+The possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
     [CalendarPermissions <IMicrosoftGraphCalendarPermission[]>]: The permissions of the users with whom the calendar is shared.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [AllowedRoles <String[]>]: List of allowed sharing or delegating permission levels for the calendar.
-Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
+The possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
       [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Address <String>]: The email address of the person or entity.
@@ -22400,15 +22970,6 @@ Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
           [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [Application <IMicrosoftGraphIdentity>]: identity
-              [(Any) <Object>]: This indicates any property can be added to this object.
-              [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-              [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-            [Device <IMicrosoftGraphIdentity>]: identity
-            [User <IMicrosoftGraphIdentity>]: identity
           [Description <String>]: Verbose description of the application.
           [DisplayName <String>]: The name of the app provided by the app developer.
           [LastModifiedDateTime <DateTime?>]: 
@@ -22586,7 +23147,7 @@ Read-only.
       [Permission <String>]: The name of the resource-specific permission.
 Read-only.
       [PermissionType <String>]: The type of permission.
-Possible values are: Application, Delegated.
+The possible values are: Application, Delegated.
 Read-only.
       [ResourceAppId <String>]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
@@ -22644,6 +23205,54 @@ A window can place more than one clipboard object on the clipboard.
 Each one represents the same information in a different clipboard format.
         [Content <String>]: The formatName version of the value of a cloud clipboard encoded in base64.
         [FormatName <String>]: For a list of possible values see formatName values.
+  [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
+Read-only.
+Nullable.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [AadDeviceId <String>]: The Microsoft Entra device ID for the Cloud PC, also known as the Azure Active Directory (Azure AD) device ID, that consists of 32 characters in a GUID format.
+Generated on a VM joined to Microsoft Entra ID.
+Read-only.
+    [DisplayName <String>]: The display name for the Cloud PC.
+Maximum length is 64 characters.
+Read-only.
+You can use the cloudPC: rename API to modify the Cloud PC name.
+    [GracePeriodEndDateTime <DateTime?>]: The date and time when the grace period ends and reprovisioning or deprovisioning happen.
+Required only if the status is inGracePeriod.
+The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [ImageDisplayName <String>]: The name of the operating system image used for the Cloud PC.
+Maximum length is 50 characters.
+Only letters (A-Z, a-z), numbers (0-9), and special characters (-,,.) are allowed for this property.
+The property value can't begin or end with an underscore.
+Read-only.
+    [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [ManagedDeviceId <String>]: The Intune enrolled device ID for the Cloud PC that consists of 32 characters in a GUID format.
+The managedDeviceId property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+    [ManagedDeviceName <String>]: The Intune enrolled device name for the Cloud PC.
+The managedDeviceName property of Windows 365 Business Cloud PCs is always null as Windows 365 Business Cloud PCs aren't Intune-enrolled automatically by Windows 365.
+Read-only.
+    [OnPremisesConnectionName <String>]: The on-premises connection that applied during the provisioning of Cloud PCs.
+Read-only.
+    [ProvisioningPolicyId <String>]: The provisioning policy ID for the Cloud PC that consists of 32 characters in a GUID format.
+A policy defines the type of Cloud PC the user wants to create.
+Read-only.
+    [ProvisioningPolicyName <String>]: The provisioning policy that applied during the provisioning of Cloud PCs.
+Maximum length is 120 characters.
+Read-only.
+    [ProvisioningType <String>]: cloudPcProvisioningType
+    [ServicePlanId <String>]: The service plan ID for the Cloud PC that consists of 32 characters in a GUID format.
+For more information about service plans, see Product names and service plan identifiers for licensing.
+Read-only.
+    [ServicePlanName <String>]: The service plan name for the customer-facing Cloud PC entity.
+Read-only.
+    [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+Maximum length is 113 characters.
+For more information on username policies, see Password policies and account restrictions in Microsoft Entra ID.
+Read-only.
   [CompanyName <String>]: The name of the company that the user is associated with.
 This property can be useful for describing the company that a guest comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -22776,6 +23385,7 @@ Read-only.
       [AutoTooltip <String>]: 
       [Description <String>]: 
       [DisplayName <String>]: 
+      [HasProtection <Boolean?>]: 
       [IsDefault <Boolean?>]: 
       [IsEndpointProtectionEnabled <Boolean?>]: 
       [IsScopedToUser <Boolean?>]: 
@@ -23081,6 +23691,7 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The ID of the content type.
           [Name <String>]: The name of the content type.
+        [Deleted <IMicrosoftGraphDeleted>]: deleted
         [DocumentSetVersions <IMicrosoftGraphDocumentSetVersion[]>]: Version information for a document set version created by a user.
           [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -23411,7 +24022,7 @@ Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [CalculationMode <String>]: Returns the calculation mode used in the workbook.
-Possible values are: Automatic, AutomaticExceptTables, Manual.
+The possible values are: Automatic, AutomaticExceptTables, Manual.
         [Comments <IMicrosoftGraphWorkbookComment[]>]: Represents a collection of comments in a workbook.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -23438,7 +24049,7 @@ Read-only.
           [Scope <String>]: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
           [Type <String>]: The type of reference is associated with the name.
-Possible values are: String, Integer, Double, Boolean, Range.
+The possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
           [Value <IMicrosoftGraphJson>]: Json
           [Visible <Boolean?>]: Indicates whether the object is visible.
@@ -23694,7 +24305,7 @@ Read-only.
 The possible values are: PinYin, StrokeCount.
 Read-only.
               [Style <String>]: A constant value that represents the Table style.
-Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
               [Worksheet <IMicrosoftGraphWorkbookWorksheet>]: workbookWorksheet
             [Visibility <String>]: The visibility of the worksheet.
@@ -23754,10 +24365,10 @@ Read-only.
         [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
           [Formula <String>]: The formula used to compute the value for this column.
           [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
         [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
           [(Any) <Object>]: This indicates any property can be added to this object.
           [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -24019,6 +24630,14 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [AssignedRoles <IMicrosoftGraphEngagementRole[]>]: Represents the collection of Viva Engage roles assigned to a user.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [DisplayName <String>]: The name of the role.
+      [Members <IMicrosoftGraphEngagementRoleMember[]>]: Users that have this role assigned.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [User <IMicrosoftGraphUser>]: Represents a Microsoft Entra user account.
     [LearningCourseActivities <IMicrosoftGraphLearningCourseActivity[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -24802,6 +25421,11 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
+      [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [IsCloudManaged <Boolean?>]: 
       [OnPremisesSyncEnabled <Boolean?>]: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -25039,7 +25663,7 @@ Read-only.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
       [Visibility <String>]: Specifies the group join policy and group content visibility for groups.
-Possible values are: Private, Public, or HiddenMembership.
+The possible values are: Private, Public, or HiddenMembership.
 HiddenMembership can be set only for Microsoft 365 groups when the groups are created.
 It can't be updated later.
 Other values of visibility can be updated after group creation.
@@ -25502,7 +26126,8 @@ Nullable.
       [WebLink <String>]: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
 If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
 If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
-You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
+For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
     [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -25617,8 +26242,8 @@ Read-only.
         [Setting <String>]: The setting that is being reported
         [SettingName <String>]: Localized/user friendly setting name that is being reported
         [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-          [DisplayName <String>]: Not yet documented
-          [Id <String>]: Not yet documented
+          [DisplayName <String>]: 
+          [Id <String>]: 
           [SourceType <String>]: settingSourceType
         [State <String>]: complianceStatus
         [UserEmail <String>]: UserEmail
@@ -25683,7 +26308,17 @@ Read-only.
       [SecureBootConfigurationPolicyFingerPrint <String>]: Fingerprint of the Custom Secure Boot Configuration Policy
       [TestSigning <String>]: When test signing is allowed, the device does not enforce signature validation during boot
       [TpmVersion <String>]: The security version number of the Boot Application
-      [VirtualSecureMode <String>]: VSM is a container that protects high value assets from a compromised kernel
+      [VirtualSecureMode <String>]: Indicates whether the device has Virtual Secure Mode (VSM) enabled.
+Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel.
+This property will be deprecated in beta from August 2023.
+Support for this property will end in August 2025 for v1.0 API.
+A new property virtualizationBasedSecurity is added and used instead.
+The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process.
+Possible values are 'enabled', 'disabled' and 'notApplicable'.
+'enabled' indicates Virtual Secure Mode (VSM) is enabled.
+'disabled' indicates Virtual Secure Mode (VSM) is disabled.
+'notApplicable' indicates the device is not a Windows 11 device.
+Default value is 'notApplicable'.
       [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
     [DeviceRegistrationState <DeviceRegistrationState?>]: Device registration status.
     [ExchangeAccessState <DeviceManagementExchangeAccessState?>]: Device Exchange Access State.
@@ -25704,6 +26339,7 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 Can be overwritten to a user friendly name.
     [ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
     [ManagementAgent <ManagementAgentType?>]: managementAgentType
+    [ManagementState <ManagementState?>]: Management state of device in Microsoft Intune.
     [Notes <String>]: Notes on the device created by IT Admin.
 Default is null.
 To retrieve actual values GET call needs to be made, with device id and included in select parameter.
@@ -25847,6 +26483,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
 Read-only.
 Returned only on $select.
 Supports $filter (eq including on null values).
+  [OnPremisesSyncBehavior <IMicrosoftGraphOnPremisesSyncBehavior>]: onPremisesSyncBehavior
   [OnPremisesSyncEnabled <Boolean?>]: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Microsoft Entra ID.
 Read-only.
 Returned only on $select.
@@ -25895,7 +26532,7 @@ If set, the maximum supported length is 256 characters.
         [Identity <IMicrosoftGraphIdentity>]: identity
         [RegistrationId <String>]: Unique identifier of a virtualEventRegistration that is available to all participants registered for the virtualEventWebinar.
         [Role <String>]: Role of the attendee.
-Possible values are: None, Attendee, Presenter, and Organizer.
+The possible values are: None, Attendee, Presenter, and Organizer.
         [TotalAttendanceInSeconds <Int32?>]: Total duration of the attendances in seconds.
       [ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>]: The external information of a virtual event.
 Returned only for event organizers or coorganizers.
@@ -25929,6 +26566,9 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+    [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
     [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
     [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
@@ -25949,7 +26589,13 @@ Read-only.
       [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
       [Scope <String>]: lobbyBypassScope
+    [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+    [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
     [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
+    [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [SensitivityLabelId <String>]: The ID of the sensitivity label that is applied to the Teams meeting.
     [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
     [Subject <String>]: The subject of the online meeting.
     [VideoTeleconferenceId <String>]: The video teleconferencing ID.
@@ -25995,52 +26641,8 @@ Optional.
       [Organizer <IMicrosoftGraphMeetingParticipantInfo>]: meetingParticipantInfo
     [Recordings <IMicrosoftGraphCallRecording[]>]: The recordings of an online meeting.
 Read-only.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [CallId <String>]: The unique identifier for the call that is related to this recording.
-Read-only.
-      [Content <Byte[]>]: The content of the recording.
-Read-only.
-      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-      [CreatedDateTime <DateTime?>]: Date and time at which the recording was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [EndDateTime <DateTime?>]: Date and time at which the recording ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [MeetingId <String>]: The unique identifier of the onlineMeeting related to this recording.
-Read-only.
-      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-      [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
-Read-only.
     [StartDateTime <DateTime?>]: The meeting start time in UTC.
     [Transcripts <IMicrosoftGraphCallTranscript[]>]: The transcripts of an online meeting.
-Read-only.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [CallId <String>]: The unique identifier for the call that is related to this transcript.
-Read-only.
-      [Content <Byte[]>]: The content of the transcript.
-Read-only.
-      [ContentCorrelationId <String>]: The unique identifier that links the transcript with its corresponding recording.
-Read-only.
-      [CreatedDateTime <DateTime?>]: Date and time at which the transcript was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [EndDateTime <DateTime?>]: Date and time at which the transcription ends.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      [MeetingId <String>]: The unique identifier of the online meeting related to this transcript.
-Read-only.
-      [MeetingOrganizer <IMicrosoftGraphIdentitySet>]: identitySet
-      [MetadataContent <Byte[]>]: The time-aligned metadata of the utterances in the transcript.
-Read-only.
-      [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
   [OtherMails <String[]>]: A list of other email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
@@ -26176,6 +26778,11 @@ Possible values are available, away, beRightBack, busy, doNotDisturb, focusing, 
       [ExpiryDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
       [Message <IMicrosoftGraphItemBody>]: itemBody
       [PublishedDateTime <DateTime?>]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+    [WorkLocation <IMicrosoftGraphUserWorkLocation>]: userWorkLocation
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [PlaceId <String>]: Identifier of the place, if applicable.
+      [Source <String>]: workLocationSource
+      [WorkLocationType <String>]: workLocationType
   [Print <IMicrosoftGraphUserPrint>]: userPrint
     [(Any) <Object>]: This indicates any property can be added to this object.
     [RecentPrinterShares <IMicrosoftGraphPrinterShare[]>]: 
@@ -26201,10 +26808,10 @@ Valid values are described in the following table.
 Read-only.
         [IsPageRangeSupported <Boolean?>]: True if the printer supports printing by page ranges; false otherwise.
         [LeftMargins <Int32[]>]: A list of supported left margins(in microns) for the printer.
-        [MediaColors <String[]>]: The media (i.e., paper) colors supported by the printer.
+        [MediaColors <String[]>]: The media (for example, paper) colors supported by the printer.
         [MediaSizes <String[]>]: The media sizes supported by the printer.
 Supports standard size names for ISO and ANSI media sizes.
-Valid values are in the following table.
+For the list of supported values, see mediaSizes values.
         [MediaTypes <String[]>]: The media types supported by the printer.
         [MultipageLayouts <String[]>]: The presentation directions supported by the printer.
 Supported values are described in the following table.
@@ -26520,7 +27127,7 @@ Read-only.
         [State <String>]: 
         [Total <Int64?>]: 
         [Used <Int64?>]: 
-    [Windows <IMicrosoftGraphWindowsSetting[]>]: 
+    [Windows <IMicrosoftGraphWindowsSetting[]>]: The Windows settings of the user stored in the cloud.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Instances <IMicrosoftGraphWindowsSettingInstance[]>]: A collection of setting values for a given windowsSetting.
@@ -26536,6 +27143,34 @@ Refers to the user's Windows device that modified the object at the specified da
       [PayloadType <String>]: The type of setting payloads contained in the instances navigation property.
       [SettingType <String>]: windowsSettingType
       [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
+    [WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>]: workHoursAndLocationsSetting
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [MaxSharedWorkLocationDetails <String>]: maxWorkLocationDetails
+      [Occurrences <IMicrosoftGraphWorkPlanOccurrence[]>]: Collection of work plan occurrences.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+        [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+        [RecurrenceId <String>]: The identifier of the parent recurrence pattern that generated this occurrence.
+The value is null for time-off occurrences because they don't have a parent recurrence.
+        [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+        [TimeOffDetails <IMicrosoftGraphTimeOffDetails>]: timeOffDetails
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [IsAllDay <Boolean?>]: Indicates whether the time-off entry spans the entire day.
+          [Subject <String>]: The subject or reason for the time-off entry.
+        [WorkLocationType <String>]: workLocationType
+      [Recurrences <IMicrosoftGraphWorkPlanRecurrence[]>]: Collection of recurring work plans defined by the user.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+        [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+        [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+        [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+        [WorkLocationType <String>]: workLocationType
   [ShowInAddressList <Boolean?>]: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.

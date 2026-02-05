@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathcontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSiteGetByPathContentType
 ---
@@ -1044,10 +1044,10 @@ Read-only.
     [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
       [Formula <String>]: The formula used to compute the value for this column.
       [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
     [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -1275,10 +1275,10 @@ Read-only.
     [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
       [Formula <String>]: The formula used to compute the value for this column.
       [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
     [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -1507,10 +1507,10 @@ Read-only.
     [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
       [Formula <String>]: The formula used to compute the value for this column.
       [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
     [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -1731,10 +1731,10 @@ Read-only.
   [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
     [Formula <String>]: The formula used to compute the value for this column.
     [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
   [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -1893,10 +1893,10 @@ Read-only.
   [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
     [Formula <String>]: The formula used to compute the value for this column.
     [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
   [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
@@ -2065,10 +2065,10 @@ Read-only.
     [Calculated <IMicrosoftGraphCalculatedColumn>]: calculatedColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Format <String>]: For dateTime output types, the format of the value.
-Possible values are: dateOnly or dateTime.
+The possible values are: dateOnly or dateTime.
       [Formula <String>]: The formula used to compute the value for this column.
       [OutputType <String>]: The output type used to format values in this column.
-Possible values are: boolean, currency, dateTime, number, or text.
+The possible values are: boolean, currency, dateTime, number, or text.
     [Choice <IMicrosoftGraphChoiceColumn>]: choiceColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationkey
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaApplicationKey
 ---
@@ -13,9 +13,8 @@ title: Remove-MgBetaApplicationKey
 
 ## SYNOPSIS
 
-Remove a key credential from an application.
-This method along with addKey can be used by an application to automate rolling its expiring keys.
-As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
+Remove a key credential from an agentIdentityBlueprint.
+This method along with addKey can be used to automate rolling its expiring keys.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationKey?view=graph-powershell-1.0)
@@ -73,9 +72,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove a key credential from an application.
-This method along with addKey can be used by an application to automate rolling its expiring keys.
-As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
+Remove a key credential from an agentIdentityBlueprint.
+This method along with addKey can be used to automate rolling its expiring keys.
 
 **Permissions**
 
@@ -569,6 +567,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -583,7 +582,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgBetaApplicationKey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationkey)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-removekey?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentidentityblueprint-removekey?view=graph-rest-beta)
 
 
 

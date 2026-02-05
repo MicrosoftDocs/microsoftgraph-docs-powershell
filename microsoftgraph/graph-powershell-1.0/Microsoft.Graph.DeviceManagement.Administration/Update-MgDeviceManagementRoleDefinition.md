@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementRoleDefinition
 ---
@@ -13,7 +13,7 @@ title: Update-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
 
-Update the properties of a roleDefinition object.
+Update the navigation property roleDefinitions in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -73,7 +73,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a roleDefinition object.
+Update the navigation property roleDefinitions in deviceManagement
 
 **Permissions**
 
@@ -668,10 +668,13 @@ Set to True if it is built-in, or set to False if it is a custom role definition
   [RoleAssignments <IMicrosoftGraphRoleAssignment[]>]: List of Role assignments for this role definition.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Description <String>]: Description of the Role Assignment.
-    [DisplayName <String>]: The display or friendly name of the role Assignment.
-    [ResourceScopes <String[]>]: List of ids of role scope member security groups.
- These are IDs from Azure Active Directory.
+    [Description <String>]: Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
+    [DisplayName <String>]: Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
+    [ResourceScopes <String[]>]: Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
     [RoleDefinition <IMicrosoftGraphRoleDefinition>]: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
@@ -707,7 +710,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [ResourceOperationId <String>]: The unique identifier of resourceOperation
   [RoleAssignmentId <String>]: The unique identifier of roleAssignment
   [RoleDefinitionId <String>]: The unique identifier of roleDefinition
-  [TelecomExpenseManagementPartnerId <String>]: The unique identifier of telecomExpenseManagementPartner
   [TermsAndConditionsAcceptanceStatusId <String>]: The unique identifier of termsAndConditionsAcceptanceStatus
   [TermsAndConditionsAssignmentId <String>]: The unique identifier of termsAndConditionsAssignment
   [TermsAndConditionsId <String>]: The unique identifier of termsAndConditions
@@ -717,10 +719,13 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ROLEASSIGNMENTS <IMicrosoftGraphRoleAssignment[]>: List of Role assignments for this role definition.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Description <String>]: Description of the Role Assignment.
-  [DisplayName <String>]: The display or friendly name of the role Assignment.
-  [ResourceScopes <String[]>]: List of ids of role scope member security groups.
- These are IDs from Azure Active Directory.
+  [Description <String>]: Indicates the description of the role assignment.
+For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.
+  [DisplayName <String>]: Indicates the display name of the role assignment.
+For example: 'Houston administrators and users'.
+Max length is 128 characters.
+  [ResourceScopes <String[]>]: Indicates the list of resource scope security group Entra IDs.
+For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
   [RoleDefinition <IMicrosoftGraphRoleDefinition>]: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
@@ -752,7 +757,6 @@ These must match the actionName that is defined as part of the rolePermission.
 ## RELATED LINKS
 
 - [Update-MgDeviceManagementRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-update?view=graph-rest-1.0)
 
 
 

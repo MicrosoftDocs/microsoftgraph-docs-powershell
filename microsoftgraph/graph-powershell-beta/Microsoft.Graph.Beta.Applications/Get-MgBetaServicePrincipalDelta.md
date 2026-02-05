@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalDelta
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaServicePrincipalDelta
 
 ## SYNOPSIS
 
-Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
+Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 > [!NOTE]
@@ -39,7 +39,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
+Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 **Permissions**
@@ -465,7 +465,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipal
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 
 {{ Fill in the Description }}
 
@@ -474,7 +474,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgBetaServicePrincipalDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdevicewithoutcompliancepolicyreport
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport
 ---
@@ -13,7 +13,7 @@ title: Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport
 
 ## SYNOPSIS
 
-Not yet documented
+Invoke action getDevicesWithoutCompliancePolicyReport
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportDeviceWithoutCompliancePolicyReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportDeviceWithoutCompliancePolicyReport?view=graph-powershell-beta)
@@ -51,7 +51,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Not yet documented
+Invoke action getDevicesWithoutCompliancePolicyReport
 
 **Permissions**
 
@@ -630,7 +630,6 @@ BODYPARAMETER `<IPaths1RxowymDevicemanagementReportsMicrosoftGraphGetdeviceswith
 ## RELATED LINKS
 
 - [Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdevicewithoutcompliancepolicyreport)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdeviceswithoutcompliancepolicyreport?view=graph-rest-1.0)
 
 
 

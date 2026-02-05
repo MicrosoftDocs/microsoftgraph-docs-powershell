@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mguserdriveroot
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgUserDriveRoot
 ---
@@ -13,7 +13,7 @@ title: Restore-MgUserDriveRoot
 
 ## SYNOPSIS
 
-Restore a driveItem that has been deleted and is currently in the recycle bin.
+Restore a deleted driveItem that is currently in the recycle bin.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaUserDriveRoot?view=graph-powershell-beta)
@@ -71,7 +71,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Restore a driveItem that has been deleted and is currently in the recycle bin.
+Restore a deleted driveItem that is currently in the recycle bin.
 
 ## PARAMETERS
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentityconditionalaccess
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgIdentityConditionalAccess
 ---
@@ -14,6 +14,9 @@ title: Test-MgIdentityConditionalAccess
 ## SYNOPSIS
 
 Evaluates the applicability of Conditional Access Policies in your tenant based on the provided sign-in properties.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Test-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -56,6 +59,135 @@ Evaluates the applicability of Conditional Access Policies in your tenant based 
 | Delegated (work or school account) | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	signInIdentity = @{
+		"@odata.type" = "#microsoft.graph.userSignIn"
+		userId = "15dc174b-f34c-4588-ac45-61d6e05dce93"
+	}
+	signInContext = @{
+		"@odata.type" = "#microsoft.graph.applicationContext"
+		includeApplications = @(
+		"00000003-0000-0ff1-ce00-000000000000"
+	)
+}
+signInConditions = @{
+	devicePlatform = "android"
+	clientAppType = "browser"
+	signInRiskLevel = "high"
+	userRiskLevel = "high"
+	country = "US"
+	ipAddress = "40.77.182.32"
+	insiderRiskLevel = "elevated"
+	authenticationFlow = @{
+		transferMethod = "deviceCodeFlow"
+	}
+	deviceInfo = @{
+		isCompliant = $true
+	}
+}
+appliedPoliciesOnly = $true
+}
+
+Test-MgIdentityConditionalAccess -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	signInIdentity = @{
+		"@odata.type" = "#microsoft.graph.userSignIn"
+		userId = "15dc174b-f34c-4588-ac45-61d6e05dce93"
+	}
+	signInContext = @{
+		"@odata.type" = "#microsoft.graph.authContext"
+		authenticationContextValue = "c37"
+	}
+	signInConditions = @{
+		devicePlatform = "windows"
+		clientAppType = "mobileAppsAndDesktopClients"
+		signInRiskLevel = "medium"
+		userRiskLevel = "none"
+		country = "US"
+		ipAddress = "40.77.182.32"
+		insiderRiskLevel = "moderate"
+		authenticationFlow = @{
+			transferMethod = "authenticationTransfer"
+		}
+		deviceInfo = @{
+			profileType = "Standard"
+		}
+	}
+	appliedPoliciesOnly = $true
+}
+
+Test-MgIdentityConditionalAccess -BodyParameter $params
+
+### EXAMPLE 3
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	signInIdentity = @{
+		"@odata.type" = "#microsoft.graph.userSignIn"
+		userId = "15dc174b-f34c-4588-ac45-61d6e05dce93"
+	}
+	signInContext = @{
+		"@odata.type" = "#microsoft.graph.userActionContext"
+		userAction = "registerSecurityInformation"
+	}
+	signInConditions = @{
+		devicePlatform = "macOS"
+		clientAppType = "browser"
+		signInRiskLevel = "low"
+		userRiskLevel = "high"
+		servicePrincipalRiskLevel = "none"
+		country = "CA"
+		ipAddress = "40.77.182.32"
+		insiderRiskLevel = "minor"
+		authenticationFlow = @{
+			transferMethod = "deviceCodeFlow"
+		}
+		deviceInfo = @{
+			trustType = "EntraID"
+		}
+	}
+	appliedPoliciesOnly = $true
+}
+
+Test-MgIdentityConditionalAccess -BodyParameter $params
+
+### EXAMPLE 4
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	signInIdentity = @{
+		"@odata.type" = "#microsoft.graph.servicePrincipalSignIn"
+		servicePrincipalId = "c65b94a5-0049-439a-a6fd-bce307077730"
+	}
+	signInContext = @{
+		"@odata.type" = "#microsoft.graph.applicationContext"
+		includeApplications = @(
+		"00000003-0000-0ff1-ce00-000000000000"
+	)
+}
+signInConditions = @{
+	servicePrincipalRiskLevel = "high"
+	country = "CA"
+	ipAddress = "40.77.182.32"
+}
+appliedPoliciesOnly = $true
+}
+
+Test-MgIdentityConditionalAccess -BodyParameter $params
 
 ## PARAMETERS
 
@@ -536,7 +668,6 @@ This property is set by Intune.
 
 - [Test-MgIdentityConditionalAccess](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentityconditionalaccess)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccessroot-evaluate?view=graph-rest-1.0)
-
 
 
 

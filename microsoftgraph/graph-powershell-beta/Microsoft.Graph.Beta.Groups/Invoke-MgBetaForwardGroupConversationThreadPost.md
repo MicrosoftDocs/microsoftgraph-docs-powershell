@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpost
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaForwardGroupConversationThreadPost
 ---
@@ -14,7 +14,7 @@ title: Invoke-MgBetaForwardGroupConversationThreadPost
 ## SYNOPSIS
 
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, \ror, you can specify just the parent thread without the parent conversation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgForwardGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupConversationThreadPost?view=graph-powershell-1.0)
@@ -75,7 +75,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, \ror, you can specify just the parent thread without the parent conversation.
 
 **Permissions**
 

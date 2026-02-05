@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentitysensor
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIdentitySensor
 ---
@@ -27,7 +27,7 @@ Update-MgSecurityIdentitySensor -SensorId <string> [-ResponseHeadersVariable <st
  [-AdditionalProperties <hashtable>] [-CreatedDateTime <datetime>] [-DeploymentStatus <string>]
  [-DisplayName <string>] [-DomainName <string>]
  [-HealthIssues <IMicrosoftGraphSecurityHealthIssue[]>] [-HealthStatus <string>] [-Id <string>]
- [-OpenHealthIssuesCount <long>] [-SensorType <string>]
+ [-OpenHealthIssuesCount <long>] [-SensorType <string>] [-ServiceStatus <string>]
  [-Settings <IMicrosoftGraphSecuritySensorSettings>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -51,7 +51,7 @@ Update-MgSecurityIdentitySensor -InputObject <ISecurityIdentity> [-ResponseHeade
  [-AdditionalProperties <hashtable>] [-CreatedDateTime <datetime>] [-DeploymentStatus <string>]
  [-DisplayName <string>] [-DomainName <string>]
  [-HealthIssues <IMicrosoftGraphSecurityHealthIssue[]>] [-HealthStatus <string>] [-Id <string>]
- [-OpenHealthIssuesCount <long>] [-SensorType <string>]
+ [-OpenHealthIssuesCount <long>] [-SensorType <string>] [-ServiceStatus <string>]
  [-Settings <IMicrosoftGraphSecuritySensorSettings>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -658,6 +658,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ServiceStatus
+
+serviceStatus
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Settings
 
 sensorSettings
@@ -807,6 +834,7 @@ These commands run in sequence for the single recommended fix.
   [HealthStatus <String>]: sensorHealthStatus
   [OpenHealthIssuesCount <Int64?>]: This field displays the count of health issues related to this sensor.
   [SensorType <String>]: sensorType
+  [ServiceStatus <String>]: serviceStatus
   [Settings <IMicrosoftGraphSecuritySensorSettings>]: sensorSettings
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Description <String>]: Description of the sensor.
@@ -860,6 +888,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [DepartmentTemplateId <String>]: The unique identifier of departmentTemplate
   [DispositionReviewStageNumber <String>]: The unique identifier of dispositionReviewStage
   [EdiscoveryCaseId <String>]: The unique identifier of ediscoveryCase
+  [EdiscoveryCaseMemberId <String>]: The unique identifier of ediscoveryCaseMember
   [EdiscoveryCustodianId <String>]: The unique identifier of ediscoveryCustodian
   [EdiscoveryNoncustodialDataSourceId <String>]: The unique identifier of ediscoveryNoncustodialDataSource
   [EdiscoveryReviewSetId <String>]: The unique identifier of ediscoveryReviewSet
@@ -878,6 +907,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [HostPortId <String>]: The unique identifier of hostPort
   [HostSslCertificateId <String>]: The unique identifier of hostSslCertificate
   [HostTrackerId <String>]: The unique identifier of hostTracker
+  [IdentityAccountsId <String>]: The unique identifier of identityAccounts
   [IncidentId <String>]: The unique identifier of incident
   [IntelligenceProfileId <String>]: The unique identifier of intelligenceProfile
   [IntelligenceProfileIndicatorId <String>]: The unique identifier of intelligenceProfileIndicator
@@ -895,6 +925,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecureScoreId <String>]: The unique identifier of secureScore
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun

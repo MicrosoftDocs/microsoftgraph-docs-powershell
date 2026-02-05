@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydeleteditem
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDirectoryDeletedItem
 ---
@@ -16,7 +16,7 @@ title: Remove-MgDirectoryDeletedItem
 Permanently delete a recently deleted application, group, servicePrincipal, or user object from deleted items.
 After an item is permanently deleted, it cannot be restored.
 Permanently delete a recently deleted directory object from deleted items.
-The following types are supported:- certificateBasedAuthPki- certificateAuthorityDetail After an item is permanently deleted, it cannot be restored.
+The following types are supported:\r- certificateBasedAuthPki\r- certificateAuthorityDetail After an item is permanently deleted, it cannot be restored.
 Administrative units cannot be permanently deleted by using the deletedItems API.
 Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
@@ -55,7 +55,7 @@ This cmdlet has the following aliases,
 Permanently delete a recently deleted application, group, servicePrincipal, or user object from deleted items.
 After an item is permanently deleted, it cannot be restored.
 Permanently delete a recently deleted directory object from deleted items.
-The following types are supported:- certificateBasedAuthPki- certificateAuthorityDetail After an item is permanently deleted, it cannot be restored.
+The following types are supported:\r- certificateBasedAuthPki\r- certificateAuthorityDetail After an item is permanently deleted, it cannot be restored.
 Administrative units cannot be permanently deleted by using the deletedItems API.
 Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 

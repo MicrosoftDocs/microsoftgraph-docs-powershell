@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamworkdeletedteamchannel
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgHaveTeamworkDeletedTeamChannel
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgHaveTeamworkDeletedTeamChannel
 
 ## SYNOPSIS
 
-Determine whether a user has access to a shared channel.
+Determine whether a user has access to a channel.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaHaveTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaHaveTeamworkDeletedTeamChannel?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Determine whether a user has access to a shared channel.
+Determine whether a user has access to a channel.
 
 ## PARAMETERS
 

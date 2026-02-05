@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyadminconsentrequestpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyAdminConsentRequestPolicy
 ---
@@ -511,6 +511,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
     [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+    [ReviewerId <String>]: 
+    [ScopeType <String>]: accessReviewReviewerScopeType
   [Version <Int32?>]: Specifies the version of this policy.
 When the policy is updated, this version is updated.
 Read-only.
@@ -522,6 +524,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+  [ReviewerId <String>]: 
+  [ScopeType <String>]: accessReviewReviewerScopeType
 
 
 ## RELATED LINKS

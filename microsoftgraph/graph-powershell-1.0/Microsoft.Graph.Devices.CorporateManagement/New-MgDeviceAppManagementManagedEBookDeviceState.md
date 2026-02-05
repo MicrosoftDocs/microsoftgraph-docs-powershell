@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookdevicestate
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceAppManagementManagedEBookDeviceState
 ---
@@ -13,7 +13,7 @@ title: New-MgDeviceAppManagementManagedEBookDeviceState
 
 ## SYNOPSIS
 
-Create a new deviceInstallState object.
+Create new navigation property to deviceStates for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
@@ -71,7 +71,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new deviceInstallState object.
+Create new navigation property to deviceStates for deviceAppManagement
 
 **Permissions**
 
@@ -764,7 +764,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgDeviceAppManagementManagedEBookDeviceState](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookdevicestate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-books-deviceinstallstate-create?view=graph-rest-1.0)
 
 
 

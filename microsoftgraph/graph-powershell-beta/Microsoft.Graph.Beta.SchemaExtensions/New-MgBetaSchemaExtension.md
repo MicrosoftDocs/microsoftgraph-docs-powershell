@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.SchemaExtensions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSchemaExtension
 ---
@@ -16,8 +16,8 @@ title: New-MgBetaSchemaExtension
 Create a new schemaExtension definition and its associated schema extension property to extend a supporting resource type.
 Schema extensions let you add strongly-typed custom data to a resource.
 The app that creates a schema extension is the owner app.
-Depending on the state of the extension, the owner app, and only the owner app, may update or delete the extension.
-See examples of how to define a schema extension that describes a training course, use the schema extension definition to create a new group with training course data, and add training course data to an existing group.
+Depending on the \rstate of the extension, the owner app, and only the owner app, may update or delete the extension.
+See examples of how to define a schema extension that describes a training course, \ruse the schema extension definition to create a new group with training course data, and \radd training course data to an existing group.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/New-MgSchemaExtension?view=graph-powershell-1.0)
@@ -55,8 +55,8 @@ This cmdlet has the following aliases,
 Create a new schemaExtension definition and its associated schema extension property to extend a supporting resource type.
 Schema extensions let you add strongly-typed custom data to a resource.
 The app that creates a schema extension is the owner app.
-Depending on the state of the extension, the owner app, and only the owner app, may update or delete the extension.
-See examples of how to define a schema extension that describes a training course, use the schema extension definition to create a new group with training course data, and add training course data to an existing group.
+Depending on the \rstate of the extension, the owner app, and only the owner app, may update or delete the extension.
+See examples of how to define a schema extension that describes a training course, \ruse the schema extension definition to create a new group with training course data, and \radd training course data to an existing group.
 
 **Permissions**
 

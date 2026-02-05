@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityAuthenticationEventFlow
 ---
@@ -14,7 +14,7 @@ title: New-MgIdentityAuthenticationEventFlow
 ## SYNOPSIS
 
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
-The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow object type.
+The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow object type.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlow?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
-The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow object type.
+The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow object type.
 
 **Permissions**
 

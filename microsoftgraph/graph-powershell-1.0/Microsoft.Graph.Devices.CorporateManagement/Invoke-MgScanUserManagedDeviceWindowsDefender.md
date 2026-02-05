@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgscanusermanageddevicewindowsdefender
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgScanUserManagedDeviceWindowsDefender
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgScanUserManagedDeviceWindowsDefender
 
 ## SYNOPSIS
 
-Not yet documented
+Invoke action windowsDefenderScan
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaScanUserManagedDeviceWindowsDefender?view=graph-powershell-beta)
@@ -71,7 +71,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Not yet documented
+Invoke action windowsDefenderScan
 
 ## PARAMETERS
 
@@ -553,7 +553,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgScanUserManagedDeviceWindowsDefender](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgscanusermanageddevicewindowsdefender)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-windowsdefenderscan?view=graph-rest-1.0)
 
 
 

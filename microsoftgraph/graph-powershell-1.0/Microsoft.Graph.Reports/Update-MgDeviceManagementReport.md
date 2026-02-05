@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementReport
 ---
@@ -13,7 +13,7 @@ title: Update-MgDeviceManagementReport
 
 ## SYNOPSIS
 
-Update the properties of a deviceManagementReports object.
+Update the navigation property reports in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaDeviceManagementReport?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a deviceManagementReports object.
+Update the navigation property reports in deviceManagement
 
 **Permissions**
 
@@ -164,7 +164,7 @@ HelpMessage: ''
 
 ### -ExportJobs
 
-Entity representing a job to export a report
+Entity representing a job to export a report.
 To construct, see NOTES section for EXPORTJOBS properties and create a hash table.
 
 ```yaml
@@ -410,45 +410,54 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports>`: deviceManagementReport
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]: Entity representing a job to export a report
+  [ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]: Entity representing a job to export a report.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [ExpirationDateTime <DateTime?>]: Time that the exported report expires
-    [Filter <String>]: Filters applied on the report
+    [ExpirationDateTime <DateTime?>]: Time that the exported report expires.
+    [Filter <String>]: Filters applied on the report.
+The maximum length allowed for this property is 2000 characters.
     [Format <DeviceManagementReportFileFormat?>]: Possible values for the file format of a report to be exported.
     [LocalizationType <DeviceManagementExportJobLocalizationType?>]: Configures how the requested export job is localized.
-    [ReportName <String>]: Name of the report
-    [RequestDateTime <DateTime?>]: Time that the exported report was requested
-    [Select <String[]>]: Columns selected from the report
+    [ReportName <String>]: Name of the report.
+The maximum length allowed for this property is 2000 characters.
+    [RequestDateTime <DateTime?>]: Time that the exported report was requested.
+    [Select <String[]>]: Columns selected from the report.
+The maximum number of allowed columns names is 256.
+The maximum length allowed for each column name in this property is 1000 characters.
     [SnapshotId <String>]: A snapshot is an identifiable subset of the dataset represented by the ReportName.
 A sessionId or CachedReportConfiguration id can be used here.
 If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId.
 Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
+The maximum length allowed for this property is 128 characters.
     [Status <DeviceManagementReportStatus?>]: Possible statuses associated with a generated report.
-    [Url <String>]: Temporary location of the exported report
+    [Url <String>]: Temporary location of the exported report.
 
-EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob[]>: Entity representing a job to export a report
+EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob[]>: Entity representing a job to export a report.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ExpirationDateTime <DateTime?>]: Time that the exported report expires
-  [Filter <String>]: Filters applied on the report
+  [ExpirationDateTime <DateTime?>]: Time that the exported report expires.
+  [Filter <String>]: Filters applied on the report.
+The maximum length allowed for this property is 2000 characters.
   [Format <DeviceManagementReportFileFormat?>]: Possible values for the file format of a report to be exported.
   [LocalizationType <DeviceManagementExportJobLocalizationType?>]: Configures how the requested export job is localized.
-  [ReportName <String>]: Name of the report
-  [RequestDateTime <DateTime?>]: Time that the exported report was requested
-  [Select <String[]>]: Columns selected from the report
+  [ReportName <String>]: Name of the report.
+The maximum length allowed for this property is 2000 characters.
+  [RequestDateTime <DateTime?>]: Time that the exported report was requested.
+  [Select <String[]>]: Columns selected from the report.
+The maximum number of allowed columns names is 256.
+The maximum length allowed for each column name in this property is 1000 characters.
   [SnapshotId <String>]: A snapshot is an identifiable subset of the dataset represented by the ReportName.
 A sessionId or CachedReportConfiguration id can be used here.
 If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId.
 Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
+The maximum length allowed for this property is 128 characters.
   [Status <DeviceManagementReportStatus?>]: Possible statuses associated with a generated report.
-  [Url <String>]: Temporary location of the exported report
+  [Url <String>]: Temporary location of the exported report.
 
 
 ## RELATED LINKS
 
 - [Update-MgDeviceManagementReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-update?view=graph-rest-1.0)
 
 
 

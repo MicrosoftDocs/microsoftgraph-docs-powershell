@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementDeviceCompliancePolicy
 ---
@@ -13,7 +13,7 @@ title: New-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
 
-Create a new windowsPhone81CompliancePolicy object.
+Create new navigation property to deviceCompliancePolicies for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -55,7 +55,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new windowsPhone81CompliancePolicy object.
+Create new navigation property to deviceCompliancePolicies for deviceManagement
 
 **Permissions**
 
@@ -845,7 +845,6 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgDeviceManagementDeviceCompliancePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsphone81compliancepolicy-create?view=graph-rest-1.0)
 
 
 

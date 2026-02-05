@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaApplicationFederatedIdentityCredential
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
 
-Read the properties and relationships of a federatedIdentityCredential object.
+Read the properties and relationships of a federatedIdentityCredential object assigned to an application or an agentIdentityBlueprint.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)
@@ -59,7 +59,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read the properties and relationships of a federatedIdentityCredential object.
+Read the properties and relationships of a federatedIdentityCredential object assigned to an application or an agentIdentityBlueprint.
 
 **Permissions**
 
@@ -76,7 +76,7 @@ Read the properties and relationships of a federatedIdentityCredential object.
 
 Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId
+Get-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId
 
 ```
 This example shows how to use the Get-MgBetaApplicationFederatedIdentityCredential Cmdlet.
@@ -597,6 +597,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -612,7 +613,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Get-MgBetaApplicationFederatedIdentityCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-list-federatedidentitycredentials?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-list?view=graph-rest-beta)
 
 
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: d8ee76d8-5508-4df2-9093-90f2f1769953
+Module Guid: 06412abe-7d0e-4d18-8563-713dc5302d9f
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -108,6 +108,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgContactMemberOfCountAsAdministrativeUnit](Get-MgContactMemberOfCountAsAdministrativeUnit.md)
 
 ### [Get-MgContactMemberOfCountAsGroup](Get-MgContactMemberOfCountAsGroup.md)
+
+### [Get-MgContactOnPremiseSyncBehavior](Get-MgContactOnPremiseSyncBehavior.md)
 
 ### [Get-MgContactServiceProvisioningError](Get-MgContactServiceProvisioningError.md)
 
@@ -683,6 +685,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgAdminPeopleProfileCardProperty](Remove-MgAdminPeopleProfileCardProperty.md)
 
+### [Remove-MgContact](Remove-MgContact.md)
+
+### [Remove-MgContactOnPremiseSyncBehavior](Remove-MgContactOnPremiseSyncBehavior.md)
+
 ### [Remove-MgContract](Remove-MgContract.md)
 
 ### [Remove-MgDevice](Remove-MgDevice.md)
@@ -836,6 +842,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgAdminPeopleProfileCardProperty](Update-MgAdminPeopleProfileCardProperty.md)
 
 ### [Update-MgAdminPeoplePronoun](Update-MgAdminPeoplePronoun.md)
+
+### [Update-MgContact](Update-MgContact.md)
+
+### [Update-MgContactOnPremiseSyncBehavior](Update-MgContactOnPremiseSyncBehavior.md)
 
 ### [Update-MgContract](Update-MgContract.md)
 

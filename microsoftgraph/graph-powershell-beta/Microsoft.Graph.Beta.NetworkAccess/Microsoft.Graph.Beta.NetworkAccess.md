@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-Module Guid: 0aa9ea81-a9bb-4242-a42b-f14a5bc7792f
+Module Guid: e5ca0f86-7057-44bb-805b-e7e23357af8f
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.networkaccess/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -95,6 +95,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfileServicePrincipal](Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfileServicePrincipal.md)
 
+### [Get-MgBetaNetworkAccessConnectivityWebCategoryByUrl](Get-MgBetaNetworkAccessConnectivityWebCategoryByUrl.md)
+
 ### [Get-MgBetaNetworkAccessFilteringPolicy](Get-MgBetaNetworkAccessFilteringPolicy.md)
 
 ### [Get-MgBetaNetworkAccessFilteringPolicy](Get-MgBetaNetworkAccessFilteringPolicy.md)
@@ -183,6 +185,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessReport](Get-MgBetaNetworkAccessReport.md)
 
+### [Get-MgBetaNetworkAccessReportApplicationUsageAnalytic](Get-MgBetaNetworkAccessReportApplicationUsageAnalytic.md)
+
+### [Get-MgBetaNetworkAccessReportCloudApplicationReport](Get-MgBetaNetworkAccessReportCloudApplicationReport.md)
+
 ### [Get-MgBetaNetworkAccessReportConnectionSummary](Get-MgBetaNetworkAccessReportConnectionSummary.md)
 
 ### [Get-MgBetaNetworkAccessReportCrossTenantSummary](Get-MgBetaNetworkAccessReportCrossTenantSummary.md)
@@ -193,6 +199,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessReportDiscoveredApplicationSegmentReport](Get-MgBetaNetworkAccessReportDiscoveredApplicationSegmentReport.md)
 
+### [Get-MgBetaNetworkAccessReportEnterpriseApplicationReport](Get-MgBetaNetworkAccessReportEnterpriseApplicationReport.md)
+
 ### [Get-MgBetaNetworkAccessRootNetworkAccessRoot](Get-MgBetaNetworkAccessRootNetworkAccessRoot.md)
 
 ### [Get-MgBetaNetworkAccessSetting](Get-MgBetaNetworkAccessSetting.md)
@@ -200,6 +208,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaNetworkAccessSettingConditionalAccess](Get-MgBetaNetworkAccessSettingConditionalAccess.md)
 
 ### [Get-MgBetaNetworkAccessSettingCrossTenantAccess](Get-MgBetaNetworkAccessSettingCrossTenantAccess.md)
+
+### [Get-MgBetaNetworkAccessSettingCustomBlockPage](Get-MgBetaNetworkAccessSettingCustomBlockPage.md)
 
 ### [Get-MgBetaNetworkAccessSettingForwardingOption](Get-MgBetaNetworkAccessSettingForwardingOption.md)
 
@@ -369,6 +379,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaNetworkAccessSettingCrossTenantAccess](Remove-MgBetaNetworkAccessSettingCrossTenantAccess.md)
 
+### [Remove-MgBetaNetworkAccessSettingCustomBlockPage](Remove-MgBetaNetworkAccessSettingCustomBlockPage.md)
+
 ### [Remove-MgBetaNetworkAccessSettingForwardingOption](Remove-MgBetaNetworkAccessSettingForwardingOption.md)
 
 ### [Remove-MgBetaNetworkAccessTenantStatus](Remove-MgBetaNetworkAccessTenantStatus.md)
@@ -446,6 +458,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaNetworkAccessSettingConditionalAccess](Update-MgBetaNetworkAccessSettingConditionalAccess.md)
 
 ### [Update-MgBetaNetworkAccessSettingCrossTenantAccess](Update-MgBetaNetworkAccessSettingCrossTenantAccess.md)
+
+### [Update-MgBetaNetworkAccessSettingCustomBlockPage](Update-MgBetaNetworkAccessSettingCustomBlockPage.md)
 
 ### [Update-MgBetaNetworkAccessSettingForwardingOption](Update-MgBetaNetworkAccessSettingForwardingOption.md)
 

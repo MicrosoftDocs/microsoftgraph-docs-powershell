@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactdelta
 Locale: en-US
 Module Name: Microsoft.Graph.PersonalContacts
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserContactDelta
 ---
@@ -14,8 +14,8 @@ title: Get-MgUserContactDelta
 ## SYNOPSIS
 
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
-A delta function call for contacts in a folder is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in that folder.
-This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
+A delta function call for contacts in a folder is similar to a GET request, except that by appropriately \rapplying state tokens in one or more of these calls, \ryou can query for incremental changes in the contacts in \rthat folder.
+This allows you to maintain and synchronize a local store of a user's contacts without \rhaving to fetch the entire set of contacts from the server every time.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserContactDelta](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactDelta?view=graph-powershell-beta)
@@ -51,8 +51,8 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
-A delta function call for contacts in a folder is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in that folder.
-This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
+A delta function call for contacts in a folder is similar to a GET request, except that by appropriately \rapplying state tokens in one or more of these calls, \ryou can query for incremental changes in the contacts in \rthat folder.
+This allows you to maintain and synchronize a local store of a user's contacts without \rhaving to fetch the entire set of contacts from the server every time.
 
 **Permissions**
 

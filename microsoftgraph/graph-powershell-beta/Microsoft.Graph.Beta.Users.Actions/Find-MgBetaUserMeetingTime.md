@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgBetaUserMeetingTime
 ---
@@ -14,7 +14,7 @@ title: Find-MgBetaUserMeetingTime
 ## SYNOPSIS
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
-If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.Based on this value, you can better adjust the parameters and call findMeetingTimes again.
+If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\rBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
@@ -79,7 +79,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
-If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.Based on this value, you can better adjust the parameters and call findMeetingTimes again.
+If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\rBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
@@ -776,6 +776,38 @@ Default is true.
   [TimeConstraint <IMicrosoftGraphTimeConstraint>]: timeConstraint
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ActivityDomain <String>]: activityDomain
+    [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Pattern <IMicrosoftGraphRecurrencePattern>]: recurrencePattern
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DayOfMonth <Int32?>]: The day of the month on which the event occurs.
+Required if type is absoluteMonthly or absoluteYearly.
+        [DaysOfWeek <String[]>]: A collection of the days of the week on which the event occurs.
+The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+ Required if type is weekly, relativeMonthly, or relativeYearly.
+        [FirstDayOfWeek <String>]: dayOfWeek
+        [Index <String>]: weekIndex
+        [Interval <Int32?>]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+Required.
+        [Month <Int32?>]: The month in which the event occurs.
+ This is a number from 1 to 12.
+        [Type <String>]: recurrencePatternType
+      [Range <IMicrosoftGraphRecurrenceRange>]: recurrenceRange
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [EndDate <DateTime?>]: The date to stop applying the recurrence pattern.
+Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
+Required if type is endDate.
+        [NumberOfOccurrences <Int32?>]: The number of times to repeat the event.
+Required and must be positive if type is numbered.
+        [RecurrenceTimeZone <String>]: Time zone for the startDate and endDate properties.
+Optional.
+If not specified, the time zone of the event is used.
+        [StartDate <DateTime?>]: The date to start applying the recurrence pattern.
+The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
+Must be the same value as the start property of the recurring event.
+Required.
+        [Type <String>]: recurrenceRangeType
     [TimeSlots <IMicrosoftGraphTimeSlot[]>]: 
       [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
         [(Any) <Object>]: This indicates any property can be added to this object.
@@ -826,6 +858,38 @@ Default is true.
 TIMECONSTRAINT `<IMicrosoftGraphTimeConstraint>`: timeConstraint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityDomain <String>]: activityDomain
+  [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Pattern <IMicrosoftGraphRecurrencePattern>]: recurrencePattern
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DayOfMonth <Int32?>]: The day of the month on which the event occurs.
+Required if type is absoluteMonthly or absoluteYearly.
+      [DaysOfWeek <String[]>]: A collection of the days of the week on which the event occurs.
+The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+ Required if type is weekly, relativeMonthly, or relativeYearly.
+      [FirstDayOfWeek <String>]: dayOfWeek
+      [Index <String>]: weekIndex
+      [Interval <Int32?>]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+Required.
+      [Month <Int32?>]: The month in which the event occurs.
+ This is a number from 1 to 12.
+      [Type <String>]: recurrencePatternType
+    [Range <IMicrosoftGraphRecurrenceRange>]: recurrenceRange
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [EndDate <DateTime?>]: The date to stop applying the recurrence pattern.
+Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
+Required if type is endDate.
+      [NumberOfOccurrences <Int32?>]: The number of times to repeat the event.
+Required and must be positive if type is numbered.
+      [RecurrenceTimeZone <String>]: Time zone for the startDate and endDate properties.
+Optional.
+If not specified, the time zone of the event is used.
+      [StartDate <DateTime?>]: The date to start applying the recurrence pattern.
+The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
+Must be the same value as the start property of the recurring event.
+Required.
+      [Type <String>]: recurrenceRangeType
   [TimeSlots <IMicrosoftGraphTimeSlot[]>]: 
     [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
       [(Any) <Object>]: This indicates any property can be added to this object.

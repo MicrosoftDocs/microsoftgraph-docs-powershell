@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicydefault
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyCrossTenantAccessPolicyDefault
 ---
@@ -732,7 +732,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [FallbackIdentityProvider <String>]: b2bIdentityProvidersType
     [PrimaryIdentityProviderPrecedenceOrder <String[]>]: Collection of identity providers in priority order of preference to be used for guest invitation redemption.
-Possible values are: azureActiveDirectory, externalFederation, or socialIdentityProviders.
+The possible values are: azureActiveDirectory, externalFederation, or socialIdentityProviders.
   [IsServiceDefault <Boolean?>]: If true, the default configuration is set to the system default configuration.
 If false, the default settings are customized.
   [TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]: crossTenantAccessPolicyTenantRestrictions

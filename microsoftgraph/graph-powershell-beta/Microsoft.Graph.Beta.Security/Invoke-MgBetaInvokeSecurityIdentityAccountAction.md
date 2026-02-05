@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetainvokesecurityidentityaccountaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaInvokeSecurityIdentityAccountAction
 ---
@@ -14,6 +14,9 @@ title: Invoke-MgBetaInvokeSecurityIdentityAccountAction
 ## SYNOPSIS
 
 Invoke action invokeAction
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInvokeSecurityIdentityAccountAction](/powershell/module/Microsoft.Graph.Security/Invoke-MgInvokeSecurityIdentityAccountAction?view=graph-powershell-1.0)
 
 ## SYNTAX
 

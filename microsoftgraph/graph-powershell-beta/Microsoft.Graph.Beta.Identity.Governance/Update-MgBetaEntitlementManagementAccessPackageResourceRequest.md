@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageresourcerequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEntitlementManagementAccessPackageResourceRequest
 ---
@@ -808,14 +808,43 @@ Read-only.
     [IsPersistedOnAssignmentRemoval <Boolean?>]: Specifies whether the attribute will remain in the end system after an assignment ends.
   [Description <String>]: A description for the resource.
   [DisplayName <String>]: The display name of the resource, such as the application name, group name, or site name.
+  [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+    [ConnectorType <String>]: connectorType
+    [CreatedBy <String>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [ModifiedBy <String>]: 
+    [ModifiedDateTime <DateTime?>]: 
   [IsPendingOnboarding <Boolean?>]: True if the resource is not yet available for assignment.
 Read-only.
   [OriginId <String>]: The unique identifier of the resource in the origin system.
 In the case of a Microsoft Entra group, originId is the identifier of the group.
 Supports $filter (eq).
-  [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+  [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup or CustomDataProvidedResource.
 Supports $filter (eq).
   [ResourceType <String>]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
+  [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+    [Data <IMicrosoftGraphCustomExtensionData>]: customExtensionData
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+    [Source <String>]: The source of the access data.
+This should be set to the customdataprovidedresource's name when creating the session.
+    [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+      [TotalBytesUploaded <Int64?>]: total bytes uploaded in this session
+    [Status <String>]: customDataProvidedResourceUploadStatus
+    [Type <String>]: Schematized form of the expected CSV columns in the uploaded file.
+The only possible value currently is: accessReviewDataUploadTriggerCallbackData
   [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
 BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRequest>`: accessPackageResourceRequest
@@ -892,14 +921,43 @@ Read-only.
       [IsPersistedOnAssignmentRemoval <Boolean?>]: Specifies whether the attribute will remain in the end system after an assignment ends.
     [Description <String>]: A description for the resource.
     [DisplayName <String>]: The display name of the resource, such as the application name, group name, or site name.
+    [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+      [ConnectorType <String>]: connectorType
+      [CreatedBy <String>]: 
+      [CreatedDateTime <DateTime?>]: 
+      [Description <String>]: 
+      [DisplayName <String>]: 
+      [ModifiedBy <String>]: 
+      [ModifiedDateTime <DateTime?>]: 
     [IsPendingOnboarding <Boolean?>]: True if the resource is not yet available for assignment.
 Read-only.
     [OriginId <String>]: The unique identifier of the resource in the origin system.
 In the case of a Microsoft Entra group, originId is the identifier of the group.
 Supports $filter (eq).
-    [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+    [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup or CustomDataProvidedResource.
 Supports $filter (eq).
     [ResourceType <String>]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
+    [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+      [Data <IMicrosoftGraphCustomExtensionData>]: customExtensionData
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+      [Source <String>]: The source of the access data.
+This should be set to the customdataprovidedresource's name when creating the session.
+      [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+        [TotalBytesUploaded <Int64?>]: total bytes uploaded in this session
+      [Status <String>]: customDataProvidedResourceUploadStatus
+      [Type <String>]: Schematized form of the expected CSV columns in the uploaded file.
+The only possible value currently is: accessReviewDataUploadTriggerCallbackData
     [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
   [CatalogId <String>]: The unique ID of the access package catalog.
   [ExecuteImmediately <Boolean?>]: 
@@ -971,9 +1029,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceId <String>]: The unique identifier of accessPackageResource
   [AccessPackageResourceRequestId <String>]: The unique identifier of accessPackageResourceRequest
   [AccessPackageResourceRoleId <String>]: The unique identifier of accessPackageResourceRole
+  [AccessPackageResourceRoleId1 <String>]: The unique identifier of accessPackageResourceRole
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
+  [AccessPackageSuggestionId <String>]: The unique identifier of accessPackageSuggestion
   [AccessReviewDecisionId <String>]: The unique identifier of accessReviewDecision
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
@@ -992,10 +1053,13 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AppConsentRequestId <String>]: The unique identifier of appConsentRequest
   [ApprovalId <String>]: The unique identifier of approval
   [ApprovalStepId <String>]: The unique identifier of approvalStep
+  [AvailableAccessPackageId <String>]: The unique identifier of availableAccessPackage
   [BusinessFlowTemplateId <String>]: The unique identifier of businessFlowTemplate
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
+  [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
@@ -1008,6 +1072,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [GovernanceRoleAssignmentRequestId <String>]: The unique identifier of governanceRoleAssignmentRequest
   [GovernanceRoleDefinitionId <String>]: The unique identifier of governanceRoleDefinition
   [GovernanceRoleSettingId <String>]: The unique identifier of governanceRoleSetting
+  [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [ObjectId <String>]: Alternate key of accessPackageSubject
@@ -1033,6 +1098,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ProgramId <String>]: The unique identifier of program
   [RbacApplicationId <String>]: The unique identifier of rbacApplication
   [RunId <String>]: The unique identifier of run
+  [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Planner
-Module Guid: 23d4a369-4ac5-4212-bcd0-2d54ea2bc439
+Module Guid: 0b504515-73f3-4649-8932-51704c99923c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.planner/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -27,6 +27,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupPlannerPlanTask](Get-MgBetaGroupPlannerPlanTask.md)
 
+### [Get-MgBetaGroupPlannerPlanUsageRights](Get-MgBetaGroupPlannerPlanUsageRights.md)
+
 ### [Get-MgBetaPlanner](Get-MgBetaPlanner.md)
 
 ### [Get-MgBetaPlannerBucket](Get-MgBetaPlannerBucket.md)
@@ -52,6 +54,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaPlannerPlanDetail](Get-MgBetaPlannerPlanDetail.md)
 
 ### [Get-MgBetaPlannerPlanTask](Get-MgBetaPlannerPlanTask.md)
+
+### [Get-MgBetaPlannerPlanUsageRights](Get-MgBetaPlannerPlanUsageRights.md)
 
 ### [Get-MgBetaPlannerRoster](Get-MgBetaPlannerRoster.md)
 

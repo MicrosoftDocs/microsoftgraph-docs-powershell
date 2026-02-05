@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredentialbyname
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationFederatedIdentityCredentialByName
 ---
@@ -13,7 +13,7 @@ title: Get-MgApplicationFederatedIdentityCredentialByName
 
 ## SYNOPSIS
 
-Read the properties and relationships of a federatedIdentityCredential object.
+Read the properties and relationships of a federatedIdentityCredential object assigned to an application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationFederatedIdentityCredentialByName](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationFederatedIdentityCredentialByName?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read the properties and relationships of a federatedIdentityCredential object.
+Read the properties and relationships of a federatedIdentityCredential object assigned to an application.
 
 **Permissions**
 

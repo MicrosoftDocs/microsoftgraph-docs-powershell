@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernanceAccessReviewHistoryDefinition
 ---
@@ -238,7 +238,7 @@ HelpMessage: ''
 Determines which review decisions will be included in the fetched review history data if specified.
 Optional on create.
 All decisions are included by default if no decisions are provided on create.
-Possible values are: approve, deny, dontKnow, notReviewed, and notNotified.
+The possible values are: approve, deny, dontKnow, notReviewed, and notNotified.
 
 ```yaml
 Type: System.String[]
@@ -652,7 +652,7 @@ For example, in the access reviews decisions API, this property might record the
   [Decisions <String[]>]: Determines which review decisions will be included in the fetched review history data if specified.
 Optional on create.
 All decisions are included by default if no decisions are provided on create.
-Possible values are: approve, deny, dontKnow, notReviewed, and notNotified.
+The possible values are: approve, deny, dontKnow, notReviewed, and notNotified.
   [DisplayName <String>]: Name for the access review history data collection.
 Required.
   [Instances <IMicrosoftGraphAccessReviewHistoryInstance[]>]: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfoldercontact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.PersonalContacts
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserContactFolderContact
 ---
@@ -35,11 +35,14 @@ New-MgBetaUserContactFolderContact -ContactFolderId <string> -UserId <string>
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
  [-NickName <string>] [-OfficeLocation <string>] [-ParentFolderId <string>]
  [-PersonalNotes <string>] [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <string>]
+ [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>]
+ [-PrimaryEmailAddress <IMicrosoftGraphEmailAddress>] [-Profession <string>]
+ [-SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-SpouseName <string>] [-Surname <string>] [-Title <string>] [-Websites <IMicrosoftGraphWebsite[]>]
- [-WeddingAnniversary <datetime>] [-YomiCompanyName <string>] [-YomiGivenName <string>]
- [-YomiSurname <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-SpouseName <string>] [-Surname <string>] [-TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]
+ [-Title <string>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <datetime>]
+ [-YomiCompanyName <string>] [-YomiGivenName <string>] [-YomiSurname <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -69,11 +72,14 @@ New-MgBetaUserContactFolderContact -InputObject <IPersonalContactsIdentity>
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
  [-NickName <string>] [-OfficeLocation <string>] [-ParentFolderId <string>]
  [-PersonalNotes <string>] [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <string>]
+ [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>]
+ [-PrimaryEmailAddress <IMicrosoftGraphEmailAddress>] [-Profession <string>]
+ [-SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-SpouseName <string>] [-Surname <string>] [-Title <string>] [-Websites <IMicrosoftGraphWebsite[]>]
- [-WeddingAnniversary <datetime>] [-YomiCompanyName <string>] [-YomiGivenName <string>]
- [-YomiSurname <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-SpouseName <string>] [-Surname <string>] [-TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]
+ [-Title <string>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <datetime>]
+ [-YomiCompanyName <string>] [-YomiGivenName <string>] [-YomiSurname <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -1231,6 +1237,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PrimaryEmailAddress
+
+emailAddress
+To construct, see NOTES section for PRIMARYEMAILADDRESS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailAddress
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Profession
 
 The contact's profession.
@@ -1343,6 +1377,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SecondaryEmailAddress
+
+emailAddress
+To construct, see NOTES section for SECONDARYEMAILADDRESS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailAddress
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -SingleValueExtendedProperties
 
 The collection of single-value extended properties defined for the contact.
@@ -1406,6 +1468,34 @@ The contact's surname.
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -TertiaryEmailAddress
+
+emailAddress
+To construct, see NOTES section for TERTIARYEMAILADDRESS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailAddress
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1759,7 +1849,12 @@ It's a free-format string value, for example, 'United States'.
     [State <String>]: The state.
     [Street <String>]: The street.
     [Type <String>]: physicalAddressType
+  [PrimaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Address <String>]: The email address of an entity instance.
+    [Name <String>]: The display name of an entity instance.
   [Profession <String>]: The contact's profession.
+  [SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -1768,6 +1863,7 @@ Read-only.
     [Value <String>]: A property value.
   [SpouseName <String>]: The name of the contact's spouse/partner.
   [Surname <String>]: The contact's surname.
+  [TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [Title <String>]: The contact's title.
   [Websites <IMicrosoftGraphWebsite[]>]: Web sites associated with the contact.
     [Address <String>]: The URL of the website.
@@ -1840,12 +1936,27 @@ It's a free-format string value, for example, 'United States'.
   [Street <String>]: The street.
   [Type <String>]: physicalAddressType
 
+PRIMARYEMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Address <String>]: The email address of an entity instance.
+  [Name <String>]: The display name of an entity instance.
+
+SECONDARYEMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Address <String>]: The email address of an entity instance.
+  [Name <String>]: The display name of an entity instance.
+
 SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Value <String>]: A property value.
+
+TERTIARYEMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Address <String>]: The email address of an entity instance.
+  [Name <String>]: The display name of an entity instance.
 
 WEBSITES <IMicrosoftGraphWebsite[]>: Web sites associated with the contact.
   [Address <String>]: The URL of the website.

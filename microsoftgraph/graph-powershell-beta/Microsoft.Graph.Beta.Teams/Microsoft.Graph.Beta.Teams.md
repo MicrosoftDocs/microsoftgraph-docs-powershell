@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Teams
-Module Guid: 85baff56-468d-4b62-b6e0-26927fc2ece7
+Module Guid: 13a2026d-a1bd-40e2-82a3-08ad4f6b3eb6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.teams/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -235,6 +235,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamChannelCount](Get-MgBetaGroupTeamChannelCount.md)
 
+### [Get-MgBetaGroupTeamChannelEnabledApp](Get-MgBetaGroupTeamChannelEnabledApp.md)
+
+### [Get-MgBetaGroupTeamChannelEnabledApp](Get-MgBetaGroupTeamChannelEnabledApp.md)
+
+### [Get-MgBetaGroupTeamChannelEnabledAppCount](Get-MgBetaGroupTeamChannelEnabledAppCount.md)
+
 ### [Get-MgBetaGroupTeamChannelFileFolder](Get-MgBetaGroupTeamChannelFileFolder.md)
 
 ### [Get-MgBetaGroupTeamChannelFileFolderContent](Get-MgBetaGroupTeamChannelFileFolderContent.md)
@@ -327,6 +333,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Get-MgBetaGroupTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
+### [Get-MgBetaGroupTeamChannelPlannerPlanUsageRights](Get-MgBetaGroupTeamChannelPlannerPlanUsageRights.md)
+
 ### [Get-MgBetaGroupTeamChannelRetainedMessage](Get-MgBetaGroupTeamChannelRetainedMessage.md)
 
 ### [Get-MgBetaGroupTeamChannelSharedWithTeam](Get-MgBetaGroupTeamChannelSharedWithTeam.md)
@@ -410,6 +418,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupTeamPrimaryChannel](Get-MgBetaGroupTeamPrimaryChannel.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelAllMemberCount](Get-MgBetaGroupTeamPrimaryChannelAllMemberCount.md)
+
+### [Get-MgBetaGroupTeamPrimaryChannelEnabledApp](Get-MgBetaGroupTeamPrimaryChannelEnabledApp.md)
+
+### [Get-MgBetaGroupTeamPrimaryChannelEnabledApp](Get-MgBetaGroupTeamPrimaryChannelEnabledApp.md)
+
+### [Get-MgBetaGroupTeamPrimaryChannelEnabledAppCount](Get-MgBetaGroupTeamPrimaryChannelEnabledAppCount.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelFileFolder](Get-MgBetaGroupTeamPrimaryChannelFileFolder.md)
 
@@ -502,6 +516,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskDetail](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskDetail.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat.md)
+
+### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanUsageRights](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanUsageRights.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelSharedWithTeam](Get-MgBetaGroupTeamPrimaryChannelSharedWithTeam.md)
 
@@ -625,6 +641,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamChannelCount](Get-MgBetaTeamChannelCount.md)
 
+### [Get-MgBetaTeamChannelEnabledApp](Get-MgBetaTeamChannelEnabledApp.md)
+
+### [Get-MgBetaTeamChannelEnabledApp](Get-MgBetaTeamChannelEnabledApp.md)
+
+### [Get-MgBetaTeamChannelEnabledAppCount](Get-MgBetaTeamChannelEnabledAppCount.md)
+
 ### [Get-MgBetaTeamChannelFileFolder](Get-MgBetaTeamChannelFileFolder.md)
 
 ### [Get-MgBetaTeamChannelFileFolderContent](Get-MgBetaTeamChannelFileFolderContent.md)
@@ -717,6 +739,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Get-MgBetaTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
+### [Get-MgBetaTeamChannelPlannerPlanUsageRights](Get-MgBetaTeamChannelPlannerPlanUsageRights.md)
+
 ### [Get-MgBetaTeamChannelRetainedMessage](Get-MgBetaTeamChannelRetainedMessage.md)
 
 ### [Get-MgBetaTeamChannelSharedWithTeam](Get-MgBetaTeamChannelSharedWithTeam.md)
@@ -802,6 +826,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaTeamPrimaryChannel](Get-MgBetaTeamPrimaryChannel.md)
 
 ### [Get-MgBetaTeamPrimaryChannelAllMemberCount](Get-MgBetaTeamPrimaryChannelAllMemberCount.md)
+
+### [Get-MgBetaTeamPrimaryChannelEnabledApp](Get-MgBetaTeamPrimaryChannelEnabledApp.md)
+
+### [Get-MgBetaTeamPrimaryChannelEnabledApp](Get-MgBetaTeamPrimaryChannelEnabledApp.md)
+
+### [Get-MgBetaTeamPrimaryChannelEnabledAppCount](Get-MgBetaTeamPrimaryChannelEnabledAppCount.md)
 
 ### [Get-MgBetaTeamPrimaryChannelFileFolder](Get-MgBetaTeamPrimaryChannelFileFolder.md)
 
@@ -894,6 +924,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanTaskDetail](Get-MgBetaTeamPrimaryChannelPlannerPlanTaskDetail.md)
 
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat](Get-MgBetaTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat.md)
+
+### [Get-MgBetaTeamPrimaryChannelPlannerPlanUsageRights](Get-MgBetaTeamPrimaryChannelPlannerPlanUsageRights.md)
 
 ### [Get-MgBetaTeamPrimaryChannelSharedWithTeam](Get-MgBetaTeamPrimaryChannelSharedWithTeam.md)
 
@@ -1029,6 +1061,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelCount](Get-MgBetaTeamworkDeletedTeamChannelCount.md)
 
+### [Get-MgBetaTeamworkDeletedTeamChannelEnabledApp](Get-MgBetaTeamworkDeletedTeamChannelEnabledApp.md)
+
+### [Get-MgBetaTeamworkDeletedTeamChannelEnabledApp](Get-MgBetaTeamworkDeletedTeamChannelEnabledApp.md)
+
+### [Get-MgBetaTeamworkDeletedTeamChannelEnabledAppCount](Get-MgBetaTeamworkDeletedTeamChannelEnabledAppCount.md)
+
 ### [Get-MgBetaTeamworkDeletedTeamChannelFileFolder](Get-MgBetaTeamworkDeletedTeamChannelFileFolder.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelFileFolderContent](Get-MgBetaTeamworkDeletedTeamChannelFileFolderContent.md)
@@ -1120,6 +1158,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskDetail](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskDetail.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
+
+### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanUsageRights](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanUsageRights.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelRetainedMessage](Get-MgBetaTeamworkDeletedTeamChannelRetainedMessage.md)
 

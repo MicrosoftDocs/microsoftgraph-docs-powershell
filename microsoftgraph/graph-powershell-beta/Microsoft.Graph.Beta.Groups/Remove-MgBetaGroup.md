@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaGroup
 ---
@@ -14,9 +14,9 @@ title: Remove-MgBetaGroup
 ## SYNOPSIS
 
 Delete a group.
-When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.
+When deleted, both Microsoft 365 and security groups are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
-This isn't applicable to Security groups and Distribution groups that are permanently deleted immediately.
+This doesn't apply to Distribution groups that are permanently deleted immediately.
 To learn more, see deletedItems.
 
 > [!NOTE]
@@ -52,9 +52,9 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a group.
-When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.
+When deleted, both Microsoft 365 and security groups are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
-This isn't applicable to Security groups and Distribution groups that are permanently deleted immediately.
+This doesn't apply to Distribution groups that are permanently deleted immediately.
 To learn more, see deletedItems.
 
 **Permissions**

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentdrive
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRecentDrive
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgBetaRecentDrive
 
 ## SYNOPSIS
 
-List a set of items recently used by the signed-in user.This collection includes items that are in the user's drive and items they have access to from other drives.
+List a set of items recently used by the signed-in user.\rThis collection includes items that are in the user's drive and items they have access to from other drives.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgRecentDrive](/powershell/module/Microsoft.Graph.Files/Invoke-MgRecentDrive?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-List a set of items recently used by the signed-in user.This collection includes items that are in the user's drive and items they have access to from other drives.
+List a set of items recently used by the signed-in user.\rThis collection includes items that are in the user's drive and items they have access to from other drives.
 
 ## EXAMPLES
 ### Example 1: Code snippet

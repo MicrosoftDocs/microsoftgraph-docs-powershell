@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-Module Guid: 762d87c6-7a7c-41de-a2f7-9dad75f5db36
+Module Guid: c8babb2c-9353-4c88-84a6-67e2f4363326
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -92,6 +92,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceManagementAndroidForWorkSetting](Get-MgBetaDeviceManagementAndroidForWorkSetting.md)
 
 ### [Get-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](Get-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting.md)
+
+### [Get-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingStoreLayout](Get-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingStoreLayout.md)
 
 ### [Get-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema](Get-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema.md)
 
@@ -1715,6 +1717,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl](Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl.md)
 
+### [Request-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingEnterpriseUpgradeUrl](Request-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingEnterpriseUpgradeUrl.md)
+
 ### [Request-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupUrl](Request-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupUrl.md)
 
 ### [Request-MgBetaDeviceManagementComanagedDeviceRemoteAssistance](Request-MgBetaDeviceManagementComanagedDeviceRemoteAssistance.md)
@@ -1746,6 +1750,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage.md)
 
 ### [Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDeviceOwnerFullyManagedEnrollmentState](Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDeviceOwnerFullyManagedEnrollmentState.md)
+
+### [Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingStoreLayout](Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingStoreLayout.md)
 
 ### [Set-MgBetaDeviceManagementComanagedDeviceCategoryByRef](Set-MgBetaDeviceManagementComanagedDeviceCategoryByRef.md)
 

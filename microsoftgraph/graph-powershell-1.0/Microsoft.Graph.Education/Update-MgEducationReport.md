@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationreport
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEducationReport
 ---
@@ -25,7 +25,9 @@ Update the navigation property reports in education
 ```
 Update-MgEducationReport [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Id <string>] [-ReadingAssignmentSubmissions <IMicrosoftGraphReadingAssignmentSubmission[]>]
- [-ReflectCheckInResponses <IMicrosoftGraphReflectCheckInResponse[]>] [-Break]
+ [-ReadingCoachPassages <IMicrosoftGraphReadingCoachPassage[]>]
+ [-ReflectCheckInResponses <IMicrosoftGraphReflectCheckInResponse[]>]
+ [-SpeakerAssignmentSubmissions <IMicrosoftGraphSpeakerAssignmentSubmission[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -308,6 +310,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ReadingCoachPassages
+
+Details of practiced Reading Coach passages.
+To construct, see NOTES section for READINGCOACHPASSAGES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphReadingCoachPassage[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ReflectCheckInResponses
 
 Details of check-in responses.
@@ -342,6 +366,28 @@ Aliases:
 - RHV
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -SpeakerAssignmentSubmissions
+
+Details of submitted speaker assignments.
+To construct, see NOTES section for SPEAKERASSIGNMENTSUBMISSIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSpeakerAssignmentSubmission[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -438,6 +484,20 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [UnexpectedPauses <Int64?>]: Number of unexpected pauses made during the reading session.
     [WordCount <Int64?>]: Words count of the reading progress.
     [WordsPerMinute <Double?>]: Words per minute of the reading progress.
+  [ReadingCoachPassages <IMicrosoftGraphReadingCoachPassage[]>]: Details of practiced Reading Coach passages.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [IsReadingCompleted <Boolean?>]: Indicates if the reading passage was completed.
+    [LanguageTag <String>]: The language of the reading passage.
+    [PracticeWords <String[]>]: The list of challenging words for the student that they can practice further.
+    [PracticedAtDateTime <DateTime?>]: The date and time when the Reading Coach passage was practiced.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [StoryType <String>]: readingCoachStoryType
+    [StudentId <String>]: ID of the student that practiced the reading passage.
+    [TimeSpentReadingInSeconds <Double?>]: The time the student spent reading in seconds.
+    [WordsAccuracyPercentage <Double?>]: The percentage of words that the student read correctly.
+    [WordsPerMinute <Double?>]: The rate the student read at in words per minute.
   [ReflectCheckInResponses <IMicrosoftGraphReflectCheckInResponse[]>]: Details of check-in responses.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -455,6 +515,30 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [SubmitDateTime <DateTime?>]: Date and time when the response to the Reflect check-in was submitted.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [SpeakerAssignmentSubmissions <IMicrosoftGraphSpeakerAssignmentSubmission[]>]: Details of submitted speaker assignments.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [AssignmentId <String>]: ID of the assignment with which this submission is associated.
+    [AverageWordsPerMinutePace <Int64?>]: The average speaking pace of the student, measured in words per minute.
+    [ClassId <String>]: ID of the class this speaker progress is associated with.
+    [FillerWordsOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for using a filler word.
+    [IncorrectCameraDistanceOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for being either too close or too far away from the camera.
+    [LengthOfSubmissionInSeconds <Double?>]: The length of the student submission in seconds.
+    [LostEyeContactOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for losing eye contact with the camera.
+    [MonotoneOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for speaking in monotone.
+    [NonInclusiveLanguageOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for using non-inclusive or sensitive language.
+    [ObstructedViewOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for obstructing the view of their face.
+    [RepetitiveLanguageOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for using repetitive language.
+    [StudentId <String>]: ID of the user this speaker progress is associated with.
+    [SubmissionDateTime <DateTime?>]: Date and time of the submission this speaker progress is associated with.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [SubmissionId <String>]: ID of the submission this speaker progress is associated with.
+    [TopFillerWords <String[]>]: The filler words used most by the student.
+    [TopMispronouncedWords <String[]>]: The words mispronounced most by the student.
+    [TopNonInclusiveWordsAndPhrases <String[]>]: The non-inclusive or sensitive words and phrases most used by the student.
+    [TopRepetitiveWordsAndPhrases <String[]>]: The words and phrases most repeated by the student.
+    [WordsSpokenCount <Int64?>]: Total number of words spoken by the student in the submission.
 
 READINGASSIGNMENTSUBMISSIONS <IMicrosoftGraphReadingAssignmentSubmission[]>: Details of submitted reading assignments.
   [Id <String>]: The unique identifier for an entity.
@@ -487,6 +571,21 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [WordCount <Int64?>]: Words count of the reading progress.
   [WordsPerMinute <Double?>]: Words per minute of the reading progress.
 
+READINGCOACHPASSAGES <IMicrosoftGraphReadingCoachPassage[]>: Details of practiced Reading Coach passages.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [IsReadingCompleted <Boolean?>]: Indicates if the reading passage was completed.
+  [LanguageTag <String>]: The language of the reading passage.
+  [PracticeWords <String[]>]: The list of challenging words for the student that they can practice further.
+  [PracticedAtDateTime <DateTime?>]: The date and time when the Reading Coach passage was practiced.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [StoryType <String>]: readingCoachStoryType
+  [StudentId <String>]: ID of the student that practiced the reading passage.
+  [TimeSpentReadingInSeconds <Double?>]: The time the student spent reading in seconds.
+  [WordsAccuracyPercentage <Double?>]: The percentage of words that the student read correctly.
+  [WordsPerMinute <Double?>]: The rate the student read at in words per minute.
+
 REFLECTCHECKINRESPONSES <IMicrosoftGraphReflectCheckInResponse[]>: Details of check-in responses.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -504,6 +603,31 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [SubmitDateTime <DateTime?>]: Date and time when the response to the Reflect check-in was submitted.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+
+SPEAKERASSIGNMENTSUBMISSIONS <IMicrosoftGraphSpeakerAssignmentSubmission[]>: Details of submitted speaker assignments.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [AssignmentId <String>]: ID of the assignment with which this submission is associated.
+  [AverageWordsPerMinutePace <Int64?>]: The average speaking pace of the student, measured in words per minute.
+  [ClassId <String>]: ID of the class this speaker progress is associated with.
+  [FillerWordsOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for using a filler word.
+  [IncorrectCameraDistanceOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for being either too close or too far away from the camera.
+  [LengthOfSubmissionInSeconds <Double?>]: The length of the student submission in seconds.
+  [LostEyeContactOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for losing eye contact with the camera.
+  [MonotoneOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for speaking in monotone.
+  [NonInclusiveLanguageOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for using non-inclusive or sensitive language.
+  [ObstructedViewOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for obstructing the view of their face.
+  [RepetitiveLanguageOccurrencesCount <Int64?>]: The number of times the student was flagged by Speaker Coach for using repetitive language.
+  [StudentId <String>]: ID of the user this speaker progress is associated with.
+  [SubmissionDateTime <DateTime?>]: Date and time of the submission this speaker progress is associated with.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [SubmissionId <String>]: ID of the submission this speaker progress is associated with.
+  [TopFillerWords <String[]>]: The filler words used most by the student.
+  [TopMispronouncedWords <String[]>]: The words mispronounced most by the student.
+  [TopNonInclusiveWordsAndPhrases <String[]>]: The non-inclusive or sensitive words and phrases most used by the student.
+  [TopRepetitiveWordsAndPhrases <String[]>]: The words and phrases most repeated by the student.
+  [WordsSpokenCount <Int64?>]: Total number of words spoken by the student in the submission.
 
 
 ## RELATED LINKS

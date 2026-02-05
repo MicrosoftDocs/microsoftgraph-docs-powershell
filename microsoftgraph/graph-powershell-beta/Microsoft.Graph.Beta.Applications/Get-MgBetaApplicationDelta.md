@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaApplicationDelta
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaApplicationDelta
 
 ## SYNOPSIS
 
-Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection.
+Get newly created, updated, or deleted applications and agent identity blueprints without having to perform a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 > [!NOTE]
@@ -39,7 +39,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection.
+Get newly created, updated, or deleted applications and agent identity blueprints without having to perform a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 **Permissions**

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: 3a9d7f94-8c72-4fa1-ac56-5e0434d96157
+Module Guid: 0c6203bf-013b-4d2e-b7e6-e4a1bab3a2a6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.security/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -249,6 +249,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityIdentity](Get-MgSecurityIdentity.md)
 
+### [Get-MgSecurityIdentityAccount](Get-MgSecurityIdentityAccount.md)
+
+### [Get-MgSecurityIdentityAccount](Get-MgSecurityIdentityAccount.md)
+
+### [Get-MgSecurityIdentityAccountCount](Get-MgSecurityIdentityAccountCount.md)
+
 ### [Get-MgSecurityIdentityHealthIssue](Get-MgSecurityIdentityHealthIssue.md)
 
 ### [Get-MgSecurityIdentityHealthIssue](Get-MgSecurityIdentityHealthIssue.md)
@@ -258,6 +264,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSecurityIdentitySensor](Get-MgSecurityIdentitySensor.md)
 
 ### [Get-MgSecurityIdentitySensor](Get-MgSecurityIdentitySensor.md)
+
+### [Get-MgSecurityIdentitySensorCandidate](Get-MgSecurityIdentitySensorCandidate.md)
+
+### [Get-MgSecurityIdentitySensorCandidate](Get-MgSecurityIdentitySensorCandidate.md)
+
+### [Get-MgSecurityIdentitySensorCandidateActivationConfiguration](Get-MgSecurityIdentitySensorCandidateActivationConfiguration.md)
+
+### [Get-MgSecurityIdentitySensorCandidateCount](Get-MgSecurityIdentitySensorCandidateCount.md)
 
 ### [Get-MgSecurityIdentitySensorCount](Get-MgSecurityIdentitySensorCount.md)
 
@@ -625,6 +639,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Initialize-MgSecurityCaseEdiscoveryCaseCustodian](Initialize-MgSecurityCaseEdiscoveryCaseCustodian.md)
 
+### [Initialize-MgSecurityIdentitySensorCandidate](Initialize-MgSecurityIdentitySensorCandidate.md)
+
 ### [Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel](Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel.md)
 
 ### [Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel.md)
@@ -640,6 +656,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelSublabelInheritance](Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelSublabelInheritance.md)
 
 ### [Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics](Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics.md)
+
+### [Invoke-MgInvokeSecurityIdentityAccountAction](Invoke-MgInvokeSecurityIdentityAccountAction.md)
 
 ### [Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync](Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync.md)
 
@@ -701,9 +719,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel.md)
 
+### [New-MgSecurityIdentityAccount](New-MgSecurityIdentityAccount.md)
+
 ### [New-MgSecurityIdentityHealthIssue](New-MgSecurityIdentityHealthIssue.md)
 
 ### [New-MgSecurityIdentitySensor](New-MgSecurityIdentitySensor.md)
+
+### [New-MgSecurityIdentitySensorCandidate](New-MgSecurityIdentitySensorCandidate.md)
 
 ### [New-MgSecurityIdentitySensorDeploymentAccessKey](New-MgSecurityIdentitySensorDeploymentAccessKey.md)
 
@@ -845,9 +867,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgSecurityIdentity](Remove-MgSecurityIdentity.md)
 
+### [Remove-MgSecurityIdentityAccount](Remove-MgSecurityIdentityAccount.md)
+
 ### [Remove-MgSecurityIdentityHealthIssue](Remove-MgSecurityIdentityHealthIssue.md)
 
 ### [Remove-MgSecurityIdentitySensor](Remove-MgSecurityIdentitySensor.md)
+
+### [Remove-MgSecurityIdentitySensorCandidate](Remove-MgSecurityIdentitySensorCandidate.md)
+
+### [Remove-MgSecurityIdentitySensorCandidateActivationConfiguration](Remove-MgSecurityIdentitySensorCandidateActivationConfiguration.md)
 
 ### [Remove-MgSecurityIncident](Remove-MgSecurityIncident.md)
 
@@ -1003,9 +1031,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgSecurityIdentity](Update-MgSecurityIdentity.md)
 
+### [Update-MgSecurityIdentityAccount](Update-MgSecurityIdentityAccount.md)
+
 ### [Update-MgSecurityIdentityHealthIssue](Update-MgSecurityIdentityHealthIssue.md)
 
 ### [Update-MgSecurityIdentitySensor](Update-MgSecurityIdentitySensor.md)
+
+### [Update-MgSecurityIdentitySensorCandidate](Update-MgSecurityIdentitySensorCandidate.md)
+
+### [Update-MgSecurityIdentitySensorCandidateActivationConfiguration](Update-MgSecurityIdentitySensorCandidateActivationConfiguration.md)
 
 ### [Update-MgSecurityIncident](Update-MgSecurityIncident.md)
 

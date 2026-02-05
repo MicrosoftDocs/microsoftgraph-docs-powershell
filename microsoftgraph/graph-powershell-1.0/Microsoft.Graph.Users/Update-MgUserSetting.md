@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserSetting
 ---
@@ -28,10 +28,11 @@ Update-MgUserSetting -UserId <string> [-ResponseHeadersVariable <string>]
  [-ContributionToContentDiscoveryDisabled] [-Id <string>]
  [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
- [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Windows <IMicrosoftGraphWindowsSetting[]>]
+ [-WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -52,10 +53,11 @@ Update-MgUserSetting -InputObject <IUsersIdentity> [-ResponseHeadersVariable <st
  [-ContributionToContentDiscoveryDisabled] [-Id <string>]
  [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
- [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Windows <IMicrosoftGraphWindowsSetting[]>]
+ [-WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -602,11 +604,39 @@ HelpMessage: ''
 
 ### -Windows
 
-
+The Windows settings of the user stored in the cloud.
 To construct, see NOTES section for WINDOWS properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsSetting[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -WorkHoursAndLocations
+
+workHoursAndLocationsSetting
+To construct, see NOTES section for WORKHOURSANDLOCATIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkHoursAndLocationsSetting
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -753,7 +783,7 @@ Read-only.
       [State <String>]: 
       [Total <Int64?>]: 
       [Used <Int64?>]: 
-  [Windows <IMicrosoftGraphWindowsSetting[]>]: 
+  [Windows <IMicrosoftGraphWindowsSetting[]>]: The Windows settings of the user stored in the cloud.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [Instances <IMicrosoftGraphWindowsSettingInstance[]>]: A collection of setting values for a given windowsSetting.
@@ -769,12 +799,45 @@ Refers to the user's Windows device that modified the object at the specified da
     [PayloadType <String>]: The type of setting payloads contained in the instances navigation property.
     [SettingType <String>]: windowsSettingType
     [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
+  [WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>]: workHoursAndLocationsSetting
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [MaxSharedWorkLocationDetails <String>]: maxWorkLocationDetails
+    [Occurrences <IMicrosoftGraphWorkPlanOccurrence[]>]: Collection of work plan occurrences.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+        [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
+See below for more possible values.
+      [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+      [RecurrenceId <String>]: The identifier of the parent recurrence pattern that generated this occurrence.
+The value is null for time-off occurrences because they don't have a parent recurrence.
+      [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+      [TimeOffDetails <IMicrosoftGraphTimeOffDetails>]: timeOffDetails
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [IsAllDay <Boolean?>]: Indicates whether the time-off entry spans the entire day.
+        [Subject <String>]: The subject or reason for the time-off entry.
+      [WorkLocationType <String>]: workLocationType
+    [Recurrences <IMicrosoftGraphWorkPlanRecurrence[]>]: Collection of recurring work plans defined by the user.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+      [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+      [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+      [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+      [WorkLocationType <String>]: workLocationType
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
+  [EndDateTime <String>]: Usage: endDateTime='{endDateTime}'
   [ExtensionId <String>]: The unique identifier of extension
   [LicenseDetailsId <String>]: The unique identifier of licenseDetails
   [LinkedResourceId <String>]: The unique identifier of linkedResource
@@ -783,6 +846,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [ProfilePhotoId <String>]: The unique identifier of profilePhoto
   [ServiceStorageQuotaBreakdownId <String>]: The unique identifier of serviceStorageQuotaBreakdown
   [SharedInsightId <String>]: The unique identifier of sharedInsight
+  [StartDateTime <String>]: Usage: startDateTime='{startDateTime}'
   [TimeZoneStandard <String>]: Usage: TimeZoneStandard='{TimeZoneStandard}'
   [TodoTaskId <String>]: The unique identifier of todoTask
   [TodoTaskListId <String>]: The unique identifier of todoTaskList
@@ -792,6 +856,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [UserPrincipalName <String>]: Alternate key of user
   [WindowsSettingId <String>]: The unique identifier of windowsSetting
   [WindowsSettingInstanceId <String>]: The unique identifier of windowsSettingInstance
+  [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
+  [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
 ITEMINSIGHTS `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -875,7 +941,7 @@ Read-only.
     [Total <Int64?>]: 
     [Used <Int64?>]: 
 
-WINDOWS <IMicrosoftGraphWindowsSetting[]>: .
+WINDOWS <IMicrosoftGraphWindowsSetting[]>: The Windows settings of the user stored in the cloud.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Instances <IMicrosoftGraphWindowsSettingInstance[]>]: A collection of setting values for a given windowsSetting.
@@ -891,6 +957,70 @@ Refers to the user's Windows device that modified the object at the specified da
   [PayloadType <String>]: The type of setting payloads contained in the instances navigation property.
   [SettingType <String>]: windowsSettingType
   [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
+
+WORKHOURSANDLOCATIONS `<IMicrosoftGraphWorkHoursAndLocationsSetting>`: workHoursAndLocationsSetting
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [MaxSharedWorkLocationDetails <String>]: maxWorkLocationDetails
+  [Occurrences <IMicrosoftGraphWorkPlanOccurrence[]>]: Collection of work plan occurrences.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
+See below for more possible values.
+    [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+    [RecurrenceId <String>]: The identifier of the parent recurrence pattern that generated this occurrence.
+The value is null for time-off occurrences because they don't have a parent recurrence.
+    [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+    [TimeOffDetails <IMicrosoftGraphTimeOffDetails>]: timeOffDetails
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [IsAllDay <Boolean?>]: Indicates whether the time-off entry spans the entire day.
+      [Subject <String>]: The subject or reason for the time-off entry.
+    [WorkLocationType <String>]: workLocationType
+  [Recurrences <IMicrosoftGraphWorkPlanRecurrence[]>]: Collection of recurring work plans defined by the user.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+    [PlaceId <String>]: Identifier of a place from the Microsoft Graph Places Directory API.
+Only applicable when workLocationType is set to office.
+    [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Pattern <IMicrosoftGraphRecurrencePattern>]: recurrencePattern
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DayOfMonth <Int32?>]: The day of the month on which the event occurs.
+Required if type is absoluteMonthly or absoluteYearly.
+        [DaysOfWeek <String[]>]: A collection of the days of the week on which the event occurs.
+The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.
+ Required if type is weekly, relativeMonthly, or relativeYearly.
+        [FirstDayOfWeek <String>]: dayOfWeek
+        [Index <String>]: weekIndex
+        [Interval <Int32?>]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+Required.
+        [Month <Int32?>]: The month in which the event occurs.
+ This is a number from 1 to 12.
+        [Type <String>]: recurrencePatternType
+      [Range <IMicrosoftGraphRecurrenceRange>]: recurrenceRange
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [EndDate <DateTime?>]: The date to stop applying the recurrence pattern.
+Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
+Required if type is endDate.
+        [NumberOfOccurrences <Int32?>]: The number of times to repeat the event.
+Required and must be positive if type is numbered.
+        [RecurrenceTimeZone <String>]: Time zone for the startDate and endDate properties.
+Optional.
+If not specified, the time zone of the event is used.
+        [StartDate <DateTime?>]: The date to start applying the recurrence pattern.
+The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
+Must be the same value as the start property of the recurring event.
+Required.
+        [Type <String>]: recurrenceRangeType
+    [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+    [WorkLocationType <String>]: workLocationType
 
 
 ## RELATED LINKS

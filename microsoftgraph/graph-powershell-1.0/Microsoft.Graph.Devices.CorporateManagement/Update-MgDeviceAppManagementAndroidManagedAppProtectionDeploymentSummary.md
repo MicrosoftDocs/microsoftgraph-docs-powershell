@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementandroidmanagedappprotectiondeploymentsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
 ---
@@ -194,7 +194,7 @@ HelpMessage: ''
 
 ### -ConfigurationDeployedUserCount
 
-Not yet documented
+
 
 ```yaml
 Type: System.Int32
@@ -221,7 +221,7 @@ HelpMessage: ''
 
 ### -ConfigurationDeploymentSummaryPerApp
 
-Not yet documented
+
 To construct, see NOTES section for CONFIGURATIONDEPLOYMENTSUMMARYPERAPP properties and create a hash table.
 
 ```yaml
@@ -271,7 +271,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-Not yet documented
+
 
 ```yaml
 Type: System.String
@@ -417,7 +417,7 @@ HelpMessage: ''
 
 ### -LastRefreshTime
 
-Not yet documented
+
 
 ```yaml
 Type: System.DateTime
@@ -614,16 +614,16 @@ BODYPARAMETER `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedA
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ConfigurationDeployedUserCount <Int32?>]: Not yet documented
-  [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: Not yet documented
+  [ConfigurationDeployedUserCount <Int32?>]: 
+  [ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]: 
     [ConfigurationAppliedUserCount <Int32?>]: Number of users the policy is applied.
     [MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]: The identifier for a mobile app.
       [(Any) <Object>]: This indicates any property can be added to this object.
-  [DisplayName <String>]: Not yet documented
-  [LastRefreshTime <DateTime?>]: Not yet documented
+  [DisplayName <String>]: 
+  [LastRefreshTime <DateTime?>]: 
   [Version <String>]: Version of the entity.
 
-CONFIGURATIONDEPLOYMENTSUMMARYPERAPP <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>: Not yet documented
+CONFIGURATIONDEPLOYMENTSUMMARYPERAPP <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>: .
   [ConfigurationAppliedUserCount <Int32?>]: Number of users the policy is applied.
   [MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]: The identifier for a mobile app.
     [(Any) <Object>]: This indicates any property can be added to this object.

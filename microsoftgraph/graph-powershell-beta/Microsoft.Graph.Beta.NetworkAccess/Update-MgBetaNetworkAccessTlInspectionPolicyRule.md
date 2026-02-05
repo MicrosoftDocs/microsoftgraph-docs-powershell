@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlinspectionpolicyrule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessTlInspectionPolicyRule
 ---
@@ -75,6 +75,35 @@ Update the properties of a tlsInspectionRule object.
 | Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+$params = @{
+	name = "Contoso TLS Rule 1 - Updated"
+	priority = 
+	description = "My TLS rule - Updated"
+	action = "bypass"
+	settings = @{
+		status = "disabled"
+	}
+	matchingConditions = @{
+		destinations = @(
+			@{
+				"@odata.type" = "#microsoft.graph.networkaccess.tlsInspectionFqdnDestination"
+				values = @(
+				"www.contoso.test-updated.com"
+			"*.contoso.org"
+		)
+	}
+)
+}
+}
+
+Update-MgBetaNetworkAccessTlInspectionPolicyRule -TlsInspectionPolicyId $tlsInspectionPolicyId -PolicyRuleId $policyRuleId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -554,7 +583,6 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 - [Update-MgBetaNetworkAccessTlInspectionPolicyRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlinspectionpolicyrule)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionrule-update?view=graph-rest-beta)
-
 
 
 

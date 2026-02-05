@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationverifiedpublisher
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaApplicationVerifiedPublisher
 ---
@@ -13,7 +13,7 @@ title: Set-MgBetaApplicationVerifiedPublisher
 
 ## SYNOPSIS
 
-Set the the verifiedPublisher on an application.
+Set the the verifiedPublisher on an agentIdentityBlueprint.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Set the the verifiedPublisher on an application.
+Set the the verifiedPublisher on an agentIdentityBlueprint.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
 ## EXAMPLES
@@ -531,6 +531,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -545,7 +546,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgBetaApplicationVerifiedPublisher](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationverifiedpublisher)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-setverifiedpublisher?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentidentityblueprint-setverifiedpublisher?view=graph-rest-beta)
 
 
 

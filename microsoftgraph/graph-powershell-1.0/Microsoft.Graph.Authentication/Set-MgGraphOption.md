@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/set-mgenvironment
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgGraphOption
 ---
@@ -20,7 +20,7 @@ Sets global configurations that apply to the SDK. For example, toggle Web Accoun
 ### __AllParameterSets
 
 ```
-Set-MgGraphOption [-EnableLoginByWAM <bool>] [<CommonParameters>]
+Set-MgGraphOption [-DisableLoginByWAM <bool>] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -39,17 +39,18 @@ For example, toggle Web Account Manager (WAM) support.
 
 PS C:\> Set-MgGraphOption -EnableLoginByWAM $True
 
-Sets web account manager support
+Sets web account manager support  Note: Signin by Web Account Manager (WAM) is enabled by default on Windows and cannot be disabled.
+Setting this option will no longer have any effect.
 
 ## PARAMETERS
 
-### -EnableLoginByWAM
+### -DisableLoginByWAM
 
-{{ Fill EnableLoginByWAM Description }}
+{{ Fill DisableLoginByWAM Description }}
 
 ```yaml
-Type: System.Boolean
-DefaultValue: None
+Type: System.Nullable`1[System.Boolean]
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:

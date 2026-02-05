@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaNetworkAccessFilteringProfilePolicy
 ---
@@ -13,8 +13,7 @@ title: Remove-MgBetaNetworkAccessFilteringProfilePolicy
 
 ## SYNOPSIS
 
-Delete a tlsInspectionPolicyLink object.
-Used to unlink a tlsInspectionPolicy from a filtering profile.
+Delete a threatIntelligencePolicyLink object.
 
 ## SYNTAX
 
@@ -45,8 +44,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a tlsInspectionPolicyLink object.
-Used to unlink a tlsInspectionPolicy from a filtering profile.
+Delete a threatIntelligencePolicyLink object.
 
 **Permissions**
 
@@ -437,7 +435,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgBetaNetworkAccessFilteringProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofilepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicylink-delete?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-delete?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgTeamChannelMessage
 ---
@@ -14,7 +14,7 @@ title: Update-MgTeamChannelMessage
 ## SYNOPSIS
 
 Update a chatMessage object.
-Except for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+\rExcept for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\rOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation fails.
 This method doesn't support federation.
@@ -94,7 +94,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update a chatMessage object.
-Except for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+\rExcept for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\rOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation fails.
 This method doesn't support federation.

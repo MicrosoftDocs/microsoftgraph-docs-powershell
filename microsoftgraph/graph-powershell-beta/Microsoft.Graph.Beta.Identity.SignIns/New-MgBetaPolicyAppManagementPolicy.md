@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyAppManagementPolicy
 ---
@@ -611,13 +611,18 @@ For existing applications, the enforcement date can be retroactively applied.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Audiences <IMicrosoftGraphAudiencesConfiguration>]: audiencesConfiguration
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+        [AzureAdMultipleOrgs <IMicrosoftGraphAzureAdMultipleOrgsAudienceRestriction>]: azureAdMultipleOrgsAudienceRestriction
           [(Any) <Object>]: This indicates any property can be added to this object.
           [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
           [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
           [State <String>]: appManagementRestrictionState
         [PersonalMicrosoftAccount <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+          [State <String>]: appManagementRestrictionState
       [IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]: identifierUriConfiguration
         [(Any) <Object>]: This indicates any property can be added to this object.
         [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
@@ -660,13 +665,18 @@ For existing applications, the enforcement date can be retroactively applied.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Audiences <IMicrosoftGraphAudiencesConfiguration>]: audiencesConfiguration
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+      [AzureAdMultipleOrgs <IMicrosoftGraphAzureAdMultipleOrgsAudienceRestriction>]: azureAdMultipleOrgsAudienceRestriction
         [(Any) <Object>]: This indicates any property can be added to this object.
         [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
         [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
         [State <String>]: appManagementRestrictionState
       [PersonalMicrosoftAccount <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+        [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+        [State <String>]: appManagementRestrictionState
     [IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]: identifierUriConfiguration
       [(Any) <Object>]: This indicates any property can be added to this object.
       [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction

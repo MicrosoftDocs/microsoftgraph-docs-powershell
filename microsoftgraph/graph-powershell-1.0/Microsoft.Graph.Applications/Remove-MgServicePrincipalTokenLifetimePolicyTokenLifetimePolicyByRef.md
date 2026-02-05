@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaltokenlifetimepolicytokenlifetimepolicybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef
 ---
@@ -58,6 +58,14 @@ Remove a tokenLifetimePolicy object from a service principal.
 | Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.ApplicationConfiguration, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Applications
+
+Remove-MgServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef -ServicePrincipalId $servicePrincipalId -TokenLifetimePolicyId $tokenLifetimePolicyId
 
 ## PARAMETERS
 
@@ -441,7 +449,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Remove-MgServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaltokenlifetimepolicytokenlifetimepolicybyref)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-delete-tokenlifetimepolicies?view=graph-rest-1.0)
-
 
 
 

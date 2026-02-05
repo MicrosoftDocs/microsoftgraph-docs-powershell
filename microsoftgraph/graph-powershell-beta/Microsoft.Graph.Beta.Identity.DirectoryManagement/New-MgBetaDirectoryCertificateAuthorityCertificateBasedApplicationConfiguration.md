@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 ---
@@ -13,7 +13,7 @@ title: New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigu
 
 ## SYNOPSIS
 
-Create new navigation property to certificateBasedApplicationConfigurations for directory
+Create a new certificateBasedApplicationConfiguration  object.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create new navigation property to certificateBasedApplicationConfigurations for directory
+Create a new certificateBasedApplicationConfiguration  object.
 
 **Permissions**
 
@@ -483,6 +483,7 @@ In a certificateBasedApplicationConfiguration object, at least one object in the
 ## RELATED LINKS
 
 - [New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificateauthoritypath-post-certificatebasedapplicationconfigurations?view=graph-rest-beta)
 
 
 

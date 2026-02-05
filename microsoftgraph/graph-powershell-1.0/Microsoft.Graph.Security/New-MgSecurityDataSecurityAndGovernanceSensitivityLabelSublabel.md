@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritydatasecurityandgovernancesensitivitylabelsublabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel
 ---
@@ -25,9 +25,9 @@ Create new navigation property to sublabels for security
 ```
 New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel -SensitivityLabelId <string>
  [-ResponseHeadersVariable <string>] [-ActionSource <string>] [-AdditionalProperties <hashtable>]
- [-AutoTooltip <string>] [-Description <string>] [-DisplayName <string>] [-Id <string>] [-IsDefault]
- [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-Locale <string>] [-Name <string>]
- [-Priority <int>] [-Rights <IMicrosoftGraphUsageRightsIncluded>]
+ [-AutoTooltip <string>] [-Description <string>] [-DisplayName <string>] [-HasProtection]
+ [-Id <string>] [-IsDefault] [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-Locale <string>]
+ [-Name <string>] [-Priority <int>] [-Rights <IMicrosoftGraphUsageRightsIncluded>]
  [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -49,9 +49,9 @@ New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel -SensitivityLabe
 ```
 New-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <string>] [-ActionSource <string>] [-AdditionalProperties <hashtable>]
- [-AutoTooltip <string>] [-Description <string>] [-DisplayName <string>] [-Id <string>] [-IsDefault]
- [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-Locale <string>] [-Name <string>]
- [-Priority <int>] [-Rights <IMicrosoftGraphUsageRightsIncluded>]
+ [-AutoTooltip <string>] [-Description <string>] [-DisplayName <string>] [-HasProtection]
+ [-Id <string>] [-IsDefault] [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-Locale <string>]
+ [-Name <string>] [-Priority <int>] [-Rights <IMicrosoftGraphUsageRightsIncluded>]
  [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -265,6 +265,33 @@ HelpMessage: ''
 ```yaml
 Type: System.String
 DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HasProtection
+
+
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -825,6 +852,7 @@ Read-only.
   [AutoTooltip <String>]: 
   [Description <String>]: 
   [DisplayName <String>]: 
+  [HasProtection <Boolean?>]: 
   [IsDefault <Boolean?>]: 
   [IsEndpointProtectionEnabled <Boolean?>]: 
   [IsScopedToUser <Boolean?>]: 
@@ -856,6 +884,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [DepartmentTemplateId <String>]: The unique identifier of departmentTemplate
   [DispositionReviewStageNumber <String>]: The unique identifier of dispositionReviewStage
   [EdiscoveryCaseId <String>]: The unique identifier of ediscoveryCase
+  [EdiscoveryCaseMemberId <String>]: The unique identifier of ediscoveryCaseMember
   [EdiscoveryCustodianId <String>]: The unique identifier of ediscoveryCustodian
   [EdiscoveryNoncustodialDataSourceId <String>]: The unique identifier of ediscoveryNoncustodialDataSource
   [EdiscoveryReviewSetId <String>]: The unique identifier of ediscoveryReviewSet
@@ -874,6 +903,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [HostPortId <String>]: The unique identifier of hostPort
   [HostSslCertificateId <String>]: The unique identifier of hostSslCertificate
   [HostTrackerId <String>]: The unique identifier of hostTracker
+  [IdentityAccountsId <String>]: The unique identifier of identityAccounts
   [IncidentId <String>]: The unique identifier of incident
   [IntelligenceProfileId <String>]: The unique identifier of intelligenceProfile
   [IntelligenceProfileIndicatorId <String>]: The unique identifier of intelligenceProfileIndicator
@@ -891,6 +921,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecureScoreId <String>]: The unique identifier of secureScore
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun
@@ -926,6 +957,7 @@ Read-only.
   [AutoTooltip <String>]: 
   [Description <String>]: 
   [DisplayName <String>]: 
+  [HasProtection <Boolean?>]: 
   [IsDefault <Boolean?>]: 
   [IsEndpointProtectionEnabled <Boolean?>]: 
   [IsScopedToUser <Boolean?>]: 

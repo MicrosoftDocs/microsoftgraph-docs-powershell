@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Sites
-Module Guid: 2d7d579e-8cd3-4557-a292-be98cdafa5f8
+Module Guid: 6de73975-e25e-4241-8086-aa5c3b46b16c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.sites/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -614,6 +614,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupSiteOperation](Get-MgBetaGroupSiteOperation.md)
 
 ### [Get-MgBetaGroupSiteOperationCount](Get-MgBetaGroupSiteOperationCount.md)
+
+### [Get-MgBetaGroupSiteOperationStatus](Get-MgBetaGroupSiteOperationStatus.md)
 
 ### [Get-MgBetaGroupSitePage](Get-MgBetaGroupSitePage.md)
 
@@ -1342,6 +1344,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSiteOperation](Get-MgBetaSiteOperation.md)
 
 ### [Get-MgBetaSiteOperationCount](Get-MgBetaSiteOperationCount.md)
+
+### [Get-MgBetaSiteOperationStatus](Get-MgBetaSiteOperationStatus.md)
 
 ### [Get-MgBetaSitePage](Get-MgBetaSitePage.md)
 

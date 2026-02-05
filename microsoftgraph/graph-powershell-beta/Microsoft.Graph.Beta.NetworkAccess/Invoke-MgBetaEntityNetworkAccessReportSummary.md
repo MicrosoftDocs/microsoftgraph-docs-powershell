@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetaentitynetworkaccessreportsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaEntityNetworkAccessReportSummary
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgBetaEntityNetworkAccessReportSummary
 
 ## SYNOPSIS
 
-Get the number of users, devices, and workloads per traffic type in a specified time period.
+Get the number of users, devices, and workloads per traffic type in a specified time period as logged in Global Secure Access.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the number of users, devices, and workloads per traffic type in a specified time period.
+Get the number of users, devices, and workloads per traffic type in a specified time period as logged in Global Secure Access.
 
 **Permissions**
 

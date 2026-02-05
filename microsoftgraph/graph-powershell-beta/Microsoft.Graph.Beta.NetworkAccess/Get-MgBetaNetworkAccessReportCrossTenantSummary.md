@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportcrosstenantsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessReportCrossTenantSummary
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaNetworkAccessReportCrossTenantSummary
 
 ## SYNOPSIS
 
-Get a summary of the cross-tenant access patterns.
+Get a summary of the cross-tenant access patterns as logged in Global Secure Access.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get a summary of the cross-tenant access patterns.
+Get a summary of the cross-tenant access patterns as logged in Global Secure Access.
 
 **Permissions**
 

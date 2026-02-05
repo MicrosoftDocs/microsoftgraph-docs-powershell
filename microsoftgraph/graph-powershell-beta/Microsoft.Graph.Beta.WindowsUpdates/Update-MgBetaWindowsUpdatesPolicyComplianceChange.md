@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicycompliancechange
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaWindowsUpdatesPolicyComplianceChange
 ---
@@ -13,7 +13,7 @@ title: Update-MgBetaWindowsUpdatesPolicyComplianceChange
 
 ## SYNOPSIS
 
-Update the properties of a contentApproval object.
+Update the properties of a complianceChange object.
 
 ## SYNTAX
 
@@ -69,7 +69,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a contentApproval object.
+Update the properties of a complianceChange object.
 
 **Permissions**
 
@@ -819,7 +819,7 @@ It can only be set to true on automatic policies that target monthly security up
 ## RELATED LINKS
 
 - [Update-MgBetaWindowsUpdatesPolicyComplianceChange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicycompliancechange)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-contentapproval-update?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-update?view=graph-rest-beta)
 
 
 

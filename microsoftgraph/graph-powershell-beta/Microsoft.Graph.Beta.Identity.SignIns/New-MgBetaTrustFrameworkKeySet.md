@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTrustFrameworkKeySet
 ---
@@ -483,7 +483,7 @@ The field isn't readable.
     [Status <String>]: trustFrameworkKeyStatus
     [Use <String>]: The use (public key use) parameter identifies the intended use of the public key.
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
-Possible values are: sig (signature), enc (encryption).
+The possible values are: sig (signature), enc (encryption).
     [X5C <String[]>]: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
 For more information, see RFC 5280.
     [X5T <String>]: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
@@ -516,7 +516,7 @@ The field isn't readable.
     [Status <String>]: trustFrameworkKeyStatus
     [Use <String>]: The use (public key use) parameter identifies the intended use of the public key.
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
-Possible values are: sig (signature), enc (encryption).
+The possible values are: sig (signature), enc (encryption).
     [X5C <String[]>]: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
 For more information, see RFC 5280.
     [X5T <String>]: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
@@ -549,7 +549,7 @@ The field isn't readable.
   [Status <String>]: trustFrameworkKeyStatus
   [Use <String>]: The use (public key use) parameter identifies the intended use of the public key.
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
-Possible values are: sig (signature), enc (encryption).
+The possible values are: sig (signature), enc (encryption).
   [X5C <String[]>]: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
 For more information, see RFC 5280.
   [X5T <String>]: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
@@ -583,7 +583,7 @@ The field isn't readable.
   [Status <String>]: trustFrameworkKeyStatus
   [Use <String>]: The use (public key use) parameter identifies the intended use of the public key.
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
-Possible values are: sig (signature), enc (encryption).
+The possible values are: sig (signature), enc (encryption).
   [X5C <String[]>]: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
 For more information, see RFC 5280.
   [X5T <String>]: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.

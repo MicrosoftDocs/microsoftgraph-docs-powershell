@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchanneltab
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgTeamChannelTab
 ---
@@ -13,7 +13,7 @@ title: Update-MgTeamChannelTab
 
 ## SYNOPSIS
 
-Update the properties of the specified tab.This API can be used to configure the content of the tab.
+Update the properties of the specified tab.\rThis API can be used to configure the content of the tab.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelTab?view=graph-powershell-beta)
@@ -70,7 +70,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of the specified tab.This API can be used to configure the content of the tab.
+Update the properties of the specified tab.\rThis API can be used to configure the content of the tab.
 
 **Permissions**
 

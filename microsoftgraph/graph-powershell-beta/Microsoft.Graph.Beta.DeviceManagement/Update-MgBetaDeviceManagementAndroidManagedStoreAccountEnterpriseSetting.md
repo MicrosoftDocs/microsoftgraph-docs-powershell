@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 ---
@@ -26,6 +26,7 @@ Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
  [-CompanyCodes <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>] [-DeviceOwnerManagementEnabled]
  [-EnrollmentTarget <string>] [-Id <string>] [-LastAppSyncDateTime <datetime>]
  [-LastAppSyncStatus <string>] [-LastModifiedDateTime <datetime>]
+ [-ManagedGooglePlayEnterpriseType <ManagedGooglePlayEnterpriseType>]
  [-ManagedGooglePlayInitialScopeTagIds <string[]>] [-OwnerOrganizationName <string>]
  [-OwnerUserPrincipalName <string>] [-TargetGroupIds <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
@@ -403,6 +404,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ManagedGooglePlayEnterpriseType
+
+Bind Type of the tenant with the Google EMM API
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedGooglePlayEnterpriseType
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ManagedGooglePlayInitialScopeTagIds
 
 Initial scope tags for MGP apps
@@ -642,6 +664,7 @@ Read-only.
   [LastAppSyncDateTime <DateTime?>]: Last completion time for app sync
   [LastAppSyncStatus <String>]: Sync status of the tenant with the Google EMM API
   [LastModifiedDateTime <DateTime?>]: Last modification time for Android enterprise settings
+  [ManagedGooglePlayEnterpriseType <ManagedGooglePlayEnterpriseType?>]: Bind Type of the tenant with the Google EMM API
   [ManagedGooglePlayInitialScopeTagIds <String[]>]: Initial scope tags for MGP apps
   [OwnerOrganizationName <String>]: Organization name used when onboarding Android Enterprise
   [OwnerUserPrincipalName <String>]: Owner UPN that created the enterprise

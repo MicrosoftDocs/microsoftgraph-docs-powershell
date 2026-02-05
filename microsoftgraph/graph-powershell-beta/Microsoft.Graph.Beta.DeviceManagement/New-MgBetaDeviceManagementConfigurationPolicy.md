@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementConfigurationPolicy
 ---
@@ -722,11 +722,14 @@ Read-only.
         [Platform <DeviceManagementConfigurationPlatforms?>]: Supported platform types.
         [Technologies <DeviceManagementConfigurationTechnologies?>]: Describes which technology this setting can be deployed with
       [BaseUri <String>]: Base CSP Path
-      [CategoryId <String>]: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-      [Description <String>]: Description of the item
-      [DisplayName <String>]: Display name of the item
-      [HelpText <String>]: Help text of the item
-      [InfoUrls <String[]>]: List of links more info for the setting can be found at
+      [CategoryId <String>]: Specify category in which the setting is under.
+Support $filters.
+      [Description <String>]: Description of the setting.
+      [DisplayName <String>]: Name of the setting.
+For example: Allow Toast.
+      [HelpText <String>]: Help text of the setting.
+Give more details of the setting.
+      [InfoUrls <String[]>]: List of links more info for the setting can be found at.
       [Keywords <String[]>]: Tokens which to search settings on
       [Name <String>]: Name of the item
       [Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]: deviceManagementConfigurationSettingOccurrence
@@ -739,7 +742,7 @@ A MinDeviceOccurrence of 0 means setting is optional
         [SettingDefinitionId <String>]: Setting definition id that is being referred to a setting.
 Applicable for reusable setting.
       [RiskLevel <DeviceManagementConfigurationSettingRiskLevel?>]: Setting RiskLevel
-      [RootDefinitionId <String>]: Root setting definition if the setting is a child setting.
+      [RootDefinitionId <String>]: Root setting definition id if the setting is a child setting.
       [SettingUsage <DeviceManagementConfigurationSettingUsage?>]: Supported setting types
       [UxBehavior <DeviceManagementConfigurationControlType?>]: Setting control type representation in the UX
       [Version <String>]: Item Version
@@ -776,11 +779,14 @@ Read-only.
       [Platform <DeviceManagementConfigurationPlatforms?>]: Supported platform types.
       [Technologies <DeviceManagementConfigurationTechnologies?>]: Describes which technology this setting can be deployed with
     [BaseUri <String>]: Base CSP Path
-    [CategoryId <String>]: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-    [Description <String>]: Description of the item
-    [DisplayName <String>]: Display name of the item
-    [HelpText <String>]: Help text of the item
-    [InfoUrls <String[]>]: List of links more info for the setting can be found at
+    [CategoryId <String>]: Specify category in which the setting is under.
+Support $filters.
+    [Description <String>]: Description of the setting.
+    [DisplayName <String>]: Name of the setting.
+For example: Allow Toast.
+    [HelpText <String>]: Help text of the setting.
+Give more details of the setting.
+    [InfoUrls <String[]>]: List of links more info for the setting can be found at.
     [Keywords <String[]>]: Tokens which to search settings on
     [Name <String>]: Name of the item
     [Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]: deviceManagementConfigurationSettingOccurrence
@@ -793,7 +799,7 @@ A MinDeviceOccurrence of 0 means setting is optional
       [SettingDefinitionId <String>]: Setting definition id that is being referred to a setting.
 Applicable for reusable setting.
     [RiskLevel <DeviceManagementConfigurationSettingRiskLevel?>]: Setting RiskLevel
-    [RootDefinitionId <String>]: Root setting definition if the setting is a child setting.
+    [RootDefinitionId <String>]: Root setting definition id if the setting is a child setting.
     [SettingUsage <DeviceManagementConfigurationSettingUsage?>]: Supported setting types
     [UxBehavior <DeviceManagementConfigurationControlType?>]: Setting control type representation in the UX
     [Version <String>]: Item Version

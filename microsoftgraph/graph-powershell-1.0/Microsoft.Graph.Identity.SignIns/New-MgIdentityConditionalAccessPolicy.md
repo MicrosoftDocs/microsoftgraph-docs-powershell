@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityConditionalAccessPolicy
 ---
@@ -14,6 +14,9 @@ title: New-MgIdentityConditionalAccessPolicy
 ## SYNOPSIS
 
 Create a new conditionalAccessPolicy.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -823,7 +826,7 @@ Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
       [(Any) <Object>]: This indicates any property can be added to this object.
       [TransferMethods <String>]: conditionalAccessTransferMethods
     [ClientAppTypes <String[]>]: Client application types included in the policy.
-Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other.
+The possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other.
 Required.
  The easUnsupported enumeration member will be deprecated in favor of exchangeActiveSync, which includes EAS supported and unsupported platforms.
     [ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]: conditionalAccessClientApplications
@@ -841,15 +844,15 @@ Required.
       [IncludeLocations <String[]>]: Location IDs in scope of policy unless explicitly excluded, All, or AllTrusted.
     [Platforms <IMicrosoftGraphConditionalAccessPlatforms>]: conditionalAccessPlatforms
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [ExcludePlatforms <String[]>]: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
-      [IncludePlatforms <String[]>]: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
+      [ExcludePlatforms <String[]>]: The possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
+      [IncludePlatforms <String[]>]: The possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
     [ServicePrincipalRiskLevels <String[]>]: Service principal risk levels included in the policy.
-Possible values are: low, medium, high, none, unknownFutureValue.
+The possible values are: low, medium, high, none, unknownFutureValue.
     [SignInRiskLevels <String[]>]: Sign-in risk levels included in the policy.
-Possible values are: low, medium, high, hidden, none, unknownFutureValue.
+The possible values are: low, medium, high, hidden, none, unknownFutureValue.
 Required.
     [UserRiskLevels <String[]>]: User risk levels included in the policy.
-Possible values are: low, medium, high, hidden, none, unknownFutureValue.
+The possible values are: low, medium, high, hidden, none, unknownFutureValue.
 Required.
     [Users <IMicrosoftGraphConditionalAccessUsers>]: conditionalAccessUsers
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -948,7 +951,7 @@ Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
     [(Any) <Object>]: This indicates any property can be added to this object.
     [TransferMethods <String>]: conditionalAccessTransferMethods
   [ClientAppTypes <String[]>]: Client application types included in the policy.
-Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other.
+The possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other.
 Required.
  The easUnsupported enumeration member will be deprecated in favor of exchangeActiveSync, which includes EAS supported and unsupported platforms.
   [ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]: conditionalAccessClientApplications
@@ -966,15 +969,15 @@ Required.
     [IncludeLocations <String[]>]: Location IDs in scope of policy unless explicitly excluded, All, or AllTrusted.
   [Platforms <IMicrosoftGraphConditionalAccessPlatforms>]: conditionalAccessPlatforms
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [ExcludePlatforms <String[]>]: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
-    [IncludePlatforms <String[]>]: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
+    [ExcludePlatforms <String[]>]: The possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
+    [IncludePlatforms <String[]>]: The possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
   [ServicePrincipalRiskLevels <String[]>]: Service principal risk levels included in the policy.
-Possible values are: low, medium, high, none, unknownFutureValue.
+The possible values are: low, medium, high, none, unknownFutureValue.
   [SignInRiskLevels <String[]>]: Sign-in risk levels included in the policy.
-Possible values are: low, medium, high, hidden, none, unknownFutureValue.
+The possible values are: low, medium, high, hidden, none, unknownFutureValue.
 Required.
   [UserRiskLevels <String[]>]: User risk levels included in the policy.
-Possible values are: low, medium, high, hidden, none, unknownFutureValue.
+The possible values are: low, medium, high, hidden, none, unknownFutureValue.
 Required.
   [Users <IMicrosoftGraphConditionalAccessUsers>]: conditionalAccessUsers
     [(Any) <Object>]: This indicates any property can be added to this object.

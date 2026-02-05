@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 2d9ca00d-3578-4dd1-95ba-774f887b46f6
+Module Guid: 3801c2b1-72fc-4303-94e5-a5f7dcc3232a
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,6 +11,8 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Identity.SignIns Cmdlets
+### [Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider](Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider.md)
+
 ### [Confirm-MgRiskyServicePrincipalCompromised](Confirm-MgRiskyServicePrincipalCompromised.md)
 
 ### [Confirm-MgRiskyUserCompromised](Confirm-MgRiskyUserCompromised.md)
@@ -178,6 +180,28 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgIdentityProvider](Get-MgIdentityProvider.md)
 
 ### [Get-MgIdentityProviderCount](Get-MgIdentityProviderCount.md)
+
+### [Get-MgIdentityRiskPrevention](Get-MgIdentityRiskPrevention.md)
+
+### [Get-MgIdentityRiskPreventionFraudProtectionProvider](Get-MgIdentityRiskPreventionFraudProtectionProvider.md)
+
+### [Get-MgIdentityRiskPreventionFraudProtectionProvider](Get-MgIdentityRiskPreventionFraudProtectionProvider.md)
+
+### [Get-MgIdentityRiskPreventionFraudProtectionProviderCount](Get-MgIdentityRiskPreventionFraudProtectionProviderCount.md)
+
+### [Get-MgIdentityRiskPreventionWebApplicationFirewallProvider](Get-MgIdentityRiskPreventionWebApplicationFirewallProvider.md)
+
+### [Get-MgIdentityRiskPreventionWebApplicationFirewallProvider](Get-MgIdentityRiskPreventionWebApplicationFirewallProvider.md)
+
+### [Get-MgIdentityRiskPreventionWebApplicationFirewallProviderCount](Get-MgIdentityRiskPreventionWebApplicationFirewallProviderCount.md)
+
+### [Get-MgIdentityRiskPreventionWebApplicationFirewallVerification](Get-MgIdentityRiskPreventionWebApplicationFirewallVerification.md)
+
+### [Get-MgIdentityRiskPreventionWebApplicationFirewallVerification](Get-MgIdentityRiskPreventionWebApplicationFirewallVerification.md)
+
+### [Get-MgIdentityRiskPreventionWebApplicationFirewallVerificationCount](Get-MgIdentityRiskPreventionWebApplicationFirewallVerificationCount.md)
+
+### [Get-MgIdentityRiskPreventionWebApplicationFirewallVerificationProvider](Get-MgIdentityRiskPreventionWebApplicationFirewallVerificationProvider.md)
 
 ### [Get-MgIdentityUserFlowAttribute](Get-MgIdentityUserFlowAttribute.md)
 
@@ -591,6 +615,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgIdentityProvider](New-MgIdentityProvider.md)
 
+### [New-MgIdentityRiskPreventionFraudProtectionProvider](New-MgIdentityRiskPreventionFraudProtectionProvider.md)
+
+### [New-MgIdentityRiskPreventionWebApplicationFirewallProvider](New-MgIdentityRiskPreventionWebApplicationFirewallProvider.md)
+
+### [New-MgIdentityRiskPreventionWebApplicationFirewallVerification](New-MgIdentityRiskPreventionWebApplicationFirewallVerification.md)
+
 ### [New-MgIdentityUserFlowAttribute](New-MgIdentityUserFlowAttribute.md)
 
 ### [New-MgInformationProtectionThreatAssessmentRequest](New-MgInformationProtectionThreatAssessmentRequest.md)
@@ -720,6 +750,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgIdentityCustomAuthenticationExtension](Remove-MgIdentityCustomAuthenticationExtension.md)
 
 ### [Remove-MgIdentityProvider](Remove-MgIdentityProvider.md)
+
+### [Remove-MgIdentityRiskPrevention](Remove-MgIdentityRiskPrevention.md)
+
+### [Remove-MgIdentityRiskPreventionFraudProtectionProvider](Remove-MgIdentityRiskPreventionFraudProtectionProvider.md)
+
+### [Remove-MgIdentityRiskPreventionWebApplicationFirewallProvider](Remove-MgIdentityRiskPreventionWebApplicationFirewallProvider.md)
+
+### [Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification](Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification.md)
 
 ### [Remove-MgIdentityUserFlowAttribute](Remove-MgIdentityUserFlowAttribute.md)
 
@@ -880,6 +918,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgIdentityCustomAuthenticationExtension](Update-MgIdentityCustomAuthenticationExtension.md)
 
 ### [Update-MgIdentityProvider](Update-MgIdentityProvider.md)
+
+### [Update-MgIdentityRiskPrevention](Update-MgIdentityRiskPrevention.md)
+
+### [Update-MgIdentityRiskPreventionFraudProtectionProvider](Update-MgIdentityRiskPreventionFraudProtectionProvider.md)
+
+### [Update-MgIdentityRiskPreventionWebApplicationFirewallProvider](Update-MgIdentityRiskPreventionWebApplicationFirewallProvider.md)
+
+### [Update-MgIdentityRiskPreventionWebApplicationFirewallVerification](Update-MgIdentityRiskPreventionWebApplicationFirewallVerification.md)
 
 ### [Update-MgIdentityUserFlowAttribute](Update-MgIdentityUserFlowAttribute.md)
 

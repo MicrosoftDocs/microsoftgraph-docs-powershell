@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguserpassword
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserPassword
 ---
@@ -14,7 +14,7 @@ title: Update-MgUserPassword
 ## SYNOPSIS
 
 Update the signed-in user's password.
-Any user can update their password without belonging to any administrator role.To update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
+Any user can update their password without belonging to any administrator role.\rTo update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
 See Example 3: Update the passwordProfile of a user and reset their password.
 
 > [!NOTE]
@@ -74,7 +74,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the signed-in user's password.
-Any user can update their password without belonging to any administrator role.To update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
+Any user can update their password without belonging to any administrator role.\rTo update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
 See Example 3: Update the passwordProfile of a user and reset their password.
 
 ## EXAMPLES

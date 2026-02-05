@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaExternalConnectionSchema
 ---
@@ -13,7 +13,7 @@ title: Update-MgBetaExternalConnectionSchema
 
 ## SYNOPSIS
 
-Update the properties of a schema for an externalConnection.
+Create a new or update an existing schema for a Microsoft Search connection.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-1.0)
@@ -69,7 +69,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a schema for an externalConnection.
+Create a new or update an existing schema for a Microsoft Search connection.
 
 **Permissions**
 
@@ -574,10 +574,11 @@ The minimum number of properties is one, the maximum is 128.
     [Aliases <String[]>]: A set of aliases or friendly names for the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, each string might not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
+For example, each string might not contain control characters, whitespace, or any of the following special characters: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
 Optional.
+    [Description <String>]: 
     [IsExactMatchRequired <Boolean?>]: Specifies if the property will be matched exactly for queries.
-Exact matching can only be set to true for non-searchable properties of type string or stringCollection.
+Exact matching can only be set to true for nonsearchable properties of type string or stringCollection.
 Optional.
     [IsQueryable <Boolean?>]: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
@@ -591,17 +592,17 @@ Retrievable properties are also available to add to the display template used to
 Optional.
     [IsSearchable <Boolean?>]: Specifies if the property is searchable.
 Only properties of type string or stringCollection can be searchable.
-Non-searchable properties aren't added to the search index.
+Nonsearchable properties aren't added to the search index.
 Optional.
     [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
 Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl.
-Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl.
+Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl, personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
     [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, the property name may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
+For example, the property name may not contain control characters, whitespace, or any of the following special characters: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
  Required.
     [RankingHint <IMicrosoftGraphExternalConnectorsRankingHint>]: rankingHint
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -636,10 +637,11 @@ The minimum number of properties is one, the maximum is 128.
   [Aliases <String[]>]: A set of aliases or friendly names for the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, each string might not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
+For example, each string might not contain control characters, whitespace, or any of the following special characters: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
 Optional.
+  [Description <String>]: 
   [IsExactMatchRequired <Boolean?>]: Specifies if the property will be matched exactly for queries.
-Exact matching can only be set to true for non-searchable properties of type string or stringCollection.
+Exact matching can only be set to true for nonsearchable properties of type string or stringCollection.
 Optional.
   [IsQueryable <Boolean?>]: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
@@ -653,17 +655,17 @@ Retrievable properties are also available to add to the display template used to
 Optional.
   [IsSearchable <Boolean?>]: Specifies if the property is searchable.
 Only properties of type string or stringCollection can be searchable.
-Non-searchable properties aren't added to the search index.
+Nonsearchable properties aren't added to the search index.
 Optional.
   [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
 Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl.
-Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl.
+Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl, personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
   [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, the property name may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
+For example, the property name may not contain control characters, whitespace, or any of the following special characters: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
  Required.
   [RankingHint <IMicrosoftGraphExternalConnectorsRankingHint>]: rankingHint
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -674,7 +676,7 @@ For example, the property name may not contain control characters, whitespace, o
 ## RELATED LINKS
 
 - [Update-MgBetaExternalConnectionSchema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-beta)
 
 
 

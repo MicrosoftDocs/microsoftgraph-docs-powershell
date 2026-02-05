@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsettinggradingscheme
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationClassAssignmentSettingGradingScheme
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaEducationClassAssignmentSettingGradingScheme
 ## SYNOPSIS
 
 Read the properties and relationships of an educationGradingScheme object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentSettingGradingScheme](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSettingGradingScheme?view=graph-powershell-1.0)
 
 ## SYNTAX
 

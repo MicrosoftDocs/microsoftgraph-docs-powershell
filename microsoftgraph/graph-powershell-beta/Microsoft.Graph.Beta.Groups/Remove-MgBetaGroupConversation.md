@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupconversation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaGroupConversation
 ---
@@ -13,7 +13,7 @@ title: Remove-MgBetaGroupConversation
 
 ## SYNOPSIS
 
-Delete a group's conversation object.
+Delete conversation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupConversation?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a group's conversation object.
+Delete conversation.
 
 **Permissions**
 
@@ -449,7 +449,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgBetaGroupConversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupconversation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-conversation?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversation-delete?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventWebinarSession
 ---
@@ -14,7 +14,7 @@ title: Get-MgVirtualEventWebinarSession
 ## SYNOPSIS
 
 Read the properties and relationships of a virtualEventSession object.
-Currently, the following virtual event types are supported: - virtualEventTownhall- virtualEventWebinar
+Currently, the following virtual event types are supported: \r- virtualEventTownhall\r- virtualEventWebinar
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarSession?view=graph-powershell-beta)
@@ -59,7 +59,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Read the properties and relationships of a virtualEventSession object.
-Currently, the following virtual event types are supported: - virtualEventTownhall- virtualEventWebinar
+Currently, the following virtual event types are supported: \r- virtualEventTownhall\r- virtualEventWebinar
 
 **Permissions**
 

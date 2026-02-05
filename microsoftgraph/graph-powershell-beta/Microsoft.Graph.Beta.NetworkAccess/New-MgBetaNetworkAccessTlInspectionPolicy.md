@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlinspectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessTlInspectionPolicy
 ---
@@ -56,6 +56,22 @@ Create a new tlsInspectionPolicy object.
 | Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+$params = @{
+	name = "Default TLS Inspection Policy"
+	description = "Policy for inspecting TLS traffic"
+	settings = @{
+		defaultAction = "bypass"
+	}
+}
+
+New-MgBetaNetworkAccessTlInspectionPolicy -BodyParameter $params
 
 ## PARAMETERS
 
@@ -523,7 +539,6 @@ Read-only.
 
 - [New-MgBetaNetworkAccessTlInspectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlinspectionpolicy)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-post-tlsinspectionpolicies?view=graph-rest-beta)
-
 
 
 

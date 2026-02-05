@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesstlinspectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaNetworkAccessTlInspectionPolicy
 ---
@@ -53,6 +53,14 @@ Delete a tlsInspectionPolicy object.
 | Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+Remove-MgBetaNetworkAccessTlInspectionPolicy -TlsInspectionPolicyId $tlsInspectionPolicyId
 
 ## PARAMETERS
 
@@ -415,7 +423,6 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 - [Remove-MgBetaNetworkAccessTlInspectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesstlinspectionpolicy)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicy-delete?view=graph-rest-beta)
-
 
 
 

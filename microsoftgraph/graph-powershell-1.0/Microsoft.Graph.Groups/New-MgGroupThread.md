@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupThread
 ---
@@ -14,7 +14,7 @@ title: New-MgGroupThread
 ## SYNOPSIS
 
 Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.Use reply thread or reply post to further post to that thread.
+A new conversation, conversation thread, and post are created in the group.\rUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
 > [!NOTE]
@@ -76,7 +76,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.Use reply thread or reply post to further post to that thread.
+A new conversation, conversation thread, and post are created in the group.\rUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
 **Permissions**

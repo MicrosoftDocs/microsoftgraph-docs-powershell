@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDriveRootDelta
 ---
@@ -14,9 +14,9 @@ title: Get-MgBetaDriveRootDelta
 ## SYNOPSIS
 
 Track changes in a driveItem and its children over time.
-Your app begins by calling delta without any parameters.The service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink.Your app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
-After you finish receiving all the changes, you may apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
-Deleted items are returned with the deleted facet.Items with this property set should be removed from your local state.
+Your app begins by calling delta without any parameters.\rThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink.\rYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
+After you finish receiving all the changes, you may apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
 Note: you should only delete a folder locally if it's empty after syncing all the changes.
 
 > [!NOTE]
@@ -74,9 +74,9 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Track changes in a driveItem and its children over time.
-Your app begins by calling delta without any parameters.The service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink.Your app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
-After you finish receiving all the changes, you may apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
-Deleted items are returned with the deleted facet.Items with this property set should be removed from your local state.
+Your app begins by calling delta without any parameters.\rThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink.\rYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
+After you finish receiving all the changes, you may apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
 Note: you should only delete a folder locally if it's empty after syncing all the changes.
 
 **Permissions**

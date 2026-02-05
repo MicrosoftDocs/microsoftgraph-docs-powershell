@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.BackupRestore
-Module Guid: 597050fd-1350-485c-88db-e8e6537b55cd
+Module Guid: ba06e9d5-db7a-4733-8f9d-0dac558e55cc
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.backuprestore/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -269,6 +269,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgDeactivateSolutionBackupRestoreServiceApp](Invoke-MgDeactivateSolutionBackupRestoreServiceApp.md)
 
+### [Invoke-MgOffboardSolutionBackupRestoreProtectionUnit](Invoke-MgOffboardSolutionBackupRestoreProtectionUnit.md)
+
 ### [New-MgSolutionBackupRestoreDriveInclusionRule](New-MgSolutionBackupRestoreDriveInclusionRule.md)
 
 ### [New-MgSolutionBackupRestoreDriveProtectionUnit](New-MgSolutionBackupRestoreDriveProtectionUnit.md)
@@ -376,6 +378,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](Remove-MgSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob.md)
 
 ### [Search-MgSolutionBackupRestorePoint](Search-MgSolutionBackupRestorePoint.md)
+
+### [Stop-MgSolutionBackupRestoreProtectionUnitOffboard](Stop-MgSolutionBackupRestoreProtectionUnitOffboard.md)
 
 ### [Update-MgSolutionBackupRestore](Update-MgSolutionBackupRestore.md)
 

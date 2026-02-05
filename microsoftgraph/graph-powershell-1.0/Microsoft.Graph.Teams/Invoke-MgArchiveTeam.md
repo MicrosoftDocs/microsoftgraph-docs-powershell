@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteam
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgArchiveTeam
 ---
@@ -14,7 +14,7 @@ title: Invoke-MgArchiveTeam
 ## SYNOPSIS
 
 Archive the specified team.
-When a team is archived, users can no longer make most changes to the team.
+\rWhen a team is archived, users can no longer make most changes to the team.
 For example, users can no longer: send or like messages on any channel in the team; edit the team's name or description; nor edit other settings.
 However, membership changes to the team are still allowed.
 Archiving is an async operation.
@@ -79,7 +79,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Archive the specified team.
-When a team is archived, users can no longer make most changes to the team.
+\rWhen a team is archived, users can no longer make most changes to the team.
 For example, users can no longer: send or like messages on any channel in the team; edit the team's name or description; nor edit other settings.
 However, membership changes to the team are still allowed.
 Archiving is an async operation.

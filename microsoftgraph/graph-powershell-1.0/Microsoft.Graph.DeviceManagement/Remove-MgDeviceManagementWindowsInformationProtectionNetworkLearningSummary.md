@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementwindowsinformationprotectionnetworklearningsummary
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary
 ---
@@ -13,7 +13,7 @@ title: Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSumma
 
 ## SYNOPSIS
 
-Deletes a windowsInformationProtectionNetworkLearningSummary.
+Delete navigation property windowsInformationProtectionNetworkLearningSummaries for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Deletes a windowsInformationProtectionNetworkLearningSummary.
+Delete navigation property windowsInformationProtectionNetworkLearningSummaries for deviceManagement
 
 **Permissions**
 
@@ -441,7 +441,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementwindowsinformationprotectionnetworklearningsummary)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionnetworklearningsummary-delete?view=graph-rest-1.0)
 
 
 

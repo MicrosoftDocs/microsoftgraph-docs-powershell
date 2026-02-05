@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritydatasecurityandgovernancesensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityDataSecurityAndGovernanceSensitivityLabel
 ---
@@ -25,7 +25,7 @@ Create new navigation property to sensitivityLabels for security
 ```
 New-MgSecurityDataSecurityAndGovernanceSensitivityLabel [-ResponseHeadersVariable <string>]
  [-ActionSource <string>] [-AdditionalProperties <hashtable>] [-AutoTooltip <string>]
- [-Description <string>] [-DisplayName <string>] [-Id <string>] [-IsDefault]
+ [-Description <string>] [-DisplayName <string>] [-HasProtection] [-Id <string>] [-IsDefault]
  [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-Locale <string>] [-Name <string>]
  [-Priority <int>] [-Rights <IMicrosoftGraphUsageRightsIncluded>]
  [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <string>] [-Break]
@@ -211,6 +211,27 @@ HelpMessage: ''
 ```yaml
 Type: System.String
 DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HasProtection
+
+
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -646,6 +667,7 @@ Read-only.
   [AutoTooltip <String>]: 
   [Description <String>]: 
   [DisplayName <String>]: 
+  [HasProtection <Boolean?>]: 
   [IsDefault <Boolean?>]: 
   [IsEndpointProtectionEnabled <Boolean?>]: 
   [IsScopedToUser <Boolean?>]: 
@@ -677,6 +699,7 @@ Read-only.
   [AutoTooltip <String>]: 
   [Description <String>]: 
   [DisplayName <String>]: 
+  [HasProtection <Boolean?>]: 
   [IsDefault <Boolean?>]: 
   [IsEndpointProtectionEnabled <Boolean?>]: 
   [IsScopedToUser <Boolean?>]: 

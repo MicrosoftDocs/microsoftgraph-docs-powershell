@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgTeamChannelMember
 ---
@@ -834,7 +834,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgTeamChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-update?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-update-members?view=graph-rest-1.0)
 
 
 

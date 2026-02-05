@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Teams
-Module Guid: d6650c71-e9e1-4377-8375-446ccd30e99b
+Module Guid: 47694694-e243-4e18-a9fd-08c765695416
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.teams/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1209,6 +1209,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgChat](Remove-MgChat.md)
 
+### [Remove-MgChatAccessForUser](Remove-MgChatAccessForUser.md)
+
 ### [Remove-MgChatInstalledApp](Remove-MgChatInstalledApp.md)
 
 ### [Remove-MgChatLastMessagePreview](Remove-MgChatLastMessagePreview.md)
@@ -1410,6 +1412,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgTeamworkWorkforceIntegration](Remove-MgTeamworkWorkforceIntegration.md)
 
 ### [Remove-MgUserChat](Remove-MgUserChat.md)
+
+### [Remove-MgUserChatAccessForUser](Remove-MgUserChatAccessForUser.md)
 
 ### [Remove-MgUserChatInstalledApp](Remove-MgUserChatInstalledApp.md)
 

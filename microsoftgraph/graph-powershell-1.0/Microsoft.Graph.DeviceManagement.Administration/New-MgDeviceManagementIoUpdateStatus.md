@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementioupdatestatus
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementIoUpdateStatus
 ---
@@ -13,7 +13,7 @@ title: New-MgDeviceManagementIoUpdateStatus
 
 ## SYNOPSIS
 
-Create a new iosUpdateDeviceStatus object.
+Create new navigation property to iosUpdateStatuses for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new iosUpdateDeviceStatus object.
+Create new navigation property to iosUpdateStatuses for deviceManagement
 
 **Permissions**
 
@@ -649,7 +649,6 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgDeviceManagementIoUpdateStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementioupdatestatus)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-deviceconfig-iosupdatedevicestatus-create?view=graph-rest-1.0)
 
 
 

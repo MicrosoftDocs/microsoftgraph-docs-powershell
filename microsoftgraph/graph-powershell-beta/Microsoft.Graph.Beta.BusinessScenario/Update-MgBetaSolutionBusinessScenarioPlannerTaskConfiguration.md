@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration
 ---
@@ -571,7 +571,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Rules <IMicrosoftGraphPlannerTaskRoleBasedRule[]>]: The rules that should be enforced on the tasks when they're being changed outside of the scenario, based on the role of the caller.
       [DefaultRule <String>]: Default rule that applies when a property or action-specific rule is not provided.
-Possible values are: Allow, Block
+The possible values are: Allow, Block
       [PropertyRule <IMicrosoftGraphPlannerTaskPropertyRule>]: plannerTaskPropertyRule
         [(Any) <Object>]: This indicates any property can be added to this object.
         [RuleKind <String>]: plannerRuleKind
@@ -618,7 +618,7 @@ EDITPOLICY `<IMicrosoftGraphPlannerTaskPolicy>`: plannerTaskPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Rules <IMicrosoftGraphPlannerTaskRoleBasedRule[]>]: The rules that should be enforced on the tasks when they're being changed outside of the scenario, based on the role of the caller.
     [DefaultRule <String>]: Default rule that applies when a property or action-specific rule is not provided.
-Possible values are: Allow, Block
+The possible values are: Allow, Block
     [PropertyRule <IMicrosoftGraphPlannerTaskPropertyRule>]: plannerTaskPropertyRule
       [(Any) <Object>]: This indicates any property can be added to this object.
       [RuleKind <String>]: plannerRuleKind

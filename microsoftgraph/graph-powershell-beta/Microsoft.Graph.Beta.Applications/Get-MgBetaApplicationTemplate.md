@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaApplicationTemplate
 ---
@@ -14,6 +14,7 @@ title: Get-MgBetaApplicationTemplate
 ## SYNOPSIS
 
 Retrieve the properties of an applicationTemplate object.
+Details about optional risk properties such as riskScore and riskFactors are available with either the Microsoft Entra Suite or Microsoft Entra Internet Access license.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTemplate?view=graph-powershell-1.0)
@@ -57,18 +58,30 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties of an applicationTemplate object.
+Details about optional risk properties such as riskScore and riskFactors are available with either the Microsoft Entra Suite or Microsoft Entra Internet Access license.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get application template
 
 ```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgBetaApplicationTemplate
+Get-MgBetaApplicationTemplate -ApplicationTemplateId $applicationTemplateId
 
 ```
-This example shows how to use the Get-MgBetaApplicationTemplate Cmdlet.
+This example will get application template
+
+### Example 2: Get application template with optional properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaApplicationTemplate -ApplicationTemplateId $applicationTemplateId -Property "id,displayName,riskScore,riskFactors" 
+
+```
+This example will get application template with optional properties
 
 
 ## PARAMETERS
@@ -558,6 +571,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob

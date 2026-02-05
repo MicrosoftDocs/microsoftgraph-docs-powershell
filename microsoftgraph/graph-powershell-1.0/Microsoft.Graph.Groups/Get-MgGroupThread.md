@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupThread
 ---
@@ -13,7 +13,8 @@ title: Get-MgGroupThread
 
 ## SYNOPSIS
 
-Get a thread object.
+Get a specific thread that belongs to a group.
+You can specify both the parent conversation and the thread, or, \ryou can specify the thread without referencing the parent conversation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
@@ -56,7 +57,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get a thread object.
+Get a specific thread that belongs to a group.
+You can specify both the parent conversation and the thread, or, \ryou can specify the thread without referencing the parent conversation.
 
 **Permissions**
 
@@ -591,7 +593,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-get-thread?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-1.0)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-1.0)
 
 

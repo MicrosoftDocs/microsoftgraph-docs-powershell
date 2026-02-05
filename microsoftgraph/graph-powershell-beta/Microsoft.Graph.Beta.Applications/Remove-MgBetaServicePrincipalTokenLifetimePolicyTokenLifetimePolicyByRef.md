@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipaltokenlifetimepolicytokenlifetimepolicybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef
 ---
@@ -58,6 +58,14 @@ Remove a tokenLifetimePolicy object from a service principal.
 | Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.ApplicationConfiguration, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+Remove-MgBetaServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef -ServicePrincipalId $servicePrincipalId -TokenLifetimePolicyId $tokenLifetimePolicyId
 
 ## PARAMETERS
 
@@ -437,6 +445,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -452,7 +461,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Remove-MgBetaServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipaltokenlifetimepolicytokenlifetimepolicybyref)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-delete-tokenlifetimepolicies?view=graph-rest-beta)
-
 
 
 

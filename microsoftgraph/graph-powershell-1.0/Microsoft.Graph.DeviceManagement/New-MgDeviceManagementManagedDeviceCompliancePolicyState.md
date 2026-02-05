@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevicecompliancepolicystate
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementManagedDeviceCompliancePolicyState
 ---
@@ -638,8 +638,8 @@ Read-only.
     [Setting <String>]: The setting that is being reported
     [SettingName <String>]: Localized/user friendly setting name that is being reported
     [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-      [DisplayName <String>]: Not yet documented
-      [Id <String>]: Not yet documented
+      [DisplayName <String>]: 
+      [Id <String>]: 
       [SourceType <String>]: settingSourceType
     [State <String>]: complianceStatus
     [UserEmail <String>]: UserEmail
@@ -692,8 +692,8 @@ SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState[]>: .
   [Setting <String>]: The setting that is being reported
   [SettingName <String>]: Localized/user friendly setting name that is being reported
   [Sources <IMicrosoftGraphSettingSource[]>]: Contributing policies
-    [DisplayName <String>]: Not yet documented
-    [Id <String>]: Not yet documented
+    [DisplayName <String>]: 
+    [Id <String>]: 
     [SourceType <String>]: settingSourceType
   [State <String>]: complianceStatus
   [UserEmail <String>]: UserEmail

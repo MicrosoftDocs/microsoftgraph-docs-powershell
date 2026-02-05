@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorysubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDirectorySubscription
 ---
@@ -529,7 +529,7 @@ HelpMessage: ''
 ### -Status
 
 The status of this subscription.
-Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
+The possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 
 ```yaml
 Type: System.String
@@ -647,7 +647,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
   [SkuId <String>]: The object ID of the SKU associated with this subscription.
   [SkuPartNumber <String>]: The SKU associated with this subscription.
   [Status <String>]: The status of this subscription.
-Possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
+The possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
   [TotalLicenses <Int32?>]: The number of licenses included in this subscription.
 
 SERVICESTATUS <IMicrosoftGraphServicePlanInfo[]>: The provisioning status of each service included in this subscription.

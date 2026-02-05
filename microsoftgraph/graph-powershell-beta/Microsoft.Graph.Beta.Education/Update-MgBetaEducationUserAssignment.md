@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEducationUserAssignment
 ---
@@ -1181,9 +1181,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [DisplayName <String>]: Name of the assignment.
@@ -1205,7 +1206,7 @@ Read-only.
     [DisplayName <String>]: The name of the grading scheme.
     [Grades <IMicrosoftGraphEducationGradingSchemeGrade[]>]: The grades that make up the scheme.
       [DefaultPercentage <Single?>]: The midpoint of the grade range.
-      [DisplayName <String>]: The name of the grading scheme.
+      [DisplayName <String>]: The name of this individual grade.
       [MinPercentage <Single?>]: The minimum percentage of the total points needed to achieve this grade.
     [HidePointsDuringGrading <Boolean?>]: The display setting for the UI.
 Indicates whether teachers can grade with points in addition to letter grades.
@@ -1227,7 +1228,7 @@ Updating the notificationChannelUrl isn't allowed after the assignment has been 
 Nullable.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]: 
+    [DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]: A collection of assignment resources that depend on the parent educationAssignmentResource.
     [DistributeForStudentWork <Boolean?>]: Indicates whether this resource should be copied to each student submission for modification and submission.
 Required
     [Resource <IMicrosoftGraphEducationResource>]: educationResource
@@ -1280,7 +1281,7 @@ For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
 Read-only.
       [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied.
 If the value is null, the student uploaded the resource.
-      [DependentResources <IMicrosoftGraphEducationSubmissionResource[]>]: 
+      [DependentResources <IMicrosoftGraphEducationSubmissionResource[]>]: A collection of submission resources that depend on the parent educationSubmissionResource.
       [Resource <IMicrosoftGraphEducationResource>]: educationResource
     [ReturnedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [Status <String>]: educationSubmissionStatus
@@ -1300,9 +1301,10 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
@@ -1320,7 +1322,7 @@ Read-only.
   [DisplayName <String>]: The name of the grading scheme.
   [Grades <IMicrosoftGraphEducationGradingSchemeGrade[]>]: The grades that make up the scheme.
     [DefaultPercentage <Single?>]: The midpoint of the grade range.
-    [DisplayName <String>]: The name of the grading scheme.
+    [DisplayName <String>]: The name of this individual grade.
     [MinPercentage <Single?>]: The minimum percentage of the total points needed to achieve this grade.
   [HidePointsDuringGrading <Boolean?>]: The display setting for the UI.
 Indicates whether teachers can grade with points in addition to letter grades.
@@ -1357,9 +1359,10 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-    [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
@@ -1368,7 +1371,7 @@ Only teachers can modify this list.
 Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]: 
+  [DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]: A collection of assignment resources that depend on the parent educationAssignmentResource.
   [DistributeForStudentWork <Boolean?>]: Indicates whether this resource should be copied to each student submission for modification and submission.
 Required
   [Resource <IMicrosoftGraphEducationResource>]: educationResource
@@ -1378,9 +1381,10 @@ Required
       [Application <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-        [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
     [DisplayName <String>]: Display name of resource.
@@ -1395,9 +1399,10 @@ Read-only.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [Description <IMicrosoftGraphEducationItemBody>]: educationItemBody
@@ -1432,9 +1437,10 @@ Read-only.
     [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
-This property is read-only.
-      [Id <String>]: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1453,7 +1459,7 @@ For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
 Read-only.
     [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied.
 If the value is null, the student uploaded the resource.
-    [DependentResources <IMicrosoftGraphEducationSubmissionResource[]>]: 
+    [DependentResources <IMicrosoftGraphEducationSubmissionResource[]>]: A collection of submission resources that depend on the parent educationSubmissionResource.
     [Resource <IMicrosoftGraphEducationResource>]: educationResource
       [(Any) <Object>]: This indicates any property can be added to this object.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet

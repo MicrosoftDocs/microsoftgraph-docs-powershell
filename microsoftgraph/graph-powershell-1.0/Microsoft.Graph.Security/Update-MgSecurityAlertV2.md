@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityAlertV2
 ---
@@ -30,14 +30,15 @@ Update-MgSecurityAlertV2 -AlertId <string> [-ResponseHeadersVariable <string>]
  [-CreatedDateTime <datetime>] [-CustomDetails <hashtable>] [-Description <string>]
  [-DetectionSource <string>] [-DetectorId <string>] [-Determination <string>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <datetime>]
- [-Id <string>] [-IncidentId <string>] [-IncidentWebUrl <string>] [-LastActivityDateTime <datetime>]
- [-LastUpdateDateTime <datetime>] [-MitreTechniques <string[]>] [-ProductName <string>]
- [-ProviderAlertId <string>] [-RecommendedActions <string>] [-ResolvedDateTime <datetime>]
- [-ServiceSource <string>] [-Severity <string>] [-Status <string>] [-SystemTags <string[]>]
- [-TenantId <string>] [-ThreatDisplayName <string>] [-ThreatFamilyName <string>] [-Title <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <string>] [-IncidentId <string>] [-IncidentWebUrl <string>] [-InvestigationState <string>]
+ [-LastActivityDateTime <datetime>] [-LastUpdateDateTime <datetime>] [-MitreTechniques <string[]>]
+ [-ProductName <string>] [-ProviderAlertId <string>] [-RecommendedActions <string>]
+ [-ResolvedDateTime <datetime>] [-ServiceSource <string>] [-Severity <string>] [-Status <string>]
+ [-SystemTags <string[]>] [-TenantId <string>] [-ThreatDisplayName <string>]
+ [-ThreatFamilyName <string>] [-Title <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -60,14 +61,15 @@ Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ResponseHeadersVaria
  [-CreatedDateTime <datetime>] [-CustomDetails <hashtable>] [-Description <string>]
  [-DetectionSource <string>] [-DetectorId <string>] [-Determination <string>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <datetime>]
- [-Id <string>] [-IncidentId <string>] [-IncidentWebUrl <string>] [-LastActivityDateTime <datetime>]
- [-LastUpdateDateTime <datetime>] [-MitreTechniques <string[]>] [-ProductName <string>]
- [-ProviderAlertId <string>] [-RecommendedActions <string>] [-ResolvedDateTime <datetime>]
- [-ServiceSource <string>] [-Severity <string>] [-Status <string>] [-SystemTags <string[]>]
- [-TenantId <string>] [-ThreatDisplayName <string>] [-ThreatFamilyName <string>] [-Title <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <string>] [-IncidentId <string>] [-IncidentWebUrl <string>] [-InvestigationState <string>]
+ [-LastActivityDateTime <datetime>] [-LastUpdateDateTime <datetime>] [-MitreTechniques <string[]>]
+ [-ProductName <string>] [-ProviderAlertId <string>] [-RecommendedActions <string>]
+ [-ResolvedDateTime <datetime>] [-ServiceSource <string>] [-Severity <string>] [-Status <string>]
+ [-SystemTags <string[]>] [-TenantId <string>] [-ThreatDisplayName <string>]
+ [-ThreatFamilyName <string>] [-Title <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -852,6 +854,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -InvestigationState
+
+investigationState
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -LastActivityDateTime
 
 The oldest activity associated with the alert.
@@ -1435,6 +1464,7 @@ Values are free-form.
   [FirstActivityDateTime <DateTime?>]: The earliest activity associated with the alert.
   [IncidentId <String>]: Unique identifier to represent the incident this alert resource is associated with.
   [IncidentWebUrl <String>]: URL for the incident page in the Microsoft 365 Defender portal.
+  [InvestigationState <String>]: investigationState
   [LastActivityDateTime <DateTime?>]: The oldest activity associated with the alert.
   [LastUpdateDateTime <DateTime?>]: Time when the alert was last updated at Microsoft 365 Defender.
   [MitreTechniques <String[]>]: The attack techniques, as aligned with the MITRE ATT&CK framework.
@@ -1483,6 +1513,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [DepartmentTemplateId <String>]: The unique identifier of departmentTemplate
   [DispositionReviewStageNumber <String>]: The unique identifier of dispositionReviewStage
   [EdiscoveryCaseId <String>]: The unique identifier of ediscoveryCase
+  [EdiscoveryCaseMemberId <String>]: The unique identifier of ediscoveryCaseMember
   [EdiscoveryCustodianId <String>]: The unique identifier of ediscoveryCustodian
   [EdiscoveryNoncustodialDataSourceId <String>]: The unique identifier of ediscoveryNoncustodialDataSource
   [EdiscoveryReviewSetId <String>]: The unique identifier of ediscoveryReviewSet
@@ -1501,6 +1532,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [HostPortId <String>]: The unique identifier of hostPort
   [HostSslCertificateId <String>]: The unique identifier of hostSslCertificate
   [HostTrackerId <String>]: The unique identifier of hostTracker
+  [IdentityAccountsId <String>]: The unique identifier of identityAccounts
   [IncidentId <String>]: The unique identifier of incident
   [IntelligenceProfileId <String>]: The unique identifier of intelligenceProfile
   [IntelligenceProfileIndicatorId <String>]: The unique identifier of intelligenceProfileIndicator
@@ -1518,6 +1550,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecureScoreId <String>]: The unique identifier of secureScore
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun

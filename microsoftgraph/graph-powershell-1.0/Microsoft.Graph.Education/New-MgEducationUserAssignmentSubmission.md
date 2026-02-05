@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationUserAssignmentSubmission
 ---
@@ -833,7 +833,9 @@ For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
   [Resources <IMicrosoftGraphEducationSubmissionResource[]>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.
+    [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied.
+If the value is null, the student uploaded the resource.
+    [DependentResources <IMicrosoftGraphEducationSubmissionResource[]>]: A collection of submission resources that depend on the parent educationSubmissionResource.
     [Resource <IMicrosoftGraphEducationResource>]: educationResource
       [(Any) <Object>]: This indicates any property can be added to this object.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -859,9 +861,11 @@ For example, in the access reviews decisions API, this property might record the
 INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
+  [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
   [EducationCategoryId <String>]: The unique identifier of educationCategory
   [EducationClassId <String>]: The unique identifier of educationClass
   [EducationGradingCategoryId <String>]: The unique identifier of educationGradingCategory
+  [EducationGradingSchemeId <String>]: The unique identifier of educationGradingScheme
   [EducationModuleId <String>]: The unique identifier of educationModule
   [EducationModuleResourceId <String>]: The unique identifier of educationModuleResource
   [EducationOutcomeId <String>]: The unique identifier of educationOutcome
@@ -869,9 +873,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [EducationSchoolId <String>]: The unique identifier of educationSchool
   [EducationSubmissionId <String>]: The unique identifier of educationSubmission
   [EducationSubmissionResourceId <String>]: The unique identifier of educationSubmissionResource
+  [EducationSubmissionResourceId1 <String>]: The unique identifier of educationSubmissionResource
   [EducationUserId <String>]: The unique identifier of educationUser
   [ReadingAssignmentSubmissionId <String>]: The unique identifier of readingAssignmentSubmission
+  [ReadingCoachPassageId <String>]: The unique identifier of readingCoachPassage
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
+  [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -915,7 +922,9 @@ For example, in the access reviews decisions API, this property might record the
 RESOURCES <IMicrosoftGraphEducationSubmissionResource[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.
+  [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied.
+If the value is null, the student uploaded the resource.
+  [DependentResources <IMicrosoftGraphEducationSubmissionResource[]>]: A collection of submission resources that depend on the parent educationSubmissionResource.
   [Resource <IMicrosoftGraphEducationResource>]: educationResource
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -956,7 +965,9 @@ For example, in the access reviews decisions API, this property might record the
 SUBMITTEDRESOURCES <IMicrosoftGraphEducationSubmissionResource[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.
+  [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied.
+If the value is null, the student uploaded the resource.
+  [DependentResources <IMicrosoftGraphEducationSubmissionResource[]>]: A collection of submission resources that depend on the parent educationSubmissionResource.
   [Resource <IMicrosoftGraphEducationResource>]: educationResource
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet

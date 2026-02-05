@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpost
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupThreadPost
 ---
@@ -14,7 +14,7 @@ title: Get-MgBetaGroupThreadPost
 ## SYNOPSIS
 
 Get the properties and relationships of a post in a specified thread.
-You can specify both the parentconversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent\rconversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
 > [!NOTE]
@@ -80,7 +80,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the properties and relationships of a post in a specified thread.
-You can specify both the parentconversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent\rconversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
 **Permissions**

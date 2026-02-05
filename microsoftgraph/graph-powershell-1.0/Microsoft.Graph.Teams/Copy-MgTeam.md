@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgTeam
 ---
@@ -14,9 +14,9 @@ title: Copy-MgTeam
 ## SYNOPSIS
 
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.You can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
+This operation also creates a copy of the corresponding group.\rYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
 The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen.
-If the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
+\rIf the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
 Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
@@ -80,9 +80,9 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.You can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
+This operation also creates a copy of the corresponding group.\rYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
 The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen.
-If the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
+\rIf the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
 Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.

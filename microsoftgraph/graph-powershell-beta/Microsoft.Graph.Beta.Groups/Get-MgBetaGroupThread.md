@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupThread
 ---
@@ -14,7 +14,7 @@ title: Get-MgBetaGroupThread
 ## SYNOPSIS
 
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, \ryou can specify the thread without referencing the parent conversation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)
@@ -58,7 +58,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, \ryou can specify the thread without referencing the parent conversation.
 
 **Permissions**
 

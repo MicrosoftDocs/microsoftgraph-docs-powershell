@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalbyappid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaServicePrincipalByAppId
 ---
@@ -14,6 +14,7 @@ title: Remove-MgBetaServicePrincipalByAppId
 ## SYNOPSIS
 
 Delete a servicePrincipal object.
+This API can also delete an agentIdentityBlueprintPrincipal object by its ID.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalByAppId?view=graph-powershell-1.0)
@@ -48,6 +49,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a servicePrincipal object.
+This API can also delete an agentIdentityBlueprintPrincipal object by its ID.
 
 ## PARAMETERS
 
@@ -406,6 +408,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob

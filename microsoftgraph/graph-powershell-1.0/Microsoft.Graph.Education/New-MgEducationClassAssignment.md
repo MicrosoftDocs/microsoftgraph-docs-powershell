@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationClassAssignment
 ---
@@ -30,10 +30,11 @@ New-MgEducationClassAssignment -EducationClassId <string> [-ResponseHeadersVaria
  [-AllowLateSubmissions] [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <hashtable>]
  [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <string>] [-CloseDateTime <datetime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <string>] [-DueDateTime <datetime>]
- [-Grading <hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>] [-Id <string>]
- [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-ModuleUrl <string>] [-NotificationChannelUrl <string>]
- [-Resources <IMicrosoftGraphEducationAssignmentResource[]>]
+ [-Grading <hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>]
+ [-GradingScheme <IMicrosoftGraphEducationGradingScheme>] [-Id <string>]
+ [-Instructions <IMicrosoftGraphEducationItemBody>] [-LanguageTag <string>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ModuleUrl <string>]
+ [-NotificationChannelUrl <string>] [-Resources <IMicrosoftGraphEducationAssignmentResource[]>]
  [-Rubric <IMicrosoftGraphEducationRubric>] [-Status <string>]
  [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
@@ -59,10 +60,11 @@ New-MgEducationClassAssignment -InputObject <IEducationIdentity> [-ResponseHeade
  [-AllowLateSubmissions] [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <hashtable>]
  [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <string>] [-CloseDateTime <datetime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <string>] [-DueDateTime <datetime>]
- [-Grading <hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>] [-Id <string>]
- [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-ModuleUrl <string>] [-NotificationChannelUrl <string>]
- [-Resources <IMicrosoftGraphEducationAssignmentResource[]>]
+ [-Grading <hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>]
+ [-GradingScheme <IMicrosoftGraphEducationGradingScheme>] [-Id <string>]
+ [-Instructions <IMicrosoftGraphEducationItemBody>] [-LanguageTag <string>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ModuleUrl <string>]
+ [-NotificationChannelUrl <string>] [-Resources <IMicrosoftGraphEducationAssignmentResource[]>]
  [-Rubric <IMicrosoftGraphEducationRubric>] [-Status <string>]
  [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
@@ -620,6 +622,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -GradingScheme
+
+educationGradingScheme
+To construct, see NOTES section for GRADINGSCHEME properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationGradingScheme
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Headers
 
 Optional headers that will be added to the request.
@@ -746,6 +776,35 @@ To construct, see NOTES section for INSTRUCTIONS properties and create a hash ta
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationItemBody
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -LanguageTag
+
+Specifies the language in which UI notifications for the assignment are displayed.
+If languageTag isn't provided, the default language is en-US.
+Optional.
+
+```yaml
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1153,10 +1212,24 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
     [DisplayName <String>]: The name of the grading category.
     [PercentageWeight <Int32?>]: The weight of the category; an integer between 0 and 100.
+  [GradingScheme <IMicrosoftGraphEducationGradingScheme>]: educationGradingScheme
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DisplayName <String>]: The name of the grading scheme.
+    [Grades <IMicrosoftGraphEducationGradingSchemeGrade[]>]: The grades that make up the scheme.
+      [DefaultPercentage <Single?>]: The midpoint of the grade range.
+      [DisplayName <String>]: The name of this individual grade.
+      [MinPercentage <Single?>]: The minimum percentage of the total points needed to achieve this grade.
+    [HidePointsDuringGrading <Boolean?>]: The display setting for the UI.
+Indicates whether teachers can grade with points in addition to letter grades.
   [Instructions <IMicrosoftGraphEducationItemBody>]: educationItemBody
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Content <String>]: 
     [ContentType <String>]: bodyType
+  [LanguageTag <String>]: Specifies the language in which UI notifications for the assignment are displayed.
+If languageTag isn't provided, the default language is en-US.
+Optional.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [ModuleUrl <String>]: The URL of the module from which to access the assignment.
   [NotificationChannelUrl <String>]: Optional field to specify the URL of the channel to post the assignment publish notification.
@@ -1168,6 +1241,7 @@ Only teachers can modify this list.
 Nullable.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]: A collection of assignment resources that depend on the parent educationAssignmentResource.
     [DistributeForStudentWork <Boolean?>]: Indicates whether this resource should be copied to each student submission for modification and submission.
 Required
     [Resource <IMicrosoftGraphEducationResource>]: educationResource
@@ -1218,7 +1292,9 @@ For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
     [Resources <IMicrosoftGraphEducationSubmissionResource[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.
+      [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied.
+If the value is null, the student uploaded the resource.
+      [DependentResources <IMicrosoftGraphEducationSubmissionResource[]>]: A collection of submission resources that depend on the parent educationSubmissionResource.
       [Resource <IMicrosoftGraphEducationResource>]: educationResource
     [ReturnedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [Status <String>]: educationSubmissionStatus
@@ -1251,12 +1327,26 @@ Read-only.
   [DisplayName <String>]: The name of the grading category.
   [PercentageWeight <Int32?>]: The weight of the category; an integer between 0 and 100.
 
+GRADINGSCHEME `<IMicrosoftGraphEducationGradingScheme>`: educationGradingScheme
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DisplayName <String>]: The name of the grading scheme.
+  [Grades <IMicrosoftGraphEducationGradingSchemeGrade[]>]: The grades that make up the scheme.
+    [DefaultPercentage <Single?>]: The midpoint of the grade range.
+    [DisplayName <String>]: The name of this individual grade.
+    [MinPercentage <Single?>]: The minimum percentage of the total points needed to achieve this grade.
+  [HidePointsDuringGrading <Boolean?>]: The display setting for the UI.
+Indicates whether teachers can grade with points in addition to letter grades.
+
 INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
+  [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
   [EducationCategoryId <String>]: The unique identifier of educationCategory
   [EducationClassId <String>]: The unique identifier of educationClass
   [EducationGradingCategoryId <String>]: The unique identifier of educationGradingCategory
+  [EducationGradingSchemeId <String>]: The unique identifier of educationGradingScheme
   [EducationModuleId <String>]: The unique identifier of educationModule
   [EducationModuleResourceId <String>]: The unique identifier of educationModuleResource
   [EducationOutcomeId <String>]: The unique identifier of educationOutcome
@@ -1264,9 +1354,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [EducationSchoolId <String>]: The unique identifier of educationSchool
   [EducationSubmissionId <String>]: The unique identifier of educationSubmission
   [EducationSubmissionResourceId <String>]: The unique identifier of educationSubmissionResource
+  [EducationSubmissionResourceId1 <String>]: The unique identifier of educationSubmissionResource
   [EducationUserId <String>]: The unique identifier of educationUser
   [ReadingAssignmentSubmissionId <String>]: The unique identifier of readingAssignmentSubmission
+  [ReadingCoachPassageId <String>]: The unique identifier of readingCoachPassage
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
+  [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
 
 INSTRUCTIONS `<IMicrosoftGraphEducationItemBody>`: educationItemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1289,6 +1382,7 @@ Only teachers can modify this list.
 Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [DependentResources <IMicrosoftGraphEducationAssignmentResource[]>]: A collection of assignment resources that depend on the parent educationAssignmentResource.
   [DistributeForStudentWork <Boolean?>]: Indicates whether this resource should be copied to each student submission for modification and submission.
 Required
   [Resource <IMicrosoftGraphEducationResource>]: educationResource
@@ -1371,7 +1465,9 @@ For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
   [Resources <IMicrosoftGraphEducationSubmissionResource[]>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.
+    [AssignmentResourceUrl <String>]: Pointer to the assignment from which the resource was copied.
+If the value is null, the student uploaded the resource.
+    [DependentResources <IMicrosoftGraphEducationSubmissionResource[]>]: A collection of submission resources that depend on the parent educationSubmissionResource.
     [Resource <IMicrosoftGraphEducationResource>]: educationResource
       [(Any) <Object>]: This indicates any property can be added to this object.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet

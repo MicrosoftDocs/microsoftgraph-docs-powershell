@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOnPremisePublishingProfile
 ---
@@ -27,9 +27,10 @@ Update-MgBetaOnPremisePublishingProfile -OnPremisesPublishingProfileId <string>
  [-ConnectorGroups <IMicrosoftGraphConnectorGroup[]>] [-Connectors <IMicrosoftGraphConnector[]>]
  [-HybridAgentUpdaterConfiguration <IMicrosoftGraphHybridAgentUpdaterConfiguration>] [-Id <string>]
  [-IsDefaultAccessEnabled] [-IsEnabled] [-PublishedResources <IMicrosoftGraphPublishedResource[]>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sensors <IMicrosoftGraphPrivateAccessSensor[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -52,9 +53,10 @@ Update-MgBetaOnPremisePublishingProfile -InputObject <IApplicationsIdentity>
  [-ConnectorGroups <IMicrosoftGraphConnectorGroup[]>] [-Connectors <IMicrosoftGraphConnector[]>]
  [-HybridAgentUpdaterConfiguration <IMicrosoftGraphHybridAgentUpdaterConfiguration>] [-Id <string>]
  [-IsDefaultAccessEnabled] [-IsEnabled] [-PublishedResources <IMicrosoftGraphPublishedResource[]>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sensors <IMicrosoftGraphPrivateAccessSensor[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -667,6 +669,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Sensors
+
+A lightweight agent installed on domain controllers that helps secure access and enforce MFA to on-premise resources.
+To construct, see NOTES section for SENSORS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivateAccessSensor[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -741,7 +771,8 @@ Read-only
     [MachineName <String>]: The name of the machine that the agent is running on.
 Read-only
     [Status <String>]: agentStatus
-    [SupportedPublishingTypes <String[]>]: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, adAdministration.
+    [SupportedPublishingTypes <String[]>]: The possible values are: applicationProxy, exchangeOnline, authentication, provisioning, intunePfx, oflineDomainJoin, unknownFutureValue, privateAccess.
+Use the Prefer: include-unknown-enum-members request header to get the following values from this evolvable enum: privateAccess.
   [DisplayName <String>]: Display name of the onPremisesAgentGroup.
   [IsDefault <Boolean?>]: Indicates if the onPremisesAgentGroup is the default agent group.
 Only a single agent group can be the default onPremisesAgentGroup and is set by the system.
@@ -791,7 +822,8 @@ Read-only
   [MachineName <String>]: The name of the machine that the agent is running on.
 Read-only
   [Status <String>]: agentStatus
-  [SupportedPublishingTypes <String[]>]: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, adAdministration.
+  [SupportedPublishingTypes <String[]>]: The possible values are: applicationProxy, exchangeOnline, authentication, provisioning, intunePfx, oflineDomainJoin, unknownFutureValue, privateAccess.
+Use the Prefer: include-unknown-enum-members request header to get the following values from this evolvable enum: privateAccess.
 
 APPLICATIONSEGMENTS <IMicrosoftGraphIPApplicationSegment[]>: Represents the segment configurations that are allowed for an on-premises non-web application published through Microsoft Entra application proxy.
   [Id <String>]: The unique identifier for an entity.
@@ -897,13 +929,18 @@ For existing applications, the enforcement date can be retroactively applied.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Audiences <IMicrosoftGraphAudiencesConfiguration>]: audiencesConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
-            [AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+            [AzureAdMultipleOrgs <IMicrosoftGraphAzureAdMultipleOrgsAudienceRestriction>]: azureAdMultipleOrgsAudienceRestriction
               [(Any) <Object>]: This indicates any property can be added to this object.
               [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
               [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
               [State <String>]: appManagementRestrictionState
             [PersonalMicrosoftAccount <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+              [State <String>]: appManagementRestrictionState
           [IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]: identifierUriConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
             [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
@@ -974,6 +1011,9 @@ Read-only.
 Read-only.
       [Name <String>]: The name associated with the connectorGroup.
       [Region <String>]: connectorGroupRegion
+    [CreatedByAppId <String>]: The globally unique appId (called Application (client) ID on the Microsoft Entra admin center) of the application that created this application.
+Set internally by Microsoft Entra ID.
+Read-only.
     [CreatedDateTime <DateTime?>]: The date and time the application was registered.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -989,7 +1029,7 @@ The maximum allowed size is 1,024 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
     [DisabledByMicrosoftStatus <String>]: Specifies whether Microsoft has disabled the registered application.
-Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
+The possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
  Supports $filter (eq, ne, not).
     [DisplayName <String>]: The display name for the application.
 Maximum length is 256 characters.
@@ -1095,6 +1135,8 @@ For example, https://www.contoso.com/app/support
 For example, https://www.contoso.com/app/termsofservice
     [IsDeviceOnlyAuthSupported <Boolean?>]: Specifies whether this application supports device authentication without a user.
 The default is false.
+    [IsDisabled <Boolean?>]: Specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources.
+When set to true, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.true if the application is deactivated (disabled); otherwise false.
     [IsFallbackPublicClient <Boolean?>]: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
 The default value is false, which means the fallback application type is confidential client such as a web app.
 There are certain scenarios where Microsoft Entra ID can't determine the client application type.
@@ -1318,6 +1360,9 @@ For more information, see Limits on requested permissions per app.
 The value for this property has implications on other app object properties.
 As a result, if you change this property, you may need to change other properties first.
 For more information, see Validation differences for signInAudience.Supports $filter (eq, ne, not).
+    [SignInAudienceRestrictions <IMicrosoftGraphSignInAudienceRestrictionsBase>]: signInAudienceRestrictionsBase
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Kind <String>]: kind
     [Spa <IMicrosoftGraphSpaApplication>]: spaApplication
       [(Any) <Object>]: This indicates any property can be added to this object.
       [RedirectUris <String[]>]: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
@@ -1670,7 +1715,8 @@ Read-only
       [MachineName <String>]: The name of the machine that the agent is running on.
 Read-only
       [Status <String>]: agentStatus
-      [SupportedPublishingTypes <String[]>]: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, adAdministration.
+      [SupportedPublishingTypes <String[]>]: The possible values are: applicationProxy, exchangeOnline, authentication, provisioning, intunePfx, oflineDomainJoin, unknownFutureValue, privateAccess.
+Use the Prefer: include-unknown-enum-members request header to get the following values from this evolvable enum: privateAccess.
     [DisplayName <String>]: Display name of the onPremisesAgentGroup.
     [IsDefault <Boolean?>]: Indicates if the onPremisesAgentGroup is the default agent group.
 Only a single agent group can be the default onPremisesAgentGroup and is set by the system.
@@ -1793,13 +1839,18 @@ For existing applications, the enforcement date can be retroactively applied.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Audiences <IMicrosoftGraphAudiencesConfiguration>]: audiencesConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+              [AzureAdMultipleOrgs <IMicrosoftGraphAzureAdMultipleOrgsAudienceRestriction>]: azureAdMultipleOrgsAudienceRestriction
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                 [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                 [State <String>]: appManagementRestrictionState
               [PersonalMicrosoftAccount <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+                [State <String>]: appManagementRestrictionState
             [IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]: identifierUriConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
               [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
@@ -1870,6 +1921,9 @@ Read-only.
 Read-only.
         [Name <String>]: The name associated with the connectorGroup.
         [Region <String>]: connectorGroupRegion
+      [CreatedByAppId <String>]: The globally unique appId (called Application (client) ID on the Microsoft Entra admin center) of the application that created this application.
+Set internally by Microsoft Entra ID.
+Read-only.
       [CreatedDateTime <DateTime?>]: The date and time the application was registered.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1885,7 +1939,7 @@ The maximum allowed size is 1,024 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
       [DisabledByMicrosoftStatus <String>]: Specifies whether Microsoft has disabled the registered application.
-Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
+The possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
  Supports $filter (eq, ne, not).
       [DisplayName <String>]: The display name for the application.
 Maximum length is 256 characters.
@@ -1991,6 +2045,8 @@ For example, https://www.contoso.com/app/support
 For example, https://www.contoso.com/app/termsofservice
       [IsDeviceOnlyAuthSupported <Boolean?>]: Specifies whether this application supports device authentication without a user.
 The default is false.
+      [IsDisabled <Boolean?>]: Specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources.
+When set to true, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.true if the application is deactivated (disabled); otherwise false.
       [IsFallbackPublicClient <Boolean?>]: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
 The default value is false, which means the fallback application type is confidential client such as a web app.
 There are certain scenarios where Microsoft Entra ID can't determine the client application type.
@@ -2214,6 +2270,9 @@ For more information, see Limits on requested permissions per app.
 The value for this property has implications on other app object properties.
 As a result, if you change this property, you may need to change other properties first.
 For more information, see Validation differences for signInAudience.Supports $filter (eq, ne, not).
+      [SignInAudienceRestrictions <IMicrosoftGraphSignInAudienceRestrictionsBase>]: signInAudienceRestrictionsBase
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Kind <String>]: kind
       [Spa <IMicrosoftGraphSpaApplication>]: spaApplication
         [(Any) <Object>]: This indicates any property can be added to this object.
         [RedirectUris <String[]>]: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
@@ -2563,6 +2622,15 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   [PublishedResources <IMicrosoftGraphPublishedResource[]>]: List of existing publishedResource objects.
 Read-only.
 Nullable.
+  [Sensors <IMicrosoftGraphPrivateAccessSensor[]>]: A lightweight agent installed on domain controllers that helps secure access and enforce MFA to on-premise resources.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ExternalIP <String>]: External IP of sensor.
+    [IsAuditMode <Boolean?>]: Not Implementated.
+    [IsBreakglassEnabled <Boolean?>]: Not Implemented.
+    [MachineName <String>]: Machine name of sensor.
+    [Status <String>]: sensorStatus
+    [Version <String>]: Version of sensor.
 
 CONNECTORGROUPS <IMicrosoftGraphConnectorGroup[]>: List of existing connectorGroup objects for applications published through Application Proxy.
 Read-only.
@@ -2668,13 +2736,18 @@ For existing applications, the enforcement date can be retroactively applied.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Audiences <IMicrosoftGraphAudiencesConfiguration>]: audiencesConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
-            [AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+            [AzureAdMultipleOrgs <IMicrosoftGraphAzureAdMultipleOrgsAudienceRestriction>]: azureAdMultipleOrgsAudienceRestriction
               [(Any) <Object>]: This indicates any property can be added to this object.
               [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
               [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
               [State <String>]: appManagementRestrictionState
             [PersonalMicrosoftAccount <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+              [State <String>]: appManagementRestrictionState
           [IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]: identifierUriConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
             [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
@@ -2724,6 +2797,9 @@ Tenant administrators should respond to security advisories sent through Azure H
       [IsPublisherAttested <Boolean?>]: Indicates whether the application developer or publisher completed Publisher Attestation.
       [LastCertificationDateTime <DateTime?>]: The timestamp when the certification for the application was most recently added or updated.
     [ConnectorGroup <IMicrosoftGraphConnectorGroup>]: connectorGroup
+    [CreatedByAppId <String>]: The globally unique appId (called Application (client) ID on the Microsoft Entra admin center) of the application that created this application.
+Set internally by Microsoft Entra ID.
+Read-only.
     [CreatedDateTime <DateTime?>]: The date and time the application was registered.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -2739,7 +2815,7 @@ The maximum allowed size is 1,024 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
     [DisabledByMicrosoftStatus <String>]: Specifies whether Microsoft has disabled the registered application.
-Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
+The possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
  Supports $filter (eq, ne, not).
     [DisplayName <String>]: The display name for the application.
 Maximum length is 256 characters.
@@ -2845,6 +2921,8 @@ For example, https://www.contoso.com/app/support
 For example, https://www.contoso.com/app/termsofservice
     [IsDeviceOnlyAuthSupported <Boolean?>]: Specifies whether this application supports device authentication without a user.
 The default is false.
+    [IsDisabled <Boolean?>]: Specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources.
+When set to true, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.true if the application is deactivated (disabled); otherwise false.
     [IsFallbackPublicClient <Boolean?>]: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
 The default value is false, which means the fallback application type is confidential client such as a web app.
 There are certain scenarios where Microsoft Entra ID can't determine the client application type.
@@ -3068,6 +3146,9 @@ For more information, see Limits on requested permissions per app.
 The value for this property has implications on other app object properties.
 As a result, if you change this property, you may need to change other properties first.
 For more information, see Validation differences for signInAudience.Supports $filter (eq, ne, not).
+    [SignInAudienceRestrictions <IMicrosoftGraphSignInAudienceRestrictionsBase>]: signInAudienceRestrictionsBase
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Kind <String>]: kind
     [Spa <IMicrosoftGraphSpaApplication>]: spaApplication
       [(Any) <Object>]: This indicates any property can be added to this object.
       [RedirectUris <String[]>]: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
@@ -3520,13 +3601,18 @@ For existing applications, the enforcement date can be retroactively applied.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Audiences <IMicrosoftGraphAudiencesConfiguration>]: audiencesConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [AzureAdMultipleOrgs <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+              [AzureAdMultipleOrgs <IMicrosoftGraphAzureAdMultipleOrgsAudienceRestriction>]: azureAdMultipleOrgsAudienceRestriction
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                 [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                 [State <String>]: appManagementRestrictionState
               [PersonalMicrosoftAccount <IMicrosoftGraphAudienceRestriction>]: audienceRestriction
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+                [State <String>]: appManagementRestrictionState
             [IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]: identifierUriConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
               [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
@@ -3576,6 +3662,9 @@ Tenant administrators should respond to security advisories sent through Azure H
         [IsPublisherAttested <Boolean?>]: Indicates whether the application developer or publisher completed Publisher Attestation.
         [LastCertificationDateTime <DateTime?>]: The timestamp when the certification for the application was most recently added or updated.
       [ConnectorGroup <IMicrosoftGraphConnectorGroup>]: connectorGroup
+      [CreatedByAppId <String>]: The globally unique appId (called Application (client) ID on the Microsoft Entra admin center) of the application that created this application.
+Set internally by Microsoft Entra ID.
+Read-only.
       [CreatedDateTime <DateTime?>]: The date and time the application was registered.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -3591,7 +3680,7 @@ The maximum allowed size is 1,024 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
       [DisabledByMicrosoftStatus <String>]: Specifies whether Microsoft has disabled the registered application.
-Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
+The possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
  Supports $filter (eq, ne, not).
       [DisplayName <String>]: The display name for the application.
 Maximum length is 256 characters.
@@ -3697,6 +3786,8 @@ For example, https://www.contoso.com/app/support
 For example, https://www.contoso.com/app/termsofservice
       [IsDeviceOnlyAuthSupported <Boolean?>]: Specifies whether this application supports device authentication without a user.
 The default is false.
+      [IsDisabled <Boolean?>]: Specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources.
+When set to true, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.true if the application is deactivated (disabled); otherwise false.
       [IsFallbackPublicClient <Boolean?>]: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
 The default value is false, which means the fallback application type is confidential client such as a web app.
 There are certain scenarios where Microsoft Entra ID can't determine the client application type.
@@ -3920,6 +4011,9 @@ For more information, see Limits on requested permissions per app.
 The value for this property has implications on other app object properties.
 As a result, if you change this property, you may need to change other properties first.
 For more information, see Validation differences for signInAudience.Supports $filter (eq, ne, not).
+      [SignInAudienceRestrictions <IMicrosoftGraphSignInAudienceRestrictionsBase>]: signInAudienceRestrictionsBase
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Kind <String>]: kind
       [Spa <IMicrosoftGraphSpaApplication>]: spaApplication
         [(Any) <Object>]: This indicates any property can be added to this object.
         [RedirectUris <String[]>]: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
@@ -4291,6 +4385,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
   [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
+  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
   [PublishedResourceId <String>]: The unique identifier of publishedResource
   [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
   [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
@@ -4324,7 +4419,8 @@ Read-only
       [MachineName <String>]: The name of the machine that the agent is running on.
 Read-only
       [Status <String>]: agentStatus
-      [SupportedPublishingTypes <String[]>]: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, adAdministration.
+      [SupportedPublishingTypes <String[]>]: The possible values are: applicationProxy, exchangeOnline, authentication, provisioning, intunePfx, oflineDomainJoin, unknownFutureValue, privateAccess.
+Use the Prefer: include-unknown-enum-members request header to get the following values from this evolvable enum: privateAccess.
     [DisplayName <String>]: Display name of the onPremisesAgentGroup.
     [IsDefault <Boolean?>]: Indicates if the onPremisesAgentGroup is the default agent group.
 Only a single agent group can be the default onPremisesAgentGroup and is set by the system.
@@ -4335,6 +4431,16 @@ Nullable.
   [DisplayName <String>]: Display Name of the publishedResource.
   [PublishingType <String>]: onPremisesPublishingType
   [ResourceName <String>]: Name of the publishedResource.
+
+SENSORS <IMicrosoftGraphPrivateAccessSensor[]>: A lightweight agent installed on domain controllers that helps secure access and enforce MFA to on-premise resources.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ExternalIP <String>]: External IP of sensor.
+  [IsAuditMode <Boolean?>]: Not Implementated.
+  [IsBreakglassEnabled <Boolean?>]: Not Implemented.
+  [MachineName <String>]: Machine name of sensor.
+  [Status <String>]: sensorStatus
+  [Version <String>]: Version of sensor.
 
 
 ## RELATED LINKS

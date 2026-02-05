@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportfilter
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementReportFilter
 ---
@@ -13,7 +13,7 @@ title: Get-MgDeviceManagementReportFilter
 
 ## SYNOPSIS
 
-Not yet documented
+Invoke action getReportFilters
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportFilter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportFilter?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Not yet documented
+Invoke action getReportFilters
 
 **Permissions**
 
@@ -629,7 +629,6 @@ BODYPARAMETER `<IPaths1J4Do9UDevicemanagementReportsMicrosoftGraphGetreportfilte
 ## RELATED LINKS
 
 - [Get-MgDeviceManagementReportFilter](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportfilter)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getreportfilters?view=graph-rest-1.0)
 
 
 

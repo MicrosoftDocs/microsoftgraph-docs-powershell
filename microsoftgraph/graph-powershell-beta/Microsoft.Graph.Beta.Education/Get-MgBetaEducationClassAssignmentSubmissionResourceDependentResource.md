@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsubmissionresourcedependentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResource
 ---
@@ -13,7 +13,10 @@ title: Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResource
 
 ## SYNOPSIS
 
-Get dependentResources from education
+A collection of submission resources that depend on the parent educationSubmissionResource.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentSubmissionResourceDependentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSubmissionResourceDependentResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,7 +62,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get dependentResources from education
+A collection of submission resources that depend on the parent educationSubmissionResource.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
 ## PARAMETERS
 
@@ -655,7 +666,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsubmissionresourcedependentresource)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationsubmissionresource-list-dependentresources?view=graph-rest-beta)
 
 
 

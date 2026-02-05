@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 12/05/2025
+ms.date: 02/03/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgDirectoryDeletedItem
 ---
@@ -15,7 +15,11 @@ title: Restore-MgDirectoryDeletedItem
 
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 Restore a recently deleted directory object from deleted items.
-The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- group- servicePrincipal
+The following types are supported:\r- administrativeUnit\r- application\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user If an item is accidentally deleted, you can fully restore the item.
+Additionally, restoring an application doesn't automatically restore the associated service principal automatically.
+You must call this API to explicitly restore the deleted service principal.
+A recently deleted item remains available for up to 30 days.
+After 30 days, the item is permanently deleted.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Restore-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
@@ -50,7 +54,11 @@ This cmdlet has the following aliases,
 
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 Restore a recently deleted directory object from deleted items.
-The following types are supported:- administrativeUnit- application- certificateBasedAuthPki- certificateAuthorityDetail- group- servicePrincipal
+The following types are supported:\r- administrativeUnit\r- application\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user If an item is accidentally deleted, you can fully restore the item.
+Additionally, restoring an application doesn't automatically restore the associated service principal automatically.
+You must call this API to explicitly restore the deleted service principal.
+A recently deleted item remains available for up to 30 days.
+After 30 days, the item is permanently deleted.
 
 **Permissions**
 
