@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetausermanagedappuserblocked
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Functions
-ms.date: 02/03/2026
+ms.date: 02/06/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaUserManagedAppUserBlocked
 ---

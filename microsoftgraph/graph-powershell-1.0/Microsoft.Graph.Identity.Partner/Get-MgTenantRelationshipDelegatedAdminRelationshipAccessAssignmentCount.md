@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Partner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipaccessassignmentcount
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Partner
-ms.date: 02/03/2026
+ms.date: 02/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount
 ---
