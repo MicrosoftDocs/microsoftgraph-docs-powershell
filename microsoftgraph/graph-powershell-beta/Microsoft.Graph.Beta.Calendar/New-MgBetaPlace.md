@@ -53,20 +53,6 @@ This cmdlet has the following aliases,
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -697,6 +683,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace)
 - [](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-beta)
+
 
 
 

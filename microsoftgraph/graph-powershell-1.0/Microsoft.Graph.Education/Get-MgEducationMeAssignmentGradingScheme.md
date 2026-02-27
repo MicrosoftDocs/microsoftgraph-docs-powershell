@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 When set, enables users to configure custom string grades based on the percentage of total points earned on this assignment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -373,6 +363,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentgradingscheme)
+
 
 
 

@@ -60,16 +60,6 @@ Evaluates the applicability of Conditional Access Policies in your tenant based 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -551,6 +541,7 @@ This property is set by Intune.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetaidentityconditionalaccess)
 - [](https://learn.microsoft.com/graph/api/conditionalaccessroot-evaluate?view=graph-rest-beta)
+
 
 
 

@@ -109,16 +109,6 @@ Create a new organizationalBrandingThemeLocalization object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccountResetCredentials
@@ -1556,6 +1546,7 @@ Maximum length: 128.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandingthemelocalization)
 - [](https://learn.microsoft.com/graph/api/organizationalbrandingtheme-post-localizations?view=graph-rest-beta)
+
 
 
 

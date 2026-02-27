@@ -68,16 +68,6 @@ This allows retrieving information about available identity accounts.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesAccount.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -617,6 +607,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityaccount)
 - [](https://learn.microsoft.com/graph/api/security-identityaccounts-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/security-identitycontainer-list-identityaccounts?view=graph-rest-1.0)
+
 
 
 

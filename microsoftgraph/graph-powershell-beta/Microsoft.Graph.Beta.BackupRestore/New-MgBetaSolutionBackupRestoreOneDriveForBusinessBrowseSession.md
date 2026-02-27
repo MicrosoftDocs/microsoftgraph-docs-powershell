@@ -57,16 +57,6 @@ Create new navigation property to oneDriveForBusinessBrowseSessions for solution
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Restore.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -571,6 +561,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession)
+
 
 
 

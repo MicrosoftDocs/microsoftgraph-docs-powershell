@@ -80,16 +80,6 @@ Invoke action startBreak
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -585,6 +575,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgteamscheduletimecardbreak)
+
 
 
 

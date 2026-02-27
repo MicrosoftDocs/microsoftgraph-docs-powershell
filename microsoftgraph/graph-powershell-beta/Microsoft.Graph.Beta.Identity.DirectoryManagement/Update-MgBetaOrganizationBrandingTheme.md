@@ -78,16 +78,6 @@ Update the properties of an organizationalBrandingTheme object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -860,6 +850,7 @@ Optional.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandingtheme)
 - [](https://learn.microsoft.com/graph/api/organizationalbrandingtheme-update?view=graph-rest-beta)
+
 
 
 

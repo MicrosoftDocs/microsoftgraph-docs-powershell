@@ -65,16 +65,6 @@ Read the properties and relationships of a groupResource object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrivilegedAccess.Read.AzureADGroup, PrivilegedAccess.ReadWrite.AzureADGroup,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -651,6 +641,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupresource)
 - [](https://learn.microsoft.com/graph/api/groupresource-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-resources?view=graph-rest-beta)
+
 
 
 
