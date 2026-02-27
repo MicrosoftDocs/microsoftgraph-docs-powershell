@@ -33708,7 +33708,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitem)
+- [Update-MgGroupDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitem)
 
 
 

@@ -35596,7 +35596,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitegetbypathanalytic)
+- [Update-MgBetaSiteGetByPathAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitegetbypathanalytic)
 
 
 

@@ -717,7 +717,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroup)
+- [Get-MgUserOnenoteSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroup)
 
 
 

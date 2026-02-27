@@ -18210,7 +18210,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteanalyticitemactivitystatactivity)
+- [Update-MgBetaGroupSiteAnalyticItemActivityStatActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteanalyticitemactivitystatactivity)
 
 
 

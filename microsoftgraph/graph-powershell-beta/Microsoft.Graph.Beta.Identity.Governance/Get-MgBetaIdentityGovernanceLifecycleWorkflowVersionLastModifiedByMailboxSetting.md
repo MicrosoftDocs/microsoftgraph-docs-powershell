@@ -477,7 +477,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowversionlastmodifiedbymailboxsetting)
+- [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowversionlastmodifiedbymailboxsetting)
 
 
 

@@ -363,7 +363,7 @@ BODY `<IPaths1DydaoiDeviceappmanagementIosmanagedappprotectionsMicrosoftGraphHas
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementiosmanagedappprotectionpayloadlink)
+- [Invoke-MgBetaHasDeviceAppManagementiOSManagedAppProtectionPayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementiosmanagedappprotectionpayloadlink)
 
 
 

@@ -16509,7 +16509,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepage)
+- [Update-MgGroupSitePage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepage)
 
 
 

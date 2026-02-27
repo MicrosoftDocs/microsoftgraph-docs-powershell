@@ -18147,7 +18147,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewsetfile)
+- [Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewsetfile)
 
 
 

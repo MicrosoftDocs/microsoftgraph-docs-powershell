@@ -617,7 +617,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementroledefinitionroleassignment)
+- [Get-MgBetaDeviceManagementRoleDefinitionRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementroledefinitionroleassignment)
 
 
 

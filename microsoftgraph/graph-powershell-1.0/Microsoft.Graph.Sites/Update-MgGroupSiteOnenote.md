@@ -1461,7 +1461,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenote)
+- [Update-MgGroupSiteOnenote](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenote)
 
 
 

@@ -559,7 +559,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointbrowsesession)
+- [New-MgBetaSolutionBackupRestoreSharePointBrowseSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointbrowsesession)
 
 
 

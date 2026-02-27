@@ -981,7 +981,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresetparentgroupsettermchildrelation)
+- [Update-MgBetaSiteTermStoreSetParentGroupSetTermChildRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresetparentgroupsettermchildrelation)
 
 
 

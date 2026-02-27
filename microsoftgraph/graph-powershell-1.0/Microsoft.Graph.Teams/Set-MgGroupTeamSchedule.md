@@ -1705,7 +1705,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamschedule)
+- [Set-MgGroupTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamschedule)
 
 
 

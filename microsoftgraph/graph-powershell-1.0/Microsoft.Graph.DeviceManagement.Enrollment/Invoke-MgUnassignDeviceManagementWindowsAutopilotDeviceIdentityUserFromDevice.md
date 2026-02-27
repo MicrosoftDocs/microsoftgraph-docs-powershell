@@ -390,7 +390,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/invoke-mgunassigndevicemanagementwindowsautopilotdeviceidentityuserfromdevice)
+- [Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/invoke-mgunassigndevicemanagementwindowsautopilotdeviceidentityuserfromdevice)
 
 
 

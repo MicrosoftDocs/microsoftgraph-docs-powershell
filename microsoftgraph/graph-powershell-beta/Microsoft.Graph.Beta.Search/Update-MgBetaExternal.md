@@ -1008,7 +1008,7 @@ Maximum supported length is 100 characters.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal)
+- [Update-MgBetaExternal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal)
 
 
 

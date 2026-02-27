@@ -18446,7 +18446,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamwork)
+- [Update-MgBetaUserTeamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamwork)
 
 
 

@@ -594,7 +594,7 @@ BODYPARAMETER `<IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecute
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaexecutedevicemanagementmanageddeviceaction)
+- [Invoke-MgBetaExecuteDeviceManagementManagedDeviceAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaexecutedevicemanagementmanageddeviceaction)
 
 
 

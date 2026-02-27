@@ -386,8 +386,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingshiftpreference)
-- [](https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-1.0)
+- [Get-MgUserSettingShiftPreference](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingshiftpreference)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-1.0)
 
 
 

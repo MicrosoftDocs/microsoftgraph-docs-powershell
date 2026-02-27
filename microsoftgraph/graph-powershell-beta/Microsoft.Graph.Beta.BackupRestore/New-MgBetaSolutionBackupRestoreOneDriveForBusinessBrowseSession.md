@@ -560,7 +560,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession)
+- [New-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession)
 
 
 

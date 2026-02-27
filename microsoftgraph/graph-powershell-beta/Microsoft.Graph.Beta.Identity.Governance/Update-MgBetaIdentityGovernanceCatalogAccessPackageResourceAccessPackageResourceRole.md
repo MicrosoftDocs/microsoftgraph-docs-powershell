@@ -984,7 +984,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceaccesspackageresourcerole)
+- [Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceaccesspackageresourcerole)
 
 
 
