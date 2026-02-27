@@ -60,20 +60,25 @@ Create a new activityBasedTimeoutPolicy object.
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	definition = @(
-	'{"ActivityBasedTimeoutPolicy":{"Version":1,"ApplicationPolicies":[{"ApplicationId":"default","WebSessionIdleTimeout":"00:05:00"}]}}'
+	"definition-value"
 )
-displayName = "activityBasedTimeoutPolicies test"
+displayName = "displayName-value"
 isOrganizationDefault = $true
 }
 
 New-MgPolicyActivityBasedTimeoutPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgPolicyActivityBasedTimeoutPolicy Cmdlet.
+
 
 ## PARAMETERS
 

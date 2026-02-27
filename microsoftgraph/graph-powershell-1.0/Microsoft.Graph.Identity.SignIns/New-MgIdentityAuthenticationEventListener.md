@@ -61,8 +61,9 @@ You can create one of the following subtypes that are derived from authenticatio
 | Application | EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -87,63 +88,9 @@ $params = @{
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows how to use the New-MgIdentityAuthenticationEventListener Cmdlet.
 
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.onFraudProtectionLoadStartListener"
-	conditions = @{
-		applications = @{
-			includeApplications = @(
-				@{
-					appId = "0001111-aaaa-2222-bbbb-3333cccc4444"
-				}
-			)
-		}
-	}
-	handler = @{
-		"@odata.type" = "#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler"
-		signUp = @{
-			"@odata.type" = "#microsoft.graph.fraudProtectionProviderConfiguration"
-			fraudProtectionProvider = @{
-				"@odata.type" = "#microsoft.graph.arkoseFraudProtectionProvider"
-				id = "6fedd01b-0afb-4a07-967f-d1ccbd81102b"
-			}
-		}
-	}
-}
-
-New-MgIdentityAuthenticationEventListener -BodyParameter $params
-
-### EXAMPLE 3
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.onFraudProtectionLoadStartListener"
-	conditions = @{
-		applications = @{
-			includeApplications = @(
-				@{
-					appId = "0001111-aaaa-2222-bbbb-3333cccc4444"
-				}
-			)
-		}
-	}
-	handler = @{
-		"@odata.type" = "#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler"
-		signUp = @{
-			"@odata.type" = "#microsoft.graph.fraudProtectionProviderConfiguration"
-			fraudProtectionProvider = @{
-				"@odata.type" = "#microsoft.graph.humanSecurityFraudProtectionProvider"
-				id = "fabe5100-cc02-46c1-bd0e-ce885fe367fd"
-			}
-		}
-	}
-}
-
-New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
 ## PARAMETERS
 

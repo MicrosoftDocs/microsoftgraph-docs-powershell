@@ -84,8 +84,9 @@ Self-service operations aren't supported.
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Email.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 New-MgUserAuthenticationEmailMethod -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgUserAuthenticationEmailMethod Cmdlet.
+
 
 ## PARAMETERS
 

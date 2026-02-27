@@ -93,19 +93,6 @@ This cmdlet has the following aliases,
 
 Update access decisions, known as accessReviewInstanceDecisionItems, for which the user is the reviewer.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-$params = @{
-	applyResult = "AppliedSuccessfully"
-	applyDescription = "Completed by John Doe"
-}
-
-Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -1898,6 +1885,7 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstancedecision)
 - [](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta)
+
 
 
 

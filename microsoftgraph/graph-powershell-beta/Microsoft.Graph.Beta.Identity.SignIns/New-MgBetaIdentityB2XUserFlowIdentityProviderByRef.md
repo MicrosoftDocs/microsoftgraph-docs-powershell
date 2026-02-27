@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property ref to userFlowIdentityProviders for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -597,6 +587,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflowidentityproviderbyref)
+
 
 
 

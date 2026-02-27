@@ -63,8 +63,9 @@ Create a new cloudPcUserSetting object.
 | Application | CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -83,7 +84,6 @@ $params = @{
 		disasterRecoveryType = "premium"
 		userInitiatedDisasterRecoveryAllowed = $true
 	}
-	provisioningSourceType = "image"
 	restorePointSetting = @{
 		frequencyInHours = 16
 		frequencyType = "sixteenHours"
@@ -92,6 +92,10 @@ $params = @{
 }
 
 New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
+
 
 ## PARAMETERS
 
