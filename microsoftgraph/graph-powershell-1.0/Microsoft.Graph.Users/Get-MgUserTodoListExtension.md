@@ -16,6 +16,9 @@ title: Get-MgUserTodoListExtension
 The collection of open extensions defined for the task list.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoListExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

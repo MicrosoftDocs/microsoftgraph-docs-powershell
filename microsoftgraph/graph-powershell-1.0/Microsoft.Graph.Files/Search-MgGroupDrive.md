@@ -15,6 +15,9 @@ title: Search-MgGroupDrive
 
 Search the hierarchy of items for items matching a query.\rYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Search-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaGroupDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Search (Default)

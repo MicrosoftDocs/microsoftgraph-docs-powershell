@@ -15,6 +15,9 @@ title: Remove-MgSiteOnenote
 
 Delete navigation property onenote for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteOnenote](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaSiteOnenote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

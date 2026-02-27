@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreProtectionUnitCountAsSiteProtectionUnit
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreProtectionUnitCountAsSiteProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreProtectionUnitCountAsSiteProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

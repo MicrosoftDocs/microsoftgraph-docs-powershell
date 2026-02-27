@@ -15,6 +15,9 @@ title: Update-MgPolicyAuthenticationMethodPolicy
 
 Update the properties of an authenticationMethodsPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

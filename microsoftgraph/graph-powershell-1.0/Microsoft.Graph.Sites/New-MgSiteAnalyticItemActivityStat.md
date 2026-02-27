@@ -15,6 +15,9 @@ title: New-MgSiteAnalyticItemActivityStat
 
 Create new navigation property to itemActivityStats for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

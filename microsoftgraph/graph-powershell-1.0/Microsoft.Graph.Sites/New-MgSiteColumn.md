@@ -15,6 +15,9 @@ title: New-MgSiteColumn
 
 Create a column for a site with a request that specifies a columnDefinition.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgPrintShareJob
 
 Update the navigation property jobs in print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintShareJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
