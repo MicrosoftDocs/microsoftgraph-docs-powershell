@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportquiettimepolicyuserreport
@@ -603,7 +603,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1M9IhmqDevicemanagementReportsMicrosoftGraphGetquiettimepolicyusersreportPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1M9IhmqDevicemanagementReportsMicrosoftGraphGetquiettimepolicyusersreportPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Filter <String>]: 
   [GroupBy <String[]>]: 
@@ -620,3 +620,25 @@ BODYPARAMETER <IPaths1M9IhmqDevicemanagementReportsMicrosoftGraphGetquiettimepol
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportquiettimepolicyuserreport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
