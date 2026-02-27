@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/move-mgbetadevicemanagementmanageddevicetoou
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 02/27/2026
 PlatyPS schema version: 2024-05-01
 title: Move-MgBetaDeviceManagementManagedDeviceToOu
 ---
@@ -48,13 +48,15 @@ This cmdlet has the following aliases,
 
 Invoke action moveDevicesToOU
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -81,7 +83,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -146,7 +148,7 @@ HelpMessage: ''
 
 ### -DeviceIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -230,7 +232,7 @@ HelpMessage: ''
 
 ### -OrganizationalUnitPath
 
-
+.
 
 ```yaml
 Type: System.String
@@ -407,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Tm5YpiDevicemanagementManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Tm5YpiDevicemanagementManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceIds <String[]>]: 
   [OrganizationalUnitPath <String>]:
@@ -415,27 +417,4 @@ BODYPARAMETER `<IPaths1Tm5YpiDevicemanagementManageddevicesMicrosoftGraphMovedev
 
 ## RELATED LINKS
 
-- [Move-MgBetaDeviceManagementManagedDeviceToOu](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/move-mgbetadevicemanagementmanageddevicetoou)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/move-mgbetadevicemanagementmanageddevicetoou)

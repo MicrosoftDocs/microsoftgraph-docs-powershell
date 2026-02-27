@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 02/20/2026
+ms.date: 02/27/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgTeamworkTeamAppSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgTeamworkTeamAppSetting
 ## SYNOPSIS
 
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkTeamAppSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,8 +48,9 @@ This cmdlet has the following aliases,
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 
 ## EXAMPLES
-### Example 1: Update the tenant-wide teamsAppSettings for all Teams apps in the tenant
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -61,8 +59,6 @@ $params = @{
 }
 
 Update-MgTeamworkTeamAppSetting -BodyParameter $params
-```
-This example updates the tenant-wide teamsAppSettings for all Teams apps in the tenant
 
 ## PARAMETERS
 
@@ -418,7 +414,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppSettings>`: teamsAppSettings
+BODYPARAMETER <IMicrosoftGraphTeamsAppSettings>: teamsAppSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -430,27 +426,5 @@ False blocks the installation of any Teams app that requires resource-specific p
 
 ## RELATED LINKS
 
-- [Update-MgTeamworkTeamAppSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting)
+- [](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-1.0)

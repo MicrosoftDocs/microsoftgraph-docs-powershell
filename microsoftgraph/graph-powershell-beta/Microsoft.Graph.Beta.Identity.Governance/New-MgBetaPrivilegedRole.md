@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedrole
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 02/27/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPrivilegedRole
 ---
@@ -48,6 +48,16 @@ This cmdlet has the following aliases,
 
 Add new entity to privilegedRoles
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -73,7 +83,7 @@ HelpMessage: ''
 
 ### -Assignments
 
-
+.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -245,7 +255,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -483,7 +493,7 @@ Read-only.
       [UsersCount <Int32?>]: 
   [UserId <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
+BODYPARAMETER <IMicrosoftGraphPrivilegedRole>: privilegedRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -521,7 +531,7 @@ Read-only.
     [Status <String>]: roleSummaryStatus
     [UsersCount <Int32?>]: 
 
-SETTINGS `<IMicrosoftGraphPrivilegedRoleSettings>`: privilegedRoleSettings
+SETTINGS <IMicrosoftGraphPrivilegedRoleSettings>: privilegedRoleSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -536,7 +546,7 @@ Read-only.
   [NotificationToUserOnElevation <Boolean?>]: 
   [TicketingInfoOnElevation <Boolean?>]: 
 
-SUMMARY `<IMicrosoftGraphPrivilegedRoleSummary>`: privilegedRoleSummary
+SUMMARY <IMicrosoftGraphPrivilegedRoleSummary>: privilegedRoleSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -549,27 +559,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaPrivilegedRole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedrole)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedrole)

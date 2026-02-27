@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalert
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 02/27/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityAlert
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityAlert
 ## SYNOPSIS
 
 Create new navigation property to alerts for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,6 +66,16 @@ This cmdlet has the following aliases,
 
 Create new navigation property to alerts for security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -ActivityGroupName
@@ -115,7 +122,7 @@ HelpMessage: ''
 
 ### -AlertDetections
 
-
+.
 To construct, see NOTES section for ALERTDETECTIONS properties and create a hash table.
 
 ```yaml
@@ -528,7 +535,7 @@ HelpMessage: ''
 
 ### -HistoryStates
 
-
+.
 To construct, see NOTES section for HISTORYSTATES properties and create a hash table.
 
 ```yaml
@@ -657,7 +664,7 @@ HelpMessage: ''
 
 ### -InvestigationSecurityStates
 
-
+.
 To construct, see NOTES section for INVESTIGATIONSECURITYSTATES properties and create a hash table.
 
 ```yaml
@@ -679,7 +686,7 @@ HelpMessage: ''
 
 ### -LastEventDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -745,7 +752,7 @@ HelpMessage: ''
 
 ### -MessageSecurityStates
 
-
+.
 To construct, see NOTES section for MESSAGESECURITYSTATES properties and create a hash table.
 
 ```yaml
@@ -1092,7 +1099,7 @@ HelpMessage: ''
 
 ### -UriClickSecurityStates
 
-
+.
 To construct, see NOTES section for URICLICKSECURITYSTATES properties and create a hash table.
 
 ```yaml
@@ -1235,7 +1242,7 @@ ALERTDETECTIONS <IMicrosoftGraphAlertDetection[]>: .
   [Method <String>]: 
   [Name <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphAlert>`: alert
+BODYPARAMETER <IMicrosoftGraphAlert>: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1611,7 +1618,7 @@ Recommended value range of 0-1, which equates to a percentage.
   [UserAccountType <String>]: userAccountSecurityType
   [UserPrincipalName <String>]: User sign-in name - internet format: (user account name)@(user account DNS domain name).
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -1628,27 +1635,4 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>: Threat intelligence p
 
 ## RELATED LINKS
 
-- [New-MgSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalert)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalert)

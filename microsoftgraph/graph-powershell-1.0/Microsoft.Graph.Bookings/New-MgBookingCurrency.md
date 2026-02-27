@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 02/20/2026
+ms.date: 02/27/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBookingCurrency
 ---
@@ -14,9 +14,6 @@ title: New-MgBookingCurrency
 ## SYNOPSIS
 
 Create new navigation property to bookingCurrencies for solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to bookingCurrencies for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -381,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBookingCurrency>`: bookingCurrency
+BODYPARAMETER <IMicrosoftGraphBookingCurrency>: bookingCurrency
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -391,27 +398,4 @@ For example, the currency symbol for the US dollar and for the Australian dollar
 
 ## RELATED LINKS
 
-- [New-MgBookingCurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency)
