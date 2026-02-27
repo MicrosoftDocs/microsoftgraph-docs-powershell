@@ -137,7 +137,7 @@ HelpMessage: ''
 
 ### -AnalyzedEmails
 
-.
+
 To construct, see NOTES section for ANALYZEDEMAILS properties and create a hash table.
 
 ```yaml
@@ -159,7 +159,7 @@ HelpMessage: ''
 
 ### -Body
 
-.
+
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -224,7 +224,7 @@ HelpMessage: ''
 
 ### -Description
 
-.
+
 
 ```yaml
 Type: System.String
@@ -245,7 +245,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -413,7 +413,7 @@ HelpMessage: ''
 
 ### -RemediateSendersCopy
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

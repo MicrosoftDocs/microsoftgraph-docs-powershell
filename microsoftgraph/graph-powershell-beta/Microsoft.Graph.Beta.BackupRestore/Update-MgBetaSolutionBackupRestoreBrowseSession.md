@@ -101,7 +101,7 @@ HelpMessage: ''
 
 ### -BackupSizeInBytes
 
-.
+
 
 ```yaml
 Type: System.String
@@ -226,7 +226,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -281,7 +281,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -512,7 +512,7 @@ HelpMessage: ''
 
 ### -RestorePointDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
