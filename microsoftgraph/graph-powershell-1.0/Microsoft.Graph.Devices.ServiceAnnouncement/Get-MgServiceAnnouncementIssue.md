@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementissue
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-ms.date: 02/13/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServiceAnnouncementIssue
 ---
