@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Represents a platform credential instance registered to a user on Mac OS.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-PlatformCred.Read, UserAuthMethod-PlatformCred.ReadWrite.All, UserAuthMethod-PlatformCred.ReadWrite, UserAuthMethod-PlatformCred.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-PlatformCred.Read.All, UserAuthMethod-PlatformCred.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

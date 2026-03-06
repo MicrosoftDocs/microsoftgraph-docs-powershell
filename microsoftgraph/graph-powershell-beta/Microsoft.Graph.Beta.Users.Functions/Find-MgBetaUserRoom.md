@@ -65,6 +65,14 @@ This cmdlet has the following aliases,
 
 Invoke function findRooms
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadBasic.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All, User.ReadBasic.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
