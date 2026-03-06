@@ -820,7 +820,7 @@ STATS `<IMicrosoftGraphCustomDataProvidedResourceUploadStats>`: customDataProvid
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancecatalogaccesspackageresourceroleaccesspackageresourceuploadsession)
+- [New-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancecatalogaccesspackageresourceroleaccesspackageresourceuploadsession)
 
 
 

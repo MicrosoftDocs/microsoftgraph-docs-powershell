@@ -1220,7 +1220,7 @@ The setting is not supported for now.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroleassignmentrequestroledefinition)
+- [Update-MgBetaPrivilegedAccessResourceRoleAssignmentRequestRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroleassignmentrequestroledefinition)
 
 
 

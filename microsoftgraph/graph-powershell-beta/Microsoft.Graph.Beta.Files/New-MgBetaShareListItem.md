@@ -53765,7 +53765,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistitem)
+- [New-MgBetaShareListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistitem)
 
 
 

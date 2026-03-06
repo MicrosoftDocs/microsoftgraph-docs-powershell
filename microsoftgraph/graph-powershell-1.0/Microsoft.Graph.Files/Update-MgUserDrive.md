@@ -47685,7 +47685,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrive)
+- [Update-MgUserDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrive)
 
 
 

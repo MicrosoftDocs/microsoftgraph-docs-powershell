@@ -402,7 +402,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenoteresourcecount)
+- [Get-MgGroupSiteOnenoteResourceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenoteresourcecount)
 
 
 

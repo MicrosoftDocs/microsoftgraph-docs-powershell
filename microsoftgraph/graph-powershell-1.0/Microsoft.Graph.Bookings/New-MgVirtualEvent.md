@@ -954,7 +954,7 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualevent)
+- [New-MgVirtualEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualevent)
 
 
 

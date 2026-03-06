@@ -27491,7 +27491,7 @@ See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathlist)
+- [New-MgSiteGetByPathList](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathlist)
 
 
 

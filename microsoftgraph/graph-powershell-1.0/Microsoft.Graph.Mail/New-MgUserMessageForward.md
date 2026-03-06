@@ -793,8 +793,8 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageforward)
-- [](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-1.0)
+- [New-MgUserMessageForward](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageforward)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-1.0)
 
 
 
