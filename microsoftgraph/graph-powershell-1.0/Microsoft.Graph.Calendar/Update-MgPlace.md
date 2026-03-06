@@ -78,8 +78,9 @@ Update the properties of place object that can be a building, floor, section, de
 You can identify the place by specifying the id property.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -93,6 +94,10 @@ $params = @{
 }
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
 
 ## PARAMETERS
 

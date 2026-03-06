@@ -104,19 +104,36 @@ This cmdlet has the following aliases,
 Update the properties of an educationuser object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
-	displayName = "Rogelio Cazares"
-	givenName = "Rogelio"
-	middleName = "Fernando"
-	surname = "Cazares"
+	relatedContacts = @(
+		@{
+			displayName = "Father Time"
+			emailAddress = "father@time.com"
+			mobilePhone = "4251231234"
+			relationship = "guardian"
+			accessConsent = $true
+		}
+		@{
+			displayName = "Mother Nature"
+			emailAddress = "mother@nature.co.uk"
+			mobilePhone = "3251231234"
+			relationship = "parent"
+			accessConsent = $true
+		}
+	)
 }
 
 Update-MgBetaEducationUser -EducationUserId $educationUserId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaEducationUser Cmdlet.
+
 
 ## PARAMETERS
 

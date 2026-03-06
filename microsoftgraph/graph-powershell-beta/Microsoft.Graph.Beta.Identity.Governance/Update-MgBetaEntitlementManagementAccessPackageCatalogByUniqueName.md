@@ -88,16 +88,6 @@ This cmdlet has the following aliases,
 
 Update an existing accessPackageCatalog object to change one or more of its properties, such as the display name or description.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageCustomWorkflowExtensions
@@ -19496,6 +19486,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogbyuniquename)
 - [](https://learn.microsoft.com/graph/api/accesspackagecatalog-update?view=graph-rest-beta)
+
 
 
 

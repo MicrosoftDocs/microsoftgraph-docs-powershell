@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Invoke action decryptBuffer
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -440,6 +430,7 @@ BODY `<IPaths41K0CwInformationprotectionMicrosoftGraphDecryptbufferPostRequestbo
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectiondecrypt)
+
 
 
 

@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -441,6 +431,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckoutuserdriveitem)
 - [](https://learn.microsoft.com/graph/api/driveitem-checkout?view=graph-rest-1.0)
+
 
 
 

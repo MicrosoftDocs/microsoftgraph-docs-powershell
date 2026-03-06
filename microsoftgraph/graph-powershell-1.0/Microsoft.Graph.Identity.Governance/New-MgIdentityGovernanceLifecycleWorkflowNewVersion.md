@@ -82,8 +82,9 @@ Create a new version of the workflow object.
 | Application | LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a new version of a workflow
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -131,7 +132,12 @@ $params = @{
 
 New-MgIdentityGovernanceLifecycleWorkflowNewVersion -WorkflowId $workflowId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a new version of a workflow
+
+### Example 2: Create a new version of a task with customized email
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -192,6 +198,10 @@ $params = @{
 }
 
 New-MgIdentityGovernanceLifecycleWorkflowNewVersion -WorkflowId $workflowId -BodyParameter $params
+
+```
+This example will create a new version of a task with customized email
+
 
 ## PARAMETERS
 

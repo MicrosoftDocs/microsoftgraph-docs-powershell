@@ -84,9 +84,9 @@ To grant an app role assignment to a user, you need three identifiers:
 | Application | AppRoleAssignment.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Assign a user an application role
 
-### EXAMPLE 1
-
+```powershell
 New-MgUserAppRoleAssignment -Userid '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
   -PrincipalId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
   -ResourceId '0873169c-9595-4664-9d02-499b49846ff1'  `
@@ -101,6 +101,9 @@ PrincipalId          : 8a7c50d3-fcbd-4727-a889-8ab232dfea01
 PrincipalType        : User
 ResourceDisplayName  : dxprovisioning-analytics
 ResourceId           : 0873169c-9595-4664-9d02-499b49846ff1
+```
+
+This commands assigns the specified user a role in the specified application resource.
 
 ## PARAMETERS
 
