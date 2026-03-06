@@ -64,16 +64,6 @@ Read the properties and relationships of b2bManagementPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.B2BManagementPolicy, Policy.ReadWrite.B2BManagementPolicy,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -637,6 +627,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyb2bmanagementpolicy)
 - [](https://learn.microsoft.com/graph/api/b2bmanagementpolicy-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/policyroot-list-b2bmanagementpolicies?view=graph-rest-beta)
+
 
 
 

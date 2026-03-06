@@ -97,16 +97,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property accessPackageAssignmentPolicies in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackage
@@ -28432,6 +28422,7 @@ VERIFIABLECREDENTIALSETTINGS `<IMicrosoftGraphVerifiableCredentialSettings>`: ve
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
+
 
 
 

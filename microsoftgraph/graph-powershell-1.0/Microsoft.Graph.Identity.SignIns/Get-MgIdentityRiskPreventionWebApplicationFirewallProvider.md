@@ -68,16 +68,6 @@ Read the properties and relationships of webApplicationFirewallProvider object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -609,6 +599,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityriskpreventionwebapplicationfirewallprovider)
 - [](https://learn.microsoft.com/graph/api/webapplicationfirewallprovider-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-list-webapplicationfirewallproviders?view=graph-rest-1.0)
+
 
 
 

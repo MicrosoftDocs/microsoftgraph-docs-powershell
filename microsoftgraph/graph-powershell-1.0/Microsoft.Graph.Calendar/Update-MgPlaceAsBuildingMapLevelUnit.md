@@ -70,16 +70,6 @@ This cmdlet has the following aliases,
 
 Update the properties of an existing unitMap object in IMDF format on a specified floor, or create one if it doesn't exist.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -607,6 +597,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmaplevelunit)
 - [](https://learn.microsoft.com/graph/api/unitmap-update?view=graph-rest-1.0)
+
 
 
 

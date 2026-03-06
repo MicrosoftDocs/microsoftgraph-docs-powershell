@@ -57,16 +57,6 @@ Create a new certificateBasedApplicationConfiguration  object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -494,6 +484,7 @@ In a certificateBasedApplicationConfiguration object, at least one object in the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
 - [](https://learn.microsoft.com/graph/api/certificateauthoritypath-post-certificatebasedapplicationconfigurations?view=graph-rest-beta)
+
 
 
 
