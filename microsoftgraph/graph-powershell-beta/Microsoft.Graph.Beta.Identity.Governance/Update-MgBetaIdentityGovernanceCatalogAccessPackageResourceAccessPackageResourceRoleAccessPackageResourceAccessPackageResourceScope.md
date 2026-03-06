@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceaccesspackageresourceroleaccesspackageresourceaccesspackageresourcescope
@@ -771,7 +771,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGERESOURCE <IMicrosoftGraphAccessPackageResource>: accessPackageResource
+ACCESSPACKAGERESOURCE `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -880,7 +880,7 @@ This should be set to the customdataprovidedresource's name when creating the se
 The only possible value currently is: accessReviewDataUploadTriggerCallbackData
   [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
-BODYPARAMETER <IMicrosoftGraphAccessPackageResourceScope>: accessPackageResourceScope
+BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceScope>`: accessPackageResourceScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -990,7 +990,7 @@ The only possible value currently is: accessReviewDataUploadTriggerCallbackData
   [RoleOriginId <String>]: The origin system for the role, if different.
   [Url <String>]: A resource locator for the scope.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1104,3 +1104,25 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceaccesspackageresourceroleaccesspackageresourceaccesspackageresourcescope)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
