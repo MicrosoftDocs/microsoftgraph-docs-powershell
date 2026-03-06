@@ -15,6 +15,9 @@ title: Add-MgBetaUserFollowedSite
 
 Follow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Sites/Add-MgUserFollowedSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

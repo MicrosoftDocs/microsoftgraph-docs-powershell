@@ -15,6 +15,9 @@ title: Update-MgTenantRelationshipMultiTenantOrganizationTenant
 
 Update the navigation property tenants in tenantRelationships
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

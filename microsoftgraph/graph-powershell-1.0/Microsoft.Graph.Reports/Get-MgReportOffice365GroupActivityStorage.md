@@ -15,6 +15,9 @@ title: Get-MgReportOffice365GroupActivityStorage
 
 Get the total storage used across all group mailboxes and group sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365GroupActivityStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityStorage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

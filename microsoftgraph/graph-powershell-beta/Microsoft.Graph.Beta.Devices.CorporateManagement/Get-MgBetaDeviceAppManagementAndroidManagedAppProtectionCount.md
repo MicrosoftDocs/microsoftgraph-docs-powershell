@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementAndroidManagedAppProtectionCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementAndroidManagedAppProtectionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

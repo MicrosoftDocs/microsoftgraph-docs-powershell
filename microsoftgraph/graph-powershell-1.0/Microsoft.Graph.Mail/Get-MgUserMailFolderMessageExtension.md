@@ -16,6 +16,9 @@ title: Get-MgUserMailFolderMessageExtension
 The collection of open extensions defined for the message.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessageExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

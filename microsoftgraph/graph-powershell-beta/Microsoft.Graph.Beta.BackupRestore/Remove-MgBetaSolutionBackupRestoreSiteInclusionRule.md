@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreSiteInclusionRule
 
 Delete navigation property siteInclusionRules for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreSiteInclusionRule](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreSiteInclusionRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

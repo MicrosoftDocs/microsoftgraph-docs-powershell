@@ -16,6 +16,9 @@ title: Remove-MgBetaApplicationOwnerDirectoryObjectByRef
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

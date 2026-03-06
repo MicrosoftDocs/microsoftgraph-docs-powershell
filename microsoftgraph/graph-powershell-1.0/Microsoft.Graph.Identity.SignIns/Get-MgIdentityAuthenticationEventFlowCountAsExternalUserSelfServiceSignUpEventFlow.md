@@ -15,6 +15,9 @@ title: Get-MgIdentityAuthenticationEventFlowCountAsExternalUserSelfServiceSignUp
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlowCountAsExternalUserSelfServiceSignUpEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlowCountAsExternalUserSelfServiceSignUpEventFlow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

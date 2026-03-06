@@ -17,6 +17,9 @@ The collection of OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
