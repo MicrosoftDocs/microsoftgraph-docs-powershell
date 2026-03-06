@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/confirm-mgauditlogsigninsafe
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 02/20/2026
+ms.date: 03/06/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgAuditLogSignInSafe
 ---
@@ -16,9 +16,6 @@ title: Confirm-MgAuditLogSignInSafe
 Mark an event in Microsoft Entra sign-in logs as safe.
 Admins can either mark the events flagged as risky by Microsoft Entra ID Protection as safe, or they can mark unflagged events as safe.
 For details about investigating Identity Protection risks, see How to investigate risk.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaAuditLogSignInSafe](/powershell/module/Microsoft.Graph.Beta.Reports/Confirm-MgBetaAuditLogSignInSafe?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,18 +51,9 @@ Mark an event in Microsoft Entra sign-in logs as safe.
 Admins can either mark the events flagged as risky by Microsoft Entra ID Protection as safe, or they can mark unflagged events as safe.
 For details about investigating Identity Protection risks, see How to investigate risk.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskyUser.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskEvent.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
@@ -77,10 +65,6 @@ $params = @{
 }
 
 Confirm-MgAuditLogSignInSafe -BodyParameter $params
-
-```
-This example shows how to use the Confirm-MgAuditLogSignInSafe Cmdlet.
-
 
 ## PARAMETERS
 
@@ -107,7 +91,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -319,7 +303,7 @@ HelpMessage: ''
 
 ### -RequestIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -412,34 +396,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Yhfzi3AuditlogsSigninsMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Yhfzi3AuditlogsSigninsMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RequestIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Confirm-MgAuditLogSignInSafe](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/confirm-mgauditlogsigninsafe)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-confirmsafe?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/confirm-mgauditlogsigninsafe)
+- [](https://learn.microsoft.com/graph/api/signin-confirmsafe?view=graph-rest-1.0)

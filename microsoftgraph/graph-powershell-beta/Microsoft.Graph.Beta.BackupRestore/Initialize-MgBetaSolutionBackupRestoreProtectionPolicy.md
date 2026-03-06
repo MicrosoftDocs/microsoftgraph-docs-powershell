@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/initialize-mgbetasolutionbackuprestoreprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 03/06/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgBetaSolutionBackupRestoreProtectionPolicy
 ---
@@ -16,9 +16,6 @@ title: Initialize-MgBetaSolutionBackupRestoreProtectionPolicy
 Activate a protectionPolicyBase.
 Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
 You can add or remove artifacts (sites or user accounts) to or from each active policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Initialize-MgSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Initialize-MgSolutionBackupRestoreProtectionPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 Activate a protectionPolicyBase.
 Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
 You can add or remove artifacts (sites or user accounts) to or from each active policy.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -341,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -379,28 +386,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Initialize-MgBetaSolutionBackupRestoreProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/initialize-mgbetasolutionbackuprestoreprotectionpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/initialize-mgbetasolutionbackuprestoreprotectionpolicy)
+- [](https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-beta)

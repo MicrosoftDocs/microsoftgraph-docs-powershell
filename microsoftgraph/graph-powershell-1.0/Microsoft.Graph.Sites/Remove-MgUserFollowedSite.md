@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mguserfollowedsite
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 02/20/2026
+ms.date: 03/06/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserFollowedSite
 ---
@@ -14,9 +14,6 @@ title: Remove-MgUserFollowedSite
 ## SYNOPSIS
 
 Unfollow a user's site or multiple sites.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserFollowedSite](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaUserFollowedSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,18 +68,9 @@ This cmdlet has the following aliases,
 
 Unfollow a user's site or multiple sites.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
@@ -98,10 +86,6 @@ $params = @{
 }
 
 Remove-MgUserFollowedSite -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Remove-MgUserFollowedSite Cmdlet.
-
 
 ## PARAMETERS
 
@@ -134,7 +118,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -408,7 +392,7 @@ HelpMessage: ''
 
 ### -Value
 
-
+.
 To construct, see NOTES section for VALUE properties and create a hash table.
 
 ```yaml
@@ -490,7 +474,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths4Vl3HqUsersUserIdFollowedsitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths4Vl3HqUsersUserIdFollowedsitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Value <IMicrosoftGraphSite[]>]: 
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1363,7 +1347,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -5540,8 +5524,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5652,7 +5636,7 @@ Read-only.
 This relationship can only be used to load a specific term set.
     [TermStores <IMicrosoftGraphTermStore[]>]: The collection of termStores under this site.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -6568,7 +6552,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -10745,8 +10729,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -10860,27 +10844,5 @@ This relationship can only be used to load a specific term set.
 
 ## RELATED LINKS
 
-- [Remove-MgUserFollowedSite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mguserfollowedsite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mguserfollowedsite)
+- [](https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-1.0)

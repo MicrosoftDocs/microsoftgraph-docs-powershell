@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebooksection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 02/20/2026
+ms.date: 03/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserOnenoteNotebookSection
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaUserOnenoteNotebookSection
 The sections in the notebook.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteNotebookSection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -65,18 +62,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Notes
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId
-
-```
-This example shows how to use the Get-MgBetaUserOnenoteNotebookSection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -592,7 +584,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -609,26 +601,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserOnenoteNotebookSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebooksection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebooksection)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 03/06/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession
 ---
@@ -49,13 +49,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to oneDriveForBusinessBrowseSessions for solutions
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BackupRestore-Restore.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BackupRestore-Restore.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -82,7 +84,7 @@ HelpMessage: ''
 
 ### -BackupSizeInBytes
 
-
+.
 
 ```yaml
 Type: System.String
@@ -168,7 +170,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -189,7 +191,7 @@ HelpMessage: ''
 
 ### -DirectoryObjectId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -232,7 +234,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -423,7 +425,7 @@ HelpMessage: ''
 
 ### -RestorePointDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -515,7 +517,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOneDriveForBusinessBrowseSession>`: oneDriveForBusinessBrowseSession
+BODYPARAMETER <IMicrosoftGraphOneDriveForBusinessBrowseSession>: oneDriveForBusinessBrowseSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BackupSizeInBytes <String>]: 
   [CreatedDateTime <DateTime?>]: 
@@ -541,7 +543,7 @@ BODYPARAMETER `<IMicrosoftGraphOneDriveForBusinessBrowseSession>`: oneDriveForBu
 Read-only.
   [DirectoryObjectId <String>]: 
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -560,27 +562,4 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
 
 ## RELATED LINKS
 
-- [New-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession)

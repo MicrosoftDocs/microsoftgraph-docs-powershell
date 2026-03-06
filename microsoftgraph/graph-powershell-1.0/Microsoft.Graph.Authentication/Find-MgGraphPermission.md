@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Authentication-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/find-mggraphpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 02/20/2026
+ms.date: 03/06/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgGraphPermission
 ---
@@ -214,24 +214,37 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### You can pipe permission names in the form of strings to Find-MgGraphPermission.
 
+{{ Fill in the Description }}
 
 ### System.String
 
+{{ Fill in the Description }}
 
 ## OUTPUTS
 
+### This
 
+{{ Fill in the Description }}
 
+### *
 
+{{ Fill in the Description }}
 
+### have
 
+{{ Fill in the Description }}
 
+### certain
 
+{{ Fill in the Description }}
 
+### the
 
+{{ Fill in the Description }}
 
 ### Microsoft.Graph.Custom.Permission
 
+{{ Fill in the Description }}
 
 ## NOTES
 

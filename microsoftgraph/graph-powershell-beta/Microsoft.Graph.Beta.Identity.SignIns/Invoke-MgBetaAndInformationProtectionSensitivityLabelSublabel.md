@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaandinformationprotectionsensitivitylabelsublabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 03/06/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAndInformationProtectionSensitivityLabelSublabel
 ---
@@ -73,6 +73,16 @@ This cmdlet has the following aliases,
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -104,7 +114,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -126,7 +136,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -191,7 +201,7 @@ HelpMessage: ''
 
 ### -DelegatedUserEmail
 
-
+.
 
 ```yaml
 Type: System.String
@@ -309,7 +319,7 @@ HelpMessage: ''
 
 ### -Locale
 
-
+.
 
 ```yaml
 Type: System.String
@@ -336,7 +346,7 @@ HelpMessage: ''
 
 ### -ProtectedContents
 
-
+.
 To construct, see NOTES section for PROTECTEDCONTENTS properties and create a hash table.
 
 ```yaml
@@ -476,7 +486,7 @@ HelpMessage: ''
 
 ### -SupportedContentFormats
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -557,7 +567,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1XeekedInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1XeekedInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -567,7 +577,7 @@ BODY `<IPaths1XeekedInformationprotectionSensitivitylabelsSensitivitylabelIdSubl
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-BODYPARAMETER `<IPaths1XeekedInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1XeekedInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -577,7 +587,7 @@ BODYPARAMETER `<IPaths1XeekedInformationprotectionSensitivitylabelsSensitivityla
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -682,28 +692,5 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaAndInformationProtectionSensitivityLabelSublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaandinformationprotectionsensitivitylabelsublabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaandinformationprotectionsensitivitylabelsublabel)
+- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)

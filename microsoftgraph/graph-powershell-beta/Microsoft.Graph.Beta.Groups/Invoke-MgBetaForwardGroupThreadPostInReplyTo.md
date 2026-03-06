@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 02/20/2026
+ms.date: 03/06/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaForwardGroupThreadPostInReplyTo
 ---
@@ -14,10 +14,7 @@ title: Invoke-MgBetaForwardGroupThreadPostInReplyTo
 ## SYNOPSIS
 
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \ror, you can specify just the parent thread without the parent conversation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupThreadPostInReplyTo?view=graph-powershell-1.0)
+You can specify both the parent conversation and thread in the request, \r\nor, you can specify just the parent thread without the parent conversation.
 
 ## SYNTAX
 
@@ -74,7 +71,17 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \ror, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, \r\nor, you can specify just the parent thread without the parent conversation.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -107,7 +114,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -156,7 +163,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -483,7 +490,7 @@ HelpMessage: ''
 
 ### -ToRecipients
 
-
+.
 To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -565,7 +572,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1J2I8RdGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1J2I8RdGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [ToRecipients <IMicrosoftGraphRecipient[]>]: 
@@ -574,7 +581,7 @@ BODYPARAMETER `<IPaths1J2I8RdGroupsGroupIdThreadsConversationthreadIdPostsPostId
       [Address <String>]: The email address of an entity instance.
       [Name <String>]: The display name of an entity instance.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -607,28 +614,5 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaForwardGroupThreadPostInReplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto)
+- [](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta)

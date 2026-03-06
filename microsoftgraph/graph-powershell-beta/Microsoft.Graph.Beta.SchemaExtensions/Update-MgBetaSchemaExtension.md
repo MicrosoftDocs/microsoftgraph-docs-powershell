@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.SchemaExtensions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
-ms.date: 02/20/2026
+ms.date: 03/06/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSchemaExtension
 ---
@@ -22,9 +22,6 @@ For delegated flows, the signed-in user can update a schema extension as long as
 That application can be the one that initially created the extension, or some other application owned by the signed-in user.
 This criteria for the owner property allows a signed-in user to make updates through other applications they don't own, such as Microsoft Graph Explorer.
 When using Graph Explorer to update a schemaExtension resource, include the owner property in the PATCH request body.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Update-MgSchemaExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -88,18 +85,9 @@ That application can be the one that initially created the extension, or some ot
 This criteria for the owner property allows a signed-in user to make updates through other applications they don't own, such as Microsoft Graph Explorer.
 When using Graph Explorer to update a schemaExtension resource, include the owner property in the PATCH request body.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
 
@@ -126,10 +114,6 @@ $params = @{
 }
 
 Update-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaSchemaExtension Cmdlet.
-
 
 ## PARAMETERS
 
@@ -666,7 +650,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSchemaExtension>`: schemaExtension
+BODYPARAMETER <IMicrosoftGraphSchemaExtension>: schemaExtension
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -692,7 +676,7 @@ Supports $filter (eq).
   [TargetTypes <String[]>]: Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.
 Select from administrativeUnit, contact, device, event, group, message, organization, post, todoTask, todoTaskList, or user.
 
-INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
+INPUTOBJECT <ISchemaExtensionsIdentity>: Identity Parameter
   [SchemaExtensionId <String>]: The unique identifier of schemaExtension
 
 PROPERTIES <IMicrosoftGraphExtensionSchemaProperty[]>: The collection of property names and types that make up the schema extension definition.
@@ -704,27 +688,5 @@ For more information, see Supported property data types.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSchemaExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension)
+- [](https://learn.microsoft.com/graph/api/schemaextension-update?view=graph-rest-beta)

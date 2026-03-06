@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 03/06/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact
 ---
@@ -75,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property granularSiteRestoreArtifacts in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -156,7 +166,7 @@ HelpMessage: ''
 
 ### -BrowseSessionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -183,7 +193,7 @@ HelpMessage: ''
 
 ### -CompletionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -463,7 +473,7 @@ HelpMessage: ''
 
 ### -RestoredItemKey
 
-
+.
 
 ```yaml
 Type: System.String
@@ -490,7 +500,7 @@ HelpMessage: ''
 
 ### -RestoredItemPath
 
-
+.
 
 ```yaml
 Type: System.String
@@ -517,7 +527,7 @@ HelpMessage: ''
 
 ### -RestoredItemWebUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -544,7 +554,7 @@ HelpMessage: ''
 
 ### -RestorePointDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -598,7 +608,7 @@ HelpMessage: ''
 
 ### -SiteId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -625,7 +635,7 @@ HelpMessage: ''
 
 ### -StartDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -679,7 +689,7 @@ HelpMessage: ''
 
 ### -WebUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -760,7 +770,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGranularSiteRestoreArtifact>`: granularSiteRestoreArtifact
+BODYPARAMETER <IMicrosoftGraphGranularSiteRestoreArtifact>: granularSiteRestoreArtifact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BrowseSessionId <String>]: 
   [CompletionDateTime <DateTime?>]: 
@@ -775,7 +785,7 @@ BODYPARAMETER `<IMicrosoftGraphGranularSiteRestoreArtifact>`: granularSiteRestor
 Read-only.
   [SiteId <String>]: 
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -813,27 +823,4 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact)

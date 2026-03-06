@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: 01eec85c-0aa5-4fef-a8de-b5f224bdb39b
+Module Guid: 101175a4-3c1a-4a2f-8988-9536a0348ce9
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.security/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1122,23 +1122,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityTriggerType](Update-MgSecurityTriggerType.md)
 
 ### [Update-MgSecurityTriggerTypeRetentionEventType](Update-MgSecurityTriggerTypeRetentionEventType.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
