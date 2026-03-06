@@ -335,7 +335,7 @@ HelpMessage: ''
 
 ### -FeatureRolloutPolicies
 
-.
+
 To construct, see NOTES section for FEATUREROLLOUTPOLICIES properties and create a hash table.
 
 ```yaml
@@ -464,7 +464,7 @@ HelpMessage: ''
 
 ### -ImpactedResources
 
-.
+
 To construct, see NOTES section for IMPACTEDRESOURCES properties and create a hash table.
 
 ```yaml
@@ -531,7 +531,7 @@ HelpMessage: ''
 
 ### -OutboundSharedUserProfiles
 
-.
+
 To construct, see NOTES section for OUTBOUNDSHAREDUSERPROFILES properties and create a hash table.
 
 ```yaml
@@ -726,7 +726,7 @@ HelpMessage: ''
 
 ### -SharedEmailDomains
 
-.
+
 To construct, see NOTES section for SHAREDEMAILDOMAINS properties and create a hash table.
 
 ```yaml

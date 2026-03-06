@@ -82,7 +82,7 @@ HelpMessage: ''
 
 ### -BackupSizeInBytes
 
-.
+
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -189,7 +189,7 @@ HelpMessage: ''
 
 ### -DirectoryObjectId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -232,7 +232,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -423,7 +423,7 @@ HelpMessage: ''
 
 ### -RestorePointDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime

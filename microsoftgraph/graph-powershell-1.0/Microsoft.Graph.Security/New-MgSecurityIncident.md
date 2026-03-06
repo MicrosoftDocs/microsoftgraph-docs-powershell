@@ -486,7 +486,7 @@ HelpMessage: ''
 
 ### -PriorityScore
 
-.
+
 
 ```yaml
 Type: System.Int32
