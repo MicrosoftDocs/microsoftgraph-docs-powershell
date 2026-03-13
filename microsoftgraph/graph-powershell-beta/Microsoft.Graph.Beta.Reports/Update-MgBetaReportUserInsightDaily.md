@@ -272,7 +272,7 @@ HelpMessage: ''
 
 ### -InactiveUsers
 
-.
+
 To construct, see NOTES section for INACTIVEUSERS properties and create a hash table.
 
 ```yaml
@@ -294,7 +294,7 @@ HelpMessage: ''
 
 ### -InactiveUsersByApplication
 
-.
+
 To construct, see NOTES section for INACTIVEUSERSBYAPPLICATION properties and create a hash table.
 
 ```yaml
@@ -338,7 +338,7 @@ HelpMessage: ''
 
 ### -MfaTelecomFraud
 
-.
+
 To construct, see NOTES section for MFATELECOMFRAUD properties and create a hash table.
 
 ```yaml
