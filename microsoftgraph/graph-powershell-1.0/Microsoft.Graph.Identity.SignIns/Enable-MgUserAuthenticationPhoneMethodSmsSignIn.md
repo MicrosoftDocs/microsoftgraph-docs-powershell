@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Enable SMS sign-in for an existing mobile phone number registered to a user.
 To be successfully enabled:
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-Phone.ReadWrite, UserAuthMethod-Phone.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-Phone.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

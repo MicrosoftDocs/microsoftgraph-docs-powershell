@@ -37,6 +37,14 @@ This cmdlet has the following aliases,
 Get the properties of the pronounsSettings resource for an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

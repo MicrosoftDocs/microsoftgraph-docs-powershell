@@ -158,6 +158,14 @@ Create a new group object if it doesn't exist, or update the properties of an ex
 For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
