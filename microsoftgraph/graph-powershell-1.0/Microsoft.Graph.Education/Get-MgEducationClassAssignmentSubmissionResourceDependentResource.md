@@ -63,16 +63,6 @@ This cmdlet has the following aliases,
 
 A collection of submission resources that depend on the parent educationSubmissionResource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -668,6 +658,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionresourcedependentresource)
 - [](https://learn.microsoft.com/graph/api/educationsubmissionresource-list-dependentresources?view=graph-rest-1.0)
+
 
 
 

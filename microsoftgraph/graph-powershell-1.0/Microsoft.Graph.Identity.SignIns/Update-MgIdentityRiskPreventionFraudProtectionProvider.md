@@ -79,16 +79,6 @@ The following derived types are currently supported.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RiskPreventionProviders.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -580,6 +570,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskpreventionfraudprotectionprovider)
 - [](https://learn.microsoft.com/graph/api/fraudprotectionprovider-update?view=graph-rest-1.0)
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 document type: module
 Help Version: 1.0.0.0
 HelpInfoUri: 

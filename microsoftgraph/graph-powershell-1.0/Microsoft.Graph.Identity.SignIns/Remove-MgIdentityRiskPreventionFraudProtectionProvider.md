@@ -57,16 +57,6 @@ Delete a fraudProtectionProvider object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RiskPreventionProviders.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -468,6 +458,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityriskpreventionfraudprotectionprovider)
 - [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-delete-fraudprotectionproviders?view=graph-rest-1.0)
+
 
 
 

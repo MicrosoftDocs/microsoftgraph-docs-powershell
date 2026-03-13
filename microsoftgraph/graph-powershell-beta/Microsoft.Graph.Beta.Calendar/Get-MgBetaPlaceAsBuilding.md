@@ -64,16 +64,6 @@ You can do the following for a given tenant:\r- List all buildings.\r- List all 
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 For details about how they compare, see Using the places API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -561,6 +551,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuilding)
 - [](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-beta)
+
 
 
 
