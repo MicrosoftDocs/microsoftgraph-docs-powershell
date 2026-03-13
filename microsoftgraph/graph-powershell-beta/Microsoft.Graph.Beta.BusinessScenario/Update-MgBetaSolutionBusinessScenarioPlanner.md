@@ -1138,7 +1138,7 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplanner)
+- [Update-MgBetaSolutionBusinessScenarioPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplanner)
 
 
 

@@ -547,7 +547,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgscandevicemanagementmanageddevicewindowsdefender)
+- [Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgscandevicemanagementmanageddevicewindowsdefender)
 
 
 

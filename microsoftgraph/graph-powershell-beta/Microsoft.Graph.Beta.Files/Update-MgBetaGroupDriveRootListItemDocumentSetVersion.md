@@ -886,7 +886,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootlistitemdocumentsetversion)
+- [Update-MgBetaGroupDriveRootListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootlistitemdocumentsetversion)
 
 
 

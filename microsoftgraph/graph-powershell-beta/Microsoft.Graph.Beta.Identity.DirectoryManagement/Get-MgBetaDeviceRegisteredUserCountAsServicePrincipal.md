@@ -417,7 +417,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredusercountasserviceprincipal)
+- [Get-MgBetaDeviceRegisteredUserCountAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredusercountasserviceprincipal)
 
 
 

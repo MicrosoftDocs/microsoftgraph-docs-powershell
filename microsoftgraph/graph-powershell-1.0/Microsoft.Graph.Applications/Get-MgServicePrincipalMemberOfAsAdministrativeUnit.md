@@ -599,7 +599,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberofasadministrativeunit)
+- [Get-MgServicePrincipalMemberOfAsAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberofasadministrativeunit)
 
 
 

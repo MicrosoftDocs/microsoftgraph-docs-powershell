@@ -1286,7 +1286,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotesection)
+- [New-MgBetaUserOnenoteSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotesection)
 
 
 
