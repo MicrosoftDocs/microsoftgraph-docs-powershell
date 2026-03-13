@@ -73,12 +73,17 @@ The following derived types are currently supported.
 | Application | CustomAuthenticationExtension.Read.All, CustomAuthenticationExtension.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityCustomAuthenticationExtension
+
+```
+This example shows how to use the Get-MgBetaIdentityCustomAuthenticationExtension Cmdlet.
+
 
 ## PARAMETERS
 

@@ -82,9 +82,9 @@ Update the navigation property lists in users
 | Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
@@ -93,6 +93,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserTodoList Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -67,12 +67,17 @@ Read the properties of an identityApiConnector object.
 | Application | APIConnectors.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityApiConnector
+
+```
+This example shows how to use the Get-MgIdentityApiConnector Cmdlet.
+
 
 ## PARAMETERS
 
