@@ -15,6 +15,9 @@ title: Publish-MgBetaSiteContentType
 
 Invoke action publish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Publish-MgSiteContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)

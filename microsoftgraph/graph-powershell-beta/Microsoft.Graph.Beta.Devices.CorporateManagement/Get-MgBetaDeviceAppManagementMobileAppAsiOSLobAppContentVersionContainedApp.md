@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedA
 
 The collection of contained apps in a MobileLobApp acting as a package.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

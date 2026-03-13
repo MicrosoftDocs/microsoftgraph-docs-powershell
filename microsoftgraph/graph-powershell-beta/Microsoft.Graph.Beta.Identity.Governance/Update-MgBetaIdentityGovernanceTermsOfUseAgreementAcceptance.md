@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance
 
 Update the navigation property agreementAcceptances in identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

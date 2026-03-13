@@ -15,6 +15,9 @@ title: Get-MgBetaReportOffice365ActivationUserDetail
 
 Invoke function getOffice365ActivationsUserDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportOffice365ActivationUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365ActivationUserDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

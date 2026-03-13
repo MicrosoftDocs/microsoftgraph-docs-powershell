@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamScheduleOfferShiftRequest
 
 The offer requests for shifts in the schedule.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

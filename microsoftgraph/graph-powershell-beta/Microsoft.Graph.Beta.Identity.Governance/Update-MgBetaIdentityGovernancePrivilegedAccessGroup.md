@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityGovernancePrivilegedAccessGroup
 
 Update the navigation property group in identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernancePrivilegedAccessGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernancePrivilegedAccessGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
