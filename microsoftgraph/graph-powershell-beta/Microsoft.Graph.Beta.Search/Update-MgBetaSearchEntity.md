@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchentity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSearchEntity
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSearchEntity
 ## SYNOPSIS
 
 Update search
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSearchEntity](/powershell/module/Microsoft.Graph.Search/Update-MgSearchEntity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update search
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -448,7 +455,7 @@ Read-only.
   [StandsFor <String>]: What the acronym stands for.
   [State <String>]: answerState
 
-BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
+BODYPARAMETER <IMicrosoftGraphSearchEntity>: searchEntity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -667,27 +674,4 @@ When users select this answer variation from the search results, they're directe
 
 ## RELATED LINKS
 
-- [Update-MgBetaSearchEntity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchentity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchentity)

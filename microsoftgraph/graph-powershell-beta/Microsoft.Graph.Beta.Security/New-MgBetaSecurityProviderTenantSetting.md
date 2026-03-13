@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityProviderTenantSetting
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 
 Create new navigation property to providerTenantSettings for security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -72,7 +82,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -158,7 +168,7 @@ HelpMessage: ''
 
 ### -Enabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +274,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -285,7 +295,7 @@ HelpMessage: ''
 
 ### -Provider
 
-
+.
 
 ```yaml
 Type: System.String
@@ -391,7 +401,7 @@ HelpMessage: ''
 
 ### -Vendor
 
-
+.
 
 ```yaml
 Type: System.String
@@ -462,7 +472,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphProviderTenantSetting>`: providerTenantSetting
+BODYPARAMETER <IMicrosoftGraphProviderTenantSetting>: providerTenantSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -475,27 +485,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityProviderTenantSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting)

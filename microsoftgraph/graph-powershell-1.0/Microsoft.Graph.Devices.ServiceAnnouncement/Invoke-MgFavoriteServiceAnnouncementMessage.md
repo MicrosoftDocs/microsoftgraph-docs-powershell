@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgfavoriteserviceannouncementmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgFavoriteServiceAnnouncementMessage
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgFavoriteServiceAnnouncementMessage
 ## SYNOPSIS
 
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaFavoriteServiceAnnouncementMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,9 +48,8 @@ This cmdlet has the following aliases,
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
@@ -65,10 +61,6 @@ $params = @{
 }
 
 Invoke-MgFavoriteServiceAnnouncementMessage -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgFavoriteServiceAnnouncementMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -95,7 +87,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -223,7 +215,7 @@ HelpMessage: ''
 
 ### -MessageIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -379,34 +371,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MessageIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Invoke-MgFavoriteServiceAnnouncementMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgfavoriteserviceannouncementmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-favorite?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgfavoriteserviceannouncementmessage)
+- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-favorite?view=graph-rest-1.0)

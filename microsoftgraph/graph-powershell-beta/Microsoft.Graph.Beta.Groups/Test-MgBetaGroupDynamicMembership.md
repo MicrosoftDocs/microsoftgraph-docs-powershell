@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembership
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaGroupDynamicMembership
 ---
@@ -73,9 +73,8 @@ The membership rule is returned along with other details that were used in the e
 You can complete this operation in the following ways:
 
 ## EXAMPLES
-### Example 1: Evaluate if a user or device is a member of an existing group
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -84,10 +83,6 @@ $params = @{
 }
 
 Test-MgBetaGroupDynamicMembership -GroupId $groupId -BodyParameter $params
-
-```
-This example will evaluate if a user or device is a member of an existing group
-
 
 ## PARAMETERS
 
@@ -120,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -309,7 +304,7 @@ HelpMessage: ''
 
 ### -MemberId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -475,11 +470,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths815SnbGroupsGroupIdMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths815SnbGroupsGroupIdMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MemberId <String>]: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -506,27 +501,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Test-MgBetaGroupDynamicMembership](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembership)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembership)
+- [](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanysaleinvoicelineitempicture
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaFinancialCompanySaleInvoiceLineItemPicture
 ---
@@ -113,6 +113,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to picture for financials
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -318,7 +328,7 @@ HelpMessage: ''
 
 ### -ContentType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -378,7 +388,7 @@ HelpMessage: ''
 
 ### -Height
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -459,7 +469,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -711,7 +721,7 @@ HelpMessage: ''
 
 ### -Width
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -782,7 +792,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPicture>`: picture
+BODYPARAMETER <IMicrosoftGraphPicture>: picture
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <Byte[]>]: 
   [ContentType <String>]: 
@@ -790,7 +800,7 @@ BODYPARAMETER `<IMicrosoftGraphPicture>`: picture
   [Id <String>]: 
   [Width <Int32?>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -831,27 +841,4 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaFinancialCompanySaleInvoiceLineItemPicture](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanysaleinvoicelineitempicture)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanysaleinvoicelineitempicture)

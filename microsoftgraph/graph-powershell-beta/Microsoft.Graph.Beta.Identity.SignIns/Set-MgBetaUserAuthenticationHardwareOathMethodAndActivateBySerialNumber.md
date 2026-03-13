@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetauserauthenticationhardwareoathmethodandactivatebyserialnumber
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaUserAuthenticationHardwareOathMethodAndActivateBySerialNumber
 ---
@@ -72,18 +72,9 @@ This cmdlet has the following aliases,
 
 Assign and activate a hardware token at the same time by hardware token serial number.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-HardwareOATH.ReadWrite, UserAuthMethod-HardwareOATH.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthMethod-HardwareOATH.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -95,10 +86,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Set-MgBetaUserAuthenticationHardwareOathMethodAndActivateBySerialNumber -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgBetaUserAuthenticationHardwareOathMethodAndActivateBySerialNumber Cmdlet.
-
 
 ## PARAMETERS
 
@@ -131,7 +118,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -202,7 +189,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -426,7 +413,7 @@ HelpMessage: ''
 
 ### -SerialNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -480,7 +467,7 @@ HelpMessage: ''
 
 ### -VerificationCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -561,13 +548,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Jgpoa1UsersUserIdAuthenticationHardwareoathmethodsMicrosoftGraphAssignandactivatebyserialnumberPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Jgpoa1UsersUserIdAuthenticationHardwareoathmethodsMicrosoftGraphAssignandactivatebyserialnumberPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: 
   [SerialNumber <String>]: 
   [VerificationCode <String>]: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -667,27 +654,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaUserAuthenticationHardwareOathMethodAndActivateBySerialNumber](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetauserauthenticationhardwareoathmethodandactivatebyserialnumber)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetauserauthenticationhardwareoathmethodandactivatebyserialnumber)
+- [](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber?view=graph-rest-beta)

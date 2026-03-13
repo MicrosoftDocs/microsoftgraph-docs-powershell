@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityLabelCategory
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityLabelCategory
 ## SYNOPSIS
 
 Create a new categoryTemplate object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,9 +48,8 @@ This cmdlet has the following aliases,
 Create a new categoryTemplate object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -63,10 +59,6 @@ $params = @{
 }
 
 New-MgSecurityLabelCategory -BodyParameter $params
-
-```
-This example shows how to use the New-MgSecurityLabelCategory Cmdlet.
-
 
 ## PARAMETERS
 
@@ -464,7 +456,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityCategoryTemplate>`: categoryTemplate
+BODYPARAMETER <IMicrosoftGraphSecurityCategoryTemplate>: categoryTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -487,7 +479,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -517,27 +509,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgSecurityLabelCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory)
+- [](https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-1.0)

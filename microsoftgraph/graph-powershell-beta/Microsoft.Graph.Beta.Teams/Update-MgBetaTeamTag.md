@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtag
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTeamTag
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaTeamTag
 ## SYNOPSIS
 
 Update the properties of a teamworkTag object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamTag](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamTag?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -72,18 +69,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a teamworkTag object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamworkTag.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamworkTag.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -92,10 +80,6 @@ $params = @{
 }
 
 Update-MgBetaTeamTag -TeamId $teamId -TeamworkTagId $teamworkTagId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaTeamTag Cmdlet.
-
 
 ## PARAMETERS
 
@@ -675,7 +659,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkTag>`: teamworkTag
+BODYPARAMETER <IMicrosoftGraphTeamworkTag>: teamworkTag
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -692,7 +676,7 @@ Read-only.
   [TagType <String>]: teamworkTagType
   [TeamId <String>]: ID of the team in which the tag is defined.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -749,27 +733,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaTeamTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtag)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtag)
+- [](https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-beta)

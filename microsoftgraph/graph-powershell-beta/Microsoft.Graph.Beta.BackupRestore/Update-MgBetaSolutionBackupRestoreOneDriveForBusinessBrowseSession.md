@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession
 ---
@@ -76,6 +76,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property oneDriveForBusinessBrowseSessions in solutions
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -107,7 +117,7 @@ HelpMessage: ''
 
 ### -BackupSizeInBytes
 
-
+The size of the backup in bytes.
 
 ```yaml
 Type: System.String
@@ -205,7 +215,9 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+The date and time when the browse session was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: System.DateTime
@@ -232,7 +244,7 @@ HelpMessage: ''
 
 ### -DirectoryObjectId
 
-
+Id of the backed-up OneDrive.
 
 ```yaml
 Type: System.String
@@ -287,7 +299,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-
+The date and time after which the browse session is deleted automatically.
 
 ```yaml
 Type: System.DateTime
@@ -545,7 +557,7 @@ HelpMessage: ''
 
 ### -RestorePointDateTime
 
-
+The date and time of the restore point on which the browse session is created.
 
 ```yaml
 Type: System.DateTime
@@ -653,10 +665,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOneDriveForBusinessBrowseSession>`: oneDriveForBusinessBrowseSession
+BODYPARAMETER <IMicrosoftGraphOneDriveForBusinessBrowseSession>: oneDriveForBusinessBrowseSession
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [BackupSizeInBytes <String>]: 
-  [CreatedDateTime <DateTime?>]: 
+  [BackupSizeInBytes <String>]: The size of the backup in bytes.
+  [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -672,14 +686,14 @@ BODYPARAMETER `<IMicrosoftGraphOneDriveForBusinessBrowseSession>`: oneDriveForBu
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [ExpirationDateTime <DateTime?>]: 
-  [RestorePointDateTime <DateTime?>]: 
+  [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
+  [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
   [Status <String>]: browseSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DirectoryObjectId <String>]: 
+  [DirectoryObjectId <String>]: Id of the backed-up OneDrive.
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -695,7 +709,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -733,27 +747,4 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession)

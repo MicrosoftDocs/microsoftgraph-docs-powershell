@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicator
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityTiIndicator
 ---
@@ -100,18 +100,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a tiIndicator object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ThreatIndicators.ReadWrite.OwnedBy,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ThreatIndicators.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Request without Prefer header
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -121,12 +112,7 @@ $params = @{
 
 Update-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
 
-```
-This example will request without prefer header
-
-### Example 2: Request with Prefer header
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -137,10 +123,6 @@ $params = @{
 }
 
 Update-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
-
-```
-This example will request with prefer header
-
 
 ## PARAMETERS
 
@@ -438,7 +420,7 @@ HelpMessage: ''
 
 ### -DomainName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -465,7 +447,7 @@ HelpMessage: ''
 
 ### -EmailEncoding
 
-
+.
 
 ```yaml
 Type: System.String
@@ -492,7 +474,7 @@ HelpMessage: ''
 
 ### -EmailLanguage
 
-
+.
 
 ```yaml
 Type: System.String
@@ -519,7 +501,7 @@ HelpMessage: ''
 
 ### -EmailRecipient
 
-
+.
 
 ```yaml
 Type: System.String
@@ -546,7 +528,7 @@ HelpMessage: ''
 
 ### -EmailSenderAddress
 
-
+.
 
 ```yaml
 Type: System.String
@@ -573,7 +555,7 @@ HelpMessage: ''
 
 ### -EmailSenderName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -600,7 +582,7 @@ HelpMessage: ''
 
 ### -EmailSourceDomain
 
-
+.
 
 ```yaml
 Type: System.String
@@ -627,7 +609,7 @@ HelpMessage: ''
 
 ### -EmailSourceIPAddress
 
-
+.
 
 ```yaml
 Type: System.String
@@ -654,7 +636,7 @@ HelpMessage: ''
 
 ### -EmailSubject
 
-
+.
 
 ```yaml
 Type: System.String
@@ -681,7 +663,7 @@ HelpMessage: ''
 
 ### -EmailXMailer
 
-
+.
 
 ```yaml
 Type: System.String
@@ -766,7 +748,7 @@ HelpMessage: ''
 
 ### -FileCompileDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -793,7 +775,7 @@ HelpMessage: ''
 
 ### -FileCreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -847,7 +829,7 @@ HelpMessage: ''
 
 ### -FileHashValue
 
-
+.
 
 ```yaml
 Type: System.String
@@ -874,7 +856,7 @@ HelpMessage: ''
 
 ### -FileMutexName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -901,7 +883,7 @@ HelpMessage: ''
 
 ### -FileName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -928,7 +910,7 @@ HelpMessage: ''
 
 ### -FilePacker
 
-
+.
 
 ```yaml
 Type: System.String
@@ -955,7 +937,7 @@ HelpMessage: ''
 
 ### -FilePath
 
-
+.
 
 ```yaml
 Type: System.String
@@ -982,7 +964,7 @@ HelpMessage: ''
 
 ### -FileSize
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -1009,7 +991,7 @@ HelpMessage: ''
 
 ### -FileType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1326,7 +1308,7 @@ HelpMessage: ''
 
 ### -NetworkCidrBlock
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1353,7 +1335,7 @@ HelpMessage: ''
 
 ### -NetworkDestinationAsn
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -1380,7 +1362,7 @@ HelpMessage: ''
 
 ### -NetworkDestinationCidrBlock
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1407,7 +1389,7 @@ HelpMessage: ''
 
 ### -NetworkDestinationIPv4
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1434,7 +1416,7 @@ HelpMessage: ''
 
 ### -NetworkDestinationIPv6
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1461,7 +1443,7 @@ HelpMessage: ''
 
 ### -NetworkDestinationPort
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -1488,7 +1470,7 @@ HelpMessage: ''
 
 ### -NetworkIPv4
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1515,7 +1497,7 @@ HelpMessage: ''
 
 ### -NetworkIPv6
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1542,7 +1524,7 @@ HelpMessage: ''
 
 ### -NetworkPort
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -1569,7 +1551,7 @@ HelpMessage: ''
 
 ### -NetworkProtocol
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -1596,7 +1578,7 @@ HelpMessage: ''
 
 ### -NetworkSourceAsn
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -1623,7 +1605,7 @@ HelpMessage: ''
 
 ### -NetworkSourceCidrBlock
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1650,7 +1632,7 @@ HelpMessage: ''
 
 ### -NetworkSourceIPv4
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1677,7 +1659,7 @@ HelpMessage: ''
 
 ### -NetworkSourceIPv6
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1704,7 +1686,7 @@ HelpMessage: ''
 
 ### -NetworkSourcePort
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -2014,7 +1996,7 @@ HelpMessage: ''
 
 ### -Url
 
-
+.
 
 ```yaml
 Type: System.String
@@ -2041,7 +2023,7 @@ HelpMessage: ''
 
 ### -UserAgent
 
-
+.
 
 ```yaml
 Type: System.String
@@ -2122,7 +2104,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTiIndicator>`: tiIndicator
+BODYPARAMETER <IMicrosoftGraphTiIndicator>: tiIndicator
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2212,7 +2194,7 @@ Required.
   [Url <String>]: 
   [UserAgent <String>]: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -2314,27 +2296,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityTiIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicator)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tiindicator-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicator)
+- [](https://learn.microsoft.com/graph/api/tiindicator-update?view=graph-rest-beta)

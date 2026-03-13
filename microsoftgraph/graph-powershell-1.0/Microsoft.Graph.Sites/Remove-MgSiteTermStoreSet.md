@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoreset
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSiteTermStoreSet
 ---
@@ -14,9 +14,6 @@ title: Remove-MgSiteTermStoreSet
 ## SYNOPSIS
 
 Delete a set object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,17 +67,12 @@ This cmdlet has the following aliases,
 Delete a set object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
 Remove-MgSiteTermStoreSet -SiteId $siteId -SetId $setId
-
-```
-This example shows how to use the Remove-MgSiteTermStoreSet Cmdlet.
-
 
 ## PARAMETERS
 
@@ -472,7 +464,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -520,27 +512,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgSiteTermStoreSet](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoreset)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/termstore-set-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoreset)
+- [](https://learn.microsoft.com/graph/api/termstore-set-delete?view=graph-rest-1.0)

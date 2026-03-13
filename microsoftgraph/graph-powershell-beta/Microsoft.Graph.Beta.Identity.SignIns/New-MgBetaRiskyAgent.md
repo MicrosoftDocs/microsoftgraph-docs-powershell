@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyagent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 03/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRiskyAgent
 ---
@@ -21,8 +21,8 @@ Create new navigation property to riskyAgents for identityProtection
 
 ```
 New-MgBetaRiskyAgent [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AgentDisplayName <string>] [-Id <string>] [-IsDeleted] [-IsEnabled] [-IsProcessing]
- [-RiskDetail <string>] [-RiskLastModifiedDateTime <datetime>] [-RiskLevel <string>]
+ [-AgentDisplayName <string>] [-Id <string>] [-IdentityType <string>] [-IsDeleted] [-IsEnabled]
+ [-IsProcessing] [-RiskDetail <string>] [-RiskLastModifiedDateTime <datetime>] [-RiskLevel <string>]
  [-RiskState <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -45,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to riskyAgents for identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -223,6 +233,27 @@ HelpMessage: ''
 
 The unique identifier for an entity.
 Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IdentityType
+
+agentIdentityType
 
 ```yaml
 Type: System.String
@@ -528,12 +559,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRiskyAgent>`: riskyAgent
+BODYPARAMETER <IMicrosoftGraphRiskyAgent>: riskyAgent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [AgentDisplayName <String>]: Name of the agent.
  Supports $filter (eq, startsWith).
+  [IdentityType <String>]: agentIdentityType
   [IsDeleted <Boolean?>]: Indicates whether the agent is deleted.
   [IsEnabled <Boolean?>]: Indicates whether the agent is enabled.
   [IsProcessing <Boolean?>]: Indicates whether an agent's risky state is processing in the backend.
@@ -548,27 +580,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [New-MgBetaRiskyAgent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyagent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyagent)
