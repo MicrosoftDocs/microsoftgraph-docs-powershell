@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberobject
@@ -13,7 +13,7 @@ title: Get-MgServicePrincipalMemberObject
 
 ## SYNOPSIS
 
-Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r- user\r- group\r- service principal\r- organizational contact\r- device\r- directory object This function is transitive.
 Only users and role-enabled groups can be members of directory roles.
 
 ## SYNTAX
@@ -67,7 +67,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r- user\r- group\r- service principal\r- organizational contact\r- device\r- directory object This function is transitive.
 Only users and role-enabled groups can be members of directory roles.
 
 ## EXAMPLES
@@ -466,11 +466,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1Md6PmhServiceprincipalsServiceprincipalIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Md6PmhServiceprincipalsServiceprincipalIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SecurityEnabledOnly <Boolean?>]: 
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -501,3 +501,25 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberobject)
 - [](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
