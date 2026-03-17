@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Delete a fraudProtectionProvider object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RiskPreventionProviders.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RiskPreventionProviders.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
