@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcreatedbyuserserviceprovisioningerror
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 02/20/2026
+ms.date: 03/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDriveListCreatedByUserServiceProvisioningError
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaDriveListCreatedByUserServiceProvisioningError
 ## SYNOPSIS
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveListCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListCreatedByUserServiceProvisioningError?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,6 +37,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -472,27 +479,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaDriveListCreatedByUserServiceProvisioningError](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcreatedbyuserserviceprovisioningerror)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcreatedbyuserserviceprovisioningerror)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchivegroupteam
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 02/20/2026
+ms.date: 03/17/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgArchiveGroupTeam
 ---
@@ -14,16 +14,13 @@ title: Invoke-MgArchiveGroupTeam
 ## SYNOPSIS
 
 Archive the specified team.
-\rWhen a team is archived, users can no longer make most changes to the team.
+\r\nWhen a team is archived, users can no longer make most changes to the team.
 For example, users can no longer: send or like messages on any channel in the team; edit the team's name or description; nor edit other settings.
 However, membership changes to the team are still allowed.
 Archiving is an async operation.
 A team is archived once the async operation completes successfully, which might occur subsequent to a response from this API.
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaArchiveGroupTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,13 +76,23 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Archive the specified team.
-\rWhen a team is archived, users can no longer make most changes to the team.
+\r\nWhen a team is archived, users can no longer make most changes to the team.
 For example, users can no longer: send or like messages on any channel in the team; edit the team's name or description; nor edit other settings.
 However, membership changes to the team are still allowed.
 Archiving is an async operation.
 A team is archived once the async operation completes successfully, which might occur subsequent to a response from this API.
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -118,7 +125,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -413,7 +420,7 @@ HelpMessage: ''
 
 ### -ShouldSetSpoSiteReadOnlyForMembers
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -494,11 +501,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths17M4RvgGroupsGroupIdTeamMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths17M4RvgGroupsGroupIdTeamMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ShouldSetSpoSiteReadOnlyForMembers <Boolean?>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -538,28 +545,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgArchiveGroupTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchivegroupteam)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-archive?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchivegroupteam)
+- [](https://learn.microsoft.com/graph/api/team-archive?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicetemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 03/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryTemplateDeviceTemplate
 ---
@@ -50,18 +50,9 @@ This cmdlet has the following aliases,
 
 Create a new deviceTemplate used to identify attributes and manage a group of devices with similar characteristics.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceTemplate.Create, DeviceTemplate.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceTemplate.Create, DeviceTemplate.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a new device template
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -76,12 +67,7 @@ $params = @{
 
 New-MgBetaDirectoryTemplateDeviceTemplate -BodyParameter $params
 
-```
-This example will create a new device template
-
-### Example 2: Create a device template with an owner
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -98,10 +84,6 @@ $params = @{
 }
 
 New-MgBetaDirectoryTemplateDeviceTemplate -BodyParameter $params
-
-```
-This example will create a device template with an owner
-
 
 ## PARAMETERS
 
@@ -616,7 +598,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceTemplate>`: deviceTemplate
+BODYPARAMETER <IMicrosoftGraphDeviceTemplate>: deviceTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1038,27 +1020,5 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryTemplateDeviceTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicetemplate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/template-post-devicetemplates?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicetemplate)
+- [](https://learn.microsoft.com/graph/api/template-post-devicetemplates?view=graph-rest-beta)

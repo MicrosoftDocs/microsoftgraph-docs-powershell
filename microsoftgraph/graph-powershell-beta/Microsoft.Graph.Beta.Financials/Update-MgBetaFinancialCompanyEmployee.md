@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyemployee
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 02/20/2026
+ms.date: 03/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanyEmployee
 ---
@@ -78,13 +78,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property employees in financials
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Financials.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Financials.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -145,7 +147,7 @@ HelpMessage: ''
 
 ### -BirthDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -270,7 +272,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -297,7 +299,7 @@ HelpMessage: ''
 
 ### -Email
 
-
+.
 
 ```yaml
 Type: System.String
@@ -351,7 +353,7 @@ HelpMessage: ''
 
 ### -EmploymentDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -378,7 +380,7 @@ HelpMessage: ''
 
 ### -GivenName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -468,7 +470,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -523,7 +525,7 @@ HelpMessage: ''
 
 ### -JobTitle
 
-
+.
 
 ```yaml
 Type: System.String
@@ -550,7 +552,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -577,7 +579,7 @@ HelpMessage: ''
 
 ### -MiddleName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -604,7 +606,7 @@ HelpMessage: ''
 
 ### -MobilePhone
 
-
+.
 
 ```yaml
 Type: System.String
@@ -631,7 +633,7 @@ HelpMessage: ''
 
 ### -Number
 
-
+.
 
 ```yaml
 Type: System.String
@@ -658,7 +660,7 @@ HelpMessage: ''
 
 ### -PersonalEmail
 
-
+.
 
 ```yaml
 Type: System.String
@@ -685,7 +687,7 @@ HelpMessage: ''
 
 ### -PhoneNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -712,7 +714,7 @@ HelpMessage: ''
 
 ### -Picture
 
-
+.
 To construct, see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
@@ -825,7 +827,7 @@ HelpMessage: ''
 
 ### -StatisticsGroupCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -852,7 +854,7 @@ HelpMessage: ''
 
 ### -Status
 
-
+.
 
 ```yaml
 Type: System.String
@@ -879,7 +881,7 @@ HelpMessage: ''
 
 ### -Surname
 
-
+.
 
 ```yaml
 Type: System.String
@@ -906,7 +908,7 @@ HelpMessage: ''
 
 ### -TerminationDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -987,7 +989,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+ADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -995,7 +997,7 @@ ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphEmployee>`: employee
+BODYPARAMETER <IMicrosoftGraphEmployee>: employee
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1028,7 +1030,7 @@ BODYPARAMETER `<IMicrosoftGraphEmployee>`: employee
   [Surname <String>]: 
   [TerminationDate <DateTime?>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1076,27 +1078,4 @@ PICTURE <IMicrosoftGraphPicture[]>: .
 
 ## RELATED LINKS
 
-- [Update-MgBetaFinancialCompanyEmployee](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyemployee)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyemployee)

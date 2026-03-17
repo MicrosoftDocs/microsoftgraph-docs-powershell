@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaagentriskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 03/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAgentRiskDetection
 ---
@@ -23,9 +23,10 @@ Update the navigation property agentRiskDetections in identityProtection
 Update-MgBetaAgentRiskDetection -AgentRiskDetectionId <string> [-ResponseHeadersVariable <string>]
  [-ActivityDateTime <datetime>] [-AdditionalInfo <string>] [-AdditionalProperties <hashtable>]
  [-AgentDisplayName <string>] [-AgentId <string>] [-DetectedDateTime <datetime>]
- [-DetectionTimingType <string>] [-Id <string>] [-LastModifiedDateTime <datetime>]
- [-RiskDetail <string>] [-RiskEventType <string>] [-RiskEvidence <string>] [-RiskLevel <string>]
- [-RiskState <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-DetectionTimingType <string>] [-Id <string>] [-IdentityType <string>]
+ [-LastModifiedDateTime <datetime>] [-RiskDetail <string>] [-RiskEventType <string>]
+ [-RiskEvidence <string>] [-RiskLevel <string>] [-RiskState <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -47,9 +48,9 @@ Update-MgBetaAgentRiskDetection -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <string>] [-ActivityDateTime <datetime>] [-AdditionalInfo <string>]
  [-AdditionalProperties <hashtable>] [-AgentDisplayName <string>] [-AgentId <string>]
  [-DetectedDateTime <datetime>] [-DetectionTimingType <string>] [-Id <string>]
- [-LastModifiedDateTime <datetime>] [-RiskDetail <string>] [-RiskEventType <string>]
- [-RiskEvidence <string>] [-RiskLevel <string>] [-RiskState <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-IdentityType <string>] [-LastModifiedDateTime <datetime>] [-RiskDetail <string>]
+ [-RiskEventType <string>] [-RiskEvidence <string>] [-RiskLevel <string>] [-RiskState <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -72,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property agentRiskDetections in identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -463,6 +474,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IdentityType
+
+agentIdentityType
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -InputObject
 
 Identity Parameter
@@ -797,7 +835,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAgentRiskDetection>`: agentRiskDetection
+BODYPARAMETER <IMicrosoftGraphAgentRiskDetection>: agentRiskDetection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -817,6 +855,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $filter (eq, le, and ge).
   [DetectionTimingType <String>]: riskDetectionTimingType
+  [IdentityType <String>]: agentIdentityType
   [LastModifiedDateTime <DateTime?>]: Date and time that the risk detection was last updated.
  Supports $filter (eq, le, and ge).
   [RiskDetail <String>]: riskDetail
@@ -827,7 +866,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [RiskLevel <String>]: riskLevel
   [RiskState <String>]: riskState
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -927,27 +966,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaAgentRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaagentriskdetection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaagentriskdetection)
