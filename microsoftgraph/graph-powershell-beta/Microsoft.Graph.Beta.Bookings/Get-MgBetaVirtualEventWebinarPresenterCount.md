@@ -15,6 +15,9 @@ title: Get-MgBetaVirtualEventWebinarPresenterCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarPresenterCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarPresenterCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

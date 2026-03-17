@@ -15,6 +15,9 @@ title: New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLo
 
 Create new navigation property to exemptAppLockerFiles for deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

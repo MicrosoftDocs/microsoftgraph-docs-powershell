@@ -19,6 +19,9 @@ After you finish receiving all the changes, you may apply them to your local st
 Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
 Note: you should only delete a folder locally if it's empty after syncing all the changes.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootDelta](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)

@@ -15,6 +15,9 @@ title: Update-MgUserAuthenticationMethod
 
 Update the navigation property methods in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

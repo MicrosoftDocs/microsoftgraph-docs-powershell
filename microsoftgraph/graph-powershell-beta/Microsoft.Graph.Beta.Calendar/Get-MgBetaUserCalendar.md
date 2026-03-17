@@ -17,6 +17,9 @@ The user's calendars.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendar?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

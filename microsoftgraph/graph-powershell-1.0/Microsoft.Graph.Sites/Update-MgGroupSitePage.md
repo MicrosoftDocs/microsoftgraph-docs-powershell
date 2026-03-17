@@ -15,6 +15,9 @@ title: Update-MgGroupSitePage
 
 Update the navigation property pages in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

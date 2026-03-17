@@ -15,6 +15,9 @@ title: Publish-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource
 
 Release the non-custodial data source from the case.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Security/Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Release (Default)

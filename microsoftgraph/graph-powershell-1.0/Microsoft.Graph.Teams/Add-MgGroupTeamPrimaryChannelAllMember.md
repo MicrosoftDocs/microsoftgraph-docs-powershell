@@ -16,6 +16,9 @@ title: Add-MgGroupTeamPrimaryChannelAllMember
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaGroupTeamPrimaryChannelAllMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaGroupTeamPrimaryChannelAllMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

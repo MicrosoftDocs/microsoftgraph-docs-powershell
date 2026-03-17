@@ -15,6 +15,9 @@ title: Remove-MgSecurityLabelCategorySubcategory
 
 Delete navigation property subcategories for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCategorySubcategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

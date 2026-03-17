@@ -15,6 +15,9 @@ title: Get-MgSecurityTriggerType
 
 Get triggerTypes from security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
