@@ -1009,7 +1009,7 @@ Must match one of the directory definitions in synchronizationSchema.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationtemplate)
+- [Update-MgServicePrincipalSynchronizationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationtemplate)
 
 
 
