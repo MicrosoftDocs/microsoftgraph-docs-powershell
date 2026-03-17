@@ -84,8 +84,9 @@ Invoke action targetApps
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -104,6 +105,10 @@ $params = @{
 }
 
 Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp -ManagedAppPolicyId $managedAppPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp Cmdlet.
+
 
 ## PARAMETERS
 

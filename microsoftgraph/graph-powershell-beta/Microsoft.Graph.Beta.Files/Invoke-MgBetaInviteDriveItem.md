@@ -87,8 +87,9 @@ A sharing invitation provides permissions to the recipients and, optionally, sen
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -110,30 +111,9 @@ expirationDateTime = "2018-07-15T14:00:00.000Z"
 
 Invoke-MgBetaInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows how to use the Invoke-MgBetaInviteDriveItem Cmdlet.
 
-Import-Module Microsoft.Graph.Beta.Files
-
-$params = @{
-	recipients = @(
-		@{
-			email = "helga@contoso.com"
-		}
-		@{
-			email = "robin@contoso.org"
-		}
-	)
-	message = "Here's the file that we're collaborating on."
-	requireSignIn = $true
-	sendInvitation = $true
-	roles = @(
-	"write"
-)
-password = "password123"
-expirationDateTime = "2018-07-15T14:00:00.000Z"
-}
-
-Invoke-MgBetaInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ## PARAMETERS
 

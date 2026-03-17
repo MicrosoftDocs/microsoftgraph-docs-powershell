@@ -69,12 +69,17 @@ Get a browserSiteList that contains browserSite and browserSharedCookie resource
 | Application | BrowserSiteLists.Read.All, BrowserSiteLists.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement
 
 Get-MgBetaAdminEdgeInternetExplorerModeSiteList
+
+```
+This example shows how to use the Get-MgBetaAdminEdgeInternetExplorerModeSiteList Cmdlet.
+
 
 ## PARAMETERS
 

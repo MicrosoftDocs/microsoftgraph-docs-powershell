@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property notes for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AuthoredNoteId
@@ -514,6 +504,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritysubjectrightsrequestnote)
+
 
 
 

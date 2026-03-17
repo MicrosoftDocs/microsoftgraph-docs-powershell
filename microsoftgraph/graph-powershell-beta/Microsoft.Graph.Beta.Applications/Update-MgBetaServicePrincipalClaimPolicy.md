@@ -78,26 +78,6 @@ Update a customClaimsPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Applications
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.customClaimsPolicy"
-	includeBasicClaimSet = "Boolean"
-	includeApplicationIdInIssuer = "Boolean"
-	audienceOverride = "String"
-	claims = @(
-		@{
-			"@odata.type" = "microsoft.graph.customClaim"
-		}
-	)
-}
-
-Update-MgBetaServicePrincipalClaimPolicy -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -687,6 +667,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalclaimpolicy)
 - [](https://learn.microsoft.com/graph/api/customclaimspolicy-update?view=graph-rest-beta)
+
 
 
 
