@@ -55,16 +55,6 @@ Invoke action disable
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Configuration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ActionOnExistingPolicy
@@ -382,6 +372,7 @@ BODYPARAMETER `<IPaths1Ftim88SolutionsBackuprestoreAllmailboxesbackupMicrosoftGr
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/disable-mgbetasolutionbackuprestoreallmailboxesbackup)
+
 
 
 

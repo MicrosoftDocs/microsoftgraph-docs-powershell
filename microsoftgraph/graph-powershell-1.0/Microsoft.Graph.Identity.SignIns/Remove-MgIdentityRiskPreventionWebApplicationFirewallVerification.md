@@ -59,16 +59,6 @@ Delete a webApplicationFirewallVerificationModel object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RiskPreventionProviders.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -470,6 +460,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityriskpreventionwebapplicationfirewallverification)
 - [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-delete-webapplicationfirewallverifications?view=graph-rest-1.0)
+
 
 
 

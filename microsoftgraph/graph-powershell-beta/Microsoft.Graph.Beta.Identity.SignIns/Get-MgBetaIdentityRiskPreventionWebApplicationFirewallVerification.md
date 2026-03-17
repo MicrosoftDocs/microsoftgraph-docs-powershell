@@ -68,16 +68,6 @@ Read the properties and relationships of webApplicationFirewallVerificationModel
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -641,6 +631,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityriskpreventionwebapplicationfirewallverification)
 - [](https://learn.microsoft.com/graph/api/webapplicationfirewallverificationmodel-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-list-webapplicationfirewallverifications?view=graph-rest-beta)
+
 
 
 

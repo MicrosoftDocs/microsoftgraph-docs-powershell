@@ -75,16 +75,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property registrationConfiguration in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -656,6 +646,7 @@ The default value is false.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarregistrationconfiguration)
+
 
 
 

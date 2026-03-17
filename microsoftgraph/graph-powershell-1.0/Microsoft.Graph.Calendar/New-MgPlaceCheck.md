@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 Create a new checkInClaim object to record the check-in status for a specific place, such as a desk or a room, associated with a specific calendar reservation.
 This check-in confirms that the reserved space is in use and prevents automatic release if auto-release policies are configured for that place.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -560,6 +550,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplacecheck)
 - [](https://learn.microsoft.com/graph/api/place-post-checkins?view=graph-rest-1.0)
+
 
 
 

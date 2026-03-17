@@ -57,16 +57,6 @@ This action sets the targeted agent's riskLevel to none.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityRiskyAgent.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -406,6 +396,7 @@ BODYPARAMETER `<IPathsZhzgo2IdentityprotectionRiskyagentsMicrosoftGraphDismissPo
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyagent)
 - [](https://learn.microsoft.com/graph/api/riskyagent-dismiss?view=graph-rest-beta)
+
 
 
 
