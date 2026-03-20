@@ -74,6 +74,14 @@ This cmdlet has the following aliases,
 Initiate a verification operation for a webApplicationFirewallProvider object.
 This API triggers provider-specific verification logic and returns a webApplicationFirewallVerificationModel object describing the verification result.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RiskPreventionProviders.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RiskPreventionProviders.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

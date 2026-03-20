@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Create a new webApplicationFirewallProvider object.
 You can create one of the following subtypes that are derived from webApplicationFirewallProvider.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RiskPreventionProviders.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RiskPreventionProviders.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
