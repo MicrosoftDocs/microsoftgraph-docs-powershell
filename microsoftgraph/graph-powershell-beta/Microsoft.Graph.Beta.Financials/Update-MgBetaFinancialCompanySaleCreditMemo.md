@@ -151,7 +151,7 @@ HelpMessage: ''
 
 ### -BillToCustomerId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ HelpMessage: ''
 
 ### -BillToCustomerNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -205,7 +205,7 @@ HelpMessage: ''
 
 ### -BillToName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -330,7 +330,7 @@ HelpMessage: ''
 
 ### -CreditMemoDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -385,7 +385,7 @@ HelpMessage: ''
 
 ### -CurrencyCode
 
-.
+
 
 ```yaml
 Type: System.String
@@ -412,7 +412,7 @@ HelpMessage: ''
 
 ### -CurrencyId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -467,7 +467,7 @@ HelpMessage: ''
 
 ### -CustomerId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -494,7 +494,7 @@ HelpMessage: ''
 
 ### -CustomerName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -521,7 +521,7 @@ HelpMessage: ''
 
 ### -CustomerNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -548,7 +548,7 @@ HelpMessage: ''
 
 ### -DiscountAmount
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -575,7 +575,7 @@ HelpMessage: ''
 
 ### -DiscountAppliedBeforeTax
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -602,7 +602,7 @@ HelpMessage: ''
 
 ### -DueDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -629,7 +629,7 @@ HelpMessage: ''
 
 ### -Email
 
-.
+
 
 ```yaml
 Type: System.String
@@ -656,7 +656,7 @@ HelpMessage: ''
 
 ### -ExternalDocumentNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -746,7 +746,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -801,7 +801,7 @@ HelpMessage: ''
 
 ### -InvoiceId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -828,7 +828,7 @@ HelpMessage: ''
 
 ### -InvoiceNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -855,7 +855,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -882,7 +882,7 @@ HelpMessage: ''
 
 ### -Number
 
-.
+
 
 ```yaml
 Type: System.String
@@ -937,7 +937,7 @@ HelpMessage: ''
 
 ### -PaymentTermsId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -964,7 +964,7 @@ HelpMessage: ''
 
 ### -PhoneNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -991,7 +991,7 @@ HelpMessage: ''
 
 ### -PricesIncludeTax
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1130,7 +1130,7 @@ HelpMessage: ''
 
 ### -SalesCreditMemoLines
 
-.
+
 To construct, see NOTES section for SALESCREDITMEMOLINES properties and create a hash table.
 
 ```yaml
@@ -1158,7 +1158,7 @@ HelpMessage: ''
 
 ### -Salesperson
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1213,7 +1213,7 @@ HelpMessage: ''
 
 ### -Status
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1240,7 +1240,7 @@ HelpMessage: ''
 
 ### -TotalAmountExcludingTax
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1267,7 +1267,7 @@ HelpMessage: ''
 
 ### -TotalAmountIncludingTax
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1294,7 +1294,7 @@ HelpMessage: ''
 
 ### -TotalTaxAmount
 
-.
+
 
 ```yaml
 Type: System.Decimal
