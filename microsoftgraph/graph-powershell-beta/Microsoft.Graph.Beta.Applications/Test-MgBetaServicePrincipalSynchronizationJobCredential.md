@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredential
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 03/20/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaServicePrincipalSynchronizationJobCredential
 ---
@@ -14,9 +14,6 @@ title: Test-MgBetaServicePrincipalSynchronizationJobCredential
 ## SYNOPSIS
 
 Validate that the credentials are valid in the tenant.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgServicePrincipalSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,18 +75,9 @@ This cmdlet has the following aliases,
 
 Validate that the credentials are valid in the tenant.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -107,10 +95,6 @@ $params = @{
 }
 
 Test-MgBetaServicePrincipalSynchronizationJobCredential -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
-
-```
-This example shows how to use the Test-MgBetaServicePrincipalSynchronizationJobCredential Cmdlet.
-
 
 ## PARAMETERS
 
@@ -143,7 +127,7 @@ HelpMessage: ''
 
 ### -ApplicationIdentifier
 
-
+.
 
 ```yaml
 Type: System.String
@@ -170,7 +154,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -241,7 +225,7 @@ HelpMessage: ''
 
 ### -Credentials
 
-
+.
 To construct, see NOTES section for CREDENTIALS properties and create a hash table.
 
 ```yaml
@@ -520,7 +504,7 @@ HelpMessage: ''
 
 ### -TemplateId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -547,7 +531,7 @@ HelpMessage: ''
 
 ### -UseSavedCredentials
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -628,7 +612,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths3LjeyyServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths3LjeyyServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplicationIdentifier <String>]: 
   [Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]: 
@@ -641,7 +625,7 @@ CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: .
   [Key <String>]: synchronizationSecret
   [Value <String>]: The value of the secret.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -682,27 +666,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Test-MgBetaServicePrincipalSynchronizationJobCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredential)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredential)
+- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-beta)

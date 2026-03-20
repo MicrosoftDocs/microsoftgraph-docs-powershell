@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionfraudprotectionprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 03/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityRiskPreventionFraudProtectionProvider
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaIdentityRiskPreventionFraudProtectionProvider
 
 Create a new fraudProtectionProvider object.
 You can create one of the following subtypes that are derived from fraudProtectionProvider.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityRiskPreventionFraudProtectionProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityRiskPreventionFraudProtectionProvider?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,13 +48,15 @@ This cmdlet has the following aliases,
 Create a new fraudProtectionProvider object.
 You can create one of the following subtypes that are derived from fraudProtectionProvider.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RiskPreventionProviders.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RiskPreventionProviders.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -390,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFraudProtectionProvider>`: fraudProtectionProvider
+BODYPARAMETER <IMicrosoftGraphFraudProtectionProvider>: fraudProtectionProvider
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -399,28 +398,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityRiskPreventionFraudProtectionProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionfraudprotectionprovider)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-fraudprotectionproviders?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionfraudprotectionprovider)
+- [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-fraudprotectionproviders?view=graph-rest-beta)

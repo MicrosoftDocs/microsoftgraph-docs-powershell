@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 03/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaOnPremisePublishingProfile
 ---
@@ -51,6 +51,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Add new entity to onPremisesPublishingProfiles
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -700,8 +710,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PreAuthorizedApplications <IMicrosoftGraphPreAuthorizedApplication[]>]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -789,6 +799,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
               [State <String>]: appManagementRestrictionState
             [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+          [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [BlockedDomains <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [BlockedDomains <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+            [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [BlockedSchemes <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [ExemptFormats <String[]>]: 
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [BlockedSchemes <String[]>]: 
+                [ExemptFormats <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+            [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [ExcludeWildcardsInPath <Boolean?>]: 
+                [ExcludeWildcardsInPathWithDomains <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [State <String>]: appManagementRestrictionState
+            [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [AllowedDomains <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [AllowedDomains <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+            [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [AllowedSchemes <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [AllowedSchemes <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
     [AppRoles <IMicrosoftGraphAppRole[]>]: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -809,8 +876,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
@@ -1530,7 +1597,7 @@ DO NOT USE.
   [Ports <String[]>]: List of ports supported for the application segment.
   [Protocol <String>]: privateNetworkProtocol
 
-BODYPARAMETER `<IMicrosoftGraphOnPremisesPublishingProfile>`: onPremisesPublishingProfile
+BODYPARAMETER <IMicrosoftGraphOnPremisesPublishingProfile>: onPremisesPublishingProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1610,8 +1677,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [PreAuthorizedApplications <IMicrosoftGraphPreAuthorizedApplication[]>]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -1699,6 +1766,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
                 [State <String>]: appManagementRestrictionState
               [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+            [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [BlockedDomains <String[]>]: 
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedDomains <String[]>]: 
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                [State <String>]: appManagementRestrictionState
+                [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+              [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [BlockedSchemes <String[]>]: 
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [ExemptFormats <String[]>]: 
+                [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedSchemes <String[]>]: 
+                  [ExemptFormats <String[]>]: 
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                [State <String>]: appManagementRestrictionState
+                [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+              [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ExcludeWildcardsInPath <Boolean?>]: 
+                  [ExcludeWildcardsInPathWithDomains <String[]>]: 
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [State <String>]: appManagementRestrictionState
+              [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [AllowedDomains <String[]>]: 
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedDomains <String[]>]: 
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                [State <String>]: appManagementRestrictionState
+                [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+              [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [AllowedSchemes <String[]>]: 
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedSchemes <String[]>]: 
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                [State <String>]: appManagementRestrictionState
+                [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
       [AppRoles <IMicrosoftGraphAppRole[]>]: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -1719,8 +1843,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
@@ -2507,8 +2631,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PreAuthorizedApplications <IMicrosoftGraphPreAuthorizedApplication[]>]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -2596,6 +2720,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
               [State <String>]: appManagementRestrictionState
             [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+          [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [BlockedDomains <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [BlockedDomains <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+            [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [BlockedSchemes <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [ExemptFormats <String[]>]: 
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [BlockedSchemes <String[]>]: 
+                [ExemptFormats <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+            [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [ExcludeWildcardsInPath <Boolean?>]: 
+                [ExcludeWildcardsInPathWithDomains <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [State <String>]: appManagementRestrictionState
+            [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [AllowedDomains <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [AllowedDomains <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+            [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [AllowedSchemes <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [AllowedSchemes <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
     [AppRoles <IMicrosoftGraphAppRole[]>]: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -2616,8 +2797,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
@@ -3372,8 +3553,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [PreAuthorizedApplications <IMicrosoftGraphPreAuthorizedApplication[]>]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -3461,6 +3642,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
                 [State <String>]: appManagementRestrictionState
               [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+            [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [BlockedDomains <String[]>]: 
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedDomains <String[]>]: 
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                [State <String>]: appManagementRestrictionState
+                [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+              [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [BlockedSchemes <String[]>]: 
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [ExemptFormats <String[]>]: 
+                [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedSchemes <String[]>]: 
+                  [ExemptFormats <String[]>]: 
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                [State <String>]: appManagementRestrictionState
+                [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+              [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ExcludeWildcardsInPath <Boolean?>]: 
+                  [ExcludeWildcardsInPathWithDomains <String[]>]: 
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [State <String>]: appManagementRestrictionState
+              [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [AllowedDomains <String[]>]: 
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedDomains <String[]>]: 
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                [State <String>]: appManagementRestrictionState
+                [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+              [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [AllowedSchemes <String[]>]: 
+                [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedSchemes <String[]>]: 
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                [State <String>]: appManagementRestrictionState
+                [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
       [AppRoles <IMicrosoftGraphAppRole[]>]: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -3481,8 +3719,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
@@ -4185,7 +4423,7 @@ Read-only.
   [Version <String>]: The version of the connector.
 Read-only.
 
-HYBRIDAGENTUPDATERCONFIGURATION `<IMicrosoftGraphHybridAgentUpdaterConfiguration>`: hybridAgentUpdaterConfiguration
+HYBRIDAGENTUPDATERCONFIGURATION <IMicrosoftGraphHybridAgentUpdaterConfiguration>: hybridAgentUpdaterConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowUpdateConfigurationOverride <Boolean?>]: Indicates if updater configuration will be skipped and the agent will receive an update when the next version of the agent is available.
   [DeferUpdateDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -4244,27 +4482,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaOnPremisePublishingProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofile)

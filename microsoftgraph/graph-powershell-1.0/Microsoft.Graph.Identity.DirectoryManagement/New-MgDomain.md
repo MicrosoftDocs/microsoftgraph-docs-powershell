@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 03/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDomain
 ---
@@ -20,9 +20,6 @@ Root domains require verification.
 For example, contoso.com requires verification.
 If a root domain is verified, subdomains of the root domain are automatically verified.
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomain?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -68,18 +65,9 @@ For example, contoso.com requires verification.
 If a root domain is verified, subdomains of the root domain are automatically verified.
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Domain.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Domain.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -88,10 +76,6 @@ $params = @{
 }
 
 New-MgDomain -BodyParameter $params
-
-```
-This example shows how to use the New-MgDomain Cmdlet.
-
 
 ## PARAMETERS
 
@@ -480,7 +464,7 @@ HelpMessage: ''
 
 ### -Manufacturer
 
-
+.
 
 ```yaml
 Type: System.String
@@ -501,7 +485,7 @@ HelpMessage: ''
 
 ### -Model
 
-
+.
 
 ```yaml
 Type: System.String
@@ -817,7 +801,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDomain>`: domain
+BODYPARAMETER <IMicrosoftGraphDomain>: domain
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -970,7 +954,7 @@ For a list of statuses, see certificateUpdateResult status.
     [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
 
-ROOTDOMAIN `<IMicrosoftGraphDomain>`: domain
+ROOTDOMAIN <IMicrosoftGraphDomain>: domain
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1092,7 +1076,7 @@ Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayO
   [Ttl <Int32?>]: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host.
 Not nullable.
 
-STATE `<IMicrosoftGraphDomainState>`: domainState
+STATE <IMicrosoftGraphDomainState>: domainState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastActionDateTime <DateTime?>]: Timestamp for when the last activity occurred.
 The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
@@ -1120,27 +1104,5 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [New-MgDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain)
+- [](https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-1.0)

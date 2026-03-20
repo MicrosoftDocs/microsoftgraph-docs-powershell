@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 03/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityAuthenticationEventListener
 ---
@@ -15,9 +15,6 @@ title: New-MgIdentityAuthenticationEventListener
 
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EventListener.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EventListener.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -88,9 +76,63 @@ $params = @{
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
-```
-This example shows how to use the New-MgIdentityAuthenticationEventListener Cmdlet.
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onFraudProtectionLoadStartListener"
+	conditions = @{
+		applications = @{
+			includeApplications = @(
+				@{
+					appId = "0001111-aaaa-2222-bbbb-3333cccc4444"
+				}
+			)
+		}
+	}
+	handler = @{
+		"@odata.type" = "#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler"
+		signUp = @{
+			"@odata.type" = "#microsoft.graph.fraudProtectionProviderConfiguration"
+			fraudProtectionProvider = @{
+				"@odata.type" = "#microsoft.graph.arkoseFraudProtectionProvider"
+				id = "6fedd01b-0afb-4a07-967f-d1ccbd81102b"
+			}
+		}
+	}
+}
+
+New-MgIdentityAuthenticationEventListener -BodyParameter $params
+
+### EXAMPLE 3
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onFraudProtectionLoadStartListener"
+	conditions = @{
+		applications = @{
+			includeApplications = @(
+				@{
+					appId = "0001111-aaaa-2222-bbbb-3333cccc4444"
+				}
+			)
+		}
+	}
+	handler = @{
+		"@odata.type" = "#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler"
+		signUp = @{
+			"@odata.type" = "#microsoft.graph.fraudProtectionProviderConfiguration"
+			fraudProtectionProvider = @{
+				"@odata.type" = "#microsoft.graph.humanSecurityFraudProtectionProvider"
+				id = "fabe5100-cc02-46c1-bd0e-ce885fe367fd"
+			}
+		}
+	}
+}
+
+New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
 ## PARAMETERS
 
@@ -466,7 +508,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEventListener
+BODYPARAMETER <IMicrosoftGraphAuthenticationEventListener>: authenticationEventListener
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -479,7 +521,7 @@ Read-only.
         [AppId <String>]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
   [DisplayName <String>]: The display name of the listener.
 
-CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
+CONDITIONS <IMicrosoftGraphAuthenticationConditions>: authenticationConditions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Applications <IMicrosoftGraphAuthenticationConditionsApplications>]: authenticationConditionsApplications
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -489,27 +531,5 @@ CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
 
 ## RELATED LINKS
 
-- [New-MgIdentityAuthenticationEventListener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener)
+- [](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0)

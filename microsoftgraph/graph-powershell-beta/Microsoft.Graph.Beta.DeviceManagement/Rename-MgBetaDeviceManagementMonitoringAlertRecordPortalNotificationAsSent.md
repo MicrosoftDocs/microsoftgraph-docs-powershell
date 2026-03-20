@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/rename-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 03/20/2026
 PlatyPS schema version: 2024-05-01
 title: Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent
 ---
@@ -50,6 +50,16 @@ This cmdlet has the following aliases,
 Set the isPortalNotificationSent property of all portal notification resources associated with the specified alertRecord to true, marking them as sent.
 A maximum of 100 alertRecord IDs can be received at one time, and a maximum of 100 portal notification resources can be changed in the isPortalNotificationSent property status.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -75,7 +85,7 @@ HelpMessage: ''
 
 ### -AlertRecordIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -96,7 +106,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -380,34 +390,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths180CsoDevicemanagementMonitoringAlertrecordsMicrosoftGraphDevicemanagementChangealertrecordsportalnotificationassentPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths180CsoDevicemanagementMonitoringAlertrecordsMicrosoftGraphDevicemanagementChangealertrecordsportalnotificationassentPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AlertRecordIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/rename-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/rename-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent)

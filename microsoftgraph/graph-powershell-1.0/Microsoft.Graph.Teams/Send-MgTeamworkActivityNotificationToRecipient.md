@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 02/20/2026
+ms.date: 03/20/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgTeamworkActivityNotificationToRecipient
 ---
@@ -15,9 +15,6 @@ title: Send-MgTeamworkActivityNotificationToRecipient
 
 Send activity feed notifications to multiple users, in bulk.
 For more information, see sending Teams activity notifications.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -56,18 +53,9 @@ This cmdlet has the following aliases,
 Send activity feed notifications to multiple users, in bulk.
 For more information, see sending Teams activity notifications.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsActivity.Send,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsActivity.Send.User, TeamsActivity.Send,  |
-
 ## EXAMPLES
-### Example 1: Notify multiple users about pending finance approval requests
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -104,12 +92,7 @@ $params = @{
 
 Send-MgTeamworkActivityNotificationToRecipient -BodyParameter $params
 
-```
-This example will notify multiple users about pending finance approval requests
-
-### Example 2: Notify multiple users about an event using a custom topic
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
@@ -147,15 +130,11 @@ $params = @{
 
 Send-MgTeamworkActivityNotificationToRecipient -BodyParameter $params
 
-```
-This example will notify multiple users about an event using a custom topic
-
-
 ## PARAMETERS
 
 ### -ActivityType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -197,7 +176,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -240,7 +219,7 @@ HelpMessage: ''
 
 ### -ChainId
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -346,7 +325,7 @@ HelpMessage: ''
 
 ### -IconId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -473,7 +452,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-
+.
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkNotificationRecipient[]
@@ -516,7 +495,7 @@ HelpMessage: ''
 
 ### -TeamsAppId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -537,7 +516,7 @@ HelpMessage: ''
 
 ### -TemplateParameters
 
-
+.
 To construct, see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
 
 ```yaml
@@ -631,7 +610,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1T8Q21HTeamworkMicrosoftGraphSendactivitynotificationtorecipientsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1T8Q21HTeamworkMicrosoftGraphSendactivitynotificationtorecipientsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityType <String>]: 
   [ChainId <Int64?>]: 
@@ -654,7 +633,7 @@ If the value is text, this must be a plain text value.
     [WebUrl <String>]: The link the user clicks when they select the notification.
 Optional when source is entityUrl; required when source is text.
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
+PREVIEWTEXT <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -663,7 +642,7 @@ TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair[]>: .
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
+TOPIC <IMicrosoftGraphTeamworkActivityTopic>: teamworkActivityTopic
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Source <String>]: teamworkActivityTopicSource
   [Value <String>]: The topic value.
@@ -675,27 +654,5 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [Send-MgTeamworkActivityNotificationToRecipient](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient)
+- [](https://learn.microsoft.com/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-1.0)

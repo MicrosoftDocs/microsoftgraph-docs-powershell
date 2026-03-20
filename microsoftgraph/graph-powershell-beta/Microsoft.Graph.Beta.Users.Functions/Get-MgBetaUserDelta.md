@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Functions
-ms.date: 02/20/2026
+ms.date: 03/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserDelta
 ---
@@ -13,11 +13,8 @@ title: Get-MgBetaUserDelta
 
 ## SYNOPSIS
 
-Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
+Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,51 +36,28 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
+Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Default properties
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users.Functions
 
 Get-MgBetaUserDelta
 
-```
-This example will default properties
-
-### Example 2: Selecting three properties
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Users.Functions
 
-Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone" 
+Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone"
 
-```
-This example shows selecting three properties
-
-### Example 3: Alternative minimal response behavior
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Users.Functions
 
-Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone" 
-
-```
-This example will alternative minimal response behavior
-
+Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone"
 
 ## PARAMETERS
 
@@ -487,7 +461,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUser
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 
 {{ Fill in the Description }}
 
@@ -495,27 +469,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdelta)
+- [](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)

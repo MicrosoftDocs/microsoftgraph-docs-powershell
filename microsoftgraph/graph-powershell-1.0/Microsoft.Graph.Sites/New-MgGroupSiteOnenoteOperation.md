@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenoteoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 02/20/2026
+ms.date: 03/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupSiteOnenoteOperation
 ---
@@ -14,9 +14,6 @@ title: New-MgGroupSiteOnenoteOperation
 ## SYNOPSIS
 
 Create new navigation property to operations for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to operations for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -679,7 +686,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnenoteOperation>`: onenoteOperation
+BODYPARAMETER <IMicrosoftGraphOnenoteOperation>: onenoteOperation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The start time of the operation.
   [LastActionDateTime <DateTime?>]: The time of the last action of the operation.
@@ -695,12 +702,12 @@ Read-only.
   [ResourceLocation <String>]: The resource URI for the object.
 For example, the resource URI for a copied page or section.
 
-ERROR `<IMicrosoftGraphOnenoteOperationError>`: onenoteOperationError
+ERROR <IMicrosoftGraphOnenoteOperationError>: onenoteOperationError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: The error code.
   [Message <String>]: The error message.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -748,27 +755,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgGroupSiteOnenoteOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenoteoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenoteoperation)
