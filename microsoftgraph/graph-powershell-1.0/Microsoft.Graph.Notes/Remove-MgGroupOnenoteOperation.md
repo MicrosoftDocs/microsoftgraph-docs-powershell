@@ -15,6 +15,9 @@ title: Remove-MgGroupOnenoteOperation
 
 Delete navigation property operations for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaGroupOnenoteOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

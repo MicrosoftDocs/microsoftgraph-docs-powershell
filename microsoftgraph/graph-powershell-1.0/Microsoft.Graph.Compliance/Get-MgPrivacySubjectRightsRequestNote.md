@@ -15,6 +15,9 @@ title: Get-MgPrivacySubjectRightsRequestNote
 
 List of notes associated with the request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

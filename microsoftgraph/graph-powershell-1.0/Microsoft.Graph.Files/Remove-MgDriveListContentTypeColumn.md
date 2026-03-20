@@ -15,6 +15,9 @@ title: Remove-MgDriveListContentTypeColumn
 
 Delete navigation property columns for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

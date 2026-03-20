@@ -15,6 +15,9 @@ title: Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 
 Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

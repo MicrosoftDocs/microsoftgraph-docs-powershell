@@ -15,6 +15,9 @@ title: Get-MgSecurityLabelRetentionLabel
 
 Represents how customers can manage their data, whether and for how long to retain or delete it.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

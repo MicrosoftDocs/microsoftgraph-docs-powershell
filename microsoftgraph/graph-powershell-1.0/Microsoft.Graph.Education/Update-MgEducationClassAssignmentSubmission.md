@@ -15,6 +15,9 @@ title: Update-MgEducationClassAssignmentSubmission
 
 Update the navigation property submissions in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
