@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepoint
@@ -388,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSharepoint>: sharepoint
+BODYPARAMETER `<IMicrosoftGraphSharepoint>`: sharepoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -435,7 +435,7 @@ Measured in megabytes (MB).
     [TenantDefaultTimezone <String>]: The default timezone of a tenant for newly created sites.
 For a list of possible values, see SPRegionalSettings.TimeZones property.
 
-SETTINGS <IMicrosoftGraphSharepointSettings>: sharepointSettings
+SETTINGS `<IMicrosoftGraphSharepointSettings>`: sharepointSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -482,3 +482,25 @@ For a list of possible values, see SPRegionalSettings.TimeZones property.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepoint)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
