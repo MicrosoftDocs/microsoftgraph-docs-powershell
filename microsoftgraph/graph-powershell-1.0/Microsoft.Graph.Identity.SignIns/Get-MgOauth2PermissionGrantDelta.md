@@ -473,8 +473,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta)
-- [](https://learn.microsoft.com/graph/api/oauth2permissiongrant-delta?view=graph-rest-1.0)
+- [Get-MgOauth2PermissionGrantDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/oauth2permissiongrant-delta?view=graph-rest-1.0)
 
 
 

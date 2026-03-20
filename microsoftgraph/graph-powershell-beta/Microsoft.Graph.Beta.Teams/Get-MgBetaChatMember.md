@@ -616,8 +616,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmember)
-- [](https://learn.microsoft.com/graph/api/chat-get-members?view=graph-rest-beta)
+- [Get-MgBetaChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-get-members?view=graph-rest-beta)
 
 
 

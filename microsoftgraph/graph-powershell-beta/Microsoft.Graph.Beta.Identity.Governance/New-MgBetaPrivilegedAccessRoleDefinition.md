@@ -1161,7 +1161,7 @@ The setting is not supported for now.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessroledefinition)
+- [New-MgBetaPrivilegedAccessRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessroledefinition)
 
 
 

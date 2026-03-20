@@ -596,7 +596,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddeviceassignmentfilterevaluationstatusdetail)
+- [New-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddeviceassignmentfilterevaluationstatusdetail)
 
 
 

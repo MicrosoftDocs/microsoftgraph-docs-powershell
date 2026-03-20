@@ -1092,7 +1092,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistitempermission)
+- [Update-MgBetaDriveListItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistitempermission)
 
 
 

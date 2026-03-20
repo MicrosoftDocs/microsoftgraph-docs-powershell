@@ -630,8 +630,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyhomerealmdiscoverypolicyapplyto)
-- [](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list-appliesto?view=graph-rest-1.0)
+- [Get-MgPolicyHomeRealmDiscoveryPolicyApplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyhomerealmdiscoverypolicyapplyto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list-appliesto?view=graph-rest-1.0)
 
 
 

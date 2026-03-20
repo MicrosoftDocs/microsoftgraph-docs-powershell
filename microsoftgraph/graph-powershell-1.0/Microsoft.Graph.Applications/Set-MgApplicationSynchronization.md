@@ -1203,7 +1203,7 @@ Must match one of the directory definitions in synchronizationSchema.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronization)
+- [Set-MgApplicationSynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronization)
 
 
 

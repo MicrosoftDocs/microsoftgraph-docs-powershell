@@ -500,7 +500,7 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/update-mgdirectoryobject)
+- [Update-MgDirectoryObject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/update-mgdirectoryobject)
 
 
 
