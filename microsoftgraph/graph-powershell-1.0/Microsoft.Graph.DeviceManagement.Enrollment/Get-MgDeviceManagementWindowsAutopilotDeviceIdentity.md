@@ -69,12 +69,17 @@ The Windows autopilot device identities contained collection.
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
 Get-MgDeviceManagementWindowsAutopilotDeviceIdentity
+
+```
+This example shows how to use the Get-MgDeviceManagementWindowsAutopilotDeviceIdentity Cmdlet.
+
 
 ## PARAMETERS
 

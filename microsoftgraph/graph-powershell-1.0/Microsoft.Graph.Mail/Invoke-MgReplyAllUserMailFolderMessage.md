@@ -91,16 +91,6 @@ Alternatively, create a draft to reply-all to a message and send it later.
 | Delegated (personal Microsoft account) | Mail.Send,  |
 | Application | Mail.Send,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -802,6 +792,7 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyallusermailfoldermessage)
 - [](https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-1.0)
+
 
 
 

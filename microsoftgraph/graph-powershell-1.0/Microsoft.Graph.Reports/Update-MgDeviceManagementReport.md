@@ -58,8 +58,9 @@ Update the navigation property reports in deviceManagement
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
@@ -68,6 +69,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementReport -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementReport Cmdlet.
+
 
 ## PARAMETERS
 

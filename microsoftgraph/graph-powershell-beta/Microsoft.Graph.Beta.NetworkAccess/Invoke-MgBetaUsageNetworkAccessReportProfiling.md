@@ -49,12 +49,17 @@ This cmdlet has the following aliases,
 Returns an object containing count tables for the traffic types in Global Secure Access, aggregated by the time period specified.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Invoke-MgBetaUsageNetworkAccessReportProfiling
+
+```
+This example shows how to use the Invoke-MgBetaUsageNetworkAccessReportProfiling Cmdlet.
+
 
 ## PARAMETERS
 

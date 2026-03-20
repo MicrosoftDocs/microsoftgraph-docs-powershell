@@ -112,16 +112,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property allMembers for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -710,6 +700,7 @@ This property is settable only for members of a chat.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamprimarychannelmember)
 - [](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
+
 
 
 

@@ -58,8 +58,9 @@ Create a new businessScenario object.
 | Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.BusinessScenario
 
@@ -70,6 +71,10 @@ $params = @{
 }
 
 New-MgBetaSolutionBusinessScenario -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSolutionBusinessScenario Cmdlet.
+
 
 ## PARAMETERS
 

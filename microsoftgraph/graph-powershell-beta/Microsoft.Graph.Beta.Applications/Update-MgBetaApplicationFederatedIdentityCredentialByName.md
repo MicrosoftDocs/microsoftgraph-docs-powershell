@@ -77,16 +77,6 @@ Create a new federatedIdentityCredential object for an application or an agentId
 By configuring a trust relationship between your Microsoft Entra application registration or agentIdentityBlueprint and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application or agentIdentityBlueprint.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -779,6 +769,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationfederatedidentitycredentialbyname)
 - [](https://learn.microsoft.com/graph/api/federatedidentitycredential-upsert?view=graph-rest-beta)
+
 
 
 
