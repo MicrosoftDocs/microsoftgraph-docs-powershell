@@ -58,16 +58,6 @@ This cmdlet has the following aliases,
 
 Get appliesTo from policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -657,6 +647,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyb2bmanagementpolicyapplyto)
 - [](https://learn.microsoft.com/graph/api/b2bmanagementpolicy-list-appliesto?view=graph-rest-beta)
+
 
 
 

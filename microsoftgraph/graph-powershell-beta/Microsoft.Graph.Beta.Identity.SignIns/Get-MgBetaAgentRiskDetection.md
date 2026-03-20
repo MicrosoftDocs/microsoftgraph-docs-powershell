@@ -63,16 +63,6 @@ Read the properties and relationships of agentRiskDetection object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityRiskEvent.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AgentRiskDetectionId
@@ -636,6 +626,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaagentriskdetection)
 - [](https://learn.microsoft.com/graph/api/agentriskdetection-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/identityprotectionroot-list-agentriskdetections?view=graph-rest-beta)
+
 
 
 

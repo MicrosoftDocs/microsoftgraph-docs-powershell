@@ -57,16 +57,6 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a policyDeletableItem object, which might be one of the following deleted policy types:\r- crossTenantAccessPolicyConfigurationPartner\r- crossTenantIdentitySyncPolicyPartner\r- conditionalAccessPolicy\r- namedLocation
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -630,6 +620,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessdeleteditemnamedlocation)
 - [](https://learn.microsoft.com/graph/api/policydeletableitem-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/policydeletableitem-list?view=graph-rest-beta)
+
 
 
 

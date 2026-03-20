@@ -61,16 +61,6 @@ This cmdlet has the following aliases,
 Represents the approximate physical extent of a referenced building.
 It corresponds to footprint.geojson in IMDF format.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -583,6 +573,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmapfootprint)
 - [](https://learn.microsoft.com/graph/api/buildingmap-list-footprints?view=graph-rest-1.0)
+
 
 
 
