@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 03/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreSharePointRestoreSession
 ---
@@ -14,9 +14,9 @@ title: New-MgBetaSolutionBackupRestoreSharePointRestoreSession
 ## SYNOPSIS
 
 Create a new sharePointRestoreSession object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSharePointRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSharePointRestoreSession?view=graph-powershell-1.0)
+To create a granular restore session, granular site restore artifacts must be present in the payload.
+A request can't include both granularSiteRestoreArtifact and siteRestoreArtifact in the same create or update request.
+If no payload is provided when you create the restore session, the request creates an empty standard restore session by default.
 
 ## SYNTAX
 
@@ -56,6 +56,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new sharePointRestoreSession object.
+To create a granular restore session, granular site restore artifacts must be present in the payload.
+A request can't include both granularSiteRestoreArtifact and siteRestoreArtifact in the same create or update request.
+If no payload is provided when you create the restore session, the request creates an empty standard restore session by default.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -233,7 +246,7 @@ HelpMessage: ''
 
 ### -GranularSiteRestoreArtifacts
 
-
+A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
 To construct, see NOTES section for GRANULARSITERESTOREARTIFACTS properties and create a hash table.
 
 ```yaml
@@ -626,7 +639,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSharePointRestoreSession>`: sharePointRestoreSession
+BODYPARAMETER <IMicrosoftGraphSharePointRestoreSession>: sharePointRestoreSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletedDateTime <DateTime?>]: The time of completion of the restore session.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -668,19 +681,20 @@ For example, in the access reviews decisions API, this property might record the
   [Status <String>]: restoreSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
-    [BrowseSessionId <String>]: 
-    [CompletionDateTime <DateTime?>]: 
-    [RestorePointDateTime <DateTime?>]: 
-    [RestoredItemKey <String>]: 
-    [RestoredItemPath <String>]: 
-    [RestoredItemWebUrl <String>]: 
-    [StartDateTime <DateTime?>]: 
+  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
+    [BrowseSessionId <String>]: The unique identifier of the browseSession
+    [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+    [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+    [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+    [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+    [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+    [StartDateTime <DateTime?>]: The start time of the restoration.
     [Status <String>]: artifactRestoreStatus
-    [WebUrl <String>]: 
+    [WebUrl <String>]: The original web url of the artifact being restored.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [SiteId <String>]: 
+    [SiteId <String>]: Id of the site in which artifact is present.
   [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
     [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
     [DestinationType <String>]: destinationType
@@ -733,7 +747,7 @@ Read-only.
     [SiteIds <String[]>]: The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation.
     [SiteWebUrls <String[]>]: The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -745,7 +759,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -761,21 +775,22 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-GRANULARSITERESTOREARTIFACTS <IMicrosoftGraphGranularSiteRestoreArtifact[]>: .
-  [BrowseSessionId <String>]: 
-  [CompletionDateTime <DateTime?>]: 
-  [RestorePointDateTime <DateTime?>]: 
-  [RestoredItemKey <String>]: 
-  [RestoredItemPath <String>]: 
-  [RestoredItemWebUrl <String>]: 
-  [StartDateTime <DateTime?>]: 
+GRANULARSITERESTOREARTIFACTS <IMicrosoftGraphGranularSiteRestoreArtifact[]>: A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
+  [BrowseSessionId <String>]: The unique identifier of the browseSession
+  [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+  [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+  [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+  [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+  [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+  [StartDateTime <DateTime?>]: The start time of the restoration.
   [Status <String>]: artifactRestoreStatus
-  [WebUrl <String>]: 
+  [WebUrl <String>]: The original web url of the artifact being restored.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [SiteId <String>]: 
+  [SiteId <String>]: Id of the site in which artifact is present.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -787,7 +802,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount
+RESTORESESSIONARTIFACTCOUNT <IMicrosoftGraphRestoreSessionArtifactCount>: restoreSessionArtifactCount
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Completed <Int32?>]: The number of artifacts whose restoration completed.
   [Failed <Int32?>]: The number of artifacts whose restoration failed.
@@ -898,28 +913,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaSolutionBackupRestoreSharePointRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresession)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresession)
+- [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta)

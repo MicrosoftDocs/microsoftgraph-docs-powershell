@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsettingtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 03/25/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgGroupSettingTemplate
 ---
@@ -15,7 +15,7 @@ title: Restore-MgGroupSettingTemplate
 
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 Restore a recently deleted directory object from deleted items.
-The following types are supported:\r- administrativeUnit\r- application\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user If an item is accidentally deleted, you can fully restore the item.
+The following types are supported:\r\n- administrativeUnit\r\n- application\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- group\r\n- servicePrincipal\r\n- user If an item is accidentally deleted, you can fully restore the item.
 Additionally, restoring an application doesn't automatically restore the associated service principal automatically.
 You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
@@ -50,11 +50,21 @@ This cmdlet has the following aliases,
 
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 Restore a recently deleted directory object from deleted items.
-The following types are supported:\r- administrativeUnit\r- application\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user If an item is accidentally deleted, you can fully restore the item.
+The following types are supported:\r\n- administrativeUnit\r\n- application\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- group\r\n- servicePrincipal\r\n- user If an item is accidentally deleted, you can fully restore the item.
 Additionally, restoring an application doesn't automatically restore the associated service principal automatically.
 You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -344,7 +354,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -368,28 +378,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Restore-MgGroupSettingTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsettingtemplate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsettingtemplate)
+- [](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0)

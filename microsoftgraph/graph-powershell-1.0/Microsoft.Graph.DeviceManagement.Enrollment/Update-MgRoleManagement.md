@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
-ms.date: 02/20/2026
+ms.date: 03/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgRoleManagement
 ---
@@ -14,9 +14,6 @@ title: Update-MgRoleManagement
 ## SYNOPSIS
 
 Update roleManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaRoleManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,13 +47,15 @@ This cmdlet has the following aliases,
 
 Update roleManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -390,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRoleManagement>`: roleManagement
+BODYPARAMETER <IMicrosoftGraphRoleManagement>: roleManagement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Directory <IMicrosoftGraphRbacApplication>]: rbacApplication
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -748,7 +747,7 @@ Supports $filter (eq, ne).
     [RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]: Schedules for role eligibility operations.
   [EntitlementManagement <IMicrosoftGraphRbacApplication>]: rbacApplication
 
-DIRECTORY `<IMicrosoftGraphRbacApplication>`: rbacApplication
+DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1103,7 +1102,7 @@ Supports $filter (eq, ne).
     [TicketInfo <IMicrosoftGraphTicketInfo>]: ticketInfo
   [RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]: Schedules for role eligibility operations.
 
-ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication>`: rbacApplication
+ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1461,27 +1460,4 @@ Supports $filter (eq, ne).
 
 ## RELATED LINKS
 
-- [Update-MgRoleManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement)

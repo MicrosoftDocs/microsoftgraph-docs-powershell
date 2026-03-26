@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiongranulardriverestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 03/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact
 ---
@@ -75,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property granularDriveRestoreArtifacts in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -156,7 +166,7 @@ HelpMessage: ''
 
 ### -BrowseSessionId
 
-
+The unique identifier of the browseSession
 
 ```yaml
 Type: System.String
@@ -183,7 +193,7 @@ HelpMessage: ''
 
 ### -CompletionDateTime
 
-
+Date time when the artifact's restoration completes.
 
 ```yaml
 Type: System.DateTime
@@ -232,7 +242,7 @@ HelpMessage: ''
 
 ### -DirectoryObjectId
 
-
+Id of the drive in which artifact is present.
 
 ```yaml
 Type: System.String
@@ -517,7 +527,7 @@ HelpMessage: ''
 
 ### -RestoredItemKey
 
-
+The unique identifier for the restored artifact.
 
 ```yaml
 Type: System.String
@@ -544,7 +554,8 @@ HelpMessage: ''
 
 ### -RestoredItemPath
 
-
+The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
 
 ```yaml
 Type: System.String
@@ -571,7 +582,7 @@ HelpMessage: ''
 
 ### -RestoredItemWebUrl
 
-
+The web url of the restord artifact.
 
 ```yaml
 Type: System.String
@@ -598,7 +609,7 @@ HelpMessage: ''
 
 ### -RestorePointDateTime
 
-
+The restore point date time to which the artifact is restored.
 
 ```yaml
 Type: System.DateTime
@@ -625,7 +636,7 @@ HelpMessage: ''
 
 ### -StartDateTime
 
-
+The start time of the restoration.
 
 ```yaml
 Type: System.DateTime
@@ -679,7 +690,7 @@ HelpMessage: ''
 
 ### -WebUrl
 
-
+The original web url of the artifact being restored.
 
 ```yaml
 Type: System.String
@@ -760,22 +771,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGranularDriveRestoreArtifact>`: granularDriveRestoreArtifact
+BODYPARAMETER <IMicrosoftGraphGranularDriveRestoreArtifact>: granularDriveRestoreArtifact
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [BrowseSessionId <String>]: 
-  [CompletionDateTime <DateTime?>]: 
-  [RestorePointDateTime <DateTime?>]: 
-  [RestoredItemKey <String>]: 
-  [RestoredItemPath <String>]: 
-  [RestoredItemWebUrl <String>]: 
-  [StartDateTime <DateTime?>]: 
+  [BrowseSessionId <String>]: The unique identifier of the browseSession
+  [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+  [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+  [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+  [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+  [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+  [StartDateTime <DateTime?>]: The start time of the restoration.
   [Status <String>]: artifactRestoreStatus
-  [WebUrl <String>]: 
+  [WebUrl <String>]: The original web url of the artifact being restored.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DirectoryObjectId <String>]: 
+  [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -813,27 +825,4 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiongranulardriverestoreartifact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiongranulardriverestoreartifact)
