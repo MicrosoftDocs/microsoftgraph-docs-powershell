@@ -804,7 +804,7 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationjobschemadirectory)
+- [Update-MgServicePrincipalSynchronizationJobSchemaDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationjobschemadirectory)
 
 
 

@@ -371,7 +371,7 @@ BODYPARAMETER `<IPaths116Tg59SolutionsBackuprestoreAlldrivesbackupMicrosoftGraph
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/disable-mgbetasolutionbackuprestorealldrivesbackup)
+- [Disable-MgBetaSolutionBackupRestoreAllDrivesBackup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/disable-mgbetasolutionbackuprestorealldrivesbackup)
 
 
 

@@ -626,7 +626,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetagrouponenotenotebooksectiongroupsectionpagecontent)
+- [Update-MgBetaGroupOnenoteNotebookSectionGroupSectionPageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetagrouponenotenotebooksectiongroupsectionpagecontent)
 
 
 

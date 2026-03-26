@@ -480,7 +480,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationonlinemeetingtranscriptmetadatacontent)
+- [Set-MgCommunicationOnlineMeetingTranscriptMetadataContent](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationonlinemeetingtranscriptmetadatacontent)
 
 
 

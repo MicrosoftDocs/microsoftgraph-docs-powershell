@@ -408,7 +408,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledappteamappdefinition)
+- [Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledappteamappdefinition)
 
 
 

@@ -639,7 +639,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelsharedwithteam)
+- [Get-MgBetaTeamPrimaryChannelSharedWithTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelsharedwithteam)
 
 
 

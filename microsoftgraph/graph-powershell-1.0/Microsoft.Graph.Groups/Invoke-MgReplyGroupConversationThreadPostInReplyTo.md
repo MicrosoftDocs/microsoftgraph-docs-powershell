@@ -720,7 +720,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpostinreplyto)
+- [Invoke-MgReplyGroupConversationThreadPostInReplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpostinreplyto)
 
 
 
