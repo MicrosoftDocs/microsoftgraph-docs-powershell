@@ -494,7 +494,7 @@ HelpMessage: ''
 
 ### -IsSearchable
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
