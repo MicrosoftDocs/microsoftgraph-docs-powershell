@@ -88,6 +88,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an articleIndicator object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatIntelligence.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ThreatIntelligence.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

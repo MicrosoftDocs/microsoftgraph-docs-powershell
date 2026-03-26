@@ -59,6 +59,14 @@ This cmdlet has the following aliases,
 A group setting template represents a template of settings from which settings may be created within a tenant.
 This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

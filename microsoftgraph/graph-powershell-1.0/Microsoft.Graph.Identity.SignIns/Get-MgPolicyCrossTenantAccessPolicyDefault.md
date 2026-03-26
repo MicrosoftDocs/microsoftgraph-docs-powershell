@@ -37,6 +37,14 @@ This cmdlet has the following aliases,
 Read the default configuration of a cross-tenant access policy.
 This default configuration may be the service default assigned by Microsoft Entra ID (isServiceDefault is true) or may be customized in your tenant (isServiceDefault is false).
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.CrossTenantAccess,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.CrossTenantAccess,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
