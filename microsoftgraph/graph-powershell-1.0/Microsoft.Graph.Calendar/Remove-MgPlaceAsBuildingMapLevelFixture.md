@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Delete a fixture on a specified floor.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -457,6 +447,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasbuildingmaplevelfixture)
 - [](https://learn.microsoft.com/graph/api/fixturemap-delete?view=graph-rest-1.0)
+
 
 
 

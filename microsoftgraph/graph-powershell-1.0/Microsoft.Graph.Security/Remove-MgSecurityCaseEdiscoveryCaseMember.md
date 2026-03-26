@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Remove an ediscoveryCaseMember from an ediscoveryCase.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -489,6 +479,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasemember)
 - [](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-delete?view=graph-rest-1.0)
+
 
 
 

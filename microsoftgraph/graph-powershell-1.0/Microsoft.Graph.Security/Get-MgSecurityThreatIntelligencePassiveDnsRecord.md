@@ -69,12 +69,17 @@ Read the properties and relationships of a passiveDnsRecord object.
 | Application | ThreatIntelligence.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityThreatIntelligencePassiveDnsRecord -PassiveDnsRecordId $passiveDnsRecordId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligencePassiveDnsRecord Cmdlet.
+
 
 ## PARAMETERS
 

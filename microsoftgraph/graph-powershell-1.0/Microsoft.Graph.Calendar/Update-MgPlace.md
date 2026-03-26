@@ -86,8 +86,9 @@ You can identify the place by specifying the id property.
 | Application | Place.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -101,6 +102,10 @@ $params = @{
 }
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
 
 ## PARAMETERS
 

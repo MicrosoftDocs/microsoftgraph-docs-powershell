@@ -53,16 +53,6 @@ This cmdlet has the following aliases,
 Get work plan occurrences from your own work plan within a specified date range.
 This function requires the startDateTime and endDateTime parameters.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -553,6 +543,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgviewusersettingworkhourandlocationoccurrence)
 - [](https://learn.microsoft.com/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-1.0)
+
 
 
 

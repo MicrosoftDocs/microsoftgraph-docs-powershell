@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Create a new onPremAuthenticationPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -512,6 +502,7 @@ Always null when the object hasn't been deleted.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyonpremauthenticationpolicy)
 - [](https://learn.microsoft.com/graph/api/policyroot-post-onpremauthenticationpolicies?view=graph-rest-beta)
+
 
 
 

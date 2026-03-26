@@ -61,12 +61,17 @@ Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
 
 ## EXAMPLES
+### Example 1: Get a bundle
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveBundle -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example will get a bundle
+
 
 ## PARAMETERS
 
