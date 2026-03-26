@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityCaseEdiscoveryCaseSearch
 
 Update the properties of an ediscoverySearch object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

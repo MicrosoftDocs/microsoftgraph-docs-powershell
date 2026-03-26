@@ -15,6 +15,9 @@ title: Get-MgPrintPrinterShareCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterShareCount](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterShareCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

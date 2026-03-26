@@ -15,6 +15,9 @@ title: New-MgSiteListColumn
 
 Create a column for a list with a request that specifies a columnDefinition.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

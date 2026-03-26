@@ -15,6 +15,9 @@ title: New-MgRiskyUserHistory
 
 Create new navigation property to history for identityProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskyUserHistory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

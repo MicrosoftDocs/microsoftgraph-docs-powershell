@@ -15,6 +15,9 @@ title: Get-MgSiteContentTypeBase
 
 Parent contentType from which this content type is derived.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeBase?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

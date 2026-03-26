@@ -15,6 +15,9 @@ title: Get-MgBetaUserInsightUsed
 
 Access this property from the derived type itemInsights.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserInsightUsed](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsightUsed?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
