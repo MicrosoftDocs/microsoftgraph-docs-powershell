@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessalert
@@ -999,7 +999,7 @@ ACTIONS <IMicrosoftGraphNetworkaccessAlertAction[]>: List of possible action ite
   [ActionText <String>]: Text describing the action.
 Required.
 
-BODYPARAMETER <IMicrosoftGraphNetworkaccessAlert>: alert
+BODYPARAMETER `<IMicrosoftGraphNetworkaccessAlert>`: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1042,7 +1042,7 @@ Read-only.
   [Techniques <String[]>]: Techniques associated with the alert.
   [VendorName <String>]: The name of the vendor that raised the alert.
 
-INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
+INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -1068,7 +1068,7 @@ INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
   [Url <String>]: Usage: url='{url}'
 
-POLICY <IMicrosoftGraphNetworkaccessFilteringPolicy>: filteringPolicy
+POLICY `<IMicrosoftGraphNetworkaccessFilteringPolicy>`: filteringPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description.
   [Name <String>]: Policy name.
@@ -1087,3 +1087,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessalert)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
