@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Get the status of a SharePoint site creation operation to monitor its progress.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Read.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -70,6 +70,14 @@ This cmdlet has the following aliases,
 Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r- user\r- group\r- service principal\r- organizational contact\r- device\r- directory object This function is transitive.
 Only users and role-enabled groups can be members of directory roles.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, Directory.Read.All, User.Read, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Application.ReadWrite.All, Device.Read.All, Application.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, User.ReadWrite.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All, Application.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, AgentIdUser.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
