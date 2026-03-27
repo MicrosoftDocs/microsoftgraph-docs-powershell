@@ -68,16 +68,6 @@ Represents a platform credential instance registered to a user on Mac OS.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthMethod-PlatformCred.Read.All, UserAuthMethod-PlatformCred.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -635,6 +625,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationplatformcredentialmethod)
+
 
 
 

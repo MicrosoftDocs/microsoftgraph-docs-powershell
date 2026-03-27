@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 The filtering policy associated with the alert.
 This relationship allows you to retrieve or manage the filtering policy that triggered or is related to the alert instance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AlertId
@@ -375,6 +365,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessalertpolicy)
+
 
 
 
