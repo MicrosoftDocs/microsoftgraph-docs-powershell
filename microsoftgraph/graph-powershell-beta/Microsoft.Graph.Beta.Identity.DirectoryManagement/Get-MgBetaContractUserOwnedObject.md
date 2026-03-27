@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontractuserownedobject
@@ -393,7 +393,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsOpnxc9ContractsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsOpnxc9ContractsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: 
   [UserId <String>]:
@@ -403,3 +403,25 @@ BODYPARAMETER <IPathsOpnxc9ContractsMicrosoftGraphGetuserownedobjectsPostRequest
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontractuserownedobject)
 - [](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdelta
@@ -471,3 +471,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdelta)
 - [](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

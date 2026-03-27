@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting
@@ -471,7 +471,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphTeamsAppSettings>: teamsAppSettings
+BODYPARAMETER `<IMicrosoftGraphTeamsAppSettings>`: teamsAppSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -486,7 +486,7 @@ False blocks the installation of any Teams app that requires resource-specific p
 True indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope.
 False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
 
-CUSTOMAPPSETTINGS <IMicrosoftGraphCustomAppSettings>: customAppSettings
+CUSTOMAPPSETTINGS `<IMicrosoftGraphCustomAppSettings>`: customAppSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeveloperToolsForShowingAppUsageMetrics <String>]: appDevelopmentPlatforms
 
@@ -495,3 +495,25 @@ CUSTOMAPPSETTINGS <IMicrosoftGraphCustomAppSettings>: customAppSettings
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting)
 - [](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

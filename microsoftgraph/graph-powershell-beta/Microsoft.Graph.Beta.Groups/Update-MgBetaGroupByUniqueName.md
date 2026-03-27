@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupbyuniquename
@@ -13,7 +13,7 @@ title: Update-MgBetaGroupByUniqueName
 
 ## SYNOPSIS
 
-Create a new group object if it doesn't exist, or update the properties of an existing group object.\r\nYou can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
+Create a new group object if it doesn't exist, or update the properties of an existing group object.\rYou can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
 For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
@@ -153,7 +153,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new group object if it doesn't exist, or update the properties of an existing group object.\r\nYou can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
+Create a new group object if it doesn't exist, or update the properties of an existing group object.\rYou can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
 For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
@@ -3133,7 +3133,7 @@ IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus
   [SkuId <String>]: The unique identifier for the SKU.
 Corresponds to the skuId from subscribedSkus or companySubscription.
 
-BODYPARAMETER <IMicrosoftGraphGroup>: Represents a Microsoft Entra group.
+BODYPARAMETER `<IMicrosoftGraphGroup>`: Represents a Microsoft Entra group.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -4093,8 +4093,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -4427,8 +4427,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -5183,7 +5183,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
+Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
           [PhoneType <String>]: authenticationPhoneType
@@ -5522,7 +5522,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -11510,8 +11510,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
       [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -11990,7 +11990,7 @@ The possible values are: universalDistributionGroup, universalSecurityGroup, uni
 Microsoft Entra security groups can be written back as universalSecurityGroup.
 If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property isn't explicitly configured: Microsoft 365 groups are written back as universalDistributionGroup by defaultSecurity groups are written back as universalSecurityGroup by default
 
-CALENDAR <IMicrosoftGraphCalendar>: calendar
+CALENDAR `<IMicrosoftGraphCalendar>`: calendar
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -12541,7 +12541,7 @@ For recurring events, the value is the same for the series master and all of its
   [WebLink <String>]: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
-CLOUDLICENSING <IMicrosoftGraphCloudLicensingGroupCloudLicensing>: groupCloudLicensing
+CLOUDLICENSING `<IMicrosoftGraphCloudLicensingGroupCloudLicensing>`: groupCloudLicensing
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -12730,14 +12730,14 @@ Returned by default.
 This property can be set when the conversation is created, but it can't be updated.
   [UniqueSenders <String[]>]: All the users that sent a message to this Conversation.
 
-CREATEDONBEHALFOF <IMicrosoftGraphDirectoryObject>: directoryObject
+CREATEDONBEHALFOF `<IMicrosoftGraphDirectoryObject>`: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-DRIVE <IMicrosoftGraphDrive>: drive
+DRIVE `<IMicrosoftGraphDrive>`: drive
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -13206,8 +13206,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -13540,8 +13540,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -14302,7 +14302,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
+Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
         [PhoneType <String>]: authenticationPhoneType
@@ -14912,7 +14912,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -21376,8 +21376,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
     [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -22063,8 +22063,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -22397,8 +22397,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -23159,7 +23159,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
+Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
         [PhoneType <String>]: authenticationPhoneType
@@ -23769,7 +23769,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -30233,8 +30233,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
     [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -30766,7 +30766,7 @@ Once renewed, the group expiration is extended by the number of days defined.
   [ManagedGroupTypes <String>]: The group type for which the expiration policy applies.
 Possible values are All, Selected or None.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -30790,7 +30790,7 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [UniqueName <String>]: Alternate key of group
   [UserId <String>]: The unique identifier of user
 
-LICENSEPROCESSINGSTATE <IMicrosoftGraphLicenseProcessingState>: licenseProcessingState
+LICENSEPROCESSINGSTATE `<IMicrosoftGraphLicenseProcessingState>`: licenseProcessingState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [State <String>]: 
 
@@ -30814,7 +30814,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-MEMBERSHIPRULEPROCESSINGSTATUS <IMicrosoftGraphMembershipRuleProcessingStatus>: membershipRuleProcessingStatus
+MEMBERSHIPRULEPROCESSINGSTATUS `<IMicrosoftGraphMembershipRuleProcessingStatus>`: membershipRuleProcessingStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ErrorMessage <String>]: Detailed error message if dynamic group processing ran into an error.
  Optional.
@@ -30831,7 +30831,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ONENOTE <IMicrosoftGraphOnenote>: onenote
+ONENOTE `<IMicrosoftGraphOnenote>`: onenote
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -30992,7 +30992,7 @@ Other objects contain the same value for the property.
 Current possible values: UserPrincipalName or ProxyAddress
   [Value <String>]: Value of the property causing the error.
 
-ONPREMISESSYNCBEHAVIOR <IMicrosoftGraphOnPremisesSyncBehavior>: onPremisesSyncBehavior
+ONPREMISESSYNCBEHAVIOR `<IMicrosoftGraphOnPremisesSyncBehavior>`: onPremisesSyncBehavior
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -31032,7 +31032,7 @@ Read-only.
   [ResourceAppId <String>]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
 
-PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
+PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -31051,7 +31051,7 @@ Read-only.
   [Width <Int32?>]: The width of the photo.
 Read-only.
 
-PLANNER <IMicrosoftGraphPlannerGroup>: plannerGroup
+PLANNER `<IMicrosoftGraphPlannerGroup>`: plannerGroup
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -31846,8 +31846,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -32180,8 +32180,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -32942,7 +32942,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
+Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
         [PhoneType <String>]: authenticationPhoneType
@@ -33552,7 +33552,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -39812,8 +39812,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
     [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -40236,7 +40236,7 @@ Read-only.
     [LanguageTags <String[]>]: List of languages for the term store.
     [Sets <IMicrosoftGraphTermStoreSet[]>]: Collection of all sets available in the term store.
 
-TEAM <IMicrosoftGraphTeam>: team
+TEAM `<IMicrosoftGraphTeam>`: team
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -40800,8 +40800,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
             [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -41134,8 +41134,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
             [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -41896,7 +41896,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
+Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
             [PhoneType <String>]: authenticationPhoneType
@@ -42427,7 +42427,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -47799,8 +47799,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
         [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -49216,7 +49216,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-WRITEBACKCONFIGURATION <IMicrosoftGraphGroupWritebackConfiguration>: groupWritebackConfiguration
+WRITEBACKCONFIGURATION `<IMicrosoftGraphGroupWritebackConfiguration>`: groupWritebackConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
 Default value is true for Microsoft 365 groups and false for security groups.
@@ -49231,3 +49231,25 @@ If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but th
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupbyuniquename)
 - [](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
