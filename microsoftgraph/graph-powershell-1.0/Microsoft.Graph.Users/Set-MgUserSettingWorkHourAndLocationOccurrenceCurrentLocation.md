@@ -75,16 +75,6 @@ This cmdlet has the following aliases,
 Update your work location for the current day or current active segment.
 This action allows you to quickly update your work location without modifying individual occurrences.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -584,6 +574,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusersettingworkhourandlocationoccurrencecurrentlocation)
 - [](https://learn.microsoft.com/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-1.0)
+
 
 
 

@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 The resource role scopes associated with this available access package.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleScopeId
@@ -672,6 +662,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementavailableaccesspackageresourcerolescope)
 - [](https://learn.microsoft.com/graph/api/availableaccesspackage-list-resourcerolescopes?view=graph-rest-beta)
+
+
 
 
 

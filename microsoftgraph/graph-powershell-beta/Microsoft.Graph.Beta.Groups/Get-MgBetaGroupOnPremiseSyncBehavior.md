@@ -59,16 +59,6 @@ If true, updates from on-premises Active Directory are blocked in the cloud; if 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -386,6 +376,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponpremisesyncbehavior)
 - [](https://learn.microsoft.com/graph/api/onpremisessyncbehavior-get?view=graph-rest-beta)
+
 
 
 

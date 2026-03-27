@@ -54,16 +54,6 @@ Delete a b2bManagementPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.B2BManagementPolicy,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -B2BManagementPolicyId
@@ -496,6 +486,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyb2bmanagementpolicy)
 - [](https://learn.microsoft.com/graph/api/policyroot-delete-b2bmanagementpolicies?view=graph-rest-beta)
+
 
 
 

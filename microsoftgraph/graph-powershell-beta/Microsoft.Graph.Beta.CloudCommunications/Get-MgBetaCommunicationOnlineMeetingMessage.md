@@ -43,16 +43,6 @@ Get all Teams question and answer (Q&A) conversation messages in a tenant.
 This function returns a snapshot of all Q&A activity in JSON format.
 The export includes:\r- The original question or discussion text\r- The user who posted the message\r- All replies and responders\r- Vote counts\r- Moderation status (pending or dismissed)\r- Private replies\r- The meeting ID and organizer ID that are used for mapping to meeting metadata.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -421,6 +411,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingmessage)
 - [](https://learn.microsoft.com/graph/api/cloudcommunications-getallonlinemeetingmessages?view=graph-rest-beta)
+
 
 
 

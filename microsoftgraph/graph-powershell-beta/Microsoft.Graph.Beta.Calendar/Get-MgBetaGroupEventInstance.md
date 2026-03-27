@@ -59,16 +59,6 @@ Nullable.
 | Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read,  |
 | Application | Calendars.ReadBasic, Calendars.Read,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -566,6 +556,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstance)
+
 
 
 

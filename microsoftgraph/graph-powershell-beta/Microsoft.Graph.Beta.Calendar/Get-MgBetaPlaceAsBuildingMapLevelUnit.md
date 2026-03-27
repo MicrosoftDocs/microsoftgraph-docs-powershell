@@ -62,16 +62,6 @@ This cmdlet has the following aliases,
 Collection of units (such as rooms or offices) on this level.
 Supports upsert.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -613,6 +603,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmaplevelunit)
 - [](https://learn.microsoft.com/graph/api/levelmap-list-units?view=graph-rest-beta)
+
+
 
 
 
