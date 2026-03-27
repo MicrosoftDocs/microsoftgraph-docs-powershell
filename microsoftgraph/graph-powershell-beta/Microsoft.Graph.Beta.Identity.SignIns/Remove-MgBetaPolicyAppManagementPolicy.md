@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyAppManagementPolicy
 
 Delete an appManagementPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

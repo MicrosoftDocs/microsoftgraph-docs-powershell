@@ -15,6 +15,9 @@ title: Update-MgBetaUserScopedRoleMemberOf
 
 Update the navigation property scopedRoleMemberOf in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgUserScopedRoleMemberOf?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

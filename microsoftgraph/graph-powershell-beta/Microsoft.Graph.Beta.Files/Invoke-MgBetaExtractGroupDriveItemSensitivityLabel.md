@@ -15,6 +15,9 @@ title: Invoke-MgBetaExtractGroupDriveItemSensitivityLabel
 
 Invoke action extractSensitivityLabels
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Invoke-MgExtractGroupDriveItemSensitivityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Extract (Default)

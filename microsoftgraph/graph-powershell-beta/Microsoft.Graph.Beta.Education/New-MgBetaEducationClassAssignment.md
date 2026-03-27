@@ -17,6 +17,9 @@ Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in draft status, which means that students can't see the assignment until it's published.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

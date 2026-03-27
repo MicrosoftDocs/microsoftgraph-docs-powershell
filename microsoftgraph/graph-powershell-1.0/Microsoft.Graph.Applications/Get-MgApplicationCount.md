@@ -15,6 +15,9 @@ title: Get-MgApplicationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

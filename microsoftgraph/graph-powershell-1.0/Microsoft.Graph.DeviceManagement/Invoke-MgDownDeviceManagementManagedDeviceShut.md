@@ -15,6 +15,9 @@ title: Invoke-MgDownDeviceManagementManagedDeviceShut
 
 Shut down device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Invoke-MgBetaDownDeviceManagementManagedDeviceShut?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Down (Default)
