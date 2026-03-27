@@ -568,8 +568,8 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockgroupteamscheduletimecardin)
-- [](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0)
+- [Invoke-MgClockGroupTeamScheduleTimeCardIn](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockgroupteamscheduletimecardin)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0)
 
 
 

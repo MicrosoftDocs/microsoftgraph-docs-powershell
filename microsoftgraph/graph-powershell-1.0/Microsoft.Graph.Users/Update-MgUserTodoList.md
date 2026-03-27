@@ -937,7 +937,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolist)
+- [Update-MgUserTodoList](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolist)
 
 
 

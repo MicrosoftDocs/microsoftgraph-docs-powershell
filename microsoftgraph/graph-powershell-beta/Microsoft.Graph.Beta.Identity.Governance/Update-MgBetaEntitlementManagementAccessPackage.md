@@ -55819,8 +55819,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackage)
-- [](https://learn.microsoft.com/graph/api/accesspackage-update?view=graph-rest-beta)
+- [Update-MgBetaEntitlementManagementAccessPackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackage-update?view=graph-rest-beta)
 
 
 

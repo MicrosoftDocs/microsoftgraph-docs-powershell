@@ -940,8 +940,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatinstalledapp)
-- [](https://learn.microsoft.com/graph/api/chat-post-installedapps?view=graph-rest-beta)
+- [New-MgBetaChatInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatinstalledapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post-installedapps?view=graph-rest-beta)
 
 
 

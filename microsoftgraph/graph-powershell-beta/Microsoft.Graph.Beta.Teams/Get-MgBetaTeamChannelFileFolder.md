@@ -427,8 +427,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelfilefolder)
-- [](https://learn.microsoft.com/graph/api/channel-get-filesfolder?view=graph-rest-beta)
+- [Get-MgBetaTeamChannelFileFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelfilefolder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-get-filesfolder?view=graph-rest-beta)
 
 
 

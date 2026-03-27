@@ -1942,8 +1942,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaidentitygovernanceaccessreviewdefinition)
-- [](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-update?view=graph-rest-beta)
+- [Set-MgBetaIdentityGovernanceAccessReviewDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaidentitygovernanceaccessreviewdefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-update?view=graph-rest-beta)
 
 
 

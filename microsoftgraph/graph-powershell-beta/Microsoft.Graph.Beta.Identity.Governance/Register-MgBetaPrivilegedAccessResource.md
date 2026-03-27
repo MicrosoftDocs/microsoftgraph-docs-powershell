@@ -615,7 +615,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/register-mgbetaprivilegedaccessresource)
+- [Register-MgBetaPrivilegedAccessResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/register-mgbetaprivilegedaccessresource)
 
 
 

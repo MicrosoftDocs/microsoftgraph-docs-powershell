@@ -777,8 +777,8 @@ It can only be set to true on automatic policies that target monthly security up
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicy)
-- [](https://learn.microsoft.com/graph/api/adminwindowsupdates-post-updatepolicies?view=graph-rest-beta)
+- [New-MgBetaWindowsUpdatesPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/adminwindowsupdates-post-updatepolicies?view=graph-rest-beta)
 
 
 
