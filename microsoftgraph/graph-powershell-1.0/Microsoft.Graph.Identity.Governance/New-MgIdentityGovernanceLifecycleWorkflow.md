@@ -215,7 +215,7 @@ HelpMessage: ''
 
 ### -AdministrationScopeTargets
 
-.
+
 To construct, see NOTES section for ADMINISTRATIONSCOPETARGETS properties and create a hash table.
 
 ```yaml
