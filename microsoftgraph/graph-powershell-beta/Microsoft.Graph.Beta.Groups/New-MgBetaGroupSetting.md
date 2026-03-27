@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupSetting
 ---
@@ -17,9 +17,6 @@ Create a new directory setting based on the templates available in directorySett
 These settings can be at the tenant-level or at the group level.
 Group settings apply to only Microsoft 365 groups.
 The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ These settings can be at the tenant-level or at the group level.
 Group settings apply to only Microsoft 365 groups.
 The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupSettings.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a setting to block guests for a specific Microsoft 365 group
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -103,10 +91,6 @@ $params = @{
 }
 
 New-MgBetaGroupSetting -GroupId $groupId -BodyParameter $params
-
-```
-This example will create a setting to block guests for a specific microsoft 365 group
-
 
 ## PARAMETERS
 
@@ -579,7 +563,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDirectorySetting>`: directorySetting
+BODYPARAMETER <IMicrosoftGraphDirectorySetting>: directorySetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -591,7 +575,7 @@ Read-only.
     [Name <String>]: Name of the setting (as defined by the directorySettingTemplate).
     [Value <String>]: Value of the setting.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -622,27 +606,5 @@ VALUES <IMicrosoftGraphSettingValue[]>: Collection of name-value pairs correspon
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting)
+- [](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-beta)

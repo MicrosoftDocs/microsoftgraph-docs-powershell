@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users.Actions
-Module Guid: 8fcf9457-5279-4852-969a-9b6309cb810e
+Module Guid: c351e626-1ec9-4aea-b5a0-4eff23daa682
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.users.actions/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -66,23 +66,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Unblock-MgBetaUserManagedApp](Unblock-MgBetaUserManagedApp.md)
 
 ### [Update-MgBetaUserPassword](Update-MgBetaUserPassword.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

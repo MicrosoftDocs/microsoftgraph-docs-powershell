@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetareportnetworkaccessreportdevice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReportNetworkAccessReportDevice
 ---
@@ -21,8 +21,8 @@ Invoke function deviceReport
 
 ```
 Invoke-MgBetaReportNetworkAccessReportDevice -EndDateTime <datetime> -StartDateTime <datetime>
- [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-Count] [-DiscoveredApplicationSegmentId <string>] [-Filter <string>] [-Search <string>]
+ [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
@@ -31,8 +31,8 @@ Invoke-MgBetaReportNetworkAccessReportDevice -EndDateTime <datetime> -StartDateT
 
 ```
 Invoke-MgBetaReportNetworkAccessReportDevice -InputObject <INetworkAccessIdentity> [-Count]
- [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-DiscoveredApplicationSegmentId <string>] [-Filter <string>] [-Search <string>] [-Skip <int>]
+ [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
@@ -45,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke function deviceReport
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -76,6 +86,27 @@ Include count of items
 ```yaml
 Type: System.Management.Automation.SwitchParameter
 DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DiscoveredApplicationSegmentId
+
+Usage: discoveredApplicationSegmentId='@discoveredApplicationSegmentId'
+
+```yaml
+Type: System.String
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -417,7 +448,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -446,27 +477,4 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaReportNetworkAccessReportDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetareportnetworkaccessreportdevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetareportnetworkaccessreportdevice)

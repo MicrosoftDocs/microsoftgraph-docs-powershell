@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestore
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestore
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSolutionBackupRestore
 ## SYNOPSIS
 
 Update the navigation property backupRestore in solutions
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestore](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestore?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property backupRestore in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -205,7 +212,7 @@ HelpMessage: ''
 
 ### -BrowseSessions
 
-
+The list of browse sessions in the tenant.
 To construct, see NOTES section for BROWSESESSIONS properties and create a hash table.
 
 ```yaml
@@ -293,7 +300,7 @@ HelpMessage: ''
 
 ### -DriveProtectionUnitsBulkAdditionJobs
 
-
+.
 To construct, see NOTES section for DRIVEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -510,7 +517,7 @@ HelpMessage: ''
 
 ### -MailboxProtectionUnitsBulkAdditionJobs
 
-
+.
 To construct, see NOTES section for MAILBOXPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -532,7 +539,7 @@ HelpMessage: ''
 
 ### -OneDriveForBusinessBrowseSessions
 
-
+The list of onedriveforbusiness browse sessions in the tenant.
 To construct, see NOTES section for ONEDRIVEFORBUSINESSBROWSESESSIONS properties and create a hash table.
 
 ```yaml
@@ -815,7 +822,7 @@ HelpMessage: ''
 
 ### -SharePointBrowseSessions
 
-
+The list of sharepoint browse sessions in the tenant.
 To construct, see NOTES section for SHAREPOINTBROWSESESSIONS properties and create a hash table.
 
 ```yaml
@@ -925,7 +932,7 @@ HelpMessage: ''
 
 ### -SiteProtectionUnitsBulkAdditionJobs
 
-
+.
 To construct, see NOTES section for SITEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -997,7 +1004,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBackupRestoreRoot>`: backupRestoreRoot
+BODYPARAMETER <IMicrosoftGraphBackupRestoreRoot>: backupRestoreRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1041,11 +1048,13 @@ Read-only.
     [Status <String>]: fullServiceBackupStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [BrowseSessions <IMicrosoftGraphBrowseSessionBase[]>]: 
+  [BrowseSessions <IMicrosoftGraphBrowseSessionBase[]>]: The list of browse sessions in the tenant.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [BackupSizeInBytes <String>]: 
-    [CreatedDateTime <DateTime?>]: 
+    [BackupSizeInBytes <String>]: The size of the backup in bytes.
+    [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Error <IMicrosoftGraphPublicError>]: publicError
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Code <String>]: Represents the error code.
@@ -1061,8 +1070,8 @@ Read-only.
         [Target <String>]: The target of the error.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
-    [ExpirationDateTime <DateTime?>]: 
-    [RestorePointDateTime <DateTime?>]: 
+    [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
+    [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
     [Status <String>]: browseSessionStatus
   [DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]: The list of drive inclusion rules applied to the tenant.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1130,6 +1139,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [OffboardRequestedDateTime <DateTime?>]: 
     [ProtectionMode <String>]: BackupPolicyProtectionMode
     [ProtectionPolicyArtifactCount <IMicrosoftGraphProtectionPolicyArtifactCount>]: protectionPolicyArtifactCount
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1267,16 +1277,18 @@ Read-only.
   [MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule[]>]: The list of mailbox inclusion rules applied to the tenant.
   [MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit[]>]: The list of mailbox protection units in the tenant.
   [MailboxProtectionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob[]>]: 
-  [OneDriveForBusinessBrowseSessions <IMicrosoftGraphOneDriveForBusinessBrowseSession[]>]: 
-    [BackupSizeInBytes <String>]: 
-    [CreatedDateTime <DateTime?>]: 
+  [OneDriveForBusinessBrowseSessions <IMicrosoftGraphOneDriveForBusinessBrowseSession[]>]: The list of onedriveforbusiness browse sessions in the tenant.
+    [BackupSizeInBytes <String>]: The size of the backup in bytes.
+    [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Error <IMicrosoftGraphPublicError>]: publicError
-    [ExpirationDateTime <DateTime?>]: 
-    [RestorePointDateTime <DateTime?>]: 
+    [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
+    [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
     [Status <String>]: browseSessionStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DirectoryObjectId <String>]: 
+    [DirectoryObjectId <String>]: Id of the backed-up OneDrive.
   [OneDriveForBusinessProtectionPolicies <IMicrosoftGraphOneDriveForBusinessProtectionPolicy[]>]: The list of OneDrive for Business protection policies in the tenant.
     [BillingPolicyId <String>]: 
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1289,6 +1301,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [OffboardRequestedDateTime <DateTime?>]: 
     [ProtectionMode <String>]: BackupPolicyProtectionMode
     [ProtectionPolicyArtifactCount <IMicrosoftGraphProtectionPolicyArtifactCount>]: protectionPolicyArtifactCount
     [RetentionSettings <IMicrosoftGraphRetentionSetting[]>]: Contains the retention setting details for the policy.
@@ -1339,19 +1352,20 @@ Future value; don't use.
 Read-only.
       [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
       [Drives <String[]>]: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
-    [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: 
-      [BrowseSessionId <String>]: 
-      [CompletionDateTime <DateTime?>]: 
-      [RestorePointDateTime <DateTime?>]: 
-      [RestoredItemKey <String>]: 
-      [RestoredItemPath <String>]: 
-      [RestoredItemWebUrl <String>]: 
-      [StartDateTime <DateTime?>]: 
+    [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: A collection of browse session id and item key details that can be used to restore OneDrive for work or school files and folders.
+      [BrowseSessionId <String>]: The unique identifier of the browseSession
+      [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+      [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+      [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+      [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+      [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+      [StartDateTime <DateTime?>]: The start time of the restoration.
       [Status <String>]: artifactRestoreStatus
-      [WebUrl <String>]: 
+      [WebUrl <String>]: The original web url of the artifact being restored.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [DirectoryObjectId <String>]: 
+      [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
   [ProtectionPolicies <IMicrosoftGraphProtectionPolicyBase[]>]: List of protection policies in the tenant.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1366,6 +1380,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [OffboardRequestedDateTime <DateTime?>]: 
     [ProtectionMode <String>]: BackupPolicyProtectionMode
     [ProtectionPolicyArtifactCount <IMicrosoftGraphProtectionPolicyArtifactCount>]: protectionPolicyArtifactCount
     [RetentionSettings <IMicrosoftGraphRetentionSetting[]>]: Contains the retention setting details for the policy.
@@ -1402,16 +1417,18 @@ Read-only.
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of the entity.
     [RestoreAllowedTillDateTime <DateTime?>]: The expiration time of the restoration allowed period.
     [Status <String>]: backupServiceStatus
-  [SharePointBrowseSessions <IMicrosoftGraphSharePointBrowseSession[]>]: 
-    [BackupSizeInBytes <String>]: 
-    [CreatedDateTime <DateTime?>]: 
+  [SharePointBrowseSessions <IMicrosoftGraphSharePointBrowseSession[]>]: The list of sharepoint browse sessions in the tenant.
+    [BackupSizeInBytes <String>]: The size of the backup in bytes.
+    [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Error <IMicrosoftGraphPublicError>]: publicError
-    [ExpirationDateTime <DateTime?>]: 
-    [RestorePointDateTime <DateTime?>]: 
+    [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
+    [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
     [Status <String>]: browseSessionStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [SiteId <String>]: 
+    [SiteId <String>]: Id of the backed-up SharePoint site.
   [SharePointProtectionPolicies <IMicrosoftGraphSharePointProtectionPolicy[]>]: The list of SharePoint protection policies in the tenant.
     [BillingPolicyId <String>]: 
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1424,6 +1441,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [OffboardRequestedDateTime <DateTime?>]: 
     [ProtectionMode <String>]: BackupPolicyProtectionMode
     [ProtectionPolicyArtifactCount <IMicrosoftGraphProtectionPolicyArtifactCount>]: protectionPolicyArtifactCount
     [RetentionSettings <IMicrosoftGraphRetentionSetting[]>]: Contains the retention setting details for the policy.
@@ -1479,19 +1497,20 @@ Read-only.
     [Status <String>]: restoreSessionStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
-      [BrowseSessionId <String>]: 
-      [CompletionDateTime <DateTime?>]: 
-      [RestorePointDateTime <DateTime?>]: 
-      [RestoredItemKey <String>]: 
-      [RestoredItemPath <String>]: 
-      [RestoredItemWebUrl <String>]: 
-      [StartDateTime <DateTime?>]: 
+    [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
+      [BrowseSessionId <String>]: The unique identifier of the browseSession
+      [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+      [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+      [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+      [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+      [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+      [StartDateTime <DateTime?>]: The start time of the restoration.
       [Status <String>]: artifactRestoreStatus
-      [WebUrl <String>]: 
+      [WebUrl <String>]: The original web url of the artifact being restored.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [SiteId <String>]: 
+      [SiteId <String>]: Id of the site in which artifact is present.
     [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
       [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
       [DestinationType <String>]: destinationType
@@ -1525,11 +1544,13 @@ Read-only.
   [SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit[]>]: The list of site protection units in the tenant.
   [SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob[]>]: 
 
-BROWSESESSIONS <IMicrosoftGraphBrowseSessionBase[]>: .
+BROWSESESSIONS <IMicrosoftGraphBrowseSessionBase[]>: The list of browse sessions in the tenant.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [BackupSizeInBytes <String>]: 
-  [CreatedDateTime <DateTime?>]: 
+  [BackupSizeInBytes <String>]: The size of the backup in bytes.
+  [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -1545,8 +1566,8 @@ Read-only.
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [ExpirationDateTime <DateTime?>]: 
-  [RestorePointDateTime <DateTime?>]: 
+  [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
+  [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
   [Status <String>]: browseSessionStatus
 
 DRIVEINCLUSIONRULES <IMicrosoftGraphDriveProtectionRule[]>: The list of drive inclusion rules applied to the tenant.
@@ -1661,7 +1682,7 @@ Read-only.
   [DirectoryObjectIds <String[]>]: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
   [Drives <String[]>]: The list of email addresses to add to the OneDrive protection policy.
 
-EMAILNOTIFICATIONSSETTING `<IMicrosoftGraphEmailNotificationsSetting>`: emailNotificationsSetting
+EMAILNOTIFICATIONSSETTING <IMicrosoftGraphEmailNotificationsSetting>: emailNotificationsSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1701,6 +1722,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [OffboardRequestedDateTime <DateTime?>]: 
   [ProtectionMode <String>]: BackupPolicyProtectionMode
   [ProtectionPolicyArtifactCount <IMicrosoftGraphProtectionPolicyArtifactCount>]: protectionPolicyArtifactCount
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1988,9 +2010,11 @@ Read-only.
   [DirectoryObjectIds <String[]>]: The list of Exchange directoryObjectIds to add to the Exchange protection policy.
   [Mailboxes <String[]>]: The list of Exchange email addresses to add to the Exchange protection policy.
 
-ONEDRIVEFORBUSINESSBROWSESESSIONS <IMicrosoftGraphOneDriveForBusinessBrowseSession[]>: .
-  [BackupSizeInBytes <String>]: 
-  [CreatedDateTime <DateTime?>]: 
+ONEDRIVEFORBUSINESSBROWSESESSIONS <IMicrosoftGraphOneDriveForBusinessBrowseSession[]>: The list of onedriveforbusiness browse sessions in the tenant.
+  [BackupSizeInBytes <String>]: The size of the backup in bytes.
+  [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -2006,12 +2030,12 @@ ONEDRIVEFORBUSINESSBROWSESESSIONS <IMicrosoftGraphOneDriveForBusinessBrowseSessi
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [ExpirationDateTime <DateTime?>]: 
-  [RestorePointDateTime <DateTime?>]: 
+  [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
+  [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
   [Status <String>]: browseSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DirectoryObjectId <String>]: 
+  [DirectoryObjectId <String>]: Id of the backed-up OneDrive.
 
 ONEDRIVEFORBUSINESSPROTECTIONPOLICIES <IMicrosoftGraphOneDriveForBusinessProtectionPolicy[]>: The list of OneDrive for Business protection policies in the tenant.
   [BillingPolicyId <String>]: 
@@ -2035,6 +2059,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [OffboardRequestedDateTime <DateTime?>]: 
   [ProtectionMode <String>]: BackupPolicyProtectionMode
   [ProtectionPolicyArtifactCount <IMicrosoftGraphProtectionPolicyArtifactCount>]: protectionPolicyArtifactCount
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2192,19 +2217,20 @@ Future value; don't use.
 Read-only.
     [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
     [Drives <String[]>]: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
-  [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: 
-    [BrowseSessionId <String>]: 
-    [CompletionDateTime <DateTime?>]: 
-    [RestorePointDateTime <DateTime?>]: 
-    [RestoredItemKey <String>]: 
-    [RestoredItemPath <String>]: 
-    [RestoredItemWebUrl <String>]: 
-    [StartDateTime <DateTime?>]: 
+  [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: A collection of browse session id and item key details that can be used to restore OneDrive for work or school files and folders.
+    [BrowseSessionId <String>]: The unique identifier of the browseSession
+    [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+    [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+    [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+    [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+    [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+    [StartDateTime <DateTime?>]: The start time of the restoration.
     [Status <String>]: artifactRestoreStatus
-    [WebUrl <String>]: 
+    [WebUrl <String>]: The original web url of the artifact being restored.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DirectoryObjectId <String>]: 
+    [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
 
 PROTECTIONPOLICIES <IMicrosoftGraphProtectionPolicyBase[]>: List of protection policies in the tenant.
   [Id <String>]: The unique identifier for an entity.
@@ -2230,6 +2256,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [OffboardRequestedDateTime <DateTime?>]: 
   [ProtectionMode <String>]: BackupPolicyProtectionMode
   [ProtectionPolicyArtifactCount <IMicrosoftGraphProtectionPolicyArtifactCount>]: protectionPolicyArtifactCount
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2385,7 +2412,7 @@ For example, in the access reviews decisions API, this property might record the
   [RegistrationDateTime <DateTime?>]: Timestamp of the creation of the service app entity.
   [Status <String>]: serviceAppStatus
 
-SERVICESTATUS `<IMicrosoftGraphServiceStatus>`: serviceStatus
+SERVICESTATUS <IMicrosoftGraphServiceStatus>: serviceStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BackupServiceConsumer <String>]: backupServiceConsumer
   [DisableReason <String>]: disableReason
@@ -2405,9 +2432,11 @@ For example, in the access reviews decisions API, this property might record the
   [RestoreAllowedTillDateTime <DateTime?>]: The expiration time of the restoration allowed period.
   [Status <String>]: backupServiceStatus
 
-SHAREPOINTBROWSESESSIONS <IMicrosoftGraphSharePointBrowseSession[]>: .
-  [BackupSizeInBytes <String>]: 
-  [CreatedDateTime <DateTime?>]: 
+SHAREPOINTBROWSESESSIONS <IMicrosoftGraphSharePointBrowseSession[]>: The list of sharepoint browse sessions in the tenant.
+  [BackupSizeInBytes <String>]: The size of the backup in bytes.
+  [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -2423,12 +2452,12 @@ SHAREPOINTBROWSESESSIONS <IMicrosoftGraphSharePointBrowseSession[]>: .
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [ExpirationDateTime <DateTime?>]: 
-  [RestorePointDateTime <DateTime?>]: 
+  [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
+  [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
   [Status <String>]: browseSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [SiteId <String>]: 
+  [SiteId <String>]: Id of the backed-up SharePoint site.
 
 SHAREPOINTPROTECTIONPOLICIES <IMicrosoftGraphSharePointProtectionPolicy[]>: The list of SharePoint protection policies in the tenant.
   [BillingPolicyId <String>]: 
@@ -2452,6 +2481,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [OffboardRequestedDateTime <DateTime?>]: 
   [ProtectionMode <String>]: BackupPolicyProtectionMode
   [ProtectionPolicyArtifactCount <IMicrosoftGraphProtectionPolicyArtifactCount>]: protectionPolicyArtifactCount
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2558,19 +2588,20 @@ For example, in the access reviews decisions API, this property might record the
   [Status <String>]: restoreSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
-    [BrowseSessionId <String>]: 
-    [CompletionDateTime <DateTime?>]: 
-    [RestorePointDateTime <DateTime?>]: 
-    [RestoredItemKey <String>]: 
-    [RestoredItemPath <String>]: 
-    [RestoredItemWebUrl <String>]: 
-    [StartDateTime <DateTime?>]: 
+  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
+    [BrowseSessionId <String>]: The unique identifier of the browseSession
+    [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+    [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+    [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+    [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+    [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+    [StartDateTime <DateTime?>]: The start time of the restoration.
     [Status <String>]: artifactRestoreStatus
-    [WebUrl <String>]: 
+    [WebUrl <String>]: The original web url of the artifact being restored.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [SiteId <String>]: 
+    [SiteId <String>]: Id of the site in which artifact is present.
   [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
     [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
     [DestinationType <String>]: destinationType
@@ -2738,27 +2769,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBackupRestore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestore)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestore)

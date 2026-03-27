@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementMonitoringAlertRule
 ---
@@ -75,9 +75,8 @@ This cmdlet has the following aliases,
 Update the properties of an alertRule object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement
 
@@ -117,10 +116,6 @@ $params = @{
 }
 
 Update-MgBetaDeviceManagementMonitoringAlertRule -AlertRuleId $alertRuleId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDeviceManagementMonitoringAlertRule Cmdlet.
-
 
 ## PARAMETERS
 
@@ -759,7 +754,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementAlertRule>`: alertRule
+BODYPARAMETER <IMicrosoftGraphDeviceManagementAlertRule>: alertRule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -805,7 +800,7 @@ For example, you can configure a condition to send an alert when provisioning fa
   [ThresholdValue <String>]: The threshold value of the alert condition.
 The threshold value can be a number in string form or string like 'WestUS'.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -925,7 +920,7 @@ For email notifications, contactInformation consists of an email address such as
     [Locale <String>]: Defines the language and format in which the notification will be sent.
 Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja-jp, ko-kr, nl-nl, pl-pl, pt-br, pt-pt, ru-ru, sv-se, tr-tr, zh-cn, zh-tw.
 
-THRESHOLD `<IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
+THRESHOLD <IMicrosoftGraphDeviceManagementRuleThreshold>: ruleThreshold
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Aggregation <String>]: aggregationType
   [Operator <String>]: operatorType
@@ -934,27 +929,5 @@ THRESHOLD `<IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementMonitoringAlertRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule)
+- [](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-update?view=graph-rest-beta)

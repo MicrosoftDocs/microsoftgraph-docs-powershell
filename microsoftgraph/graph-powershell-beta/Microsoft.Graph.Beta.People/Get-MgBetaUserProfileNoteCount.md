@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilenotecount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserProfileNoteCount
 ---
@@ -44,13 +44,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.ReadWrite.All, User.ReadWrite, User.ReadBasic.All, User.Read.All,  |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
-| Application | User.Read.All, User.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -338,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -365,27 +367,4 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserProfileNoteCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilenotecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilenotecount)

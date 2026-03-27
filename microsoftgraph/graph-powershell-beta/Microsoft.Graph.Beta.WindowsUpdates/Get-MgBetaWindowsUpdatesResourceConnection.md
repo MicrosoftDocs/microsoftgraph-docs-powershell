@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesresourceconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaWindowsUpdatesResourceConnection
 ---
@@ -57,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an operationalInsightsConnection object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WindowsUpdates.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 Get-MgBetaWindowsUpdatesResourceConnection
-
-```
-This example shows how to use the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -538,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -558,28 +545,6 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaWindowsUpdatesResourceConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesresourceconnection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-operationalinsightsconnection-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/adminwindowsupdates-list-resourceconnections?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesresourceconnection)
+- [](https://learn.microsoft.com/graph/api/windowsupdates-operationalinsightsconnection-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/adminwindowsupdates-list-resourceconnections?view=graph-rest-beta)

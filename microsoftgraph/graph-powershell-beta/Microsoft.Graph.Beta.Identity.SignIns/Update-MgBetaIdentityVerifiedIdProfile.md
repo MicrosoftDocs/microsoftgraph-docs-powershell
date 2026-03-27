@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedidprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityVerifiedIdProfile
 ---
@@ -73,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of a verifiedIdProfile object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -714,7 +724,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVerifiedIdProfile>`: verifiedIdProfile
+BODYPARAMETER <IMicrosoftGraphVerifiedIdProfile>: verifiedIdProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -748,13 +758,13 @@ Required.
   [VerifierDid <String>]: Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange.
 Required.
 
-FACECHECKCONFIGURATION `<IMicrosoftGraphFaceCheckConfiguration>`: faceCheckConfiguration
+FACECHECKCONFIGURATION <IMicrosoftGraphFaceCheckConfiguration>: faceCheckConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Defines if Face Check is required.
 Currently must always be true.
   [SourcePhotoClaimName <String>]: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -851,7 +861,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-VERIFIEDIDPROFILECONFIGURATION `<IMicrosoftGraphVerifiedIdProfileConfiguration>`: verifiedIdProfileConfiguration
+VERIFIEDIDPROFILECONFIGURATION <IMicrosoftGraphVerifiedIdProfileConfiguration>: verifiedIdProfileConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcceptedIssuer <String>]: Trusted Verified ID issuer.
   [ClaimBindingSource <String>]: claimBindingSource
@@ -869,28 +879,5 @@ Required.
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedidprofile)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/verifiedidprofile-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedidprofile)
+- [](https://learn.microsoft.com/graph/api/verifiedidprofile-update?view=graph-rest-beta)

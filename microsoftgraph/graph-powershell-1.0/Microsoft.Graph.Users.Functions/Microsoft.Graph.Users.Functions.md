@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Functions
-Module Guid: e6493b5a-b891-47a0-9c56-a54b3af357d2
+Module Guid: 3399e33c-9b58-4406-b940-0110d6f1a13a
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -22,23 +22,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserManagedDeviceWithAppFailure](Get-MgUserManagedDeviceWithAppFailure.md)
 
 ### [Invoke-MgViewUserReminder](Invoke-MgViewUserReminder.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyagentcompromised
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaRiskyAgentCompromised
 ---
@@ -49,13 +49,15 @@ This cmdlet has the following aliases,
 Confirm one or more riskyAgent objects as compromised.
 This action sets the targeted agent's riskLevel to high.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskyAgent.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskyAgent.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -82,7 +84,7 @@ HelpMessage: ''
 
 ### -AgentIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -103,7 +105,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -387,35 +389,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsC90MeqIdentityprotectionRiskyagentsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsC90MeqIdentityprotectionRiskyagentsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AgentIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Confirm-MgBetaRiskyAgentCompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyagentcompromised)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyagent-confirmcompromised?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyagentcompromised)
+- [](https://learn.microsoft.com/graph/api/riskyagent-confirmcompromised?view=graph-rest-beta)

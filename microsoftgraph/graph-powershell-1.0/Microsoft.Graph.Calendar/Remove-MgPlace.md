@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplace
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPlace
 ---
@@ -15,9 +15,6 @@ title: Remove-MgPlace
 
 Delete a place object.
 You can also use this method to delete the following child object types: building, floor, section, or desk.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlace?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 
 Delete a place object.
 You can also use this method to delete the following child object types: building, floor, section, or desk.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -381,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -404,28 +411,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplace)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplace)
+- [](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-1.0)

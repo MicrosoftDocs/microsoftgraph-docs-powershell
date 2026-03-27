@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenotepage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserOnenotePage
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaUserOnenotePage
 ## SYNOPSIS
 
 Delete navigation property pages for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnenotePage](/powershell/module/Microsoft.Graph.Notes/Remove-MgUserOnenotePage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,27 +46,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property pages for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.ReadWrite, Notes.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Notes.ReadWrite,  |
-| Application | Notes.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Notes
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserOnenotePage -UserId $userId -OnenotePageId $onenotePageId
-
-```
-This example shows how to use the Remove-MgBetaUserOnenotePage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -422,7 +406,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -439,26 +423,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserOnenotePage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenotepage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenotepage)

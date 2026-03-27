@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplate
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementNotificationMessageTemplate
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementNotificationMessageTemplate
 ## SYNOPSIS
 
 Create new navigation property to notificationMessageTemplates for deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 
 Create new navigation property to notificationMessageTemplates for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -78,10 +66,6 @@ $params = @{
 }
 
 New-MgDeviceManagementNotificationMessageTemplate -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementNotificationMessageTemplate Cmdlet.
-
 
 ## PARAMETERS
 
@@ -523,7 +507,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNotificationMessageTemplate>`: Notification messages are messages that are sent to end users who are determined to be not-compliant with the compliance policies defined by the administrator.
+BODYPARAMETER <IMicrosoftGraphNotificationMessageTemplate>: Notification messages are messages that are sent to end users who are determined to be not-compliant with the compliance policies defined by the administrator.
 Administrators choose notifications and configure them in the Intune Admin Console using the compliance policy creation page under the “Actions for non-compliance” section.
 Use the notificationMessageTemplate object to create your own custom notifications for administrators to choose while configuring actions for non-compliance.
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -560,26 +544,4 @@ To unset, set this property to true on another Localized Notification Message.
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementNotificationMessageTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplate)

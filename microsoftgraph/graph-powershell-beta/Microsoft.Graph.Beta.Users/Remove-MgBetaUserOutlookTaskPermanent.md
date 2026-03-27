@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskpermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserOutlookTaskPermanent
 ---
@@ -52,26 +52,13 @@ Email clients such as Outlook or the Outlook on the web can't access permanently
 Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users
 
 Remove-MgBetaUserOutlookTaskPermanent -UserId $userId -OutlookTaskId $outlookTaskId
-
-```
-This example shows how to use the Remove-MgBetaUserOutlookTaskPermanent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -403,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -440,27 +427,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserOutlookTaskPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskpermanent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/outlooktask-permanentdelete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskpermanent)
+- [](https://learn.microsoft.com/graph/api/outlooktask-permanentdelete?view=graph-rest-beta)

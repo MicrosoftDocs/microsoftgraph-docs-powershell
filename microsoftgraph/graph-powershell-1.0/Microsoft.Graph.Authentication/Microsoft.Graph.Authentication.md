@@ -1,11 +1,11 @@
----
+﻿---
 document type: module
 Help Version: 1.0.0.0
 HelpInfoUri: 
 Locale: en-US
 Module Guid: 883916f2-9184-46ee-b1f8-b6a2fb784cee
 Module Name: Microsoft.Graph.Authentication
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Microsoft.Graph.Authentication Module
 ---

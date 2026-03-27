@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolusereducationuserbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaEducationSchoolUserEducationUserByRef
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaEducationSchoolUserEducationUserByRef
 ## SYNOPSIS
 
 Delete a user from a school.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationSchoolUserEducationUserByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchoolUserEducationUserByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,17 +48,12 @@ This cmdlet has the following aliases,
 Delete a user from a school.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Remove-MgBetaEducationSchoolUserEducationUserByRef -EducationSchoolId $educationSchoolId -EducationUserId $educationUserId
-
-```
-This example shows how to use the Remove-MgBetaEducationSchoolUserEducationUserByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -414,7 +406,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -439,27 +431,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaEducationSchoolUserEducationUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolusereducationuserbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolusereducationuserbyref)
+- [](https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-beta)

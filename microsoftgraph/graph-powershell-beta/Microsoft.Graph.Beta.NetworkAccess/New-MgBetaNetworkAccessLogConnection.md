@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessLogConnection
 ---
@@ -56,6 +56,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to connections for networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -957,11 +967,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICATIONSNAPSHOT `<IMicrosoftGraphNetworkaccessApplicationSnapshot>`: applicationSnapshot
+APPLICATIONSNAPSHOT <IMicrosoftGraphNetworkaccessApplicationSnapshot>: applicationSnapshot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppId <String>]: The unique identifier of the application accessed during the transaction.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessConnection>`: connection
+BODYPARAMETER <IMicrosoftGraphNetworkaccessConnection>: connection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1010,7 +1020,7 @@ Read-only.
   [UserId <String>]: The user ID.
   [UserPrincipalName <String>]: The principal name of the user.
 
-PRIVATEACCESSDETAILS `<IMicrosoftGraphNetworkaccessPrivateAccessDetails>`: privateAccessDetails
+PRIVATEACCESSDETAILS <IMicrosoftGraphNetworkaccessPrivateAccessDetails>: privateAccessDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccessType <String>]: accessType
   [AppSegmentId <String>]: The unique identifier for Application segment ID from Azure AD.
@@ -1029,27 +1039,4 @@ PRIVATEACCESSDETAILS `<IMicrosoftGraphNetworkaccessPrivateAccessDetails>`: priva
 
 ## RELATED LINKS
 
-- [New-MgBetaNetworkAccessLogConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogconnection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogconnection)

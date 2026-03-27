@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetagroupsitelistcontenttypewithhubsite
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Join-MgBetaGroupSiteListContentTypeWithHubSite
 ---
@@ -14,9 +14,6 @@ title: Join-MgBetaGroupSiteListContentTypeWithHubSite
 ## SYNOPSIS
 
 Invoke action associateWithHubSites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Join-MgGroupSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Sites/Join-MgGroupSiteListContentTypeWithHubSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -75,6 +72,16 @@ This cmdlet has the following aliases,
 
 Invoke action associateWithHubSites
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -106,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -294,7 +301,7 @@ HelpMessage: ''
 
 ### -HubSiteUrls
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -397,7 +404,7 @@ HelpMessage: ''
 
 ### -PropagateToExistingLists
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -590,12 +597,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths3YvvqxGroupsGroupIdSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths3YvvqxGroupsGroupIdSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [HubSiteUrls <String[]>]: 
   [PropagateToExistingLists <Boolean?>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -660,28 +667,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Join-MgBetaGroupSiteListContentTypeWithHubSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetagroupsitelistcontenttypewithhubsite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetagroupsitelistcontenttypewithhubsite)
+- [](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta)

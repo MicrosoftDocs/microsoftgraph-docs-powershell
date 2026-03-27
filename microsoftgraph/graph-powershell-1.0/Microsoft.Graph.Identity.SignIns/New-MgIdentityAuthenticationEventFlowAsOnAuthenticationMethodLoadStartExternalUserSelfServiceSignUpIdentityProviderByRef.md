@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef
 ---
@@ -15,9 +15,6 @@ title: New-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExt
 
 Add an identity provider to an external identities self-service user flow represented by an externalUsersSelfServiceSignupEventsFlow object type.
 The identity provider must first be configured in the tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 
 Add an identity provider to an external identities self-service user flow represented by an externalUsersSelfServiceSignupEventsFlow object type.
 The identity provider must first be configured in the tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -133,7 +140,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -483,12 +490,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -511,6 +518,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
+  [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
   [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
@@ -556,28 +564,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbyref)
+- [](https://learn.microsoft.com/graph/api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders?view=graph-rest-1.0)

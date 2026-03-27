@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffreason
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTeamScheduleTimeOffReason
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaTeamScheduleTimeOffReason
 ## SYNOPSIS
 
 Create a new timeOffReason.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeOffReason?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 
 Create a new timeOffReason.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -96,10 +84,6 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleTimeOffReason -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeamScheduleTimeOffReason Cmdlet.
-
 
 ## PARAMETERS
 
@@ -655,7 +639,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTimeOffReason>`: timeOffReason
+BODYPARAMETER <IMicrosoftGraphTimeOffReason>: timeOffReason
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -679,7 +663,7 @@ Required.
   [IsActive <Boolean?>]: Indicates whether the timeOffReason can be used when creating new entities or updating existing ones.
 Required.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -691,7 +675,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -738,7 +722,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -753,27 +737,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgBetaTeamScheduleTimeOffReason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffreason)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffreason)
+- [](https://learn.microsoft.com/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta)

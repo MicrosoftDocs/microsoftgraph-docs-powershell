@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualeventwebinarregistrationemail
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgVirtualEventWebinarRegistrationEmail
 ---
@@ -14,9 +14,6 @@ title: Stop-MgVirtualEventWebinarRegistrationEmail
 ## SYNOPSIS
 
 Cancel a registrant's registration record for a webinar.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Stop-MgBetaVirtualEventWebinarRegistrationEmail](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaVirtualEventWebinarRegistrationEmail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Cancel a registrant's registration record for a webinar.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -379,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -403,27 +410,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgVirtualEventWebinarRegistrationEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualeventwebinarregistrationemail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualeventwebinarregistrationemail)

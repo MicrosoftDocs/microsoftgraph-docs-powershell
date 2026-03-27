@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRest
 ## SYNOPSIS
 
 Create new navigation property to driveRestoreArtifacts for solutions
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -76,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to driveRestoreArtifacts for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -655,7 +662,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDriveRestoreArtifact>`: driveRestoreArtifact
+BODYPARAMETER <IMicrosoftGraphDriveRestoreArtifact>: driveRestoreArtifact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
   [DestinationType <String>]: destinationType
@@ -710,7 +717,7 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   [RestoredSiteId <String>]: The new site identifier if destinationType is new, and the input site ID if the destinationType is inPlace.
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -726,7 +733,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -761,7 +768,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
   [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-RESTOREPOINT `<IMicrosoftGraphRestorePoint>`: restorePoint
+RESTOREPOINT <IMicrosoftGraphRestorePoint>: restorePoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -809,27 +816,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifact)

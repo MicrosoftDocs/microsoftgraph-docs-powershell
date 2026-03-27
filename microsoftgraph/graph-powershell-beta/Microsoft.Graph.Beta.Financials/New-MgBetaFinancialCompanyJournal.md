@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 02/20/2026
+ms.date: 03/27/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaFinancialCompanyJournal
 ---
@@ -72,6 +72,16 @@ This cmdlet has the following aliases,
 
 Create new navigation property to journals for financials
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -Account
@@ -131,7 +141,7 @@ HelpMessage: ''
 
 ### -BalancingAccountId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -158,7 +168,7 @@ HelpMessage: ''
 
 ### -BalancingAccountNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -234,7 +244,7 @@ HelpMessage: ''
 
 ### -Code
 
-
+.
 
 ```yaml
 Type: System.String
@@ -310,7 +320,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -400,7 +410,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -455,7 +465,7 @@ HelpMessage: ''
 
 ### -JournalLines
 
-
+.
 To construct, see NOTES section for JOURNALLINES properties and create a hash table.
 
 ```yaml
@@ -483,7 +493,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -649,7 +659,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCOUNT `<IMicrosoftGraphAccount>`: account
+ACCOUNT <IMicrosoftGraphAccount>: account
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Blocked <Boolean?>]: 
   [Category <String>]: 
@@ -659,7 +669,7 @@ ACCOUNT `<IMicrosoftGraphAccount>`: account
   [Number <String>]: 
   [SubCategory <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphJournal>`: journal
+BODYPARAMETER <IMicrosoftGraphJournal>: journal
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Account <IMicrosoftGraphAccount>]: account
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -691,7 +701,7 @@ BODYPARAMETER `<IMicrosoftGraphJournal>`: journal
     [PostingDate <DateTime?>]: 
   [LastModifiedDateTime <DateTime?>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -755,27 +765,4 @@ JOURNALLINES <IMicrosoftGraphJournalLine[]>: .
 
 ## RELATED LINKS
 
-- [New-MgBetaFinancialCompanyJournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal)
