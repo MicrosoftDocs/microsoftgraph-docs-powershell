@@ -721,7 +721,7 @@ HelpMessage: ''
 
 ### -UnifiedGroupSources
 
-.
+
 To construct, see NOTES section for UNIFIEDGROUPSOURCES properties and create a hash table.
 
 ```yaml

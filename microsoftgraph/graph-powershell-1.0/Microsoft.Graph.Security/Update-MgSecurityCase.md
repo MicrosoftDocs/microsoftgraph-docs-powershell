@@ -139,7 +139,7 @@ HelpMessage: ''
 
 ### -EdiscoveryCases
 
-.
+
 To construct, see NOTES section for EDISCOVERYCASES properties and create a hash table.
 
 ```yaml
