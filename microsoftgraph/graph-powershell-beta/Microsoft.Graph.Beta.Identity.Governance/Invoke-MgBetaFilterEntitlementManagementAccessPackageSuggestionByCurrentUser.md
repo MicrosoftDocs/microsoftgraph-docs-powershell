@@ -52,16 +52,6 @@ Retrieve suggested accessPackageSuggestion objects for the current end user.
 This operation returns access packages that are suggested based on various criteria such as related people insights and the user's assignment history.
 The suggestions help end users discover relevant access packages they may need for their role or work context.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -594,6 +584,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackagesuggestionbycurrentuser)
 - [](https://learn.microsoft.com/graph/api/accesspackagesuggestions-filterbycurrentuser?view=graph-rest-beta)
+
 
 
 

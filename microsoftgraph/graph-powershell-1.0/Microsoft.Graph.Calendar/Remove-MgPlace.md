@@ -59,16 +59,6 @@ You can also use this method to delete the following child object types: buildin
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Place.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -424,6 +414,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplace)
 - [](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-1.0)
+
 
 
 

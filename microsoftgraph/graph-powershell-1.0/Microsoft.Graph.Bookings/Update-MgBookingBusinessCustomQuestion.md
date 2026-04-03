@@ -82,8 +82,9 @@ Update the properties of a bookingCustomQuestion object.
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -96,6 +97,10 @@ $params = @{
 }
 
 Update-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBookingBusinessCustomQuestion Cmdlet.
+
 
 ## PARAMETERS
 

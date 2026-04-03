@@ -57,12 +57,17 @@ Get this organizational contact's manager.
 | Application | OrgContact.Read.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContactManager -OrgContactId $orgContactId
+
+```
+This example shows how to use the Get-MgContactManager Cmdlet.
+
 
 ## PARAMETERS
 
