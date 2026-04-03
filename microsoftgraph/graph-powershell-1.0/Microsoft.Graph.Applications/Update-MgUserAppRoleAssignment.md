@@ -781,7 +781,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mguserapproleassignment)
+- [Update-MgUserAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mguserapproleassignment)
 
 
 

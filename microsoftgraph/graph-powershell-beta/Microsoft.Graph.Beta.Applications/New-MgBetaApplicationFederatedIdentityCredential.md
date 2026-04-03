@@ -770,8 +770,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationfederatedidentitycredential)
-- [](https://learn.microsoft.com/graph/api/federatedidentitycredential-post?view=graph-rest-beta)
+- [New-MgBetaApplicationFederatedIdentityCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationfederatedidentitycredential)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-post?view=graph-rest-beta)
 
 
 

@@ -389,7 +389,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecolumncount)
+- [Get-MgSiteColumnCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecolumncount)
 
 
 

@@ -373,8 +373,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityfilecount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-1.0)
+- [Get-MgReportOneDriveActivityFileCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityfilecount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-1.0)
 
 
 

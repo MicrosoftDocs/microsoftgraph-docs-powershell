@@ -591,7 +591,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilename)
+- [Get-MgBetaUserProfileName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilename)
 
 
 

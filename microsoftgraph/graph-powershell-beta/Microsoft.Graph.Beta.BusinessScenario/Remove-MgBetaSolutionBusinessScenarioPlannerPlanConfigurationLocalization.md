@@ -416,7 +416,7 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization)
+- [Remove-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization)
 
 
 

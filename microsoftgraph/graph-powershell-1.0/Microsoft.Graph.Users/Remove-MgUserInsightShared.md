@@ -430,7 +430,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserinsightshared)
+- [Remove-MgUserInsightShared](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserinsightshared)
 
 
 
