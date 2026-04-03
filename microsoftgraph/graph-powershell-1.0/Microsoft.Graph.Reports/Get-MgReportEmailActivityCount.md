@@ -15,6 +15,9 @@ title: Get-MgReportEmailActivityCount
 
 Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportEmailActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgPlaceAsRoomListRoomCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomListRoomCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomListRoomCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

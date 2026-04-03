@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalSynchronization
 
 Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

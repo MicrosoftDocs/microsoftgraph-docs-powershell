@@ -16,6 +16,9 @@ title: Set-MgCommunicationAdhocCallRecordingContent
 The content of the recording.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaCommunicationAdhocCallRecordingContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationAdhocCallRecordingContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

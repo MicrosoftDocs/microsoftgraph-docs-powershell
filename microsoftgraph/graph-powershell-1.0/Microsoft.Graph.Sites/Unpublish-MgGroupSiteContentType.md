@@ -15,6 +15,9 @@ title: Unpublish-MgGroupSiteContentType
 
 Unpublish a contentType from a content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Unpublish-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaGroupSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unpublish (Default)
