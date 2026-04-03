@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityhostsecurityprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 04/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityHostSecurityProfile
 ---
@@ -80,6 +80,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property hostSecurityProfiles in security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -111,7 +121,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -138,7 +148,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -236,7 +246,7 @@ HelpMessage: ''
 
 ### -FirstSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -263,7 +273,7 @@ HelpMessage: ''
 
 ### -Fqdn
 
-
+.
 
 ```yaml
 Type: System.String
@@ -436,7 +446,7 @@ HelpMessage: ''
 
 ### -IsAzureAdJoined
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -463,7 +473,7 @@ HelpMessage: ''
 
 ### -IsAzureAdRegistered
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -490,7 +500,7 @@ HelpMessage: ''
 
 ### -IsHybridAzureDomainJoined
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -517,7 +527,7 @@ HelpMessage: ''
 
 ### -LastSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -544,7 +554,7 @@ HelpMessage: ''
 
 ### -LogonUsers
 
-
+.
 To construct, see NOTES section for LOGONUSERS properties and create a hash table.
 
 ```yaml
@@ -572,7 +582,7 @@ HelpMessage: ''
 
 ### -NetBiosName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -599,7 +609,7 @@ HelpMessage: ''
 
 ### -NetworkInterfaces
 
-
+.
 To construct, see NOTES section for NETWORKINTERFACES properties and create a hash table.
 
 ```yaml
@@ -627,7 +637,7 @@ HelpMessage: ''
 
 ### -OS
 
-
+.
 
 ```yaml
 Type: System.String
@@ -654,7 +664,7 @@ HelpMessage: ''
 
 ### -OSVersion
 
-
+.
 
 ```yaml
 Type: System.String
@@ -681,7 +691,7 @@ HelpMessage: ''
 
 ### -ParentHost
 
-
+.
 
 ```yaml
 Type: System.String
@@ -771,7 +781,7 @@ HelpMessage: ''
 
 ### -RelatedHostIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -820,7 +830,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-
+.
 
 ```yaml
 Type: System.String
@@ -847,7 +857,7 @@ HelpMessage: ''
 
 ### -Tags
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -956,7 +966,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphHostSecurityProfile>`: hostSecurityProfile
+BODYPARAMETER <IMicrosoftGraphHostSecurityProfile>: hostSecurityProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1003,7 +1013,7 @@ Required
     [Vendor <String>]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -1123,7 +1133,7 @@ NETWORKINTERFACES <IMicrosoftGraphNetworkInterface[]>: .
   [LocalIPV6Address <String>]: Last local (link-local or site-local) IPv6 address associated with this NIC.
   [MacAddress <String>]: MAC address of the NIC on this host.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -1135,27 +1145,4 @@ Required
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityHostSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityhostsecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityhostsecurityprofile)

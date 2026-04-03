@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeployment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 02/20/2026
+ms.date: 04/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaWindowsUpdatesDeployment
 ---
@@ -73,18 +73,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a deployment object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WindowsUpdates.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Pause a deployment
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
@@ -98,12 +89,7 @@ $params = @{
 
 Update-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
 
-```
-This example will pause a deployment
-
-### Example 2: Update deployment settings to add a monitoring rule
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
@@ -124,10 +110,6 @@ $params = @{
 }
 
 Update-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
-
-```
-This example will update deployment settings to add a monitoring rule
-
 
 ## PARAMETERS
 
@@ -685,7 +667,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUDIENCE `<IMicrosoftGraphWindowsUpdatesDeploymentAudience>`: deploymentAudience
+AUDIENCE <IMicrosoftGraphWindowsUpdatesDeploymentAudience>: deploymentAudience
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -715,7 +697,7 @@ Read-only.
 Read-only.
   [Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]: Specifies the assets to include in the audience.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesDeployment>`: deployment
+BODYPARAMETER <IMicrosoftGraphWindowsUpdatesDeployment>: deployment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -803,7 +785,7 @@ Read-only.
       [Value <String>]: deploymentStateReasonValue
     [RequestedValue <String>]: requestedDeploymentStateValue
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -820,7 +802,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   [UpdatableAssetId <String>]: The unique identifier of updatableAsset
   [UpdatePolicyId <String>]: The unique identifier of updatePolicy
 
-SETTINGS `<IMicrosoftGraphWindowsUpdatesDeploymentSettings>`: deploymentSettings
+SETTINGS <IMicrosoftGraphWindowsUpdatesDeploymentSettings>: deploymentSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentApplicability <IMicrosoftGraphWindowsUpdatesContentApplicabilitySettings>]: contentApplicabilitySettings
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -860,7 +842,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 It can only be set to true on automatic policies that target monthly security updates.
     [OfferAsOptional <Boolean?>]: Specifies whether the update is offered as Optional rather than Required.
 
-STATE `<IMicrosoftGraphWindowsUpdatesDeploymentState>`: deploymentState
+STATE <IMicrosoftGraphWindowsUpdatesDeploymentState>: deploymentState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EffectiveValue <String>]: deploymentStateValue
   [Reasons <IMicrosoftGraphWindowsUpdatesDeploymentStateReason[]>]: Specifies the reasons the deployment has its state value.
@@ -871,27 +853,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaWindowsUpdatesDeployment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeployment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-deployment-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeployment)
+- [](https://learn.microsoft.com/graph/api/windowsupdates-deployment-update?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclass
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 02/20/2026
+ms.date: 04/03/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaEducationClass
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaEducationClass
 
 Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClass?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,17 +49,12 @@ Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Remove-MgBetaEducationClass -EducationClassId $educationClassId
-
-```
-This example shows how to use the Remove-MgBetaEducationClass Cmdlet.
-
 
 ## PARAMETERS
 
@@ -394,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -419,27 +411,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaEducationClass](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclass)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclass)
+- [](https://learn.microsoft.com/graph/api/educationclass-delete?view=graph-rest-beta)

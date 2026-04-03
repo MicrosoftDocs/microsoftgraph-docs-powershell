@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 04/03/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEntitlementManagementSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgEntitlementManagementSetting
 ## SYNOPSIS
 
 Update an existing entitlementManagementSettings object to change one or more of its properties.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,18 +47,9 @@ This cmdlet has the following aliases,
 
 Update an existing entitlementManagementSettings object to change one or more of its properties.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -70,10 +58,6 @@ $params = @{
 }
 
 Update-MgEntitlementManagementSetting -BodyParameter $params
-
-```
-This example shows how to use the Update-MgEntitlementManagementSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -427,7 +411,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEntitlementManagementSettings>`: entitlementManagementSettings
+BODYPARAMETER <IMicrosoftGraphEntitlementManagementSettings>: entitlementManagementSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -437,27 +421,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgEntitlementManagementSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting)
+- [](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-1.0)

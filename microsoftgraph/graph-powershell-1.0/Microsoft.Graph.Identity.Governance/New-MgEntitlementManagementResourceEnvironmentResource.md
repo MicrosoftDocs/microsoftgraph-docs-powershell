@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourceenvironmentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 04/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEntitlementManagementResourceEnvironmentResource
 ---
@@ -77,6 +77,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to resources for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -758,7 +768,7 @@ If the destination is accessPackageUserDirectoryAttributeStore, then a user prop
   [Source <IMicrosoftGraphAccessPackageResourceAttributeSource>]: accessPackageResourceAttributeSource
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
+BODYPARAMETER <IMicrosoftGraphAccessPackageResource>: accessPackageResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -827,7 +837,7 @@ Read-only.
     [OriginSystem <String>]: The origin system for the scope.
     [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
 
-ENVIRONMENT `<IMicrosoftGraphAccessPackageResourceEnvironment>`: accessPackageResourceEnvironment
+ENVIRONMENT <IMicrosoftGraphAccessPackageResourceEnvironment>: accessPackageResourceEnvironment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -895,7 +905,7 @@ Read-only.
       [OriginSystem <String>]: The origin system for the scope.
       [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1110,27 +1120,4 @@ Supports $expand.
 
 ## RELATED LINKS
 
-- [New-MgEntitlementManagementResourceEnvironmentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourceenvironmentresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourceenvironmentresource)

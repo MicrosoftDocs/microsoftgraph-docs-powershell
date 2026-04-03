@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationtraining
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 04/03/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityAttackSimulationTraining
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityAttackSimulationTraining
 ## SYNOPSIS
 
 Create new navigation property to trainings for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationTraining?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to trainings for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -665,7 +672,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTraining>`: training
+BODYPARAMETER <IMicrosoftGraphTraining>: training
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -709,7 +716,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Tags <String[]>]: Training tags.
   [Type <String>]: trainingType
 
-CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+CREATEDBY <IMicrosoftGraphEmailIdentity>: emailIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -740,7 +747,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Locale <String>]: Content locale for the training detail.
 
-LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>: emailIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -751,27 +758,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgSecurityAttackSimulationTraining](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationtraining)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationtraining)
