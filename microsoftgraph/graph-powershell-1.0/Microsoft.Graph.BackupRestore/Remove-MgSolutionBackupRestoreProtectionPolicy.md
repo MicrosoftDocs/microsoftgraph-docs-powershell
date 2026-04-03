@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 Delete a protection policy.
 Read the properties and relationships of a protectionPolicyBase object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -425,6 +415,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreprotectionpolicy)
 - [](https://learn.microsoft.com/graph/api/protectionpolicybase-delete?view=graph-rest-1.0)
+
 
 
 

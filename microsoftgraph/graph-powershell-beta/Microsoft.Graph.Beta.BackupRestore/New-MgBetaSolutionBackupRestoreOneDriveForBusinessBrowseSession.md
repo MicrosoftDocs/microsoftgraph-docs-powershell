@@ -57,16 +57,6 @@ Create a new oneDriveForBusinessBrowseSession object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Restore.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -576,6 +566,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-onedriveforbusinessbrowsesessions?view=graph-rest-beta)
+
 
 
 
