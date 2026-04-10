@@ -15,6 +15,9 @@ title: Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy
 
 Deactivate a protectionPolicyBase.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Deactivate (Default)

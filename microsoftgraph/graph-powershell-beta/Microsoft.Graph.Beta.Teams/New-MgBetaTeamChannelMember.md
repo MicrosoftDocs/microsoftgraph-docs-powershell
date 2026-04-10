@@ -15,6 +15,9 @@ title: New-MgBetaTeamChannelMember
 
 Create new navigation property to allMembers for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

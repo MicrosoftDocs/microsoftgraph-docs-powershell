@@ -15,6 +15,9 @@ title: Remove-MgBetaPlannerTaskAssignedToTaskBoardFormat
 
 Delete navigation property assignedToTaskBoardFormat for planner
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

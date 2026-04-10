@@ -15,6 +15,9 @@ title: Get-MgPlaceAsDeskCheck
 
 A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsDeskCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsDeskCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

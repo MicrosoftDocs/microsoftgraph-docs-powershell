@@ -15,6 +15,9 @@ title: Get-MgBetaPrintShareAllowedUser
 
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareAllowedUser](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: New-MgDeviceAppManagementiOSManagedAppProtection
 
 Create new navigation property to iosManagedAppProtections for deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

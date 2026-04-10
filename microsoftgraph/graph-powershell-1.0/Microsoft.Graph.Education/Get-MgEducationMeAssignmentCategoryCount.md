@@ -15,6 +15,9 @@ title: Get-MgEducationMeAssignmentCategoryCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentCategoryCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentCategoryCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

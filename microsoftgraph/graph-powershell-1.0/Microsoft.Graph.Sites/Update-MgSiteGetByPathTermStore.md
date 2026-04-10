@@ -15,6 +15,9 @@ title: Update-MgSiteGetByPathTermStore
 
 Update the navigation property termStore in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteGetByPathTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteGetByPathTermStore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

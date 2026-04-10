@@ -15,6 +15,9 @@ title: Invoke-MgBetaDownUserManagedDeviceShut
 
 Shut down device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgDownUserManagedDeviceShut?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Down (Default)

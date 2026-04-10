@@ -15,6 +15,9 @@ title: Get-MgTeamScheduleTimeOffRequestCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleTimeOffRequestCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeOffRequestCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

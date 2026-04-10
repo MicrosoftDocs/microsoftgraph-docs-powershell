@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveListItemVersion
 
 Delete navigation property versions for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveListItemVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
