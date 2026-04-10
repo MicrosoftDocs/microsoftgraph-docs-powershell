@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 Create a new webApplicationFirewallProvider object.
 You can create one of the following subtypes that are derived from webApplicationFirewallProvider.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -403,6 +393,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityriskpreventionwebapplicationfirewallprovider)
 - [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-webapplicationfirewallproviders?view=graph-rest-1.0)
+
 
 
 

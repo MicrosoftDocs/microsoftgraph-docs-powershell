@@ -158,9 +158,9 @@ To get properties that are not returned by default, do a GET operation and speci
 | Application | User.ReadWrite.All, Directory.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a new user
 
-### EXAMPLE 1
-
+```powershell
 $PasswordProfile = @{
   Password = 'xWwvJ]6NMw+bWH-d'
   }
@@ -169,6 +169,10 @@ New-MgBetaUser -DisplayName 'Rene Magi' -PasswordProfile $PasswordProfile -Accou
 Id                                   DisplayName Mail UserPrincipalName                    UserType
 --                                   ----------- ---- -----------------                    --------
 1fe21dc8-7d53-4a92-b1fa-32043b9875a7 Rene Magi        ReneMagi@contoso.com
+```
+
+This command first sets a value for the password profile variable and uses it to create a new user.
+
 
 ## PARAMETERS
 

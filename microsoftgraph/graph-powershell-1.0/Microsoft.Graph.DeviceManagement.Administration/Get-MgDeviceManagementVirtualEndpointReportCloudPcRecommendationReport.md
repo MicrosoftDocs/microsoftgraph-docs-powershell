@@ -59,16 +59,6 @@ The usage category report categorizes a Cloud PC as Undersized, Oversized, Right
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -586,6 +576,7 @@ BODY `<IPathsG53J94DevicemanagementVirtualendpointReportMicrosoftGraphRetrievecl
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointreportcloudpcrecommendationreport)
 - [](https://learn.microsoft.com/graph/api/cloudpcreport-retrievecloudpcrecommendationreports?view=graph-rest-1.0)
+
 
 
 

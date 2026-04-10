@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 Get newly created, updated, or deleted devices without performing a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -557,6 +547,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicedelta)
 - [](https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-beta)
+
 
 
 

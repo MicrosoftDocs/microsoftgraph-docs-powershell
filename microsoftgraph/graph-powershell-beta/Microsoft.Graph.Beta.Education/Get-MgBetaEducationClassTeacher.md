@@ -51,12 +51,17 @@ Delegated tokens must be members of the class to get the teacher list.
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassTeacher -EducationClassId $educationClassId
+
+```
+This example shows how to use the Get-MgBetaEducationClassTeacher Cmdlet.
+
 
 ## PARAMETERS
 
