@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Get authenticationEventListeners from identity
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EventListener.Read.All, EventListener.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EventListener.Read.All, EventListener.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

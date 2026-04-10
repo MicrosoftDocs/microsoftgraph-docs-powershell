@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Represents the role management policies.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagementPolicy.Read.Directory, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
