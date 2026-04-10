@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 04/10/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityB2CUserFlow
 ---
@@ -80,18 +80,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a b2cIdentityUserFlow object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityUserFlow.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -101,10 +92,6 @@ $params = @{
 }
 
 Update-MgBetaIdentityB2CUserFlow -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaIdentityB2CUserFlow Cmdlet.
-
 
 ## PARAMETERS
 
@@ -663,7 +650,7 @@ HelpMessage: ''
 
 ### -UserFlowTypeVersion
 
-
+.
 
 ```yaml
 Type: System.Single
@@ -744,7 +731,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APICONNECTORCONFIGURATION `<IMicrosoftGraphUserFlowApiConnectorConfiguration>`: userFlowApiConnectorConfiguration
+APICONNECTORCONFIGURATION <IMicrosoftGraphUserFlowApiConnectorConfiguration>: userFlowApiConnectorConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PostAttributeCollection <IMicrosoftGraphIdentityApiConnector>]: identityApiConnector
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -757,7 +744,7 @@ Read-only.
   [PostFederationSignup <IMicrosoftGraphIdentityApiConnector>]: identityApiConnector
   [PreTokenIssuance <IMicrosoftGraphIdentityApiConnector>]: identityApiConnector
 
-BODYPARAMETER `<IMicrosoftGraphB2CIdentityUserFlow>`: b2cIdentityUserFlow
+BODYPARAMETER <IMicrosoftGraphB2CIdentityUserFlow>: b2cIdentityUserFlow
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UserFlowType <String>]: userFlowType
   [UserFlowTypeVersion <Single?>]: 
@@ -860,7 +847,7 @@ For B2B scenario: Google, Facebook.
 For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo,QQ, WeChat, OpenIDConnect.
 Not nullable.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -1004,27 +991,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityB2CUserFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/b2cidentityuserflow-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow)
+- [](https://learn.microsoft.com/graph/api/b2cidentityuserflow-update?view=graph-rest-beta)

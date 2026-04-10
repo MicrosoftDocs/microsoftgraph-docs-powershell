@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycustomauthenticationextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 04/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityCustomAuthenticationExtension
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaIdentityCustomAuthenticationExtension
 Read the properties and relationships of an authenticationEventListener object.
 The @odata.type property in the response object indicates the type of the authenticationEventListener object.
 The following derived types are currently supported.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -64,26 +61,13 @@ Read the properties and relationships of an authenticationEventListener object.
 The @odata.type property in the response object indicates the type of the authenticationEventListener object.
 The following derived types are currently supported.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CustomAuthenticationExtension.Read.All, CustomAuthenticationExtension.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CustomAuthenticationExtension.Read.All, CustomAuthenticationExtension.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityCustomAuthenticationExtension
-
-```
-This example shows how to use the Get-MgBetaIdentityCustomAuthenticationExtension Cmdlet.
-
 
 ## PARAMETERS
 
@@ -545,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -645,28 +629,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaIdentityCustomAuthenticationExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycustomauthenticationextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationeventlistener-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-list-customauthenticationextensions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycustomauthenticationextension)
+- [](https://learn.microsoft.com/graph/api/authenticationeventlistener-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/identitycontainer-list-customauthenticationextensions?view=graph-rest-beta)

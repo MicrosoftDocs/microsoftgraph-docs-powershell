@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyusermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 02/20/2026
+ms.date: 04/10/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReplyUserMessage
 ---
@@ -14,14 +14,11 @@ title: Invoke-MgReplyUserMessage
 ## SYNOPSIS
 
 Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\r* Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\r* If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
-When using MIME format:\r- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:\r\n* Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\r\n* If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
+When using MIME format:\r\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to an existing message and send it later.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Invoke-MgBetaReplyUserMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,24 +74,15 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\r* Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\r* If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
-When using MIME format:\r- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:\r\n* Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\r\n* If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
+When using MIME format:\r\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to an existing message and send it later.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Send,  |
-| Delegated (personal Microsoft account) | Mail.Send,  |
-| Application | Mail.Send,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Mail
 
@@ -120,10 +108,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgReplyUserMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -156,7 +140,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -205,7 +189,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -587,7 +571,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Inq4EUsersUserIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Inq4EUsersUserIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [Message <IMicrosoftGraphMessage>]: message
@@ -687,7 +671,7 @@ If ispopout is set to 0, the browser shows the message in the Outlook on the web
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
 For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -697,7 +681,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   [MessageRuleId <String>]: The unique identifier of messageRule
   [UserId <String>]: The unique identifier of user
 
-MESSAGE `<IMicrosoftGraphMessage>`: message
+MESSAGE <IMicrosoftGraphMessage>: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -797,27 +781,5 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 ## RELATED LINKS
 
-- [Invoke-MgReplyUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyusermessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyusermessage)
+- [](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-1.0)

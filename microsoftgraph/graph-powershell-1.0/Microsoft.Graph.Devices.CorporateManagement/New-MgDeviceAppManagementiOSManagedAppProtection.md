@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 04/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceAppManagementiOSManagedAppProtection
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceAppManagementiOSManagedAppProtection
 ## SYNOPSIS
 
 Create new navigation property to iosManagedAppProtections for deviceAppManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -68,18 +65,9 @@ This cmdlet has the following aliases,
 
 Create new navigation property to iosManagedAppProtections for deviceAppManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -126,10 +114,6 @@ customBrowserProtocol = "Custom Browser Protocol value"
 }
 
 New-MgDeviceAppManagementiOSManagedAppProtection -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceAppManagementiOSManagedAppProtection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1320,7 +1304,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphIosManagedAppProtection>`: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
+BODYPARAMETER <IMicrosoftGraphIosManagedAppProtection>: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
     [Id <String>]: The unique identifier for an entity.
@@ -1387,7 +1371,7 @@ Read-only.
   [FaceIdBlocked <Boolean?>]: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
   [MinimumRequiredSdkVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
 
-DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1403,26 +1387,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDeviceAppManagementiOSManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection)

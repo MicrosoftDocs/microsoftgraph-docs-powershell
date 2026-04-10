@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-ms.date: 02/20/2026
+ms.date: 04/10/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUnarchiveServiceAnnouncementMessage
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaUnarchiveServiceAnnouncementMessage
 ## SYNOPSIS
 
 Unarchive a list of serviceUpdateMessages for the signed in user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgUnarchiveServiceAnnouncementMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,9 +48,8 @@ This cmdlet has the following aliases,
 Unarchive a list of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
@@ -65,10 +61,6 @@ $params = @{
 }
 
 Invoke-MgBetaUnarchiveServiceAnnouncementMessage -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaUnarchiveServiceAnnouncementMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -95,7 +87,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -223,7 +215,7 @@ HelpMessage: ''
 
 ### -MessageIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -379,34 +371,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsYkfdhbAdminServiceannouncementMessagesMicrosoftGraphUnarchivePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsYkfdhbAdminServiceannouncementMessagesMicrosoftGraphUnarchivePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MessageIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaUnarchiveServiceAnnouncementMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-unarchive?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage)
+- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-unarchive?view=graph-rest-beta)

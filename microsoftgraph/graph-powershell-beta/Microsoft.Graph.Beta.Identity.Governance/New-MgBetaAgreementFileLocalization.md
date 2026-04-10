@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfilelocalization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 04/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAgreementFileLocalization
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaAgreementFileLocalization
 ## SYNOPSIS
 
 Create new navigation property to localizations for agreements
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFileLocalization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to localizations for agreements
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -691,7 +698,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAgreementFileLocalization>`: agreementFileLocalization
+BODYPARAMETER <IMicrosoftGraphAgreementFileLocalization>: agreementFileLocalization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The date time representing when the file was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -741,14 +748,14 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-FILEDATA `<IMicrosoftGraphAgreementFileData>`: agreementFileData
+FILEDATA <IMicrosoftGraphAgreementFileData>: agreementFileData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Data <Byte[]>]: Data that represents the terms of use PDF document.
 Read-only.
 Note: You can use the .NET Convert.ToBase64String method to convert your file to binary data for uploading using the Create agreements API.
 A sample syntax using this method in PowerShell is [convert]::ToBase64String((Get-Content -path 'yourfilepath' -Encoding byte)).
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -796,6 +803,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -889,27 +897,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaAgreementFileLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfilelocalization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfilelocalization)

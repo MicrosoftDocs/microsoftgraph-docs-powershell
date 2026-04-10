@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtagmember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 02/20/2026
+ms.date: 04/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgTeamTagMember
 ---
@@ -14,9 +14,6 @@ title: New-MgTeamTagMember
 ## SYNOPSIS
 
 Create a new teamworkTagMember object in a team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTagMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,9 +67,8 @@ This cmdlet has the following aliases,
 Create a new teamworkTagMember object in a team.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -81,10 +77,6 @@ $params = @{
 }
 
 New-MgTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamTagMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -581,7 +573,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkTagMember>`: teamworkTagMember
+BODYPARAMETER <IMicrosoftGraphTeamworkTagMember>: teamworkTagMember
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -589,7 +581,7 @@ Read-only.
   [TenantId <String>]: The ID of the tenant that the tag member is a part of.
   [UserId <String>]: The user ID of the member.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -629,27 +621,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgTeamTagMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtagmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtagmember)
+- [](https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointonpremiseconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 04/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ## SYNOPSIS
 
 Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,9 +55,8 @@ This cmdlet has the following aliases,
 Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -78,10 +74,6 @@ $params = @{
 }
 
 New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -630,7 +622,7 @@ HelpMessage: ''
 
 ### -ScopeIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -831,7 +823,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcOnPremisesConnection>`: cloudPcOnPremisesConnection
+BODYPARAMETER <IMicrosoftGraphCloudPcOnPremisesConnection>: cloudPcOnPremisesConnection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -904,7 +896,7 @@ Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupN
   [VirtualNetworkLocation <String>]: Indicates the resource location of the virtual target network.
 Read-only, computed value.
 
-HEALTHCHECKSTATUSDETAIL `<IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>`: cloudPcOnPremisesConnectionStatusDetail
+HEALTHCHECKSTATUSDETAIL <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>: cloudPcOnPremisesConnectionStatusDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: The end time of the connection health check.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
@@ -930,7 +922,7 @@ Read-only.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-HEALTHCHECKSTATUSDETAILS `<IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>`: cloudPcOnPremisesConnectionStatusDetails
+HEALTHCHECKSTATUSDETAILS <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>: cloudPcOnPremisesConnectionStatusDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: The end time of the connection health check.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
@@ -959,27 +951,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointonpremiseconnection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointonpremiseconnection)
+- [](https://learn.microsoft.com/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta)

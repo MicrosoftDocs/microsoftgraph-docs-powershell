@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebookrecentnotebook
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 02/20/2026
+ms.date: 04/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserOnenoteNotebookRecentNotebook
 ---
@@ -14,9 +14,6 @@ title: Get-MgUserOnenoteNotebookRecentNotebook
 ## SYNOPSIS
 
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteNotebookRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteNotebookRecentNotebook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,27 +46,14 @@ This cmdlet has the following aliases,
 
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite, Notes.Read.All, Notes.Read,  |
-| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
-| Application | Notes.Read.All, Notes.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Notes
 
 # A UPN can also be used as -UserId.
-Get-MgUserOnenoteNotebookRecentNotebook -UserId $userId -IncludePersonalNotebooks $includePersonalNotebooksId 
-
-```
-This example shows how to use the Get-MgUserOnenoteNotebookRecentNotebook Cmdlet.
-
+Get-MgUserOnenoteNotebookRecentNotebook -UserId $userId -IncludePersonalNotebooks $includePersonalNotebooksId
 
 ## PARAMETERS
 
@@ -442,7 +426,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -459,27 +443,5 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserOnenoteNotebookRecentNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebookrecentnotebook)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebookrecentnotebook)
+- [](https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-1.0)
