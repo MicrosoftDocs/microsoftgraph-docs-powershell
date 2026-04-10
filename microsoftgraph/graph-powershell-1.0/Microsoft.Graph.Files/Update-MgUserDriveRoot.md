@@ -33788,7 +33788,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveroot)
+- [Update-MgUserDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveroot)
 
 
 

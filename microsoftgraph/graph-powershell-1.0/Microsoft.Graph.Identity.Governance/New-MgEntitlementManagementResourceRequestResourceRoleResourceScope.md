@@ -863,7 +863,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerequestresourceroleresourcescope)
+- [New-MgEntitlementManagementResourceRequestResourceRoleResourceScope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerequestresourceroleresourcescope)
 
 
 

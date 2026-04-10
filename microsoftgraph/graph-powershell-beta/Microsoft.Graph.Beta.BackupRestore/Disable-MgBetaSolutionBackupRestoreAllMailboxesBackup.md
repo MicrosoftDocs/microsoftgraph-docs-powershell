@@ -371,7 +371,7 @@ BODYPARAMETER `<IPaths1Ftim88SolutionsBackuprestoreAllmailboxesbackupMicrosoftGr
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/disable-mgbetasolutionbackuprestoreallmailboxesbackup)
+- [Disable-MgBetaSolutionBackupRestoreAllMailboxesBackup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/disable-mgbetasolutionbackuprestoreallmailboxesbackup)
 
 
 

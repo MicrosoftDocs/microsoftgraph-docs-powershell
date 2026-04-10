@@ -412,7 +412,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemcreatedbyusermailboxsetting)
+- [Get-MgGroupDriveItemCreatedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemcreatedbyusermailboxsetting)
 
 
 

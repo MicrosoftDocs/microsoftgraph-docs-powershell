@@ -419,7 +419,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamwork)
+- [Remove-MgUserTeamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamwork)
 
 
 

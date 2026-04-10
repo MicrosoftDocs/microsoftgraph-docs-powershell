@@ -440,7 +440,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlogqueryrecordcount)
+- [Get-MgBetaSecurityAuditLogQueryRecordCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlogqueryrecordcount)
 
 
 

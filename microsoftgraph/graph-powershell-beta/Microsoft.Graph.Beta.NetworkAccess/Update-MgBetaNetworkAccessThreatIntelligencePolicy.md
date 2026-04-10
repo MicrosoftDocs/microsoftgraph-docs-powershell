@@ -712,8 +712,8 @@ SETTINGS `<IMicrosoftGraphNetworkaccessThreatIntelligencePolicySettings>`: threa
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessthreatintelligencepolicy)
-- [](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicy-update?view=graph-rest-beta)
+- [Update-MgBetaNetworkAccessThreatIntelligencePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessthreatintelligencepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicy-update?view=graph-rest-beta)
 
 
 
