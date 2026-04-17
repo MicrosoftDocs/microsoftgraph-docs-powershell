@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Represents the external authentication methods registered to a user for authentication using an external identity provider.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-External.Read, UserAuthMethod-External.ReadWrite.All, UserAuthMethod-External.ReadWrite, UserAuthMethod-External.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-External.Read.All, UserAuthMethod-External.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

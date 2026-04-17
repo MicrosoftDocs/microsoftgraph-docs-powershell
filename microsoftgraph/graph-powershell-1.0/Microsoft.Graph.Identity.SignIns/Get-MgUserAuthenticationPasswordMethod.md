@@ -59,6 +59,14 @@ This cmdlet has the following aliases,
 Represents the password registered to a user for authentication.
 For security, the password itself is never returned in the object, but action can be taken to reset a password.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-Password.Read, UserAuthMethod-Password.ReadWrite.All, UserAuthMethod-Password.ReadWrite, UserAuthMethod-Password.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-Password.Read.All, UserAuthMethod-Password.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
