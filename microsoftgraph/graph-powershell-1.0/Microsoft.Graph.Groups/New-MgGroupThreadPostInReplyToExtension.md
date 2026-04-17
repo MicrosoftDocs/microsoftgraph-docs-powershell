@@ -15,6 +15,9 @@ title: New-MgGroupThreadPostInReplyToExtension
 
 Create new navigation property to extensions for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThreadPostInReplyToExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgIdentityConditionalAccessNamedLocation
 
 Retrieve the properties and relationships of a countryNamedLocation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

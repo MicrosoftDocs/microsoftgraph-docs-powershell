@@ -15,6 +15,9 @@ title: Set-MgBetaGroupTeamSchedule
 
 Update the navigation property schedule in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamSchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

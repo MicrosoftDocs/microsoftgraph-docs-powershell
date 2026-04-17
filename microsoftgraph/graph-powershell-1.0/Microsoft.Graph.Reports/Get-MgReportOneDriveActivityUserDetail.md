@@ -15,6 +15,9 @@ title: Get-MgReportOneDriveActivityUserDetail
 
 Get details about OneDrive activity by user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveActivityUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

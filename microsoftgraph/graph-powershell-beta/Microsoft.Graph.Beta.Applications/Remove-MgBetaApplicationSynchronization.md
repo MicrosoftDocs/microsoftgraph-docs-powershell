@@ -15,6 +15,9 @@ title: Remove-MgBetaApplicationSynchronization
 
 Delete navigation property synchronization for applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

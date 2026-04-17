@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupDriveItemListItemVersion
 
 Delete navigation property versions for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItemListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
