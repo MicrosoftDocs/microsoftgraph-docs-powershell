@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the number of Microsoft Teams daily unique users by device type.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportTeamDeviceUsageUserCount -Period $periodId
+Get-MgReportTeamDeviceUsageUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportTeamDeviceUsageUserCount Cmdlet.
+
 
 ## PARAMETERS
 

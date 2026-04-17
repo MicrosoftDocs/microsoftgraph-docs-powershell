@@ -58,12 +58,17 @@ Delete a servicePrincipal object.
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, AgentIdentity.DeleteRestore.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgServicePrincipal -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Remove-MgServicePrincipal Cmdlet.
+
 
 ## PARAMETERS
 

@@ -140,15 +140,18 @@ Create a new servicePrincipal object if it doesn't exist, or update the properti
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All, AgentIdentityBlueprintPrincipal.EnableDisable.All, AgentIdentity.ReadWrite.All, AgentIdentity.EnableDisable.All,  |
 
 ## EXAMPLES
+### Example 1: Update the properties of a service principal
 
-### EXAMPLE 1
-
+```powershell
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"
   "appRoleAssignmentRequired" = "true"
   }
 
 Update-MgServicePrincipal -ServicePrincipalId '000e4269-1923-4c8c-9c27-1206e114d421' -BodyParameter $ServicePrincipalUpdate
+```
+
+This is example, the first command defines the properties and their values in a hashtable under the variable $ServicePrincipalUpdate. The second command updates the specified service principal.
 
 ## PARAMETERS
 

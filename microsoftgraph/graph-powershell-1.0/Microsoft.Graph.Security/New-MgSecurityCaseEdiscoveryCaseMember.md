@@ -81,16 +81,6 @@ The ediscoveryCaseMember can be one of two types: a user or a role group.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -649,6 +639,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasemember)
 - [](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-post?view=graph-rest-1.0)
+
 
 
 

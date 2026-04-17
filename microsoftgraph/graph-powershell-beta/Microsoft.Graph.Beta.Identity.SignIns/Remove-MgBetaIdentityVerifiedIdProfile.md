@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Delete a verifiedIdProfile object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -488,6 +478,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityverifiedidprofile)
 - [](https://learn.microsoft.com/graph/api/identityverifiedidroot-delete-profiles?view=graph-rest-beta)
+
 
 
 

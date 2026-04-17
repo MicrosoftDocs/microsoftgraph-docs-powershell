@@ -60,12 +60,17 @@ Returns accessReviewScheduleDefinition objects where the calling user is a revie
 | Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser -On $onId
+Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

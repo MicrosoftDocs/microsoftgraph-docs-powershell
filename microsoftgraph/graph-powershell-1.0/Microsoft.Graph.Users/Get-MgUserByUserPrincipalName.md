@@ -65,16 +65,6 @@ Customers through Microsoft Entra ID for customers can also use this API operati
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.ReadBasic.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All, User.Read.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All, User.ReadWrite.CrossCloud, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.ReadWrite.All, AgentIdUser.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -395,6 +385,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserbyuserprincipalname)
 - [](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0)
+
 
 
 

@@ -57,16 +57,6 @@ This action sets the targeted agent's riskLevel to high.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityRiskyAgent.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -406,6 +396,7 @@ BODYPARAMETER `<IPathsC90MeqIdentityprotectionRiskyagentsMicrosoftGraphConfirmco
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyagentcompromised)
 - [](https://learn.microsoft.com/graph/api/riskyagent-confirmcompromised?view=graph-rest-beta)
+
 
 
 
