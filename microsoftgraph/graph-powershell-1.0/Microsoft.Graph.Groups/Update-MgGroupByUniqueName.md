@@ -1860,7 +1860,7 @@ HelpMessage: ''
 
 ### -PermissionGrants
 
-.
+
 To construct, see NOTES section for PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
@@ -2193,7 +2193,7 @@ HelpMessage: ''
 
 ### -ResourceBehaviorOptions
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -2220,7 +2220,7 @@ HelpMessage: ''
 
 ### -ResourceProvisioningOptions
 
-.
+
 
 ```yaml
 Type: System.String[]

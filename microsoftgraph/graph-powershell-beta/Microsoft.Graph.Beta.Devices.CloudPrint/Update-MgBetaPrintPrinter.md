@@ -96,7 +96,7 @@ Update the properties of a printer object.
 
 ### -AcceptingJobs
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -672,7 +672,7 @@ HelpMessage: ''
 
 ### -Name
 
-.
+
 
 ```yaml
 Type: System.String
