@@ -419,8 +419,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapromotedomain)
-- [](https://learn.microsoft.com/graph/api/domain-promote?view=graph-rest-beta)
+- [Invoke-MgBetaPromoteDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapromotedomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-promote?view=graph-rest-beta)
 
 
 

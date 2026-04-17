@@ -2319,7 +2319,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistcontenttype)
+- [Update-MgUserDriveListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistcontenttype)
 
 
 

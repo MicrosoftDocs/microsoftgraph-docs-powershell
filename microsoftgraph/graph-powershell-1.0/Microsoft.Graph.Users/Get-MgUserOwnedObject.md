@@ -619,7 +619,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobject)
+- [Get-MgUserOwnedObject](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobject)
 
 
 

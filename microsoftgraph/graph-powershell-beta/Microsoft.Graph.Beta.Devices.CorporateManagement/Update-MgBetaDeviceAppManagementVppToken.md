@@ -1054,7 +1054,7 @@ TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult[]>: The collection of st
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementvpptoken)
+- [Update-MgBetaDeviceAppManagementVppToken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementvpptoken)
 
 
 

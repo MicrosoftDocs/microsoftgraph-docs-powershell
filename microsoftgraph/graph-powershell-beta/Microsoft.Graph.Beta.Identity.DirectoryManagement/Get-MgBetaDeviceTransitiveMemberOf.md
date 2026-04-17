@@ -647,8 +647,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicetransitivememberof)
-- [](https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-beta)
+- [Get-MgBetaDeviceTransitiveMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicetransitivememberof)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-beta)
 
 
 

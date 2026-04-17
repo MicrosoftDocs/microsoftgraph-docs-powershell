@@ -701,8 +701,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
-- [](https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-update?view=graph-rest-beta)
+- [Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-update?view=graph-rest-beta)
 
 
 

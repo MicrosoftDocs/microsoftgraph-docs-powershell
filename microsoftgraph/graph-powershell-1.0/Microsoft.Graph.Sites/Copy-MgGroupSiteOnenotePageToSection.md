@@ -651,8 +651,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsiteonenotepagetosection)
-- [](https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-1.0)
+- [Copy-MgGroupSiteOnenotePageToSection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsiteonenotepagetosection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-1.0)
 
 
 

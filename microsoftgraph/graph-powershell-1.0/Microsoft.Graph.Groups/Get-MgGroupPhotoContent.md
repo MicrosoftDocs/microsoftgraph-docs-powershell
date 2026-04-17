@@ -416,8 +416,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphotocontent)
-- [](https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-1.0)
+- [Get-MgGroupPhotoContent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphotocontent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-1.0)
 
 
 
