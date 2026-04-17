@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementioslobappprovisioningconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 04/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
 ---
@@ -87,6 +87,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property iosLobAppProvisioningConfigurations in deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -842,7 +852,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphIosLobAppProvisioningConfiguration>`: This topic provides descriptions of the declared methods, properties and relationships exposed by the iOS LOB App Provisioning Configuration resource.
+BODYPARAMETER <IMicrosoftGraphIosLobAppProvisioningConfiguration>: This topic provides descriptions of the declared methods, properties and relationships exposed by the iOS LOB App Provisioning Configuration resource.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -907,7 +917,7 @@ GROUPASSIGNMENTS <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment[]>: 
 Read-only.
   [TargetGroupId <String>]: The ID of the AAD group in which the app provisioning configuration is being targeted.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -994,27 +1004,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementioslobappprovisioningconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementioslobappprovisioningconfiguration)

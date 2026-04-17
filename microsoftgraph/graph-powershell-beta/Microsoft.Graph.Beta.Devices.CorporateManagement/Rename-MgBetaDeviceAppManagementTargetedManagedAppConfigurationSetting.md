@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/rename-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 04/17/2026
 PlatyPS schema version: 2024-05-01
 title: Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 ---
@@ -76,6 +76,16 @@ This cmdlet has the following aliases,
 
 Invoke action changeSettings
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -107,7 +117,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -375,7 +385,7 @@ HelpMessage: ''
 
 ### -Settings
 
-
+.
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
@@ -484,7 +494,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsQrfq9IDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphChangesettingsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsQrfq9IDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphChangesettingsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -533,7 +543,7 @@ Applicable for reusable setting.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [SettingInstanceTemplateId <String>]: Setting instance template id
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -658,27 +668,4 @@ Applicable for reusable setting.
 
 ## RELATED LINKS
 
-- [Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/rename-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/rename-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting)

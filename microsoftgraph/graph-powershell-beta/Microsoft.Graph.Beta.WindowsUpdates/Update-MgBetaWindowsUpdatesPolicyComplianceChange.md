@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicycompliancechange
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 02/20/2026
+ms.date: 04/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaWindowsUpdatesPolicyComplianceChange
 ---
@@ -71,31 +71,18 @@ This cmdlet has the following aliases,
 
 Update the properties of a complianceChange object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WindowsUpdates.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windowsUpdates.contentApproval"
+	"@odata.type" = "#microsoft.graph.windowsUpdates.complianceChange"
 	isRevoked = $true
 }
 
 Update-MgBetaWindowsUpdatesPolicyComplianceChange -UpdatePolicyId $updatePolicyId -ComplianceChangeId $complianceChangeId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaWindowsUpdatesPolicyComplianceChange Cmdlet.
-
 
 ## PARAMETERS
 
@@ -621,7 +608,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesComplianceChange>`: complianceChange
+BODYPARAMETER <IMicrosoftGraphWindowsUpdatesComplianceChange>: complianceChange
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -710,7 +697,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 It can only be set to true on automatic policies that target monthly security updates.
         [OfferAsOptional <Boolean?>]: Specifies whether the update is offered as Optional rather than Required.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -727,7 +714,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   [UpdatableAssetId <String>]: The unique identifier of updatableAsset
   [UpdatePolicyId <String>]: The unique identifier of updatePolicy
 
-UPDATEPOLICY `<IMicrosoftGraphWindowsUpdatesUpdatePolicy>`: updatePolicy
+UPDATEPOLICY <IMicrosoftGraphWindowsUpdatesUpdatePolicy>: updatePolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -818,27 +805,5 @@ It can only be set to true on automatic policies that target monthly security up
 
 ## RELATED LINKS
 
-- [Update-MgBetaWindowsUpdatesPolicyComplianceChange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicycompliancechange)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicycompliancechange)
+- [](https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-update?view=graph-rest-beta)

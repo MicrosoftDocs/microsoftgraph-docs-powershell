@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 04/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPlace
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaPlace
 
 Delete a place object.
 You can also use this method to delete the following child object types: building, floor, section, or desk.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPlace](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlace?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +47,14 @@ This cmdlet has the following aliases,
 
 Delete a place object.
 You can also use this method to delete the following child object types: building, floor, section, or desk.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+Remove-MgBetaPlace -PlaceId $placeId
 
 ## PARAMETERS
 
@@ -381,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -406,28 +411,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplace)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplace)
+- [](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-beta)

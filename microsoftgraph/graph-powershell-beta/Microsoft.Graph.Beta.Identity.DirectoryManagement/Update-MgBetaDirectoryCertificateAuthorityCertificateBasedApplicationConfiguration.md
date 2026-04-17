@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 04/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 ---
@@ -79,9 +79,8 @@ Update the properties of a certificateBasedApplicationConfiguration object.
 To update the trustedCertificateAuthorities within a certificateBasedApplicationConfiguration object, use the Update certificateAuthorityAsEntity operation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -92,10 +91,6 @@ $params = @{
 }
 
 Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration -CertificateBasedApplicationConfigurationId $certificateBasedApplicationConfigurationId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -594,7 +589,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCertificateBasedApplicationConfiguration>`: certificateBasedApplicationConfiguration
+BODYPARAMETER <IMicrosoftGraphCertificateBasedApplicationConfiguration>: certificateBasedApplicationConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>]: Collection of trusted certificate authorities.
     [Id <String>]: The unique identifier for an entity.
@@ -611,7 +606,7 @@ Read-only.
   [Description <String>]: The description of the trusted certificate authorities.
   [DisplayName <String>]: The display name of the trusted certificate authorities.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -680,27 +675,5 @@ In a certificateBasedApplicationConfiguration object, at least one object in the
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
+- [](https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-update?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 04/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDomain
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaDomain
 
 Update the properties of domain object.
 Only verified domains can be updated.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -90,18 +87,9 @@ This cmdlet has the following aliases,
 Update the properties of domain object.
 Only verified domains can be updated.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Domain.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Domain.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -115,10 +103,6 @@ $params = @{
 }
 
 Update-MgBetaDomain -DomainId $domainId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDomain Cmdlet.
-
 
 ## PARAMETERS
 
@@ -834,7 +818,7 @@ HelpMessage: ''
 
 ### -SharedEmailDomainInvitations
 
-
+.
 To construct, see NOTES section for SHAREDEMAILDOMAININVITATIONS properties and create a hash table.
 
 ```yaml
@@ -1005,7 +989,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDomain>`: domain
+BODYPARAMETER <IMicrosoftGraphDomain>: domain
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1170,7 +1154,7 @@ For a list of statuses, see certificateUpdateResult status.
     [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -1227,7 +1211,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
 
-ROOTDOMAIN `<IMicrosoftGraphDomain>`: domain
+ROOTDOMAIN <IMicrosoftGraphDomain>: domain
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1365,7 +1349,7 @@ Read-only.
   [InvitationDomain <String>]: 
   [InvitationStatus <String>]: 
 
-STATE `<IMicrosoftGraphDomainState>`: domainState
+STATE <IMicrosoftGraphDomainState>: domainState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastActionDateTime <DateTime?>]: Timestamp for when the last activity occurred.
 The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
@@ -1393,27 +1377,5 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain)
+- [](https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-beta)

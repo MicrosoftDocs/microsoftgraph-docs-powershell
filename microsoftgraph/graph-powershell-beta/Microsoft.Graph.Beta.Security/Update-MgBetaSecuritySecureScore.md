@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescore
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 04/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecuritySecureScore
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecuritySecureScore
 ## SYNOPSIS
 
 Update the navigation property secureScores in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySecureScore?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -76,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property secureScores in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -741,7 +748,7 @@ AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore[]>: Average sco
   [AverageScore <Double?>]: Average score within a specified basis.
   [Basis <String>]: Scope type (by AllTenants, TotalSeats, IndustryTypes).
 
-BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
+BODYPARAMETER <IMicrosoftGraphSecureScore>: secureScore
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -775,7 +782,7 @@ CONTROLSCORES <IMicrosoftGraphControlScore[]>: Contains tenant scores for a set 
   [Description <String>]: Description of the control.
   [Score <Double?>]: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -874,7 +881,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -886,27 +893,4 @@ Required
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecuritySecureScore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescore)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescore)

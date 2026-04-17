@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgcontractproperty
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 04/17/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgContractProperty
 ---
@@ -16,16 +16,13 @@ title: Test-MgContractProperty
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 To validate the properties of an existing group, use the group: validateProperties function.
-The following policy validations are performed for the display name and mail nickname properties:\r1.
-Validate the prefix and suffix naming policy\r2.
-Validate the custom banned words policy\r3.
+The following policy validations are performed for the display name and mail nickname properties:\r\n1.
+Validate the prefix and suffix naming policy\r\n2.
+Validate the custom banned words policy\r\n3.
 Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaContractProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Test-MgBetaContractProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,13 +58,23 @@ This cmdlet has the following aliases,
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 To validate the properties of an existing group, use the group: validateProperties function.
-The following policy validations are performed for the display name and mail nickname properties:\r1.
-Validate the prefix and suffix naming policy\r2.
-Validate the custom banned words policy\r3.
+The following policy validations are performed for the display name and mail nickname properties:\r\n1.
+Validate the prefix and suffix naming policy\r\n2.
+Validate the custom banned words policy\r\n3.
 Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -94,7 +101,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -159,7 +166,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -180,7 +187,7 @@ HelpMessage: ''
 
 ### -EntityType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -264,7 +271,7 @@ HelpMessage: ''
 
 ### -MailNickname
 
-
+.
 
 ```yaml
 Type: System.String
@@ -285,7 +292,7 @@ HelpMessage: ''
 
 ### -OnBehalfOfUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -462,7 +469,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZahmwmContractsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZahmwmContractsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: 
   [EntityType <String>]: 
@@ -472,28 +479,5 @@ BODYPARAMETER `<IPathsZahmwmContractsMicrosoftGraphValidatepropertiesPostRequest
 
 ## RELATED LINKS
 
-- [Test-MgContractProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgcontractproperty)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgcontractproperty)
+- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)

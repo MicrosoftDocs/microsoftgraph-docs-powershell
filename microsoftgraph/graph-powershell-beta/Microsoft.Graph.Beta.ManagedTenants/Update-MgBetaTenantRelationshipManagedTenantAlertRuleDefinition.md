@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantalertruledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 02/20/2026
+ms.date: 04/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition
 ---
@@ -82,6 +82,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property managedTenantAlertRuleDefinitions in tenantRelationships
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -113,7 +123,7 @@ HelpMessage: ''
 
 ### -AlertRules
 
-
+.
 To construct, see NOTES section for ALERTRULES properties and create a hash table.
 
 ```yaml
@@ -212,7 +222,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -239,7 +249,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -294,7 +304,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -440,7 +450,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -467,7 +477,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -750,7 +760,7 @@ Read-only.
     [TenantId <String>]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>`: managedTenantAlertRuleDefinition
+BODYPARAMETER <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>: managedTenantAlertRuleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -840,11 +850,11 @@ Optional.
   [LastActionByUserId <String>]: 
   [LastActionDateTime <DateTime?>]: 
 
-DEFINITIONTEMPLATE `<IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>`: alertRuleDefinitionTemplate
+DEFINITIONTEMPLATE <IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>: alertRuleDefinitionTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultSeverity <String>]: alertSeverity
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -887,27 +897,4 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantalertruledefinition)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantalertruledefinition)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsiteonenotenotebooksectiongroupsectiontonotebook
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 02/20/2026
+ms.date: 04/17/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionToNotebook
 ---
@@ -15,9 +15,6 @@ title: Copy-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionToNotebook
 
 Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionToNotebook](/powershell/module/Microsoft.Graph.Sites/Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionToNotebook?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,6 +75,16 @@ This cmdlet has the following aliases,
 Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -109,7 +116,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -213,7 +220,7 @@ HelpMessage: ''
 
 ### -GroupId1
 
-
+.
 
 ```yaml
 Type: System.String
@@ -297,7 +304,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -469,7 +476,7 @@ HelpMessage: ''
 
 ### -RenameAs
 
-
+.
 
 ```yaml
 Type: System.String
@@ -545,7 +552,7 @@ HelpMessage: ''
 
 ### -SiteCollectionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -605,7 +612,7 @@ HelpMessage: ''
 
 ### -SiteId1
 
-
+.
 
 ```yaml
 Type: System.String
@@ -680,7 +687,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ob9E1QGroupsGroupIdSitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ob9E1QGroupsGroupIdSitesSiteIdOnenoteNotebooksNotebookIdSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupId <String>]: 
   [Id <String>]: 
@@ -688,7 +695,7 @@ BODYPARAMETER `<IPaths1Ob9E1QGroupsGroupIdSitesSiteIdOnenoteNotebooksNotebookIdS
   [SiteCollectionId <String>]: 
   [SiteId <String>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -753,28 +760,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Copy-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionToNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsiteonenotenotebooksectiongroupsectiontonotebook)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/section-copytonotebook?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsiteonenotenotebooksectiongroupsectiontonotebook)
+- [](https://learn.microsoft.com/graph/api/section-copytonotebook?view=graph-rest-beta)

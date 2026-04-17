@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 02/20/2026
+ms.date: 04/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessForwardingProfilePolicy
 ---
@@ -71,18 +71,9 @@ This cmdlet has the following aliases,
 Update an existing forwarding policy link to modify the association between a forwarding policy and a forwarding profile.
 This operation allows for linking or unlinking them as needed.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -92,10 +83,6 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessForwardingProfilePolicy -ForwardingProfileId $forwardingProfileId -PolicyLinkId $policyLinkId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaNetworkAccessForwardingProfilePolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -593,7 +580,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessPolicyLink>`: policyLink
+BODYPARAMETER <IMicrosoftGraphNetworkaccessPolicyLink>: policyLink
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -611,7 +598,7 @@ Read-only.
   [State <String>]: status
   [Version <String>]: Version.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -637,7 +624,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
   [Url <String>]: Usage: url='{url}'
 
-POLICY `<IMicrosoftGraphNetworkaccessPolicy>`: policy
+POLICY <IMicrosoftGraphNetworkaccessPolicy>: policy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -652,27 +639,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaNetworkAccessForwardingProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofilepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-forwardingpolicylink-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofilepolicy)
+- [](https://learn.microsoft.com/graph/api/networkaccess-forwardingpolicylink-update?view=graph-rest-beta)
