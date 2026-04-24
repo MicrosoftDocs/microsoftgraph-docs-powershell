@@ -68,8 +68,9 @@ The following options are available for creating an invitation:
 | Application | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Invite a guest user
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -80,7 +81,12 @@ $params = @{
 
 New-MgBetaInvitation -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will invite a guest user
+
+### Example 2: Reset the redemption status of a guest user
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -95,7 +101,12 @@ $params = @{
 
 New-MgBetaInvitation -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will reset the redemption status of a guest user
+
+### Example 2: Send CC email for a new invited user.
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -111,6 +122,8 @@ $InvitedUserMessageInfo = @{
 }
 
 New-MgBetaInvitation -InvitedUserDisplayName "User" -InvitedUserEmailAddress "user@logonaddress.com" -InviteRedirectUrl "https://myapplications.microsoft.com" -InvitedUserMessageInfo $InvitedUserMessageInfo -SendInvitationMessage -Debug
+```
+This example will send cc email to a new invited user
 
 ## PARAMETERS
 

@@ -86,8 +86,9 @@ The following derived subtypes are supported:\r- externalUsersSelfServiceSignupE
 | Application | EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update the display name of an external identities self-service sign-up user flow
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -98,7 +99,12 @@ $params = @{
 
 Update-MgIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update the display name of an external identities self-service sign-up user flow
+
+### Example 2: Update the page layout of a self-service sign up user flow
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -180,6 +186,10 @@ $params = @{
 }
 
 Update-MgIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example will update the page layout of a self-service sign up user flow
+
 
 ## PARAMETERS
 

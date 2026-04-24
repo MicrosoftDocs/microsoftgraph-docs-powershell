@@ -55,16 +55,6 @@ Get the properties and relationships of an application object.
 | Delegated (personal Microsoft account) | Application.Read.All, User.Read, Application.ReadWrite.All,  |
 | Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, AgentIdentityBlueprint.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -384,6 +374,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyuniquename)
 - [](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0)
+
 
 
 
