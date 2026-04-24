@@ -18642,7 +18642,7 @@ Defaults to setting on client device.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicehealthscriptdevicerunstate)
+- [New-MgBetaDeviceManagementDeviceHealthScriptDeviceRunState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicehealthscriptdevicerunstate)
 
 
 

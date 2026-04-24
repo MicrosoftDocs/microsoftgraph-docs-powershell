@@ -634,8 +634,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepage)
-- [](https://learn.microsoft.com/graph/api/sitepage-get?view=graph-rest-beta)
+- [Get-MgBetaSitePageAsSitePage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sitepage-get?view=graph-rest-beta)
 
 
 

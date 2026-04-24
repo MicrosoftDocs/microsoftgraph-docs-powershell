@@ -418,7 +418,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/import-mgbetadevicemanagementimporteddeviceidentitylist)
+- [Import-MgBetaDeviceManagementImportedDeviceIdentityList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/import-mgbetadevicemanagementimporteddeviceidentitylist)
 
 
 

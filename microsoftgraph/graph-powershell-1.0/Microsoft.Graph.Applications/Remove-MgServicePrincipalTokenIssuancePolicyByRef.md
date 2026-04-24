@@ -429,7 +429,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaltokenissuancepolicybyref)
+- [Remove-MgServicePrincipalTokenIssuancePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaltokenissuancepolicybyref)
 
 
 

@@ -511,7 +511,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermailfolderchildfoldermessagecontent)
+- [Set-MgUserMailFolderChildFolderMessageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermailfolderchildfoldermessagecontent)
 
 
 

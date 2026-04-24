@@ -522,7 +522,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinitionbot)
+- [Update-MgAppCatalogTeamAppDefinitionBot](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinitionbot)
 
 
 

@@ -545,8 +545,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentitycustomauthenticationextensionauthenticationconfiguration)
-- [](https://learn.microsoft.com/graph/api/customauthenticationextension-validateauthenticationconfiguration?view=graph-rest-1.0)
+- [Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentitycustomauthenticationextensionauthenticationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/customauthenticationextension-validateauthenticationconfiguration?view=graph-rest-1.0)
 
 
 

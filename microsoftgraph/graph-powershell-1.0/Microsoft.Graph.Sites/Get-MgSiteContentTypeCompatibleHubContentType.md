@@ -529,8 +529,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecompatiblehubcontenttype)
-- [](https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-1.0)
+- [Get-MgSiteContentTypeCompatibleHubContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecompatiblehubcontenttype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-1.0)
 
 
 

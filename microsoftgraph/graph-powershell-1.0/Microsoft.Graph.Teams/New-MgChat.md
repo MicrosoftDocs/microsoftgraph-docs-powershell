@@ -1591,8 +1591,8 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat)
-- [](https://learn.microsoft.com/graph/api/chat-post?view=graph-rest-1.0)
+- [New-MgChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post?view=graph-rest-1.0)
 
 
 

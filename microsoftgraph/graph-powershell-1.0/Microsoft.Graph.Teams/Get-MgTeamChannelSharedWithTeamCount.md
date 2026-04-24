@@ -402,7 +402,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteamcount)
+- [Get-MgTeamChannelSharedWithTeamCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteamcount)
 
 
 

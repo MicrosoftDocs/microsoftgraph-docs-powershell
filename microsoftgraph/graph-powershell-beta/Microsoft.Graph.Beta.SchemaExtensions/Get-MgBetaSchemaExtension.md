@@ -545,9 +545,9 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension)
-- [](https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-beta)
+- [Get-MgBetaSchemaExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-beta)
 
 
 

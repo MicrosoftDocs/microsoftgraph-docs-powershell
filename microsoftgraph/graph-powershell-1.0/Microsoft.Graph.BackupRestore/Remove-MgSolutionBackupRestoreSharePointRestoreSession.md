@@ -411,7 +411,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresharepointrestoresession)
+- [Remove-MgSolutionBackupRestoreSharePointRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresharepointrestoresession)
 
 
 

@@ -36005,7 +36005,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootanalytic)
+- [Update-MgBetaDriveRootAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootanalytic)
 
 
 

@@ -282,7 +282,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronymcount)
+- [Get-MgSearchAcronymCount](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronymcount)
 
 
 

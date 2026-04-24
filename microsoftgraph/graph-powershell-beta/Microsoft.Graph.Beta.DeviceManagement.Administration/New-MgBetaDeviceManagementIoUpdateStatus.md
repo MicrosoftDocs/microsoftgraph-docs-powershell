@@ -643,7 +643,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementioupdatestatus)
+- [New-MgBetaDeviceManagementIoUpdateStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementioupdatestatus)
 
 
 
