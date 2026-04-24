@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 04/24/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigur
 ## SYNOPSIS
 
 Update the properties of a certificateAuthorityDetail object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -83,18 +80,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a certificateAuthorityDetail object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PublicKeyInfrastructure.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PublicKeyInfrastructure.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -103,10 +91,6 @@ $params = @{
 }
 
 Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority -CertificateBasedAuthPkiId $certificateBasedAuthPkiId -CertificateAuthorityDetailId $certificateAuthorityDetailId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority Cmdlet.
-
 
 ## PARAMETERS
 
@@ -400,7 +384,7 @@ HelpMessage: ''
 
 ### -DeltaCertificateRevocationListUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -851,7 +835,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCertificateAuthorityDetail>`: certificateAuthorityDetail
+BODYPARAMETER <IMicrosoftGraphCertificateAuthorityDetail>: certificateAuthorityDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -873,7 +857,7 @@ Optional.
   [Thumbprint <String>]: The thumbprint of certificate authority certificate.
 Supports $filter (eq, startswith).
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -933,27 +917,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/certificateauthoritydetail-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
+- [](https://learn.microsoft.com/graph/api/certificateauthoritydetail-update?view=graph-rest-beta)

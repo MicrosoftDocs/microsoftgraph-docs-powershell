@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: 01eec85c-0aa5-4fef-a8de-b5f224bdb39b
+Module Guid: d1fb5e35-90d2-4be4-9530-f615e67812c7
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.security/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -156,6 +156,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSourceCount](Get-MgSecurityCaseEdiscoveryCaseCustodianUserSourceCount.md)
+
+### [Get-MgSecurityCaseEdiscoveryCaseMember](Get-MgSecurityCaseEdiscoveryCaseMember.md)
+
+### [Get-MgSecurityCaseEdiscoveryCaseMember](Get-MgSecurityCaseEdiscoveryCaseMember.md)
+
+### [Get-MgSecurityCaseEdiscoveryCaseMemberCount](Get-MgSecurityCaseEdiscoveryCaseMemberCount.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
@@ -701,6 +707,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgSecurityCaseEdiscoveryCaseCustodianUserSource](New-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
 
+### [New-MgSecurityCaseEdiscoveryCaseMember](New-MgSecurityCaseEdiscoveryCaseMember.md)
+
 ### [New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
 ### [New-MgSecurityCaseEdiscoveryCaseOperation](New-MgSecurityCaseEdiscoveryCaseOperation.md)
@@ -838,6 +846,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource.md)
 
 ### [Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
+
+### [Remove-MgSecurityCaseEdiscoveryCaseMember](Remove-MgSecurityCaseEdiscoveryCaseMember.md)
 
 ### [Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
@@ -1003,6 +1013,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Update-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
 
+### [Update-MgSecurityCaseEdiscoveryCaseMember](Update-MgSecurityCaseEdiscoveryCaseMember.md)
+
 ### [Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
 ### [Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex](Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex.md)
@@ -1122,23 +1134,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityTriggerType](Update-MgSecurityTriggerType.md)
 
 ### [Update-MgSecurityTriggerTypeRetentionEventType](Update-MgSecurityTriggerTypeRetentionEventType.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

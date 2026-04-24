@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicyapplyto
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 04/24/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPolicyFeatureRolloutPolicyApplyTo
 ---
@@ -15,9 +15,6 @@ title: Get-MgPolicyFeatureRolloutPolicyApplyTo
 
 Nullable.
 Specifies a list of directoryObject resources that feature is enabled for.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,6 +39,16 @@ This cmdlet has the following aliases,
 
 Nullable.
 Specifies a list of directoryObject resources that feature is enabled for.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -474,27 +481,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgPolicyFeatureRolloutPolicyApplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicyapplyto)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicyapplyto)

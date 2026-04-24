@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetareopencomplianceediscoverycase
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 02/20/2026
+ms.date: 04/24/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReopenComplianceEdiscoveryCase
 ---
@@ -48,26 +48,13 @@ This cmdlet has the following aliases,
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
 Invoke-MgBetaReopenComplianceEdiscoveryCase -CaseId $caseId
-
-```
-This example shows how to use the Invoke-MgBetaReopenComplianceEdiscoveryCase Cmdlet.
-
 
 ## PARAMETERS
 
@@ -378,7 +365,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -401,27 +388,5 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaReopenComplianceEdiscoveryCase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetareopencomplianceediscoverycase)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-case-reopen?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetareopencomplianceediscoverycase)
+- [](https://learn.microsoft.com/graph/api/ediscovery-case-reopen?view=graph-rest-beta)

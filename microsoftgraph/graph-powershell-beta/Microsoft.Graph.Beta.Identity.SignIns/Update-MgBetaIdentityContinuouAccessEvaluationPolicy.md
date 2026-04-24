@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 04/24/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityContinuouAccessEvaluationPolicy
 ---
@@ -48,18 +48,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a continuousAccessEvaluationPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Application.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -69,10 +60,6 @@ $params = @{
 }
 
 Update-MgBetaIdentityContinuouAccessEvaluationPolicy -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -517,7 +504,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphContinuousAccessEvaluationPolicy>`: continuousAccessEvaluationPolicy
+BODYPARAMETER <IMicrosoftGraphContinuousAccessEvaluationPolicy>: continuousAccessEvaluationPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -538,27 +525,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityContinuouAccessEvaluationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy)
+- [](https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta)

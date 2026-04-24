@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 04/24/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryCustomSecurityAttributeDefinition
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDirectoryCustomSecurityAttributeDefinition
 ## SYNOPSIS
 
 Create a new customSecurityAttributeDefinition object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 
 Create a new customSecurityAttributeDefinition object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CustomSecAttributeDefinition.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CustomSecAttributeDefinition.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Add a custom security attribute
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -80,12 +68,7 @@ $params = @{
 
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 
-```
-This example will add a custom security attribute
-
-### Example 2: Add a custom security attribute that supports multiple predefined values
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -102,12 +85,7 @@ $params = @{
 
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 
-```
-This example will add a custom security attribute that supports multiple predefined values
-
-### Example 3: Add a custom security attribute with a list of predefined values
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -137,10 +115,6 @@ $params = @{
 }
 
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
-
-```
-This example will add a custom security attribute with a list of predefined values
-
 
 ## PARAMETERS
 
@@ -670,7 +644,7 @@ Read-only.
   [IsActive <Boolean?>]: Indicates whether the predefined value is active or deactivated.
 If set to false, this predefined value can't be assigned to any more supported directory objects.
 
-BODYPARAMETER `<IMicrosoftGraphCustomSecurityAttributeDefinition>`: customSecurityAttributeDefinition
+BODYPARAMETER <IMicrosoftGraphCustomSecurityAttributeDefinition>: customSecurityAttributeDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -711,27 +685,5 @@ If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryCustomSecurityAttributeDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-post-customsecurityattributedefinitions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition)
+- [](https://learn.microsoft.com/graph/api/directory-post-customsecurityattributedefinitions?view=graph-rest-beta)

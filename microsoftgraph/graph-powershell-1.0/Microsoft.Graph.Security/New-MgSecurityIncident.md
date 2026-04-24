@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 04/24/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityIncident
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityIncident
 ## SYNOPSIS
 
 Create new navigation property to incidents for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,6 +51,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to incidents for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -486,7 +493,9 @@ HelpMessage: ''
 
 ### -PriorityScore
 
-
+A priority score for the incident from 0 to 100, with > 85 being the top priority, 15 - 85 medium priority, and < 15 low priority.
+This score is generated using machine learning and is based on multiple factors, including severity, disruption impact, threat intelligence, alert types, asset criticality, threat analytics, incident rarity, and additional priority signals.
+The value can also be null which indicates the feature is not open for the tenant or the value of the score is pending calculation.
 
 ```yaml
 Type: System.Int32
@@ -846,7 +855,7 @@ Values are free-form.
   [ThreatFamilyName <String>]: Threat family associated with this alert.
   [Title <String>]: Brief identifying string value describing the alert.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
+BODYPARAMETER <IMicrosoftGraphSecurityIncident>: incident
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -915,7 +924,9 @@ Free editable text.
   [IncidentWebUrl <String>]: The URL for the incident page in the Microsoft 365 Defender portal.
   [LastModifiedBy <String>]: The identity that last modified the incident.
   [LastUpdateDateTime <DateTime?>]: Time when the incident was last updated.
-  [PriorityScore <Int32?>]: 
+  [PriorityScore <Int32?>]: A priority score for the incident from 0 to 100, with > 85 being the top priority, 15 - 85 medium priority, and < 15 low priority.
+This score is generated using machine learning and is based on multiple factors, including severity, disruption impact, threat intelligence, alert types, asset criticality, threat analytics, incident rarity, and additional priority signals.
+The value can also be null which indicates the feature is not open for the tenant or the value of the score is pending calculation.
   [RedirectIncidentId <String>]: Only populated in case an incident is grouped with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
   [ResolvingComment <String>]: User input that explains the resolution of the incident and the classification choice.
@@ -935,27 +946,4 @@ COMMENTS <IMicrosoftGraphSecurityAlertComment[]>: Array of comments created by t
 
 ## RELATED LINKS
 
-- [New-MgSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident)

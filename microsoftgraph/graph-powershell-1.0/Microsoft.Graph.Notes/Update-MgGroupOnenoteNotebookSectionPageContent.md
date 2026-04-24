@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotenotebooksectionpagecontent
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 02/20/2026
+ms.date: 04/24/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupOnenoteNotebookSectionPageContent
 ---
@@ -14,9 +14,6 @@ title: Update-MgGroupOnenoteNotebookSectionPageContent
 ## SYNOPSIS
 
 Invoke action onenotePatchContent
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupOnenoteNotebookSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaGroupOnenoteNotebookSectionPageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,6 +72,16 @@ This cmdlet has the following aliases,
 
 Invoke action onenotePatchContent
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -106,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -155,7 +162,7 @@ HelpMessage: ''
 
 ### -Commands
 
-
+.
 To construct, see NOTES section for COMMANDS properties and create a hash table.
 
 ```yaml
@@ -564,7 +571,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1QdzbqtGroupsGroupIdOnenoteNotebooksNotebookIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1QdzbqtGroupsGroupIdOnenoteNotebooksNotebookIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Commands <IMicrosoftGraphOnenotePatchContentCommand[]>]: 
     [Action <String>]: onenotePatchActionType
@@ -572,7 +579,7 @@ BODYPARAMETER `<IPaths1QdzbqtGroupsGroupIdOnenoteNotebooksNotebookIdSectionsOnen
 If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
     [Position <String>]: onenotePatchInsertPosition
     [Target <String>]: The element to update.
-Must be the #`<data-id>` or the generated `<id>` of the element, or the body or title keyword.
+Must be the #<data-id> or the generated <id> of the element, or the body or title keyword.
 
 COMMANDS <IMicrosoftGraphOnenotePatchContentCommand[]>: .
   [Action <String>]: onenotePatchActionType
@@ -580,9 +587,9 @@ COMMANDS <IMicrosoftGraphOnenotePatchContentCommand[]>: .
 If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
   [Position <String>]: onenotePatchInsertPosition
   [Target <String>]: The element to update.
-Must be the #`<data-id>` or the generated `<id>` of the element, or the body or title keyword.
+Must be the #<data-id> or the generated <id> of the element, or the body or title keyword.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -599,27 +606,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgGroupOnenoteNotebookSectionPageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotenotebooksectionpagecontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotenotebooksectionpagecontent)
