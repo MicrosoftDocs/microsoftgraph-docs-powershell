@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuser
@@ -1452,7 +1452,7 @@ If the value is null, the student uploaded the resource.
     [SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]: 
     [UnsubmittedBy <IMicrosoftGraphIdentitySet>]: identitySet
 
-BODYPARAMETER <IMicrosoftGraphEducationUser>: educationUser
+BODYPARAMETER `<IMicrosoftGraphEducationUser>`: educationUser
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2646,7 +2646,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -6524,8 +6524,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -8156,7 +8156,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -12034,8 +12034,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -12503,7 +12503,7 @@ Nullable.
     [ExternalId <String>]: ID of term in the syncing system.
     [StartDate <DateTime?>]: Start of the term.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -12514,7 +12514,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-MAILINGADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
+MAILINGADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -12523,11 +12523,11 @@ It's a free-format string value, for example, 'United States'.
   [State <String>]: The state.
   [Street <String>]: The street.
 
-ONPREMISESINFO <IMicrosoftGraphEducationOnPremisesInfo>: educationOnPremisesInfo
+ONPREMISESINFO `<IMicrosoftGraphEducationOnPremisesInfo>`: educationOnPremisesInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ImmutableId <String>]: Unique identifier for the user object in Active Directory.
 
-PASSWORDPROFILE <IMicrosoftGraphPasswordProfile>: passwordProfile
+PASSWORDPROFILE `<IMicrosoftGraphPasswordProfile>`: passwordProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ForceChangePasswordNextSignIn <Boolean?>]: true if the user must change their password on the next sign-in; otherwise false.
   [ForceChangePasswordNextSignInWithMfa <Boolean?>]: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
@@ -12559,7 +12559,7 @@ Required.
   [MobilePhone <String>]: Mobile phone number of the contact.
   [Relationship <String>]: contactRelationship
 
-RESIDENCEADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
+RESIDENCEADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -13827,7 +13827,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -17700,8 +17700,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -18128,7 +18128,7 @@ Nullable.
   [Users <IMicrosoftGraphEducationUser[]>]: Users in the school.
 Nullable.
 
-STUDENT <IMicrosoftGraphEducationStudent>: educationStudent
+STUDENT `<IMicrosoftGraphEducationStudent>`: educationStudent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BirthDate <DateTime?>]: Birth date of the student.
   [ExternalId <String>]: ID of the student in the source system.
@@ -19314,7 +19314,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -23192,8 +23192,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -23661,12 +23661,12 @@ Nullable.
     [ExternalId <String>]: ID of term in the syncing system.
     [StartDate <DateTime?>]: Start of the term.
 
-TEACHER <IMicrosoftGraphEducationTeacher>: educationTeacher
+TEACHER `<IMicrosoftGraphEducationTeacher>`: educationTeacher
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExternalId <String>]: ID of the teacher in the source system.
   [TeacherNumber <String>]: Teacher number.
 
-USER <IMicrosoftGraphUser>: Represents a Microsoft Entra user account.
+USER `<IMicrosoftGraphUser>`: Represents a Microsoft Entra user account.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -24551,7 +24551,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -28833,8 +28833,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -28849,3 +28849,25 @@ NOTE: For more information about the permissions for members and guests, see Wha
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuser)
 - [](https://learn.microsoft.com/graph/api/educationuser-post?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

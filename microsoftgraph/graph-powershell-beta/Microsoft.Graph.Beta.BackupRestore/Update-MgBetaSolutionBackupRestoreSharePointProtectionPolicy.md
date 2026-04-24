@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointprotectionpolicy
@@ -899,7 +899,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSharePointProtectionPolicy>: sharePointProtectionPolicy
+BODYPARAMETER `<IMicrosoftGraphSharePointProtectionPolicy>`: sharePointProtectionPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BillingPolicyId <String>]: 
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -988,7 +988,7 @@ Read-only.
     [SiteIds <String[]>]: The list of SharePoint site IDs to add to the SharePoint protection policy.
     [SiteWebUrls <String[]>]: The list of SharePoint site URLs to add to the SharePoint protection policy.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1000,7 +1000,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
+INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -1035,7 +1035,7 @@ INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
   [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1047,7 +1047,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PROTECTIONPOLICYARTIFACTCOUNT <IMicrosoftGraphProtectionPolicyArtifactCount>: protectionPolicyArtifactCount
+PROTECTIONPOLICYARTIFACTCOUNT `<IMicrosoftGraphProtectionPolicyArtifactCount>`: protectionPolicyArtifactCount
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Completed <Int32?>]: The number of artifacts whose protection is completed.
   [Failed <Int32?>]: The number of artifacts whose protection failed.
@@ -1175,3 +1175,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointprotectionpolicy)
 - [](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
