@@ -60,16 +60,6 @@ Read-only.
 | Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
 | Application | Tasks.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AttachmentBaseId
@@ -501,6 +491,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskattachmentcontent)
+
 
 
 

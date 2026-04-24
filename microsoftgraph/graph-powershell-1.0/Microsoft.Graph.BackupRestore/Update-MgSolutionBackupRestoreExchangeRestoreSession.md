@@ -85,16 +85,6 @@ This cmdlet has the following aliases,
 
 Update the properties of an exchangeRestoreSession.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1175,6 +1165,7 @@ RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: rest
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangerestoresession)
 - [](https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-1.0)
+
 
 
 
