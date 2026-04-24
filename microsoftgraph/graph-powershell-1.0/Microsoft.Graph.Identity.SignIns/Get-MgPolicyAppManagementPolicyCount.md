@@ -15,6 +15,9 @@ title: Get-MgPolicyAppManagementPolicyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAppManagementPolicyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAppManagementPolicyCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

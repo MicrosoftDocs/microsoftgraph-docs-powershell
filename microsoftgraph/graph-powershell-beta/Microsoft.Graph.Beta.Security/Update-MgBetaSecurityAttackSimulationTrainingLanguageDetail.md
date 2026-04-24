@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail
 
 Update the navigation property languageDetails in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -17,6 +17,9 @@ Get a list of the group's direct members.
 A group can have users, organizational contacts, devices, service principals and other groups as members.
 This operation is not transitive.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

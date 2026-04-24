@@ -16,6 +16,9 @@ title: Get-MgPlaceAsDesk
 Get a collection of the specified type of place objects defined in a tenant.
 You can do the following for a given tenant:\r- List all buildings.\r- List all floors.\r- List all sections.\r- List all desks.\r- List all rooms.\r- List all workspaces.\r- List all room lists.\r- List rooms in a specific room list.\r- List workspaces in a specific room list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsDesk](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsDesk?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

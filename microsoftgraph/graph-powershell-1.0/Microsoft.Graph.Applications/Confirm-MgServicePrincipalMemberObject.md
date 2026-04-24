@@ -15,6 +15,9 @@ title: Confirm-MgServicePrincipalMemberObject
 
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaServicePrincipalMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaServicePrincipalMemberObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)

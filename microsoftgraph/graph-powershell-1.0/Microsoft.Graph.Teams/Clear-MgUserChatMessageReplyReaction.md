@@ -15,6 +15,9 @@ title: Clear-MgUserChatMessageReplyReaction
 
 Invoke action unsetReaction
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaUserChatMessageReplyReaction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UnsetExpanded (Default)

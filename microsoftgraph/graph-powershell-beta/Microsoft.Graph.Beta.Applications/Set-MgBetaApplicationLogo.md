@@ -16,6 +16,9 @@ title: Set-MgBetaApplicationLogo
 The main logo for the application.
 Not nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgApplicationLogo](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationLogo?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
