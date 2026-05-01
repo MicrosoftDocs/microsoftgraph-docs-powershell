@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference
@@ -612,7 +612,7 @@ Required.
     [StartTime <String>]: Start time for the time range.
   [TimeZone <String>]: Specifies the time zone for the indicated time.
 
-BODYPARAMETER <IMicrosoftGraphShiftPreferences>: shiftPreferences
+BODYPARAMETER `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -665,7 +665,7 @@ Required.
       [StartTime <String>]: Start time for the time range.
     [TimeZone <String>]: Specifies the time zone for the indicated time.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -676,7 +676,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -703,7 +703,7 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -719,3 +719,25 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference)
 - [](https://learn.microsoft.com/graph/api/shiftpreferences-put?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

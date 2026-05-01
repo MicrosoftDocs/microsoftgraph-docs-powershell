@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationphonemethod
@@ -591,7 +591,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphPhoneAuthenticationMethod>: phoneAuthenticationMethod
+BODYPARAMETER `<IMicrosoftGraphPhoneAuthenticationMethod>`: phoneAuthenticationMethod
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
 Read-only.
@@ -604,7 +604,7 @@ Numbers are rejected when creating or updating if they don't match the required 
   [PhoneType <String>]: authenticationPhoneType
   [SmsSignInState <String>]: authenticationMethodSignInState
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -675,3 +675,25 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationphonemethod)
 - [](https://learn.microsoft.com/graph/api/authentication-post-phonemethods?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
