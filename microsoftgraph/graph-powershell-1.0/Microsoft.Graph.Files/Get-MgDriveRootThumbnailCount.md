@@ -362,7 +362,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootthumbnailcount)
+- [Get-MgDriveRootThumbnailCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootthumbnailcount)
 
 
 

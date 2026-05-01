@@ -436,7 +436,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbrandinglocalizationfavicon)
+- [Remove-MgOrganizationBrandingLocalizationFavicon](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbrandinglocalizationfavicon)
 
 
 

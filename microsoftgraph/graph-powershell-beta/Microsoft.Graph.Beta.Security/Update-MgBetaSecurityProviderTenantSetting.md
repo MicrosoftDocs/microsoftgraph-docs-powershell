@@ -702,7 +702,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityprovidertenantsetting)
+- [Update-MgBetaSecurityProviderTenantSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityprovidertenantsetting)
 
 
 

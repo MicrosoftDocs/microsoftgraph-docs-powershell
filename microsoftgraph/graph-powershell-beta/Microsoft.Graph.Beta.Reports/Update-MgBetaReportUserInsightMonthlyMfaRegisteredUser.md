@@ -600,7 +600,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightmonthlymfaregistereduser)
+- [Update-MgBetaReportUserInsightMonthlyMfaRegisteredUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightmonthlymfaregistereduser)
 
 
 

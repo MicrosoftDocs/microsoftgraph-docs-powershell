@@ -1005,7 +1005,7 @@ PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactbulkadditionrequest)
+- [Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactbulkadditionrequest)
 
 
 

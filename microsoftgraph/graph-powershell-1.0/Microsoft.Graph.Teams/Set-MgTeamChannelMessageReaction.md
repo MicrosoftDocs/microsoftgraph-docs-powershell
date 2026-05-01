@@ -577,7 +577,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamchannelmessagereaction)
+- [Set-MgTeamChannelMessageReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamchannelmessagereaction)
 
 
 

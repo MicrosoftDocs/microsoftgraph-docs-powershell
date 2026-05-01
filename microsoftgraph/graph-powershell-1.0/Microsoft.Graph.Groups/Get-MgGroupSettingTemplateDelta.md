@@ -457,8 +457,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatedelta)
-- [](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0)
+- [Get-MgGroupSettingTemplateDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatedelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0)
 
 
 

@@ -1178,7 +1178,7 @@ Title of the plan.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerroster)
+- [Update-MgBetaPlannerRoster](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerroster)
 
 
 

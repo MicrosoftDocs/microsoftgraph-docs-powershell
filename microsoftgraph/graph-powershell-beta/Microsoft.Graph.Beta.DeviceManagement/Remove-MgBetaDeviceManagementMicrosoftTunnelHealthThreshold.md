@@ -497,7 +497,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmicrosofttunnelhealththreshold)
+- [Remove-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmicrosofttunnelhealththreshold)
 
 
 
