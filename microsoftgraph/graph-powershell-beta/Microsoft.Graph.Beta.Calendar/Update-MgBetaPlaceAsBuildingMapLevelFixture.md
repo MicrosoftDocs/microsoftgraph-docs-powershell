@@ -70,16 +70,6 @@ This cmdlet has the following aliases,
 
 Update the properties of an existing fixtureMap object in IMDF format on a specified floor, or create one if it doesn't exist.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -609,6 +599,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasbuildingmaplevelfixture)
 - [](https://learn.microsoft.com/graph/api/fixturemap-update?view=graph-rest-beta)
+
 
 
 

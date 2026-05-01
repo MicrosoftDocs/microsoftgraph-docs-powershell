@@ -61,8 +61,9 @@ Computes the rights and inheritance for sensitivity labels based on the input co
 | Application | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -80,6 +81,10 @@ $params = @{
 }
 
 Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel Cmdlet.
+
 
 ## PARAMETERS
 

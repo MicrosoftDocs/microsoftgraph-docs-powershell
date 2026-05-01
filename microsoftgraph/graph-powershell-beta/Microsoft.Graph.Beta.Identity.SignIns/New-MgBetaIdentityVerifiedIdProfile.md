@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Create a new verifiedIdProfile object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -629,6 +619,7 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityverifiedidprofile)
 - [](https://learn.microsoft.com/graph/api/identityverifiedidroot-post-profiles?view=graph-rest-beta)
+
 
 
 

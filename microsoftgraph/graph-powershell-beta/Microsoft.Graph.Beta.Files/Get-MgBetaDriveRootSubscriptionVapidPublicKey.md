@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Get the public key information required to validate push notifications according to RFC 8292 specifications.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -330,6 +320,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootsubscriptionvapidpublickey)
 - [](https://learn.microsoft.com/graph/api/subscription-getvapidpublickey?view=graph-rest-beta)
+
 
 
 

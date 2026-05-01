@@ -78,16 +78,6 @@ Update the properties of a b2bManagementPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.B2BManagementPolicy,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -752,6 +742,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2bmanagementpolicy)
 - [](https://learn.microsoft.com/graph/api/b2bmanagementpolicy-update?view=graph-rest-beta)
+
 
 
 

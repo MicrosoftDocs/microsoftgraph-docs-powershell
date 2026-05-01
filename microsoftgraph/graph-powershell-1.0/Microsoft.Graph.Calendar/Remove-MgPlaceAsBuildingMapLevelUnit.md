@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Delete a unitMap object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -456,6 +446,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasbuildingmaplevelunit)
 - [](https://learn.microsoft.com/graph/api/unitmap-delete?view=graph-rest-1.0)
+
 
 
 

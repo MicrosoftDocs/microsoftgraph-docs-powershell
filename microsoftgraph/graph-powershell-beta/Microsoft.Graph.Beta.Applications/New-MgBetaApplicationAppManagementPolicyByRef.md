@@ -86,8 +86,9 @@ Only one policy object can be assigned to an application or service principal.
 | Application | Application.Read.All, Policy.ReadWrite.ApplicationConfiguration, Policy.Read.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -96,6 +97,10 @@ $params = @{
 }
 
 New-MgBetaApplicationAppManagementPolicyByRef -ApplicationId $applicationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaApplicationAppManagementPolicyByRef Cmdlet.
+
 
 ## PARAMETERS
 
