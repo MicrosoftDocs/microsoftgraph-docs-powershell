@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroup
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 05/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroup
 ---
@@ -13,12 +13,9 @@ title: Update-MgGroup
 
 ## SYNOPSIS
 
-Create a new group object if it doesn't exist, or update the properties of an existing group object.\rYou can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
+Create a new group object if it doesn't exist, or update the properties of an existing group object.\r\nYou can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
 For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,7 +52,8 @@ Update-MgGroup -GroupId <string> [-ResponseHeadersVariable <string>]
  [-Planner <IMicrosoftGraphPlannerGroup>] [-PreferredDataLocation <string>]
  [-PreferredLanguage <string>] [-ProxyAddresses <string[]>]
  [-RejectedSenders <IMicrosoftGraphDirectoryObject[]>] [-RenewedDateTime <datetime>]
- [-SecurityEnabled] [-SecurityIdentifier <string>]
+ [-ResourceBehaviorOptions <string[]>] [-ResourceProvisioningOptions <string[]>] [-SecurityEnabled]
+ [-SecurityIdentifier <string>]
  [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>]
  [-Settings <IMicrosoftGraphGroupSetting[]>] [-Sites <IMicrosoftGraphSite[]>]
  [-Team <IMicrosoftGraphTeam>] [-Theme <string>] [-Threads <IMicrosoftGraphConversationThread[]>]
@@ -109,7 +107,8 @@ Update-MgGroup -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <string>
  [-Planner <IMicrosoftGraphPlannerGroup>] [-PreferredDataLocation <string>]
  [-PreferredLanguage <string>] [-ProxyAddresses <string[]>]
  [-RejectedSenders <IMicrosoftGraphDirectoryObject[]>] [-RenewedDateTime <datetime>]
- [-SecurityEnabled] [-SecurityIdentifier <string>]
+ [-ResourceBehaviorOptions <string[]>] [-ResourceProvisioningOptions <string[]>] [-SecurityEnabled]
+ [-SecurityIdentifier <string>]
  [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>]
  [-Settings <IMicrosoftGraphGroupSetting[]>] [-Sites <IMicrosoftGraphSite[]>]
  [-Team <IMicrosoftGraphTeam>] [-Theme <string>] [-Threads <IMicrosoftGraphConversationThread[]>]
@@ -137,32 +136,20 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new group object if it doesn't exist, or update the properties of an existing group object.\rYou can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
+Create a new group object if it doesn't exist, or update the properties of an existing group object.\r\nYou can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
 For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Update the properties of a group
 
-```powershell
+### EXAMPLE 1
+
 $GroupUpdate= @{
   "Description"= "This is a test group"
   "DisplayName"= "Test Group 1"
 
 Update-MgGroup -GroupId '74a7bfca-7fbc-4a67-b4bb-3ef115b114f1' 
   -BodyParameter $GroupUpdate
-```
-
-In this example, the first command defines a list of all properties that need to be updated and assign then the new values in the variable $GroupUpdate .
-The second command updates the properties of the group specified by the GroupId.
 
 ## PARAMETERS
 
@@ -1854,7 +1841,7 @@ HelpMessage: ''
 
 ### -PermissionGrants
 
-
+.
 To construct, see NOTES section for PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
@@ -2164,6 +2151,60 @@ Read-only.
 
 ```yaml
 Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ResourceBehaviorOptions
+
+.
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ResourceProvisioningOptions
+
+.
+
+```yaml
+Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -2700,7 +2741,7 @@ IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus
   [SkuId <String>]: The unique identifier for the SKU.
 Corresponds to the skuId from subscribedSkus or companySubscription.
 
-BODYPARAMETER `<IMicrosoftGraphGroup>`: Represents a Microsoft Entra group.
+BODYPARAMETER <IMicrosoftGraphGroup>: Represents a Microsoft Entra group.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -3320,27 +3361,39 @@ For a complete list of GUIDs and their equivalent friendly service names, see Pr
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [EmailMethods <IMicrosoftGraphEmailAuthenticationMethod[]>]: The email address registered to a user for authentication.
+          [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [EmailAddress <String>]: The email address registered to this user.
+        [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external authentication methods registered to a user for authentication using an external identity provider.
+          [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
+          [DisplayName <String>]: Custom name given to the registered external authentication method.
         [Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]: Represents the FIDO2 security keys registered to a user for authentication.
+          [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (e.g.
 make and model) of the authenticator.
           [AttestationCertificates <String[]>]: The attestation certificate(s) attached to this security key.
           [AttestationLevel <String>]: attestationLevel
-          [CreatedDateTime <DateTime?>]: The timestamp when this key was registered to the user.
           [DisplayName <String>]: The display name of the key as given by the user.
           [Model <String>]: The manufacturer-assigned model of the FIDO2 security key.
         [Methods <IMicrosoftGraphAuthenticationMethod[]>]: Represents all authentication methods registered to a user.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
+          [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
+          [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
-          [CreatedDateTime <DateTime?>]: The date and time that this app was registered.
-This property is null if the device isn't registered for passwordless Phone Sign-In.
           [Device <IMicrosoftGraphDevice>]: device
             [(Any) <Object>]: This indicates any property can be added to this object.
             [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -3481,15 +3534,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [StatusDetail <String>]: Details about the status of the operation.
         [PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod[]>]: Represents the password registered to a user for authentication.
 For security, the password itself is never returned in the object, but action can be taken to reset a password.
+          [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
-          [CreatedDateTime <DateTime?>]: The date and time when this password was last updated.
-This property is currently not populated.
-Read-only.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
         [PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]: The phone numbers registered to a user for authentication.
+          [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -3499,22 +3551,26 @@ Numbers are rejected when creating or updating if they don't match the required 
           [PhoneType <String>]: authenticationPhoneType
           [SmsSignInState <String>]: authenticationMethodSignInState
         [PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod[]>]: Represents a platform credential instance registered to a user on Mac OS.
+          [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
-          [CreatedDateTime <DateTime?>]: The date and time that this Platform Credential Key was registered.
           [Device <IMicrosoftGraphDevice>]: device
           [DisplayName <String>]: The name of the device on which Platform Credential is registered.
           [KeyStrength <String>]: authenticationMethodKeyStrength
           [Platform <String>]: authenticationMethodPlatform
         [SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]: The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+          [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [SecretKey <String>]: The secret key of the method.
 Always returns null.
         [TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+          [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
-          [CreatedDateTime <DateTime?>]: The date and time when the Temporary Access Pass was created.
           [IsUsable <Boolean?>]: The state of the authentication method that indicates whether it's currently usable by the user.
           [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
@@ -3526,9 +3582,10 @@ Reasons can include: EnabledByPolicy, DisabledByPolicy, Expired, NotYetValid, On
           [TemporaryAccessPass <String>]: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
         [WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod[]>]: Represents the Windows Hello for Business authentication method registered to a user for authentication.
+          [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
-          [CreatedDateTime <DateTime?>]: The date and time that this Windows Hello for Business key was registered.
           [Device <IMicrosoftGraphDevice>]: device
           [DisplayName <String>]: The name of the device on which Windows Hello for Business is registered
           [KeyStrength <String>]: authenticationMethodKeyStrength
@@ -3696,7 +3753,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -7574,8 +7631,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -7812,6 +7869,8 @@ For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in).
 Read-only.
+  [ResourceBehaviorOptions <String[]>]: 
+  [ResourceProvisioningOptions <String[]>]: 
   [SecurityEnabled <Boolean?>]: Specifies whether the group is a security group.
 Required.
 Returned by default.
@@ -7860,7 +7919,7 @@ To learn more, see group visibility options.
 Returned by default.
 Nullable.
 
-CALENDAR `<IMicrosoftGraphCalendar>`: calendar
+CALENDAR <IMicrosoftGraphCalendar>: calendar
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -8467,14 +8526,14 @@ Returned by default.
 This property can be set when the conversation is created, but it cannot be updated.
   [UniqueSenders <String[]>]: All the users that sent a message to this Conversation.
 
-CREATEDONBEHALFOF `<IMicrosoftGraphDirectoryObject>`: directoryObject
+CREATEDONBEHALFOF <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-DRIVE `<IMicrosoftGraphDrive>`: drive
+DRIVE <IMicrosoftGraphDrive>: drive
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -8714,27 +8773,39 @@ For a complete list of GUIDs and their equivalent friendly service names, see Pr
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [EmailMethods <IMicrosoftGraphEmailAuthenticationMethod[]>]: The email address registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [EmailAddress <String>]: The email address registered to this user.
+      [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external authentication methods registered to a user for authentication using an external identity provider.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
+        [DisplayName <String>]: Custom name given to the registered external authentication method.
       [Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]: Represents the FIDO2 security keys registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (e.g.
 make and model) of the authenticator.
         [AttestationCertificates <String[]>]: The attestation certificate(s) attached to this security key.
         [AttestationLevel <String>]: attestationLevel
-        [CreatedDateTime <DateTime?>]: The timestamp when this key was registered to the user.
         [DisplayName <String>]: The display name of the key as given by the user.
         [Model <String>]: The manufacturer-assigned model of the FIDO2 security key.
       [Methods <IMicrosoftGraphAuthenticationMethod[]>]: Represents all authentication methods registered to a user.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
       [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time that this app was registered.
-This property is null if the device isn't registered for passwordless Phone Sign-In.
         [Device <IMicrosoftGraphDevice>]: device
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -8881,15 +8952,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [StatusDetail <String>]: Details about the status of the operation.
       [PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod[]>]: Represents the password registered to a user for authentication.
 For security, the password itself is never returned in the object, but action can be taken to reset a password.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time when this password was last updated.
-This property is currently not populated.
-Read-only.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
       [PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]: The phone numbers registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -8899,22 +8969,26 @@ Numbers are rejected when creating or updating if they don't match the required 
         [PhoneType <String>]: authenticationPhoneType
         [SmsSignInState <String>]: authenticationMethodSignInState
       [PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod[]>]: Represents a platform credential instance registered to a user on Mac OS.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time that this Platform Credential Key was registered.
         [Device <IMicrosoftGraphDevice>]: device
         [DisplayName <String>]: The name of the device on which Platform Credential is registered.
         [KeyStrength <String>]: authenticationMethodKeyStrength
         [Platform <String>]: authenticationMethodPlatform
       [SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]: The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [SecretKey <String>]: The secret key of the method.
 Always returns null.
       [TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time when the Temporary Access Pass was created.
         [IsUsable <Boolean?>]: The state of the authentication method that indicates whether it's currently usable by the user.
         [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
@@ -8926,9 +9000,10 @@ Reasons can include: EnabledByPolicy, DisabledByPolicy, Expired, NotYetValid, On
         [TemporaryAccessPass <String>]: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
       [WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod[]>]: Represents the Windows Hello for Business authentication method registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time that this Windows Hello for Business key was registered.
         [Device <IMicrosoftGraphDevice>]: device
         [DisplayName <String>]: The name of the device on which Windows Hello for Business is registered
         [KeyStrength <String>]: authenticationMethodKeyStrength
@@ -9346,7 +9421,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -11844,6 +11919,8 @@ For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in).
 Read-only.
+        [ResourceBehaviorOptions <String[]>]: 
+        [ResourceProvisioningOptions <String[]>]: 
         [SecurityEnabled <Boolean?>]: Specifies whether the group is a security group.
 Required.
 Returned by default.
@@ -13570,8 +13647,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -13874,27 +13951,39 @@ For a complete list of GUIDs and their equivalent friendly service names, see Pr
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [EmailMethods <IMicrosoftGraphEmailAuthenticationMethod[]>]: The email address registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [EmailAddress <String>]: The email address registered to this user.
+      [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external authentication methods registered to a user for authentication using an external identity provider.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
+        [DisplayName <String>]: Custom name given to the registered external authentication method.
       [Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]: Represents the FIDO2 security keys registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (e.g.
 make and model) of the authenticator.
         [AttestationCertificates <String[]>]: The attestation certificate(s) attached to this security key.
         [AttestationLevel <String>]: attestationLevel
-        [CreatedDateTime <DateTime?>]: The timestamp when this key was registered to the user.
         [DisplayName <String>]: The display name of the key as given by the user.
         [Model <String>]: The manufacturer-assigned model of the FIDO2 security key.
       [Methods <IMicrosoftGraphAuthenticationMethod[]>]: Represents all authentication methods registered to a user.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
       [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time that this app was registered.
-This property is null if the device isn't registered for passwordless Phone Sign-In.
         [Device <IMicrosoftGraphDevice>]: device
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -14041,15 +14130,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [StatusDetail <String>]: Details about the status of the operation.
       [PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod[]>]: Represents the password registered to a user for authentication.
 For security, the password itself is never returned in the object, but action can be taken to reset a password.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time when this password was last updated.
-This property is currently not populated.
-Read-only.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
       [PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]: The phone numbers registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -14059,22 +14147,26 @@ Numbers are rejected when creating or updating if they don't match the required 
         [PhoneType <String>]: authenticationPhoneType
         [SmsSignInState <String>]: authenticationMethodSignInState
       [PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod[]>]: Represents a platform credential instance registered to a user on Mac OS.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time that this Platform Credential Key was registered.
         [Device <IMicrosoftGraphDevice>]: device
         [DisplayName <String>]: The name of the device on which Platform Credential is registered.
         [KeyStrength <String>]: authenticationMethodKeyStrength
         [Platform <String>]: authenticationMethodPlatform
       [SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]: The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [SecretKey <String>]: The secret key of the method.
 Always returns null.
       [TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time when the Temporary Access Pass was created.
         [IsUsable <Boolean?>]: The state of the authentication method that indicates whether it's currently usable by the user.
         [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
@@ -14086,9 +14178,10 @@ Reasons can include: EnabledByPolicy, DisabledByPolicy, Expired, NotYetValid, On
         [TemporaryAccessPass <String>]: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
       [WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod[]>]: Represents the Windows Hello for Business authentication method registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time that this Windows Hello for Business key was registered.
         [Device <IMicrosoftGraphDevice>]: device
         [DisplayName <String>]: The name of the device on which Windows Hello for Business is registered
         [KeyStrength <String>]: authenticationMethodKeyStrength
@@ -14506,7 +14599,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -17004,6 +17097,8 @@ For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in).
 Read-only.
+        [ResourceBehaviorOptions <String[]>]: 
+        [ResourceProvisioningOptions <String[]>]: 
         [SecurityEnabled <Boolean?>]: Specifies whether the group is a security group.
 Required.
 Returned by default.
@@ -18730,8 +18825,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -19066,7 +19161,7 @@ Once renewed, the group expiration is extended by the number of days defined.
   [ManagedGroupTypes <String>]: The group type for which the expiration policy applies.
 Possible values are All, Selected or None.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -19087,7 +19182,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [StartDateTime <String>]: Usage: startDateTime='{startDateTime}'
   [UniqueName <String>]: Alternate key of group
 
-LICENSEPROCESSINGSTATE `<IMicrosoftGraphLicenseProcessingState>`: licenseProcessingState
+LICENSEPROCESSINGSTATE <IMicrosoftGraphLicenseProcessingState>: licenseProcessingState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [State <String>]: 
 
@@ -19118,7 +19213,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ONENOTE `<IMicrosoftGraphOnenote>`: onenote
+ONENOTE <IMicrosoftGraphOnenote>: onenote
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -19304,7 +19399,7 @@ Other objects contain the same value for the property.
 Current possible values: UserPrincipalName or ProxyAddress
   [Value <String>]: Value of the property causing the error.
 
-ONPREMISESSYNCBEHAVIOR `<IMicrosoftGraphOnPremisesSyncBehavior>`: onPremisesSyncBehavior
+ONPREMISESSYNCBEHAVIOR <IMicrosoftGraphOnPremisesSyncBehavior>: onPremisesSyncBehavior
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -19342,7 +19437,7 @@ Read-only.
   [ResourceAppId <String>]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
 
-PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
+PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -19361,7 +19456,7 @@ Read-only.
   [Width <Int32?>]: The width of the photo.
 Read-only.
 
-PLANNER `<IMicrosoftGraphPlannerGroup>`: plannerGroup
+PLANNER <IMicrosoftGraphPlannerGroup>: plannerGroup
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -19786,27 +19881,39 @@ For a complete list of GUIDs and their equivalent friendly service names, see Pr
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [EmailMethods <IMicrosoftGraphEmailAuthenticationMethod[]>]: The email address registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [EmailAddress <String>]: The email address registered to this user.
+      [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external authentication methods registered to a user for authentication using an external identity provider.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
+        [DisplayName <String>]: Custom name given to the registered external authentication method.
       [Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]: Represents the FIDO2 security keys registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (e.g.
 make and model) of the authenticator.
         [AttestationCertificates <String[]>]: The attestation certificate(s) attached to this security key.
         [AttestationLevel <String>]: attestationLevel
-        [CreatedDateTime <DateTime?>]: The timestamp when this key was registered to the user.
         [DisplayName <String>]: The display name of the key as given by the user.
         [Model <String>]: The manufacturer-assigned model of the FIDO2 security key.
       [Methods <IMicrosoftGraphAuthenticationMethod[]>]: Represents all authentication methods registered to a user.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
       [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time that this app was registered.
-This property is null if the device isn't registered for passwordless Phone Sign-In.
         [Device <IMicrosoftGraphDevice>]: device
           [(Any) <Object>]: This indicates any property can be added to this object.
           [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -19953,15 +20060,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [StatusDetail <String>]: Details about the status of the operation.
       [PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod[]>]: Represents the password registered to a user for authentication.
 For security, the password itself is never returned in the object, but action can be taken to reset a password.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time when this password was last updated.
-This property is currently not populated.
-Read-only.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
       [PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]: The phone numbers registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -19971,22 +20077,26 @@ Numbers are rejected when creating or updating if they don't match the required 
         [PhoneType <String>]: authenticationPhoneType
         [SmsSignInState <String>]: authenticationMethodSignInState
       [PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod[]>]: Represents a platform credential instance registered to a user on Mac OS.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time that this Platform Credential Key was registered.
         [Device <IMicrosoftGraphDevice>]: device
         [DisplayName <String>]: The name of the device on which Platform Credential is registered.
         [KeyStrength <String>]: authenticationMethodKeyStrength
         [Platform <String>]: authenticationMethodPlatform
       [SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]: The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [SecretKey <String>]: The secret key of the method.
 Always returns null.
       [TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time when the Temporary Access Pass was created.
         [IsUsable <Boolean?>]: The state of the authentication method that indicates whether it's currently usable by the user.
         [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
@@ -19998,9 +20108,10 @@ Reasons can include: EnabledByPolicy, DisabledByPolicy, Expired, NotYetValid, On
         [TemporaryAccessPass <String>]: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
       [WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod[]>]: Represents the Windows Hello for Business authentication method registered to a user for authentication.
+        [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [CreatedDateTime <DateTime?>]: The date and time that this Windows Hello for Business key was registered.
         [Device <IMicrosoftGraphDevice>]: device
         [DisplayName <String>]: The name of the device on which Windows Hello for Business is registered
         [KeyStrength <String>]: authenticationMethodKeyStrength
@@ -20418,7 +20529,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -22869,6 +22980,8 @@ For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in).
 Read-only.
+        [ResourceBehaviorOptions <String[]>]: 
+        [ResourceProvisioningOptions <String[]>]: 
         [SecurityEnabled <Boolean?>]: Specifies whether the group is a security group.
 Required.
 Returned by default.
@@ -24595,8 +24708,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -24707,7 +24820,7 @@ Read-only.
 This relationship can only be used to load a specific term set.
   [TermStores <IMicrosoftGraphTermStore[]>]: The collection of termStores under this site.
 
-TEAM `<IMicrosoftGraphTeam>`: team
+TEAM <IMicrosoftGraphTeam>: team
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -24972,27 +25085,39 @@ For a complete list of GUIDs and their equivalent friendly service names, see Pr
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [EmailMethods <IMicrosoftGraphEmailAuthenticationMethod[]>]: The email address registered to a user for authentication.
+            [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [EmailAddress <String>]: The email address registered to this user.
+          [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external authentication methods registered to a user for authentication using an external identity provider.
+            [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
+            [DisplayName <String>]: Custom name given to the registered external authentication method.
           [Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]: Represents the FIDO2 security keys registered to a user for authentication.
+            [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [AaGuid <String>]: Authenticator Attestation GUID, an identifier that indicates the type (e.g.
 make and model) of the authenticator.
             [AttestationCertificates <String[]>]: The attestation certificate(s) attached to this security key.
             [AttestationLevel <String>]: attestationLevel
-            [CreatedDateTime <DateTime?>]: The timestamp when this key was registered to the user.
             [DisplayName <String>]: The display name of the key as given by the user.
             [Model <String>]: The manufacturer-assigned model of the FIDO2 security key.
           [Methods <IMicrosoftGraphAuthenticationMethod[]>]: Represents all authentication methods registered to a user.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
+            [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
           [MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod[]>]: The details of the Microsoft Authenticator app registered to a user for authentication.
+            [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [CreatedDateTime <DateTime?>]: The date and time that this app was registered.
-This property is null if the device isn't registered for passwordless Phone Sign-In.
             [Device <IMicrosoftGraphDevice>]: device
               [(Any) <Object>]: This indicates any property can be added to this object.
               [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -25139,15 +25264,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [StatusDetail <String>]: Details about the status of the operation.
           [PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod[]>]: Represents the password registered to a user for authentication.
 For security, the password itself is never returned in the object, but action can be taken to reset a password.
+            [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [CreatedDateTime <DateTime?>]: The date and time when this password was last updated.
-This property is currently not populated.
-Read-only.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Password <String>]: For security, the password is always returned as null from a LIST or GET operation.
           [PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]: The phone numbers registered to a user for authentication.
+            [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -25157,22 +25281,26 @@ Numbers are rejected when creating or updating if they don't match the required 
             [PhoneType <String>]: authenticationPhoneType
             [SmsSignInState <String>]: authenticationMethodSignInState
           [PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod[]>]: Represents a platform credential instance registered to a user on Mac OS.
+            [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [CreatedDateTime <DateTime?>]: The date and time that this Platform Credential Key was registered.
             [Device <IMicrosoftGraphDevice>]: device
             [DisplayName <String>]: The name of the device on which Platform Credential is registered.
             [KeyStrength <String>]: authenticationMethodKeyStrength
             [Platform <String>]: authenticationMethodPlatform
           [SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]: The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+            [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [SecretKey <String>]: The secret key of the method.
 Always returns null.
           [TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+            [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [CreatedDateTime <DateTime?>]: The date and time when the Temporary Access Pass was created.
             [IsUsable <Boolean?>]: The state of the authentication method that indicates whether it's currently usable by the user.
             [IsUsableOnce <Boolean?>]: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
@@ -25184,9 +25312,10 @@ Reasons can include: EnabledByPolicy, DisabledByPolicy, Expired, NotYetValid, On
             [TemporaryAccessPass <String>]: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
           [WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod[]>]: Represents the Windows Hello for Business authentication method registered to a user for authentication.
+            [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [CreatedDateTime <DateTime?>]: The date and time that this Windows Hello for Business key was registered.
             [Device <IMicrosoftGraphDevice>]: device
             [DisplayName <String>]: The name of the device on which Windows Hello for Business is registered
             [KeyStrength <String>]: authenticationMethodKeyStrength
@@ -25594,7 +25723,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -28557,6 +28686,8 @@ For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in).
 Read-only.
+              [ResourceBehaviorOptions <String[]>]: 
+              [ResourceProvisioningOptions <String[]>]: 
               [SecurityEnabled <Boolean?>]: Specifies whether the group is a security group.
 Required.
 Returned by default.
@@ -28961,8 +29092,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -29968,27 +30099,5 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [Update-MgGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroup)
+- [](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0)

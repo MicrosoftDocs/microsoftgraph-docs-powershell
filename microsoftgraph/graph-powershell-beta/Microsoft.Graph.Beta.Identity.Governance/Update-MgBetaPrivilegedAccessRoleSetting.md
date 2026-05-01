@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessrolesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 05/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPrivilegedAccessRoleSetting
 ---
@@ -83,8 +83,9 @@ This cmdlet has the following aliases,
 Update the navigation property roleSettings in privilegedAccess
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaPrivilegedAccessRoleSetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	AdminEligibleSettings = @(
@@ -95,9 +96,6 @@ $params = @{
 	)
 }
 Update-MgBetaPrivilegedAccessRoleSetting -PrivilegedAccessId $privilegedAccessId -GovernanceRoleSettingId $governanceRoleSettingId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPrivilegedAccessRoleSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -838,7 +836,7 @@ For example, ExpirationRule and MfaRule.
 The value is a JSON string with a list of pairs in the format of ParameterName:ParameterValue.
 For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 
-BODYPARAMETER `<IMicrosoftGraphGovernanceRoleSetting>`: governanceRoleSetting
+BODYPARAMETER <IMicrosoftGraphGovernanceRoleSetting>: governanceRoleSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -980,7 +978,7 @@ The id of the role definition that the role setting is associated with.
 The setting is not supported for now.
   [UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>]: The rule settings that are evaluated when a user tries to activate his role assignment.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1028,6 +1026,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -1090,7 +1089,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-RESOURCE `<IMicrosoftGraphGovernanceResource>`: governanceResource
+RESOURCE <IMicrosoftGraphGovernanceResource>: governanceResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1232,7 +1231,7 @@ Note: This property may be extended in the future to support more scenarios.
 Resource type.
 For example, for Azure resources, the type could be 'Subscription', 'ResourceGroup', 'Microsoft.Sql/server', etc.
 
-ROLEDEFINITION `<IMicrosoftGraphGovernanceRoleDefinition>`: governanceRoleDefinition
+ROLEDEFINITION <IMicrosoftGraphGovernanceRoleDefinition>: governanceRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1391,26 +1390,4 @@ For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 
 ## RELATED LINKS
 
-- [Update-MgBetaPrivilegedAccessRoleSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessrolesetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessrolesetting)
