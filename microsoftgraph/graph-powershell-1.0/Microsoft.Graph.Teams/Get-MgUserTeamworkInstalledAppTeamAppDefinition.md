@@ -15,6 +15,9 @@ title: Get-MgUserTeamworkInstalledAppTeamAppDefinition
 
 The details of this version of the app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

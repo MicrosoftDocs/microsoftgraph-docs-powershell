@@ -16,6 +16,9 @@ title: Get-MgBetaServicePrincipalDelegatedPermissionClassification
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

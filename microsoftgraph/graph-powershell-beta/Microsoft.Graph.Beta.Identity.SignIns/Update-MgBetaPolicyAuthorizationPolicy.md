@@ -15,6 +15,9 @@ title: Update-MgBetaPolicyAuthorizationPolicy
 
 Update the navigation property authorizationPolicy in policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthorizationPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

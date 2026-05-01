@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget
 
 Get administrationScopeTargets from identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

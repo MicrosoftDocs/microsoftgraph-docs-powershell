@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAs
 
 Delete navigation property assignments for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

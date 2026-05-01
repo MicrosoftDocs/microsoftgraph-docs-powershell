@@ -15,6 +15,9 @@ title: Get-MgUserOnlineMeeting
 
 Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaPlaceAsBuildingMapLevelSectionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsBuildingMapLevelSectionCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsBuildingMapLevelSectionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

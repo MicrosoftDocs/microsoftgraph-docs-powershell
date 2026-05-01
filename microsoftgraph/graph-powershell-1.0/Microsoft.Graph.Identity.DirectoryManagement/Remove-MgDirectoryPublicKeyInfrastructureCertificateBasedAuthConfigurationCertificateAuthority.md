@@ -15,6 +15,9 @@ title: Remove-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguratio
 
 Delete a certificateAuthorityDetail object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

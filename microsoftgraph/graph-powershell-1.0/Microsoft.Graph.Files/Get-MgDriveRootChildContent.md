@@ -15,6 +15,9 @@ title: Get-MgDriveRootChildContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootChildContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootChildContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Export-MgBetaReportPartnerBillingUsageBilled
 
 Export the billed Azure usage data.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Reports/Export-MgReportPartnerBillingUsageBilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)
