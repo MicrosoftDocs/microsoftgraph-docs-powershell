@@ -58,16 +58,6 @@ Cancel a registrant's registration record for a webinar.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | VirtualEventRegistration-Anon.ReadWrite.Chat,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -423,6 +413,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualeventwebinarregistration)
+
 
 
 
