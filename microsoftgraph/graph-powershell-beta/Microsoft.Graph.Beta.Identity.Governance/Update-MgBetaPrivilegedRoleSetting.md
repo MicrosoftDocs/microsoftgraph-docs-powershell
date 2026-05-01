@@ -104,7 +104,7 @@ HelpMessage: ''
 
 ### -ApprovalOnElevation
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +131,7 @@ HelpMessage: ''
 
 ### -ApproverIds
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -229,7 +229,7 @@ HelpMessage: ''
 
 ### -ElevationDuration
 
-.
+
 
 ```yaml
 Type: System.TimeSpan
@@ -375,7 +375,7 @@ HelpMessage: ''
 
 ### -IsMfaOnElevationConfigurable
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -402,7 +402,7 @@ HelpMessage: ''
 
 ### -LastGlobalAdmin
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -429,7 +429,7 @@ HelpMessage: ''
 
 ### -MaxElavationDuration
 
-.
+
 
 ```yaml
 Type: System.TimeSpan
@@ -456,7 +456,7 @@ HelpMessage: ''
 
 ### -MfaOnElevation
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -483,7 +483,7 @@ HelpMessage: ''
 
 ### -MinElevationDuration
 
-.
+
 
 ```yaml
 Type: System.TimeSpan
@@ -510,7 +510,7 @@ HelpMessage: ''
 
 ### -NotificationToUserOnElevation
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -649,7 +649,7 @@ HelpMessage: ''
 
 ### -TicketingInfoOnElevation
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
