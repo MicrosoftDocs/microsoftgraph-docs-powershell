@@ -53,7 +53,13 @@ Complete the following steps to create a custom application that you can use to 
     1. For **Redirect URI**:
         - Select **Public client/native** from the drop down
         - **URI value**: *http://localhost*
+        - An additional Redirect URI is required for Windows Authentication Manager (WAM) broker-based sign-in that will be added subsequently.
     1. Select **Register**.
+    1. Click on **Authentication** in the left hand nav pane
+    1. Click **+ Add Redirect URI**
+    1. Click on **Mobile and desktop applications**
+    1. Enter a URI value: `ms-appx-web://Microsoft.AAD.BrokerPlugin/<YOUR_APP_CLIENT_ID>` in the text box
+    1. Click **Configure**
     1. Go to **Enterprise applications** and select the application you just created.
     1. Under **Manage**, select **Properties** and set **Assignment required?** to **Yes**.
     1. Select **Save**.
@@ -186,18 +192,41 @@ Get-MgEnvironment
 ```
 
 ```Output
-Name     AzureADEndpoint                   GraphEndpoint                           Type
-----     ---------------                   -------------                           ----
-China    https://login.chinacloudapi.cn    https://microsoftgraph.chinacloudapi.cn Built-in
-Global   https://login.microsoftonline.com https://graph.microsoft.com             Built-in
-USGov    https://login.microsoftonline.us  https://graph.microsoft.us              Built-in
-USGovDoD https://login.microsoftonline.us  https://dod-graph.microsoft.us          Built-in
+Name         AzureADEndpoint                        GraphEndpoint                           Type
+----         ---------------                        -------------                           ----
+BleuCloud    https://login.sovcloud-identity.fr     https://graph.svc.sovcloud.fr           Built-in
+China        https://login.chinacloudapi.cn         https://microsoftgraph.chinacloudapi.cn Built-in
+DelosCloud   https://login.sovcloud-identity.de     https://graph.svc.sovcloud.de           Built-in
+Global       https://login.microsoftonline.com      https://graph.microsoft.com             Built-in
+GovSGCloud   https://login.sovcloud-identity.sg     https://graph.svc.sovcloud.sg           Built-in
+USGov        https://login.microsoftonline.us       https://graph.microsoft.us              Built-in
+USGovDoD     https://login.microsoftonline.us       https://dod-graph.microsoft.us          Built-in
 ```
 
-To explicitly target other clouds, for example, US Government and Azure China, use the `-Environment` parameter, which accepts values shown in the previous output (such as `Global`, `China`, `USGov`, and `USGovDoD`).
+To explicitly target other clouds, for example, US Government and Azure China, use the `-Environment` parameter, which accepts values shown in the previous output (such as `Global`, `China`, `USGov`, `USGovDoD`, `BleuCloud`, `DelosCloud`, and `GovSGCloud`).
 
 ```powershell
 Connect-MgGraph -Environment USGov
+```
+
+### Connect to a sovereign cloud with a custom application
+
+Sovereign cloud environments such as BleuCloud, DelosCloud, and GovSGCloud require you to register a custom application. You can't use the default Microsoft Graph PowerShell application in these environments. Requires Microsoft.Graph.Authentication v2.36.1 or later.
+
+```powershell
+Connect-MgGraph -ClientId <YOUR_APP_CLIENT_ID> -TenantId <YOUR_TENANT_ID> -Environment BleuCloud -Scopes "User.Read.All"
+```
+
+### Troubleshoot authentication in sovereign cloud environments
+
+If the authentication popup hangs or times out when connecting to a sovereign cloud, for example from a jumpbox, Windows Authentication Manager (WAM) broker-based login might not work in that environment. Disable WAM and use interactive browser sign-in instead:
+
+```powershell
+# Disable WAM-based login (only needs to be run once; persists across sessions)
+Set-MgGraphOption -DisableLoginByWAM $true
+
+# Then connect normally
+Connect-MgGraph -ClientId <YOUR_APP_CLIENT_ID> -TenantId <YOUR_TENANT_ID> -Environment BleuCloud
 ```
 
 >[!NOTE]
