@@ -49,6 +49,14 @@ This cmdlet has the following aliases,
 
 Evaluates the applicability of Conditional Access Policies in your tenant based on the provided sign-in properties.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

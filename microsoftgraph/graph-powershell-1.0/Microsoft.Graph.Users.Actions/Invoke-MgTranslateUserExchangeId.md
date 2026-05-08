@@ -69,6 +69,14 @@ This cmdlet has the following aliases,
 
 Translate identifiers of Outlook-related resources between formats.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadBasic.All, User.ReadWrite.All, User.ReadWrite, User.Read.All, User.Read, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
+| Application | User.Read.All, User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
