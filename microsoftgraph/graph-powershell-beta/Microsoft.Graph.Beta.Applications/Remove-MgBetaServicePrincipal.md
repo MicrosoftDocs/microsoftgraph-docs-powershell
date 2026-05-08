@@ -60,12 +60,17 @@ This API can also delete an agentIdentityBlueprintPrincipal object by its ID.
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, AgentIdentity.DeleteRestore.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaServicePrincipal -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Remove-MgBetaServicePrincipal Cmdlet.
+
 
 ## PARAMETERS
 

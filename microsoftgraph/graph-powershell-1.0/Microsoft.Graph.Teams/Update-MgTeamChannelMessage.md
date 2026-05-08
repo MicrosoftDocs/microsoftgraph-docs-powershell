@@ -101,8 +101,9 @@ This method doesn't support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 ## EXAMPLES
+### Example 1: Update policyViolation property using application permissions
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -122,7 +123,12 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update policyviolation property using application permissions
+
+### Example 2: Update any property of a message using delegated permissions
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -158,7 +164,12 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will update any property of a message using delegated permissions
+
+### Example 3: Update the mentions of a message using delegated permissions
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -227,7 +238,12 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will update the mentions of a message using delegated permissions
+
+### Example 4: Update the content with attachments of a message using delegated permissions
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -326,7 +342,12 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will update the content with attachments of a message using delegated permissions
+
+### Example 5: Update the reactions in a message using delegated permissions
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -656,6 +677,10 @@ $params = @{
 }
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+
+```
+This example will update the reactions in a message using delegated permissions
+
 
 ## PARAMETERS
 

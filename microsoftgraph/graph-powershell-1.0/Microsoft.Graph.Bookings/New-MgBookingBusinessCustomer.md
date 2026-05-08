@@ -78,8 +78,9 @@ Create a new bookingCustomer object.
 | Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -120,6 +121,10 @@ $params = @{
 }
 
 New-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBookingBusinessCustomer Cmdlet.
+
 
 ## PARAMETERS
 

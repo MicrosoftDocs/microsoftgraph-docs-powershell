@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Get the instances of active role assignments for the calling principal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -611,6 +601,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententerpriseapproleassignmentscheduleinstancebycurrentuser)
 - [](https://learn.microsoft.com/graph/api/unifiedroleassignmentscheduleinstance-filterbycurrentuser?view=graph-rest-beta)
+
 
 
 

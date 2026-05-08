@@ -61,8 +61,9 @@ You can create one of the following subtypes that are derived from authenticatio
 | Application | EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -87,7 +88,12 @@ $params = @{
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows how to use the New-MgIdentityAuthenticationEventListener Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -116,7 +122,12 @@ $params = @{
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example shows how to use the New-MgIdentityAuthenticationEventListener Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -144,6 +155,10 @@ $params = @{
 }
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityAuthenticationEventListener Cmdlet.
+
 
 ## PARAMETERS
 
