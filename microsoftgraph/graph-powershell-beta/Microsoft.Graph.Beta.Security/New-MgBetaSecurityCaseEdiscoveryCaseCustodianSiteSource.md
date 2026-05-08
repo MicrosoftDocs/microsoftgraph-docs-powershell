@@ -15,6 +15,9 @@ title: New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource
 
 Create a new siteSource object associated with an eDiscovery custodian.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

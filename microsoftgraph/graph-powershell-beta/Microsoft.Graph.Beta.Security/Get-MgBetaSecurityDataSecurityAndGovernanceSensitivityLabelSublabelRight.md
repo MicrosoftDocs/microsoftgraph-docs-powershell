@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelSublabelRight
 
 Get rights from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabelRight](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabelRight?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

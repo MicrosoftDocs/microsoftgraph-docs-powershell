@@ -16,6 +16,9 @@ title: Get-MgBetaChatPinnedMessage
 A collection of all the pinned messages in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPinnedMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

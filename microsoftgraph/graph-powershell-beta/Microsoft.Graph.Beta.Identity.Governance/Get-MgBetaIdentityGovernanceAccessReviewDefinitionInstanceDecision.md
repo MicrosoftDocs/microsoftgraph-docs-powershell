@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision
 
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

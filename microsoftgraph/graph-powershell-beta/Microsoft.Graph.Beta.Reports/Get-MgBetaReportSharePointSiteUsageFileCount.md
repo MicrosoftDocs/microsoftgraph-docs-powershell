@@ -15,6 +15,9 @@ title: Get-MgBetaReportSharePointSiteUsageFileCount
 
 Invoke function getSharePointSiteUsageFileCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSharePointSiteUsageFileCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointSiteUsageFileCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

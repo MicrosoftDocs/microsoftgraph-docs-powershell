@@ -15,6 +15,9 @@ title: Update-MgBetaAdminSharepoint
 
 Update the navigation property sharepoint in admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminSharepoint](/powershell/module/Microsoft.Graph.Sites/Update-MgAdminSharepoint?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

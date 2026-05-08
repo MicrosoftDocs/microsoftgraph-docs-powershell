@@ -15,6 +15,9 @@ title: Get-MgApplicationOwnerCountAsServicePrincipal
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwnerCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerCountAsServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUse
 
 Retrieve the schedules for role eligibilities for which the signed-in user is the principal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)
