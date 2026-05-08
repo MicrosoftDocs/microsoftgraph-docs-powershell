@@ -649,7 +649,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabeldispositionreviewstage)
+- [New-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabeldispositionreviewstage)
 
 
 

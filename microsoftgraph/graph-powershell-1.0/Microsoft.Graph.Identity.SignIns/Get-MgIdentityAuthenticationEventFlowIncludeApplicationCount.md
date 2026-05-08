@@ -412,7 +412,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowincludeapplicationcount)
+- [Get-MgIdentityAuthenticationEventFlowIncludeApplicationCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowincludeapplicationcount)
 
 
 

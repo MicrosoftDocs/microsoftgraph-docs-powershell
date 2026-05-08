@@ -424,7 +424,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupendpoint)
+- [Remove-MgBetaGroupEndpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupendpoint)
 
 
 
