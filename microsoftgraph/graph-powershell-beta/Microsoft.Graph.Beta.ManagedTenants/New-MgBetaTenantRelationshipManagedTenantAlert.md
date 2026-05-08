@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalert
@@ -781,7 +781,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERTDATA <IMicrosoftGraphManagedTenantsAlertData>: alertData
+ALERTDATA `<IMicrosoftGraphManagedTenantsAlertData>`: alertData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: 
 
@@ -880,7 +880,7 @@ Read-only.
   [LastActionByUserId <String>]: 
   [LastActionDateTime <DateTime?>]: 
 
-ALERTRULE <IMicrosoftGraphManagedTenantsManagedTenantAlertRule>: managedTenantAlertRule
+ALERTRULE `<IMicrosoftGraphManagedTenantsManagedTenantAlertRule>`: managedTenantAlertRule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1063,7 +1063,7 @@ Read-only.
   [Title <String>]: 
   [UserId <String>]: 
 
-BODYPARAMETER <IMicrosoftGraphManagedTenantsManagedTenantAlert>: managedTenantAlert
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantAlert>`: managedTenantAlert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1251,3 +1251,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalert)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/disable-mgbetasolutionbackuprestoreallmailboxesbackup
@@ -366,7 +366,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1Ftim88SolutionsBackuprestoreAllmailboxesbackupMicrosoftGraphDisablePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Ftim88SolutionsBackuprestoreAllmailboxesbackupMicrosoftGraphDisablePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActionOnExistingPolicy <String>]: fullServiceBackupDisableMode
 
@@ -374,3 +374,25 @@ BODYPARAMETER <IPaths1Ftim88SolutionsBackuprestoreAllmailboxesbackupMicrosoftGra
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/disable-mgbetasolutionbackuprestoreallmailboxesbackup)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
