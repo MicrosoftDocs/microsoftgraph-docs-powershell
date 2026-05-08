@@ -74,7 +74,7 @@ HelpMessage: ''
 
 ### -AppFriendlyName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ HelpMessage: ''
 
 ### -AppName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ HelpMessage: ''
 
 ### -AppPublisher
 
-.
+
 
 ```yaml
 Type: System.String
@@ -287,7 +287,7 @@ HelpMessage: ''
 
 ### -LastUpdatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -308,7 +308,7 @@ HelpMessage: ''
 
 ### -MeanTimeToFailureInMinutes
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -414,7 +414,7 @@ HelpMessage: ''
 
 ### -TenantDisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -435,7 +435,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -456,7 +456,7 @@ HelpMessage: ''
 
 ### -TotalActiveDeviceCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -477,7 +477,7 @@ HelpMessage: ''
 
 ### -TotalAppCrashCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -498,7 +498,7 @@ HelpMessage: ''
 
 ### -TotalAppFreezeCount
 
-.
+
 
 ```yaml
 Type: System.Int32

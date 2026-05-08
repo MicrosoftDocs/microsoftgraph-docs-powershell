@@ -327,7 +327,7 @@ HelpMessage: ''
 
 ### -DownloadUri
 
-.
+
 
 ```yaml
 Type: System.String
@@ -354,7 +354,7 @@ HelpMessage: ''
 
 ### -FulfilledDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
