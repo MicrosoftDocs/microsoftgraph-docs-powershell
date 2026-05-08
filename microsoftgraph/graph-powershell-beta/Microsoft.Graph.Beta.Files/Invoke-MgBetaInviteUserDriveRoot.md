@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainviteuserdriveroot
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaInviteUserDriveRoot
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaInviteUserDriveRoot
 
 Send a sharing invitation for a driveItem.
 A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteUserDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgInviteUserDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,6 +75,16 @@ This cmdlet has the following aliases,
 Send a sharing invitation for a driveItem.
 A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -109,7 +116,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -207,7 +214,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-
+.
 
 ```yaml
 Type: System.String
@@ -325,7 +332,7 @@ HelpMessage: ''
 
 ### -Message
 
-
+.
 
 ```yaml
 Type: System.String
@@ -352,7 +359,7 @@ HelpMessage: ''
 
 ### -Password
 
-
+.
 
 ```yaml
 Type: System.String
@@ -442,7 +449,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-
+.
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -470,7 +477,7 @@ HelpMessage: ''
 
 ### -RequireSignIn
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -519,7 +526,7 @@ HelpMessage: ''
 
 ### -RetainInheritedPermissions
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -546,7 +553,7 @@ HelpMessage: ''
 
 ### -Roles
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -573,7 +580,7 @@ HelpMessage: ''
 
 ### -SendInvitation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -681,7 +688,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsG30D32UsersUserIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsG30D32UsersUserIdDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpirationDateTime <String>]: 
   [Message <String>]: 
@@ -695,7 +702,7 @@ BODYPARAMETER `<IPathsG30D32UsersUserIdDrivesDriveIdRootMicrosoftGraphInvitePost
   [Roles <String[]>]: 
   [SendInvitation <Boolean?>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -730,28 +737,5 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaInviteUserDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainviteuserdriveroot)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainviteuserdriveroot)
+- [](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta)

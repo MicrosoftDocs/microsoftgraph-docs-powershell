@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageattachment
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserMessageAttachment
 ---
@@ -14,9 +14,6 @@ title: New-MgUserMessageAttachment
 ## SYNOPSIS
 
 Create new navigation property to attachments for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,18 +68,10 @@ This cmdlet has the following aliases,
 
 Create new navigation property to attachments for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
-| Application | Mail.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
@@ -96,11 +85,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the New-MgUserMessageAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -652,7 +636,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
+BODYPARAMETER <IMicrosoftGraphAttachment>: attachment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -663,7 +647,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   [Name <String>]: The attachment's file name.
   [Size <Int32?>]: The length of the attachment in bytes.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -676,26 +660,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgUserMessageAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageattachment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageattachment)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/export-mguserdeviceandappmanagementdata
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Functions
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Export-MgUserDeviceAndAppManagementData
 ---
@@ -14,9 +14,6 @@ title: Export-MgUserDeviceAndAppManagementData
 ## SYNOPSIS
 
 Invoke function exportDeviceAndAppManagementData
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Export-MgBetaUserDeviceAndAppManagementData](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Export-MgBetaUserDeviceAndAppManagementData?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -65,13 +62,15 @@ This cmdlet has the following aliases,
 
 Invoke function exportDeviceAndAppManagementData
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -414,7 +413,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   [EndDateTime <String>]: Usage: EndDateTime='{EndDateTime}'
   [Skip <Int32?>]: Usage: skip={skip}
   [StartDateTime <String>]: Usage: StartDateTime='{StartDateTime}'
@@ -424,27 +423,4 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Export-MgUserDeviceAndAppManagementData](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/export-mguserdeviceandappmanagementdata)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/export-mguserdeviceandappmanagementdata)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/initialize-mgsolutionbackuprestoreprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgSolutionBackupRestoreProtectionPolicy
 ---
@@ -16,9 +16,6 @@ title: Initialize-MgSolutionBackupRestoreProtectionPolicy
 Activate a protectionPolicyBase.
 Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
 You can add or remove artifacts (sites or user accounts) to or from each active policy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Initialize-MgBetaSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Initialize-MgBetaSolutionBackupRestoreProtectionPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 Activate a protectionPolicyBase.
 Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
 You can add or remove artifacts (sites or user accounts) to or from each active policy.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -341,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -373,28 +380,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Initialize-MgSolutionBackupRestoreProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/initialize-mgsolutionbackuprestoreprotectionpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/initialize-mgsolutionbackuprestoreprotectionpolicy)
+- [](https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-1.0)

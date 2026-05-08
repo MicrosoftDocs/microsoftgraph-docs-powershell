@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevelunit
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceAsBuildingMapLevelUnit
 ---
@@ -15,9 +15,6 @@ title: Get-MgPlaceAsBuildingMapLevelUnit
 
 Collection of units (such as rooms or offices) on this level.
 Supports upsert.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsBuildingMapLevelUnit](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsBuildingMapLevelUnit?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,6 +58,16 @@ This cmdlet has the following aliases,
 
 Collection of units (such as rooms or offices) on this level.
 Supports upsert.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -576,7 +583,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -599,28 +606,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgPlaceAsBuildingMapLevelUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevelunit)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/levelmap-list-units?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevelunit)
+- [](https://learn.microsoft.com/graph/api/levelmap-list-units?view=graph-rest-1.0)

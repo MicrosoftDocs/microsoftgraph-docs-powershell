@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointonpremiseconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ---
@@ -16,9 +16,6 @@ title: Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 Delete a specific cloudPcOnPremisesConnection object.
 When you delete an Azure network connection, permissions to the service are removed from the specified Azure resources.
 You can't delete an Azure network connection when it's in use, as indicated by the inUse property.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,17 +53,12 @@ When you delete an Azure network connection, permissions to the service are remo
 You can't delete an Azure network connection when it's in use, as indicated by the inUse property.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId
-
-```
-This example shows how to use the Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -398,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -459,27 +451,5 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointonpremiseconnection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointonpremiseconnection)
+- [](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-beta)

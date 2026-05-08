@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedriveitemsubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReauthorizeDriveItemSubscription
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgReauthorizeDriveItemSubscription
 ## SYNOPSIS
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeDriveItemSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -400,7 +407,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -429,28 +436,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgReauthorizeDriveItemSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedriveitemsubscription)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedriveitemsubscription)
+- [](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)

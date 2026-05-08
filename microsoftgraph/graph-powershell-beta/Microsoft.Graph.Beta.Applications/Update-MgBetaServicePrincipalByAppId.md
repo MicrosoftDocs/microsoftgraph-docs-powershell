@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaServicePrincipalByAppId
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaServicePrincipalByAppId
 
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint if it doesn't exist, or update properties of an existing agentIdentityBlueprintPrincipal, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalByAppId?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -142,24 +139,8 @@ Create a new servicePrincipal object if it doesn't exist, or update the properti
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint if it doesn't exist, or update properties of an existing agentIdentityBlueprintPrincipal, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
 
 ## EXAMPLES
-### Example 1: Create a new servicePrincipal if it doesn't exist
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Applications
-
-$params = @{
-	displayName = "My app instance"
-}
-
-Update-MgBetaServicePrincipalByAppId -BodyParameter $params
-
-```
-This example will create a new serviceprincipal if it doesn't exist
-
-### Example 2: Update an existing servicePrincipal
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -169,9 +150,15 @@ $params = @{
 
 Update-MgBetaServicePrincipalByAppId -BodyParameter $params
 
-```
-This example will update an existing serviceprincipal
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Applications
+
+$params = @{
+	displayName = "My app instance"
+}
+
+Update-MgBetaServicePrincipalByAppId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -1021,7 +1008,7 @@ HelpMessage: ''
 
 ### -FederatedIdentityCredentials
 
-
+.
 To construct, see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
 
 ```yaml
@@ -1310,7 +1297,7 @@ HelpMessage: ''
 
 ### -LicenseDetails
 
-
+.
 To construct, see NOTES section for LICENSEDETAILS properties and create a hash table.
 
 ```yaml
@@ -1630,7 +1617,7 @@ HelpMessage: ''
 
 ### -PermissionGrantPreApprovalPolicies
 
-
+.
 To construct, see NOTES section for PERMISSIONGRANTPREAPPROVALPOLICIES properties and create a hash table.
 
 ```yaml
@@ -2235,7 +2222,7 @@ HelpMessage: ''
 
 ### -TransitiveMemberOf
 
-
+.
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
@@ -2424,6 +2411,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
           [State <String>]: appManagementRestrictionState
         [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+      [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [BlockedDomains <String[]>]: 
+          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+          [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [BlockedDomains <String[]>]: 
+          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+          [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+          [State <String>]: appManagementRestrictionState
+          [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+        [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [BlockedSchemes <String[]>]: 
+          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+          [ExemptFormats <String[]>]: 
+          [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [BlockedSchemes <String[]>]: 
+            [ExemptFormats <String[]>]: 
+          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+          [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+          [State <String>]: appManagementRestrictionState
+          [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+        [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+          [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [ExcludeWildcardsInPath <Boolean?>]: 
+            [ExcludeWildcardsInPathWithDomains <String[]>]: 
+          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+          [State <String>]: appManagementRestrictionState
+        [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [AllowedDomains <String[]>]: 
+          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+          [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [AllowedDomains <String[]>]: 
+          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+          [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+          [State <String>]: appManagementRestrictionState
+          [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+        [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [AllowedSchemes <String[]>]: 
+          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+          [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [AllowedSchemes <String[]>]: 
+          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+          [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+          [State <String>]: appManagementRestrictionState
+          [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
 
 APPROLEASSIGNEDTO <IMicrosoftGraphAppRoleAssignment[]>: App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -2504,12 +2548,12 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipal>`: servicePrincipal
+BODYPARAMETER <IMicrosoftGraphServicePrincipal>: servicePrincipal
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -2604,6 +2648,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
             [State <String>]: appManagementRestrictionState
           [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+        [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [BlockedDomains <String[]>]: 
+            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+            [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [BlockedDomains <String[]>]: 
+            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+            [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+            [State <String>]: appManagementRestrictionState
+            [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+          [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [BlockedSchemes <String[]>]: 
+            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+            [ExemptFormats <String[]>]: 
+            [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [BlockedSchemes <String[]>]: 
+              [ExemptFormats <String[]>]: 
+            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+            [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+            [State <String>]: appManagementRestrictionState
+            [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+          [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+            [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [ExcludeWildcardsInPath <Boolean?>]: 
+              [ExcludeWildcardsInPathWithDomains <String[]>]: 
+            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+            [State <String>]: appManagementRestrictionState
+          [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [AllowedDomains <String[]>]: 
+            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+            [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [AllowedDomains <String[]>]: 
+            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+            [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+            [State <String>]: appManagementRestrictionState
+            [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+          [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [AllowedSchemes <String[]>]: 
+            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+            [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [AllowedSchemes <String[]>]: 
+            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+            [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+            [State <String>]: appManagementRestrictionState
+            [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
   [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -2661,8 +2762,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -2995,8 +3096,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -3353,7 +3454,7 @@ Always null when the object hasn't been deleted.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CLAIMSPOLICY `<IMicrosoftGraphCustomClaimsPolicy>`: customClaimsPolicy
+CLAIMSPOLICY <IMicrosoftGraphCustomClaimsPolicy>: customClaimsPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3482,7 +3583,7 @@ Always null when the object hasn't been deleted.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INFO `<IMicrosoftGraphInformationalUrl>`: informationalUrl
+INFO <IMicrosoftGraphInformationalUrl>: informationalUrl
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LogoUrl <String>]: CDN URL to the application's logo, Read-only.
   [MarketingUrl <String>]: Link to the application's marketing page.
@@ -3494,7 +3595,7 @@ For example, https://www.contoso.com/app/support
   [TermsOfServiceUrl <String>]: Link to the application's terms of service statement.
 For example, https://www.contoso.com/app/termsofservice
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -3651,7 +3752,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
-PASSWORDSINGLESIGNONSETTINGS `<IMicrosoftGraphPasswordSingleSignOnSettings>`: passwordSingleSignOnSettings
+PASSWORDSINGLESIGNONSETTINGS <IMicrosoftGraphPasswordSingleSignOnSettings>: passwordSingleSignOnSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Fields <IMicrosoftGraphPasswordSingleSignOnField[]>]: The fields to capture to fill the user credentials for password-based single sign-on.
     [CustomizedLabel <String>]: Title/label override for customization.
@@ -3699,12 +3800,12 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
   [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
-REMOTEDESKTOPSECURITYCONFIGURATION `<IMicrosoftGraphRemoteDesktopSecurityConfiguration>`: remoteDesktopSecurityConfiguration
+REMOTEDESKTOPSECURITYCONFIGURATION <IMicrosoftGraphRemoteDesktopSecurityConfiguration>: remoteDesktopSecurityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3719,11 +3820,11 @@ Read-only.
 Read-only.
     [DisplayName <String>]: Display name for the target device group.
 
-SAMLSINGLESIGNONSETTINGS `<IMicrosoftGraphSamlSingleSignOnSettings>`: samlSingleSignOnSettings
+SAMLSINGLESIGNONSETTINGS <IMicrosoftGraphSamlSingleSignOnSettings>: samlSingleSignOnSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RelayState <String>]: The relative URI the service provider would redirect to after completion of the single sign-on flow.
 
-SYNCHRONIZATION `<IMicrosoftGraphSynchronization>`: synchronization
+SYNCHRONIZATION <IMicrosoftGraphSynchronization>: synchronization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -4024,7 +4125,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
+VERIFIEDPUBLISHER <IMicrosoftGraphVerifiedPublisher>: verifiedPublisher
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AddedDateTime <DateTime?>]: The timestamp when the verified publisher was first added or most recently updated.
   [DisplayName <String>]: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
@@ -4033,27 +4134,5 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
 
 ## RELATED LINKS
 
-- [Update-MgBetaServicePrincipalByAppId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-beta)

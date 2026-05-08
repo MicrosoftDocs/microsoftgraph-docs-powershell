@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceprofileindicator
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityThreatIntelligenceProfileIndicator
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSecurityThreatIntelligenceProfileIndicator
 ## SYNOPSIS
 
 Create new navigation property to intelligenceProfileIndicators for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to intelligenceProfileIndicators for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -445,7 +452,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIntelligenceProfileIndicator>`: intelligenceProfileIndicator
+BODYPARAMETER <IMicrosoftGraphSecurityIntelligenceProfileIndicator>: intelligenceProfileIndicator
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Artifact <IMicrosoftGraphSecurityArtifact>]: artifact
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -460,27 +467,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityThreatIntelligenceProfileIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceprofileindicator)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceprofileindicator)

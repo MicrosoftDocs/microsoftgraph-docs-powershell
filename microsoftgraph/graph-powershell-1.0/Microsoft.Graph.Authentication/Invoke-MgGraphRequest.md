@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgGraphRequest
 ---
@@ -456,11 +456,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Object
 
+{{ Fill in the Description }}
 
 ## OUTPUTS
 
 ### System.Object
 
+{{ Fill in the Description }}
 
 ## NOTES
 

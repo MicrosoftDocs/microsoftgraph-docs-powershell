@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DirectoryObjects-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty
 Locale: en-US
 Module Name: Microsoft.Graph.DirectoryObjects
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryObjectAvailableExtensionProperty
 ---
@@ -49,18 +49,9 @@ This cmdlet has the following aliases,
 Return all directory extension definitions that are registered in a directory, including through multitenant apps.
 The following entities support extension properties:
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DirectoryObjects
 
@@ -68,10 +59,6 @@ $params = @{
 }
 
 Get-MgDirectoryObjectAvailableExtensionProperty -BodyParameter $params
-
-```
-This example shows how to use the Get-MgDirectoryObjectAvailableExtensionProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -98,7 +85,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -226,7 +213,7 @@ HelpMessage: ''
 
 ### -IsSyncedFromOnPremises
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -382,34 +369,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsSyncedFromOnPremises <Boolean?>]:
 
 
 ## RELATED LINKS
 
-- [Get-MgDirectoryObjectAvailableExtensionProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty)
+- [](https://learn.microsoft.com/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-1.0)

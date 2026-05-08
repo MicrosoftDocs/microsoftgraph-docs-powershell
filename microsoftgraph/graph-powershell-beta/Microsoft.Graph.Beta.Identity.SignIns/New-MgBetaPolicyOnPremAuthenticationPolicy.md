@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyonpremauthenticationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyOnPremAuthenticationPolicy
 ---
@@ -48,6 +48,16 @@ This cmdlet has the following aliases,
 
 Create a new onPremAuthenticationPolicy object.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -73,7 +83,7 @@ HelpMessage: ''
 
 ### -AppliesTo
 
-
+.
 To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
@@ -500,28 +510,5 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [New-MgBetaPolicyOnPremAuthenticationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyonpremauthenticationpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/policyroot-post-onpremauthenticationpolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyonpremauthenticationpolicy)
+- [](https://learn.microsoft.com/graph/api/policyroot-post-onpremauthenticationpolicies?view=graph-rest-beta)

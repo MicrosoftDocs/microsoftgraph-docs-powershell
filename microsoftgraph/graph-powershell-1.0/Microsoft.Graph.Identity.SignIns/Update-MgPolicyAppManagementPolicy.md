@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyappmanagementpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyAppManagementPolicy
 ---
@@ -14,9 +14,6 @@ title: Update-MgPolicyAppManagementPolicy
 ## SYNOPSIS
 
 Update an appManagementPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,18 +72,9 @@ This cmdlet has the following aliases,
 
 Update an appManagementPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -95,10 +83,6 @@ $params = @{
 }
 
 Update-MgPolicyAppManagementPolicy -AppManagementPolicyId $appManagementPolicyId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgPolicyAppManagementPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -659,7 +643,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-BODYPARAMETER `<IMicrosoftGraphAppManagementPolicy>`: appManagementPolicy
+BODYPARAMETER <IMicrosoftGraphAppManagementPolicy>: appManagementPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description for this policy.
 Required.
@@ -694,7 +678,7 @@ For existing applications, the enforcement date can be retroactively applied.
       [RestrictionType <String>]: appCredentialRestrictionType
       [State <String>]: appManagementRestrictionState
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -717,6 +701,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
+  [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
   [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
@@ -762,27 +747,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgPolicyAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyappmanagementpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyappmanagementpolicy)
+- [](https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0)

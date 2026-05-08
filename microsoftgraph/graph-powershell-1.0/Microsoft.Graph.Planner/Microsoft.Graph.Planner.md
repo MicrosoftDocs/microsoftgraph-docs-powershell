@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Planner
-Module Guid: ca19fde7-b3a6-42f4-9bbe-d4715fb36fe1
+Module Guid: 57c05683-b930-4c95-a1ee-bde2c4bc01b5
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.planner/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -110,23 +110,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgPlannerTaskProgressTaskBoardFormat](Update-MgPlannerTaskProgressTaskBoardFormat.md)
 
 ### [Update-MgUserPlanner](Update-MgUserPlanner.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

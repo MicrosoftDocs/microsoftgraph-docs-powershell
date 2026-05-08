@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernanceAccessReviewHistoryDefinition
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityGovernanceAccessReviewHistoryDefinition
 ## SYNOPSIS
 
 Create a new accessReviewHistoryDefinition object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,18 +51,9 @@ This cmdlet has the following aliases,
 
 Create a new accessReviewHistoryDefinition object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -97,10 +85,6 @@ queryRoot = $null
 }
 
 New-MgIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
-
-```
-This example shows how to use the New-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -636,7 +620,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewHistoryDefinition>`: accessReviewHistoryDefinition
+BODYPARAMETER <IMicrosoftGraphAccessReviewHistoryDefinition>: accessReviewHistoryDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -720,7 +704,7 @@ Fetches reviews whose scope matches with this provided scope.
 Required.
   [Status <String>]: accessReviewHistoryStatus
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+CREATEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -745,7 +729,7 @@ Required.
   [RunDateTime <DateTime?>]: Timestamp when the instance's history data is scheduled to be generated.
   [Status <String>]: accessReviewHistoryStatus
 
-SCHEDULESETTINGS `<IMicrosoftGraphAccessReviewHistoryScheduleSettings>`: accessReviewHistoryScheduleSettings
+SCHEDULESETTINGS <IMicrosoftGraphAccessReviewHistoryScheduleSettings>: accessReviewHistoryScheduleSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -788,27 +772,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgIdentityGovernanceAccessReviewHistoryDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition)
+- [](https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-1.0)

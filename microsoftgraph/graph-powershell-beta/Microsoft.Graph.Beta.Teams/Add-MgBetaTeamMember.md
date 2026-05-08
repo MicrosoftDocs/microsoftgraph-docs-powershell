@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateammember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaTeamMember
 ---
@@ -15,9 +15,6 @@ title: Add-MgBetaTeamMember
 
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,47 +70,9 @@ This cmdlet has the following aliases,
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamMember.ReadWriteNonOwnerRole.All, TeamMember.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamMember.ReadWriteNonOwnerRole.All, TeamMember.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Add members in bulk to a team
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Teams
-
-$params = @{
-	values = @(
-		@{
-			"@odata.type" = "microsoft.graph.aadUserConversationMember"
-			roles = @(
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"
-		}
-		@{
-			"@odata.type" = "microsoft.graph.aadUserConversationMember"
-			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
-		}
-	)
-}
-
-Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
-
-```
-This example will add members in bulk to a team
-
-### Example 2: Add members in bulk and encounter partial failure
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -137,12 +96,31 @@ $params = @{
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 
-```
-This example will add members in bulk and encounter partial failure
+### EXAMPLE 2
 
-### Example 3: Add members in bulk to a team using user principal name
+Import-Module Microsoft.Graph.Beta.Teams
 
-```powershell
+$params = @{
+	values = @(
+		@{
+			"@odata.type" = "microsoft.graph.aadUserConversationMember"
+			roles = @(
+			)
+			"user@odata.bind" = "https://graph.microsoft.com/beta/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"
+		}
+		@{
+			"@odata.type" = "microsoft.graph.aadUserConversationMember"
+			roles = @(
+				"owner"
+			)
+			"user@odata.bind" = "https://graph.microsoft.com/beta/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
+		}
+	)
+}
+
+Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
+
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -165,10 +143,6 @@ $params = @{
 }
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
-
-```
-This example will add members in bulk to a team using user principal name
-
 
 ## PARAMETERS
 
@@ -201,7 +175,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -475,7 +449,7 @@ HelpMessage: ''
 
 ### -Values
 
-
+.
 To construct, see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
@@ -557,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Values <IMicrosoftGraphConversationMember[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -571,7 +545,7 @@ An Out-of-tenant external member is assigned the owner role.
     [VisibleHistoryStartDateTime <DateTime?>]: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -633,27 +607,5 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [Add-MgBetaTeamMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateammember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateammember)
+- [](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)

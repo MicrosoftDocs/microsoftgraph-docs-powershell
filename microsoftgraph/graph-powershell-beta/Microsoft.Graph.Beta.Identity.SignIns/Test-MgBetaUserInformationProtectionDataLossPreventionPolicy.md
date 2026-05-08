@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetauserinformationprotectiondatalosspreventionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 05/08/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaUserInformationProtectionDataLossPreventionPolicy
 ---
@@ -22,6 +22,7 @@ Invoke action evaluate
 ```
 Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -UserId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-ClassifyText <IMicrosoftGraphTextClassificationRequest>]
  [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
  [-NotificationInfo <IMicrosoftGraphDlpNotification>] [-Target <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -45,6 +46,7 @@ Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -UserId <string>
 ```
 Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-ClassifyText <IMicrosoftGraphTextClassificationRequest>]
  [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
  [-NotificationInfo <IMicrosoftGraphDlpNotification>] [-Target <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -71,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action evaluate
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -103,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -140,6 +152,34 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ClassifyText
+
+textClassificationRequest
+To construct, see NOTES section for CLASSIFYTEXT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTextClassificationRequest
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: EvaluateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: EvaluateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -406,7 +446,7 @@ HelpMessage: ''
 
 ### -Target
 
-
+.
 
 ```yaml
 Type: System.String
@@ -514,8 +554,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1EzienbUsersUserIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1EzienbUsersUserIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [ClassifyText <IMicrosoftGraphTextClassificationRequest>]: textClassificationRequest
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ContentMetaData <IMicrosoftGraphClassificationRequestContentMetaData>]: classificationRequestContentMetaData
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [SourceId <String>]: 
+    [FileExtension <String>]: 
+    [MatchTolerancesToInclude <String>]: mlClassificationMatchTolerance
+    [ScopesToRun <String>]: sensitiveTypeScope
+    [SensitiveTypeIds <String[]>]: 
+    [Text <String>]: 
   [EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]: dlpEvaluationInput
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CurrentLabel <IMicrosoftGraphCurrentLabel>]: currentLabel
@@ -534,7 +586,20 @@ BODYPARAMETER `<IPaths1EzienbUsersUserIdInformationprotectionDatalosspreventionp
     [Author <String>]: 
   [Target <String>]: 
 
-EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
+CLASSIFYTEXT <IMicrosoftGraphTextClassificationRequest>: textClassificationRequest
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ContentMetaData <IMicrosoftGraphClassificationRequestContentMetaData>]: classificationRequestContentMetaData
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [SourceId <String>]: 
+  [FileExtension <String>]: 
+  [MatchTolerancesToInclude <String>]: mlClassificationMatchTolerance
+  [ScopesToRun <String>]: sensitiveTypeScope
+  [SensitiveTypeIds <String[]>]: 
+  [Text <String>]: 
+
+EVALUATIONINPUT <IMicrosoftGraphDlpEvaluationInput>: dlpEvaluationInput
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CurrentLabel <IMicrosoftGraphCurrentLabel>]: currentLabel
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -548,7 +613,7 @@ EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
     [Count <Int32?>]: 
     [Id <String>]: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -645,34 +710,11 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-NOTIFICATIONINFO `<IMicrosoftGraphDlpNotification>`: dlpNotification
+NOTIFICATIONINFO <IMicrosoftGraphDlpNotification>: dlpNotification
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Author <String>]:
 
 
 ## RELATED LINKS
 
-- [Test-MgBetaUserInformationProtectionDataLossPreventionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetauserinformationprotectiondatalosspreventionpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetauserinformationprotectiondatalosspreventionpolicy)
