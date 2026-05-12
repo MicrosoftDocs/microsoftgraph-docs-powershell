@@ -59,16 +59,6 @@ Delete a certificateAuthorityDetail object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PublicKeyInfrastructure.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -457,6 +447,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
 - [](https://learn.microsoft.com/graph/api/certificatebasedauthpki-delete-certificateauthorities?view=graph-rest-1.0)
+
 
 
 

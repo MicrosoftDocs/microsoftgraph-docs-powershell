@@ -52,16 +52,6 @@ Get the status of a SharePoint site creation operation to monitor its progress.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -373,6 +363,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteoperationstatus)
 - [](https://learn.microsoft.com/graph/api/site-getoperationstatus?view=graph-rest-beta)
+
 
 
 
