@@ -16,6 +16,9 @@ title: Remove-MgBetaUserCalendarPermanent
 Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserCalendarPermanent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserCalendarPermanent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

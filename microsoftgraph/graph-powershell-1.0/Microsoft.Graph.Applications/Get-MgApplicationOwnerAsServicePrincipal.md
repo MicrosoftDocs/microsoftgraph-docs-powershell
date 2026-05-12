@@ -15,6 +15,9 @@ title: Get-MgApplicationOwnerAsServicePrincipal
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerAsServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

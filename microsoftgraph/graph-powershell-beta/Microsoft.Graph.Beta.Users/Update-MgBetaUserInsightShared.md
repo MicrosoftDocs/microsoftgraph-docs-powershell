@@ -15,6 +15,9 @@ title: Update-MgBetaUserInsightShared
 
 Update the navigation property shared in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/Update-MgUserInsightShared?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -17,6 +17,9 @@ Get the specified whoisRecord resource.
 Specify the desired whoisRecord in one of the following two ways:\r- Identify a host and get its current whoisRecord.
 \r- Specify an id value to get the corresponding whoisRecord.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

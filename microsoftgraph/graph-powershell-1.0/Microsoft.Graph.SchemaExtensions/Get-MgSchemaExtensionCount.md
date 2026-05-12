@@ -15,6 +15,9 @@ title: Get-MgSchemaExtensionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSchemaExtensionCount](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgBetaSchemaExtensionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

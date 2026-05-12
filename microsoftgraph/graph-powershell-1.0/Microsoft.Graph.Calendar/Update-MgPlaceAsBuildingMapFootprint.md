@@ -15,6 +15,9 @@ title: Update-MgPlaceAsBuildingMapFootprint
 
 Update the navigation property footprints in places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingMapFootprint](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingMapFootprint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

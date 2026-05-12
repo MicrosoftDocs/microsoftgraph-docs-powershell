@@ -15,6 +15,9 @@ title: Update-MgIdentityRiskPrevention
 
 Update the navigation property riskPrevention in identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityRiskPrevention](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityRiskPrevention?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
