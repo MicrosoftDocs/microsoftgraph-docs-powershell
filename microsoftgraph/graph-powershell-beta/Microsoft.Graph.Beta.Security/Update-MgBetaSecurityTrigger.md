@@ -309,7 +309,7 @@ HelpMessage: ''
 
 ### -RetentionEvents
 
-.
+
 To construct, see NOTES section for RETENTIONEVENTS properties and create a hash table.
 
 ```yaml
