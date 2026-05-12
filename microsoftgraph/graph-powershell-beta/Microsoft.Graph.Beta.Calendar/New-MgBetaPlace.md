@@ -61,20 +61,6 @@ You can also use this method to create the following child object types: buildin
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Place.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -705,6 +691,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace)
 - [](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-beta)
+
 
 
 
