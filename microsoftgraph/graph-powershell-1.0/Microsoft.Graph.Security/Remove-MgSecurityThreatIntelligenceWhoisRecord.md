@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligencewhoisrecord
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSecurityThreatIntelligenceWhoisRecord
 ---
@@ -14,9 +14,6 @@ title: Remove-MgSecurityThreatIntelligenceWhoisRecord
 ## SYNOPSIS
 
 Delete navigation property whoisRecords for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property whoisRecords for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -379,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -455,27 +462,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgSecurityThreatIntelligenceWhoisRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligencewhoisrecord)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligencewhoisrecord)

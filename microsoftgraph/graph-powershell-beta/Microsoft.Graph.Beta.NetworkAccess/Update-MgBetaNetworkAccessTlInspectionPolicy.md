@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlinspectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessTlInspectionPolicy
 ---
@@ -71,14 +71,6 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of a tlsInspectionPolicy object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
 
@@ -648,7 +640,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessTlsInspectionPolicy>`: tlsInspectionPolicy
+BODYPARAMETER <IMicrosoftGraphNetworkaccessTlsInspectionPolicy>: tlsInspectionPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description.
   [Name <String>]: Policy name.
@@ -665,7 +657,7 @@ Read-only.
   [Settings <IMicrosoftGraphNetworkaccessTlsInspectionPolicySettings>]: tlsInspectionPolicySettings
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -699,27 +691,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaNetworkAccessTlInspectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlinspectionpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlinspectionpolicy)
+- [](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicy-update?view=graph-rest-beta)

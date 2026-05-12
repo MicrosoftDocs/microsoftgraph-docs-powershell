@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskattachmentcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 02/20/2026
+ms.date: 05/12/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserTodoListTaskAttachmentContent
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaUserTodoListTaskAttachmentContent
 
 The unique identifier for an entity.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoListTaskAttachmentContent](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskAttachmentContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,13 +49,15 @@ This cmdlet has the following aliases,
 The unique identifier for an entity.
 Read-only.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
-| Application | Tasks.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -453,7 +452,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -490,27 +489,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserTodoListTaskAttachmentContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskattachmentcontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskattachmentcontent)

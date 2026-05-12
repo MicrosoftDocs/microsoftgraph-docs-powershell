@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmoduleresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgEducationClassModuleResource
 ---
@@ -15,9 +15,6 @@ title: Remove-MgEducationClassModuleResource
 
 Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,26 +49,13 @@ This cmdlet has the following aliases,
 Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduCurricula.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduCurricula.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
-
-```
-This example shows how to use the Remove-MgEducationClassModuleResource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -445,7 +429,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -470,27 +454,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgEducationClassModuleResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmoduleresource)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmoduleresource-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmoduleresource)
+- [](https://learn.microsoft.com/graph/api/educationmoduleresource-delete?view=graph-rest-1.0)

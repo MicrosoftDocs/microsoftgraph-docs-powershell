@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentsubmissionoutcome
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEducationMeAssignmentSubmissionOutcome
 ---
@@ -14,9 +14,6 @@ title: Update-MgEducationMeAssignmentSubmissionOutcome
 ## SYNOPSIS
 
 Update the navigation property outcomes in education
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeAssignmentSubmissionOutcome?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property outcomes in education
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -571,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationOutcome>`: educationOutcome
+BODYPARAMETER <IMicrosoftGraphEducationOutcome>: educationOutcome
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -589,7 +596,7 @@ For example, in the access reviews decisions API, this property might record the
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -611,7 +618,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
   [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -625,27 +632,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgEducationMeAssignmentSubmissionOutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentsubmissionoutcome)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentsubmissionoutcome)

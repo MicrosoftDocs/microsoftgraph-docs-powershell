@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignmentrequestroleinfosetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSetting
 ---
@@ -76,6 +76,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property settings in privilegedRoleAssignmentRequests
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -107,7 +117,7 @@ HelpMessage: ''
 
 ### -ApprovalOnElevation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +144,7 @@ HelpMessage: ''
 
 ### -ApproverIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -232,7 +242,7 @@ HelpMessage: ''
 
 ### -ElevationDuration
 
-
+.
 
 ```yaml
 Type: System.TimeSpan
@@ -378,7 +388,7 @@ HelpMessage: ''
 
 ### -IsMfaOnElevationConfigurable
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -405,7 +415,7 @@ HelpMessage: ''
 
 ### -LastGlobalAdmin
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -432,7 +442,7 @@ HelpMessage: ''
 
 ### -MaxElavationDuration
 
-
+.
 
 ```yaml
 Type: System.TimeSpan
@@ -459,7 +469,7 @@ HelpMessage: ''
 
 ### -MfaOnElevation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -486,7 +496,7 @@ HelpMessage: ''
 
 ### -MinElevationDuration
 
-
+.
 
 ```yaml
 Type: System.TimeSpan
@@ -513,7 +523,7 @@ HelpMessage: ''
 
 ### -NotificationToUserOnElevation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -652,7 +662,7 @@ HelpMessage: ''
 
 ### -TicketingInfoOnElevation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -733,7 +743,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedRoleSettings>`: privilegedRoleSettings
+BODYPARAMETER <IMicrosoftGraphPrivilegedRoleSettings>: privilegedRoleSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -748,7 +758,7 @@ Read-only.
   [NotificationToUserOnElevation <Boolean?>]: 
   [TicketingInfoOnElevation <Boolean?>]: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -796,6 +806,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -861,27 +872,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignmentrequestroleinfosetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignmentrequestroleinfosetting)

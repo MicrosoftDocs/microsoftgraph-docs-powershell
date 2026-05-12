@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepageassitepagewebpart
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupSitePageAsSitePageWebPart
 ---
@@ -14,9 +14,6 @@ title: Update-MgGroupSitePageAsSitePageWebPart
 ## SYNOPSIS
 
 Update the navigation property webParts in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePageAsSitePageWebPart?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -68,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property webParts in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -536,7 +543,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -584,27 +591,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgGroupSitePageAsSitePageWebPart](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepageassitepagewebpart)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepageassitepagewebpart)

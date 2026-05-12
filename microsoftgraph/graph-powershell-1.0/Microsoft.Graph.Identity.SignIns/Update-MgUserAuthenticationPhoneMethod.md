@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationphonemethod
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserAuthenticationPhoneMethod
 ---
@@ -19,20 +19,18 @@ To change a phone's type, add a new number of the desired type and then delete t
 If a user is enabled by policy to use SMS to sign in and the mobile number is changed, the system will attempt to register the number for use in that system.
 Self-service operations aren't supported.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 
 ```
 Update-MgUserAuthenticationPhoneMethod -PhoneAuthenticationMethodId <string> -UserId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
- [-PhoneNumber <string>] [-PhoneType <string>] [-SmsSignInState <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-CreatedDateTime <datetime>] [-Id <string>] [-PhoneNumber <string>] [-PhoneType <string>]
+ [-SmsSignInState <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -49,11 +47,12 @@ Update-MgUserAuthenticationPhoneMethod -PhoneAuthenticationMethodId <string> -Us
 
 ```
 Update-MgUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
- [-PhoneNumber <string>] [-PhoneType <string>] [-SmsSignInState <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-CreatedDateTime <datetime>] [-Id <string>] [-PhoneNumber <string>] [-PhoneType <string>]
+ [-SmsSignInState <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -79,18 +78,9 @@ To change a phone's type, add a new number of the desired type and then delete t
 If a user is enabled by policy to use SMS to sign in and the mobile number is changed, the system will attempt to register the number for use in that system.
 Self-service operations aren't supported.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-Phone.ReadWrite, UserAuthMethod-Phone.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Phone.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -100,10 +90,6 @@ $params = @{
 }
 
 Update-MgUserAuthenticationPhoneMethod -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgUserAuthenticationPhoneMethod Cmdlet.
-
 
 ## PARAMETERS
 
@@ -195,6 +181,34 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CreatedDateTime
+
+Represents the date and time when an entity was created.
+Read-only.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -603,8 +617,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPhoneAuthenticationMethod>`: phoneAuthenticationMethod
+BODYPARAMETER <IMicrosoftGraphPhoneAuthenticationMethod>: phoneAuthenticationMethod
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
+Read-only.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [PhoneNumber <String>]: The phone number to text or call for authentication.
@@ -614,7 +630,7 @@ Numbers are rejected when creating or updating if they don't match the required 
   [PhoneType <String>]: authenticationPhoneType
   [SmsSignInState <String>]: authenticationMethodSignInState
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -637,6 +653,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
+  [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
   [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
@@ -682,27 +699,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgUserAuthenticationPhoneMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationphonemethod)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationphonemethod)
+- [](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-update?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetarecordidentitygovernanceaccessreviewdefinitioninstancestagedecision
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRecordIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 ---
@@ -77,6 +77,16 @@ This cmdlet has the following aliases,
 
 As a reviewer of an access review, record a decision for an accessReviewInstanceDecisionItem that is assigned to you and that matches the principal or resource IDs specified.
 If no IDs are specified, the decisions will apply to every accessReviewInstanceDecisionItem for which you are the reviewer.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -190,7 +200,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -261,7 +271,7 @@ HelpMessage: ''
 
 ### -Decision
 
-
+.
 
 ```yaml
 Type: System.String
@@ -379,7 +389,7 @@ HelpMessage: ''
 
 ### -Justification
 
-
+.
 
 ```yaml
 Type: System.String
@@ -427,7 +437,7 @@ HelpMessage: ''
 
 ### -PrincipalId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -517,7 +527,7 @@ HelpMessage: ''
 
 ### -ResourceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -620,14 +630,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsOzdptsIdentitygovernanceAccessreviewsDefinitionsAccessreviewscheduledefinitionIdInstancesAccessreviewinstanceIdStagesAccessreviewstageIdDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsOzdptsIdentitygovernanceAccessreviewsDefinitionsAccessreviewscheduledefinitionIdInstancesAccessreviewinstanceIdStagesAccessreviewstageIdDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Decision <String>]: 
   [Justification <String>]: 
   [PrincipalId <String>]: 
   [ResourceId <String>]: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -675,6 +685,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -740,28 +751,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaRecordIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetarecordidentitygovernanceaccessreviewdefinitioninstancestagedecision)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-recordalldecisions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetarecordidentitygovernanceaccessreviewdefinitioninstancestagedecision)
+- [](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-recordalldecisions?view=graph-rest-beta)

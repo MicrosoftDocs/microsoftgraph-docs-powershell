@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockgroupteamscheduletimecardin
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgClockGroupTeamScheduleTimeCardIn
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgClockGroupTeamScheduleTimeCardIn
 ## SYNOPSIS
 
 Clock in to start a timeCard.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaClockGroupTeamScheduleTimeCardIn](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaClockGroupTeamScheduleTimeCardIn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 
 Clock in to start a timeCard.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -104,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -293,7 +300,7 @@ HelpMessage: ''
 
 ### -IsAtApprovedLocation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -348,7 +355,7 @@ HelpMessage: ''
 
 ### -OnBehalfOfUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -514,7 +521,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAtApprovedLocation <Boolean?>]: 
   [Notes <IMicrosoftGraphItemBody>]: itemBody
@@ -523,7 +530,7 @@ BODYPARAMETER `<IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClo
     [ContentType <String>]: bodyType
   [OnBehalfOfUserId <String>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -560,7 +567,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+NOTES <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -568,28 +575,5 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [Invoke-MgClockGroupTeamScheduleTimeCardIn](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockgroupteamscheduletimecardin)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockgroupteamscheduletimecardin)
+- [](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactbulkadditionrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveR
 ## SYNOPSIS
 
 Delete a driveRestoreArtifactsBulkAdditionRequest object associated with a oneDriveForBusinessRestoreSession.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a driveRestoreArtifactsBulkAdditionRequest object associated with a oneDriveForBusinessRestoreSession.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -402,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -440,28 +447,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactbulkadditionrequest)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driverestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactbulkadditionrequest)
+- [](https://learn.microsoft.com/graph/api/driverestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta)

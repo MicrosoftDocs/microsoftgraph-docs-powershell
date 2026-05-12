@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryauthenticationmethoddevicehardwareoathdevice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice
 ---
@@ -51,17 +51,12 @@ Delete a Hardware OATH token.
 Token needs to be unassigned.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -HardwareOathTokenAuthenticationMethodDeviceId $hardwareOathTokenAuthenticationMethodDeviceId
-
-```
-This example shows how to use the Remove-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice Cmdlet.
-
 
 ## PARAMETERS
 
@@ -393,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -453,27 +448,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryauthenticationmethoddevicehardwareoathdevice)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethoddevice-delete-hardwareoathdevices?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryauthenticationmethoddevicehardwareoathdevice)
+- [](https://learn.microsoft.com/graph/api/authenticationmethoddevice-delete-hardwareoathdevices?view=graph-rest-beta)

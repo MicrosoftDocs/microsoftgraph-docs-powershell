@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetasiteonenotesectiongroupsectionpagetosection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection
 ---
@@ -15,9 +15,6 @@ title: Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection
 
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgSiteOnenoteSectionGroupSectionPageToSection](/powershell/module/Microsoft.Graph.Notes/Copy-MgSiteOnenoteSectionGroupSectionPageToSection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,6 +74,16 @@ This cmdlet has the following aliases,
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -108,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -179,7 +186,7 @@ HelpMessage: ''
 
 ### -GroupId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -269,7 +276,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -490,7 +497,7 @@ HelpMessage: ''
 
 ### -SiteCollectionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -550,7 +557,7 @@ HelpMessage: ''
 
 ### -SiteId1
 
-
+.
 
 ```yaml
 Type: System.String
@@ -625,14 +632,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths169Srg3SitesSiteIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths169Srg3SitesSiteIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupId <String>]: 
   [Id <String>]: 
   [SiteCollectionId <String>]: 
   [SiteId <String>]: 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -649,28 +656,5 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetasiteonenotesectiongroupsectionpagetosection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetasiteonenotesectiongroupsectionpagetosection)
+- [](https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-beta)

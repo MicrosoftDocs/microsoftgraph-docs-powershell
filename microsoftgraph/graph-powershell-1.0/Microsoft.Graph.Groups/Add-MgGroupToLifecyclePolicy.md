@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggrouptolifecyclepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgGroupToLifecyclePolicy
 ---
@@ -15,9 +15,6 @@ title: Add-MgGroupToLifecyclePolicy
 
 Add a group to a groupLifecyclePolicy.
 This action is supported only if the managedGroupTypes property of the policy is set to Selected.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaGroupToLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupToLifecyclePolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 Add a group to a groupLifecyclePolicy.
 This action is supported only if the managedGroupTypes property of the policy is set to Selected.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
@@ -93,10 +81,6 @@ $params = @{
 }
 
 Add-MgGroupToLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
-
-```
-This example shows how to use the Add-MgGroupToLifecyclePolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -129,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -200,7 +184,7 @@ HelpMessage: ''
 
 ### -GroupId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -484,11 +468,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1EttbuxGrouplifecyclepoliciesGrouplifecyclepolicyIdMicrosoftGraphAddgroupPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1EttbuxGrouplifecyclepoliciesGrouplifecyclepolicyIdMicrosoftGraphAddgroupPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupId <String>]: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -512,27 +496,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Add-MgGroupToLifecyclePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggrouptolifecyclepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-addgroup?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggrouptolifecyclepolicy)
+- [](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-addgroup?view=graph-rest-1.0)

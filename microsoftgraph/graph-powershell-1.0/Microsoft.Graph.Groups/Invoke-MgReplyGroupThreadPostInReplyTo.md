@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthreadpostinreplyto
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 05/11/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReplyGroupThreadPostInReplyTo
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgReplyGroupThreadPostInReplyTo
 ## SYNOPSIS
 
 Invoke action reply
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThreadPostInReplyTo?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 
 Invoke action reply
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -105,7 +112,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -536,7 +543,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Post <IMicrosoftGraphPost>]: post
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -603,7 +610,7 @@ Nullable.
 Read-only.
       [Value <String>]: A property value.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -624,7 +631,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [StartDateTime <String>]: Usage: startDateTime='{startDateTime}'
   [UniqueName <String>]: Alternate key of group
 
-POST `<IMicrosoftGraphPost>`: post
+POST <IMicrosoftGraphPost>: post
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -692,27 +699,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Invoke-MgReplyGroupThreadPostInReplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthreadpostinreplyto)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthreadpostinreplyto)
