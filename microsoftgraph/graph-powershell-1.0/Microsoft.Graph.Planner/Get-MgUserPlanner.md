@@ -355,7 +355,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplanner)
+- [Get-MgUserPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplanner)
 
 
 

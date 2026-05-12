@@ -454,7 +454,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetarotateusermanageddevicefilevaultkey)
+- [Invoke-MgBetaRotateUserManagedDeviceFileVaultKey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetarotateusermanageddevicefilevaultkey)
 
 
 

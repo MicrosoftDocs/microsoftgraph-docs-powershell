@@ -481,8 +481,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilepropertysetting)
-- [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilepropertysettings?view=graph-rest-beta)
+- [New-MgBetaAdminPeopleProfilePropertySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilepropertysetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilepropertysettings?view=graph-rest-beta)
 
 
 

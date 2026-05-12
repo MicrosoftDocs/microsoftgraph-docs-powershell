@@ -515,7 +515,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipaltokenissuancepolicybyref)
+- [New-MgServicePrincipalTokenIssuancePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipaltokenissuancepolicybyref)
 
 
 

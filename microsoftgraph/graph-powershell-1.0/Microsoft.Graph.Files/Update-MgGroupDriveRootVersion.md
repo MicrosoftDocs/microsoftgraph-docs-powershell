@@ -737,7 +737,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootversion)
+- [Update-MgGroupDriveRootVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootversion)
 
 
 

@@ -443,7 +443,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgrenewdeviceappmanagementmobileappmicrosoftgraphmacosdmgappcontentversionfileupload)
+- [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgrenewdeviceappmanagementmobileappmicrosoftgraphmacosdmgappcontentversionfileupload)
 
 
 

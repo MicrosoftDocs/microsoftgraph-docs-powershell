@@ -438,7 +438,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplyhostedcontentcount)
+- [Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplyhostedcontentcount)
 
 
 

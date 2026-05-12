@@ -920,7 +920,7 @@ Not yet supported.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinitioninheritpermissionfrom)
+- [Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinitioninheritpermissionfrom)
 
 
 

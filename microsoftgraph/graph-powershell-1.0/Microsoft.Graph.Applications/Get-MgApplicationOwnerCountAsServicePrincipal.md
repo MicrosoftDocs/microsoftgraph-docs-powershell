@@ -387,7 +387,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownercountasserviceprincipal)
+- [Get-MgApplicationOwnerCountAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownercountasserviceprincipal)
 
 
 
