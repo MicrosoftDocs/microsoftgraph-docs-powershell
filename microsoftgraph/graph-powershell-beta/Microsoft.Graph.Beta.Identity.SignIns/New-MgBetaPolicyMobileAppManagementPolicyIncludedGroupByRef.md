@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobileappmanagementpolicyincludedgroupbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef
 ---
@@ -71,9 +71,8 @@ This cmdlet has the following aliases,
 Add groups to be included in a mobile app management policy.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -81,11 +80,7 @@ $params = @{
 	"@odata.id" = "https://graph.microsoft.com/odata/groups('1a9db3ab-0acf-4808-99ae-e8ed581cb2e0')"
 }
 
-New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef Cmdlet.
-
+New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobileAppManagementPolicyId $mobileAppManagementPolicyId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -118,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -495,12 +490,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -600,27 +595,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobileappmanagementpolicyincludedgroupbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-post-includedgroups?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobileappmanagementpolicyincludedgroupbyref)
+- [](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-post-includedgroups?view=graph-rest-beta)

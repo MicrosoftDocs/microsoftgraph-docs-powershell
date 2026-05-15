@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasuserdeviceenrollmentconfigurationpayloadlink
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink
 ---
@@ -70,6 +70,16 @@ This cmdlet has the following aliases,
 
 Invoke action hasPayloadLinks
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -101,7 +111,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -123,7 +133,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -279,7 +289,7 @@ HelpMessage: ''
 
 ### -PayloadIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -472,15 +482,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PayloadIds <String[]>]: 
 
-BODYPARAMETER `<IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PayloadIds <String[]>]: 
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -558,27 +568,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasuserdeviceenrollmentconfigurationpayloadlink)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasuserdeviceenrollmentconfigurationpayloadlink)

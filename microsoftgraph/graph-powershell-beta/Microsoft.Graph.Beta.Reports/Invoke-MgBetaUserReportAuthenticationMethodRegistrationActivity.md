@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetauserreportauthenticationmethodregistrationactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUserReportAuthenticationMethodRegistrationActivity
 ---
@@ -472,7 +472,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -528,27 +528,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaUserReportAuthenticationMethodRegistrationActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetauserreportauthenticationmethodregistrationactivity)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodsroot-userregistrationactivity?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetauserreportauthenticationmethodregistrationactivity)
+- [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-userregistrationactivity?view=graph-rest-beta)

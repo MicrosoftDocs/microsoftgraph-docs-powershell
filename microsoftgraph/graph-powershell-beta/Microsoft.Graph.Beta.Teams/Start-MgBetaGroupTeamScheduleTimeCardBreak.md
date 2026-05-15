@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetagroupteamscheduletimecardbreak
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaGroupTeamScheduleTimeCardBreak
 ---
@@ -14,9 +14,6 @@ title: Start-MgBetaGroupTeamScheduleTimeCardBreak
 ## SYNOPSIS
 
 Start a break in a specific timeCard.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Start-MgGroupTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Teams/Start-MgGroupTeamScheduleTimeCardBreak?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 
 Start a break in a specific timeCard.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -104,7 +111,7 @@ HelpMessage: ''
 
 ### -AtApprovedLocation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +138,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -320,7 +327,7 @@ HelpMessage: ''
 
 ### -IsAtApprovedLocation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -541,7 +548,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Qw8GlwGroupsGroupIdTeamScheduleTimecardsTimecardIdMicrosoftGraphStartbreakPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Qw8GlwGroupsGroupIdTeamScheduleTimecardsTimecardIdMicrosoftGraphStartbreakPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AtApprovedLocation <Boolean?>]: 
   [IsAtApprovedLocation <Boolean?>]: 
@@ -550,7 +557,7 @@ BODYPARAMETER `<IPaths1Qw8GlwGroupsGroupIdTeamScheduleTimecardsTimecardIdMicroso
     [Content <String>]: The content of the item.
     [ContentType <String>]: bodyType
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -597,7 +604,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+NOTES <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -605,28 +612,5 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [Start-MgBetaGroupTeamScheduleTimeCardBreak](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetagroupteamscheduletimecardbreak)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-startbreak?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetagroupteamscheduletimecardbreak)
+- [](https://learn.microsoft.com/graph/api/timecard-startbreak?view=graph-rest-beta)

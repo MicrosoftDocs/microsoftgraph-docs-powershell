@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIncident
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityIncident
 ## SYNOPSIS
 
 Update the properties of an incident object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -83,18 +80,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an incident object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIncident.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIncident.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -107,10 +95,6 @@ $params = @{
 }
 
 Update-MgSecurityIncident -IncidentId $incidentId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgSecurityIncident Cmdlet.
-
 
 ## PARAMETERS
 
@@ -688,7 +672,9 @@ HelpMessage: ''
 
 ### -PriorityScore
 
-
+A priority score for the incident from 0 to 100, with > 85 being the top priority, 15 - 85 medium priority, and < 15 low priority.
+This score is generated using machine learning and is based on multiple factors, including severity, disruption impact, threat intelligence, alert types, asset criticality, threat analytics, incident rarity, and additional priority signals.
+The value can also be null which indicates the feature is not open for the tenant or the value of the score is pending calculation.
 
 ```yaml
 Type: System.Int32
@@ -1056,6 +1042,7 @@ Read-only.
   [AlertPolicyId <String>]: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
   [AlertWebUrl <String>]: URL for the Microsoft 365 Defender portal alert page.
   [AssignedTo <String>]: Owner of the alert, or null if no owner is assigned.
+  [Categories <String[]>]: 
   [Category <String>]: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
   [Classification <String>]: alertClassification
@@ -1100,7 +1087,7 @@ Values are free-form.
   [ThreatFamilyName <String>]: Threat family associated with this alert.
   [Title <String>]: Brief identifying string value describing the alert.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
+BODYPARAMETER <IMicrosoftGraphSecurityIncident>: incident
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1114,6 +1101,7 @@ Read-only.
     [AlertPolicyId <String>]: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
     [AlertWebUrl <String>]: URL for the Microsoft 365 Defender portal alert page.
     [AssignedTo <String>]: Owner of the alert, or null if no owner is assigned.
+    [Categories <String[]>]: 
     [Category <String>]: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
     [Classification <String>]: alertClassification
@@ -1169,7 +1157,9 @@ Free editable text.
   [IncidentWebUrl <String>]: The URL for the incident page in the Microsoft 365 Defender portal.
   [LastModifiedBy <String>]: The identity that last modified the incident.
   [LastUpdateDateTime <DateTime?>]: Time when the incident was last updated.
-  [PriorityScore <Int32?>]: 
+  [PriorityScore <Int32?>]: A priority score for the incident from 0 to 100, with > 85 being the top priority, 15 - 85 medium priority, and < 15 low priority.
+This score is generated using machine learning and is based on multiple factors, including severity, disruption impact, threat intelligence, alert types, asset criticality, threat analytics, incident rarity, and additional priority signals.
+The value can also be null which indicates the feature is not open for the tenant or the value of the score is pending calculation.
   [RedirectIncidentId <String>]: Only populated in case an incident is grouped with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
   [ResolvingComment <String>]: User input that explains the resolution of the incident and the classification choice.
@@ -1186,7 +1176,7 @@ COMMENTS <IMicrosoftGraphSecurityAlertComment[]>: Array of comments created by t
   [CreatedByDisplayName <String>]: The person or app name that submitted the comment.
   [CreatedDateTime <DateTime?>]: The time when the comment was submitted.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -1262,27 +1252,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident)
+- [](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobschemadirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgServicePrincipalSynchronizationJobSchemaDirectory
 ---
@@ -14,9 +14,6 @@ title: New-MgServicePrincipalSynchronizationJobSchemaDirectory
 ## SYNOPSIS
 
 Create new navigation property to directories for servicePrincipals
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to directories for servicePrincipals
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -655,7 +662,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryDefinition>`: directoryDefinition
+BODYPARAMETER <IMicrosoftGraphDirectoryDefinition>: directoryDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -708,12 +715,13 @@ Not nullable.
   [Version <String>]: Read only value that indicates version discovered.
 null if discovery hasn't yet occurred.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
+  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition
@@ -777,27 +785,4 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [New-MgServicePrincipalSynchronizationJobSchemaDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobschemadirectory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobschemadirectory)

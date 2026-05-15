@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementVirtualEndpointUserSetting
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementVirtualEndpointUserSetting
 ## SYNOPSIS
 
 Create a new cloudPcUserSetting object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 
 Create a new cloudPcUserSetting object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -78,10 +66,6 @@ $params = @{
 }
 
 New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementVirtualEndpointUserSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -565,7 +549,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]: cloudPcManagementAssignmentTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcUserSetting>`: cloudPcUserSetting
+BODYPARAMETER <IMicrosoftGraphCloudPcUserSetting>: cloudPcUserSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -600,7 +584,7 @@ The default value is false.
     [UserRestoreEnabled <Boolean?>]: If true, the user has the ability to use snapshots to restore Cloud PCs.
 If false, non-admin users can't use snapshots to restore the Cloud PC.
 
-RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestorePointSetting
+RESTOREPOINTSETTING <IMicrosoftGraphCloudPcRestorePointSetting>: cloudPcRestorePointSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [FrequencyType <String>]: cloudPcRestorePointFrequencyType
   [UserRestoreEnabled <Boolean?>]: If true, the user has the ability to use snapshots to restore Cloud PCs.
@@ -609,27 +593,5 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementVirtualEndpointUserSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting)
+- [](https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-1.0)

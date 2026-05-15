@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathcontentmodel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupSiteGetByPathContentModel
 ---
@@ -71,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to contentModels for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -679,7 +689,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphContentModel>`: contentModel
+BODYPARAMETER <IMicrosoftGraphContentModel>: contentModel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -702,7 +712,7 @@ Read-only.
   [ModelType <String>]: contentModelType
   [Name <String>]: The name of the contentModel.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -714,7 +724,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -776,7 +786,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -791,27 +801,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupSiteGetByPathContentModel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathcontentmodel)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathcontentmodel)

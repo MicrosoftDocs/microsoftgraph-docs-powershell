@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsettinggradingcategory
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassAssignmentSettingGradingCategory
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationClassAssignmentSettingGradingCategory
 ## SYNOPSIS
 
 When set, enables users to weight assignments differently when computing a class average grade.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSettingGradingCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,6 +57,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 When set, enables users to weight assignments differently when computing a class average grade.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -548,7 +555,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -573,27 +580,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationClassAssignmentSettingGradingCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsettinggradingcategory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsettinggradingcategory)

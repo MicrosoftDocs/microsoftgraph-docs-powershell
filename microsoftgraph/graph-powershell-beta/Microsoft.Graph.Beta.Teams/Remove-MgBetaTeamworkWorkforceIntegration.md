@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkworkforceintegration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaTeamworkWorkforceIntegration
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaTeamworkWorkforceIntegration
 ## SYNOPSIS
 
 Delete an instance of a workforceIntegration.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkWorkforceIntegration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 
 Delete an instance of a workforceIntegration.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WorkforceIntegration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WorkforceIntegration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId
-
-```
-This example shows how to use the Remove-MgBetaTeamworkWorkforceIntegration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -400,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -450,27 +434,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaTeamworkWorkforceIntegration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkworkforceintegration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/workforceintegration-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkworkforceintegration)
+- [](https://learn.microsoft.com/graph/api/workforceintegration-delete?view=graph-rest-beta)

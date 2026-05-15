@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoresharepointprotectionpolicysiteinclusionrule
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRule
 ---
@@ -18,9 +18,6 @@ You can use this operation to get mailbox, drive, and site protection rules.
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria.
 The initial status of a protection rule upon creation is active.
 After the rule is applied, the state is either completed or completedWithErrors.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,13 +66,15 @@ An inclusion rule indicates that a protection policy should contain protection u
 The initial status of a protection rule upon creation is active.
 After the rule is applied, the state is either completed or completedWithErrors.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BackupRestore-Configuration.Read.All, BackupRestore-Configuration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BackupRestore-Configuration.Read.All, BackupRestore-Configuration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -564,7 +563,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
+  [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -572,12 +572,16 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [DriveRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   [ExchangeProtectionPolicyId <String>]: The unique identifier of exchangeProtectionPolicy
   [ExchangeRestoreSessionId <String>]: The unique identifier of exchangeRestoreSession
+  [GranularDriveRestoreArtifactId <String>]: The unique identifier of granularDriveRestoreArtifact
   [GranularMailboxRestoreArtifactId <String>]: The unique identifier of granularMailboxRestoreArtifact
+  [GranularSiteRestoreArtifactId <String>]: The unique identifier of granularSiteRestoreArtifact
   [MailboxProtectionRuleId <String>]: The unique identifier of mailboxProtectionRule
   [MailboxProtectionUnitId <String>]: The unique identifier of mailboxProtectionUnit
   [MailboxProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
   [MailboxRestoreArtifactId <String>]: The unique identifier of mailboxRestoreArtifact
   [MailboxRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
+  [NextFetchToken <String>]: Usage: nextFetchToken='{nextFetchToken}'
+  [OneDriveForBusinessBrowseSessionId <String>]: The unique identifier of oneDriveForBusinessBrowseSession
   [OneDriveForBusinessProtectionPolicyId <String>]: The unique identifier of oneDriveForBusinessProtectionPolicy
   [OneDriveForBusinessRestoreSessionId <String>]: The unique identifier of oneDriveForBusinessRestoreSession
   [ProtectionPolicyBaseId <String>]: The unique identifier of protectionPolicyBase
@@ -585,6 +589,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [RestorePointId <String>]: The unique identifier of restorePoint
   [RestoreSessionBaseId <String>]: The unique identifier of restoreSessionBase
   [ServiceAppId <String>]: The unique identifier of serviceApp
+  [SharePointBrowseSessionId <String>]: The unique identifier of sharePointBrowseSession
   [SharePointProtectionPolicyId <String>]: The unique identifier of sharePointProtectionPolicy
   [SharePointRestoreSessionId <String>]: The unique identifier of sharePointRestoreSession
   [SiteProtectionRuleId <String>]: The unique identifier of siteProtectionRule
@@ -596,29 +601,6 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRule](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoresharepointprotectionpolicysiteinclusionrule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-list-siteinclusionrules?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoresharepointprotectionpolicysiteinclusionrule)
+- [](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-list-siteinclusionrules?view=graph-rest-1.0)

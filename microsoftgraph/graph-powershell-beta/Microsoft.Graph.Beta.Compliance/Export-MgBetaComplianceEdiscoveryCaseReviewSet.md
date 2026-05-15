@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Export-MgBetaComplianceEdiscoveryCaseReviewSet
 ---
@@ -76,18 +76,9 @@ This cmdlet has the following aliases,
 Initiate an export from a reviewSet.
 For details, see Export documents from a review set in Advanced eDiscovery.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -99,10 +90,6 @@ $params = @{
 }
 
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
-
-```
-This example shows how to use the Export-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet.
-
 
 ## PARAMETERS
 
@@ -135,7 +122,7 @@ HelpMessage: ''
 
 ### -AzureBlobContainer
 
-
+.
 
 ```yaml
 Type: System.String
@@ -162,7 +149,7 @@ HelpMessage: ''
 
 ### -AzureBlobToken
 
-
+.
 
 ```yaml
 Type: System.String
@@ -189,7 +176,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -287,7 +274,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -459,7 +446,7 @@ HelpMessage: ''
 
 ### -OutputName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -673,7 +660,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AzureBlobContainer <String>]: 
   [AzureBlobToken <String>]: 
@@ -682,7 +669,7 @@ BODYPARAMETER `<IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetId
   [ExportStructure <String>]: exportFileStructure
   [OutputName <String>]: 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -705,27 +692,5 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Export-MgBetaComplianceEdiscoveryCaseReviewSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-reviewset-export?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset)
+- [](https://learn.microsoft.com/graph/api/ediscovery-reviewset-export?view=graph-rest-beta)

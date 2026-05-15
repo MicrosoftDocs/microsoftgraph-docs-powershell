@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.SchemaExtensions
-Module Guid: ac90e719-5d6b-4c5f-870d-23279b0f7602
+Module Guid: 2371bdaf-bb47-40dc-ba15-f70c5e24d1e7
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -22,23 +22,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgSchemaExtension](Remove-MgSchemaExtension.md)
 
 ### [Update-MgSchemaExtension](Update-MgSchemaExtension.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

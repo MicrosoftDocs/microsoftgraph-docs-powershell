@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolder
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserMailFolder
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserMailFolder
 ## SYNOPSIS
 
 Update the navigation property mailFolders in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -81,18 +78,10 @@ This cmdlet has the following aliases,
 
 Update the navigation property mailFolders in users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
-| Application | Mail.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
@@ -101,11 +90,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserMailFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -829,7 +813,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMailFolder>`: mailFolder
+BODYPARAMETER <IMicrosoftGraphMailFolder>: mailFolder
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -955,7 +939,7 @@ To verify the existence of inline attachments, parse the body property to look f
     [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
       [Name <String>]: Represents the key in a key-value pair.
       [Value <String>]: The value in a key-value pair.
@@ -1127,7 +1111,7 @@ To verify the existence of inline attachments, parse the body property to look f
     [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
       [Name <String>]: Represents the key in a key-value pair.
       [Value <String>]: The value in a key-value pair.
@@ -1174,7 +1158,7 @@ Nullable.
   [TotalItemCount <Int32?>]: The number of items in the mailFolder.
   [UnreadItemCount <Int32?>]: The number of items in the mailFolder marked as unread.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -1305,7 +1289,7 @@ To verify the existence of inline attachments, parse the body property to look f
   [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
     [Name <String>]: Represents the key in a key-value pair.
     [Value <String>]: The value in a key-value pair.
@@ -1360,26 +1344,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgUserMailFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolder)

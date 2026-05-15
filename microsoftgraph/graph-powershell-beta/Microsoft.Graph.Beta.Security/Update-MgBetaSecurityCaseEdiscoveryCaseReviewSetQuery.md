@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewsetquery
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
 ## SYNOPSIS
 
 Update the properties of an ediscoveryReviewSetQuery object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an ediscoveryReviewSetQuery object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -98,10 +86,6 @@ $params = @{
 }
 
 Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
-
 
 ## PARAMETERS
 
@@ -204,7 +188,7 @@ HelpMessage: ''
 
 ### -ContentQuery
 
-
+.
 
 ```yaml
 Type: System.String
@@ -259,7 +243,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -286,7 +270,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -313,7 +297,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -568,7 +552,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -734,7 +718,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -746,7 +730,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -845,7 +829,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -860,27 +844,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewsetquery)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewsetquery)
+- [](https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-update?view=graph-rest-beta)

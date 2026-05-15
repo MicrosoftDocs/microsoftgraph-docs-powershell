@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdevicesoftware
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTeamworkDeviceSoftware
 ---
@@ -72,18 +72,9 @@ This cmdlet has the following aliases,
 Update the software for a Microsoft Teams-enabled device.
 This API triggers a long-running operation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamworkDevice.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamworkDevice.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -93,10 +84,6 @@ $params = @{
 }
 
 Update-MgBetaTeamworkDeviceSoftware -TeamworkDeviceId $teamworkDeviceId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaTeamworkDeviceSoftware Cmdlet.
-
 
 ## PARAMETERS
 
@@ -129,7 +116,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -424,7 +411,7 @@ HelpMessage: ''
 
 ### -SoftwareVersion
 
-
+.
 
 ```yaml
 Type: System.String
@@ -532,12 +519,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ci0GnkTeamworkDevicesTeamworkdeviceIdMicrosoftGraphUpdatesoftwarePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ci0GnkTeamworkDevicesTeamworkdeviceIdMicrosoftGraphUpdatesoftwarePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SoftwareType <String>]: teamworkSoftwareType
   [SoftwareVersion <String>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -587,27 +574,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaTeamworkDeviceSoftware](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdevicesoftware)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworkdevice-updatesoftware?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdevicesoftware)
+- [](https://learn.microsoft.com/graph/api/teamworkdevice-updatesoftware?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminPeople
 ---
@@ -50,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property people in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -515,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPeopleAdminSettings>`: peopleAdminSettings
+BODYPARAMETER <IMicrosoftGraphPeopleAdminSettings>: peopleAdminSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -554,12 +564,13 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
 Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
 When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
+    [IsVisible <Boolean?>]: 
   [ProfilePropertySettings <IMicrosoftGraphProfilePropertySetting[]>]: A collection of profile property configuration settings defined by an administrator for an organization.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [AllowedAudiences <String>]: organizationAllowedAudiences
-    [IsUserOverrideForAudienceEnabled <Boolean?>]: Defines whether a user is allowed to override the tenant admin privacy setting.
-    [Name <String>]: Name of the property-level setting.
+    [DisplayName <String>]: Name of the property-level setting.
+    [Name <String>]: Other name of the property-level setting.
+For backward compatibility.
     [PrioritizedSourceUrls <String[]>]: A collection of prioritized profile source URLs ordered by data precedence within an organization.
   [ProfileSources <IMicrosoftGraphProfileSource[]>]: A collection of profile source settings configured by an administrator in an organization.
     [Id <String>]: The unique identifier for an entity.
@@ -571,7 +582,7 @@ Read-only.
       [LanguageTag <String>]: Language locale.
       [WebUrl <String>]: Localized profile source URL.
     [SourceId <String>]: Profile source identifier used as an alternate key.
-    [WebUrl <String>]: Web URL of the profile source that directs users to the page view of profile data.
+    [WebUrl <String>]: Web URL of the profile source that directs users to the page view of the profile data.
   [Pronouns <IMicrosoftGraphPronounsSettings>]: pronounsSettings
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
@@ -579,7 +590,7 @@ Read-only.
     [IsEnabledInOrganization <Boolean?>]: true to enable pronouns in the organization; otherwise, false.
 The default value is false, and pronouns are disabled.
 
-ITEMINSIGHTS `<IMicrosoftGraphInsightsSettings>`: insightsSettings
+ITEMINSIGHTS <IMicrosoftGraphInsightsSettings>: insightsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -590,14 +601,14 @@ Optional.
 The default value is true.
 Optional.
 
-NAMEPRONUNCIATION `<IMicrosoftGraphNamePronunciationSettings>`: namePronunciationSettings
+NAMEPRONUNCIATION <IMicrosoftGraphNamePronunciationSettings>: namePronunciationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [IsEnabledInOrganization <Boolean?>]: true to enable name pronunciation in the organization; otherwise, false.
 The default value is false.
 
-PHOTOUPDATESETTINGS `<IMicrosoftGraphPhotoUpdateSettings>`: photoUpdateSettings
+PHOTOUPDATESETTINGS <IMicrosoftGraphPhotoUpdateSettings>: photoUpdateSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -617,13 +628,14 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
 Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
 When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
+  [IsVisible <Boolean?>]: 
 
 PROFILEPROPERTYSETTINGS <IMicrosoftGraphProfilePropertySetting[]>: A collection of profile property configuration settings defined by an administrator for an organization.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AllowedAudiences <String>]: organizationAllowedAudiences
-  [IsUserOverrideForAudienceEnabled <Boolean?>]: Defines whether a user is allowed to override the tenant admin privacy setting.
-  [Name <String>]: Name of the property-level setting.
+  [DisplayName <String>]: Name of the property-level setting.
+  [Name <String>]: Other name of the property-level setting.
+For backward compatibility.
   [PrioritizedSourceUrls <String[]>]: A collection of prioritized profile source URLs ordered by data precedence within an organization.
 
 PROFILESOURCES <IMicrosoftGraphProfileSource[]>: A collection of profile source settings configured by an administrator in an organization.
@@ -636,9 +648,9 @@ Read-only.
     [LanguageTag <String>]: Language locale.
     [WebUrl <String>]: Localized profile source URL.
   [SourceId <String>]: Profile source identifier used as an alternate key.
-  [WebUrl <String>]: Web URL of the profile source that directs users to the page view of profile data.
+  [WebUrl <String>]: Web URL of the profile source that directs users to the page view of the profile data.
 
-PRONOUNS `<IMicrosoftGraphPronounsSettings>`: pronounsSettings
+PRONOUNS <IMicrosoftGraphPronounsSettings>: pronounsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -648,27 +660,4 @@ The default value is false, and pronouns are disabled.
 
 ## RELATED LINKS
 
-- [Update-MgBetaAdminPeople](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberofasgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 05/15/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceMemberOfAsGroup
 ---
@@ -15,9 +15,6 @@ title: Get-MgDeviceMemberOfAsGroup
 
 Get groups and administrative units that this device is a direct member of.
 This operation is not transitive.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceMemberOfAsGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -63,18 +60,12 @@ Get groups and administrative units that this device is a direct member of.
 This operation is not transitive.
 
 ## EXAMPLES
-### Example 2: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDeviceMemberOfAsGroup -DeviceId $deviceId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual 
-
-
-```
-This example shows how to use the Get-MgDeviceMemberOfAsGroup Cmdlet.
-
+Get-MgDeviceMemberOfAsGroup -DeviceId $deviceId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual
 
 ## PARAMETERS
 
@@ -585,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -611,8 +602,11 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
+  [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
+  [ProfileSourceId <String>]: The unique identifier of profileSource
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
+  [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
@@ -620,27 +614,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDeviceMemberOfAsGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberofasgroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberofasgroup)
+- [](https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0)
