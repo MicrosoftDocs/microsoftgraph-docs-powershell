@@ -15,6 +15,9 @@ title: Get-MgEducationUserAssignmentCategoryDelta
 
 Get a list of newly created or updated educationCategory objects without having to perform a full read of the collection.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentCategoryDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentCategoryDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

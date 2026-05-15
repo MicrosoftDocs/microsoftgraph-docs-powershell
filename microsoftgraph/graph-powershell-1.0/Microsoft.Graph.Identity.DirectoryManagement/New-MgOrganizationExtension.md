@@ -15,6 +15,9 @@ title: New-MgOrganizationExtension
 
 Create new navigation property to extensions for organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaOrganizationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganizationExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

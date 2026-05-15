@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveRootAnalyticTime
 
 Get allTime from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveRootAnalyticTime](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootAnalyticTime?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

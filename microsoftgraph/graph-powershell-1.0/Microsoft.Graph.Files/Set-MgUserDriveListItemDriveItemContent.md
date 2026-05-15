@@ -15,6 +15,9 @@ title: Set-MgUserDriveListItemDriveItemContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserDriveListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveListItemDriveItemContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

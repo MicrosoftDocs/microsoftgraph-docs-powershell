@@ -15,6 +15,9 @@ title: Get-MgPlaceCountAsBuilding
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceCountAsBuilding](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceCountAsBuilding?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
