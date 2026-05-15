@@ -435,8 +435,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschoolclassbyref)
-- [](https://learn.microsoft.com/graph/api/educationschool-list-classes?view=graph-rest-beta)
+- [Get-MgBetaEducationSchoolClassByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschoolclassbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationschool-list-classes?view=graph-rest-beta)
 
 
 

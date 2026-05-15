@@ -537,8 +537,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadirectorysettingtemplatemembergroup)
-- [](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
+- [Confirm-MgBetaDirectorySettingTemplateMemberGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadirectorysettingtemplatemembergroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
 
 
 

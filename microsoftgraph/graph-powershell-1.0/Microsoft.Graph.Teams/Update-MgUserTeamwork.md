@@ -11343,7 +11343,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserteamwork)
+- [Update-MgUserTeamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserteamwork)
 
 
 

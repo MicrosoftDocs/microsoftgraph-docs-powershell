@@ -1144,7 +1144,7 @@ Some settings are inherited from the template.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationjob)
+- [Update-MgServicePrincipalSynchronizationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationjob)
 
 
 
