@@ -82,8 +82,9 @@ Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 New-MgPolicyFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -BodyParameter $params
+
+```
+This example shows how to use the New-MgPolicyFeatureRolloutPolicyApplyToByRef Cmdlet.
+
 
 ## PARAMETERS
 

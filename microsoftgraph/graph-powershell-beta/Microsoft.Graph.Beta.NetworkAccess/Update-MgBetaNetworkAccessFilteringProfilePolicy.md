@@ -78,16 +78,6 @@ Use this operation to update any derived type, including:\r- cloudFirewallPolicy
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -647,6 +637,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofilepolicy)
 - [](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-update?view=graph-rest-beta)
+
 
 
 

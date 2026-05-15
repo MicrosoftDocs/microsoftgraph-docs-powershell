@@ -55,14 +55,6 @@ This cmdlet has the following aliases,
 
 Represents Microsoft Defender for Identity sensors that are ready to be activated.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Security
-
-Get-MgSecurityIdentitySensorCandidate
-
 ## PARAMETERS
 
 ### -All
@@ -601,6 +593,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensorcandidate)
 - [](https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensorcandidates?view=graph-rest-1.0)
+
+
 
 
 

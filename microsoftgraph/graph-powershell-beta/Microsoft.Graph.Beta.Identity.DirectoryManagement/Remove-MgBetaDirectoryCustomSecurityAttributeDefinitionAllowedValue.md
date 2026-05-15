@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property allowedValues for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AllowedValueId
@@ -482,6 +472,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorycustomsecurityattributedefinitionallowedvalue)
+
 
 
 

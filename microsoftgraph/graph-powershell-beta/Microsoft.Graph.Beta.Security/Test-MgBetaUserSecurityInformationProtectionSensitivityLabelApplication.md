@@ -86,8 +86,9 @@ Given contentInfo, which includes existing content metadata key-value pairs, and
 | Application | InformationProtectionPolicy.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -156,6 +157,10 @@ $params = @{
 }
 
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication Cmdlet.
+
 
 ## PARAMETERS
 

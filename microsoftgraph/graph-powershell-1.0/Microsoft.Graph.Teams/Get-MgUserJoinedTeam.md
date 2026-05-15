@@ -49,13 +49,18 @@ Get joinedTeams from users
 | Application | Team.ReadBasic.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.Read.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 # A UPN can also be used as -UserId.
 Get-MgUserJoinedTeam -UserId $userId
+
+```
+This example shows how to use the Get-MgUserJoinedTeam Cmdlet.
+
 
 ## PARAMETERS
 

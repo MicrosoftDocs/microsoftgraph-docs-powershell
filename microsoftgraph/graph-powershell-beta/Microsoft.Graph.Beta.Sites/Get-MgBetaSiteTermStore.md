@@ -56,12 +56,17 @@ Read the properties and relationships of a store object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteTermStore -SiteId $siteId
+
+```
+This example shows how to use the Get-MgBetaSiteTermStore Cmdlet.
+
 
 ## PARAMETERS
 
