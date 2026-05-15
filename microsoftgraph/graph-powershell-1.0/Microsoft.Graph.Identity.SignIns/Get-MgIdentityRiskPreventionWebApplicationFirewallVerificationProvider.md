@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 Reference to a provider resource associated with this verification model.
 Represents a WAF provider that can be used to verify or manage the host.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -420,6 +410,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityriskpreventionwebapplicationfirewallverificationprovider)
+
 
 
 

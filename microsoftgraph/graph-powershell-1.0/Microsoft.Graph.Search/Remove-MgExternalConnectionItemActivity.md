@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property activities for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -447,6 +437,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitemactivity)
+
 
 
 
