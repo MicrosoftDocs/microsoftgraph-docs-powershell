@@ -55,16 +55,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to roleEligibilityScheduleInstances for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -789,6 +779,7 @@ Read-only when isBuiltIn is true.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleeligibilityscheduleinstance)
+
 
 
 
