@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionmanagementscheduledpermissionrequest
@@ -670,7 +670,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphScheduledPermissionsRequest>: scheduledPermissionsRequest
+BODYPARAMETER `<IMicrosoftGraphScheduledPermissionsRequest>`: scheduledPermissionsRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -745,7 +745,7 @@ In PIM, when the  eligible or active assignment becomes active.
     [TicketSubmitterIdentityId <String>]: ID for the request submitter.
     [TicketSystem <String>]: The description of the ticket system.
 
-REQUESTEDPERMISSIONS <IMicrosoftGraphPermissionsDefinition>: permissionsDefinition
+REQUESTEDPERMISSIONS `<IMicrosoftGraphPermissionsDefinition>`: permissionsDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthorizationSystemInfo <IMicrosoftGraphPermissionsDefinitionAuthorizationSystem>]: permissionsDefinitionAuthorizationSystem
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -760,7 +760,7 @@ Alternate key.
     [Source <IMicrosoftGraphPermissionsDefinitionIdentitySource>]: permissionsDefinitionIdentitySource
       [(Any) <Object>]: This indicates any property can be added to this object.
 
-SCHEDULEINFO <IMicrosoftGraphRequestSchedule>: requestSchedule
+SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Expiration <IMicrosoftGraphExpirationPattern>]: expirationPattern
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -806,7 +806,7 @@ Required.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 In PIM, when the  eligible or active assignment becomes active.
 
-TICKETINFO <IMicrosoftGraphTicketInfo>: ticketInfo
+TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TicketApproverIdentityId <String>]: ID for the request approver.
   [TicketNumber <String>]: The ticket number.
@@ -818,3 +818,25 @@ TICKETINFO <IMicrosoftGraphTicketInfo>: ticketInfo
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionmanagementscheduledpermissionrequest)
 - [](https://learn.microsoft.com/graph/api/permissionsmanagement-post-scheduledpermissionsrequests?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
