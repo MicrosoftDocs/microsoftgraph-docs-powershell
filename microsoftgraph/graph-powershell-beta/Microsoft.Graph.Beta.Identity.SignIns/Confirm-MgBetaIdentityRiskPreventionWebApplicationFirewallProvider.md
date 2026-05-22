@@ -77,18 +77,6 @@ This cmdlet has the following aliases,
 Initiate a verification operation for a webApplicationFirewallProvider object.
 This API triggers provider-specific verification logic and returns a webApplicationFirewallVerificationModel object describing the verification result.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-$params = @{
-	hostName = "www.contoso.com"
-}
-
-Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -WebApplicationFirewallProviderId $webApplicationFirewallProviderId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -581,6 +569,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetaidentityriskpreventionwebapplicationfirewallprovider)
 - [](https://learn.microsoft.com/graph/api/webapplicationfirewallprovider-verify?view=graph-rest-beta)
+
 
 
 

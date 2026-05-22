@@ -75,20 +75,6 @@ This cmdlet has the following aliases,
 Perform actions such as revoking accounts and forcing password reset for identity accounts that are observed in Microsoft Defender for Identity.
 This action allows reading and performing identity security actions on behalf of the signed-in identity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Security
-
-$params = @{
-	accountId = "256db173-930a-4991-9061-0d51a9a93ba5"
-	action = "disable"
-	identityProvider = "activeDirectory"
-}
-
-Invoke-MgInvokeSecurityIdentityAccountAction -IdentityAccountsId $identityAccountsId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AccountId
@@ -635,6 +621,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mginvokesecurityidentityaccountaction)
 - [](https://learn.microsoft.com/graph/api/security-identityaccounts-invokeaction?view=graph-rest-1.0)
+
 
 
 

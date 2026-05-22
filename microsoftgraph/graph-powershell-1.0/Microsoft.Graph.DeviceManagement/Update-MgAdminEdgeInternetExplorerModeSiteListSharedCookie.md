@@ -89,8 +89,9 @@ Update the properties of a browserSharedCookie object.
 | Application | BrowserSiteLists.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -104,6 +105,10 @@ $params = @{
 }
 
 Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
+
 
 ## PARAMETERS
 

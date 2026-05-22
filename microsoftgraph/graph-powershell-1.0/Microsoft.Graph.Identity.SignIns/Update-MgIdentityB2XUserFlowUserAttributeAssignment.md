@@ -87,8 +87,9 @@ Update the properties of a identityUserFlowAttributeAssignment object.
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 Update-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
+
 
 ## PARAMETERS
 

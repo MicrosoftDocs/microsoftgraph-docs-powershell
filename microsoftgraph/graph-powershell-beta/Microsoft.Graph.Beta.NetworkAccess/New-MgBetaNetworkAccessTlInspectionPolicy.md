@@ -58,8 +58,9 @@ Create a new tlsInspectionPolicy object.
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -72,6 +73,10 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessTlInspectionPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaNetworkAccessTlInspectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

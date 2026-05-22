@@ -62,59 +62,6 @@ Create a new b2xIdentityUserFlow object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	id = "Partner"
-	userFlowType = "signUpOrSignIn"
-	userFlowTypeVersion = 1
-}
-
-New-MgIdentityB2XUserFlow -BodyParameter $params
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	id = "Partner"
-	userFlowType = "signUpOrSignIn"
-	userFlowTypeVersion = 1
-	identityProviders = @(
-		@{
-			id = "Facebook-OAuth"
-			type = "Facebook"
-			name = "Facebook"
-		}
-	)
-}
-
-New-MgIdentityB2XUserFlow -BodyParameter $params
-
-### EXAMPLE 3
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	id = "UserFlowWithAPIConnector"
-	userFlowType = "signUpOrSignIn"
-	userFlowTypeVersion = 1
-	apiConnectorConfiguration = @{
-		postFederationSignup = @{
-			"@odata.id" = "https://graph.microsoft.com/v1/identity/apiConnectors/{id}"
-		}
-		postAttributeCollection = @{
-			"@odata.id" = "https://graph.microsoft.com/v1/identity/apiConnectors/{id}"
-		}
-	}
-}
-
-New-MgIdentityB2XUserFlow -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -738,6 +685,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflow)
 - [](https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-1.0)
+
 
 
 

@@ -91,19 +91,6 @@ The status property will have the value running.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PublicKeyInfrastructure.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-$params = @{
-	uploadUrl = "https://microsoft.sharepoint.com/CBA/demo/CBARootPKI.p7b"
-	sha256FileHash = "D7F9....61E6F"
-}
-
-Invoke-MgUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration -CertificateBasedAuthPkiId $certificateBasedAuthPkiId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -583,6 +570,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mguploaddirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
 - [](https://learn.microsoft.com/graph/api/certificatebasedauthpki-upload?view=graph-rest-1.0)
+
 
 
 

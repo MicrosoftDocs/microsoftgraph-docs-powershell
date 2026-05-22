@@ -61,14 +61,6 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a checkInClaim object.
 This API provides the check-in status for a specific place, such as a desk, room, or workspace, associated with a particular reservation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Calendar
-
-Get-MgPlaceCheck -PlaceId $placeId -CheckInClaimCalendarEventId $checkInClaimCalendarEventId
-
 ## PARAMETERS
 
 ### -All
@@ -581,6 +573,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecheck)
 - [](https://learn.microsoft.com/graph/api/checkinclaim-get?view=graph-rest-1.0)
+
+
 
 
 

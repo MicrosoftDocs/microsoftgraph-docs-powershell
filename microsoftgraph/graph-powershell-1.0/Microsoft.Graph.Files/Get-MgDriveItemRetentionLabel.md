@@ -49,14 +49,6 @@ This cmdlet has the following aliases,
 Get metadata information for a retention label applied on a driveItem.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Files
-
-Get-MgDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
-
 ## PARAMETERS
 
 ### -Break
@@ -397,6 +389,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemretentionlabel)
 - [](https://learn.microsoft.com/graph/api/driveitem-getretentionlabel?view=graph-rest-1.0)
+
 
 
 

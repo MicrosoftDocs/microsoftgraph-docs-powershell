@@ -55,16 +55,6 @@ The following types are supported:\r- application\r- agentIdentityBlueprint\r- a
 Administrative units cannot be permanently deleted by using the deletedItems API.
 Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -466,6 +456,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorydeleteditem)
 - [](https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-beta)
+
 
 
 
