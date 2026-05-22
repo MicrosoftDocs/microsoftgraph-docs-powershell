@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityAlertV2
 ---
@@ -15,9 +15,6 @@ title: New-MgSecurityAlertV2
 
 Create new navigation property to alerts_v2 for security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAlertV2?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -25,10 +22,10 @@ Create new navigation property to alerts_v2 for security
 ```
 New-MgSecurityAlertV2 [-ResponseHeadersVariable <string>] [-ActorDisplayName <string>]
  [-AdditionalData <hashtable>] [-AdditionalProperties <hashtable>] [-AlertPolicyId <string>]
- [-AlertWebUrl <string>] [-AssignedTo <string>] [-Category <string>] [-Classification <string>]
- [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <datetime>]
- [-CustomDetails <hashtable>] [-Description <string>] [-DetectionSource <string>]
- [-DetectorId <string>] [-Determination <string>]
+ [-AlertWebUrl <string>] [-AssignedTo <string>] [-Categories <string[]>] [-Category <string>]
+ [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
+ [-CreatedDateTime <datetime>] [-CustomDetails <hashtable>] [-Description <string>]
+ [-DetectionSource <string>] [-DetectorId <string>] [-Determination <string>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <datetime>]
  [-Id <string>] [-IncidentId <string>] [-IncidentWebUrl <string>] [-InvestigationState <string>]
  [-LastActivityDateTime <datetime>] [-LastUpdateDateTime <datetime>] [-MitreTechniques <string[]>]
@@ -59,6 +56,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to alerts_v2 for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -221,6 +228,27 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Categories
+
+.
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -1087,7 +1115,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAlert>`: alert
+BODYPARAMETER <IMicrosoftGraphSecurityAlert>: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1097,6 +1125,7 @@ Read-only.
   [AlertPolicyId <String>]: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
   [AlertWebUrl <String>]: URL for the Microsoft 365 Defender portal alert page.
   [AssignedTo <String>]: Owner of the alert, or null if no owner is assigned.
+  [Categories <String[]>]: 
   [Category <String>]: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
   [Classification <String>]: alertClassification
@@ -1161,27 +1190,4 @@ Values are free-form.
 
 ## RELATED LINKS
 
-- [New-MgSecurityAlertV2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2)

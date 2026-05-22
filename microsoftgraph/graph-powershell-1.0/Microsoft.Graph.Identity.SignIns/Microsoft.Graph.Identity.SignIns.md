@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: f989d6cf-27bc-49c0-8f66-98a7e3afebd4
+Module Guid: 0e59d0fe-2baa-48d9-9401-05d251e69306
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -493,6 +493,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserAuthenticationEmailMethodCount](Get-MgUserAuthenticationEmailMethodCount.md)
 
+### [Get-MgUserAuthenticationExternalAuthenticationMethod](Get-MgUserAuthenticationExternalAuthenticationMethod.md)
+
+### [Get-MgUserAuthenticationExternalAuthenticationMethod](Get-MgUserAuthenticationExternalAuthenticationMethod.md)
+
+### [Get-MgUserAuthenticationExternalAuthenticationMethodCount](Get-MgUserAuthenticationExternalAuthenticationMethodCount.md)
+
 ### [Get-MgUserAuthenticationFido2Method](Get-MgUserAuthenticationFido2Method.md)
 
 ### [Get-MgUserAuthenticationFido2Method](Get-MgUserAuthenticationFido2Method.md)
@@ -689,6 +695,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgUserAuthenticationEmailMethod](New-MgUserAuthenticationEmailMethod.md)
 
+### [New-MgUserAuthenticationExternalAuthenticationMethod](New-MgUserAuthenticationExternalAuthenticationMethod.md)
+
 ### [New-MgUserAuthenticationMethod](New-MgUserAuthenticationMethod.md)
 
 ### [New-MgUserAuthenticationOperation](New-MgUserAuthenticationOperation.md)
@@ -846,6 +854,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgTenantRelationshipMultiTenantOrganizationTenant](Remove-MgTenantRelationshipMultiTenantOrganizationTenant.md)
 
 ### [Remove-MgUserAuthenticationEmailMethod](Remove-MgUserAuthenticationEmailMethod.md)
+
+### [Remove-MgUserAuthenticationExternalAuthenticationMethod](Remove-MgUserAuthenticationExternalAuthenticationMethod.md)
 
 ### [Remove-MgUserAuthenticationFido2Method](Remove-MgUserAuthenticationFido2Method.md)
 
@@ -1019,28 +1029,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgUserAuthenticationEmailMethod](Update-MgUserAuthenticationEmailMethod.md)
 
+### [Update-MgUserAuthenticationExternalAuthenticationMethod](Update-MgUserAuthenticationExternalAuthenticationMethod.md)
+
 ### [Update-MgUserAuthenticationMethod](Update-MgUserAuthenticationMethod.md)
 
 ### [Update-MgUserAuthenticationOperation](Update-MgUserAuthenticationOperation.md)
 
 ### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaselegalholdsitesource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource
 ---
@@ -48,17 +48,12 @@ This cmdlet has the following aliases,
 Delete a siteSource object associated with an ediscoveryHoldPolicy.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -SiteSourceId $siteSourceId
-
-```
-This example shows how to use the Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -432,7 +427,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -534,27 +529,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaselegalholdsitesource)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-delete-sitesources?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaselegalholdsitesource)
+- [](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-delete-sitesources?view=graph-rest-beta)

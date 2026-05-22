@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.Partner
-Module Guid: dda11798-18a3-4029-b509-7aeabcd52066
+Module Guid: 7e6c3eb9-62b6-4f60-97ec-c95e9a6f6a8f
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.partner/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -82,23 +82,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](Update-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation.md)
 
 ### [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest](Update-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

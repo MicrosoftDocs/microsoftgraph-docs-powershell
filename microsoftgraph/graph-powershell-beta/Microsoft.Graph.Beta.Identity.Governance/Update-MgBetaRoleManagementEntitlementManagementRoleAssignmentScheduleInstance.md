@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroleassignmentscheduleinstance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleIns
 ## SYNOPSIS
 
 Update the navigation property roleAssignmentScheduleInstances in roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -88,6 +85,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property roleAssignmentScheduleInstances in roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -898,7 +905,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVATEDUSING `<IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>`: unifiedRoleEligibilityScheduleInstance
+ACTIVATEDUSING <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>: unifiedRoleEligibilityScheduleInstance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppScope <IMicrosoftGraphAppScope>]: appScope
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -977,7 +984,7 @@ It can either be Inherited, Direct, or Group.
   [RoleEligibilityScheduleId <String>]: Identifier of the parent roleEligibilitySchedule for this instance.
   [StartDateTime <DateTime?>]: Time that the roleEligibilityScheduleInstance will start.
 
-APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
+APPSCOPE <IMicrosoftGraphAppScope>: appScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -986,7 +993,7 @@ Read only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance>`: unifiedRoleAssignmentScheduleInstance
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance>: unifiedRoleAssignmentScheduleInstance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppScope <IMicrosoftGraphAppScope>]: appScope
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1095,14 +1102,14 @@ Supports $filter (eq, ne).
   [RoleAssignmentScheduleId <String>]: The identifier of the unifiedRoleAssignmentSchedule object from which this instance was created.
   [StartDateTime <DateTime?>]: When this instance starts.
 
-DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
+DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1150,6 +1157,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -1212,14 +1220,14 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
+PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1265,27 +1273,4 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [Update-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroleassignmentscheduleinstance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroleassignmentscheduleinstance)

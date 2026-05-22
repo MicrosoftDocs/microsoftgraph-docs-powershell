@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Compliance
-Module Guid: 668b7ffe-b8c5-449f-948d-6f760e5ee6e3
+Module Guid: 22ddbd4a-a256-4a2c-8dc2-d9c19dfe2e1a
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.compliance/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -370,23 +370,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting](Update-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting.md)
 
 ### [Update-MgBetaPrivacySubjectRightsRequestNote](Update-MgBetaPrivacySubjectRightsRequestNote.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

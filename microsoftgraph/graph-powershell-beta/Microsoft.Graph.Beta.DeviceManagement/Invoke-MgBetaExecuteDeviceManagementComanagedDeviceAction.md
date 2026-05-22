@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaexecutedevicemanagementcomanageddeviceaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaExecuteDeviceManagementComanagedDeviceAction
 ---
@@ -50,13 +50,15 @@ This cmdlet has the following aliases,
 
 Invoke action executeAction
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.PrivilegedOperations.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -104,7 +106,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -147,7 +149,7 @@ HelpMessage: ''
 
 ### -CarrierUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -190,7 +192,7 @@ HelpMessage: ''
 
 ### -DeprovisionReason
 
-
+.
 
 ```yaml
 Type: System.String
@@ -211,7 +213,7 @@ HelpMessage: ''
 
 ### -DeviceIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -232,7 +234,7 @@ HelpMessage: ''
 
 ### -DeviceName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -316,7 +318,7 @@ HelpMessage: ''
 
 ### -KeepEnrollmentData
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -337,7 +339,7 @@ HelpMessage: ''
 
 ### -KeepUserData
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -358,7 +360,7 @@ HelpMessage: ''
 
 ### -NotificationBody
 
-
+.
 
 ```yaml
 Type: System.String
@@ -379,7 +381,7 @@ HelpMessage: ''
 
 ### -NotificationTitle
 
-
+.
 
 ```yaml
 Type: System.String
@@ -400,7 +402,7 @@ HelpMessage: ''
 
 ### -OrganizationalUnitPath
 
-
+.
 
 ```yaml
 Type: System.String
@@ -421,7 +423,7 @@ HelpMessage: ''
 
 ### -PersistEsimDataPlan
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -577,7 +579,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths5Wfb68DevicemanagementComanageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths5Wfb68DevicemanagementComanageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActionName <ManagedDeviceRemoteAction?>]: managedDeviceRemoteAction
   [CarrierUrl <String>]: 
@@ -594,27 +596,4 @@ BODYPARAMETER `<IPaths5Wfb68DevicemanagementComanageddevicesMicrosoftGraphExecut
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaExecuteDeviceManagementComanagedDeviceAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaexecutedevicemanagementcomanageddeviceaction)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaexecutedevicemanagementcomanageddeviceaction)

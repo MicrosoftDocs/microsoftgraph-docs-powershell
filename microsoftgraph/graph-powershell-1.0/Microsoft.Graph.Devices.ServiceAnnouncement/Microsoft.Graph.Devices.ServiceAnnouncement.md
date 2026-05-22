@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-Module Guid: c0651c70-2f10-4b2b-8db9-3392c9c7887b
+Module Guid: d1f78e43-840e-4f7d-9224-7410b72be5b6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -60,23 +60,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgUnarchiveServiceAnnouncementMessage](Invoke-MgUnarchiveServiceAnnouncementMessage.md)
 
 ### [Invoke-MgUnfavoriteServiceAnnouncementMessage](Invoke-MgUnfavoriteServiceAnnouncementMessage.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

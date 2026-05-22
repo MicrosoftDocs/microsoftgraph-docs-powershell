@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/stop-mgbetaprintprinterjobprintjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaPrintPrinterJobPrintJob
 ---
@@ -45,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action cancelPrintJob
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -376,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -394,27 +404,4 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgBetaPrintPrinterJobPrintJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/stop-mgbetaprintprinterjobprintjob)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/stop-mgbetaprintprinterjobprintjob)

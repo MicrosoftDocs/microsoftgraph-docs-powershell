@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgChat
 ---
@@ -14,9 +14,6 @@ title: New-MgChat
 ## SYNOPSIS
 
 Create a new chat object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,8 @@ New-MgChat [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable
  [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>] [-IsHiddenForAllMembers]
  [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <datetime>]
  [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage[]>]
- [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
+ [-MigrationMode <string>] [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
+ [-OriginalCreatedDateTime <datetime>]
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]
  [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
  [-TenantId <string>] [-Topic <string>] [-Viewpoint <IMicrosoftGraphChatViewpoint>]
@@ -55,18 +53,9 @@ This cmdlet has the following aliases,
 
 Create a new chat object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.Create, Chat.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.Create,  |
-
 ## EXAMPLES
-### Example 1: Create a one-on-one chat
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -92,12 +81,7 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-```
-This example will create a one-on-one chat
-
-### Example 2: Create a group chat
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
@@ -131,12 +115,7 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-```
-This example will create a group chat
-
-### Example 3: Create a one-on-one chat using user principal name
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Teams
 
@@ -162,12 +141,7 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-```
-This example will create a one-on-one chat using user principal name
-
-### Example 4: Create a group chat with tenant guest user
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Teams
 
@@ -201,12 +175,7 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-```
-This example will create a group chat with tenant guest user
-
-### Example 5: Create a one-on-one chat with a federated user (outside of own organization)
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Teams
 
@@ -232,10 +201,6 @@ $params = @{
 }
 
 New-MgChat -BodyParameter $params
-
-```
-This example will create a one-on-one chat with a federated user (outside of own organization)
-
 
 ## PARAMETERS
 
@@ -588,6 +553,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -MigrationMode
+
+migrationMode
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -OnlineMeetingInfo
 
 teamworkOnlineMeetingInfo
@@ -595,6 +581,27 @@ To construct, see NOTES section for ONLINEMEETINGINFO properties and create a ha
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkOnlineMeetingInfo
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -OriginalCreatedDateTime
+
+.
+
+```yaml
+Type: System.DateTime
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -904,7 +911,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphChat>`: chat
+BODYPARAMETER <IMicrosoftGraphChat>: chat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1046,7 +1053,7 @@ Always set to en-us.
     [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
       [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
       [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1102,6 +1109,7 @@ ID of the parent chat message or root chat message of the thread.
 Only applies to channel chat messages, not chat messages in a chat.
     [WebUrl <String>]: Read-only.
 Link to the message in Microsoft Teams.
+  [MigrationMode <String>]: migrationMode
   [OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]: teamworkOnlineMeetingInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CalendarEventId <String>]: The identifier of the calendar event associated with the meeting.
@@ -1113,6 +1121,7 @@ For example, if a user changes their display name the API might show the new val
       [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [UserIdentityType <String>]: teamworkUserIdentityType
+  [OriginalCreatedDateTime <DateTime?>]: 
   [PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]: A collection of permissions granted to apps for the chat.
     [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1207,7 +1216,7 @@ For example, in the access reviews decisions API, this property might record the
     [ExternalId <String>]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   [TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]: teamsAppDefinition
 
-LASTMESSAGEPREVIEW `<IMicrosoftGraphChatMessageInfo>`: chatMessageInfo
+LASTMESSAGEPREVIEW <IMicrosoftGraphChatMessageInfo>: chatMessageInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1313,7 +1322,7 @@ Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1370,7 +1379,7 @@ Only applies to channel chat messages, not chat messages in a chat.
   [WebUrl <String>]: Read-only.
 Link to the message in Microsoft Teams.
 
-ONLINEMEETINGINFO `<IMicrosoftGraphTeamworkOnlineMeetingInfo>`: teamworkOnlineMeetingInfo
+ONLINEMEETINGINFO <IMicrosoftGraphTeamworkOnlineMeetingInfo>: teamworkOnlineMeetingInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalendarEventId <String>]: The identifier of the calendar event associated with the meeting.
   [JoinWebUrl <String>]: The URL that users click to join or uniquely identify the meeting.
@@ -1472,7 +1481,7 @@ Always set to en-us.
     [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
       [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
       [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1583,7 +1592,7 @@ For example, in the access reviews decisions API, this property might record the
   [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
 
-VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
+VIEWPOINT <IMicrosoftGraphChatViewpoint>: chatViewpoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsHidden <Boolean?>]: Indicates whether the chat is hidden for the current user.
   [LastMessageReadDateTime <DateTime?>]: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
@@ -1591,27 +1600,5 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
 
 ## RELATED LINKS
 
-- [New-MgChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat)
+- [](https://learn.microsoft.com/graph/api/chat-post?view=graph-rest-1.0)

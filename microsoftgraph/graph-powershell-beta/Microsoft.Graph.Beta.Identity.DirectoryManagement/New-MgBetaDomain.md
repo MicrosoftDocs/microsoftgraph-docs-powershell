@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomain
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDomain
 ---
@@ -20,9 +20,6 @@ Root domains require verification.
 For example, contoso.com requires verification.
 If a root domain is verified, subdomains of the root domain are automatically verified.
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomain?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -69,13 +66,19 @@ For example, contoso.com requires verification.
 If a root domain is verified, subdomains of the root domain are automatically verified.
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Domain.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Domain.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+{{ Add output here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -640,7 +643,7 @@ HelpMessage: ''
 
 ### -SharedEmailDomainInvitations
 
-
+.
 To construct, see NOTES section for SHAREDEMAILDOMAININVITATIONS properties and create a hash table.
 
 ```yaml
@@ -783,7 +786,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDomain>`: domain
+BODYPARAMETER <IMicrosoftGraphDomain>: domain
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -948,7 +951,7 @@ For a list of statuses, see certificateUpdateResult status.
     [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
 
-ROOTDOMAIN `<IMicrosoftGraphDomain>`: domain
+ROOTDOMAIN <IMicrosoftGraphDomain>: domain
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1086,7 +1089,7 @@ Read-only.
   [InvitationDomain <String>]: 
   [InvitationStatus <String>]: 
 
-STATE `<IMicrosoftGraphDomainState>`: domainState
+STATE <IMicrosoftGraphDomainState>: domainState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastActionDateTime <DateTime?>]: Timestamp for when the last activity occurred.
 The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
@@ -1114,28 +1117,5 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [New-MgBetaDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomain)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomain)
+- [](https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-beta)

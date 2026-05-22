@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIdentity
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityIdentity
 ## SYNOPSIS
 
 Update the navigation property identities in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentity](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,10 +25,10 @@ Update-MgSecurityIdentity [-ResponseHeadersVariable <string>] [-AdditionalProper
  [-IdentityAccounts <IMicrosoftGraphSecurityIdentityAccounts[]>]
  [-SensorCandidateActivationConfiguration <IMicrosoftGraphSecuritySensorCandidateActivationConfiguration>]
  [-SensorCandidates <IMicrosoftGraphSecuritySensorCandidate[]>]
- [-Sensors <IMicrosoftGraphSecuritySensor[]>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Sensors <IMicrosoftGraphSecuritySensor[]>] [-Settings <IMicrosoftGraphSecuritySettingsContainer>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property identities in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -421,6 +428,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Settings
+
+settingsContainer
+To construct, see NOTES section for SETTINGS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySettingsContainer
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -473,7 +502,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIdentityContainer>`: identityContainer
+BODYPARAMETER <IMicrosoftGraphSecurityIdentityContainer>: identityContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -553,6 +582,15 @@ Read-only.
         [IsEnabled <Boolean?>]: Indicates whether the network adapter is selected for capturing and analyzing network traffic.
         [Name <String>]: The name of the network adapter.
     [Version <String>]: The version of the sensor.
+  [Settings <IMicrosoftGraphSecuritySettingsContainer>]: settingsContainer
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [AutoAuditingConfiguration <IMicrosoftGraphSecurityAutoAuditingConfiguration>]: autoAuditingConfiguration
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [IsAutomatic <Boolean?>]: Indicates whether automatic auditing is enabled for Defender for Identity monitoring.
 
 HEALTHISSUES <IMicrosoftGraphSecurityHealthIssue[]>: Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration.
   [Id <String>]: The unique identifier for an entity.
@@ -594,7 +632,7 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
   [IsEnabled <Boolean?>]: Boolean indicating if the identityAccounts is enabled.
   [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier of the identityAccount.
 
-SENSORCANDIDATEACTIVATIONCONFIGURATION `<IMicrosoftGraphSecuritySensorCandidateActivationConfiguration>`: sensorCandidateActivationConfiguration
+SENSORCANDIDATEACTIVATIONCONFIGURATION <IMicrosoftGraphSecuritySensorCandidateActivationConfiguration>: sensorCandidateActivationConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -659,30 +697,17 @@ Read-only.
       [Name <String>]: The name of the network adapter.
   [Version <String>]: The version of the sensor.
 
+SETTINGS <IMicrosoftGraphSecuritySettingsContainer>: settingsContainer
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [AutoAuditingConfiguration <IMicrosoftGraphSecurityAutoAuditingConfiguration>]: autoAuditingConfiguration
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [IsAutomatic <Boolean?>]: Indicates whether automatic auditing is enabled for Defender for Identity monitoring.
+
 
 ## RELATED LINKS
 
-- [Update-MgSecurityIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity)

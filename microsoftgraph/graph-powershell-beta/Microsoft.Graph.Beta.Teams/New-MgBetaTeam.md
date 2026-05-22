@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateam
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTeam
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaTeam
 ## SYNOPSIS
 
 Create a new team.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -64,18 +61,9 @@ This cmdlet has the following aliases,
 
 Create a new team.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -88,12 +76,7 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaTeam Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -115,12 +98,7 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaTeam Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -134,7 +112,8 @@ $params = @{
 		@{
 			displayName = "Announcements 📢"
 			isFavoriteByDefault = $true
-			description = "This is a sample announcements channel that is favorited by default. Use this channel to make important team, product, and service announcements."
+			description = "This is a sample announcements channel that is favorited by default.
+Use this channel to make important team, product, and service announcements."
 		}
 		@{
 			displayName = "Training 🏋️"
@@ -207,12 +186,7 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaTeam Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -223,12 +197,7 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaTeam Cmdlet.
-
-### Example 5: Code snippet
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -264,12 +233,7 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaTeam Cmdlet.
-
-### Example 6: Code snippet
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -281,12 +245,7 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaTeam Cmdlet.
-
-### Example 7: Code snippet
-
-```powershell
+### EXAMPLE 7
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -323,12 +282,7 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaTeam Cmdlet.
-
-### Example 8: Code snippet
-
-```powershell
+### EXAMPLE 8
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -342,12 +296,7 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaTeam Cmdlet.
-
-### Example 9: Code snippet
-
-```powershell
+### EXAMPLE 9
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -367,10 +316,6 @@ $params = @{
 }
 
 New-MgBetaTeam -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1850,6 +1795,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
                   [State <String>]: appManagementRestrictionState
                 [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+              [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedDomains <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedSchemes <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [ExemptFormats <String[]>]: 
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedSchemes <String[]>]: 
+                    [ExemptFormats <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ExcludeWildcardsInPath <Boolean?>]: 
+                    [ExcludeWildcardsInPathWithDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [State <String>]: appManagementRestrictionState
+                [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedDomains <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedSchemes <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedSchemes <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
         [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -1907,8 +1909,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -2241,8 +2243,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -3003,7 +3005,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
           [PhoneType <String>]: authenticationPhoneType
@@ -3534,7 +3536,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -3707,21 +3709,78 @@ Each one represents the same information in a different clipboard format.
             [FormatName <String>]: For a list of possible values see formatName values.
       [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+        [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
-          [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
-Not nullable.
-Read-only.
-Supports $filter on the planId property.
-            [AssignableTo <String>]: assigneeTypes
-            [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-            [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+          [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+          [Code <String>]: The error code associated with the assignment synchronization failure.
+          [Message <String>]: The error message associated with the assignment synchronization failure.
+          [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
-          [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+          [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
 Read-only.
+            [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+              [AssignableTo <String>]: assigneeTypes
+              [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
+              [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+              [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+                [AssignableTo <String>]: assigneeTypes
+                [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+                [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+              [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+              [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+              [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+                [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+                [StartDate <DateTime?>]: The date when the subscription started.
+                [State <String>]: subscriptionState
+                [SubscriptionId <String>]: Identifier for the subscription object.
+                [Tags <String>]: subscriptionTags
+              [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
+            [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
+Not nullable.
+Read-only.
+Supports $filter on the planId property.
+            [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+            [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+        [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+        [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+        [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
       [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -5504,6 +5563,7 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
         [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
           [(Any) <Object>]: This indicates any property can be added to this object.
+          [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
           [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
         [Conversations <IMicrosoftGraphConversation[]>]: The group's conversations.
           [Id <String>]: The unique identifier for an entity.
@@ -6511,7 +6571,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-        [WelcomeMessageEnabled <Boolean?>]: 
+        [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Returned only on $select.
+Supported only on the Get group API (GET /groups/{ID}).
         [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
           [(Any) <Object>]: This indicates any property can be added to this object.
           [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -9190,8 +9253,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
       [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -10143,7 +10206,7 @@ This URL is supplied when you right-click a channel in Microsoft Teams and selec
 This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphTeam>`: team
+BODYPARAMETER <IMicrosoftGraphTeam>: team
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -10593,6 +10656,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
                     [State <String>]: appManagementRestrictionState
                   [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+                [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedDomains <String[]>]: 
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedDomains <String[]>]: 
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                    [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                  [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedSchemes <String[]>]: 
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [ExemptFormats <String[]>]: 
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedSchemes <String[]>]: 
+                      [ExemptFormats <String[]>]: 
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                    [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                  [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [ExcludeWildcardsInPath <Boolean?>]: 
+                      [ExcludeWildcardsInPathWithDomains <String[]>]: 
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                    [State <String>]: appManagementRestrictionState
+                  [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedDomains <String[]>]: 
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedDomains <String[]>]: 
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                    [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                  [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedSchemes <String[]>]: 
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedSchemes <String[]>]: 
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                    [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
           [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -10650,8 +10770,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
             [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -10984,8 +11104,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
             [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -11746,7 +11866,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
             [PhoneType <String>]: authenticationPhoneType
@@ -12277,7 +12397,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -12450,21 +12570,78 @@ Each one represents the same information in a different clipboard format.
               [FormatName <String>]: For a list of possible values see formatName values.
         [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
           [(Any) <Object>]: This indicates any property can be added to this object.
-          [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+          [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
-Not nullable.
-Read-only.
-Supports $filter on the planId property.
-              [AssignableTo <String>]: assigneeTypes
-              [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-              [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+            [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+            [Code <String>]: The error code associated with the assignment synchronization failure.
+            [Message <String>]: The error message associated with the assignment synchronization failure.
+            [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
-            [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+            [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Id <String>]: The unique identifier for an entity.
 Read-only.
+              [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+                [AssignableTo <String>]: assigneeTypes
+                [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                  [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                  [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
+                [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+                [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+                  [AssignableTo <String>]: assigneeTypes
+                  [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+                  [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+                [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+                [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+                [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+                  [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+                  [StartDate <DateTime?>]: The date when the subscription started.
+                  [State <String>]: subscriptionState
+                  [SubscriptionId <String>]: Identifier for the subscription object.
+                  [Tags <String>]: subscriptionTags
+                [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                  [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                  [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
+              [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
+Not nullable.
+Read-only.
+Supports $filter on the planId property.
+              [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+              [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+          [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+          [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+          [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
         [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -14247,6 +14424,7 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
           [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
             [(Any) <Object>]: This indicates any property can be added to this object.
+            [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
             [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
           [Conversations <IMicrosoftGraphConversation[]>]: The group's conversations.
             [Id <String>]: The unique identifier for an entity.
@@ -14899,7 +15077,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-          [WelcomeMessageEnabled <Boolean?>]: 
+          [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Returned only on $select.
+Supported only on the Get group API (GET /groups/{ID}).
           [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
             [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -17588,8 +17769,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
         [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -19328,6 +19509,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
                   [State <String>]: appManagementRestrictionState
                 [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+              [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedDomains <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedSchemes <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [ExemptFormats <String[]>]: 
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedSchemes <String[]>]: 
+                    [ExemptFormats <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ExcludeWildcardsInPath <Boolean?>]: 
+                    [ExcludeWildcardsInPathWithDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [State <String>]: appManagementRestrictionState
+                [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedDomains <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedSchemes <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedSchemes <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
         [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -19385,8 +19623,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -19719,8 +19957,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -20481,7 +20719,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
           [PhoneType <String>]: authenticationPhoneType
@@ -21012,7 +21250,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -21185,21 +21423,78 @@ Each one represents the same information in a different clipboard format.
             [FormatName <String>]: For a list of possible values see formatName values.
       [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+        [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
-          [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
-Not nullable.
-Read-only.
-Supports $filter on the planId property.
-            [AssignableTo <String>]: assigneeTypes
-            [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-            [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+          [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+          [Code <String>]: The error code associated with the assignment synchronization failure.
+          [Message <String>]: The error message associated with the assignment synchronization failure.
+          [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
-          [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+          [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
 Read-only.
+            [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+              [AssignableTo <String>]: assigneeTypes
+              [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
+              [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+              [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+                [AssignableTo <String>]: assigneeTypes
+                [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+                [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+              [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+              [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+              [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+                [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+                [StartDate <DateTime?>]: The date when the subscription started.
+                [State <String>]: subscriptionState
+                [SubscriptionId <String>]: Identifier for the subscription object.
+                [Tags <String>]: subscriptionTags
+              [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
+            [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
+Not nullable.
+Read-only.
+Supports $filter on the planId property.
+            [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+            [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+        [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+        [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+        [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
       [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -22982,6 +23277,7 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
         [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
           [(Any) <Object>]: This indicates any property can be added to this object.
+          [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
           [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
         [Conversations <IMicrosoftGraphConversation[]>]: The group's conversations.
           [Id <String>]: The unique identifier for an entity.
@@ -23989,7 +24285,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-        [WelcomeMessageEnabled <Boolean?>]: 
+        [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Returned only on $select.
+Supported only on the Get group API (GET /groups/{ID}).
         [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
           [(Any) <Object>]: This indicates any property can be added to this object.
           [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -26668,8 +26967,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
       [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -27621,18 +27920,18 @@ This URL is supplied when you right-click a channel in Microsoft Teams and selec
 This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-DISCOVERYSETTINGS `<IMicrosoftGraphTeamDiscoverySettings>`: teamDiscoverySettings
+DISCOVERYSETTINGS <IMicrosoftGraphTeamDiscoverySettings>: teamDiscoverySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ShowInTeamsSearchAndSuggestions <Boolean?>]: If set to true, the team is visible via search and suggestions from the Teams client.
 
-FUNSETTINGS `<IMicrosoftGraphTeamFunSettings>`: teamFunSettings
+FUNSETTINGS <IMicrosoftGraphTeamFunSettings>: teamFunSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowCustomMemes <Boolean?>]: If set to true, enables users to include custom memes.
   [AllowGiphy <Boolean?>]: If set to true, enables Giphy use.
   [AllowStickersAndMemes <Boolean?>]: If set to true, enables users to include stickers and memes.
   [GiphyContentRating <String>]: giphyRatingType
 
-GROUP `<IMicrosoftGraphGroup>`: Represents a Microsoft Entra group.
+GROUP <IMicrosoftGraphGroup>: Represents a Microsoft Entra group.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -27978,16 +28277,59 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
   [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
     [(Any) <Object>]: This indicates any property can be added to this object.
+    [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+        [AssignableTo <String>]: assigneeTypes
+        [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+        [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+        [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+          [AssignableTo <String>]: assigneeTypes
+          [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+          [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+        [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+        [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+        [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+          [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+          [StartDate <DateTime?>]: The date when the subscription started.
+          [State <String>]: subscriptionState
+          [SubscriptionId <String>]: Identifier for the subscription object.
+          [Tags <String>]: subscriptionTags
+        [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+          [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+          [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+      [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
     [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+      [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
       [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
 Not nullable.
 Read-only.
 Supports $filter on the planId property.
-        [AssignableTo <String>]: assigneeTypes
-        [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-        [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
       [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
@@ -28462,6 +28804,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
                   [State <String>]: appManagementRestrictionState
                 [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+              [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedDomains <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedSchemes <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [ExemptFormats <String[]>]: 
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedSchemes <String[]>]: 
+                    [ExemptFormats <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ExcludeWildcardsInPath <Boolean?>]: 
+                    [ExcludeWildcardsInPathWithDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [State <String>]: appManagementRestrictionState
+                [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedDomains <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedSchemes <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedSchemes <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
         [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -28492,8 +28891,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -28826,8 +29225,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -29582,7 +29981,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
           [PhoneType <String>]: authenticationPhoneType
@@ -29921,7 +30320,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -30094,7 +30493,22 @@ Each one represents the same information in a different clipboard format.
             [FormatName <String>]: For a list of possible values see formatName values.
       [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
         [(Any) <Object>]: This indicates any property can be added to this object.
+        [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+          [Code <String>]: The error code associated with the assignment synchronization failure.
+          [Message <String>]: The error message associated with the assignment synchronization failure.
+          [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+          [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+        [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
         [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+        [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
       [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -35894,8 +36308,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
       [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -36360,7 +36774,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-  [WelcomeMessageEnabled <Boolean?>]: 
+  [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Returned only on $select.
+Supported only on the Get group API (GET /groups/{ID}).
   [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -36371,7 +36788,7 @@ The possible values are: universalDistributionGroup, universalSecurityGroup, uni
 Microsoft Entra security groups can be written back as universalSecurityGroup.
 If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property isn't explicitly configured: Microsoft 365 groups are written back as universalDistributionGroup by defaultSecurity groups are written back as universalSecurityGroup by default
 
-GUESTSETTINGS `<IMicrosoftGraphTeamGuestSettings>`: teamGuestSettings
+GUESTSETTINGS <IMicrosoftGraphTeamGuestSettings>: teamGuestSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowCreateUpdateChannels <Boolean?>]: If set to true, guests can add and update channels.
   [AllowDeleteChannels <Boolean?>]: If set to true, guests can delete channels.
@@ -36822,6 +37239,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
                   [State <String>]: appManagementRestrictionState
                 [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+              [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedDomains <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedSchemes <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [ExemptFormats <String[]>]: 
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedSchemes <String[]>]: 
+                    [ExemptFormats <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ExcludeWildcardsInPath <Boolean?>]: 
+                    [ExcludeWildcardsInPathWithDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [State <String>]: appManagementRestrictionState
+                [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedDomains <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedSchemes <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedSchemes <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
         [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -36879,8 +37353,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -37213,8 +37687,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -37975,7 +38449,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
           [PhoneType <String>]: authenticationPhoneType
@@ -38506,7 +38980,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -38679,21 +39153,78 @@ Each one represents the same information in a different clipboard format.
             [FormatName <String>]: For a list of possible values see formatName values.
       [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+        [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
-          [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
-Not nullable.
-Read-only.
-Supports $filter on the planId property.
-            [AssignableTo <String>]: assigneeTypes
-            [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-            [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+          [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+          [Code <String>]: The error code associated with the assignment synchronization failure.
+          [Message <String>]: The error message associated with the assignment synchronization failure.
+          [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
-          [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+          [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
 Read-only.
+            [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+              [AssignableTo <String>]: assigneeTypes
+              [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
+              [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+              [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+                [AssignableTo <String>]: assigneeTypes
+                [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+                [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+              [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+              [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+              [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+                [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+                [StartDate <DateTime?>]: The date when the subscription started.
+                [State <String>]: subscriptionState
+                [SubscriptionId <String>]: Identifier for the subscription object.
+                [Tags <String>]: subscriptionTags
+              [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
+            [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
+Not nullable.
+Read-only.
+Supports $filter on the planId property.
+            [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+            [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+        [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+        [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+        [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
       [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -40476,6 +41007,7 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
         [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
           [(Any) <Object>]: This indicates any property can be added to this object.
+          [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
           [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
         [Conversations <IMicrosoftGraphConversation[]>]: The group's conversations.
           [Id <String>]: The unique identifier for an entity.
@@ -41483,7 +42015,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-        [WelcomeMessageEnabled <Boolean?>]: 
+        [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Returned only on $select.
+Supported only on the Get group API (GET /groups/{ID}).
         [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
           [(Any) <Object>]: This indicates any property can be added to this object.
           [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -44162,8 +44697,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
       [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -45216,7 +45751,7 @@ An Out-of-tenant external member is assigned the owner role.
   [VisibleHistoryStartDateTime <DateTime?>]: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-MEMBERSETTINGS `<IMicrosoftGraphTeamMemberSettings>`: teamMemberSettings
+MEMBERSETTINGS <IMicrosoftGraphTeamMemberSettings>: teamMemberSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowAddRemoveApps <Boolean?>]: If set to true, members can add and remove apps.
   [AllowCreatePrivateChannels <Boolean?>]: If set to true, members can add and update private channels.
@@ -45225,7 +45760,7 @@ MEMBERSETTINGS `<IMicrosoftGraphTeamMemberSettings>`: teamMemberSettings
   [AllowCreateUpdateRemoveTabs <Boolean?>]: If set to true, members can add, update, and remove tabs.
   [AllowDeleteChannels <Boolean?>]: If set to true, members can delete channels.
 
-MESSAGINGSETTINGS `<IMicrosoftGraphTeamMessagingSettings>`: teamMessagingSettings
+MESSAGINGSETTINGS <IMicrosoftGraphTeamMessagingSettings>: teamMessagingSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowChannelMentions <Boolean?>]: If set to true, @channel mentions are allowed.
   [AllowOwnerDeleteMessages <Boolean?>]: If set to true, owners can delete any message.
@@ -45603,6 +46138,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
               [State <String>]: appManagementRestrictionState
             [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+          [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [BlockedDomains <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [BlockedDomains <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+            [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [BlockedSchemes <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [ExemptFormats <String[]>]: 
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [BlockedSchemes <String[]>]: 
+                [ExemptFormats <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+            [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [ExcludeWildcardsInPath <Boolean?>]: 
+                [ExcludeWildcardsInPathWithDomains <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [State <String>]: appManagementRestrictionState
+            [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [AllowedDomains <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [AllowedDomains <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+            [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [AllowedSchemes <String[]>]: 
+              [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+              [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [AllowedSchemes <String[]>]: 
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+              [State <String>]: appManagementRestrictionState
+              [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
     [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -45660,8 +46252,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -45994,8 +46586,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -46756,7 +47348,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
       [PhoneType <String>]: authenticationPhoneType
@@ -47366,7 +47958,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -47539,21 +48131,78 @@ Each one represents the same information in a different clipboard format.
         [FormatName <String>]: For a list of possible values see formatName values.
   [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+    [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
-Not nullable.
-Read-only.
-Supports $filter on the planId property.
-        [AssignableTo <String>]: assigneeTypes
-        [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-        [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+      [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+      [Code <String>]: The error code associated with the assignment synchronization failure.
+      [Message <String>]: The error message associated with the assignment synchronization failure.
+      [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
-      [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+      [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+          [AssignableTo <String>]: assigneeTypes
+          [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+            [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+            [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
+          [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+          [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+            [AssignableTo <String>]: assigneeTypes
+            [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+            [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+          [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+          [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+          [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+            [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+            [StartDate <DateTime?>]: The date when the subscription started.
+            [State <String>]: subscriptionState
+            [SubscriptionId <String>]: Identifier for the subscription object.
+            [Tags <String>]: subscriptionTags
+          [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+            [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+            [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
+        [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
+Not nullable.
+Read-only.
+Supports $filter on the planId property.
+        [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+        [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+    [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+    [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+    [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
   [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -50089,6 +50738,7 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
     [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
       [(Any) <Object>]: This indicates any property can be added to this object.
+      [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
       [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
     [Conversations <IMicrosoftGraphConversation[]>]: The group's conversations.
       [Id <String>]: The unique identifier for an entity.
@@ -51147,7 +51797,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-    [WelcomeMessageEnabled <Boolean?>]: 
+    [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Returned only on $select.
+Supported only on the Get group API (GET /groups/{ID}).
     [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
       [(Any) <Object>]: This indicates any property can be added to this object.
       [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -53826,8 +54479,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
   [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -54008,7 +54661,7 @@ Read-only.
   [ResourceAppId <String>]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
 
-PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
+PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -54017,7 +54670,7 @@ Read-only.
   [Width <Int32?>]: The width of the photo.
 Read-only.
 
-PRIMARYCHANNEL `<IMicrosoftGraphChannel>`: channel
+PRIMARYCHANNEL <IMicrosoftGraphChannel>: channel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -54464,6 +55117,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
                   [State <String>]: appManagementRestrictionState
                 [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+              [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedDomains <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BlockedSchemes <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [ExemptFormats <String[]>]: 
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedSchemes <String[]>]: 
+                    [ExemptFormats <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ExcludeWildcardsInPath <Boolean?>]: 
+                    [ExcludeWildcardsInPathWithDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [State <String>]: appManagementRestrictionState
+                [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedDomains <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedDomains <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [AllowedSchemes <String[]>]: 
+                  [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                  [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedSchemes <String[]>]: 
+                  [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                  [State <String>]: appManagementRestrictionState
+                  [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
         [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -54521,8 +55231,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
           [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -54855,8 +55565,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -55617,7 +56327,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
           [PhoneType <String>]: authenticationPhoneType
@@ -56148,7 +56858,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -56321,21 +57031,78 @@ Each one represents the same information in a different clipboard format.
             [FormatName <String>]: For a list of possible values see formatName values.
       [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+        [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
-          [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
-Not nullable.
-Read-only.
-Supports $filter on the planId property.
-            [AssignableTo <String>]: assigneeTypes
-            [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-            [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+          [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+          [Code <String>]: The error code associated with the assignment synchronization failure.
+          [Message <String>]: The error message associated with the assignment synchronization failure.
+          [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
-          [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+          [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
 Read-only.
+            [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+              [AssignableTo <String>]: assigneeTypes
+              [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
+              [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+              [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+                [AssignableTo <String>]: assigneeTypes
+                [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+                [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+              [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+              [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+              [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+                [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+                [StartDate <DateTime?>]: The date when the subscription started.
+                [State <String>]: subscriptionState
+                [SubscriptionId <String>]: Identifier for the subscription object.
+                [Tags <String>]: subscriptionTags
+              [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
+            [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
+Not nullable.
+Read-only.
+Supports $filter on the planId property.
+            [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+            [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+        [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+        [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+        [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
       [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -58118,6 +58885,7 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
         [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
           [(Any) <Object>]: This indicates any property can be added to this object.
+          [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
           [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
         [Conversations <IMicrosoftGraphConversation[]>]: The group's conversations.
           [Id <String>]: The unique identifier for an entity.
@@ -59125,7 +59893,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-        [WelcomeMessageEnabled <Boolean?>]: 
+        [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Returned only on $select.
+Supported only on the Get group API (GET /groups/{ID}).
         [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
           [(Any) <Object>]: This indicates any property can be added to this object.
           [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -61804,8 +62575,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
       [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -62757,7 +63528,7 @@ This URL is supplied when you right-click a channel in Microsoft Teams and selec
 This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-SCHEDULE `<IMicrosoftGraphSchedule>`: schedule
+SCHEDULE <IMicrosoftGraphSchedule>: schedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -63023,7 +63794,7 @@ Required.
     [UserInfo <IMicrosoftGraphShiftsUserInfo>]: shiftsUserInfo
   [WorkforceIntegrationIds <String[]>]: The IDs for the workforce integrations associated with this schedule.
 
-SUMMARY `<IMicrosoftGraphTeamSummary>`: teamSummary
+SUMMARY <IMicrosoftGraphTeamSummary>: teamSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GuestsCount <Int32?>]: Count of guests in a team.
   [MembersCount <Int32?>]: Count of members in a team.
@@ -63045,7 +63816,7 @@ Read-only.
   [TagType <String>]: teamworkTagType
   [TeamId <String>]: ID of the team in which the tag is defined.
 
-TEMPLATEDEFINITION `<IMicrosoftGraphTeamTemplateDefinition>`: teamTemplateDefinition
+TEMPLATEDEFINITION <IMicrosoftGraphTeamTemplateDefinition>: teamTemplateDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -63510,6 +64281,63 @@ For existing applications, the enforcement date can be retroactively applied.
 For existing applications, the enforcement date can be retroactively applied.
                       [State <String>]: appManagementRestrictionState
                     [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+                  [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedDomains <String[]>]: 
+                      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                      [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                        [(Any) <Object>]: This indicates any property can be added to this object.
+                        [BlockedDomains <String[]>]: 
+                      [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                      [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                      [State <String>]: appManagementRestrictionState
+                      [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                    [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedSchemes <String[]>]: 
+                      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                      [ExemptFormats <String[]>]: 
+                      [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                        [(Any) <Object>]: This indicates any property can be added to this object.
+                        [BlockedSchemes <String[]>]: 
+                        [ExemptFormats <String[]>]: 
+                      [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                      [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                      [State <String>]: appManagementRestrictionState
+                      [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                    [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                      [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                        [(Any) <Object>]: This indicates any property can be added to this object.
+                        [ExcludeWildcardsInPath <Boolean?>]: 
+                        [ExcludeWildcardsInPathWithDomains <String[]>]: 
+                      [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                      [State <String>]: appManagementRestrictionState
+                    [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedDomains <String[]>]: 
+                      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                      [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                        [(Any) <Object>]: This indicates any property can be added to this object.
+                        [AllowedDomains <String[]>]: 
+                      [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                      [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                      [State <String>]: appManagementRestrictionState
+                      [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                    [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedSchemes <String[]>]: 
+                      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                      [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                        [(Any) <Object>]: This indicates any property can be added to this object.
+                        [AllowedSchemes <String[]>]: 
+                      [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                      [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                      [State <String>]: appManagementRestrictionState
+                      [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
             [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -63567,8 +64395,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
               [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -63901,8 +64729,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
               [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -64663,7 +65491,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
               [PhoneType <String>]: authenticationPhoneType
@@ -65194,7 +66022,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -65367,21 +66195,78 @@ Each one represents the same information in a different clipboard format.
                 [FormatName <String>]: For a list of possible values see formatName values.
           [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
             [(Any) <Object>]: This indicates any property can be added to this object.
-            [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+            [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
-Not nullable.
-Read-only.
-Supports $filter on the planId property.
-                [AssignableTo <String>]: assigneeTypes
-                [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-                [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+              [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+              [Code <String>]: The error code associated with the assignment synchronization failure.
+              [Message <String>]: The error message associated with the assignment synchronization failure.
+              [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
-              [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+              [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Id <String>]: The unique identifier for an entity.
 Read-only.
+                [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+                  [AssignableTo <String>]: assigneeTypes
+                  [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+                    [Id <String>]: The unique identifier for an entity.
+Read-only.
+                    [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                    [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                    [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
+                  [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+                  [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+                    [AssignableTo <String>]: assigneeTypes
+                    [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+                    [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+                  [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+                  [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+                  [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+                    [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+                    [StartDate <DateTime?>]: The date when the subscription started.
+                    [State <String>]: subscriptionState
+                    [SubscriptionId <String>]: Identifier for the subscription object.
+                    [Tags <String>]: subscriptionTags
+                  [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+                    [Id <String>]: The unique identifier for an entity.
+Read-only.
+                    [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                    [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                    [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
+                [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
+Not nullable.
+Read-only.
+Supports $filter on the planId property.
+                [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+                [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+            [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+            [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+            [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
           [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -67164,6 +68049,7 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
             [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
               [(Any) <Object>]: This indicates any property can be added to this object.
+              [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
               [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
             [Conversations <IMicrosoftGraphConversation[]>]: The group's conversations.
               [Id <String>]: The unique identifier for an entity.
@@ -67816,7 +68702,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-            [WelcomeMessageEnabled <Boolean?>]: 
+            [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Returned only on $select.
+Supported only on the Get group API (GET /groups/{ID}).
             [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
               [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -70505,8 +71394,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
           [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -71787,27 +72676,5 @@ This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
 
-- [New-MgBetaTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateam)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateam)
+- [](https://learn.microsoft.com/graph/api/team-post?view=graph-rest-beta)

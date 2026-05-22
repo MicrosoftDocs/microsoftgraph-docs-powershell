@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationemailmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserAuthenticationEmailMethod
 ---
@@ -17,9 +17,6 @@ Set a user's emailAuthenticationMethod object.
 Email authentication is a self-service password reset method.
 A user may only have one email authentication method.
 Self-service operations aren't supported.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationEmailMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,18 +75,9 @@ Email authentication is a self-service password reset method.
 A user may only have one email authentication method.
 Self-service operations aren't supported.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-Email.ReadWrite, UserAuthMethod-Email.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Email.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -98,10 +86,6 @@ $params = @{
 }
 
 New-MgBetaUserAuthenticationEmailMethod -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaUserAuthenticationEmailMethod Cmdlet.
-
 
 ## PARAMETERS
 
@@ -581,7 +565,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEmailAuthenticationMethod>`: emailAuthenticationMethod
+BODYPARAMETER <IMicrosoftGraphEmailAuthenticationMethod>: emailAuthenticationMethod
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -599,7 +583,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   [EmailAddress <String>]: The email address registered to this user.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -699,27 +683,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaUserAuthenticationEmailMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationemailmethod)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authentication-post-emailmethods?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationemailmethod)
+- [](https://learn.microsoft.com/graph/api/authentication-post-emailmethods?view=graph-rest-beta)

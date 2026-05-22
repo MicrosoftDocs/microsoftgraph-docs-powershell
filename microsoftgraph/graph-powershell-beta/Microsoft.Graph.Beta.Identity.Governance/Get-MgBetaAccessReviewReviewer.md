@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewreviewer
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAccessReviewReviewer
 ---
@@ -58,17 +58,12 @@ This cmdlet has the following aliases,
 The collection of reviewers for an access review, if access review reviewerType is of type delegated.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId
-
-```
-This example shows how to use the Get-MgBetaAccessReviewReviewer Cmdlet.
-
 
 ## PARAMETERS
 
@@ -557,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -605,6 +600,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -670,27 +666,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaAccessReviewReviewer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewreviewer)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreview-listreviewers?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewreviewer)
+- [](https://learn.microsoft.com/graph/api/accessreview-listreviewers?view=graph-rest-beta)

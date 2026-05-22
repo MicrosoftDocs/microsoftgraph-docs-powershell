@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Grant-MgBetaSitePermission
 ---
@@ -14,9 +14,6 @@ title: Grant-MgBetaSitePermission
 ## SYNOPSIS
 
 Grant users access to a link represented by a permission.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Grant-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Grant-MgSitePermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 
 Grant users access to a link represented by a permission.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -103,7 +110,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -355,7 +362,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-
+.
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -405,7 +412,7 @@ HelpMessage: ''
 
 ### -Roles
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -513,7 +520,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Recipients <IMicrosoftGraphDriveRecipient[]>]: 
     [Alias <String>]: The alias of the domain object, for cases where an email address is unavailable (for example, security groups).
@@ -521,7 +528,7 @@ BODYPARAMETER `<IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGra
     [ObjectId <String>]: The unique identifier for the recipient in the directory.
   [Roles <String[]>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -591,28 +598,5 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [Grant-MgBetaSitePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission)
+- [](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)

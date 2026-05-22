@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportpartnerbillingreconciliationunbilled
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaReportPartnerBillingReconciliationUnbilled
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaReportPartnerBillingReconciliationUnbilled
 ## SYNOPSIS
 
 Delete navigation property unbilled for reports
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgReportPartnerBillingReconciliationUnbilled](/powershell/module/Microsoft.Graph.Reports/Remove-MgReportPartnerBillingReconciliationUnbilled?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,6 +35,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property unbilled for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -319,27 +326,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Remove-MgBetaReportPartnerBillingReconciliationUnbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportpartnerbillingreconciliationunbilled)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportpartnerbillingreconciliationunbilled)

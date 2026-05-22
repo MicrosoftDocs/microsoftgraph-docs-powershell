@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserPlanner
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserPlanner
 ## SYNOPSIS
 
 Update the navigation property planner in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,18 +75,9 @@ This cmdlet has the following aliases,
 
 Update the navigation property planner in users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -112,12 +100,7 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgBetaUserPlanner -UserId $userId -BodyParameter $params -IfMatch W/'"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="' 
-
-
-```
-This example shows how to use the Update-MgBetaUserPlanner Cmdlet.
-
+Update-MgBetaUserPlanner -UserId $userId -BodyParameter $params -IfMatch W/'"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="'
 
 ## PARAMETERS
 
@@ -150,7 +133,7 @@ HelpMessage: ''
 
 ### -All
 
-
+.
 To construct, see NOTES section for ALL properties and create a hash table.
 
 ```yaml
@@ -476,7 +459,7 @@ HelpMessage: ''
 
 ### -Plans
 
-
+.
 To construct, see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
@@ -791,7 +774,7 @@ ALL <IMicrosoftGraphPlannerDelta[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerUser>`: plannerUser
+BODYPARAMETER <IMicrosoftGraphPlannerUser>: plannerUser
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -937,10 +920,12 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
         [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        [HasChat <Boolean?>]: 
+        [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
         [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
         [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -950,8 +935,34 @@ If true, it shows the task.
 The date on which task is added to or removed from MyDay.
         [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [LastModifiedDateTime <DateTime?>]: 
+        [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+          [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+          [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [DeletedDateTime <DateTime?>]: 
+          [EditedDateTime <DateTime?>]: 
+          [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+            [MentionType <String>]: plannerTaskChatMentionType
+            [Mentioned <String>]: The ID of the mentioned user.
+            [Position <Int32?>]: The zero-based position of the mention in the message content.
+          [MessageType <String>]: plannerTaskChatMessageType
+          [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+          [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+            [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+              [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+              [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
         [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
         [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
         [PlanId <String>]: Plan ID to which the task belongs.
@@ -1250,10 +1261,12 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      [HasChat <Boolean?>]: 
+      [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
       [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
       [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -1263,8 +1276,34 @@ If true, it shows the task.
 The date on which task is added to or removed from MyDay.
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: 
+      [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+        [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [DeletedDateTime <DateTime?>]: 
+        [EditedDateTime <DateTime?>]: 
+        [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+          [MentionType <String>]: plannerTaskChatMentionType
+          [Mentioned <String>]: The ID of the mentioned user.
+          [Position <Int32?>]: The zero-based position of the mention in the message content.
+        [MessageType <String>]: plannerTaskChatMessageType
+        [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+        [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+          [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+            [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+            [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
       [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
       [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
       [PlanId <String>]: Plan ID to which the task belongs.
@@ -1411,13 +1450,14 @@ Nullable.
   [Title <String>]: Required.
 Title of the plan.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
   [PlannerRosterId <String>]: The unique identifier of plannerRoster
   [PlannerRosterMemberId <String>]: The unique identifier of plannerRosterMember
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [UserId <String>]: The unique identifier of user
 
@@ -1536,10 +1576,12 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  [HasChat <Boolean?>]: 
+  [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
   [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
   [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -1549,8 +1591,34 @@ If true, it shows the task.
 The date on which task is added to or removed from MyDay.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: 
+  [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [DeletedDateTime <DateTime?>]: 
+    [EditedDateTime <DateTime?>]: 
+    [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+      [MentionType <String>]: plannerTaskChatMentionType
+      [Mentioned <String>]: The ID of the mentioned user.
+      [Position <Int32?>]: The zero-based position of the mention in the message content.
+    [MessageType <String>]: plannerTaskChatMessageType
+    [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+    [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+      [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+        [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
   [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
   [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
   [PlanId <String>]: Plan ID to which the task belongs.
@@ -1752,10 +1820,12 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      [HasChat <Boolean?>]: 
+      [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
       [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
       [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -1765,8 +1835,34 @@ If true, it shows the task.
 The date on which task is added to or removed from MyDay.
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: 
+      [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+        [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [DeletedDateTime <DateTime?>]: 
+        [EditedDateTime <DateTime?>]: 
+        [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+          [MentionType <String>]: plannerTaskChatMentionType
+          [Mentioned <String>]: The ID of the mentioned user.
+          [Position <Int32?>]: The zero-based position of the mention in the message content.
+        [MessageType <String>]: plannerTaskChatMessageType
+        [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+        [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+          [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+            [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+            [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
       [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
       [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
       [PlanId <String>]: Plan ID to which the task belongs.
@@ -2050,10 +2146,12 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      [HasChat <Boolean?>]: 
+      [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
       [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
       [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -2063,8 +2161,34 @@ If true, it shows the task.
 The date on which task is added to or removed from MyDay.
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: 
+      [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+        [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [DeletedDateTime <DateTime?>]: 
+        [EditedDateTime <DateTime?>]: 
+        [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+          [MentionType <String>]: plannerTaskChatMentionType
+          [Mentioned <String>]: The ID of the mentioned user.
+          [Position <Int32?>]: The zero-based position of the mention in the message content.
+        [MessageType <String>]: plannerTaskChatMessageType
+        [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+        [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+          [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+            [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+            [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
       [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
       [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
       [PlanId <String>]: Plan ID to which the task belongs.
@@ -2348,10 +2472,12 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      [HasChat <Boolean?>]: 
+      [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
       [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
       [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -2361,8 +2487,34 @@ If true, it shows the task.
 The date on which task is added to or removed from MyDay.
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: 
+      [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+        [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        [DeletedDateTime <DateTime?>]: 
+        [EditedDateTime <DateTime?>]: 
+        [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+          [MentionType <String>]: plannerTaskChatMentionType
+          [Mentioned <String>]: The ID of the mentioned user.
+          [Position <Int32?>]: The zero-based position of the mention in the message content.
+        [MessageType <String>]: plannerTaskChatMessageType
+        [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+        [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+          [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+            [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+            [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
       [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
       [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
       [PlanId <String>]: Plan ID to which the task belongs.
@@ -2624,10 +2776,12 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  [HasChat <Boolean?>]: 
+  [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
   [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
   [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -2637,8 +2791,34 @@ If true, it shows the task.
 The date on which task is added to or removed from MyDay.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: 
+  [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [DeletedDateTime <DateTime?>]: 
+    [EditedDateTime <DateTime?>]: 
+    [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+      [MentionType <String>]: plannerTaskChatMentionType
+      [Mentioned <String>]: The ID of the mentioned user.
+      [Position <Int32?>]: The zero-based position of the mention in the message content.
+    [MessageType <String>]: plannerTaskChatMessageType
+    [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+    [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+      [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+        [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
   [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
   [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
   [PlanId <String>]: Plan ID to which the task belongs.
@@ -2708,26 +2888,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner)

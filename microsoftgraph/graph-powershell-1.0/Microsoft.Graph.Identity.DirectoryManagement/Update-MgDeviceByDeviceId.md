@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevicebydeviceid
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceByDeviceId
 ---
@@ -15,9 +15,6 @@ title: Update-MgDeviceByDeviceId
 
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -98,6 +95,16 @@ This cmdlet has the following aliases,
 
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -818,7 +825,7 @@ Indicates whether the device is a member of a restricted management administrati
 If not set, the default value is null and the default behavior is false.
 Read-only.
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
-Returned only on $select.
+Requires $select to retrieve.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1050,7 +1057,7 @@ HelpMessage: ''
 
 The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
 
 ```yaml
@@ -1551,7 +1558,7 @@ Supports $filter (eq, not, ge, le).
   [Key <Byte[]>]: For internal use only.
   [Type <Int32?>]: For internal use only.
 
-BODYPARAMETER `<IMicrosoftGraphDevice>`: device
+BODYPARAMETER <IMicrosoftGraphDevice>: device
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1613,7 +1620,7 @@ Supports $filter (eq, ne, not).
 If not set, the default value is null and the default behavior is false.
 Read-only.
  To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
-Returned only on $select.
+Requires $select to retrieve.
   [IsRooted <Boolean?>]: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
   [ManagementType <String>]: The management channel of the device.
@@ -1640,7 +1647,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
   [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
   [OnPremisesSyncEnabled <Boolean?>]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
@@ -1687,7 +1694,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -1713,8 +1720,11 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
+  [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
+  [ProfileSourceId <String>]: The unique identifier of profileSource
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
+  [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
@@ -1759,28 +1769,5 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [Update-MgDeviceByDeviceId](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevicebydeviceid)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevicebydeviceid)
+- [](https://learn.microsoft.com/graph/api/device-update?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelastmodifiedbyusermailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteLastModifiedByUserMailboxSetting
 ---
@@ -15,10 +15,7 @@ title: Get-MgGroupSiteLastModifiedByUserMailboxSetting
 
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-Returned only on $select.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+Requires $select to retrieve.
 
 ## SYNTAX
 
@@ -71,7 +68,17 @@ This cmdlet has the following aliases,
 
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-Returned only on $select.
+Requires $select to retrieve.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -421,7 +428,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -469,27 +476,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupSiteLastModifiedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelastmodifiedbyusermailboxsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelastmodifiedbyusermailboxsetting)

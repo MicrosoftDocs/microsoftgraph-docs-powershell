@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-Module Guid: e9830525-b933-4649-8caa-bbf48d1863a2
+Module Guid: 70ea5733-958b-4701-bf6c-a35d877dd951
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devices.cloudprint/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -398,23 +398,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaPrintTaskDefinition](Update-MgBetaPrintTaskDefinition.md)
 
 ### [Update-MgBetaPrintTaskDefinitionTask](Update-MgBetaPrintTaskDefinitionTask.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponenthost
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityThreatIntelligenceHostComponentHost
 ---
@@ -16,9 +16,6 @@ title: Get-MgSecurityThreatIntelligenceHostComponentHost
 The host related to this component.
 This is a reverse navigation property.
 When navigating to components from a host, this should be assumed to be a return reference.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostComponentHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostComponentHost?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 The host related to this component.
 This is a reverse navigation property.
 When navigating to components from a host, this should be assumed to be a return reference.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -341,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -417,27 +424,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSecurityThreatIntelligenceHostComponentHost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponenthost)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponenthost)

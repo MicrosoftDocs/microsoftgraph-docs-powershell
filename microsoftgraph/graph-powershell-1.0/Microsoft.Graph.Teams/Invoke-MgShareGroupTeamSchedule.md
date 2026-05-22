@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsharegroupteamschedule
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgShareGroupTeamSchedule
 ---
@@ -19,9 +19,6 @@ Each shift, openshift and timeOff instance in a schedule supports a draft versio
 The draft version is viewable by only managers, and the shared version is viewable by employees and managers.
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaShareGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaShareGroupTeamSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -83,6 +80,16 @@ The draft version is viewable by only managers, and the shared version is viewab
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -114,7 +121,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -185,7 +192,7 @@ HelpMessage: ''
 
 ### -EndDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -330,7 +337,7 @@ HelpMessage: ''
 
 ### -NotifyTeam
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -463,7 +470,7 @@ HelpMessage: ''
 
 ### -StartDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -544,13 +551,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1N3C8HgGroupsGroupIdTeamScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1N3C8HgGroupsGroupIdTeamScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [NotifyTeam <Boolean?>]: 
   [StartDateTime <DateTime?>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -590,28 +597,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgShareGroupTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsharegroupteamschedule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-share?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsharegroupteamschedule)
+- [](https://learn.microsoft.com/graph/api/schedule-share?view=graph-rest-1.0)

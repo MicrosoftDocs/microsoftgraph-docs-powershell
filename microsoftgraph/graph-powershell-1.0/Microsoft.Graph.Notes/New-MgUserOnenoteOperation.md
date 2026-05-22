@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenoteoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserOnenoteOperation
 ---
@@ -14,9 +14,6 @@ title: New-MgUserOnenoteOperation
 ## SYNOPSIS
 
 Create new navigation property to operations for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to operations for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -651,7 +658,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnenoteOperation>`: onenoteOperation
+BODYPARAMETER <IMicrosoftGraphOnenoteOperation>: onenoteOperation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The start time of the operation.
   [LastActionDateTime <DateTime?>]: The time of the last action of the operation.
@@ -667,12 +674,12 @@ Read-only.
   [ResourceLocation <String>]: The resource URI for the object.
 For example, the resource URI for a copied page or section.
 
-ERROR `<IMicrosoftGraphOnenoteOperationError>`: onenoteOperationError
+ERROR <IMicrosoftGraphOnenoteOperationError>: onenoteOperationError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: The error code.
   [Message <String>]: The error message.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -689,27 +696,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgUserOnenoteOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenoteoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenoteoperation)

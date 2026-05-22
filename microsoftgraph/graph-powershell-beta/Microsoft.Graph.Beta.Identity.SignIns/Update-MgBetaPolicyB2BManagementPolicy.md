@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2bmanagementpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyB2BManagementPolicy
 ---
@@ -70,13 +70,23 @@ This cmdlet has the following aliases,
 
 Update the properties of a b2bManagementPolicy object.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.B2BManagementPolicy,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.B2BManagementPolicy,  |
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.b2bManagementPolicy"
+	description = "Policy used for B2B features"
+	displayName = "Policy1"
+	definition = @(
+	'{'B2BManagementPolicy':{'Version':1}}'
+)
+isOrganizationDefault = "true"
+}
+
+Update-MgBetaPolicyB2BManagementPolicy -B2bManagementPolicyId $b2bManagementPolicyId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -109,7 +119,7 @@ HelpMessage: ''
 
 ### -AppliesTo
 
-
+.
 To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
@@ -640,7 +650,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -740,28 +750,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPolicyB2BManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2bmanagementpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/b2bmanagementpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2bmanagementpolicy)
+- [](https://learn.microsoft.com/graph/api/b2bmanagementpolicy-update?view=graph-rest-beta)

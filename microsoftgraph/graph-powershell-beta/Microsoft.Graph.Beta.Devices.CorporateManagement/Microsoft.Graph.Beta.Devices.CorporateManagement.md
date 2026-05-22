@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-Module Guid: 1b2ca2af-a768-4ca5-9341-7f0640c47f9d
+Module Guid: 1978d9cf-6cff-4fe1-9fb5-154bc67b672f
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devices.corporatemanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -2622,23 +2622,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserMobileAppTroubleshootingEvent](Update-MgBetaUserMobileAppTroubleshootingEvent.md)
 
 ### [Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

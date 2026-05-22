@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef
 ---
@@ -14,9 +14,6 @@ title: Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStart
 ## SYNOPSIS
 
 Delete ref of navigation property identityProviders for identity
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete ref of navigation property identityProviders for identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -402,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -425,6 +432,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
+  [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
   [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
@@ -463,6 +471,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
   [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
@@ -470,27 +479,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbyref)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbyref)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyagent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaRiskyAgent
 ---
@@ -21,12 +21,12 @@ Update the navigation property riskyAgents in identityProtection
 
 ```
 Update-MgBetaRiskyAgent -RiskyAgentId <string> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-AgentDisplayName <string>] [-Id <string>] [-IsDeleted]
- [-IsEnabled] [-IsProcessing] [-RiskDetail <string>] [-RiskLastModifiedDateTime <datetime>]
- [-RiskLevel <string>] [-RiskState <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <hashtable>] [-AgentDisplayName <string>] [-BlueprintId <string>]
+ [-Id <string>] [-IdentityType <string>] [-IsDeleted] [-IsEnabled] [-IsProcessing]
+ [-RiskDetail <string>] [-RiskLastModifiedDateTime <datetime>] [-RiskLevel <string>]
+ [-RiskState <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -43,12 +43,12 @@ Update-MgBetaRiskyAgent -RiskyAgentId <string> -BodyParameter <IMicrosoftGraphRi
 
 ```
 Update-MgBetaRiskyAgent -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-AgentDisplayName <string>] [-Id <string>] [-IsDeleted]
- [-IsEnabled] [-IsProcessing] [-RiskDetail <string>] [-RiskLastModifiedDateTime <datetime>]
- [-RiskLevel <string>] [-RiskState <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <hashtable>] [-AgentDisplayName <string>] [-BlueprintId <string>]
+ [-Id <string>] [-IdentityType <string>] [-IsDeleted] [-IsEnabled] [-IsProcessing]
+ [-RiskDetail <string>] [-RiskLastModifiedDateTime <datetime>] [-RiskLevel <string>]
+ [-RiskState <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -69,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property riskyAgents in identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -103,6 +113,34 @@ HelpMessage: ''
 
 Name of the agent.
 Supports $filter (eq, startsWith).
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BlueprintId
+
+The identifier of the blueprint associated with the agent.
+Nullable.
 
 ```yaml
 Type: System.String
@@ -265,6 +303,33 @@ HelpMessage: ''
 
 The unique identifier for an entity.
 Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IdentityType
+
+agentIdentityType
 
 ```yaml
 Type: System.String
@@ -677,12 +742,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRiskyAgent>`: riskyAgent
+BODYPARAMETER <IMicrosoftGraphRiskyAgent>: riskyAgent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [AgentDisplayName <String>]: Name of the agent.
  Supports $filter (eq, startsWith).
+  [BlueprintId <String>]: The identifier of the blueprint associated with the agent.
+Nullable.
+  [IdentityType <String>]: agentIdentityType
   [IsDeleted <Boolean?>]: Indicates whether the agent is deleted.
   [IsEnabled <Boolean?>]: Indicates whether the agent is enabled.
   [IsProcessing <Boolean?>]: Indicates whether an agent's risky state is processing in the backend.
@@ -694,7 +762,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [RiskLevel <String>]: riskLevel
   [RiskState <String>]: riskState
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -794,27 +862,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaRiskyAgent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyagent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyagent)

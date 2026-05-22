@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotdeploymentprofileassigneddeviceproperty
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceProperty
 ---
@@ -78,6 +78,16 @@ This cmdlet has the following aliases,
 
 Updates properties on Autopilot devices.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -109,7 +119,7 @@ HelpMessage: ''
 
 ### -AddressableUserName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -136,7 +146,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -207,7 +217,7 @@ HelpMessage: ''
 
 ### -DeviceAccountPassword
 
-
+.
 
 ```yaml
 Type: System.String
@@ -234,7 +244,7 @@ HelpMessage: ''
 
 ### -DeviceAccountUpn
 
-
+.
 
 ```yaml
 Type: System.String
@@ -261,7 +271,7 @@ HelpMessage: ''
 
 ### -DeviceFriendlyName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -288,7 +298,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -315,7 +325,7 @@ HelpMessage: ''
 
 ### -GroupTag
 
-
+.
 
 ```yaml
 Type: System.String
@@ -539,7 +549,7 @@ HelpMessage: ''
 
 ### -UserPrincipalName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -674,7 +684,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths19IcukwDevicemanagementWindowsautopilotdeploymentprofilesWindowsautopilotdeploymentprofileIdAssigneddevicesWindowsautopilotdeviceidentityIdMicrosoftGraphUpdatedevicepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths19IcukwDevicemanagementWindowsautopilotdeploymentprofilesWindowsautopilotdeploymentprofileIdAssigneddevicesWindowsautopilotdeviceidentityIdMicrosoftGraphUpdatedevicepropertiesPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AddressableUserName <String>]: 
   [DeviceAccountPassword <String>]: 
@@ -684,7 +694,7 @@ BODYPARAMETER `<IPaths19IcukwDevicemanagementWindowsautopilotdeploymentprofilesW
   [GroupTag <String>]: 
   [UserPrincipalName <String>]: 
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -716,27 +726,4 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotdeploymentprofileassigneddeviceproperty)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotdeploymentprofileassigneddeviceproperty)

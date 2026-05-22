@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserSponsor
 ---
@@ -13,42 +13,20 @@ title: Get-MgBetaUserSponsor
 
 ## SYNOPSIS
 
-The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
-(HTTP Methods: GET, POST, DELETE.).
-Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserSponsor](/powershell/module/Microsoft.Graph.Users/Get-MgUserSponsor?view=graph-powershell-1.0)
+Get an agentUser's sponsors.
+Sponsors are users and groups that are responsible for this agent user's privileges in the tenant and for keeping the agent user's information and access up to date.
 
 ## SYNTAX
 
 ### List (Default)
 
 ```
-Get-MgBetaUserSponsor -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
- [-Filter <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
+Get-MgBetaUserSponsor -UserId <string> [-ExpandProperty <string[]>] [-Filter <string>]
+ [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
  [-CountVariable <string>] [<CommonParameters>]
-```
-
-### Get
-
-```
-Get-MgBetaUserSponsor -DirectoryObjectId <string> -UserId <string> [-ExpandProperty <string[]>]
- [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
-```
-
-### GetViaIdentity
-
-```
-Get-MgBetaUserSponsor -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
- [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -58,22 +36,16 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
-(HTTP Methods: GET, POST, DELETE.).
-Supports $expand.
+Get an agentUser's sponsors.
+Sponsors are users and groups that are responsible for this agent user's privileges in the tenant and for keeping the agent user's information and access up to date.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users
 
 Get-MgBetaUserSponsor -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserSponsor Cmdlet.
-
 
 ## PARAMETERS
 
@@ -87,7 +59,7 @@ DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: List
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -131,30 +103,9 @@ SupportsWildcards: false
 Aliases:
 - CV
 ParameterSets:
-- Name: List
+- Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -DirectoryObjectId
-
-The unique identifier of directoryObject
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Get
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -195,7 +146,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: List
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -269,28 +220,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -InputObject
-
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: GetViaIdentity
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -PageSize
 
 Sets the page size of results.
@@ -301,7 +230,7 @@ DefaultValue: 0
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: List
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -429,7 +358,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: List
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -450,7 +379,7 @@ DefaultValue: 0
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: List
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -472,7 +401,7 @@ SupportsWildcards: false
 Aliases:
 - OrderBy
 ParameterSets:
-- Name: List
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -494,7 +423,7 @@ SupportsWildcards: false
 Aliases:
 - Limit
 ParameterSets:
-- Name: List
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -515,13 +444,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Get
+- Name: (All)
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -541,10 +464,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
-
-{{ Fill in the Description }}
-
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
@@ -557,69 +476,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## NOTES
 
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties.
-For information on hash tables, run Get-Help about_Hash_Tables.
-
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  [AppId <String>]: Alternate key of servicePrincipal
-  [AttachmentBaseId <String>]: The unique identifier of attachmentBase
-  [AttachmentId <String>]: The unique identifier of attachment
-  [AttachmentSessionId <String>]: The unique identifier of attachmentSession
-  [ChecklistItemId <String>]: The unique identifier of checklistItem
-  [DirectoryObjectId <String>]: The unique identifier of directoryObject
-  [EndDateTime <String>]: Usage: endDateTime='{endDateTime}'
-  [ExtensionId <String>]: The unique identifier of extension
-  [LicenseDetailsId <String>]: The unique identifier of licenseDetails
-  [LinkedResourceId <String>]: The unique identifier of linkedResource
-  [NotificationId <String>]: The unique identifier of notification
-  [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
-  [OutlookCategoryId <String>]: The unique identifier of outlookCategory
-  [OutlookTaskFolderId <String>]: The unique identifier of outlookTaskFolder
-  [OutlookTaskGroupId <String>]: The unique identifier of outlookTaskGroup
-  [OutlookTaskId <String>]: The unique identifier of outlookTask
-  [ProfilePhotoId <String>]: The unique identifier of profilePhoto
-  [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
-  [ServiceStorageQuotaBreakdownId <String>]: The unique identifier of serviceStorageQuotaBreakdown
-  [SharedInsightId <String>]: The unique identifier of sharedInsight
-  [StartDateTime <String>]: Usage: startDateTime='{startDateTime}'
-  [TimeZoneStandard <String>]: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  [TodoTaskId <String>]: The unique identifier of todoTask
-  [TodoTaskListId <String>]: The unique identifier of todoTaskList
-  [TrendingId <String>]: The unique identifier of trending
-  [UsedInsightId <String>]: The unique identifier of usedInsight
-  [UserId <String>]: The unique identifier of user
-  [UserPrincipalName <String>]: Alternate key of user
-  [WindowsSettingId <String>]: The unique identifier of windowsSetting
-  [WindowsSettingInstanceId <String>]: The unique identifier of windowsSettingInstance
-  [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
-  [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
-
-
 ## RELATED LINKS
 
-- [Get-MgBetaUserSponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-sponsors?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor)
+- [](https://learn.microsoft.com/graph/api/agentuser-list-sponsors?view=graph-rest-beta)

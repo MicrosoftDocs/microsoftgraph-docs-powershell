@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagereply
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 02/20/2026
+ms.date: 05/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserMailFolderChildFolderMessageReply
 ---
@@ -14,14 +14,11 @@ title: New-MgUserMailFolderChildFolderMessageReply
 ## SYNOPSIS
 
 Create a draft to reply to the sender of a message in either JSON or MIME format.
-When using JSON format:\r- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\r- If replyTo is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in replyTo, and not the recipients in from.\r- You can update the draft later to add reply content to the body or change other message properties.
-When using MIME format:\r- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:\r\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\r\n- If replyTo is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in replyTo, and not the recipients in from.\r\n- You can update the draft later to add reply content to the body or change other message properties.
+When using MIME format:\r\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r\n- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageReply](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessageReply?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -78,11 +75,21 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a draft to reply to the sender of a message in either JSON or MIME format.
-When using JSON format:\r- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\r- If replyTo is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in replyTo, and not the recipients in from.\r- You can update the draft later to add reply content to the body or change other message properties.
-When using MIME format:\r- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:\r\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\r\n- If replyTo is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in replyTo, and not the recipients in from.\r\n- You can update the draft later to add reply content to the body or change other message properties.
+When using MIME format:\r\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r\n- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -115,7 +122,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -164,7 +171,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -579,7 +586,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths4QoeppUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphCreatereplyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths4QoeppUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphCreatereplyPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [Message <IMicrosoftGraphMessage>]: message
@@ -641,7 +648,7 @@ To verify the existence of inline attachments, parse the body property to look f
     [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
       [Name <String>]: Represents the key in a key-value pair.
       [Value <String>]: The value in a key-value pair.
@@ -679,7 +686,7 @@ If ispopout is set to 0, the browser shows the message in the Outlook on the web
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.NOTE: When using this URL to access a message from a mailbox with delegate permissions, both the signed-in user and the target mailbox must be in the same database region.
 For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -689,7 +696,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   [MessageRuleId <String>]: The unique identifier of messageRule
   [UserId <String>]: The unique identifier of user
 
-MESSAGE `<IMicrosoftGraphMessage>`: message
+MESSAGE <IMicrosoftGraphMessage>: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -748,7 +755,7 @@ To verify the existence of inline attachments, parse the body property to look f
   [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
     [Name <String>]: Represents the key in a key-value pair.
     [Value <String>]: The value in a key-value pair.
@@ -789,28 +796,5 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 ## RELATED LINKS
 
-- [New-MgUserMailFolderChildFolderMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagereply)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagereply)
+- [](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-1.0)
