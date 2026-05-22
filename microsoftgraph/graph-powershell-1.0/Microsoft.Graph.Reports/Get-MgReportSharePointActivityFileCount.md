@@ -373,8 +373,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityfilecount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-1.0)
+- [Get-MgReportSharePointActivityFileCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityfilecount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-1.0)
 
 
 

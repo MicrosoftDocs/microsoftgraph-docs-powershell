@@ -709,7 +709,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingworkhourandlocation)
+- [Update-MgUserSettingWorkHourAndLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingworkhourandlocation)
 
 
 
