@@ -140,7 +140,7 @@ HelpMessage: ''
 
 ### -EmailThreats
 
-.
+
 To construct, see NOTES section for EMAILTHREATS properties and create a hash table.
 
 ```yaml
@@ -162,7 +162,7 @@ HelpMessage: ''
 
 ### -EmailThreatSubmissionPolicies
 
-.
+
 To construct, see NOTES section for EMAILTHREATSUBMISSIONPOLICIES properties and create a hash table.
 
 ```yaml
@@ -184,7 +184,7 @@ HelpMessage: ''
 
 ### -FileThreats
 
-.
+
 To construct, see NOTES section for FILETHREATS properties and create a hash table.
 
 ```yaml
@@ -376,7 +376,7 @@ HelpMessage: ''
 
 ### -UrlThreats
 
-.
+
 To construct, see NOTES section for URLTHREATS properties and create a hash table.
 
 ```yaml

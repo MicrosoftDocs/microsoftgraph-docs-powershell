@@ -397,7 +397,7 @@ HelpMessage: ''
 
 ### -Fax
 
-.
+
 
 ```yaml
 Type: System.String
