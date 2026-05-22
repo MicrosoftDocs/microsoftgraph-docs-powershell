@@ -15,6 +15,9 @@ title: Update-MgVirtualEventPresenter
 
 Update the navigation property presenters in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

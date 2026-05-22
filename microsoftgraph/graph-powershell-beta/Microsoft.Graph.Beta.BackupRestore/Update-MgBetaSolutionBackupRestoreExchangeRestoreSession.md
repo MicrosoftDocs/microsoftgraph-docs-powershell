@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreExchangeRestoreSession
 
 Update the properties of an exchangeRestoreSession.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreExchangeRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreExchangeRestoreSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

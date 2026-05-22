@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSitePageCreatedByUserServiceProvisioningErrorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

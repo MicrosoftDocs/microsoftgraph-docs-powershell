@@ -15,6 +15,9 @@ title: Get-MgBetaGroupMemberWithLicenseErrorAsDevice
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberWithLicenseErrorAsDevice](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberWithLicenseErrorAsDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

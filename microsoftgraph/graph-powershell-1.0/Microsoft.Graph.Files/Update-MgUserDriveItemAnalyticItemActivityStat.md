@@ -15,6 +15,9 @@ title: Update-MgUserDriveItemAnalyticItemActivityStat
 
 Update the navigation property itemActivityStats in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

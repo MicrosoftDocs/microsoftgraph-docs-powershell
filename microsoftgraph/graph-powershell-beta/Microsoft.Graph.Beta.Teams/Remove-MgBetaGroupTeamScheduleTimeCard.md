@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupTeamScheduleTimeCard
 
 Delete navigation property timeCards for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleTimeCard?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

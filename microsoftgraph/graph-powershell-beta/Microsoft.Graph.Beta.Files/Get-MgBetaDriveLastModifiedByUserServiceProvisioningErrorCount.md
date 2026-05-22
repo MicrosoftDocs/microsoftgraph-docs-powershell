@@ -15,6 +15,9 @@ title: Get-MgBetaDriveLastModifiedByUserServiceProvisioningErrorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveLastModifiedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Files/Get-MgDriveLastModifiedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

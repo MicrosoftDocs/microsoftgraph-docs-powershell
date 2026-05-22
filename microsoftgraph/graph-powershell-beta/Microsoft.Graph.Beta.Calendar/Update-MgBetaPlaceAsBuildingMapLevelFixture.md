@@ -15,6 +15,9 @@ title: Update-MgBetaPlaceAsBuildingMapLevelFixture
 
 Update the properties of an existing fixtureMap object in IMDF format on a specified floor, or create one if it doesn't exist.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlaceAsBuildingMapLevelFixture](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlaceAsBuildingMapLevelFixture?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

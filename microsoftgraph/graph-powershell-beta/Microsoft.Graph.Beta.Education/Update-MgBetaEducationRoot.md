@@ -15,6 +15,9 @@ title: Update-MgBetaEducationRoot
 
 Update education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationRoot](/powershell/module/Microsoft.Graph.Education/Update-MgEducationRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

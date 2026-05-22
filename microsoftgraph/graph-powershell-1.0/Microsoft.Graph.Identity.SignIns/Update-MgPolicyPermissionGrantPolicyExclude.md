@@ -15,6 +15,9 @@ title: Update-MgPolicyPermissionGrantPolicyExclude
 
 Update the navigation property excludes in policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
