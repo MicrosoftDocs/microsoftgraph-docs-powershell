@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationjobschemaexpression
@@ -557,7 +557,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Expression <String>]: 
   [TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]: attributeDefinition
@@ -607,7 +607,7 @@ Not nullable.
     [Properties <IMicrosoftGraphStringKeyObjectValuePair[]>]: Property values of the test object.
       [Key <String>]: Key.
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -634,7 +634,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [UniqueName <String>]: Alternate key of application
   [UserId <String>]: The unique identifier of user
 
-TARGETATTRIBUTEDEFINITION <IMicrosoftGraphAttributeDefinition>: attributeDefinition
+TARGETATTRIBUTEDEFINITION `<IMicrosoftGraphAttributeDefinition>`: attributeDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Anchor <Boolean?>]: true if the attribute should be used as the anchor for the object.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
@@ -667,7 +667,7 @@ If during synchronization, the required attribute has no value, the default valu
 If default the value was not set, synchronization will record an error.
   [Type <String>]: attributeType
 
-TESTINPUTOBJECT <IMicrosoftGraphExpressionInputObject>: expressionInputObject
+TESTINPUTOBJECT `<IMicrosoftGraphExpressionInputObject>`: expressionInputObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Definition <IMicrosoftGraphObjectDefinition>]: objectDefinition
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -717,3 +717,25 @@ Not nullable.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationjobschemaexpression)
 - [](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
