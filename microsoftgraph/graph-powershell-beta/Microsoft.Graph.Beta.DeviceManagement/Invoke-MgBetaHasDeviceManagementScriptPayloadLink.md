@@ -363,7 +363,7 @@ BODY `<IPathsHo5CjoDevicemanagementDevicemanagementscriptsMicrosoftGraphHaspaylo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetahasdevicemanagementscriptpayloadlink)
+- [Invoke-MgBetaHasDeviceManagementScriptPayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetahasdevicemanagementscriptpayloadlink)
 
 
 

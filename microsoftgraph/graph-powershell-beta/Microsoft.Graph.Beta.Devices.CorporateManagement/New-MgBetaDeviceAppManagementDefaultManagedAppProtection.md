@@ -3027,7 +3027,7 @@ EXEMPTEDAPPPROTOCOLS <IMicrosoftGraphKeyValuePair[]>: iOS Apps in this list will
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementdefaultmanagedappprotection)
+- [New-MgBetaDeviceAppManagementDefaultManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementdefaultmanagedappprotection)
 
 
 

@@ -360,7 +360,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupextensioncount)
+- [Get-MgBetaGroupExtensionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupextensioncount)
 
 
 

@@ -649,7 +649,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration)
+- [Get-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration)
 
 
 

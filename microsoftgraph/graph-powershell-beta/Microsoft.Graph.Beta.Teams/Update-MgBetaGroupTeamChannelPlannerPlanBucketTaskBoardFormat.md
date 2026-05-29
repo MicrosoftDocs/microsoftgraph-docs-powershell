@@ -672,7 +672,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannelplannerplanbuckettaskboardformat)
+- [Update-MgBetaGroupTeamChannelPlannerPlanBucketTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannelplannerplanbuckettaskboardformat)
 
 
 

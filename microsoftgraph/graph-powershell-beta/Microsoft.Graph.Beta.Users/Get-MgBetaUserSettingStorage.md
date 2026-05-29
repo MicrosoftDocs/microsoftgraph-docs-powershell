@@ -372,7 +372,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstorage)
+- [Get-MgBetaUserSettingStorage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstorage)
 
 
 

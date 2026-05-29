@@ -18832,8 +18832,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicy)
-- [](https://learn.microsoft.com/graph/api/windowsupdates-adminwindowsupdates-post-policies?view=graph-rest-beta)
+- [New-MgBetaWindowsUpdatesPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-adminwindowsupdates-post-policies?view=graph-rest-beta)
 
 
 

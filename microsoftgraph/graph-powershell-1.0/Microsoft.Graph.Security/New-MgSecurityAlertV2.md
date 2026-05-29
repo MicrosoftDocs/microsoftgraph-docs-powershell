@@ -1183,7 +1183,7 @@ Values are free-form.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2)
+- [New-MgSecurityAlertV2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2)
 
 
 

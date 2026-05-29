@@ -620,7 +620,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageextension)
+- [Get-MgUserMailFolderMessageExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageextension)
 
 
 

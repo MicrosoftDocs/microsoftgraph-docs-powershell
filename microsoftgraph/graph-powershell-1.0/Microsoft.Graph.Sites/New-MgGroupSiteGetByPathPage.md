@@ -16728,7 +16728,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathpage)
+- [New-MgGroupSiteGetByPathPage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathpage)
 
 
 

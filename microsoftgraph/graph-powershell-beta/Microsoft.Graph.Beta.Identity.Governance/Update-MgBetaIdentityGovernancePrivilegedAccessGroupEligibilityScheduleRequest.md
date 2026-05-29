@@ -27841,7 +27841,7 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest)
+- [Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest)
 
 
 

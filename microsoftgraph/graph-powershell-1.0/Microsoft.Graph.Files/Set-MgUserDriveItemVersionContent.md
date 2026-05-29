@@ -503,7 +503,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriveitemversioncontent)
+- [Set-MgUserDriveItemVersionContent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriveitemversioncontent)
 
 
 
