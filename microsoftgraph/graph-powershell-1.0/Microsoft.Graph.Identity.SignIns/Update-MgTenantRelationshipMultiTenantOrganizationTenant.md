@@ -85,16 +85,6 @@ Only owner tenants can call this API.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | MultiTenantOrganization.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AddedByTenantId
@@ -838,6 +828,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganizationtenant)
 - [](https://learn.microsoft.com/graph/api/multitenantorganizationmember-update?view=graph-rest-1.0)
+
 
 
 

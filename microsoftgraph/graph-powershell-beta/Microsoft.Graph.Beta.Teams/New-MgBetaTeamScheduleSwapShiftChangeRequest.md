@@ -85,20 +85,6 @@ Create an instance of a swapShiftsChangeRequest object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -863,6 +849,7 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleswapshiftchangerequest)
 - [](https://learn.microsoft.com/graph/api/swapshiftschangerequest-post?view=graph-rest-beta)
+
 
 
 
