@@ -154,7 +154,7 @@ HelpMessage: ''
 
 ### -CalculateDiscountOnCreditMemos
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ HelpMessage: ''
 
 ### -Code
 
-.
+
 
 ```yaml
 Type: System.String
@@ -311,7 +311,7 @@ HelpMessage: ''
 
 ### -DiscountDateCalculation
 
-.
+
 
 ```yaml
 Type: System.String
@@ -338,7 +338,7 @@ HelpMessage: ''
 
 ### -DiscountPercent
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -365,7 +365,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -392,7 +392,7 @@ HelpMessage: ''
 
 ### -DueDateCalculation
 
-.
+
 
 ```yaml
 Type: System.String
@@ -482,7 +482,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -537,7 +537,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime

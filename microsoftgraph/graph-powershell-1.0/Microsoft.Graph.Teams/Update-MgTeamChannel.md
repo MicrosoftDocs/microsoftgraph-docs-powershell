@@ -746,7 +746,7 @@ HelpMessage: ''
 
 ### -OriginalCreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime

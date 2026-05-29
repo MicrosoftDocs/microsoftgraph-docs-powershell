@@ -84,7 +84,7 @@ Update the navigation property backupRestore in solutions
 
 ### -ActivityLogs
 
-.
+
 To construct, see NOTES section for ACTIVITYLOGS properties and create a hash table.
 
 ```yaml
@@ -214,7 +214,7 @@ HelpMessage: ''
 
 ### -DriveExclusionUnits
 
-.
+
 To construct, see NOTES section for DRIVEEXCLUSIONUNITS properties and create a hash table.
 
 ```yaml
@@ -236,7 +236,7 @@ HelpMessage: ''
 
 ### -DriveExclusionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for DRIVEEXCLUSIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -302,7 +302,7 @@ HelpMessage: ''
 
 ### -DriveProtectionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for DRIVEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -390,7 +390,7 @@ HelpMessage: ''
 
 ### -ExclusionUnits
 
-.
+
 To construct, see NOTES section for EXCLUSIONUNITS properties and create a hash table.
 
 ```yaml
@@ -497,7 +497,7 @@ HelpMessage: ''
 
 ### -MailboxExclusionUnits
 
-.
+
 To construct, see NOTES section for MAILBOXEXCLUSIONUNITS properties and create a hash table.
 
 ```yaml
@@ -519,7 +519,7 @@ HelpMessage: ''
 
 ### -MailboxExclusionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for MAILBOXEXCLUSIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -585,7 +585,7 @@ HelpMessage: ''
 
 ### -MailboxProtectionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for MAILBOXPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -977,7 +977,7 @@ HelpMessage: ''
 
 ### -SiteExclusionUnits
 
-.
+
 To construct, see NOTES section for SITEEXCLUSIONUNITS properties and create a hash table.
 
 ```yaml
@@ -999,7 +999,7 @@ HelpMessage: ''
 
 ### -SiteExclusionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for SITEEXCLUSIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -1065,7 +1065,7 @@ HelpMessage: ''
 
 ### -SiteProtectionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for SITEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
