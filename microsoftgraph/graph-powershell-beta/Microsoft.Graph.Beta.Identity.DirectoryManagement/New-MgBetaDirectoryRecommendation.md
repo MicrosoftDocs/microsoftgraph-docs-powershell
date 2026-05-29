@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 05/29/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryRecommendation
 ---
@@ -51,6 +51,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to recommendations for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -851,7 +861,7 @@ Read-only.
   [ApiUrl <String>]: The URL link to the corresponding Microsoft Entra resource.
   [DisplayName <String>]: Friendly name of the Microsoft Entra resource.
   [LastModifiedBy <String>]: Name of the user or service that last updated the status.
-  [LastModifiedDateTime <String>]: The date and time when the status was last updated.
+  [LastModifiedDateTime <DateTime?>]: The date and time when the status was last updated.
   [Owner <String>]: The user responsible for maintaining the resource.
   [PortalUrl <String>]: The URL link to the corresponding Microsoft Entra admin center page of the resource.
   [PostponeUntilDateTime <DateTime?>]: The future date and time when the status of a postponed impactedResource will be active again.
@@ -867,27 +877,4 @@ For example, this property is set to the applicationId if the resourceType is an
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryRecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendation)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowwithscope
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 05/29/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope
 ---
@@ -17,9 +17,6 @@ Run a workflow object on-demand with a specific scope.
 You can run any workflow on-demand, including scheduled workflows.
 Workflows created from the 'Real-time employee termination' template are run on-demand only.
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Initialize-MgIdentityGovernanceLifecycleWorkflowWithScope](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflowWithScope?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -80,6 +77,63 @@ You can run any workflow on-demand, including scheduled workflows.
 Workflows created from the 'Real-time employee termination' template are run on-demand only.
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	subjects = @(
+		@{
+			id = "8cdf25a8-c9d2-423e-a03d-3f39f03c3e97"
+		}
+		@{
+			id = "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
+		}
+	)
+}
+
+Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope -WorkflowId $workflowId -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	scope = @{
+		"@odata.type" = "microsoft.graph.identityGovernance.activateProcessingResultScope"
+		processingResults = @(
+			@{
+				id = "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_638927021459371237_0cdd8963-aaaa-4632-a1f2-aaaa7230aaaa"
+			}
+			@{
+				id = "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_388131231459357126_aaaa8963-1c30-4632-aaaa-ac96723069cb"
+			}
+		)
+		taskScope = "allTasks"
+	}
+}
+
+Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope -WorkflowId $workflowId -BodyParameter $params
+
+### EXAMPLE 3
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	subjects = @(
+		@{
+			id = "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_638927021459371237_0cdd8963-aaaa-4632-a1f2-aaaa7230aaaa"
+		}
+		@{
+			id = "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_388131231459357126_aaaa8963-1c30-4632-aaaa-ac96723069cb"
+		}
+	)
+}
+
+Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope -WorkflowId $workflowId -BodyParameter $params
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -111,7 +165,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -487,12 +541,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths22P23HIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceActivatewithscopePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths22P23HIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceActivatewithscopePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Scope <IMicrosoftGraphIdentityGovernanceActivationScope>]: activationScope
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -540,6 +594,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -605,28 +660,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowwithscope)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activatewithscope?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowwithscope)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activatewithscope?view=graph-rest-beta)

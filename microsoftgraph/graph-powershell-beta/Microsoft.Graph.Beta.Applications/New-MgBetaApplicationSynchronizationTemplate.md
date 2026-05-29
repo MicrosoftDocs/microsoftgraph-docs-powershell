@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 05/29/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaApplicationSynchronizationTemplate
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaApplicationSynchronizationTemplate
 ## SYNOPSIS
 
 Create new navigation property to templates for applications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -76,8 +73,9 @@ This cmdlet has the following aliases,
 Create new navigation property to templates for applications
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaApplicationSynchronizationTemplate Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	Id = "SCIM-Test1"
@@ -85,9 +83,6 @@ $params = @{
 	FactoryTag = "CustomSCIM"
 }
 New-MgBetaApplicationSynchronizationTemplate -ApplicationId $applicationId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaApplicationSynchronizationTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -670,7 +665,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSynchronizationTemplate>`: synchronizationTemplate
+BODYPARAMETER <IMicrosoftGraphSynchronizationTemplate>: synchronizationTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -826,7 +821,7 @@ Must match one of the directory definitions in synchronizationSchema.
 Must match one of the directory definitions in synchronizationSchema.
     [Version <String>]: The version of the schema, updated automatically with every schema change.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -869,7 +864,7 @@ Unless mentioned explicitly, metadata values shouldn't be changed.
   [Key <String>]: synchronizationMetadata
   [Value <String>]: Value of the metadata property.
 
-SCHEMA `<IMicrosoftGraphSynchronizationSchema>`: synchronizationSchema
+SCHEMA <IMicrosoftGraphSynchronizationSchema>: synchronizationSchema
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1014,26 +1009,4 @@ Must match one of the directory definitions in synchronizationSchema.
 
 ## RELATED LINKS
 
-- [New-MgBetaApplicationSynchronizationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationtemplate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationtemplate)

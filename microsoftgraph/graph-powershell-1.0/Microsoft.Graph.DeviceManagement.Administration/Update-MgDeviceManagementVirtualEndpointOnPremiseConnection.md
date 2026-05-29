@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointonpremiseconnection
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 05/29/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementVirtualEndpointOnPremiseConnection
 ---
@@ -15,9 +15,6 @@ title: Update-MgDeviceManagementVirtualEndpointOnPremiseConnection
 
 Update the properties of a cloudPcOnPremisesConnection object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -26,11 +23,12 @@ Update the properties of a cloudPcOnPremisesConnection object.
 Update-MgDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId <string>
  [-ResponseHeadersVariable <string>] [-AdDomainName <string>] [-AdDomainPassword <string>]
  [-AdDomainUsername <string>] [-AdditionalProperties <hashtable>] [-AlternateResourceUrl <string>]
- [-ConnectionType <string>] [-DisplayName <string>] [-HealthCheckStatus <string>]
+ [-ConnectionType <string>] [-DisplayName <string>] [-HealthCheckPaused]
+ [-HealthCheckStatus <string>]
  [-HealthCheckStatusDetail <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>] [-Id <string>]
- [-InUse] [-OrganizationalUnit <string>] [-ResourceGroupId <string>] [-SubnetId <string>]
- [-SubscriptionId <string>] [-SubscriptionName <string>] [-VirtualNetworkId <string>]
- [-VirtualNetworkLocation <string>] [-Break] [-Headers <IDictionary>]
+ [-InUse] [-InUseByCloudPc] [-OrganizationalUnit <string>] [-ResourceGroupId <string>]
+ [-ScopeIds <string[]>] [-SubnetId <string>] [-SubscriptionId <string>] [-SubscriptionName <string>]
+ [-VirtualNetworkId <string>] [-VirtualNetworkLocation <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -53,11 +51,11 @@ Update-MgDeviceManagementVirtualEndpointOnPremiseConnection
  -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <string>]
  [-AdDomainName <string>] [-AdDomainPassword <string>] [-AdDomainUsername <string>]
  [-AdditionalProperties <hashtable>] [-AlternateResourceUrl <string>] [-ConnectionType <string>]
- [-DisplayName <string>] [-HealthCheckStatus <string>]
+ [-DisplayName <string>] [-HealthCheckPaused] [-HealthCheckStatus <string>]
  [-HealthCheckStatusDetail <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>] [-Id <string>]
- [-InUse] [-OrganizationalUnit <string>] [-ResourceGroupId <string>] [-SubnetId <string>]
- [-SubscriptionId <string>] [-SubscriptionName <string>] [-VirtualNetworkId <string>]
- [-VirtualNetworkLocation <string>] [-Break] [-Headers <IDictionary>]
+ [-InUse] [-InUseByCloudPc] [-OrganizationalUnit <string>] [-ResourceGroupId <string>]
+ [-ScopeIds <string[]>] [-SubnetId <string>] [-SubscriptionId <string>] [-SubscriptionName <string>]
+ [-VirtualNetworkId <string>] [-VirtualNetworkLocation <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -84,9 +82,8 @@ This cmdlet has the following aliases,
 Update the properties of a cloudPcOnPremisesConnection object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -104,10 +101,6 @@ $params = @{
 }
 
 Update-MgDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagementVirtualEndpointOnPremiseConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -226,7 +219,7 @@ HelpMessage: ''
 ### -AlternateResourceUrl
 
 The interface URL of the partner service's resource that links to this Azure network connection.
-Returned only on $select.
+Requires $select to retrieve.
 
 ```yaml
 Type: System.String
@@ -424,6 +417,40 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -HealthCheckPaused
+
+Indicates whether regular health checks on the network or domain configuration are paused or active.
+false if the regular health checks on the network or domain configuration are currently active.
+true if the checks are paused.
+If you perform a create or update operation on a onPremisesNetworkConnection resource, this value is set to false for four weeks.
+If you retry a health check on network or domain configuration, this value is set to false for two weeks.
+If the onPremisesNetworkConnection resource is attached in a provisioningPolicy or used by a Cloud PC in the past four weeks, healthCheckPaused is set to false.
+Read-only.
+Default is false.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -HealthCheckStatus
 
 cloudPcOnPremisesConnectionStatus
@@ -609,6 +636,37 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -InUseByCloudPc
+
+Indicates whether a Cloud PC is using this on-premises network connection.
+true if at least one Cloud PC is using it.
+Otherwise, false.
+Read-only.
+Default is false.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -OrganizationalUnit
 
 The organizational unit (OU) in which the computer account is created.
@@ -741,6 +799,34 @@ Aliases:
 - RHV
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ScopeIds
+
+The scope IDs of the corresponding permission.
+Currently, it's the Intune scope tag ID.
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -947,7 +1033,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcOnPremisesConnection>`: cloudPcOnPremisesConnection
+BODYPARAMETER <IMicrosoftGraphCloudPcOnPremisesConnection>: cloudPcOnPremisesConnection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -959,9 +1045,17 @@ Optional.
 Required format: admin@contoso.com.
 Optional.
   [AlternateResourceUrl <String>]: The interface URL of the partner service's resource that links to this Azure network connection.
-Returned only on $select.
+Requires $select to retrieve.
   [ConnectionType <String>]: cloudPcOnPremisesConnectionType
   [DisplayName <String>]: The display name for the Azure network connection.
+  [HealthCheckPaused <Boolean?>]: Indicates whether regular health checks on the network or domain configuration are paused or active.
+false if the regular health checks on the network or domain configuration are currently active.
+true if the checks are paused.
+If you perform a create or update operation on a onPremisesNetworkConnection resource, this value is set to false for four weeks.
+If you retry a health check on network or domain configuration, this value is set to false for two weeks.
+If the onPremisesNetworkConnection resource is attached in a provisioningPolicy or used by a Cloud PC in the past four weeks, healthCheckPaused is set to false.
+Read-only.
+Default is false.
   [HealthCheckStatus <String>]: cloudPcOnPremisesConnectionStatus
   [HealthCheckStatusDetail <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>]: cloudPcOnPremisesConnectionStatusDetail
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1001,11 +1095,18 @@ You can't delete a connection that’s in use.
 Returned only on $select.
 For an example that shows how to get the inUse property, see Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetail.
 Read-only.
+  [InUseByCloudPc <Boolean?>]: Indicates whether a Cloud PC is using this on-premises network connection.
+true if at least one Cloud PC is using it.
+Otherwise, false.
+Read-only.
+Default is false.
   [OrganizationalUnit <String>]: The organizational unit (OU) in which the computer account is created.
 If left null, the OU configured as the default (a well-known computer object container) in the tenant's Active Directory domain (OU) is used.
 Optional.
   [ResourceGroupId <String>]: The unique identifier of the target resource group used associated with the on-premises network connectivity for Cloud PCs.
 Required format: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}'
+  [ScopeIds <String[]>]: The scope IDs of the corresponding permission.
+Currently, it's the Intune scope tag ID.
   [SubnetId <String>]: The unique identifier of the target subnet used associated with the on-premises network connectivity for Cloud PCs.
 Required format: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}'
   [SubscriptionId <String>]: The unique identifier of the Azure subscription associated with the tenant.
@@ -1017,7 +1118,7 @@ Required format: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroup
 For example, the location can be eastus2, westeurope, etc.
 Read-only (computed value).
 
-HEALTHCHECKSTATUSDETAIL `<IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>`: cloudPcOnPremisesConnectionStatusDetail
+HEALTHCHECKSTATUSDETAIL <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>: cloudPcOnPremisesConnectionStatusDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: The end time of the connection health check.
 The Timestamp  is shown in ISO 8601 format and Coordinated Universal Time (UTC).
@@ -1050,7 +1151,7 @@ The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appear as 2014-01-01T00:00:00Z.
 Read-Only.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -1081,27 +1182,5 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementVirtualEndpointOnPremiseConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointonpremiseconnection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointonpremiseconnection)
+- [](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-1.0)

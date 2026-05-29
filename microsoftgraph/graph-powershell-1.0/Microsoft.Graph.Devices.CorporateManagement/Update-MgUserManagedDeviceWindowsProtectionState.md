@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicewindowsprotectionstate
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 05/29/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserManagedDeviceWindowsProtectionState
 ---
@@ -15,9 +15,6 @@ title: Update-MgUserManagedDeviceWindowsProtectionState
 
 Update the navigation property windowsProtectionState in users
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -25,7 +22,8 @@ Update the navigation property windowsProtectionState in users
 ```
 Update-MgUserManagedDeviceWindowsProtectionState -ManagedDeviceId <string> -UserId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AntiMalwareVersion <string>] [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
+ [-AntiMalwareVersion <string>] [-ControlledConfigurationEnabled]
+ [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
  [-DeviceState <WindowsDeviceHealthState>] [-EngineVersion <string>] [-FullScanOverdue]
  [-FullScanRequired] [-Id <string>] [-IsVirtualMachine] [-LastFullScanDateTime <datetime>]
  [-LastFullScanSignatureVersion <string>] [-LastQuickScanDateTime <datetime>]
@@ -53,7 +51,8 @@ Update-MgUserManagedDeviceWindowsProtectionState -ManagedDeviceId <string> -User
 ```
 Update-MgUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AntiMalwareVersion <string>] [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
+ [-AntiMalwareVersion <string>] [-ControlledConfigurationEnabled]
+ [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
  [-DeviceState <WindowsDeviceHealthState>] [-EngineVersion <string>] [-FullScanOverdue]
  [-FullScanRequired] [-Id <string>] [-IsVirtualMachine] [-LastFullScanDateTime <datetime>]
  [-LastFullScanSignatureVersion <string>] [-LastQuickScanDateTime <datetime>]
@@ -84,6 +83,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property windowsProtectionState in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -202,6 +211,34 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ControlledConfigurationEnabled
+
+When TRUE indicates the Windows Defender controlled configuration feature is enabled, when FALSE indicates the Windows Defender controlled configuration feature is not enabled.
+Defaults to setting on client device.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -1076,11 +1113,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsProtectionState>`: Device protection status entity.
+BODYPARAMETER <IMicrosoftGraphWindowsProtectionState>: Device protection status entity.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [AntiMalwareVersion <String>]: Current anti malware version
+  [ControlledConfigurationEnabled <Boolean?>]: When TRUE indicates the Windows Defender controlled configuration feature is enabled, when FALSE indicates the Windows Defender controlled configuration feature is not enabled.
+Defaults to setting on client device.
   [DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]: Device malware list
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1137,7 +1176,7 @@ Read-only.
   [State <WindowsMalwareState?>]: Malware current status
   [ThreatState <WindowsMalwareThreatState?>]: Malware threat status
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -1178,27 +1217,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgUserManagedDeviceWindowsProtectionState](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicewindowsprotectionstate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicewindowsprotectionstate)

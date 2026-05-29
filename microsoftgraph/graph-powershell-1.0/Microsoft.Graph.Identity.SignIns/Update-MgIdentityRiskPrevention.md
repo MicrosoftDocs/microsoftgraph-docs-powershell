@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskprevention
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 05/29/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityRiskPrevention
 ---
@@ -14,9 +14,6 @@ title: Update-MgIdentityRiskPrevention
 ## SYNOPSIS
 
 Update the navigation property riskPrevention in identity
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityRiskPrevention](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityRiskPrevention?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property riskPrevention in identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -406,7 +413,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRiskPreventionContainer>`: riskPreventionContainer
+BODYPARAMETER <IMicrosoftGraphRiskPreventionContainer>: riskPreventionContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [FraudProtectionProviders <IMicrosoftGraphFraudProtectionProvider[]>]: Represents entry point for fraud protection provider configurations for Microsoft Entra External ID tenants.
     [Id <String>]: The unique identifier for an entity.
@@ -485,27 +492,4 @@ This is the host or zone name to which the configuration applies.
 
 ## RELATED LINKS
 
-- [Update-MgIdentityRiskPrevention](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskprevention)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskprevention)

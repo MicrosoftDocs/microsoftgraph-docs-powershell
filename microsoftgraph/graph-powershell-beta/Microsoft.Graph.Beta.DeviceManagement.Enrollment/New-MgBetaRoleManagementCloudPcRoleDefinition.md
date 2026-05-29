@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 02/20/2026
+ms.date: 05/29/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRoleManagementCloudPcRoleDefinition
 ---
@@ -15,7 +15,7 @@ title: New-MgBetaRoleManagementCloudPcRoleDefinition
 
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- Defender (Microsoft Defender XDR)- directory (Microsoft Entra ID)
+The following RBAC providers are currently supported:\r\n- Cloud PC\r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR)\r\n- directory (Microsoft Entra ID)
 
 ## SYNTAX
 
@@ -52,20 +52,11 @@ This cmdlet has the following aliases,
 
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- Defender (Microsoft Defender XDR)- directory (Microsoft Entra ID)
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, RoleManagement.ReadWrite.Directory, RoleManagement.ReadWrite.CloudPC, Directory.ReadWrite.All, CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementRBAC.ReadWrite.All, RoleManagement.ReadWrite.Directory, RoleManagement.ReadWrite.CloudPC, Directory.ReadWrite.All, CloudPC.ReadWrite.All,  |
+The following RBAC providers are currently supported:\r\n- Cloud PC\r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR)\r\n- directory (Microsoft Entra ID)
 
 ## EXAMPLES
-### Example 2: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
@@ -83,10 +74,6 @@ condition = "null"
 }
 
 New-MgBetaRoleManagementCloudPcRoleDefinition -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -654,7 +641,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -751,27 +738,5 @@ Not supported for custom roles.
 
 ## RELATED LINKS
 
-- [New-MgBetaRoleManagementCloudPcRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinition)
+- [](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta)

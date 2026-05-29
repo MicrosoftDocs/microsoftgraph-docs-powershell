@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 02/20/2026
+ms.date: 05/29/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessLogConnection
 ---
@@ -23,11 +23,12 @@ Create new navigation property to connections for networkAccess
 New-MgBetaNetworkAccessLogConnection [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AgentVersion <string>]
  [-ApplicationSnapshot <IMicrosoftGraphNetworkaccessApplicationSnapshot>]
- [-CreatedDateTime <datetime>] [-DestinationFqdn <string>] [-DestinationIP <string>]
- [-DestinationPort <int>] [-DeviceCategory <string>] [-DeviceId <string>]
- [-DeviceOperatingSystem <string>] [-DeviceOperatingSystemVersion <string>]
- [-EndDateTime <datetime>] [-Id <string>] [-InitiatingProcessName <string>]
- [-LastUpdateDateTime <datetime>] [-NetworkProtocol <string>] [-PopProcessingRegion <string>]
+ [-CreatedDateTime <datetime>] [-CrossTenantAccessType <string>] [-DestinationFqdn <string>]
+ [-DestinationIP <string>] [-DestinationPort <int>] [-DeviceCategory <string>] [-DeviceId <string>]
+ [-DeviceJoinType <string>] [-DeviceOperatingSystem <string>]
+ [-DeviceOperatingSystemVersion <string>] [-EndDateTime <datetime>] [-HomeTenantId <string>]
+ [-Id <string>] [-InitiatingProcessName <string>] [-LastUpdateDateTime <datetime>]
+ [-NetworkProtocol <string>] [-PopProcessingRegion <string>]
  [-PrivateAccessDetails <IMicrosoftGraphNetworkaccessPrivateAccessDetails>] [-ReceivedBytes <long>]
  [-SentBytes <long>] [-SourceIP <string>] [-SourcePort <int>] [-Status <string>]
  [-TenantId <string>] [-TrafficType <string>] [-TransactionBlockCount <int>]
@@ -56,6 +57,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to connections for networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -209,6 +220,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -CrossTenantAccessType
+
+crossTenantAccessType
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -DestinationFqdn
 
 The destination FQDN of the connection.
@@ -314,6 +346,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -DeviceJoinType
+
+deviceJoinType
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -DeviceOperatingSystem
 
 The device operating system type.
@@ -391,6 +444,27 @@ ParameterSets:
   Position: Named
   IsRequired: false
   ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HomeTenantId
+
+The identifier of the home tenant, for Entra B2B scenarios.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -957,11 +1031,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICATIONSNAPSHOT `<IMicrosoftGraphNetworkaccessApplicationSnapshot>`: applicationSnapshot
+APPLICATIONSNAPSHOT <IMicrosoftGraphNetworkaccessApplicationSnapshot>: applicationSnapshot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppId <String>]: The unique identifier of the application accessed during the transaction.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessConnection>`: connection
+BODYPARAMETER <IMicrosoftGraphNetworkaccessConnection>: connection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -970,14 +1044,17 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AppId <String>]: The unique identifier of the application accessed during the transaction.
   [CreatedDateTime <DateTime?>]: The time the connection was created.
+  [CrossTenantAccessType <String>]: crossTenantAccessType
   [DestinationFqdn <String>]: The destination FQDN of the connection.
   [DestinationIP <String>]: The destination IP of the connection.
   [DestinationPort <Int32?>]: The destination port of the connection.
   [DeviceCategory <String>]: deviceCategory
   [DeviceId <String>]: The DeviceID.
+  [DeviceJoinType <String>]: deviceJoinType
   [DeviceOperatingSystem <String>]: The device operating system type.
   [DeviceOperatingSystemVersion <String>]: The device operating system version.
   [EndDateTime <DateTime?>]: The time the connection was terminated.
+  [HomeTenantId <String>]: The identifier of the home tenant, for Entra B2B scenarios.
   [InitiatingProcessName <String>]: The process initiating the traffic connection.
   [LastUpdateDateTime <DateTime?>]: When the connection was last updated.
   [NetworkProtocol <String>]: networkingProtocol
@@ -1010,7 +1087,7 @@ Read-only.
   [UserId <String>]: The user ID.
   [UserPrincipalName <String>]: The principal name of the user.
 
-PRIVATEACCESSDETAILS `<IMicrosoftGraphNetworkaccessPrivateAccessDetails>`: privateAccessDetails
+PRIVATEACCESSDETAILS <IMicrosoftGraphNetworkaccessPrivateAccessDetails>: privateAccessDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccessType <String>]: accessType
   [AppSegmentId <String>]: The unique identifier for Application segment ID from Azure AD.
@@ -1029,27 +1106,4 @@ PRIVATEACCESSDETAILS `<IMicrosoftGraphNetworkaccessPrivateAccessDetails>`: priva
 
 ## RELATED LINKS
 
-- [New-MgBetaNetworkAccessLogConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogconnection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogconnection)

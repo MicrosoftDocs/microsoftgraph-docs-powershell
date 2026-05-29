@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 02/20/2026
+ms.date: 05/29/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgBetaUserMail
 ---
@@ -18,9 +18,6 @@ When using JSON format, you can include an attachment and use a mention to call 
 When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgUserMail](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -81,18 +78,9 @@ When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Send,  |
-| Delegated (personal Microsoft account) | Mail.Send,  |
-| Application | Mail.Send,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -124,12 +112,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 
-```
-This example shows how to use the Send-MgBetaUserMail Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -158,12 +141,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 
-```
-This example shows how to use the Send-MgBetaUserMail Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -197,12 +175,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 
-```
-This example shows how to use the Send-MgBetaUserMail Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -233,10 +206,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Send-MgBetaUserMail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -269,7 +238,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -565,7 +534,7 @@ HelpMessage: ''
 
 ### -SaveToSentItems
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -673,7 +642,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Message <IMicrosoftGraphMessage>]: message
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -737,7 +706,7 @@ To verify the existence of inline attachments, parse the body property to look f
     [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
       [Name <String>]: Represents the key in a key-value pair.
       [Value <String>]: The value in a key-value pair.
@@ -807,10 +776,10 @@ If ispopout is set to 0, the browser shows the message in the Outlook on the web
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
   [SaveToSentItems <Boolean?>]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
-MESSAGE `<IMicrosoftGraphMessage>`: message
+MESSAGE <IMicrosoftGraphMessage>: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item.
   [ChangeKey <String>]: Identifies the version of the item.
@@ -872,7 +841,7 @@ To verify the existence of inline attachments, parse the body property to look f
   [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
     [Name <String>]: Represents the key in a key-value pair.
     [Value <String>]: The value in a key-value pair.
@@ -944,27 +913,5 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [Send-MgBetaUserMail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermail)
+- [](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-beta)

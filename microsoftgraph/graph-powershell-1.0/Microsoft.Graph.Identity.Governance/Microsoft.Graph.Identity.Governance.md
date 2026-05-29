@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 9e9f62e2-686c-4814-9b69-8fdcca7305b9
+Module Guid: a4fd9bdc-c6b1-42a1-8aea-58b026f39a92
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -577,6 +577,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflow](Get-MgIdentityGovernanceLifecycleWorkflow.md)
 
+### [Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTargetCount](Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTargetCount.md)
+
 ### [Get-MgIdentityGovernanceLifecycleWorkflowCount](Get-MgIdentityGovernanceLifecycleWorkflowCount.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowCreatedBy](Get-MgIdentityGovernanceLifecycleWorkflowCreatedBy.md)
@@ -614,6 +620,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCount](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCount.md)
 
@@ -824,6 +834,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgIdentityGovernanceLifecycleWorkflowVersion](Get-MgIdentityGovernanceLifecycleWorkflowVersion.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowVersion](Get-MgIdentityGovernanceLifecycleWorkflowVersion.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget.md)
+
+### [Get-MgIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTargetCount](Get-MgIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTargetCount.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowVersionCount](Get-MgIdentityGovernanceLifecycleWorkflowVersionCount.md)
 
@@ -2272,23 +2288,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
 
 ### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

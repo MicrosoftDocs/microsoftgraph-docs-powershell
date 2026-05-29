@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmembereducationuserbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 05/29/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgEducationClassMemberEducationUserByRef
 ---
@@ -14,9 +14,6 @@ title: Remove-MgEducationClassMemberEducationUserByRef
 ## SYNOPSIS
 
 Remove an educationUser from an educationClass.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassMemberEducationUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassMemberEducationUserByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ This cmdlet has the following aliases,
 Remove an educationUser from an educationClass.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationClassMemberEducationUserByRef -EducationClassId $educationClassId -EducationUserId $educationUserId
-
-```
-This example shows how to use the Remove-MgEducationClassMemberEducationUserByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -413,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -438,27 +430,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgEducationClassMemberEducationUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmembereducationuserbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-delete-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmembereducationuserbyref)
+- [](https://learn.microsoft.com/graph/api/educationclass-delete-members?view=graph-rest-1.0)

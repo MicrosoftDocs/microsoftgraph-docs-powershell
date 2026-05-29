@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityriskpreventionfraudprotectionprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 05/29/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityRiskPreventionFraudProtectionProvider
 ---
@@ -15,9 +15,6 @@ title: New-MgIdentityRiskPreventionFraudProtectionProvider
 
 Create a new fraudProtectionProvider object.
 You can create one of the following subtypes that are derived from fraudProtectionProvider.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityRiskPreventionFraudProtectionProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityRiskPreventionFraudProtectionProvider?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,13 +48,35 @@ This cmdlet has the following aliases,
 Create a new fraudProtectionProvider object.
 You can create one of the following subtypes that are derived from fraudProtectionProvider.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RiskPreventionProviders.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RiskPreventionProviders.ReadWrite.All,  |
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.arkoseFraudProtectionProvider"
+	displayName = "Arkose Sign-Up Protection"
+	publicKey = "A1EE42E0-C88B-47FE-A176-5E9FB8F116FB"
+	privateKey = "19BBE628-7DEF-4E28-AB25-BF129C760B7E"
+	clientSubDomain = "client-api"
+	verifySubDomain = "verify-api"
+}
+
+New-MgIdentityRiskPreventionFraudProtectionProvider -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.humanSecurityFraudProtectionProvider"
+	displayName = "HUMAN Security Sign-Up Protection"
+	appId = "XXyy1XXXy"
+	serverToken = "xxYYxxXXX1"
+}
+
+New-MgIdentityRiskPreventionFraudProtectionProvider -BodyParameter $params
 
 ## PARAMETERS
 
@@ -390,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFraudProtectionProvider>`: fraudProtectionProvider
+BODYPARAMETER <IMicrosoftGraphFraudProtectionProvider>: fraudProtectionProvider
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -399,28 +418,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgIdentityRiskPreventionFraudProtectionProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityriskpreventionfraudprotectionprovider)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-fraudprotectionproviders?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityriskpreventionfraudprotectionprovider)
+- [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-fraudprotectionproviders?view=graph-rest-1.0)
