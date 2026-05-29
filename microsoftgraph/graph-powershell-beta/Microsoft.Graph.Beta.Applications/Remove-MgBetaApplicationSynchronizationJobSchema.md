@@ -15,6 +15,9 @@ title: Remove-MgBetaApplicationSynchronizationJobSchema
 
 Delete navigation property schema for applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInsta
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

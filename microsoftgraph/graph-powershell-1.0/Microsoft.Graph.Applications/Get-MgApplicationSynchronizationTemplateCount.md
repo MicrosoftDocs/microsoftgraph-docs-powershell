@@ -15,6 +15,9 @@ title: Get-MgApplicationSynchronizationTemplateCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationTemplateCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationTemplateCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion
 
 Update the navigation property contentVersions in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

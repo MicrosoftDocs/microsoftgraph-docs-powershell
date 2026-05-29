@@ -15,6 +15,9 @@ title: Get-MgGroupSiteOnenoteResourceContent
 
 The content stream
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteResourceContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

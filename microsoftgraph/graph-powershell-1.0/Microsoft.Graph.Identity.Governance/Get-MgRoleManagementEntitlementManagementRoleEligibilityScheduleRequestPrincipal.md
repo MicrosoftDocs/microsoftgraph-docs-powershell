@@ -16,6 +16,9 @@ title: Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestPr
 The principal that's getting a role eligibility through the request.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestPrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

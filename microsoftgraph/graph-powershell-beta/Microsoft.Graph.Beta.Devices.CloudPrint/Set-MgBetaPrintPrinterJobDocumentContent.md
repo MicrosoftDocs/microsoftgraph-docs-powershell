@@ -16,6 +16,9 @@ title: Set-MgBetaPrintPrinterJobDocumentContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgPrintPrinterJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Set-MgPrintPrinterJobDocumentContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
