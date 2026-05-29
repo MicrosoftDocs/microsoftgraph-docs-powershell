@@ -60,8 +60,9 @@ Create a new featureRolloutPolicy object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -74,6 +75,10 @@ $params = @{
 }
 
 New-MgBetaPolicyFeatureRolloutPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPolicyFeatureRolloutPolicy Cmdlet.
+
 
 ## PARAMETERS
 

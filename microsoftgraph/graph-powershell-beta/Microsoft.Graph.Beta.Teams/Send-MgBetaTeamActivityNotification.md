@@ -89,8 +89,9 @@ For more information, see sending Teams activity notifications.
 | Application | TeamsActivity.Send.Group, TeamsActivity.Send,  |
 
 ## EXAMPLES
+### Example 1: Notify a user about pending finance approval requests
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -117,7 +118,12 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will notify a user about pending finance approval requests
+
+### Example 2: Notify a user about a channel tab
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -148,7 +154,12 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will notify a user about a channel tab
+
+### Example 3: Notify a user about a channel tab using the user's principal name
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -179,7 +190,12 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will notify a user about a channel tab using the user's principal name
+
+### Example 4: Notify a user about an event using a custom topic
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -207,7 +223,12 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will notify a user about an event using a custom topic
+
+### Example 5: Notify the team members about pending finance approval requests
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -234,7 +255,12 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 6
+```
+This example will notify the team members about pending finance approval requests
+
+### Example 6: Notify the channel members about pending finance approval requests
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -261,6 +287,10 @@ $params = @{
 }
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
+
+```
+This example will notify the channel members about pending finance approval requests
+
 
 ## PARAMETERS
 

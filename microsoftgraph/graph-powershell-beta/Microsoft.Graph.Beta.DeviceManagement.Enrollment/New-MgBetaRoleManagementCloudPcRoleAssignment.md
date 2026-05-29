@@ -62,8 +62,9 @@ The following RBAC providers are currently supported:\r- Cloud PC \r- device man
 | Application | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a role assignment for a Cloud PC provider
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
@@ -79,6 +80,10 @@ $params = @{
 }
 
 New-MgBetaRoleManagementCloudPcRoleAssignment -BodyParameter $params
+
+```
+This example will create a role assignment for a cloud pc provider
+
 
 ## PARAMETERS
 

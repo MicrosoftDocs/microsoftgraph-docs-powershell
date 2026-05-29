@@ -114,8 +114,9 @@ This cmdlet has the following aliases,
 Update the navigation property allMembers in teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -127,6 +128,10 @@ $params = @{
 }
 
 Update-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTeamChannelMember Cmdlet.
+
 
 ## PARAMETERS
 

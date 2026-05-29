@@ -69,14 +69,6 @@ Read the properties and relationships of an educationGradingScheme object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationClassAssignmentSettingGradingScheme -EducationClassId $educationClassId -EducationGradingSchemeId $educationGradingSchemeId
-
 ## PARAMETERS
 
 ### -All
@@ -591,6 +583,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsettinggradingscheme)
 - [](https://learn.microsoft.com/graph/api/educationgradingscheme-get?view=graph-rest-1.0)
+
+
 
 
 

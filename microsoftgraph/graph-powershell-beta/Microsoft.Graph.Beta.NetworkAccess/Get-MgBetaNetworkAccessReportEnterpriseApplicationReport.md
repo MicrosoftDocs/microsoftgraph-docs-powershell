@@ -46,14 +46,6 @@ This cmdlet has the following aliases,
 
 Get a collection of enterprise application reports based on aggregated traffic logs for a specified time period in Global Secure Access.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.NetworkAccess
-
-Get-MgBetaNetworkAccessReportEnterpriseApplicationReport -StartDateTime $startDateTimeId -EndDateTime $endDateTimeId -UserId $userIdId
-
 ## PARAMETERS
 
 ### -Break
@@ -479,6 +471,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportenterpriseapplicationreport)
 - [](https://learn.microsoft.com/graph/api/networkaccess-reports-getenterpriseapplicationreport?view=graph-rest-beta)
+
 
 
 

@@ -54,12 +54,17 @@ Retrieve a user's qrCodePinAuthenticationMethod object.
 | Application | UserAuthMethod-QR.Read.All, UserAuthMethod-QR.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaUserAuthenticationQrCodePinMethod -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserAuthenticationQrCodePinMethod Cmdlet.
+
 
 ## PARAMETERS
 

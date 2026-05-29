@@ -46,14 +46,6 @@ This cmdlet has the following aliases,
 
 Restore a deleted crossTenantIdentitySyncPolicyPartner object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Restore-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner -CrossTenantIdentitySyncPolicyPartnerTenantId $crossTenantIdentitySyncPolicyPartnerTenantId
-
 ## PARAMETERS
 
 ### -Break
@@ -444,6 +436,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetapolicydeleteditemcrosstenantsyncpolicypartner)
 - [](https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-restore?view=graph-rest-beta)
+
 
 
 

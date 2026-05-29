@@ -73,22 +73,6 @@ This cmdlet has the following aliases,
 
 Remove access to a chat for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Teams
-
-$params = @{
-	user = @{
-		"@odata.type" = "microsoft.graph.teamworkUserIdentity"
-		id = "f47ac10b-58cc-4372-a567-0e02b2c3d479"
-		tenantId = "a1b2c3d4-e5f6-7890-1234-567890abcdef"
-	}
-}
-
-Remove-MgChatAccessForUser -ChatId $chatId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -557,6 +541,7 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchataccessforuser)
 - [](https://learn.microsoft.com/graph/api/chat-removeallaccessforuser?view=graph-rest-1.0)
+
 
 
 
