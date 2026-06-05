@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitedefaultdrive
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSiteDefaultDrive
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSiteDefaultDrive
 ## SYNOPSIS
 
 The default drive (document library) for this site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteDefaultDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteDefaultDrive?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,22 +44,12 @@ This cmdlet has the following aliases,
 
 The default drive (document library) for this site.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
-| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
-| Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSiteDefaultDrive Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteDefaultDrive -SiteId $siteId
-```
-This example shows how to use the Get-MgBetaSiteDefaultDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -352,7 +339,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -417,26 +404,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSiteDefaultDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitedefaultdrive)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitedefaultdrive)

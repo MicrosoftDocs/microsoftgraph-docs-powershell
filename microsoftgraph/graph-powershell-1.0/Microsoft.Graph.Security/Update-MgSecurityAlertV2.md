@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityAlertV2
 ---
@@ -15,9 +15,6 @@ title: Update-MgSecurityAlertV2
 
 Update the properties of an alert object in an organization based on the specified alert id property.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -25,8 +22,8 @@ Update the properties of an alert object in an organization based on the specifi
 ```
 Update-MgSecurityAlertV2 -AlertId <string> [-ResponseHeadersVariable <string>]
  [-ActorDisplayName <string>] [-AdditionalData <hashtable>] [-AdditionalProperties <hashtable>]
- [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Category <string>]
- [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
+ [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Categories <string[]>]
+ [-Category <string>] [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
  [-CreatedDateTime <datetime>] [-CustomDetails <hashtable>] [-Description <string>]
  [-DetectionSource <string>] [-DetectorId <string>] [-Determination <string>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <datetime>]
@@ -56,8 +53,8 @@ Update-MgSecurityAlertV2 -AlertId <string> -BodyParameter <IMicrosoftGraphSecuri
 ```
 Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <string>]
  [-ActorDisplayName <string>] [-AdditionalData <hashtable>] [-AdditionalProperties <hashtable>]
- [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Category <string>]
- [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
+ [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Categories <string[]>]
+ [-Category <string>] [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
  [-CreatedDateTime <datetime>] [-CustomDetails <hashtable>] [-Description <string>]
  [-DetectionSource <string>] [-DetectorId <string>] [-Determination <string>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <datetime>]
@@ -91,18 +88,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an alert object in an organization based on the specified alert id property.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityAlert.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityAlert.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -114,10 +102,6 @@ $params = @{
 }
 
 Update-MgSecurityAlertV2 -AlertId $alertId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgSecurityAlertV2 Cmdlet.
-
 
 ## PARAMETERS
 
@@ -349,6 +333,33 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Categories
+
+.
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -1427,7 +1438,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAlert>`: alert
+BODYPARAMETER <IMicrosoftGraphSecurityAlert>: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1437,6 +1448,7 @@ Read-only.
   [AlertPolicyId <String>]: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
   [AlertWebUrl <String>]: URL for the Microsoft 365 Defender portal alert page.
   [AssignedTo <String>]: Owner of the alert, or null if no owner is assigned.
+  [Categories <String[]>]: 
   [Category <String>]: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
   [Classification <String>]: alertClassification
@@ -1498,7 +1510,7 @@ Values are free-form.
   [Tags <String[]>]: Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.
   [Verdict <String>]: evidenceVerdict
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -1574,27 +1586,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgSecurityAlertV2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2)
+- [](https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-1.0)

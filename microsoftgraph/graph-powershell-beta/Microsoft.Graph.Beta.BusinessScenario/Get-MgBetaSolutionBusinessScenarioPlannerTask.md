@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertask
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBusinessScenarioPlannerTask
 ---
@@ -58,48 +58,25 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a businessScenarioTask object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BusinessScenarioData.Read.OwnedBy, BusinessScenarioData.ReadWrite.OwnedBy,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BusinessScenarioData.Read.OwnedBy, BusinessScenarioData.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Get all tasks for a scenario
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.BusinessScenario
 
 Get-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId
 
-```
-This example will get all tasks for a scenario
-
-### Example 2: Get tasks associated with a specific externalContextId
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.BusinessScenario
 
-Get-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -Filter "businessScenarioProperties/externalContextId eq 'Warehouse-CA-36'" 
+Get-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -Filter "businessScenarioProperties/externalContextId eq 'Warehouse-CA-36'"
 
-```
-This example will get tasks associated with a specific externalcontextid
-
-### Example 3: Get scenario tasks created in a specific group
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.BusinessScenario
 
-Get-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -Filter "location/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'" 
-
-```
-This example will get scenario tasks created in a specific group
-
+Get-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -Filter "location/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'"
 
 ## PARAMETERS
 
@@ -588,37 +565,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
+INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [UniqueName <String>]: Alternate key of businessScenario
 
 
 ## RELATED LINKS
 
-- [Get-MgBetaSolutionBusinessScenarioPlannerTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertask)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/businessscenariotask-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/businessscenarioplanner-list-tasks?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertask)
+- [](https://learn.microsoft.com/graph/api/businessscenariotask-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/businessscenarioplanner-list-tasks?view=graph-rest-beta)

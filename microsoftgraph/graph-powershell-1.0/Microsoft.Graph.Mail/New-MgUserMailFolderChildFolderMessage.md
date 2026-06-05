@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserMailFolderChildFolderMessage
 ---
@@ -14,9 +14,6 @@ title: New-MgUserMailFolderChildFolderMessage
 ## SYNOPSIS
 
 Create new navigation property to messages for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -100,6 +97,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to messages for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -772,7 +779,7 @@ HelpMessage: ''
 A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
-Returned only on applying a $select query option.
+Requires $select to retrieve.
 Read-only.
 To construct, see NOTES section for INTERNETMESSAGEHEADERS properties and create a hash table.
 
@@ -1514,12 +1521,12 @@ BCCRECIPIENTS <IMicrosoftGraphRecipient[]>: The Bcc: recipients for the message.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphMessage>`: message
+BODYPARAMETER <IMicrosoftGraphMessage>: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -1578,7 +1585,7 @@ To verify the existence of inline attachments, parse the body property to look f
   [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
     [Name <String>]: Represents the key in a key-value pair.
     [Value <String>]: The value in a key-value pair.
@@ -1627,7 +1634,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-FLAG `<IMicrosoftGraphFollowupFlag>`: followupFlag
+FLAG <IMicrosoftGraphFollowupFlag>: followupFlag
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletedDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1638,14 +1645,14 @@ See below for more possible values.
   [FlagStatus <String>]: followupFlagStatus
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-FROM `<IMicrosoftGraphRecipient>`: recipient
+FROM <IMicrosoftGraphRecipient>: recipient
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -1658,7 +1665,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 INTERNETMESSAGEHEADERS <IMicrosoftGraphInternetMessageHeader[]>: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
-Returned only on applying a $select query option.
+Requires $select to retrieve.
 Read-only.
   [Name <String>]: Represents the key in a key-value pair.
   [Value <String>]: The value in a key-value pair.
@@ -1675,7 +1682,7 @@ REPLYTO <IMicrosoftGraphRecipient[]>: The email addresses to use when replying.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-SENDER `<IMicrosoftGraphRecipient>`: recipient
+SENDER <IMicrosoftGraphRecipient>: recipient
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1694,7 +1701,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: The To: recipients for the message.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
+UNIQUEBODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -1702,27 +1709,4 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [New-MgUserMailFolderChildFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessage)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityfilesecurityprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityFileSecurityProfile
 ---
@@ -80,11 +80,21 @@ This cmdlet has the following aliases,
 
 Update the navigation property fileSecurityProfiles in security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -138,7 +148,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -165,7 +175,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -241,7 +251,7 @@ HelpMessage: ''
 
 ### -CertificateThumbprint
 
-
+.
 
 ```yaml
 Type: System.String
@@ -290,7 +300,7 @@ HelpMessage: ''
 
 ### -Extensions
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -344,7 +354,7 @@ HelpMessage: ''
 
 ### -FileType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -371,7 +381,7 @@ HelpMessage: ''
 
 ### -FirstSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -398,7 +408,7 @@ HelpMessage: ''
 
 ### -Hashes
 
-
+.
 To construct, see NOTES section for HASHES properties and create a hash table.
 
 ```yaml
@@ -545,7 +555,7 @@ HelpMessage: ''
 
 ### -LastSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -572,7 +582,7 @@ HelpMessage: ''
 
 ### -MalwareStates
 
-
+.
 To construct, see NOTES section for MALWARESTATES properties and create a hash table.
 
 ```yaml
@@ -600,7 +610,7 @@ HelpMessage: ''
 
 ### -Names
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -712,7 +722,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-
+.
 
 ```yaml
 Type: System.String
@@ -739,7 +749,7 @@ HelpMessage: ''
 
 ### -Size
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -766,7 +776,7 @@ HelpMessage: ''
 
 ### -Tags
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -821,7 +831,7 @@ HelpMessage: ''
 
 ### -VulnerabilityStates
 
-
+.
 To construct, see NOTES section for VULNERABILITYSTATES properties and create a hash table.
 
 ```yaml
@@ -903,7 +913,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFileSecurityProfile>`: fileSecurityProfile
+BODYPARAMETER <IMicrosoftGraphFileSecurityProfile>: fileSecurityProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -945,7 +955,7 @@ HASHES <IMicrosoftGraphFileHash[]>: .
   [HashType <String>]: fileHashType
   [HashValue <String>]: Value of the file hash.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -1051,7 +1061,7 @@ MALWARESTATES <IMicrosoftGraphMalwareState[]>: .
   [Severity <String>]: Provider-determined severity of this malware.
   [WasRunning <Boolean?>]: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -1068,27 +1078,4 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>: .
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityFileSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityfilesecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityfilesecurityprofile)
