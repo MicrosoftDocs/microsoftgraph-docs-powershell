@@ -76,6 +76,14 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, Device.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.Read.All, Application.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AgentIdUser.ReadWrite.IdentityParentedBy, User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, User.ReadWrite.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All, Application.Read.All, Directory.Read.All, AgentIdUser.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
