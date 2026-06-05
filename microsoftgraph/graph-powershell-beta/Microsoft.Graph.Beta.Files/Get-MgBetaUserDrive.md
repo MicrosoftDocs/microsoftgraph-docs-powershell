@@ -16,6 +16,9 @@ title: Get-MgBetaUserDrive
 A collection of drives available for this user.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

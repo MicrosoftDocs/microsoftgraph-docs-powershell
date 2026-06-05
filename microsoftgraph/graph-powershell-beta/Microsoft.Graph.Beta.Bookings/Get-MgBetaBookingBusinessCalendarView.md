@@ -17,6 +17,9 @@ The set of appointments of this business in a specified date range.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaAgreementAcceptance
 
 Delete navigation property acceptances for agreements
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgAgreementAcceptance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

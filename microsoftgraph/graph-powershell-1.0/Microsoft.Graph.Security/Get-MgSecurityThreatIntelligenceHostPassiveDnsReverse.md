@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse
 
 Reverse passive DNS retrieval about this host.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

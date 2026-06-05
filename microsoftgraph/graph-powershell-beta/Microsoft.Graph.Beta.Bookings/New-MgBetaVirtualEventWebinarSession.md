@@ -15,6 +15,9 @@ title: New-MgBetaVirtualEventWebinarSession
 
 Create new navigation property to sessions for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 
 Get the user synchronization policy of a partner-specific configuration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -16,6 +16,9 @@ title: Get-MgShareListItemCreatedByUser
 Identity of the user who created the item.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemCreatedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)

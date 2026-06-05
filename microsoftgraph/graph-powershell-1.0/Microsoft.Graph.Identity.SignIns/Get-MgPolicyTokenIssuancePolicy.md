@@ -15,6 +15,9 @@ title: Get-MgPolicyTokenIssuancePolicy
 
 The policy that specifies the characteristics of SAML tokens issued by Microsoft Entra ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

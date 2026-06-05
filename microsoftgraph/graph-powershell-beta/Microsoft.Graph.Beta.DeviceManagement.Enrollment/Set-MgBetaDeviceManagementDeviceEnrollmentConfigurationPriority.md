@@ -15,6 +15,9 @@ title: Set-MgBetaDeviceManagementDeviceEnrollmentConfigurationPriority
 
 Invoke action setPriority
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

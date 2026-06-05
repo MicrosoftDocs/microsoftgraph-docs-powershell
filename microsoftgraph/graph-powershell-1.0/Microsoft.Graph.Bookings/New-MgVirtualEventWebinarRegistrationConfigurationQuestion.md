@@ -16,6 +16,9 @@ title: New-MgVirtualEventWebinarRegistrationConfigurationQuestion
 Create a registration question for a webinar.
 You can create either a predefined registration question or a custom registration question.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

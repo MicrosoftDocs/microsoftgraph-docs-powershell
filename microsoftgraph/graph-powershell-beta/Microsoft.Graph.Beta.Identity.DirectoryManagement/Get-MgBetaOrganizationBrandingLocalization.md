@@ -16,6 +16,9 @@ title: Get-MgBetaOrganizationBrandingLocalization
 Read the properties and relationships of an organizationalBrandingLocalization object.
 To retrieve a localization branding object, specify the value of id in the URL.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBrandingLocalization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
