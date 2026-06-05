@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the number of team activities across Microsoft Teams over a selected period.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportTeamActivityDistributionCount -Period $periodId
+Get-MgReportTeamActivityDistributionCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportTeamActivityDistributionCount Cmdlet.
+
 
 ## PARAMETERS
 

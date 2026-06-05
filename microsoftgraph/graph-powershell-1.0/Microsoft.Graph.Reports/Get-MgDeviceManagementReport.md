@@ -47,12 +47,17 @@ Get reports from deviceManagement
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgDeviceManagementReport
+
+```
+This example shows how to use the Get-MgDeviceManagementReport Cmdlet.
+
 
 ## PARAMETERS
 

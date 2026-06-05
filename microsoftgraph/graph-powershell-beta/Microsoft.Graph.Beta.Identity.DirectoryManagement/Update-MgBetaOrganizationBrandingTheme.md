@@ -78,20 +78,6 @@ Update the properties of an organizationalBrandingTheme object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.organizationalBrandingTheme"
-	name = "ContosoTheme"
-	isDefaultTheme = $true
-}
-
-Update-MgBetaOrganizationBrandingTheme -OrganizationId $organizationId -OrganizationalBrandingThemeId $organizationalBrandingThemeId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -873,6 +859,7 @@ Optional.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandingtheme)
 - [](https://learn.microsoft.com/graph/api/organizationalbrandingtheme-update?view=graph-rest-beta)
+
 
 
 

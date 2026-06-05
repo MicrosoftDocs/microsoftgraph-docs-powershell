@@ -54,23 +54,6 @@ Update the properties of a customBlockPage object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.NetworkAccess
-
-$params = @{
-	state = "enabled"
-	configuration = @{
-		"@odata.type" = "#microsoft.graph.networkaccess.markdownBlockMessageConfiguration"
-		body = "Your admin at NaaSLitware has blocked your access.
-[Click here for NaaSLitware's Terms of Use](https://www.bing.com)."
-	}
-}
-
-Update-MgBetaNetworkAccessSettingCustomBlockPage -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -436,6 +419,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingcustomblockpage)
 - [](https://learn.microsoft.com/graph/api/networkaccess-customblockpage-update?view=graph-rest-beta)
+
 
 
 

@@ -81,30 +81,6 @@ Only teachers can perform this operation.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Education
-
-$params = @{
-	displayName = "PassFailScheme"
-	grades = @(
-		@{
-			displayName = "Pass"
-			minPercentage = 70
-			defaultPercentage = 90
-		}
-		@{
-			displayName = "Fail"
-			minPercentage = 0
-			defaultPercentage = 50
-		}
-	)
-}
-
-New-MgBetaEducationClassAssignmentSettingGradingScheme -EducationClassId $educationClassId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -619,6 +595,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingscheme)
 - [](https://learn.microsoft.com/graph/api/educationassignmentsettings-post-gradingschemes?view=graph-rest-beta)
+
 
 
 

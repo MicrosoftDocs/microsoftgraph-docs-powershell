@@ -64,13 +64,18 @@ Represents detailed information about websites associated with a user in various
 | Application | User.Read.All, User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileWebsite -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileWebsite Cmdlet.
+
 
 ## PARAMETERS
 

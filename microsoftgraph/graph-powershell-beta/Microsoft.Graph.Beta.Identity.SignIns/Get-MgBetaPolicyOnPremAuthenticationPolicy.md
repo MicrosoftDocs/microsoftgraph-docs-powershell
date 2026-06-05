@@ -65,14 +65,6 @@ Read the properties and relationships of onPremAuthenticationPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaPolicyOnPremAuthenticationPolicy
-
 ## PARAMETERS
 
 ### -All
@@ -636,6 +628,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyonpremauthenticationpolicy)
 - [](https://learn.microsoft.com/graph/api/onpremauthenticationpolicy-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/policyroot-list-onpremauthenticationpolicies?view=graph-rest-beta)
+
+
 
 
 

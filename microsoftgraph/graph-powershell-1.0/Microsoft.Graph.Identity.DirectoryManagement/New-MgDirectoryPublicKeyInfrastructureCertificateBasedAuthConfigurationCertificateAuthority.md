@@ -91,18 +91,6 @@ Create a new certificateAuthorityDetail object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PublicKeyInfrastructure.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-$params = @{
-	certificateAuthorityType = "intermediate"
-}
-
-New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority -CertificateBasedAuthPkiId $certificateBasedAuthPkiId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -881,6 +869,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
 - [](https://learn.microsoft.com/graph/api/certificatebasedauthpki-post-certificateauthorities?view=graph-rest-1.0)
+
 
 
 

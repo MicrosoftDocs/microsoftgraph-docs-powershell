@@ -49,14 +49,6 @@ This cmdlet has the following aliases,
 
 Delete the map of a specific building.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Remove-MgBetaPlaceAsBuildingMap -PlaceId $placeId
-
 ## PARAMETERS
 
 ### -Break
@@ -414,6 +406,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmap)
 - [](https://learn.microsoft.com/graph/api/buildingmap-delete?view=graph-rest-beta)
+
 
 
 
