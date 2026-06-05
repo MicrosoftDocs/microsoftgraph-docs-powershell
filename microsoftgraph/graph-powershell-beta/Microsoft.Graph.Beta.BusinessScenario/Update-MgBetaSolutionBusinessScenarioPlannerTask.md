@@ -1088,7 +1088,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime

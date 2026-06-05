@@ -379,7 +379,7 @@ HelpMessage: ''
 
 ### -IsVisible
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

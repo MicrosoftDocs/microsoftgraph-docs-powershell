@@ -1440,7 +1440,7 @@ HelpMessage: ''
 
 ### -PermissionGrants
 
-.
+
 To construct, see NOTES section for PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
@@ -2095,7 +2095,7 @@ HelpMessage: ''
 
 ### -WelcomeMessageEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

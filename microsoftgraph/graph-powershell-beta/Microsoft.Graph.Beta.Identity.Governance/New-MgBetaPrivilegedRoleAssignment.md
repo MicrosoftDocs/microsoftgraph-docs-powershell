@@ -150,7 +150,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -256,7 +256,7 @@ HelpMessage: ''
 
 ### -IsElevated
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -362,7 +362,7 @@ HelpMessage: ''
 
 ### -ResultMessage
 
-.
+
 
 ```yaml
 Type: System.String
@@ -383,7 +383,7 @@ HelpMessage: ''
 
 ### -RoleId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -426,7 +426,7 @@ HelpMessage: ''
 
 ### -UserId
 
-.
+
 
 ```yaml
 Type: System.String

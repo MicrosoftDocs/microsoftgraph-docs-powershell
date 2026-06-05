@@ -104,7 +104,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -203,7 +203,7 @@ HelpMessage: ''
 
 ### -DiscoveredSensitiveTypes
 
-.
+
 To construct, see NOTES section for DISCOVEREDSENSITIVETYPES properties and create a hash table.
 
 ```yaml
