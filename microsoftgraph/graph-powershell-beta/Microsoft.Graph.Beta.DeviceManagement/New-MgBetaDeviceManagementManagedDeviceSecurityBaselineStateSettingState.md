@@ -851,7 +851,7 @@ SOURCEPOLICIES <IMicrosoftGraphSettingSource[]>: The policies that contribute to
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstate)
+- [New-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstate)
 
 
 

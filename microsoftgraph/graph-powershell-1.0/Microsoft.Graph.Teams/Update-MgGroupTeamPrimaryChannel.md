@@ -17022,7 +17022,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannel)
+- [Update-MgGroupTeamPrimaryChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannel)
 
 
 

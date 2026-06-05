@@ -512,8 +512,8 @@ For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
-- [](https://learn.microsoft.com/graph/api/virtualendpoint-post-externalpartnersettings?view=graph-rest-beta)
+- [New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-post-externalpartnersettings?view=graph-rest-beta)
 
 
 

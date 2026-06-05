@@ -373,7 +373,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactcount)
+- [Get-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactCount](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactcount)
 
 
 

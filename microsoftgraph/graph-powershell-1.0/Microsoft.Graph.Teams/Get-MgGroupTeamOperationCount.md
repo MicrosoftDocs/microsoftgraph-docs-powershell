@@ -373,7 +373,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamoperationcount)
+- [Get-MgGroupTeamOperationCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamoperationcount)
 
 
 

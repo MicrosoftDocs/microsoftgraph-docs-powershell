@@ -66327,7 +66327,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootchild)
+- [New-MgBetaUserDriveRootChild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootchild)
 
 
 

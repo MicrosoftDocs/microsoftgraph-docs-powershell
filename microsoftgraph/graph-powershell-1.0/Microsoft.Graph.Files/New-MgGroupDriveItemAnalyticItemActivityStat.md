@@ -11335,7 +11335,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemanalyticitemactivitystat)
+- [New-MgGroupDriveItemAnalyticItemActivityStat](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemanalyticitemactivitystat)
 
 
 

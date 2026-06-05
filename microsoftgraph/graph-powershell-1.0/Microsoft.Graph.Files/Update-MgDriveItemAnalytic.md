@@ -21532,7 +21532,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemanalytic)
+- [Update-MgDriveItemAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemanalytic)
 
 
 

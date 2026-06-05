@@ -639,9 +639,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandinglocalization)
-- [](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/organizationalbranding-list-localizations?view=graph-rest-beta)
+- [Get-MgBetaOrganizationBrandingLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandinglocalization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbranding-list-localizations?view=graph-rest-beta)
 
 
 

@@ -385,7 +385,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootcreatedbyuserserviceprovisioningerrorcount)
+- [Get-MgGroupDriveRootCreatedByUserServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootcreatedbyuserserviceprovisioningerrorcount)
 
 
 

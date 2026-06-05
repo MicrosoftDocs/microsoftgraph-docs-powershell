@@ -459,7 +459,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessageattachment)
+- [Remove-MgBetaUserMailFolderMessageAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessageattachment)
 
 
 

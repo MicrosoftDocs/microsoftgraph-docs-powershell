@@ -21504,7 +21504,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootanalytic)
+- [Update-MgDriveRootAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootanalytic)
 
 
 

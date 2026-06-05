@@ -526,8 +526,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationtemplateschema)
-- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-1.0)
+- [Invoke-MgFunctionServicePrincipalSynchronizationTemplateSchema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationtemplateschema)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-1.0)
 
 
 
