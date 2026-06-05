@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Retry the orgContact service provisioning.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -408,6 +398,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgretrycontactserviceprovisioning)
 - [](https://learn.microsoft.com/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-1.0)
+
 
 
 
