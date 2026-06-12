@@ -163,7 +163,7 @@ HelpMessage: ''
 
 ### -Connections
 
-.
+
 To construct, see NOTES section for CONNECTIONS properties and create a hash table.
 
 ```yaml

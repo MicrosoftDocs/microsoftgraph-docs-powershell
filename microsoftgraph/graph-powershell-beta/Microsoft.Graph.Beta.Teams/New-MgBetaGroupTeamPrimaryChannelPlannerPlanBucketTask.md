@@ -707,7 +707,7 @@ HelpMessage: ''
 
 ### -HasChat
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -995,7 +995,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime

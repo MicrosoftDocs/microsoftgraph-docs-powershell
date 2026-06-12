@@ -361,7 +361,7 @@ HelpMessage: ''
 
 ### -Categories
 
-.
+
 
 ```yaml
 Type: System.String[]

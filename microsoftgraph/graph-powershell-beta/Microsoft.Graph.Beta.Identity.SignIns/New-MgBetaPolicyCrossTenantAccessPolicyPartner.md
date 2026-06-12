@@ -268,7 +268,7 @@ HelpMessage: ''
 
 ### -BlockServiceProviderOutboundAccess
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -170,7 +170,7 @@ HelpMessage: ''
 
 ### -Count
 
-.
+
 
 ```yaml
 Type: System.Int64
@@ -197,7 +197,7 @@ HelpMessage: ''
 
 ### -FactDate
 
-.
+
 
 ```yaml
 Type: System.DateTime

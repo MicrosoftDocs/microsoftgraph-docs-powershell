@@ -235,7 +235,7 @@ HelpMessage: ''
 
 ### -DateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -316,7 +316,7 @@ HelpMessage: ''
 
 ### -Extension
 
-.
+
 
 ```yaml
 Type: System.String
@@ -489,7 +489,7 @@ HelpMessage: ''
 
 ### -MediaType
 
-.
+
 
 ```yaml
 Type: System.String
@@ -516,7 +516,7 @@ HelpMessage: ''
 
 ### -Name
 
-.
+
 
 ```yaml
 Type: System.String
@@ -682,7 +682,7 @@ HelpMessage: ''
 
 ### -SenderOrAuthors
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -709,7 +709,7 @@ HelpMessage: ''
 
 ### -Size
 
-.
+
 
 ```yaml
 Type: System.Int64
@@ -763,7 +763,7 @@ HelpMessage: ''
 
 ### -SubjectTitle
 
-.
+
 
 ```yaml
 Type: System.String
