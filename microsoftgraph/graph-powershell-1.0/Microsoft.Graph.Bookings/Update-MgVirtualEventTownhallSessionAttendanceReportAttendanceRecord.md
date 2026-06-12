@@ -15,6 +15,9 @@ title: Update-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord
 
 Update the navigation property attendanceRecords in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

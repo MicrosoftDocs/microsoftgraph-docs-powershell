@@ -15,6 +15,9 @@ title: Get-MgGroupTeamPhotoContent
 
 The profile photo for the team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPhotoContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

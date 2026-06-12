@@ -16,6 +16,9 @@ title: New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRest
 Create a driveRestoreArtifactsBulkAdditionRequest object associated with a oneDriveForBusinessRestoreSession.
 The following steps describe how to create and manage a oneDriveForBusinessRestoreSession with bulk artifact additions.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

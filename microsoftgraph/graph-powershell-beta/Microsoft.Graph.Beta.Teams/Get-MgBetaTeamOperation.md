@@ -15,6 +15,9 @@ title: Get-MgBetaTeamOperation
 
 The async operations that ran or are running on this team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamOperation](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

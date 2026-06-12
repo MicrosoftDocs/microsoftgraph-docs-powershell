@@ -15,6 +15,9 @@ title: New-MgBetaTeamworkDeletedTeamChannelMessage
 
 Create new navigation property to messages for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

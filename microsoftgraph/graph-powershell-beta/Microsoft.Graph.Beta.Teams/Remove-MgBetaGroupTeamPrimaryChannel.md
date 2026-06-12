@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupTeamPrimaryChannel
 
 Delete navigation property primaryChannel for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

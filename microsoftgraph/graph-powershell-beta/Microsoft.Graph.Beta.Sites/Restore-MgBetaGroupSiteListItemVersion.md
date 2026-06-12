@@ -15,6 +15,9 @@ title: Restore-MgBetaGroupSiteListItemVersion
 
 Invoke action restoreVersion
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Restore-MgGroupSiteListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)

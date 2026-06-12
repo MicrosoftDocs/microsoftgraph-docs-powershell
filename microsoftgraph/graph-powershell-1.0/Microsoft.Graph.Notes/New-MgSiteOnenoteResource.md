@@ -15,6 +15,9 @@ title: New-MgSiteOnenoteResource
 
 Create new navigation property to resources for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

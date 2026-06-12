@@ -15,6 +15,9 @@ title: Update-MgShareListItemDocumentSetVersion
 
 Update the navigation property documentSetVersions in shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItemDocumentSetVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)

@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementManagedDeviceConfigurationState
 
 Delete navigation property deviceConfigurationStates for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementManagedDeviceConfigurationState?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
