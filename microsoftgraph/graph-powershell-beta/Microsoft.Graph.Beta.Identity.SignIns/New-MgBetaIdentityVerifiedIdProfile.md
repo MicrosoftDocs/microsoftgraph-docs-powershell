@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityverifiedidprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/12/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityVerifiedIdProfile
 ---
@@ -49,6 +49,48 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new verifiedIdProfile object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	name = "Contoso Verified ID"
+	description = "Contoso Verified Identity"
+	lastModifiedDateTime = $null
+	state = "enabled"
+	verifierDid = "did:web:eu.did-dev.contoso.io"
+	priority = 0
+	verifiedIdProfileConfiguration = @{
+		type = "verifiedIdentity"
+		acceptedIssuer = "did:web:eu.did-dev.contoso.io"
+		claimBindingSource = "directory"
+		claimBindings = @(
+			@{
+				sourceAttribute = "First name"
+				verifiedIdClaim = "vc.credentialSubject.firstName"
+			}
+			@{
+				sourceAttribute = "Last name"
+				verifiedIdClaim = "vc.credentialSubject.lastName"
+			}
+		)
+	}
+	faceCheckConfiguration = @{
+		isEnabled = $true
+		sourcePhotoClaimName = "portrait"
+	}
+	verifiedIdUsageConfigurations = @(
+		@{
+			isEnabledForTestOnly = $true
+			purpose = "recovery"
+		}
+	)
+}
+
+New-MgBetaIdentityVerifiedIdProfile -BodyParameter $params
 
 ## PARAMETERS
 
@@ -559,7 +601,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVerifiedIdProfile>`: verifiedIdProfile
+BODYPARAMETER <IMicrosoftGraphVerifiedIdProfile>: verifiedIdProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -593,13 +635,13 @@ Required.
   [VerifierDid <String>]: Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange.
 Required.
 
-FACECHECKCONFIGURATION `<IMicrosoftGraphFaceCheckConfiguration>`: faceCheckConfiguration
+FACECHECKCONFIGURATION <IMicrosoftGraphFaceCheckConfiguration>: faceCheckConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Defines if Face Check is required.
 Currently must always be true.
   [SourcePhotoClaimName <String>]: 
 
-VERIFIEDIDPROFILECONFIGURATION `<IMicrosoftGraphVerifiedIdProfileConfiguration>`: verifiedIdProfileConfiguration
+VERIFIEDIDPROFILECONFIGURATION <IMicrosoftGraphVerifiedIdProfileConfiguration>: verifiedIdProfileConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcceptedIssuer <String>]: Trusted Verified ID issuer.
   [ClaimBindingSource <String>]: claimBindingSource
@@ -617,28 +659,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityverifiedidprofile)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identityverifiedidroot-post-profiles?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityverifiedidprofile)
+- [](https://learn.microsoft.com/graph/api/identityverifiedidroot-post-profiles?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolist
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 02/20/2026
+ms.date: 06/12/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserTodoList
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaUserTodoList
 
 Create new navigation property to lists for users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoList?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -26,6 +23,7 @@ Create new navigation property to lists for users
 New-MgBetaUserTodoList -UserId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-DisplayName <string>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Id <string>] [-IsOwner] [-IsShared]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]
  [-Tasks <IMicrosoftGraphTodoTask[]>] [-WellknownListName <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -48,6 +46,7 @@ New-MgBetaUserTodoList -UserId <string> -BodyParameter <IMicrosoftGraphTodoTaskL
 New-MgBetaUserTodoList -InputObject <IUsersIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-DisplayName <string>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Id <string>] [-IsOwner] [-IsShared]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]
  [-Tasks <IMicrosoftGraphTodoTask[]>] [-WellknownListName <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -73,18 +72,10 @@ This cmdlet has the following aliases,
 
 Create new navigation property to lists for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
@@ -93,11 +84,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserTodoList -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserTodoList Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -513,6 +499,36 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SingleValueExtendedProperties
+
+The collection of single-value extended properties defined for the task list.
+Read-only.
+Nullable.
+To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSingleValueExtendedProperty[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Tasks
 
 The tasks in this task list.
@@ -653,7 +669,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTodoTaskList>`: todoTaskList
+BODYPARAMETER <IMicrosoftGraphTodoTaskList>: todoTaskList
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -664,6 +680,12 @@ Nullable.
 Read-only.
   [IsOwner <Boolean?>]: True if the user is owner of the given task list.
   [IsShared <Boolean?>]: True if the task list is shared with other users
+  [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: The collection of single-value extended properties defined for the task list.
+Read-only.
+Nullable.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Value <String>]: The value of the property.
   [Tasks <IMicrosoftGraphTodoTask[]>]: The tasks in this task list.
 Read-only.
 Nullable.
@@ -766,9 +788,6 @@ Required.
         [Type <String>]: recurrenceRangeType
     [ReminderDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: A collection of custom fields linked to the task.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [Value <String>]: The value of the property.
     [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [Status <String>]: taskStatus
     [Title <String>]: A brief description of the task.
@@ -779,7 +798,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -812,6 +831,13 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WindowsSettingInstanceId <String>]: The unique identifier of windowsSettingInstance
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
+
+SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueExtendedProperty[]>: The collection of single-value extended properties defined for the task list.
+Read-only.
+Nullable.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Value <String>]: The value of the property.
 
 TASKS <IMicrosoftGraphTodoTask[]>: The tasks in this task list.
 Read-only.
@@ -927,26 +953,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaUserTodoList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolist)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolist)

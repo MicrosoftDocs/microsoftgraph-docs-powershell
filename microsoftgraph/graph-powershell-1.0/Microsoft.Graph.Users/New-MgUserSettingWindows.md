@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingwindows
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 02/20/2026
+ms.date: 06/12/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserSettingWindows
 ---
@@ -14,9 +14,6 @@ title: New-MgUserSettingWindows
 ## SYNOPSIS
 
 Create new navigation property to windows for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserSettingWindows](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserSettingWindows?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to windows for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -569,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsSetting>`: windowsSetting
+BODYPARAMETER <IMicrosoftGraphWindowsSetting>: windowsSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -587,7 +594,7 @@ Refers to the user's Windows device that modified the object at the specified da
   [SettingType <String>]: windowsSettingType
   [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -628,27 +635,4 @@ Refers to the user's Windows device that modified the object at the specified da
 
 ## RELATED LINKS
 
-- [New-MgUserSettingWindows](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingwindows)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingwindows)

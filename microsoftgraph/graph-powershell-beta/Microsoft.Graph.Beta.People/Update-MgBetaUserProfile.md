@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 02/20/2026
+ms.date: 06/12/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserProfile
 ---
@@ -86,11 +86,21 @@ This cmdlet has the following aliases,
 
 Update the navigation property profile in users
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -Account
 
-
+.
 To construct, see NOTES section for ACCOUNT properties and create a hash table.
 
 ```yaml
@@ -1175,7 +1185,7 @@ Read-only.
   [ThumbnailUrl <String>]: URL referencing a thumbnail of the award or honor.
   [WebUrl <String>]: URL referencing the award or honor.
 
-BODYPARAMETER `<IMicrosoftGraphProfile>`: profile
+BODYPARAMETER <IMicrosoftGraphProfile>: profile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1335,15 +1345,14 @@ Read-only.
       [WebUrl <String>]: Link to the institution or department homepage.
     [Program <IMicrosoftGraphEducationalActivityDetail>]: educationalActivityDetail
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [Abbreviation <String>]: Shortened name of the degree or program (example: PhD, MBA)
+      [Abbreviation <String>]: Shortened name of the degree or program, for example, PhD and MBA.
       [Activities <String[]>]: Extracurricular activities undertaken alongside the program.
       [Awards <String[]>]: Any awards or honors associated with the program.
       [Description <String>]: Short description of the program provided by the user.
       [DisplayName <String>]: Long-form name of the program that the user provided.
-      [FieldsOfStudy <String[]>]: Majors and minors associated with the program.
-(if applicable)
-      [Grade <String>]: The final grade, class, GPA, or score.
-      [Notes <String>]: More notes the user provided.
+      [FieldsOfStudy <String[]>]: Majors and minors associated with the program, if applicable.
+      [Grade <String>]: The final grade, class, grade point average (GPA), or score.
+      [Notes <String>]: More notes provided by the user.
       [WebUrl <String>]: Link to the degree or program page.
     [StartMonthYear <DateTime?>]: The month and year the user commenced the activity referenced.
   [Emails <IMicrosoftGraphItemEmail[]>]: Represents detailed information about email addresses associated with the user.
@@ -1714,15 +1723,14 @@ It's a free-format string value, for example, 'United States'.
     [WebUrl <String>]: Link to the institution or department homepage.
   [Program <IMicrosoftGraphEducationalActivityDetail>]: educationalActivityDetail
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [Abbreviation <String>]: Shortened name of the degree or program (example: PhD, MBA)
+    [Abbreviation <String>]: Shortened name of the degree or program, for example, PhD and MBA.
     [Activities <String[]>]: Extracurricular activities undertaken alongside the program.
     [Awards <String[]>]: Any awards or honors associated with the program.
     [Description <String>]: Short description of the program provided by the user.
     [DisplayName <String>]: Long-form name of the program that the user provided.
-    [FieldsOfStudy <String[]>]: Majors and minors associated with the program.
-(if applicable)
-    [Grade <String>]: The final grade, class, GPA, or score.
-    [Notes <String>]: More notes the user provided.
+    [FieldsOfStudy <String[]>]: Majors and minors associated with the program, if applicable.
+    [Grade <String>]: The final grade, class, grade point average (GPA), or score.
+    [Notes <String>]: More notes provided by the user.
     [WebUrl <String>]: Link to the degree or program page.
   [StartMonthYear <DateTime?>]: The month and year the user commenced the activity referenced.
 
@@ -1760,7 +1768,7 @@ Read-only.
   [DisplayName <String>]: The name or label a user has associated with a particular email address.
   [Type <String>]: emailType
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -2325,27 +2333,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofile)

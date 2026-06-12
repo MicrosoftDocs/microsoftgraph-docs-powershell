@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 06/12/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlace
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaPlace
 
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlace](/powershell/module/Microsoft.Graph.Calendar/New-MgPlace?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,6 +49,83 @@ This cmdlet has the following aliases,
 
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.building"
+	displayName = "B001"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.floor"
+	displayName = "F1"
+	parentId = "767a31a7-6987-41c9-b829-ab351b8aab53"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+### EXAMPLE 3
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.section"
+	displayName = "S1"
+	parentId = "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+### EXAMPLE 4
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.desk"
+	displayName = "D1"
+	parentId = "1ad0f725-6885-49c5-9a47-3b22a1f9409d"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+### EXAMPLE 5
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.room"
+	displayName = "Conf Room 4/3.3G11"
+	parentId = "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
+	bookingType = "standard"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+### EXAMPLE 6
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.workspace"
+	parentId = "f7de7265-e420-47b4-9d49-28d728716241"
+	displayName = "testSpace001"
+	tags = @(
+	"test"
+)
+}
+
+New-MgBetaPlace -BodyParameter $params
 
 ## PARAMETERS
 
@@ -577,7 +651,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -588,7 +662,7 @@ It's a free-format string value, for example, 'United States'.
   [Street <String>]: The street.
   [Type <String>]: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphPlace>`: place
+BODYPARAMETER <IMicrosoftGraphPlace>: place
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -669,7 +743,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Phone <String>]: The phone number of the place.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
@@ -681,28 +755,5 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 ## RELATED LINKS
 
-- [New-MgBetaPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace)
+- [](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-beta)
