@@ -60,16 +60,6 @@ This cmdlet has the following aliases,
 Read the properties of a place object specified by its ID.
 The place object can be one of the following types: The listed resources are derived from the place object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -555,6 +545,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlist)
 - [](https://learn.microsoft.com/graph/api/place-get?view=graph-rest-1.0)
+
 
 
 
