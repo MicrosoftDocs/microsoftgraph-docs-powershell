@@ -82,8 +82,9 @@ For details about how to identify a large gallery view participant in a roster s
 | Application | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.InitiateGroupCall.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 Add-MgCommunicationCallLargeGalleryView -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgCommunicationCallLargeGalleryView Cmdlet.
+
 
 ## PARAMETERS
 

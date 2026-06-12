@@ -50,48 +50,6 @@ This cmdlet has the following aliases,
 
 Create a new verifiedIdProfile object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-$params = @{
-	name = "Contoso Verified ID"
-	description = "Contoso Verified Identity"
-	lastModifiedDateTime = $null
-	state = "enabled"
-	verifierDid = "did:web:eu.did-dev.contoso.io"
-	priority = 0
-	verifiedIdProfileConfiguration = @{
-		type = "verifiedIdentity"
-		acceptedIssuer = "did:web:eu.did-dev.contoso.io"
-		claimBindingSource = "directory"
-		claimBindings = @(
-			@{
-				sourceAttribute = "First name"
-				verifiedIdClaim = "vc.credentialSubject.firstName"
-			}
-			@{
-				sourceAttribute = "Last name"
-				verifiedIdClaim = "vc.credentialSubject.lastName"
-			}
-		)
-	}
-	faceCheckConfiguration = @{
-		isEnabled = $true
-		sourcePhotoClaimName = "portrait"
-	}
-	verifiedIdUsageConfigurations = @(
-		@{
-			isEnabledForTestOnly = $true
-			purpose = "recovery"
-		}
-	)
-}
-
-New-MgBetaIdentityVerifiedIdProfile -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -661,6 +619,7 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityverifiedidprofile)
 - [](https://learn.microsoft.com/graph/api/identityverifiedidroot-post-profiles?view=graph-rest-beta)
+
 
 
 

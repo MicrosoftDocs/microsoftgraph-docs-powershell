@@ -87,16 +87,6 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, User.ReadWrite.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -527,6 +517,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdevicemembergroup)
 - [](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0)
+
 
 
 

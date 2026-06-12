@@ -89,8 +89,9 @@ listItem resources inherit sharing permissions from the list the item resides in
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create an anonymous sharing link
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -109,7 +110,12 @@ $params = @{
 
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create an anonymous sharing link
+
+### Example 2: Creating company sharable links
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -120,7 +126,12 @@ $params = @{
 
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example shows creating company sharable links
+
+### Example 3: Creating embeddable links
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -129,6 +140,10 @@ $params = @{
 }
 
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+
+```
+This example shows creating embeddable links
+
 
 ## PARAMETERS
 

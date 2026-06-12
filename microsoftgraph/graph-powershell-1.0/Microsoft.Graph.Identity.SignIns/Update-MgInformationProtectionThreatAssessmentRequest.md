@@ -75,16 +75,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property threatAssessmentRequests in informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -816,6 +806,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotectionthreatassessmentrequest)
+
 
 
 

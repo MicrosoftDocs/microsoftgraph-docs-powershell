@@ -58,14 +58,6 @@ Delete an educationGradingScheme object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Education
-
-Remove-MgEducationClassAssignmentSettingGradingScheme -EducationClassId $educationClassId -EducationGradingSchemeId $educationGradingSchemeId
-
 ## PARAMETERS
 
 ### -Break
@@ -444,6 +436,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentsettinggradingscheme)
 - [](https://learn.microsoft.com/graph/api/educationgradingscheme-delete?view=graph-rest-1.0)
+
 
 
 

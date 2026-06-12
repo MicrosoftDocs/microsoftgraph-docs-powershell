@@ -77,16 +77,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property rubrics in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -809,6 +799,7 @@ QUALITIES <IMicrosoftGraphRubricQuality[]>: The collection of qualities making u
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserrubric)
+
 
 
 

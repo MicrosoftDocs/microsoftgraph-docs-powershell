@@ -56,16 +56,6 @@ Get a set of messages added, deleted, or updated in a specified folder.
 A delta function call for messages in a folder is similar to a GET request, except that by appropriately\rapplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\rthat folder](/graph/delta-query-messages).
 It allows you to maintain and synchronize a local store of a user's messages without\rhaving to fetch the entire set of messages from the server every time.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -626,6 +616,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagedelta)
 - [](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0)
+
 
 
 
