@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydeleteditem
@@ -14,7 +14,7 @@ title: Remove-MgDirectoryDeletedItem
 ## SYNOPSIS
 
 Permanently delete a recently deleted directory object from deleted items.
-The following types are supported:\r\n- application\r\n- agentIdentityBlueprint\r\n- agentIdentity\r\n- agentIdentityBlueprintPrincipal\r\n- agentUser\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- group\r\n- servicePrincipal\r\n- user After an item is permanently deleted, it cannot be restored.
+The following types are supported:\r- application\r- agentIdentityBlueprint\r- agentIdentity\r- agentIdentityBlueprintPrincipal\r- agentUser\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user After an item is permanently deleted, it cannot be restored.
 Administrative units cannot be permanently deleted by using the deletedItems API.
 Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
@@ -48,7 +48,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Permanently delete a recently deleted directory object from deleted items.
-The following types are supported:\r\n- application\r\n- agentIdentityBlueprint\r\n- agentIdentity\r\n- agentIdentityBlueprintPrincipal\r\n- agentUser\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- group\r\n- servicePrincipal\r\n- user After an item is permanently deleted, it cannot be restored.
+The following types are supported:\r- application\r- agentIdentityBlueprint\r- agentIdentity\r- agentIdentityBlueprintPrincipal\r- agentUser\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user After an item is permanently deleted, it cannot be restored.
 Administrative units cannot be permanently deleted by using the deletedItems API.
 Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
@@ -390,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -430,3 +430,25 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydeleteditem)
 - [](https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

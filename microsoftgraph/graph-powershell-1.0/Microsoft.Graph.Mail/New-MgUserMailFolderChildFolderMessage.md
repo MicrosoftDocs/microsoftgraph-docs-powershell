@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessage
@@ -1521,12 +1521,12 @@ BCCRECIPIENTS <IMicrosoftGraphRecipient[]>: The Bcc: recipients for the message.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-BODY <IMicrosoftGraphItemBody>: itemBody
+BODY `<IMicrosoftGraphItemBody>`: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER <IMicrosoftGraphMessage>: message
+BODYPARAMETER `<IMicrosoftGraphMessage>`: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -1634,7 +1634,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-FLAG <IMicrosoftGraphFollowupFlag>: followupFlag
+FLAG `<IMicrosoftGraphFollowupFlag>`: followupFlag
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletedDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1645,14 +1645,14 @@ See below for more possible values.
   [FlagStatus <String>]: followupFlagStatus
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-FROM <IMicrosoftGraphRecipient>: recipient
+FROM `<IMicrosoftGraphRecipient>`: recipient
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-INPUTOBJECT <IMailIdentity>: Identity Parameter
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -1682,7 +1682,7 @@ REPLYTO <IMicrosoftGraphRecipient[]>: The email addresses to use when replying.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-SENDER <IMicrosoftGraphRecipient>: recipient
+SENDER `<IMicrosoftGraphRecipient>`: recipient
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1701,7 +1701,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: The To: recipients for the message.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-UNIQUEBODY <IMicrosoftGraphItemBody>: itemBody
+UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -1710,3 +1710,25 @@ UNIQUEBODY <IMicrosoftGraphItemBody>: itemBody
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessage)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
