@@ -408,8 +408,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager)
-- [](https://learn.microsoft.com/graph/api/agentuser-list-manager?view=graph-rest-1.0)
+- [Get-MgUserManager](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-manager?view=graph-rest-1.0)
 
 
 

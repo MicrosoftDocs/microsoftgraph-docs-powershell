@@ -455,8 +455,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgsupporteduseroutlooklanguage)
-- [](https://learn.microsoft.com/graph/api/outlookuser-supportedlanguages?view=graph-rest-1.0)
+- [Invoke-MgSupportedUserOutlookLanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgsupporteduseroutlooklanguage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/outlookuser-supportedlanguages?view=graph-rest-1.0)
 
 
 

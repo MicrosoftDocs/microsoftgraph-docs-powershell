@@ -1412,7 +1412,7 @@ Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewinstancestage)
+- [New-MgBetaIdentityGovernanceAccessReviewInstanceStage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewinstancestage)
 
 
 

@@ -522,7 +522,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsiteonenotesectionpagecontent)
+- [Set-MgGroupSiteOnenoteSectionPageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsiteonenotesectionpagecontent)
 
 
 

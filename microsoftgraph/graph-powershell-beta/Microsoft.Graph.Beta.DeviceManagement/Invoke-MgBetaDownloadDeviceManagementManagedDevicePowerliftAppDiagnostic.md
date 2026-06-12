@@ -415,7 +415,7 @@ REQUEST `<IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>`: This type cont
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementmanageddevicepowerliftappdiagnostic)
+- [Invoke-MgBetaDownloadDeviceManagementManagedDevicePowerliftAppDiagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementmanageddevicepowerliftappdiagnostic)
 
 
 

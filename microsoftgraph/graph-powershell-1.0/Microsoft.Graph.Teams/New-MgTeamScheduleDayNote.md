@@ -701,7 +701,7 @@ SHAREDDAYNOTE `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduledaynote)
+- [New-MgTeamScheduleDayNote](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduledaynote)
 
 
 
