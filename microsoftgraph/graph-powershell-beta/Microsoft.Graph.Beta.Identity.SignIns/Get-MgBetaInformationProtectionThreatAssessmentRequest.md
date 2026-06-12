@@ -59,6 +59,14 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
 A threat assessment request can be one of the following types:
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatAssessment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ThreatAssessment.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
