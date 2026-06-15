@@ -47,5 +47,5 @@ To perform basic tasks, use the [Get-started](/graph/powershell/get-started) gui
 
 ## Next steps
 
-- If you don't have an Azure account, [create a free account](https://azure.microsoft.com/free).
+- If you don't have an Azure account, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - If you already have access to a Microsoft Entra tenant, [Install the SDK](/graph/powershell/installation).
