@@ -33,6 +33,10 @@ function Start-Generator {
                     $DelegatedPersonalPermissions += $PermissionName;
                 }
             }
+            # Sort permissions alphabetically for deterministic output
+            $DelegatedWorkPermissions = $DelegatedWorkPermissions | Sort-Object;
+            $ApplicationPermissions = $ApplicationPermissions | Sort-Object;
+            $DelegatedPersonalPermissions = $DelegatedPersonalPermissions | Sort-Object;
             #If its already in the list, skip it
             if ($CmdList -notcontains $CommandName) {
                 #Check if all types of permissions in the their respective arrays are empty. If empty just skip the command
