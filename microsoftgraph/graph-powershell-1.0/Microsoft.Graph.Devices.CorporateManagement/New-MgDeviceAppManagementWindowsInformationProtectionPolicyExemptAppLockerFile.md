@@ -651,7 +651,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile)
+- [New-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile)
 
 
 

@@ -589,7 +589,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasmanagedioslobappcategory)
+- [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasmanagedioslobappcategory)
 
 
 

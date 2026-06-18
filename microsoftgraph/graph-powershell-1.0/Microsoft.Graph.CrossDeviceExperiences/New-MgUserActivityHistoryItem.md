@@ -907,7 +907,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivityhistoryitem)
+- [New-MgUserActivityHistoryItem](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivityhistoryitem)
 
 
 

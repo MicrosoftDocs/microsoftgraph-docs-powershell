@@ -538,8 +538,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetauserdrive)
-- [](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
+- [Search-MgBetaUserDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetauserdrive)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
 
 
 

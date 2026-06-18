@@ -388,7 +388,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberofcount)
+- [Get-MgGroupTransitiveMemberOfCount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberofcount)
 
 
 

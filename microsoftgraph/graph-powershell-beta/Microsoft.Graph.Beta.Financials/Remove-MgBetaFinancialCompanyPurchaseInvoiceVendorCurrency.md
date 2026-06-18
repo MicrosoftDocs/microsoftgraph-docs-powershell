@@ -439,7 +439,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanypurchaseinvoicevendorcurrency)
+- [Remove-MgBetaFinancialCompanyPurchaseInvoiceVendorCurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanypurchaseinvoicevendorcurrency)
 
 
 

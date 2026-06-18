@@ -795,7 +795,7 @@ Default value is FALSE.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector)
+- [New-MgDeviceManagementMobileThreatDefenseConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector)
 
 
 

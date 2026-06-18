@@ -587,7 +587,7 @@ BODYPARAMETER `<IPathsDfju0ZDevicemanagementReportsMicrosoftGraphGetappstatusove
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportappstatusoverviewreport)
+- [Get-MgBetaDeviceManagementReportAppStatusOverviewReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportappstatusoverviewreport)
 
 
 

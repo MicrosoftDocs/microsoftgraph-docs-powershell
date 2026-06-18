@@ -111690,8 +111690,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauser)
-- [](https://learn.microsoft.com/graph/api/user-post-users?view=graph-rest-beta)
+- [New-MgBetaUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-post-users?view=graph-rest-beta)
 
 
 

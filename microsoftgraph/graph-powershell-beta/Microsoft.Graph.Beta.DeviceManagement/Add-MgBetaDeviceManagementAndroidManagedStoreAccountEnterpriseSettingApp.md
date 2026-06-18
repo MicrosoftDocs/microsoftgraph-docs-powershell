@@ -393,7 +393,7 @@ BODYPARAMETER `<IPaths17XorxvDevicemanagementAndroidmanagedstoreaccountenterpris
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/add-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingapp)
+- [Add-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/add-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingapp)
 
 
 

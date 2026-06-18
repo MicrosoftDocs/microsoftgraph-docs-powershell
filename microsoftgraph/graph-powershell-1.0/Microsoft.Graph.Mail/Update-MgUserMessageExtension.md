@@ -522,7 +522,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermessageextension)
+- [Update-MgUserMessageExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermessageextension)
 
 
 

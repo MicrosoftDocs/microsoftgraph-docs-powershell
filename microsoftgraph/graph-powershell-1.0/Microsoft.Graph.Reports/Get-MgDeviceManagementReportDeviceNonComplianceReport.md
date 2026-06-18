@@ -629,7 +629,7 @@ BODYPARAMETER `<IPathsOl9O0RDevicemanagementReportsMicrosoftGraphGetdevicenoncom
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdevicenoncompliancereport)
+- [Get-MgDeviceManagementReportDeviceNonComplianceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdevicenoncompliancereport)
 
 
 

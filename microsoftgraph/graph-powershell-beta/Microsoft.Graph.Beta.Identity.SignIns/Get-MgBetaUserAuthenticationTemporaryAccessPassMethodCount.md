@@ -443,7 +443,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationtemporaryaccesspassmethodcount)
+- [Get-MgBetaUserAuthenticationTemporaryAccessPassMethodCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationtemporaryaccesspassmethodcount)
 
 
 

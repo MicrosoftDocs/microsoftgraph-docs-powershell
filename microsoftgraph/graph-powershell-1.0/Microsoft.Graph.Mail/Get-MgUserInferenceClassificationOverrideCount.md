@@ -354,7 +354,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassificationoverridecount)
+- [Get-MgUserInferenceClassificationOverrideCount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassificationoverridecount)
 
 
 

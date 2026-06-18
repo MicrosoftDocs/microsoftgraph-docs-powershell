@@ -662,8 +662,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostparenthostpair)
-- [](https://learn.microsoft.com/graph/api/security-host-list-parenthostpairs?view=graph-rest-beta)
+- [Get-MgBetaSecurityThreatIntelligenceHostParentHostPair](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostparenthostpair)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-host-list-parenthostpairs?view=graph-rest-beta)
 
 
 

@@ -609,7 +609,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootthumbnail)
+- [Get-MgBetaGroupDriveRootThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootthumbnail)
 
 
 

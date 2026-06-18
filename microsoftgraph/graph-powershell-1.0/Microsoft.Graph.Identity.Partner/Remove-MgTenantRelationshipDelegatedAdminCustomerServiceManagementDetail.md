@@ -413,7 +413,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadmincustomerservicemanagementdetail)
+- [Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadmincustomerservicemanagementdetail)
 
 
 

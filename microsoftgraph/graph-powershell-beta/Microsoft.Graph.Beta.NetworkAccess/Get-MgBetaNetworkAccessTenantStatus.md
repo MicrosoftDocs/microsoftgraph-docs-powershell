@@ -286,8 +286,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstenantstatus)
-- [](https://learn.microsoft.com/graph/api/networkaccess-tenantstatus-get?view=graph-rest-beta)
+- [Get-MgBetaNetworkAccessTenantStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstenantstatus)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tenantstatus-get?view=graph-rest-beta)
 
 
 

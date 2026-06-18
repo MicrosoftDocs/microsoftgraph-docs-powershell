@@ -640,9 +640,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionurlthreat)
-- [](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-list?view=graph-rest-beta)
+- [Get-MgBetaSecurityThreatSubmissionUrlThreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionurlthreat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-list?view=graph-rest-beta)
 
 
 

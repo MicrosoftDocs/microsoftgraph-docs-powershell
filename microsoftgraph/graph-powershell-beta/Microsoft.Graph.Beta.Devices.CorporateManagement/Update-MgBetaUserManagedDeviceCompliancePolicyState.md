@@ -862,7 +862,7 @@ SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicecompliancepolicystate)
+- [Update-MgBetaUserManagedDeviceCompliancePolicyState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicecompliancepolicystate)
 
 
 

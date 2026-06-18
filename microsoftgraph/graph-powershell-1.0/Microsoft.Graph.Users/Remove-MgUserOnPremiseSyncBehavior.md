@@ -409,7 +409,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguseronpremisesyncbehavior)
+- [Remove-MgUserOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguseronpremisesyncbehavior)
 
 
 

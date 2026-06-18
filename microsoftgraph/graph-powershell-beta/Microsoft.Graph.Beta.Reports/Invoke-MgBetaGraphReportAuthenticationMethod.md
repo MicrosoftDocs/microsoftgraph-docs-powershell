@@ -417,9 +417,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetagraphreportauthenticationmethod)
-- [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersregisteredbyfeature?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersregisteredbymethod?view=graph-rest-beta)
+- [Invoke-MgBetaGraphReportAuthenticationMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetagraphreportauthenticationmethod)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersregisteredbyfeature?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersregisteredbymethod?view=graph-rest-beta)
 
 
 

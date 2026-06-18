@@ -609,7 +609,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmessagehostedcontent)
+- [New-MgGroupTeamChannelMessageHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmessagehostedcontent)
 
 
 

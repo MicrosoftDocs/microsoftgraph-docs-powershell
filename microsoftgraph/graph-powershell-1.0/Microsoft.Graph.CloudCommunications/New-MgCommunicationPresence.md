@@ -529,7 +529,7 @@ WORKLOCATION `<IMicrosoftGraphUserWorkLocation>`: userWorkLocation
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationpresence)
+- [New-MgCommunicationPresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationpresence)
 
 
 

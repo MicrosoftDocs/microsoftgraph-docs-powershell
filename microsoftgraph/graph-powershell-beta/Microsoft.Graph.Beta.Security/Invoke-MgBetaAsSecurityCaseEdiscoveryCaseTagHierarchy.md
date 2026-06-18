@@ -590,8 +590,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaassecuritycaseediscoverycasetaghierarchy)
-- [](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-ashierarchy?view=graph-rest-beta)
+- [Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaassecuritycaseediscoverycasetaghierarchy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-ashierarchy?view=graph-rest-beta)
 
 
 

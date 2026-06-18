@@ -778,7 +778,7 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationtemplateschemadirectory)
+- [New-MgServicePrincipalSynchronizationTemplateSchemaDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationtemplateschemadirectory)
 
 
 

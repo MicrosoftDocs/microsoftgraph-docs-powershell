@@ -705,7 +705,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
+- [Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
 
 
 

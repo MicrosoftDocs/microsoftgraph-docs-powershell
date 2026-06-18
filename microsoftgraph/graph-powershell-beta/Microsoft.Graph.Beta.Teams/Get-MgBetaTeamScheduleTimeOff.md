@@ -616,9 +616,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduletimeoff)
-- [](https://learn.microsoft.com/graph/api/timeoff-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/schedule-list-timesoff?view=graph-rest-beta)
+- [Get-MgBetaTeamScheduleTimeOff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduletimeoff)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timeoff-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-list-timesoff?view=graph-rest-beta)
 
 
 

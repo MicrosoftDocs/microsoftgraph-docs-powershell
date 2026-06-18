@@ -875,7 +875,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreementfilelocalization)
+- [Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreementfilelocalization)
 
 
 

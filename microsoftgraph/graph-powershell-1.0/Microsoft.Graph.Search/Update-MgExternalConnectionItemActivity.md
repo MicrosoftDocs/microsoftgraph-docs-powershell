@@ -633,7 +633,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionitemactivity)
+- [Update-MgExternalConnectionItemActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionitemactivity)
 
 
 

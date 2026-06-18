@@ -548,7 +548,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceassectioncheck)
+- [New-MgBetaPlaceAsSectionCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceassectioncheck)
 
 
 

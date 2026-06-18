@@ -417,7 +417,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasereviewsetcount)
+- [Get-MgSecurityCaseEdiscoveryCaseReviewSetCount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasereviewsetcount)
 
 
 

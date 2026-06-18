@@ -1970,7 +1970,7 @@ TERTIARYEMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfoldercontact)
+- [Update-MgUserContactFolderChildFolderContact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfoldercontact)
 
 
 

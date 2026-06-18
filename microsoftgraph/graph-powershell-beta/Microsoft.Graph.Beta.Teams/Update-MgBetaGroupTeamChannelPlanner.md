@@ -1165,7 +1165,7 @@ Title of the plan.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannelplanner)
+- [Update-MgBetaGroupTeamChannelPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannelplanner)
 
 
 

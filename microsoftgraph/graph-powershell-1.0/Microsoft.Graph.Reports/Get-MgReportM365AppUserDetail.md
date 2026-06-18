@@ -405,7 +405,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail)
+- [Get-MgReportM365AppUserDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail)
 
 
 

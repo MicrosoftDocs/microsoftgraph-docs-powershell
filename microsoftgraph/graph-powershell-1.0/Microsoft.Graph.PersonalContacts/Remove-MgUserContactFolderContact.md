@@ -439,7 +439,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfoldercontact)
+- [Remove-MgUserContactFolderContact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfoldercontact)
 
 
 

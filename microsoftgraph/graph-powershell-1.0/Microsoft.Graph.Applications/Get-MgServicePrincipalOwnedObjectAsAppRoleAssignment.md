@@ -578,7 +578,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownedobjectasapproleassignment)
+- [Get-MgServicePrincipalOwnedObjectAsAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownedobjectasapproleassignment)
 
 
 

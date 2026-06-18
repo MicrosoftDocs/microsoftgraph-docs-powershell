@@ -609,7 +609,7 @@ SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticle)
+- [New-MgBetaSecurityThreatIntelligenceArticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticle)
 
 
 

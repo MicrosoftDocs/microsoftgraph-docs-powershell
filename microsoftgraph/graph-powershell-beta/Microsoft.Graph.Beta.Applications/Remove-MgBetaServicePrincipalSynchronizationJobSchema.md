@@ -450,7 +450,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationjobschema)
+- [Remove-MgBetaServicePrincipalSynchronizationJobSchema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationjobschema)
 
 
 

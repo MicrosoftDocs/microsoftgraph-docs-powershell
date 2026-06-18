@@ -1102,7 +1102,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetchildrelation)
+- [New-MgBetaSiteTermStoreSetChildRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetchildrelation)
 
 
 

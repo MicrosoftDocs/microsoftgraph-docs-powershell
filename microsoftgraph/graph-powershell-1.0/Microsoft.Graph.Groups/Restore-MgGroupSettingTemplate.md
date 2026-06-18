@@ -366,8 +366,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsettingtemplate)
-- [](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0)
+- [Restore-MgGroupSettingTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsettingtemplate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0)
 
 
 

@@ -424,7 +424,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallcontentsharingsession)
+- [Remove-MgCommunicationCallContentSharingSession](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallcontentsharingsession)
 
 
 

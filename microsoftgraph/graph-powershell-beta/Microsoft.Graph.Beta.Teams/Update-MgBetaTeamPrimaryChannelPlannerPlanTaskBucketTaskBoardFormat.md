@@ -618,7 +618,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelplannerplantaskbuckettaskboardformat)
+- [Update-MgBetaTeamPrimaryChannelPlannerPlanTaskBucketTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelplannerplantaskbuckettaskboardformat)
 
 
 

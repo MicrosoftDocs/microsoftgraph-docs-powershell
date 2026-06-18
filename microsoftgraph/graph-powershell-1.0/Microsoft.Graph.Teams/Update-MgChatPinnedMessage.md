@@ -809,7 +809,7 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatpinnedmessage)
+- [Update-MgChatPinnedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatpinnedmessage)
 
 
 

@@ -549,9 +549,9 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbucket)
-- [](https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-1.0)
+- [Get-MgPlannerBucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbucket)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-1.0)
 
 
 

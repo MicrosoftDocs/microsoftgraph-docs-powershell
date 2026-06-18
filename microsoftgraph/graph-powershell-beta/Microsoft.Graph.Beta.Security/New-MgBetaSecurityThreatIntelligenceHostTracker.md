@@ -1032,7 +1032,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehosttracker)
+- [New-MgBetaSecurityThreatIntelligenceHostTracker](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehosttracker)
 
 
 

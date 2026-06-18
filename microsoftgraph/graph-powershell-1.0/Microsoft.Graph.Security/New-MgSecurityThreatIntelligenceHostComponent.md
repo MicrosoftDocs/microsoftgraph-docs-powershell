@@ -1049,7 +1049,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostcomponent)
+- [New-MgSecurityThreatIntelligenceHostComponent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostcomponent)
 
 
 

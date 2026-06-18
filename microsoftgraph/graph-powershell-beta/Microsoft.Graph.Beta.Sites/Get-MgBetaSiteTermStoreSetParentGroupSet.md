@@ -639,7 +639,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupset)
+- [Get-MgBetaSiteTermStoreSetParentGroupSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupset)
 
 
 

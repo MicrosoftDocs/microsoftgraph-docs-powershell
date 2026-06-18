@@ -763,7 +763,7 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddeviceconfigurationstate)
+- [Update-MgUserManagedDeviceConfigurationState](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddeviceconfigurationstate)
 
 
 

@@ -880,7 +880,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootlistitemdocumentsetversion)
+- [Update-MgGroupDriveRootListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootlistitemdocumentsetversion)
 
 
 

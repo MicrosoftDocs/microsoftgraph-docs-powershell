@@ -1320,8 +1320,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabel)
-- [](https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityLabelRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-beta)
 
 
 

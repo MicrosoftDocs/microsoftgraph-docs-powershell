@@ -1039,7 +1039,7 @@ Required
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityaction)
+- [Update-MgBetaSecurityAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityaction)
 
 
 

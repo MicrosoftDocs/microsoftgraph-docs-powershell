@@ -434,7 +434,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessactivityuserdetail)
+- [Get-MgBetaReportSkypeForBusinessActivityUserDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessactivityuserdetail)
 
 
 

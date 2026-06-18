@@ -363,7 +363,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcreatedbyuserserviceprovisioningerrorcount)
+- [Get-MgDriveListCreatedByUserServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcreatedbyuserserviceprovisioningerrorcount)
 
 
 

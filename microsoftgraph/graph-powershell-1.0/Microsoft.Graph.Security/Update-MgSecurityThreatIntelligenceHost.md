@@ -4576,7 +4576,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehost)
+- [Update-MgSecurityThreatIntelligenceHost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehost)
 
 
 

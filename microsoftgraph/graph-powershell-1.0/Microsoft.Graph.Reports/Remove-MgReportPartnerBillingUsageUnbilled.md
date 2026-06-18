@@ -319,7 +319,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbillingusageunbilled)
+- [Remove-MgReportPartnerBillingUsageUnbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbillingusageunbilled)
 
 
 

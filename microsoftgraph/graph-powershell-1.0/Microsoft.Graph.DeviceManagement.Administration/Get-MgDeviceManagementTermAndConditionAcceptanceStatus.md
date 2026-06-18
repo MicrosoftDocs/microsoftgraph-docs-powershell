@@ -601,7 +601,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementtermandconditionacceptancestatus)
+- [Get-MgDeviceManagementTermAndConditionAcceptanceStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementtermandconditionacceptancestatus)
 
 
 

@@ -33348,8 +33348,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam)
-- [](https://learn.microsoft.com/graph/api/team-post?view=graph-rest-1.0)
+- [New-MgTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-post?view=graph-rest-1.0)
 
 
 

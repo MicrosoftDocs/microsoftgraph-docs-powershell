@@ -1463,7 +1463,7 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization)
+- [New-MgOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization)
 
 
 

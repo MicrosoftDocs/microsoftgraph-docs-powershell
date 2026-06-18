@@ -710,7 +710,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootversion)
+- [New-MgGroupDriveRootVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootversion)
 
 
 

@@ -386,7 +386,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemdriveitem)
+- [Get-MgGroupDriveRootListItemDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemdriveitem)
 
 
 

@@ -439,7 +439,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencepassivednsrecordartifact)
+- [Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencepassivednsrecordartifact)
 
 
 

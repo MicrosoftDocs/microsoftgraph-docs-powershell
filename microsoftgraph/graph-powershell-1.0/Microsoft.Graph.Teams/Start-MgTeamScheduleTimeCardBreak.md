@@ -575,7 +575,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgteamscheduletimecardbreak)
+- [Start-MgTeamScheduleTimeCardBreak](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgteamscheduletimecardbreak)
 
 
 

@@ -402,7 +402,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydataoutboundprovisioningflowset)
+- [Remove-MgBetaExternalIndustryDataOutboundProvisioningFlowSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydataoutboundprovisioningflowset)
 
 
 

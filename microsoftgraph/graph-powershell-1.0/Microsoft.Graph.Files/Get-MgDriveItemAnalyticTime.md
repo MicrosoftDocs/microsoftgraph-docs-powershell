@@ -406,8 +406,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalytictime)
-- [](https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0)
+- [Get-MgDriveItemAnalyticTime](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalytictime)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0)
 
 
 

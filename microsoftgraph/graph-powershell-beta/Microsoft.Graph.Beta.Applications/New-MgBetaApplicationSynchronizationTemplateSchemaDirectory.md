@@ -790,7 +790,7 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationtemplateschemadirectory)
+- [New-MgBetaApplicationSynchronizationTemplateSchemaDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationtemplateschemadirectory)
 
 
 

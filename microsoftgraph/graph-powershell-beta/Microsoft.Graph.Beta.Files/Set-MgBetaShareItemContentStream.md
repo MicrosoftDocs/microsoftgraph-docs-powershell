@@ -480,7 +480,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetashareitemcontentstream)
+- [Set-MgBetaShareItemContentStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetashareitemcontentstream)
 
 
 

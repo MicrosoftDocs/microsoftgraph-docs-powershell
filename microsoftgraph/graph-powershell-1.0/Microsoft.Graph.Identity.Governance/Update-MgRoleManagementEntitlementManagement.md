@@ -1890,7 +1890,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagement)
+- [Update-MgRoleManagementEntitlementManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagement)
 
 
 

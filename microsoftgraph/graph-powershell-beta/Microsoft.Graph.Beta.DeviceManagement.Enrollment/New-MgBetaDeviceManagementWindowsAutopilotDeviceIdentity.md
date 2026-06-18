@@ -1447,7 +1447,7 @@ The default is FALSE.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeviceidentity)
+- [New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeviceidentity)
 
 
 

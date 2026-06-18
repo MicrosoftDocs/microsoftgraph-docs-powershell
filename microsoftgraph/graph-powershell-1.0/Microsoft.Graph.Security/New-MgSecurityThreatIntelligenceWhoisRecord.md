@@ -2040,7 +2040,7 @@ No format is guaranteed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencewhoisrecord)
+- [New-MgSecurityThreatIntelligenceWhoisRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencewhoisrecord)
 
 
 

@@ -607,7 +607,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserowneddeviceasapproleassignment)
+- [Get-MgBetaUserOwnedDeviceAsAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserowneddeviceasapproleassignment)
 
 
 

@@ -475,7 +475,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting)
+- [New-MgBetaSecurityProviderTenantSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting)
 
 
 

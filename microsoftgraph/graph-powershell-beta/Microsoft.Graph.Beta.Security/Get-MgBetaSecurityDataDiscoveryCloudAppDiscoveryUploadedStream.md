@@ -632,8 +632,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritydatadiscoverycloudappdiscoveryuploadedstream)
-- [](https://learn.microsoft.com/graph/api/security-datadiscoveryreport-list-uploadedstreams?view=graph-rest-beta)
+- [Get-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritydatadiscoverycloudappdiscoveryuploadedstream)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-datadiscoveryreport-list-uploadedstreams?view=graph-rest-beta)
 
 
 

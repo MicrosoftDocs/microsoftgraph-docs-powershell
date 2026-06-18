@@ -606,7 +606,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummary)
+- [Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummary)
 
 
 

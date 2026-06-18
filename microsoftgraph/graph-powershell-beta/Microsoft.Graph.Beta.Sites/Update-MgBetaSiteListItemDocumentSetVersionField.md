@@ -603,7 +603,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemdocumentsetversionfield)
+- [Update-MgBetaSiteListItemDocumentSetVersionField](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemdocumentsetversionfield)
 
 
 

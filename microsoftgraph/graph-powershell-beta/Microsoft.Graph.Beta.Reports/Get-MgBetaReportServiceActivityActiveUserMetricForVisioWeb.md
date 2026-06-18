@@ -508,8 +508,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityactiveusermetricforvisioweb)
-- [](https://learn.microsoft.com/graph/api/serviceactivity-getactiveusermetricsforvisioweb?view=graph-rest-beta)
+- [Get-MgBetaReportServiceActivityActiveUserMetricForVisioWeb](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityactiveusermetricforvisioweb)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceactivity-getactiveusermetricsforvisioweb?view=graph-rest-beta)
 
 
 

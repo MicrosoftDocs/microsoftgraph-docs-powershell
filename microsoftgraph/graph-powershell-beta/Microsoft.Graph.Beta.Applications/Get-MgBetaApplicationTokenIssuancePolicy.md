@@ -493,8 +493,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicy)
-- [](https://learn.microsoft.com/graph/api/application-list-tokenissuancepolicies?view=graph-rest-beta)
+- [Get-MgBetaApplicationTokenIssuancePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-list-tokenissuancepolicies?view=graph-rest-beta)
 
 
 

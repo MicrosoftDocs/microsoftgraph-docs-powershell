@@ -587,7 +587,7 @@ BODY `<IPathsKmqqcnDevicemanagementReportsMicrosoftGraphRetrieveandroidworkprofi
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportandroidworkprofiledevicemigrationstatus)
+- [Get-MgBetaDeviceManagementReportAndroidWorkProfileDeviceMigrationStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportandroidworkprofiledevicemigrationstatus)
 
 
 

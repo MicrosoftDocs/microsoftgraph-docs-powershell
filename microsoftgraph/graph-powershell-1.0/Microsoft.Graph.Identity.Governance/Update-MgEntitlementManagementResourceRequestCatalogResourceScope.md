@@ -1307,7 +1307,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestcatalogresourcescope)
+- [Update-MgEntitlementManagementResourceRequestCatalogResourceScope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestcatalogresourcescope)
 
 
 

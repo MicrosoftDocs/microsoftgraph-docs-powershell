@@ -1309,7 +1309,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotesectiongroupsectionpage)
+- [New-MgGroupOnenoteSectionGroupSectionPage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotesectiongroupsectionpage)
 
 
 

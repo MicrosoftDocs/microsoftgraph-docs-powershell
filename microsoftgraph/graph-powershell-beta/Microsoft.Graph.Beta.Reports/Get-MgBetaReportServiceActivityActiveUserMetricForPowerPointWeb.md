@@ -508,8 +508,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityactiveusermetricforpowerpointweb)
-- [](https://learn.microsoft.com/graph/api/serviceactivity-getactiveusermetricsforpowerpointweb?view=graph-rest-beta)
+- [Get-MgBetaReportServiceActivityActiveUserMetricForPowerPointWeb](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityactiveusermetricforpowerpointweb)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceactivity-getactiveusermetricsforpowerpointweb?view=graph-rest-beta)
 
 
 

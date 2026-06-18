@@ -581,8 +581,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteam)
-- [](https://learn.microsoft.com/graph/api/teamwork-list-deletedteams?view=graph-rest-beta)
+- [Get-MgBetaTeamworkDeletedTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamwork-list-deletedteams?view=graph-rest-beta)
 
 
 

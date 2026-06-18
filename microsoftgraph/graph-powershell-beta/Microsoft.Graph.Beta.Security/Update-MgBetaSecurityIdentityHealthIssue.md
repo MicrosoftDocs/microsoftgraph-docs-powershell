@@ -978,8 +978,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityhealthissue)
-- [](https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityIdentityHealthIssue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityhealthissue)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-beta)
 
 
 

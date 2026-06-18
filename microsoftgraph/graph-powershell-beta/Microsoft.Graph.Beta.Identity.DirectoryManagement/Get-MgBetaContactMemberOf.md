@@ -657,8 +657,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmemberof)
-- [](https://learn.microsoft.com/graph/api/orgcontact-list-memberof?view=graph-rest-beta)
+- [Get-MgBetaContactMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmemberof)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/orgcontact-list-memberof?view=graph-rest-beta)
 
 
 

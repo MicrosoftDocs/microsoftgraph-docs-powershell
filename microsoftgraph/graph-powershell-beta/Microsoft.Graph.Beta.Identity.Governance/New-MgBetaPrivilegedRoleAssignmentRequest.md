@@ -754,7 +754,7 @@ Only Once is supported for now.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignmentrequest)
+- [New-MgBetaPrivilegedRoleAssignmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignmentrequest)
 
 
 

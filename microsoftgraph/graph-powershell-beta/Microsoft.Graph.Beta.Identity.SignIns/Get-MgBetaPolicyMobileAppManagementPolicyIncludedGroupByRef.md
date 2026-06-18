@@ -432,8 +432,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroupbyref)
-- [](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list-includedgroups?view=graph-rest-beta)
+- [Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroupbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list-includedgroups?view=graph-rest-beta)
 
 
 

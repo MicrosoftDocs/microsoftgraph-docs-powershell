@@ -759,7 +759,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitemversion)
+- [New-MgGroupSiteListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitemversion)
 
 
 

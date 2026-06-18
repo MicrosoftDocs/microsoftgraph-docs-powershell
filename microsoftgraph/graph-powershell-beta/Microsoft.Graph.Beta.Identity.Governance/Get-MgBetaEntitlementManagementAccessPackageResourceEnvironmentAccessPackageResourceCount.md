@@ -446,7 +446,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageresourceenvironmentaccesspackageresourcecount)
+- [Get-MgBetaEntitlementManagementAccessPackageResourceEnvironmentAccessPackageResourceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageresourceenvironmentaccesspackageresourcecount)
 
 
 
