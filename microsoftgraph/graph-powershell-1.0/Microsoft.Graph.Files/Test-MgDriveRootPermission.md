@@ -15,6 +15,9 @@ title: Test-MgDriveRootPermission
 
 Invoke action validatePermission
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveRootPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)

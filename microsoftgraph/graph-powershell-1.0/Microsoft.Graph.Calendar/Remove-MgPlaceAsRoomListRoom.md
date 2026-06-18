@@ -15,6 +15,9 @@ title: Remove-MgPlaceAsRoomListRoom
 
 Delete navigation property rooms for places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

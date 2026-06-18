@@ -17,6 +17,9 @@ Used for navigating to the item that was shared.
 For file attachments, the type is fileAttachment.
 For linked attachments, the type is driveItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightSharedResource](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightSharedResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

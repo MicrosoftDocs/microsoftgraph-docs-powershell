@@ -15,6 +15,9 @@ title: New-MgPrintShareAllowedGroupByRef
 
 Grant the specified group access to submit print jobs to the associated printerShare.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

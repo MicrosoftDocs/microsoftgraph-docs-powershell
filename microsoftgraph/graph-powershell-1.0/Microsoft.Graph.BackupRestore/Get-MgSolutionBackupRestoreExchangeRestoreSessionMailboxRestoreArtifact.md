@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact
 
 A collection of restore points and destination details that can be used to restore Exchange mailboxes.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

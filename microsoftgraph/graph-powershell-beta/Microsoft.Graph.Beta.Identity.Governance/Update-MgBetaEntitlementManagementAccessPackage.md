@@ -15,6 +15,9 @@ title: Update-MgBetaEntitlementManagementAccessPackage
 
 Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

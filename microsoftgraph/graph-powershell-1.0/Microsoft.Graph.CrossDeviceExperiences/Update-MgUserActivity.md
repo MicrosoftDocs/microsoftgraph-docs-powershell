@@ -15,6 +15,9 @@ title: Update-MgUserActivity
 
 Update the navigation property activities in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Update-MgBetaUserActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

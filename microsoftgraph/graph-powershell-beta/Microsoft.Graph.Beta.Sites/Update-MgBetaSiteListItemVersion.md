@@ -15,6 +15,9 @@ title: Update-MgBetaSiteListItemVersion
 
 Update the navigation property versions in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

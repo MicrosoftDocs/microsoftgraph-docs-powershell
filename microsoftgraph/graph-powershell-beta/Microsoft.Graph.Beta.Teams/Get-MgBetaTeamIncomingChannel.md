@@ -15,6 +15,9 @@ title: Get-MgBetaTeamIncomingChannel
 
 List of channels shared with the team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamIncomingChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamIncomingChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

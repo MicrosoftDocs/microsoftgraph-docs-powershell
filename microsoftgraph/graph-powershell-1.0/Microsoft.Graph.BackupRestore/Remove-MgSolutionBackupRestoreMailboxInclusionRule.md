@@ -15,6 +15,9 @@ title: Remove-MgSolutionBackupRestoreMailboxInclusionRule
 
 Delete navigation property mailboxInclusionRules for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreMailboxInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreMailboxInclusionRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

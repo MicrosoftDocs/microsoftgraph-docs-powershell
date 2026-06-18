@@ -15,6 +15,9 @@ title: Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef
 
 Update the ref of navigation property postFederationSignup in identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgIdentityB2XUserFlowPostFederationSignupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowPostFederationSignupByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaShareListItemDocumentSetVersion
 
 Delete navigation property documentSetVersions for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete1 (Default)

@@ -15,6 +15,9 @@ title: Get-MgDriveRootListItemActivityByInterval
 
 Invoke function getActivitiesByInterval
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootListItemActivityByInterval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -16,6 +16,9 @@ title: Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet
 Initiate an export from a reviewSet.
 For more information, see Export documents from a review set in eDiscovery (Premium).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)

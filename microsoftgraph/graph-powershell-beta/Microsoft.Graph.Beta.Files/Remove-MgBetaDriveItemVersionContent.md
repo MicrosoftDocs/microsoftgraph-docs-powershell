@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveItemVersionContent
 
 Delete content for the navigation property versions in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveItemVersionContent](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemVersionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

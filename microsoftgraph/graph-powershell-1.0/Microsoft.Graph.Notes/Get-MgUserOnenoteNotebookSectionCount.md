@@ -15,6 +15,9 @@ title: Get-MgUserOnenoteNotebookSectionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteNotebookSectionCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteNotebookSectionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

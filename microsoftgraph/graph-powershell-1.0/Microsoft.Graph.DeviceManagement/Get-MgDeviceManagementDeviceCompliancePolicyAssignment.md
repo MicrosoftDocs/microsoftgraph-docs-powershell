@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDeviceCompliancePolicyAssignment
 
 The collection of assignments for this compliance policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

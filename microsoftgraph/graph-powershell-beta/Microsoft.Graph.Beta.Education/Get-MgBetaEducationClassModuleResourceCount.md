@@ -15,6 +15,9 @@ title: Get-MgBetaEducationClassModuleResourceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassModuleResourceCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassModuleResourceCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

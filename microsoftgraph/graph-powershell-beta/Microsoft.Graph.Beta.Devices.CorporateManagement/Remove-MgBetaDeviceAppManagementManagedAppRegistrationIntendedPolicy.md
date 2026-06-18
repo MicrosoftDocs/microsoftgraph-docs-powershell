@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy
 
 Delete navigation property intendedPolicies for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

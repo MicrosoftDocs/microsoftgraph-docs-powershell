@@ -15,6 +15,9 @@ title: Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceSite
 
 The SharePoint site associated with the siteSource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSourceSite](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSourceSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

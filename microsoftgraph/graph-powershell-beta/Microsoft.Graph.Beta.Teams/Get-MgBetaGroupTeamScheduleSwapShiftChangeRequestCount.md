@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamScheduleSwapShiftChangeRequestCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleSwapShiftChangeRequestCount](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleSwapShiftChangeRequestCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaRoleManagementEntitlementManagement
 
 The RbacApplication for Entitlement Management
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

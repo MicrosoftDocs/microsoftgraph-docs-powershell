@@ -16,6 +16,9 @@ title: Restart-MgBetaServicePrincipalSynchronizationJob
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restart-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Restart-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RestartExpanded (Default)

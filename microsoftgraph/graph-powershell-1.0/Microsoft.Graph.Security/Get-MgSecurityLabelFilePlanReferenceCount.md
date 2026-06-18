@@ -15,6 +15,9 @@ title: Get-MgSecurityLabelFilePlanReferenceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelFilePlanReferenceCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelFilePlanReferenceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

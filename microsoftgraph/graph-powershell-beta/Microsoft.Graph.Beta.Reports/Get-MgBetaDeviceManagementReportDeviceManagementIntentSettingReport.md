@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport
 
 Invoke action getDeviceManagementIntentSettingsReport
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportDeviceManagementIntentSettingReport](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportDeviceManagementIntentSettingReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

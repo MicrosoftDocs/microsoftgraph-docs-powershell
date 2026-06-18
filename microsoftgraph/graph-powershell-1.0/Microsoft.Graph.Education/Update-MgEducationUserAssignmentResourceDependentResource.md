@@ -15,6 +15,9 @@ title: Update-MgEducationUserAssignmentResourceDependentResource
 
 Update the navigation property dependentResources in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationUserAssignmentResourceDependentResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserAssignmentResourceDependentResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

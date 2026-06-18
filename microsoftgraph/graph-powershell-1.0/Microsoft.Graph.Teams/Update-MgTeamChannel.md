@@ -15,6 +15,9 @@ title: Update-MgTeamChannel
 
 Update the properties of the specified channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

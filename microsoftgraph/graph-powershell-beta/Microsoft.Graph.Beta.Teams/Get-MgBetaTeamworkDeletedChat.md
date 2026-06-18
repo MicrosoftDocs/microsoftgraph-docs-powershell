@@ -15,6 +15,9 @@ title: Get-MgBetaTeamworkDeletedChat
 
 Read the properties and relationships of a deletedChat object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

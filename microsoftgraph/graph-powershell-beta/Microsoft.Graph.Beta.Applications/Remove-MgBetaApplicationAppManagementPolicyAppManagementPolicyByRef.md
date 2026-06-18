@@ -16,6 +16,9 @@ title: Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef
 Remove an appManagementPolicy policy object from an application or service principal object.
 When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

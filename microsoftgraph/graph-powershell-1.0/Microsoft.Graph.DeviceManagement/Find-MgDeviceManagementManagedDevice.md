@@ -15,6 +15,9 @@ title: Find-MgDeviceManagementManagedDevice
 
 Locate a device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Find-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Locate (Default)

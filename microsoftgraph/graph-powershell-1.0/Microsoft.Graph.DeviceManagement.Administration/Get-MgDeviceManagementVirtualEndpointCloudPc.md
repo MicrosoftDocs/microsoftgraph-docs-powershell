@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementVirtualEndpointCloudPc
 
 Read the properties and relationships of a specific cloudPC object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

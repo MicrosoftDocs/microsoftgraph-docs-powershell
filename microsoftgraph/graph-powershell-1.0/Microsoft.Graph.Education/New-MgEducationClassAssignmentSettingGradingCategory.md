@@ -15,6 +15,9 @@ title: New-MgEducationClassAssignmentSettingGradingCategory
 
 Create new navigation property to gradingCategories for education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSettingGradingCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

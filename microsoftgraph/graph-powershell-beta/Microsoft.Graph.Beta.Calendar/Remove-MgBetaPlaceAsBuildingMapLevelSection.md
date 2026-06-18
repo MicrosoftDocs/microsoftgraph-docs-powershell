@@ -15,6 +15,9 @@ title: Remove-MgBetaPlaceAsBuildingMapLevelSection
 
 Delete navigation property sections for places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPlaceAsBuildingMapLevelSection](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlaceAsBuildingMapLevelSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

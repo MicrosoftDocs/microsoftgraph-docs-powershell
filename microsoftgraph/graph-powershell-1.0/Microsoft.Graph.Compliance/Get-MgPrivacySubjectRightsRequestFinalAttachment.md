@@ -16,6 +16,9 @@ title: Get-MgPrivacySubjectRightsRequestFinalAttachment
 Get the final attachment for a subject rights request.
 The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestFinalAttachment](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestFinalAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

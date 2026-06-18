@@ -15,6 +15,9 @@ title: Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
 
 Get the status of a tenant joining a multi-tenant organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

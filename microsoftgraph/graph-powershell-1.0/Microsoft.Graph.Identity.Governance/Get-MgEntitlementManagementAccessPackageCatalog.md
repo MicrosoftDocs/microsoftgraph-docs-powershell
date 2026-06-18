@@ -17,6 +17,9 @@ Required when creating the access package.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageCatalog?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

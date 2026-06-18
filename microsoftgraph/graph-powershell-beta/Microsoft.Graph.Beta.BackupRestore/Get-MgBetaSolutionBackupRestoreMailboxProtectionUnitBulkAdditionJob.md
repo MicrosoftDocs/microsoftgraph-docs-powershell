@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob
 
 Get mailboxProtectionUnitsBulkAdditionJobs from solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

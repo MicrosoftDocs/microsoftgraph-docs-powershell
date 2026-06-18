@@ -16,6 +16,9 @@ title: Get-MgGroupDelta
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

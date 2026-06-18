@@ -15,6 +15,9 @@ title: Get-MgAllTeamMessage
 
 Invoke function getAllMessages
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAllTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllTeamMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

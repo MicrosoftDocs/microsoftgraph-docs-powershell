@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 Read the properties and relationships of an allowedValue object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

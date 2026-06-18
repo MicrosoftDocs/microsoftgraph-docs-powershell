@@ -15,6 +15,9 @@ title: Update-MgBetaUserChatTab
 
 Update the navigation property tabs in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

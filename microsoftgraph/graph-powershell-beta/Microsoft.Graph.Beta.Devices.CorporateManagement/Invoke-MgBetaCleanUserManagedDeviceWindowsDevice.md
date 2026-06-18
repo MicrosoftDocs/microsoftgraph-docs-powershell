@@ -15,6 +15,9 @@ title: Invoke-MgBetaCleanUserManagedDeviceWindowsDevice
 
 Clean Windows device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCleanUserManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgCleanUserManagedDeviceWindowsDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CleanExpanded (Default)

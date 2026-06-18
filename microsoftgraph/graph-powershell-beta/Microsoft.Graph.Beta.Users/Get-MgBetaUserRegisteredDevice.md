@@ -18,6 +18,9 @@ Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserRegisteredDevice](/powershell/module/Microsoft.Graph.Users/Get-MgUserRegisteredDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Set-MgBetaDriveItemVersionContent
 
 Update content for the navigation property versions in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDriveItemVersionContent](/powershell/module/Microsoft.Graph.Files/Set-MgDriveItemVersionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

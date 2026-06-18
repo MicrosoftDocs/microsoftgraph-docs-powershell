@@ -15,6 +15,9 @@ title: Remove-MgBetaPlannerTaskProgressTaskBoardFormat
 
 Delete navigation property progressTaskBoardFormat for planner
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerTaskProgressTaskBoardFormat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

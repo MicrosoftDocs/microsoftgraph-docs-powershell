@@ -17,6 +17,9 @@ Get the properties and relationships of the specified identity provider configur
 Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can get a socialIdentityProvider, appleManagedIdentityProvider (external tenant only), builtinIdentityProvider, or an oidcIdentityProvider (external tenant only) resource.
 In Azure AD B2C, this operation can get a socialIdentityProvider, appleManagedIdentityProvider, builtinIdentityProvider, or an openIdConnectIdentityProvider resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityProvider?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

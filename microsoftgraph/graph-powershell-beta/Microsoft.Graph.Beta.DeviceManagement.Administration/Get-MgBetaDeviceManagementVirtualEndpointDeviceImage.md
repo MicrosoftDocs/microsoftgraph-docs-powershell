@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementVirtualEndpointDeviceImage
 
 Read the properties and relationships of a specific cloudPcDeviceImage object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

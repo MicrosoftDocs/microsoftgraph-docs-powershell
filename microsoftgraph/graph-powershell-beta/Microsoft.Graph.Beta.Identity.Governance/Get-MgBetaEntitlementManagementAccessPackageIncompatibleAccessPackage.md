@@ -15,6 +15,9 @@ title: Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage
 
 Retrieve a list of the accessPackage objects marked as incompatible on an accessPackage.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

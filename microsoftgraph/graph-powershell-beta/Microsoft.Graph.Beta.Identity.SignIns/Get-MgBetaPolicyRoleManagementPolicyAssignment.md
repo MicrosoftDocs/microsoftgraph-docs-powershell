@@ -15,6 +15,9 @@ title: Get-MgBetaPolicyRoleManagementPolicyAssignment
 
 Represents the role management policy assignments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

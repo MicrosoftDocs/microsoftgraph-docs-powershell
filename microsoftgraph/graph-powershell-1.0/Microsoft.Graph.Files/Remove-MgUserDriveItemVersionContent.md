@@ -15,6 +15,9 @@ title: Remove-MgUserDriveItemVersionContent
 
 The content stream for this version of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

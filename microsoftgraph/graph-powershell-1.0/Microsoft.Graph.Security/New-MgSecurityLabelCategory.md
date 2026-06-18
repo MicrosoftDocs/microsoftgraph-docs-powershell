@@ -15,6 +15,9 @@ title: New-MgSecurityLabelCategory
 
 Create a new categoryTemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

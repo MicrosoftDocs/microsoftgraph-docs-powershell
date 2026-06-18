@@ -15,6 +15,9 @@ title: Update-MgBetaUserManagedDeviceCompliancePolicyState
 
 Update the navigation property deviceCompliancePolicyStates in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

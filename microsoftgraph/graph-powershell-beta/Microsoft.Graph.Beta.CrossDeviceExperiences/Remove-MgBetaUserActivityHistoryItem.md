@@ -15,6 +15,9 @@ title: Remove-MgBetaUserActivityHistoryItem
 
 Delete navigation property historyItems for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserActivityHistoryItem](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Remove-MgUserActivityHistoryItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

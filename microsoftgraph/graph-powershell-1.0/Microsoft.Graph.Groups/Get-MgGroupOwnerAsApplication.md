@@ -15,6 +15,9 @@ title: Get-MgGroupOwnerAsApplication
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOwnerAsApplication](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerAsApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

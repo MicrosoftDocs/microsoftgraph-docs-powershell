@@ -17,6 +17,9 @@ Get a list of newly-created or updated assignments without reading the entire co
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)

@@ -15,6 +15,9 @@ title: Remove-MgSolutionBackupRestoreExchangeRestoreSession
 
 Delete navigation property exchangeRestoreSessions for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreExchangeRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreExchangeRestoreSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

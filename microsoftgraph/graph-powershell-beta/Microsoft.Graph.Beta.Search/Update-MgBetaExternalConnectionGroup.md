@@ -15,6 +15,9 @@ title: Update-MgBetaExternalConnectionGroup
 
 Update the navigation property groups in external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -16,6 +16,9 @@ title: Invoke-MgDismissRiskyUser
 Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaDismissRiskyUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### DismissExpanded (Default)

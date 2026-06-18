@@ -15,6 +15,9 @@ title: Update-MgBetaGroupDriveListContentTypeColumnLink
 
 Update the navigation property columnLinks in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveListContentTypeColumnLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

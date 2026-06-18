@@ -15,6 +15,9 @@ title: Get-MgGroupSiteTermStoreSetParentGroupSetChildCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)

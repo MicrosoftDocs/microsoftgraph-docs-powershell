@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSign
 
 Update the navigation property includeApplications in identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

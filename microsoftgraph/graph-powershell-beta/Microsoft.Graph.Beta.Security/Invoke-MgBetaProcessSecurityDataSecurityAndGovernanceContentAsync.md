@@ -15,6 +15,9 @@ title: Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync
 
 Invoke action processContentAsync
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync](/powershell/module/Microsoft.Graph.Security/Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ProcessExpanded (Default)

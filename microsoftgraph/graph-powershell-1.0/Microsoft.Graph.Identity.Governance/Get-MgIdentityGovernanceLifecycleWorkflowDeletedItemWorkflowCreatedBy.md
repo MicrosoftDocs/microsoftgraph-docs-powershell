@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCreatedBy
 
 The user who created the workflow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCreatedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCreatedBy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

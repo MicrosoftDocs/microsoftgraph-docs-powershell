@@ -16,6 +16,9 @@ title: Get-MgApplication
 Get the properties and relationships of an application object.
 This API can be used to get agentIdentityBlueprint objects as well by their ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

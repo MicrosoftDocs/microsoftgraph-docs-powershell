@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 
 Read the properties and relationships of a cloudPcProvisioningPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

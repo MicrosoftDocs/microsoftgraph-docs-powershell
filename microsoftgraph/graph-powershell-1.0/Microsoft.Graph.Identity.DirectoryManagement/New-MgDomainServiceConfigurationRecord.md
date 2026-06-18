@@ -15,6 +15,9 @@ title: New-MgDomainServiceConfigurationRecord
 
 Create new navigation property to serviceConfigurationRecords for domains
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

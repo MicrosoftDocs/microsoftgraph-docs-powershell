@@ -15,6 +15,9 @@ title: New-MgBetaAgreement
 
 Add new entity to agreements
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

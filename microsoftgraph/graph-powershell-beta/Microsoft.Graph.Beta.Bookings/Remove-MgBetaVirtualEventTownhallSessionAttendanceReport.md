@@ -15,6 +15,9 @@ title: Remove-MgBetaVirtualEventTownhallSessionAttendanceReport
 
 Delete navigation property attendanceReports for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventTownhallSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventTownhallSessionAttendanceReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

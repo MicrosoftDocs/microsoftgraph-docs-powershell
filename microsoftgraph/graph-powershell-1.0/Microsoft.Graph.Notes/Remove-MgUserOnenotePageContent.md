@@ -15,6 +15,9 @@ title: Remove-MgUserOnenotePageContent
 
 The page's HTML content.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenotePageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

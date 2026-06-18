@@ -15,6 +15,9 @@ title: Get-MgEducationUserAssignmentRubric
 
 When set, the grading rubric attached to this assignment.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

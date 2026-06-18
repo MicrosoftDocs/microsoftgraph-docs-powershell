@@ -16,6 +16,9 @@ title: Get-MgBetaPolicyRoleManagementPolicyRule
 Retrieve a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

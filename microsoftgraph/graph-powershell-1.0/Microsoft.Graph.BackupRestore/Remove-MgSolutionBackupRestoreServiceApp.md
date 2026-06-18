@@ -16,6 +16,9 @@ title: Remove-MgSolutionBackupRestoreServiceApp
 Delete a serviceApp.
 When this API is called via Microsoft Graph PowerShell, it returns a 403 Forbidden response code.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreServiceApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

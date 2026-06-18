@@ -15,6 +15,9 @@ title: New-MgBetaDomainFederationConfiguration
 
 Create a new internalDomainFederation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomainFederationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

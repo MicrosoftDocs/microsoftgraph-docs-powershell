@@ -15,6 +15,9 @@ title: Get-MgBetaReportSharePointActivityPage
 
 Invoke function getSharePointActivityPages
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSharePointActivityPage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointActivityPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

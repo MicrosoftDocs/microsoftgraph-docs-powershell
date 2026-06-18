@@ -15,6 +15,9 @@ title: Stop-MgBetaIdentityGovernanceAccessReviewDefinition
 
 Invoke action stop
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Stop (Default)
