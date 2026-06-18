@@ -68,16 +68,6 @@ Represents the external MFA registered to a user for authentication using an ext
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthMethod-External.Read.All, UserAuthMethod-External.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -636,6 +626,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationexternalauthenticationmethod)
+
 
 
 

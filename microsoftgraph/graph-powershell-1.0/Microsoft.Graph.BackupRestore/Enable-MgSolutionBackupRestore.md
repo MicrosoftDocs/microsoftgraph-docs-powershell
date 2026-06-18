@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Enable the Microsoft 365 Backup Storage service for a tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -378,6 +368,7 @@ BODYPARAMETER `<IPathsI0X7PjSolutionsBackuprestoreMicrosoftGraphEnablePostReques
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/enable-mgsolutionbackuprestore)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-1.0)
+
 
 
 

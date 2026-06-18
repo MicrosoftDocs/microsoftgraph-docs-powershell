@@ -52,16 +52,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to agentRiskDetections for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ActivityDateTime
@@ -873,6 +863,7 @@ Nullable.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaagentriskdetection)
+
 
 
 
