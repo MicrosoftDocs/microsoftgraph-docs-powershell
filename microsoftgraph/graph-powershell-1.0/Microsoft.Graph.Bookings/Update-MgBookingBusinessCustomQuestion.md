@@ -70,6 +70,14 @@ This cmdlet has the following aliases,
 
 Update the properties of a bookingCustomQuestion object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.Manage.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.Manage.All, Bookings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

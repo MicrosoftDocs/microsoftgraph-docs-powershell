@@ -58,6 +58,14 @@ This cmdlet has the following aliases,
 A collection of all the members in the chat.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.Read, Chat.ReadBasic, Chat.ReadWrite, ChatMember.Read, ChatMember.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.Manage.Chat, Chat.Read.All, Chat.ReadBasic.All, Chat.ReadWrite.All, ChatMember.Read.All, ChatMember.Read.Chat, ChatMember.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

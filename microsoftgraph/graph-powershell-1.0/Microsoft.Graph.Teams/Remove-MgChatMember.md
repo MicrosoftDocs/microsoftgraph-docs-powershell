@@ -88,6 +88,14 @@ This cmdlet has the following aliases,
 
 Remove a conversationMember from a chat.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMember.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.Manage.Chat, ChatMember.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

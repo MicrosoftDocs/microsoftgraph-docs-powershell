@@ -65,6 +65,14 @@ Only teachers, students, and applications with application permissions can perfo
 Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
 Teachers can leave notes in some resources.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.Read, EduAssignments.ReadBasic, EduAssignments.ReadWrite, EduAssignments.ReadWriteBasic,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.Read.All, EduAssignments.ReadBasic.All, EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

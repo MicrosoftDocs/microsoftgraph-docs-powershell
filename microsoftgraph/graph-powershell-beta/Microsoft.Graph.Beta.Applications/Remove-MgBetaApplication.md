@@ -52,6 +52,14 @@ When deleted, apps are moved to a temporary container and can be restored within
 After that time, they are permanently deleted.
 This API can also delete an agentIdentityBlueprint object by its ID.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AgentIdentityBlueprint.DeleteRestore.All, Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
+| Application | AgentIdentityBlueprint.DeleteRestore.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

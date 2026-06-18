@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Delete a directory setting.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All, GroupSettings.ReadWrite.All, Policy.ReadWrite.Authorization,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All, GroupSettings.ReadWrite.All, Policy.ReadWrite.Authorization,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

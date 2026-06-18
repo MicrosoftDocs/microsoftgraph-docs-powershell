@@ -126,6 +126,14 @@ This cmdlet has the following aliases,
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 This API can also create an agentIdentityBlueprint object if it doesn't exist, or update properties of an existing agentIdentityBlueprint, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprint.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AgentIdentityBlueprint.AddRemoveCreds.All, AgentIdentityBlueprint.ReadWrite.All, AgentIdentityBlueprint.UpdateAuthProperties.All, AgentIdentityBlueprint.UpdateBranding.All, AgentIdentityBlueprintPrincipal.ReadWrite.All, Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
+| Application | AgentIdentityBlueprint.AddRemoveCreds.All, AgentIdentityBlueprint.ReadWrite.All, AgentIdentityBlueprint.UpdateAuthProperties.All, AgentIdentityBlueprint.UpdateBranding.All, AgentIdentityBlueprintPrincipal.ReadWrite.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

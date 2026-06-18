@@ -59,6 +59,14 @@ The events in the calendar.
 Navigation property.
 Read-only.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.Read, Calendars.ReadBasic, Group.Read.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadBasic,  |
+| Application | Calendars.Read, Calendars.ReadBasic,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

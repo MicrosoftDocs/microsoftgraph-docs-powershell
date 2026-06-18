@@ -54,6 +54,14 @@ A Team is archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All, Group.ReadWrite.All, TeamSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All, Group.ReadWrite.All, TeamSettings.ReadWrite.All, TeamSettings.ReadWrite.Group,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

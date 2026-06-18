@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.Read, PrintJob.Read.All, PrintJob.ReadBasic, PrintJob.ReadBasic.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic, PrintJob.ReadWriteBasic.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrintJob.Read.All, PrintJob.ReadBasic.All, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

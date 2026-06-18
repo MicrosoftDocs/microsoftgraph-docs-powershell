@@ -58,6 +58,14 @@ This cmdlet has the following aliases,
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
 The start and end properties are always returned in UTC.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

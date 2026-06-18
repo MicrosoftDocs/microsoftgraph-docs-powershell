@@ -48,6 +48,14 @@ Navigation property.
 Read-only.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.Read, Calendars.ReadBasic,  |
+| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadBasic,  |
+| Application | Calendars.Read, Calendars.ReadBasic,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

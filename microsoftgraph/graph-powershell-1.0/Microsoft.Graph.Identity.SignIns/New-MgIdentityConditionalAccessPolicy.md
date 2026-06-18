@@ -50,6 +50,14 @@ This cmdlet has the following aliases,
 
 Create a new conditionalAccessPolicy.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.Read.All, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.Read.All, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

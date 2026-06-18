@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Get this organizational contact's manager.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, OrgContact.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, OrgContact.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

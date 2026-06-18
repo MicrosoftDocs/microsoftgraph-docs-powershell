@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Retrieve the directory administrativeUnit that corresponds to this educationSchool.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.Read.All, EduRoster.Read, EduRoster.ReadBasic, EduRoster.Write,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.Read.All, EduRoster.Read.All, EduRoster.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

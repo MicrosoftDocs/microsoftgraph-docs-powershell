@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 
 Add a conversationMember to a chat.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadWrite, ChatMember.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.Manage.Chat, Chat.ReadWrite.All, ChatMember.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -53,6 +53,14 @@ This cmdlet has the following aliases,
 Send activity feed notifications to multiple users in bulk.
 For more information, see sending Teams activity notifications.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsActivity.Send,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsActivity.Send, TeamsActivity.Send.User,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

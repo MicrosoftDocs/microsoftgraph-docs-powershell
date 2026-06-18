@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Restore a  deletedChat to an active chat.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ManageDeletion.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.ManageDeletion.All, Chat.ManageDeletion.Chat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

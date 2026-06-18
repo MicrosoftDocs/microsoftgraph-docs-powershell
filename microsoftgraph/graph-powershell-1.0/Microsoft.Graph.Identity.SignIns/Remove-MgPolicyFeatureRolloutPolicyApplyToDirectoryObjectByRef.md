@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All, Policy.ReadWrite.HybridAuthentication,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

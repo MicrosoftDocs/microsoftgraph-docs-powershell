@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Remove a member from a group via the members navigation property.
 You can't remove a member from groups with dynamic memberships.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All, Group.ReadWrite.All, GroupMember.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All, Group.ReadWrite.All, GroupMember.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

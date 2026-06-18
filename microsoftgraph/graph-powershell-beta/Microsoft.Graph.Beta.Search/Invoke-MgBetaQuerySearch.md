@@ -49,6 +49,14 @@ This cmdlet has the following aliases,
 Run a specified search query.
 Search results are provided in the response.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Acronym.Read.All, Bookmark.Read.All, Calendars.Read, Chat.Read, ExternalItem.Read.All, Files.Read.All, Mail.Read, QnA.Read.All, Sites.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Files.Read.All, Sites.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

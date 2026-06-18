@@ -96,6 +96,14 @@ This cmdlet has the following aliases,
 
 Update the properties of the specified team.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All, Group.ReadWrite.All, TeamSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All, Group.ReadWrite.All, TeamSettings.ReadWrite.All, TeamSettings.ReadWrite.Group,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Deletes a user's emailAuthenticationMethod object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Email.ReadWrite, UserAuthMethod-Email.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Email.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

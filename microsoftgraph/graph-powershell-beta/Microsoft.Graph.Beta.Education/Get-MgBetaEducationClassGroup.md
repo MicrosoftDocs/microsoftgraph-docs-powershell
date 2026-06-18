@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Retrieve the Microsoft 365 group that corresponds to this educationClass.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.Read.All, EduRoster.Read, EduRoster.ReadBasic, EduRoster.Write,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.Read.All, EduRoster.Read.All, EduRoster.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

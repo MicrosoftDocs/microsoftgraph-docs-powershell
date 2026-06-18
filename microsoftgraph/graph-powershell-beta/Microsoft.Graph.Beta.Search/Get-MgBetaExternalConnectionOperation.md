@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Get operations from external
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ExternalConnection.Read.All, ExternalConnection.ReadWrite.All, ExternalConnection.ReadWrite.OwnedBy,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalConnection.Read.All, ExternalConnection.ReadWrite.All, ExternalConnection.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

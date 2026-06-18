@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a call object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.AccessMedia.All, Calls.Initiate.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

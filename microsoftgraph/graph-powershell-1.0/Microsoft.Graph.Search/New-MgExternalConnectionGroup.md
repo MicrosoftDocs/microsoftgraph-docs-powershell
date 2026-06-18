@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 
 Create a new externalGroup object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ExternalItem.ReadWrite.All, ExternalItem.ReadWrite.OwnedBy,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalItem.ReadWrite.All, ExternalItem.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

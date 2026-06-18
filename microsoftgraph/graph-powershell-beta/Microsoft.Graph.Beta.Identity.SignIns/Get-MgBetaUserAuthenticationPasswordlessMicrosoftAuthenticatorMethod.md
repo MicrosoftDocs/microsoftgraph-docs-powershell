@@ -59,6 +59,14 @@ This cmdlet has the following aliases,
 
 Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-MicrosoftAuthApp.Read, UserAuthMethod-MicrosoftAuthApp.Read.All, UserAuthMethod-MicrosoftAuthApp.ReadWrite, UserAuthMethod-MicrosoftAuthApp.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-MicrosoftAuthApp.Read.All, UserAuthMethod-MicrosoftAuthApp.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

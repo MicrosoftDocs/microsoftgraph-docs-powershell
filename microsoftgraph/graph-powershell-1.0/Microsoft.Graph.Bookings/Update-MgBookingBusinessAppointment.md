@@ -90,6 +90,14 @@ This cmdlet has the following aliases,
 
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.Manage.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
