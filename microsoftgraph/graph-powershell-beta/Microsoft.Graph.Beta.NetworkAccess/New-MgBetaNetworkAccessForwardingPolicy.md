@@ -287,7 +287,7 @@ HelpMessage: ''
 
 ### -PrivateAccessAppId
 
-.
+
 
 ```yaml
 Type: System.String

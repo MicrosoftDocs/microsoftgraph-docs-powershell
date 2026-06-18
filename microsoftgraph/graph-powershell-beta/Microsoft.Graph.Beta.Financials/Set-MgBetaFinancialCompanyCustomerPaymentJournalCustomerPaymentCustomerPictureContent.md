@@ -179,7 +179,7 @@ HelpMessage: ''
 
 ### -Data
 
-.
+
 
 ```yaml
 Type: System.IO.Stream

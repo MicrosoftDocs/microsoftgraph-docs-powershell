@@ -323,7 +323,7 @@ HelpMessage: ''
 
 ### -IsManualApprovalEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -350,7 +350,7 @@ HelpMessage: ''
 
 ### -IsWaitlistEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

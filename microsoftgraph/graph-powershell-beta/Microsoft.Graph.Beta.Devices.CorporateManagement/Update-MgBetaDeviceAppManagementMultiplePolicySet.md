@@ -86,7 +86,7 @@ Invoke action update
 
 ### -AddedPolicySetItems
 
-.
+
 To construct, see NOTES section for ADDEDPOLICYSETITEMS properties and create a hash table.
 
 ```yaml
@@ -141,7 +141,7 @@ HelpMessage: ''
 
 ### -Assignments
 
-.
+
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -169,7 +169,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -240,7 +240,7 @@ HelpMessage: ''
 
 ### -DeletedPolicySetItems
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -491,7 +491,7 @@ HelpMessage: ''
 
 ### -UpdatedPolicySetItems
 
-.
+
 To construct, see NOTES section for UPDATEDPOLICYSETITEMS properties and create a hash table.
 
 ```yaml

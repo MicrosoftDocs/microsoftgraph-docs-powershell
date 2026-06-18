@@ -127,7 +127,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -198,7 +198,7 @@ HelpMessage: ''
 
 ### -CurrentPassword
 
-.
+
 
 ```yaml
 Type: System.String
@@ -316,7 +316,7 @@ HelpMessage: ''
 
 ### -NewPassword
 
-.
+
 
 ```yaml
 Type: System.String

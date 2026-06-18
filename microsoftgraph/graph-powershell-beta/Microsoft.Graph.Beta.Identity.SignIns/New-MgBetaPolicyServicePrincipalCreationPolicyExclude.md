@@ -105,7 +105,7 @@ HelpMessage: ''
 
 ### -ApplicationIds
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -132,7 +132,7 @@ HelpMessage: ''
 
 ### -ApplicationPublisherIds
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -159,7 +159,7 @@ HelpMessage: ''
 
 ### -ApplicationsFromVerifiedPublisherOnly
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ HelpMessage: ''
 
 ### -ApplicationTenantIds
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -262,7 +262,7 @@ HelpMessage: ''
 
 ### -CertifiedApplicationsOnly
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

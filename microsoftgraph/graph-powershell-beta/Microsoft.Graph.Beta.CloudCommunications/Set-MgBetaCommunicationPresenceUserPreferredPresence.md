@@ -87,7 +87,7 @@ Read more about presence sessions and their time-out and expiration.
 
 ### -Activity
 
-.
+
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ HelpMessage: ''
 
 ### -Availability
 
-.
+
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -239,7 +239,7 @@ HelpMessage: ''
 
 ### -ExpirationDuration
 
-.
+
 
 ```yaml
 Type: System.TimeSpan

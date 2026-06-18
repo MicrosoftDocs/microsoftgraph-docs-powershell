@@ -180,7 +180,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -234,7 +234,7 @@ HelpMessage: ''
 
 ### -Description
 
-.
+
 
 ```yaml
 Type: System.String
@@ -261,7 +261,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -407,7 +407,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -434,7 +434,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -488,7 +488,7 @@ HelpMessage: ''
 
 ### -ManagementTemplates
 
-.
+
 To construct, see NOTES section for MANAGEMENTTEMPLATES properties and create a hash table.
 
 ```yaml

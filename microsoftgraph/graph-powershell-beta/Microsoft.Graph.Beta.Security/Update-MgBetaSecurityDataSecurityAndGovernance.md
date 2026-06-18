@@ -225,7 +225,7 @@ HelpMessage: ''
 
 ### -PolicyFiles
 
-.
+
 To construct, see NOTES section for POLICYFILES properties and create a hash table.
 
 ```yaml
@@ -353,7 +353,7 @@ HelpMessage: ''
 
 ### -SensitivityLabels
 
-.
+
 To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
