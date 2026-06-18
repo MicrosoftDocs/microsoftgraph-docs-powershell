@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-ms.date: 02/20/2026
+ms.date: 06/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPrintPrinterShareJob
 ---
@@ -77,11 +77,21 @@ This cmdlet has the following aliases,
 
 Create new navigation property to jobs for print
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AcknowledgedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -184,7 +194,7 @@ HelpMessage: ''
 
 ### -CompletedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -344,7 +354,7 @@ HelpMessage: ''
 
 ### -Documents
 
-
+.
 To construct, see NOTES section for DOCUMENTS properties and create a hash table.
 
 ```yaml
@@ -372,7 +382,7 @@ HelpMessage: ''
 
 ### -ErrorCode
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -821,7 +831,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintJob>`: printJob
+BODYPARAMETER <IMicrosoftGraphPrintJob>: printJob
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -959,7 +969,7 @@ Read-only.
       [Definition <IMicrosoftGraphPrintTaskDefinition>]: printTaskDefinition
       [Event <String>]: printEvent
 
-CONFIGURATION `<IMicrosoftGraphPrintJobConfiguration>`: printJobConfiguration
+CONFIGURATION <IMicrosoftGraphPrintJobConfiguration>: printJobConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Collate <Boolean?>]: Whether the printer should collate pages when printing multiple copies of a multi-page document.
   [ColorMode <String>]: printColorMode
@@ -999,7 +1009,7 @@ Read-only.
   [Quality <String>]: printQuality
   [Scaling <String>]: printScaling
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+CREATEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1052,7 +1062,7 @@ Read-only.
 Read-only.
   [UploadedDateTime <DateTime?>]: 
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -1067,7 +1077,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   [PrinterShareId <String>]: The unique identifier of printerShare
   [UserId <String>]: The unique identifier of user
 
-STATUS `<IMicrosoftGraphPrintJobStatus>`: printJobStatus
+STATUS <IMicrosoftGraphPrintJobStatus>: printJobStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcquiredByPrinter <Boolean?>]: 
   [Description <String>]: A human-readable description of the print job's current processing state.
@@ -1115,27 +1125,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaPrintPrinterShareJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejob)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejob)

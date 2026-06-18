@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplacecheck
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 06/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPlaceCheck
 ---
@@ -15,9 +15,6 @@ title: New-MgPlaceCheck
 
 Create a new checkInClaim object to record the check-in status for a specific place, such as a desk or a room, associated with a specific calendar reservation.
 This check-in confirms that the reserved space is in use and prevents automatic release if auto-release policies are configured for that place.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlaceCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceCheck?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,6 +69,20 @@ This cmdlet has the following aliases,
 
 Create a new checkInClaim object to record the check-in status for a specific place, such as a desk or a room, associated with a specific calendar reservation.
 This check-in confirms that the reserved space is in use and prevents automatic release if auto-release policies are configured for that place.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.checkInClaim"
+	calendarEventId = "040000008200E00074C5B7101A82E00800000000D02AC02D26EFDB010000000000000000100000005A18ADA04F0A24489AE13ED3CC367978"
+	checkInMethod = "verified"
+}
+
+New-MgPlaceCheck -PlaceId $placeId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -516,7 +527,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCheckInClaim>`: checkInClaim
+BODYPARAMETER <IMicrosoftGraphCheckInClaim>: checkInClaim
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
 For more information, see the iCalUId property in event.
@@ -525,7 +536,7 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -548,28 +559,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgPlaceCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplacecheck)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-post-checkins?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplacecheck)
+- [](https://learn.microsoft.com/graph/api/place-post-checkins?view=graph-rest-1.0)

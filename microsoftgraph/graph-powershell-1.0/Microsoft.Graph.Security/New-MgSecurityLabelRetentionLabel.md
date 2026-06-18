@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelretentionlabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 06/18/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityLabelRetentionLabel
 ---
@@ -15,9 +15,6 @@ title: New-MgSecurityLabelRetentionLabel
 
 Create a new retentionLabel object.
 To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelRetentionLabel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,6 +55,46 @@ This cmdlet has the following aliases,
 
 Create a new retentionLabel object.
 To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.retentionLabel"
+	displayName = "Retention Schedule 10005"
+	behaviorDuringRetentionPeriod = "retain"
+	actionAfterRetentionPeriod = "startDispositionReview"
+	retentionTrigger = "dateOfEvent"
+	"retentionEventType@odata.bind" = "https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventTypes('e095f4fc-b966-4c40-94de-fb8a383658e4')"
+	retentionDuration = @{
+		"@odata.type" = "microsoft.graph.security.retentionDurationInDays"
+		days = 
+	}
+	dispositionReviewStages = @(
+		@{
+			stageNumber = 1
+			name = "Stage1"
+			"reviewersEmailAddresses " = @(
+			"Admin@contoso.onmicrosoft.com"
+		)
+	}
+)
+descriptionForAdmins = "retain for 7 years"
+descriptionForUsers = "retain for 7 years"
+descriptors = @{
+	"authorityTemplate@odata.bind" = "https://graph.microsoft.com/v1.0/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')"
+	"categoryTemplate@odata.bind" = "https://graph.microsoft.com/v1.0/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')"
+	"citationTemplate@odata.bind" = "https://graph.microsoft.com/v1.0/security/labels/citations('0e23f4fc-b966-4c40-94de-fb8a383658e4')"
+	"departmentTemplate@odata.bind" = "https://graph.microsoft.com/v1.0/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')"
+	"filePlanReferenceTemplate@odata.bind" = "https://graph.microsoft.com/v1.0/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')"
+}
+defaultRecordBehavior = "startLocked"
+}
+
+New-MgSecurityLabelRetentionLabel -BodyParameter $params
 
 ## PARAMETERS
 
@@ -733,7 +770,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityRetentionLabel>`: retentionLabel
+BODYPARAMETER <IMicrosoftGraphSecurityRetentionLabel>: retentionLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -847,7 +884,7 @@ Read-only.
     [LastModifiedDateTime <DateTime?>]: The latest date time when the retentionEventType was modified.
   [RetentionTrigger <String>]: retentionTrigger
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -858,7 +895,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DESCRIPTORS `<IMicrosoftGraphSecurityFilePlanDescriptor>`: filePlanDescriptor
+DESCRIPTORS <IMicrosoftGraphSecurityFilePlanDescriptor>: filePlanDescriptor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -942,7 +979,7 @@ Read-only.
   [ReviewersEmailAddresses <String[]>]: A collection of reviewers at each stage.
   [StageNumber <String>]: The unique sequence number for each stage of the disposition review.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -953,7 +990,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-RETENTIONEVENTTYPE `<IMicrosoftGraphSecurityRetentionEventType>`: retentionEventType
+RETENTIONEVENTTYPE <IMicrosoftGraphSecurityRetentionEventType>: retentionEventType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -976,28 +1013,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgSecurityLabelRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelretentionlabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelretentionlabel)
+- [](https://learn.microsoft.com/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-1.0)

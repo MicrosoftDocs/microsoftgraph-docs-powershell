@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 06/18/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationClassModuleResource
 ---
@@ -16,9 +16,6 @@ title: New-MgEducationClassModuleResource
 Create a resource in a module.
 Only teachers can perform this operation.
 You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,18 +72,9 @@ Create a resource in a module.
 Only teachers can perform this operation.
 You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduCurricula.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduCurricula.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
@@ -100,12 +88,7 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Education
 
@@ -121,12 +104,7 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Education
 
@@ -142,12 +120,7 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Education
 
@@ -163,12 +136,7 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 5: Code snippet
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Education
 
@@ -182,12 +150,7 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 6: Code snippet
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Education
 
@@ -201,12 +164,7 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 7: Code snippet
-
-```powershell
+### EXAMPLE 7
 
 Import-Module Microsoft.Graph.Education
 
@@ -220,12 +178,7 @@ $params = @{
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
-### Example 8: Code snippet
-
-```powershell
+### EXAMPLE 8
 
 Import-Module Microsoft.Graph.Education
 
@@ -238,10 +191,6 @@ $params = @{
 }
 
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -685,7 +634,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationModuleResource>`: educationModuleResource
+BODYPARAMETER <IMicrosoftGraphEducationModuleResource>: educationModuleResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -704,7 +653,7 @@ For example, in the access reviews decisions API, this property might record the
     [DisplayName <String>]: Display name of resource.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -726,7 +675,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
   [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
 
-RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
+RESOURCE <IMicrosoftGraphEducationResource>: educationResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -744,27 +693,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgEducationClassModuleResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-post-resources?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource)
+- [](https://learn.microsoft.com/graph/api/educationmodule-post-resources?view=graph-rest-1.0)
