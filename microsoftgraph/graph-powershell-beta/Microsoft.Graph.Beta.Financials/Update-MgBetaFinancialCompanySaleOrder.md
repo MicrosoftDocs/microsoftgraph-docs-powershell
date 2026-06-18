@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleorder
@@ -1469,7 +1469,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BILLINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+BILLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1477,7 +1477,7 @@ BILLINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-BODYPARAMETER <IMicrosoftGraphSalesOrder>: salesOrder
+BODYPARAMETER `<IMicrosoftGraphSalesOrder>`: salesOrder
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BillToCustomerId <String>]: 
   [BillToCustomerNumber <String>]: 
@@ -1641,7 +1641,7 @@ Read-only.
   [TotalAmountIncludingTax <Decimal?>]: 
   [TotalTaxAmount <Decimal?>]: 
 
-CURRENCY <IMicrosoftGraphCurrency>: currency
+CURRENCY `<IMicrosoftGraphCurrency>`: currency
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AmountDecimalPlaces <String>]: 
   [AmountRoundingPrecision <Decimal?>]: 
@@ -1651,7 +1651,7 @@ CURRENCY <IMicrosoftGraphCurrency>: currency
   [LastModifiedDateTime <DateTime?>]: 
   [Symbol <String>]: 
 
-CUSTOMER <IMicrosoftGraphCustomer>: customer
+CUSTOMER `<IMicrosoftGraphCustomer>`: customer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1716,7 +1716,7 @@ CUSTOMER <IMicrosoftGraphCustomer>: customer
   [Type <String>]: 
   [Website <String>]: 
 
-INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1754,7 +1754,7 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-PAYMENTTERM <IMicrosoftGraphPaymentTerm>: paymentTerm
+PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalculateDiscountOnCreditMemos <Boolean?>]: 
   [Code <String>]: 
@@ -1834,7 +1834,7 @@ Read-only.
   [UnitOfMeasureId <String>]: 
   [UnitPrice <Decimal?>]: 
 
-SELLINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+SELLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1842,7 +1842,7 @@ SELLINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-SHIPPINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+SHIPPINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1854,3 +1854,25 @@ SHIPPINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleorder)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

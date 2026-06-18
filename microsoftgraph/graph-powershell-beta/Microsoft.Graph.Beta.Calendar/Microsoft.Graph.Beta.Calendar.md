@@ -542,3 +542,22 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserEvent](Update-MgBetaUserEvent.md)
 
 ### [Update-MgBetaUserEventExtension](Update-MgBetaUserEventExtension.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

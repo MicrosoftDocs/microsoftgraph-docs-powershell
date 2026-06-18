@@ -38,3 +38,22 @@ Microsoft Graph PowerShell Cmdlets
 ### [Test-MgBetaDirectoryObjectProperty](Test-MgBetaDirectoryObjectProperty.md)
 
 ### [Update-MgBetaDirectoryObject](Update-MgBetaDirectoryObject.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

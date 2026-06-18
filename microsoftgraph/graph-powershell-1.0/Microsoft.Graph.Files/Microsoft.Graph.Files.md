@@ -2732,3 +2732,22 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserDriveRootThumbnail](Update-MgUserDriveRootThumbnail.md)
 
 ### [Update-MgUserDriveRootVersion](Update-MgUserDriveRootVersion.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

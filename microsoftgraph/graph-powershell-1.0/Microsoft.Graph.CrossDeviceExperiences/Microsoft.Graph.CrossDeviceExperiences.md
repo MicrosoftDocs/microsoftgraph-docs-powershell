@@ -38,3 +38,22 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserActivity](Update-MgUserActivity.md)
 
 ### [Update-MgUserActivityHistoryItem](Update-MgUserActivityHistoryItem.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

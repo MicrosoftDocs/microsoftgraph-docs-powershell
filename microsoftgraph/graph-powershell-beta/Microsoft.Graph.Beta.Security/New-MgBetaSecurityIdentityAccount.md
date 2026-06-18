@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityaccount
@@ -500,7 +500,7 @@ ACCOUNTS <IMicrosoftGraphSecurityAccount[]>: .
   [Identifier <String>]: 
   [IdentityProvider <String>]: identityProvider
 
-BODYPARAMETER <IMicrosoftGraphSecurityIdentityAccounts>: identityAccounts
+BODYPARAMETER `<IMicrosoftGraphSecurityIdentityAccounts>`: identityAccounts
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -518,3 +518,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityaccount)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

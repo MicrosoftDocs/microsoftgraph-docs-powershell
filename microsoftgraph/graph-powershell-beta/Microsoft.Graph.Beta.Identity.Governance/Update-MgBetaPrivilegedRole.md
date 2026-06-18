@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedrole
@@ -617,7 +617,7 @@ Read-only.
       [UsersCount <Int32?>]: 
   [UserId <String>]: 
 
-BODYPARAMETER <IMicrosoftGraphPrivilegedRole>: privilegedRole
+BODYPARAMETER `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -655,7 +655,7 @@ Read-only.
     [Status <String>]: roleSummaryStatus
     [UsersCount <Int32?>]: 
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -766,7 +766,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-SETTINGS <IMicrosoftGraphPrivilegedRoleSettings>: privilegedRoleSettings
+SETTINGS `<IMicrosoftGraphPrivilegedRoleSettings>`: privilegedRoleSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -781,7 +781,7 @@ Read-only.
   [NotificationToUserOnElevation <Boolean?>]: 
   [TicketingInfoOnElevation <Boolean?>]: 
 
-SUMMARY <IMicrosoftGraphPrivilegedRoleSummary>: privilegedRoleSummary
+SUMMARY `<IMicrosoftGraphPrivilegedRoleSummary>`: privilegedRoleSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -795,3 +795,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedrole)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

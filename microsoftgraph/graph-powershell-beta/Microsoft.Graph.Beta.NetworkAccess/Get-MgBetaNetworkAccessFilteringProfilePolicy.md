@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofilepolicy
@@ -14,7 +14,7 @@ title: Get-MgBetaNetworkAccessFilteringProfilePolicy
 ## SYNOPSIS
 
 Get a filteringPolicyLink object.
-The returned object can be a:\r\n- cloudFirewallPolicyLink\r\n- threatIntelligencePolicyLink\r\n- tlsInspectionPolicyLink
+The returned object can be a:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
 
 ## SYNTAX
 
@@ -78,7 +78,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a filteringPolicyLink object.
-The returned object can be a:\r\n- cloudFirewallPolicyLink\r\n- threatIntelligencePolicyLink\r\n- tlsInspectionPolicyLink
+The returned object can be a:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
 
 ## EXAMPLES
 
@@ -597,7 +597,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
+INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -632,3 +632,25 @@ INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-list-policy?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-list?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

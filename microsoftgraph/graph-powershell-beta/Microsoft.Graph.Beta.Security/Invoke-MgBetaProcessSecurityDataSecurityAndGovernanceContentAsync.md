@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontentasync
@@ -368,7 +368,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IPaths15Nzuf0SecurityDatasecurityandgovernanceMicrosoftGraphProcesscontentasyncPostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPaths15Nzuf0SecurityDatasecurityandgovernanceMicrosoftGraphProcesscontentasyncPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ProcessContentRequests <IMicrosoftGraphProcessContentBatchRequest[]>]: 
     [ContentToProcess <IMicrosoftGraphProcessContentRequest>]: processContentRequest
@@ -472,3 +472,25 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontentasync)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
