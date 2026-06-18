@@ -331,7 +331,7 @@ HelpMessage: ''
 
 ### -ScheduledPermissionsApprovals
 
-.
+
 To construct, see NOTES section for SCHEDULEDPERMISSIONSAPPROVALS properties and create a hash table.
 
 ```yaml

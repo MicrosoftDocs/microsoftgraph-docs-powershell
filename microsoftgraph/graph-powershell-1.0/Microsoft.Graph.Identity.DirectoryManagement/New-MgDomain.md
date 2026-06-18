@@ -480,7 +480,7 @@ HelpMessage: ''
 
 ### -Manufacturer
 
-.
+
 
 ```yaml
 Type: System.String
@@ -501,7 +501,7 @@ HelpMessage: ''
 
 ### -Model
 
-.
+
 
 ```yaml
 Type: System.String

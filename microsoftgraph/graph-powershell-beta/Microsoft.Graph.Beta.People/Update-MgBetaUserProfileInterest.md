@@ -546,7 +546,7 @@ HelpMessage: ''
 
 ### -IsSearchable
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -796,7 +796,7 @@ HelpMessage: ''
 
 ### -ThumbnailUrl
 
-.
+
 
 ```yaml
 Type: System.String

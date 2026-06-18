@@ -110,7 +110,7 @@ HelpMessage: ''
 
 ### -BlueScreenCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -165,7 +165,7 @@ HelpMessage: ''
 
 ### -BootTotalDurationInSeconds
 
-.
+
 
 ```yaml
 Type: System.Double
@@ -262,7 +262,7 @@ HelpMessage: ''
 
 ### -DeviceId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -289,7 +289,7 @@ HelpMessage: ''
 
 ### -DeviceMake
 
-.
+
 
 ```yaml
 Type: System.String
@@ -316,7 +316,7 @@ HelpMessage: ''
 
 ### -DeviceModel
 
-.
+
 
 ```yaml
 Type: System.String
@@ -343,7 +343,7 @@ HelpMessage: ''
 
 ### -DeviceName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -391,7 +391,7 @@ HelpMessage: ''
 
 ### -HealthStatus
 
-.
+
 
 ```yaml
 Type: System.String
@@ -516,7 +516,7 @@ HelpMessage: ''
 
 ### -LastUpdatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -543,7 +543,7 @@ HelpMessage: ''
 
 ### -OSVersion
 
-.
+
 
 ```yaml
 Type: System.String
@@ -570,7 +570,7 @@ HelpMessage: ''
 
 ### -PrimaryDiskType
 
-.
+
 
 ```yaml
 Type: System.String
@@ -682,7 +682,7 @@ HelpMessage: ''
 
 ### -RestartCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -709,7 +709,7 @@ HelpMessage: ''
 
 ### -StartupPerformanceScore
 
-.
+
 
 ```yaml
 Type: System.Double
@@ -736,7 +736,7 @@ HelpMessage: ''
 
 ### -TenantDisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -763,7 +763,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -790,7 +790,7 @@ HelpMessage: ''
 
 ### -TopProcesses
 
-.
+
 
 ```yaml
 Type: System.String

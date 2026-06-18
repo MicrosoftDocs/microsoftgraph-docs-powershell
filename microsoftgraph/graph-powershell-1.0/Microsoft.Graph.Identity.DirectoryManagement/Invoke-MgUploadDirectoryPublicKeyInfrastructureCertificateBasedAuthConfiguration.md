@@ -140,7 +140,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -435,7 +435,7 @@ HelpMessage: ''
 
 ### -Sha256FileHash
 
-.
+
 
 ```yaml
 Type: System.String
@@ -462,7 +462,7 @@ HelpMessage: ''
 
 ### -UploadUrl
 
-.
+
 
 ```yaml
 Type: System.String

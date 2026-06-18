@@ -831,7 +831,7 @@ HelpMessage: ''
 
 ### -IsPersonalSite
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

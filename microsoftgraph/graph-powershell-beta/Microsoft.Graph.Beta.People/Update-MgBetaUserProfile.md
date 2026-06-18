@@ -90,7 +90,7 @@ Update the navigation property profile in users
 
 ### -Account
 
-.
+
 To construct, see NOTES section for ACCOUNT properties and create a hash table.
 
 ```yaml

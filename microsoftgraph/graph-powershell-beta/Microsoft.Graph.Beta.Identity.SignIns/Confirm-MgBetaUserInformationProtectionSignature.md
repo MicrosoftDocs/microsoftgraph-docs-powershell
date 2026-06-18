@@ -101,7 +101,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -402,7 +402,7 @@ HelpMessage: ''
 
 ### -SigningKeyId
 
-.
+
 
 ```yaml
 Type: System.String

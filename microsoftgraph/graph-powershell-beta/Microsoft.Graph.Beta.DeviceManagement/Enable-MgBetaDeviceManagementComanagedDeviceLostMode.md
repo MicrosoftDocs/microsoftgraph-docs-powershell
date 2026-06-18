@@ -109,7 +109,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -180,7 +180,7 @@ HelpMessage: ''
 
 ### -Footer
 
-.
+
 
 ```yaml
 Type: System.String
@@ -325,7 +325,7 @@ HelpMessage: ''
 
 ### -Message
 
-.
+
 
 ```yaml
 Type: System.String
@@ -373,7 +373,7 @@ HelpMessage: ''
 
 ### -PhoneNumber
 
-.
+
 
 ```yaml
 Type: System.String
