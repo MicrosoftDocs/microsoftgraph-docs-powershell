@@ -15,6 +15,9 @@ title: New-MgBetaGroupSiteOnenoteNotebook
 
 Create new navigation property to notebooks for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebook?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

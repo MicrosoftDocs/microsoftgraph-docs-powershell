@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationReport
 
 Delete navigation property reports for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationReport](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

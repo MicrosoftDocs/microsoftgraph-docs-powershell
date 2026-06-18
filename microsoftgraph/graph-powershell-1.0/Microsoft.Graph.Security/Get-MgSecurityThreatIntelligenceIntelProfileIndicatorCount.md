@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligenceIntelProfileIndicatorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicatorCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicatorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

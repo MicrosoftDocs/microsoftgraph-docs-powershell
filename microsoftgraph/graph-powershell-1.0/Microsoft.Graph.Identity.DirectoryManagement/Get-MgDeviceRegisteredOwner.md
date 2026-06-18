@@ -18,6 +18,9 @@ A registered owner is the user that cloud joined the device or registered their 
 The registered owner is set at the time of registration.
 Currently, there can be only one owner.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

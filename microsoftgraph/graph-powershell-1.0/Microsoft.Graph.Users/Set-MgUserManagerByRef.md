@@ -15,6 +15,9 @@ title: Set-MgUserManagerByRef
 
 Assign a user's manager.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserManagerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

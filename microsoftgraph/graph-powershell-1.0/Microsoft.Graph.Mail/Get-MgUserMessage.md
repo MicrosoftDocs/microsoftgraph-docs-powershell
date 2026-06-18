@@ -17,6 +17,9 @@ The messages in a mailbox or folder.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

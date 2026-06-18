@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRes
 
 Delete navigation property granularSiteRestoreArtifacts for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

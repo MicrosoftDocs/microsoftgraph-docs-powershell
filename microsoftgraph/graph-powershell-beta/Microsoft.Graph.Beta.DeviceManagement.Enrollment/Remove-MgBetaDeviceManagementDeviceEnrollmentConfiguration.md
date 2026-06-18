@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration
 
 Delete navigation property deviceEnrollmentConfigurations for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

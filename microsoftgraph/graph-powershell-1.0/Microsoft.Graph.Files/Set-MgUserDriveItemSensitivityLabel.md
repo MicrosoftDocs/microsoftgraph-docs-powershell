@@ -15,6 +15,9 @@ title: Set-MgUserDriveItemSensitivityLabel
 
 Invoke action assignSensitivityLabel
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemSensitivityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

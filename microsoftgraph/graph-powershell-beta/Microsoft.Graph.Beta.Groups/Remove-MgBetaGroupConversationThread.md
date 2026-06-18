@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupConversationThread
 
 Delete navigation property threads for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupConversationThread?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

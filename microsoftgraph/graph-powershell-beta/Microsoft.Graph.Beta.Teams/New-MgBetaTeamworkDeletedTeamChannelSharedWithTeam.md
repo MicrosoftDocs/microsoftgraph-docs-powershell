@@ -15,6 +15,9 @@ title: New-MgBetaTeamworkDeletedTeamChannelSharedWithTeam
 
 Create new navigation property to sharedWithTeams for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

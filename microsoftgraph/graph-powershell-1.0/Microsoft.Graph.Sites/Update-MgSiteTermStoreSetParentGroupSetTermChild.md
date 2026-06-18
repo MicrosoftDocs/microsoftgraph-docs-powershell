@@ -15,6 +15,9 @@ title: Update-MgSiteTermStoreSetParentGroupSetTermChild
 
 Update the navigation property children in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStoreSetParentGroupSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSetParentGroupSetTermChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

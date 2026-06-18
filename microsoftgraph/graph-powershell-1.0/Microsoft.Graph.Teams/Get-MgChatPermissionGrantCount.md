@@ -15,6 +15,9 @@ title: Get-MgChatPermissionGrantCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatPermissionGrantCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPermissionGrantCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

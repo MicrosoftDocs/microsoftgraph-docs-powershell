@@ -17,6 +17,9 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionGroupSectionPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

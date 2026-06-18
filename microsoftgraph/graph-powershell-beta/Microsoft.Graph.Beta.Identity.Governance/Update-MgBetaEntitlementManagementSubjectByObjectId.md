@@ -15,6 +15,9 @@ title: Update-MgBetaEntitlementManagementSubjectByObjectId
 
 Update an existing accessPackageSubject object to change the subject lifecycle.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementSubjectByObjectId](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementSubjectByObjectId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

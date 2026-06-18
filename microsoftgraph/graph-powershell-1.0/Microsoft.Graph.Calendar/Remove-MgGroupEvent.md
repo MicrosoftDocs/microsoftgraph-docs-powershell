@@ -15,6 +15,9 @@ title: Remove-MgGroupEvent
 
 Delete an event object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

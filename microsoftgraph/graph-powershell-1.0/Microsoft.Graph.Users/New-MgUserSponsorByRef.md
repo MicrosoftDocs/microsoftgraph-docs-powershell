@@ -16,6 +16,9 @@ title: New-MgUserSponsorByRef
 Assign an agentUser a sponsor.
 Sponsors are users and groups that are responsible for this agent user's privileges in the tenant and for keeping the agent user's information and access up to date.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserSponsorByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

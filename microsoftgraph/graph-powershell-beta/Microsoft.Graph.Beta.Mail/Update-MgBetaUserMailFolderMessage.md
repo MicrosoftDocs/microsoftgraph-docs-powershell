@@ -15,6 +15,9 @@ title: Update-MgBetaUserMailFolderMessage
 
 Update the navigation property messages in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

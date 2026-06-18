@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreSiteInclusionRuleCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSiteInclusionRuleCount](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSiteInclusionRuleCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

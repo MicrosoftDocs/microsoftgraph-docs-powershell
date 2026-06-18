@@ -15,6 +15,9 @@ title: Update-MgEducationReportReflectCheck
 
 Update the navigation property reflectCheckInResponses in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationReportReflectCheck](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationReportReflectCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

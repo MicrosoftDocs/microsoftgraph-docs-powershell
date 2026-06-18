@@ -15,6 +15,9 @@ title: Remove-MgServicePrincipalSynchronizationTemplateSchemaDirectory
 
 Delete navigation property directories for servicePrincipals
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

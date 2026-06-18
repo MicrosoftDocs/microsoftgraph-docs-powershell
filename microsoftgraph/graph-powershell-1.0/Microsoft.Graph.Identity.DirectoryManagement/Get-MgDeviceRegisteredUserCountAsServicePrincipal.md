@@ -15,6 +15,9 @@ title: Get-MgDeviceRegisteredUserCountAsServicePrincipal
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredUserCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredUserCountAsServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

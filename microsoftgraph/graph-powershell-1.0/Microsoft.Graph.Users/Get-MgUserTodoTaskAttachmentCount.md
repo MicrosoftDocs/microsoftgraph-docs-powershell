@@ -15,6 +15,9 @@ title: Get-MgUserTodoTaskAttachmentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskAttachmentCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

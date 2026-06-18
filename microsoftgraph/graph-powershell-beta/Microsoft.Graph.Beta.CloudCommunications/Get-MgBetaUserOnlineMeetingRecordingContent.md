@@ -18,6 +18,9 @@ This API supports the retrieval of call recordings from all meeting types except
 For a recording, this API returns the metadata of the single recording associated with the online meeting or an ad hoc call.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRecordingContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

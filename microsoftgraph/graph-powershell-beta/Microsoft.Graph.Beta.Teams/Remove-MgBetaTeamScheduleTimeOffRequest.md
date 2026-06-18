@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamScheduleTimeOffRequest
 
 Delete a timeOffRequest object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

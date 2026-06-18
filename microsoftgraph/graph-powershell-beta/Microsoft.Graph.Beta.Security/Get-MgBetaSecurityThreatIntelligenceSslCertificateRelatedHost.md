@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost
 
 The host resources related with this sslCertificate.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

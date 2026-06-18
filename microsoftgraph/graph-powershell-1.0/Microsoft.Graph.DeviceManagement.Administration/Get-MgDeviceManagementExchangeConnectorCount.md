@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementExchangeConnectorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementExchangeConnectorCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementExchangeConnectorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

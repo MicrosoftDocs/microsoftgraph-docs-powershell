@@ -15,6 +15,9 @@ title: Update-MgBetaRoleManagementDirectoryResourceNamespace
 
 Update the navigation property resourceNamespaces in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

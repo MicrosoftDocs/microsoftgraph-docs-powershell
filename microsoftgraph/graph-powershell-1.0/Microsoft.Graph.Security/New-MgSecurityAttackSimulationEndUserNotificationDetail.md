@@ -15,6 +15,9 @@ title: New-MgSecurityAttackSimulationEndUserNotificationDetail
 
 Create new navigation property to details for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion
 
 Delete navigation property versions for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

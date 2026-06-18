@@ -15,6 +15,9 @@ title: Get-MgUserMailFolderChildFolderMessageAttachmentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderMessageAttachmentCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageAttachmentCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

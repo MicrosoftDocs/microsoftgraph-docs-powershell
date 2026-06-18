@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSumma
 
 Delete navigation property windowsInformationProtectionNetworkLearningSummaries for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

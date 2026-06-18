@@ -15,6 +15,9 @@ title: Get-MgBetaPrintOperationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintOperationCount](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintOperationCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

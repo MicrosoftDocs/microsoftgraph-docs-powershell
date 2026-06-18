@@ -15,6 +15,9 @@ title: Get-MgBetaReportTeamDeviceUsageUserCount
 
 Invoke function getTeamsDeviceUsageUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportTeamDeviceUsageUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamDeviceUsageUserCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

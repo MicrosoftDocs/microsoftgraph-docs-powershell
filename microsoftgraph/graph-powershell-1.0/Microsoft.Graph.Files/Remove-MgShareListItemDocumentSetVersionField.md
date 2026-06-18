@@ -15,6 +15,9 @@ title: Remove-MgShareListItemDocumentSetVersionField
 
 Delete navigation property fields for shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItemDocumentSetVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete1 (Default)

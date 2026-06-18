@@ -15,6 +15,9 @@ title: Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionF
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

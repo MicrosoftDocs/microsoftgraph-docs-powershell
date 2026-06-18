@@ -16,6 +16,9 @@ title: Get-MgUserDriveRootListItemCreatedByUser
 Identity of the user who created the item.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootListItemCreatedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

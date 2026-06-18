@@ -15,6 +15,9 @@ title: Update-MgEntitlementManagementSubjectByObjectId
 
 Update the navigation property subjects in identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementSubjectByObjectId](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSubjectByObjectId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

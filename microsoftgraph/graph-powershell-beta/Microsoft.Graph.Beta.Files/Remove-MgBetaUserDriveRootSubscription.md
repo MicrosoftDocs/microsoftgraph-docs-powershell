@@ -15,6 +15,9 @@ title: Remove-MgBetaUserDriveRootSubscription
 
 Delete navigation property subscriptions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

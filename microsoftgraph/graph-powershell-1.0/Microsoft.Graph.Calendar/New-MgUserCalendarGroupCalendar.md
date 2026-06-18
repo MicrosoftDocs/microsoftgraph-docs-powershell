@@ -15,6 +15,9 @@ title: New-MgUserCalendarGroupCalendar
 
 Create new navigation property to calendars for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

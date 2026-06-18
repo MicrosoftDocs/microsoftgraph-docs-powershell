@@ -16,6 +16,9 @@ title: New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
 Create a new webApplicationFirewallProvider object.
 You can create one of the following subtypes that are derived from webApplicationFirewallProvider.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityRiskPreventionWebApplicationFirewallProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityRiskPreventionWebApplicationFirewallProvider?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

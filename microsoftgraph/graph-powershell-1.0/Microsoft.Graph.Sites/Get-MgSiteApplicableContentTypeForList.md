@@ -15,6 +15,9 @@ title: Get-MgSiteApplicableContentTypeForList
 
 Get site contentTypes that can be added to a list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteApplicableContentTypeForList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

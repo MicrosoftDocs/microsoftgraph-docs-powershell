@@ -16,6 +16,9 @@ title: Get-MgReportSecurityAttackSimulationTrainingUserCoverage
 List training coverage for tenant users in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

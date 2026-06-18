@@ -15,6 +15,9 @@ title: Get-MgPolicyActivityBasedTimeoutPolicyApplyTo
 
 Get appliesTo from policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

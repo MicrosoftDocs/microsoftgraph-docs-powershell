@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranul
 
 Update the navigation property granularDriveRestoreArtifacts in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

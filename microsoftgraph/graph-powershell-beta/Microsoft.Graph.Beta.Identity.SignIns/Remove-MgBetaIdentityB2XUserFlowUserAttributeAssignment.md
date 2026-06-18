@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment
 
 Delete navigation property userAttributeAssignments for identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

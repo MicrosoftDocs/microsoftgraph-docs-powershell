@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveListItem
 
 All items contained in the list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListItem](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

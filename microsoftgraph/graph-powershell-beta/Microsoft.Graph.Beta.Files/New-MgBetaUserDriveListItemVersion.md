@@ -15,6 +15,9 @@ title: New-MgBetaUserDriveListItemVersion
 
 Create new navigation property to versions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveListItemVersion](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

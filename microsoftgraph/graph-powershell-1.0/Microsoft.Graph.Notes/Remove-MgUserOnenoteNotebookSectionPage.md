@@ -15,6 +15,9 @@ title: Remove-MgUserOnenoteNotebookSectionPage
 
 Delete navigation property pages for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenoteNotebookSectionPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

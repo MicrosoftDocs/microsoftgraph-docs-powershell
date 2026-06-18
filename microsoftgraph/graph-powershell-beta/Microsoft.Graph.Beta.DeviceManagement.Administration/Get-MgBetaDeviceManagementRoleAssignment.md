@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementRoleAssignment
 
 The Role Assignments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRoleAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

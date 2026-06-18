@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteColumn
 
 The collection of column definitions reusable across lists under this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgGroupDriveItemListItemField
 
 Delete navigation property fields for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Remove-MgGroupSiteOnenotePage
 
 Delete navigation property pages for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

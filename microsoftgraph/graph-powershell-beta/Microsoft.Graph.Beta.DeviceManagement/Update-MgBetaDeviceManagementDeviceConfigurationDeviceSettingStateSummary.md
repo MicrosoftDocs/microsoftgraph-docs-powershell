@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary
 
 Update the navigation property deviceSettingStateSummaries in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

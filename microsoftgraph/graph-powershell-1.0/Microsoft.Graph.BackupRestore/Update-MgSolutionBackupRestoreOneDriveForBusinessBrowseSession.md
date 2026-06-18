@@ -15,6 +15,9 @@ title: Update-MgSolutionBackupRestoreOneDriveForBusinessBrowseSession
 
 Update the navigation property oneDriveForBusinessBrowseSessions in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

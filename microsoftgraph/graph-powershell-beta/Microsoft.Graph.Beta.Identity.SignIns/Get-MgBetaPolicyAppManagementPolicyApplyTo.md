@@ -15,6 +15,9 @@ title: Get-MgBetaPolicyAppManagementPolicyApplyTo
 
 Collection of application and service principals to which a policy is applied.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyAppManagementPolicyApplyTo](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAppManagementPolicyApplyTo?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

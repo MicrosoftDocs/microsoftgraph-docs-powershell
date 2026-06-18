@@ -15,6 +15,9 @@ title: Remove-MgDriveRootVersionContent
 
 The content stream for this version of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

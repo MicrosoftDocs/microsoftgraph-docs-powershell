@@ -16,6 +16,9 @@ title: Restore-MgBetaGroupDriveRootVersion
 Restore a previous version of a driveItem to be the current version.
 This operation creates a new version with the contents of the previous version, and it preserves all existing versions of the file.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgGroupDriveRootVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)

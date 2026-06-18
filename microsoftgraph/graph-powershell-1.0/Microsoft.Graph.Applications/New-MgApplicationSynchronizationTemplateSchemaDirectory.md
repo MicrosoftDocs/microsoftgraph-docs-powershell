@@ -15,6 +15,9 @@ title: New-MgApplicationSynchronizationTemplateSchemaDirectory
 
 Create new navigation property to directories for applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

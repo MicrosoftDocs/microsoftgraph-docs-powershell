@@ -15,6 +15,9 @@ title: Remove-MgBookingBusinessCustomQuestion
 
 Delete a bookingCustomQuestion object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

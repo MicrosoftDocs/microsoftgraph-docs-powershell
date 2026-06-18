@@ -16,6 +16,9 @@ title: Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

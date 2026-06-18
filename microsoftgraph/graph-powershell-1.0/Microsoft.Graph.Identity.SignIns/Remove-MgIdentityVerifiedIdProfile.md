@@ -15,6 +15,9 @@ title: Remove-MgIdentityVerifiedIdProfile
 
 Delete a verifiedIdProfile object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityVerifiedIdProfile](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityVerifiedIdProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

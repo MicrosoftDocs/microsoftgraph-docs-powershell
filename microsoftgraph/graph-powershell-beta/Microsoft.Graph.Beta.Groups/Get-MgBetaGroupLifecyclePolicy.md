@@ -15,6 +15,9 @@ title: Get-MgBetaGroupLifecyclePolicy
 
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

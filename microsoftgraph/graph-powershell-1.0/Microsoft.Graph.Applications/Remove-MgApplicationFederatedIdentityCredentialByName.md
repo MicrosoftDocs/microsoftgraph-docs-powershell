@@ -15,6 +15,9 @@ title: Remove-MgApplicationFederatedIdentityCredentialByName
 
 Delete a federatedIdentityCredential object from an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationFederatedIdentityCredentialByName](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationFederatedIdentityCredentialByName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

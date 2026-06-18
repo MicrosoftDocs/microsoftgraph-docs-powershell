@@ -15,6 +15,9 @@ title: Get-MgBetaPrivacySubjectRightsRequestTeam
 
 Information about the Microsoft Teams team that was created for the request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -16,6 +16,9 @@ title: Get-MgBetaPlaceAsBuildingMapLevel
 Represents a physical floor structure within a building.
 It corresponds to level.geojson in IMDF format.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsBuildingMapLevel](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsBuildingMapLevel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

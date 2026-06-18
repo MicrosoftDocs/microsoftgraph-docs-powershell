@@ -15,6 +15,9 @@ title: Confirm-MgContactMemberObject
 
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaContactMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaContactMemberObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgDomainServiceConfigurationRecord
 
 Delete navigation property serviceConfigurationRecords for domains
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

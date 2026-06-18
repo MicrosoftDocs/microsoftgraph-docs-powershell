@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationUserAssignmentSubmissionOutcome
 
 Delete navigation property outcomes for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

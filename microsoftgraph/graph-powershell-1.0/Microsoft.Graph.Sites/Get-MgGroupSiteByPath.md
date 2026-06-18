@@ -15,6 +15,9 @@ title: Get-MgGroupSiteByPath
 
 Invoke function getByPath
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteByPath](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteByPath?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

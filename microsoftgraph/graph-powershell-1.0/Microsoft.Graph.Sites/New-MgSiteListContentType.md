@@ -15,6 +15,9 @@ title: New-MgSiteListContentType
 
 Create new navigation property to contentTypes for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

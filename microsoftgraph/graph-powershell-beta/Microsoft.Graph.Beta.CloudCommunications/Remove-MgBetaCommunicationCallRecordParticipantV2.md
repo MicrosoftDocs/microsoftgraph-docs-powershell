@@ -15,6 +15,9 @@ title: Remove-MgBetaCommunicationCallRecordParticipantV2
 
 Delete navigation property participants_v2 for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationCallRecordParticipantV2](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallRecordParticipantV2?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

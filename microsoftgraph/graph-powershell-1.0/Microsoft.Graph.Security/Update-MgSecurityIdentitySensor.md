@@ -15,6 +15,9 @@ title: Update-MgSecurityIdentitySensor
 
 Update the properties of a sensor object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentitySensor](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentitySensor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

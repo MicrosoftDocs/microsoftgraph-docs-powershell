@@ -15,6 +15,9 @@ title: Update-MgBetaCommunicationOnlineMeetingConversationMessage
 
 Update the navigation property messages in communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationOnlineMeetingConversationMessage](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingConversationMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
