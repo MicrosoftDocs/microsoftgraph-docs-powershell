@@ -71,16 +71,6 @@ This cmdlet has the following aliases,
 
 Add a copy of a content type from a site to a list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -502,6 +492,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopy)
 - [](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
+
 
 
 

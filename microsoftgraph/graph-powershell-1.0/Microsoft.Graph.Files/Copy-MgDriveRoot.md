@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 
 Invoke action copy
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -644,6 +634,7 @@ For OneDrive, this property is not populated.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mgdriveroot)
+
 
 
 

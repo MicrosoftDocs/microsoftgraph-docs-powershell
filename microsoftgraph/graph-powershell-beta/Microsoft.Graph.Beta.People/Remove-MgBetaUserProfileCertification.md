@@ -55,12 +55,17 @@ Deletes a personCertification object from a user's profile.
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
 Remove-MgBetaUserProfileCertification -UserId $userId -PersonCertificationId $personCertificationId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileCertification Cmdlet.
+
 
 ## PARAMETERS
 

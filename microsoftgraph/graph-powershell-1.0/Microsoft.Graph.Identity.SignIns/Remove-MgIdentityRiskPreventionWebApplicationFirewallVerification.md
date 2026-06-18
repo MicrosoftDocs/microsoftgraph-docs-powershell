@@ -51,14 +51,6 @@ This cmdlet has the following aliases,
 
 Delete a webApplicationFirewallVerificationModel object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification -WebApplicationFirewallVerificationModelId $webApplicationFirewallVerificationModelId
-
 ## PARAMETERS
 
 ### -Break
@@ -461,6 +453,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityriskpreventionwebapplicationfirewallverification)
 - [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-delete-webapplicationfirewallverifications?view=graph-rest-1.0)
+
 
 
 

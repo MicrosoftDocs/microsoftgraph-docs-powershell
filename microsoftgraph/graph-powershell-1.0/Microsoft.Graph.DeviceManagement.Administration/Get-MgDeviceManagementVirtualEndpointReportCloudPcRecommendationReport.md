@@ -59,52 +59,6 @@ The usage category report categorizes a Cloud PC as Undersized, Oversized, Right
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.DeviceManagement.Administration
-
-$params = @{
-	reportType = "cloudPcUsageCategoryReport"
-	select = @(
-	"ServicePlanId"
-"ServicePlanName"
-"UsageInsight"
-)
-groupBy = @(
-"ServicePlanId"
-"ServicePlanName"
-"UsageInsight"
-)
-}
-
-Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.DeviceManagement.Administration
-
-$params = @{
-	reportType = "cloudPcUsageCategoryReport"
-	filter = ""
-	select = @(
-	"CloudPcId"
-"ManagedDeviceName"
-"UserPrincipalName"
-"ServicePlanId"
-"ServicePlanName"
-"UsageInsight"
-"RecommendedPlanId"
-"RecommendedPlanName"
-)
-search = ""
-skip = 0
-top = 15
-}
-
-Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -622,6 +576,7 @@ BODY `<IPathsG53J94DevicemanagementVirtualendpointReportMicrosoftGraphRetrievecl
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointreportcloudpcrecommendationreport)
 - [](https://learn.microsoft.com/graph/api/cloudpcreport-retrievecloudpcrecommendationreports?view=graph-rest-1.0)
+
 
 
 

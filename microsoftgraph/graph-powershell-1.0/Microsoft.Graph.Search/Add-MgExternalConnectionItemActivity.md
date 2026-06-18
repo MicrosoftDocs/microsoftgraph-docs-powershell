@@ -76,8 +76,9 @@ This cmdlet has the following aliases,
 Append additional instances of externalActivity objects on an externalItem.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Search
 
@@ -96,6 +97,10 @@ $params = @{
 }
 
 Add-MgExternalConnectionItemActivity -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgExternalConnectionItemActivity Cmdlet.
+
 
 ## PARAMETERS
 

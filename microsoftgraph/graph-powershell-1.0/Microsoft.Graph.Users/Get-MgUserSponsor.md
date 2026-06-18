@@ -43,12 +43,17 @@ Get an agentUser's sponsors.
 Sponsors are users and groups that are responsible for this agent user's privileges in the tenant and for keeping the agent user's information and access up to date.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Users
 
 Get-MgUserSponsor -UserId $userId
+
+```
+This example shows how to use the Get-MgUserSponsor Cmdlet.
+
 
 ## PARAMETERS
 

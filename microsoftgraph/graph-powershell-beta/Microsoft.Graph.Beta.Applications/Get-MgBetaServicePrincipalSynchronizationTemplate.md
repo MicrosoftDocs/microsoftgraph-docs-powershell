@@ -70,14 +70,17 @@ Pre-configured synchronization settings for a particular application.
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
 
 ## EXAMPLES
+### Example
 
-### EXAMPLE 1
+```powershell
 
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Applications
 
-### EXAMPLE 2
+Get-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
 
-{{ Add code here }}
+```
+This example shows how to use the Get-MgBetaServicePrincipalSynchronizationTemplate Cmdlet.
+
 
 ## PARAMETERS
 

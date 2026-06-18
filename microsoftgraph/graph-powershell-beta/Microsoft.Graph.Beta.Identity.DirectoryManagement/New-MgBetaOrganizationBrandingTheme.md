@@ -76,20 +76,6 @@ Create a new organizationalBrandingTheme object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.organizationalBrandingTheme"
-	name = "ContosoTheme"
-	isDefaultTheme = $true
-}
-
-New-MgBetaOrganizationBrandingTheme -OrganizationId $organizationId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -844,6 +830,7 @@ Optional.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandingtheme)
 - [](https://learn.microsoft.com/graph/api/organizationalbranding-post-themes?view=graph-rest-beta)
+
 
 
 

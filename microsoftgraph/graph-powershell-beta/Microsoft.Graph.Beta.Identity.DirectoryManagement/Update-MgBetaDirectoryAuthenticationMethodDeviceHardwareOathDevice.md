@@ -85,8 +85,9 @@ Update the properties of a hardwareOathTokenAuthenticationMethodDevice object.
 The token needs to unassigned.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -95,6 +96,10 @@ $params = @{
 }
 
 Update-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -HardwareOathTokenAuthenticationMethodDeviceId $hardwareOathTokenAuthenticationMethodDeviceId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice Cmdlet.
+
 
 ## PARAMETERS
 

@@ -86,8 +86,9 @@ Update the navigation property auditEvents in deviceManagement
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -136,6 +137,10 @@ category = "Category value"
 }
 
 Update-MgDeviceManagementAuditEvent -AuditEventId $auditEventId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementAuditEvent Cmdlet.
+
 
 ## PARAMETERS
 

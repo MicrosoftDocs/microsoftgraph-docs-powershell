@@ -104,8 +104,9 @@ Update a site, a list, or a content type column.
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
@@ -116,6 +117,10 @@ $params = @{
 }
 
 Update-MgSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSiteContentTypeColumn Cmdlet.
+
 
 ## PARAMETERS
 

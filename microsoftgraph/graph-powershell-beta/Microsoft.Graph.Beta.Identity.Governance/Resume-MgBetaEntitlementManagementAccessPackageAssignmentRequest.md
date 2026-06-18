@@ -87,8 +87,9 @@ It's performed on an accessPackageAssignmentRequest object whose requestStatus i
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -105,7 +106,12 @@ $params = @{
 
 Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows how to use the Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -122,43 +128,9 @@ $params = @{
 
 Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example shows how to use the Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet.
 
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-$params = @{
-	source = "Contoso.CustoEXT"
-	type = "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated"
-	data = @{
-		"@odata.type" = "microsoft.graph.microsoft.graph.assignmentRequestApprovalStageCallbackData"
-		approvalStage = @{
-			durationBeforeAutomaticDenial = "P2D"
-			escalationApprovers = @(
-			)
-			fallbackEscalationApprovers = @(
-			)
-			fallbackPrimaryApprovers = @(
-			)
-			isApproverJustificationRequired = $false
-			isEscalationEnabled = $false
-			primaryApprovers = @(
-				@{
-					"@@odata.type" = "#microsoft.graph.singleUser"
-					description = "Primary approver of access package assignment."
-					id = ""
-					isBackup = $false
-				}
-			)
-		}
-		customExtensionStageInstanceDetail = "A approval stage from Logic Apps"
-		customExtensionStageInstanceId = "@{triggerBody()?['CustomExtensionStageInstanceId']}"
-		stage = "assignmentRequestDeterminingApprovalRequirements"
-	}
-	source = "LogicApps"
-	type = "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated"
-}
-
-Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
 
 ## PARAMETERS
 

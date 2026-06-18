@@ -56,20 +56,6 @@ Use this operation to delete any derived type, including:\r- cloudFirewallPolicy
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.NetworkAccess
-
-Remove-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Beta.NetworkAccess
-
-Remove-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
-
 ## PARAMETERS
 
 ### -Break
@@ -454,6 +440,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofilepolicy)
 - [](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-delete?view=graph-rest-beta)
+
 
 
 

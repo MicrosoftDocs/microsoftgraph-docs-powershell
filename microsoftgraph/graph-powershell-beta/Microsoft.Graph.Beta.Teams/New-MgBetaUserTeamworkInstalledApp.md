@@ -84,8 +84,9 @@ Install an app in the personal scope of the specified user.
 | Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteSelectedForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ManageSelectedForUser.All,  |
 
 ## EXAMPLES
+### Example 1: Install an app for a user
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -95,7 +96,12 @@ $params = @{
 
 New-MgBetaUserTeamworkInstalledApp -UserId $userId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will install an app for a user
+
+### Example 2: Install an app for a user and consent to the resource-specific permissions required by the app
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -112,6 +118,10 @@ $params = @{
 }
 
 New-MgBetaUserTeamworkInstalledApp -UserId $userId -BodyParameter $params
+
+```
+This example will install an app for a user and consent to the resource-specific permissions required by the app
+
 
 ## PARAMETERS
 

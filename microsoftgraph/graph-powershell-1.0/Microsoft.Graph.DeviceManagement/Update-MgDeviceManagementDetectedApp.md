@@ -82,8 +82,9 @@ Update the navigation property detectedApps in deviceManagement
 | Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -98,6 +99,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementDetectedApp -DetectedAppId $detectedAppId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDetectedApp Cmdlet.
+
 
 ## PARAMETERS
 

@@ -82,20 +82,6 @@ The specified timestamp must be earlier than the current createdDateTime of the 
 Imported content is always limited by the createdDateTime of the target thread.
 An optional createdDateTime property in the payload allows you to update this value, but with strict rules: This API supportes the following channel types.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Teams
-
-Start-MgBetaChatMigration -ChatId $chatId
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Beta.Teams
-
-Start-MgBetaChatMigration -ChatId $chatId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -559,6 +545,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetachatmigration)
 - [](https://learn.microsoft.com/graph/api/chat-startmigration?view=graph-rest-beta)
+
 
 
 

@@ -62,12 +62,17 @@ Retrieve the properties of a profileCardProperty entity.
 The profileCardProperty is identified by its directoryPropertyName property.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgAdminPeopleProfileCardProperty
+
+```
+This example shows how to use the Get-MgAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 

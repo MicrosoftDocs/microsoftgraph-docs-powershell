@@ -51,12 +51,17 @@ Provide a summary of workflows processed, by category, in a tenant.
 This allows you to quickly get category information, by numerical value, bypassing other information found in the WorkflowsProcessedSummary call.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight
+
+```
+This example shows how to use the Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight Cmdlet.
+
 
 ## PARAMETERS
 

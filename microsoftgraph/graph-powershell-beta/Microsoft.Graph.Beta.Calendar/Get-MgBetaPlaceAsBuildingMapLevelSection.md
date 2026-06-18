@@ -63,14 +63,6 @@ This cmdlet has the following aliases,
 Collection of sections (such as zones or partitions) on this level.
 Supports upsert.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Get-MgBetaPlaceAsBuildingMapLevelSection -PlaceId $placeId -LevelMapId $levelMapId
-
 ## PARAMETERS
 
 ### -All
@@ -612,6 +604,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmaplevelsection)
 - [](https://learn.microsoft.com/graph/api/levelmap-list-sections?view=graph-rest-beta)
+
+
 
 
 

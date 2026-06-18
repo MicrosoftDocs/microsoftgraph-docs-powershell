@@ -109,8 +109,9 @@ The ID is also known as the tenantId of the organization.
 | Application | DeviceManagementServiceConfig.ReadWrite.All, Organization.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -134,6 +135,10 @@ technicalNotificationMails = @(
 }
 
 Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgOrganization Cmdlet.
+
 
 ## PARAMETERS
 

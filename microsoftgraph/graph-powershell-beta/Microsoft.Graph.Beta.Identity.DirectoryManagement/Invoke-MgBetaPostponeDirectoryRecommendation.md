@@ -81,8 +81,9 @@ On the date and time provided, Microsoft Entra ID will automatically update the 
 | Application | DirectoryRecommendations.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -91,6 +92,10 @@ $params = @{
 }
 
 Invoke-MgBetaPostponeDirectoryRecommendation -RecommendationId $recommendationId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaPostponeDirectoryRecommendation Cmdlet.
+
 
 ## PARAMETERS
 

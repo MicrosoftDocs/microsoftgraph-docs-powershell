@@ -122,8 +122,9 @@ Update the properties of a groupSetting object for tenant-wide group settings or
 | Application | GroupSettings.ReadWrite.All, Policy.ReadWrite.Authorization, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
@@ -137,6 +138,10 @@ $params = @{
 }
 
 Update-MgGroupSetting -GroupId $groupId -GroupSettingId $groupSettingId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgGroupSetting Cmdlet.
+
 
 ## PARAMETERS
 

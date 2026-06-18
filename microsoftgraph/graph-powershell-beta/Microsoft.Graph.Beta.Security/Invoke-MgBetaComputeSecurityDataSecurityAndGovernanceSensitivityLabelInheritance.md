@@ -57,16 +57,6 @@ Calculate the sensitivity label that should be inherited by an output artifact, 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -457,6 +447,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacomputesecuritydatasecurityandgovernancesensitivitylabelinheritance)
 - [](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-beta)
+
 
 
 

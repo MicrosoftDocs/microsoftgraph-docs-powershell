@@ -60,8 +60,9 @@ Create a new plannerPlan object.
 | Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Planner
 
@@ -73,6 +74,10 @@ $params = @{
 }
 
 New-MgPlannerPlan -BodyParameter $params
+
+```
+This example shows how to use the New-MgPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

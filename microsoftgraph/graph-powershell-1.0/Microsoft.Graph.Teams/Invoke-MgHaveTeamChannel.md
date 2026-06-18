@@ -57,12 +57,17 @@ Determine whether a user has access to a channel.
 | Application | ChannelMember.Read.Group, ChannelMember.ReadWrite.Group, ChannelMember.ReadWrite.All, ChannelMember.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Invoke-MgHaveTeamChannel -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Invoke-MgHaveTeamChannel Cmdlet.
+
 
 ## PARAMETERS
 

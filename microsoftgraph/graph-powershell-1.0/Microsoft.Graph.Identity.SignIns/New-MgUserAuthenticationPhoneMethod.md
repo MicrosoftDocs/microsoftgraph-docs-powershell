@@ -91,8 +91,9 @@ Additionally, if a user is enabled by policy to use SMS sign-in and a mobile num
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Phone.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -102,6 +103,10 @@ $params = @{
 }
 
 New-MgUserAuthenticationPhoneMethod -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgUserAuthenticationPhoneMethod Cmdlet.
+
 
 ## PARAMETERS
 

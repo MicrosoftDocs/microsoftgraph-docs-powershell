@@ -65,14 +65,6 @@ Read the properties and relationships of organizationalBrandingTheme object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.Read.All, OrganizationalBranding.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-Get-MgBetaOrganizationBrandingTheme -OrganizationId $organizationId
-
 ## PARAMETERS
 
 ### -All
@@ -632,6 +624,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandingtheme)
 - [](https://learn.microsoft.com/graph/api/organizationalbrandingtheme-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/organizationalbranding-list-themes?view=graph-rest-beta)
+
+
 
 
 

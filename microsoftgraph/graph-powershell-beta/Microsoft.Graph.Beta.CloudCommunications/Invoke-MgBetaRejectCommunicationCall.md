@@ -86,8 +86,9 @@ This API doesn't end existing calls that have already been answered.
 Use delete call to end a call.
 
 ## EXAMPLES
+### Example 1: Reject an incoming call with 'Busy' reason
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -97,7 +98,12 @@ $params = @{
 
 Invoke-MgBetaRejectCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will reject an incoming call with 'busy' reason
+
+### Example 2: Reject an incoming call with 'None' reason
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -106,6 +112,10 @@ $params = @{
 }
 
 Invoke-MgBetaRejectCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example will reject an incoming call with 'none' reason
+
 
 ## PARAMETERS
 

@@ -60,14 +60,6 @@ This cmdlet has the following aliases,
 Get a collection of the specified type of place objects defined in a tenant.
 You can do the following for a given tenant:\r- List all buildings.\r- List all floors.\r- List all sections.\r- List all desks.\r- List all rooms.\r- List all workspaces.\r- List all room lists.\r- List rooms in a specific room list.\r- List workspaces in a specific room list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Calendar
-
-Get-MgPlaceAsBuilding
-
 ## PARAMETERS
 
 ### -All
@@ -553,6 +545,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuilding)
 - [](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-1.0)
+
+
 
 
 

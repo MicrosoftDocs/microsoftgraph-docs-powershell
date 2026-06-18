@@ -156,9 +156,8 @@ Create new navigation property to services for bookingBusinesses
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
 ## EXAMPLES
-
-### EXAMPLE 1
-
+### Example 1: Using the New-MgBetaBookingBusinessService Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingService"
@@ -224,6 +223,9 @@ $params = @{
 	IsAnonymousJoinEnabled = $false
 }
 New-MgBetaBookingBusinessService -BookingBusinessId $bookingBusinessId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaBookingBusinessService Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

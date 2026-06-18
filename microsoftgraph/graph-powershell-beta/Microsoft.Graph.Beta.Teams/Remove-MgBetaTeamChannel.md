@@ -58,12 +58,17 @@ Delete the channel.
 | Application | Channel.Delete.Group, Group.ReadWrite.All, Directory.ReadWrite.All, Channel.Delete.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Remove-MgBetaTeamChannel Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,14 +46,6 @@ This cmdlet has the following aliases,
 
 Get a collection of cloud application reports based on aggregated traffic logs for a specified time period in Global Secure Access.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.NetworkAccess
-
-Get-MgBetaNetworkAccessReportCloudApplicationReport -StartDateTime $startDateTimeId -EndDateTime $endDateTimeId -UserId $userIdId
-
 ## PARAMETERS
 
 ### -Break
@@ -479,6 +471,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportcloudapplicationreport)
 - [](https://learn.microsoft.com/graph/api/networkaccess-reports-getcloudapplicationreport?view=graph-rest-beta)
+
 
 
 

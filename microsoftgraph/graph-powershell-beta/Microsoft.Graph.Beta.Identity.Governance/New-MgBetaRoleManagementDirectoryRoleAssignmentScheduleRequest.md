@@ -74,8 +74,9 @@ See Enable per-user Microsoft Entra multifactor authentication to secure sign-in
 | Application | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleEligibilitySchedule.Remove.Directory, RoleAssignmentSchedule.Remove.Directory,  |
 
 ## EXAMPLES
+### Example 1: Admin assigning a directory role to a principal
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -95,7 +96,12 @@ $params = @{
 
 New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will admin assigning a directory role to a principal
+
+### Example 2: User activating their eligible role
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -119,6 +125,10 @@ $params = @{
 }
 
 New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $params
+
+```
+This example will user activating their eligible role
+
 
 ## PARAMETERS
 

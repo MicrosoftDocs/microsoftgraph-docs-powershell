@@ -66,8 +66,9 @@ To access and assign members to other directory roles, you must first activate i
 | Application | RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -76,6 +77,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryRole -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDirectoryRole Cmdlet.
+
 
 ## PARAMETERS
 

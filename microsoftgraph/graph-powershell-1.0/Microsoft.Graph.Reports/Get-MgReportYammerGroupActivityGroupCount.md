@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the total number of groups that existed and how many included group conversation activities.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportYammerGroupActivityGroupCount -Period $periodId
+Get-MgReportYammerGroupActivityGroupCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportYammerGroupActivityGroupCount Cmdlet.
+
 
 ## PARAMETERS
 

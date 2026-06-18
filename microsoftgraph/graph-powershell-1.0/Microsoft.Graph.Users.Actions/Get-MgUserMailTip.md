@@ -84,8 +84,9 @@ The requested MailTips are returned in a mailTips collection.
 | Application | Mail.Read,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -99,6 +100,10 @@ MailTipsOptions = "automaticReplies, mailboxFullStatus"
 
 # A UPN can also be used as -UserId.
 Get-MgUserMailTip -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgUserMailTip Cmdlet.
+
 
 ## PARAMETERS
 

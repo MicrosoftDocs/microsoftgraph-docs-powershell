@@ -67,14 +67,6 @@ Represents a locale-based branding theme.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.Read.All, OrganizationalBranding.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-Get-MgBetaOrganizationBrandingThemeLocalization -OrganizationId $organizationId -OrganizationalBrandingThemeId $organizationalBrandingThemeId
-
 ## PARAMETERS
 
 ### -All
@@ -660,6 +652,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandingthemelocalization)
 - [](https://learn.microsoft.com/graph/api/organizationalbrandingtheme-list-localizations?view=graph-rest-beta)
+
+
 
 
 

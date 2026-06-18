@@ -80,8 +80,9 @@ Add a copy of a content type from a site to a list.
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgSiteListContentTypeCopy Cmdlet.
+
 
 ## PARAMETERS
 

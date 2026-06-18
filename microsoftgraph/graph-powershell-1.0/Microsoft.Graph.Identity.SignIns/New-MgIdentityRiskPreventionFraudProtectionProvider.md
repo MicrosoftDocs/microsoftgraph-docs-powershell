@@ -51,36 +51,6 @@ This cmdlet has the following aliases,
 Create a new fraudProtectionProvider object.
 You can create one of the following subtypes that are derived from fraudProtectionProvider.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.arkoseFraudProtectionProvider"
-	displayName = "Arkose Sign-Up Protection"
-	publicKey = "A1EE42E0-C88B-47FE-A176-5E9FB8F116FB"
-	privateKey = "19BBE628-7DEF-4E28-AB25-BF129C760B7E"
-	clientSubDomain = "client-api"
-	verifySubDomain = "verify-api"
-}
-
-New-MgIdentityRiskPreventionFraudProtectionProvider -BodyParameter $params
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.humanSecurityFraudProtectionProvider"
-	displayName = "HUMAN Security Sign-Up Protection"
-	appId = "XXyy1XXXy"
-	serverToken = "xxYYxxXXX1"
-}
-
-New-MgIdentityRiskPreventionFraudProtectionProvider -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -423,6 +393,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityriskpreventionfraudprotectionprovider)
 - [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-fraudprotectionproviders?view=graph-rest-1.0)
+
 
 
 

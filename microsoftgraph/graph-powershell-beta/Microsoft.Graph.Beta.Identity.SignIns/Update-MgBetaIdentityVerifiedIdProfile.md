@@ -74,23 +74,6 @@ This cmdlet has the following aliases,
 
 Update the properties of a verifiedIdProfile object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-$params = @{
-	verifiedIdUsageConfigurations = @(
-		@{
-			isEnabledForTestOnly = $false
-			purpose = "recovery"
-		}
-	)
-}
-
-Update-MgBetaIdentityVerifiedIdProfile -VerifiedIdProfileId $verifiedIdProfileId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -901,6 +884,7 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedidprofile)
 - [](https://learn.microsoft.com/graph/api/verifiedidprofile-update?view=graph-rest-beta)
+
 
 
 

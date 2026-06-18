@@ -80,19 +80,6 @@ Reprovision a specific Cloud PC.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.DeviceManagement.Administration
-
-$params = @{
-	userAccountType = "administrator"
-	osVersion = "windows10"
-}
-
-Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -565,6 +552,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgreprovisiondevicemanagementvirtualendpointcloudpc)
 - [](https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-1.0)
+
 
 
 

@@ -51,36 +51,6 @@ This cmdlet has the following aliases,
 Create a new webApplicationFirewallProvider object.
 You can create one of the following subtypes that are derived from webApplicationFirewallProvider.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.akamaiWebApplicationFirewallProvider"
-	displayName = "Akamai Provider Example"
-	hostPrefix = "akab-exampleprefix"
-	clientSecret = "akamai_example_secret_123"
-	clientToken = "akamai_example_token_456"
-	accessToken = "akamai_example_token_789"
-}
-
-New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -BodyParameter $params
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.cloudFlareWebApplicationFirewallProvider"
-	displayName = "Cloudflare Provider Example"
-	zoneId = "11111111111111111111111111111111"
-	apiToken = "cf_example_token_123"
-}
-
-New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -423,6 +393,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallprovider)
 - [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-webapplicationfirewallproviders?view=graph-rest-beta)
+
 
 
 

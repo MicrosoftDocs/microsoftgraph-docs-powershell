@@ -97,8 +97,9 @@ This API supports the following PSTN scenarios:
 | Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -115,14 +116,18 @@ callOptions = @{
 	"@odata.type" = "#microsoft.graph.incomingCallOptions"
 	isContentSharingNotificationEnabled = $true
 	isDeltaRosterEnabled = $true
-	isInteractiveRosterEnabled = $true
 }
 participantCapacity = 200
 }
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows how to use the Invoke-MgBetaAnswerCommunicationCall Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -138,6 +143,10 @@ mediaConfig = @{
 }
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaAnswerCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

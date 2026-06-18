@@ -109,23 +109,6 @@ Create a new organizationalBrandingThemeLocalization object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.organizationalBrandingThemeLocalization"
-	locale = "fr-FR"
-	headerBackgroundColor = "#3377ffff"
-	pageBackgroundColor = "#FFFF33"
-	signInPageText = "Welcome to Contoso"
-	usernameHintText = "ContosoUsername "
-}
-
-New-MgBetaOrganizationBrandingThemeLocalization -OrganizationId $organizationId -OrganizationalBrandingThemeId $organizationalBrandingThemeId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AccountResetCredentials
@@ -1572,6 +1555,7 @@ Maximum length: 128.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandingthemelocalization)
 - [](https://learn.microsoft.com/graph/api/organizationalbrandingtheme-post-localizations?view=graph-rest-beta)
+
 
 
 

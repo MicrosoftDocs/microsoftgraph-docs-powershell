@@ -47,14 +47,6 @@ This cmdlet has the following aliases,
 
 Get the number of teams of a particular type in an instance of Microsoft Teams.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Reports
-
-Get-MgReportTeamCount -Format "text/csv"  -Period $periodId
-
 ## PARAMETERS
 
 ### -Break
@@ -370,6 +362,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount)
 - [](https://learn.microsoft.com/graph/api/reportroot-getteamsteamcounts?view=graph-rest-1.0)
+
 
 
 

@@ -100,8 +100,9 @@ If you're creating a private channel, you can add a maximum of 200 members.
 | Application | Channel.Create.Group, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All, Channel.Create,  |
 
 ## EXAMPLES
+### Example 1: Create a standard channel
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -113,7 +114,12 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a standard channel
+
+### Example 2: Create private channel on behalf of user
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -135,7 +141,12 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create private channel on behalf of user
+
+### Example 3: Create a channel in migration mode
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -148,7 +159,12 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will create a channel in migration mode
+
+### Example 4: Create private channel on behalf of user using user principal name
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -170,7 +186,12 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will create private channel on behalf of user using user principal name
+
+### Example 5: Create a shared channel on behalf of a user
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -190,6 +211,10 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
+
+```
+This example will create a shared channel on behalf of a user
+
 
 ## PARAMETERS
 

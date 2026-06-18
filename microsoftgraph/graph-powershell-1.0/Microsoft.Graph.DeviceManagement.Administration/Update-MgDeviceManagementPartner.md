@@ -90,8 +90,9 @@ Update the navigation property deviceManagementPartners in deviceManagement
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -117,6 +118,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementPartner -DeviceManagementPartnerId $deviceManagementPartnerId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 

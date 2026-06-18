@@ -61,14 +61,6 @@ This cmdlet has the following aliases,
 Represents a physical floor structure within a building.
 It corresponds to level.geojson in IMDF format.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Get-MgBetaPlaceAsBuildingMapLevel -PlaceId $placeId
-
 ## PARAMETERS
 
 ### -All
@@ -583,6 +575,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmaplevel)
 - [](https://learn.microsoft.com/graph/api/buildingmap-list-levels?view=graph-rest-beta)
+
+
 
 
 

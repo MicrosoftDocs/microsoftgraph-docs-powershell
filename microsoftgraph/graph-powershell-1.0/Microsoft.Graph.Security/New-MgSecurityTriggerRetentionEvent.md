@@ -65,8 +65,9 @@ Create a new retentionEvent object.
 | Application | RecordsManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -84,6 +85,10 @@ $params = @{
 }
 
 New-MgSecurityTriggerRetentionEvent -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityTriggerRetentionEvent Cmdlet.
+
 
 ## PARAMETERS
 

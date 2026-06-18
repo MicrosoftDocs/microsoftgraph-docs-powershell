@@ -64,8 +64,9 @@ Create new navigation property to windowsAutopilotDeviceIdentities for deviceMan
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 New-MgDeviceManagementWindowsAutopilotDeviceIdentity -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementWindowsAutopilotDeviceIdentity Cmdlet.
+
 
 ## PARAMETERS
 

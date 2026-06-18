@@ -46,14 +46,6 @@ This cmdlet has the following aliases,
 
 Get a collection of application usage analytics data points based on aggregated traffic logs for a specified time period, providing daily breakdown of usage between cloud and enterprise applications in Global Secure Access.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.NetworkAccess
-
-Get-MgBetaNetworkAccessReportApplicationUsageAnalytic -StartDateTime $startDateTimeId -EndDateTime $endDateTimeId -AggregatedBy $aggregatedById
-
 ## PARAMETERS
 
 ### -AggregatedBy
@@ -479,6 +471,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportapplicationusageanalytic)
 - [](https://learn.microsoft.com/graph/api/networkaccess-reports-getapplicationusageanalytics?view=graph-rest-beta)
+
 
 
 
