@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 06/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserAppRoleAssignment
 ---
@@ -13,11 +13,7 @@ title: New-MgUserAppRoleAssignment
 
 ## SYNOPSIS
 
-Assign an app role to a user, creating an appRoleAssignment object.
-To grant an app role assignment to a user, you need three identifiers:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
+Grant an app role assignment to an agentUser.
 
 ## SYNTAX
 
@@ -72,21 +68,12 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Assign an app role to a user, creating an appRoleAssignment object.
-To grant an app role assignment to a user, you need three identifiers:
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AppRoleAssignment.ReadWrite.All,  |
+Grant an app role assignment to an agentUser.
 
 ## EXAMPLES
-### Example 1: Assign a user an application role
 
-```powershell
+### EXAMPLE 1
+
 New-MgUserAppRoleAssignment -Userid '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
   -PrincipalId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
   -ResourceId '0873169c-9595-4664-9d02-499b49846ff1'  `
@@ -101,9 +88,6 @@ PrincipalId          : 8a7c50d3-fcbd-4727-a889-8ab232dfea01
 PrincipalType        : User
 ResourceDisplayName  : dxprovisioning-analytics
 ResourceId           : 0873169c-9595-4664-9d02-499b49846ff1
-```
-
-This commands assigns the specified user a role in the specified application resource.
 
 ## PARAMETERS
 
@@ -725,7 +709,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAppRoleAssignment>`: appRoleAssignment
+BODYPARAMETER <IMicrosoftGraphAppRoleAssignment>: appRoleAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -755,12 +739,13 @@ Maximum length is 256 characters.
 Required on create.
 Supports $filter (eq only).
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
+  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition
@@ -784,27 +769,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgUserAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-post-approleassignments?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment)
+- [](https://learn.microsoft.com/graph/api/agentuser-post-approleassignments?view=graph-rest-1.0)

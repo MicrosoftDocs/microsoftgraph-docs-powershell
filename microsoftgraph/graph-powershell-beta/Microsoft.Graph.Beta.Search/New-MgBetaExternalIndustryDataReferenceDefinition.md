@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 02/20/2026
+ms.date: 06/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaExternalIndustryDataReferenceDefinition
 ---
@@ -51,18 +51,9 @@ Create a new referenceDefinition object.
 referenceDefinition objects associate incoming data with standardized reference types values for validation.
 You can extend the following reference types with other codes that better align with your source data.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IndustryData-ReferenceDefinition.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IndustryData-ReferenceDefinition.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -76,10 +67,6 @@ $params = @{
 }
 
 New-MgBetaExternalIndustryDataReferenceDefinition -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaExternalIndustryDataReferenceDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -497,7 +484,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataReferenceDefinition>`: referenceDefinition
+BODYPARAMETER <IMicrosoftGraphIndustryDataReferenceDefinition>: referenceDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -511,27 +498,5 @@ Must be unique within the referenceType.
 
 ## RELATED LINKS
 
-- [New-MgBetaExternalIndustryDataReferenceDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition)
+- [](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-post?view=graph-rest-beta)

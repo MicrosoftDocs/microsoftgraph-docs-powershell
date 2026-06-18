@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementioslobappprovisioningconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 06/17/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaDeviceAppManagementIosLobAppProvisioningConfiguration
 ---
@@ -78,6 +78,16 @@ This cmdlet has the following aliases,
 
 Invoke action assign
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -109,7 +119,7 @@ HelpMessage: ''
 
 ### -AppProvisioningConfigurationGroupAssignments
 
-
+.
 To construct, see NOTES section for APPPROVISIONINGCONFIGURATIONGROUPASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -137,7 +147,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -299,7 +309,7 @@ HelpMessage: ''
 
 ### -IOSLobAppProvisioningConfigAssignments
 
-
+.
 To construct, see NOTES section for IOSLOBAPPPROVISIONINGCONFIGASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -519,7 +529,7 @@ APPPROVISIONINGCONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphMobileAppProvisioni
 Read-only.
   [TargetGroupId <String>]: The ID of the AAD group in which the app provisioning configuration is being targeted.
 
-BODYPARAMETER `<IPathsNqkqhnDeviceappmanagementIoslobappprovisioningconfigurationsIoslobappprovisioningconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsNqkqhnDeviceappmanagementIoslobappprovisioningconfigurationsIoslobappprovisioningconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppProvisioningConfigurationGroupAssignments <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -533,7 +543,7 @@ Read-only.
       [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
       [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -619,27 +629,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Set-MgBetaDeviceAppManagementIosLobAppProvisioningConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementioslobappprovisioningconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementioslobappprovisioningconfiguration)

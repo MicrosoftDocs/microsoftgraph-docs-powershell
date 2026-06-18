@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-Module Guid: b3a84a75-982e-45ab-9f5f-79da457d61b7
+Module Guid: c20b64bc-ad60-442f-9117-6ce0eea234ce
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -167,6 +167,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceHealthScriptStateCount](Get-MgBetaDeviceManagementComanagedDeviceHealthScriptStateCount.md)
 
+### [Get-MgBetaDeviceManagementComanagedDeviceLocalAdminAccountDetail](Get-MgBetaDeviceManagementComanagedDeviceLocalAdminAccountDetail.md)
+
 ### [Get-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest](Get-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest.md)
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest](Get-MgBetaDeviceManagementComanagedDeviceLogCollectionRequest.md)
@@ -184,6 +186,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceManagementComanagedDeviceNonCompliantSetting](Get-MgBetaDeviceManagementComanagedDeviceNonCompliantSetting.md)
 
 ### [Get-MgBetaDeviceManagementComanagedDevicePowerliftAppDiagnosticDetail](Get-MgBetaDeviceManagementComanagedDevicePowerliftAppDiagnosticDetail.md)
+
+### [Get-MgBetaDeviceManagementComanagedDeviceRecoveryLockPasscode](Get-MgBetaDeviceManagementComanagedDeviceRecoveryLockPasscode.md)
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState](Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState.md)
 
@@ -693,6 +697,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementManagedDeviceHealthScriptStateCount](Get-MgBetaDeviceManagementManagedDeviceHealthScriptStateCount.md)
 
+### [Get-MgBetaDeviceManagementManagedDeviceLocalAdminAccountDetail](Get-MgBetaDeviceManagementManagedDeviceLocalAdminAccountDetail.md)
+
 ### [Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest](Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest.md)
 
 ### [Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest](Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest.md)
@@ -712,6 +718,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceManagementManagedDeviceOverview](Get-MgBetaDeviceManagementManagedDeviceOverview.md)
 
 ### [Get-MgBetaDeviceManagementManagedDevicePowerliftAppDiagnosticDetail](Get-MgBetaDeviceManagementManagedDevicePowerliftAppDiagnosticDetail.md)
+
+### [Get-MgBetaDeviceManagementManagedDeviceRecoveryLockPasscode](Get-MgBetaDeviceManagementManagedDeviceRecoveryLockPasscode.md)
 
 ### [Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineState](Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineState.md)
 
@@ -1083,11 +1091,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaRotateDeviceManagementComanagedDeviceLocalAdminPassword](Invoke-MgBetaRotateDeviceManagementComanagedDeviceLocalAdminPassword.md)
 
+### [Invoke-MgBetaRotateDeviceManagementComanagedDeviceRecoveryLockPasscode](Invoke-MgBetaRotateDeviceManagementComanagedDeviceRecoveryLockPasscode.md)
+
 ### [Invoke-MgBetaRotateDeviceManagementManagedDeviceBitLockerKey](Invoke-MgBetaRotateDeviceManagementManagedDeviceBitLockerKey.md)
 
 ### [Invoke-MgBetaRotateDeviceManagementManagedDeviceFileVaultKey](Invoke-MgBetaRotateDeviceManagementManagedDeviceFileVaultKey.md)
 
 ### [Invoke-MgBetaRotateDeviceManagementManagedDeviceLocalAdminPassword](Invoke-MgBetaRotateDeviceManagementManagedDeviceLocalAdminPassword.md)
+
+### [Invoke-MgBetaRotateDeviceManagementManagedDeviceRecoveryLockPasscode](Invoke-MgBetaRotateDeviceManagementManagedDeviceRecoveryLockPasscode.md)
 
 ### [Invoke-MgBetaScanDeviceManagementComanagedDeviceWindowsDefender](Invoke-MgBetaScanDeviceManagementComanagedDeviceWindowsDefender.md)
 
@@ -1735,7 +1747,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Restart-MgBetaDeviceManagementManagedDeviceNow](Restart-MgBetaDeviceManagementManagedDeviceNow.md)
 
+### [Restore-MgBetaDeviceManagementComanagedDeviceManagedHomeScreen](Restore-MgBetaDeviceManagementComanagedDeviceManagedHomeScreen.md)
+
 ### [Restore-MgBetaDeviceManagementComanagedDevicePasscode](Restore-MgBetaDeviceManagementComanagedDevicePasscode.md)
+
+### [Restore-MgBetaDeviceManagementManagedDeviceManagedHomeScreen](Restore-MgBetaDeviceManagementManagedDeviceManagedHomeScreen.md)
 
 ### [Restore-MgBetaDeviceManagementManagedDevicePasscode](Restore-MgBetaDeviceManagementManagedDevicePasscode.md)
 
@@ -1803,7 +1819,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh](Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh.md)
 
+### [Suspend-MgBetaDeviceManagementComanagedDeviceManagedHomeScreen](Suspend-MgBetaDeviceManagementComanagedDeviceManagedHomeScreen.md)
+
 ### [Suspend-MgBetaDeviceManagementManagedDeviceConfigurationRefresh](Suspend-MgBetaDeviceManagementManagedDeviceConfigurationRefresh.md)
+
+### [Suspend-MgBetaDeviceManagementManagedDeviceManagedHomeScreen](Suspend-MgBetaDeviceManagementManagedDeviceManagedHomeScreen.md)
 
 ### [Sync-MgBetaDeviceManagementAndroidForWorkSettingApp](Sync-MgBetaDeviceManagementAndroidForWorkSettingApp.md)
 
@@ -2126,23 +2146,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfile](Update-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
 
 ### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

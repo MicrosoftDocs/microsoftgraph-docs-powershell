@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevel
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 06/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceAsBuildingMapLevel
 ---
@@ -15,9 +15,6 @@ title: Get-MgPlaceAsBuildingMapLevel
 
 Represents a physical floor structure within a building.
 It corresponds to level.geojson in IMDF format.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsBuildingMapLevel](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsBuildingMapLevel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,6 +56,14 @@ This cmdlet has the following aliases,
 
 Represents a physical floor structure within a building.
 It corresponds to level.geojson in IMDF format.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Calendar
+
+Get-MgPlaceAsBuildingMapLevel -PlaceId $placeId
 
 ## PARAMETERS
 
@@ -547,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -570,28 +575,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgPlaceAsBuildingMapLevel](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/buildingmap-list-levels?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevel)
+- [](https://learn.microsoft.com/graph/api/buildingmap-list-levels?view=graph-rest-1.0)
