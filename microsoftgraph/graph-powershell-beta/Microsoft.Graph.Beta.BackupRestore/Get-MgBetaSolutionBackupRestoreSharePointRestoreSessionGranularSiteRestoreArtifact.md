@@ -62,16 +62,6 @@ This cmdlet has the following aliases,
 
 A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -608,6 +598,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact)
 - [](https://learn.microsoft.com/graph/api/sharepointrestoresession-list-granularsiterestoreartifacts?view=graph-rest-beta)
+
 
 
 

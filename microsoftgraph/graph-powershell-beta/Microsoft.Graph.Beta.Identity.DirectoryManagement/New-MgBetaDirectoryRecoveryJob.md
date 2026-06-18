@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to jobs for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -545,6 +535,7 @@ Not all calculated object changes may be successfully applied; see totalObjectsM
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecoveryjob)
+
 
 
 

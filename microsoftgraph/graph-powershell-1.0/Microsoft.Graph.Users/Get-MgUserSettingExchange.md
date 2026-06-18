@@ -51,16 +51,6 @@ Get a list of Exchange mailboxes that belong to a user.
 Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes.
 To learn how to get a list of users in a tenant, see List users.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -381,6 +371,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingexchange)
 - [](https://learn.microsoft.com/graph/api/usersettings-list-exchange?view=graph-rest-1.0)
+
 
 
 

@@ -67,16 +67,6 @@ Get a drive exclusion units bulk addition job associated with a OneDrive for wor
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Configuration.Read.All, BackupRestore-Configuration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -614,6 +604,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreonedriveforbusinessprotectionpolicydriveexclusionunitbulkadditionjob)
 - [](https://learn.microsoft.com/graph/api/driveexclusionunitsbulkadditionjob-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-list-driveexclusionunitsbulkadditionjobs?view=graph-rest-beta)
+
 
 
 

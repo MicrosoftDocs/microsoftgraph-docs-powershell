@@ -46,16 +46,6 @@ Read the properties of an ownerlessGroupPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -296,6 +286,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyownerlessgrouppolicy)
 - [](https://learn.microsoft.com/graph/api/ownerlessgrouppolicy-get?view=graph-rest-1.0)
+
 
 
 

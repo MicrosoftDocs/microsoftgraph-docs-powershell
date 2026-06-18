@@ -55,16 +55,6 @@ Activate Microsoft Defender for Identity sensors.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -403,6 +393,7 @@ BODYPARAMETER `<IPaths1Fs10W4SecurityIdentitiesSensorcandidatesMicrosoftGraphSec
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/initialize-mgsecurityidentitysensorcandidate)
+
 
 
 

@@ -77,16 +77,6 @@ After the rule is applied, the state is either completed or completedWithErrors.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Configuration.Read.All, BackupRestore-Configuration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -624,6 +614,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreexchangeprotectionpolicymailboxinclusionrule)
 - [](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-list-mailboxinclusionrules?view=graph-rest-beta)
+
 
 
 

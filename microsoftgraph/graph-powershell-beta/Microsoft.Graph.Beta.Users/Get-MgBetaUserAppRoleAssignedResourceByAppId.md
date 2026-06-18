@@ -54,16 +54,6 @@ Get appRoleAssignedResources from users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AppId
@@ -411,6 +401,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserapproleassignedresourcebyappid)
+
 
 
 
