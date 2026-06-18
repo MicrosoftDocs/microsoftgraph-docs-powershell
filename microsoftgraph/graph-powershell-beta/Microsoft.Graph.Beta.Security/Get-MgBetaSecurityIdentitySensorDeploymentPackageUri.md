@@ -37,6 +37,14 @@ This cmdlet has the following aliases,
 Get the sensor deployment package URL and version.
 You can use this URL to download the installer to install the sensor on a server.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityIdentitiesSensors.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityIdentitiesSensors.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

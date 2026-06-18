@@ -55,6 +55,14 @@ Invoke action disable
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Configuration.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BackupRestore-Configuration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BackupRestore-Configuration.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -ActionOnExistingPolicy

@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 
 Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthMethod-MicrosoftAuthApp.ReadWrite.All, UserAuthMethod-MicrosoftAuthApp.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-MicrosoftAuthApp.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

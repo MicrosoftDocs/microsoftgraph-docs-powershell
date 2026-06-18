@@ -80,6 +80,14 @@ This cmdlet has the following aliases,
 Create a new application object.
 This API can also create an agentIdentityBlueprint object when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprint.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentityBlueprint.Create,  |
+| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, AgentIdentityBlueprint.Create,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

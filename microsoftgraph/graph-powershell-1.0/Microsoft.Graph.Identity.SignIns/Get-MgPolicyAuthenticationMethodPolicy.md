@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an authenticationMethodsPolicy object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.AuthenticationMethod, Policy.ReadWrite.AuthenticationMethod, Policy.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.AuthenticationMethod, Policy.ReadWrite.AuthenticationMethod, Policy.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

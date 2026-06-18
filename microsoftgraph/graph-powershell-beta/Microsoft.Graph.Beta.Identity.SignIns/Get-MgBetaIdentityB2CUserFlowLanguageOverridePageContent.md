@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 Get the userFlowLanguagePage resources from the overridesPages navigation property.
 These pages are used to customize the values shown to the user during a user journey in a user flow.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

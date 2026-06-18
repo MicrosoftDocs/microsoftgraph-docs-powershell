@@ -70,6 +70,14 @@ This cmdlet has the following aliases,
 
 Install an app to the specified team.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ManageSelectedForTeam, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ManageSelectedForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

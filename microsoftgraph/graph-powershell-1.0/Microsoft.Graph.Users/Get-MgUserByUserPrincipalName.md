@@ -54,6 +54,14 @@ To get properties that are not returned by default, do a GET operation for the u
 Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
 Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadBasic.All, User.ReadWrite.All, DeviceManagementManagedDevices.Read.All, User.Read.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.ReadBasic.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All, User.Read.All, Directory.ReadWrite.All, Directory.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All, User.ReadWrite.CrossCloud, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementManagedDevices.ReadWrite.All, AgentIdUser.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

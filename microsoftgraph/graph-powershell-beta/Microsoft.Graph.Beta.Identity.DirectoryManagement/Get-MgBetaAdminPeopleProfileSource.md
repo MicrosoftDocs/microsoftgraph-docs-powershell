@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 A collection of profile source settings configured by an administrator in an organization.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

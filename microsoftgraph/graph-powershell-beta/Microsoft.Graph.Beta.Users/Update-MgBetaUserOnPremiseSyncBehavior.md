@@ -66,6 +66,14 @@ This cmdlet has the following aliases,
 
 Update the navigation property onPremisesSyncBehavior in users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User-OnPremisesSyncBehavior.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User-OnPremisesSyncBehavior.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

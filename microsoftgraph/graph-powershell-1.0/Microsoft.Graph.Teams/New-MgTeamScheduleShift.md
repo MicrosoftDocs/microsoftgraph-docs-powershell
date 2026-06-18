@@ -74,6 +74,14 @@ This cmdlet has the following aliases,
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Schedule.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

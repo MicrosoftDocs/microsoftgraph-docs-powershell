@@ -74,6 +74,14 @@ Your app begins by calling delta without any parameters.\rThe service starts enu
 After you have finished receiving all the changes, you may apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
+| Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

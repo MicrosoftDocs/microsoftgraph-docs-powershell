@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.Read.Exchange, RoleManagement.ReadWrite.Exchange, RoleManagement.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.Read.Exchange, RoleManagement.ReadWrite.Exchange, RoleManagement.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Get an app installed in a chat.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ManageSelectedForChat,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.Read.Chat, TeamsAppInstallation.Read.All, TeamsAppInstallation.ManageSelectedForChat.All, Chat.Manage.Chat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read.Shared, Calendars.Read,  |
+| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read.Shared, Calendars.Read,  |
+| Application | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

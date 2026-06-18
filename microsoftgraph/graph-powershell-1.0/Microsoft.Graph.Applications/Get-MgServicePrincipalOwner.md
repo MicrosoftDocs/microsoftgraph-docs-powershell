@@ -42,6 +42,14 @@ Directory objects that are owners of this servicePrincipal.
 The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

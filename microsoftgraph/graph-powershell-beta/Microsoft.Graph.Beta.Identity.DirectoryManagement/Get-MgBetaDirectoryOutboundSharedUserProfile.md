@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Get the details of an outboundSharedUserProfile.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CrossTenantUserProfileSharing.Read, CrossTenantUserProfileSharing.ReadWrite.All, CrossTenantUserProfileSharing.ReadWrite, CrossTenantUserProfileSharing.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

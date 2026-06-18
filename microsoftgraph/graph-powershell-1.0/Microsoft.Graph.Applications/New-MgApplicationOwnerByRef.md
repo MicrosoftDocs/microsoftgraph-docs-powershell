@@ -70,6 +70,14 @@ This cmdlet has the following aliases,
 Add an owner to an application.
 Application owners can be individual users, the associated service principal, or another service principal.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

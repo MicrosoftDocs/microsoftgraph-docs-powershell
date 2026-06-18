@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-HardwareOATH.Read, UserAuthMethod-HardwareOATH.ReadWrite.All, UserAuthMethod-HardwareOATH.ReadWrite, UserAuthMethod-HardwareOATH.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-HardwareOATH.Read.All, UserAuthMethod-HardwareOATH.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

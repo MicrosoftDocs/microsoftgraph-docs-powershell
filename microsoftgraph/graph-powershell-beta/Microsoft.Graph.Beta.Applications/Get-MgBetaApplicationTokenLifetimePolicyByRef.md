@@ -39,6 +39,14 @@ This cmdlet has the following aliases,
 List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

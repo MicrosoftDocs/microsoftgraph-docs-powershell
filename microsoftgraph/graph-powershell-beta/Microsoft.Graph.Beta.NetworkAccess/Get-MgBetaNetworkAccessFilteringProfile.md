@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 A filtering profile associates network access policies with Microsoft Entra ID Conditional Access policies, so that access policies can be applied to users and groups.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -72,6 +72,14 @@ This cmdlet has the following aliases,
 Create a new approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
 You can configure a maximum of 20 approved client apps.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

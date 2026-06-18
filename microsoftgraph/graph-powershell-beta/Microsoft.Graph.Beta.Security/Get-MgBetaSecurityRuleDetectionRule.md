@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Get detectionRules from security
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CustomDetection.Read.All, CustomDetection.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomDetection.Read.All, CustomDetection.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

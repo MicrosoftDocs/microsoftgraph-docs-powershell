@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 Get the properties of a Microsoft Teams-enabled device.
 For example, you can use this method to get the device type, hardware detail, activity state, and health status information for a device that's enabled for Teams.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
