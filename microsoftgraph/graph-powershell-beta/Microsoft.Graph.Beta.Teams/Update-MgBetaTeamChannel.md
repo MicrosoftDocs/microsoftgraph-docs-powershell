@@ -28460,8 +28460,8 @@ Read only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannel)
-- [](https://learn.microsoft.com/graph/api/channel-patch?view=graph-rest-beta)
+- [Update-MgBetaTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-patch?view=graph-rest-beta)
 
 
 

@@ -1444,7 +1444,7 @@ It's a free-format string value, for example, 'United States'.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencesslcertificate)
+- [Update-MgBetaSecurityThreatIntelligenceSslCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencesslcertificate)
 
 
 

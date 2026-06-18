@@ -639,9 +639,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicy)
-- [](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list?view=graph-rest-beta)
+- [Get-MgBetaPolicyMobileAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list?view=graph-rest-beta)
 
 
 

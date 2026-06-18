@@ -365,7 +365,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsendercount)
+- [Get-MgGroupRejectedSenderCount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsendercount)
 
 
 

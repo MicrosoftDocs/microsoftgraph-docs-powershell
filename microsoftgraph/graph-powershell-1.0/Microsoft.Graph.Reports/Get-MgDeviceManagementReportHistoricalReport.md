@@ -605,7 +605,7 @@ BODYPARAMETER `<IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalr
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreporthistoricalreport)
+- [Get-MgDeviceManagementReportHistoricalReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreporthistoricalreport)
 
 
 

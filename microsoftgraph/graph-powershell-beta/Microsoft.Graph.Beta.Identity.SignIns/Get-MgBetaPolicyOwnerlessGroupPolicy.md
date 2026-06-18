@@ -297,8 +297,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyownerlessgrouppolicy)
-- [](https://learn.microsoft.com/graph/api/ownerlessgrouppolicy-get?view=graph-rest-beta)
+- [Get-MgBetaPolicyOwnerlessGroupPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyownerlessgrouppolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ownerlessgrouppolicy-get?view=graph-rest-beta)
 
 
 

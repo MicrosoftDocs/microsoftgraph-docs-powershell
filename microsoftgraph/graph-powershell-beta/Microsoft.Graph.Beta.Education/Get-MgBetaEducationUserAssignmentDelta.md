@@ -561,8 +561,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentdelta)
-- [](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-beta)
+- [Get-MgBetaEducationUserAssignmentDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-beta)
 
 
 

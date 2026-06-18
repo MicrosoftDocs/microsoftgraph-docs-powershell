@@ -2280,8 +2280,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelmessage)
-- [](https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-beta)
+- [Update-MgBetaTeamChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-beta)
 
 
 

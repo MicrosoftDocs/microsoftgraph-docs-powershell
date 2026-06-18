@@ -733,7 +733,7 @@ TIMEOFFDETAILS `<IMicrosoftGraphTimeOffDetails>`: timeOffDetails
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausersettingworkhourandlocationoccurrence)
+- [Set-MgBetaUserSettingWorkHourAndLocationOccurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausersettingworkhourandlocationoccurrence)
 
 
 

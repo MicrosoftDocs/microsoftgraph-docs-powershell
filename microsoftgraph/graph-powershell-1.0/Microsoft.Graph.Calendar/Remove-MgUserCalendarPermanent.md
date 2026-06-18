@@ -455,7 +455,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermanent)
+- [Remove-MgUserCalendarPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermanent)
 
 
 

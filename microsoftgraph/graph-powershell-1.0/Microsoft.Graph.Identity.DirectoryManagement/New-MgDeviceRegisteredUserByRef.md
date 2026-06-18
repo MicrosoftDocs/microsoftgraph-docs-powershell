@@ -540,8 +540,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregistereduserbyref)
-- [](https://learn.microsoft.com/graph/api/device-post-registeredusers?view=graph-rest-1.0)
+- [New-MgDeviceRegisteredUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregistereduserbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-post-registeredusers?view=graph-rest-1.0)
 
 
 

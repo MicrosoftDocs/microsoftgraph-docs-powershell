@@ -589,7 +589,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthreadpostextension)
+- [Update-MgGroupConversationThreadPostExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthreadpostextension)
 
 
 

@@ -561,7 +561,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattargetedmessagereplyhostedcontent)
+- [Remove-MgUserChatTargetedMessageReplyHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattargetedmessagereplyhostedcontent)
 
 
 

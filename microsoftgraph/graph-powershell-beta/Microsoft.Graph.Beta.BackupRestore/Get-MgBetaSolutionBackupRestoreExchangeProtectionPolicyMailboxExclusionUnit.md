@@ -592,9 +592,9 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreexchangeprotectionpolicymailboxexclusionunit)
-- [](https://learn.microsoft.com/graph/api/mailboxexclusionunit-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-list-mailboxexclusionunits?view=graph-rest-beta)
+- [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreexchangeprotectionpolicymailboxexclusionunit)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mailboxexclusionunit-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-list-mailboxexclusionunits?view=graph-rest-beta)
 
 
 

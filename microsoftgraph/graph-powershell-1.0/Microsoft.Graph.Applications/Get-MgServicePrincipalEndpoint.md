@@ -576,7 +576,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalendpoint)
+- [Get-MgServicePrincipalEndpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalendpoint)
 
 
 

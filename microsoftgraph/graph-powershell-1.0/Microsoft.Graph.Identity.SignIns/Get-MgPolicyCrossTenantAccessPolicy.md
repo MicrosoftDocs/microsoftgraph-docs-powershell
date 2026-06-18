@@ -297,8 +297,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicy)
-- [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-get?view=graph-rest-1.0)
+- [Get-MgPolicyCrossTenantAccessPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-get?view=graph-rest-1.0)
 
 
 

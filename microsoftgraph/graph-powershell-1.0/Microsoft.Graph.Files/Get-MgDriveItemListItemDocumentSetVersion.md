@@ -603,7 +603,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemdocumentsetversion)
+- [Get-MgDriveItemListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemdocumentsetversion)
 
 
 

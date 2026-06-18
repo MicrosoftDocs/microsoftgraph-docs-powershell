@@ -2398,7 +2398,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdevicebydeviceid)
+- [Update-MgBetaUserDeviceByDeviceId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdevicebydeviceid)
 
 
 

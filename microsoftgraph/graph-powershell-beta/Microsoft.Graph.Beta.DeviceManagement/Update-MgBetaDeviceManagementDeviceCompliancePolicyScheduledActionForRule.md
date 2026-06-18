@@ -694,7 +694,7 @@ Valid values 0 to 8760
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecompliancepolicyscheduledactionforrule)
+- [Update-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecompliancepolicyscheduledactionforrule)
 
 
 

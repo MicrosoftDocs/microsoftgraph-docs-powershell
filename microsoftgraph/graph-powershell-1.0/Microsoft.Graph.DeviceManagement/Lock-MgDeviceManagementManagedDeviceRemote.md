@@ -417,7 +417,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/lock-mgdevicemanagementmanageddeviceremote)
+- [Lock-MgDeviceManagementManagedDeviceRemote](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/lock-mgdevicemanagementmanageddeviceremote)
 
 
 

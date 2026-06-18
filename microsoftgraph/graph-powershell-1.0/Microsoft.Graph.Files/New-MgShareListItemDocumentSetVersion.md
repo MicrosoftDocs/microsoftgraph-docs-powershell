@@ -1068,7 +1068,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemdocumentsetversion)
+- [New-MgShareListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemdocumentsetversion)
 
 
 

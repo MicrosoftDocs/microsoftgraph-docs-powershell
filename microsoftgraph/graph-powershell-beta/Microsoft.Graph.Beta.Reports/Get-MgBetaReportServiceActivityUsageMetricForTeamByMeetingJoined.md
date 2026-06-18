@@ -508,8 +508,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityusagemetricforteambymeetingjoined)
-- [](https://learn.microsoft.com/graph/api/serviceactivity-getusagemetricsforteamsbymeetingsjoined?view=graph-rest-beta)
+- [Get-MgBetaReportServiceActivityUsageMetricForTeamByMeetingJoined](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityusagemetricforteambymeetingjoined)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceactivity-getusagemetricsforteamsbymeetingsjoined?view=graph-rest-beta)
 
 
 

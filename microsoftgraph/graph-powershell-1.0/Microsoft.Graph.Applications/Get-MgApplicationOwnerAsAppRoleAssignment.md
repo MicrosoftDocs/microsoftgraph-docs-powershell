@@ -601,7 +601,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasapproleassignment)
+- [Get-MgApplicationOwnerAsAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasapproleassignment)
 
 
 

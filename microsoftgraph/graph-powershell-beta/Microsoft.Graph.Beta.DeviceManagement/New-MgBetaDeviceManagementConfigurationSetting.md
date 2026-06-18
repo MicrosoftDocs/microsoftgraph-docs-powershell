@@ -837,7 +837,7 @@ Applicable for reusable setting.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationsetting)
+- [New-MgBetaDeviceManagementConfigurationSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationsetting)
 
 
 

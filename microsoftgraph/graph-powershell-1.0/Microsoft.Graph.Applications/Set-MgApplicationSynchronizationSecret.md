@@ -501,7 +501,7 @@ VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationsecret)
+- [Set-MgApplicationSynchronizationSecret](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationsecret)
 
 
 

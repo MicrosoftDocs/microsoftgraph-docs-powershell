@@ -3242,7 +3242,7 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent)
+- [New-MgUserEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent)
 
 
 

@@ -391,7 +391,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitemcontent)
+- [Get-MgShareDriveItemContent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitemcontent)
 
 
 

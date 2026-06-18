@@ -796,7 +796,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageforward)
+- [New-MgUserMessageForward](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageforward)
 
 
 

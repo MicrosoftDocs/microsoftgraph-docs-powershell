@@ -627,8 +627,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamapp)
-- [](https://learn.microsoft.com/graph/api/appcatalogs-list-teamsapps?view=graph-rest-1.0)
+- [Get-MgAppCatalogTeamApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/appcatalogs-list-teamsapps?view=graph-rest-1.0)
 
 
 

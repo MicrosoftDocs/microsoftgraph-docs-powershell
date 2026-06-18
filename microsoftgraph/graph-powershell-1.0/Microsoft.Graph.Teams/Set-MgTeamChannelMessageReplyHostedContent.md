@@ -560,7 +560,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamchannelmessagereplyhostedcontent)
+- [Set-MgTeamChannelMessageReplyHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamchannelmessagereplyhostedcontent)
 
 
 

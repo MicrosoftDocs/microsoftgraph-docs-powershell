@@ -430,7 +430,7 @@ Active labels should be hidden or disabled in user interfaces.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionpolicy)
+- [Update-MgBetaInformationProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionpolicy)
 
 
 

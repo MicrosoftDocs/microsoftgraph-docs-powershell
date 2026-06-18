@@ -404,7 +404,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivespecialcontent)
+- [Get-MgDriveSpecialContent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivespecialcontent)
 
 
 

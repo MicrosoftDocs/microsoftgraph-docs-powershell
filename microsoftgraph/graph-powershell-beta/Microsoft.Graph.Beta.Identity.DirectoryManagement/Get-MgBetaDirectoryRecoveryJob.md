@@ -598,8 +598,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecoveryjob)
-- [](https://learn.microsoft.com/graph/api/entrarecoveryservices-recovery-list-jobs?view=graph-rest-beta)
+- [Get-MgBetaDirectoryRecoveryJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecoveryjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/entrarecoveryservices-recovery-list-jobs?view=graph-rest-beta)
 
 
 

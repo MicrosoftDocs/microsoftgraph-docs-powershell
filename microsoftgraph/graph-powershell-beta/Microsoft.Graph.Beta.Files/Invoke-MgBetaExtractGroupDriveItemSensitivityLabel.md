@@ -409,7 +409,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaextractgroupdriveitemsensitivitylabel)
+- [Invoke-MgBetaExtractGroupDriveItemSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaextractgroupdriveitemsensitivitylabel)
 
 
 

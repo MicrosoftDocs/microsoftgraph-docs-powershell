@@ -575,7 +575,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsightused)
+- [Get-MgUserInsightUsed](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsightused)
 
 
 

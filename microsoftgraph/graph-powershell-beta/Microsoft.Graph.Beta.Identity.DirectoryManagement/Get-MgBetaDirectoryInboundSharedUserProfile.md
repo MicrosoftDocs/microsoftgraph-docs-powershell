@@ -607,9 +607,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryinboundshareduserprofile)
-- [](https://learn.microsoft.com/graph/api/inboundshareduserprofile-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/directory-list-inboundshareduserprofiles?view=graph-rest-beta)
+- [Get-MgBetaDirectoryInboundSharedUserProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryinboundshareduserprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/inboundshareduserprofile-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-list-inboundshareduserprofiles?view=graph-rest-beta)
 
 
 

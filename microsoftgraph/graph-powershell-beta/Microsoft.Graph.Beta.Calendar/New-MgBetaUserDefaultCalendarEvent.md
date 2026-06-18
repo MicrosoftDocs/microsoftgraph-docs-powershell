@@ -3241,7 +3241,7 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserdefaultcalendarevent)
+- [New-MgBetaUserDefaultCalendarEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserdefaultcalendarevent)
 
 
 

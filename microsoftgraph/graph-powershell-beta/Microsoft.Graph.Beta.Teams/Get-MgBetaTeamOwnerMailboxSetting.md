@@ -409,7 +409,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamownermailboxsetting)
+- [Get-MgBetaTeamOwnerMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamownermailboxsetting)
 
 
 

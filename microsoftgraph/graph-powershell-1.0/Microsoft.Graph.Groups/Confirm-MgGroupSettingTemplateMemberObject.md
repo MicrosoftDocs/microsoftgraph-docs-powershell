@@ -482,7 +482,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupsettingtemplatememberobject)
+- [Confirm-MgGroupSettingTemplateMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupsettingtemplatememberobject)
 
 
 

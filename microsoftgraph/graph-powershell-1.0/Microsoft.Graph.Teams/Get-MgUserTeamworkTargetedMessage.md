@@ -504,7 +504,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworktargetedmessage)
+- [Get-MgUserTeamworkTargetedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworktargetedmessage)
 
 
 

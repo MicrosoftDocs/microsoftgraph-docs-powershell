@@ -27059,8 +27059,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearch)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-searches?view=graph-rest-beta)
+- [New-MgBetaSecurityCaseEdiscoveryCaseSearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearch)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-searches?view=graph-rest-beta)
 
 
 

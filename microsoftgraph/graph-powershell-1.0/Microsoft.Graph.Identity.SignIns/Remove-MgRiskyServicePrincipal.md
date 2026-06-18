@@ -449,7 +449,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgriskyserviceprincipal)
+- [Remove-MgRiskyServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgriskyserviceprincipal)
 
 
 

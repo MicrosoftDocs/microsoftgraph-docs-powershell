@@ -649,9 +649,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainfederationconfiguration)
-- [](https://learn.microsoft.com/graph/api/internaldomainfederation-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/domain-list-federationconfiguration?view=graph-rest-beta)
+- [Get-MgBetaDomainFederationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainfederationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/internaldomainfederation-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-list-federationconfiguration?view=graph-rest-beta)
 
 
 

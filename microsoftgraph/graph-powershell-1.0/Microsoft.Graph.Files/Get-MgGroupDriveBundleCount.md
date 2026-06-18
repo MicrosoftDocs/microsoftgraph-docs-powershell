@@ -383,7 +383,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivebundlecount)
+- [Get-MgGroupDriveBundleCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivebundlecount)
 
 
 

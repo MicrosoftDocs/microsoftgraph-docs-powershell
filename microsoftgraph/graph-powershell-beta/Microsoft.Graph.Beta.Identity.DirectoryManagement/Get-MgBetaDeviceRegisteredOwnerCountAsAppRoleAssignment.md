@@ -426,7 +426,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredownercountasapproleassignment)
+- [Get-MgBetaDeviceRegisteredOwnerCountAsAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredownercountasapproleassignment)
 
 
 

@@ -376,7 +376,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactphoto)
+- [Get-MgUserContactPhoto](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactphoto)
 
 
 

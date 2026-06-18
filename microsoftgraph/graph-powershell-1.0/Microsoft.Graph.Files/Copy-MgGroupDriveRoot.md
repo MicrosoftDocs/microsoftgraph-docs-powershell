@@ -660,7 +660,7 @@ For OneDrive, this property is not populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mggroupdriveroot)
+- [Copy-MgGroupDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mggroupdriveroot)
 
 
 

@@ -703,7 +703,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeleteditemcrosstenantpartnerm365capability)
+- [Update-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeleteditemcrosstenantpartnerm365capability)
 
 
 

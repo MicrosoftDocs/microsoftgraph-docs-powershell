@@ -2986,8 +2986,8 @@ WEB `<IMicrosoftGraphWebApplication>`: webApplication
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplication)
-- [](https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-1.0)
+- [New-MgApplication](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplication)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-1.0)
 
 
 

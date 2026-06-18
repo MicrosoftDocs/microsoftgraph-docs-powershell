@@ -441,7 +441,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduleschedulinggroup)
+- [Remove-MgGroupTeamScheduleSchedulingGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduleschedulinggroup)
 
 
 

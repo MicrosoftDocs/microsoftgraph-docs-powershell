@@ -644,9 +644,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionmanagementpermissionrequestchange)
-- [](https://learn.microsoft.com/graph/api/permissionsrequestchange-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/permissionsmanagement-list-permissionsrequestchanges?view=graph-rest-beta)
+- [Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionmanagementpermissionrequestchange)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permissionsrequestchange-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permissionsmanagement-list-permissionsrequestchanges?view=graph-rest-beta)
 
 
 

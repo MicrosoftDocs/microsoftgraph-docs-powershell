@@ -614,8 +614,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydeleteditemasgroup)
-- [](https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-beta)
+- [Get-MgBetaDirectoryDeletedItemAsGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydeleteditemasgroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-beta)
 
 
 

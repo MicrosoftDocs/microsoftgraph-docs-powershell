@@ -587,7 +587,7 @@ BODYPARAMETER `<IPaths1Eykbp2DevicemanagementReportsMicrosoftGraphGetwindowsdriv
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportwindowsdriverupdatealertperpolicyperdevicereport)
+- [Get-MgBetaDeviceManagementReportWindowsDriverUpdateAlertPerPolicyPerDeviceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportwindowsdriverupdatealertperpolicyperdevicereport)
 
 
 

@@ -781,7 +781,7 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitemlink)
+- [New-MgSiteListItemLink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitemlink)
 
 
 
