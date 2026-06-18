@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgcommitdeviceappmanagementmobileappmicrosoftgraphioslobappcontentversionfile
@@ -546,7 +546,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1P0U9WsDeviceappmanagementMobileappsMobileappIdMicrosoftGraphIoslobappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1P0U9WsDeviceappmanagementMobileappsMobileappIdMicrosoftGraphIoslobappContentversionsMobileappcontentIdFilesMobileappcontentfileIdMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>]: Contains properties for file encryption information for the content version of a line-of-business app.
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -565,7 +565,7 @@ Must be 32 bytes.
 Maps to the strategy used to encrypt the file.
 Currently, only ProfileVersion1 is supported.
 
-FILEENCRYPTIONINFO <IMicrosoftGraphFileEncryptionInfo>: Contains properties for file encryption information for the content version of a line-of-business app.
+FILEENCRYPTIONINFO `<IMicrosoftGraphFileEncryptionInfo>`: Contains properties for file encryption information for the content version of a line-of-business app.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EncryptionKey <Byte[]>]: The key used to encrypt the file content.
   [FileDigest <Byte[]>]: The file digest prior to encryption.
@@ -582,7 +582,7 @@ Must be 32 bytes.
 Maps to the strategy used to encrypt the file.
 Currently, only ProfileVersion1 is supported.
 
-INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -624,3 +624,25 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgcommitdeviceappmanagementmobileappmicrosoftgraphioslobappcontentversionfile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

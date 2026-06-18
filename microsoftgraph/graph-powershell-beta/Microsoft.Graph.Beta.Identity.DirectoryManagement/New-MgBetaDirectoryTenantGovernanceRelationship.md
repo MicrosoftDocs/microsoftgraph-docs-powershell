@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernancerelationship
@@ -547,7 +547,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship>: governanceRelationship
+BODYPARAMETER `<IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship>`: governanceRelationship
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -585,7 +585,7 @@ Supports $filter (eq, ne) and $orderBy.
     [PolicyId <String>]: The identifier of the source policy template from which this snapshot was created.
   [Status <RelationshipStatus?>]: relationshipStatus
 
-POLICYSNAPSHOT <IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>: relationshipPolicy
+POLICYSNAPSHOT `<IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>`: relationshipPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedAdministrationRoleAssignments <IMicrosoftGraphTenantGovernanceServicesDelegatedAdministrationRoleAssignmentSnapshot[]>]: A snapshot of the delegated administration role assignments configured in this policy.
     [GroupId <String>]: The object ID of the role-assignable security group in the governing tenant that will be assigned the specified roles.
@@ -609,3 +609,25 @@ POLICYSNAPSHOT <IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>: rela
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernancerelationship)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

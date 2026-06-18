@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity
@@ -502,7 +502,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityIdentityContainer>: identityContainer
+BODYPARAMETER `<IMicrosoftGraphSecurityIdentityContainer>`: identityContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -632,7 +632,7 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
   [IsEnabled <Boolean?>]: Boolean indicating if the identityAccounts is enabled.
   [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier of the identityAccount.
 
-SENSORCANDIDATEACTIVATIONCONFIGURATION <IMicrosoftGraphSecuritySensorCandidateActivationConfiguration>: sensorCandidateActivationConfiguration
+SENSORCANDIDATEACTIVATIONCONFIGURATION `<IMicrosoftGraphSecuritySensorCandidateActivationConfiguration>`: sensorCandidateActivationConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -697,7 +697,7 @@ Read-only.
       [Name <String>]: The name of the network adapter.
   [Version <String>]: The version of the sensor.
 
-SETTINGS <IMicrosoftGraphSecuritySettingsContainer>: settingsContainer
+SETTINGS `<IMicrosoftGraphSecuritySettingsContainer>`: settingsContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -711,3 +711,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

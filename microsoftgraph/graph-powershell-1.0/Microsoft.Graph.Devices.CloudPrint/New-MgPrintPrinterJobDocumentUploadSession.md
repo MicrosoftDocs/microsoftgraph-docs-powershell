@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjobdocumentuploadsession
@@ -534,7 +534,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1GenyolPrintPrintersPrinterIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1GenyolPrintPrintersPrinterIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Properties <IMicrosoftGraphPrintDocumentUploadProperties>]: printDocumentUploadProperties
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -542,7 +542,7 @@ BODYPARAMETER <IPaths1GenyolPrintPrintersPrinterIdJobsPrintjobIdDocumentsPrintdo
     [DocumentName <String>]: The document's name.
     [Size <Int64?>]: The document's size in bytes.
 
-INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -557,7 +557,7 @@ INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [PrinterShareId <String>]: The unique identifier of printerShare
   [UserId <String>]: The unique identifier of user
 
-PROPERTIES <IMicrosoftGraphPrintDocumentUploadProperties>: printDocumentUploadProperties
+PROPERTIES `<IMicrosoftGraphPrintDocumentUploadProperties>`: printDocumentUploadProperties
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentType <String>]: The document's content (MIME) type.
   [DocumentName <String>]: The document's name.
@@ -568,3 +568,25 @@ PROPERTIES <IMicrosoftGraphPrintDocumentUploadProperties>: printDocumentUploadPr
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjobdocumentuploadsession)
 - [](https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
