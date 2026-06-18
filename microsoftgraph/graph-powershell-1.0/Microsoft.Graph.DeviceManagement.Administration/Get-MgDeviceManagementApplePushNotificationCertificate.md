@@ -47,12 +47,17 @@ Apple push notification certificate.
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementApplePushNotificationCertificate
+
+```
+This example shows how to use the Get-MgDeviceManagementApplePushNotificationCertificate Cmdlet.
+
 
 ## PARAMETERS
 

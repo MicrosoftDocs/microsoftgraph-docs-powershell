@@ -67,12 +67,17 @@ Get a Microsoft Entra role assignment with administrative unit scope.
 | Application | Directory.Read.All, Directory.ReadWrite.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId
+
+```
+This example shows how to use the Get-MgBetaAdministrativeUnitScopedRoleMember Cmdlet.
+
 
 ## PARAMETERS
 

@@ -76,8 +76,9 @@ Add an identity provider to an external identities self-service user flow repres
 The identity provider must first be configured in the tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -86,6 +87,10 @@ $params = @{
 }
 
 New-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef Cmdlet.
+
 
 ## PARAMETERS
 

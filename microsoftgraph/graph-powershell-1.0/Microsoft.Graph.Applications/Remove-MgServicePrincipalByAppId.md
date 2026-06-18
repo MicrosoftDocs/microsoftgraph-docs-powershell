@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 Delete a servicePrincipal object.
 This API can also delete an agentIdentityBlueprintPrincipal object by its ID.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AppId
@@ -423,6 +413,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalbyappid)
 - [](https://learn.microsoft.com/graph/api/serviceprincipal-delete?view=graph-rest-1.0)
+
 
 
 

@@ -69,12 +69,17 @@ The Role Assignments.
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementRoleAssignment
+
+```
+This example shows how to use the Get-MgDeviceManagementRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

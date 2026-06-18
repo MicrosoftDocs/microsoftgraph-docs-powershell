@@ -58,12 +58,17 @@ Remove an agentUser's sponsor.
 | Application | AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All, User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Users
 
 Remove-MgUserSponsorDirectoryObjectByRef -UserId $userId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgUserSponsorDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

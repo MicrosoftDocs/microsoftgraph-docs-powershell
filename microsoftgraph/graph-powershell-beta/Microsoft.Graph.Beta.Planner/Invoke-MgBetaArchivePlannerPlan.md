@@ -89,8 +89,9 @@ Archived tasks are not included in the response for list of tasks assigned to a 
 | Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -99,6 +100,10 @@ $params = @{
 }
 
 Invoke-MgBetaArchivePlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaArchivePlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

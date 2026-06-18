@@ -61,12 +61,17 @@ This cmdlet has the following aliases,
 The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityThreatIntelligenceHostChildHostPair -HostId $hostId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostChildHostPair Cmdlet.
+
 
 ## PARAMETERS
 

@@ -110,8 +110,9 @@ Update the properties of the default branding object specified by the organizati
 | Application | Organization.ReadWrite.All, OrganizationalBranding.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update the default branding
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -121,6 +122,10 @@ $params = @{
 }
 
 Update-MgOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example will update the default branding
+
 
 ## PARAMETERS
 

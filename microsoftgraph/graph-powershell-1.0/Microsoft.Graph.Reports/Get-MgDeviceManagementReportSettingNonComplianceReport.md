@@ -62,8 +62,9 @@ Invoke action getSettingNonComplianceReport
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
@@ -86,6 +87,10 @@ filter = "Filter value"
 }
 
 Get-MgDeviceManagementReportSettingNonComplianceReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDeviceManagementReportSettingNonComplianceReport Cmdlet.
+
 
 ## PARAMETERS
 

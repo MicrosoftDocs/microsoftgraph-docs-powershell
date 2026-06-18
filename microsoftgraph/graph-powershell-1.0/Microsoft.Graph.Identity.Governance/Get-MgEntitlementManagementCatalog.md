@@ -92,12 +92,17 @@ Retrieve the properties and relationships of an accessPackageCatalog object.
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementCatalog
+
+```
+This example shows how to use the Get-MgEntitlementManagementCatalog Cmdlet.
+
 
 ## PARAMETERS
 

@@ -84,8 +84,9 @@ For more information about how to handle mute operations, see muteParticipantOpe
 | Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallasGuest.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 Invoke-MgBetaMuteCommunicationCallParticipant -CallId $callId -ParticipantId $participantId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaMuteCommunicationCallParticipant Cmdlet.
+
 
 ## PARAMETERS
 

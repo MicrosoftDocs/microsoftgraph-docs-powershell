@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 List a set of items recently used by the signed-in user.\rThis collection includes items that are in the user's drive and items they have access to from other drives.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -529,6 +519,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentgroupdrive)
 - [](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-beta)
+
 
 
 

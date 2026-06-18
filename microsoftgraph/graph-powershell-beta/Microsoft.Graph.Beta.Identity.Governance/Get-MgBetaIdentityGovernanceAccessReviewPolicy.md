@@ -44,12 +44,17 @@ Read the properties and relationships of an accessReviewPolicy object.
 | Application | Policy.Read.All, Policy.ReadWrite.AccessReview,  |
 
 ## EXAMPLES
+### Example 2: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceAccessReviewPolicy
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -54,8 +54,9 @@ This cmdlet has the following aliases,
 Create a new verifiedIdProfile object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 New-MgBetaIdentityVerifiedIdProfile -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityVerifiedIdProfile Cmdlet.
+
 
 ## PARAMETERS
 

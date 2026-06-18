@@ -73,16 +73,6 @@ Invoke function findRooms
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Read.All, User.ReadBasic.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -478,6 +468,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroom)
+
 
 
 

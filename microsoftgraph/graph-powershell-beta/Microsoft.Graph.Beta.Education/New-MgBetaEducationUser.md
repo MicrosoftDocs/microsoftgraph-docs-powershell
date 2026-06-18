@@ -66,8 +66,9 @@ This cmdlet has the following aliases,
 Create a new user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -103,6 +104,10 @@ $params = @{
 }
 
 New-MgBetaEducationUser -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationUser Cmdlet.
+
 
 ## PARAMETERS
 

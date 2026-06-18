@@ -62,12 +62,17 @@ Represents the approximate physical extent of a referenced building.
 It corresponds to footprint.geojson in IMDF format.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
 Get-MgPlaceAsBuildingMapFootprint -PlaceId $placeId
+
+```
+This example shows how to use the Get-MgPlaceAsBuildingMapFootprint Cmdlet.
+
 
 ## PARAMETERS
 

@@ -88,8 +88,9 @@ DriveItem resources inherit sharing permissions from their ancestors.
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Creating sharable links
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Files
 
@@ -102,7 +103,12 @@ $params = @{
 
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows creating sharable links
+
+### Example 2: Creating company sharable links
+
+```powershell
 
 Import-Module Microsoft.Graph.Files
 
@@ -113,7 +119,12 @@ $params = @{
 
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example shows creating company sharable links
+
+### Example 3: Creating embeddable links
+
+```powershell
 
 Import-Module Microsoft.Graph.Files
 
@@ -122,6 +133,10 @@ $params = @{
 }
 
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows creating embeddable links
+
 
 ## PARAMETERS
 

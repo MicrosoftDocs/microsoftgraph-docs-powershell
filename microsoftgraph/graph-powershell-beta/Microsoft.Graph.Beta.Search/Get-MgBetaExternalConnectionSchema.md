@@ -56,12 +56,17 @@ Retrieve the properties of a schema for an externalConnection.
 | Application | ExternalConnection.Read.All, ExternalConnection.ReadWrite.All, ExternalConnection.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId
+
+```
+This example shows how to use the Get-MgBetaExternalConnectionSchema Cmdlet.
+
 
 ## PARAMETERS
 

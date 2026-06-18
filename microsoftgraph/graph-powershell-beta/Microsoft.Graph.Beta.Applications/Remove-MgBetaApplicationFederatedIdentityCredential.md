@@ -59,12 +59,17 @@ Delete a federatedIdentityCredential object from an application or an agentIdent
 | Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId
+
+```
+This example shows how to use the Remove-MgBetaApplicationFederatedIdentityCredential Cmdlet.
+
 
 ## PARAMETERS
 

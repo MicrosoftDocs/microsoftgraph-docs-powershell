@@ -58,12 +58,17 @@ Delete a bookingCustomQuestion object.
 | Application | Bookings.Manage.All, Bookings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
 Remove-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
+
+```
+This example shows how to use the Remove-MgBookingBusinessCustomQuestion Cmdlet.
+
 
 ## PARAMETERS
 

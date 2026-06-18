@@ -86,8 +86,9 @@ Update the navigation property deviceStatusOverview in deviceManagement
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -103,6 +104,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview Cmdlet.
+
 
 ## PARAMETERS
 

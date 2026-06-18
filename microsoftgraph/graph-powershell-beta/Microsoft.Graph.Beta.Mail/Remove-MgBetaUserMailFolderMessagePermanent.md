@@ -63,16 +63,6 @@ For more information about item retention, see Configure Deleted Item retention 
 | Delegated (personal Microsoft account) | Mail.ReadWrite,  |
 | Application | Mail.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -442,6 +432,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagepermanent)
 - [](https://learn.microsoft.com/graph/api/message-permanentdelete?view=graph-rest-beta)
+
 
 
 

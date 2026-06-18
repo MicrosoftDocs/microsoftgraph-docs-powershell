@@ -52,8 +52,9 @@ Create a new governanceInvitation to establish a governance relationship with a 
 Invitations provide an alternative mechanism to governance requests for initiating relationships.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -62,6 +63,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryTenantGovernanceInvitation -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDirectoryTenantGovernanceInvitation Cmdlet.
+
 
 ## PARAMETERS
 

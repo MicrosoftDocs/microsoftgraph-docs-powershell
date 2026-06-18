@@ -69,12 +69,17 @@ All roles can get the details of a townhall event.
 | Application | VirtualEvent.Read.All, VirtualEvent.Read.Chat,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgVirtualEventTownhall -VirtualEventTownhallId $virtualEventTownhallId
+
+```
+This example shows how to use the Get-MgVirtualEventTownhall Cmdlet.
+
 
 ## PARAMETERS
 

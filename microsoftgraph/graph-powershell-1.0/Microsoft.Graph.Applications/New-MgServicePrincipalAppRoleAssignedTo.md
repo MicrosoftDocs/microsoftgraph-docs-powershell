@@ -90,8 +90,9 @@ To grant an app role assignment, you need three identifiers:
 | Application | Application.Read.All, AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
@@ -102,6 +103,10 @@ $params = @{
 }
 
 New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the New-MgServicePrincipalAppRoleAssignedTo Cmdlet.
+
 
 ## PARAMETERS
 

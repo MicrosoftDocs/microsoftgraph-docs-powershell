@@ -60,12 +60,17 @@ This cmdlet has the following aliases,
 The resource role scopes associated with this available access package.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScope -AvailableAccessPackageId $availableAccessPackageId
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScope Cmdlet.
+
 
 ## PARAMETERS
 

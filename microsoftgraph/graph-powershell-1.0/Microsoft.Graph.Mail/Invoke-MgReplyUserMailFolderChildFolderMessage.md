@@ -85,16 +85,6 @@ When using MIME format:\r- Provide the applicable Internet message headers and t
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to an existing message and send it later.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -823,6 +813,7 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyusermailfolderchildfoldermessage)
 - [](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-1.0)
+
 
 
 

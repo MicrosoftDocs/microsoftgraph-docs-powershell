@@ -87,8 +87,9 @@ You can use this method with the following child object type: qualityUpdatePolic
 | Application | WindowsUpdates.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
@@ -107,6 +108,10 @@ $params = @{
 }
 
 Update-MgBetaWindowsUpdatesPolicy -PolicyId $policyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaWindowsUpdatesPolicy Cmdlet.
+
 
 ## PARAMETERS
 

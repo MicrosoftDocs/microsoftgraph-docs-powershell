@@ -52,8 +52,9 @@ Create a new webApplicationFirewallProvider object.
 You can create one of the following subtypes that are derived from webApplicationFirewallProvider.
 
 ## EXAMPLES
+### Example 1: Create a new AkamaiWebApplicationFirewallProvider object
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -68,7 +69,12 @@ $params = @{
 
 New-MgIdentityRiskPreventionWebApplicationFirewallProvider -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a new akamaiwebapplicationfirewallprovider object
+
+### Example 2: Create a new cloudFlareWebApplicationFirewallProvider object
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -80,6 +86,10 @@ $params = @{
 }
 
 New-MgIdentityRiskPreventionWebApplicationFirewallProvider -BodyParameter $params
+
+```
+This example will create a new cloudflarewebapplicationfirewallprovider object
+
 
 ## PARAMETERS
 

@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 Defines the partner-specific Microsoft 365 cross-tenant capabilities for inbound access from the partner organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -659,6 +649,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartnerm365capability)
 - [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-list-m365capabilities?view=graph-rest-beta)
+
+
 
 
 

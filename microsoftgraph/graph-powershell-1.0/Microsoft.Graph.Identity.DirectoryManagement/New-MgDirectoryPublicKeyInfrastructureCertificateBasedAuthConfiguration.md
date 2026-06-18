@@ -61,8 +61,9 @@ Create a new certificateBasedAuthPki object.
 | Application | PublicKeyInfrastructure.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -71,6 +72,10 @@ $params = @{
 }
 
 New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration -BodyParameter $params
+
+```
+This example shows how to use the New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

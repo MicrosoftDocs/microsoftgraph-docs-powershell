@@ -250,16 +250,6 @@ This cmdlet has the following aliases,
 
 Update the properties of a user or agentUser object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AboutMe
@@ -112878,6 +112868,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserbyuserprincipalname)
 - [](https://learn.microsoft.com/graph/api/user-update?view=graph-rest-beta)
+
 
 
 

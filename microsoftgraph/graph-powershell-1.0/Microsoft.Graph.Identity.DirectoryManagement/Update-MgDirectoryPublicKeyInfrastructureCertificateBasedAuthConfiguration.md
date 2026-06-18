@@ -88,8 +88,9 @@ Update the properties of a certificateBasedAuthPki object.
 | Application | PublicKeyInfrastructure.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -98,6 +99,10 @@ $params = @{
 }
 
 Update-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration -CertificateBasedAuthPkiId $certificateBasedAuthPkiId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

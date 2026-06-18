@@ -84,8 +84,9 @@ Create a new siteSource object associated with an eDiscovery custodian.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -96,6 +97,10 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource Cmdlet.
+
 
 ## PARAMETERS
 

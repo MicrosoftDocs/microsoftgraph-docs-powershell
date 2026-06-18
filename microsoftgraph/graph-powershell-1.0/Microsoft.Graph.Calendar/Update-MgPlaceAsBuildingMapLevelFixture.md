@@ -71,8 +71,9 @@ This cmdlet has the following aliases,
 Update the properties of an existing fixtureMap object in IMDF format on a specified floor, or create one if it doesn't exist.
 
 ## EXAMPLES
+### Example 1: Update an existing fixtureMap
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -83,7 +84,12 @@ $params = @{
 
 Update-MgPlaceAsBuildingMapLevelFixture -PlaceId $placeId -LevelMapId $levelMapId -FixtureMapId $fixtureMapId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update an existing fixturemap
+
+### Example 2: Create a fixtureMap if it doesn't exist
+
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -93,6 +99,10 @@ $params = @{
 }
 
 Update-MgPlaceAsBuildingMapLevelFixture -PlaceId $placeId -LevelMapId $levelMapId -FixtureMapId $fixtureMapId -BodyParameter $params
+
+```
+This example will create a fixturemap if it doesn't exist
+
 
 ## PARAMETERS
 

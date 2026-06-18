@@ -69,12 +69,17 @@ Retrieve the properties of a contentSharingSession object.
 | Application | Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationCallContentSharingSession -CallId $callId
+
+```
+This example shows how to use the Get-MgBetaCommunicationCallContentSharingSession Cmdlet.
+
 
 ## PARAMETERS
 

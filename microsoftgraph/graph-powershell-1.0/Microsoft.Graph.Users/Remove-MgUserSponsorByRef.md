@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Remove an agentUser's sponsor.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -442,6 +432,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersponsorbyref)
 - [](https://learn.microsoft.com/graph/api/agentuser-delete-sponsors?view=graph-rest-1.0)
+
 
 
 

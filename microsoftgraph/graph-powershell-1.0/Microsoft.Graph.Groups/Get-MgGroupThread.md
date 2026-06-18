@@ -69,12 +69,17 @@ You can specify both the parent conversation and the thread, or, \ryou can speci
 | Application | Group-Conversation.Read.All, Group-Conversation.ReadWrite.All, Group.Read.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupThread -GroupId $groupId
+
+```
+This example shows how to use the Get-MgGroupThread Cmdlet.
+
 
 ## PARAMETERS
 

@@ -65,12 +65,17 @@ Get the specified Teams async operation that ran or is running on a specific res
 | Application | Chat.Manage.Chat, Chat.Read.All, Chat.ReadBasic.All, Chat.ReadWrite.All, ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaChatOperation -ChatId $chatId
+
+```
+This example shows how to use the Get-MgBetaChatOperation Cmdlet.
+
 
 ## PARAMETERS
 

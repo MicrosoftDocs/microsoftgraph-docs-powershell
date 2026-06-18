@@ -62,8 +62,9 @@ Create new navigation property to vppTokens for deviceAppManagement
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -82,6 +83,10 @@ $params = @{
 }
 
 New-MgDeviceAppManagementVppToken -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementVppToken Cmdlet.
+
 
 ## PARAMETERS
 

@@ -79,8 +79,9 @@ Update the properties of a b2bManagementPolicy object.
 | Application | Policy.ReadWrite.B2BManagementPolicy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -95,6 +96,10 @@ isOrganizationDefault = "true"
 }
 
 Update-MgBetaPolicyB2BManagementPolicy -B2bManagementPolicyId $b2bManagementPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyB2BManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

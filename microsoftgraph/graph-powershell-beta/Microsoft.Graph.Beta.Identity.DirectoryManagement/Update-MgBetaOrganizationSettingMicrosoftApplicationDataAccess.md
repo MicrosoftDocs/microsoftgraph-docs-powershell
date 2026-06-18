@@ -81,8 +81,9 @@ Update the settings in a microsoftApplicationDataAccessSettings object that spec
 | Application | Organization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -91,6 +92,10 @@ $params = @{
 }
 
 Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet.
+
 
 ## PARAMETERS
 

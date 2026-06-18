@@ -71,8 +71,9 @@ This cmdlet has the following aliases,
 Update the properties of an existing unitMap object in IMDF format on a specified floor, or create one if it doesn't exist.
 
 ## EXAMPLES
+### Example 1: Update an existing unitMap
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -83,7 +84,12 @@ $params = @{
 
 Update-MgPlaceAsBuildingMapLevelUnit -PlaceId $placeId -LevelMapId $levelMapId -UnitMapId $unitMapId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update an existing unitmap
+
+### Example 2: Create a unitMap if it doesn't exist
+
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -92,6 +98,10 @@ $params = @{
 }
 
 Update-MgPlaceAsBuildingMapLevelUnit -PlaceId $placeId -LevelMapId $levelMapId -UnitMapId $unitMapId -BodyParameter $params
+
+```
+This example will create a unitmap if it doesn't exist
+
 
 ## PARAMETERS
 

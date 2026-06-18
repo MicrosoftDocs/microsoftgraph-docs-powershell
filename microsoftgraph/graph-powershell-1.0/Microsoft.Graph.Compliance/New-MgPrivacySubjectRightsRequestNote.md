@@ -74,8 +74,9 @@ This cmdlet has the following aliases,
 Create a new authoredNote object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Compliance
 
@@ -87,6 +88,10 @@ $params = @{
 }
 
 New-MgPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId -BodyParameter $params
+
+```
+This example shows how to use the New-MgPrivacySubjectRightsRequestNote Cmdlet.
+
 
 ## PARAMETERS
 

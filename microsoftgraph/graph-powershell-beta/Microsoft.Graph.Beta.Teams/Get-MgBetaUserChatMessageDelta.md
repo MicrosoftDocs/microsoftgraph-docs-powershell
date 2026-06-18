@@ -72,16 +72,6 @@ For more information, see the delta query documentation.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Chat.Read.All, Chat.ReadWrite.All, ChatMessage.Read.Chat, Group.Read.All, Group.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -636,6 +626,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatmessagedelta)
 - [](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-beta)
+
 
 
 

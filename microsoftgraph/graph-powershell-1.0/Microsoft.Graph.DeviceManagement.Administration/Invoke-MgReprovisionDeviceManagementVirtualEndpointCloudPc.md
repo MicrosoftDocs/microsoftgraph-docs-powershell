@@ -81,8 +81,9 @@ Reprovision a specific Cloud PC.
 | Application | CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet.
+
 
 ## PARAMETERS
 

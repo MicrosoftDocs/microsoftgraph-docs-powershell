@@ -79,8 +79,9 @@ Set the order of identityUserFlowAttributeAssignments being collected within a u
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 Set-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder Cmdlet.
+
 
 ## PARAMETERS
 

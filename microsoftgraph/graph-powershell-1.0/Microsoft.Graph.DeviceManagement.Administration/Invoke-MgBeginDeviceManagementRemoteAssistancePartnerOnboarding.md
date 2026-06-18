@@ -58,12 +58,17 @@ Must be coupled with the appropriate TeamViewer account information
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding -RemoteAssistancePartnerId $remoteAssistancePartnerId
+
+```
+This example shows how to use the Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding Cmdlet.
+
 
 ## PARAMETERS
 

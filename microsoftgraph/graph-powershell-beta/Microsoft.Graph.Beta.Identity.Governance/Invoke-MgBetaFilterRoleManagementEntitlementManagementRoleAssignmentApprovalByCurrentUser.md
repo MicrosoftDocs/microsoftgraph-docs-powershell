@@ -54,16 +54,6 @@ The objects returned are those that are in scope for approval by the calling use
 In PIM for Groups, return a collection of assignment approvals.
 The objects returned are those that are in scope for approval by the calling user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -596,6 +586,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententitlementmanagementroleassignmentapprovalbycurrentuser)
 - [](https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-beta)
+
 
 
 

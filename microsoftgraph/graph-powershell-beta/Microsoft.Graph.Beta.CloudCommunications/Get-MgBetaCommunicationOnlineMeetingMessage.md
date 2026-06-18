@@ -44,12 +44,17 @@ This function returns a snapshot of all Q&A activity in JSON format.
 The export includes:\r- The original question or discussion text\r- The user who posted the message\r- All replies and responders\r- Vote counts\r- Moderation status (pending or dismissed)\r- Private replies\r- The meeting ID and organizer ID that are used for mapping to meeting metadata.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
-Get-MgBetaCommunicationOnlineMeetingMessage -ExpandProperty "conversation"
+Get-MgBetaCommunicationOnlineMeetingMessage -ExpandProperty "conversation" 
+
+```
+This example shows how to use the Get-MgBetaCommunicationOnlineMeetingMessage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -86,8 +86,9 @@ Update the properties of an externalAuthenticationMethodConfiguration object.
 | Application | Policy.ReadWrite.AuthenticationMethod,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -104,6 +105,10 @@ $params = @{
 }
 
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -74,12 +74,17 @@ Repeated requests to this API might result in 429 HTTP errors.
 | Application | ExternalItem.Read.All, ExternalItem.ReadWrite.All, ExternalItem.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId
+
+```
+This example shows how to use the Get-MgBetaExternalConnectionItem Cmdlet.
+
 
 ## PARAMETERS
 

@@ -67,12 +67,17 @@ Retrieve the properties and relationships of the school object.
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationSchool
+
+```
+This example shows how to use the Get-MgBetaEducationSchool Cmdlet.
+
 
 ## PARAMETERS
 

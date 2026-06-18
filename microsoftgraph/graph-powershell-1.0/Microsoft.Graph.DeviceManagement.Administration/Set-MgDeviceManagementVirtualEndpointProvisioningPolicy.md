@@ -83,8 +83,9 @@ Assign a cloudPcProvisioningPolicy to user groups.
 | Application | CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -100,6 +101,10 @@ $params = @{
 }
 
 Set-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
+
 
 ## PARAMETERS
 

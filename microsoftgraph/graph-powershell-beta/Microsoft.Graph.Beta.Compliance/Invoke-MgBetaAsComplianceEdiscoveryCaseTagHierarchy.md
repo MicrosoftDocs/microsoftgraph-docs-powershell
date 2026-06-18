@@ -56,16 +56,6 @@ Return a list of tag objects in hierarchial form
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -506,6 +496,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaascomplianceediscoverycasetaghierarchy)
+
 
 
 

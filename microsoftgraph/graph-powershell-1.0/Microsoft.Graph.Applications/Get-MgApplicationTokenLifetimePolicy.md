@@ -51,12 +51,17 @@ Only one object is returned in the collection because only one tokenLifetimePoli
 | Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationTokenLifetimePolicy -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgApplicationTokenLifetimePolicy Cmdlet.
+
 
 ## PARAMETERS
 

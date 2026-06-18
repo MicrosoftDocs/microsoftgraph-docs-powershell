@@ -64,12 +64,17 @@ Read the properties and relationships of a partnerSecurityAlert object.
 | Application | PartnerSecurity.Read.All, PartnerSecurity.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityPartnerSecurityAlert
+
+```
+This example shows how to use the Get-MgBetaSecurityPartnerSecurityAlert Cmdlet.
+
 
 ## PARAMETERS
 
