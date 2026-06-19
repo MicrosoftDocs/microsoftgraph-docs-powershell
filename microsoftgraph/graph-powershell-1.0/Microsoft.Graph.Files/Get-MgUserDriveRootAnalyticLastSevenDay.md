@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Get lastSevenDays from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -397,6 +387,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalyticlastsevenday)
+
 
 
 

@@ -81,16 +81,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property webApplicationFirewallVerifications in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -776,6 +766,7 @@ This is the host or zone name to which the configuration applies.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityriskpreventionwebapplicationfirewallverification)
+
 
 
 

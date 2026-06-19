@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to roleGroups for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -445,6 +435,7 @@ Must be unique within the referenceType.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatarolegroup)
+
 
 
 

@@ -58,16 +58,6 @@ This cmdlet has the following aliases,
 
 The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -670,6 +660,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancecatalogaccesspackagecustomworkflowextension)
+
 
 
 

@@ -52,16 +52,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to managedTenantAlertRuleDefinitions for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -709,6 +699,7 @@ DEFINITIONTEMPLATE `<IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>`:
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertruledefinition)
+
 
 
 

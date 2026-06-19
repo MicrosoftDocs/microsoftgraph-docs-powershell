@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Invoke action retrieveAndroidWorkProfileDeviceMigrationStatuses
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -598,6 +588,7 @@ BODY `<IPathsKmqqcnDevicemanagementReportsMicrosoftGraphRetrieveandroidworkprofi
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportandroidworkprofiledevicemigrationstatus)
+
 
 
 

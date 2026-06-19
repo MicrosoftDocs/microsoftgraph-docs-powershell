@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM.
 Supports $expand and $select nested in $expand for id only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -464,6 +454,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedulerequestprincipal)
+
 
 
 

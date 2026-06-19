@@ -74,16 +74,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property activities in external
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -644,6 +634,7 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionitemactivity)
+
 
 
 

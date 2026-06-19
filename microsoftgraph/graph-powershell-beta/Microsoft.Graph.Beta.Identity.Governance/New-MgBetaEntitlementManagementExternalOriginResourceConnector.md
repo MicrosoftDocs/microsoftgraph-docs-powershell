@@ -57,16 +57,6 @@ Create new navigation property to externalOriginResourceConnectors for identityG
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -569,6 +559,7 @@ CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementexternaloriginresourceconnector)
+
 
 
 
