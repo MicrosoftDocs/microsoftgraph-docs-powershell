@@ -19,24 +19,37 @@ function Start-Generator {
             $DelegatedPersonalPermissions = @();
             #Get Permissions
             $Permissions = $_.Permissions;
+            # Collect permissions with their privilege level for sorting
+            $DWPermsWithPrivilege = @();
+            $AppPermsWithPrivilege = @();
+            $DPPermsWithPrivilege = @();
             $Permissions | ForEach-Object {
                 $Permission = $_;
                 $PermissionName = $Permission.Name;
                 $PermissionType = $Permission.PermissionType;
+                $IsLeast = $Permission.IsLeastPrivilege -eq $true -or $Permission.IsLeastPrivilege -eq "True";
+                $entry = [PSCustomObject]@{ Name = $PermissionName; IsLeastPrivilege = $IsLeast }
                 if ($PermissionType -eq "DelegatedWork") {
-                    $DelegatedWorkPermissions += $PermissionName;
+                    $DWPermsWithPrivilege += $entry;
                 }
                 elseif ($PermissionType -eq "Application") {
-                    $ApplicationPermissions += $PermissionName;
+                    $AppPermsWithPrivilege += $entry;
                 }
                 elseif ($PermissionType -eq "DelegatedPersonal") {
-                    $DelegatedPersonalPermissions += $PermissionName;
+                    $DPPermsWithPrivilege += $entry;
                 }
             }
-            # Sort permissions alphabetically for deterministic output
-            $DelegatedWorkPermissions = $DelegatedWorkPermissions | Sort-Object;
-            $ApplicationPermissions = $ApplicationPermissions | Sort-Object;
-            $DelegatedPersonalPermissions = $DelegatedPersonalPermissions | Sort-Object;
+            # Sort: least privileged first, then alphabetically within each group
+            # Deduplicate by name to avoid repeated entries
+            $DelegatedWorkPermissions = $DWPermsWithPrivilege |
+                Sort-Object @{Expression={-not $_.IsLeastPrivilege}}, @{Expression={$_.Name}} |
+                Select-Object -ExpandProperty Name -Unique;
+            $ApplicationPermissions = $AppPermsWithPrivilege |
+                Sort-Object @{Expression={-not $_.IsLeastPrivilege}}, @{Expression={$_.Name}} |
+                Select-Object -ExpandProperty Name -Unique;
+            $DelegatedPersonalPermissions = $DPPermsWithPrivilege |
+                Sort-Object @{Expression={-not $_.IsLeastPrivilege}}, @{Expression={$_.Name}} |
+                Select-Object -ExpandProperty Name -Unique;
             #If its already in the list, skip it
             if ($CmdList -notcontains $CommandName) {
                 #Check if all types of permissions in the their respective arrays are empty. If empty just skip the command
