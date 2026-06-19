@@ -20,6 +20,9 @@ function Get-NormalizedContent {
         [string] $FilePath
     )
     $content = Get-Content $FilePath -Raw
+    # Normalize line endings to LF and trim trailing whitespace
+    $content = $content -replace "`r`n", "`n"
+    $content = $content.TrimEnd()
     # Strip ms.date line so date-only changes are ignored during comparison
     $content = $content -replace '(?m)^ms\.date: .+$', ''
     return $content
@@ -31,8 +34,13 @@ function Get-DeterministicGuid {
         [string] $InputString
     )
     $bytes = [System.Text.Encoding]::UTF8.GetBytes($InputString)
-    $hash = [System.Security.Cryptography.SHA256]::Create().ComputeHash($bytes)
-    return [guid]::new($hash[0..15]).ToString()
+    $sha256 = [System.Security.Cryptography.SHA256]::Create()
+    try {
+        $hash = $sha256.ComputeHash($bytes)
+        return [guid]::new([byte[]]$hash[0..15]).ToString()
+    } finally {
+        $sha256.Dispose()
+    }
 }
 
 function Set-Help {
@@ -90,26 +98,29 @@ function Start-GraphHelp {
             $profilePath = "graph-powershell-beta"
         }
 
-        # Generate auth docs to temp directory, then compare
+        # Generate all auth module docs to temp directory using module-level generation
         Set-Help -ModuleDocsPath $TempAuthDir -Command "Connect-MgGraph" -Module "Microsoft.Graph.Authentication"
-        $tempAuthFile = Join-Path $TempAuthDir $AuthPath "Connect-MgGraph.md"
-        $existingAuthFile = Join-Path $AuthDestination "Connect-MgGraph.md"
-        if ((Test-Path $tempAuthFile)) {
-            if (Test-Path $existingAuthFile) {
-                $existingContent = Get-NormalizedContent -FilePath $existingAuthFile
-                $newContent = Get-NormalizedContent -FilePath $tempAuthFile
-                if ($existingContent -ne $newContent) {
-                    Copy-Item -Path $tempAuthFile -Destination $existingAuthFile -Force
-                    Write-Host "Updated auth doc: Connect-MgGraph"
+
+        # Compare and copy all generated auth files
+        $TempAuthModuleDir = Join-Path $TempAuthDir $AuthPath
+        if (Test-Path $TempAuthModuleDir) {
+            if (-not (Test-Path $AuthDestination)) {
+                New-Item -Path $AuthDestination -ItemType Directory -Force | Out-Null
+            }
+            Get-ChildItem -Path $TempAuthModuleDir -Filter "*.md" -File | ForEach-Object {
+                $tempFile = $_.FullName
+                $existingFile = Join-Path $AuthDestination $_.Name
+                if (Test-Path $existingFile) {
+                    $existingContent = Get-NormalizedContent -FilePath $existingFile
+                    $newContent = Get-NormalizedContent -FilePath $tempFile
+                    if ($existingContent -ne $newContent) {
+                        Copy-Item -Path $tempFile -Destination $existingFile -Force
+                        Write-Host "Updated auth doc: $($_.BaseName)"
+                    }
                 } else {
-                    Write-Host "No content changes for auth doc: Connect-MgGraph"
+                    Copy-Item -Path $tempFile -Destination $existingFile -Force
+                    Write-Host "Added auth doc: $($_.BaseName)"
                 }
-            } else {
-                if (-not (Test-Path $AuthDestination)) {
-                    New-Item -Path $AuthDestination -ItemType Directory -Force | Out-Null
-                }
-                Copy-Item -Path $tempAuthFile -Destination $existingAuthFile -Force
-                Write-Host "Added auth doc: Connect-MgGraph"
             }
         }
          Get-FolderByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
@@ -217,10 +228,13 @@ function Get-FolderByProfile {
         } else {
             # Only write TOC if content has changed
             $TocFilePath = Join-Path $Destination $TocFileName
-            $newTocText = $TocContent -join "`n"
+            $newTocText = ($TocContent -join "`r`n") + "`r`n"
             if (Test-Path $TocFilePath) {
-                $existingTocText = (Get-Content $TocFilePath -Raw).TrimEnd()
-                if ($existingTocText -ne $newTocText) {
+                $existingTocText = Get-Content $TocFilePath -Raw
+                # Normalize both to LF for comparison
+                $existingNormalized = $existingTocText -replace "`r`n", "`n"
+                $newNormalized = $newTocText -replace "`r`n", "`n"
+                if ($existingNormalized.TrimEnd() -ne $newNormalized.TrimEnd()) {
                     $newTocText | Out-File $TocFilePath -Encoding UTF8 -NoNewline
                     Write-Host "Updated TOC: $TocFileName"
                 }
