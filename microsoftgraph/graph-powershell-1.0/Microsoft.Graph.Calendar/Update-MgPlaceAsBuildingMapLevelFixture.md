@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmaplevelfixture
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 06/19/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlaceAsBuildingMapLevelFixture
 ---
@@ -14,9 +14,6 @@ title: Update-MgPlaceAsBuildingMapLevelFixture
 ## SYNOPSIS
 
 Update the properties of an existing fixtureMap object in IMDF format on a specified floor, or create one if it doesn't exist.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingMapLevelFixture](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingMapLevelFixture?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,6 +66,30 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of an existing fixtureMap object in IMDF format on a specified floor, or create one if it doesn't exist.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	placeId = "67149ec1-4b99-42d4-88a4-d92cd23cb606"
+	properties = '{"id":"005eb3b8-c95d-4d35-a8a0-22d3cb4d6002","type":"Feature","feature_type":"fixture","geometry":{"type":"Polygon","coordinates":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},"properties":{"name":{"en":"Test Fixture update"},"level_id":"e537d463-475b-43c3-a650-184566c68bc9","display_point":{"type":"Point","coordinates":[-121.8888983,37.3295292]}}}'
+}
+
+Update-MgPlaceAsBuildingMapLevelFixture -PlaceId $placeId -LevelMapId $levelMapId -FixtureMapId $fixtureMapId -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	placeId = "67149ec1-4b99-42d4-88a4-d92cd23cb606"
+	properties = '{"id":"005eb3b8-c95d-4d35-a8a0-22d3cb4d6002","type":"Feature","feature_type":"fixture","geometry":{"type":"Polygon","coordinates":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},"properties":{"name":{"en":"Test Fixture 01"},"level_id":"e537d463-475b-43c3-a650-184566c68bc9","display_point":{"type":"Point","coordinates":[-121.8888983,37.3295292]}}}'
+}
+
+Update-MgPlaceAsBuildingMapLevelFixture -PlaceId $placeId -LevelMapId $levelMapId -FixtureMapId $fixtureMapId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -565,14 +586,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFixtureMap>`: fixtureMap
+BODYPARAMETER <IMicrosoftGraphFixtureMap>: fixtureMap
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Properties <String>]: Concatenated key-value pair of all properties of a GeoJSON file for this baseMapFeature.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [PlaceId <String>]: Identifier for the floor to which this fixtureMap belongs.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -595,28 +616,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgPlaceAsBuildingMapLevelFixture](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmaplevelfixture)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/fixturemap-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmaplevelfixture)
+- [](https://learn.microsoft.com/graph/api/fixturemap-update?view=graph-rest-1.0)
