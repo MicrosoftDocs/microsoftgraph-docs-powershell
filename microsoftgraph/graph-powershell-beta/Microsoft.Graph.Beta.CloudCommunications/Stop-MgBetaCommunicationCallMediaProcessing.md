@@ -88,8 +88,9 @@ However, it will not cancel a ubscribeToTone operation because it operates indep
 | Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -98,6 +99,10 @@ $params = @{
 }
 
 Stop-MgBetaCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Stop-MgBetaCommunicationCallMediaProcessing Cmdlet.
+
 
 ## PARAMETERS
 

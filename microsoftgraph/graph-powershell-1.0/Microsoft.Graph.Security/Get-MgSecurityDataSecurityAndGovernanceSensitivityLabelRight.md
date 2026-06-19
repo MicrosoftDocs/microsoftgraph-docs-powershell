@@ -58,12 +58,17 @@ Get the usage rights granted to the calling user for a specific sensitivity labe
 | Application | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight -SensitivityLabelId $sensitivityLabelId -Owneremail "bob@contoso.com"
+Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight -SensitivityLabelId $sensitivityLabelId -Owneremail "bob@contoso.com" 
+
+```
+This example shows how to use the Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight Cmdlet.
+
 
 ## PARAMETERS
 

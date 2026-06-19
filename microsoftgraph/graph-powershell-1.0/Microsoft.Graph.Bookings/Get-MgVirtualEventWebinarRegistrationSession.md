@@ -62,12 +62,17 @@ This cmdlet has the following aliases,
 Sessions for a registration.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgVirtualEventWebinarRegistrationSession -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventRegistrationId $virtualEventRegistrationId
+
+```
+This example shows how to use the Get-MgVirtualEventWebinarRegistrationSession Cmdlet.
+
 
 ## PARAMETERS
 

@@ -90,12 +90,17 @@ This cmdlet has the following aliases,
 Get the specified permissions object of a user or group calendar that has been shared.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Get-MgBetaUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
+
+```
+This example shows how to use the Get-MgBetaUserCalendarPermission Cmdlet.
+
 
 ## PARAMETERS
 

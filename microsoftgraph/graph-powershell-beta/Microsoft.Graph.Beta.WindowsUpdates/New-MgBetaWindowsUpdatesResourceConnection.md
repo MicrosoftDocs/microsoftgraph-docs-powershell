@@ -56,8 +56,9 @@ Create a new operationalInsightsConnection object.
 | Application | WindowsUpdates.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
@@ -69,6 +70,10 @@ $params = @{
 }
 
 New-MgBetaWindowsUpdatesResourceConnection -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaWindowsUpdatesResourceConnection Cmdlet.
+
 
 ## PARAMETERS
 

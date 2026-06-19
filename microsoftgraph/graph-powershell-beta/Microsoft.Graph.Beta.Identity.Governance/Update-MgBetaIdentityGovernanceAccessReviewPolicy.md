@@ -56,8 +56,9 @@ Update the properties of an accessReviewPolicy object.
 | Application | Policy.ReadWrite.AccessReview,  |
 
 ## EXAMPLES
+### Example 2: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -66,6 +67,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceAccessReviewPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityGovernanceAccessReviewPolicy Cmdlet.
+
 
 ## PARAMETERS
 

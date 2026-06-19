@@ -62,8 +62,9 @@ Create a new browserSiteList object to support Internet Explorer mode.
 | Application | BrowserSiteLists.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -73,6 +74,10 @@ $params = @{
 }
 
 New-MgAdminEdgeInternetExplorerModeSiteList -BodyParameter $params
+
+```
+This example shows how to use the New-MgAdminEdgeInternetExplorerModeSiteList Cmdlet.
+
 
 ## PARAMETERS
 

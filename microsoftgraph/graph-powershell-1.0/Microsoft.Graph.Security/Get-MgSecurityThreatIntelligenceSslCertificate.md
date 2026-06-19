@@ -61,12 +61,17 @@ This cmdlet has the following aliases,
 Get the properties and relationships of an sslCertificate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityThreatIntelligenceSslCertificate -Search '"subject/commonName:microsoft.com"' -CountVariable CountVar -Top 1
+Get-MgSecurityThreatIntelligenceSslCertificate -Search '"subject/commonName:microsoft.com"' -CountVariable CountVar -Top 1 
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceSslCertificate Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,8 +49,9 @@ the forwarding options for the tenant, with a specific focus on the skipDnsLooku
 This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -59,6 +60,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessSettingForwardingOption -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessSettingForwardingOption Cmdlet.
+
 
 ## PARAMETERS
 

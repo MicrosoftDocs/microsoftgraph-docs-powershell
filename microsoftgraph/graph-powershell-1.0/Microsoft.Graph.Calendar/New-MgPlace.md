@@ -60,83 +60,6 @@ You can also use this method to create the following child object types: buildin
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Place.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	"@odata.type" = "microsoft.graph.building"
-	displayName = "B001"
-}
-
-New-MgPlace -BodyParameter $params
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	"@odata.type" = "microsoft.graph.floor"
-	displayName = "F1"
-	parentId = "767a31a7-6987-41c9-b829-ab351b8aab53"
-}
-
-New-MgPlace -BodyParameter $params
-
-### EXAMPLE 3
-
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	"@odata.type" = "microsoft.graph.section"
-	displayName = "S1"
-	parentId = "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
-}
-
-New-MgPlace -BodyParameter $params
-
-### EXAMPLE 4
-
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	"@odata.type" = "microsoft.graph.desk"
-	displayName = "D1"
-	parentId = "1ad0f725-6885-49c5-9a47-3b22a1f9409d"
-}
-
-New-MgPlace -BodyParameter $params
-
-### EXAMPLE 5
-
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	"@odata.type" = "microsoft.graph.room"
-	displayName = "Conf Room 4/3.3G11"
-	parentId = "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
-	bookingType = "standard"
-}
-
-New-MgPlace -BodyParameter $params
-
-### EXAMPLE 6
-
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	"@odata.type" = "microsoft.graph.workspace"
-	parentId = "f7de7265-e420-47b4-9d49-28d728716241"
-	displayName = "testSpace001"
-	tags = @(
-	"test"
-)
-}
-
-New-MgPlace -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -704,6 +627,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplace)
 - [](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-1.0)
+
 
 
 

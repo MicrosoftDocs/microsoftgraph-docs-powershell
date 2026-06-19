@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Remove a user or group from the rejected-senders list of the specified group.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -439,6 +429,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouprejectedsenderdirectoryobjectbyref)
 - [](https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-beta)
+
 
 
 

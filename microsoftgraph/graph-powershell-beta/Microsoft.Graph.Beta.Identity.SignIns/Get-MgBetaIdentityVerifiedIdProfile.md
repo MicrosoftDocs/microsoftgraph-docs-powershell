@@ -64,14 +64,6 @@ Read the properties and relationships of verifiedIdProfile object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | VerifiedId-Profile.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaIdentityVerifiedIdProfile
-
 ## PARAMETERS
 
 ### -All
@@ -636,6 +628,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityverifiedidprofile)
 - [](https://learn.microsoft.com/graph/api/verifiedidprofile-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/identityverifiedidroot-list-profiles?view=graph-rest-beta)
+
+
 
 
 

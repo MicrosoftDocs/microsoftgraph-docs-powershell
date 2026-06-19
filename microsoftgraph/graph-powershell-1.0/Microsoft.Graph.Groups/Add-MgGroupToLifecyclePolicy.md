@@ -82,8 +82,9 @@ This action is supported only if the managedGroupTypes property of the policy is
 | Application | Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 Add-MgGroupToLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgGroupToLifecyclePolicy Cmdlet.
+
 
 ## PARAMETERS
 

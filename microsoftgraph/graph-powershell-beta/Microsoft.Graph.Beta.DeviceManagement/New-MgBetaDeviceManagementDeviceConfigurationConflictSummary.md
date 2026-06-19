@@ -57,16 +57,6 @@ Create new navigation property to deviceConfigurationConflictSummary for deviceM
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -461,6 +451,7 @@ CONFLICTINGDEVICECONFIGURATIONS <IMicrosoftGraphSettingSource[]>: The set of pol
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfigurationconflictsummary)
+
 
 
 

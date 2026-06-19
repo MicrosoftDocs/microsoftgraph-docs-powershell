@@ -89,8 +89,9 @@ Excluding a subset of objects removes them from the collection.
 | Application | MutualTlsOauthConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update the display name
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -100,7 +101,12 @@ $params = @{
 
 Update-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration -MutualTlsOauthConfigurationId $mutualTlsOauthConfigurationId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update the display name
+
+### Example 2: Remove a certificate from the list of certificateAuthorities
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -118,6 +124,10 @@ $params = @{
 }
 
 Update-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration -MutualTlsOauthConfigurationId $mutualTlsOauthConfigurationId -BodyParameter $params
+
+```
+This example will remove a certificate from the list of certificateauthorities
+
 
 ## PARAMETERS
 

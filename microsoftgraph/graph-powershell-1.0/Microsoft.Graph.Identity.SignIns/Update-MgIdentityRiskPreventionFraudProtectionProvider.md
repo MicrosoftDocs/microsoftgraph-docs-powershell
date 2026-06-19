@@ -71,19 +71,6 @@ This cmdlet has the following aliases,
 Update the properties of a fraudProtectionProvider object.
 The following derived types are currently supported.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.arkoseFraudProtectionProvider"
-	displayName = "Arkose Sign-Up Protection Updated"
-}
-
-Update-MgIdentityRiskPreventionFraudProtectionProvider -FraudProtectionProviderId $fraudProtectionProviderId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -576,6 +563,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskpreventionfraudprotectionprovider)
 - [](https://learn.microsoft.com/graph/api/fraudprotectionprovider-update?view=graph-rest-1.0)
+
 
 
 

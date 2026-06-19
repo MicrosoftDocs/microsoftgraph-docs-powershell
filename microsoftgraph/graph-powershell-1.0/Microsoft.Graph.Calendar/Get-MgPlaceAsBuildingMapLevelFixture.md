@@ -62,14 +62,6 @@ This cmdlet has the following aliases,
 Collection of fixtures (such as furniture or equipment) on this level.
 Supports upsert.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Calendar
-
-Get-MgPlaceAsBuildingMapLevelFixture -PlaceId $placeId -LevelMapId $levelMapId
-
 ## PARAMETERS
 
 ### -All
@@ -609,6 +601,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevelfixture)
 - [](https://learn.microsoft.com/graph/api/levelmap-list-fixtures?view=graph-rest-1.0)
+
+
 
 
 

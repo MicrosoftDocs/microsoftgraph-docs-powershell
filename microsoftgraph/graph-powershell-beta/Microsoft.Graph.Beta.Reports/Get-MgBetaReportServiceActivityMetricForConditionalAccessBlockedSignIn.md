@@ -49,12 +49,17 @@ This cmdlet has the following aliases,
 Retrieve the number of user sign-in attempts that were blocked by a Conditional Access policy during a specific period.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportServiceActivityMetricForConditionalAccessBlockedSignIn
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityMetricForConditionalAccessBlockedSignIn Cmdlet.
+
 
 ## PARAMETERS
 

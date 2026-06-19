@@ -43,14 +43,6 @@ Read the properties and relationships of microsoft.graph.security.sensorCandidat
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.Read.All, SecurityIdentitiesSensors.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Security
-
-Get-MgSecurityIdentitySensorCandidateActivationConfiguration
-
 ## PARAMETERS
 
 ### -Break
@@ -291,6 +283,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensorcandidateactivationconfiguration)
 - [](https://learn.microsoft.com/graph/api/security-sensorcandidateactivationconfiguration-get?view=graph-rest-1.0)
+
 
 
 

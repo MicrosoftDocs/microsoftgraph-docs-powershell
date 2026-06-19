@@ -60,8 +60,9 @@ Create new navigation property to windowsInformationProtectionAppLearningSummari
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -73,6 +74,10 @@ $params = @{
 }
 
 New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary Cmdlet.
+
 
 ## PARAMETERS
 

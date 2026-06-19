@@ -59,18 +59,28 @@ This cmdlet has the following aliases,
 Get provisioning from auditLogs
 
 ## EXAMPLES
+### Example 1: Successful request
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgAuditLogProvisioning
+
+```
+This example will successful request
+
+### Example 2: Error reponse
+
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgAuditLogProvisioning
 
-### EXAMPLE 2
+```
+This example will error reponse
 
-Import-Module Microsoft.Graph.Reports
-
-Get-MgAuditLogProvisioning
 
 ## PARAMETERS
 

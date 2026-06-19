@@ -60,14 +60,6 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an onPremisesDirectorySynchronization object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgDirectoryOnPremiseSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId
-
 ## PARAMETERS
 
 ### -All
@@ -568,6 +560,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryonpremisesynchronization)
 - [](https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-get?view=graph-rest-1.0)
+
+
 
 
 

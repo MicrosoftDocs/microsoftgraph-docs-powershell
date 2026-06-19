@@ -72,16 +72,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to journals for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Account
@@ -766,6 +756,7 @@ JOURNALLINES <IMicrosoftGraphJournalLine[]>: .
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal)
+
 
 
 

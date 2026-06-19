@@ -86,57 +86,9 @@ You can identify the place by specifying the id property.
 | Application | Place.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	"@odata.type" = "microsoft.graph.building"
-	tags = @(
-	"most popular building"
-)
-}
-
-Update-MgPlace -PlaceId $placeId -BodyParameter $params
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	"@odata.type" = "microsoft.graph.floor"
-	isWheelChairAccessible = $true
-	sortOrder = 
-}
-
-Update-MgPlace -PlaceId $placeId -BodyParameter $params
-
-### EXAMPLE 3
-
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	"@odata.type" = "microsoft.graph.section"
-	label = "discuss area"
-}
-
-Update-MgPlace -PlaceId $placeId -BodyParameter $params
-
-### EXAMPLE 4
-
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	"@odata.type" = "microsoft.graph.desk"
-	mode = @{
-		"@odata.type" = "microsoft.graph.dropInPlaceMode"
-	}
-}
-
-Update-MgPlace -PlaceId $placeId -BodyParameter $params
-
-### EXAMPLE 5
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -151,20 +103,9 @@ $params = @{
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
 
-### EXAMPLE 6
+```
+This example shows how to use the Update-MgPlace Cmdlet.
 
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	"@odata.type" = "microsoft.graph.workspace"
-	nickname = "Conf Room"
-	building = "1"
-	label = "100"
-	capacity = 
-	isWheelChairAccessible = $false
-}
-
-Update-MgPlace -PlaceId $placeId -BodyParameter $params
 
 ## PARAMETERS
 

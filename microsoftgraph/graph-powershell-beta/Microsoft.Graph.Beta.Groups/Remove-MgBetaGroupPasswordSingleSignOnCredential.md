@@ -79,8 +79,9 @@ Delete the password-based single sign-on credentials for a given group to a give
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -89,6 +90,10 @@ $params = @{
 }
 
 Remove-MgBetaGroupPasswordSingleSignOnCredential -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgBetaGroupPasswordSingleSignOnCredential Cmdlet.
+
 
 ## PARAMETERS
 

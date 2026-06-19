@@ -83,8 +83,9 @@ This cmdlet has the following aliases,
 Update the properties of a tenantCustomizedInformation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 
@@ -105,6 +106,10 @@ $params = @{
 }
 
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId $tenantCustomizedInformationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation Cmdlet.
+
 
 ## PARAMETERS
 

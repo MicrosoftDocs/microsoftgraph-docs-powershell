@@ -61,8 +61,9 @@ A delegated permission grant authorizes a client service principal (representing
 | Application | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -74,6 +75,10 @@ $params = @{
 }
 
 New-MgOauth2PermissionGrant -BodyParameter $params
+
+```
+This example shows how to use the New-MgOauth2PermissionGrant Cmdlet.
+
 
 ## PARAMETERS
 

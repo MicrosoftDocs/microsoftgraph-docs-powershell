@@ -60,20 +60,6 @@ This cmdlet has the following aliases,
 
 Details of submitted speaker assignments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationReportSpeakerAssignmentSubmission
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationReportSpeakerAssignmentSubmission -Filter "submissionDateTime gt 2025-05-28T00:00:00Z and submissionDateTime lt 2025-05-29T00:00:00Z"
-
 ## PARAMETERS
 
 ### -All
@@ -561,6 +547,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportspeakerassignmentsubmission)
 - [](https://learn.microsoft.com/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-1.0)
+
+
 
 
 

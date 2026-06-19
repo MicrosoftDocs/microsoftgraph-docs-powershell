@@ -55,14 +55,6 @@ Delete an organizationalBrandingTheme object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-Remove-MgBetaOrganizationBrandingTheme -OrganizationId $organizationId -OrganizationalBrandingThemeId $organizationalBrandingThemeId
-
 ## PARAMETERS
 
 ### -Break
@@ -485,6 +477,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbrandingtheme)
 - [](https://learn.microsoft.com/graph/api/organizationalbranding-delete-themes?view=graph-rest-beta)
+
 
 
 

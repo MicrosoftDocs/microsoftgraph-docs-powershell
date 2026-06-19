@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Invoke action checkGrantedPermissionsForApp
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -371,6 +361,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupgrantedpermissionforapp)
+
 
 
 

@@ -49,12 +49,17 @@ This cmdlet has the following aliases,
 Get a list of the authentication methods and their corresponding number of successful and unsuccessful  registration and reset activities as defined in the userRegistrationActivity object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Invoke-MgBetaUserReportAuthenticationMethodRegistrationActivity -Period $periodId
+Invoke-MgBetaUserReportAuthenticationMethodRegistrationActivity -Period $periodId 
+
+```
+This example shows how to use the Invoke-MgBetaUserReportAuthenticationMethodRegistrationActivity Cmdlet.
+
 
 ## PARAMETERS
 

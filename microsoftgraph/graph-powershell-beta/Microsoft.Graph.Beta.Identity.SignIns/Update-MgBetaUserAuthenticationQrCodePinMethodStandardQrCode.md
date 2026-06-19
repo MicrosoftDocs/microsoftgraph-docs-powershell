@@ -83,8 +83,9 @@ Only the expireDateTime property can be updated for a standard QR code.
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -96,7 +97,12 @@ $params = @{
 
 Update-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode -UserId $userId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows how to use the Update-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -107,6 +113,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode Cmdlet.
+
 
 ## PARAMETERS
 

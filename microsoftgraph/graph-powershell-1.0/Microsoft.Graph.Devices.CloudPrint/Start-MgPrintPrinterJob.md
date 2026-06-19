@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -389,6 +379,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintprinterjob)
 - [](https://learn.microsoft.com/graph/api/printjob-start?view=graph-rest-1.0)
+
 
 
 

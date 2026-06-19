@@ -90,16 +90,6 @@ Alternatively, reply to a message in a single operation.
 | Delegated (personal Microsoft account) | Mail.ReadWrite,  |
 | Application | Mail.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -780,6 +770,7 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagereply)
 - [](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-1.0)
+
 
 
 

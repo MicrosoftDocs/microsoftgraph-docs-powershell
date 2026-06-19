@@ -59,18 +59,28 @@ This cmdlet has the following aliases,
 List of channels either hosted in or shared with the team (incoming channels).
 
 ## EXAMPLES
+### Example 1: List all channels
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaAllTeamChannel -TeamId $teamId
 
-### EXAMPLE 2
+```
+This example will list all channels
+
+### Example 2: List all shared channels
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
+Get-MgBetaAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
+
+```
+This example will list all shared channels
+
 
 ## PARAMETERS
 

@@ -43,14 +43,6 @@ Read the properties and relationships of microsoft.graph.networkaccess.customBlo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.NetworkAccess
-
-Get-MgBetaNetworkAccessSettingCustomBlockPage
-
 ## PARAMETERS
 
 ### -Break
@@ -291,6 +283,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingcustomblockpage)
 - [](https://learn.microsoft.com/graph/api/networkaccess-customblockpage-get?view=graph-rest-beta)
+
 
 
 

@@ -88,8 +88,9 @@ Attendees must have a valid United States phone number to receive these SMS noti
 | Application | VirtualAppointmentNotification.Send,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -109,6 +110,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Send-MgUserOnlineMeetingVirtualAppointmentSm -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
+```
+This example shows how to use the Send-MgUserOnlineMeetingVirtualAppointmentSm Cmdlet.
+
 
 ## PARAMETERS
 

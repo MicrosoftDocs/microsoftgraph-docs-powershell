@@ -80,8 +80,9 @@ Copy a mailfolder and its contents to another mailfolder.
 | Application | Mail.ReadWrite,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Mail
 
@@ -91,6 +92,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Copy-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+
+```
+This example shows how to use the Copy-MgUserMailFolder Cmdlet.
+
 
 ## PARAMETERS
 

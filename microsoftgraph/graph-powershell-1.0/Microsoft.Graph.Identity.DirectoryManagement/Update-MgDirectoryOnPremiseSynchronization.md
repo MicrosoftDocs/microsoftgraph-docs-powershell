@@ -76,8 +76,9 @@ This cmdlet has the following aliases,
 Update the properties of an onPremisesDirectorySynchronization object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 Update-MgDirectoryOnPremiseSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDirectoryOnPremiseSynchronization Cmdlet.
+
 
 ## PARAMETERS
 

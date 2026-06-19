@@ -55,8 +55,9 @@ This cmdlet has the following aliases,
 Create a new printerShare for the specified printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
@@ -66,6 +67,10 @@ $params = @{
 }
 
 New-MgBetaPrintShare -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrintShare Cmdlet.
+
 
 ## PARAMETERS
 

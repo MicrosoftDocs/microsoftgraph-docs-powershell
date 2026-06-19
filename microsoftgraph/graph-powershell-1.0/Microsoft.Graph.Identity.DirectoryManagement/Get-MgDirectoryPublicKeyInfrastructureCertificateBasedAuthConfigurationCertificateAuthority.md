@@ -70,14 +70,6 @@ The collection of certificate authorities contained in this public key infrastru
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PublicKeyInfrastructure.Read.All, PublicKeyInfrastructure.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority -CertificateBasedAuthPkiId $certificateBasedAuthPkiId
-
 ## PARAMETERS
 
 ### -All
@@ -605,6 +597,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
 - [](https://learn.microsoft.com/graph/api/certificatebasedauthpki-list-certificateauthorities?view=graph-rest-1.0)
+
+
 
 
 

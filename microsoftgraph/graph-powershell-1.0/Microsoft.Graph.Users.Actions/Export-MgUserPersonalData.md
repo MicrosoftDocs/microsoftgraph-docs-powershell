@@ -84,8 +84,9 @@ For more information about exporting data while complying with regulations, see 
 | Application | User.Export.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 Export-MgUserPersonalData -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Export-MgUserPersonalData Cmdlet.
+
 
 ## PARAMETERS
 

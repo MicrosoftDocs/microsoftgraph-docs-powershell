@@ -72,8 +72,9 @@ This cmdlet has the following aliases,
 Create a new subcategoryTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -83,6 +84,10 @@ $params = @{
 }
 
 New-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId $categoryTemplateId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelCategorySubcategory Cmdlet.
+
 
 ## PARAMETERS
 

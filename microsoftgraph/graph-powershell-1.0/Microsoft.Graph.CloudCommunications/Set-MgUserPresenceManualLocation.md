@@ -75,20 +75,6 @@ This cmdlet has the following aliases,
 Set the manual work location signal for a user.
 The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.CloudCommunications
-
-$params = @{
-	workLocationType = "office"
-	placeId = "eb706f15-137e-4722-b4d1-b601481d9251"
-}
-
-# A UPN can also be used as -UserId.
-Set-MgUserPresenceManualLocation -UserId $userId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -554,6 +540,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguserpresencemanuallocation)
 - [](https://learn.microsoft.com/graph/api/presence-setmanuallocation?view=graph-rest-1.0)
+
 
 
 

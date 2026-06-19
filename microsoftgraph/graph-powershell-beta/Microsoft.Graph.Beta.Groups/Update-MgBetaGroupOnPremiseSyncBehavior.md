@@ -77,19 +77,6 @@ Update the properties of an onPremisesSyncBehavior object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Groups
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.onPremisesSyncBehavior"
-	isCloudManaged = $true
-}
-
-Update-MgBetaGroupOnPremiseSyncBehavior -GroupId $groupId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -541,6 +528,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponpremisesyncbehavior)
 - [](https://learn.microsoft.com/graph/api/onpremisessyncbehavior-update?view=graph-rest-beta)
+
 
 
 

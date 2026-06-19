@@ -49,8 +49,9 @@ This cmdlet has the following aliases,
 Determine if a specified Microsoft Teams interaction is allowed between the signed-in user and specified users.
 
 ## EXAMPLES
+### Example 1: Determine if the signed-in user can create a chat with another user in the same tenant using their ID
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -66,7 +67,12 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will determine if the signed-in user can create a chat with another user in the same tenant using their id
+
+### Example 2: Determine if the signed-in user can create a chat with another user in a different tenant using their ID and tenant ID
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -83,7 +89,12 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will determine if the signed-in user can create a chat with another user in a different tenant using their id and tenant id
+
+### Example 3: Determine if the signed-in user can create a chat with another user using their user principal name
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -99,7 +110,12 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will determine if the signed-in user can create a chat with another user using their user principal name
+
+### Example 4: Determine if the signed-in user can create a chat with another user using their email
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -115,7 +131,12 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will determine if the signed-in user can create a chat with another user using their email
+
+### Example 5: Determine if the signed-in user can create a chat with three other users
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -138,6 +159,10 @@ $params = @{
 }
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
+
+```
+This example will determine if the signed-in user can create a chat with three other users
+
 
 ## PARAMETERS
 

@@ -104,8 +104,9 @@ Create a column for a site with a request that specifies a columnDefinition.
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
@@ -124,6 +125,10 @@ $params = @{
 }
 
 New-MgSiteColumn -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSiteColumn Cmdlet.
+
 
 ## PARAMETERS
 

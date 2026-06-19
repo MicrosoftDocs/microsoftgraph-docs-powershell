@@ -48,8 +48,9 @@ This cmdlet has the following aliases,
 Invoke action evaluateDynamicMembership
 
 ## EXAMPLES
+### Example 1: Evaluate if a user or device would be a member of a group based on a membership rule
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -59,6 +60,10 @@ $params = @{
 }
 
 Test-MgBetaGroupDynamicMembershipRule -BodyParameter $params
+
+```
+This example will evaluate if a user or device would be a member of a group based on a membership rule
+
 
 ## PARAMETERS
 

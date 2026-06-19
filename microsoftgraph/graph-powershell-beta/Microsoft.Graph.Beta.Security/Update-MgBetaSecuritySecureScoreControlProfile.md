@@ -92,8 +92,9 @@ Update an editable secureScoreControlProfiles property within any integrated sol
 | Application | SecurityEvents.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -102,6 +103,10 @@ $params = @{
 }
 
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecuritySecureScoreControlProfile Cmdlet.
+
 
 ## PARAMETERS
 

@@ -92,8 +92,9 @@ This method registers the person for the webinar.
 | Application | VirtualEventRegistration-Anon.ReadWrite.Chat, VirtualEventRegistration-Anon.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Creating registration record with delegated permission
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -135,7 +136,12 @@ $params = @{
 
 New-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows creating registration record with delegated permission
+
+### Example 2: Creating registration record with application permission
+
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -178,6 +184,10 @@ $params = @{
 }
 
 New-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
+
+```
+This example shows creating registration record with application permission
+
 
 ## PARAMETERS
 

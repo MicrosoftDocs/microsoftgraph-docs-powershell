@@ -55,13 +55,18 @@ Delete navigation property projects for users
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileProject -UserId $userId -ProjectParticipationId $projectParticipationId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileProject Cmdlet.
+
 
 ## PARAMETERS
 

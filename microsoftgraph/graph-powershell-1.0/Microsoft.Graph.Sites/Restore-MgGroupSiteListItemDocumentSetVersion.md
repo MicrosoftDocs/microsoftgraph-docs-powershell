@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Restore a document set version.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -503,6 +493,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mggroupsitelistitemdocumentsetversion)
 - [](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0)
+
 
 
 

@@ -61,8 +61,9 @@ Create a new customSecurityAttributeDefinition object.
 | Application | CustomSecAttributeDefinition.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Add a custom security attribute
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -79,7 +80,12 @@ $params = @{
 
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will add a custom security attribute
+
+### Example 2: Add a custom security attribute that supports multiple predefined values
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -96,7 +102,12 @@ $params = @{
 
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will add a custom security attribute that supports multiple predefined values
+
+### Example 3: Add a custom security attribute with a list of predefined values
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -126,6 +137,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
+
+```
+This example will add a custom security attribute with a list of predefined values
+
 
 ## PARAMETERS
 

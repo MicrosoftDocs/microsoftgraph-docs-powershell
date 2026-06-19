@@ -94,8 +94,9 @@ The endDateTime can be up to three years after the certificate is created.
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -105,6 +106,10 @@ $params = @{
 }
 
 Add-MgBetaServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgBetaServicePrincipalTokenSigningCertificate Cmdlet.
+
 
 ## PARAMETERS
 

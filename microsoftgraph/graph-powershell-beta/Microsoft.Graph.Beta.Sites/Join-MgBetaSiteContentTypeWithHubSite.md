@@ -82,8 +82,9 @@ Invoke action associateWithHubSites
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -95,6 +96,10 @@ propagateToExistingLists = $false
 }
 
 Join-MgBetaSiteContentTypeWithHubSite -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+
+```
+This example shows how to use the Join-MgBetaSiteContentTypeWithHubSite Cmdlet.
+
 
 ## PARAMETERS
 

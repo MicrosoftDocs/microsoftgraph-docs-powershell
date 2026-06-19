@@ -46,14 +46,6 @@ This cmdlet has the following aliases,
 
 Restore a deleted countryNamedLocation object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation -NamedLocationId $namedLocationId
-
 ## PARAMETERS
 
 ### -Break
@@ -445,6 +437,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetaidentityconditionalaccessdeleteditemnamedlocation)
 - [](https://learn.microsoft.com/graph/api/countrynamedlocation-restore?view=graph-rest-beta)
+
 
 
 

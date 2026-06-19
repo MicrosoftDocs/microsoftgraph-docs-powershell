@@ -94,8 +94,9 @@ Update the properties of an incident object.
 | Application | SecurityIncident.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -108,6 +109,10 @@ $params = @{
 }
 
 Update-MgBetaSecurityIncident -IncidentId $incidentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityIncident Cmdlet.
+
 
 ## PARAMETERS
 

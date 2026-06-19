@@ -67,12 +67,17 @@ Read the properties and relationships of a retentionEvent object.
 | Application | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityTriggerRetentionEvent
+
+```
+This example shows how to use the Get-MgSecurityTriggerRetentionEvent Cmdlet.
+
 
 ## PARAMETERS
 

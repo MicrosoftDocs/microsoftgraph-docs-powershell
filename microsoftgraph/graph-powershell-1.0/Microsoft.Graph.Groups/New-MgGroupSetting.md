@@ -106,8 +106,9 @@ The template named Group.Unified can be used to configure tenant-wide Microsoft 
 | Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
@@ -122,6 +123,10 @@ $params = @{
 }
 
 New-MgGroupSetting -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgGroupSetting Cmdlet.
+
 
 ## PARAMETERS
 

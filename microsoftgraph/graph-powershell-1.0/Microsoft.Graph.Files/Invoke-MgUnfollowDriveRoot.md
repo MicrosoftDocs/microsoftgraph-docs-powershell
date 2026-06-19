@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Unfollow a driveItem.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -399,6 +389,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveroot)
 - [](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0)
+
 
 
 

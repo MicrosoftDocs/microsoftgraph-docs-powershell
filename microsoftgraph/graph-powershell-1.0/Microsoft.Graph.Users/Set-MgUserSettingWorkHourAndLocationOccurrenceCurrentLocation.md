@@ -75,33 +75,6 @@ This cmdlet has the following aliases,
 Update your work location for the current day or current active segment.
 This action allows you to quickly update your work location without modifying individual occurrences.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Users
-
-$params = @{
-	updateScope = "currentDay"
-	workLocationType = "office"
-	placeId = "12345678-1234-1234-1234-123456789012"
-}
-
-# A UPN can also be used as -UserId.
-Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation -UserId $userId -BodyParameter $params
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Users
-
-$params = @{
-	updateScope = "currentSegment"
-	workLocationType = "remote"
-}
-
-# A UPN can also be used as -UserId.
-Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation -UserId $userId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -601,6 +574,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusersettingworkhourandlocationoccurrencecurrentlocation)
 - [](https://learn.microsoft.com/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-1.0)
+
 
 
 

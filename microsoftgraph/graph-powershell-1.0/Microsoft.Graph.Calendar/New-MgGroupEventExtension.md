@@ -74,8 +74,9 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
+### Example 1: Create an extension in the specified group event
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -88,6 +89,10 @@ $params = @{
 }
 
 New-MgGroupEventExtension -GroupId $groupId -EventId $eventId -BodyParameter $params
+
+```
+This example will create an extension in the specified group event
+
 
 ## PARAMETERS
 

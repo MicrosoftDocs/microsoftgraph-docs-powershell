@@ -56,12 +56,17 @@ Use this API to retrieve the following information:
 | Application | Policy.Read.All, Policy.ReadWrite.AuthenticationMethod,  |
 
 ## EXAMPLES
+### Example 1: Get a user's MFA state
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaUserAuthenticationRequirement -UserId $userId
+
+```
+This example will get a user's mfa state
+
 
 ## PARAMETERS
 

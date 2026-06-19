@@ -69,12 +69,17 @@ Represents access package assignment requests created by or on behalf of a user.
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example scenarios for using query parameters
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaEntitlementManagementAssignmentRequest
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementAssignmentRequest Cmdlet.
+
 
 ## PARAMETERS
 

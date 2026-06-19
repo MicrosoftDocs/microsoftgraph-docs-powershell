@@ -67,12 +67,17 @@ Read the properties and relationships of a riskyUser object.
 | Application | IdentityRiskyUser.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgRiskyUser
+
+```
+This example shows how to use the Get-MgRiskyUser Cmdlet.
+
 
 ## PARAMETERS
 

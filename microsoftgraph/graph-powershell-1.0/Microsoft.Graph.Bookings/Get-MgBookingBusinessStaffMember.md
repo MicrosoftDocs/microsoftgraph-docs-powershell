@@ -68,12 +68,17 @@ Get the properties and relationships of a bookingStaffMember in the specified bo
 | Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Read.All, Bookings.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId
+
+```
+This example shows how to use the Get-MgBookingBusinessStaffMember Cmdlet.
+
 
 ## PARAMETERS
 
