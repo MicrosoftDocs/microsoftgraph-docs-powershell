@@ -52,6 +52,14 @@ Get a set of contact folders that have been added, deleted, or removed from the 
 A delta function call for contact folders in a mailbox is similar to a GET request, except that by appropriately \rapplying state tokens in one or more of these calls, \ryou can query for incremental changes in the contact folders.
 This allows you to maintain and synchronize \ra local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite,  |
+| Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite,  |
+| Application | Contacts.Read, Contacts.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

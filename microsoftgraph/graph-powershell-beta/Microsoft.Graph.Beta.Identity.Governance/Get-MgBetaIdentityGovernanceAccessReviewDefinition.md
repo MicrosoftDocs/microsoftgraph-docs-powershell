@@ -65,6 +65,14 @@ Each accessReviewScheduleDefinition has at least one instance.
 An instance represents a review for a specific resource (such as a particular group's members), during one occurrence (for example, March 2021) of a recurring review.
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read, User.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

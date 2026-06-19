@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Enroll a meeting registrant in an online meeting that has meeting registration enabled on behalf of the registrant.
 This operation has two scenarios: In either scenario, the registrant will receive an email notification that contains their registration information.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetings.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

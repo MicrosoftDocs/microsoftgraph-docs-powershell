@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Represents the email addresses registered to a user for authentication.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-Email.Read, UserAuthMethod-Email.ReadWrite.All, UserAuthMethod-Email.ReadWrite, UserAuthMethod-Email.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-Email.Read.All, UserAuthMethod-Email.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

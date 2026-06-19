@@ -37,6 +37,14 @@ This cmdlet has the following aliases,
 
 Get joinedTeams from users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Team.ReadBasic.All, User.ReadWrite.All, TeamSettings.ReadWrite.All, User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, TeamSettings.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Team.ReadBasic.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.Read.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

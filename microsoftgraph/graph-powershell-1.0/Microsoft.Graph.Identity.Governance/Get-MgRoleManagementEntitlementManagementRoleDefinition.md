@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EntitlementManagement.Read.All, RoleManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.Read.All, RoleManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

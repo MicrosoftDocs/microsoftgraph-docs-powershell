@@ -59,6 +59,14 @@ The pages in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.Read, Notes.ReadWrite.All, Notes.ReadWrite, Notes.Read.All,  |
+| Delegated (personal Microsoft account) | Notes.Read, Notes.ReadWrite,  |
+| Application | Notes.Read.All, Notes.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

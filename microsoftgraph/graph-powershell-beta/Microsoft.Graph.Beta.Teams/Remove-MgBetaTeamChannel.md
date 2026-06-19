@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Delete the channel.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Channel.Delete.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Channel.Delete.Group, Group.ReadWrite.All, Directory.ReadWrite.All, Channel.Delete.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -82,6 +82,14 @@ This cmdlet has the following aliases,
 Update the properties of a delegatedAdminRelationship object.
 The following restrictions apply:\r- You can update this relationship when its status property is created.\r- You can update the autoExtendDuration property when status is either created or active.\r- You can only remove the Microsoft Entra Global Administrator role when the status property is active, which indicates a long-running operation.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DelegatedAdminRelationship.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DelegatedAdminRelationship.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

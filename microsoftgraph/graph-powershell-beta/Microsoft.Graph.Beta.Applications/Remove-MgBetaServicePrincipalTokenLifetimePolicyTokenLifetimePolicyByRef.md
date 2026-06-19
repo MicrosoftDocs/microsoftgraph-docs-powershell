@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 
 Remove a tokenLifetimePolicy object from a service principal.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.ApplicationConfiguration, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

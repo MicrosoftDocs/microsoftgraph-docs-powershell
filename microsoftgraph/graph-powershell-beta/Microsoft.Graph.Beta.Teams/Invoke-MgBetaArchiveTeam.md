@@ -84,6 +84,14 @@ A team is archived once the async operation completes successfully, which can oc
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamSettings.ReadWrite.Group, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

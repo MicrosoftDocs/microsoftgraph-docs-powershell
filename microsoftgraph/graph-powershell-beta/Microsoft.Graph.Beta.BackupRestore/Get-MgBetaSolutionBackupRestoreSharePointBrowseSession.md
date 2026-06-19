@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of sharePointBrowseSession object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BackupRestore-Restore.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BackupRestore-Restore.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

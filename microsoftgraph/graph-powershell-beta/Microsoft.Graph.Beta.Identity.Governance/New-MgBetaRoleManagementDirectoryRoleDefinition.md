@@ -54,6 +54,14 @@ Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 The following RBAC providers are currently supported:\r- Cloud PC\r- device management (Intune)\r- Defender (Microsoft Defender XDR)\r- directory (Microsoft Entra ID)
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Get the metadata for the location where the files of a channel are stored.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.Read.All, Sites.ReadWrite.All, Group.ReadWrite.All, Sites.Read.All, Files.Read, Files.ReadWrite, Files.ReadWrite.All, Group.Read.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Files.Read.All,  |
+| Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, File.Read.Group,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -110,6 +110,14 @@ This cmdlet has the following aliases,
 
 Update the navigation property itemCategories in financials
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Financials.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Financials.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -65,6 +65,14 @@ Note: To retrieve a language supported for customization, you must first enable 
 For more information, see Update b2cIdentityUserFlow.
 Language customization is enabled by default in Microsoft Entra user flows.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

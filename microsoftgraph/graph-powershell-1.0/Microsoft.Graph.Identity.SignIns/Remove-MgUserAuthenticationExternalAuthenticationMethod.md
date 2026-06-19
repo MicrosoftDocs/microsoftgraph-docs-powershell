@@ -49,6 +49,14 @@ This cmdlet has the following aliases,
 Delete an externalAuthenticationMethod object.
 This API doesn't support self-service operations.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-External.ReadWrite, UserAuthMethod-External.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-External.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
