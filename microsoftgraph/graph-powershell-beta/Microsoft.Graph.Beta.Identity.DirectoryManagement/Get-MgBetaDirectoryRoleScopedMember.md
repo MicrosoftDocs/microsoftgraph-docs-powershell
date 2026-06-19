@@ -633,8 +633,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolescopedmember)
-- [](https://learn.microsoft.com/graph/api/directoryrole-list-scopedmembers?view=graph-rest-beta)
+- [Get-MgBetaDirectoryRoleScopedMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolescopedmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryrole-list-scopedmembers?view=graph-rest-beta)
 
 
 

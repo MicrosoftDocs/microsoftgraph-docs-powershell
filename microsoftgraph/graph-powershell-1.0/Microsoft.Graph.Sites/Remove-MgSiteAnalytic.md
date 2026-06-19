@@ -427,7 +427,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsiteanalytic)
+- [Remove-MgSiteAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsiteanalytic)
 
 
 

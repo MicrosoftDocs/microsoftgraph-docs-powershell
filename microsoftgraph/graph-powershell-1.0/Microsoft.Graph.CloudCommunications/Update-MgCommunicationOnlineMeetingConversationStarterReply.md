@@ -928,7 +928,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingconversationstarterreply)
+- [Update-MgCommunicationOnlineMeetingConversationStarterReply](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingconversationstarterreply)
 
 
 

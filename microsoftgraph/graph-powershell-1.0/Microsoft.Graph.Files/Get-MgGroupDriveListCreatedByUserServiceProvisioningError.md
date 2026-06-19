@@ -495,7 +495,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcreatedbyuserserviceprovisioningerror)
+- [Get-MgGroupDriveListCreatedByUserServiceProvisioningError](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcreatedbyuserserviceprovisioningerror)
 
 
 

@@ -619,9 +619,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin)
-- [](https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-beta)
+- [Get-MgBetaAuditLogSignIn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-beta)
 
 
 

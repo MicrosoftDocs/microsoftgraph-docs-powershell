@@ -890,7 +890,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelplannerplantaskdetail)
+- [Update-MgBetaTeamChannelPlannerPlanTaskDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelplannerplantaskdetail)
 
 
 

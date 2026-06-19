@@ -595,7 +595,7 @@ BODYPARAMETER `<IPaths13QvfzrDevicemanagementReportsMicrosoftGraphGetzebrafotade
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportzebrafotadeploymentreport)
+- [Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportzebrafotadeploymentreport)
 
 
 

@@ -767,8 +767,8 @@ The elements should be in hierarchical order.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector)
-- [](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-beta)
+- [Update-MgBetaPrintConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-beta)
 
 
 

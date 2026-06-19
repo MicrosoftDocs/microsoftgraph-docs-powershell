@@ -410,7 +410,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mggroupplannerplandetail)
+- [Remove-MgGroupPlannerPlanDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mggroupplannerplandetail)
 
 
 

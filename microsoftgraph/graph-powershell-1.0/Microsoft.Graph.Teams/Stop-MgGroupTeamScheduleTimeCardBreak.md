@@ -568,7 +568,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/stop-mggroupteamscheduletimecardbreak)
+- [Stop-MgGroupTeamScheduleTimeCardBreak](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/stop-mggroupteamscheduletimecardbreak)
 
 
 

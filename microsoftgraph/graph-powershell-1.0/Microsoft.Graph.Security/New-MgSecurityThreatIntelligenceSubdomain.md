@@ -961,7 +961,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencesubdomain)
+- [New-MgSecurityThreatIntelligenceSubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencesubdomain)
 
 
 

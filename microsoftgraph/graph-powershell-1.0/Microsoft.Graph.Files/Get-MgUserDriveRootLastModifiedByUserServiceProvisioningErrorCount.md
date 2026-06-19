@@ -385,7 +385,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootlastmodifiedbyuserserviceprovisioningerrorcount)
+- [Get-MgUserDriveRootLastModifiedByUserServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootlastmodifiedbyuserserviceprovisioningerrorcount)
 
 
 

@@ -1033,8 +1033,8 @@ Not supported for custom roles.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroledefinition)
-- [](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-beta)
+- [Update-MgBetaRoleManagementDirectoryRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroledefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-beta)
 
 
 

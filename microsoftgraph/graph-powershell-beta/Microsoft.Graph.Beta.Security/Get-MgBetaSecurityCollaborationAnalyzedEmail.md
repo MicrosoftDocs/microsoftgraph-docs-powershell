@@ -639,8 +639,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaborationanalyzedemail)
-- [](https://learn.microsoft.com/graph/api/security-analyzedemail-get?view=graph-rest-beta)
+- [Get-MgBetaSecurityCollaborationAnalyzedEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaborationanalyzedemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-analyzedemail-get?view=graph-rest-beta)
 
 
 

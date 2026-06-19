@@ -506,7 +506,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupextension)
+- [Update-MgGroupExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupextension)
 
 
 

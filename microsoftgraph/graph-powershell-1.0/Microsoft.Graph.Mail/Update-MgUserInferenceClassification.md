@@ -527,7 +527,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification)
+- [Update-MgUserInferenceClassification](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification)
 
 
 

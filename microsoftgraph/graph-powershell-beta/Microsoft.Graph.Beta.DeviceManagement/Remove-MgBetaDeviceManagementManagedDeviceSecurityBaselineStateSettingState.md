@@ -533,7 +533,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstate)
+- [Remove-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstate)
 
 
 

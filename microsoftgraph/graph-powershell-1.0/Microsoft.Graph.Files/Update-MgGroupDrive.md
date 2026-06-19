@@ -48765,7 +48765,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrive)
+- [Update-MgGroupDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrive)
 
 
 

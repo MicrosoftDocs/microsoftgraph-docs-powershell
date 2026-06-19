@@ -529,8 +529,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatretainedmessage)
-- [](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0)
+- [Get-MgUserChatRetainedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatretainedmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0)
 
 
 

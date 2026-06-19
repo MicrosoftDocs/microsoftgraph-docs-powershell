@@ -492,7 +492,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentsubmissionsubmittedresourcedependentresource)
+- [Remove-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentsubmissionsubmittedresourcedependentresource)
 
 
 

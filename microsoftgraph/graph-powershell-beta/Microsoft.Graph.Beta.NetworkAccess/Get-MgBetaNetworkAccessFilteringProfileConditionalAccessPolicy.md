@@ -578,7 +578,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofileconditionalaccesspolicy)
+- [Get-MgBetaNetworkAccessFilteringProfileConditionalAccessPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofileconditionalaccesspolicy)
 
 
 

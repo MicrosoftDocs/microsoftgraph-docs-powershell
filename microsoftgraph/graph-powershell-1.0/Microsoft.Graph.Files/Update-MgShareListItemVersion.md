@@ -877,7 +877,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitemversion)
+- [Update-MgShareListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitemversion)
 
 
 

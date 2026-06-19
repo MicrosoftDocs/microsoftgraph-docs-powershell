@@ -602,8 +602,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryonpremisesynchronization)
-- [](https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-get?view=graph-rest-beta)
+- [Get-MgBetaDirectoryOnPremiseSynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryonpremisesynchronization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-get?view=graph-rest-beta)
 
 
 

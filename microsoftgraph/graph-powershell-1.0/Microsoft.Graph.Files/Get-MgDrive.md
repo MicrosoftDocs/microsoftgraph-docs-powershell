@@ -564,7 +564,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrive)
+- [Get-MgDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrive)
 
 
 

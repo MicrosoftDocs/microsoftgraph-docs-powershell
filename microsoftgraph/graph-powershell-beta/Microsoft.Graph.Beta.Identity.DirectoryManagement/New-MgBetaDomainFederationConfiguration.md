@@ -1090,8 +1090,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration)
-- [](https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-beta)
+- [New-MgBetaDomainFederationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-beta)
 
 
 

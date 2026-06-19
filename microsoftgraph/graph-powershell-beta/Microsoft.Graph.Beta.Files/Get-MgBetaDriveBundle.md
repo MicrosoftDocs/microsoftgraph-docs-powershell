@@ -601,7 +601,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundle)
+- [Get-MgBetaDriveBundle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundle)
 
 
 

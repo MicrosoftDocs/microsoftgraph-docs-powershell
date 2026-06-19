@@ -814,7 +814,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmember)
+- [Update-MgGroupTeamChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmember)
 
 
 

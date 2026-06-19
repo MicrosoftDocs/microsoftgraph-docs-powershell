@@ -572,7 +572,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgpreviewuserdriveitem)
+- [Invoke-MgPreviewUserDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgpreviewuserdriveitem)
 
 
 

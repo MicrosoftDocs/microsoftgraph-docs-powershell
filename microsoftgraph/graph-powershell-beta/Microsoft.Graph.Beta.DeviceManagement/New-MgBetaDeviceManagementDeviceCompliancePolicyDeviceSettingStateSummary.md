@@ -843,7 +843,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicydevicesettingstatesummary)
+- [New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicydevicesettingstatesummary)
 
 
 

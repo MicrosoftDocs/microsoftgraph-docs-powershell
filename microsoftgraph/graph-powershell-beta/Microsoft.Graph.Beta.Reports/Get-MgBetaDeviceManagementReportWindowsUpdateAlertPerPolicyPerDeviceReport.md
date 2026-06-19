@@ -587,7 +587,7 @@ BODYPARAMETER `<IPaths1WxxrkkDevicemanagementReportsMicrosoftGraphGetwindowsupda
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportwindowsupdatealertperpolicyperdevicereport)
+- [Get-MgBetaDeviceManagementReportWindowsUpdateAlertPerPolicyPerDeviceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportwindowsupdatealertperpolicyperdevicereport)
 
 
 

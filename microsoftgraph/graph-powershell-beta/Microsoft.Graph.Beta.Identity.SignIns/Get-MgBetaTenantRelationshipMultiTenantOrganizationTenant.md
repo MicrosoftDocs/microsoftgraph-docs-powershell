@@ -642,9 +642,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganizationtenant)
-- [](https://learn.microsoft.com/graph/api/multitenantorganizationmember-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/multitenantorganization-list-tenants?view=graph-rest-beta)
+- [Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganizationtenant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganizationmember-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganization-list-tenants?view=graph-rest-beta)
 
 
 

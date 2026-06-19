@@ -1262,7 +1262,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotepage)
+- [New-MgSiteOnenotePage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotepage)
 
 
 

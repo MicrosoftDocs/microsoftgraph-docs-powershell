@@ -1289,7 +1289,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotesectionpage)
+- [New-MgUserOnenoteSectionPage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotesectionpage)
 
 
 

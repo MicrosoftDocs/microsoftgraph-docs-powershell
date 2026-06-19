@@ -1403,7 +1403,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotecontent)
+- [Update-MgSiteOnenoteContent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotecontent)
 
 
 

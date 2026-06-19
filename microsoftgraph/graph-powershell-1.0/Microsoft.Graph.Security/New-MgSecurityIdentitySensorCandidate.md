@@ -455,7 +455,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensorcandidate)
+- [New-MgSecurityIdentitySensorCandidate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensorcandidate)
 
 
 

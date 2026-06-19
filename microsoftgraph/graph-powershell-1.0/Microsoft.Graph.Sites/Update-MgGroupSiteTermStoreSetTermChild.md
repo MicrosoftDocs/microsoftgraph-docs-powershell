@@ -1348,7 +1348,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoresettermchild)
+- [Update-MgGroupSiteTermStoreSetTermChild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoresettermchild)
 
 
 

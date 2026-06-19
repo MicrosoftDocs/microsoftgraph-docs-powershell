@@ -609,9 +609,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuser)
-- [](https://learn.microsoft.com/graph/api/riskyuser-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/riskyuser-list?view=graph-rest-1.0)
+- [Get-MgRiskyUser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyuser-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyuser-list?view=graph-rest-1.0)
 
 
 

@@ -787,7 +787,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemversion)
+- [Update-MgGroupSiteListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemversion)
 
 
 

@@ -636,7 +636,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemthumbnail)
+- [Get-MgUserDriveItemThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemthumbnail)
 
 
 

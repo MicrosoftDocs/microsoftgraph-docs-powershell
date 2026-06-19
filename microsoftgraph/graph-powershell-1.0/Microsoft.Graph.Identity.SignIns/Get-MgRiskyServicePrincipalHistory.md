@@ -630,8 +630,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyserviceprincipalhistory)
-- [](https://learn.microsoft.com/graph/api/riskyserviceprincipal-list-history?view=graph-rest-1.0)
+- [Get-MgRiskyServicePrincipalHistory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyserviceprincipalhistory)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyserviceprincipal-list-history?view=graph-rest-1.0)
 
 
 

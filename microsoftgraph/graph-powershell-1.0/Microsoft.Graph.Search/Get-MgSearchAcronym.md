@@ -553,9 +553,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronym)
-- [](https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-1.0)
+- [Get-MgSearchAcronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronym)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-1.0)
 
 
 

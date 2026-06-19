@@ -642,7 +642,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/enable-mgbetausermanageddevicelostmode)
+- [Enable-MgBetaUserManagedDeviceLostMode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/enable-mgbetausermanageddevicelostmode)
 
 
 

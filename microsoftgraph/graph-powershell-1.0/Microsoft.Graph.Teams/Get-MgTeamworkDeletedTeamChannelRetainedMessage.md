@@ -510,8 +510,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelretainedmessage)
-- [](https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-1.0)
+- [Get-MgTeamworkDeletedTeamChannelRetainedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelretainedmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-1.0)
 
 
 

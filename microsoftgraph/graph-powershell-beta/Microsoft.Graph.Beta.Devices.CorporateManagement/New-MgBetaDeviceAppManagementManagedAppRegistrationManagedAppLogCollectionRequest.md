@@ -783,7 +783,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedappregistrationmanagedapplogcollectionrequest)
+- [New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedappregistrationmanagedapplogcollectionrequest)
 
 
 

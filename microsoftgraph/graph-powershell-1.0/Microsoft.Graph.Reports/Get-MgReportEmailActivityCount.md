@@ -373,8 +373,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivitycount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getemailactivitycounts?view=graph-rest-1.0)
+- [Get-MgReportEmailActivityCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivitycount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getemailactivitycounts?view=graph-rest-1.0)
 
 
 

@@ -426,7 +426,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetashareitemlastmodifiedbyusermailboxsetting)
+- [Get-MgBetaShareItemLastModifiedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetashareitemlastmodifiedbyusermailboxsetting)
 
 
 

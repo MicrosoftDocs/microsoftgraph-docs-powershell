@@ -567,7 +567,7 @@ Must be unique within the referenceType.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatarolegroup)
+- [Update-MgBetaExternalIndustryDataRoleGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatarolegroup)
 
 
 

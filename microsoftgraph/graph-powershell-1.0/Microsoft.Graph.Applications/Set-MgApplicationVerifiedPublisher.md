@@ -534,8 +534,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationverifiedpublisher)
-- [](https://learn.microsoft.com/graph/api/agentidentityblueprint-setverifiedpublisher?view=graph-rest-1.0)
+- [Set-MgApplicationVerifiedPublisher](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationverifiedpublisher)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentidentityblueprint-setverifiedpublisher?view=graph-rest-1.0)
 
 
 

@@ -727,7 +727,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoicevendorpaymentterm)
+- [Update-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentTerm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoicevendorpaymentterm)
 
 
 

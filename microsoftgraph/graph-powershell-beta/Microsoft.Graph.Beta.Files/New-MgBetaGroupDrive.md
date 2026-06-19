@@ -92163,7 +92163,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrive)
+- [New-MgBetaGroupDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrive)
 
 
 

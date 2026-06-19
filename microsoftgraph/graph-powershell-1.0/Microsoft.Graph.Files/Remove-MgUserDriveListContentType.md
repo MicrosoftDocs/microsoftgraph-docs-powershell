@@ -450,7 +450,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistcontenttype)
+- [Remove-MgUserDriveListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistcontenttype)
 
 
 

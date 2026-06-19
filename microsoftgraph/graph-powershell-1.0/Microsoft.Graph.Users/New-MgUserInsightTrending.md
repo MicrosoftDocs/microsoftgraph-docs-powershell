@@ -694,7 +694,7 @@ See the section Type property values for supported types.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserinsighttrending)
+- [New-MgUserInsightTrending](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserinsighttrending)
 
 
 

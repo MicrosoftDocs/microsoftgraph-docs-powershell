@@ -1320,7 +1320,7 @@ Note: This is not the signature.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostsslcertificate)
+- [New-MgBetaSecurityThreatIntelligenceHostSslCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostsslcertificate)
 
 
 

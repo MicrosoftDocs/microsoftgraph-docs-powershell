@@ -416,7 +416,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowcreatedbymailboxsetting)
+- [Get-MgIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowcreatedbymailboxsetting)
 
 
 

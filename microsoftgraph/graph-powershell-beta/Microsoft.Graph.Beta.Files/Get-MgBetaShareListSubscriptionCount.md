@@ -363,7 +363,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistsubscriptioncount)
+- [Get-MgBetaShareListSubscriptionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistsubscriptioncount)
 
 
 

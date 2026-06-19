@@ -1468,7 +1468,7 @@ The value can be User, Group, and ServicePrincipal.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroleassignmentrequest)
+- [Update-MgBetaPrivilegedAccessResourceRoleAssignmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroleassignmentrequest)
 
 
 

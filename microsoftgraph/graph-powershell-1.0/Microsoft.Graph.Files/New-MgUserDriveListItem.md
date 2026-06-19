@@ -27596,7 +27596,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistitem)
+- [New-MgUserDriveListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistitem)
 
 
 

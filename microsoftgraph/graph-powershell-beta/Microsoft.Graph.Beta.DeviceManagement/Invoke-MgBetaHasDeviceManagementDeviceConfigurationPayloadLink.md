@@ -363,7 +363,7 @@ BODY `<IPaths8V3WrfDevicemanagementDeviceconfigurationsMicrosoftGraphHaspayloadl
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetahasdevicemanagementdeviceconfigurationpayloadlink)
+- [Invoke-MgBetaHasDeviceManagementDeviceConfigurationPayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetahasdevicemanagementdeviceconfigurationpayloadlink)
 
 
 

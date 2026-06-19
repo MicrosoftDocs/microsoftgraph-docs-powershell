@@ -579,7 +579,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbilling)
+- [Update-MgReportPartnerBilling](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbilling)
 
 
 

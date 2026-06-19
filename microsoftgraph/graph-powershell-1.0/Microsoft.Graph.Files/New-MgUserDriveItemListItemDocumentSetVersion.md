@@ -880,7 +880,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemlistitemdocumentsetversion)
+- [New-MgUserDriveItemListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemlistitemdocumentsetversion)
 
 
 

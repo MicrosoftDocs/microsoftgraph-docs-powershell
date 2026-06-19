@@ -606,8 +606,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsubsite)
-- [](https://learn.microsoft.com/graph/api/site-list-subsites?view=graph-rest-1.0)
+- [Get-MgSubSite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsubsite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-list-subsites?view=graph-rest-1.0)
 
 
 

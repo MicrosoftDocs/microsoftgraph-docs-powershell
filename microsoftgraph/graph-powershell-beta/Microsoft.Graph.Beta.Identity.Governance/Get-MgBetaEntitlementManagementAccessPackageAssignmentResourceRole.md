@@ -652,9 +652,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentresourcerole)
-- [](https://learn.microsoft.com/graph/api/accesspackageassignmentresourcerole-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignmentresourceroles?view=graph-rest-beta)
+- [Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentresourcerole)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignmentresourcerole-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignmentresourceroles?view=graph-rest-beta)
 
 
 

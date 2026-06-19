@@ -559,8 +559,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessalert)
-- [](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-alerts?view=graph-rest-beta)
+- [Get-MgBetaNetworkAccessAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessalert)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-alerts?view=graph-rest-beta)
 
 
 

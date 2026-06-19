@@ -641,7 +641,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarpermission)
+- [New-MgGroupCalendarPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarpermission)
 
 
 

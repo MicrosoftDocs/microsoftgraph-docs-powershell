@@ -477,7 +477,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserinformationprotectionsensitivitylabelsublabelright)
+- [Get-MgBetaUserInformationProtectionSensitivityLabelSublabelRight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserinformationprotectionsensitivitylabelsublabelright)
 
 
 

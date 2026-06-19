@@ -438,7 +438,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalyticitemactivitystatactivitydriveitemcontentstream)
+- [Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContentStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalyticitemactivitystatactivitydriveitemcontentstream)
 
 
 

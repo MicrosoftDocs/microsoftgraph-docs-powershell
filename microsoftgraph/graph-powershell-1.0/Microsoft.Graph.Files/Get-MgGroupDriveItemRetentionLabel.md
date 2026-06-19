@@ -409,7 +409,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemretentionlabel)
+- [Get-MgGroupDriveItemRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemretentionlabel)
 
 
 

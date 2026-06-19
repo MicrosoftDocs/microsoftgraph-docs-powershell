@@ -428,7 +428,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoremailboxprotectionunitbulkadditionjob)
+- [Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoremailboxprotectionunitbulkadditionjob)
 
 
 

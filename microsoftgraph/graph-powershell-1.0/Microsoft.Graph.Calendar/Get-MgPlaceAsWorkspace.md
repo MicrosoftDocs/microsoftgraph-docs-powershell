@@ -543,8 +543,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasworkspace)
-- [](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-1.0)
+- [Get-MgPlaceAsWorkspace](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasworkspace)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-1.0)
 
 
 

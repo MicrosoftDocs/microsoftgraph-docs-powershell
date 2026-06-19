@@ -19033,7 +19033,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasiteanalyticitemactivitystat)
+- [New-MgBetaSiteAnalyticItemActivityStat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasiteanalyticitemactivitystat)
 
 
 

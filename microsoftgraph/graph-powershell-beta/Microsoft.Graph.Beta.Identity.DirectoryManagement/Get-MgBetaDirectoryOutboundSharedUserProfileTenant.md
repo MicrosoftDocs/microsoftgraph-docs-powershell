@@ -633,8 +633,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryoutboundshareduserprofiletenant)
-- [](https://learn.microsoft.com/graph/api/outboundshareduserprofile-list-tenants?view=graph-rest-beta)
+- [Get-MgBetaDirectoryOutboundSharedUserProfileTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryoutboundshareduserprofiletenant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/outboundshareduserprofile-list-tenants?view=graph-rest-beta)
 
 
 

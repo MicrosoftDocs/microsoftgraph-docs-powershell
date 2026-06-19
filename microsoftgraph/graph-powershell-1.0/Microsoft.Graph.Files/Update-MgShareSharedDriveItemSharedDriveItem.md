@@ -48747,7 +48747,7 @@ This relationship can only be used to load a specific term set.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem)
+- [Update-MgShareSharedDriveItemSharedDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem)
 
 
 

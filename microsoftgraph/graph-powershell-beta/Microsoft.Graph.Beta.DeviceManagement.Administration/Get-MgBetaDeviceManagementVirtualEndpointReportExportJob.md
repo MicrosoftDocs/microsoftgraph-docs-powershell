@@ -616,8 +616,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointreportexportjob)
-- [](https://learn.microsoft.com/graph/api/cloudpcexportjob-get?view=graph-rest-beta)
+- [Get-MgBetaDeviceManagementVirtualEndpointReportExportJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointreportexportjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcexportjob-get?view=graph-rest-beta)
 
 
 

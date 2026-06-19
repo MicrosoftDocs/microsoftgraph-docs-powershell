@@ -658,7 +658,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemversion)
+- [New-MgDriveRootListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemversion)
 
 
 

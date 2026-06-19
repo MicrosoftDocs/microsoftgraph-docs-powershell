@@ -568,8 +568,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofile)
-- [](https://learn.microsoft.com/graph/api/networkaccess-filteringprofile-list?view=graph-rest-beta)
+- [Get-MgBetaNetworkAccessFilteringProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-filteringprofile-list?view=graph-rest-beta)
 
 
 

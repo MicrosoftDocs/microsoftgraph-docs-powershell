@@ -565,9 +565,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchacronym)
-- [](https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-beta)
+- [Get-MgBetaSearchAcronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchacronym)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-beta)
 
 
 

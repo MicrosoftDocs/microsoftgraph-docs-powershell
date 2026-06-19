@@ -552,7 +552,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstorage)
+- [Update-MgUserSettingStorage](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingstorage)
 
 
 

@@ -811,8 +811,8 @@ When users select this answer variation from the search results, they're directe
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna)
-- [](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0)
+- [New-MgSearchQna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0)
 
 
 

@@ -1078,8 +1078,8 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting[]>: Contains the retention se
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangeprotectionpolicy)
-- [](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-update?view=graph-rest-1.0)
+- [Update-MgSolutionBackupRestoreExchangeProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangeprotectionpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-update?view=graph-rest-1.0)
 
 
 

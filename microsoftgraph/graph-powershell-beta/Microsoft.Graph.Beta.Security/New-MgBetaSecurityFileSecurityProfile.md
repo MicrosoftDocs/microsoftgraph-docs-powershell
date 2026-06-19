@@ -768,7 +768,7 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile)
+- [New-MgBetaSecurityFileSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile)
 
 
 

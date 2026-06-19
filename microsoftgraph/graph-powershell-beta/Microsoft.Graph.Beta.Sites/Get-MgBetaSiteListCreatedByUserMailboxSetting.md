@@ -429,7 +429,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcreatedbyusermailboxsetting)
+- [Get-MgBetaSiteListCreatedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcreatedbyusermailboxsetting)
 
 
 

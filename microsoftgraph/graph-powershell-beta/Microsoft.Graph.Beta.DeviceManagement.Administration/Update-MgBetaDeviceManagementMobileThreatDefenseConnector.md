@@ -1089,7 +1089,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementmobilethreatdefenseconnector)
+- [Update-MgBetaDeviceManagementMobileThreatDefenseConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementmobilethreatdefenseconnector)
 
 
 
