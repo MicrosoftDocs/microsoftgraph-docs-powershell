@@ -602,7 +602,7 @@ HelpMessage: ''
 
 ### -ServicingPeriods
 
-.
+
 To construct, see NOTES section for SERVICINGPERIODS properties and create a hash table.
 
 ```yaml

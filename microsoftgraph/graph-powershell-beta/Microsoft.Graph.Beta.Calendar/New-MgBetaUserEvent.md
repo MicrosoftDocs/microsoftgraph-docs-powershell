@@ -724,7 +724,7 @@ HelpMessage: ''
 
 ### -ExceptionOccurrences
 
-.
+
 To construct, see NOTES section for EXCEPTIONOCCURRENCES properties and create a hash table.
 
 ```yaml

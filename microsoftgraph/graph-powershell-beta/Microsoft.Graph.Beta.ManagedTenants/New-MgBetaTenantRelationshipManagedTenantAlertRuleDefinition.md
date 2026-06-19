@@ -77,7 +77,7 @@ HelpMessage: ''
 
 ### -AlertRules
 
-.
+
 To construct, see NOTES section for ALERTRULES properties and create a hash table.
 
 ```yaml
@@ -164,7 +164,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -228,7 +228,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -334,7 +334,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -355,7 +355,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime

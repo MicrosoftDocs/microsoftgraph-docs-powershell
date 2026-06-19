@@ -111,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -182,7 +182,7 @@ HelpMessage: ''
 
 ### -DeviceHealthScriptAssignments
 
-.
+
 To construct, see NOTES section for DEVICEHEALTHSCRIPTASSIGNMENTS properties and create a hash table.
 
 ```yaml

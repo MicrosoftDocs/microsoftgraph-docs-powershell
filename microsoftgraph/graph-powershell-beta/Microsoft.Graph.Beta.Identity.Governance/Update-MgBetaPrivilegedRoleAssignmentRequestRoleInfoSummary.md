@@ -174,7 +174,7 @@ HelpMessage: ''
 
 ### -ElevatedCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -320,7 +320,7 @@ HelpMessage: ''
 
 ### -ManagedCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -347,7 +347,7 @@ HelpMessage: ''
 
 ### -MfaEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -513,7 +513,7 @@ HelpMessage: ''
 
 ### -UsersCount
 
-.
+
 
 ```yaml
 Type: System.Int32

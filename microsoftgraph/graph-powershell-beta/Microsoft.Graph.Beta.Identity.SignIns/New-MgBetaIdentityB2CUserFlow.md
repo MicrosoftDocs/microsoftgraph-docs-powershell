@@ -548,7 +548,7 @@ HelpMessage: ''
 
 ### -UserFlowTypeVersion
 
-.
+
 
 ```yaml
 Type: System.Single

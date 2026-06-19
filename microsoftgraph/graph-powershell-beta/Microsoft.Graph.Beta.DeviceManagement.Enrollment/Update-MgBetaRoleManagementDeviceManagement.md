@@ -295,7 +295,7 @@ HelpMessage: ''
 
 ### -ResourceNamespaces
 
-.
+
 To construct, see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml
@@ -339,7 +339,7 @@ HelpMessage: ''
 
 ### -RoleAssignments
 
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -361,7 +361,7 @@ HelpMessage: ''
 
 ### -RoleDefinitions
 
-.
+
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml

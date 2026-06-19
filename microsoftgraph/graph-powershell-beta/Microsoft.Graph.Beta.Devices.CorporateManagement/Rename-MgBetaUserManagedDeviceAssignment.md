@@ -101,7 +101,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -172,7 +172,7 @@ HelpMessage: ''
 
 ### -DeviceAssignmentItems
 
-.
+
 To construct, see NOTES section for DEVICEASSIGNMENTITEMS properties and create a hash table.
 
 ```yaml

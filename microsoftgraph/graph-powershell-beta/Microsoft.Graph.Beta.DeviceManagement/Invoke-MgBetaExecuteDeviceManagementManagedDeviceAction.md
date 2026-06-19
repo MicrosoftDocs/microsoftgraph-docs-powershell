@@ -104,7 +104,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -147,7 +147,7 @@ HelpMessage: ''
 
 ### -CarrierUrl
 
-.
+
 
 ```yaml
 Type: System.String
@@ -190,7 +190,7 @@ HelpMessage: ''
 
 ### -DeprovisionReason
 
-.
+
 
 ```yaml
 Type: System.String
@@ -211,7 +211,7 @@ HelpMessage: ''
 
 ### -DeviceIds
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -232,7 +232,7 @@ HelpMessage: ''
 
 ### -DeviceName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -316,7 +316,7 @@ HelpMessage: ''
 
 ### -KeepEnrollmentData
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -337,7 +337,7 @@ HelpMessage: ''
 
 ### -KeepUserData
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -358,7 +358,7 @@ HelpMessage: ''
 
 ### -NotificationBody
 
-.
+
 
 ```yaml
 Type: System.String
@@ -379,7 +379,7 @@ HelpMessage: ''
 
 ### -NotificationTitle
 
-.
+
 
 ```yaml
 Type: System.String
@@ -400,7 +400,7 @@ HelpMessage: ''
 
 ### -OrganizationalUnitPath
 
-.
+
 
 ```yaml
 Type: System.String
@@ -421,7 +421,7 @@ HelpMessage: ''
 
 ### -PersistEsimDataPlan
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

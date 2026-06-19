@@ -107,7 +107,7 @@ This example shows how to use the Set-MgUserPresence Cmdlet.
 
 ### -Activity
 
-.
+
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ HelpMessage: ''
 
 ### -Availability
 
-.
+
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -259,7 +259,7 @@ HelpMessage: ''
 
 ### -ExpirationDuration
 
-.
+
 
 ```yaml
 Type: System.TimeSpan
@@ -483,7 +483,7 @@ HelpMessage: ''
 
 ### -SessionId
 
-.
+
 
 ```yaml
 Type: System.String

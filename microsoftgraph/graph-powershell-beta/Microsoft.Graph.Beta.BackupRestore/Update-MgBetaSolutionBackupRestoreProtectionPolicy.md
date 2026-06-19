@@ -112,7 +112,7 @@ HelpMessage: ''
 
 ### -BillingPolicyId
 
-.
+
 
 ```yaml
 Type: System.String

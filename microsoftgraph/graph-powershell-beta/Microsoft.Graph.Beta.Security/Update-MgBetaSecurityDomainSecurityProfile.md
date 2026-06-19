@@ -82,7 +82,7 @@ Update the navigation property domainSecurityProfiles in security
 
 ### -ActivityGroupNames
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -136,7 +136,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -261,7 +261,7 @@ HelpMessage: ''
 
 ### -CountHits
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -288,7 +288,7 @@ HelpMessage: ''
 
 ### -CountInOrg
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -315,7 +315,7 @@ HelpMessage: ''
 
 ### -DomainCategories
 
-.
+
 To construct, see NOTES section for DOMAINCATEGORIES properties and create a hash table.
 
 ```yaml
@@ -343,7 +343,7 @@ HelpMessage: ''
 
 ### -DomainRegisteredDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -397,7 +397,7 @@ HelpMessage: ''
 
 ### -FirstSeenDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -543,7 +543,7 @@ HelpMessage: ''
 
 ### -LastSeenDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -570,7 +570,7 @@ HelpMessage: ''
 
 ### -Name
 
-.
+
 
 ```yaml
 Type: System.String
@@ -710,7 +710,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-.
+
 
 ```yaml
 Type: System.String
@@ -737,7 +737,7 @@ HelpMessage: ''
 
 ### -Tags
 
-.
+
 
 ```yaml
 Type: System.String[]

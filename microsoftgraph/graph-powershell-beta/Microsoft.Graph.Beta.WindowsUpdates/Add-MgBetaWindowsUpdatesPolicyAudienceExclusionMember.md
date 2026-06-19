@@ -108,7 +108,7 @@ HelpMessage: ''
 
 ### -Assets
 
-.
+
 To construct, see NOTES section for ASSETS properties and create a hash table.
 
 ```yaml
@@ -136,7 +136,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml

@@ -295,7 +295,7 @@ HelpMessage: ''
 
 ### -ResourceNamespaces
 
-.
+
 To construct, see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml
@@ -339,7 +339,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentApprovals
 
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTAPPROVALS properties and create a hash table.
 
 ```yaml
@@ -361,7 +361,7 @@ HelpMessage: ''
 
 ### -RoleAssignments
 
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -383,7 +383,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentScheduleInstances
 
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
@@ -405,7 +405,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentScheduleRequests
 
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
@@ -427,7 +427,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentSchedules
 
-.
+
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULES properties and create a hash table.
 
 ```yaml
@@ -449,7 +449,7 @@ HelpMessage: ''
 
 ### -RoleDefinitions
 
-.
+
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
@@ -471,7 +471,7 @@ HelpMessage: ''
 
 ### -RoleEligibilityScheduleInstances
 
-.
+
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
@@ -493,7 +493,7 @@ HelpMessage: ''
 
 ### -RoleEligibilityScheduleRequests
 
-.
+
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
@@ -515,7 +515,7 @@ HelpMessage: ''
 
 ### -RoleEligibilitySchedules
 
-.
+
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULES properties and create a hash table.
 
 ```yaml
@@ -537,7 +537,7 @@ HelpMessage: ''
 
 ### -TransitiveRoleAssignments
 
-.
+
 To construct, see NOTES section for TRANSITIVEROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml

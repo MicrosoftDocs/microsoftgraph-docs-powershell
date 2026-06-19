@@ -130,7 +130,7 @@ HelpMessage: ''
 
 ### -Approvers
 
-.
+
 To construct, see NOTES section for APPROVERS properties and create a hash table.
 
 ```yaml
@@ -240,7 +240,7 @@ HelpMessage: ''
 
 ### -Collaborators
 
-.
+
 To construct, see NOTES section for COLLABORATORS properties and create a hash table.
 
 ```yaml

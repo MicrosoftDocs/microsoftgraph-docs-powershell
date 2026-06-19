@@ -82,7 +82,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -147,7 +147,7 @@ HelpMessage: ''
 
 ### -DeviceEnrollmentNotificationConfigurations
 
-.
+
 To construct, see NOTES section for DEVICEENROLLMENTNOTIFICATIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml

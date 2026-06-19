@@ -111,7 +111,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -236,7 +236,7 @@ HelpMessage: ''
 
 ### -FirstSeenDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -263,7 +263,7 @@ HelpMessage: ''
 
 ### -Fqdn
 
-.
+
 
 ```yaml
 Type: System.String
@@ -436,7 +436,7 @@ HelpMessage: ''
 
 ### -IsAzureAdJoined
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -463,7 +463,7 @@ HelpMessage: ''
 
 ### -IsAzureAdRegistered
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -490,7 +490,7 @@ HelpMessage: ''
 
 ### -IsHybridAzureDomainJoined
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -517,7 +517,7 @@ HelpMessage: ''
 
 ### -LastSeenDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -544,7 +544,7 @@ HelpMessage: ''
 
 ### -LogonUsers
 
-.
+
 To construct, see NOTES section for LOGONUSERS properties and create a hash table.
 
 ```yaml
@@ -572,7 +572,7 @@ HelpMessage: ''
 
 ### -NetBiosName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -599,7 +599,7 @@ HelpMessage: ''
 
 ### -NetworkInterfaces
 
-.
+
 To construct, see NOTES section for NETWORKINTERFACES properties and create a hash table.
 
 ```yaml
@@ -627,7 +627,7 @@ HelpMessage: ''
 
 ### -OS
 
-.
+
 
 ```yaml
 Type: System.String
@@ -654,7 +654,7 @@ HelpMessage: ''
 
 ### -OSVersion
 
-.
+
 
 ```yaml
 Type: System.String
@@ -681,7 +681,7 @@ HelpMessage: ''
 
 ### -ParentHost
 
-.
+
 
 ```yaml
 Type: System.String
@@ -771,7 +771,7 @@ HelpMessage: ''
 
 ### -RelatedHostIds
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -820,7 +820,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-.
+
 
 ```yaml
 Type: System.String
@@ -847,7 +847,7 @@ HelpMessage: ''
 
 ### -Tags
 
-.
+
 
 ```yaml
 Type: System.String[]

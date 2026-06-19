@@ -98,7 +98,7 @@ Update the navigation property salesQuotes in financials
 
 ### -AcceptedDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -180,7 +180,7 @@ HelpMessage: ''
 
 ### -BillToCustomerId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ HelpMessage: ''
 
 ### -BillToCustomerNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -234,7 +234,7 @@ HelpMessage: ''
 
 ### -BillToName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -387,7 +387,7 @@ HelpMessage: ''
 
 ### -CurrencyCode
 
-.
+
 
 ```yaml
 Type: System.String
@@ -414,7 +414,7 @@ HelpMessage: ''
 
 ### -CurrencyId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -469,7 +469,7 @@ HelpMessage: ''
 
 ### -CustomerId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -496,7 +496,7 @@ HelpMessage: ''
 
 ### -CustomerName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -523,7 +523,7 @@ HelpMessage: ''
 
 ### -CustomerNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -550,7 +550,7 @@ HelpMessage: ''
 
 ### -DiscountAmount
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -577,7 +577,7 @@ HelpMessage: ''
 
 ### -DocumentDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -604,7 +604,7 @@ HelpMessage: ''
 
 ### -DueDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -631,7 +631,7 @@ HelpMessage: ''
 
 ### -Email
 
-.
+
 
 ```yaml
 Type: System.String
@@ -658,7 +658,7 @@ HelpMessage: ''
 
 ### -ExternalDocumentNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -748,7 +748,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -803,7 +803,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -830,7 +830,7 @@ HelpMessage: ''
 
 ### -Number
 
-.
+
 
 ```yaml
 Type: System.String
@@ -885,7 +885,7 @@ HelpMessage: ''
 
 ### -PaymentTermsId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -912,7 +912,7 @@ HelpMessage: ''
 
 ### -PhoneNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1024,7 +1024,7 @@ HelpMessage: ''
 
 ### -Salesperson
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1078,7 +1078,7 @@ HelpMessage: ''
 
 ### -SalesQuoteLines
 
-.
+
 To construct, see NOTES section for SALESQUOTELINES properties and create a hash table.
 
 ```yaml
@@ -1134,7 +1134,7 @@ HelpMessage: ''
 
 ### -SentDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -1189,7 +1189,7 @@ HelpMessage: ''
 
 ### -ShipmentMethodId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1244,7 +1244,7 @@ HelpMessage: ''
 
 ### -ShipToContact
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1271,7 +1271,7 @@ HelpMessage: ''
 
 ### -ShipToName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1298,7 +1298,7 @@ HelpMessage: ''
 
 ### -Status
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1325,7 +1325,7 @@ HelpMessage: ''
 
 ### -TotalAmountExcludingTax
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1352,7 +1352,7 @@ HelpMessage: ''
 
 ### -TotalAmountIncludingTax
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1379,7 +1379,7 @@ HelpMessage: ''
 
 ### -TotalTaxAmount
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1406,7 +1406,7 @@ HelpMessage: ''
 
 ### -ValidUntilDate
 
-.
+
 
 ```yaml
 Type: System.DateTime

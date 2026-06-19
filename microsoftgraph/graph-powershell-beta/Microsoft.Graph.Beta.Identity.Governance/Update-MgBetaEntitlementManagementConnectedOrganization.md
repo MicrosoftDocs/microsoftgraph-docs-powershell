@@ -347,7 +347,7 @@ HelpMessage: ''
 
 ### -ExternalSponsors
 
-.
+
 To construct, see NOTES section for EXTERNALSPONSORS properties and create a hash table.
 
 ```yaml
@@ -525,7 +525,7 @@ HelpMessage: ''
 
 ### -InternalSponsors
 
-.
+
 To construct, see NOTES section for INTERNALSPONSORS properties and create a hash table.
 
 ```yaml

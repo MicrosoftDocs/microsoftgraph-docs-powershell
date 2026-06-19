@@ -310,7 +310,7 @@ HelpMessage: ''
 
 ### -ThreatAssessmentRequests
 
-.
+
 To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml

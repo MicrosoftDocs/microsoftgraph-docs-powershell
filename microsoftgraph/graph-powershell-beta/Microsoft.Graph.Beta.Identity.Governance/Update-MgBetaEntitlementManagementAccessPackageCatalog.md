@@ -199,7 +199,7 @@ HelpMessage: ''
 
 ### -AccessPackageResources
 
-.
+
 To construct, see NOTES section for ACCESSPACKAGERESOURCES properties and create a hash table.
 
 ```yaml
@@ -227,7 +227,7 @@ HelpMessage: ''
 
 ### -AccessPackageResourceScopes
 
-.
+
 To construct, see NOTES section for ACCESSPACKAGERESOURCESCOPES properties and create a hash table.
 
 ```yaml
@@ -495,7 +495,7 @@ HelpMessage: ''
 
 ### -CustomAccessPackageWorkflowExtensions
 
-.
+
 To construct, see NOTES section for CUSTOMACCESSPACKAGEWORKFLOWEXTENSIONS properties and create a hash table.
 
 ```yaml
@@ -866,7 +866,7 @@ HelpMessage: ''
 
 ### -UniqueName
 
-.
+
 
 ```yaml
 Type: System.String

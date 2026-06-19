@@ -604,7 +604,7 @@ HelpMessage: ''
 
 ### -SearchResponseId
 
-.
+
 
 ```yaml
 Type: System.String

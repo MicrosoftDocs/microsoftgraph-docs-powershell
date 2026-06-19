@@ -79,7 +79,7 @@ This action allows reading and performing identity security actions on behalf of
 
 ### -AccountId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ HelpMessage: ''
 
 ### -Body
 
-.
+
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -182,7 +182,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml

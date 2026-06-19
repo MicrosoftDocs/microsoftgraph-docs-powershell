@@ -478,7 +478,7 @@ HelpMessage: ''
 
 ### -ExternalSourceDetail
 
-.
+
 
 ```yaml
 Type: System.String
@@ -505,7 +505,7 @@ HelpMessage: ''
 
 ### -Fax
 
-.
+
 
 ```yaml
 Type: System.String

@@ -73,7 +73,7 @@ HelpMessage: ''
 
 ### -Assignments
 
-.
+
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -245,7 +245,7 @@ HelpMessage: ''
 
 ### -Name
 
-.
+
 
 ```yaml
 Type: System.String

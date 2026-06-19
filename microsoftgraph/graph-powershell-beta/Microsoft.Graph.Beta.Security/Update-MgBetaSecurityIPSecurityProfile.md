@@ -80,7 +80,7 @@ Update the navigation property ipSecurityProfiles in security
 
 ### -ActivityGroupNames
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -134,7 +134,7 @@ HelpMessage: ''
 
 ### -Address
 
-.
+
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -286,7 +286,7 @@ HelpMessage: ''
 
 ### -CountHits
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -313,7 +313,7 @@ HelpMessage: ''
 
 ### -CountHosts
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -340,7 +340,7 @@ HelpMessage: ''
 
 ### -FirstSeenDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -486,7 +486,7 @@ HelpMessage: ''
 
 ### -IPCategories
 
-.
+
 To construct, see NOTES section for IPCATEGORIES properties and create a hash table.
 
 ```yaml
@@ -514,7 +514,7 @@ HelpMessage: ''
 
 ### -IPReferenceData
 
-.
+
 To construct, see NOTES section for IPREFERENCEDATA properties and create a hash table.
 
 ```yaml
@@ -569,7 +569,7 @@ HelpMessage: ''
 
 ### -LastSeenDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -681,7 +681,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-.
+
 
 ```yaml
 Type: System.String
@@ -708,7 +708,7 @@ HelpMessage: ''
 
 ### -Tags
 
-.
+
 
 ```yaml
 Type: System.String[]

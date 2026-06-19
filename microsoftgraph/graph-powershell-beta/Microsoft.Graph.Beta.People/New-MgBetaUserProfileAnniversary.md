@@ -285,7 +285,7 @@ HelpMessage: ''
 
 ### -Date
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -312,7 +312,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -486,7 +486,7 @@ HelpMessage: ''
 
 ### -IsSearchable
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

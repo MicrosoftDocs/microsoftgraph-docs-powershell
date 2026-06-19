@@ -462,7 +462,7 @@ HelpMessage: ''
 
 ### -ReconfirmationInDays
 
-.
+
 
 ```yaml
 Type: System.Int32

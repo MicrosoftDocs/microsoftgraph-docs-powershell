@@ -109,7 +109,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -261,7 +261,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -288,7 +288,7 @@ HelpMessage: ''
 
 ### -DeploymentPackageUrl
 
-.
+
 
 ```yaml
 Type: System.String
@@ -315,7 +315,7 @@ HelpMessage: ''
 
 ### -DestinationServiceName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -461,7 +461,7 @@ HelpMessage: ''
 
 ### -IsSigned
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -488,7 +488,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -515,7 +515,7 @@ HelpMessage: ''
 
 ### -Manifest
 
-.
+
 
 ```yaml
 Type: System.String
@@ -542,7 +542,7 @@ HelpMessage: ''
 
 ### -Name
 
-.
+
 
 ```yaml
 Type: System.String
@@ -596,7 +596,7 @@ HelpMessage: ''
 
 ### -Platform
 
-.
+
 
 ```yaml
 Type: System.String
@@ -623,7 +623,7 @@ HelpMessage: ''
 
 ### -PolicyName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -713,7 +713,7 @@ HelpMessage: ''
 
 ### -Publisher
 
-.
+
 
 ```yaml
 Type: System.String
@@ -762,7 +762,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-.
+
 
 ```yaml
 Type: System.String
@@ -789,7 +789,7 @@ HelpMessage: ''
 
 ### -Tags
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -816,7 +816,7 @@ HelpMessage: ''
 
 ### -Type
 
-.
+
 
 ```yaml
 Type: System.String

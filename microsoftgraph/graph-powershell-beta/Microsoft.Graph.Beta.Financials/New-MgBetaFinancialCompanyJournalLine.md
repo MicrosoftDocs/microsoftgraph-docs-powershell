@@ -165,7 +165,7 @@ HelpMessage: ''
 
 ### -AccountId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -204,7 +204,7 @@ HelpMessage: ''
 
 ### -AccountNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -282,7 +282,7 @@ HelpMessage: ''
 
 ### -Amount
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -382,7 +382,7 @@ HelpMessage: ''
 
 ### -Comment
 
-.
+
 
 ```yaml
 Type: System.String
@@ -482,7 +482,7 @@ HelpMessage: ''
 
 ### -Description
 
-.
+
 
 ```yaml
 Type: System.String
@@ -521,7 +521,7 @@ HelpMessage: ''
 
 ### -DocumentNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -560,7 +560,7 @@ HelpMessage: ''
 
 ### -ExternalDocumentNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -662,7 +662,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -741,7 +741,7 @@ HelpMessage: ''
 
 ### -JournalDisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -807,7 +807,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -846,7 +846,7 @@ HelpMessage: ''
 
 ### -LineNumber
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -885,7 +885,7 @@ HelpMessage: ''
 
 ### -PostingDate
 
-.
+
 
 ```yaml
 Type: System.DateTime

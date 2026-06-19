@@ -594,7 +594,7 @@ HelpMessage: ''
 
 ### -PasswordResetUri
 
-.
+
 
 ```yaml
 Type: System.String

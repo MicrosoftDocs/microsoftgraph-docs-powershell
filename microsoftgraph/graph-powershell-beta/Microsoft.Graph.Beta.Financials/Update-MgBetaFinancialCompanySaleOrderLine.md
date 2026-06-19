@@ -183,7 +183,7 @@ HelpMessage: ''
 
 ### -AccountId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -261,7 +261,7 @@ HelpMessage: ''
 
 ### -AmountExcludingTax
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -300,7 +300,7 @@ HelpMessage: ''
 
 ### -AmountIncludingTax
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -461,7 +461,7 @@ HelpMessage: ''
 
 ### -Description
 
-.
+
 
 ```yaml
 Type: System.String
@@ -500,7 +500,7 @@ HelpMessage: ''
 
 ### -DiscountAmount
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -539,7 +539,7 @@ HelpMessage: ''
 
 ### -DiscountAppliedBeforeTax
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -578,7 +578,7 @@ HelpMessage: ''
 
 ### -DiscountPercent
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -617,7 +617,7 @@ HelpMessage: ''
 
 ### -DocumentId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -799,7 +799,7 @@ HelpMessage: ''
 
 ### -InvoiceDiscountAllocation
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -838,7 +838,7 @@ HelpMessage: ''
 
 ### -InvoicedQuantity
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -877,7 +877,7 @@ HelpMessage: ''
 
 ### -InvoiceQuantity
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -956,7 +956,7 @@ HelpMessage: ''
 
 ### -ItemId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -995,7 +995,7 @@ HelpMessage: ''
 
 ### -LineType
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1034,7 +1034,7 @@ HelpMessage: ''
 
 ### -NetAmount
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1073,7 +1073,7 @@ HelpMessage: ''
 
 ### -NetAmountIncludingTax
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1112,7 +1112,7 @@ HelpMessage: ''
 
 ### -NetTaxAmount
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1214,7 +1214,7 @@ HelpMessage: ''
 
 ### -Quantity
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1341,7 +1341,7 @@ HelpMessage: ''
 
 ### -Sequence
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -1380,7 +1380,7 @@ HelpMessage: ''
 
 ### -ShipmentDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -1419,7 +1419,7 @@ HelpMessage: ''
 
 ### -ShippedQuantity
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1458,7 +1458,7 @@ HelpMessage: ''
 
 ### -ShipQuantity
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1497,7 +1497,7 @@ HelpMessage: ''
 
 ### -TaxCode
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1536,7 +1536,7 @@ HelpMessage: ''
 
 ### -TaxPercent
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1575,7 +1575,7 @@ HelpMessage: ''
 
 ### -TotalTaxAmount
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1614,7 +1614,7 @@ HelpMessage: ''
 
 ### -UnitOfMeasureId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1653,7 +1653,7 @@ HelpMessage: ''
 
 ### -UnitPrice
 
-.
+
 
 ```yaml
 Type: System.Decimal

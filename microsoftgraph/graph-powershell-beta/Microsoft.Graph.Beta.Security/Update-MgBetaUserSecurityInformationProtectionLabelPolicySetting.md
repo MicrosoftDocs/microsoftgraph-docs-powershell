@@ -172,7 +172,7 @@ HelpMessage: ''
 
 ### -DefaultLabelId
 
-.
+
 
 ```yaml
 Type: System.String
