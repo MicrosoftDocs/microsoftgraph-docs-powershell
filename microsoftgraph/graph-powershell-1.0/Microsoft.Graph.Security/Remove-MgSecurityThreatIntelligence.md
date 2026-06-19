@@ -15,6 +15,9 @@ title: Remove-MgSecurityThreatIntelligence
 
 Delete navigation property threatIntelligence for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

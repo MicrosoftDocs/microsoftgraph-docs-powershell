@@ -15,6 +15,9 @@ title: Get-MgGroupExtensionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupExtensionCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupExtensionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionConta
 
 Update the navigation property containedApps in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

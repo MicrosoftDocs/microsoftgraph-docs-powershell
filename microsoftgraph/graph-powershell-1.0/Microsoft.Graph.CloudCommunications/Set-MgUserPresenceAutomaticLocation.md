@@ -17,6 +17,9 @@ Update the automatic work location for a user.
 The automatic layer participates in the standard precedence model: Use this operation from clients or services that automatically detect location (for example, Teams, network and location agents, or OEM docking apps).
 It doesn't clear manual or scheduled signals.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceAutomaticLocation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserPresenceAutomaticLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgGroupDriveItemContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamPrimaryChannelSharedWithTeamAllowedMemberCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMemberCount](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMemberCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

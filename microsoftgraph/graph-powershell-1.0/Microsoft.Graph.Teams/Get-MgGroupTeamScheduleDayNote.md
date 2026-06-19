@@ -15,6 +15,9 @@ title: Get-MgGroupTeamScheduleDayNote
 
 The day notes in the schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleDayNote](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleDayNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

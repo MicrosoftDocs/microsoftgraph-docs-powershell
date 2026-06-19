@@ -16,6 +16,9 @@ title: Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith
 The access packages that are incompatible with this package.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageIncompatibleWith](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleWith?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

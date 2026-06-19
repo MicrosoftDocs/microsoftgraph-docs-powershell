@@ -15,6 +15,9 @@ title: Remove-MgOrganizationBrandingLocalizationFavicon
 
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingLocalizationFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingLocalizationFavicon?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

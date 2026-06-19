@@ -15,6 +15,9 @@ title: Get-MgPolicyClaimMappingPolicy
 
 Retrieve the properties and relationships of a claimsMappingPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

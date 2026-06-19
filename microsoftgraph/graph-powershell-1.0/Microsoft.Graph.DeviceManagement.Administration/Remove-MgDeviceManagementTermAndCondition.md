@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementTermAndCondition
 
 Delete navigation property termsAndConditions for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

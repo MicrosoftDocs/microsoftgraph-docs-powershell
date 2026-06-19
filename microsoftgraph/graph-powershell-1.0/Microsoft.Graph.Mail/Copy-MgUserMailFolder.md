@@ -15,6 +15,9 @@ title: Copy-MgUserMailFolder
 
 Copy a mailfolder and its contents to another mailfolder.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Copy-MgBetaUserMailFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

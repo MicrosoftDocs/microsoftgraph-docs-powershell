@@ -16,6 +16,9 @@ title: Get-MgBetaTeamworkDeletedTeamChannelMember
 A collection of membership records associated with the channel.
 It includes both direct and indirect members of shared channels.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

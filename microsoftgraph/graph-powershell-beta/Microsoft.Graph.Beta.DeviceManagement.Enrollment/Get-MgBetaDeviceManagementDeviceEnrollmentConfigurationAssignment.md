@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment
 
 The list of group assignments for the device configuration profile
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

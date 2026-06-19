@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask
 
 The tasks in the workflow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

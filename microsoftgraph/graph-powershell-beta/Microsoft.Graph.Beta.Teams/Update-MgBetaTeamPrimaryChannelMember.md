@@ -15,6 +15,9 @@ title: Update-MgBetaTeamPrimaryChannelMember
 
 Update the navigation property allMembers in teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPrimaryChannelMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

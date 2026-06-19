@@ -15,6 +15,9 @@ title: New-MgUserTodoListTaskChecklistItem
 
 Create new navigation property to checklistItems for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskChecklistItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupSiteColumn
 
 Delete navigation property columns for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteColumn](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

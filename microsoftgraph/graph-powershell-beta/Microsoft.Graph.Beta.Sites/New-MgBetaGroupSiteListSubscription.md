@@ -15,6 +15,9 @@ title: New-MgBetaGroupSiteListSubscription
 
 Create new navigation property to subscriptions for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

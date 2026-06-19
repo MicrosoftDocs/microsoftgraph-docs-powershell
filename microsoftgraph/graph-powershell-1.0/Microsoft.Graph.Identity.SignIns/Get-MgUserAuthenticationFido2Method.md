@@ -15,6 +15,9 @@ title: Get-MgUserAuthenticationFido2Method
 
 Represents the FIDO2 security keys registered to a user for authentication.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

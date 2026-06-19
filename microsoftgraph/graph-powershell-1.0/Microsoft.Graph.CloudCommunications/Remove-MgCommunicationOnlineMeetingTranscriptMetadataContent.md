@@ -16,6 +16,9 @@ title: Remove-MgCommunicationOnlineMeetingTranscriptMetadataContent
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

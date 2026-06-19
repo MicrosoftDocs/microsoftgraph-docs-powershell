@@ -15,6 +15,9 @@ title: New-MgBetaBookingBusinessService
 
 Create new navigation property to services for bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessService?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

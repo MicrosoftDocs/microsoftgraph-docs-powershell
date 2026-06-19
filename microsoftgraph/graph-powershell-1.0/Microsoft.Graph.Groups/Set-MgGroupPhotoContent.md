@@ -15,6 +15,9 @@ title: Set-MgGroupPhotoContent
 
 The group's profile photo
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupPhotoContent](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupPhotoContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

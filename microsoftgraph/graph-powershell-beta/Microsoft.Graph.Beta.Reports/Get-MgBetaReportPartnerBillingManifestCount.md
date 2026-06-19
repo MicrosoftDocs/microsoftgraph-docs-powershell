@@ -15,6 +15,9 @@ title: Get-MgBetaReportPartnerBillingManifestCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPartnerBillingManifestCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBillingManifestCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

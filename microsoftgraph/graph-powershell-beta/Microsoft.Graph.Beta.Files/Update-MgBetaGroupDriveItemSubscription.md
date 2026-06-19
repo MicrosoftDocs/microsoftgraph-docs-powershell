@@ -15,6 +15,9 @@ title: Update-MgBetaGroupDriveItemSubscription
 
 Update the navigation property subscriptions in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

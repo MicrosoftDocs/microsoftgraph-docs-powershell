@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreSession
 
 Get the properties of a restoreSession object by ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

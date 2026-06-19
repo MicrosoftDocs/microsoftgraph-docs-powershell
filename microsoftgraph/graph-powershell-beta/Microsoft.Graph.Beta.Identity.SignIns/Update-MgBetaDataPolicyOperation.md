@@ -15,6 +15,9 @@ title: Update-MgBetaDataPolicyOperation
 
 Update entity in dataPolicyOperations
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgDataPolicyOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

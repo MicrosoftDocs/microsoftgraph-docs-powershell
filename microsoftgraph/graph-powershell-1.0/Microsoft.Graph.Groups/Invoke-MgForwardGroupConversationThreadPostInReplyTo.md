@@ -16,6 +16,9 @@ title: Invoke-MgForwardGroupConversationThreadPostInReplyTo
 Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, \ror, you can specify just the parent thread without the parent conversation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)

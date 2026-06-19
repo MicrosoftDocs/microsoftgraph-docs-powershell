@@ -15,6 +15,9 @@ title: Get-MgShareItemContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItemContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgDismissGroupEventReminder
 
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissGroupEventReminder](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaDismissGroupEventReminder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Dismiss (Default)

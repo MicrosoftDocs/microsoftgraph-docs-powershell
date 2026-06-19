@@ -15,6 +15,9 @@ title: Remove-MgAgreementFileVersion
 
 Delete navigation property versions for agreements
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaAgreementFileVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

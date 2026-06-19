@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreProtectionPolicy
 
 Update the navigation property protectionPolicies in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

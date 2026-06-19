@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobApp
 
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.macOSLobApp
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsMacOSLobApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsMacOSLobApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Set-MgBetaUserSettingWorkHourAndLocationOccurrence
 
 Update the navigation property occurrences in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserSettingWorkHourAndLocationOccurrence](/powershell/module/Microsoft.Graph.Users/Set-MgUserSettingWorkHourAndLocationOccurrence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

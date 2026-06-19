@@ -15,6 +15,9 @@ title: Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 
 Update the navigation property windowsInformationProtectionAppLearningSummaries in deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

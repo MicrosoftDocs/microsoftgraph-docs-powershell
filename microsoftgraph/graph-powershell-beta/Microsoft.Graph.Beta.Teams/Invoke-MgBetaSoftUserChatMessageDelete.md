@@ -15,6 +15,9 @@ title: Invoke-MgBetaSoftUserChatMessageDelete
 
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSoftUserChatMessageDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftUserChatMessageDelete?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Soft (Default)

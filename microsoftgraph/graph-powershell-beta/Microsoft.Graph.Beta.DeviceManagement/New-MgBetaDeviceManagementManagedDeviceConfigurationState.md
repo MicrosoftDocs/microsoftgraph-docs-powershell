@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementManagedDeviceConfigurationState
 
 Create new navigation property to deviceConfigurationStates for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceConfigurationState?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

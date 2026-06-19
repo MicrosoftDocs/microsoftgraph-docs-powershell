@@ -15,6 +15,9 @@ title: New-MgBetaExternalConnectionItemActivity
 
 Create new navigation property to activities for external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionItemActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgUserTodoListTaskExtension
 
 Create new navigation property to extensions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserTodoListTaskExtension](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

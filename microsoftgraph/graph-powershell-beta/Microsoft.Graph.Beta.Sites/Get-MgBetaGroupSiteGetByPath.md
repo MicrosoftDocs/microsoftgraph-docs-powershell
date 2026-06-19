@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteGetByPath
 
 The collection of lists under this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPath](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPath?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

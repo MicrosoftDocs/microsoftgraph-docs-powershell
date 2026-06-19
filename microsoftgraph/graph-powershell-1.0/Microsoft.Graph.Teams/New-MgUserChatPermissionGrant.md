@@ -15,6 +15,9 @@ title: New-MgUserChatPermissionGrant
 
 Create new navigation property to permissionGrants for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatPermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

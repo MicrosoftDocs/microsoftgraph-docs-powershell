@@ -15,6 +15,9 @@ title: Get-MgBetaUserTeamworkAssociatedTeam
 
 The list of associatedTeamInfo objects that a user is associated with.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkAssociatedTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

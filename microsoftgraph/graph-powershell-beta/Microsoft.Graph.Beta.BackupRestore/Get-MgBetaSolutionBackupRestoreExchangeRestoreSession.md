@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreExchangeRestoreSession
 
 The list of Exchange restore sessions available in the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreExchangeRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreExchangeRestoreSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

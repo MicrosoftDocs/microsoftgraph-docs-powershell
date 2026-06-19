@@ -15,6 +15,9 @@ title: Clear-MgDeviceManagementManagedDevice
 
 Wipe a device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Clear-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### WipeExpanded (Default)

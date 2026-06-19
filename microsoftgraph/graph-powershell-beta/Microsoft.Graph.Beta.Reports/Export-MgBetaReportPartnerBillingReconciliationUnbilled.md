@@ -15,6 +15,9 @@ title: Export-MgBetaReportPartnerBillingReconciliationUnbilled
 
 Export the unbilled invoice reconciliation data for a specific billing period and a given currency.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgReportPartnerBillingReconciliationUnbilled](/powershell/module/Microsoft.Graph.Reports/Export-MgReportPartnerBillingReconciliationUnbilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)

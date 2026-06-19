@@ -15,6 +15,9 @@ title: Remove-MgBetaUserSettingStorageQuota
 
 Delete navigation property quota for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserSettingStorageQuota](/powershell/module/Microsoft.Graph.Users/Remove-MgUserSettingStorageQuota?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Remove-MgGroupTeamPrimaryChannelMessageReply
 
 Delete navigation property replies for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

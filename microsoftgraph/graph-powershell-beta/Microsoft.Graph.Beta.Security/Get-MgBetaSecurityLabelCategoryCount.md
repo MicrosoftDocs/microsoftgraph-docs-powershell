@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityLabelCategoryCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelCategoryCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCategoryCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

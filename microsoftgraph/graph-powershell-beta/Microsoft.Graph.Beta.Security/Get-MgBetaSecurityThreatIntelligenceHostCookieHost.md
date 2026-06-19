@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceHostCookieHost
 
 Indicates that a cookie of this name and domain was found related to this host.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostCookieHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostCookieHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

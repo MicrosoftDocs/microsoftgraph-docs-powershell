@@ -16,6 +16,9 @@ title: Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

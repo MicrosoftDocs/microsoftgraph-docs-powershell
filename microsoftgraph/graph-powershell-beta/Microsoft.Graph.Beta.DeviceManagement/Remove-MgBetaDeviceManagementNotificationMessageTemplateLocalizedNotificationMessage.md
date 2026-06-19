@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotifica
 
 Delete navigation property localizedNotificationMessages for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

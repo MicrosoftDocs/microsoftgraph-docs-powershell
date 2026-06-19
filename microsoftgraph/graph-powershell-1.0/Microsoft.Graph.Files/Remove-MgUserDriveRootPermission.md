@@ -15,6 +15,9 @@ title: Remove-MgUserDriveRootPermission
 
 Delete navigation property permissions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

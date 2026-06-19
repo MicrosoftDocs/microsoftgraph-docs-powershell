@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef
 
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

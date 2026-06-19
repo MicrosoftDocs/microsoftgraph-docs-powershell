@@ -15,6 +15,9 @@ title: Remove-MgBetaUserOnenoteResource
 
 Delete navigation property resources for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnenoteResource](/powershell/module/Microsoft.Graph.Notes/Remove-MgUserOnenoteResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

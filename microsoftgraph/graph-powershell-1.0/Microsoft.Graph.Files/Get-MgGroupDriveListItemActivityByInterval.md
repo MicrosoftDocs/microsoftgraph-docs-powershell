@@ -15,6 +15,9 @@ title: Get-MgGroupDriveListItemActivityByInterval
 
 Invoke function getActivitiesByInterval
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemActivityByInterval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

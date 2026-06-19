@@ -16,6 +16,9 @@ title: Get-MgBetaApplicationDelta
 Get newly created, updated, or deleted applications and agent identity blueprints without having to perform a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)

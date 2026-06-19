@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
 
 Update the properties of a webApplicationFirewallProvider object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityRiskPreventionWebApplicationFirewallProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityRiskPreventionWebApplicationFirewallProvider?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

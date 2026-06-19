@@ -15,6 +15,9 @@ title: Invoke-MgBetaAvailableIdentityProviderType
 
 Get all identity providers supported in a directory.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAvailableIdentityProviderType](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgAvailableIdentityProviderType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Available (Default)

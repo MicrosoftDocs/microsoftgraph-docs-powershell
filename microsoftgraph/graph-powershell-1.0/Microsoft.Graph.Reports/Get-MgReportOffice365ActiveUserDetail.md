@@ -15,6 +15,9 @@ title: Get-MgReportOffice365ActiveUserDetail
 
 Get details about Microsoft 365 active users.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActiveUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActiveUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

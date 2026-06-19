@@ -15,6 +15,9 @@ title: Unpublish-MgBetaSiteContentType
 
 Invoke action unpublish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Unpublish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unpublish (Default)

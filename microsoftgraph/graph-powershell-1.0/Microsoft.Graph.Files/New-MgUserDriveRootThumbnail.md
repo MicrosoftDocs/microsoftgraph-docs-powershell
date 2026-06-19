@@ -15,6 +15,9 @@ title: New-MgUserDriveRootThumbnail
 
 Create new navigation property to thumbnails for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootThumbnail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

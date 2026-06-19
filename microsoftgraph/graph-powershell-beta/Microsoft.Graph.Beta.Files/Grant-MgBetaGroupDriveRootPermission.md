@@ -15,6 +15,9 @@ title: Grant-MgBetaGroupDriveRootPermission
 
 Grant users access to a link represented by a permission.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Grant-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Grant-MgGroupDriveRootPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)

@@ -15,6 +15,9 @@ title: Stop-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleReque
 
 Cancel an access assignment request to a group whose membership and ownership are governed by PIM.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Cancel (Default)

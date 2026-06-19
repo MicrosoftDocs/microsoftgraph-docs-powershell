@@ -15,6 +15,9 @@ title: Get-MgReportAuthenticationMethodUserRegistrationDetail
 
 Read the properties and relationships of a userRegistrationDetails object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

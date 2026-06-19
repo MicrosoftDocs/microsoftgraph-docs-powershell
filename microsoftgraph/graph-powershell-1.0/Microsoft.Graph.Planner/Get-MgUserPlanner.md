@@ -16,6 +16,9 @@ title: Get-MgUserPlanner
 Entry-point to the Planner resource that might exist for a user.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlanner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

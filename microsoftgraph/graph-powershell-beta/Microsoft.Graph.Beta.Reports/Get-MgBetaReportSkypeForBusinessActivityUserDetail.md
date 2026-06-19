@@ -15,6 +15,9 @@ title: Get-MgBetaReportSkypeForBusinessActivityUserDetail
 
 Invoke function getSkypeForBusinessActivityUserDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessActivityUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessActivityUserDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgUserInsightTrending
 
 Update the navigation property trending in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserInsightTrending](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserInsightTrending?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

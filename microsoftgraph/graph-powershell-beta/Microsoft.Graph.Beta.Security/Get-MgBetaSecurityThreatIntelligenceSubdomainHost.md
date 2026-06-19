@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceSubdomainHost
 
 The host of the subdomain.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSubdomainHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSubdomainHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

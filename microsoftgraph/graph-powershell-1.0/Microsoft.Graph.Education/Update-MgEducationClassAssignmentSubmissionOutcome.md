@@ -16,6 +16,9 @@ title: Update-MgEducationClassAssignmentSubmissionOutcome
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

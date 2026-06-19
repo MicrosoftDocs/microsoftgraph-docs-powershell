@@ -15,6 +15,9 @@ title: Get-MgApplicationTokenLifetimePolicyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationTokenLifetimePolicyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenLifetimePolicyCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

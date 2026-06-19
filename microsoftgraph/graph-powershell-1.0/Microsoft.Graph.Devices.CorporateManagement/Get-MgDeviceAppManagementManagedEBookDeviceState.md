@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementManagedEBookDeviceState
 
 The list of installation states for this eBook.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityB2XUserFlowPostAttributeCollection
 
 Get postAttributeCollection from identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowPostAttributeCollection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowPostAttributeCollection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

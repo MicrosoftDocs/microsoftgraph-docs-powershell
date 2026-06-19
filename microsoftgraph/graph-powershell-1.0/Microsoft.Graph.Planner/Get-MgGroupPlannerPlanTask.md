@@ -17,6 +17,9 @@ Read-only.
 Nullable.
 Collection of tasks in the plan.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlanTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

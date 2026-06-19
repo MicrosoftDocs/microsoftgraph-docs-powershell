@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion
 
 Update the navigation property files in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

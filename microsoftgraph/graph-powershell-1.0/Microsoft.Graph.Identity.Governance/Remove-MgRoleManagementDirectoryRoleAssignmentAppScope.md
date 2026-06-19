@@ -15,6 +15,9 @@ title: Remove-MgRoleManagementDirectoryRoleAssignmentAppScope
 
 Delete navigation property appScope for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

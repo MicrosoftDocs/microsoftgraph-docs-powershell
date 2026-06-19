@@ -16,6 +16,9 @@ title: Set-MgCommunicationAdhocCallTranscriptContent
 The content of the transcript.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaCommunicationAdhocCallTranscriptContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationAdhocCallTranscriptContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

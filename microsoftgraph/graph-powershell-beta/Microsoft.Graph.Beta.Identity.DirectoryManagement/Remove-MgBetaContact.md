@@ -15,6 +15,9 @@ title: Remove-MgBetaContact
 
 Delete entity from contacts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgContact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

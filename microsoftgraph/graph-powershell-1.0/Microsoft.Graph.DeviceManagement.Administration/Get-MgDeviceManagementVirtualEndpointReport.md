@@ -16,6 +16,9 @@ title: Get-MgDeviceManagementVirtualEndpointReport
 Cloud PC-related reports.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

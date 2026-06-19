@@ -16,6 +16,9 @@ title: Set-MgBetaApplicationVerifiedPublisher
 Set the the verifiedPublisher on an agentIdentityBlueprint.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationVerifiedPublisher?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

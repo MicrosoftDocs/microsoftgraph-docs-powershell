@@ -15,6 +15,9 @@ title: Get-MgBetaInvitation
 
 Get entities from invitations
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

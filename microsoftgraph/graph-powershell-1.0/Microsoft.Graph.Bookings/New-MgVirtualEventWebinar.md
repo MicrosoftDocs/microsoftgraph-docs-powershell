@@ -15,6 +15,9 @@ title: New-MgVirtualEventWebinar
 
 Create a new virtualEventWebinar object in draft mode.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

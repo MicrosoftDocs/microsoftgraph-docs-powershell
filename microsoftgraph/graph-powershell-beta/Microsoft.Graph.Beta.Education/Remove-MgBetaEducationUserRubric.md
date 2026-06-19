@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationUserRubric
 
 Delete navigation property rubrics for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserRubric?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Initialize-MgBetaSolutionBackupRestoreServiceApp
 
 Activate a serviceApp.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.BackupRestore/Initialize-MgSolutionBackupRestoreServiceApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ActivateExpanded (Default)

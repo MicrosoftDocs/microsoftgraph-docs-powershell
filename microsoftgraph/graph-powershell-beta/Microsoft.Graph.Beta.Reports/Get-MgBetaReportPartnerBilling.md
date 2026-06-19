@@ -15,6 +15,9 @@ title: Get-MgBetaReportPartnerBilling
 
 Represents billing details for billed and unbilled data.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPartnerBilling](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBilling?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

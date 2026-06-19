@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRuleCo
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRuleCount](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRuleCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

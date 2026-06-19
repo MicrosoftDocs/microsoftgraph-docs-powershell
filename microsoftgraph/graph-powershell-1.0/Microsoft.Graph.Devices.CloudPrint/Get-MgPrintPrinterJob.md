@@ -15,6 +15,9 @@ title: Get-MgPrintPrinterJob
 
 Retrieve the properties and relationships of a print job.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

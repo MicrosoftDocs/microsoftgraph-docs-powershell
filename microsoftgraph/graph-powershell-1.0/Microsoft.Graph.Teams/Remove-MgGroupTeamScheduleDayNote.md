@@ -15,6 +15,9 @@ title: Remove-MgGroupTeamScheduleDayNote
 
 Delete navigation property dayNotes for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamScheduleDayNote](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleDayNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

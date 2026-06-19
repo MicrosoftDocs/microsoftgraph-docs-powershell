@@ -15,6 +15,9 @@ title: New-MgBetaGroupDriveListColumn
 
 Create new navigation property to columns for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

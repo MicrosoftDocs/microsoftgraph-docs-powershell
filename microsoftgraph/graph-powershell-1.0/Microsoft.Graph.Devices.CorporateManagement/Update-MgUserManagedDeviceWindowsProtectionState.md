@@ -15,6 +15,9 @@ title: Update-MgUserManagedDeviceWindowsProtectionState
 
 Update the navigation property windowsProtectionState in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

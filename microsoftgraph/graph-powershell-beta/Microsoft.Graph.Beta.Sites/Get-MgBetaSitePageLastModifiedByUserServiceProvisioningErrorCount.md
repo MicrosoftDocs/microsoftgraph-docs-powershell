@@ -15,6 +15,9 @@ title: Get-MgBetaSitePageLastModifiedByUserServiceProvisioningErrorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePageLastModifiedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageLastModifiedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

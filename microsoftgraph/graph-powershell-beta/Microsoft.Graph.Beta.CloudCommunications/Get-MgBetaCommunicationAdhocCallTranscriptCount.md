@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationAdhocCallTranscriptCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationAdhocCallTranscriptCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationAdhocCallTranscriptCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

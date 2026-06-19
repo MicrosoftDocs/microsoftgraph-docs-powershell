@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSiteContentTypeColumn
 
 Update the navigation property columns in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

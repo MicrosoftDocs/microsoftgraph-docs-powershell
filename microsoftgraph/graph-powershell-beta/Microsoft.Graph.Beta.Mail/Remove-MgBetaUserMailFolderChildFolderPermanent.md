@@ -16,6 +16,9 @@ title: Remove-MgBetaUserMailFolderChildFolderPermanent
 Permanently delete a mail folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderChildFolderPermanent](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderPermanent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

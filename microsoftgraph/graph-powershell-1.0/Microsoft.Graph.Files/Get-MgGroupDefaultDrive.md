@@ -16,6 +16,9 @@ title: Get-MgGroupDefaultDrive
 The group's default drive.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDefaultDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

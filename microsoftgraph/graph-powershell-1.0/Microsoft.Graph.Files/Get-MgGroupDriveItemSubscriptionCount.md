@@ -15,6 +15,9 @@ title: Get-MgGroupDriveItemSubscriptionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemSubscriptionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemSubscriptionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

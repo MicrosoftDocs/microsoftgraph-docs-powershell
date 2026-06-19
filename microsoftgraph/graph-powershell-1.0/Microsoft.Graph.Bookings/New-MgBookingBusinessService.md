@@ -15,6 +15,9 @@ title: New-MgBookingBusinessService
 
 Create a new bookingService for the specified bookingBusiness.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessService?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

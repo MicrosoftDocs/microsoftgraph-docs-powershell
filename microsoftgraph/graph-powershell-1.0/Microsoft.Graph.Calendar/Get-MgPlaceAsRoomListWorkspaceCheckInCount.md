@@ -15,6 +15,9 @@ title: Get-MgPlaceAsRoomListWorkspaceCheckInCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomListWorkspaceCheckInCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomListWorkspaceCheckInCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveRootVersionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootVersionCount](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootVersionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

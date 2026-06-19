@@ -17,6 +17,9 @@ The user's activities across devices.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

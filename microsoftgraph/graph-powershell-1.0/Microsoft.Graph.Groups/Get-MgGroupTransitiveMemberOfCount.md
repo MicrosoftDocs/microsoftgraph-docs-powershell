@@ -15,6 +15,9 @@ title: Get-MgGroupTransitiveMemberOfCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMemberOfCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberOfCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

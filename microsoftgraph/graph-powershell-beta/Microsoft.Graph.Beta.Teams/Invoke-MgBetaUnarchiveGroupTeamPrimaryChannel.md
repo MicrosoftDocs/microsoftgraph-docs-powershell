@@ -18,6 +18,9 @@ Unarchiving restores the ability for users to send messages and edit the channel
 Channels are archived via the channel: archive method.
 Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchiving operation completes successfully, which might occur after this method responds.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnarchiveGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgUnarchiveGroupTeamPrimaryChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unarchive (Default)

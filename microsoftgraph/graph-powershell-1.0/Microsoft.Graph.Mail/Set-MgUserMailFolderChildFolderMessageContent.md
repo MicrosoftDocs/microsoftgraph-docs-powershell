@@ -16,6 +16,9 @@ title: Set-MgUserMailFolderChildFolderMessageContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMailFolderChildFolderMessageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

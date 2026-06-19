@@ -16,6 +16,9 @@ title: Get-MgGroupMemberWithLicenseError
 A list of group members with license errors from this group-based license assignment.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberWithLicenseError](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberWithLicenseError?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

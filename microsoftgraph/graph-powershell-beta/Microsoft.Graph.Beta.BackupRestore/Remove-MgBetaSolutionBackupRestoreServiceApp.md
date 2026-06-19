@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreServiceApp
 
 Delete a serviceApp.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreServiceApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

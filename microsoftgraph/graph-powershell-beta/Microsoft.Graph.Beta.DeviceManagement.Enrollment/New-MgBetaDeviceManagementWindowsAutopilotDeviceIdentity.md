@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity
 
 Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

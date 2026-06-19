@@ -15,6 +15,9 @@ title: New-MgSecurityIdentitySensorDeploymentAccessKey
 
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityIdentitySensorDeploymentAccessKey](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIdentitySensorDeploymentAccessKey?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Regenerate (Default)

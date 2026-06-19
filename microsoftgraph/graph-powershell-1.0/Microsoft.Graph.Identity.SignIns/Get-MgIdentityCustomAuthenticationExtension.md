@@ -16,6 +16,9 @@ title: Get-MgIdentityCustomAuthenticationExtension
 Read the properties and relationships of a customAuthenticationExtension object.
 The following derived types are currently supported.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityCustomAuthenticationExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

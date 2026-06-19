@@ -15,6 +15,9 @@ title: Remove-MgIdentityRiskPreventionFraudProtectionProvider
 
 Delete a fraudProtectionProvider object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityRiskPreventionFraudProtectionProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityRiskPreventionFraudProtectionProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

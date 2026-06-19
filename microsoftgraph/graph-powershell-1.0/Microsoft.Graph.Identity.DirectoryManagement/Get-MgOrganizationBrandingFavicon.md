@@ -15,6 +15,9 @@ title: Get-MgOrganizationBrandingFavicon
 
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingFavicon?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceHostComponent
 
 Read the properties and relationships of a hostComponent object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostComponent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

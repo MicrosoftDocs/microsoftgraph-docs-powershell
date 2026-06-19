@@ -15,6 +15,9 @@ title: Get-MgGroupMemberOfCountAsGroup
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberOfCountAsGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberOfCountAsGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

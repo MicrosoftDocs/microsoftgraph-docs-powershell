@@ -15,6 +15,9 @@ title: Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

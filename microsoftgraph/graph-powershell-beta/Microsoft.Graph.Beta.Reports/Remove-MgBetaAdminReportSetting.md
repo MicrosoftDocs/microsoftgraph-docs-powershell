@@ -15,6 +15,9 @@ title: Remove-MgBetaAdminReportSetting
 
 Delete navigation property reportSettings for admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Remove-MgAdminReportSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

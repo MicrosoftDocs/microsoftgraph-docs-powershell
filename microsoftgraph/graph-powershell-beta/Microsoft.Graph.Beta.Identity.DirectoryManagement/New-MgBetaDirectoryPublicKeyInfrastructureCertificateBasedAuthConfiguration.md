@@ -15,6 +15,9 @@ title: New-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurati
 
 Create a new certificateBasedAuthPki object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

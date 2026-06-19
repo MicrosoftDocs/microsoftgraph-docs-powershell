@@ -15,6 +15,9 @@ title: Restore-MgBetaShareListItemDocumentSetVersion
 
 Restore a document set version.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore1 (Default)

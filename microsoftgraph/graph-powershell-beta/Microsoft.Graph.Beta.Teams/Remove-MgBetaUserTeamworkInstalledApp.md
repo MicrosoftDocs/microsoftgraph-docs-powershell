@@ -15,6 +15,9 @@ title: Remove-MgBetaUserTeamworkInstalledApp
 
 Uninstall an app from the personal scope of the specified user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserTeamworkInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

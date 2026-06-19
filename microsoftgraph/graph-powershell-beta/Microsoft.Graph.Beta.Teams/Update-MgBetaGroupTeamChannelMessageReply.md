@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamChannelMessageReply
 
 Update the navigation property replies in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamChannelMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

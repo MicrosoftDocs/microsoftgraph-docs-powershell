@@ -15,6 +15,9 @@ title: Get-MgDriveContentTypeBaseTypeCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveContentTypeBaseTypeCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveContentTypeBaseTypeCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

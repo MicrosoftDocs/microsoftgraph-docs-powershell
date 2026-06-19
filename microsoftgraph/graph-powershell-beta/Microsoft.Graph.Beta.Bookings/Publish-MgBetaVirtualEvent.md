@@ -15,6 +15,9 @@ title: Publish-MgBetaVirtualEvent
 
 Invoke action publish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgVirtualEvent](/powershell/module/Microsoft.Graph.Bookings/Publish-MgVirtualEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)

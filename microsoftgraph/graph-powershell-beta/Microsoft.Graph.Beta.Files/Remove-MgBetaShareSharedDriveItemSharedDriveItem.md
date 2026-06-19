@@ -15,6 +15,9 @@ title: Remove-MgBetaShareSharedDriveItemSharedDriveItem
 
 Delete entity from shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Files/Remove-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

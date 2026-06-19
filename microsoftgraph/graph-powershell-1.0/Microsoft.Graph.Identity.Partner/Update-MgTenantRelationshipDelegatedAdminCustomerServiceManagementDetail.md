@@ -15,6 +15,9 @@ title: Update-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 
 Update the navigation property serviceManagementDetails in tenantRelationships
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

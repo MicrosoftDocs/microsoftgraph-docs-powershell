@@ -18,6 +18,9 @@ You cannot delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 The following RBAC providers are currently supported:\r- Cloud PC\r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC)\r- directory (Microsoft Entra ID)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgReportOffice365ServiceUserCount
 
 Get the count of users by activity type and service.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ServiceUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ServiceUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

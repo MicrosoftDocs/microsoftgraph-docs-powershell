@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityB2XUserFlowPostFederationSignup
 
 Update the navigation property postFederationSignup in identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityB2XUserFlowPostFederationSignup](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2XUserFlowPostFederationSignup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

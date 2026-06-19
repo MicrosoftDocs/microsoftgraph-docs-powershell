@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy
 
 The unique identifier of the Microsoft Entra user that created the custom task extension.Supports $filter(eq, ne) and $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

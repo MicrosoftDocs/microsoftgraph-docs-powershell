@@ -15,6 +15,9 @@ title: Invoke-MgGraphReportAuthenticationMethod
 
 Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Invoke-MgBetaGraphReportAuthenticationMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Graph (Default)

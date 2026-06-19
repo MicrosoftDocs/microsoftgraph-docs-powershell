@@ -17,6 +17,9 @@ The tasks in this task list.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

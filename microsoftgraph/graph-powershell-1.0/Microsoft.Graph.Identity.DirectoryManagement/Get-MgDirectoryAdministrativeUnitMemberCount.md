@@ -15,6 +15,9 @@ title: Get-MgDirectoryAdministrativeUnitMemberCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitMemberCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMemberCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

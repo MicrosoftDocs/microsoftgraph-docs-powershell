@@ -15,6 +15,9 @@ title: Get-MgBetaEducationReportReadingAssignmentSubmission
 
 Details of submitted reading assignments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationReportReadingAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationReportReadingAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

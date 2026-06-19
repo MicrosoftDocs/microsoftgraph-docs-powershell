@@ -15,6 +15,9 @@ title: Test-MgGroupSiteListContentTypePublished
 
 Check the publishing status of a contentType in a content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaGroupSiteListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Sites/Test-MgBetaGroupSiteListContentTypePublished?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Is (Default)

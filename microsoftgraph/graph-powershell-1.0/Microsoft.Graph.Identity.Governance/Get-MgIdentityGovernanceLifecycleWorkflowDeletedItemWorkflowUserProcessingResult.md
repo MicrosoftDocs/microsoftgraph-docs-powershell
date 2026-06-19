@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessin
 
 Per-user workflow execution results.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: New-MgGroupDriveRootPermission
 
 Create new navigation property to permissions for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaGroupSiteTermStoreSetParentGroupSetTerm
 
 Create new navigation property to terms for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgBetaReauthorizeGroupDriveRootSubscription
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Invoke-MgReauthorizeGroupDriveRootSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reauthorize (Default)

@@ -16,6 +16,9 @@ title: New-MgApplicationOwnerByRef
 Add an owner to an application.
 Application owners can be individual users, the associated service principal, or another service principal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

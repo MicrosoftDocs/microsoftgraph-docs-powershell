@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus
 
 Update the navigation property acceptanceStatuses in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

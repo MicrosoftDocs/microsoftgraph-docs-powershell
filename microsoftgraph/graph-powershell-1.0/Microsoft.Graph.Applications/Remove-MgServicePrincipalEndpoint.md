@@ -15,6 +15,9 @@ title: Remove-MgServicePrincipalEndpoint
 
 Delete navigation property endpoints for servicePrincipals
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Confirm-MgApplicationMemberObject
 
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaApplicationMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaApplicationMemberObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)

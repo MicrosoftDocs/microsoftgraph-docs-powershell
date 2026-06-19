@@ -15,6 +15,9 @@ title: Invoke-MgMarkServiceAnnouncementMessageRead
 
 Mark a list of serviceUpdateMessages as read for the signed in user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaMarkServiceAnnouncementMessageRead?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MarkExpanded (Default)

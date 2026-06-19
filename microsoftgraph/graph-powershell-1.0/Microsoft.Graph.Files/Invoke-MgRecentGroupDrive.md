@@ -15,6 +15,9 @@ title: Invoke-MgRecentGroupDrive
 
 List a set of items recently used by the signed-in user.\rThis collection includes items that are in the user's drive and items they have access to from other drives.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaRecentGroupDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Recent (Default)
