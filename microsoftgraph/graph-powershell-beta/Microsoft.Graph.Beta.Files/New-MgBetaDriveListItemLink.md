@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistitemlink
@@ -14,7 +14,7 @@ title: New-MgBetaDriveListItemLink
 ## SYNOPSIS
 
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\r\nIf a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\rIf a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
 ## SYNTAX
@@ -74,7 +74,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\r\nIf a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\rIf a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
 ## EXAMPLES
@@ -690,7 +690,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsVput3UDrivesDriveIdListItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsVput3UDrivesDriveIdListItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpirationDateTime <DateTime?>]: 
   [Message <String>]: 
@@ -704,7 +704,7 @@ BODYPARAMETER <IPathsVput3UDrivesDriveIdListItemsListitemIdMicrosoftGraphCreatel
   [SendNotification <Boolean?>]: 
   [Type <String>]: 
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -741,3 +741,25 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistitemlink)
 - [](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

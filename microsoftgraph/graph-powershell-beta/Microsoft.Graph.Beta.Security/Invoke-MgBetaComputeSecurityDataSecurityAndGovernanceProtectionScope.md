@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacomputesecuritydatasecurityandgovernanceprotectionscope
@@ -456,7 +456,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IPaths1Bik371SecurityDatasecurityandgovernanceProtectionscopesMicrosoftGraphComputePostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPaths1Bik371SecurityDatasecurityandgovernanceProtectionscopesMicrosoftGraphComputePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Activities <String>]: userActivityTypes
   [DeviceMetadata <IMicrosoftGraphDeviceMetadata>]: deviceMetadata
@@ -476,7 +476,7 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
     [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
   [PivotOn <String>]: policyPivotProperty
 
-DEVICEMETADATA <IMicrosoftGraphDeviceMetadata>: deviceMetadata
+DEVICEMETADATA `<IMicrosoftGraphDeviceMetadata>`: deviceMetadata
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceType <String>]: Optional.
 The general type of the device (for example, 'Managed', 'Unmanaged').
@@ -486,7 +486,7 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
     [OperatingSystemPlatform <String>]: The platform of the operating system (for example, 'Windows').
     [OperatingSystemVersion <String>]: The version string of the operating system.
 
-INTEGRATEDAPPMETADATA <IMicrosoftGraphIntegratedApplicationMetadata>: integratedApplicationMetadata
+INTEGRATEDAPPMETADATA `<IMicrosoftGraphIntegratedApplicationMetadata>`: integratedApplicationMetadata
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Name <String>]: The name of the integrated application.
   [Version <String>]: The version number of the integrated application.
@@ -498,3 +498,25 @@ LOCATIONS <IMicrosoftGraphPolicyLocation[]>: .
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacomputesecuritydatasecurityandgovernanceprotectionscope)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

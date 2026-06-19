@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelclassificationresult
@@ -397,7 +397,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClassificationResults <IMicrosoftGraphSecurityClassificationResult[]>]: 
     [ConfidenceLevel <Int32?>]: The confidence level, 0 to 100, of the result.
@@ -418,7 +418,7 @@ CLASSIFICATIONRESULTS <IMicrosoftGraphSecurityClassificationResult[]>: .
   [Count <Int32?>]: The number of instances of the specific information type in the input.
   [SensitiveTypeId <String>]: The GUID of the discovered sensitive information type.
 
-CONTENTINFO <IMicrosoftGraphSecurityContentInfo>: contentInfo
+CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentFormat <String>]: The format of the content to be labeled.
 Possible values are: file, email.
@@ -433,3 +433,25 @@ Possible values are: file, email.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelclassificationresult)
 - [](https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateclassificationresults?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

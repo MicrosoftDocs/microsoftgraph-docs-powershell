@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticle
@@ -566,12 +566,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
+BODY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of this formattedContent.
   [Format <String>]: contentFormat
 
-BODYPARAMETER <IMicrosoftGraphSecurityArticle>: article
+BODYPARAMETER `<IMicrosoftGraphSecurityArticle>`: article
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -608,7 +608,7 @@ Read-only.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-SUMMARY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
+SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of this formattedContent.
   [Format <String>]: contentFormat
@@ -617,3 +617,25 @@ SUMMARY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticle)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

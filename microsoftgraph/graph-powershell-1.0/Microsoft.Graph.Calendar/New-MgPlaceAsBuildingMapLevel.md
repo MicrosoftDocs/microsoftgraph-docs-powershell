@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasbuildingmaplevel
@@ -608,7 +608,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphLevelMap>: levelMap
+BODYPARAMETER `<IMicrosoftGraphLevelMap>`: levelMap
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Properties <String>]: Concatenated key-value pair of all properties of a GeoJSON file for this baseMapFeature.
   [Id <String>]: The unique identifier for an entity.
@@ -640,7 +640,7 @@ Supports upsert.
 Read-only.
   [PlaceId <String>]: Identifier for the floor to which this fixtureMap belongs.
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -678,3 +678,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasbuildingmaplevel)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

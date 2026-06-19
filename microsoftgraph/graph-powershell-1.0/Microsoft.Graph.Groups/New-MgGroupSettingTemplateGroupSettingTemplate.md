@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsettingtemplategroupsettingtemplate
@@ -454,7 +454,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphGroupSettingTemplate>: groupSettingTemplate
+BODYPARAMETER `<IMicrosoftGraphGroupSettingTemplate>`: groupSettingTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -479,3 +479,25 @@ VALUES <IMicrosoftGraphSettingTemplateValue[]>: Collection of settingTemplateVal
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsettingtemplategroupsettingtemplate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

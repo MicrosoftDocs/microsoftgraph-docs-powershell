@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudience
@@ -579,7 +579,7 @@ Read-only.
     [DeviceId <String>]: Collection of vendors who recommend the content.
     [RecommendedBy <String[]>]: Collection of vendors who recommend the content.
 
-BODYPARAMETER <IMicrosoftGraphWindowsUpdatesDeploymentAudience>: deploymentAudience
+BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesDeploymentAudience>`: deploymentAudience
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -613,7 +613,7 @@ EXCLUSIONS <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>: Specifies the assets
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
+INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -641,3 +641,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudience)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

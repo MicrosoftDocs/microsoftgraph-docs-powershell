@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyemployee
@@ -961,7 +961,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -969,7 +969,7 @@ ADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-BODYPARAMETER <IMicrosoftGraphEmployee>: employee
+BODYPARAMETER `<IMicrosoftGraphEmployee>`: employee
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1002,7 +1002,7 @@ BODYPARAMETER <IMicrosoftGraphEmployee>: employee
   [Surname <String>]: 
   [TerminationDate <DateTime?>]: 
 
-INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1051,3 +1051,25 @@ PICTURE <IMicrosoftGraphPicture[]>: .
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyemployee)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

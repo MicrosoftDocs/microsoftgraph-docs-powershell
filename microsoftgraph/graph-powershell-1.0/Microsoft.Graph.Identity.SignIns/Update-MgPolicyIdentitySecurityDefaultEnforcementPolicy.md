@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyidentitysecuritydefaultenforcementpolicy
@@ -457,7 +457,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy>: identitySecurityDefaultsEnforcementPolicy
+BODYPARAMETER `<IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy>`: identitySecurityDefaultsEnforcementPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description for this policy.
 Required.
@@ -474,3 +474,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyidentitysecuritydefaultenforcementpolicy)
 - [](https://learn.microsoft.com/graph/api/identitysecuritydefaultsenforcementpolicy-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

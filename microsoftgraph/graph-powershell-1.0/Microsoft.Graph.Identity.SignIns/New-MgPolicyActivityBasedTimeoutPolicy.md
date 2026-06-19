@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy
@@ -518,3 +518,25 @@ Always null when the object hasn't been deleted.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy)
 - [](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

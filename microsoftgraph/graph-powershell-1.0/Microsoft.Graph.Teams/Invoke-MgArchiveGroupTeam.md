@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchivegroupteam
@@ -14,7 +14,7 @@ title: Invoke-MgArchiveGroupTeam
 ## SYNOPSIS
 
 Archive the specified team.
-\r\nWhen a team is archived, users can no longer make most changes to the team.
+\rWhen a team is archived, users can no longer make most changes to the team.
 For example, users can no longer: send or like messages on any channel in the team; edit the team's name or description; nor edit other settings.
 However, membership changes to the team are still allowed.
 Archiving is an async operation.
@@ -76,7 +76,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Archive the specified team.
-\r\nWhen a team is archived, users can no longer make most changes to the team.
+\rWhen a team is archived, users can no longer make most changes to the team.
 For example, users can no longer: send or like messages on any channel in the team; edit the team's name or description; nor edit other settings.
 However, membership changes to the team are still allowed.
 Archiving is an async operation.
@@ -501,11 +501,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths17M4RvgGroupsGroupIdTeamMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths17M4RvgGroupsGroupIdTeamMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ShouldSetSpoSiteReadOnlyForMembers <Boolean?>]: 
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -548,3 +548,25 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchivegroupteam)
 - [](https://learn.microsoft.com/graph/api/team-archive?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

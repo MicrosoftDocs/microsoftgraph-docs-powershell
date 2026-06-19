@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceactivity
@@ -606,7 +606,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVEPERIPHERALS <IMicrosoftGraphTeamworkActivePeripherals>: teamworkActivePeripherals
+ACTIVEPERIPHERALS `<IMicrosoftGraphTeamworkActivePeripherals>`: teamworkActivePeripherals
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CommunicationSpeaker <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -622,7 +622,7 @@ Each vendor has a unique ID.
   [RoomCamera <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
   [Speaker <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
 
-BODYPARAMETER <IMicrosoftGraphTeamworkDeviceActivity>: teamworkDeviceActivity
+BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceActivity>`: teamworkDeviceActivity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -656,7 +656,7 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: The UTC date and time when the device activity detail was last modified.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -668,7 +668,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -715,7 +715,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -731,3 +731,25 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceactivity)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

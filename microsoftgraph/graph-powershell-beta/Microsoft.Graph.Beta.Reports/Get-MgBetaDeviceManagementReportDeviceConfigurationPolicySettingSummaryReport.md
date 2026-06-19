@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdeviceconfigurationpolicysettingsummaryreport
@@ -582,7 +582,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsRg67Q3DevicemanagementReportsMicrosoftGraphGetdeviceconfigurationpolicysettingssummaryreportPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsRg67Q3DevicemanagementReportsMicrosoftGraphGetdeviceconfigurationpolicysettingssummaryreportPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Filter <String>]: 
   [GroupBy <String[]>]: 
@@ -598,3 +598,25 @@ BODYPARAMETER <IPathsRg67Q3DevicemanagementReportsMicrosoftGraphGetdeviceconfigu
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdeviceconfigurationpolicysettingsummaryreport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

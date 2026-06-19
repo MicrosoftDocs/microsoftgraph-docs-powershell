@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencewhoisrecord
@@ -1019,7 +1019,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ABUSE <IMicrosoftGraphSecurityWhoisContact>: whoisContact
+ABUSE `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1039,7 +1039,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-ADMIN <IMicrosoftGraphSecurityWhoisContact>: whoisContact
+ADMIN `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1059,7 +1059,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-BILLING <IMicrosoftGraphSecurityWhoisContact>: whoisContact
+BILLING `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1079,7 +1079,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-BODYPARAMETER <IMicrosoftGraphSecurityWhoisRecord>: whoisRecord
+BODYPARAMETER `<IMicrosoftGraphSecurityWhoisRecord>`: whoisRecord
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Abuse <IMicrosoftGraphSecurityWhoisContact>]: whoisContact
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1635,7 +1635,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-HOST1 <IMicrosoftGraphSecurityHost>: host
+HOST1 `<IMicrosoftGraphSecurityHost>`: host
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1913,7 +1913,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -2290,7 +2290,7 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-NOC <IMicrosoftGraphSecurityWhoisContact>: whoisContact
+NOC `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2310,7 +2310,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-REGISTRANT <IMicrosoftGraphSecurityWhoisContact>: whoisContact
+REGISTRANT `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2330,7 +2330,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-REGISTRAR <IMicrosoftGraphSecurityWhoisContact>: whoisContact
+REGISTRAR `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2350,7 +2350,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-TECHNICAL <IMicrosoftGraphSecurityWhoisContact>: whoisContact
+TECHNICAL `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2370,7 +2370,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-ZONE <IMicrosoftGraphSecurityWhoisContact>: whoisContact
+ZONE `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2394,3 +2394,25 @@ No format is guaranteed.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencewhoisrecord)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

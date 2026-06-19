@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert
@@ -404,7 +404,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityAlertComment[]>: Array of microsoft.graph.
   [CreatedByDisplayName <String>]: The person or app name that submitted the comment.
   [CreatedDateTime <DateTime?>]: The time when the comment was submitted.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -482,3 +482,25 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert)
 - [](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

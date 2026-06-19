@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementrolescopetagbyid
@@ -473,7 +473,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   [DomainName <String>]: Usage: domainName='{domainName}'
   [EnrollmentType <String>]: Usage: enrollmentType='{enrollmentType}'
   [Ids <String[]>]: Usage: ids={ids}
@@ -485,3 +485,25 @@ INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementrolescopetagbyid)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration
@@ -643,7 +643,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER <IMicrosoftGraphDeviceConfiguration>: Device Configuration.
+BODYPARAMETER `<IMicrosoftGraphDeviceConfiguration>`: Device Configuration.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -734,7 +734,7 @@ Read-only.
   [UserName <String>]: The User Name that is being reported
   [UserPrincipalName <String>]: UserPrincipalName.
 
-DEVICESTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationDeviceOverview>: deviceConfigurationDeviceOverview
+DEVICESTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationDeviceOverview>`: deviceConfigurationDeviceOverview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -755,7 +755,7 @@ Read-only.
   [UserDisplayName <String>]: User name of the DevicePolicyStatus.
   [UserPrincipalName <String>]: UserPrincipalName.
 
-USERSTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationUserOverview>: deviceConfigurationUserOverview
+USERSTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationUserOverview>`: deviceConfigurationUserOverview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -771,3 +771,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

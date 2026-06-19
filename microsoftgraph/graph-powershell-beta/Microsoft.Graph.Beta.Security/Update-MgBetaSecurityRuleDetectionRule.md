@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityruledetectionrule
@@ -776,7 +776,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityDetectionRule>: detectionRule
+BODYPARAMETER `<IMicrosoftGraphSecurityDetectionRule>`: detectionRule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <String>]: Name of the user or application that created the rule.
   [CreatedDateTime <DateTime?>]: Timestamp of rule creation.
@@ -822,7 +822,7 @@ See the table below.
 The allowed values are: 0, 1H, 3H, 12H, or 24H.
 '0' signifies the rule is run continuously.
 
-DETECTIONACTION <IMicrosoftGraphSecurityDetectionAction>: detectionAction
+DETECTIONACTION `<IMicrosoftGraphSecurityDetectionAction>`: detectionAction
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AlertTemplate <IMicrosoftGraphSecurityAlertTemplate>]: alertTemplate
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -839,7 +839,7 @@ DETECTIONACTION <IMicrosoftGraphSecurityDetectionAction>: detectionAction
     [ScopeType <String>]: scopeType
   [ResponseActions <IMicrosoftGraphSecurityResponseAction[]>]: Actions taken on impacted assets as set in the custom detection rule.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -938,7 +938,7 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-LASTRUNDETAILS <IMicrosoftGraphSecurityRunDetails>: runDetails
+LASTRUNDETAILS `<IMicrosoftGraphSecurityRunDetails>`: runDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ErrorCode <String>]: huntingRuleErrorCode
   [FailureReason <String>]: Reason for failure when the custom detection last ran and failed.
@@ -946,12 +946,12 @@ See the table below.
   [LastRunDateTime <DateTime?>]: Timestamp when the custom detection was last run.
   [Status <String>]: huntingRuleRunStatus
 
-QUERYCONDITION <IMicrosoftGraphSecurityQueryCondition>: queryCondition
+QUERYCONDITION `<IMicrosoftGraphSecurityQueryCondition>`: queryCondition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastModifiedDateTime <DateTime?>]: Timestamp of when the query in the custom detection rule was last updated.
   [QueryText <String>]: Contents of the query.
 
-SCHEDULE <IMicrosoftGraphSecurityRuleSchedule>: ruleSchedule
+SCHEDULE `<IMicrosoftGraphSecurityRuleSchedule>`: ruleSchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [NextRunDateTime <DateTime?>]: Timestamp of the custom detection rule's next scheduled run.
   [Period <String>]: How often the detection rule is set to run.
@@ -962,3 +962,25 @@ The allowed values are: 0, 1H, 3H, 12H, or 24H.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityruledetectionrule)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

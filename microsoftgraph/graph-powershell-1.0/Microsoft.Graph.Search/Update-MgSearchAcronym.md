@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym
@@ -663,7 +663,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSearchAcronym>: acronym
+BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: The search answer description that is shown on the search results page.
   [DisplayName <String>]: The search answer name that is displayed in search results.
@@ -686,7 +686,7 @@ Read-only.
   [StandsFor <String>]: What the acronym stands for.
   [State <String>]: answerState
 
-INPUTOBJECT <ISearchIdentity>: Identity Parameter
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [BookmarkId <String>]: The unique identifier of bookmark
   [ConnectionOperationId <String>]: The unique identifier of connectionOperation
@@ -697,7 +697,7 @@ INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [IdentityId <String>]: The unique identifier of identity
   [QnaId <String>]: The unique identifier of qna
 
-LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphSearchIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -711,3 +711,25 @@ LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>: identitySet
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym)
 - [](https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

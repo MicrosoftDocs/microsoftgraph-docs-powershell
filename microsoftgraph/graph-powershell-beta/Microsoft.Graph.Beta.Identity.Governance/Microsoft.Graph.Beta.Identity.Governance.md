@@ -3811,3 +3811,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
