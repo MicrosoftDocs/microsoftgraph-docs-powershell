@@ -34383,7 +34383,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveroot)
+- [Update-MgDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveroot)
 
 
 

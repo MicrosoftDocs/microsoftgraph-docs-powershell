@@ -1096,7 +1096,7 @@ PRIVATEACCESSDETAILS `<IMicrosoftGraphNetworkaccessPrivateAccessDetails>`: priva
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogconnection)
+- [New-MgBetaNetworkAccessLogConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogconnection)
 
 
 

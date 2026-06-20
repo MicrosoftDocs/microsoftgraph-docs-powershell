@@ -742,7 +742,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatpermissiongrant)
+- [Update-MgUserChatPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatpermissiongrant)
 
 
 

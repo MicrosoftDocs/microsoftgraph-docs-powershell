@@ -462,7 +462,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattab)
+- [Remove-MgUserChatTab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattab)
 
 
 

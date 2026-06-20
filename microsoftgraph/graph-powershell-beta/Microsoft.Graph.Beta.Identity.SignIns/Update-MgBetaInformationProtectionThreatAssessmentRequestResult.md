@@ -681,7 +681,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionthreatassessmentrequestresult)
+- [Update-MgBetaInformationProtectionThreatAssessmentRequestResult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionthreatassessmentrequestresult)
 
 
 

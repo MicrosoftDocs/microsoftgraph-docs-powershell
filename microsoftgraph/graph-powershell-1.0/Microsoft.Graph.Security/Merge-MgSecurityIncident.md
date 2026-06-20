@@ -407,7 +407,7 @@ BODYPARAMETER `<IPaths135V4JsSecurityIncidentsMicrosoftGraphSecurityMergeinciden
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/merge-mgsecurityincident)
+- [Merge-MgSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/merge-mgsecurityincident)
 
 
 

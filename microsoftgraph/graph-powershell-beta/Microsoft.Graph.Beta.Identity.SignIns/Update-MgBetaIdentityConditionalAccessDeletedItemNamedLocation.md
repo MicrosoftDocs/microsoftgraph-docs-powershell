@@ -687,7 +687,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessdeleteditemnamedlocation)
+- [Update-MgBetaIdentityConditionalAccessDeletedItemNamedLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessdeleteditemnamedlocation)
 
 
 

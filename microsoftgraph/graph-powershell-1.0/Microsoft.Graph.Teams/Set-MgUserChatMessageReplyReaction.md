@@ -606,7 +606,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mguserchatmessagereplyreaction)
+- [Set-MgUserChatMessageReplyReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mguserchatmessagereplyreaction)
 
 
 

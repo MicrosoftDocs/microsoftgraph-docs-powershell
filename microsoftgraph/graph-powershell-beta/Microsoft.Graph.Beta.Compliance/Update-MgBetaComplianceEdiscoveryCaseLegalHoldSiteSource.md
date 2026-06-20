@@ -18876,7 +18876,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalholdsitesource)
+- [Update-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalholdsitesource)
 
 
 

@@ -297,8 +297,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthorizationpolicy)
-- [](https://learn.microsoft.com/graph/api/authorizationpolicy-get?view=graph-rest-1.0)
+- [Get-MgPolicyAuthorizationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthorizationpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authorizationpolicy-get?view=graph-rest-1.0)
 
 
 

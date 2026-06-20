@@ -454,7 +454,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdevicecount)
+- [Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdevicecount)
 
 
 

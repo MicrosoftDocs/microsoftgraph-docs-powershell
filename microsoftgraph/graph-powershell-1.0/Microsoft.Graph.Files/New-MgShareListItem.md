@@ -27569,7 +27569,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitem)
+- [New-MgShareListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitem)
 
 
 
