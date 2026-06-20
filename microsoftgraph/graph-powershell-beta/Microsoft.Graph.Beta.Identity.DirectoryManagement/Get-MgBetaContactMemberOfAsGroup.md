@@ -15,6 +15,9 @@ title: Get-MgBetaContactMemberOfAsGroup
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactMemberOfAsGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactMemberOfAsGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaReportYammerGroupActivityCount
 
 Invoke function getYammerGroupsActivityCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportYammerGroupActivityCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerGroupActivityCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

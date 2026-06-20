@@ -15,6 +15,9 @@ title: Update-MgBetaUserSettingWorkHourAndLocation
 
 Update the navigation property workHoursAndLocations in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingWorkHourAndLocation](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingWorkHourAndLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

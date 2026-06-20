@@ -18,6 +18,9 @@ To create a granular restore session, granular drive restore artifacts must be p
 A request can't include both granularDriveRestoreArtifact and driveRestoreArtifact in the same create or update request.
 If no payload is provided when you create the restore session, the request creates an empty standard restore session by default.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

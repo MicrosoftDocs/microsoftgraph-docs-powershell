@@ -15,6 +15,9 @@ title: Confirm-MgBetaGroupTeamScheduleTimeCard
 
 Confirm a specific timeCard.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Confirm-MgGroupTeamScheduleTimeCard?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Confirm (Default)

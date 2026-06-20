@@ -16,6 +16,9 @@ title: Get-MgUserPhoto
 The user's profile photo.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserPhoto?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

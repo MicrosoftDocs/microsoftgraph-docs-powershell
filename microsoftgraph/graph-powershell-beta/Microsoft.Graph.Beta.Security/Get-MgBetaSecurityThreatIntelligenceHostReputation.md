@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceHostReputation
 
 Get the properties and relationships of a hostReputation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

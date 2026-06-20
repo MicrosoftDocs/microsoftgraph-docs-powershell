@@ -15,6 +15,9 @@ title: Restore-MgBetaIdentityConditionalAccessNamedLocation
 
 Restore a deleted countryNamedLocation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Restore-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)

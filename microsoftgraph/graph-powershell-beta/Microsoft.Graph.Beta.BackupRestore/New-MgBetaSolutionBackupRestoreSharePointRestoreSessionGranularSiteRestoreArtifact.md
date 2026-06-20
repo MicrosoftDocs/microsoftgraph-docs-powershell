@@ -15,6 +15,9 @@ title: New-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestor
 
 Create new navigation property to granularSiteRestoreArtifacts for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
