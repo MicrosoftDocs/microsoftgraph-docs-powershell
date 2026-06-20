@@ -153,7 +153,7 @@ This example shows how to use the Invoke-MgBetaAnswerCommunicationCall Cmdlet.
 
 ### -AcceptedModalities
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -207,7 +207,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -256,7 +256,7 @@ HelpMessage: ''
 
 ### -CallbackUri
 
-.
+
 
 ```yaml
 Type: System.String
@@ -478,7 +478,7 @@ HelpMessage: ''
 
 ### -ParticipantCapacity
 
-.
+
 
 ```yaml
 Type: System.Int32

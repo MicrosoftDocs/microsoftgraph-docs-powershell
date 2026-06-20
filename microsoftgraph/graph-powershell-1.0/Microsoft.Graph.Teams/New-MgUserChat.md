@@ -788,7 +788,7 @@ HelpMessage: ''
 
 ### -TargetedMessages
 
-.
+
 To construct, see NOTES section for TARGETEDMESSAGES properties and create a hash table.
 
 ```yaml

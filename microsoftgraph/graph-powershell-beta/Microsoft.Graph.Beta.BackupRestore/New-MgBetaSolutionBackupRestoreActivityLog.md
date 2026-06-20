@@ -181,7 +181,7 @@ HelpMessage: ''
 
 ### -EventDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -287,7 +287,7 @@ HelpMessage: ''
 
 ### -PerformedBy
 
-.
+
 
 ```yaml
 Type: System.String

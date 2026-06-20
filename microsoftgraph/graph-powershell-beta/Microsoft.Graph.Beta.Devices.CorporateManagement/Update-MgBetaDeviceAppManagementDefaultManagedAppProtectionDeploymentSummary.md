@@ -167,7 +167,7 @@ HelpMessage: ''
 
 ### -ConfigurationDeployedUserCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -194,7 +194,7 @@ HelpMessage: ''
 
 ### -ConfigurationDeploymentSummaryPerApp
 
-.
+
 To construct, see NOTES section for CONFIGURATIONDEPLOYMENTSUMMARYPERAPP properties and create a hash table.
 
 ```yaml
@@ -271,7 +271,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -417,7 +417,7 @@ HelpMessage: ''
 
 ### -LastRefreshTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
