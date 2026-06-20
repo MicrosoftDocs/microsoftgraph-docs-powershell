@@ -88,8 +88,9 @@ When you run a workflow on demand, the tasks are executed regardless of whether 
 | Application | LifecycleWorkflows-Workflow.Activate, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -105,6 +106,10 @@ $params = @{
 }
 
 Initialize-MgBetaIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId -BodyParameter $params
+
+```
+This example shows how to use the Initialize-MgBetaIdentityGovernanceLifecycleWorkflow Cmdlet.
+
 
 ## PARAMETERS
 

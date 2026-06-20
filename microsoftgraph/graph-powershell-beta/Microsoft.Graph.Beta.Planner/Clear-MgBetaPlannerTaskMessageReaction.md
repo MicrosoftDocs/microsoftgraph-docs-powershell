@@ -71,8 +71,9 @@ This cmdlet has the following aliases,
 Remove a reaction from a plannerTaskChatMessage for the current user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -81,6 +82,10 @@ $params = @{
 }
 
 Clear-MgBetaPlannerTaskMessageReaction -PlannerTaskId $plannerTaskId -PlannerTaskChatMessageId $plannerTaskChatMessageId -BodyParameter $params
+
+```
+This example shows how to use the Clear-MgBetaPlannerTaskMessageReaction Cmdlet.
+
 
 ## PARAMETERS
 

@@ -92,8 +92,9 @@ In scenarios like test environments where the input parameters and calendar data
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -140,6 +141,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Find-MgUserMeetingTime -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Find-MgUserMeetingTime Cmdlet.
+
 
 ## PARAMETERS
 

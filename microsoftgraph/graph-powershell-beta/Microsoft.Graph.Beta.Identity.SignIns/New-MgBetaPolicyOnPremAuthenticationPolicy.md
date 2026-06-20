@@ -49,8 +49,9 @@ This cmdlet has the following aliases,
 Create a new onPremAuthenticationPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -64,6 +65,10 @@ isOrganizationDefault = $true
 }
 
 New-MgBetaPolicyOnPremAuthenticationPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPolicyOnPremAuthenticationPolicy Cmdlet.
+
 
 ## PARAMETERS
 

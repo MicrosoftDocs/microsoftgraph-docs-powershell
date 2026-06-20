@@ -71,18 +71,28 @@ Only a user who is a member of the shared channel can retrieve channel informati
 | Application | ChannelSettings.Read.Group, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, ChannelSettings.ReadWrite.Group, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: List all channels
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannel -TeamId $teamId
 
-### EXAMPLE 2
+```
+This example will list all channels
+
+### Example 2: List all shared channels
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
+Get-MgTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
+
+```
+This example will list all shared channels
+
 
 ## PARAMETERS
 

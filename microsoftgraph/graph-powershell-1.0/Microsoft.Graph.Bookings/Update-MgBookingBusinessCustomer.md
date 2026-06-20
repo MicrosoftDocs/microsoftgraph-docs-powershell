@@ -78,8 +78,9 @@ Update the properties of a bookingCustomer object.
 | Application | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 Update-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerBaseId $bookingCustomerBaseId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBookingBusinessCustomer Cmdlet.
+
 
 ## PARAMETERS
 

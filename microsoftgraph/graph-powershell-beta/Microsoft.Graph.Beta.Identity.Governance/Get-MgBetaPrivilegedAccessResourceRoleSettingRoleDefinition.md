@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 Read-only.
 The role definition that is enforced with this role setting.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -503,6 +493,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedaccessresourcerolesettingroledefinition)
+
 
 
 

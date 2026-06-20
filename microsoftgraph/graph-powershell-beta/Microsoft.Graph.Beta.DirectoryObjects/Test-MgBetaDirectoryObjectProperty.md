@@ -76,8 +76,9 @@ However, you can validate both the mail nickname and the display name and receiv
 | Application | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: A successful validation request
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 
@@ -90,7 +91,12 @@ $params = @{
 
 Test-MgBetaDirectoryObjectProperty -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will a successful validation request
+
+### Example 2: An unsuccessful validation request
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 
@@ -102,6 +108,10 @@ $params = @{
 }
 
 Test-MgBetaDirectoryObjectProperty -BodyParameter $params
+
+```
+This example will an unsuccessful validation request
+
 
 ## PARAMETERS
 

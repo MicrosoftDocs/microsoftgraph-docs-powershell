@@ -60,8 +60,9 @@ Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
 | Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.SecurityDefaults,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -70,6 +71,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

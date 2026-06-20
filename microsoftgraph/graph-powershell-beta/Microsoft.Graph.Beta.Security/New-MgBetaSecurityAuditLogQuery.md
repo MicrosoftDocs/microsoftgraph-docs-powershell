@@ -60,8 +60,9 @@ Create a new auditLogQuery object.
 | Application | AuditLogsQuery-Entra.Read.All, AuditLogsQuery-CRM.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -94,6 +95,10 @@ status = "String"
 }
 
 New-MgBetaSecurityAuditLogQuery -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityAuditLogQuery Cmdlet.
+
 
 ## PARAMETERS
 

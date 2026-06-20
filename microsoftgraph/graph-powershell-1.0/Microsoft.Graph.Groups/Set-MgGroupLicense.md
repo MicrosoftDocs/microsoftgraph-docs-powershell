@@ -90,8 +90,9 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 | Application | LicenseAssignment.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Add licenses to the group
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
@@ -117,7 +118,12 @@ removeLicenses = @(
 
 Set-MgGroupLicense -GroupId $groupId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will add licenses to the group
+
+### Example 2: Remove licenses from the group
+
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
@@ -131,6 +137,10 @@ $params = @{
 }
 
 Set-MgGroupLicense -GroupId $groupId -BodyParameter $params
+
+```
+This example will remove licenses from the group
+
 
 ## PARAMETERS
 

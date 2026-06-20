@@ -76,8 +76,9 @@ Perform actions such as revoking accounts and forcing password reset for identit
 This action allows reading and performing identity security actions on behalf of the signed-in identity.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -88,6 +89,10 @@ $params = @{
 }
 
 Invoke-MgInvokeSecurityIdentityAccountAction -IdentityAccountsId $identityAccountsId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgInvokeSecurityIdentityAccountAction Cmdlet.
+
 
 ## PARAMETERS
 

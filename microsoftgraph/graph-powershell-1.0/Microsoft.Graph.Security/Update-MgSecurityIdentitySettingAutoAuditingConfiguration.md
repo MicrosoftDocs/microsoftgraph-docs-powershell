@@ -48,8 +48,9 @@ This cmdlet has the following aliases,
 Update the properties of an autoAuditingConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -59,6 +60,10 @@ $params = @{
 }
 
 Update-MgSecurityIdentitySettingAutoAuditingConfiguration -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSecurityIdentitySettingAutoAuditingConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

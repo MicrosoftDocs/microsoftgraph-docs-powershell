@@ -69,8 +69,9 @@ Create a new cloudPcProvisioningPolicy object.
 | Application | CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -113,6 +114,10 @@ $params = @{
 }
 
 New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -84,8 +84,9 @@ Install an app to the specified team.
 | Application | TeamsAppInstallation.ReadWriteSelfForTeam.All, Directory.ReadWrite.All, Group.ReadWrite.All, TeamsAppInstallation.ManageSelectedForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All,  |
 
 ## EXAMPLES
+### Example 1: Install app in a chat
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -95,7 +96,12 @@ $params = @{
 
 New-MgBetaTeamInstalledApp -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will install app in a chat
+
+### Example 2: Install app in a team and consent to the resource-specific permissions required by the app
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -116,6 +122,10 @@ $params = @{
 }
 
 New-MgBetaTeamInstalledApp -TeamId $teamId -BodyParameter $params
+
+```
+This example will install app in a team and consent to the resource-specific permissions required by the app
+
 
 ## PARAMETERS
 

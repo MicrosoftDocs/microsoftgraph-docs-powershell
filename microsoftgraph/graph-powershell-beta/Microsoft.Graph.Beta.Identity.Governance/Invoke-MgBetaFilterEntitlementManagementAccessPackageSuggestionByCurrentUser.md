@@ -53,18 +53,28 @@ This operation returns access packages that are suggested based on various crite
 The suggestions help end users discover relevant access packages they may need for their role or work context.
 
 ## EXAMPLES
+### Example 1: Get all access package suggestions with default insight types
 
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser -ExpandProperty "availableAccessPackage"  -On $onId
-
-### EXAMPLE 2
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser -ExpandProperty "availableAccessPackage"  -On $onId
+Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser -ExpandProperty "availableAccessPackage"  -On $onId 
+
+```
+This example will get all access package suggestions with default insight types
+
+### Example 2: Get access package suggestions based on assignment history
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser -ExpandProperty "availableAccessPackage"  -On $onId 
+
+```
+This example will get access package suggestions based on assignment history
+
 
 ## PARAMETERS
 

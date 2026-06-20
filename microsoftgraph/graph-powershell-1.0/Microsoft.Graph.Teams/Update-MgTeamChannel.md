@@ -94,14 +94,20 @@ Update the properties of the specified channel.
 | Application | ChannelSettings.ReadWrite.Group, ChannelSettings.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update a channel
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Update-MgTeamChannel -TeamId $teamId -ChannelId $channelId
 
-### EXAMPLE 2
+```
+This example will update a channel
+
+### Example 2: Update the layout type of a channel
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -111,7 +117,12 @@ $params = @{
 
 Update-MgTeamChannel -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will update the layout type of a channel
+
+### Example 3: Switch a channel back to post layout type
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -120,6 +131,10 @@ $params = @{
 }
 
 Update-MgTeamChannel -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+```
+This example will switch a channel back to post layout type
+
 
 ## PARAMETERS
 

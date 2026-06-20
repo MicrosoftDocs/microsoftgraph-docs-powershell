@@ -87,8 +87,9 @@ Create new navigation property to skills for users
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
@@ -106,6 +107,10 @@ collaborationTags = @(
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileSkill -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileSkill Cmdlet.
+
 
 ## PARAMETERS
 

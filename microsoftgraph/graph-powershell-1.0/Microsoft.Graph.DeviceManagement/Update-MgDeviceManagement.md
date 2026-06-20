@@ -117,8 +117,9 @@ Update deviceManagement
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -127,6 +128,10 @@ $params = @{
 }
 
 Update-MgDeviceManagement -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagement Cmdlet.
+
 
 ## PARAMETERS
 

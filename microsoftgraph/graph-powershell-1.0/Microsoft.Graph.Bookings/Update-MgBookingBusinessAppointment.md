@@ -102,8 +102,9 @@ Update the properties of a bookingAppointment object in the specified bookingBus
 | Application | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Change the date of service
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -123,7 +124,12 @@ $params = @{
 
 Update-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will change the date of service
+
+### Example 2: Update the customers for an appointment
+
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -148,6 +154,10 @@ $params = @{
 }
 
 Update-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
+
+```
+This example will update the customers for an appointment
+
 
 ## PARAMETERS
 

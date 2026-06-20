@@ -61,16 +61,6 @@ Create new navigation property to emailThreatSubmissionPolicies for security
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ThreatSubmissionPolicy.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -728,6 +718,7 @@ Optional for creation.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy)
+
 
 
 

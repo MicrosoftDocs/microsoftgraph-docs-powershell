@@ -101,16 +101,6 @@ Create a new bookingAppointment for the specified bookingBusiness.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -1486,6 +1476,7 @@ See below for more possible values.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment)
 - [](https://learn.microsoft.com/graph/api/bookingbusiness-post-appointments?view=graph-rest-1.0)
+
 
 
 

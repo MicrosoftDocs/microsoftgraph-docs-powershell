@@ -68,12 +68,17 @@ Read the properties and relationships of a bookingCustomQuestion object.
 | Application | Bookings.Read.All, Bookings.Manage.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId
+
+```
+This example shows how to use the Get-MgBookingBusinessCustomQuestion Cmdlet.
+
 
 ## PARAMETERS
 
