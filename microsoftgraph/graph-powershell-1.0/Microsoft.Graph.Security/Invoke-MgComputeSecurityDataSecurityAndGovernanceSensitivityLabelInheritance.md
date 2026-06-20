@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Calculate the sensitivity label that should be inherited by an output artifact, given a set of sensitivity labels from input or referenced artifacts.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
