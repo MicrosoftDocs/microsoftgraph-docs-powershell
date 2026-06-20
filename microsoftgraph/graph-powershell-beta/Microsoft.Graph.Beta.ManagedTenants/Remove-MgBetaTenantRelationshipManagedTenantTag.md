@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenanttag
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 02/20/2026
+ms.date: 06/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaTenantRelationshipManagedTenantTag
 ---
@@ -47,17 +47,12 @@ This cmdlet has the following aliases,
 Delete a tenantTag object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 
 Remove-MgBetaTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId
-
-```
-This example shows how to use the Remove-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
-
 
 ## PARAMETERS
 
@@ -389,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -432,27 +427,5 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaTenantRelationshipManagedTenantTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenanttag)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/managedtenants-tenanttag-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenanttag)
+- [](https://learn.microsoft.com/graph/api/managedtenants-tenanttag-delete?view=graph-rest-beta)

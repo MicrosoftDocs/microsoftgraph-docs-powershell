@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesproductknownissuebytimerange
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 02/20/2026
+ms.date: 06/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaWindowsUpdatesProductKnownIssueByTimeRange
 ---
@@ -49,17 +49,12 @@ This cmdlet has the following aliases,
 Get known issues related to a particular product based on a specified timeframe in the past.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
-Get-MgBetaWindowsUpdatesProductKnownIssueByTimeRange -ProductId $productId -DaysInPast $daysInPastId -IncludeAllActive $includeAllActiveId 
-
-```
-This example shows how to use the Get-MgBetaWindowsUpdatesProductKnownIssueByTimeRange Cmdlet.
-
+Get-MgBetaWindowsUpdatesProductKnownIssueByTimeRange -ProductId $productId -DaysInPast $daysInPastId -IncludeAllActive $includeAllActiveId
 
 ## PARAMETERS
 
@@ -519,7 +514,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -530,36 +525,17 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   [EditionId <String>]: The unique identifier of edition
   [KbNumber <Int32?>]: Usage: kbNumber={kbNumber}
   [KnownIssueId <String>]: The unique identifier of knownIssue
+  [PolicyApprovalId <String>]: The unique identifier of policyApproval
+  [PolicyId <String>]: The unique identifier of policy
   [ProductId <String>]: The unique identifier of product
   [ProductRevisionId <String>]: The unique identifier of productRevision
   [ResourceConnectionId <String>]: The unique identifier of resourceConnection
+  [RingId <String>]: The unique identifier of ring
   [UpdatableAssetId <String>]: The unique identifier of updatableAsset
   [UpdatePolicyId <String>]: The unique identifier of updatePolicy
 
 
 ## RELATED LINKS
 
-- [Get-MgBetaWindowsUpdatesProductKnownIssueByTimeRange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesproductknownissuebytimerange)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-product-getknownissuesbytimerange?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesproductknownissuebytimerange)
+- [](https://learn.microsoft.com/graph/api/windowsupdates-product-getknownissuesbytimerange?view=graph-rest-beta)

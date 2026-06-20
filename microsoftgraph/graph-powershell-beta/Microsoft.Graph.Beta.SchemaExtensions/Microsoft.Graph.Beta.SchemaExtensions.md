@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
-Module Guid: 46dd356d-a5b4-405b-a956-898332908dc4
+Module Guid: 5fa58043-7340-41af-9d0e-165140acba87
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.schemaextensions/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -22,23 +22,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaSchemaExtension](Remove-MgBetaSchemaExtension.md)
 
 ### [Update-MgBetaSchemaExtension](Update-MgBetaSchemaExtension.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetabuffergroupsiteinformationprotectiondecrypt
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 02/20/2026
+ms.date: 06/20/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt
 ---
@@ -74,6 +74,16 @@ This cmdlet has the following aliases,
 
 Invoke action decryptBuffer
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -105,7 +115,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -127,7 +137,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -572,17 +582,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1LikttpGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1LikttpGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EncryptedBuffer <Byte[]>]: 
   [PublishingLicense <Byte[]>]: 
 
-BODYPARAMETER `<IPaths1LikttpGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1LikttpGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EncryptedBuffer <Byte[]>]: 
   [PublishingLicense <Byte[]>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -647,27 +657,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetabuffergroupsiteinformationprotectiondecrypt)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetabuffergroupsiteinformationprotectiondecrypt)

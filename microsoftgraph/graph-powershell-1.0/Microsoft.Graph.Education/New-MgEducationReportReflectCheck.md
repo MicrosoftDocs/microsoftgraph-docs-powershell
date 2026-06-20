@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationreportreflectcheck
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 06/19/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationReportReflectCheck
 ---
@@ -14,9 +14,6 @@ title: New-MgEducationReportReflectCheck
 ## SYNOPSIS
 
 Create new navigation property to reflectCheckInResponses for education
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationReportReflectCheck](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationReportReflectCheck?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to reflectCheckInResponses for education
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -576,7 +583,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphReflectCheckInResponse>`: reflectCheckInResponse
+BODYPARAMETER <IMicrosoftGraphReflectCheckInResponse>: reflectCheckInResponse
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -598,27 +605,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [New-MgEducationReportReflectCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationreportreflectcheck)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationreportreflectcheck)

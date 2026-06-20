@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfigurationlink
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 02/20/2026
+ms.date: 06/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
 ---
@@ -75,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to links for networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -546,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessConnectivityConfigurationLink>`: connectivityConfigurationLink
+BODYPARAMETER <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink>: connectivityConfigurationLink
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -562,11 +572,12 @@ Read-only.
     [BgpAddress <String>]: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
     [Endpoint <String>]: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
   [BranchSiteId <String>]: The unique identifier of branchSite
+  [CloudFirewallPolicyId <String>]: The unique identifier of cloudFirewallPolicy
   [ConditionalAccessPolicyId <String>]: The unique identifier of conditionalAccessPolicy
   [ConnectionId <String>]: The unique identifier of connection
   [ConnectivityConfigurationLinkId <String>]: The unique identifier of connectivityConfigurationLink
@@ -578,6 +589,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [FilteringProfileId <String>]: The unique identifier of filteringProfile
   [ForwardingPolicyId <String>]: The unique identifier of forwardingPolicy
   [ForwardingProfileId <String>]: The unique identifier of forwardingProfile
+  [GenerativeAiInsightTransactionId <String>]: The unique identifier of generativeAIInsight
   [NetworkAccessTrafficTransactionId <String>]: The unique identifier of networkAccessTraffic
   [PolicyLinkId <String>]: The unique identifier of policyLink
   [PolicyRuleId <String>]: The unique identifier of policyRule
@@ -594,7 +606,7 @@ LOCALCONFIGURATIONS <IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration[
   [Endpoint <String>]: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
   [Region <String>]: region
 
-PEERCONFIGURATION `<IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>`: peerConnectivityConfiguration
+PEERCONFIGURATION <IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>: peerConnectivityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Asn <Int32?>]: Specifies ASN of one end of IPSec tunnel (local or peer).
   [BgpAddress <String>]: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
@@ -603,27 +615,4 @@ PEERCONFIGURATION `<IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>`:
 
 ## RELATED LINKS
 
-- [New-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfigurationlink)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfigurationlink)

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Bookings
-Module Guid: 49871ae0-aa0a-4d25-8faf-df3311fc96b2
+Module Guid: 64221573-1628-41aa-bc01-6b3383e0f03d
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -364,23 +364,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgVirtualEventWebinarSessionAttendanceReport](Update-MgVirtualEventWebinarSessionAttendanceReport.md)
 
 ### [Update-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Update-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

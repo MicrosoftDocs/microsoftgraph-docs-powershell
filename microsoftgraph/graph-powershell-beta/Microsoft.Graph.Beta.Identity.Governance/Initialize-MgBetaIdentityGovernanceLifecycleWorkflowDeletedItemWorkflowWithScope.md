@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowwithscope
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 06/20/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowWithScope
 ---
@@ -17,9 +17,6 @@ Run a workflow object on-demand with a specific scope.
 You can run any workflow on-demand, including scheduled workflows.
 Workflows created from the 'Real-time employee termination' template are run on-demand only.
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowWithScope](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowWithScope?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -81,6 +78,16 @@ You can run any workflow on-demand, including scheduled workflows.
 Workflows created from the 'Real-time employee termination' template are run on-demand only.
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -112,7 +119,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -488,12 +495,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsDn0Y6ZIdentitygovernanceLifecycleworkflowsDeleteditemsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceActivatewithscopePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsDn0Y6ZIdentitygovernanceLifecycleworkflowsDeleteditemsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceActivatewithscopePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Scope <IMicrosoftGraphIdentityGovernanceActivationScope>]: activationScope
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -541,6 +548,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -606,28 +614,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowWithScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowwithscope)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activatewithscope?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowwithscope)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activatewithscope?view=graph-rest-beta)

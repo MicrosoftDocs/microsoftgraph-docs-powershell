@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointdeviceimage
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 06/19/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementVirtualEndpointDeviceImage
 ---
@@ -16,9 +16,6 @@ title: New-MgDeviceManagementVirtualEndpointDeviceImage
 Create a new cloudPcDeviceImage object.
 Upload a custom OS image that you can later provision on Cloud PCs.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,9 +24,9 @@ Upload a custom OS image that you can later provision on Cloud PCs.
 New-MgDeviceManagementVirtualEndpointDeviceImage [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-ErrorCode <string>]
  [-ExpirationDate <datetime>] [-Id <string>] [-LastModifiedDateTime <datetime>]
- [-OSBuildNumber <string>] [-OSStatus <string>] [-OperatingSystem <string>]
- [-SourceImageResourceId <string>] [-Status <string>] [-Version <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-OSBuildNumber <string>] [-OSStatus <string>] [-OSVersionNumber <string>]
+ [-OperatingSystem <string>] [-SizeInGb <int>] [-SourceImageResourceId <string>] [-Status <string>]
+ [-Version <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -54,18 +51,9 @@ This cmdlet has the following aliases,
 Create a new cloudPcDeviceImage object.
 Upload a custom OS image that you can later provision on Cloud PCs.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -76,10 +64,6 @@ $params = @{
 }
 
 New-MgDeviceManagementVirtualEndpointDeviceImage -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementVirtualEndpointDeviceImage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -411,6 +395,29 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -OSVersionNumber
+
+The operating system version of this image.
+For example, 10.0.22000.296.
+Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -486,6 +493,29 @@ Aliases:
 - RHV
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -SizeInGb
+
+The size of the image in GB.
+For example, 64.
+Read-only.
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -615,7 +645,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcDeviceImage>`: cloudPcDeviceImage
+BODYPARAMETER <IMicrosoftGraphCloudPcDeviceImage>: cloudPcDeviceImage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -633,8 +663,14 @@ Read-only.
 For example, 1909.
 Read-only.
   [OSStatus <String>]: cloudPcDeviceImageOsStatus
+  [OSVersionNumber <String>]: The operating system version of this image.
+For example, 10.0.22000.296.
+Read-only.
   [OperatingSystem <String>]: The operating system (OS) of the image.
 For example, Windows 11 Enterprise.
+Read-only.
+  [SizeInGb <Int32?>]: The size of the image in GB.
+For example, 64.
 Read-only.
   [SourceImageResourceId <String>]: The unique identifier (ID) of the source image resource on Azure.
 The required ID format is: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}'.
@@ -647,27 +683,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementVirtualEndpointDeviceImage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointdeviceimage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointdeviceimage)
+- [](https://learn.microsoft.com/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-1.0)

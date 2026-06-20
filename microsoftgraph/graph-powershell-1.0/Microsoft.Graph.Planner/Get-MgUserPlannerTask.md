@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 02/20/2026
+ms.date: 06/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserPlannerTask
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserPlannerTask
 Read-only.
 Nullable.
 Returns the plannerPlans shared with the user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,27 +41,14 @@ Read-only.
 Nullable.
 Returns the plannerPlans shared with the user.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Planner
 
 # A UPN can also be used as -UserId.
 Get-MgUserPlannerTask -UserId $userId
-
-```
-This example shows how to use the Get-MgUserPlannerTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -497,26 +481,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgUserPlannerTask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask)

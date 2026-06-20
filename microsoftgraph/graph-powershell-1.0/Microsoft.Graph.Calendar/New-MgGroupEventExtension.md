@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventextension
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 06/19/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupEventExtension
 ---
@@ -16,9 +16,6 @@ title: New-MgGroupEventExtension
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEventExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -74,9 +71,8 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
-### Example 1: Create an extension in the specified group event
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -89,10 +85,6 @@ $params = @{
 }
 
 New-MgGroupEventExtension -GroupId $groupId -EventId $eventId -BodyParameter $params
-
-```
-This example will create an extension in the specified group event
-
 
 ## PARAMETERS
 
@@ -507,7 +499,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -530,27 +522,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgGroupEventExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventextension)
+- [](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)

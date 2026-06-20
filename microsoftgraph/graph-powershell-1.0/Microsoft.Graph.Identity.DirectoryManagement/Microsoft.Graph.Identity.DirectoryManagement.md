@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 77e81c1b-6426-4942-9a06-0c33e6823f56
+Module Guid: 11b14ed7-7256-49c4-996a-45400a628c9e
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -54,6 +54,20 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgAdminPeopleProfileCardProperty](Get-MgAdminPeopleProfileCardProperty.md)
 
 ### [Get-MgAdminPeopleProfileCardPropertyCount](Get-MgAdminPeopleProfileCardPropertyCount.md)
+
+### [Get-MgAdminPeopleProfilePropertySetting](Get-MgAdminPeopleProfilePropertySetting.md)
+
+### [Get-MgAdminPeopleProfilePropertySetting](Get-MgAdminPeopleProfilePropertySetting.md)
+
+### [Get-MgAdminPeopleProfilePropertySettingCount](Get-MgAdminPeopleProfilePropertySettingCount.md)
+
+### [Get-MgAdminPeopleProfileSource](Get-MgAdminPeopleProfileSource.md)
+
+### [Get-MgAdminPeopleProfileSource](Get-MgAdminPeopleProfileSource.md)
+
+### [Get-MgAdminPeopleProfileSourceBySourceId](Get-MgAdminPeopleProfileSourceBySourceId.md)
+
+### [Get-MgAdminPeopleProfileSourceCount](Get-MgAdminPeopleProfileSourceCount.md)
 
 ### [Get-MgAdminPeoplePronoun](Get-MgAdminPeoplePronoun.md)
 
@@ -617,6 +631,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgAdminPeopleProfileCardProperty](New-MgAdminPeopleProfileCardProperty.md)
 
+### [New-MgAdminPeopleProfilePropertySetting](New-MgAdminPeopleProfilePropertySetting.md)
+
+### [New-MgAdminPeopleProfileSource](New-MgAdminPeopleProfileSource.md)
+
 ### [New-MgContract](New-MgContract.md)
 
 ### [New-MgDevice](New-MgDevice.md)
@@ -684,6 +702,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgAdminPeopleItemInsight](Remove-MgAdminPeopleItemInsight.md)
 
 ### [Remove-MgAdminPeopleProfileCardProperty](Remove-MgAdminPeopleProfileCardProperty.md)
+
+### [Remove-MgAdminPeopleProfilePropertySetting](Remove-MgAdminPeopleProfilePropertySetting.md)
+
+### [Remove-MgAdminPeopleProfileSource](Remove-MgAdminPeopleProfileSource.md)
+
+### [Remove-MgAdminPeopleProfileSourceBySourceId](Remove-MgAdminPeopleProfileSourceBySourceId.md)
 
 ### [Remove-MgContact](Remove-MgContact.md)
 
@@ -841,6 +865,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgAdminPeopleProfileCardProperty](Update-MgAdminPeopleProfileCardProperty.md)
 
+### [Update-MgAdminPeopleProfilePropertySetting](Update-MgAdminPeopleProfilePropertySetting.md)
+
+### [Update-MgAdminPeopleProfileSource](Update-MgAdminPeopleProfileSource.md)
+
+### [Update-MgAdminPeopleProfileSourceBySourceId](Update-MgAdminPeopleProfileSourceBySourceId.md)
+
 ### [Update-MgAdminPeoplePronoun](Update-MgAdminPeoplePronoun.md)
 
 ### [Update-MgContact](Update-MgContact.md)
@@ -912,23 +942,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSubscribedSku](Update-MgSubscribedSku.md)
 
 ### [Update-MgUserScopedRoleMemberOf](Update-MgUserScopedRoleMemberOf.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

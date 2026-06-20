@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-Module Guid: 32b26f01-f3a4-4489-afae-bf2e1cdbb04b
+Module Guid: 6f60c07b-0e4b-4a00-b55a-e8c24c3b0894
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.businessscenario/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,6 +11,8 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.BusinessScenario Cmdlets
+### [Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction](Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction.md)
+
 ### [Get-MgBetaSolutionBusinessScenario](Get-MgBetaSolutionBusinessScenario.md)
 
 ### [Get-MgBetaSolutionBusinessScenario](Get-MgBetaSolutionBusinessScenario.md)
@@ -45,6 +47,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSolutionBusinessScenarioPlannerTaskDetail](Get-MgBetaSolutionBusinessScenarioPlannerTaskDetail.md)
 
+### [Get-MgBetaSolutionBusinessScenarioPlannerTaskMessage](Get-MgBetaSolutionBusinessScenarioPlannerTaskMessage.md)
+
+### [Get-MgBetaSolutionBusinessScenarioPlannerTaskMessage](Get-MgBetaSolutionBusinessScenarioPlannerTaskMessage.md)
+
+### [Get-MgBetaSolutionBusinessScenarioPlannerTaskMessageCount](Get-MgBetaSolutionBusinessScenarioPlannerTaskMessageCount.md)
+
 ### [Get-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat](Get-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
 
 ### [New-MgBetaSolutionBusinessScenario](New-MgBetaSolutionBusinessScenario.md)
@@ -52,6 +60,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization](New-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization.md)
 
 ### [New-MgBetaSolutionBusinessScenarioPlannerTask](New-MgBetaSolutionBusinessScenarioPlannerTask.md)
+
+### [New-MgBetaSolutionBusinessScenarioPlannerTaskMessage](New-MgBetaSolutionBusinessScenarioPlannerTaskMessage.md)
 
 ### [Remove-MgBetaSolutionBusinessScenario](Remove-MgBetaSolutionBusinessScenario.md)
 
@@ -73,7 +83,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail](Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail.md)
 
+### [Remove-MgBetaSolutionBusinessScenarioPlannerTaskMessage](Remove-MgBetaSolutionBusinessScenarioPlannerTaskMessage.md)
+
 ### [Remove-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat](Remove-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
+
+### [Set-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction](Set-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction.md)
 
 ### [Update-MgBetaSolutionBusinessScenario](Update-MgBetaSolutionBusinessScenario.md)
 
@@ -95,24 +109,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail](Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail.md)
 
+### [Update-MgBetaSolutionBusinessScenarioPlannerTaskMessage](Update-MgBetaSolutionBusinessScenarioPlannerTaskMessage.md)
+
 ### [Update-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat](Update-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
