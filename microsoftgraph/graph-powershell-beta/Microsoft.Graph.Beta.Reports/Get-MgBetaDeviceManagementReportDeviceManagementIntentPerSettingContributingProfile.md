@@ -62,16 +62,6 @@ Invoke action getDeviceManagementIntentPerSettingContributingProfiles
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -610,6 +600,7 @@ BODYPARAMETER `<IPaths1Sa3Fr9DevicemanagementReportsMicrosoftGraphGetdevicemanag
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdevicemanagementintentpersettingcontributingprofile)
+
 
 
 

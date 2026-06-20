@@ -74,16 +74,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property generativeAIInsights in networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -842,6 +832,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessloggenerativeaiinsight)
+
 
 
 

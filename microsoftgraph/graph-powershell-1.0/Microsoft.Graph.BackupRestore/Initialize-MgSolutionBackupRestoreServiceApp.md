@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 
 Activate a serviceApp.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -513,6 +503,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/initialize-mgsolutionbackuprestoreserviceapp)
 - [](https://learn.microsoft.com/graph/api/serviceapp-activate?view=graph-rest-1.0)
+
 
 
 

@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 Delete a serviceApp.
 When this API is called via Microsoft Graph PowerShell, it returns a 403 Forbidden response code.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -431,6 +421,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreserviceapp)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-delete-serviceapps?view=graph-rest-1.0)
+
 
 
 
