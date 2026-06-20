@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelatedtenant
@@ -682,7 +682,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPB2BSIGNINACTIVITYMETRICS <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>: b2BSignInActivityMetrics
+APPB2BSIGNINACTIVITYMETRICS `<IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>`: b2BSignInActivityMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -707,7 +707,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: Timestamp that represents the most recent time B2B registration data was aggregated and have sufficiently changed for the related tenant.
 
-B2BREGISTRATIONMETRICS <IMicrosoftGraphTenantGovernanceServicesB2BRegistrationMetrics>: b2bRegistrationMetrics
+B2BREGISTRATIONMETRICS `<IMicrosoftGraphTenantGovernanceServicesB2BRegistrationMetrics>`: b2bRegistrationMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -728,7 +728,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: Timestamp that represents the most recent time B2B registration data was aggregated and have sufficiently changed for the related tenant.
 
-B2BSIGNINACTIVITYMETRICS <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>: b2BSignInActivityMetrics
+B2BSIGNINACTIVITYMETRICS `<IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>`: b2BSignInActivityMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -753,7 +753,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: Timestamp that represents the most recent time B2B registration data was aggregated and have sufficiently changed for the related tenant.
 
-BILLINGMETRICS <IMicrosoftGraphTenantGovernanceServicesBillingMetrics>: billingMetrics
+BILLINGMETRICS `<IMicrosoftGraphTenantGovernanceServicesBillingMetrics>`: billingMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -784,7 +784,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: Timestamp that represents when billing metrics are aggregated and have sufficiently changed for the related tenant.
 
-BODYPARAMETER <IMicrosoftGraphTenantGovernanceServicesRelatedTenant>: relatedTenant
+BODYPARAMETER `<IMicrosoftGraphTenantGovernanceServicesRelatedTenant>`: relatedTenant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -886,7 +886,7 @@ Read-only.
 Read-only.
       [UpdateDateTime <DateTime?>]: Timestamp that represents when multitenant application metrics are aggregated and have sufficiently changed for the related tenant.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -952,7 +952,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
 
-MULTITENANTAPPLICATIONMETRICS <IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationMetrics>: multiTenantApplicationMetrics
+MULTITENANTAPPLICATIONMETRICS `<IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationMetrics>`: multiTenantApplicationMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -978,3 +978,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelatedtenant)
 - [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-relatedtenant-refresh?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

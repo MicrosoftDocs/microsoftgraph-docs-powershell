@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal
@@ -366,7 +366,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternal>: external
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -656,3 +656,25 @@ Required.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

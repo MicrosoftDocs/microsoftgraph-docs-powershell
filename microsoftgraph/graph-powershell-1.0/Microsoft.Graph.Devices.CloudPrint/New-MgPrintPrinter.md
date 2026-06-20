@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter
@@ -531,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths18VwyqhPrintPrintersMicrosoftGraphCreatePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths18VwyqhPrintPrintersMicrosoftGraphCreatePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CertificateSigningRequest <IMicrosoftGraphPrintCertificateSigningRequest>]: printCertificateSigningRequest
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -546,7 +546,7 @@ Read-only.
   [Model <String>]: 
   [PhysicalDeviceId <String>]: 
 
-CERTIFICATESIGNINGREQUEST <IMicrosoftGraphPrintCertificateSigningRequest>: printCertificateSigningRequest
+CERTIFICATESIGNINGREQUEST `<IMicrosoftGraphPrintCertificateSigningRequest>`: printCertificateSigningRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: A base64-encoded pkcs10 certificate request.
 Read-only.
@@ -558,3 +558,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter)
 - [](https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

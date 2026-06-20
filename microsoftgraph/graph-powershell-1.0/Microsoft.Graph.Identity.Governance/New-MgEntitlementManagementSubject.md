@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementsubject
@@ -538,7 +538,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphAccessPackageSubject>: accessPackageSubject
+BODYPARAMETER `<IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -573,7 +573,7 @@ null if the subject isn't yet a user in the tenant.
   [SubjectLifecycle <String>]: accessPackageSubjectLifecycle
   [SubjectType <String>]: accessPackageSubjectType
 
-CONNECTEDORGANIZATION <IMicrosoftGraphConnectedOrganization>: connectedOrganization
+CONNECTEDORGANIZATION `<IMicrosoftGraphConnectedOrganization>`: connectedOrganization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -600,3 +600,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementsubject)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

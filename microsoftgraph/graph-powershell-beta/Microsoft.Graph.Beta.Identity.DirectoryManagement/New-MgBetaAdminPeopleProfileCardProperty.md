@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty
@@ -459,7 +459,7 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
     [DisplayName <String>]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
     [LanguageTag <String>]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
 
-BODYPARAMETER <IMicrosoftGraphProfileCardProperty>: profileCardProperty
+BODYPARAMETER `<IMicrosoftGraphProfileCardProperty>`: profileCardProperty
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -480,3 +480,25 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty)
 - [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
