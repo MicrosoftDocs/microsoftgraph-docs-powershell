@@ -1376,7 +1376,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagementroleassignmentschedule)
+- [Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagementroleassignmentschedule)
 
 
 

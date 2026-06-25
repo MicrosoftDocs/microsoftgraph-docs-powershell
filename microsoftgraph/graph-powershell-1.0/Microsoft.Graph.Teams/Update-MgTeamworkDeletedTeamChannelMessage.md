@@ -1613,7 +1613,7 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmessage)
+- [Update-MgTeamworkDeletedTeamChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmessage)
 
 
 

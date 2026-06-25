@@ -535,7 +535,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflowasexternaluserselfservicesignupeventflowincludeapplication)
+- [New-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflowasexternaluserselfservicesignupeventflowincludeapplication)
 
 
 

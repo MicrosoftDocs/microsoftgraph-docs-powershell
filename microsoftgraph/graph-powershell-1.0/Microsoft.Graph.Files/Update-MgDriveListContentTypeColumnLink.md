@@ -573,7 +573,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttypecolumnlink)
+- [Update-MgDriveListContentTypeColumnLink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttypecolumnlink)
 
 
 

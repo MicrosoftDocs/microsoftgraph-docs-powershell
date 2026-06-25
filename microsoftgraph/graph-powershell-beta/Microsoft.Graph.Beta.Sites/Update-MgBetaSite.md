@@ -111998,7 +111998,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasite)
+- [Update-MgBetaSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasite)
 
 
 

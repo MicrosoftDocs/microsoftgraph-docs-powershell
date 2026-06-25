@@ -825,8 +825,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofile)
-- [](https://learn.microsoft.com/graph/api/networkaccess-filteringprofile-update?view=graph-rest-beta)
+- [Update-MgBetaNetworkAccessFilteringProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-filteringprofile-update?view=graph-rest-beta)
 
 
 

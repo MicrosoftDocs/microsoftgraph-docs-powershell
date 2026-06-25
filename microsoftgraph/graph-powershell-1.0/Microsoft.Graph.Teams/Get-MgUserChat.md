@@ -611,9 +611,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat)
-- [](https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0)
+- [Get-MgUserChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0)
 
 
 

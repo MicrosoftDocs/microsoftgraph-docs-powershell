@@ -439,7 +439,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancedecisioncount)
+- [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancedecisioncount)
 
 
 

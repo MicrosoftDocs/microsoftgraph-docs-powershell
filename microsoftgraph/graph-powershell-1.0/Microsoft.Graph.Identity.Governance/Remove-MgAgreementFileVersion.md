@@ -497,7 +497,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgagreementfileversion)
+- [Remove-MgAgreementFileVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgagreementfileversion)
 
 
 

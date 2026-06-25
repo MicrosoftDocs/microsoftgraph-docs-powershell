@@ -629,7 +629,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchforwardingprofilepolicy)
+- [New-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchforwardingprofilepolicy)
 
 
 

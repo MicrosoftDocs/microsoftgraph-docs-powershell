@@ -1708,7 +1708,7 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessage)
+- [New-MgUserMailFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessage)
 
 
 

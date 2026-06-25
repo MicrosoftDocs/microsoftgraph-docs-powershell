@@ -1112,7 +1112,7 @@ Supports $expand.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerequestcatalogresource)
+- [New-MgEntitlementManagementResourceRequestCatalogResource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerequestcatalogresource)
 
 
 

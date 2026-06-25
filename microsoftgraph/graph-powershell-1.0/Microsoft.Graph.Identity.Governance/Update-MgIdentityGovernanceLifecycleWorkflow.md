@@ -49189,8 +49189,8 @@ Value is null if task execution hasn't started yet.Supports $filter(lt, le, gt, 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-update?view=graph-rest-1.0)
+- [Update-MgIdentityGovernanceLifecycleWorkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-update?view=graph-rest-1.0)
 
 
 
