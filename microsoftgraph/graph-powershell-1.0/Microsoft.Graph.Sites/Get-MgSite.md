@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite
@@ -13,7 +13,7 @@ title: Get-MgSite
 
 ## SYNOPSIS
 
-Retrieve properties and relationships for a site resource.\r\nA site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a site resource.\rA site resource represents a team site in SharePoint.
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Retrieve properties and relationships for a site resource.\r\nA site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a site resource.\rA site resource represents a team site in SharePoint.
 
 ## EXAMPLES
 
@@ -529,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -580,3 +580,25 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite)
 - [](https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/site-list?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
