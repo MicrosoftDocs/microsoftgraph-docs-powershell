@@ -63,20 +63,6 @@ Get a placeOperation by ID.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Place.Read.All, Place.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Get-MgBetaPlaceOperation
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Get-MgBetaPlaceOperation
-
 ## PARAMETERS
 
 ### -All
@@ -565,6 +551,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceoperation)
 - [](https://learn.microsoft.com/graph/api/place-getoperation?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/place-listoperations?view=graph-rest-beta)
+
+
 
 
 

@@ -74,8 +74,9 @@ This cmdlet has the following aliases,
 Hide a chat for a user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -87,6 +88,10 @@ $params = @{
 }
 
 Hide-MgChatForUser -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Hide-MgChatForUser Cmdlet.
+
 
 ## PARAMETERS
 

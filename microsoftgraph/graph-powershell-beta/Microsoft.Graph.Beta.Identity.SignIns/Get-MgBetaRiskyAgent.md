@@ -63,14 +63,6 @@ Read the properties and relationships of riskyAgent object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityRiskyAgent.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaRiskyAgent
-
 ## PARAMETERS
 
 ### -All
@@ -635,6 +627,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyagent)
 - [](https://learn.microsoft.com/graph/api/riskyagent-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/riskyagent-list?view=graph-rest-beta)
+
+
 
 
 

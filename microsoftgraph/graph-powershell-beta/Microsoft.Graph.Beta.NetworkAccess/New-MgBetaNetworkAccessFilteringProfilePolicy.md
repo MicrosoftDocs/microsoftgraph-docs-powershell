@@ -78,23 +78,6 @@ The policy can be one of the following types:
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.NetworkAccess
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.networkaccess.tlsInspectionPolicyLink"
-	state = "enabled"
-	policy = @{
-		"@odata.type" = "#microsoft.graph.networkaccess.tlsInspectionPolicy"
-		id = "b712c469-e7cd-e7cb-738f-94b199570b0d"
-	}
-}
-
-New-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -627,6 +610,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringprofilepolicy)
 - [](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-post?view=graph-rest-beta)
+
 
 
 

@@ -59,14 +59,6 @@ This cmdlet has the following aliases,
 
 Represents members of an eDiscovery case.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Security
-
-Get-MgSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId
-
 ## PARAMETERS
 
 ### -All
@@ -632,6 +624,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasemember)
 - [](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-list?view=graph-rest-1.0)
+
+
 
 
 

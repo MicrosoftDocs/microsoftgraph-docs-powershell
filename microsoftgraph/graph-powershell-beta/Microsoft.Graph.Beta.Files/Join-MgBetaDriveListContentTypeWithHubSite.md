@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 
 Invoke action associateWithHubSites
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -581,6 +571,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetadrivelistcontenttypewithhubsite)
 - [](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta)
+
 
 
 

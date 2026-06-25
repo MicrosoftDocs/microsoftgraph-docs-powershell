@@ -72,8 +72,9 @@ Update the default configuration of a cross-tenant access policy.
 | Application | Policy.ReadWrite.CrossTenantAccess,  |
 
 ## EXAMPLES
+### Example 1: Block outbound B2B collaboration for a group of users
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -102,7 +103,12 @@ $params = @{
 
 Update-MgBetaPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will block outbound b2b collaboration for a group of users
+
+### Example 2: Update default invitation redemption configuration
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -119,7 +125,12 @@ fallbackIdentityProvider = "defaultConfiguredIdp"
 
 Update-MgBetaPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will update default invitation redemption configuration
+
+### Example 3: Disallow Microsoft accounts as an option for redeeming B2B invitations
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -135,6 +146,10 @@ fallbackIdentityProvider = "emailOneTimePasscode"
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
+
+```
+This example will disallow microsoft accounts as an option for redeeming b2b invitations
+
 
 ## PARAMETERS
 

@@ -83,8 +83,9 @@ Create a new additional source associated with an eDiscovery search.
 | Application | eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -96,6 +97,10 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource Cmdlet.
+
 
 ## PARAMETERS
 

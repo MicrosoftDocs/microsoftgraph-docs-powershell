@@ -60,12 +60,17 @@ Retrieve the schedules for role eligibilities for which the signed-in user is th
 | Application | RoleEligibilitySchedule.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser -On $onId
+Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

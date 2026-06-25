@@ -67,30 +67,17 @@ Return the metadata for a list.
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Sites
-
-Get-MgBetaSiteList -SiteId $siteId -ListId $listId
-
-### EXAMPLE 2
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSiteList -SiteId $siteId -ListId $listId
+Get-MgBetaSiteList -SiteId $siteId
 
-### EXAMPLE 3
+```
+This example shows how to use the Get-MgBetaSiteList Cmdlet.
 
-Import-Module Microsoft.Graph.Beta.Sites
-
-Get-MgBetaSiteList -SiteId $siteId -ListId $listId -Property "name,lastModifiedDateTime,itemCount" -ExpandProperty "columns(select=name,description),items)"
-
-### EXAMPLE 4
-
-Import-Module Microsoft.Graph.Beta.Sites
-
-Get-MgBetaSiteList -SiteId $siteId -ListId $listId -Property "name,lastModifiedDateTime" -ExpandProperty "columns(select=name,description),items)"
 
 ## PARAMETERS
 

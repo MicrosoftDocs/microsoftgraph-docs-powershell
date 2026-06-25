@@ -70,23 +70,6 @@ This cmdlet has the following aliases,
 
 Update the properties of an onPremAuthenticationPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-$params = @{
-	deletedDateTime = $null
-	description = "Updates to policy definition to manage and control authentication settings."
-	displayName = "Update policy name"
-	definition = @(
-	'{"Version":1,"LastUpdatedTimestamp":"2025-02-29T22:47:12.7764932Z", "Key1": "Value1", "Key2": {"SubKey1": "SubValue1"}}'
-)
-}
-
-Update-MgBetaPolicyOnPremAuthenticationPolicy -OnPremAuthenticationPolicyId $onPremAuthenticationPolicyId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -752,6 +735,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyonpremauthenticationpolicy)
 - [](https://learn.microsoft.com/graph/api/onpremauthenticationpolicy-update?view=graph-rest-beta)
+
 
 
 

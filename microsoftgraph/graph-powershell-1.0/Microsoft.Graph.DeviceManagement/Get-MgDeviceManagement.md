@@ -47,12 +47,17 @@ Get deviceManagement
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Get-MgDeviceManagement
+
+```
+This example shows how to use the Get-MgDeviceManagement Cmdlet.
+
 
 ## PARAMETERS
 

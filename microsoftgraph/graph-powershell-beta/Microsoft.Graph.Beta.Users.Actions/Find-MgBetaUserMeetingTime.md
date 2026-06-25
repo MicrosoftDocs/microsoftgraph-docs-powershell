@@ -92,54 +92,54 @@ In scenarios like test environments where the input parameters and calendar data
 | Application | Not supported |
 
 ## EXAMPLES
-
-### EXAMPLE 1
-
+### Example 1: Using the Find-MgBetaUserMeetingTime Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
-
 $params = @{
-	attendees = @(
+	Attendees = @(
 		@{
-			type = "required"
-			emailAddress = @{
-				name = "Alex Wilbur"
-				address = "alexw@contoso.com"
+			Type = "required"
+			EmailAddress = @{
+				Name = "Alex Wilbur"
+				Address = "alexw@contoso.onmicrosoft.com"
 			}
 		}
 	)
-	locationConstraint = @{
-		isRequired = "false"
-		suggestLocation = "false"
-		locations = @(
+	LocationConstraint = @{
+		IsRequired = "false"
+		SuggestLocation = "false"
+		Locations = @(
 			@{
-				resolveAvailability = "false"
-				displayName = "Conf room Hood"
+				ResolveAvailability = "false"
+				DisplayName = "Conf room Hood"
 			}
 		)
 	}
-	timeConstraint = @{
-		activityDomain = "work"
-		timeSlots = @(
+	TimeConstraint = @{
+		ActivityDomain = "work"
+		TimeSlots = @(
 			@{
-				start = @{
-					dateTime = "2019-04-16T09:00:00"
-					timeZone = "Pacific Standard Time"
+				Start = @{
+					DateTime = "2019-04-16T09:00:00"
+					TimeZone = "Pacific Standard Time"
 				}
-				end = @{
-					dateTime = "2019-04-18T17:00:00"
-					timeZone = "Pacific Standard Time"
+				End = @{
+					DateTime = "2019-04-18T17:00:00"
+					TimeZone = "Pacific Standard Time"
 				}
 			}
 		)
 	}
-	isOrganizerOptional = "false"
-	meetingDuration = "PT1H"
-	returnSuggestionReasons = "true"
-	minimumAttendeePercentage = 100
+	IsOrganizerOptional = "false"
+	MeetingDuration = "PT1H"
+	ReturnSuggestionReasons = "true"
+	MinimumAttendeePercentage = "100"
 }
-
 # A UPN can also be used as -UserId.
 Find-MgBetaUserMeetingTime -UserId $userId -BodyParameter $params
+```
+This example shows how to use the Find-MgBetaUserMeetingTime Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

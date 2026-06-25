@@ -46,14 +46,6 @@ This cmdlet has the following aliases,
 
 Restore a deleted conditionalAccessPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Restore-MgBetaIdentityConditionalAccessDeletedItemPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId
-
 ## PARAMETERS
 
 ### -Break
@@ -445,6 +437,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetaidentityconditionalaccessdeleteditempolicy)
 - [](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-restore?view=graph-rest-beta)
+
 
 
 

@@ -58,14 +58,6 @@ Get a list of virtualEventTownhall objects where the signed-in user is either th
 | Delegated (personal Microsoft account) | Not supported |
 | Application | VirtualEvent.Read.Chat, VirtualEvent.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Bookings
-
-Get-MgVirtualEventTownhallByUserRole -Role $roleId
-
 ## PARAMETERS
 
 ### -Break
@@ -508,6 +500,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallbyuserrole)
 - [](https://learn.microsoft.com/graph/api/virtualeventtownhall-getbyuserrole?view=graph-rest-1.0)
+
 
 
 
