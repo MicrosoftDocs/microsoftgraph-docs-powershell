@@ -78,16 +78,6 @@ Update the properties of an approvedClientApp object for a remotedesktopsecurity
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -578,6 +568,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
 - [](https://learn.microsoft.com/graph/api/approvedclientapp-update?view=graph-rest-beta)
+
 
 
 
