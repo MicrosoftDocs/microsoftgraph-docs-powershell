@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetahasdevicemanagementdeviceenrollmentconfigurationpayloadlink
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 02/20/2026
+ms.date: 06/24/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaHasDeviceManagementDeviceEnrollmentConfigurationPayloadLink
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 
 Invoke action hasPayloadLinks
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -72,7 +82,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -200,7 +210,7 @@ HelpMessage: ''
 
 ### -PayloadIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -356,34 +366,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Uvh7JwDevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1Uvh7JwDevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PayloadIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaHasDeviceManagementDeviceEnrollmentConfigurationPayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetahasdevicemanagementdeviceenrollmentconfigurationpayloadlink)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetahasdevicemanagementdeviceenrollmentconfigurationpayloadlink)

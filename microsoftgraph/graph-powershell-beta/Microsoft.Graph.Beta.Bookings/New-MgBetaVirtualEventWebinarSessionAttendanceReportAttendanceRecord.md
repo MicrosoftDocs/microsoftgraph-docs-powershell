@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarsessionattendancereportattendancerecord
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 02/20/2026
+ms.date: 06/24/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
 
 Create new navigation property to attendanceRecords for solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,6 +24,7 @@ New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
  -MeetingAttendanceReportId <string> -VirtualEventSessionId <string> -VirtualEventWebinarId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <string>]
+ [-Engagements <IMicrosoftGraphMeetingEngagement[]>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]
  [-Id <string>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <string>]
  [-RegistrationId <string>] [-Role <string>] [-TotalAttendanceInSeconds <int>] [-Break]
@@ -52,7 +50,7 @@ New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
 New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
  -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
- [-EmailAddress <string>]
+ [-EmailAddress <string>] [-Engagements <IMicrosoftGraphMeetingEngagement[]>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]
  [-Id <string>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <string>]
  [-RegistrationId <string>] [-Role <string>] [-TotalAttendanceInSeconds <int>] [-Break]
@@ -80,6 +78,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to attendanceRecords for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -215,6 +223,34 @@ Email address of the user associated with this attendance record.
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Engagements
+
+The list of real-time participant interaction behaviors during a meeting.
+To construct, see NOTES section for ENGAGEMENTS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingEngagement[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -750,7 +786,7 @@ ATTENDANCEINTERVALS <IMicrosoftGraphAttendanceInterval[]>: List of time periods 
   [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
   [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
 
-BODYPARAMETER `<IMicrosoftGraphAttendanceRecord>`: attendanceRecord
+BODYPARAMETER <IMicrosoftGraphAttendanceRecord>: attendanceRecord
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -759,6 +795,10 @@ Read-only.
     [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
     [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
   [EmailAddress <String>]: Email address of the user associated with this attendance record.
+  [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+    [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+    [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+    [EngagementType <String>]: meetingEngagementType
   [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -782,7 +822,12 @@ Presents for all participant who has registered for the virtualEventWebinar.
 The possible values are: None, Attendee, Presenter, and Organizer.
   [TotalAttendanceInSeconds <Int32?>]: Total duration of the attendances in seconds.
 
-EXTERNALREGISTRATIONINFORMATION `<IMicrosoftGraphVirtualEventExternalRegistrationInformation>`: virtualEventExternalRegistrationInformation
+ENGAGEMENTS <IMicrosoftGraphMeetingEngagement[]>: The list of real-time participant interaction behaviors during a meeting.
+  [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+  [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+  [EngagementType <String>]: meetingEngagementType
+
+EXTERNALREGISTRATIONINFORMATION <IMicrosoftGraphVirtualEventExternalRegistrationInformation>: virtualEventExternalRegistrationInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
 Optional.
@@ -790,7 +835,7 @@ Optional.
 Optional.
 If set, the maximum supported length is 256 characters.
 
-IDENTITY `<IMicrosoftGraphIdentity>`: identity
+IDENTITY <IMicrosoftGraphIdentity>: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -798,7 +843,7 @@ For example, if a user changes their display name the API might show the new val
   [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -823,27 +868,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarsessionattendancereportattendancerecord)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarsessionattendancereportattendancerecord)

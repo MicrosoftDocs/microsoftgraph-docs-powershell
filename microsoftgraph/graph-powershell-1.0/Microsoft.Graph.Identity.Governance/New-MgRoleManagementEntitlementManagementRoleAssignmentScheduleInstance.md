@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleassignmentscheduleinstance
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 06/24/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
 ---
@@ -14,9 +14,6 @@ title: New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
 ## SYNOPSIS
 
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,6 +54,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -702,7 +709,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVATEDUSING `<IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>`: unifiedRoleEligibilityScheduleInstance
+ACTIVATEDUSING <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>: unifiedRoleEligibilityScheduleInstance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppScope <IMicrosoftGraphAppScope>]: appScope
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -780,7 +787,7 @@ Supports $filter (eq, ne).
 Supports $filter (eq, ne).
   [StartDateTime <DateTime?>]: When this instance starts.
 
-APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
+APPSCOPE <IMicrosoftGraphAppScope>: appScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -789,7 +796,7 @@ Read-only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance>`: unifiedRoleAssignmentScheduleInstance
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance>: unifiedRoleAssignmentScheduleInstance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppScope <IMicrosoftGraphAppScope>]: appScope
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -899,21 +906,21 @@ Supports $filter (eq, ne).
 Supports $filter (eq, ne).
   [StartDateTime <DateTime?>]: When this instance starts.
 
-DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
+DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
+PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -955,27 +962,4 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleassignmentscheduleinstance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleassignmentscheduleinstance)

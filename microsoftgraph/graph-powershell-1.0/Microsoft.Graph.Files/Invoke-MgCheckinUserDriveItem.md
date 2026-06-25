@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckinuserdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 06/24/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgCheckinUserDriveItem
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgCheckinUserDriveItem
 ## SYNOPSIS
 
 Check in a checked out driveItem resource, which makes the version of the document available to others.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckinUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckinUserDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -104,7 +111,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -126,7 +133,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -169,7 +176,7 @@ HelpMessage: ''
 
 ### -CheckInAs
 
-
+.
 
 ```yaml
 Type: System.String
@@ -196,7 +203,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -577,17 +584,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPathsTplberUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPathsTplberUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CheckInAs <String>]: 
   [Comment <String>]: 
 
-BODYPARAMETER `<IPathsTplberUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsTplberUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CheckInAs <String>]: 
   [Comment <String>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -616,28 +623,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgCheckinUserDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckinuserdriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckinuserdriveitem)
+- [](https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-1.0)

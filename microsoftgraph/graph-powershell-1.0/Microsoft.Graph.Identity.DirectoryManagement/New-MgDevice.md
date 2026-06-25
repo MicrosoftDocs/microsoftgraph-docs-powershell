@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 06/24/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDevice
 ---
@@ -14,9 +14,6 @@ title: New-MgDevice
 ## SYNOPSIS
 
 Create and register a new device in the organization.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -63,9 +60,8 @@ This cmdlet has the following aliases,
 Create and register a new device in the organization.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -84,10 +80,6 @@ $params = @{
 }
 
 New-MgDevice -BodyParameter $params
-
-```
-This example shows how to use the New-MgDevice Cmdlet.
-
 
 ## PARAMETERS
 
@@ -639,7 +631,7 @@ Indicates whether the device is a member of a restricted management administrati
 If not set, the default value is null and the default behavior is false.
 Read-only.
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
-Returned only on $select.
+Requires $select to retrieve.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -823,7 +815,7 @@ HelpMessage: ''
 
 The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
 
 ```yaml
@@ -1248,7 +1240,7 @@ Supports $filter (eq, not, ge, le).
   [Key <Byte[]>]: For internal use only.
   [Type <Int32?>]: For internal use only.
 
-BODYPARAMETER `<IMicrosoftGraphDevice>`: device
+BODYPARAMETER <IMicrosoftGraphDevice>: device
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1310,7 +1302,7 @@ Supports $filter (eq, ne, not).
 If not set, the default value is null and the default behavior is false.
 Read-only.
  To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
-Returned only on $select.
+Requires $select to retrieve.
   [IsRooted <Boolean?>]: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
   [ManagementType <String>]: The management channel of the device.
@@ -1337,7 +1329,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
   [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
   [OnPremisesSyncEnabled <Boolean?>]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
@@ -1424,27 +1416,5 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [New-MgDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice)
+- [](https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-1.0)

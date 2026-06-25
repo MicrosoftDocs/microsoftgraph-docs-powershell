@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamchannelmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 02/20/2026
+ms.date: 06/24/2026
 PlatyPS schema version: 2024-05-01
 title: Complete-MgTeamChannelMigration
 ---
@@ -13,13 +13,11 @@ title: Complete-MgTeamChannelMigration
 
 ## SYNOPSIS
 
-Complete the message migration process by removing migration mode from a channel in a team.
-Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a completeMigration request is made, you can't import additional messages into the team.
-You can add members to the team after the request returns a successful response.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Complete-MgBetaTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamChannelMigration?view=graph-powershell-beta)
+Complete migration on existing channels or new channels.
+Complete migration operations were initially restricted to newly created standard channels using migration templates specifically designed for the initial migration process.
+For more information, see Import third-party platform messages to Teams using Microsoft Graph.
+Consider the following points when completing migration for new and existing channels: After a completeMigration request is made for existing or new channels, you can still import more messages into the team by calling channel: startMigration.
+This API supportes the following channel types.
 
 ## SYNTAX
 
@@ -50,23 +48,25 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Complete the message migration process by removing migration mode from a channel in a team.
-Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a completeMigration request is made, you can't import additional messages into the team.
-You can add members to the team after the request returns a successful response.
+Complete migration on existing channels or new channels.
+Complete migration operations were initially restricted to newly created standard channels using migration templates specifically designed for the initial migration process.
+For more information, see Import third-party platform messages to Teams using Microsoft Graph.
+Consider the following points when completing migration for new and existing channels: After a completeMigration request is made for existing or new channels, you can still import more messages into the team by calling channel: startMigration.
+This API supportes the following channel types.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
-```
-This example shows how to use the Complete-MgTeamChannelMigration Cmdlet.
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Teams
+
+Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
@@ -398,7 +398,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -419,6 +419,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -438,27 +439,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Complete-MgTeamChannelMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamchannelmigration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamchannelmigration)
+- [](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0)

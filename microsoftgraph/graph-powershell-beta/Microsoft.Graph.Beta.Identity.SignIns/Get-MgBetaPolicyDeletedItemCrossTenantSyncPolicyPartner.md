@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeleteditemcrosstenantsyncpolicypartner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner
 
 ## SYNOPSIS
 
-Read the properties and relationships of a policyDeletableItem object, which might be one of the following deleted policy types:\r- crossTenantAccessPolicyConfigurationPartner\r- crossTenantIdentitySyncPolicyPartner\r- conditionalAccessPolicy\r- namedLocation
+Read the properties and relationships of a policyDeletableItem object, which might be one of the following deleted policy types:\r\n- crossTenantAccessPolicyConfigurationPartner\r\n- crossTenantIdentitySyncPolicyPartner\r\n- conditionalAccessPolicy\r\n- namedLocation
 
 ## SYNTAX
 
@@ -55,7 +55,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read the properties and relationships of a policyDeletableItem object, which might be one of the following deleted policy types:\r- crossTenantAccessPolicyConfigurationPartner\r- crossTenantIdentitySyncPolicyPartner\r- conditionalAccessPolicy\r- namedLocation
+Read the properties and relationships of a policyDeletableItem object, which might be one of the following deleted policy types:\r\n- crossTenantAccessPolicyConfigurationPartner\r\n- crossTenantIdentitySyncPolicyPartner\r\n- conditionalAccessPolicy\r\n- namedLocation
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner -CrossTenantIdentitySyncPolicyPartnerTenantId $crossTenantIdentitySyncPolicyPartnerTenantId
 
 ## PARAMETERS
 
@@ -517,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -567,6 +575,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -617,29 +626,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeleteditemcrosstenantsyncpolicypartner)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/policydeletableitem-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/policydeletableitem-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeleteditemcrosstenantsyncpolicypartner)
+- [](https://learn.microsoft.com/graph/api/policydeletableitem-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/policydeletableitem-list?view=graph-rest-beta)

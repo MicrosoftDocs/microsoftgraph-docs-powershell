@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityB2CUserFlow
 ---
@@ -53,64 +53,56 @@ This cmdlet has the following aliases,
 
 Create a new b2cIdentityUserFlow object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityUserFlow.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaIdentityB2CUserFlow Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	Id = "UserFlowWithAPIConnector"
-	UserFlowType = "signUpOrSignIn"
-	UserFlowTypeVersion = 1
-	ApiConnectorConfiguration = @{
-		PostFederationSignup = @{
-			"@odata.id" = "{apiConnectorId}"
-		}
-		PostAttributeCollection = @{
-			"@odata.id" = "{apiConnectorId}"
-		}
-	}
+	id = "Customer"
+	userFlowType = "signUpOrSignIn"
+	userFlowTypeVersion = 3
 }
+
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityB2CUserFlow Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the New-MgBetaIdentityB2CUserFlow Cmdlet
-```powershell
+
+### EXAMPLE 2
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	Id = "Customer"
-	UserFlowType = "signUpOrSignIn"
-	UserFlowTypeVersion = 3
-	IdentityProviders = @(
+	id = "Customer"
+	userFlowType = "signUpOrSignIn"
+	userFlowTypeVersion = 3
+	identityProviders = @(
 		@{
-			Id = "Facebook-OAuth"
+			id = "Facebook-OAuth"
 		}
 	)
 }
+
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityB2CUserFlow Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the New-MgBetaIdentityB2CUserFlow Cmdlet
-```powershell
+
+### EXAMPLE 3
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	Id = "Customer"
-	UserFlowType = "signUpOrSignIn"
-	UserFlowTypeVersion = 3
+	id = "UserFlowWithAPIConnector"
+	userFlowType = "signUpOrSignIn"
+	userFlowTypeVersion = 1
+	apiConnectorConfiguration = @{
+		postFederationSignup = @{
+			"@odata.id" = '{apiConnectorId}'
+		}
+		postAttributeCollection = @{
+			"@odata.id" = '{apiConnectorId}'
+		}
+	}
 }
+
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityB2CUserFlow Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -548,7 +540,7 @@ HelpMessage: ''
 
 ### -UserFlowTypeVersion
 
-
+.
 
 ```yaml
 Type: System.Single
@@ -619,7 +611,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APICONNECTORCONFIGURATION `<IMicrosoftGraphUserFlowApiConnectorConfiguration>`: userFlowApiConnectorConfiguration
+APICONNECTORCONFIGURATION <IMicrosoftGraphUserFlowApiConnectorConfiguration>: userFlowApiConnectorConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PostAttributeCollection <IMicrosoftGraphIdentityApiConnector>]: identityApiConnector
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -632,7 +624,7 @@ Read-only.
   [PostFederationSignup <IMicrosoftGraphIdentityApiConnector>]: identityApiConnector
   [PreTokenIssuance <IMicrosoftGraphIdentityApiConnector>]: identityApiConnector
 
-BODYPARAMETER `<IMicrosoftGraphB2CIdentityUserFlow>`: b2cIdentityUserFlow
+BODYPARAMETER <IMicrosoftGraphB2CIdentityUserFlow>: b2cIdentityUserFlow
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UserFlowType <String>]: userFlowType
   [UserFlowTypeVersion <Single?>]: 
@@ -782,27 +774,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityB2CUserFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflow)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-b2cuserflows?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflow)
+- [](https://learn.microsoft.com/graph/api/identitycontainer-post-b2cuserflows?view=graph-rest-beta)

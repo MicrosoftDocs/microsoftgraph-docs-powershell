@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 06/24/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgInviteDriveItem
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgInviteDriveItem
 
 Send a sharing invitation for a driveItem.
 A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaInviteDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaInviteDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ This cmdlet has the following aliases,
 Send a sharing invitation for a driveItem.
 A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
-| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Files
 
@@ -110,9 +98,30 @@ expirationDateTime = "2018-07-15T14:00:00.000Z"
 
 Invoke-MgInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-```
-This example shows how to use the Invoke-MgInviteDriveItem Cmdlet.
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Files
+
+$params = @{
+	recipients = @(
+		@{
+			email = "helga@contoso.com"
+		}
+		@{
+			email = "robin@contoso.com"
+		}
+	)
+	message = "Here's the file that we're collaborating on."
+	requireSignIn = $true
+	sendInvitation = $true
+	roles = @(
+	"write"
+)
+password = "password123"
+expirationDateTime = "2018-07-15T14:00:00.000Z"
+}
+
+Invoke-MgInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -145,7 +154,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -270,7 +279,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-
+.
 
 ```yaml
 Type: System.String
@@ -388,7 +397,7 @@ HelpMessage: ''
 
 ### -Message
 
-
+.
 
 ```yaml
 Type: System.String
@@ -415,7 +424,7 @@ HelpMessage: ''
 
 ### -Password
 
-
+.
 
 ```yaml
 Type: System.String
@@ -505,7 +514,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-
+.
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -533,7 +542,7 @@ HelpMessage: ''
 
 ### -RequireSignIn
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -582,7 +591,7 @@ HelpMessage: ''
 
 ### -RetainInheritedPermissions
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -609,7 +618,7 @@ HelpMessage: ''
 
 ### -Roles
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -636,7 +645,7 @@ HelpMessage: ''
 
 ### -SendInvitation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -717,7 +726,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths193Fjg3DrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths193Fjg3DrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpirationDateTime <String>]: 
   [Message <String>]: 
@@ -731,7 +740,7 @@ BODYPARAMETER `<IPaths193Fjg3DrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePo
   [Roles <String[]>]: 
   [SendInvitation <Boolean?>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -765,27 +774,5 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgInviteDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveitem)
+- [](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)

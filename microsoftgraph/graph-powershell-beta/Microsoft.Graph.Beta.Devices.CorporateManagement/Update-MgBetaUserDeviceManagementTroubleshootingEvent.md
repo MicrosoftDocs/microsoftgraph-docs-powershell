@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetauserdevicemanagementtroubleshootingevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 06/24/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserDeviceManagementTroubleshootingEvent
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserDeviceManagementTroubleshootingEvent
 ## SYNOPSIS
 
 Update the navigation property deviceManagementTroubleshootingEvents in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,6 +76,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property deviceManagementTroubleshootingEvents in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -636,7 +643,7 @@ ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair[]>: A set of string key and s
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementTroubleshootingEvent>`: Event representing an general failure.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementTroubleshootingEvent>: Event representing an general failure.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -658,7 +665,7 @@ It is an Optional field
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
       [Text <String>]: 
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -733,7 +740,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [WindowsInformationProtectionWipeActionId <String>]: The unique identifier of windowsInformationProtectionWipeAction
   [WindowsManagedAppProtectionId <String>]: The unique identifier of windowsManagedAppProtection
 
-TROUBLESHOOTINGERRORDETAILS `<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>`: Object containing detailed information about the error and its remediation.
+TROUBLESHOOTINGERRORDETAILS <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>: Object containing detailed information about the error and its remediation.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Context <String>]: 
   [Failure <String>]: 
@@ -747,27 +754,4 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserDeviceManagementTroubleshootingEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetauserdevicemanagementtroubleshootingevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetauserdevicemanagementtroubleshootingevent)

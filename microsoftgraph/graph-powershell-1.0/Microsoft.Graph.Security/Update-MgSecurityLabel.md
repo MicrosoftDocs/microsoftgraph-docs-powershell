@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 06/24/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityLabel
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityLabel
 ## SYNOPSIS
 
 Update the navigation property labels in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabel](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property labels in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -512,7 +519,7 @@ For example, in the access reviews decisions API, this property might record the
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityLabelsRoot>`: labelsRoot
+BODYPARAMETER <IMicrosoftGraphSecurityLabelsRoot>: labelsRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -817,27 +824,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgSecurityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabel)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabel)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportwindowsdriverupdatealertsummaryreport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 02/20/2026
+ms.date: 06/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementReportWindowsDriverUpdateAlertSummaryReport
 ---
@@ -50,6 +50,16 @@ This cmdlet has the following aliases,
 
 Invoke action getWindowsDriverUpdateAlertSummaryReport
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -75,7 +85,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -140,7 +150,7 @@ HelpMessage: ''
 
 ### -Filter
 
-
+.
 
 ```yaml
 Type: System.String
@@ -161,7 +171,7 @@ HelpMessage: ''
 
 ### -GroupBy
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -245,7 +255,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -308,7 +318,7 @@ HelpMessage: ''
 
 ### -Property
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -415,7 +425,7 @@ HelpMessage: ''
 
 ### -Search
 
-
+.
 
 ```yaml
 Type: System.String
@@ -436,7 +446,7 @@ HelpMessage: ''
 
 ### -SessionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -457,7 +467,7 @@ HelpMessage: ''
 
 ### -Skip
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -478,7 +488,7 @@ HelpMessage: ''
 
 ### -Sort
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -500,7 +510,7 @@ HelpMessage: ''
 
 ### -Top
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -572,7 +582,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsK9VofmDevicemanagementReportsMicrosoftGraphGetwindowsdriverupdatealertsummaryreportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsK9VofmDevicemanagementReportsMicrosoftGraphGetwindowsdriverupdatealertsummaryreportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Filter <String>]: 
   [GroupBy <String[]>]: 
@@ -587,27 +597,4 @@ BODYPARAMETER `<IPathsK9VofmDevicemanagementReportsMicrosoftGraphGetwindowsdrive
 
 ## RELATED LINKS
 
-- [Get-MgBetaDeviceManagementReportWindowsDriverUpdateAlertSummaryReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportwindowsdriverupdatealertsummaryreport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportwindowsdriverupdatealertsummaryreport)

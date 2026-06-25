@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestorepoint
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 02/20/2026
+ms.date: 06/24/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSolutionBackupRestorePoint
 ---
@@ -14,9 +14,6 @@ title: Get-MgSolutionBackupRestorePoint
 ## SYNOPSIS
 
 List of restore points in the tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestorePoint](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestorePoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,6 +54,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 List of restore points in the tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -518,7 +525,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
+  [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -526,12 +534,16 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [DriveRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   [ExchangeProtectionPolicyId <String>]: The unique identifier of exchangeProtectionPolicy
   [ExchangeRestoreSessionId <String>]: The unique identifier of exchangeRestoreSession
+  [GranularDriveRestoreArtifactId <String>]: The unique identifier of granularDriveRestoreArtifact
   [GranularMailboxRestoreArtifactId <String>]: The unique identifier of granularMailboxRestoreArtifact
+  [GranularSiteRestoreArtifactId <String>]: The unique identifier of granularSiteRestoreArtifact
   [MailboxProtectionRuleId <String>]: The unique identifier of mailboxProtectionRule
   [MailboxProtectionUnitId <String>]: The unique identifier of mailboxProtectionUnit
   [MailboxProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
   [MailboxRestoreArtifactId <String>]: The unique identifier of mailboxRestoreArtifact
   [MailboxRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
+  [NextFetchToken <String>]: Usage: nextFetchToken='{nextFetchToken}'
+  [OneDriveForBusinessBrowseSessionId <String>]: The unique identifier of oneDriveForBusinessBrowseSession
   [OneDriveForBusinessProtectionPolicyId <String>]: The unique identifier of oneDriveForBusinessProtectionPolicy
   [OneDriveForBusinessRestoreSessionId <String>]: The unique identifier of oneDriveForBusinessRestoreSession
   [ProtectionPolicyBaseId <String>]: The unique identifier of protectionPolicyBase
@@ -539,6 +551,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [RestorePointId <String>]: The unique identifier of restorePoint
   [RestoreSessionBaseId <String>]: The unique identifier of restoreSessionBase
   [ServiceAppId <String>]: The unique identifier of serviceApp
+  [SharePointBrowseSessionId <String>]: The unique identifier of sharePointBrowseSession
   [SharePointProtectionPolicyId <String>]: The unique identifier of sharePointProtectionPolicy
   [SharePointRestoreSessionId <String>]: The unique identifier of sharePointRestoreSession
   [SiteProtectionRuleId <String>]: The unique identifier of siteProtectionRule
@@ -550,28 +563,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSolutionBackupRestorePoint](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestorepoint)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-list-restorepoints?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestorepoint)
+- [](https://learn.microsoft.com/graph/api/backuprestoreroot-list-restorepoints?view=graph-rest-1.0)
