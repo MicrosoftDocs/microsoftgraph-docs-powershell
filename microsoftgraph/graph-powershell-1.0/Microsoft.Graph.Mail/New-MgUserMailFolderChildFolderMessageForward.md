@@ -106,7 +106,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -155,7 +155,7 @@ HelpMessage: ''
 
 ### -Comment
 
-.
+
 
 ```yaml
 Type: System.String
@@ -489,7 +489,7 @@ HelpMessage: ''
 
 ### -ToRecipients
 
-.
+
 To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
