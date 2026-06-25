@@ -15,6 +15,9 @@ title: New-MgUserChat
 
 Create new navigation property to chats for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

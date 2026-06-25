@@ -16,6 +16,9 @@ title: Get-MgChatTabTeamApp
 The application that is linked to the tab.
 This can't be changed after tab creation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTabTeamApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

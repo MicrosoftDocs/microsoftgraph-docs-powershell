@@ -15,6 +15,9 @@ title: Remove-MgBetaDirectoryOnPremiseSynchronization
 
 Delete navigation property onPremisesSynchronization for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryOnPremiseSynchronization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

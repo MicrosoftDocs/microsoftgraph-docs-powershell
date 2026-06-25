@@ -15,6 +15,9 @@ title: New-MgReportAuthenticationMethodUserRegistrationDetail
 
 Create new navigation property to userRegistrationDetails for reports
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

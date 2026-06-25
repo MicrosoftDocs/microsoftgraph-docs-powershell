@@ -15,6 +15,9 @@ title: New-MgSiteListItemLink
 
 Invoke action createLink
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListItemLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItemLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
