@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareporthealthmonitoringalert
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaReportHealthMonitoringAlert
 ---
@@ -74,18 +74,9 @@ This cmdlet has the following aliases,
 Update the properties of a Microsoft Entra health monitoring alert object.
 For example, change an alert's state from active to resolved.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | HealthMonitoringAlert.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | HealthMonitoringAlert.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
@@ -94,10 +85,6 @@ $params = @{
 }
 
 Update-MgBetaReportHealthMonitoringAlert -AlertId $alertId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaReportHealthMonitoringAlert Cmdlet.
-
 
 ## PARAMETERS
 
@@ -704,7 +691,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphHealthMonitoringAlert>`: alert
+BODYPARAMETER <IMicrosoftGraphHealthMonitoringAlert>: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -731,7 +718,7 @@ Examples include user, group, application, servicePrincipal, device.
     [(Any) <Object>]: This indicates any property can be added to this object.
   [State <String>]: alertState
 
-ENRICHMENT `<IMicrosoftGraphHealthMonitoringEnrichment>`: enrichment
+ENRICHMENT <IMicrosoftGraphHealthMonitoringEnrichment>: enrichment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Impacts <IMicrosoftGraphHealthMonitoringResourceImpactSummary[]>]: A collection of resource impact summaries that gives a high level view of the kind of resources that were impacted and to what degree.
     [ImpactedCount <String>]: The number of resources impacted.
@@ -744,7 +731,7 @@ Examples include user, group, application, servicePrincipal, device.
   [SupportingData <IMicrosoftGraphHealthMonitoringSupportingData>]: supportingData
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -800,27 +787,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaReportHealthMonitoringAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareporthealthmonitoringalert)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/healthmonitoring-alert-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareporthealthmonitoringalert)
+- [](https://learn.microsoft.com/graph/api/healthmonitoring-alert-update?view=graph-rest-beta)

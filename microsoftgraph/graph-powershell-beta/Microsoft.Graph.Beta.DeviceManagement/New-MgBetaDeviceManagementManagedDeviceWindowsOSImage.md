@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicewindowsosimage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementManagedDeviceWindowsOSImage
 ---
@@ -49,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to managedDeviceWindowsOSImages for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -446,7 +456,7 @@ Read-only.
   [ReleaseYear <Int32?>]: Indicates the Year in which this B-week update was released.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphManagedDeviceWindowsOperatingSystemImage>`: This entity defines different Windows Operating System products, like 'Windows 11 22H1', 'Windows 11 22H2' etc., along with their available configurations.
+BODYPARAMETER <IMicrosoftGraphManagedDeviceWindowsOperatingSystemImage>: This entity defines different Windows Operating System products, like 'Windows 11 22H1', 'Windows 11 22H2' etc., along with their available configurations.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -491,27 +501,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementManagedDeviceWindowsOSImage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicewindowsosimage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicewindowsosimage)

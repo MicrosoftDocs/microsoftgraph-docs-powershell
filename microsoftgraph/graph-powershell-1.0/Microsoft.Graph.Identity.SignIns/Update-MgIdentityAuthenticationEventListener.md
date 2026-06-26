@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventlistener
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityAuthenticationEventListener
 ---
@@ -16,9 +16,6 @@ title: Update-MgIdentityAuthenticationEventListener
 Update the properties of an authenticationEventListener object.
 You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
 The following derived types are currently supported.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ Update the properties of an authenticationEventListener object.
 You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
 The following derived types are currently supported.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EventListener.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EventListener.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -106,10 +94,6 @@ $params = @{
 }
 
 Update-MgIdentityAuthenticationEventListener -AuthenticationEventListenerId $authenticationEventListenerId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgIdentityAuthenticationEventListener Cmdlet.
-
 
 ## PARAMETERS
 
@@ -580,7 +564,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEventListener
+BODYPARAMETER <IMicrosoftGraphAuthenticationEventListener>: authenticationEventListener
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -593,14 +577,14 @@ Read-only.
         [AppId <String>]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
   [DisplayName <String>]: The display name of the listener.
 
-CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
+CONDITIONS <IMicrosoftGraphAuthenticationConditions>: authenticationConditions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Applications <IMicrosoftGraphAuthenticationConditionsApplications>]: authenticationConditionsApplications
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication[]>]: 
       [AppId <String>]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -623,6 +607,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
+  [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
   [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
@@ -661,6 +646,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
   [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
@@ -668,27 +654,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgIdentityAuthenticationEventListener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventlistener)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventlistener)
+- [](https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0)

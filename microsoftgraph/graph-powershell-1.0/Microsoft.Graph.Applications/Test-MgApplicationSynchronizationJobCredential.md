@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationsynchronizationjobcredential
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgApplicationSynchronizationJobCredential
 ---
@@ -14,9 +14,6 @@ title: Test-MgApplicationSynchronizationJobCredential
 ## SYNOPSIS
 
 Validate that the credentials are valid in the tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationSynchronizationJobCredential?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -78,6 +75,16 @@ This cmdlet has the following aliases,
 
 Validate that the credentials are valid in the tenant.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -137,7 +144,7 @@ HelpMessage: ''
 
 ### -ApplicationIdentifier
 
-
+.
 
 ```yaml
 Type: System.String
@@ -164,7 +171,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -235,7 +242,7 @@ HelpMessage: ''
 
 ### -Credentials
 
-
+.
 To construct, see NOTES section for CREDENTIALS properties and create a hash table.
 
 ```yaml
@@ -487,7 +494,7 @@ HelpMessage: ''
 
 ### -TemplateId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -514,7 +521,7 @@ HelpMessage: ''
 
 ### -UseSavedCredentials
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -595,7 +602,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplicationIdentifier <String>]: 
   [Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]: 
@@ -608,12 +615,13 @@ CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: .
   [Key <String>]: synchronizationSecret
   [Value <String>]: The value of the secret.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
+  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition
@@ -637,28 +645,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Test-MgApplicationSynchronizationJobCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationsynchronizationjobcredential)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationsynchronizationjobcredential)
+- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolder
 Locale: en-US
 Module Name: Microsoft.Graph.PersonalContacts
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserContactFolder
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserContactFolder
 ## SYNOPSIS
 
 Update the navigation property contactFolders in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,18 +76,10 @@ This cmdlet has the following aliases,
 
 Update the navigation property contactFolders in users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Contacts.ReadWrite,  |
-| Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
-| Application | Contacts.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.PersonalContacts
 
 $params = @{
@@ -100,11 +89,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserContactFolder -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserContactFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -696,7 +680,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphContactFolder>`: contactFolder
+BODYPARAMETER <IMicrosoftGraphContactFolder>: contactFolder
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -778,7 +762,9 @@ Read-only.
 Read-only.
       [Width <Int32?>]: The width of the photo.
 Read-only.
+    [PrimaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [Profession <String>]: The contact's profession.
+    [SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -787,6 +773,7 @@ Read-only.
       [Value <String>]: A property value.
     [SpouseName <String>]: The name of the contact's spouse/partner.
     [Surname <String>]: The contact's surname.
+    [TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [Title <String>]: The contact's title.
     [YomiCompanyName <String>]: The phonetic Japanese company name of the contact.
     [YomiGivenName <String>]: The phonetic Japanese given name (first name) of the contact.
@@ -884,7 +871,9 @@ Read-only.
 Read-only.
       [Width <Int32?>]: The width of the photo.
 Read-only.
+    [PrimaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [Profession <String>]: The contact's profession.
+    [SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -893,6 +882,7 @@ Read-only.
       [Value <String>]: A property value.
     [SpouseName <String>]: The name of the contact's spouse/partner.
     [Surname <String>]: The contact's surname.
+    [TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [Title <String>]: The contact's title.
     [YomiCompanyName <String>]: The phonetic Japanese company name of the contact.
     [YomiGivenName <String>]: The phonetic Japanese given name (first name) of the contact.
@@ -980,7 +970,9 @@ Read-only.
 Read-only.
     [Width <Int32?>]: The width of the photo.
 Read-only.
+  [PrimaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [Profession <String>]: The contact's profession.
+  [SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -989,12 +981,13 @@ Read-only.
     [Value <String>]: A property value.
   [SpouseName <String>]: The name of the contact's spouse/partner.
   [Surname <String>]: The contact's surname.
+  [TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [Title <String>]: The contact's title.
   [YomiCompanyName <String>]: The phonetic Japanese company name of the contact.
   [YomiGivenName <String>]: The phonetic Japanese given name (first name) of the contact.
   [YomiSurname <String>]: The phonetic Japanese surname (last name)  of the contact.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   [ContactFolderId <String>]: The unique identifier of contactFolder
   [ContactFolderId1 <String>]: The unique identifier of contactFolder
   [ContactId <String>]: The unique identifier of contact
@@ -1018,26 +1011,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgUserContactFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolder)

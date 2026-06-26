@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDevice
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDevice
 ## SYNOPSIS
 
 Create a new device.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,9 +64,8 @@ This cmdlet has the following aliases,
 Create a new device.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -89,10 +85,6 @@ $params = @{
 }
 
 New-MgBetaDevice -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaDevice Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1002,7 +994,7 @@ HelpMessage: ''
 
 The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
 
 ```yaml
@@ -1493,7 +1485,7 @@ Supports $filter (eq, not, ge, le).
   [Key <Byte[]>]: For internal use only.
   [Type <Int32?>]: For internal use only.
 
-BODYPARAMETER `<IMicrosoftGraphDevice>`: device
+BODYPARAMETER <IMicrosoftGraphDevice>: device
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1647,7 +1639,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
   [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
   [OnPremisesSyncEnabled <Boolean?>]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
@@ -1855,7 +1847,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
     [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
     [OnPremisesSyncEnabled <Boolean?>]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
@@ -1921,7 +1913,7 @@ An owner has full privileges over the device template and doesn't require other 
 There can be a maximum of 100 owners on a device template.
  Supports $expand.
 
-EXTENSIONATTRIBUTES `<IMicrosoftGraphOnPremisesExtensionAttributes>`: onPremisesExtensionAttributes
+EXTENSIONATTRIBUTES <IMicrosoftGraphOnPremisesExtensionAttributes>: onPremisesExtensionAttributes
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExtensionAttribute1 <String>]: First customizable extension attribute.
   [ExtensionAttribute10 <String>]: Tenth customizable extension attribute.
@@ -1992,27 +1984,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice)
+- [](https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-beta)

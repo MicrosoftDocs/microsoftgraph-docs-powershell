@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgApplicationPassword
 ---
@@ -15,9 +15,6 @@ title: Add-MgApplicationPassword
 
 Adds a strong password or secret to an application.
 You can also add passwords while creating the application.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationPassword?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 Adds a strong password or secret to an application.
 You can also add passwords while creating the application.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Add a password credential to an application with a six month expiry
 
-```powershell
+### EXAMPLE 1
 
 Connect-MgGraph -Scopes 'Application.ReadWrite.All'
 
@@ -103,17 +91,12 @@ DisplayName          : Created in PowerShell
 EndDateTime          : 26/11/2022 12:03:31 pm
 Hint                 : Q_e
 KeyId                : c82bb763-741b-4575-9d9d-df7e766f6999
-SecretText           : Q_e8Q~ZDWJD.bkgajbREp-VFFUayCuEk8b1hDcr9
+SecretText           : <secret here>
 StartDateTime        : 26/5/2022 1:03:31 pm
 AdditionalProperties : {[@odata.context,
                        https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
-```
 
-Add a password to an application that expires in six months from the current date.
-
-### Example 2: Add a password credential to an application with a start date
-
-```powershell
+### EXAMPLE 2
 
 Connect-MgGraph -Scopes 'Application.ReadWrite.All'
 
@@ -136,15 +119,10 @@ DisplayName          : Created in PowerShell
 EndDateTime          : 26/11/2022 1:00:00 pm
 Hint                 : TiA
 KeyId                : 082bf20f-63d6-4970-bb4e-55e504f50d8b
-SecretText           : TiA8Q~Zs7ej1cGtlW0qnmuFi~JlxXTZew_tU1bGA
+SecretText           : <secret here>
 StartDateTime        : 26/5/2022 2:00:00 pm
 AdditionalProperties : {[@odata.context,
                        https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
-```
-
-Add a password to an application that becomes valid at 12:00 am the next day and is valid for six months.
-
-Use `$secret.StartDateTime.ToLocalTime()` to convert the returned dates from UTC to the local timezone.
 
 ## PARAMETERS
 
@@ -205,7 +183,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -534,7 +512,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths141Ryo0ApplicationsApplicationIdMicrosoftGraphAddpasswordPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths141Ryo0ApplicationsApplicationIdMicrosoftGraphAddpasswordPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PasswordCredential <IMicrosoftGraphPasswordCredential>]: passwordCredential
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -555,12 +533,13 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
+  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition
@@ -581,7 +560,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [UniqueName <String>]: Alternate key of application
   [UserId <String>]: The unique identifier of user
 
-PASSWORDCREDENTIAL `<IMicrosoftGraphPasswordCredential>`: passwordCredential
+PASSWORDCREDENTIAL <IMicrosoftGraphPasswordCredential>: passwordCredential
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomKeyIdentifier <Byte[]>]: Do not use.
   [DisplayName <String>]: Friendly name for the password.
@@ -603,27 +582,5 @@ Optional.
 
 ## RELATED LINKS
 
-- [Add-MgApplicationPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword)
+- [](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-1.0)

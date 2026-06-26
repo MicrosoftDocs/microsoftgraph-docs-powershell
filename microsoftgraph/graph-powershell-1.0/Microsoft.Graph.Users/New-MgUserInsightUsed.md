@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserinsightused
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserInsightUsed
 ---
@@ -14,9 +14,6 @@ title: New-MgUserInsightUsed
 ## SYNOPSIS
 
 Create new navigation property to used for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserInsightUsed](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserInsightUsed?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to used for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -572,7 +579,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUsedInsight>`: usedInsight
+BODYPARAMETER <IMicrosoftGraphUsedInsight>: usedInsight
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -612,7 +619,7 @@ Not all Media Mime Types are supported.
 Can be used for filtering for a specific file based on a specific type.
 See the section Type property values for supported types.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -639,7 +646,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
-LASTUSED `<IMicrosoftGraphUsageDetails>`: usageDetails
+LASTUSED <IMicrosoftGraphUsageDetails>: usageDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastAccessedDateTime <DateTime?>]: The date and time the resource was last accessed by the user.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
@@ -650,18 +657,18 @@ The timestamp represents date and time information using ISO 8601 format and is 
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
-RESOURCE `<IMicrosoftGraphEntity>`: entity
+RESOURCE <IMicrosoftGraphEntity>: entity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-RESOURCEREFERENCE `<IMicrosoftGraphResourceReference>`: resourceReference
+RESOURCEREFERENCE <IMicrosoftGraphResourceReference>: resourceReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The item's unique identifier.
   [Type <String>]: A string value that can be used to classify the item, such as 'microsoft.graph.driveItem'
   [WebUrl <String>]: A URL leading to the referenced item.
 
-RESOURCEVISUALIZATION `<IMicrosoftGraphResourceVisualization>`: resourceVisualization
+RESOURCEVISUALIZATION <IMicrosoftGraphResourceVisualization>: resourceVisualization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContainerDisplayName <String>]: A string describing where the item is stored.
 For example, the name of a SharePoint site or the user name identifying the owner of the OneDrive storing the item.
@@ -681,27 +688,4 @@ See the section Type property values for supported types.
 
 ## RELATED LINKS
 
-- [New-MgUserInsightUsed](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserinsightused)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserinsightused)

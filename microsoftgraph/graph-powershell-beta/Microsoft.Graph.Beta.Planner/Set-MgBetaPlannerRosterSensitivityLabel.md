@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannerrostersensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaPlannerRosterSensitivityLabel
 ---
@@ -70,18 +70,9 @@ This cmdlet has the following aliases,
 
 Assign a sensitivity label to a plannerRoster object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -91,10 +82,6 @@ $params = @{
 }
 
 Set-MgBetaPlannerRosterSensitivityLabel -PlannerRosterId $plannerRosterId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgBetaPlannerRosterSensitivityLabel Cmdlet.
-
 
 ## PARAMETERS
 
@@ -154,7 +141,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -428,7 +415,7 @@ HelpMessage: ''
 
 ### -SensitivityLabelId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -509,45 +496,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ne9639PlannerRostersPlannerrosterIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ne9639PlannerRostersPlannerrosterIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
   [SensitivityLabelId <String>]: 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
   [PlannerRosterId <String>]: The unique identifier of plannerRoster
   [PlannerRosterMemberId <String>]: The unique identifier of plannerRosterMember
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [UserId <String>]: The unique identifier of user
 
 
 ## RELATED LINKS
 
-- [Set-MgBetaPlannerRosterSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannerrostersensitivitylabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannerrostersensitivitylabel)
+- [](https://learn.microsoft.com/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta)

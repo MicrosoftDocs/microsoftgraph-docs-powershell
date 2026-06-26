@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpost
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaForwardGroupThreadPost
 ---
@@ -14,10 +14,7 @@ title: Invoke-MgBetaForwardGroupThreadPost
 ## SYNOPSIS
 
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \ror, you can specify just the parent thread without the parent conversation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupThreadPost?view=graph-powershell-1.0)
+You can specify both the parent conversation and thread in the request, \r\nor, you can specify just the parent thread without the parent conversation.
 
 ## SYNTAX
 
@@ -74,20 +71,11 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \ror, you can specify just the parent thread without the parent conversation.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
+You can specify both the parent conversation and thread in the request, \r\nor, you can specify just the parent thread without the parent conversation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -104,10 +92,6 @@ $params = @{
 }
 
 Invoke-MgBetaForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaForwardGroupThreadPost Cmdlet.
-
 
 ## PARAMETERS
 
@@ -140,7 +124,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -189,7 +173,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -516,7 +500,7 @@ HelpMessage: ''
 
 ### -ToRecipients
 
-
+.
 To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -598,7 +582,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Vs05UxGroupsGroupIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Vs05UxGroupsGroupIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [ToRecipients <IMicrosoftGraphRecipient[]>]: 
@@ -607,7 +591,7 @@ BODYPARAMETER `<IPaths1Vs05UxGroupsGroupIdThreadsConversationthreadIdPostsPostId
       [Address <String>]: The email address of an entity instance.
       [Name <String>]: The display name of an entity instance.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -640,27 +624,5 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaForwardGroupThreadPost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpost)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpost)
+- [](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta)

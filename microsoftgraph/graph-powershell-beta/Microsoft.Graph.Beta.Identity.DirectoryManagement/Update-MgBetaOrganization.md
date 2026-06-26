@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOrganization
 ---
@@ -16,9 +16,6 @@ title: Update-MgBetaOrganization
 Update the properties of the currently authenticated organization.
 In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
 The ID is also known as the tenantId of the organization.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgOrganization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -112,18 +109,9 @@ Update the properties of the currently authenticated organization.
 In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
 The ID is also known as the tenantId of the organization.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, Organization.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, Organization.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -148,10 +136,6 @@ technicalNotificationMails = @(
 }
 
 Update-MgBetaOrganization -OrganizationId $organizationId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaOrganization Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1499,7 +1483,7 @@ The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
   [ServicePlanId <String>]: A GUID that identifies the service plan.
 For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
 
-BODYPARAMETER `<IMicrosoftGraphOrganization>`: organization
+BODYPARAMETER <IMicrosoftGraphOrganization>: organization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1899,7 +1883,7 @@ Not nullable.
     [Name <String>]: The domain name; for example, contoso.com.
     [Type <String>]: For example, Managed.
 
-BRANDING `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
+BRANDING <IMicrosoftGraphOrganizationalBranding>: organizationalBranding
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BackgroundColor <String>]: Color that appears in place of the background image in low-bandwidth connections.
 We recommend that you use the primary color of your banner logo or your organization color.
@@ -2174,7 +2158,7 @@ Read-only.
     [IssuerSki <String>]: The subject key identifier of the certificate, calculated from the certificate value.
 Read-only.
 
-CERTIFICATECONNECTORSETTING `<IMicrosoftGraphCertificateConnectorSetting>`: Certificate connector settings.
+CERTIFICATECONNECTORSETTING <IMicrosoftGraphCertificateConnectorSetting>: Certificate connector settings.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CertExpiryTime <DateTime?>]: Certificate expire time
   [ConnectorVersion <String>]: Version of certificate connector
@@ -2183,7 +2167,7 @@ CERTIFICATECONNECTORSETTING `<IMicrosoftGraphCertificateConnectorSetting>`: Cert
   [LastUploadVersion <Int64?>]: Version of last uploaded certificate connector
   [Status <Int32?>]: Certificate connector status
 
-DIRECTORYSIZEQUOTA `<IMicrosoftGraphDirectorySizeQuota>`: directorySizeQuota
+DIRECTORYSIZEQUOTA <IMicrosoftGraphDirectorySizeQuota>: directorySizeQuota
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Total <Int32?>]: Total amount of the directory quota.
   [Used <Int32?>]: Used amount of the directory quota.
@@ -2193,7 +2177,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -2220,6 +2204,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExtensionId <String>]: The unique identifier of extension
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
+  [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
+  [GovernancePolicyTemplateId <String>]: The unique identifier of governancePolicyTemplate
+  [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
+  [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
   [IdentityProviderBaseId <String>]: The unique identifier of identityProviderBase
   [ImpactedResourceId <String>]: The unique identifier of impactedResource
@@ -2239,10 +2227,15 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
+  [RecoveryJobId <String>]: The unique identifier of recoveryJob
+  [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
+  [RelatedTenantId <String>]: The unique identifier of relatedTenant
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
   [SharedEmailDomainInvitationId <String>]: The unique identifier of sharedEmailDomainInvitation
+  [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
@@ -2250,7 +2243,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
 
-PARTNERINFORMATION `<IMicrosoftGraphPartnerInformation>`: partnerInformation
+PARTNERINFORMATION <IMicrosoftGraphPartnerInformation>: partnerInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CommerceUrl <String>]: 
   [CompanyName <String>]: 
@@ -2261,7 +2254,7 @@ PARTNERINFORMATION `<IMicrosoftGraphPartnerInformation>`: partnerInformation
   [SupportTelephones <String[]>]: 
   [SupportUrl <String>]: 
 
-PRIVACYPROFILE `<IMicrosoftGraphPrivacyProfile>`: privacyProfile
+PRIVACYPROFILE <IMicrosoftGraphPrivacyProfile>: privacyProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContactEmail <String>]: A valid smtp email address for the privacy statement contact.
 Not required.
@@ -2277,7 +2270,7 @@ See a detailed description of each value.
   [ProvisioningStatus <String>]: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
   [Service <String>]: The name of the service; for example, 'AccessControlS2S'
 
-SETTINGS `<IMicrosoftGraphOrganizationSettings>`: organizationSettings
+SETTINGS <IMicrosoftGraphOrganizationSettings>: organizationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2316,27 +2309,5 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [Update-MgBetaOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization)
+- [](https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-beta)

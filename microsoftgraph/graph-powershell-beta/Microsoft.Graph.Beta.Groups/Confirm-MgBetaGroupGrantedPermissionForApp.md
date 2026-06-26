@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupgrantedpermissionforapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaGroupGrantedPermissionForApp
 ---
@@ -14,9 +14,6 @@ title: Confirm-MgBetaGroupGrantedPermissionForApp
 ## SYNOPSIS
 
 Invoke action checkGrantedPermissionsForApp
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupGrantedPermissionForApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action checkGrantedPermissionsForApp
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -336,7 +343,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -363,27 +370,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Confirm-MgBetaGroupGrantedPermissionForApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupgrantedpermissionforapp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupgrantedpermissionforapp)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplandetail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 02/20/2026
+ms.date: 06/26/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlannerPlanDetail
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPlannerPlanDetail
 ## SYNOPSIS
 
 Update the properties of plannerplandetails object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlanDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 
 Update the properties of plannerplandetails object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -99,12 +87,7 @@ $params = @{
 	}
 }
 
-Update-MgBetaPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
-
-
-```
-This example shows how to use the Update-MgBetaPlannerPlanDetail Cmdlet.
-
+Update-MgBetaPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
 
 ## PARAMETERS
 
@@ -596,7 +579,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
+BODYPARAMETER <IMicrosoftGraphPlannerPlanDetails>: plannerPlanDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -632,7 +615,7 @@ Read-only.
   [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-CATEGORYDESCRIPTIONS `<IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCategoryDescriptions
+CATEGORYDESCRIPTIONS <IMicrosoftGraphPlannerCategoryDescriptions>: plannerCategoryDescriptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Category1 <String>]: The label associated with Category 1
   [Category10 <String>]: The label associated with Category 10
@@ -660,40 +643,19 @@ CATEGORYDESCRIPTIONS `<IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCate
   [Category8 <String>]: The label associated with Category 8
   [Category9 <String>]: The label associated with Category 9
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
   [PlannerRosterId <String>]: The unique identifier of plannerRoster
   [PlannerRosterMemberId <String>]: The unique identifier of plannerRosterMember
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [UserId <String>]: The unique identifier of user
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaPlannerPlanDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplandetail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplandetails-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplandetail)
+- [](https://learn.microsoft.com/graph/api/plannerplandetails-update?view=graph-rest-beta)
