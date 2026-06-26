@@ -2025,8 +2025,8 @@ A GUID-based value that serves as the unique identifier for a series.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask)
-- [](https://learn.microsoft.com/graph/api/plannertask-update?view=graph-rest-beta)
+- [Update-MgBetaPlannerTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertask-update?view=graph-rest-beta)
 
 
 

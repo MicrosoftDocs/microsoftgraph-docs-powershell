@@ -404,7 +404,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepagelastmodifiedbyuserserviceprovisioningerrorcount)
+- [Get-MgSitePageLastModifiedByUserServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepagelastmodifiedbyuserserviceprovisioningerrorcount)
 
 
 

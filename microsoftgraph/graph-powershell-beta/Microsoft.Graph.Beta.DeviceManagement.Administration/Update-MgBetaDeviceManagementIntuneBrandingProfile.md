@@ -1569,7 +1569,7 @@ THEMECOLORLOGO `<IMicrosoftGraphMimeContent>`: Contains properties for a generic
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementintunebrandingprofile)
+- [Update-MgBetaDeviceManagementIntuneBrandingProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementintunebrandingprofile)
 
 
 

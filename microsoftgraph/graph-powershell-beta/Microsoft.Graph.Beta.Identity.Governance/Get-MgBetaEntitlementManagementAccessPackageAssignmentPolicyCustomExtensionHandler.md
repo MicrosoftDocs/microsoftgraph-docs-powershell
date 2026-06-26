@@ -662,7 +662,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentpolicycustomextensionhandler)
+- [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentpolicycustomextensionhandler)
 
 
 

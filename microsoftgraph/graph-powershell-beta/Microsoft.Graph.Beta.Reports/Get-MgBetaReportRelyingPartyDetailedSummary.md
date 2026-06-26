@@ -543,8 +543,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportrelyingpartydetailedsummary)
-- [](https://learn.microsoft.com/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-beta)
+- [Get-MgBetaReportRelyingPartyDetailedSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportrelyingpartydetailedsummary)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-beta)
 
 
 

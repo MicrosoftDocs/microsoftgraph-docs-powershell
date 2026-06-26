@@ -418,7 +418,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mglogoutdevicemanagementmanageddevicesharedappledeviceactiveuser)
+- [Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mglogoutdevicemanagementmanageddevicesharedappledeviceactiveuser)
 
 
 

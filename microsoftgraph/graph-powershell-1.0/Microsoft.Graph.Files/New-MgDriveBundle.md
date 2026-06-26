@@ -34383,7 +34383,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivebundle)
+- [New-MgDriveBundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivebundle)
 
 
 

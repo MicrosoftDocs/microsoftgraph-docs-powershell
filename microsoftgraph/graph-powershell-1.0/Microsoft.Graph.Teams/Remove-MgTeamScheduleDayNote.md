@@ -449,7 +449,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduledaynote)
+- [Remove-MgTeamScheduleDayNote](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduledaynote)
 
 
 

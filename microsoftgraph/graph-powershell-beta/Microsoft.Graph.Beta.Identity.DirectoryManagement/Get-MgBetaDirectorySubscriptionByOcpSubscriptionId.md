@@ -403,8 +403,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbyocpsubscriptionid)
-- [](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-beta)
+- [Get-MgBetaDirectorySubscriptionByOcpSubscriptionId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbyocpsubscriptionid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-beta)
 
 
 

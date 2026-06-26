@@ -623,7 +623,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationlandingpagedetail)
+- [New-MgSecurityAttackSimulationLandingPageDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationlandingpagedetail)
 
 
 

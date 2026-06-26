@@ -648,7 +648,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal)
+- [Update-MgExternal](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal)
 
 
 

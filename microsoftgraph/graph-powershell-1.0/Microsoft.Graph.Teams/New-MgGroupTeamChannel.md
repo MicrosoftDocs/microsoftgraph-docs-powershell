@@ -17165,7 +17165,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannel)
+- [New-MgGroupTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannel)
 
 
 

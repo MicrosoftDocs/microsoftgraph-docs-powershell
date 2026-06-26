@@ -538,7 +538,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgchatmessagereplyhostedcontent)
+- [Set-MgChatMessageReplyHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgchatmessagereplyhostedcontent)
 
 
 

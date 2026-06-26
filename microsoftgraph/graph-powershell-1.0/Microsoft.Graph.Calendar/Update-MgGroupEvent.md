@@ -3127,7 +3127,7 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupevent)
+- [Update-MgGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupevent)
 
 
 

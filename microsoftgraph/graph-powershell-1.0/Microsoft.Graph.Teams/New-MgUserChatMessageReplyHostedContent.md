@@ -637,7 +637,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmessagereplyhostedcontent)
+- [New-MgUserChatMessageReplyHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmessagereplyhostedcontent)
 
 
 

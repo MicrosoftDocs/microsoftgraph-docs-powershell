@@ -495,8 +495,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdelta)
-- [](https://learn.microsoft.com/graph/api/group-delta?view=graph-rest-beta)
+- [Get-MgBetaGroupDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delta?view=graph-rest-beta)
 
 
 
