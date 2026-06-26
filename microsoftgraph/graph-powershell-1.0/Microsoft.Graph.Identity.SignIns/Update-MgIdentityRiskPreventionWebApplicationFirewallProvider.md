@@ -73,19 +73,6 @@ This cmdlet has the following aliases,
 
 Update the properties of a webApplicationFirewallProvider object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.cloudFlareWebApplicationFirewallProvider"
-	displayName = "String"
-}
-
-Update-MgIdentityRiskPreventionWebApplicationFirewallProvider -WebApplicationFirewallProviderId $webApplicationFirewallProviderId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -578,6 +565,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskpreventionwebapplicationfirewallprovider)
 - [](https://learn.microsoft.com/graph/api/webapplicationfirewallprovider-update?view=graph-rest-1.0)
+
 
 
 

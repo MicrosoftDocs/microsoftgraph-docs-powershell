@@ -87,26 +87,31 @@ You can use this method with the following child object type: qualityUpdatePolic
 | Application | WindowsUpdates.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windowsUpdates.qualityUpdatePolicy"
-	displayName = "Patch Tuesday Test"
-	description = "Quality update policy to test upcoming Patch Tuesday updates"
-	approvalRules = @(
-		@{
-			"@odata.type" = "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
-			deferralInDays = 0
-			classification = "nonSecurity"
-			cadence = "outOfBand"
+	"@odata.type" = "#microsoft.graph.windowsUpdates.updatePolicy"
+	deploymentSettings = @{
+		"@odata.type" = "microsoft.graph.windowsUpdates.deploymentSettings"
+		schedule = @{
+			gradualRollout = @{
+				"@odata.type" = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings"
+				durationBetweenOffers = "P1D"
+				devicePerOffer = 
+			}
 		}
-	)
+	}
 }
 
-Update-MgBetaWindowsUpdatesPolicy -PolicyId $policyId -BodyParameter $params
+Update-MgBetaWindowsUpdatesPolicy -UpdatePolicyId $updatePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaWindowsUpdatesPolicy Cmdlet.
+
 
 ## PARAMETERS
 

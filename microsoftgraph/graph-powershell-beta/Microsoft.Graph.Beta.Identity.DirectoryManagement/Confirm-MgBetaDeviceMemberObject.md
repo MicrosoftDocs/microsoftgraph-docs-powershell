@@ -79,16 +79,6 @@ Invoke action checkMemberObjects
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, User.ReadWrite.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -549,6 +539,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadevicememberobject)
+
 
 
 

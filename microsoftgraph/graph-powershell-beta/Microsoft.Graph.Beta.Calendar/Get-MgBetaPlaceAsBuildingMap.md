@@ -47,14 +47,6 @@ This cmdlet has the following aliases,
 
 Get the map of a building in IMDF format.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Get-MgBetaPlaceAsBuildingMap -PlaceId $placeId
-
 ## PARAMETERS
 
 ### -Break
@@ -370,6 +362,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmap)
 - [](https://learn.microsoft.com/graph/api/buildingmap-get?view=graph-rest-beta)
+
 
 
 

@@ -60,20 +60,6 @@ This cmdlet has the following aliases,
 
 Details of practiced Reading Coach passages.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationReportReadingCoachPassage
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationReportReadingCoachPassage -Filter "practicedAtDateTime gt 2025-06-22T00:00:00Z and practicedAtDateTime lt 2025-06-23T00:00:00Z"
-
 ## PARAMETERS
 
 ### -All
@@ -561,6 +547,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingcoachpassage)
 - [](https://learn.microsoft.com/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-1.0)
+
+
 
 
 

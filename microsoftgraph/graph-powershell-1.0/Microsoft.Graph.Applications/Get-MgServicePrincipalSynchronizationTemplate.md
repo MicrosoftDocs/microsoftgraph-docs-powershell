@@ -69,14 +69,6 @@ Preconfigured synchronization settings for a particular application.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Applications
-
-Get-MgServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
-
 ## PARAMETERS
 
 ### -All
@@ -596,6 +588,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationtemplate)
 - [](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-1.0)
+
+
 
 
 

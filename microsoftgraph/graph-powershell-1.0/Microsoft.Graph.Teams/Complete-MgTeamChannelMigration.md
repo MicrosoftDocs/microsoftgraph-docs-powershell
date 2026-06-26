@@ -58,18 +58,17 @@ Consider the following points when completing migration for new and existing cha
 This API supportes the following channel types.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Teams
-
-Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
-
-### EXAMPLE 2
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Complete-MgTeamChannelMigration Cmdlet.
+
 
 ## PARAMETERS
 

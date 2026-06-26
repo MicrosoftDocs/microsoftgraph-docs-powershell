@@ -51,14 +51,6 @@ This cmdlet has the following aliases,
 
 Delete a webApplicationFirewallProvider object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -WebApplicationFirewallProviderId $webApplicationFirewallProviderId
-
 ## PARAMETERS
 
 ### -Break
@@ -492,6 +484,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityriskpreventionwebapplicationfirewallprovider)
 - [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-delete-webapplicationfirewallproviders?view=graph-rest-beta)
+
 
 
 

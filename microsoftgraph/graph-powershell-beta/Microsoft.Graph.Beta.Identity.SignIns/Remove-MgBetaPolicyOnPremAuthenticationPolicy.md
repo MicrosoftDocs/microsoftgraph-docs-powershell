@@ -46,14 +46,6 @@ This cmdlet has the following aliases,
 
 Delete an onPremAuthenticationPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Remove-MgBetaPolicyOnPremAuthenticationPolicy -OnPremAuthenticationPolicyId $onPremAuthenticationPolicyId
-
 ## PARAMETERS
 
 ### -Break
@@ -487,6 +479,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyonpremauthenticationpolicy)
 - [](https://learn.microsoft.com/graph/api/onpremauthenticationpolicy-delete?view=graph-rest-beta)
+
 
 
 
