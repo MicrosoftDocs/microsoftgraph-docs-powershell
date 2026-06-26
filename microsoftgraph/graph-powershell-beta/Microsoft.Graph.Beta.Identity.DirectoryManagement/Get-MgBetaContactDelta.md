@@ -16,6 +16,9 @@ title: Get-MgBetaContactDelta
 Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)

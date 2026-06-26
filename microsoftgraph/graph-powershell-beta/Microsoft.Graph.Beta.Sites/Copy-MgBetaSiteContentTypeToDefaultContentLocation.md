@@ -15,6 +15,9 @@ title: Copy-MgBetaSiteContentTypeToDefaultContentLocation
 
 Invoke action copyToDefaultContentLocation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

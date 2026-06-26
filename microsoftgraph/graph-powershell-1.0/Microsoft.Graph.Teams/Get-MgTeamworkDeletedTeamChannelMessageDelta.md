@@ -22,6 +22,9 @@ An @odata.deltaLink returned in a response signifies that the current round of c
 You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after you acquire @odata.deltaLink).
 For more information, see the delta query documentation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannelMessageDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelMessageDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

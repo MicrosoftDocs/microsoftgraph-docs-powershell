@@ -15,6 +15,9 @@ title: New-MgBetaUserSettingWorkHourAndLocationRecurrence
 
 Create new navigation property to recurrences for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserSettingWorkHourAndLocationRecurrence](/powershell/module/Microsoft.Graph.Users/New-MgUserSettingWorkHourAndLocationRecurrence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

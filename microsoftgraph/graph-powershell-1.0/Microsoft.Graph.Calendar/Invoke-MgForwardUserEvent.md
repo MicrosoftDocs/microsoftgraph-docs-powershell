@@ -17,6 +17,9 @@ This action allows the organizer or attendee of a meeting event to forward the\r
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action\ralso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's\rcopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaForwardUserEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)

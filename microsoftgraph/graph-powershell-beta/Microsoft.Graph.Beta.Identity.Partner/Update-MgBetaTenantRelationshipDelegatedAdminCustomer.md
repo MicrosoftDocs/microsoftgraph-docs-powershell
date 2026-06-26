@@ -15,6 +15,9 @@ title: Update-MgBetaTenantRelationshipDelegatedAdminCustomer
 
 Update the navigation property delegatedAdminCustomers in tenantRelationships
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
