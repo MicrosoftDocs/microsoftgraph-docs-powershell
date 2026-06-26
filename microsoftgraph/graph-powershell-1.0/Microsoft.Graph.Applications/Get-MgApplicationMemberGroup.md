@@ -138,7 +138,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -385,7 +385,7 @@ HelpMessage: ''
 
 ### -SecurityEnabledOnly
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

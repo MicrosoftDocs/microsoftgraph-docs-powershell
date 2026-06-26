@@ -200,7 +200,7 @@ HelpMessage: ''
 
 ### -KeySets
 
-.
+
 To construct, see NOTES section for KEYSETS properties and create a hash table.
 
 ```yaml
@@ -222,7 +222,7 @@ HelpMessage: ''
 
 ### -Policies
 
-.
+
 To construct, see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml

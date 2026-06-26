@@ -90,7 +90,7 @@ HelpMessage: ''
 
 ### -BillingPolicyId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -330,7 +330,7 @@ HelpMessage: ''
 
 ### -DriveProtectionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for DRIVEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml

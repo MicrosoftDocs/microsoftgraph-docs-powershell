@@ -166,7 +166,7 @@ HelpMessage: ''
 
 ### -CompleteStepsCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -193,7 +193,7 @@ HelpMessage: ''
 
 ### -CompleteUsersCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -242,7 +242,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -269,7 +269,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -296,7 +296,7 @@ HelpMessage: ''
 
 ### -DismissedStepsCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -323,7 +323,7 @@ HelpMessage: ''
 
 ### -ExcludedUsersCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -350,7 +350,7 @@ HelpMessage: ''
 
 ### -ExcludedUsersDistinctCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -468,7 +468,7 @@ HelpMessage: ''
 
 ### -IncompleteStepsCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -495,7 +495,7 @@ HelpMessage: ''
 
 ### -IncompleteUsersCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -522,7 +522,7 @@ HelpMessage: ''
 
 ### -IneligibleStepsCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -577,7 +577,7 @@ HelpMessage: ''
 
 ### -IsComplete
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -604,7 +604,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -631,7 +631,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -658,7 +658,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateCollectionDisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -685,7 +685,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateCollectionId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -802,7 +802,7 @@ HelpMessage: ''
 
 ### -RegressedStepsCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -829,7 +829,7 @@ HelpMessage: ''
 
 ### -RegressedUsersCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -878,7 +878,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -905,7 +905,7 @@ HelpMessage: ''
 
 ### -UnlicensedUsersCount
 
-.
+
 
 ```yaml
 Type: System.Int32

@@ -632,7 +632,7 @@ HelpMessage: ''
 
 ### -HomeRealmDiscoveryPolicies
 
-.
+
 To construct, see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
 
 ```yaml
@@ -1454,7 +1454,7 @@ HelpMessage: ''
 
 ### -TokenIssuancePolicies
 
-.
+
 To construct, see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
 
 ```yaml

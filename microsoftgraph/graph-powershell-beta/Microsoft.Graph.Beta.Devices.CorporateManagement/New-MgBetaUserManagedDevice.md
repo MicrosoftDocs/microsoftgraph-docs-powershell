@@ -289,7 +289,7 @@ HelpMessage: ''
 
 ### -CloudPcRemoteActionResults
 
-.
+
 To construct, see NOTES section for CLOUDPCREMOTEACTIONRESULTS properties and create a hash table.
 
 ```yaml

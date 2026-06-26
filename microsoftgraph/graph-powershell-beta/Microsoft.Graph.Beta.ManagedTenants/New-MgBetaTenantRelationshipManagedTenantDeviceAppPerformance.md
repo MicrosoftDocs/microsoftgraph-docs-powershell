@@ -77,7 +77,7 @@ HelpMessage: ''
 
 ### -AppFriendlyName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ HelpMessage: ''
 
 ### -AppName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ HelpMessage: ''
 
 ### -AppPublisher
 
-.
+
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ HelpMessage: ''
 
 ### -AppVersion
 
-.
+
 
 ```yaml
 Type: System.String
@@ -226,7 +226,7 @@ HelpMessage: ''
 
 ### -DeviceId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -247,7 +247,7 @@ HelpMessage: ''
 
 ### -DeviceManufacturer
 
-.
+
 
 ```yaml
 Type: System.String
@@ -268,7 +268,7 @@ HelpMessage: ''
 
 ### -DeviceModel
 
-.
+
 
 ```yaml
 Type: System.String
@@ -289,7 +289,7 @@ HelpMessage: ''
 
 ### -DeviceName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -331,7 +331,7 @@ HelpMessage: ''
 
 ### -HealthStatus
 
-.
+
 
 ```yaml
 Type: System.String
@@ -416,7 +416,7 @@ HelpMessage: ''
 
 ### -IsLatestUsedVersion
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -437,7 +437,7 @@ HelpMessage: ''
 
 ### -IsMostUsedVersion
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -458,7 +458,7 @@ HelpMessage: ''
 
 ### -LastUpdatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -564,7 +564,7 @@ HelpMessage: ''
 
 ### -TenantDisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -585,7 +585,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -606,7 +606,7 @@ HelpMessage: ''
 
 ### -TotalAppCrashCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -627,7 +627,7 @@ HelpMessage: ''
 
 ### -TotalAppFreezeCount
 
-.
+
 
 ```yaml
 Type: System.Int32
