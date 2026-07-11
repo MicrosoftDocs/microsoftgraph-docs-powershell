@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetaidentityconditionalaccessdeleteditemnamedlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation
 ---
@@ -15,6 +15,9 @@ title: Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation
 
 Restore a deleted countryNamedLocation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgIdentityConditionalAccessDeletedItemNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Restore-MgIdentityConditionalAccessDeletedItemNamedLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -24,7 +27,6 @@ Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation -NamedLocationId
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
@@ -34,7 +36,7 @@ Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation
  -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -45,6 +47,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Restore a deleted countryNamedLocation object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation -NamedLocationId $namedLocationId
+
+```
+This example shows how to use the Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -384,6 +399,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -436,7 +452,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetaidentityconditionalaccessdeleteditemnamedlocation)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/countrynamedlocation-restore?view=graph-rest-beta)
-
 
 
 

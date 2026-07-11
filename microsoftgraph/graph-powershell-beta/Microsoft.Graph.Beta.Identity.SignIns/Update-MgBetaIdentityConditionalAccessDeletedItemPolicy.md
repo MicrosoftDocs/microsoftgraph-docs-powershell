@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessdeleteditempolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ## SYNOPSIS
 
 Update the navigation property policies in identity
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityConditionalAccessDeletedItemPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessDeletedItemPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Update-MgBetaIdentityConditionalAccessDeletedItemPolicy -ConditionalAccessPolicy
  [-ModifiedDateTime <datetime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]
  [-State <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +41,7 @@ Update-MgBetaIdentityConditionalAccessDeletedItemPolicy -ConditionalAccessPolicy
  -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,7 +55,7 @@ Update-MgBetaIdentityConditionalAccessDeletedItemPolicy -InputObject <IIdentityS
  [-ModifiedDateTime <datetime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]
  [-State <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +65,7 @@ Update-MgBetaIdentityConditionalAccessDeletedItemPolicy -InputObject <IIdentityS
  -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -827,9 +830,10 @@ Supports $filter (eq, ne, not , and in).
       [PolicyType <String>]: authenticationStrengthPolicyType
       [RequirementsSatisfied <String>]: authenticationStrengthRequirements
     [BuiltInControls <String[]>]: List of values of built-in controls required by the policy.
-Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
+Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue, riskRemediation.
+Use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: riskRemediation.
     [CustomAuthenticationFactors <String[]>]: List of custom controls IDs required by the policy.
-To learn more about custom control, see Custom controls (preview).
+For more information, see Custom controls.
     [Operator <String>]: Defines the relationship of the grant controls.
 Possible values: AND, OR.
     [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.
@@ -980,9 +984,10 @@ Supports $filter (eq, ne, not , and in).
     [PolicyType <String>]: authenticationStrengthPolicyType
     [RequirementsSatisfied <String>]: authenticationStrengthRequirements
   [BuiltInControls <String[]>]: List of values of built-in controls required by the policy.
-Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
+Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue, riskRemediation.
+Use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: riskRemediation.
   [CustomAuthenticationFactors <String[]>]: List of custom controls IDs required by the policy.
-To learn more about custom control, see Custom controls (preview).
+For more information, see Custom controls.
   [Operator <String>]: Defines the relationship of the grant controls.
 Possible values: AND, OR.
   [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.
@@ -1037,6 +1042,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy

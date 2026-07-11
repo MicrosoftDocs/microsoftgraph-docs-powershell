@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaApplicationPassword
 ---
@@ -28,7 +28,7 @@ Add-MgBetaApplicationPassword -ApplicationId <string> [-ResponseHeadersVariable 
  [-AdditionalProperties <hashtable>] [-PasswordCredential <IMicrosoftGraphPasswordCredential>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Add
@@ -39,7 +39,6 @@ Add-MgBetaApplicationPassword -ApplicationId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
@@ -50,7 +49,6 @@ Add-MgBetaApplicationPassword -InputObject <IApplicationsIdentity>
  [-PasswordCredential <IMicrosoftGraphPasswordCredential>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AddViaIdentity
@@ -61,7 +59,6 @@ Add-MgBetaApplicationPassword -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -80,7 +77,7 @@ You can also add passwords while creating the application.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Add a password credential to an application with a six month expiry
@@ -104,7 +101,7 @@ DisplayName          : Created in PowerShell
 EndDateTime          : 26/11/2022 12:03:31 pm
 Hint                 : Q_e
 KeyId                : c82bb763-741b-4575-9d9d-df7e766f6999
-SecretText           : Q_e8Q~ZDWJD.bkgajbREp-VFFUayCuEk8b1hDcr9
+SecretText           : <secret here>
 StartDateTime        : 26/5/2022 1:03:31 pm
 AdditionalProperties : {[@odata.context,
                        https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
@@ -137,7 +134,7 @@ DisplayName          : Created in PowerShell
 EndDateTime          : 26/11/2022 1:00:00 pm
 Hint                 : TiA
 KeyId                : 082bf20f-63d6-4970-bb4e-55e504f50d8b
-SecretText           : TiA8Q~Zs7ej1cGtlW0qnmuFi~JlxXTZew_tU1bGA
+SecretText           : <secret here>
 StartDateTime        : 26/5/2022 2:00:00 pm
 AdditionalProperties : {[@odata.context,
                        https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}

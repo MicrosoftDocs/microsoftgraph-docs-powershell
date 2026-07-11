@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelenabledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupTeamChannelEnabledApp
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaGroupTeamChannelEnabledApp
 ## SYNOPSIS
 
 A collection of enabled apps in the channel.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamChannelEnabledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelEnabledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,7 +29,6 @@ Get-MgBetaGroupTeamChannelEnabledApp -ChannelId <string> -GroupId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -36,7 +38,7 @@ Get-MgBetaGroupTeamChannelEnabledApp -ChannelId <string> -GroupId <string> -Team
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -45,7 +47,7 @@ Get-MgBetaGroupTeamChannelEnabledApp -ChannelId <string> -GroupId <string> -Team
 Get-MgBetaGroupTeamChannelEnabledApp -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
