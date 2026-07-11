@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/disconnect-graph
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Disconnect-MgGraph
 ---
@@ -20,7 +20,7 @@ Once you're signed in, you'll remain signed in until you invoke Disconnect-MgGra
 ### __AllParameterSets
 
 ```
-Disconnect-MgGraph [<CommonParameters>]
+Disconnect-MgGraph
 ```
 
 ## ALIASES

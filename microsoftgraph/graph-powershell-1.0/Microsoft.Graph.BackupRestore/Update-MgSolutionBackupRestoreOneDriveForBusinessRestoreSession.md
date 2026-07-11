@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreonedriveforbusinessrestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession
 ---
@@ -29,12 +29,14 @@ Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact[]>]
  [-DriveRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphDriveRestoreArtifactsBulkAdditionRequest[]>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <datetime>] [-RestoreJobType <string>]
+ [-Error <IMicrosoftGraphPublicError>]
+ [-GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>] [-Id <string>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
+ [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -46,7 +48,6 @@ Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -58,12 +59,14 @@ Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact[]>]
  [-DriveRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphDriveRestoreArtifactsBulkAdditionRequest[]>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <datetime>] [-RestoreJobType <string>]
+ [-Error <IMicrosoftGraphPublicError>]
+ [-GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>] [-Id <string>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
+ [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -75,7 +78,6 @@ Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -332,6 +334,34 @@ To construct, see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublicError
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -GranularDriveRestoreArtifacts
+
+A collection of browse session ID and item key details that can be used to restore OneDrive for work or school files and folders.
+To construct, see NOTES section for GRANULARDRIVERESTOREARTIFACTS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGranularDriveRestoreArtifact[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -875,6 +905,20 @@ Future value; don't use.
 Read-only.
     [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
     [Drives <String[]>]: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
+  [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: A collection of browse session ID and item key details that can be used to restore OneDrive for work or school files and folders.
+    [BrowseSessionId <String>]: The unique identifier of the browseSession
+    [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+    [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+    [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+    [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+    [RestoredItemWebUrl <String>]: The web url of the restored artifact.
+    [StartDateTime <DateTime?>]: The start time of the restoration.
+    [Status <String>]: artifactRestoreStatus
+    [WebUrl <String>]: The original web url of the artifact being restored.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1008,7 +1052,23 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
+GRANULARDRIVERESTOREARTIFACTS <IMicrosoftGraphGranularDriveRestoreArtifact[]>: A collection of browse session ID and item key details that can be used to restore OneDrive for work or school files and folders.
+  [BrowseSessionId <String>]: The unique identifier of the browseSession
+  [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+  [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+  [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+  [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+  [RestoredItemWebUrl <String>]: The web url of the restored artifact.
+  [StartDateTime <DateTime?>]: The start time of the restoration.
+  [Status <String>]: artifactRestoreStatus
+  [WebUrl <String>]: The original web url of the artifact being restored.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
+
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+  [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -1016,12 +1076,16 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [DriveRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   [ExchangeProtectionPolicyId <String>]: The unique identifier of exchangeProtectionPolicy
   [ExchangeRestoreSessionId <String>]: The unique identifier of exchangeRestoreSession
+  [GranularDriveRestoreArtifactId <String>]: The unique identifier of granularDriveRestoreArtifact
   [GranularMailboxRestoreArtifactId <String>]: The unique identifier of granularMailboxRestoreArtifact
+  [GranularSiteRestoreArtifactId <String>]: The unique identifier of granularSiteRestoreArtifact
   [MailboxProtectionRuleId <String>]: The unique identifier of mailboxProtectionRule
   [MailboxProtectionUnitId <String>]: The unique identifier of mailboxProtectionUnit
   [MailboxProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
   [MailboxRestoreArtifactId <String>]: The unique identifier of mailboxRestoreArtifact
   [MailboxRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
+  [NextFetchToken <String>]: Usage: nextFetchToken='{nextFetchToken}'
+  [OneDriveForBusinessBrowseSessionId <String>]: The unique identifier of oneDriveForBusinessBrowseSession
   [OneDriveForBusinessProtectionPolicyId <String>]: The unique identifier of oneDriveForBusinessProtectionPolicy
   [OneDriveForBusinessRestoreSessionId <String>]: The unique identifier of oneDriveForBusinessRestoreSession
   [ProtectionPolicyBaseId <String>]: The unique identifier of protectionPolicyBase
@@ -1029,6 +1093,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [RestorePointId <String>]: The unique identifier of restorePoint
   [RestoreSessionBaseId <String>]: The unique identifier of restoreSessionBase
   [ServiceAppId <String>]: The unique identifier of serviceApp
+  [SharePointBrowseSessionId <String>]: The unique identifier of sharePointBrowseSession
   [SharePointProtectionPolicyId <String>]: The unique identifier of sharePointProtectionPolicy
   [SharePointRestoreSessionId <String>]: The unique identifier of sharePointRestoreSession
   [SiteProtectionRuleId <String>]: The unique identifier of siteProtectionRule

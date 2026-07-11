@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplacecheck
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPlaceCheck
 ---
@@ -29,7 +29,6 @@ New-MgPlaceCheck -PlaceId <string> [-ResponseHeadersVariable <string>]
  [-CreatedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +38,6 @@ New-MgPlaceCheck -PlaceId <string> -BodyParameter <IMicrosoftGraphCheckInClaim>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -50,7 +48,6 @@ New-MgPlaceCheck -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <str
  [-CreatedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -60,7 +57,6 @@ New-MgPlaceCheck -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGrap
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -72,6 +68,25 @@ This cmdlet has the following aliases,
 
 Create a new checkInClaim object to record the check-in status for a specific place, such as a desk or a room, associated with a specific calendar reservation.
 This check-in confirms that the reserved space is in use and prevents automatic release if auto-release policies are configured for that place.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.checkInClaim"
+	calendarEventId = "040000008200E00074C5B7101A82E00800000000D02AC02D26EFDB010000000000000000100000005A18ADA04F0A24489AE13ED3CC367978"
+	checkInMethod = "verified"
+}
+
+New-MgPlaceCheck -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the New-MgPlaceCheck Cmdlet.
+
 
 ## PARAMETERS
 
@@ -550,7 +565,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [New-MgPlaceCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplacecheck)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/place-post-checkins?view=graph-rest-1.0)
-
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/remove-mgenvironment
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgEnvironment
 ---
@@ -20,7 +20,7 @@ Removes Microsoft Graph environment to the settings file
 ### __AllParameterSets
 
 ```
-Remove-MgEnvironment [-Name] <string> [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgEnvironment [-Name] <string> [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

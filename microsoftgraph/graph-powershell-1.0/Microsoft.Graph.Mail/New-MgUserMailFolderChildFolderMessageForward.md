@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessageforward
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserMailFolderChildFolderMessageForward
 ---
@@ -13,13 +13,7 @@ title: New-MgUserMailFolderChildFolderMessageForward
 
 ## SYNOPSIS
 
-Create a draft to forward an existing message, in either JSON or MIME format.
-When using JSON format, you can:\r- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\r- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.\r- Update the draft later to add content to the body or change other message properties.
-When using MIME format:\r- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r- Add any attachments and S/MIME properties to the MIME content.
-Send the draft message in a subsequent operation.
-Alternatively, forward a message in a single operation.
+Invoke action createForward
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageForward](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessageForward?view=graph-powershell-beta)
@@ -35,7 +29,6 @@ New-MgUserMailFolderChildFolderMessageForward -MailFolderId <string> -MailFolder
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -47,7 +40,6 @@ New-MgUserMailFolderChildFolderMessageForward -MailFolderId <string> -MailFolder
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -58,7 +50,7 @@ New-MgUserMailFolderChildFolderMessageForward -InputObject <IMailIdentity>
  [-Message <IMicrosoftGraphMessage>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -69,7 +61,6 @@ New-MgUserMailFolderChildFolderMessageForward -InputObject <IMailIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -79,13 +70,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a draft to forward an existing message, in either JSON or MIME format.
-When using JSON format, you can:\r- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\r- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.\r- Update the draft later to add content to the body or change other message properties.
-When using MIME format:\r- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r- Add any attachments and S/MIME properties to the MIME content.
-Send the draft message in a subsequent operation.
-Alternatively, forward a message in a single operation.
+Invoke action createForward
 
 ## PARAMETERS
 
@@ -672,7 +657,7 @@ To verify the existence of inline attachments, parse the body property to look f
     [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
       [Name <String>]: Represents the key in a key-value pair.
       [Value <String>]: The value in a key-value pair.
@@ -780,7 +765,7 @@ To verify the existence of inline attachments, parse the body property to look f
   [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
     [Name <String>]: Represents the key in a key-value pair.
     [Value <String>]: The value in a key-value pair.
@@ -828,7 +813,6 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 ## RELATED LINKS
 
 - [New-MgUserMailFolderChildFolderMessageForward](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessageforward)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-1.0)
 
 
 

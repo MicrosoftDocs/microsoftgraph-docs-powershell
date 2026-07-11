@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityAlertV2
 ---
@@ -25,8 +25,8 @@ Update the properties of an alert object in an organization based on the specifi
 ```
 Update-MgSecurityAlertV2 -AlertId <string> [-ResponseHeadersVariable <string>]
  [-ActorDisplayName <string>] [-AdditionalData <hashtable>] [-AdditionalProperties <hashtable>]
- [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Category <string>]
- [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
+ [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Categories <string[]>]
+ [-Category <string>] [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
  [-CreatedDateTime <datetime>] [-CustomDetails <hashtable>] [-Description <string>]
  [-DetectionSource <string>] [-DetectorId <string>] [-Determination <string>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <datetime>]
@@ -38,7 +38,6 @@ Update-MgSecurityAlertV2 -AlertId <string> [-ResponseHeadersVariable <string>]
  [-ThreatFamilyName <string>] [-Title <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -48,7 +47,6 @@ Update-MgSecurityAlertV2 -AlertId <string> -BodyParameter <IMicrosoftGraphSecuri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -56,8 +54,8 @@ Update-MgSecurityAlertV2 -AlertId <string> -BodyParameter <IMicrosoftGraphSecuri
 ```
 Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <string>]
  [-ActorDisplayName <string>] [-AdditionalData <hashtable>] [-AdditionalProperties <hashtable>]
- [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Category <string>]
- [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
+ [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Categories <string[]>]
+ [-Category <string>] [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
  [-CreatedDateTime <datetime>] [-CustomDetails <hashtable>] [-Description <string>]
  [-DetectionSource <string>] [-DetectorId <string>] [-Determination <string>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <datetime>]
@@ -69,7 +67,6 @@ Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ResponseHeadersVaria
  [-ThreatFamilyName <string>] [-Title <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -79,7 +76,7 @@ Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityAlert> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -359,10 +356,40 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Categories
+
+The attack kill-chain categories that the alert belongs to.
+Aligned with the MITRE ATT&CK framework.
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Category
 
 The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
+This property is in the process of being deprecated.
+Use the categories property instead.
 
 ```yaml
 Type: System.String
@@ -1437,8 +1464,12 @@ Read-only.
   [AlertPolicyId <String>]: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
   [AlertWebUrl <String>]: URL for the Microsoft 365 Defender portal alert page.
   [AssignedTo <String>]: Owner of the alert, or null if no owner is assigned.
+  [Categories <String[]>]: The attack kill-chain categories that the alert belongs to.
+Aligned with the MITRE ATT&CK framework.
   [Category <String>]: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
+This property is in the process of being deprecated.
+Use the categories property instead.
   [Classification <String>]: alertClassification
   [Comments <IMicrosoftGraphSecurityAlertComment[]>]: Array of comments created by the Security Operations (SecOps) team during the alert management process.
     [Comment <String>]: The comment text.

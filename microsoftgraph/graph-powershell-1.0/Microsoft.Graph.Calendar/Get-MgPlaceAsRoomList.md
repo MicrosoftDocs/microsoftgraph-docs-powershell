@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlist
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceAsRoomList
 ---
@@ -13,7 +13,8 @@ title: Get-MgPlaceAsRoomList
 
 ## SYNOPSIS
 
-Get the item of type microsoft.graph.place as microsoft.graph.roomList
+Read the properties of a place object specified by its ID.
+The place object can be one of the following types: The listed resources are derived from the place object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomList](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomList?view=graph-powershell-beta)
@@ -28,7 +29,7 @@ Get-MgPlaceAsRoomList [-ExpandProperty <string[]>] [-Property <string[]>] [-Filt
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +38,7 @@ Get-MgPlaceAsRoomList [-ExpandProperty <string[]>] [-Property <string[]>] [-Filt
 Get-MgPlaceAsRoomList -PlaceId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +47,7 @@ Get-MgPlaceAsRoomList -PlaceId <string> [-ExpandProperty <string[]>] [-Property 
 Get-MgPlaceAsRoomList -InputObject <ICalendarIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -56,7 +57,21 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the item of type microsoft.graph.place as microsoft.graph.roomList
+Read the properties of a place object specified by its ID.
+The place object can be one of the following types: The listed resources are derived from the place object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+Get-MgPlaceAsRoomList -PlaceId $placeId
+
+```
+This example shows how to use the Get-MgPlaceAsRoomList Cmdlet.
+
 
 ## PARAMETERS
 
@@ -542,7 +557,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgPlaceAsRoomList](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlist)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/place-get?view=graph-rest-1.0)
 
 
 

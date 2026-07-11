@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupThread
 ---
@@ -32,7 +32,6 @@ New-MgGroupThread -GroupId <string> [-ResponseHeadersVariable <string>]
  [-UniqueSenders <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -42,7 +41,6 @@ New-MgGroupThread -GroupId <string> -BodyParameter <IMicrosoftGraphConversationT
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -55,7 +53,6 @@ New-MgGroupThread -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <stri
  [-UniqueSenders <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -65,7 +62,6 @@ New-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraph
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -201,7 +197,7 @@ HelpMessage: ''
 ### -CcRecipients
 
 The Cc: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
 To construct, see NOTES section for CCRECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -652,7 +648,7 @@ HelpMessage: ''
 ### -ToRecipients
 
 The To: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
 To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -767,7 +763,7 @@ BODYPARAMETER `<IMicrosoftGraphConversationThread>`: conversationThread
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [CcRecipients <IMicrosoftGraphRecipient[]>]: The Cc: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
     [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Address <String>]: The email address of the person or entity.
@@ -839,7 +835,7 @@ Read-only.
   [Preview <String>]: A short summary from the body of the latest post in this conversation.
 Returned by default.
   [ToRecipients <IMicrosoftGraphRecipient[]>]: The To: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
   [Topic <String>]: The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
 Returned by default.
@@ -847,7 +843,7 @@ Returned by default.
 Returned by default.
 
 CCRECIPIENTS <IMicrosoftGraphRecipient[]>: The Cc: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Address <String>]: The email address of the person or entity.
@@ -939,7 +935,7 @@ Read-only.
     [Value <String>]: A property value.
 
 TORECIPIENTS <IMicrosoftGraphRecipient[]>: The To: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Address <String>]: The email address of the person or entity.

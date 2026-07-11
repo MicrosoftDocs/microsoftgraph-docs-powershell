@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevelsection
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceAsBuildingMapLevelSection
 ---
@@ -30,7 +30,6 @@ Get-MgPlaceAsBuildingMapLevelSection -LevelMapId <string> -PlaceId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -40,7 +39,7 @@ Get-MgPlaceAsBuildingMapLevelSection -LevelMapId <string> -PlaceId <string> -Sec
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -49,7 +48,7 @@ Get-MgPlaceAsBuildingMapLevelSection -LevelMapId <string> -PlaceId <string> -Sec
 Get-MgPlaceAsBuildingMapLevelSection -InputObject <ICalendarIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -61,6 +60,19 @@ This cmdlet has the following aliases,
 
 Collection of sections (such as zones or partitions) on this level.
 Supports upsert.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+Get-MgPlaceAsBuildingMapLevelSection -PlaceId $placeId -LevelMapId $levelMapId
+
+```
+This example shows how to use the Get-MgPlaceAsBuildingMapLevelSection Cmdlet.
+
 
 ## PARAMETERS
 
@@ -601,7 +613,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Get-MgPlaceAsBuildingMapLevelSection](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevelsection)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/levelmap-list-sections?view=graph-rest-1.0)
-
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlace
 ---
@@ -31,7 +31,7 @@ Update-MgPlace -PlaceId <string> [-ResponseHeadersVariable <string>]
  [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -41,7 +41,6 @@ Update-MgPlace -PlaceId <string> -BodyParameter <IMicrosoftGraphPlace>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,7 +53,7 @@ Update-MgPlace -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <strin
  [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -64,7 +63,6 @@ Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphP
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,6 +75,14 @@ This cmdlet has the following aliases,
 Update the properties of place object that can be a building, floor, section, desk, room, workspace, or roomList.
 You can identify the place by specifying the id property.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Place.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Place.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -85,7 +91,96 @@ You can identify the place by specifying the id property.
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
+	"@odata.type" = "microsoft.graph.building"
+	tags = @(
+	"most popular building"
+)
+}
+
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.floor"
+	isWheelChairAccessible = $true
+	sortOrder = 
+}
+
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.section"
+	label = "discuss area"
+}
+
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.desk"
+	mode = @{
+		"@odata.type" = "microsoft.graph.dropInPlaceMode"
+	}
+}
+
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
 	"@odata.type" = "microsoft.graph.room"
+	nickname = "Conf Room"
+	building = "1"
+	label = "100"
+	capacity = 
+	isWheelChairAccessible = $false
+}
+
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
+### Example 6: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.workspace"
 	nickname = "Conf Room"
 	building = "1"
 	label = "100"

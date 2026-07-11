@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecountasroomlist
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceCountAsRoomList
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgPlaceCountAsRoomList [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -42,9 +42,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.Read.All,  |
+| Delegated (work or school account) | Place.Read.All, Place.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Place.Read.All,  |
+| Application | Place.Read.All, Place.ReadWrite.All,  |
 
 ## PARAMETERS
 

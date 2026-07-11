@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicydefault
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyCrossTenantAccessPolicyDefault
 ---
@@ -25,6 +25,7 @@ Update the default configuration of a cross-tenant access policy.
 ```
 Update-MgPolicyCrossTenantAccessPolicyDefault [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>]
+ [-AppServiceConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyAppServiceConnectSetting>]
  [-AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]
  [-B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
@@ -32,10 +33,12 @@ Update-MgPolicyCrossTenantAccessPolicyDefault [-ResponseHeadersVariable <string>
  [-B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>] [-Id <string>]
  [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>]
  [-InvitationRedemptionIdentityProviderConfiguration <hashtable>] [-IsServiceDefault]
+ [-M365CollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationInboundSetting>]
+ [-M365CollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationOutboundSetting>]
  [-TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -46,7 +49,6 @@ Update-MgPolicyCrossTenantAccessPolicyDefault
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -154,6 +156,28 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AppServiceConnectInbound
+
+crossTenantAccessPolicyAppServiceConnectSetting
+To construct, see NOTES section for APPSERVICECONNECTINBOUND properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyAppServiceConnectSetting
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -494,6 +518,50 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -M365CollaborationInbound
+
+crossTenantAccessPolicyM365CollaborationInboundSetting
+To construct, see NOTES section for M365COLLABORATIONINBOUND properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationInboundSetting
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -M365CollaborationOutbound
+
+crossTenantAccessPolicyM365CollaborationOutboundSetting
+To construct, see NOTES section for M365COLLABORATIONOUTBOUND properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationOutboundSetting
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -653,6 +721,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
+APPSERVICECONNECTINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyAppServiceConnectSetting>`: crossTenantAccessPolicyAppServiceConnectSetting
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AccessType <String>]: crossTenantAccessPolicyTargetConfigurationAccessType
+    [Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget[]>]: Specifies whether to target users, groups, or applications with this rule.
+      [Target <String>]: Defines the target for cross-tenant access policy settings and can have one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application.
+ Office365 - Includes the applications mentioned as part of the Office 365 suite.
+      [TargetType <String>]: crossTenantAccessPolicyTargetType
+
 AUTOMATICUSERCONSENTSETTINGS `<IMicrosoftGraphInboundOutboundPolicyConfiguration>`: inboundOutboundPolicyConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [InboundAllowed <Boolean?>]: Defines whether external users coming inbound are allowed.
@@ -706,11 +784,7 @@ BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>`: cr
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]: inboundOutboundPolicyConfiguration
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [InboundAllowed <Boolean?>]: Defines whether external users coming inbound are allowed.
-    [OutboundAllowed <Boolean?>]: Defines whether internal users are allowed to go outbound.
-  [B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
+  [AppServiceConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyAppServiceConnectSetting>]: crossTenantAccessPolicyAppServiceConnectSetting
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -719,6 +793,13 @@ Read-only.
         [Target <String>]: Defines the target for cross-tenant access policy settings and can have one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application.
  Office365 - Includes the applications mentioned as part of the Office 365 suite.
         [TargetType <String>]: crossTenantAccessPolicyTargetType
+  [AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]: inboundOutboundPolicyConfiguration
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [InboundAllowed <Boolean?>]: Defines whether external users coming inbound are allowed.
+    [OutboundAllowed <Boolean?>]: Defines whether internal users are allowed to go outbound.
+  [B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
     [UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
   [B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
   [B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
@@ -735,6 +816,12 @@ Read-only.
 The possible values are: azureActiveDirectory, externalFederation, or socialIdentityProviders.
   [IsServiceDefault <Boolean?>]: If true, the default configuration is set to the system default configuration.
 If false, the default settings are customized.
+  [M365CollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationInboundSetting>]: crossTenantAccessPolicyM365CollaborationInboundSetting
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Users <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
+  [M365CollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationOutboundSetting>]: crossTenantAccessPolicyM365CollaborationOutboundSetting
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
   [TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]: crossTenantAccessPolicyTenantRestrictions
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
@@ -750,6 +837,26 @@ INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenant
   [IsCompliantDeviceAccepted <Boolean?>]: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
   [IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
   [IsMfaAccepted <Boolean?>]: Specifies whether MFA from external Microsoft Entra organizations is trusted.
+
+M365COLLABORATIONINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationInboundSetting>`: crossTenantAccessPolicyM365CollaborationInboundSetting
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Users <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AccessType <String>]: crossTenantAccessPolicyTargetConfigurationAccessType
+    [Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget[]>]: Specifies whether to target users, groups, or applications with this rule.
+      [Target <String>]: Defines the target for cross-tenant access policy settings and can have one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application.
+ Office365 - Includes the applications mentioned as part of the Office 365 suite.
+      [TargetType <String>]: crossTenantAccessPolicyTargetType
+
+M365COLLABORATIONOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationOutboundSetting>`: crossTenantAccessPolicyM365CollaborationOutboundSetting
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AccessType <String>]: crossTenantAccessPolicyTargetConfigurationAccessType
+    [Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget[]>]: Specifies whether to target users, groups, or applications with this rule.
+      [Target <String>]: Defines the target for cross-tenant access policy settings and can have one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application.
+ Office365 - Includes the applications mentioned as part of the Office 365 suite.
+      [TargetType <String>]: crossTenantAccessPolicyTargetType
 
 TENANTRESTRICTIONS `<IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>`: crossTenantAccessPolicyTenantRestrictions
   [(Any) <Object>]: This indicates any property can be added to this object.
