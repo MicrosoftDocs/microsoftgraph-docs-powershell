@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
 ---
@@ -29,7 +29,7 @@ Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -39,7 +39,7 @@ Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
  -ServicePrincipalId <string> -TargetDeviceGroupId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -49,7 +49,7 @@ Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
  -InputObject <IApplicationsIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -65,9 +65,9 @@ Read the properties and relationships of a targetDeviceGroup object for the remo
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All, Application-RemoteDesktopConfig.ReadWrite.All,  |
+| Delegated (work or school account) | Application.Read.All, Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Application-RemoteDesktopConfig.ReadWrite.All,  |
+| Application | Application.Read.All, Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

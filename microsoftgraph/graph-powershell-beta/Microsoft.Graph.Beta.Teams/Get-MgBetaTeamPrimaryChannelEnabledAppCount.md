@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelenabledappcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamPrimaryChannelEnabledAppCount
 ---
@@ -15,6 +15,9 @@ title: Get-MgBetaTeamPrimaryChannelEnabledAppCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelEnabledAppCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelEnabledAppCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -23,7 +26,7 @@ Get the number of the resource
 Get-MgBetaTeamPrimaryChannelEnabledAppCount -TeamId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -32,7 +35,7 @@ Get-MgBetaTeamPrimaryChannelEnabledAppCount -TeamId <string> [-Filter <string>] 
 Get-MgBetaTeamPrimaryChannelEnabledAppCount -InputObject <ITeamsIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

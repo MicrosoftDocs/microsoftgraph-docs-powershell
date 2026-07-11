@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangerestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreExchangeRestoreSession
 ---
@@ -35,7 +35,7 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSession [-ResponseHeadersVariable 
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -45,7 +45,7 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSession
  -BodyParameter <IMicrosoftGraphExchangeRestoreSession> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -684,12 +684,19 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
+        [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
         [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
         [Error <IMicrosoftGraphPublicError>]: publicError
         [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
         [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+        [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [EffectiveFromDateTime <DateTime?>]: 
+          [Status <String>]: retentionPeriodChangeStatus
+          [TargetRetentionPeriodInDays <Int32?>]: 
         [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
         [ProtectionSources <String>]: protectionSource
         [Status <String>]: protectionUnitStatus
@@ -793,6 +800,8 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
+      [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Application <IMicrosoftGraphIdentity>]: identity
@@ -809,6 +818,11 @@ For example, in the access reviews decisions API, this property might record the
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
       [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+      [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [EffectiveFromDateTime <DateTime?>]: 
+        [Status <String>]: retentionPeriodChangeStatus
+        [TargetRetentionPeriodInDays <Int32?>]: 
       [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
       [ProtectionSources <String>]: protectionSource
       [Status <String>]: protectionUnitStatus
@@ -861,6 +875,8 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
+      [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Application <IMicrosoftGraphIdentity>]: identity
@@ -877,6 +893,11 @@ For example, in the access reviews decisions API, this property might record the
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
       [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+      [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [EffectiveFromDateTime <DateTime?>]: 
+        [Status <String>]: retentionPeriodChangeStatus
+        [TargetRetentionPeriodInDays <Int32?>]: 
       [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
       [ProtectionSources <String>]: protectionSource
       [Status <String>]: protectionUnitStatus

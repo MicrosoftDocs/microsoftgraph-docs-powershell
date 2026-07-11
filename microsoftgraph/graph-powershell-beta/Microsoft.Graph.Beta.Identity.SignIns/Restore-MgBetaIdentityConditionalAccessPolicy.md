@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetaidentityconditionalaccesspolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgBetaIdentityConditionalAccessPolicy
 ---
@@ -15,6 +15,9 @@ title: Restore-MgBetaIdentityConditionalAccessPolicy
 
 Restore a deleted conditionalAccessPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Restore-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -24,7 +27,6 @@ Restore-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <string
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
@@ -34,7 +36,6 @@ Restore-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIden
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -384,6 +385,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphteamworkdeletedteamchannelmessagereply
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaGraphTeamworkDeletedTeamChannelMessageReply
 ---
@@ -14,6 +14,9 @@ title: Invoke-MgBetaGraphTeamworkDeletedTeamChannelMessageReply
 ## SYNOPSIS
 
 Reply with quote to a single chat message or multiple chat messages in a chat.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Invoke-MgGraphTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Invoke-MgBetaGraphTeamworkDeletedTeamChannelMessageReply -ChannelId <string> -Ch
  [-MessageIds <string[]>] [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Graph
@@ -37,7 +40,6 @@ Invoke-MgBetaGraphTeamworkDeletedTeamChannelMessageReply -ChannelId <string> -Ch
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GraphViaIdentityExpanded
@@ -48,7 +50,6 @@ Invoke-MgBetaGraphTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIde
  [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GraphViaIdentity
@@ -59,7 +60,6 @@ Invoke-MgBetaGraphTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIde
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

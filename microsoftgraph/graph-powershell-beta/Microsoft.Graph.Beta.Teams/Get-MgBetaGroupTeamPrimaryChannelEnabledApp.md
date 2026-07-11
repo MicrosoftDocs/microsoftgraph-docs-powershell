@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelenabledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupTeamPrimaryChannelEnabledApp
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaGroupTeamPrimaryChannelEnabledApp
 ## SYNOPSIS
 
 A collection of enabled apps in the channel.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPrimaryChannelEnabledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelEnabledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-MgBetaGroupTeamPrimaryChannelEnabledApp -GroupId <string> [-ExpandProperty <
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -35,7 +38,7 @@ Get-MgBetaGroupTeamPrimaryChannelEnabledApp -GroupId <string> -TeamsAppId <strin
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -45,7 +48,7 @@ Get-MgBetaGroupTeamPrimaryChannelEnabledApp -InputObject <ITeamsIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

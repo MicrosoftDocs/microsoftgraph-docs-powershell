@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEntitlementManagementAccessPackage
 ---
@@ -26,7 +26,7 @@ Retrieve the properties and relationships of an accessPackage object.
 Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <string[]>] [-Property <string[]>]
  [-Sort <string[]>] [-Break] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-All] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-All]
 ```
 
 ### Get
@@ -35,7 +35,7 @@ Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <string[]>] [-Prop
 Get-MgBetaEntitlementManagementAccessPackage -AccessPackageId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -45,7 +45,7 @@ Get-MgBetaEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceId
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### List
@@ -56,7 +56,7 @@ Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <string[]>] [-Prop
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### ListByDisplayNameContains
@@ -65,7 +65,7 @@ Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <string[]>] [-Prop
 Get-MgBetaEntitlementManagementAccessPackage -DisplayNameContains <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-Sort <string[]>] [-Top <int>] [-Break]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-All] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-All]
 ```
 
 ### ListByDisplayNameEq
@@ -74,7 +74,7 @@ Get-MgBetaEntitlementManagementAccessPackage -DisplayNameContains <string>
 Get-MgBetaEntitlementManagementAccessPackage -DisplayNameEq <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-Sort <string[]>] [-Top <int>] [-Break]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-All] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-All]
 ```
 
 ### ListByCatalogId
@@ -83,7 +83,7 @@ Get-MgBetaEntitlementManagementAccessPackage -DisplayNameEq <string> [-ExpandPro
 Get-MgBetaEntitlementManagementAccessPackage -CatalogId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-Sort <string[]>] [-Top <int>] [-Break]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-All] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-All]
 ```
 
 ## ALIASES
@@ -839,6 +839,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/confirm-mgbetaapplicationmembergroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaApplicationMemberGroup
 ---
@@ -31,7 +31,6 @@ Confirm-MgBetaApplicationMemberGroup -ApplicationId <string> [-ResponseHeadersVa
  [-AdditionalProperties <hashtable>] [-GroupIds <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Check
@@ -42,7 +41,6 @@ Confirm-MgBetaApplicationMemberGroup -ApplicationId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CheckViaIdentityExpanded
@@ -52,7 +50,7 @@ Confirm-MgBetaApplicationMemberGroup -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-GroupIds <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CheckViaIdentity
@@ -63,7 +61,6 @@ Confirm-MgBetaApplicationMemberGroup -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

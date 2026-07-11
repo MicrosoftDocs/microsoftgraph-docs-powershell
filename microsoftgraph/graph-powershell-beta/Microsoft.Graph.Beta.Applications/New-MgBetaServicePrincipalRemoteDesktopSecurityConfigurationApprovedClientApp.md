@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
@@ -13,7 +13,11 @@ title: New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClien
 
 ## SYNOPSIS
 
-Create new navigation property to approvedClientApps for servicePrincipals
+Create a new approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
+You can configure a maximum of 20 approved client apps.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,7 +29,7 @@ New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -36,7 +40,6 @@ New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -47,7 +50,7 @@ New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -58,7 +61,6 @@ New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -68,15 +70,34 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create new navigation property to approvedClientApps for servicePrincipals
+Create a new approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
+You can configure a maximum of 20 approved client apps.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+| Application | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.approvedClientApp"
+	id = "cd57c330-a543-4249-9486-c1c257341de6"
+}
+
+New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp Cmdlet.
+
 
 ## PARAMETERS
 
@@ -180,7 +201,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+Display name for the client application.
 
 ```yaml
 Type: System.String
@@ -496,7 +517,7 @@ BODYPARAMETER `<IMicrosoftGraphApprovedClientApp>`: approvedClientApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DisplayName <String>]: 
+  [DisplayName <String>]: Display name for the client application.
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of application
@@ -540,7 +561,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-post-approvedclientapps?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPlaceAsBuildingMapLevelUnit
 ---
@@ -27,7 +27,6 @@ Remove-MgBetaPlaceAsBuildingMapLevelUnit -LevelMapId <string> -PlaceId <string> 
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,7 +36,6 @@ Remove-MgBetaPlaceAsBuildingMapLevelUnit -InputObject <ICalendarIdentity> [-IfMa
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +46,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a unitMap object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+Remove-MgBetaPlaceAsBuildingMapLevelUnit -PlaceId $placeId -LevelMapId $levelMapId -UnitMapId $unitMapId
+
+```
+This example shows how to use the Remove-MgBetaPlaceAsBuildingMapLevelUnit Cmdlet.
+
 
 ## PARAMETERS
 
@@ -448,7 +459,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Remove-MgBetaPlaceAsBuildingMapLevelUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelunit)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/unitmap-delete?view=graph-rest-beta)
-
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaExternalConnectionSchema
 ---
@@ -28,7 +28,7 @@ Update-MgBetaExternalConnectionSchema -ExternalConnectionId <string>
  [-Id <string>] [-Properties <IMicrosoftGraphExternalConnectorsProperty[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +38,7 @@ Update-MgBetaExternalConnectionSchema -ExternalConnectionId <string>
  -BodyParameter <IMicrosoftGraphExternalConnectorsSchema> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,7 +49,7 @@ Update-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity>
  [-Id <string>] [-Properties <IMicrosoftGraphExternalConnectorsProperty[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -59,7 +59,7 @@ Update-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity>
  -BodyParameter <IMicrosoftGraphExternalConnectorsSchema> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -597,8 +597,9 @@ Optional.
     [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
-Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl.
-Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl, personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
+Optional..
+The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
+Use the Prefer: include-unknown-enum-members request header to retrieve additional values defined in this evolvable enum.For people connectors you can include : personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
     [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
@@ -660,8 +661,9 @@ Optional.
   [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
-Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl.
-Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl, personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
+Optional..
+The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
+Use the Prefer: include-unknown-enum-members request header to retrieve additional values defined in this evolvable enum.For people connectors you can include : personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
   [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.

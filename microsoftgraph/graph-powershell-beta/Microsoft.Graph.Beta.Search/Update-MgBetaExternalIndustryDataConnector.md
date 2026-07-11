@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaExternalIndustryDataConnector
 ---
@@ -25,7 +25,7 @@ Update-MgBetaExternalIndustryDataConnector -IndustryDataConnectorId <string>
  [-Id <string>] [-SourceSystem <IMicrosoftGraphIndustryDataSourceSystemDefinition>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -35,7 +35,7 @@ Update-MgBetaExternalIndustryDataConnector -IndustryDataConnectorId <string>
  -BodyParameter <IMicrosoftGraphIndustryDataConnector> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -46,7 +46,7 @@ Update-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity>
  [-Id <string>] [-SourceSystem <IMicrosoftGraphIndustryDataSourceSystemDefinition>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -56,7 +56,7 @@ Update-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity>
  -BodyParameter <IMicrosoftGraphIndustryDataConnector> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -84,8 +84,8 @@ Update the properties of an azureDataLakeConnector object.
 Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
-	"@odata.type" = "microsoft.graph.industryData.oneRosterApiDataConnector"
-	displayName = "One Roster Connector"
+	"@odata.type" = "microsoft.graph.industryData.azureDataLakeConnector"
+	displayName = "CSV files from SIS"
 }
 
 Update-MgBetaExternalIndustryDataConnector -IndustryDataConnectorId $industryDataConnectorId -BodyParameter $params

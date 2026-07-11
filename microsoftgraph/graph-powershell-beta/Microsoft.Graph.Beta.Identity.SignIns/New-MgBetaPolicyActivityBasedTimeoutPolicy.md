@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyactivitybasedtimeoutpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyActivityBasedTimeoutPolicy
 ---
@@ -29,7 +29,6 @@ New-MgBetaPolicyActivityBasedTimeoutPolicy [-ResponseHeadersVariable <string>]
  [-DisplayName <string>] [-Id <string>] [-IsOrganizationDefault] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +38,6 @@ New-MgBetaPolicyActivityBasedTimeoutPolicy -BodyParameter <hashtable>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -68,9 +66,9 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	definition = @(
-	"definition-value"
+	'{"ActivityBasedTimeoutPolicy":{"Version":1,"ApplicationPolicies":[{"ApplicationId":"default","WebSessionIdleTimeout":"00:05:00"}]}}'
 )
-displayName = "displayName-value"
+displayName = "activityBasedTimeoutPolicies test"
 isOrganizationDefault = $true
 }
 

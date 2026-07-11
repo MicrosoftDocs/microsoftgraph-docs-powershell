@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaExternalIndustryDataConnector
 ---
@@ -25,7 +25,7 @@ New-MgBetaExternalIndustryDataConnector [-ResponseHeadersVariable <string>]
  [-SourceSystem <IMicrosoftGraphIndustryDataSourceSystemDefinition>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -35,7 +35,6 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -63,23 +62,13 @@ Create a new azureDataLakeConnector object.
 Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.industryData.oneRosterApiDataConnector"
-	displayName = "Generic OAuth2 Connector"
-	"sourceSystem@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/sourceSystems('c93a6e02-aeb7-437f-cc52-08dc3fc158af')"
-	apiFormat = "oneRoster"
-	baseUrl = "https://fakeProvider.net/ims/oneroster/v1p1"
-	apiVersion = "1.1"
-	credential = @{
-		"@odata.type" = "#microsoft.graph.industryData.oAuth2ClientCredential"
-		displayName = "One Roster API Credentials"
-		clientId = "530be723-6af3-4952-8658-668fb2598ad7"
-		clientSecret = "thisIsASecret"
-		tokenUrl = "https://login.microsoftonline.com/c27f982b-f7ee-4b8b-bb0e-3c55bd1dc02c/oauth2/token"
-		scope = $null
+	"@odata.type" = "#microsoft.graph.industryData.azureDataLakeConnector"
+	displayName = "CSV connector"
+	"sourceSystem@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')"
+	fileFormat = @{
+		"@odata.type" = "microsoft.graph.industryData.fileFormatReferenceValue"
+		code = "schoolDataSyncV1"
 	}
-	isDemographicsEnabled = $false
-	isFlagsEnabled = $false
-	isContactsEnabled = $false
 }
 
 New-MgBetaExternalIndustryDataConnector -BodyParameter $params

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessdeleteditempolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ## SYNOPSIS
 
 Read the properties and relationships of a policyDeletableItem object, which might be one of the following deleted policy types:\r- crossTenantAccessPolicyConfigurationPartner\r- crossTenantIdentitySyncPolicyPartner\r- conditionalAccessPolicy\r- namedLocation
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessDeletedItemPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessDeletedItemPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-MgBetaIdentityConditionalAccessDeletedItemPolicy [-ExpandProperty <string[]>
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -35,7 +38,7 @@ Get-MgBetaIdentityConditionalAccessDeletedItemPolicy -ConditionalAccessPolicyId 
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -45,7 +48,7 @@ Get-MgBetaIdentityConditionalAccessDeletedItemPolicy -InputObject <IIdentitySign
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -56,6 +59,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Read the properties and relationships of a policyDeletableItem object, which might be one of the following deleted policy types:\r- crossTenantAccessPolicyConfigurationPartner\r- crossTenantIdentitySyncPolicyPartner\r- conditionalAccessPolicy\r- namedLocation
+
+## EXAMPLES
+### Example 1: Retrieve a deleted conditionalAccessPolicy object
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityConditionalAccessDeletedItemPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId
+
+```
+This example will retrieve a deleted conditionalaccesspolicy object
+
 
 ## PARAMETERS
 
@@ -567,6 +583,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -620,7 +637,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [Get-MgBetaIdentityConditionalAccessDeletedItemPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessdeleteditempolicy)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/policydeletableitem-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/policydeletableitem-list?view=graph-rest-beta)
-
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalDelta
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaServicePrincipalDelta
 
 ## SYNOPSIS
 
-Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
+Get newly created, updated, or deleted service principals, agent identities, and agent identity blueprints without having to perform a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 > [!NOTE]
@@ -29,7 +29,7 @@ Get-MgBetaServicePrincipalDelta [-ExpandProperty <string[]>] [-Filter <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ## ALIASES
@@ -39,16 +39,16 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
+Get newly created, updated, or deleted service principals, agent identities, and agent identity blueprints without having to perform a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Application.ReadWrite.All, Application.Read.All,  |
+| Delegated (work or school account) | Directory.Read.All, Application.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All, Application.Read.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -465,7 +465,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipal
 
 {{ Fill in the Description }}
 
@@ -474,7 +474,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgBetaServicePrincipalDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-beta)
 
 
 

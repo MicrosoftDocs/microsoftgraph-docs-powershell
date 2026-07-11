@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementcloudpcroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaRoleManagementCloudPcRoleDefinition
 ---
@@ -16,7 +16,7 @@ title: Remove-MgBetaRoleManagementCloudPcRoleDefinition
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- Defender (Microsoft Defender XDR Unified RBAC)- directory (Microsoft Entra ID)
+The following RBAC providers are currently supported:\r- Cloud PC\r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC)\r- directory (Microsoft Entra ID)
 
 ## SYNTAX
 
@@ -27,7 +27,6 @@ Remove-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId <strin
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,7 +36,6 @@ Remove-MgBetaRoleManagementCloudPcRoleDefinition -InputObject <IDeviceManagement
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,15 +48,15 @@ This cmdlet has the following aliases,
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- Defender (Microsoft Defender XDR Unified RBAC)- directory (Microsoft Entra ID)
+The following RBAC providers are currently supported:\r- Cloud PC\r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC)\r- directory (Microsoft Entra ID)
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, RoleManagement.ReadWrite.Directory, RoleManagement.ReadWrite.CloudPC, Directory.ReadWrite.All, CloudPC.ReadWrite.All,  |
+| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementRBAC.ReadWrite.All, RoleManagement.ReadWrite.Directory, RoleManagement.ReadWrite.CloudPC, Directory.ReadWrite.All, CloudPC.ReadWrite.All,  |
+| Application | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
 ### Example 2: Code snippet

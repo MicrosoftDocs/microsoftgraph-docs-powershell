@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdeviceassigntomailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToMailboxSetting
 ---
@@ -16,7 +16,7 @@ title: Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAss
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
-Returned only on $select.
+Requires $select to retrieve.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToMa
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -39,7 +39,7 @@ Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToMa
  -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -52,7 +52,7 @@ This cmdlet has the following aliases,
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
-Returned only on $select.
+Requires $select to retrieve.
 
 ## PARAMETERS
 
@@ -434,6 +434,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
