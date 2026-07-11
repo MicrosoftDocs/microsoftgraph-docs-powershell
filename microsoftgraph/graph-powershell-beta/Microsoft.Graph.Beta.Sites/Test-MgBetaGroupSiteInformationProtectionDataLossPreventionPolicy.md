@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectiondatalosspreventionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy
 ---
@@ -22,11 +22,12 @@ Invoke action evaluate
 ```
 Test-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy -GroupId <string> -SiteId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-ClassifyText <IMicrosoftGraphTextClassificationRequest>]
  [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
  [-NotificationInfo <IMicrosoftGraphDlpNotification>] [-Target <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Evaluate
@@ -37,7 +38,6 @@ Test-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy -GroupId <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
@@ -45,11 +45,12 @@ Test-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy -GroupId <stri
 ```
 Test-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-ClassifyText <IMicrosoftGraphTextClassificationRequest>]
  [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
  [-NotificationInfo <IMicrosoftGraphDlpNotification>] [-Target <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### EvaluateViaIdentity
@@ -60,7 +61,6 @@ Test-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy -InputObject <
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -140,6 +140,34 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ClassifyText
+
+textClassificationRequest
+To construct, see NOTES section for CLASSIFYTEXT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTextClassificationRequest
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: EvaluateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: EvaluateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -543,6 +571,18 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths15SccidGroupsGroupIdSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [ClassifyText <IMicrosoftGraphTextClassificationRequest>]: textClassificationRequest
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ContentMetaData <IMicrosoftGraphClassificationRequestContentMetaData>]: classificationRequestContentMetaData
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [SourceId <String>]: 
+    [FileExtension <String>]: 
+    [MatchTolerancesToInclude <String>]: mlClassificationMatchTolerance
+    [ScopesToRun <String>]: sensitiveTypeScope
+    [SensitiveTypeIds <String[]>]: 
+    [Text <String>]: 
   [EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]: dlpEvaluationInput
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CurrentLabel <IMicrosoftGraphCurrentLabel>]: currentLabel
@@ -560,6 +600,19 @@ BODYPARAMETER `<IPaths15SccidGroupsGroupIdSitesSiteIdInformationprotectionDatalo
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Author <String>]: 
   [Target <String>]: 
+
+CLASSIFYTEXT `<IMicrosoftGraphTextClassificationRequest>`: textClassificationRequest
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ContentMetaData <IMicrosoftGraphClassificationRequestContentMetaData>]: classificationRequestContentMetaData
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [SourceId <String>]: 
+  [FileExtension <String>]: 
+  [MatchTolerancesToInclude <String>]: mlClassificationMatchTolerance
+  [ScopesToRun <String>]: sensitiveTypeScope
+  [SensitiveTypeIds <String[]>]: 
+  [Text <String>]: 
 
 EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
   [(Any) <Object>]: This indicates any property can be added to this object.

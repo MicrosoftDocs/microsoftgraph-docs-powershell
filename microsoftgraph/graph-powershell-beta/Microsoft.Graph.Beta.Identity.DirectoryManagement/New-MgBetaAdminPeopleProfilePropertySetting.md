@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilepropertysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAdminPeopleProfilePropertySetting
 ---
@@ -15,17 +15,19 @@ title: New-MgBetaAdminPeopleProfilePropertySetting
 
 Create a new profilePropertySetting object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdminPeopleProfilePropertySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdminPeopleProfilePropertySetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
 
 ```
 New-MgBetaAdminPeopleProfilePropertySetting [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-AllowedAudiences <string>] [-Id <string>]
- [-IsUserOverrideForAudienceEnabled] [-Name <string>] [-PrioritizedSourceUrls <string[]>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Name <string>]
+ [-PrioritizedSourceUrls <string[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -35,7 +37,6 @@ New-MgBetaAdminPeopleProfilePropertySetting -BodyParameter <IMicrosoftGraphProfi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -64,6 +65,8 @@ Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.profilePropertySetting"
+	displayName = "Profile priority config"
+	name = "Profile priority config"
 	prioritizedSourceUrls = @(
 	"https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')"
 )
@@ -83,27 +86,6 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -AllowedAudiences
-
-organizationAllowedAudiences
-
-```yaml
-Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -174,6 +156,27 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DisplayName
+
+Name of the property-level setting.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -269,30 +272,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IsUserOverrideForAudienceEnabled
-
-Defines whether a user is allowed to override the tenant admin privacy setting.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -Name
 
-Name of the property-level setting.
+Other name of the property-level setting.
+For backward compatibility.
 
 ```yaml
 Type: System.String
@@ -473,9 +456,9 @@ BODYPARAMETER `<IMicrosoftGraphProfilePropertySetting>`: profilePropertySetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AllowedAudiences <String>]: organizationAllowedAudiences
-  [IsUserOverrideForAudienceEnabled <Boolean?>]: Defines whether a user is allowed to override the tenant admin privacy setting.
-  [Name <String>]: Name of the property-level setting.
+  [DisplayName <String>]: Name of the property-level setting.
+  [Name <String>]: Other name of the property-level setting.
+For backward compatibility.
   [PrioritizedSourceUrls <String[]>]: A collection of prioritized profile source URLs ordered by data precedence within an organization.
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileeducationalactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 02/20/2026
+ms.date: 07/10/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserProfileEducationalActivity
 ---
@@ -30,7 +30,7 @@ New-MgBetaUserProfileEducationalActivity -UserId <string> [-ResponseHeadersVaria
  [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-StartMonthYear <datetime>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -40,7 +40,7 @@ New-MgBetaUserProfileEducationalActivity -UserId <string>
  -BodyParameter <IMicrosoftGraphEducationalActivity> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -57,7 +57,7 @@ New-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
  [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-StartMonthYear <datetime>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -67,7 +67,7 @@ New-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
  -BodyParameter <IMicrosoftGraphEducationalActivity> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -83,9 +83,9 @@ Create new navigation property to educationalActivities for users
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
+| Delegated (work or school account) | User.ReadWrite, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | User.ReadWrite,  |
-| Application | User.ReadWrite.All,  |
+| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -954,15 +954,14 @@ It's a free-format string value, for example, 'United States'.
     [WebUrl <String>]: Link to the institution or department homepage.
   [Program <IMicrosoftGraphEducationalActivityDetail>]: educationalActivityDetail
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [Abbreviation <String>]: Shortened name of the degree or program (example: PhD, MBA)
+    [Abbreviation <String>]: Shortened name of the degree or program, for example, PhD and MBA.
     [Activities <String[]>]: Extracurricular activities undertaken alongside the program.
     [Awards <String[]>]: Any awards or honors associated with the program.
     [Description <String>]: Short description of the program provided by the user.
     [DisplayName <String>]: Long-form name of the program that the user provided.
-    [FieldsOfStudy <String[]>]: Majors and minors associated with the program.
-(if applicable)
-    [Grade <String>]: The final grade, class, GPA, or score.
-    [Notes <String>]: More notes the user provided.
+    [FieldsOfStudy <String[]>]: Majors and minors associated with the program, if applicable.
+    [Grade <String>]: The final grade, class, grade point average (GPA), or score.
+    [Notes <String>]: More notes provided by the user.
     [WebUrl <String>]: Link to the degree or program page.
   [StartMonthYear <DateTime?>]: The month and year the user commenced the activity referenced.
 
@@ -1037,15 +1036,14 @@ For example, in the access reviews decisions API, this property might record the
 
 PROGRAM `<IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Abbreviation <String>]: Shortened name of the degree or program (example: PhD, MBA)
+  [Abbreviation <String>]: Shortened name of the degree or program, for example, PhD and MBA.
   [Activities <String[]>]: Extracurricular activities undertaken alongside the program.
   [Awards <String[]>]: Any awards or honors associated with the program.
   [Description <String>]: Short description of the program provided by the user.
   [DisplayName <String>]: Long-form name of the program that the user provided.
-  [FieldsOfStudy <String[]>]: Majors and minors associated with the program.
-(if applicable)
-  [Grade <String>]: The final grade, class, GPA, or score.
-  [Notes <String>]: More notes the user provided.
+  [FieldsOfStudy <String[]>]: Majors and minors associated with the program, if applicable.
+  [Grade <String>]: The final grade, class, grade point average (GPA), or score.
+  [Notes <String>]: More notes provided by the user.
   [WebUrl <String>]: Link to the degree or program page.
 
 SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
