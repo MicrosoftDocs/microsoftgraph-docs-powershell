@@ -166,10 +166,17 @@ extends:
             pwsh: true
             filePath: scripts/StabilizeMsDate.ps1
             errorActionPreference: 'stop'
+        - task: AzureKeyVault@2
+          displayName: "Azure Key Vault: Get GitHub App secrets"
+          inputs:
+            azureSubscription: "Federated AKV Managed Identity Connection"
+            KeyVaultName: akv-prod-eastus
+            SecretsFilter: "microsoft-graph-devx-bot-appid,microsoft-graph-devx-bot-privatekey"
         - task: PowerShell@2
           displayName: Pushing to github
           env:
-            GITHUB_TOKEN: $(GITHUB_TOKEN)
+            GhAppId: $(microsoft-graph-devx-bot-appid)
+            GhAppKey: $(microsoft-graph-devx-bot-privatekey)
           inputs:
             targetType: inline
             pwsh: true
@@ -177,10 +184,15 @@ extends:
               git config --global user.email "GraphTooling@service.microsoft.com"
               git config --global user.name "Microsoft Graph DevX Tooling"
               git config --system core.longpaths true
+              # The microsoft-graph-devx-bot GitHub App must have contents:write on this repo.
+              $token = & "$(Build.SourcesDirectory)/scripts/Generate-Github-Token.ps1" -AppClientId $env:GhAppId -AppPrivateKeyContents $env:GhAppKey -Repository "MicrosoftDocs/microsoftgraph-docs-powershell"
+              if ([string]::IsNullOrWhiteSpace($token)) { throw "Failed to generate GitHub App installation token." }
+              # Mask the token so it is never surfaced in pipeline logs.
+              Write-Host "##vso[task.setsecret]$token"
               git status
               git add .
               git commit -m "Updating reference docs"
-              git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $(ComputeBranch.WeeklyReferenceDocsBranch)
+              git push --set-upstream "https://x-access-token:$token@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $(ComputeBranch.WeeklyReferenceDocsBranch)
               git status
         - template: azure-pipelines/common-templates/create-pr.yml@self
           parameters:
