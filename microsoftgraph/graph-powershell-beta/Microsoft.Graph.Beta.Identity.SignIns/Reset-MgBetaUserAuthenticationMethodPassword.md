@@ -630,8 +630,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/reset-mgbetauserauthenticationmethodpassword)
-- [](https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-beta)
+- [Reset-MgBetaUserAuthenticationMethodPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/reset-mgbetauserauthenticationmethodpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-beta)
 
 
 

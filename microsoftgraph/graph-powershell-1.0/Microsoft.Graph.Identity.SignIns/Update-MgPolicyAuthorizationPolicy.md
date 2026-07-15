@@ -772,8 +772,8 @@ An empty list indicates user consent to apps is disabled.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)
-- [](https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0)
+- [Update-MgPolicyAuthorizationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0)
 
 
 

@@ -1900,8 +1900,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstancedecision)
-- [](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta)
+- [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstancedecision)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-beta)
 
 
 

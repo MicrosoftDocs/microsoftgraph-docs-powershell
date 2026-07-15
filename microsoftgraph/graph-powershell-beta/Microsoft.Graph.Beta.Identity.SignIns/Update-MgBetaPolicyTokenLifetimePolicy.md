@@ -763,8 +763,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenlifetimepolicy)
-- [](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyTokenLifetimePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenlifetimepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-update?view=graph-rest-beta)
 
 
 

@@ -712,7 +712,7 @@ SHAREDDAYNOTE `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduledaynote)
+- [New-MgBetaTeamScheduleDayNote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduledaynote)
 
 
 

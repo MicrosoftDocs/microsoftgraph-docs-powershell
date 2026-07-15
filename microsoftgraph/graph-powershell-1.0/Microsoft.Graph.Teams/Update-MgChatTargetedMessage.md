@@ -1656,7 +1656,7 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchattargetedmessage)
+- [Update-MgChatTargetedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchattargetedmessage)
 
 
 

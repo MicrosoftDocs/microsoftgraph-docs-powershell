@@ -403,8 +403,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/unpublish-mgbookingbusiness)
-- [](https://learn.microsoft.com/graph/api/bookingbusiness-unpublish?view=graph-rest-1.0)
+- [Unpublish-MgBookingBusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/unpublish-mgbookingbusiness)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-unpublish?view=graph-rest-1.0)
 
 
 

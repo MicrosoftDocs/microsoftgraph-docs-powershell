@@ -405,7 +405,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/restore-mgidentityconditionalaccessdeleteditempolicy)
+- [Restore-MgIdentityConditionalAccessDeletedItemPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/restore-mgidentityconditionalaccessdeleteditempolicy)
 
 
 

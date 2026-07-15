@@ -793,8 +793,8 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyusermessage)
-- [](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-1.0)
+- [Invoke-MgReplyUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyusermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-1.0)
 
 
 

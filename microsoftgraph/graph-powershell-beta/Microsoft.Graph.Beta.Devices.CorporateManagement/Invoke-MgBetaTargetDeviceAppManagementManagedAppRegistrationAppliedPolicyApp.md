@@ -610,7 +610,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetatargetdeviceappmanagementmanagedappregistrationappliedpolicyapp)
+- [Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetatargetdeviceappmanagementmanagedappregistrationappliedpolicyapp)
 
 
 

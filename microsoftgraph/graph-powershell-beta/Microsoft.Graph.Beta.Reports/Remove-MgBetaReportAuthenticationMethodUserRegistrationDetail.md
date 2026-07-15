@@ -433,7 +433,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportauthenticationmethoduserregistrationdetail)
+- [Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportauthenticationmethoduserregistrationdetail)
 
 
 

@@ -663,8 +663,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpinnedmessage)
-- [](https://learn.microsoft.com/graph/api/chat-list-pinnedmessages?view=graph-rest-beta)
+- [Get-MgBetaChatPinnedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpinnedmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list-pinnedmessages?view=graph-rest-beta)
 
 
 

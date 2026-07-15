@@ -599,8 +599,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamincomingchannel)
-- [](https://learn.microsoft.com/graph/api/team-list-incomingchannels?view=graph-rest-1.0)
+- [Get-MgTeamIncomingChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamincomingchannel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-list-incomingchannels?view=graph-rest-1.0)
 
 
 

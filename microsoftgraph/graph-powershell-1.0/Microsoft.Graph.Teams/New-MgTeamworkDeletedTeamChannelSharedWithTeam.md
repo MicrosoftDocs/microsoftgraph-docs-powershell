@@ -11234,7 +11234,7 @@ This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelsharedwithteam)
+- [New-MgTeamworkDeletedTeamChannelSharedWithTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelsharedwithteam)
 
 
 

@@ -509,8 +509,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/add-mgcommunicationcalllargegalleryview)
-- [](https://learn.microsoft.com/graph/api/call-addlargegalleryview?view=graph-rest-1.0)
+- [Add-MgCommunicationCallLargeGalleryView](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/add-mgcommunicationcalllargegalleryview)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-addlargegalleryview?view=graph-rest-1.0)
 
 
 

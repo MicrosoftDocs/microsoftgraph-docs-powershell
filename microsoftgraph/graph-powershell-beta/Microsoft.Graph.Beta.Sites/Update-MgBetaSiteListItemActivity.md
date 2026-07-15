@@ -28081,7 +28081,7 @@ TIMES `<IMicrosoftGraphItemActivityTimeSet>`: itemActivityTimeSet
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemactivity)
+- [Update-MgBetaSiteListItemActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemactivity)
 
 
 

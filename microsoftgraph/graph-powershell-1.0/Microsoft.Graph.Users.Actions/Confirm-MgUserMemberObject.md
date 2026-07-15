@@ -489,7 +489,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/confirm-mgusermemberobject)
+- [Confirm-MgUserMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/confirm-mgusermemberobject)
 
 
 

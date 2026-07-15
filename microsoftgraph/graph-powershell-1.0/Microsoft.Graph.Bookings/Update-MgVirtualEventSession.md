@@ -1765,7 +1765,7 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventsession)
+- [Update-MgVirtualEventSession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventsession)
 
 
 

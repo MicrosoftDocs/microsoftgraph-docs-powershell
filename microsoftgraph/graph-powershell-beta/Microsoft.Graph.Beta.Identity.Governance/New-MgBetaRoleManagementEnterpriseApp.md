@@ -2191,7 +2191,7 @@ Supports $filter (eq, in).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapp)
+- [New-MgBetaRoleManagementEnterpriseApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapp)
 
 
 

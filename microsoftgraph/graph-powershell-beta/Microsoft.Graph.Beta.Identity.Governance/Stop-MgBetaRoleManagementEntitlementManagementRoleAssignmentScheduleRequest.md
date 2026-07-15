@@ -474,8 +474,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequest)
-- [](https://learn.microsoft.com/graph/api/unifiedroleassignmentschedulerequest-cancel?view=graph-rest-beta)
+- [Stop-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroleassignmentschedulerequest-cancel?view=graph-rest-beta)
 
 
 

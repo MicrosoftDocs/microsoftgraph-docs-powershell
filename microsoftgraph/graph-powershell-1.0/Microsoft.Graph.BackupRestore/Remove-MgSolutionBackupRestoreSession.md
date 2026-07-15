@@ -415,8 +415,8 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresession)
-- [](https://learn.microsoft.com/graph/api/restoresessionbase-delete?view=graph-rest-1.0)
+- [Remove-MgSolutionBackupRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/restoresessionbase-delete?view=graph-rest-1.0)
 
 
 

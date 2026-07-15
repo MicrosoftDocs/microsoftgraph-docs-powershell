@@ -505,8 +505,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitecontenttypecopy)
-- [](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
+- [Add-MgSiteContentTypeCopy](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitecontenttypecopy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
 
 
 

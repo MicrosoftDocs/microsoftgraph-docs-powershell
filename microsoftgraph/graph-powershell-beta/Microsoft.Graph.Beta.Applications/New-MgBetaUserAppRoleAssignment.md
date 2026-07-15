@@ -793,8 +793,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetauserapproleassignment)
-- [](https://learn.microsoft.com/graph/api/agentuser-post-approleassignments?view=graph-rest-beta)
+- [New-MgBetaUserAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetauserapproleassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-post-approleassignments?view=graph-rest-beta)
 
 
 

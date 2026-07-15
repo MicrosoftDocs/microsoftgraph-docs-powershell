@@ -516,8 +516,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharealloweduserbyref)
-- [](https://learn.microsoft.com/graph/api/printershare-post-allowedusers?view=graph-rest-1.0)
+- [New-MgPrintShareAllowedUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharealloweduserbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-post-allowedusers?view=graph-rest-1.0)
 
 
 

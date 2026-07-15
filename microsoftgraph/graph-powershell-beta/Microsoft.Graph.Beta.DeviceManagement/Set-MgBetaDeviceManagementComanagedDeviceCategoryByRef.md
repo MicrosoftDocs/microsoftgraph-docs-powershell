@@ -619,7 +619,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementcomanageddevicecategorybyref)
+- [Set-MgBetaDeviceManagementComanagedDeviceCategoryByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementcomanageddevicecategorybyref)
 
 
 

@@ -398,8 +398,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/reset-mgbetagroupunseencount)
-- [](https://learn.microsoft.com/graph/api/group-resetunseencount?view=graph-rest-beta)
+- [Reset-MgBetaGroupUnseenCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/reset-mgbetagroupunseencount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-resetunseencount?view=graph-rest-beta)
 
 
 

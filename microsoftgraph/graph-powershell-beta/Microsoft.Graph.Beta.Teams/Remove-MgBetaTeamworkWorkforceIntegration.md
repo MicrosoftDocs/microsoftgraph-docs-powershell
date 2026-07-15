@@ -448,8 +448,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkworkforceintegration)
-- [](https://learn.microsoft.com/graph/api/workforceintegration-delete?view=graph-rest-beta)
+- [Remove-MgBetaTeamworkWorkforceIntegration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkworkforceintegration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/workforceintegration-delete?view=graph-rest-beta)
 
 
 

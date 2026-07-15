@@ -769,8 +769,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouplifecyclepolicy)
-- [](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-update?view=graph-rest-1.0)
+- [Update-MgGroupLifecyclePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouplifecyclepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-update?view=graph-rest-1.0)
 
 
 

@@ -460,8 +460,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupsetting)
-- [](https://learn.microsoft.com/graph/api/groupsetting-delete?view=graph-rest-1.0)
+- [Remove-MgGroupSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/groupsetting-delete?view=graph-rest-1.0)
 
 
 

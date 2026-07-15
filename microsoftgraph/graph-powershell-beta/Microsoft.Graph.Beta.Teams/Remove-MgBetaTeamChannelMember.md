@@ -753,9 +753,9 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelmember)
-- [](https://learn.microsoft.com/graph/api/channel-delete-members?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
+- [Remove-MgBetaTeamChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-delete-members?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
 
 
 

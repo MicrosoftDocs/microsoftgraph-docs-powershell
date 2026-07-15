@@ -494,8 +494,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor)
-- [](https://learn.microsoft.com/graph/api/agentuser-list-sponsors?view=graph-rest-1.0)
+- [Get-MgUserSponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-sponsors?view=graph-rest-1.0)
 
 
 

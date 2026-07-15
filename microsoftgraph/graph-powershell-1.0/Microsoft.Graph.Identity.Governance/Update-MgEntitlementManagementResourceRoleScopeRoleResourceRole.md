@@ -837,7 +837,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerolescoperoleresourcerole)
+- [Update-MgEntitlementManagementResourceRoleScopeRoleResourceRole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerolescoperoleresourcerole)
 
 
 

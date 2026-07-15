@@ -958,8 +958,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentitysensor)
-- [](https://learn.microsoft.com/graph/api/security-sensor-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityIdentitySensor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentitysensor)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensor-update?view=graph-rest-beta)
 
 
 

@@ -667,8 +667,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityapiconnector)
-- [](https://learn.microsoft.com/graph/api/identityapiconnector-update?view=graph-rest-1.0)
+- [Update-MgIdentityApiConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityapiconnector)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityapiconnector-update?view=graph-rest-1.0)
 
 
 

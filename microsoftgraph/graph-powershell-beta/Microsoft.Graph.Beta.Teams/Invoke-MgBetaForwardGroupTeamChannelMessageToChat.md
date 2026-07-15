@@ -862,8 +862,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaforwardgroupteamchannelmessagetochat)
-- [](https://learn.microsoft.com/graph/api/chatmessage-forwardtochat?view=graph-rest-beta)
+- [Invoke-MgBetaForwardGroupTeamChannelMessageToChat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaforwardgroupteamchannelmessagetochat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-forwardtochat?view=graph-rest-beta)
 
 
 

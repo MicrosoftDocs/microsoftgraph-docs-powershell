@@ -56184,8 +56184,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserbyuserprincipalname)
-- [](https://learn.microsoft.com/graph/api/user-update?view=graph-rest-1.0)
+- [Update-MgUserByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserbyuserprincipalname)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-update?view=graph-rest-1.0)
 
 
 

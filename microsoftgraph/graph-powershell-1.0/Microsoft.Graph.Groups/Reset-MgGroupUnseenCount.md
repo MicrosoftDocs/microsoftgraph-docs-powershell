@@ -395,8 +395,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/reset-mggroupunseencount)
-- [](https://learn.microsoft.com/graph/api/group-resetunseencount?view=graph-rest-1.0)
+- [Reset-MgGroupUnseenCount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/reset-mggroupunseencount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-resetunseencount?view=graph-rest-1.0)
 
 
 

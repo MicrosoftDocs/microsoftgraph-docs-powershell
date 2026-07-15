@@ -704,7 +704,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemdocumentsetversion)
+- [Get-MgShareListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemdocumentsetversion)
 
 
 

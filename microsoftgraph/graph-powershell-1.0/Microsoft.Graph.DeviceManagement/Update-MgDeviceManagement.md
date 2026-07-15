@@ -26677,7 +26677,7 @@ Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement)
+- [Update-MgDeviceManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement)
 
 
 

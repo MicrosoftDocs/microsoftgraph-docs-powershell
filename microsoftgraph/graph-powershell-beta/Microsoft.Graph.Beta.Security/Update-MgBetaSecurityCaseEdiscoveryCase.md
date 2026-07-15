@@ -44332,8 +44332,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycase)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycase-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityCaseEdiscoveryCase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycase)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycase-update?view=graph-rest-beta)
 
 
 

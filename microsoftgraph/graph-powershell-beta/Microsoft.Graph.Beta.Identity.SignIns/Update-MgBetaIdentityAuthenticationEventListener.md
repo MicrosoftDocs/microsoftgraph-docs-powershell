@@ -760,8 +760,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventlistener)
-- [](https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-beta)
+- [Update-MgBetaIdentityAuthenticationEventListener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventlistener)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-beta)
 
 
 

@@ -1084,7 +1084,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsetrelation)
+- [New-MgSiteTermStoreGroupSetRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsetrelation)
 
 
 

@@ -467,8 +467,8 @@ BODYPARAMETER `<IPaths1Wf2XtvGroupsettingtemplatesMicrosoftGraphValidateproperti
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupsettingtemplateproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+- [Test-MgGroupSettingTemplateProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupsettingtemplateproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
 
 
 

@@ -656,7 +656,7 @@ For OneDrive, this property is not populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mguserdriveroot)
+- [Copy-MgUserDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mguserdriveroot)
 
 
 

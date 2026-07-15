@@ -33422,8 +33422,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam)
-- [](https://learn.microsoft.com/graph/api/team-put-teams?view=graph-rest-1.0)
+- [Set-MgGroupTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-put-teams?view=graph-rest-1.0)
 
 
 
