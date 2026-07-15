@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasereviewsettoreviewset
@@ -635,7 +635,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdditionalDataOptions <String>]: additionalDataOptions
   [CloudAttachmentVersion <String>]: cloudAttachmentVersion
@@ -758,7 +758,7 @@ Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -831,7 +831,7 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-SEARCH <IMicrosoftGraphSecurityEdiscoverySearch>: ediscoverySearch
+SEARCH `<IMicrosoftGraphSecurityEdiscoverySearch>`: ediscoverySearch
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentQuery <String>]: 
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -953,3 +953,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasereviewsettoreviewset)
 - [](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-addtoreviewset?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasesearchreport
@@ -735,7 +735,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1L5Hy36SecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityExportreportPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1L5Hy36SecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityExportreportPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdditionalOptions <String>]: additionalOptions
   [CloudAttachmentVersion <String>]: cloudAttachmentVersion
@@ -745,7 +745,7 @@ BODYPARAMETER <IPaths1L5Hy36SecurityCasesEdiscoverycasesEdiscoverycaseIdSearches
   [ExportCriteria <String>]: exportCriteria
   [ExportLocation <String>]: exportLocation
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -823,3 +823,25 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasesearchreport)
 - [](https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportreport?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

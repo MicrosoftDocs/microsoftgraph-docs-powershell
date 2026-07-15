@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupowner
@@ -506,3 +506,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupowner)
 - [](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
