@@ -15,6 +15,9 @@ title: Update-MgUserEvent
 
 Update the navigation property events in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

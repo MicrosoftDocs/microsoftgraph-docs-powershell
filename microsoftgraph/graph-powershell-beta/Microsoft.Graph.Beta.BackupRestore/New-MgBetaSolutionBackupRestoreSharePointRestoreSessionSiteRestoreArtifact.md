@@ -15,6 +15,9 @@ title: New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifac
 
 Create new navigation property to siteRestoreArtifacts for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

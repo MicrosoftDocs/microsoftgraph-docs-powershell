@@ -15,6 +15,9 @@ title: New-MgBetaDriveListContentTypeColumnLink
 
 Create new navigation property to columnLinks for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/New-MgDriveListContentTypeColumnLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

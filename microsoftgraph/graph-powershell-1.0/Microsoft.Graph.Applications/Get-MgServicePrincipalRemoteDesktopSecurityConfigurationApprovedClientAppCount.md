@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

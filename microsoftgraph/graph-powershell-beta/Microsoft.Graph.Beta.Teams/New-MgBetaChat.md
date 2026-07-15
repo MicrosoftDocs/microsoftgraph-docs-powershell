@@ -15,6 +15,9 @@ title: New-MgBetaChat
 
 Create a new chat object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgChat](/powershell/module/Microsoft.Graph.Teams/New-MgChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

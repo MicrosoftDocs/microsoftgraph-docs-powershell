@@ -15,6 +15,9 @@ title: Remove-MgServicePrincipalSynchronizationJobBulkUpload
 
 Delete navigation property bulkUpload for servicePrincipals
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalSynchronizationJobBulkUpload?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

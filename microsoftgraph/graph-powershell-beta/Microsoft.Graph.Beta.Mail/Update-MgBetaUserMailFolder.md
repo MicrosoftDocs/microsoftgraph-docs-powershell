@@ -15,6 +15,9 @@ title: Update-MgBetaUserMailFolder
 
 Update the navigation property mailFolders in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

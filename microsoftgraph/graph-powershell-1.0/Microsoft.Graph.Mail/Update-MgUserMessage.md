@@ -15,6 +15,9 @@ title: Update-MgUserMessage
 
 Update the navigation property messages in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -17,6 +17,9 @@ Retrieve a single conversationMember (direct or indirect) from the allMembers co
 This API provides access to the following member types:\r- *Direct members*: Users who are added directly to the channel, including users from other tenants (cross-tenant).\r- *Indirect members*: Users who are members of a team with which the channel is shared, including teams in the same tenant or in a different tenant (cross-tenant).
 When you retrieve an indirect member, the @microsoft.graph.originalSourceMembershipUrl property identifies the original source team, which indicates that the user is an indirect member of the shared channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

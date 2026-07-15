@@ -15,6 +15,9 @@ title: Remove-MgIdentityB2XUserFlow
 
 Delete a b2xIdentityUserFlow object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

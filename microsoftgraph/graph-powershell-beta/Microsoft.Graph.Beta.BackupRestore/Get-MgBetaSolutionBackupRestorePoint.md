@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestorePoint
 
 List of restore points in the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestorePoint](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestorePoint?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
