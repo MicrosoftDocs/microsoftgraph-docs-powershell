@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 Promote a verified subdomain to the root domain.
 A verified domain has its isVerified property set to true.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

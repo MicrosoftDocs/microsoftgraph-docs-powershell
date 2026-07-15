@@ -85,6 +85,14 @@ This cmdlet has the following aliases,
 Update the properties of a bookingService object in the specified bookingBusiness.
 The following are some examples you can customize for a service:\r- Price\r- Typical length of an appointment\r- Reminders\r- Any time buffer to set up before or finish up after the service\r- Scheduling policy parameters, such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.ReadWrite.All, Bookings.Manage.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

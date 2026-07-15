@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Update the selfServiceSignUp property of an authenticationFlowsPolicy object.
 The properties id, type, and description cannot be modified.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.AuthenticationFlows,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.AuthenticationFlows,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

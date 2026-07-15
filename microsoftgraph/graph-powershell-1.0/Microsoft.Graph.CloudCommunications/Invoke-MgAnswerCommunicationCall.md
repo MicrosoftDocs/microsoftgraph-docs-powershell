@@ -78,6 +78,14 @@ The bot is expected to answer, reject, or redirect the call before the call time
 The current timeout value is 15 seconds for regular scenarios and 5 seconds for policy-based recording scenarios.
 This API supports the following PSTN scenarios:
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
