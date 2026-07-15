@@ -73,16 +73,6 @@ The group's profile photo.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ProfilePhoto.Read.All, Group.Read.All, ProfilePhoto.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -431,6 +421,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphotocontent)
 - [](https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-beta)
+
 
 
 

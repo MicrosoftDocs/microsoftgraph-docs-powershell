@@ -61,12 +61,17 @@ This cmdlet has the following aliases,
 Read the properties and relationships of an onPremisesDirectorySynchronization object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryOnPremiseSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId
+
+```
+This example shows how to use the Get-MgDirectoryOnPremiseSynchronization Cmdlet.
+
 
 ## PARAMETERS
 

@@ -74,12 +74,17 @@ Delete calendarPermission.
 | Application | Calendars.ReadWrite,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
 Remove-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
+
+```
+This example shows how to use the Remove-MgUserCalendarPermission Cmdlet.
+
 
 ## PARAMETERS
 

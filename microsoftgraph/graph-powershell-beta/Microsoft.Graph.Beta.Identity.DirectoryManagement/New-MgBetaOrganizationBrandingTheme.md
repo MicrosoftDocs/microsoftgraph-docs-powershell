@@ -77,8 +77,9 @@ Create a new organizationalBrandingTheme object.
 | Application | OrganizationalBranding.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -89,6 +90,10 @@ $params = @{
 }
 
 New-MgBetaOrganizationBrandingTheme -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaOrganizationBrandingTheme Cmdlet.
+
 
 ## PARAMETERS
 

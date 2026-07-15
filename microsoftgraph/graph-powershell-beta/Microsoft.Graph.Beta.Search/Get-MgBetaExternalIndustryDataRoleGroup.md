@@ -64,12 +64,17 @@ Read the properties and relationships of a roleGroup object.
 | Application | IndustryData-ReferenceDefinition.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalIndustryDataRoleGroup
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataRoleGroup Cmdlet.
+
 
 ## PARAMETERS
 

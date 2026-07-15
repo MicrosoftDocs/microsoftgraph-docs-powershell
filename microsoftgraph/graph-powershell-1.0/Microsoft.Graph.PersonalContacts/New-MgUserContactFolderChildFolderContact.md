@@ -104,16 +104,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to contacts for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1945,6 +1935,7 @@ TERTIARYEMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfoldercontact)
+
 
 
 

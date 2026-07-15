@@ -57,12 +57,17 @@ Set mobile device management authority
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Set-MgOrganizationMobileDeviceManagementAuthority -OrganizationId $organizationId
+
+```
+This example shows how to use the Set-MgOrganizationMobileDeviceManagementAuthority Cmdlet.
+
 
 ## PARAMETERS
 

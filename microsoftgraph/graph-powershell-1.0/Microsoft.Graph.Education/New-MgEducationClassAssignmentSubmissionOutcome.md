@@ -87,8 +87,9 @@ If the file doesn't exist or isn't in that folder, the POST request will fail.
 | Application | EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
@@ -101,6 +102,10 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
+```
+This example shows how to use the New-MgEducationClassAssignmentSubmissionOutcome Cmdlet.
+
 
 ## PARAMETERS
 

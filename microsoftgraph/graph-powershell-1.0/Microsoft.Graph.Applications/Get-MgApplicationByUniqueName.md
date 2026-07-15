@@ -57,16 +57,6 @@ This API can be used to get agentIdentityBlueprint objects as well by their ID.
 | Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All, User.Read,  |
 | Application | Application.Read.All, AgentIdentityBlueprint.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -387,6 +377,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyuniquename)
 - [](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0)
+
 
 
 
