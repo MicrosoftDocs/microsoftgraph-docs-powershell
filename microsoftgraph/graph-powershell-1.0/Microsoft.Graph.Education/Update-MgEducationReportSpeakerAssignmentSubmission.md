@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationreportspeakerassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 07/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEducationReportSpeakerAssignmentSubmission
 ---
@@ -14,9 +14,6 @@ title: Update-MgEducationReportSpeakerAssignmentSubmission
 ## SYNOPSIS
 
 Update the navigation property speakerAssignmentSubmissions in education
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationReportSpeakerAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationReportSpeakerAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,7 +33,6 @@ Update-MgEducationReportSpeakerAssignmentSubmission -SpeakerAssignmentSubmission
  [-WordsSpokenCount <long>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -46,7 +42,7 @@ Update-MgEducationReportSpeakerAssignmentSubmission -SpeakerAssignmentSubmission
  -BodyParameter <IMicrosoftGraphSpeakerAssignmentSubmission> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -65,7 +61,6 @@ Update-MgEducationReportSpeakerAssignmentSubmission -InputObject <IEducationIden
  [-WordsSpokenCount <long>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -75,7 +70,7 @@ Update-MgEducationReportSpeakerAssignmentSubmission -InputObject <IEducationIden
  -BodyParameter <IMicrosoftGraphSpeakerAssignmentSubmission> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -86,6 +81,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property speakerAssignmentSubmissions in education
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -989,7 +994,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSpeakerAssignmentSubmission>`: speakerAssignmentSubmission
+BODYPARAMETER <IMicrosoftGraphSpeakerAssignmentSubmission>: speakerAssignmentSubmission
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1015,7 +1020,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [TopRepetitiveWordsAndPhrases <String[]>]: The words and phrases most repeated by the student.
   [WordsSpokenCount <Int64?>]: Total number of words spoken by the student in the submission.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -1040,27 +1045,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgEducationReportSpeakerAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationreportspeakerassignmentsubmission)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationreportspeakerassignmentsubmission)

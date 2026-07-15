@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/get-mgenvironment
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 02/20/2026
+ms.date: 07/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgRequestContext
 ---
@@ -20,7 +20,7 @@ Gets graph request context details
 ### __AllParameterSets
 
 ```
-Get-MgRequestContext [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgRequestContext [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -103,6 +103,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Authentication.Core.Interfaces.IRequestContext
 
+{{ Fill in the Description }}
 
 ## NOTES
 

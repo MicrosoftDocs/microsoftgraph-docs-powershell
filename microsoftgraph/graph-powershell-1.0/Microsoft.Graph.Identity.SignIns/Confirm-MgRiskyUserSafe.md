@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusersafe
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/15/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgRiskyUserSafe
 ---
@@ -16,9 +16,6 @@ title: Confirm-MgRiskyUserSafe
 Confirm one or more riskyUser objects as safe.
 This action sets the targeted user's risk level to none.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaRiskyUserSafe](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaRiskyUserSafe?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### ConfirmExpanded (Default)
@@ -28,7 +25,6 @@ Confirm-MgRiskyUserSafe [-ResponseHeadersVariable <string>] [-AdditionalProperti
  [-UserIds <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Confirm
@@ -39,7 +35,6 @@ Confirm-MgRiskyUserSafe
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,18 +47,9 @@ This cmdlet has the following aliases,
 Confirm one or more riskyUser objects as safe.
 This action sets the targeted user's risk level to none.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskyUser.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskyUser.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -76,10 +62,6 @@ $params = @{
 }
 
 Confirm-MgRiskyUserSafe -BodyParameter $params
-
-```
-This example shows how to use the Confirm-MgRiskyUserSafe Cmdlet.
-
 
 ## PARAMETERS
 
@@ -106,7 +88,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -340,7 +322,7 @@ HelpMessage: ''
 
 ### -UserIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -411,34 +393,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Kyb54HIdentityprotectionRiskyusersMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Kyb54HIdentityprotectionRiskyusersMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UserIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Confirm-MgRiskyUserSafe](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusersafe)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyuser-confirmsafe?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusersafe)
+- [](https://learn.microsoft.com/graph/api/riskyuser-confirmsafe?view=graph-rest-1.0)

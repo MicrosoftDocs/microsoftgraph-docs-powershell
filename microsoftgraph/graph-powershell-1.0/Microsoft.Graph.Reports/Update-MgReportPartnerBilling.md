@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbilling
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 02/20/2026
+ms.date: 07/15/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgReportPartnerBilling
 ---
@@ -14,9 +14,6 @@ title: Update-MgReportPartnerBilling
 ## SYNOPSIS
 
 Update the navigation property billing in reports
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaReportPartnerBilling](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaReportPartnerBilling?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,7 +28,6 @@ Update-MgReportPartnerBilling [-ResponseHeadersVariable <string>]
  [-Usage <IMicrosoftGraphPartnersBillingAzureUsage>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -41,7 +37,6 @@ Update-MgReportPartnerBilling -BodyParameter <IMicrosoftGraphPartnersBilling>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property billing in reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -451,7 +456,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPartnersBilling>`: billing
+BODYPARAMETER <IMicrosoftGraphPartnersBilling>: billing
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -550,7 +555,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Status <String>]: longRunningOperationStatus
 
-RECONCILIATION `<IMicrosoftGraphPartnersBillingReconciliation>`: billingReconciliation
+RECONCILIATION <IMicrosoftGraphPartnersBillingReconciliation>: billingReconciliation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -563,7 +568,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-USAGE `<IMicrosoftGraphPartnersBillingAzureUsage>`: azureUsage
+USAGE <IMicrosoftGraphPartnersBillingAzureUsage>: azureUsage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -579,27 +584,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgReportPartnerBilling](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbilling)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbilling)

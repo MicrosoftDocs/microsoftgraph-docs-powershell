@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/15/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPolicyDeviceRegistrationPolicy
 ---
@@ -13,10 +13,8 @@ title: Get-MgPolicyDeviceRegistrationPolicy
 
 ## SYNOPSIS
 
-Get deviceRegistrationPolicy from policies
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyDeviceRegistrationPolicy?view=graph-powershell-beta)
+Read the properties and relationships of a deviceRegistrationPolicy object.
+Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
 ## SYNTAX
 
@@ -26,7 +24,7 @@ Get deviceRegistrationPolicy from policies
 Get-MgPolicyDeviceRegistrationPolicy [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -36,15 +34,16 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get deviceRegistrationPolicy from policies
+Read the properties and relationships of a deviceRegistrationPolicy object.
+Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration, Policy.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration,  |
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyDeviceRegistrationPolicy
 
 ## PARAMETERS
 
@@ -284,27 +283,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgPolicyDeviceRegistrationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy)
+- [](https://learn.microsoft.com/graph/api/deviceregistrationpolicy-get?view=graph-rest-1.0)

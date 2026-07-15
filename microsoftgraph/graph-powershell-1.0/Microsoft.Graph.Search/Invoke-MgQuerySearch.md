@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 02/20/2026
+ms.date: 07/15/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgQuerySearch
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgQuerySearch
 Runs the query specified in the request body.
 Search results are provided in the response.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### QueryExpanded (Default)
@@ -28,7 +25,6 @@ Invoke-MgQuerySearch [-ResponseHeadersVariable <string>] [-AdditionalProperties 
  [-Requests <IMicrosoftGraphSearchRequest[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Query
@@ -39,7 +35,6 @@ Invoke-MgQuerySearch
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,18 +47,9 @@ This cmdlet has the following aliases,
 Runs the query specified in the request body.
 Search results are provided in the response.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Read, Sites.Read.All, QnA.Read.All, Files.Read.All, ExternalItem.Read.All, Chat.Read, Calendars.Read, Bookmark.Read.All, Acronym.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Files.Read.All, Sites.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Basic call to perform a search request
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Search
 
@@ -91,12 +77,7 @@ $params = @{
 
 Invoke-MgQuerySearch -BodyParameter $params
 
-```
-This example will basic call to perform a search request
-
-### Example 2: Basic call to use queryTemplate
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Search
 
@@ -117,10 +98,6 @@ $params = @{
 }
 
 Invoke-MgQuerySearch -BodyParameter $params
-
-```
-This example will basic call to use querytemplate
-
 
 ## PARAMETERS
 
@@ -147,7 +124,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -338,7 +315,7 @@ HelpMessage: ''
 
 ### -Requests
 
-
+.
 To construct, see NOTES section for REQUESTS properties and create a hash table.
 
 ```yaml
@@ -432,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Requests <IMicrosoftGraphSearchRequest[]>]: 
     [AggregationFilters <String[]>]: Contains one or more filters to obtain search results aggregated and filtered to a specific value of a field.
@@ -637,27 +614,5 @@ Required.
 
 ## RELATED LINKS
 
-- [Invoke-MgQuerySearch](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
+- [](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0)

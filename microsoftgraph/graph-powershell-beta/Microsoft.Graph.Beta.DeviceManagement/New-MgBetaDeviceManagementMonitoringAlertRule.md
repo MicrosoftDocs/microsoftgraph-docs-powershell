@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 07/15/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementMonitoringAlertRule
 ---
@@ -28,7 +28,6 @@ New-MgBetaDeviceManagementMonitoringAlertRule [-ResponseHeadersVariable <string>
  [-Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -38,7 +37,7 @@ New-MgBetaDeviceManagementMonitoringAlertRule
  -BodyParameter <IMicrosoftGraphDeviceManagementAlertRule> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -51,9 +50,8 @@ This cmdlet has the following aliases,
 Create an alertRule object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement
 
@@ -98,10 +96,6 @@ $params = @{
 }
 
 New-MgBetaDeviceManagementMonitoringAlertRule -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaDeviceManagementMonitoringAlertRule Cmdlet.
-
 
 ## PARAMETERS
 
@@ -609,7 +603,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementAlertRule>`: alertRule
+BODYPARAMETER <IMicrosoftGraphDeviceManagementAlertRule>: alertRule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -666,7 +660,7 @@ For email notifications, contactInformation consists of an email address such as
     [Locale <String>]: Defines the language and format in which the notification will be sent.
 Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja-jp, ko-kr, nl-nl, pl-pl, pt-br, pt-pt, ru-ru, sv-se, tr-tr, zh-cn, zh-tw.
 
-THRESHOLD `<IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
+THRESHOLD <IMicrosoftGraphDeviceManagementRuleThreshold>: ruleThreshold
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Aggregation <String>]: aggregationType
   [Operator <String>]: operatorType
@@ -675,27 +669,5 @@ THRESHOLD `<IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementMonitoringAlertRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule)
+- [](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-post?view=graph-rest-beta)

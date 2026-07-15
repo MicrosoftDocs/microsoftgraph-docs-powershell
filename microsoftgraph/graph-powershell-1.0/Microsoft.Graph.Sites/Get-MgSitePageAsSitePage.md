@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 02/20/2026
+ms.date: 07/15/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSitePageAsSitePage
 ---
@@ -14,9 +14,6 @@ title: Get-MgSitePageAsSitePage
 ## SYNOPSIS
 
 Returns the metadata for a sitePage in the site pages list in a site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSitePageAsSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgSitePageAsSitePage -SiteId <string> [-ExpandProperty <string[]>] [-Propert
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +34,7 @@ Get-MgSitePageAsSitePage -SiteId <string> [-ExpandProperty <string[]>] [-Propert
 Get-MgSitePageAsSitePage -BaseSitePageId <string> -SiteId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +43,7 @@ Get-MgSitePageAsSitePage -BaseSitePageId <string> -SiteId <string> [-ExpandPrope
 Get-MgSitePageAsSitePage -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -59,28 +56,18 @@ This cmdlet has the following aliases,
 Returns the metadata for a sitePage in the site pages list in a site.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId
 
-```
-This example shows how to use the Get-MgSitePageAsSitePage Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId -Property "id,name" 
-
-```
-This example shows how to use the Get-MgSitePageAsSitePage Cmdlet.
-
+Get-MgSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId -Property "id,name"
 
 ## PARAMETERS
 
@@ -569,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -617,27 +604,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSitePageAsSitePage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sitepage-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage)
+- [](https://learn.microsoft.com/graph/api/sitepage-get?view=graph-rest-1.0)

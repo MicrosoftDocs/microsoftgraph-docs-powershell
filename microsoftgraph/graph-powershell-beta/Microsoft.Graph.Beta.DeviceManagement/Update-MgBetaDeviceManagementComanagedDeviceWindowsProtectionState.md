@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicewindowsprotectionstate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 07/15/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState
 ---
@@ -22,35 +22,7 @@ Update the navigation property windowsProtectionState in deviceManagement
 ```
 Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState -ManagedDeviceId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AntiMalwareVersion <string>] [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
- [-DeviceState <WindowsDeviceHealthState>] [-EngineVersion <string>] [-FullScanOverdue]
- [-FullScanRequired] [-Id <string>] [-IsVirtualMachine] [-LastFullScanDateTime <datetime>]
- [-LastFullScanSignatureVersion <string>] [-LastQuickScanDateTime <datetime>]
- [-LastQuickScanSignatureVersion <string>] [-LastReportedDateTime <datetime>]
- [-MalwareProtectionEnabled] [-NetworkInspectionSystemEnabled]
- [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue] [-RealTimeProtectionEnabled]
- [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <string>] [-TamperProtectionEnabled]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-
-```
-Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState -ManagedDeviceId <string>
- -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-
-```
-Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState
- -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-AntiMalwareVersion <string>]
+ [-AntiMalwareVersion <string>] [-ControlledConfigurationEnabled]
  [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
  [-DeviceState <WindowsDeviceHealthState>] [-EngineVersion <string>] [-FullScanOverdue]
  [-FullScanRequired] [-Id <string>] [-IsVirtualMachine] [-LastFullScanDateTime <datetime>]
@@ -61,7 +33,37 @@ Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState
  [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <string>] [-TamperProtectionEnabled]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### Update
+
+```
+Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState -ManagedDeviceId <string>
+ -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentityExpanded
+
+```
+Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState
+ -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-AntiMalwareVersion <string>]
+ [-ControlledConfigurationEnabled]
+ [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
+ [-DeviceState <WindowsDeviceHealthState>] [-EngineVersion <string>] [-FullScanOverdue]
+ [-FullScanRequired] [-Id <string>] [-IsVirtualMachine] [-LastFullScanDateTime <datetime>]
+ [-LastFullScanSignatureVersion <string>] [-LastQuickScanDateTime <datetime>]
+ [-LastQuickScanSignatureVersion <string>] [-LastReportedDateTime <datetime>]
+ [-MalwareProtectionEnabled] [-NetworkInspectionSystemEnabled]
+ [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue] [-RealTimeProtectionEnabled]
+ [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <string>] [-TamperProtectionEnabled]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -72,7 +74,6 @@ Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -83,6 +84,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property windowsProtectionState in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -201,6 +212,34 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ControlledConfigurationEnabled
+
+When TRUE indicates the Windows Defender controlled configuration feature is enabled, when FALSE indicates the Windows Defender controlled configuration feature is not enabled.
+Defaults to setting on client device.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -1048,11 +1087,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsProtectionState>`: Device protection status entity.
+BODYPARAMETER <IMicrosoftGraphWindowsProtectionState>: Device protection status entity.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [AntiMalwareVersion <String>]: Current anti malware version
+  [ControlledConfigurationEnabled <Boolean?>]: When TRUE indicates the Windows Defender controlled configuration feature is enabled, when FALSE indicates the Windows Defender controlled configuration feature is not enabled.
+Defaults to setting on client device.
   [DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]: Device malware list
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1109,7 +1150,7 @@ Read-only.
   [State <WindowsMalwareState?>]: Malware current status
   [ThreatState <WindowsMalwareThreatState?>]: Malware threat status
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -1221,27 +1262,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicewindowsprotectionstate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicewindowsprotectionstate)

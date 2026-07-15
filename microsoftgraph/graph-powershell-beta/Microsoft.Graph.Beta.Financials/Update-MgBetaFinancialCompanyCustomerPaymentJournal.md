@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 02/20/2026
+ms.date: 07/15/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanyCustomerPaymentJournal
 ---
@@ -28,7 +28,6 @@ Update-MgBetaFinancialCompanyCustomerPaymentJournal -CompanyId <string>
  [-LastModifiedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -39,7 +38,6 @@ Update-MgBetaFinancialCompanyCustomerPaymentJournal -CompanyId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,7 +51,6 @@ Update-MgBetaFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIde
  [-LastModifiedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -63,7 +60,7 @@ Update-MgBetaFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIde
  -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -75,13 +72,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property customerPaymentJournals in financials
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Financials.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Financials.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -142,7 +141,7 @@ HelpMessage: ''
 
 ### -BalancingAccountId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -169,7 +168,7 @@ HelpMessage: ''
 
 ### -BalancingAccountNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -245,7 +244,7 @@ HelpMessage: ''
 
 ### -Code
 
-
+.
 
 ```yaml
 Type: System.String
@@ -348,7 +347,7 @@ HelpMessage: ''
 
 ### -CustomerPayments
 
-
+.
 To construct, see NOTES section for CUSTOMERPAYMENTS properties and create a hash table.
 
 ```yaml
@@ -376,7 +375,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -466,7 +465,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -521,7 +520,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -687,7 +686,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCOUNT `<IMicrosoftGraphAccount>`: account
+ACCOUNT <IMicrosoftGraphAccount>: account
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Blocked <Boolean?>]: 
   [Category <String>]: 
@@ -697,7 +696,7 @@ ACCOUNT `<IMicrosoftGraphAccount>`: account
   [Number <String>]: 
   [SubCategory <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphCustomerPaymentJournal>`: customerPaymentJournal
+BODYPARAMETER <IMicrosoftGraphCustomerPaymentJournal>: customerPaymentJournal
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Account <IMicrosoftGraphAccount>]: account
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -876,7 +875,7 @@ CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment[]>: .
   [LineNumber <Int32?>]: 
   [PostingDate <DateTime?>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -917,27 +916,4 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaFinancialCompanyCustomerPaymentJournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournal)

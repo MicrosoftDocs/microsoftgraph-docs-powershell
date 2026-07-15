@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 07/15/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupConversation
 ---
@@ -14,9 +14,6 @@ title: New-MgGroupConversation
 ## SYNOPSIS
 
 Use reply thread or reply post to further post to that conversation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ New-MgGroupConversation -GroupId <string> [-ResponseHeadersVariable <string>]
  [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <string>] [-UniqueSenders <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +36,6 @@ New-MgGroupConversation -GroupId <string> -BodyParameter <IMicrosoftGraphConvers
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -51,7 +47,7 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> [-ResponseHeadersVariable
  [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <string>] [-UniqueSenders <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +57,6 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,18 +68,9 @@ This cmdlet has the following aliases,
 
 Use reply thread or reply post to further post to that conversation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Create an extension in a new group post using POST operation
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
@@ -118,10 +104,6 @@ $params = @{
 }
 
 New-MgGroupConversation -GroupId $groupId -BodyParameter $params
-
-```
-This example will create an extension in a new group post using post operation
-
 
 ## PARAMETERS
 
@@ -680,7 +662,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConversation>`: conversation
+BODYPARAMETER <IMicrosoftGraphConversation>: conversation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -697,7 +679,7 @@ Nullable.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [CcRecipients <IMicrosoftGraphRecipient[]>]: The Cc: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
       [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Address <String>]: The email address of the person or entity.
@@ -769,7 +751,7 @@ Read-only.
     [Preview <String>]: A short summary from the body of the latest post in this conversation.
 Returned by default.
     [ToRecipients <IMicrosoftGraphRecipient[]>]: The To: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
     [Topic <String>]: The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
 Returned by default.
@@ -779,7 +761,7 @@ Returned by default.
 This property can be set when the conversation is created, but it cannot be updated.
   [UniqueSenders <String[]>]: All the users that sent a message to this Conversation.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -807,7 +789,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [CcRecipients <IMicrosoftGraphRecipient[]>]: The Cc: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
     [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Address <String>]: The email address of the person or entity.
@@ -879,7 +861,7 @@ Read-only.
   [Preview <String>]: A short summary from the body of the latest post in this conversation.
 Returned by default.
   [ToRecipients <IMicrosoftGraphRecipient[]>]: The To: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
   [Topic <String>]: The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
 Returned by default.
@@ -889,27 +871,5 @@ Returned by default.
 
 ## RELATED LINKS
 
-- [New-MgGroupConversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation)
+- [](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0)
