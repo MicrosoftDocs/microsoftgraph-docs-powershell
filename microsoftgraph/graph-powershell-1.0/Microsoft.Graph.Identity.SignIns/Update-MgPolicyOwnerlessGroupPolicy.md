@@ -56,16 +56,6 @@ If the policy doesn't exist, it creates a new one; if the policy exists, it upda
 To disable the policy, set isEnabled to false.
 Setting isEnabled to false clears the values of all other policy parameters.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -580,6 +570,7 @@ When notifyMembers is blockSelected, members in these security groups are exclud
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyownerlessgrouppolicy)
 - [](https://learn.microsoft.com/graph/api/ownerlessgrouppolicy-upsert?view=graph-rest-1.0)
+
 
 
 
