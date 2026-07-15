@@ -5,7 +5,9 @@ Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config\ModulesMapping.jsonc"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
-    [string] $CmdletMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json")
+    [string] $CmdletMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json"),
+    [ValidateSet("v1.0", "beta", "both")]
+    [string] $GraphProfileFilter = "both"
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -91,13 +93,16 @@ function Start-GraphHelp {
     $GraphMapping = Get-GraphMapping 
     $TempAuthDir = Join-Path ([System.IO.Path]::GetTempPath()) "GraphDocsTempAuth_$([guid]::NewGuid().ToString('N'))"
     New-Item -Path $TempAuthDir -ItemType Directory -Force | Out-Null
-    $GraphMapping.Keys | ForEach-Object {
+    $profilesToProcess = if ($GraphProfileFilter -eq 'both') { $GraphMapping.Keys } else { @($GraphProfileFilter) }
+    $profilesToProcess | ForEach-Object {
         $graphProfile = $_
         $profilePath = "graph-powershell-1.0"
         if ($graphProfile -eq "beta") {
             $profilePath = "graph-powershell-beta"
         }
 
+        # Authentication docs live only under graph-powershell-1.0, so generate them for the v1.0 profile only.
+        if ($graphProfile -eq "v1.0") {
         # Generate all auth module docs to temp directory using module-level generation
         Set-Help -ModuleDocsPath $TempAuthDir -Command "Connect-MgGraph" -Module "Microsoft.Graph.Authentication"
 
@@ -122,6 +127,7 @@ function Start-GraphHelp {
                     Write-Host "Added auth doc: $($_.BaseName)"
                 }
             }
+        }
         }
          Get-FolderByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }

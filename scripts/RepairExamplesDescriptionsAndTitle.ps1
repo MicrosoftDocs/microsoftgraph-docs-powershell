@@ -4,7 +4,9 @@ Param(
     $ModulesToGenerate = @(),
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
-    [string] $CommandMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json")
+    [string] $CommandMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json"),
+    [ValidateSet("v1.0", "beta", "both")]
+    [string] $GraphProfileFilter = "both"
 )
 
 function Start-Copy {
@@ -15,6 +17,7 @@ function Start-Copy {
             $ModuleName = $_.Module
             $GraphProfile = $_.ApiVersion
             $Command = $_.Command
+            if ($GraphProfileFilter -ne 'both' -and $GraphProfile -ne $GraphProfileFilter) { return }
             $GraphProfilePath = "graph-powershell-1.0"
             $ModulePrefix = "Microsoft.Graph"
             if ($GraphProfile -eq "beta") {

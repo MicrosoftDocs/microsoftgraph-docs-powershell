@@ -4,7 +4,9 @@ Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
-    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph")
+    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
+    [ValidateSet("v1.0", "beta", "both")]
+    [string] $GraphProfileFilter = "both"
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -20,7 +22,8 @@ function Start-Update {
 
     $ModulePrefix = "Microsoft.Graph"
     $GraphMapping = Get-GraphMapping 
-    $GraphMapping.Keys | ForEach-Object {
+    $profilesToProcess = if ($GraphProfileFilter -eq 'both') { $GraphMapping.Keys } else { @($GraphProfileFilter) }
+    $profilesToProcess | ForEach-Object {
         $GraphProfile = $_
         $profilePath = "graph-powershell-1.0"
         if ($GraphProfile -eq "beta") {
@@ -116,7 +119,8 @@ function Construct-Path {
         $BetaFilePath = Join-Path $WorkLoadDocsPath "graph-powershell-beta" "Microsoft.Graph.Beta.$Module" "$Command.md"
         $V1FilePath = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" "Microsoft.Graph.$Module" "$Command.md"
 
-        if (Test-Path $BetaFilePath) {
+        # Adds the cross-profile note into the beta doc (skip when generating v1.0 only).
+        if ((Test-Path $BetaFilePath) -and ($GraphProfileFilter -ne 'v1.0')) {
             $V1Command = $Command.Replace("-MgBeta", "-Mg")
             $ConfirmV1Path = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" "Microsoft.Graph.$Module" "$V1Command.md"
             if (Test-Path $ConfirmV1Path) {
@@ -124,7 +128,8 @@ function Construct-Path {
             }
         }
 
-        if (Test-Path $V1FilePath) {
+        # Adds the cross-profile note into the v1.0 doc (skip when generating beta only).
+        if ((Test-Path $V1FilePath) -and ($GraphProfileFilter -ne 'beta')) {
             $BetaCommand = $Command.Replace("-Mg", "-MgBeta")
             $ConfirmBetaPath = Join-Path $WorkLoadDocsPath "graph-powershell-beta" "Microsoft.Graph.Beta.$Module" "$BetaCommand.md"
             if (Test-Path $ConfirmBetaPath) {
