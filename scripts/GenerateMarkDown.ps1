@@ -83,7 +83,15 @@ function Start-GraphHelp {
     Param(
         $ModulesToGenerate = @()
     )
-    
+
+    # Track how much PlatyPS actually produced. New-MarkdownCommandHelp writes a temp
+    # file on every run (even when the content matches the committed docs), so a total
+    # of zero generated files means generation itself failed rather than the docs being
+    # up to date. This lets the pipeline tell a silent generation failure apart from a
+    # legitimate no-op (see the hard check at the end of this script).
+    $script:GeneratedFileCount = 0
+    $script:GenerationFailures = [System.Collections.Generic.List[string]]::new()
+
     #Generate for auth module first
     $ModulePrefix = "Microsoft.Graph"
     $AuthPath = "$ModulePrefix.Authentication"
@@ -108,11 +116,17 @@ function Start-GraphHelp {
 
         # Compare and copy all generated auth files
         $TempAuthModuleDir = Join-Path $TempAuthDir $AuthPath
-        if (Test-Path $TempAuthModuleDir) {
+        $authFiles = if (Test-Path $TempAuthModuleDir) { @(Get-ChildItem -Path $TempAuthModuleDir -Filter "*.md" -File) } else { @() }
+        if ($authFiles.Count -eq 0) {
+            $script:GenerationFailures.Add("Microsoft.Graph.Authentication (module page)")
+            Write-Warning "Auth module generation produced no markdown files."
+        }
+        if ($TempAuthModuleDir -and (Test-Path $TempAuthModuleDir)) {
             if (-not (Test-Path $AuthDestination)) {
                 New-Item -Path $AuthDestination -ItemType Directory -Force | Out-Null
             }
-            Get-ChildItem -Path $TempAuthModuleDir -Filter "*.md" -File | ForEach-Object {
+            $authFiles | ForEach-Object {
+                $script:GeneratedFileCount++
                 $tempFile = $_.FullName
                 $existingFile = Join-Path $AuthDestination $_.Name
                 if (Test-Path $existingFile) {
@@ -208,6 +222,7 @@ function Get-FolderByProfile {
                 Set-Help -ModuleDocsPath $TempOutputDir -Command $Command -Module $Path
                 $TempFilePath = Join-Path $TempOutputDir $Path "$Command.md"
                 if (Test-Path $TempFilePath) {
+                    $script:GeneratedFileCount++
                     if (Test-Path $CmdletDocsPath) {
                         $existingContent = Get-NormalizedContent -FilePath $CmdletDocsPath
                         $newContent = Get-NormalizedContent -FilePath $TempFilePath
@@ -219,6 +234,11 @@ function Get-FolderByProfile {
                         Copy-Item -Path $TempFilePath -Destination $CmdletDocsPath -Force
                         Write-Host "Added: $Command"
                     }
+                } else {
+                    # The command is available but PlatyPS produced no file: a real
+                    # generation failure (its error was swallowed inside Set-Help).
+                    $script:GenerationFailures.Add($Command)
+                    Write-Warning "Generation produced no output for available command: $Command"
                 }
             } elseif (-not (Test-Path $CmdletDocsPath)) {
                 Write-Warning "Cmdlet $Command is not available."
@@ -286,4 +306,16 @@ if ($ModulesToGenerate.Count -eq 0) {
 }
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-GraphHelp -ModulesToGenerate $ModulesToGenerate
+
+# Fail loudly when generation produced nothing. Without this guard a broken generation
+# (e.g. a PlatyPS/module error swallowed by Set-Help) looks exactly like an up-to-date
+# no-op: the working tree stays clean, an empty branch is pushed and the PR step fails
+# with a confusing "No commits between main and <branch>" error.
+if ($script:GeneratedFileCount -eq 0) {
+    throw "Doc generation produced no markdown files for profile '$GraphProfileFilter'. This indicates a generation failure (PlatyPS/module error), not up-to-date docs. Failing the build so the empty result is not silently published."
+}
+if ($script:GenerationFailures.Count -gt 0) {
+    Write-Warning "Generation produced no output for $($script:GenerationFailures.Count) available command(s): $($script:GenerationFailures -join ', ')"
+}
+Write-Host "Generation summary for profile '$GraphProfileFilter': $($script:GeneratedFileCount) file(s) generated, $($script:GenerationFailures.Count) failure(s)."
 Write-Host -ForegroundColor Green "-------------Done-------------"

@@ -33,6 +33,7 @@ steps:
         Write-Host "Compute branch: $branch"
         Write-Host "##vso[task.setvariable variable=WeeklyReferenceDocsBranch;isOutput=true]$branch"
   - task: Bash@3
+    name: "CreateBranch"
     displayName: "Create weekly refresh branch"
     inputs:
       targetType: inline
@@ -40,6 +41,12 @@ steps:
         git status
         git branch $(ComputeBranch.WeeklyReferenceDocsBranch)
         git checkout $(ComputeBranch.WeeklyReferenceDocsBranch)
+        # Record the commit the branch was created from so the push step can tell
+        # whether generation actually advanced the branch (the generation scripts
+        # commit their own output, so the working tree is clean by push time).
+        BASE_COMMIT=$(git rev-parse HEAD)
+        echo "Base commit: $BASE_COMMIT"
+        echo "##vso[task.setvariable variable=BaseCommit;isOutput=true]$BASE_COMMIT"
         git status
   - task: PowerShell@2
     displayName: 'Create missing external docs folder'
@@ -144,6 +151,7 @@ steps:
       KeyVaultName: akv-prod-eastus
       SecretsFilter: "microsoft-graph-devx-bot-appid,microsoft-graph-devx-bot-privatekey"
   - task: PowerShell@2
+    name: "PushChanges"
     displayName: Pushing to github
     env:
       GhAppId: $(microsoft-graph-devx-bot-appid)
@@ -155,19 +163,36 @@ steps:
         git config --global user.email "GraphTooling@service.microsoft.com"
         git config --global user.name "Microsoft Graph DevX Tooling"
         git config --system core.longpaths true
+        # Commit anything the formatting steps left behind. The generation scripts
+        # already commit their own output, so this may legitimately be a no-op.
+        git add .
+        if (-not [string]::IsNullOrWhiteSpace((git status --porcelain))) {
+          git commit -m "Updating reference docs"
+        }
+        # Detect real changes by comparing the branch tip to the commit it was created
+        # from. Checking the working tree is not enough because earlier steps already
+        # committed their output, leaving the tree clean but the branch ahead of base.
+        $baseCommit = "$(CreateBranch.BaseCommit)"
+        $headCommit = (git rev-parse HEAD).Trim()
+        if ($headCommit -eq $baseCommit) {
+          Write-Host "No documentation changes detected (branch is at its base commit); skipping push and pull request."
+          Write-Host "##vso[task.setvariable variable=HasChanges;isOutput=true]false"
+          return
+        }
         # The microsoft-graph-devx-bot GitHub App must have contents:write on this repo.
         $token = & "$(Build.SourcesDirectory)/scripts/Generate-Github-Token.ps1" -AppClientId $env:GhAppId -AppPrivateKeyContents $env:GhAppKey -Repository "MicrosoftDocs/microsoftgraph-docs-powershell"
         if ([string]::IsNullOrWhiteSpace($token)) { throw "Failed to generate GitHub App installation token." }
         # Mask the token so it is never surfaced in pipeline logs.
         Write-Host "##vso[task.setsecret]$token"
-        git status
-        git add .
-        git commit -m "Updating reference docs"
-        git push --set-upstream "******github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $(ComputeBranch.WeeklyReferenceDocsBranch)
-        git status
+        # A GitHub App installation token authenticates over HTTPS as user "x-access-token".
+        $pushUrl = "https://x-access-token:$token@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git"
+        git push --set-upstream $pushUrl $(ComputeBranch.WeeklyReferenceDocsBranch)
+        if ($LASTEXITCODE -ne 0) { throw "git push failed with exit code $LASTEXITCODE." }
+        Write-Host "##vso[task.setvariable variable=HasChanges;isOutput=true]true"
   - template: create-pr.yml
     parameters:
       BaseBranch: "main"
       TargetBranch: $(ComputeBranch.WeeklyReferenceDocsBranch)
       Title: "${{ parameters.PrTitle }}"
       Body: "${{ parameters.PrBody }}"
+      Condition: "and(succeeded(), eq(variables['PushChanges.HasChanges'], 'true'))"

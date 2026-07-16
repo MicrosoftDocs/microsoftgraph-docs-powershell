@@ -14,10 +14,14 @@ parameters:
   - name: Body
     type: string
     default: ""
+  - name: Condition
+    type: string
+    default: "succeeded()"
 
 steps:
   - task: PowerShell@2
     displayName: Create Pull Request for generated build
+    condition: ${{ parameters.Condition }}
     env:
       GhAppId: $(microsoft-graph-devx-bot-appid)
       GhAppKey: $(microsoft-graph-devx-bot-privatekey)
