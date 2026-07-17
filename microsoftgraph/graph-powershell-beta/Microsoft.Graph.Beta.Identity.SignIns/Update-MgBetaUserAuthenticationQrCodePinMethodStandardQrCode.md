@@ -72,6 +72,14 @@ This cmdlet has the following aliases,
 Create a standard or temporary QR code, if there is no active QR code, or update a standard QR code.
 Only the expireDateTime property can be updated for a standard QR code.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthMethod-QR.ReadWrite, UserAuthMethod-QR.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
