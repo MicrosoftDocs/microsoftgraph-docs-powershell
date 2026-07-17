@@ -38,6 +38,14 @@ This cmdlet has the following aliases,
 Retrieve the teachers and students for a class.
 Note that if the delegated token is used, members can only be seen by other members of the class.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Member.Read.Hidden,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

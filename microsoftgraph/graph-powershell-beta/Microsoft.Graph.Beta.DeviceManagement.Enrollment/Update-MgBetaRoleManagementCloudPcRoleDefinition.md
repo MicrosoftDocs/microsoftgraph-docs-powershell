@@ -80,6 +80,14 @@ You cannot update built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 The following RBAC providers are currently supported:\r- Cloud PC\r- device management (Intune)\r- directory (Microsoft Entra ID)
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

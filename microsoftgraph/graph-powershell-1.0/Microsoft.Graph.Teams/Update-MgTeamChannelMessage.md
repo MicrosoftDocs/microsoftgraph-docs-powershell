@@ -97,6 +97,14 @@ If one of the participants is using Skype, the operation fails.
 This method doesn't support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMessage.UpdatePolicyViolation.All, Teamwork.Migrate.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

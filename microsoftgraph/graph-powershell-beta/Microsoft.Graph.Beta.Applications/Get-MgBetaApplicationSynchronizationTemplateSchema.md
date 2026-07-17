@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Default synchronization schema for the jobs based on this template.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.Read.All, Synchronization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

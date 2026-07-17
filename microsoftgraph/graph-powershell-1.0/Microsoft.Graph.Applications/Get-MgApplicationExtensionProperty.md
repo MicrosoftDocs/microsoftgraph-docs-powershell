@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Read a directory extension definition represented by an extensionProperty object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All,  |
+| Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

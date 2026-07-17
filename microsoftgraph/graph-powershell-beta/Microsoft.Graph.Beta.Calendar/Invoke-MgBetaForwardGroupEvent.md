@@ -70,6 +70,14 @@ This action allows the organizer or attendee of a meeting event to forward the\r
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action\ralso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's\rcopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.Read,  |
+| Delegated (personal Microsoft account) | Calendars.Read,  |
+| Application | Calendars.Read,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

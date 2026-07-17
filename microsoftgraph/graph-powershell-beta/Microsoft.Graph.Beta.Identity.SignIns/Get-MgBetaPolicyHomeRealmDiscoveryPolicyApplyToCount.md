@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Application.Read.All, Directory.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Application.Read.All, Directory.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
