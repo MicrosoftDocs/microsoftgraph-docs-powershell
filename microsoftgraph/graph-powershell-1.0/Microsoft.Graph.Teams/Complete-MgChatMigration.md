@@ -56,18 +56,28 @@ After a completeMigration request is made for an existing or new chat, you can s
 This API supportes the following channel types.
 
 ## EXAMPLES
+### Example 1: Complete the migration of external messages in a chat
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Complete-MgChatMigration -ChatId $chatId
+
+```
+This example will complete the migration of external messages in a chat
+
+### Example 2: Complete the migration when a chat is already in migration mode
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Complete-MgChatMigration -ChatId $chatId
 
-### EXAMPLE 2
+```
+This example will complete the migration when a chat is already in migration mode
 
-Import-Module Microsoft.Graph.Teams
-
-Complete-MgChatMigration -ChatId $chatId
 
 ## PARAMETERS
 

@@ -69,16 +69,6 @@ This cmdlet has the following aliases,
 
 Upgrade an app installation within a chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -607,6 +597,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatinstalledapp)
 - [](https://learn.microsoft.com/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-beta)
+
 
 
 

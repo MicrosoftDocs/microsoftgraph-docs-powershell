@@ -92,8 +92,9 @@ Create a new listItem in a list.
 | Application | Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
@@ -106,6 +107,10 @@ $params = @{
 }
 
 New-MgSiteListItem -SiteId $siteId -ListId $listId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSiteListItem Cmdlet.
+
 
 ## PARAMETERS
 

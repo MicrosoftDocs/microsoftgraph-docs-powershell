@@ -59,8 +59,9 @@ Update the properties of a tenantAppManagementPolicy object.
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -105,6 +106,10 @@ $params = @{
 }
 
 Update-MgPolicyDefaultAppManagementPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyDefaultAppManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,12 +49,17 @@ The job must be in a non-terminal state (initialized, calculating, loadingData, 
 After cancellation, the job status changes to abandoned.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Stop-MgBetaDirectoryRecoveryJob -RecoveryJobBaseId $recoveryJobBaseId
+
+```
+This example shows how to use the Stop-MgBetaDirectoryRecoveryJob Cmdlet.
+
 
 ## PARAMETERS
 

@@ -82,16 +82,6 @@ The table in the Permissions section lists the resources that support open exten
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -712,6 +702,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread)
 - [](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
+
 
 
 

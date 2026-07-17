@@ -77,16 +77,6 @@ Update the navigation property photo in users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Contacts.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -577,6 +567,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactphoto)
+
 
 
 

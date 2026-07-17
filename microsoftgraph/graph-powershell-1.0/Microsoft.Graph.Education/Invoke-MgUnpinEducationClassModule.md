@@ -60,12 +60,17 @@ Only teachers in the class can perform this operation.
 | Application | EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Invoke-MgUnpinEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
+```
+This example shows how to use the Invoke-MgUnpinEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

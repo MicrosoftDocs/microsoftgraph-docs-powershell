@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 Given a domain name, search for a tenant and read its tenantInformation.
 You can use this API to validate tenant information and use their tenantId to configure cross-tenant access settings between you and the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -375,6 +365,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/find-mgbetatenantrelationshiptenantinformationbydomainname)
 - [](https://learn.microsoft.com/graph/api/tenantrelationship-findtenantinformationbydomainname?view=graph-rest-beta)
+
 
 
 

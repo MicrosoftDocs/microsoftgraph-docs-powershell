@@ -47,12 +47,17 @@ Execute a remediation action on a Microsoft Defender XDR incident task.
 Only the following actionType values are supported for automated execution: collectInvestigationPackage, isolateDevice, unRestrictAppExecution, unIsolateDevice, restrictAppExecution, runAntiVirusScan, stopAndQuarantineFile, submitIocRule.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction -IncidentTaskId $incidentTaskId
+
+```
+This example shows how to use the Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction Cmdlet.
+
 
 ## PARAMETERS
 

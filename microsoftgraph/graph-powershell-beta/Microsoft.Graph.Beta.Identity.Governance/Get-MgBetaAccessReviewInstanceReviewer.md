@@ -57,16 +57,6 @@ This cmdlet has the following aliases,
 
 The collection of reviewers for an access review, if access review reviewerType is of type delegated.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -696,6 +686,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewinstancereviewer)
+
+
 
 
 
