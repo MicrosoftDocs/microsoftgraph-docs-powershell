@@ -143,7 +143,7 @@ HelpMessage: ''
 
 ### -BirthDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -268,7 +268,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -295,7 +295,7 @@ HelpMessage: ''
 
 ### -Email
 
-.
+
 
 ```yaml
 Type: System.String
@@ -349,7 +349,7 @@ HelpMessage: ''
 
 ### -EmploymentDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -376,7 +376,7 @@ HelpMessage: ''
 
 ### -GivenName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -466,7 +466,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -521,7 +521,7 @@ HelpMessage: ''
 
 ### -JobTitle
 
-.
+
 
 ```yaml
 Type: System.String
@@ -548,7 +548,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -575,7 +575,7 @@ HelpMessage: ''
 
 ### -MiddleName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -602,7 +602,7 @@ HelpMessage: ''
 
 ### -MobilePhone
 
-.
+
 
 ```yaml
 Type: System.String
@@ -629,7 +629,7 @@ HelpMessage: ''
 
 ### -Number
 
-.
+
 
 ```yaml
 Type: System.String
@@ -656,7 +656,7 @@ HelpMessage: ''
 
 ### -PersonalEmail
 
-.
+
 
 ```yaml
 Type: System.String
@@ -683,7 +683,7 @@ HelpMessage: ''
 
 ### -PhoneNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -710,7 +710,7 @@ HelpMessage: ''
 
 ### -Picture
 
-.
+
 To construct, see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
@@ -823,7 +823,7 @@ HelpMessage: ''
 
 ### -StatisticsGroupCode
 
-.
+
 
 ```yaml
 Type: System.String
@@ -850,7 +850,7 @@ HelpMessage: ''
 
 ### -Status
 
-.
+
 
 ```yaml
 Type: System.String
@@ -877,7 +877,7 @@ HelpMessage: ''
 
 ### -Surname
 
-.
+
 
 ```yaml
 Type: System.String
@@ -904,7 +904,7 @@ HelpMessage: ''
 
 ### -TerminationDate
 
-.
+
 
 ```yaml
 Type: System.DateTime

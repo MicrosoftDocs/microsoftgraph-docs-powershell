@@ -111,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -272,7 +272,7 @@ HelpMessage: ''
 
 ### -ImportedAppleDeviceIdentities
 
-.
+
 To construct, see NOTES section for IMPORTEDAPPLEDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
@@ -328,7 +328,7 @@ HelpMessage: ''
 
 ### -OverwriteImportedDeviceIdentities
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
