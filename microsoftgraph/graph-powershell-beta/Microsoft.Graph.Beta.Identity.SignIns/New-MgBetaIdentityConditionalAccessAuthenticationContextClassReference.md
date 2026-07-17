@@ -58,8 +58,9 @@ Create a new authenticationContextClassReference.
 | Application | AuthenticationContext.ReadWrite.All, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -71,6 +72,10 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
+
 
 ## PARAMETERS
 

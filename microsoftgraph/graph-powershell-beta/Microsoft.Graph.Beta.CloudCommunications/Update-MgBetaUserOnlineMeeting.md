@@ -123,9 +123,9 @@ Update the navigation property onlineMeetings in users
 | Application | OnlineMeetings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
+```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -136,9 +136,14 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserOnlineMeeting Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
+### Example 2: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -149,6 +154,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserOnlineMeeting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

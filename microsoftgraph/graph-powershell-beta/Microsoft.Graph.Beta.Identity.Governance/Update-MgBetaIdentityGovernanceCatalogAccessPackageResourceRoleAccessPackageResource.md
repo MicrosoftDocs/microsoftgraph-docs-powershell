@@ -108,16 +108,6 @@ This cmdlet has the following aliases,
 In Microsoft Entra entitlement management, refresh the accessPackageResource object to fetch the latest details for displayName, description, and resourceType from the origin system.
 For the AadApplication originSystem, this operation also updates the displayName and description for the accessPackageResourceRole.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -1603,6 +1593,7 @@ The only possible value currently is: accessReviewDataUploadTriggerCallbackData
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceroleaccesspackageresource)
 - [](https://learn.microsoft.com/graph/api/accesspackageresource-refresh?view=graph-rest-beta)
+
 
 
 

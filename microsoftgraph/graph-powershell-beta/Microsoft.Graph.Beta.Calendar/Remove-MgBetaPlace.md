@@ -58,12 +58,17 @@ You can also use this method to delete the following child object types: buildin
 | Application | Place.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Remove-MgBetaPlace -PlaceId $placeId
+
+```
+This example shows how to use the Remove-MgBetaPlace Cmdlet.
+
 
 ## PARAMETERS
 
