@@ -52,16 +52,6 @@ Create new navigation property to signInIdentifiers for identity
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SignInIdentifier.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -403,6 +393,7 @@ Possible values include: Email, UPN, Username, CustomUsername1, CustomUsername2.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitysigninidentifier)
+
 
 
 
