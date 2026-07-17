@@ -695,7 +695,7 @@ HelpMessage: ''
 
 ### -AudioRoutingGroups
 
-.
+
 To construct, see NOTES section for AUDIOROUTINGGROUPS properties and create a hash table.
 
 ```yaml
@@ -893,7 +893,7 @@ HelpMessage: ''
 
 ### -ContentSharingSessions
 
-.
+
 To construct, see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
 
 ```yaml
@@ -1131,7 +1131,7 @@ HelpMessage: ''
 
 ### -MyParticipantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1152,7 +1152,7 @@ HelpMessage: ''
 
 ### -Operations
 
-.
+
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -1174,7 +1174,7 @@ HelpMessage: ''
 
 ### -Participants
 
-.
+
 To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
@@ -1478,7 +1478,7 @@ HelpMessage: ''
 
 ### -TerminationReason
 
-.
+
 
 ```yaml
 Type: System.String
