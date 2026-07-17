@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
@@ -631,7 +631,7 @@ Default value is null.
 If not specified, the administrator can add up to the maximum of 500 active attributes per tenant.
 Can be changed later.
 
-BODYPARAMETER <IMicrosoftGraphDirectory>: directory
+BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -945,7 +945,7 @@ This property isn't in use and updating it isn't supported.
     [UserForcePasswordChangeOnLogonEnabled <Boolean?>]: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     [UserWritebackEnabled <Boolean?>]: Used to indicate that user writeback is enabled.
 
-PUBLICKEYINFRASTRUCTURE <IMicrosoftGraphPublicKeyInfrastructureRoot>: publicKeyInfrastructureRoot
+PUBLICKEYINFRASTRUCTURE `<IMicrosoftGraphPublicKeyInfrastructureRoot>`: publicKeyInfrastructureRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1012,3 +1012,25 @@ The possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
