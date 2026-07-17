@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users
-Module Guid: 2a7e9d9e-4df8-4e84-9414-af6377f43fc0
+Module Guid: 1b399aa2-a675-bdcc-57df-80d3097a096c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.users/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -323,9 +323,23 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserSettingWindowsInstanceCount](Get-MgBetaUserSettingWindowsInstanceCount.md)
 
-### [Get-MgBetaUserSponsor](Get-MgBetaUserSponsor.md)
+### [Get-MgBetaUserSettingWorkHourAndLocation](Get-MgBetaUserSettingWorkHourAndLocation.md)
+
+### [Get-MgBetaUserSettingWorkHourAndLocationOccurrence](Get-MgBetaUserSettingWorkHourAndLocationOccurrence.md)
+
+### [Get-MgBetaUserSettingWorkHourAndLocationOccurrence](Get-MgBetaUserSettingWorkHourAndLocationOccurrence.md)
+
+### [Get-MgBetaUserSettingWorkHourAndLocationOccurrenceCount](Get-MgBetaUserSettingWorkHourAndLocationOccurrenceCount.md)
+
+### [Get-MgBetaUserSettingWorkHourAndLocationRecurrence](Get-MgBetaUserSettingWorkHourAndLocationRecurrence.md)
+
+### [Get-MgBetaUserSettingWorkHourAndLocationRecurrence](Get-MgBetaUserSettingWorkHourAndLocationRecurrence.md)
+
+### [Get-MgBetaUserSettingWorkHourAndLocationRecurrenceCount](Get-MgBetaUserSettingWorkHourAndLocationRecurrenceCount.md)
 
 ### [Get-MgBetaUserSponsor](Get-MgBetaUserSponsor.md)
+
+### [Get-MgBetaUserSponsorByRef](Get-MgBetaUserSponsorByRef.md)
 
 ### [Get-MgBetaUserSponsorCount](Get-MgBetaUserSponsorCount.md)
 
@@ -419,6 +433,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaTimeUserOutlook](Invoke-MgBetaTimeUserOutlook.md)
 
+### [Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence](Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence.md)
+
 ### [New-MgBetaUser](New-MgBetaUser.md)
 
 ### [New-MgBetaUserExtension](New-MgBetaUserExtension.md)
@@ -462,6 +478,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaUserSettingWindows](New-MgBetaUserSettingWindows.md)
 
 ### [New-MgBetaUserSettingWindowsInstance](New-MgBetaUserSettingWindowsInstance.md)
+
+### [New-MgBetaUserSettingWorkHourAndLocationOccurrence](New-MgBetaUserSettingWorkHourAndLocationOccurrence.md)
+
+### [New-MgBetaUserSettingWorkHourAndLocationRecurrence](New-MgBetaUserSettingWorkHourAndLocationRecurrence.md)
+
+### [New-MgBetaUserSponsorByRef](New-MgBetaUserSponsorByRef.md)
 
 ### [New-MgBetaUserTodoList](New-MgBetaUserTodoList.md)
 
@@ -553,6 +575,14 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaUserSettingWindowsInstance](Remove-MgBetaUserSettingWindowsInstance.md)
 
+### [Remove-MgBetaUserSettingWorkHourAndLocationOccurrence](Remove-MgBetaUserSettingWorkHourAndLocationOccurrence.md)
+
+### [Remove-MgBetaUserSettingWorkHourAndLocationRecurrence](Remove-MgBetaUserSettingWorkHourAndLocationRecurrence.md)
+
+### [Remove-MgBetaUserSponsorByRef](Remove-MgBetaUserSponsorByRef.md)
+
+### [Remove-MgBetaUserSponsorDirectoryObjectByRef](Remove-MgBetaUserSponsorDirectoryObjectByRef.md)
+
 ### [Remove-MgBetaUserTodoList](Remove-MgBetaUserTodoList.md)
 
 ### [Remove-MgBetaUserTodoListExtension](Remove-MgBetaUserTodoListExtension.md)
@@ -576,6 +606,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Set-MgBetaUserManagerByRef](Set-MgBetaUserManagerByRef.md)
 
 ### [Set-MgBetaUserPhotoContent](Set-MgBetaUserPhotoContent.md)
+
+### [Set-MgBetaUserSettingWorkHourAndLocationOccurrence](Set-MgBetaUserSettingWorkHourAndLocationOccurrence.md)
+
+### [Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation](Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation.md)
+
+### [Set-MgBetaUserSettingWorkHourAndLocationRecurrence](Set-MgBetaUserSettingWorkHourAndLocationRecurrence.md)
 
 ### [Set-MgBetaUserTodoListTaskAttachmentContent](Set-MgBetaUserTodoListTaskAttachmentContent.md)
 
@@ -637,6 +673,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaUserSettingWindowsInstance](Update-MgBetaUserSettingWindowsInstance.md)
 
+### [Update-MgBetaUserSettingWorkHourAndLocation](Update-MgBetaUserSettingWorkHourAndLocation.md)
+
 ### [Update-MgBetaUserTodoList](Update-MgBetaUserTodoList.md)
 
 ### [Update-MgBetaUserTodoListExtension](Update-MgBetaUserTodoListExtension.md)
@@ -650,23 +688,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserTodoListTaskExtension](Update-MgBetaUserTodoListTaskExtension.md)
 
 ### [Update-MgBetaUserTodoListTaskLinkedResource](Update-MgBetaUserTodoListTaskLinkedResource.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

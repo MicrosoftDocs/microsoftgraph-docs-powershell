@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasemember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityCaseEdiscoveryCaseMember
 ---
@@ -26,7 +26,6 @@ New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId <string>
  [-Id <string>] [-RecipientType <string>] [-SmtpAddress <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -36,7 +35,7 @@ New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId <string>
  -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseMember> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -47,7 +46,6 @@ New-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity>
  [-Id <string>] [-RecipientType <string>] [-SmtpAddress <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -57,7 +55,7 @@ New-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseMember> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -70,18 +68,9 @@ This cmdlet has the following aliases,
 Add an ediscoveryCaseMember to an ediscoveryCase.
 The ediscoveryCaseMember can be one of two types: a user or a role group.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Add a case member of type **user** using **smtpAddress**
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -92,12 +81,7 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-```
-This example will add a case member of type **user** using **smtpaddress**
-
-### Example 2: Add a case member of type **roleGroup** using **displayName**
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -108,12 +92,7 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-```
-This example will add a case member of type **rolegroup** using **displayname**
-
-### Example 3: Add a case member of type **user** using **ID*
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -124,12 +103,7 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-```
-This example will add a case member of type **user** using **id*
-
-### Example 4: Add a case member of type **roleGroup** using **ID**
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -139,10 +113,6 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
-```
-This example will add a case member of type **rolegroup** using **id**
-
 
 ## PARAMETERS
 
@@ -614,7 +584,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCaseMember>`: ediscoveryCaseMember
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryCaseMember>: ediscoveryCaseMember
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -624,7 +594,7 @@ Allowed only for case members of type roleGroup.
   [SmtpAddress <String>]: The smtp address of the eDiscovery case member.
 Allowed only for case members of type user.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -726,27 +696,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityCaseEdiscoveryCaseMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasemember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasemember)
+- [](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-post?view=graph-rest-beta)

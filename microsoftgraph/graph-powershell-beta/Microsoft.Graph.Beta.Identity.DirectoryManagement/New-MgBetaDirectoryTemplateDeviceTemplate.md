@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicetemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/16/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryTemplateDeviceTemplate
 ---
@@ -28,7 +28,6 @@ New-MgBetaDirectoryTemplateDeviceTemplate [-ResponseHeadersVariable <string>]
  [-Owners <IMicrosoftGraphDirectoryObject[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -38,7 +37,6 @@ New-MgBetaDirectoryTemplateDeviceTemplate -BodyParameter <IMicrosoftGraphDeviceT
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,18 +48,9 @@ This cmdlet has the following aliases,
 
 Create a new deviceTemplate used to identify attributes and manage a group of devices with similar characteristics.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceTemplate.Create, DeviceTemplate.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceTemplate.Create, DeviceTemplate.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a new device template
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -76,12 +65,7 @@ $params = @{
 
 New-MgBetaDirectoryTemplateDeviceTemplate -BodyParameter $params
 
-```
-This example will create a new device template
-
-### Example 2: Create a device template with an owner
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -98,10 +82,6 @@ $params = @{
 }
 
 New-MgBetaDirectoryTemplateDeviceTemplate -BodyParameter $params
-
-```
-This example will create a device template with an owner
-
 
 ## PARAMETERS
 
@@ -616,7 +596,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceTemplate>`: deviceTemplate
+BODYPARAMETER <IMicrosoftGraphDeviceTemplate>: deviceTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -755,7 +735,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
     [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
     [OnPremisesSyncEnabled <Boolean?>]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
@@ -974,7 +954,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
   [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
   [OnPremisesSyncEnabled <Boolean?>]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
@@ -1038,27 +1018,5 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryTemplateDeviceTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicetemplate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/template-post-devicetemplates?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicetemplate)
+- [](https://learn.microsoft.com/graph/api/template-post-devicetemplates?view=graph-rest-beta)

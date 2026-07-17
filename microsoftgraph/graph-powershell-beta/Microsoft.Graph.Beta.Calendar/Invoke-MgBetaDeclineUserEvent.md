@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadeclineuserevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 07/16/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDeclineUserEvent
 ---
@@ -17,9 +17,6 @@ Decline invitation to the specified event in a user calendar.
 If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDeclineUserEvent](/powershell/module/Microsoft.Graph.Calendar/Invoke-MgDeclineUserEvent?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### DeclineExpanded (Default)
@@ -30,7 +27,6 @@ Invoke-MgBetaDeclineUserEvent -EventId <string> -UserId <string> [-ResponseHeade
  [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Decline
@@ -41,7 +37,6 @@ Invoke-MgBetaDeclineUserEvent -EventId <string> -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeclineViaIdentityExpanded
@@ -52,7 +47,6 @@ Invoke-MgBetaDeclineUserEvent -InputObject <ICalendarIdentity> [-ResponseHeaders
  [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeclineViaIdentity
@@ -63,7 +57,6 @@ Invoke-MgBetaDeclineUserEvent -InputObject <ICalendarIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,23 +70,15 @@ Decline invitation to the specified event in a user calendar.
 If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadWrite,  |
-| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
-| Application | Calendars.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 $params = @{
-	comment = "I won't be able to make this week. How about next week?"
+	comment = "I won't be able to make this week.
+How about next week?"
 	sendResponse = $true
 	proposedNewTime = @{
 		start = @{
@@ -109,10 +94,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaDeclineUserEvent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -145,7 +126,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -194,7 +175,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -495,7 +476,7 @@ HelpMessage: ''
 
 ### -SendResponse
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -603,7 +584,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsT4Hh9DUsersUserIdEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsT4Hh9DUsersUserIdEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [ProposedNewTime <IMicrosoftGraphTimeSlot>]: timeSlot
@@ -617,7 +598,7 @@ See below for possible values.
     [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [SendResponse <Boolean?>]: 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -639,7 +620,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WorkspaceId <String>]: The unique identifier of workspace
 
-PROPOSEDNEWTIME `<IMicrosoftGraphTimeSlot>`: timeSlot
+PROPOSEDNEWTIME <IMicrosoftGraphTimeSlot>: timeSlot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -652,27 +633,5 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaDeclineUserEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadeclineuserevent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadeclineuserevent)
+- [](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-beta)

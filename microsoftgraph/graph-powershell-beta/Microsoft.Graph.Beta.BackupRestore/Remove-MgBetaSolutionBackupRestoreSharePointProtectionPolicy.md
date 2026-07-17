@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresharepointprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 07/16/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSolutionBackupRestoreSharePointProtectionPolicy
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaSolutionBackupRestoreSharePointProtectionPolicy
 
 Delete navigation property sharePointProtectionPolicies for solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreSharePointProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreSharePointProtectionPolicy?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -27,7 +24,6 @@ Remove-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -SharePointProtecti
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,7 +33,6 @@ Remove-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -InputObject <IBack
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property sharePointProtectionPolicies for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -379,8 +384,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
+  [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
+  [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
+  [DriveExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of driveExclusionUnitsBulkAdditionJob
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -388,9 +396,12 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [DriveRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   [ExchangeProtectionPolicyId <String>]: The unique identifier of exchangeProtectionPolicy
   [ExchangeRestoreSessionId <String>]: The unique identifier of exchangeRestoreSession
+  [ExclusionUnitBaseId <String>]: The unique identifier of exclusionUnitBase
   [GranularDriveRestoreArtifactId <String>]: The unique identifier of granularDriveRestoreArtifact
   [GranularMailboxRestoreArtifactId <String>]: The unique identifier of granularMailboxRestoreArtifact
   [GranularSiteRestoreArtifactId <String>]: The unique identifier of granularSiteRestoreArtifact
+  [MailboxExclusionUnitId <String>]: The unique identifier of mailboxExclusionUnit
+  [MailboxExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxExclusionUnitsBulkAdditionJob
   [MailboxProtectionRuleId <String>]: The unique identifier of mailboxProtectionRule
   [MailboxProtectionUnitId <String>]: The unique identifier of mailboxProtectionUnit
   [MailboxProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
@@ -400,6 +411,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [OneDriveForBusinessBrowseSessionId <String>]: The unique identifier of oneDriveForBusinessBrowseSession
   [OneDriveForBusinessProtectionPolicyId <String>]: The unique identifier of oneDriveForBusinessProtectionPolicy
   [OneDriveForBusinessRestoreSessionId <String>]: The unique identifier of oneDriveForBusinessRestoreSession
+  [PolicyId <String>]: Usage: policyId='{policyId}'
   [ProtectionPolicyBaseId <String>]: The unique identifier of protectionPolicyBase
   [ProtectionUnitBaseId <String>]: The unique identifier of protectionUnitBase
   [RestorePointId <String>]: The unique identifier of restorePoint
@@ -408,6 +420,8 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SharePointBrowseSessionId <String>]: The unique identifier of sharePointBrowseSession
   [SharePointProtectionPolicyId <String>]: The unique identifier of sharePointProtectionPolicy
   [SharePointRestoreSessionId <String>]: The unique identifier of sharePointRestoreSession
+  [SiteExclusionUnitId <String>]: The unique identifier of siteExclusionUnit
+  [SiteExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of siteExclusionUnitsBulkAdditionJob
   [SiteProtectionRuleId <String>]: The unique identifier of siteProtectionRule
   [SiteProtectionUnitId <String>]: The unique identifier of siteProtectionUnit
   [SiteProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of siteProtectionUnitsBulkAdditionJob
@@ -417,27 +431,4 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaSolutionBackupRestoreSharePointProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresharepointprotectionpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresharepointprotectionpolicy)

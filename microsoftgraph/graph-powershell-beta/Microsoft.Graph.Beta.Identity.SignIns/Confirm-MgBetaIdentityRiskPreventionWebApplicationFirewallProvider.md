@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetaidentityriskpreventionwebapplicationfirewallprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
 ---
@@ -16,9 +16,6 @@ title: Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
 Initiate a verification operation for a webApplicationFirewallProvider object.
 This API triggers provider-specific verification logic and returns a webApplicationFirewallVerificationModel object describing the verification result.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### VerifyExpanded (Default)
@@ -29,7 +26,6 @@ Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
  [-AdditionalProperties <hashtable>] [-HostName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Verify
@@ -41,7 +37,6 @@ Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### VerifyViaIdentityExpanded
@@ -52,7 +47,6 @@ Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
  [-AdditionalProperties <hashtable>] [-HostName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### VerifyViaIdentity
@@ -64,7 +58,6 @@ Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,13 +70,27 @@ This cmdlet has the following aliases,
 Initiate a verification operation for a webApplicationFirewallProvider object.
 This API triggers provider-specific verification logic and returns a webApplicationFirewallVerificationModel object describing the verification result.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RiskPreventionProviders.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RiskPreventionProviders.ReadWrite.All,  |
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	hostName = "www.contoso.com"
+}
+
+Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -WebApplicationFirewallProviderId $webApplicationFirewallProviderId -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	hostName = "www.contoso.com"
+}
+
+Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -WebApplicationFirewallProviderId $webApplicationFirewallProviderId -ExpandProperty "provider"  -BodyParameter $params
 
 ## PARAMETERS
 
@@ -116,7 +123,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -208,7 +215,7 @@ HelpMessage: ''
 
 ### -HostName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -471,11 +478,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsAjuhaxIdentityRiskpreventionWebapplicationfirewallprovidersWebapplicationfirewallproviderIdMicrosoftGraphVerifyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsAjuhaxIdentityRiskpreventionWebapplicationfirewallprovidersWebapplicationfirewallproviderIdMicrosoftGraphVerifyPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [HostName <String>]: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -525,6 +532,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -575,28 +583,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetaidentityriskpreventionwebapplicationfirewallprovider)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/webapplicationfirewallprovider-verify?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetaidentityriskpreventionwebapplicationfirewallprovider)
+- [](https://learn.microsoft.com/graph/api/webapplicationfirewallprovider-verify?view=graph-rest-beta)

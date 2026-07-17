@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 02/20/2026
+ms.date: 07/16/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupConversation
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaGroupConversation
 
 Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ New-MgBetaGroupConversation -GroupId <string> [-ResponseHeadersVariable <string>
  [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <string>] [-UniqueSenders <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -40,7 +37,6 @@ New-MgBetaGroupConversation -GroupId <string> -BodyParameter <IMicrosoftGraphCon
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -52,7 +48,7 @@ New-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-ResponseHeadersVari
  [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <string>] [-UniqueSenders <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -62,7 +58,7 @@ New-MgBetaGroupConversation -InputObject <IGroupsIdentity>
  -BodyParameter <IMicrosoftGraphConversation> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -75,55 +71,37 @@ This cmdlet has the following aliases,
 Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
-	Topic = "Does anyone have a second?"
-	Threads = @(
+	topic = "New head count"
+	threads = @(
 		@{
-			Posts = @(
+			posts = @(
 				@{
-					Body = @{
-						ContentType = "HTML"
-						Content = "This is urgent!"
+					body = @{
+						contentType = "html"
+						content = "The confirmation will come by the end of the week."
 					}
-					Extensions = @(
+					newParticipants = @(
 						@{
-							"@odata.type" = "microsoft.graph.openTypeExtension"
-							extensionName = "Com.Contoso.Benefits"
-							companyName = "Contoso"
-							expirationDate = "2016-08-03T11:00:00.000Z"
-							topPicks = @(
-							"Employees only"
-						"Add spouse or guest"
-					"Add family"
-				)
-			}
-		)
-	}
-)
-}
-)
+							emailAddress = @{
+								name = "Adele Vance"
+								address = "AdeleV@contoso.com"
+							}
+						}
+					)
+				}
+			)
+		}
+	)
 }
 
 New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaGroupConversation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -682,7 +660,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConversation>`: conversation
+BODYPARAMETER <IMicrosoftGraphConversation>: conversation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -806,7 +784,7 @@ Returned by default.
 This property can be set when the conversation is created, but it can't be updated.
   [UniqueSenders <String[]>]: All the users that sent a message to this Conversation.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -944,27 +922,5 @@ Returned by default.
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupConversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation)
+- [](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-beta)

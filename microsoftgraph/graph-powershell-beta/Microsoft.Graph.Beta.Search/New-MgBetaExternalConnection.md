@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaExternalConnection
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaExternalConnection
 ## SYNOPSIS
 
 Create a new externalConnection.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,7 +34,7 @@ New-MgBetaExternalConnection [-ResponseHeadersVariable <string>]
  [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -47,7 +44,6 @@ New-MgBetaExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsEx
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -59,18 +55,9 @@ This cmdlet has the following aliases,
 
 Create a new externalConnection.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -81,10 +68,6 @@ $params = @{
 }
 
 New-MgBetaExternalConnection -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaExternalConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -328,7 +311,7 @@ HelpMessage: ''
 
 ### -Groups
 
-
+.
 To construct, see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
@@ -458,7 +441,7 @@ HelpMessage: ''
 
 ### -Items
 
-
+.
 To construct, see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
@@ -503,7 +486,7 @@ HelpMessage: ''
 
 ### -Operations
 
-
+.
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -747,12 +730,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITYSETTINGS `<IMicrosoftGraphExternalConnectorsActivitySettings>`: activitySettings
+ACTIVITYSETTINGS <IMicrosoftGraphExternalConnectorsActivitySettings>: activitySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]: Specifies configurations to identify an externalItem based on a shared URL.
     [Priority <Int32?>]: The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated.
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalConnection
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection>: externalConnection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -896,8 +879,9 @@ Optional.
       [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
-Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl.
-Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl, personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
+Optional..
+The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
+Use the Prefer: include-unknown-enum-members request header to retrieve additional values defined in this evolvable enum.For people connectors you can include : personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
       [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
@@ -913,7 +897,7 @@ For example, the property name may not contain control characters, whitespace, o
 Maximum of 2 search result templates per connection.
   [State <String>]: connectionState
 
-COMPLIANCESETTINGS `<IMicrosoftGraphExternalConnectorsComplianceSettings>`: complianceSettings
+COMPLIANCESETTINGS <IMicrosoftGraphExternalConnectorsComplianceSettings>: complianceSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EDiscoveryResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]: 
     [Id <String>]: The text identifier for the display template; for example, contosoTickets.
@@ -935,7 +919,7 @@ One or more specified strings are matched with the specified property using the 
 Required.
       [ValuesJoinedBy <String>]: binaryOperator
 
-CONFIGURATION `<IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
+CONFIGURATION <IMicrosoftGraphExternalConnectorsConfiguration>: configuration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthorizedAppIds <String[]>]: A collection of application IDs for registered Microsoft Entra apps allowed to manage the externalConnection and index content in the externalConnection.
 
@@ -1005,7 +989,7 @@ Read-only.
     [Target <String>]: The target of the error.
   [Status <String>]: connectionOperationStatus
 
-QUOTA `<IMicrosoftGraphExternalConnectorsConnectionQuota>`: connectionQuota
+QUOTA <IMicrosoftGraphExternalConnectorsConnectionQuota>: connectionQuota
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1013,7 +997,7 @@ Read-only.
 The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} – {number of items in the connection}, {tenant quota} – {number of items indexed in all connections}).
 If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
 
-SCHEMA `<IMicrosoftGraphExternalConnectorsSchema>`: schema
+SCHEMA <IMicrosoftGraphExternalConnectorsSchema>: schema
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1047,8 +1031,9 @@ Optional.
     [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
-Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl.
-Use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: containerName, containerUrl, iconUrl, personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
+Optional..
+The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
+Use the Prefer: include-unknown-enum-members request header to retrieve additional values defined in this evolvable enum.For people connectors you can include : personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
     [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
@@ -1059,7 +1044,7 @@ For example, the property name may not contain control characters, whitespace, o
       [ImportanceScore <String>]: importanceScore
     [Type <String>]: propertyType
 
-SEARCHSETTINGS `<IMicrosoftGraphExternalConnectorsSearchSettings>`: searchSettings
+SEARCHSETTINGS <IMicrosoftGraphExternalConnectorsSearchSettings>: searchSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed.
 Maximum of 2 search result templates per connection.
@@ -1085,27 +1070,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgBetaExternalConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection)
+- [](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-beta)
