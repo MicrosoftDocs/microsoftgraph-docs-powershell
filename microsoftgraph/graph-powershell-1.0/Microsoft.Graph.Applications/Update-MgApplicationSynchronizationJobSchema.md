@@ -15,6 +15,9 @@ title: Update-MgApplicationSynchronizationJobSchema
 
 Update the navigation property schema in applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJobSchema?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

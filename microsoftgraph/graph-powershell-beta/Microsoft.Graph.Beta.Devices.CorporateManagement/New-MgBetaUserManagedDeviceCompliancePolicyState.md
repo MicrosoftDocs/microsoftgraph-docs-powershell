@@ -15,6 +15,9 @@ title: New-MgBetaUserManagedDeviceCompliancePolicyState
 
 Create new navigation property to deviceCompliancePolicyStates for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

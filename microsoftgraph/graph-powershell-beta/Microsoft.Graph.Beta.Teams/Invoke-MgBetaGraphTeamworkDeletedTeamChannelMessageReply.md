@@ -15,6 +15,9 @@ title: Invoke-MgBetaGraphTeamworkDeletedTeamChannelMessageReply
 
 Reply with quote to a single chat message or multiple chat messages in a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Invoke-MgGraphTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GraphExpanded (Default)

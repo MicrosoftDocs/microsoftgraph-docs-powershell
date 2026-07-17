@@ -15,6 +15,9 @@ title: Get-MgGroupTeamPrimaryChannelEnabledAppCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannelEnabledAppCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannelEnabledAppCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

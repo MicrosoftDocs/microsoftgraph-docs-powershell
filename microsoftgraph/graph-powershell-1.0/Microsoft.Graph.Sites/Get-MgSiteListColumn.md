@@ -15,6 +15,9 @@ title: Get-MgSiteListColumn
 
 The collection of field definitions for this list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

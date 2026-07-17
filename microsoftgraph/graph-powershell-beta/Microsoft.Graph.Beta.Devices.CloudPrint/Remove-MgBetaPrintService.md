@@ -15,6 +15,9 @@ title: Remove-MgBetaPrintService
 
 Delete navigation property services for print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintService](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintService?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

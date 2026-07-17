@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy
 
 The unique identifier of the Microsoft Entra identity that last modified the workflow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

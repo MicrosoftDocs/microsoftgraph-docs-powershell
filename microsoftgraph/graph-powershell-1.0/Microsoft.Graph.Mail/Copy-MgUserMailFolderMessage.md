@@ -15,6 +15,9 @@ title: Copy-MgUserMailFolderMessage
 
 Copy a message to a folder within the user's mailbox.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Copy-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

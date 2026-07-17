@@ -15,6 +15,9 @@ title: Update-MgSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestore
 
 Update the navigation property granularSiteRestoreArtifacts in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

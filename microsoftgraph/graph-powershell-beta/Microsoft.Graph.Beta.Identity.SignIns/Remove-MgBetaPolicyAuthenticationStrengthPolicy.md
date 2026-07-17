@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyAuthenticationStrengthPolicy
 
 Delete a custom authenticationStrengthPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthenticationStrengthPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreOneDriveForBusinessBrowseSessionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSessionCount](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSessionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

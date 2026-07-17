@@ -15,6 +15,9 @@ title: Get-MgGroupDriveRootListItemField
 
 The values of the columns set on this list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

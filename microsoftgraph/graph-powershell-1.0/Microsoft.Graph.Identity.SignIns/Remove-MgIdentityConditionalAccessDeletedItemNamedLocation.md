@@ -15,6 +15,9 @@ title: Remove-MgIdentityConditionalAccessDeletedItemNamedLocation
 
 Delete navigation property namedLocations for identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessDeletedItemNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessDeletedItemNamedLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgSiteContentTypeColumnLink
 
 The collection of columns that are required by this content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -21,6 +21,9 @@ The specified timestamp must be earlier than the current createdDateTime of the 
 Imported content is always limited by the createdDateTime of the target thread.
 An optional createdDateTime property in the payload allows you to update this value, but with strict rules: This API supportes the following channel types.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgChatMigration](/powershell/module/Microsoft.Graph.Teams/Start-MgChatMigration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### StartExpanded (Default)
