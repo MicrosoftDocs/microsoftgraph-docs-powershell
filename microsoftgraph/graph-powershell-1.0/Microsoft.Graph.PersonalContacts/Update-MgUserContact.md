@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact
 Locale: en-US
 Module Name: Microsoft.Graph.PersonalContacts
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserContact
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserContact
 ## SYNOPSIS
 
 Update the navigation property contacts in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,13 +34,14 @@ Update-MgUserContact -ContactId <string> -UserId <string> [-ResponseHeadersVaria
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
  [-NickName <string>] [-OfficeLocation <string>] [-OtherAddress <IMicrosoftGraphPhysicalAddress>]
  [-ParentFolderId <string>] [-PersonalNotes <string>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-Profession <string>]
+ [-PrimaryEmailAddress <IMicrosoftGraphEmailAddress>] [-Profession <string>]
+ [-SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-SpouseName <string>] [-Surname <string>] [-Title <string>] [-YomiCompanyName <string>]
- [-YomiGivenName <string>] [-YomiSurname <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SpouseName <string>] [-Surname <string>] [-TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]
+ [-Title <string>] [-YomiCompanyName <string>] [-YomiGivenName <string>] [-YomiSurname <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -53,7 +51,6 @@ Update-MgUserContact -ContactId <string> -UserId <string> -BodyParameter <IMicro
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -73,13 +70,14 @@ Update-MgUserContact -InputObject <IPersonalContactsIdentity> [-ResponseHeadersV
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
  [-NickName <string>] [-OfficeLocation <string>] [-OtherAddress <IMicrosoftGraphPhysicalAddress>]
  [-ParentFolderId <string>] [-PersonalNotes <string>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-Profession <string>]
+ [-PrimaryEmailAddress <IMicrosoftGraphEmailAddress>] [-Profession <string>]
+ [-SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-SpouseName <string>] [-Surname <string>] [-Title <string>] [-YomiCompanyName <string>]
- [-YomiGivenName <string>] [-YomiSurname <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SpouseName <string>] [-Surname <string>] [-TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]
+ [-Title <string>] [-YomiCompanyName <string>] [-YomiGivenName <string>] [-YomiSurname <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -89,7 +87,7 @@ Update-MgUserContact -InputObject <IPersonalContactsIdentity>
  -BodyParameter <IMicrosoftGraphContact> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -101,18 +99,10 @@ This cmdlet has the following aliases,
 
 Update the navigation property contacts in users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Contacts.ReadWrite,  |
-| Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
-| Application | Contacts.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.PersonalContacts
 
 $params = @{
@@ -127,11 +117,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserContact -UserId $userId -ContactId $contactId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -1291,6 +1276,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PrimaryEmailAddress
+
+emailAddress
+To construct, see NOTES section for PRIMARYEMAILADDRESS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAddress
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Profession
 
 The contact's profession.
@@ -1403,6 +1416,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SecondaryEmailAddress
+
+emailAddress
+To construct, see NOTES section for SECONDARYEMAILADDRESS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAddress
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -SingleValueExtendedProperties
 
 The collection of single-value extended properties defined for the contact.
@@ -1466,6 +1507,34 @@ The contact's surname.
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -TertiaryEmailAddress
+
+emailAddress
+To construct, see NOTES section for TERTIARYEMAILADDRESS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAddress
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1678,7 +1747,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphContact>`: contact
+BODYPARAMETER <IMicrosoftGraphContact>: contact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -1750,7 +1819,9 @@ Read-only.
 Read-only.
     [Width <Int32?>]: The width of the photo.
 Read-only.
+  [PrimaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [Profession <String>]: The contact's profession.
+  [SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -1759,12 +1830,13 @@ Read-only.
     [Value <String>]: A property value.
   [SpouseName <String>]: The name of the contact's spouse/partner.
   [Surname <String>]: The contact's surname.
+  [TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [Title <String>]: The contact's title.
   [YomiCompanyName <String>]: The phonetic Japanese company name of the contact.
   [YomiGivenName <String>]: The phonetic Japanese given name (first name) of the contact.
   [YomiSurname <String>]: The phonetic Japanese surname (last name)  of the contact.
 
-BUSINESSADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+BUSINESSADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -1783,7 +1855,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-HOMEADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+HOMEADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -1792,7 +1864,7 @@ It's a free-format string value, for example, 'United States'.
   [State <String>]: The state.
   [Street <String>]: The street.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   [ContactFolderId <String>]: The unique identifier of contactFolder
   [ContactFolderId1 <String>]: The unique identifier of contactFolder
   [ContactId <String>]: The unique identifier of contact
@@ -1806,7 +1878,7 @@ Nullable.
 Read-only.
   [Value <String[]>]: A collection of property values.
 
-OTHERADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+OTHERADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -1815,7 +1887,7 @@ It's a free-format string value, for example, 'United States'.
   [State <String>]: The state.
   [Street <String>]: The street.
 
-PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
+PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1824,6 +1896,16 @@ Read-only.
   [Width <Int32?>]: The width of the photo.
 Read-only.
 
+PRIMARYEMAILADDRESS <IMicrosoftGraphEmailAddress>: emailAddress
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Address <String>]: The email address of the person or entity.
+  [Name <String>]: The display name of the person or entity.
+
+SECONDARYEMAILADDRESS <IMicrosoftGraphEmailAddress>: emailAddress
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Address <String>]: The email address of the person or entity.
+  [Name <String>]: The display name of the person or entity.
+
 SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -1831,29 +1913,12 @@ Nullable.
 Read-only.
   [Value <String>]: A property value.
 
+TERTIARYEMAILADDRESS <IMicrosoftGraphEmailAddress>: emailAddress
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Address <String>]: The email address of the person or entity.
+  [Name <String>]: The display name of the person or entity.
+
 
 ## RELATED LINKS
 
-- [Update-MgUserContact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact)

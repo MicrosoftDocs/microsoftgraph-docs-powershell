@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberofcount
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalMemberOfCount
 ---
@@ -15,9 +15,6 @@ title: Get-MgServicePrincipalMemberOfCount
 
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalMemberOfCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberOfCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -27,7 +24,7 @@ Get-MgServicePrincipalMemberOfCount -ServicePrincipalId <string> -ConsistencyLev
  [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -37,7 +34,7 @@ Get-MgServicePrincipalMemberOfCount -InputObject <IApplicationsIdentity> -Consis
  [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,13 +46,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -365,12 +364,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
+  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition
@@ -394,27 +394,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgServicePrincipalMemberOfCount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberofcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberofcount)

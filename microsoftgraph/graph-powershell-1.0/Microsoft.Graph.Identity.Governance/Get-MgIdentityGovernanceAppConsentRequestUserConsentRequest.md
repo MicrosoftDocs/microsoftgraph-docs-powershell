@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequestuserconsentrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest
 ---
@@ -14,9 +14,6 @@ title: Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest
 ## SYNOPSIS
 
 Read the properties and relationships of a userConsentRequest object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -39,7 +35,7 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId
  -UserConsentRequestId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -49,7 +45,7 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -61,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a userConsentRequest object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId $appConsentRequestId
-
-```
-This example shows how to use the Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest Cmdlet.
-
 
 ## PARAMETERS
 
@@ -569,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -585,6 +568,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -607,6 +591,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
   [PrivilegedAccessGroupAssignmentScheduleId <String>]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   [PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
@@ -642,28 +627,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequestuserconsentrequest)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequestuserconsentrequest)
+- [](https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0)

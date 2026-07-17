@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationpartnerinformation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOrganizationPartnerInformation
 ---
@@ -26,7 +26,7 @@ Update-MgBetaOrganizationPartnerInformation -OrganizationId <string>
  [-SupportEmails <string[]>] [-SupportTelephones <string[]>] [-SupportUrl <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -36,7 +36,7 @@ Update-MgBetaOrganizationPartnerInformation -OrganizationId <string>
  -BodyParameter <IMicrosoftGraphPartnerInformation> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,7 +48,7 @@ Update-MgBetaOrganizationPartnerInformation -InputObject <IIdentityDirectoryMana
  [-SupportEmails <string[]>] [-SupportTelephones <string[]>] [-SupportUrl <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -58,7 +58,7 @@ Update-MgBetaOrganizationPartnerInformation -InputObject <IIdentityDirectoryMana
  -BodyParameter <IMicrosoftGraphPartnerInformation> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -69,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property partnerInformation in organization
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -150,7 +160,7 @@ HelpMessage: ''
 
 ### -CommerceUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -177,7 +187,7 @@ HelpMessage: ''
 
 ### -CompanyName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -274,7 +284,7 @@ HelpMessage: ''
 
 ### -HelpUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -398,7 +408,7 @@ HelpMessage: ''
 
 ### -PartnerTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -510,7 +520,7 @@ HelpMessage: ''
 
 ### -SupportEmails
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -537,7 +547,7 @@ HelpMessage: ''
 
 ### -SupportTelephones
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -564,7 +574,7 @@ HelpMessage: ''
 
 ### -SupportUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -645,7 +655,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPartnerInformation>`: partnerInformation
+BODYPARAMETER <IMicrosoftGraphPartnerInformation>: partnerInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CommerceUrl <String>]: 
   [CompanyName <String>]: 
@@ -656,7 +666,7 @@ BODYPARAMETER `<IMicrosoftGraphPartnerInformation>`: partnerInformation
   [SupportTelephones <String[]>]: 
   [SupportUrl <String>]: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -683,6 +693,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExtensionId <String>]: The unique identifier of extension
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
+  [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
+  [GovernancePolicyTemplateId <String>]: The unique identifier of governancePolicyTemplate
+  [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
+  [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
   [IdentityProviderBaseId <String>]: The unique identifier of identityProviderBase
   [ImpactedResourceId <String>]: The unique identifier of impactedResource
@@ -702,10 +716,15 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
+  [RecoveryJobId <String>]: The unique identifier of recoveryJob
+  [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
+  [RelatedTenantId <String>]: The unique identifier of relatedTenant
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
   [SharedEmailDomainInvitationId <String>]: The unique identifier of sharedEmailDomainInvitation
+  [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
@@ -716,27 +735,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaOrganizationPartnerInformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationpartnerinformation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationpartnerinformation)

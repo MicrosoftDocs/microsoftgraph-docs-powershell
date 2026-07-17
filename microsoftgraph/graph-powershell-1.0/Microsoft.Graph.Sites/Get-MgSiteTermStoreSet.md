@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoreset
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteTermStoreSet
 ---
@@ -14,9 +14,6 @@ title: Get-MgSiteTermStoreSet
 ## SYNOPSIS
 
 Read the properties and relationships of a set object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgSiteTermStoreSet -SiteId <string> [-ExpandProperty <string[]>] [-Property 
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get1
@@ -38,7 +35,7 @@ Get-MgSiteTermStoreSet -SetId <string> -SiteId <string> -StoreId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### Get
@@ -47,7 +44,7 @@ Get-MgSiteTermStoreSet -SetId <string> -SiteId <string> -StoreId <string>
 Get-MgSiteTermStoreSet -SetId <string> -SiteId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### List1
@@ -58,7 +55,7 @@ Get-MgSiteTermStoreSet -SiteId <string> -StoreId <string> [-ExpandProperty <stri
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### GetViaIdentity1
@@ -67,7 +64,7 @@ Get-MgSiteTermStoreSet -SiteId <string> -StoreId <string> [-ExpandProperty <stri
 Get-MgSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -76,7 +73,7 @@ Get-MgSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <string[]>
 Get-MgSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -88,26 +85,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a set object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TermStore.Read.All, TermStore.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteTermStoreSet -SiteId $siteId -SetId $setId
-
-```
-This example shows how to use the Get-MgSiteTermStoreSet Cmdlet.
-
 
 ## PARAMETERS
 
@@ -695,7 +679,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -743,27 +727,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSiteTermStoreSet](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoreset)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/termstore-set-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoreset)
+- [](https://learn.microsoft.com/graph/api/termstore-set-get?view=graph-rest-1.0)

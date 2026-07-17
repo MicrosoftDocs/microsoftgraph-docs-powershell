@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/disable-mgusermanageddevicelostmode
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Disable-MgUserManagedDeviceLostMode
 ---
@@ -15,9 +15,6 @@ title: Disable-MgUserManagedDeviceLostMode
 
 Disable lost mode
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Disable-MgBetaUserManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Disable-MgBetaUserManagedDeviceLostMode?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Disable (Default)
@@ -27,7 +24,6 @@ Disable-MgUserManagedDeviceLostMode -ManagedDeviceId <string> -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DisableViaIdentity
@@ -37,7 +33,6 @@ Disable-MgUserManagedDeviceLostMode -InputObject <IDevicesCorporateManagementIde
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Disable lost mode
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -379,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -420,27 +425,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Disable-MgUserManagedDeviceLostMode](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/disable-mgusermanageddevicelostmode)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/disable-mgusermanageddevicelostmode)

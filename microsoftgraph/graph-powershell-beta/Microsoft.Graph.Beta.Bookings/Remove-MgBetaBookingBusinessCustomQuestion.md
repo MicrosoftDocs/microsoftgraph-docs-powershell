@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomquestion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaBookingBusinessCustomQuestion
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaBookingBusinessCustomQuestion
 ## SYNOPSIS
 
 Delete navigation property customQuestions for bookingBusinesses
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Remove-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Delete1
@@ -39,7 +35,6 @@ Remove-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
@@ -49,7 +44,6 @@ Remove-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-If
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -59,7 +53,6 @@ Remove-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-If
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -71,22 +64,12 @@ This cmdlet has the following aliases,
 
 Delete navigation property customQuestions for bookingBusinesses
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaBookingBusinessCustomQuestion Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Bookings
 Remove-MgBetaBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
-```
-This example shows how to use the Remove-MgBetaBookingBusinessCustomQuestion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -457,7 +440,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -482,26 +465,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaBookingBusinessCustomQuestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomquestion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomquestion)

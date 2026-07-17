@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DirectoryObjects-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmemberobject
 Locale: en-US
 Module Name: Microsoft.Graph.DirectoryObjects
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryObjectMemberObject
 ---
@@ -13,11 +13,8 @@ title: Get-MgDirectoryObjectMemberObject
 
 ## SYNOPSIS
 
-Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r- user\r- group\r- service principal\r- organizational contact\r- device\r- directory object This function is transitive.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
 Only users and role-enabled groups can be members of directory roles.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectMemberObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Get-MgDirectoryObjectMemberObject -DirectoryObjectId <string> [-ResponseHeadersV
  [-AdditionalProperties <hashtable>] [-SecurityEnabledOnly] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -39,7 +35,6 @@ Get-MgDirectoryObjectMemberObject -DirectoryObjectId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
@@ -49,7 +44,7 @@ Get-MgDirectoryObjectMemberObject -InputObject <IDirectoryObjectsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-SecurityEnabledOnly]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### GetViaIdentity
@@ -60,7 +55,6 @@ Get-MgDirectoryObjectMemberObject -InputObject <IDirectoryObjectsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -70,21 +64,12 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r- user\r- group\r- service principal\r- organizational contact\r- device\r- directory object This function is transitive.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
 Only users and role-enabled groups can be members of directory roles.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, User.ReadWrite.All, User.Read, User.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Application.ReadWrite.All, User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, User.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All, Device.Read.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DirectoryObjects
 
@@ -93,10 +78,6 @@ $params = @{
 }
 
 Get-MgDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
-```
-This example shows how to use the Get-MgDirectoryObjectMemberObject Cmdlet.
-
 
 ## PARAMETERS
 
@@ -129,7 +110,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -403,7 +384,7 @@ HelpMessage: ''
 
 ### -SecurityEnabledOnly
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -484,11 +465,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths16Hhl7EDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths16Hhl7EDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SecurityEnabledOnly <Boolean?>]: 
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
+INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
   [CertificateAuthorityDetailId <String>]: The unique identifier of certificateAuthorityDetail
   [CertificateBasedAuthPkiId <String>]: The unique identifier of certificateBasedAuthPki
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
@@ -496,27 +477,5 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDirectoryObjectMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmemberobject)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmemberobject)
+- [](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)

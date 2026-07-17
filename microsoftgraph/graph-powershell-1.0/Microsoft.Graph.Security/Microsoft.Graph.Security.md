@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: 01eec85c-0aa5-4fef-a8de-b5f224bdb39b
+Module Guid: 094a3a86-a640-1e56-859a-cdf5b7484040
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.security/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -157,6 +157,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSourceCount](Get-MgSecurityCaseEdiscoveryCaseCustodianUserSourceCount.md)
 
+### [Get-MgSecurityCaseEdiscoveryCaseMember](Get-MgSecurityCaseEdiscoveryCaseMember.md)
+
+### [Get-MgSecurityCaseEdiscoveryCaseMember](Get-MgSecurityCaseEdiscoveryCaseMember.md)
+
+### [Get-MgSecurityCaseEdiscoveryCaseMemberCount](Get-MgSecurityCaseEdiscoveryCaseMemberCount.md)
+
 ### [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
@@ -284,6 +290,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSecurityIdentitySensorHealthIssue](Get-MgSecurityIdentitySensorHealthIssue.md)
 
 ### [Get-MgSecurityIdentitySensorHealthIssueCount](Get-MgSecurityIdentitySensorHealthIssueCount.md)
+
+### [Get-MgSecurityIdentitySetting](Get-MgSecurityIdentitySetting.md)
+
+### [Get-MgSecurityIdentitySettingAutoAuditingConfiguration](Get-MgSecurityIdentitySettingAutoAuditingConfiguration.md)
 
 ### [Get-MgSecurityIncident](Get-MgSecurityIncident.md)
 
@@ -663,6 +673,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgReopenSecurityCaseEdiscoveryCase](Invoke-MgReopenSecurityCaseEdiscoveryCase.md)
 
+### [Merge-MgSecurityIncident](Merge-MgSecurityIncident.md)
+
+### [Move-MgSecurityAlert](Move-MgSecurityAlert.md)
+
 ### [New-MgSecurityAlert](New-MgSecurityAlert.md)
 
 ### [New-MgSecurityAlertV2](New-MgSecurityAlertV2.md)
@@ -700,6 +714,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource.md)
 
 ### [New-MgSecurityCaseEdiscoveryCaseCustodianUserSource](New-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
+
+### [New-MgSecurityCaseEdiscoveryCaseMember](New-MgSecurityCaseEdiscoveryCaseMember.md)
 
 ### [New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
@@ -839,6 +855,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
 
+### [Remove-MgSecurityCaseEdiscoveryCaseMember](Remove-MgSecurityCaseEdiscoveryCaseMember.md)
+
 ### [Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
 ### [Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold.md)
@@ -876,6 +894,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgSecurityIdentitySensorCandidate](Remove-MgSecurityIdentitySensorCandidate.md)
 
 ### [Remove-MgSecurityIdentitySensorCandidateActivationConfiguration](Remove-MgSecurityIdentitySensorCandidateActivationConfiguration.md)
+
+### [Remove-MgSecurityIdentitySetting](Remove-MgSecurityIdentitySetting.md)
+
+### [Remove-MgSecurityIdentitySettingAutoAuditingConfiguration](Remove-MgSecurityIdentitySettingAutoAuditingConfiguration.md)
 
 ### [Remove-MgSecurityIncident](Remove-MgSecurityIncident.md)
 
@@ -1003,6 +1025,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Update-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
 
+### [Update-MgSecurityCaseEdiscoveryCaseMember](Update-MgSecurityCaseEdiscoveryCaseMember.md)
+
 ### [Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
 ### [Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex](Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex.md)
@@ -1040,6 +1064,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityIdentitySensorCandidate](Update-MgSecurityIdentitySensorCandidate.md)
 
 ### [Update-MgSecurityIdentitySensorCandidateActivationConfiguration](Update-MgSecurityIdentitySensorCandidateActivationConfiguration.md)
+
+### [Update-MgSecurityIdentitySetting](Update-MgSecurityIdentitySetting.md)
+
+### [Update-MgSecurityIdentitySettingAutoAuditingConfiguration](Update-MgSecurityIdentitySettingAutoAuditingConfiguration.md)
 
 ### [Update-MgSecurityIncident](Update-MgSecurityIncident.md)
 
@@ -1122,23 +1150,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityTriggerType](Update-MgSecurityTriggerType.md)
 
 ### [Update-MgSecurityTriggerTypeRetentionEventType](Update-MgSecurityTriggerTypeRetentionEventType.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

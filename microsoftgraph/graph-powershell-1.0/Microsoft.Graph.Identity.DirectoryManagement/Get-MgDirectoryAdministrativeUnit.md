@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunit
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryAdministrativeUnit
 ---
@@ -16,9 +16,6 @@ title: Get-MgDirectoryAdministrativeUnit
 Retrieve the properties and relationships of an administrativeUnit object.
 The administrativeUnit resource supports extensions, which also allows you to use the GET operation to get custom properties and extension data in an administrativeUnit instance.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -29,7 +26,7 @@ Get-MgDirectoryAdministrativeUnit [-ExpandProperty <string[]>] [-Property <strin
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +35,7 @@ Get-MgDirectoryAdministrativeUnit [-ExpandProperty <string[]>] [-Property <strin
 Get-MgDirectoryAdministrativeUnit -AdministrativeUnitId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +45,7 @@ Get-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementIden
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -61,37 +58,19 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of an administrativeUnit object.
 The administrativeUnit resource supports extensions, which also allows you to use the GET operation to get custom properties and extension data in an administrativeUnit instance.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AdministrativeUnit.Read.All, Directory.ReadWrite.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AdministrativeUnit.Read.All, Directory.ReadWrite.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get an administrative unit
 
-```powershell
-
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
-
-```
-This example will get an administrative unit
-
-### Example 2: Get a restricted management administrative unit
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
 
-```
-This example will get a restricted management administrative unit
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
 
 ## PARAMETERS
 
@@ -553,7 +532,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -579,8 +558,11 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
+  [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
+  [ProfileSourceId <String>]: The unique identifier of profileSource
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
+  [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
@@ -588,28 +570,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDirectoryAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunit)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunit)
+- [](https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageassignmentapprovalstage
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage
 ---
@@ -27,7 +27,6 @@ Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId <str
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -37,7 +36,7 @@ Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId <str
  -ApprovalStageId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -47,7 +46,7 @@ Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -60,26 +59,13 @@ This cmdlet has the following aliases,
 Retrieve the properties of an approvalStage object.
 An approval stage is contained within an approval object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId $approvalId
-
-```
-This example shows how to use the Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -568,7 +554,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -584,6 +570,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -606,6 +593,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
   [PrivilegedAccessGroupAssignmentScheduleId <String>]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   [PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
@@ -641,28 +629,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageassignmentapprovalstage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/approvalstage-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/approval-list-stages?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageassignmentapprovalstage)
+- [](https://learn.microsoft.com/graph/api/approvalstage-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/approval-list-stages?view=graph-rest-1.0)

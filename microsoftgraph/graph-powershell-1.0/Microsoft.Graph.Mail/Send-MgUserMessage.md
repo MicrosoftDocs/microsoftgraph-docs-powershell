@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/send-mgusermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgUserMessage
 ---
@@ -18,9 +18,6 @@ The draft message can be a new message draft, reply draft, reply-all draft, or a
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Send-MgBetaUserMessage?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Send (Default)
@@ -30,7 +27,6 @@ Send-MgUserMessage -MessageId <string> -UserId <string> [-ResponseHeadersVariabl
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SendViaIdentity
@@ -40,7 +36,6 @@ Send-MgUserMessage -InputObject <IMailIdentity> [-ResponseHeadersVariable <strin
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -55,27 +50,14 @@ The draft message can be a new message draft, reply draft, reply-all draft, or a
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Send,  |
-| Delegated (personal Microsoft account) | Mail.Send,  |
-| Application | Mail.Send,  |
-
 ## EXAMPLES
-### Example 1: Send an existing draft message
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
 Send-MgUserMessage -UserId $userId -MessageId $messageId
-
-```
-This example will send an existing draft message
-
 
 ## PARAMETERS
 
@@ -407,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -420,27 +402,5 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Send-MgUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/send-mgusermessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/send-mgusermessage)
+- [](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-1.0)

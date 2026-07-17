@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrolescopedmember
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDirectoryRoleScopedMember
 ---
@@ -14,9 +14,6 @@ title: Update-MgDirectoryRoleScopedMember
 ## SYNOPSIS
 
 Update the navigation property scopedMembers in directoryRoles
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Update-MgDirectoryRoleScopedMember -DirectoryRoleId <string> -ScopedRoleMembersh
  [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -39,7 +35,7 @@ Update-MgDirectoryRoleScopedMember -DirectoryRoleId <string> -ScopedRoleMembersh
  -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,7 +47,6 @@ Update-MgDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIde
  [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -61,7 +56,7 @@ Update-MgDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIde
  -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -72,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property scopedMembers in directoryRoles
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -569,7 +574,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphScopedRoleMembership>`: scopedRoleMembership
+BODYPARAMETER <IMicrosoftGraphScopedRoleMembership>: scopedRoleMembership
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -582,7 +587,7 @@ For example, if a user changes their display name the API might show the new val
     [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -608,13 +613,16 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
+  [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
+  [ProfileSourceId <String>]: The unique identifier of profileSource
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
+  [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
 
-ROLEMEMBERINFO `<IMicrosoftGraphIdentity>`: identity
+ROLEMEMBERINFO <IMicrosoftGraphIdentity>: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -624,27 +632,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgDirectoryRoleScopedMember](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrolescopedmember)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrolescopedmember)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasbuildingcheck
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPlaceAsBuildingCheck
 ---
@@ -14,9 +14,6 @@ title: New-MgPlaceAsBuildingCheck
 ## SYNOPSIS
 
 Create new navigation property to checkIns for places
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsBuildingCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsBuildingCheck?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ New-MgPlaceAsBuildingCheck -PlaceId <string> [-ResponseHeadersVariable <string>]
  [-CreatedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -38,7 +34,6 @@ New-MgPlaceAsBuildingCheck -PlaceId <string> -BodyParameter <IMicrosoftGraphChec
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -49,7 +44,6 @@ New-MgPlaceAsBuildingCheck -InputObject <ICalendarIdentity> [-ResponseHeadersVar
  [-CreatedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -59,7 +53,7 @@ New-MgPlaceAsBuildingCheck -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphCheckInClaim> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -70,6 +64,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to checkIns for places
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -514,7 +518,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCheckInClaim>`: checkInClaim
+BODYPARAMETER <IMicrosoftGraphCheckInClaim>: checkInClaim
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
 For more information, see the iCalUId property in event.
@@ -523,7 +527,7 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -546,27 +550,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgPlaceAsBuildingCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasbuildingcheck)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasbuildingcheck)

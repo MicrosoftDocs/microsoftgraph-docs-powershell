@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinar
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventWebinar
 ---
@@ -16,9 +16,6 @@ title: Get-MgVirtualEventWebinar
 Read the properties and relationships of a virtualEventWebinar object.
 All roles can get the details of a webinar event.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -29,7 +26,7 @@ Get-MgVirtualEventWebinar [-ExpandProperty <string[]>] [-Property <string[]>] [-
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +35,7 @@ Get-MgVirtualEventWebinar [-ExpandProperty <string[]>] [-Property <string[]>] [-
 Get-MgVirtualEventWebinar -VirtualEventWebinarId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -47,7 +44,7 @@ Get-MgVirtualEventWebinar -VirtualEventWebinarId <string> [-ExpandProperty <stri
 Get-MgVirtualEventWebinar -InputObject <IBookingsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -60,26 +57,13 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a virtualEventWebinar object.
 All roles can get the details of a webinar event.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | VirtualEvent.Read.Chat, VirtualEvent.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgVirtualEventWebinar
-
-```
-This example shows how to use the Get-MgVirtualEventWebinar Cmdlet.
-
 
 ## PARAMETERS
 
@@ -541,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -565,28 +549,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgVirtualEventWebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinar)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventwebinar-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinar)
+- [](https://learn.microsoft.com/graph/api/virtualeventwebinar-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0)

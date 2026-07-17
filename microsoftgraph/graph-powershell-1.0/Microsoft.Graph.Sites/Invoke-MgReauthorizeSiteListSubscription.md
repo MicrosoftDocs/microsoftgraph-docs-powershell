@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgreauthorizesitelistsubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReauthorizeSiteListSubscription
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgReauthorizeSiteListSubscription
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaReauthorizeSiteListSubscription?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Reauthorize (Default)
@@ -27,7 +24,6 @@ Invoke-MgReauthorizeSiteListSubscription -ListId <string> -SiteId <string> -Subs
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ReauthorizeViaIdentity
@@ -37,7 +33,6 @@ Invoke-MgReauthorizeSiteListSubscription -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -400,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -448,28 +453,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgReauthorizeSiteListSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgreauthorizesitelistsubscription)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgreauthorizesitelistsubscription)
+- [](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)

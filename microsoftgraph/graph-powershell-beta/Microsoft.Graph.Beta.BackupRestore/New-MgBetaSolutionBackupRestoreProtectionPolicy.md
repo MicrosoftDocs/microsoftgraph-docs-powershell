@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreProtectionPolicy
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaSolutionBackupRestoreProtectionPolicy
 
 Create new navigation property to protectionPolicies for solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreProtectionPolicy?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,12 +24,13 @@ New-MgBetaSolutionBackupRestoreProtectionPolicy [-ResponseHeadersVariable <strin
  [-AdditionalProperties <hashtable>] [-BillingPolicyId <string>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>] [-DisplayName <string>]
  [-Id <string>] [-IsEnabled] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <datetime>] [-ProtectionMode <string>]
+ [-LastModifiedDateTime <datetime>] [-OffboardRequestedDateTime <datetime>]
+ [-ProtectionMode <string>]
  [-ProtectionPolicyArtifactCount <IMicrosoftGraphProtectionPolicyArtifactCount>]
  [-RetentionSettings <IMicrosoftGraphRetentionSetting[]>] [-Status <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -42,7 +40,6 @@ New-MgBetaSolutionBackupRestoreProtectionPolicy -BodyParameter <IMicrosoftGraphP
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -53,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to protectionPolicies for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -79,7 +86,7 @@ HelpMessage: ''
 
 ### -BillingPolicyId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -210,7 +217,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-The name of the policy to be created.
+The name of the policy.
 
 ```yaml
 Type: System.String
@@ -360,6 +367,29 @@ HelpMessage: ''
 ### -LastModifiedDateTime
 
 The date and time when the policy was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -OffboardRequestedDateTime
+
+The date and time when offboarding was requested for the protection policy.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
@@ -603,7 +633,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphProtectionPolicyBase>`: protectionPolicyBase
+BODYPARAMETER <IMicrosoftGraphProtectionPolicyBase>: protectionPolicyBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -622,10 +652,13 @@ For example, in the access reviews decisions API, this property might record the
   [CreatedDateTime <DateTime?>]: The date and time when the policy was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [DisplayName <String>]: The name of the policy to be created.
+  [DisplayName <String>]: The name of the policy.
   [IsEnabled <Boolean?>]: Indicates whether the policy is enabled.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [OffboardRequestedDateTime <DateTime?>]: The date and time when offboarding was requested for the protection policy.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [ProtectionMode <String>]: BackupPolicyProtectionMode
@@ -640,7 +673,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Period <TimeSpan?>]: The period of time to retain the protected data for a single Microsoft 365 service.
   [Status <String>]: protectionPolicyStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -652,7 +685,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -664,7 +697,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PROTECTIONPOLICYARTIFACTCOUNT `<IMicrosoftGraphProtectionPolicyArtifactCount>`: protectionPolicyArtifactCount
+PROTECTIONPOLICYARTIFACTCOUNT <IMicrosoftGraphProtectionPolicyArtifactCount>: protectionPolicyArtifactCount
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Completed <Int32?>]: The number of artifacts whose protection is completed.
   [Failed <Int32?>]: The number of artifacts whose protection failed.
@@ -678,27 +711,4 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting[]>: Contains the retention se
 
 ## RELATED LINKS
 
-- [New-MgBetaSolutionBackupRestoreProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreprotectionpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreprotectionpolicy)

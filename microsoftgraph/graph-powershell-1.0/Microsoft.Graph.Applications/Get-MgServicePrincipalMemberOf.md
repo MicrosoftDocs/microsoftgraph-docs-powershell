@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberof
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalMemberOf
 ---
@@ -18,9 +18,6 @@ HTTP Methods: GET Read-only.
 Nullable.
 Supports $expand.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberOf?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -32,7 +29,6 @@ Get-MgServicePrincipalMemberOf -ServicePrincipalId <string> [-ExpandProperty <st
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -42,7 +38,7 @@ Get-MgServicePrincipalMemberOf -DirectoryObjectId <string> -ServicePrincipalId <
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ConsistencyLevel <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -52,7 +48,7 @@ Get-MgServicePrincipalMemberOf -InputObject <IApplicationsIdentity> [-ExpandProp
  [-Property <string[]>] [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -68,17 +64,12 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalMemberOf -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgServicePrincipalMemberOf Cmdlet.
-
 
 ## PARAMETERS
 
@@ -589,12 +580,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
+  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition
@@ -618,27 +610,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgServicePrincipalMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberof)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberof)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)

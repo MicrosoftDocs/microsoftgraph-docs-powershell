@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyactivitybasedtimeoutpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyActivityBasedTimeoutPolicy
 ---
@@ -14,9 +14,6 @@ title: Update-MgPolicyActivityBasedTimeoutPolicy
 ## SYNOPSIS
 
 Update the properties of an activityBasedTimeoutPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ Update-MgPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId <string>
  [-DeletedDateTime <datetime>] [-Description <string>] [-DisplayName <string>] [-Id <string>]
  [-IsOrganizationDefault] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -39,7 +36,6 @@ Update-MgPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId <string>
  -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,7 +47,7 @@ Update-MgPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIdentity
  [-DeletedDateTime <datetime>] [-Description <string>] [-DisplayName <string>] [-Id <string>]
  [-IsOrganizationDefault] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -61,7 +57,6 @@ Update-MgPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIdentity
  -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,34 +68,17 @@ This cmdlet has the following aliases,
 
 Update the properties of an activityBasedTimeoutPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	definition = @(
-	"definition-value"
-)
-displayName = "displayName-value"
-isOrganizationDefault = $true
+	displayName = "Idle timeout for all apps"
 }
 
 Update-MgPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgPolicyActivityBasedTimeoutPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -160,7 +138,7 @@ HelpMessage: ''
 
 ### -AppliesTo
 
-
+.
 To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
@@ -664,7 +642,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -687,6 +665,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
+  [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
   [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
@@ -725,6 +704,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
   [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
@@ -732,27 +712,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgPolicyActivityBasedTimeoutPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyactivitybasedtimeoutpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyactivitybasedtimeoutpolicy)
+- [](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-update?view=graph-rest-1.0)

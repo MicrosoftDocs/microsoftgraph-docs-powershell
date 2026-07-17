@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemasgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryDeletedItemAsGroup
 ---
@@ -13,13 +13,8 @@ title: Get-MgDirectoryDeletedItemAsGroup
 
 ## SYNOPSIS
 
-Retrieve a list of recently deleted directory objects.
-Currently, deleted items functionality is only supported for the application, servicePrincipal, group, administrative unit, and user resources.
 Retrieve a list of recently deleted directory objects from deleted items.
-The following types are supported:\r- administrativeUnit\r- application\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemAsGroup?view=graph-powershell-beta)
+The following types are supported:\r\n- administrativeUnit\r\n- application\r\n- agentIdentityBlueprint\r\n- agentIdentity\r\n- agentIdentityBlueprintPrincipal\r\n- agentUser\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- group\r\n- servicePrincipal\r\n- user
 
 ## SYNTAX
 
@@ -31,7 +26,7 @@ Get-MgDirectoryDeletedItemAsGroup [-ExpandProperty <string[]>] [-Property <strin
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -40,7 +35,7 @@ Get-MgDirectoryDeletedItemAsGroup [-ExpandProperty <string[]>] [-Property <strin
 Get-MgDirectoryDeletedItemAsGroup -DirectoryObjectId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -50,7 +45,7 @@ Get-MgDirectoryDeletedItemAsGroup -InputObject <IIdentityDirectoryManagementIden
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -60,34 +55,22 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Retrieve a list of recently deleted directory objects.
-Currently, deleted items functionality is only supported for the application, servicePrincipal, group, administrative unit, and user resources.
 Retrieve a list of recently deleted directory objects from deleted items.
-The following types are supported:\r- administrativeUnit\r- application\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user
+The following types are supported:\r\n- administrativeUnit\r\n- application\r\n- agentIdentityBlueprint\r\n- agentIdentity\r\n- agentIdentityBlueprintPrincipal\r\n- agentUser\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- group\r\n- servicePrincipal\r\n- user
 
 ## EXAMPLES
-### Example 1: Retrieve deleted groups
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryDeletedItemAsGroup
 
-```
-This example will retrieve deleted groups
-
-### Example 2: Retrieve the count of deleted user objects and order the results by the deletedDateTime property
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDirectoryDeletedItemAsGroup -CountVariable CountVar -Sort "deletedDateTime asc" -Property "id,DisplayName,deletedDateTime" 
-
-```
-This example will retrieve the count of deleted user objects and order the results by the deleteddatetime property
-
+Get-MgDirectoryDeletedItemAsGroup -CountVariable CountVar -Sort "deletedDateTime asc" -Property "id,DisplayName,deletedDateTime"
 
 ## PARAMETERS
 
@@ -549,7 +532,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -575,8 +558,11 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
+  [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
+  [ProfileSourceId <String>]: The unique identifier of profileSource
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
+  [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
@@ -584,27 +570,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDirectoryDeletedItemAsGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemasgroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemasgroup)
+- [](https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityriskprevention
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgIdentityRiskPrevention
 ---
@@ -15,9 +15,6 @@ title: Remove-MgIdentityRiskPrevention
 
 Delete navigation property riskPrevention for identity
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityRiskPrevention](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityRiskPrevention?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -27,7 +24,6 @@ Remove-MgIdentityRiskPrevention [-IfMatch <string>] [-ResponseHeadersVariable <s
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -38,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property riskPrevention for identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -319,27 +325,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Remove-MgIdentityRiskPrevention](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityriskprevention)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityriskprevention)

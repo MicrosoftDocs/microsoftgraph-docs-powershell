@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilepropertysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAdminPeopleProfilePropertySetting
 ---
@@ -21,11 +21,10 @@ Create a new profilePropertySetting object.
 
 ```
 New-MgBetaAdminPeopleProfilePropertySetting [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-AllowedAudiences <string>] [-Id <string>]
- [-IsUserOverrideForAudienceEnabled] [-Name <string>] [-PrioritizedSourceUrls <string[]>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Name <string>]
+ [-PrioritizedSourceUrls <string[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -35,7 +34,6 @@ New-MgBetaAdminPeopleProfilePropertySetting -BodyParameter <IMicrosoftGraphProfi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -47,33 +45,22 @@ This cmdlet has the following aliases,
 
 Create a new profilePropertySetting object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PeopleSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.profilePropertySetting"
+	displayName = "Profile priority config"
+	name = "Profile priority config"
 	prioritizedSourceUrls = @(
 	"https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')"
 )
 }
 
 New-MgBetaAdminPeopleProfilePropertySetting -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaAdminPeopleProfilePropertySetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -83,27 +70,6 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -AllowedAudiences
-
-organizationAllowedAudiences
-
-```yaml
-Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -174,6 +140,27 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DisplayName
+
+Name of the property-level setting.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -269,30 +256,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IsUserOverrideForAudienceEnabled
-
-Defines whether a user is allowed to override the tenant admin privacy setting.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -Name
 
-Name of the property-level setting.
+Other name of the property-level setting.
+For backward compatibility.
 
 ```yaml
 Type: System.String
@@ -469,39 +436,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphProfilePropertySetting>`: profilePropertySetting
+BODYPARAMETER <IMicrosoftGraphProfilePropertySetting>: profilePropertySetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AllowedAudiences <String>]: organizationAllowedAudiences
-  [IsUserOverrideForAudienceEnabled <Boolean?>]: Defines whether a user is allowed to override the tenant admin privacy setting.
-  [Name <String>]: Name of the property-level setting.
+  [DisplayName <String>]: Name of the property-level setting.
+  [Name <String>]: Other name of the property-level setting.
+For backward compatibility.
   [PrioritizedSourceUrls <String[]>]: A collection of prioritized profile source URLs ordered by data precedence within an organization.
 
 
 ## RELATED LINKS
 
-- [New-MgBetaAdminPeopleProfilePropertySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilepropertysetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilepropertysettings?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilepropertysetting)
+- [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilepropertysettings?view=graph-rest-beta)

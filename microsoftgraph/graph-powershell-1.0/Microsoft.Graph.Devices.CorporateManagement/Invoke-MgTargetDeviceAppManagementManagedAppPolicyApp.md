@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementmanagedapppolicyapp
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp
 ## SYNOPSIS
 
 Invoke action targetApps
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaTargetDeviceAppManagementManagedAppPolicyApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaTargetDeviceAppManagementManagedAppPolicyApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp -ManagedAppPolicyId <strin
  [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Target
@@ -39,7 +35,6 @@ Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp -ManagedAppPolicyId <strin
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### TargetViaIdentityExpanded
@@ -51,7 +46,6 @@ Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### TargetViaIdentity
@@ -63,7 +57,6 @@ Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,18 +68,9 @@ This cmdlet has the following aliases,
 
 Invoke action targetApps
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -105,10 +89,6 @@ $params = @{
 }
 
 Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp -ManagedAppPolicyId $managedAppPolicyId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp Cmdlet.
-
 
 ## PARAMETERS
 
@@ -141,7 +121,7 @@ HelpMessage: ''
 
 ### -Apps
 
-
+.
 To construct, see NOTES section for APPS properties and create a hash table.
 
 ```yaml
@@ -169,7 +149,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -525,7 +505,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Version <String>]: Version of the entity.
 
-BODYPARAMETER `<IPaths14Nj8OcDeviceappmanagementManagedapppoliciesManagedapppolicyIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths14Nj8OcDeviceappmanagementManagedapppoliciesManagedapppolicyIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Apps <IMicrosoftGraphManagedMobileApp[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -534,7 +514,7 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [Version <String>]: Version of the entity.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -575,26 +555,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementmanagedapppolicyapp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementmanagedapppolicyapp)

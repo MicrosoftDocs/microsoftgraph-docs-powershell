@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSolutionBackupRestoreSession
 ---
@@ -14,9 +14,6 @@ title: New-MgSolutionBackupRestoreSession
 ## SYNOPSIS
 
 Create new navigation property to restoreSessions for solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ New-MgSolutionBackupRestoreSession [-ResponseHeadersVariable <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -41,7 +38,6 @@ New-MgSolutionBackupRestoreSession -BodyParameter <IMicrosoftGraphRestoreSession
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to restoreSessions for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -556,7 +562,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRestoreSessionBase>`: restoreSessionBase
+BODYPARAMETER <IMicrosoftGraphRestoreSessionBase>: restoreSessionBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -598,7 +604,7 @@ For example, in the access reviews decisions API, this property might record the
     [Total <Int32?>]: The number of artifacts present in the restore session.
   [Status <String>]: restoreSessionStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -609,7 +615,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -625,7 +631,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -636,7 +642,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount
+RESTORESESSIONARTIFACTCOUNT <IMicrosoftGraphRestoreSessionArtifactCount>: restoreSessionArtifactCount
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Completed <Int32?>]: The number of artifacts whose restoration completed.
   [Failed <Int32?>]: The number of artifacts whose restoration failed.
@@ -646,27 +652,4 @@ RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: rest
 
 ## RELATED LINKS
 
-- [New-MgSolutionBackupRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoresession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoresession)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitem
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgExternalConnectionItem
 ---
@@ -15,9 +15,6 @@ title: Remove-MgExternalConnectionItem
 
 Delete an externalItem object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionItem?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -27,7 +24,6 @@ Remove-MgExternalConnectionItem -ExternalConnectionId <string> -ExternalItemId <
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,7 +33,6 @@ Remove-MgExternalConnectionItem -InputObject <ISearchIdentity> [-IfMatch <string
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,26 +44,13 @@ This cmdlet has the following aliases,
 
 Delete an externalItem object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Search
 
 Remove-MgExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId
-
-```
-This example shows how to use the Remove-MgExternalConnectionItem Cmdlet.
-
 
 ## PARAMETERS
 
@@ -421,7 +403,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [BookmarkId <String>]: The unique identifier of bookmark
   [ConnectionOperationId <String>]: The unique identifier of connectionOperation
@@ -435,27 +417,5 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgExternalConnectionItem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitem)
+- [](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0)

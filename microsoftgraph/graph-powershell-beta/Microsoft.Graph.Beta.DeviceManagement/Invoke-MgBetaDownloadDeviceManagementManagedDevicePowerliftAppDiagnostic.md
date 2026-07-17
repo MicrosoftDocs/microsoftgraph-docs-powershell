@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementmanageddevicepowerliftappdiagnostic
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDownloadDeviceManagementManagedDevicePowerliftAppDiagnostic
 ---
@@ -25,7 +25,6 @@ Invoke-MgBetaDownloadDeviceManagementManagedDevicePowerliftAppDiagnostic -OutFil
  [-Request <IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Download
@@ -36,7 +35,6 @@ Invoke-MgBetaDownloadDeviceManagementManagedDevicePowerliftAppDiagnostic -OutFil
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -47,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action downloadPowerliftAppDiagnostic
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -73,7 +81,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -400,14 +408,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1F7Y7B2DevicemanagementManageddevicesMicrosoftGraphDownloadpowerliftappdiagnosticPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1F7Y7B2DevicemanagementManageddevicesMicrosoftGraphDownloadpowerliftappdiagnosticPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Request <IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>]: This type contains request details to download app diagnostic files.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Files <String[]>]: The list of files to download which is associated with the diagnostic.
     [PowerliftId <String>]: The unique id for the request that serves as an identifer for the diagnostic to be downloaded.
 
-REQUEST `<IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>`: This type contains request details to download app diagnostic files.
+REQUEST <IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>: This type contains request details to download app diagnostic files.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Files <String[]>]: The list of files to download which is associated with the diagnostic.
   [PowerliftId <String>]: The unique id for the request that serves as an identifer for the diagnostic to be downloaded.
@@ -415,27 +423,4 @@ REQUEST `<IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>`: This type cont
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaDownloadDeviceManagementManagedDevicePowerliftAppDiagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementmanageddevicepowerliftappdiagnostic)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementmanageddevicepowerliftappdiagnostic)

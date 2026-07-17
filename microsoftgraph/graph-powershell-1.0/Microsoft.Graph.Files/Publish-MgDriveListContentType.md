@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgdrivelistcontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Publish-MgDriveListContentType
 ---
@@ -15,9 +15,6 @@ title: Publish-MgDriveListContentType
 
 Publishes a contentType present in the content type hub site.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Publish-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Publish-MgBetaDriveListContentType?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Publish (Default)
@@ -27,7 +24,6 @@ Publish-MgDriveListContentType -ContentTypeId <string> -DriveId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### PublishViaIdentity
@@ -37,7 +33,6 @@ Publish-MgDriveListContentType -InputObject <IFilesIdentity> [-ResponseHeadersVa
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Publishes a contentType present in the content type hub site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -379,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -408,28 +413,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Publish-MgDriveListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgdrivelistcontenttype)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgdrivelistcontenttype)
+- [](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicecompliancepolicystate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState
 ## SYNOPSIS
 
 Create new navigation property to deviceCompliancePolicyStates for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState -ManagedDeviceId <s
  [-UserId <string>] [-UserPrincipalName <string>] [-Version <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -40,7 +36,7 @@ New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState -ManagedDeviceId <s
  -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -54,7 +50,6 @@ New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState
  [-UserId <string>] [-UserPrincipalName <string>] [-Version <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -65,7 +60,7 @@ New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState
  -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -76,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to deviceCompliancePolicyStates for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -491,7 +496,7 @@ HelpMessage: ''
 
 ### -SettingStates
 
-
+.
 To construct, see NOTES section for SETTINGSTATES properties and create a hash table.
 
 ```yaml
@@ -681,7 +686,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicyState>`: Device Compliance Policy State for a given device.
+BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicyState>: Device Compliance Policy State for a given device.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -710,7 +715,7 @@ Read-only.
   [UserPrincipalName <String>]: User Principal Name
   [Version <Int32?>]: The version of the policy
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -840,27 +845,4 @@ SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState[]>: .
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicecompliancepolicystate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicecompliancepolicystate)

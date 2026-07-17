@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserEventInstance
 ---
@@ -20,9 +20,6 @@ Navigation property.
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserEventInstance](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstance?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -34,7 +31,7 @@ Get-MgBetaUserEventInstance -EventId <string> -UserId <string> -EndDateTime <str
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ## ALIASES
@@ -51,23 +48,13 @@ Navigation property.
 Read-only.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read,  |
-| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read,  |
-| Application | Calendars.ReadBasic, Calendars.Read,  |
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserEventInstance Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Calendar
 # A UPN can also be used as -UserId.
-Get-MgBetaUserEventInstance -UserId $userId -EventId $eventId -Startdatetime "2019-04-08T09:00:00.0000000" -Enddatetime "2019-04-30T09:00:00.0000000" -Property "subject,bodyPreview,seriesMasterId,type,recurrence,start,end" 
-```
-This example shows how to use the Get-MgBetaUserEventInstance Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaUserEventInstance -UserId $userId -EventId $eventId -Startdatetime "2019-04-08T09:00:00.0000000" -Enddatetime "2019-04-30T09:00:00.0000000" -Property "subject,bodyPreview,seriesMasterId,type,recurrence,start,end"
 
 ## PARAMETERS
 
@@ -565,26 +552,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserEventInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstance)

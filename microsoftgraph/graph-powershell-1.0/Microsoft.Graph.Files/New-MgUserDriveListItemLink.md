@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistitemlink
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserDriveListItemLink
 ---
@@ -14,9 +14,6 @@ title: New-MgUserDriveListItemLink
 ## SYNOPSIS
 
 Invoke action createLink
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserDriveListItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListItemLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ New-MgUserDriveListItemLink -DriveId <string> -ListItemId <string> -UserId <stri
  [-SendNotification] [-Type <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -41,7 +37,6 @@ New-MgUserDriveListItemLink -DriveId <string> -ListItemId <string> -UserId <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -53,7 +48,6 @@ New-MgUserDriveListItemLink -InputObject <IFilesIdentity> [-ResponseHeadersVaria
  [-Scope <string>] [-SendNotification] [-Type <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -64,7 +58,6 @@ New-MgUserDriveListItemLink -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action createLink
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -107,7 +110,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -205,7 +208,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -350,7 +353,7 @@ HelpMessage: ''
 
 ### -Message
 
-
+.
 
 ```yaml
 Type: System.String
@@ -377,7 +380,7 @@ HelpMessage: ''
 
 ### -Password
 
-
+.
 
 ```yaml
 Type: System.String
@@ -467,7 +470,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-
+.
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -517,7 +520,7 @@ HelpMessage: ''
 
 ### -RetainInheritedPermissions
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -544,7 +547,7 @@ HelpMessage: ''
 
 ### -Scope
 
-
+.
 
 ```yaml
 Type: System.String
@@ -571,7 +574,7 @@ HelpMessage: ''
 
 ### -SendNotification
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -598,7 +601,7 @@ HelpMessage: ''
 
 ### -Type
 
-
+.
 
 ```yaml
 Type: System.String
@@ -706,7 +709,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsA00Hz4UsersUserIdDrivesDriveIdListItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsA00Hz4UsersUserIdDrivesDriveIdListItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpirationDateTime <DateTime?>]: 
   [Message <String>]: 
@@ -720,7 +723,7 @@ BODYPARAMETER `<IPathsA00Hz4UsersUserIdDrivesDriveIdListItemsListitemIdMicrosoft
   [SendNotification <Boolean?>]: 
   [Type <String>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -754,27 +757,4 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [New-MgUserDriveListItemLink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistitemlink)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistitemlink)

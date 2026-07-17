@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mguserdevicemanagementtroubleshootingevent
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserDeviceManagementTroubleshootingEvent
 ---
@@ -14,9 +14,6 @@ title: Remove-MgUserDeviceManagementTroubleshootingEvent
 ## SYNOPSIS
 
 Delete navigation property deviceManagementTroubleshootingEvents for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserDeviceManagementTroubleshootingEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Remove-MgUserDeviceManagementTroubleshootingEvent -DeviceManagementTroubleshooti
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,7 +34,6 @@ Remove-MgUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorporat
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property deviceManagementTroubleshootingEvents for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -401,7 +406,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -442,27 +447,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgUserDeviceManagementTroubleshootingEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mguserdevicemanagementtroubleshootingevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mguserdevicemanagementtroubleshootingevent)

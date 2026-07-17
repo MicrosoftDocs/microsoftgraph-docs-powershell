@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserDriveItemContent
 ---
@@ -15,9 +15,6 @@ title: Remove-MgUserDriveItemContent
 
 The content stream, if the item represents a file.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemContent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -27,7 +24,6 @@ Remove-MgUserDriveItemContent -DriveId <string> -DriveItemId <string> -UserId <s
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,7 +33,6 @@ Remove-MgUserDriveItemContent -InputObject <IFilesIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The content stream, if the item represents a file.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -421,7 +426,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -450,27 +455,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgUserDriveItemContent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemcontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemcontent)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectionparentnotebook
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupOnenoteSectionParentNotebook
 ---
@@ -16,9 +16,6 @@ title: Get-MgGroupOnenoteSectionParentNotebook
 The notebook that contains the section.
 Read-only.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteSectionParentNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteSectionParentNotebook?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -28,7 +25,7 @@ Get-MgGroupOnenoteSectionParentNotebook -GroupId <string> -OnenoteSectionId <str
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -37,7 +34,7 @@ Get-MgGroupOnenoteSectionParentNotebook -GroupId <string> -OnenoteSectionId <str
 Get-MgGroupOnenoteSectionParentNotebook -InputObject <INotesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,6 +46,16 @@ This cmdlet has the following aliases,
 
 The notebook that contains the section.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -359,7 +366,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -376,27 +383,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupOnenoteSectionParentNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectionparentnotebook)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectionparentnotebook)

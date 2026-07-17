@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivefollowing
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDriveFollowing
 ---
@@ -16,9 +16,6 @@ title: Get-MgDriveFollowing
 The list of items the user is following.
 Only in OneDrive for Business.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveFollowing](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveFollowing?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -29,7 +26,7 @@ Get-MgDriveFollowing -DriveId <string> [-ExpandProperty <string[]>] [-Property <
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +35,7 @@ Get-MgDriveFollowing -DriveId <string> [-ExpandProperty <string[]>] [-Property <
 Get-MgDriveFollowing -DriveId <string> -DriveItemId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -47,7 +44,7 @@ Get-MgDriveFollowing -DriveId <string> -DriveItemId <string> [-ExpandProperty <s
 Get-MgDriveFollowing -InputObject <IFilesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -61,17 +58,12 @@ The list of items the user is following.
 Only in OneDrive for Business.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveFollowing -DriveId $driveId
-
-```
-This example shows how to use the Get-MgDriveFollowing Cmdlet.
-
 
 ## PARAMETERS
 
@@ -560,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -589,26 +581,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDriveFollowing](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivefollowing)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivefollowing)

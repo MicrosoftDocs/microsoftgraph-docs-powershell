@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanycustomerpaymentmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaFinancialCompanyCustomerPaymentMethod
 ---
@@ -24,7 +24,6 @@ Remove-MgBetaFinancialCompanyCustomerPaymentMethod -CompanyId <string> -Customer
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Delete1
@@ -34,7 +33,6 @@ Remove-MgBetaFinancialCompanyCustomerPaymentMethod -CompanyId <string> -Customer
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
@@ -44,7 +42,6 @@ Remove-MgBetaFinancialCompanyCustomerPaymentMethod -InputObject <IFinancialsIden
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -54,7 +51,6 @@ Remove-MgBetaFinancialCompanyCustomerPaymentMethod -InputObject <IFinancialsIden
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -65,6 +61,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property paymentMethod for financials
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -450,7 +456,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -491,27 +497,4 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaFinancialCompanyCustomerPaymentMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanycustomerpaymentmethod)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanycustomerpaymentmethod)

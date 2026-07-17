@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserCalendarGroupCalendar
 ---
@@ -18,9 +18,6 @@ Navigation property.
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroupCalendar?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -32,7 +29,6 @@ Get-MgBetaUserCalendarGroupCalendar -CalendarGroupId <string> -UserId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -47,23 +43,13 @@ Navigation property.
 Read-only.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read.Shared, Calendars.Read,  |
-| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read.Shared, Calendars.Read,  |
-| Application | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserCalendarGroupCalendar Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Calendar
 # A UPN can also be used as -UserId.
 Get-MgBetaUserCalendarGroupCalendar -UserId $userId -CalendarGroupId $calendarGroupId
-```
-This example shows how to use the Get-MgBetaUserCalendarGroupCalendar Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -517,26 +503,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserCalendarGroupCalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar)

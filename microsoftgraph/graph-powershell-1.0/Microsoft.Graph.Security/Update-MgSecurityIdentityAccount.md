@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityaccount
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIdentityAccount
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityIdentityAccount
 ## SYNOPSIS
 
 Update the navigation property identityAccounts in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentityAccount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Update-MgSecurityIdentityAccount -IdentityAccountsId <string> [-ResponseHeadersV
  [-IsEnabled] [-OnPremisesSecurityIdentifier <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -39,7 +35,7 @@ Update-MgSecurityIdentityAccount -IdentityAccountsId <string>
  -BodyParameter <IMicrosoftGraphSecurityIdentityAccounts> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,7 +47,7 @@ Update-MgSecurityIdentityAccount -InputObject <ISecurityIdentity>
  [-Domain <string>] [-Id <string>] [-IsEnabled] [-OnPremisesSecurityIdentifier <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -61,7 +57,7 @@ Update-MgSecurityIdentityAccount -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityIdentityAccounts> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -72,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property identityAccounts in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -629,7 +635,7 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
   [Identifier <String>]: The account ID.
   [IdentityProvider <String>]: identityProvider
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIdentityAccounts>`: identityAccounts
+BODYPARAMETER <IMicrosoftGraphSecurityIdentityAccounts>: identityAccounts
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -644,7 +650,7 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
   [IsEnabled <Boolean?>]: Boolean indicating if the identityAccounts is enabled.
   [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier of the identityAccount.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -720,27 +726,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgSecurityIdentityAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityaccount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityaccount)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgApplicationTokenIssuancePolicyByRef
 ---
@@ -14,9 +14,6 @@ title: New-MgApplicationTokenIssuancePolicyByRef
 ## SYNOPSIS
 
 Assign a tokenIssuancePolicy to an application.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ New-MgApplicationTokenIssuancePolicyByRef -ApplicationId <string> -OdataId <stri
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -38,7 +34,6 @@ New-MgApplicationTokenIssuancePolicyByRef -ApplicationId <string> -BodyParameter
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -49,7 +44,6 @@ New-MgApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity> -
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -60,7 +54,6 @@ New-MgApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -72,18 +65,9 @@ This cmdlet has the following aliases,
 
 Assign a tokenIssuancePolicy to an application.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
@@ -92,10 +76,6 @@ $params = @{
 }
 
 New-MgApplicationTokenIssuancePolicyByRef -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example shows how to use the New-MgApplicationTokenIssuancePolicyByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -156,7 +136,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -506,17 +486,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
+  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition
@@ -540,27 +521,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgApplicationTokenIssuancePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref)
+- [](https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-1.0)

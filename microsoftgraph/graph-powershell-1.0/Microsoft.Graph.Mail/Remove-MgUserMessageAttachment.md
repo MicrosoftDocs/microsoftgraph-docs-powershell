@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageattachment
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserMessageAttachment
 ---
@@ -15,9 +15,6 @@ title: Remove-MgUserMessageAttachment
 
 Delete navigation property attachments for users
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessageAttachment?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -27,7 +24,6 @@ Remove-MgUserMessageAttachment -AttachmentId <string> -MessageId <string> -UserI
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,7 +33,6 @@ Remove-MgUserMessageAttachment -InputObject <IMailIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property attachments for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -421,7 +426,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -434,27 +439,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgUserMessageAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageattachment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageattachment)

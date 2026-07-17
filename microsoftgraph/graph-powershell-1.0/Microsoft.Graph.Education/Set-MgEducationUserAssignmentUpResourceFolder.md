@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationuserassignmentupresourcefolder
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgEducationUserAssignmentUpResourceFolder
 ---
@@ -17,9 +17,6 @@ Create a SharePoint folder to upload files for a given educationAssignment.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaEducationUserAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationUserAssignmentUpResourceFolder?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -29,7 +26,6 @@ Set-MgEducationUserAssignmentUpResourceFolder -EducationAssignmentId <string>
  -EducationUserId <string> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -39,7 +35,6 @@ Set-MgEducationUserAssignmentUpResourceFolder -InputObject <IEducationIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,6 +47,16 @@ This cmdlet has the following aliases,
 Create a SharePoint folder to upload files for a given educationAssignment.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -362,7 +367,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -387,28 +392,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgEducationUserAssignmentUpResourceFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationuserassignmentupresourcefolder)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationuserassignmentupresourcefolder)
+- [](https://learn.microsoft.com/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-1.0)

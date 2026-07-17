@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermode
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAdminEdgeInternetExplorerMode
 ---
@@ -15,9 +15,6 @@ title: Get-MgAdminEdgeInternetExplorerMode
 
 A container for Internet Explorer mode resources.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerMode?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -26,7 +23,7 @@ A container for Internet Explorer mode resources.
 Get-MgAdminEdgeInternetExplorerMode [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 A container for Internet Explorer mode resources.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -276,27 +283,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgAdminEdgeInternetExplorerMode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermode)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermode)

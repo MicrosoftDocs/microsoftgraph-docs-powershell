@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmobileapptroubleshootingevent
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementMobileAppTroubleshootingEvent
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceManagementMobileAppTroubleshootingEvent
 ## SYNOPSIS
 
 Update the navigation property mobileAppTroubleshootingEvents in deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Update-MgDeviceManagementMobileAppTroubleshootingEvent -MobileAppTroubleshooting
  [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +35,7 @@ Update-MgDeviceManagementMobileAppTroubleshootingEvent -MobileAppTroubleshooting
  -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,7 +46,7 @@ Update-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceMana
  [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -59,7 +56,7 @@ Update-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceMana
  -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -71,18 +68,9 @@ This cmdlet has the following aliases,
 
 Update the navigation property mobileAppTroubleshootingEvents in deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -91,10 +79,6 @@ $params = @{
 }
 
 Update-MgDeviceManagementMobileAppTroubleshootingEvent -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagementMobileAppTroubleshootingEvent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -519,7 +503,7 @@ Read-only.
   [ErrorMessage <String>]: Indicates error message if any during the upload process.
   [Status <AppLogUploadState?>]: AppLogUploadStatus
 
-BODYPARAMETER `<IMicrosoftGraphMobileAppTroubleshootingEvent>`: mobileAppTroubleshootingEvent
+BODYPARAMETER <IMicrosoftGraphMobileAppTroubleshootingEvent>: mobileAppTroubleshootingEvent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -531,7 +515,7 @@ Read-only.
     [ErrorMessage <String>]: Indicates error message if any during the upload process.
     [Status <AppLogUploadState?>]: AppLogUploadStatus
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -569,26 +553,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementMobileAppTroubleshootingEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmobileapptroubleshootingevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmobileapptroubleshootingevent)

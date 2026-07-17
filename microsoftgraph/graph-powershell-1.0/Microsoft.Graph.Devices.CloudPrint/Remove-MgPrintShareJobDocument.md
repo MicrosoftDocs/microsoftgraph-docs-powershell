@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharejobdocument
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPrintShareJobDocument
 ---
@@ -14,9 +14,6 @@ title: Remove-MgPrintShareJobDocument
 ## SYNOPSIS
 
 Delete navigation property documents for print
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareJobDocument?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Remove-MgPrintShareJobDocument -PrintDocumentId <string> -PrintJobId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,7 +34,6 @@ Remove-MgPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity> [-IfMat
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property documents for print
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -422,7 +427,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -440,27 +445,4 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgPrintShareJobDocument](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharejobdocument)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharejobdocument)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentsubmissionsubmittedresourcedependentresourcecount
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationUserAssignmentSubmissionSubmittedResourceDependentResource
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount
  -EducationSubmissionResourceId <string> -EducationUserId <string> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -38,7 +35,7 @@ Get-MgEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount
  -InputObject <IEducationIdentity> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -399,7 +406,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -424,27 +431,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentsubmissionsubmittedresourcedependentresourcecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentsubmissionsubmittedresourcedependentresourcecount)

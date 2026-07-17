@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementconfigurationpolicyenrollmenttimedevicemembershiptarget
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget
 ---
@@ -26,7 +26,7 @@ Set-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarge
  [-EnrollmentTimeDeviceMembershipTargets <IMicrosoftGraphEnrollmentTimeDeviceMembershipTarget[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Set
@@ -38,7 +38,6 @@ Set-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarge
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -50,7 +49,7 @@ Set-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarge
  [-EnrollmentTimeDeviceMembershipTargets <IMicrosoftGraphEnrollmentTimeDeviceMembershipTarget[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### SetViaIdentity
@@ -62,7 +61,6 @@ Set-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarge
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action setEnrollmentTimeDeviceMembershipTarget
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -105,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -203,7 +211,7 @@ HelpMessage: ''
 
 ### -EnrollmentTimeDeviceMembershipTargets
 
-
+.
 To construct, see NOTES section for ENROLLMENTTIMEDEVICEMEMBERSHIPTARGETS properties and create a hash table.
 
 ```yaml
@@ -461,7 +469,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths11S5F1SDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphSetenrollmenttimedevicemembershiptargetPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths11S5F1SDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphSetenrollmenttimedevicemembershiptargetPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EnrollmentTimeDeviceMembershipTargets <IMicrosoftGraphEnrollmentTimeDeviceMembershipTarget[]>]: 
     [TargetId <String>]: The unique identifiers of the targets that devices will become members of when enrolled with the asociated profile.
@@ -473,7 +481,7 @@ ENROLLMENTTIMEDEVICEMEMBERSHIPTARGETS <IMicrosoftGraphEnrollmentTimeDeviceMember
   [TargetType <EnrollmentTimeDeviceMembershipTargetType?>]: Represents the type of the targets that devices will become members of when enrolled with the associated profile.
 Possible values are staticSecurityGroup.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -585,27 +593,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementconfigurationpolicyenrollmenttimedevicemembershiptarget)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementconfigurationpolicyenrollmenttimedevicemembershiptarget)

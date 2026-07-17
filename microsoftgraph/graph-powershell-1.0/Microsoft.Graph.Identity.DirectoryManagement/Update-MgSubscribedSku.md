@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgsubscribedsku
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSubscribedSku
 ---
@@ -14,9 +14,6 @@ title: Update-MgSubscribedSku
 ## SYNOPSIS
 
 Update entity in subscribedSkus
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaSubscribedSku?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,7 +28,6 @@ Update-MgSubscribedSku -SubscribedSkuId <string> [-ResponseHeadersVariable <stri
  [-SubscriptionIds <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -41,7 +37,6 @@ Update-MgSubscribedSku -SubscribedSkuId <string> -BodyParameter <IMicrosoftGraph
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -55,7 +50,6 @@ Update-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity>
  [-SubscriptionIds <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +59,7 @@ Update-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphSubscribedSku> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -76,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update entity in subscribedSkus
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -742,7 +746,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSubscribedSku>`: subscribedSku
+BODYPARAMETER <IMicrosoftGraphSubscribedSku>: subscribedSku
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -776,7 +780,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
   [SubscriptionIds <String[]>]: A list of all subscription IDs associated with this SKU.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -802,13 +806,16 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
+  [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
+  [ProfileSourceId <String>]: The unique identifier of profileSource
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
+  [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
 
-PREPAIDUNITS `<IMicrosoftGraphLicenseUnitsDetail>`: licenseUnitsDetail
+PREPAIDUNITS <IMicrosoftGraphLicenseUnitsDetail>: licenseUnitsDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Enabled <Int32?>]: The number of units that are enabled for the active subscription of the service SKU.
   [LockedOut <Int32?>]: The number of units that are locked out because the customer canceled their subscription of the service SKU.
@@ -829,27 +836,4 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 
 ## RELATED LINKS
 
-- [Update-MgSubscribedSku](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgsubscribedsku)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgsubscribedsku)

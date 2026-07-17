@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffavailability
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBookingBusinessStaffAvailability
 ---
@@ -14,9 +14,6 @@ title: Get-MgBookingBusinessStaffAvailability
 ## SYNOPSIS
 
 Get the availability information of staff members of a Microsoft Bookings calendar.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessStaffAvailability](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffAvailability?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Get-MgBookingBusinessStaffAvailability -BookingBusinessId <string>
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -40,7 +36,6 @@ Get-MgBookingBusinessStaffAvailability -BookingBusinessId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
@@ -52,7 +47,6 @@ Get-MgBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -63,7 +57,6 @@ Get-MgBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,18 +68,9 @@ This cmdlet has the following aliases,
 
 Get the availability information of staff members of a Microsoft Bookings calendar.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Bookings.Read.All, Calendars.ReadWrite, Calendars.Read, Bookings.ReadWrite.All, Bookings.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -105,10 +89,6 @@ endDateTime = @{
 }
 
 Get-MgBookingBusinessStaffAvailability -BookingBusinessId $bookingBusinessId -BodyParameter $params
-
-```
-This example shows how to use the Get-MgBookingBusinessStaffAvailability Cmdlet.
-
 
 ## PARAMETERS
 
@@ -141,7 +121,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -443,7 +423,7 @@ HelpMessage: ''
 
 ### -StaffIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -552,7 +532,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1U5Iok1SolutionsBookingbusinessesBookingbusinessIdMicrosoftGraphGetstaffavailabilityPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1U5Iok1SolutionsBookingbusinessesBookingbusinessIdMicrosoftGraphGetstaffavailabilityPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -562,13 +542,13 @@ See below for more possible values.
   [StaffIds <String[]>]: 
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -589,7 +569,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [VirtualEventTownhallId <String>]: The unique identifier of virtualEventTownhall
   [VirtualEventWebinarId <String>]: The unique identifier of virtualEventWebinar
 
-STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
@@ -598,27 +578,5 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [Get-MgBookingBusinessStaffAvailability](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffavailability)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffavailability)
+- [](https://learn.microsoft.com/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryonpremisesynchronization
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDirectoryOnPremiseSynchronization
 ---
@@ -14,9 +14,6 @@ title: New-MgDirectoryOnPremiseSynchronization
 ## SYNOPSIS
 
 Create new navigation property to onPremisesSynchronization for directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ New-MgDirectoryOnPremiseSynchronization [-ResponseHeadersVariable <string>]
  [-Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -40,7 +37,6 @@ New-MgDirectoryOnPremiseSynchronization
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to onPremisesSynchronization for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -406,7 +412,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnPremisesDirectorySynchronization>`: onPremisesDirectorySynchronization
+BODYPARAMETER <IMicrosoftGraphOnPremisesDirectorySynchronization>: onPremisesDirectorySynchronization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -419,6 +425,7 @@ The threshold is either an absolute number of objects or a percentage number of 
       [SynchronizationPreventionType <String>]: onPremisesDirectorySynchronizationDeletionPreventionType
   [Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>]: onPremisesDirectorySynchronizationFeature
     [(Any) <Object>]: This indicates any property can be added to this object.
+    [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
     [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
     [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
@@ -442,7 +449,7 @@ This property isn't in use and updating it isn't supported.
     [UserForcePasswordChangeOnLogonEnabled <Boolean?>]: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     [UserWritebackEnabled <Boolean?>]: Used to indicate that user writeback is enabled.
 
-CONFIGURATION `<IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>`: onPremisesDirectorySynchronizationConfiguration
+CONFIGURATION <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>: onPremisesDirectorySynchronizationConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccidentalDeletionPrevention <IMicrosoftGraphOnPremisesAccidentalDeletionPrevention>]: onPremisesAccidentalDeletionPrevention
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -450,8 +457,9 @@ CONFIGURATION `<IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>`
 The threshold is either an absolute number of objects or a percentage number of objects.
     [SynchronizationPreventionType <String>]: onPremisesDirectorySynchronizationDeletionPreventionType
 
-FEATURES `<IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>`: onPremisesDirectorySynchronizationFeature
+FEATURES <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>: onPremisesDirectorySynchronizationFeature
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
   [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
   [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
@@ -478,27 +486,4 @@ This property isn't in use and updating it isn't supported.
 
 ## RELATED LINKS
 
-- [New-MgDirectoryOnPremiseSynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryonpremisesynchronization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryonpremisesynchronization)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgShareListOperation
 ---
@@ -14,9 +14,6 @@ title: New-MgShareListOperation
 ## SYNOPSIS
 
 Create new navigation property to operations for shares
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaShareListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ New-MgShareListOperation -SharedDriveItemId <string> [-ResponseHeadersVariable <
  [-StatusDetail <string>] [-Type <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -40,7 +36,7 @@ New-MgShareListOperation -SharedDriveItemId <string>
  -BodyParameter <IMicrosoftGraphRichLongRunningOperation> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -53,7 +49,6 @@ New-MgShareListOperation -InputObject <IFilesIdentity> [-ResponseHeadersVariable
  [-StatusDetail <string>] [-Type <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -63,7 +58,7 @@ New-MgShareListOperation -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphRichLongRunningOperation> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -74,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to operations for shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -710,7 +715,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRichLongRunningOperation>`: The status of a long-running operation.
+BODYPARAMETER <IMicrosoftGraphRichLongRunningOperation>: The status of a long-running operation.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The start time of the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
@@ -742,7 +747,7 @@ Read-only.
   [ResourceId <String>]: The unique identifier for the result.
   [Type <String>]: The type of the operation.
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -758,7 +763,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -787,27 +792,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgShareListOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistoperation)

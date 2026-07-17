@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogcustomworkflowextension
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEntitlementManagementCatalogCustomWorkflowExtension
 ---
@@ -28,7 +28,7 @@ New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogI
  [-DisplayName <string>] [-EndpointConfiguration <hashtable>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +38,7 @@ New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogI
  -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -51,7 +51,7 @@ New-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentit
  [-DisplayName <string>] [-EndpointConfiguration <hashtable>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +61,7 @@ New-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentit
  -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -75,9 +75,8 @@ Create a new accessPackageAssignmentRequestWorkflowExtension or accessPackageAss
 You must explicitly provide an @odata.type property that indicates whether the object is an  accessPackageAssignmentRequestWorkflowExtension or an accessPackageAssignmentWorkflowExtension.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -102,12 +101,7 @@ $params = @{
 
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
 
-```
-This example shows how to use the New-MgEntitlementManagementCatalogCustomWorkflowExtension Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -129,10 +123,6 @@ $params = @{
 }
 
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEntitlementManagementCatalogCustomWorkflowExtension Cmdlet.
-
 
 ## PARAMETERS
 
@@ -657,7 +647,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCustomCalloutExtension>`: customCalloutExtension
+BODYPARAMETER <IMicrosoftGraphCustomCalloutExtension>: customCalloutExtension
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -676,7 +666,7 @@ Default duration is 1000.
   [EndpointConfiguration <IMicrosoftGraphCustomExtensionEndpointConfiguration>]: customExtensionEndpointConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
+CLIENTCONFIGURATION <IMicrosoftGraphCustomExtensionClientConfiguration>: customExtensionClientConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MaximumRetries <Int32?>]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
@@ -685,7 +675,7 @@ If null, the default for the service applies.
 The valid range is between 200 and 2000 milliseconds.
 Default duration is 1000.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -701,6 +691,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -723,6 +714,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
   [PrivilegedAccessGroupAssignmentScheduleId <String>]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   [PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
@@ -758,27 +750,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgEntitlementManagementCatalogCustomWorkflowExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogcustomworkflowextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackagecatalog-post-accesspackagecustomworkflowextensions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogcustomworkflowextension)
+- [](https://learn.microsoft.com/graph/api/accesspackagecatalog-post-accesspackagecustomworkflowextensions?view=graph-rest-1.0)

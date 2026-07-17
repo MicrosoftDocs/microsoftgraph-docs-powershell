@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequestuserconsentrequestapproval
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval
 ---
@@ -14,9 +14,6 @@ title: Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval
 ## SYNOPSIS
 
 Update the navigation property approval in identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval -AppConse
  [-AdditionalProperties <hashtable>] [-Id <string>] [-Stages <IMicrosoftGraphApprovalStage[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -39,7 +36,6 @@ Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval -AppConse
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,7 +46,7 @@ Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval
  [-AdditionalProperties <hashtable>] [-Id <string>] [-Stages <IMicrosoftGraphApprovalStage[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -61,7 +57,6 @@ Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -72,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property approval in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -515,7 +520,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphApproval>`: approval
+BODYPARAMETER <IMicrosoftGraphApproval>: approval
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -543,7 +548,7 @@ Read-only.
 Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -559,6 +564,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -581,6 +587,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
   [PrivilegedAccessGroupAssignmentScheduleId <String>]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   [PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
@@ -640,27 +647,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequestuserconsentrequestapproval)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequestuserconsentrequestapproval)

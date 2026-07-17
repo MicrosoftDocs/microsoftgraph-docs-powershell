@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetgraphbprepathcreatedbyuser
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteGetGraphBPrePathCreatedByUser
 ---
@@ -16,9 +16,6 @@ title: Get-MgGroupSiteGetGraphBPrePathCreatedByUser
 Identity of the user who created the item.
 Read-only.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetGraphBPrePathCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetGraphBPrePathCreatedByUser?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -28,7 +25,7 @@ Get-MgGroupSiteGetGraphBPrePathCreatedByUser -GroupId <string> -Path <string> -S
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -38,7 +35,7 @@ Get-MgGroupSiteGetGraphBPrePathCreatedByUser -InputObject <ISitesIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 
 Identity of the user who created the item.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -381,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -429,27 +436,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupSiteGetGraphBPrePathCreatedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetgraphbprepathcreatedbyuser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetgraphbprepathcreatedbyuser)

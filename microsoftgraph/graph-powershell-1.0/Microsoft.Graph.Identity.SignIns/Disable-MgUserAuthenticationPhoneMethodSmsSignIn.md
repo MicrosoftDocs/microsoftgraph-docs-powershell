@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/disable-mguserauthenticationphonemethodsmssignin
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Disable-MgUserAuthenticationPhoneMethodSmsSignIn
 ---
@@ -25,7 +25,6 @@ Disable-MgUserAuthenticationPhoneMethodSmsSignIn -PhoneAuthenticationMethodId <s
  -UserId <string> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DisableViaIdentity
@@ -35,7 +34,6 @@ Disable-MgUserAuthenticationPhoneMethodSmsSignIn -InputObject <IIdentitySignInsI
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,27 +46,14 @@ This cmdlet has the following aliases,
 Disable SMS sign-in for an existing mobile phone number registered to a user.
 The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-Phone.ReadWrite, UserAuthMethod-Phone.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthMethod-Phone.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 # A UPN can also be used as -UserId.
 Disable-MgUserAuthenticationPhoneMethodSmsSignIn -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId
-
-```
-This example shows how to use the Disable-MgUserAuthenticationPhoneMethodSmsSignIn Cmdlet.
-
 
 ## PARAMETERS
 
@@ -400,7 +385,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -423,6 +408,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
+  [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
   [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
@@ -461,6 +447,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
   [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
@@ -468,27 +455,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Disable-MgUserAuthenticationPhoneMethodSmsSignIn](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/disable-mguserauthenticationphonemethodsmssignin)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-disablesmssignin?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/disable-mguserauthenticationphonemethodsmssignin)
+- [](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-disablesmssignin?view=graph-rest-1.0)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycaseoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityCaseEdiscoveryCaseOperation
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityCaseEdiscoveryCaseOperation
 ## SYNOPSIS
 
 Update the navigation property operations in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ Update-MgSecurityCaseEdiscoveryCaseOperation -CaseOperationId <string> -Ediscove
  [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -40,7 +36,7 @@ Update-MgSecurityCaseEdiscoveryCaseOperation -CaseOperationId <string> -Ediscove
  -BodyParameter <IMicrosoftGraphSecurityCaseOperation> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,7 +49,6 @@ Update-MgSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity>
  [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -63,7 +58,7 @@ Update-MgSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityCaseOperation> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -74,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property operations in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -680,7 +685,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityCaseOperation>`: caseOperation
+BODYPARAMETER <IMicrosoftGraphSecurityCaseOperation>: caseOperation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -705,7 +710,7 @@ For example, in the access reviews decisions API, this property might record the
     [Subcode <Int32?>]: The result subcode.
   [Status <String>]: caseOperationStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -716,7 +721,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -789,7 +794,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
+RESULTINFO <IMicrosoftGraphResultInfo>: resultInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <Int32?>]: The result code.
   [Message <String>]: The message.
@@ -798,27 +803,4 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
 
 ## RELATED LINKS
 
-- [Update-MgSecurityCaseEdiscoveryCaseOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycaseoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycaseoperation)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallsessionattendancereport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaVirtualEventTownhallSessionAttendanceReport
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaVirtualEventTownhallSessionAttendanceReport
 
 Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
 When an online meeting ends, an attendance report is generated for that session.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventTownhallSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventTownhallSessionAttendanceReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Get-MgBetaVirtualEventTownhallSessionAttendanceReport -VirtualEventSessionId <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -40,7 +37,7 @@ Get-MgBetaVirtualEventTownhallSessionAttendanceReport -MeetingAttendanceReportId
  -VirtualEventSessionId <string> -VirtualEventTownhallId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -50,7 +47,7 @@ Get-MgBetaVirtualEventTownhallSessionAttendanceReport -InputObject <IBookingsIde
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -64,17 +61,12 @@ Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
 When an online meeting ends, an attendance report is generated for that session.
 
 ## EXAMPLES
-### Example 2: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
 Get-MgBetaVirtualEventTownhallSessionAttendanceReport -VirtualEventTownhallId $virtualEventTownhallId -VirtualEventSessionId $virtualEventSessionId
-
-```
-This example shows how to use the Get-MgBetaVirtualEventTownhallSessionAttendanceReport Cmdlet.
-
 
 ## PARAMETERS
 
@@ -590,7 +582,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -615,28 +607,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaVirtualEventTownhallSessionAttendanceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallsessionattendancereport)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/meetingattendancereport-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallsessionattendancereport)
+- [](https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/meetingattendancereport-list?view=graph-rest-beta)

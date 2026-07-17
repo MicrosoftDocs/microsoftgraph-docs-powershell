@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingcategory
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEducationClassAssignmentSettingGradingCategory
 ---
@@ -16,9 +16,6 @@ title: Update-MgEducationClassAssignmentSettingGradingCategory
 Update a single gradingCategory on the educationAssignmentSettings.
 Only teachers can perform this operation.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSettingGradingCategory?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -29,7 +26,7 @@ Update-MgEducationClassAssignmentSettingGradingCategory -EducationClassId <strin
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>]
  [-PercentageWeight <int>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -40,7 +37,6 @@ Update-MgEducationClassAssignmentSettingGradingCategory -EducationClassId <strin
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,7 +47,6 @@ Update-MgEducationClassAssignmentSettingGradingCategory -InputObject <IEducation
  [-Id <string>] [-PercentageWeight <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -61,7 +56,7 @@ Update-MgEducationClassAssignmentSettingGradingCategory -InputObject <IEducation
  -BodyParameter <IMicrosoftGraphEducationGradingCategory> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -75,9 +70,8 @@ Update a single gradingCategory on the educationAssignmentSettings.
 Only teachers can perform this operation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
@@ -86,10 +80,6 @@ $params = @{
 }
 
 Update-MgEducationClassAssignmentSettingGradingCategory -EducationClassId $educationClassId -EducationGradingCategoryId $educationGradingCategoryId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgEducationClassAssignmentSettingGradingCategory Cmdlet.
-
 
 ## PARAMETERS
 
@@ -559,14 +549,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationGradingCategory>`: educationGradingCategory
+BODYPARAMETER <IMicrosoftGraphEducationGradingCategory>: educationGradingCategory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: The name of the grading category.
   [PercentageWeight <Int32?>]: The weight of the category; an integer between 0 and 100.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -591,27 +581,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgEducationClassAssignmentSettingGradingCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingcategory)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationgradingcategory-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingcategory)
+- [](https://learn.microsoft.com/graph/api/educationgradingcategory-update?view=graph-rest-1.0)

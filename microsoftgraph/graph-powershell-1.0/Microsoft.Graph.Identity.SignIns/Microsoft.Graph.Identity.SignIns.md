@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: f989d6cf-27bc-49c0-8f66-98a7e3afebd4
+Module Guid: 5d709669-630b-2515-684c-019f6b7077c8
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -151,6 +151,20 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityConditionalAccessAuthenticationContextClassReferenceCount](Get-MgIdentityConditionalAccessAuthenticationContextClassReferenceCount.md)
 
+### [Get-MgIdentityConditionalAccessDeletedItem](Get-MgIdentityConditionalAccessDeletedItem.md)
+
+### [Get-MgIdentityConditionalAccessDeletedItemNamedLocation](Get-MgIdentityConditionalAccessDeletedItemNamedLocation.md)
+
+### [Get-MgIdentityConditionalAccessDeletedItemNamedLocation](Get-MgIdentityConditionalAccessDeletedItemNamedLocation.md)
+
+### [Get-MgIdentityConditionalAccessDeletedItemNamedLocationCount](Get-MgIdentityConditionalAccessDeletedItemNamedLocationCount.md)
+
+### [Get-MgIdentityConditionalAccessDeletedItemPolicy](Get-MgIdentityConditionalAccessDeletedItemPolicy.md)
+
+### [Get-MgIdentityConditionalAccessDeletedItemPolicy](Get-MgIdentityConditionalAccessDeletedItemPolicy.md)
+
+### [Get-MgIdentityConditionalAccessDeletedItemPolicyCount](Get-MgIdentityConditionalAccessDeletedItemPolicyCount.md)
+
 ### [Get-MgIdentityConditionalAccessNamedLocation](Get-MgIdentityConditionalAccessNamedLocation.md)
 
 ### [Get-MgIdentityConditionalAccessNamedLocation](Get-MgIdentityConditionalAccessNamedLocation.md)
@@ -208,6 +222,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgIdentityUserFlowAttribute](Get-MgIdentityUserFlowAttribute.md)
 
 ### [Get-MgIdentityUserFlowAttributeCount](Get-MgIdentityUserFlowAttributeCount.md)
+
+### [Get-MgIdentityVerifiedId](Get-MgIdentityVerifiedId.md)
+
+### [Get-MgIdentityVerifiedIdProfile](Get-MgIdentityVerifiedIdProfile.md)
+
+### [Get-MgIdentityVerifiedIdProfile](Get-MgIdentityVerifiedIdProfile.md)
+
+### [Get-MgIdentityVerifiedIdProfileCount](Get-MgIdentityVerifiedIdProfileCount.md)
 
 ### [Get-MgInformationProtection](Get-MgInformationProtection.md)
 
@@ -373,6 +395,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy](Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy.md)
 
+### [Get-MgPolicyOwnerlessGroupPolicy](Get-MgPolicyOwnerlessGroupPolicy.md)
+
 ### [Get-MgPolicyPermissionGrantPolicy](Get-MgPolicyPermissionGrantPolicy.md)
 
 ### [Get-MgPolicyPermissionGrantPolicy](Get-MgPolicyPermissionGrantPolicy.md)
@@ -493,6 +517,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserAuthenticationEmailMethodCount](Get-MgUserAuthenticationEmailMethodCount.md)
 
+### [Get-MgUserAuthenticationExternalAuthenticationMethod](Get-MgUserAuthenticationExternalAuthenticationMethod.md)
+
+### [Get-MgUserAuthenticationExternalAuthenticationMethod](Get-MgUserAuthenticationExternalAuthenticationMethod.md)
+
+### [Get-MgUserAuthenticationExternalAuthenticationMethodCount](Get-MgUserAuthenticationExternalAuthenticationMethodCount.md)
+
 ### [Get-MgUserAuthenticationFido2Method](Get-MgUserAuthenticationFido2Method.md)
 
 ### [Get-MgUserAuthenticationFido2Method](Get-MgUserAuthenticationFido2Method.md)
@@ -561,6 +591,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgAvailableIdentityProviderType](Invoke-MgAvailableIdentityProviderType.md)
 
+### [Invoke-MgCreationUserAuthenticationFido2MethodOption](Invoke-MgCreationUserAuthenticationFido2MethodOption.md)
+
 ### [Invoke-MgDismissRiskyServicePrincipal](Invoke-MgDismissRiskyServicePrincipal.md)
 
 ### [Invoke-MgDismissRiskyUser](Invoke-MgDismissRiskyUser.md)
@@ -607,6 +639,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration.md)
 
+### [New-MgIdentityConditionalAccessDeletedItemNamedLocation](New-MgIdentityConditionalAccessDeletedItemNamedLocation.md)
+
+### [New-MgIdentityConditionalAccessDeletedItemPolicy](New-MgIdentityConditionalAccessDeletedItemPolicy.md)
+
 ### [New-MgIdentityConditionalAccessNamedLocation](New-MgIdentityConditionalAccessNamedLocation.md)
 
 ### [New-MgIdentityConditionalAccessPolicy](New-MgIdentityConditionalAccessPolicy.md)
@@ -622,6 +658,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgIdentityRiskPreventionWebApplicationFirewallVerification](New-MgIdentityRiskPreventionWebApplicationFirewallVerification.md)
 
 ### [New-MgIdentityUserFlowAttribute](New-MgIdentityUserFlowAttribute.md)
+
+### [New-MgIdentityVerifiedIdProfile](New-MgIdentityVerifiedIdProfile.md)
 
 ### [New-MgInformationProtectionThreatAssessmentRequest](New-MgInformationProtectionThreatAssessmentRequest.md)
 
@@ -689,6 +727,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgUserAuthenticationEmailMethod](New-MgUserAuthenticationEmailMethod.md)
 
+### [New-MgUserAuthenticationExternalAuthenticationMethod](New-MgUserAuthenticationExternalAuthenticationMethod.md)
+
 ### [New-MgUserAuthenticationMethod](New-MgUserAuthenticationMethod.md)
 
 ### [New-MgUserAuthenticationOperation](New-MgUserAuthenticationOperation.md)
@@ -743,6 +783,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgIdentityConditionalAccessAuthenticationContextClassReference](Remove-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
 
+### [Remove-MgIdentityConditionalAccessDeletedItem](Remove-MgIdentityConditionalAccessDeletedItem.md)
+
+### [Remove-MgIdentityConditionalAccessDeletedItemNamedLocation](Remove-MgIdentityConditionalAccessDeletedItemNamedLocation.md)
+
+### [Remove-MgIdentityConditionalAccessDeletedItemPolicy](Remove-MgIdentityConditionalAccessDeletedItemPolicy.md)
+
 ### [Remove-MgIdentityConditionalAccessNamedLocation](Remove-MgIdentityConditionalAccessNamedLocation.md)
 
 ### [Remove-MgIdentityConditionalAccessPolicy](Remove-MgIdentityConditionalAccessPolicy.md)
@@ -760,6 +806,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification](Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification.md)
 
 ### [Remove-MgIdentityUserFlowAttribute](Remove-MgIdentityUserFlowAttribute.md)
+
+### [Remove-MgIdentityVerifiedId](Remove-MgIdentityVerifiedId.md)
+
+### [Remove-MgIdentityVerifiedIdProfile](Remove-MgIdentityVerifiedIdProfile.md)
 
 ### [Remove-MgInformationProtectionThreatAssessmentRequest](Remove-MgInformationProtectionThreatAssessmentRequest.md)
 
@@ -847,6 +897,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgUserAuthenticationEmailMethod](Remove-MgUserAuthenticationEmailMethod.md)
 
+### [Remove-MgUserAuthenticationExternalAuthenticationMethod](Remove-MgUserAuthenticationExternalAuthenticationMethod.md)
+
 ### [Remove-MgUserAuthenticationFido2Method](Remove-MgUserAuthenticationFido2Method.md)
 
 ### [Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod](Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
@@ -866,6 +918,16 @@ Microsoft Graph PowerShell Cmdlets
 ### [Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault](Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault.md)
 
 ### [Reset-MgUserAuthenticationMethodPassword](Reset-MgUserAuthenticationMethodPassword.md)
+
+### [Restore-MgIdentityConditionalAccessDeletedItemNamedLocation](Restore-MgIdentityConditionalAccessDeletedItemNamedLocation.md)
+
+### [Restore-MgIdentityConditionalAccessDeletedItemPolicy](Restore-MgIdentityConditionalAccessDeletedItemPolicy.md)
+
+### [Restore-MgIdentityConditionalAccessNamedLocation](Restore-MgIdentityConditionalAccessNamedLocation.md)
+
+### [Restore-MgIdentityConditionalAccessPolicy](Restore-MgIdentityConditionalAccessPolicy.md)
+
+### [Restore-MgPolicyConditionalAccessPolicy](Restore-MgPolicyConditionalAccessPolicy.md)
 
 ### [Set-MgIdentityB2XUserFlowLanguageDefaultPageContent](Set-MgIdentityB2XUserFlowLanguageDefaultPageContent.md)
 
@@ -911,6 +973,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgIdentityConditionalAccessAuthenticationContextClassReference](Update-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
 
+### [Update-MgIdentityConditionalAccessDeletedItem](Update-MgIdentityConditionalAccessDeletedItem.md)
+
+### [Update-MgIdentityConditionalAccessDeletedItemNamedLocation](Update-MgIdentityConditionalAccessDeletedItemNamedLocation.md)
+
+### [Update-MgIdentityConditionalAccessDeletedItemPolicy](Update-MgIdentityConditionalAccessDeletedItemPolicy.md)
+
 ### [Update-MgIdentityConditionalAccessNamedLocation](Update-MgIdentityConditionalAccessNamedLocation.md)
 
 ### [Update-MgIdentityConditionalAccessPolicy](Update-MgIdentityConditionalAccessPolicy.md)
@@ -928,6 +996,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgIdentityRiskPreventionWebApplicationFirewallVerification](Update-MgIdentityRiskPreventionWebApplicationFirewallVerification.md)
 
 ### [Update-MgIdentityUserFlowAttribute](Update-MgIdentityUserFlowAttribute.md)
+
+### [Update-MgIdentityVerifiedId](Update-MgIdentityVerifiedId.md)
+
+### [Update-MgIdentityVerifiedIdProfile](Update-MgIdentityVerifiedIdProfile.md)
 
 ### [Update-MgInformationProtection](Update-MgInformationProtection.md)
 
@@ -981,6 +1053,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy](Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy.md)
 
+### [Update-MgPolicyOwnerlessGroupPolicy](Update-MgPolicyOwnerlessGroupPolicy.md)
+
 ### [Update-MgPolicyPermissionGrantPolicy](Update-MgPolicyPermissionGrantPolicy.md)
 
 ### [Update-MgPolicyPermissionGrantPolicyExclude](Update-MgPolicyPermissionGrantPolicyExclude.md)
@@ -1019,28 +1093,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgUserAuthenticationEmailMethod](Update-MgUserAuthenticationEmailMethod.md)
 
+### [Update-MgUserAuthenticationExternalAuthenticationMethod](Update-MgUserAuthenticationExternalAuthenticationMethod.md)
+
 ### [Update-MgUserAuthenticationMethod](Update-MgUserAuthenticationMethod.md)
 
 ### [Update-MgUserAuthenticationOperation](Update-MgUserAuthenticationOperation.md)
 
 ### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DirectoryObjects-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobject
 Locale: en-US
 Module Name: Microsoft.Graph.DirectoryObjects
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryObject
 ---
@@ -14,9 +14,6 @@ title: Get-MgDirectoryObject
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a directoryObject object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgDirectoryObject [-ExpandProperty <string[]>] [-Property <string[]>] [-Filt
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +34,7 @@ Get-MgDirectoryObject [-ExpandProperty <string[]>] [-Property <string[]>] [-Filt
 Get-MgDirectoryObject -DirectoryObjectId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +43,7 @@ Get-MgDirectoryObject -DirectoryObjectId <string> [-ExpandProperty <string[]>]
 Get-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -58,26 +55,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a directoryObject object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DirectoryObjects
 
 Get-MgDirectoryObject -DirectoryObjectId $directoryObjectId
-
-```
-This example shows how to use the Get-MgDirectoryObject Cmdlet.
-
 
 ## PARAMETERS
 
@@ -561,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
+INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
   [CertificateAuthorityDetailId <String>]: The unique identifier of certificateAuthorityDetail
   [CertificateBasedAuthPkiId <String>]: The unique identifier of certificateBasedAuthPki
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
@@ -569,27 +553,5 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDirectoryObject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobject)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobject)
+- [](https://learn.microsoft.com/graph/api/directoryobject-get?view=graph-rest-1.0)

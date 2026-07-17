@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendarusercalendarallowedcalendarsharingroles
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles
 
 Invoke function allowedCalendarSharingRoles
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Calendar (Default)
@@ -27,7 +24,7 @@ Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <string> -UserId 
  [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Calendar1
@@ -37,7 +34,7 @@ Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <string> -UserId 
  -CalendarId <string> [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### CalendarViaIdentity1
@@ -47,7 +44,7 @@ Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <ICalendar
  [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### CalendarViaIdentity
@@ -57,7 +54,7 @@ Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <ICalendar
  [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -68,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke function allowedCalendarSharingRoles
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -479,7 +486,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -502,27 +509,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendarusercalendarallowedcalendarsharingroles)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendarusercalendarallowedcalendarsharingroles)

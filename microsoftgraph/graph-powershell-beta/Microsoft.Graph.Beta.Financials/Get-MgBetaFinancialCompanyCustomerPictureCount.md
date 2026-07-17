@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpicturecount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaFinancialCompanyCustomerPictureCount
 ---
@@ -24,7 +24,7 @@ Get-MgBetaFinancialCompanyCustomerPictureCount -CompanyId <string> -CustomerId <
  [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -33,7 +33,7 @@ Get-MgBetaFinancialCompanyCustomerPictureCount -CompanyId <string> -CustomerId <
 Get-MgBetaFinancialCompanyCustomerPictureCount -InputObject <IFinancialsIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -44,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -352,7 +362,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -393,27 +403,4 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaFinancialCompanyCustomerPictureCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpicturecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpicturecount)

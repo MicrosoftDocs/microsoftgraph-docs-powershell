@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermode
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgAdminEdgeInternetExplorerMode
 ---
@@ -15,9 +15,6 @@ title: Update-MgAdminEdgeInternetExplorerMode
 
 Update the navigation property internetExplorerMode in admin
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerMode?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -27,7 +24,7 @@ Update-MgAdminEdgeInternetExplorerMode [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Id <string>] [-SiteLists <IMicrosoftGraphBrowserSiteList[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -37,7 +34,6 @@ Update-MgAdminEdgeInternetExplorerMode -BodyParameter <IMicrosoftGraphInternetEx
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property internetExplorerMode in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -381,7 +387,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphInternetExplorerMode>`: internetExplorerMode
+BODYPARAMETER <IMicrosoftGraphInternetExplorerMode>: internetExplorerMode
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -524,27 +530,4 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
 
 ## RELATED LINKS
 
-- [Update-MgAdminEdgeInternetExplorerMode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermode)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermode)

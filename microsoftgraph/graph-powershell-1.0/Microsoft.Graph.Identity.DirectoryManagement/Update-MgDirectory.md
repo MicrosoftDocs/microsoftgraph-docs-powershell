@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDirectory
 ---
@@ -14,9 +14,6 @@ title: Update-MgDirectory
 ## SYNOPSIS
 
 Update directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,7 +32,6 @@ Update-MgDirectory [-ResponseHeadersVariable <string>] [-AdditionalProperties <h
  [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -44,7 +40,7 @@ Update-MgDirectory [-ResponseHeadersVariable <string>] [-AdditionalProperties <h
 Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -55,6 +51,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -625,7 +631,7 @@ Default value is null.
 If not specified, the administrator can add up to the maximum of 500 active attributes per tenant.
 Can be changed later.
 
-BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
+BODYPARAMETER <IMicrosoftGraphDirectory>: directory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -754,6 +760,7 @@ The threshold is either an absolute number of objects or a percentage number of 
         [SynchronizationPreventionType <String>]: onPremisesDirectorySynchronizationDeletionPreventionType
     [Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>]: onPremisesDirectorySynchronizationFeature
       [(Any) <Object>]: This indicates any property can be added to this object.
+      [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
       [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
       [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
@@ -914,6 +921,7 @@ The threshold is either an absolute number of objects or a percentage number of 
       [SynchronizationPreventionType <String>]: onPremisesDirectorySynchronizationDeletionPreventionType
   [Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>]: onPremisesDirectorySynchronizationFeature
     [(Any) <Object>]: This indicates any property can be added to this object.
+    [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
     [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
     [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
@@ -937,7 +945,7 @@ This property isn't in use and updating it isn't supported.
     [UserForcePasswordChangeOnLogonEnabled <Boolean?>]: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     [UserWritebackEnabled <Boolean?>]: Used to indicate that user writeback is enabled.
 
-PUBLICKEYINFRASTRUCTURE `<IMicrosoftGraphPublicKeyInfrastructureRoot>`: publicKeyInfrastructureRoot
+PUBLICKEYINFRASTRUCTURE <IMicrosoftGraphPublicKeyInfrastructureRoot>: publicKeyInfrastructureRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1003,27 +1011,4 @@ The possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 
 ## RELATED LINKS
 
-- [Update-MgDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)

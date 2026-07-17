@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/join-mggroupdrivelistcontenttypewithhubsite
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Join-MgGroupDriveListContentTypeWithHubSite
 ---
@@ -14,9 +14,6 @@ title: Join-MgGroupDriveListContentTypeWithHubSite
 ## SYNOPSIS
 
 Associate a published content type present in a content type hub with a list of hub sites.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Join-MgBetaGroupDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Files/Join-MgBetaGroupDriveListContentTypeWithHubSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Join-MgGroupDriveListContentTypeWithHubSite -ContentTypeId <string> -DriveId <st
  [-HubSiteUrls <string[]>] [-PropagateToExistingLists] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Associate
@@ -40,7 +36,6 @@ Join-MgGroupDriveListContentTypeWithHubSite -ContentTypeId <string> -DriveId <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AssociateViaIdentityExpanded
@@ -51,7 +46,6 @@ Join-MgGroupDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
  [-PropagateToExistingLists] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AssociateViaIdentity
@@ -62,7 +56,6 @@ Join-MgGroupDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,6 +66,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Associate a published content type present in a content type hub with a list of hub sites.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -320,7 +323,7 @@ HelpMessage: ''
 
 ### -HubSiteUrls
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -396,7 +399,7 @@ HelpMessage: ''
 
 ### -PropagateToExistingLists
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -562,12 +565,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths2Euw62GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths2Euw62GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [HubSiteUrls <String[]>]: 
   [PropagateToExistingLists <Boolean?>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -596,28 +599,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Join-MgGroupDriveListContentTypeWithHubSite](https://learn.microsoft.com/powershell/module/microsoft.graph.files/join-mggroupdrivelistcontenttypewithhubsite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/join-mggroupdrivelistcontenttypewithhubsite)
+- [](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)

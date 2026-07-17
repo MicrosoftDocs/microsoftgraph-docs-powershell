@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsitelistcontenttypecopyfromcontenttypehub
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgGroupSiteListContentTypeCopyFromContentTypeHub
 ---
@@ -18,9 +18,6 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaGroupSiteListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaGroupSiteListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -30,7 +27,7 @@ Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -GroupId <string> -ListId <
  -SiteId <string> [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-ContentTypeId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Add
@@ -42,7 +39,6 @@ Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -GroupId <string> -ListId <
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
@@ -52,7 +48,7 @@ Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -InputObject <ISitesIdentit
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-ContentTypeId <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### AddViaIdentity
@@ -63,7 +59,6 @@ Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -InputObject <ISitesIdentit
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,6 +72,16 @@ Add or sync a copy of a published content type from the content type hub to a ta
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -109,7 +114,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -180,7 +185,7 @@ HelpMessage: ''
 
 ### -ContentTypeId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -518,11 +523,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsHo8D96GroupsGroupIdSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsHo8D96GroupsGroupIdSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentTypeId <String>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -570,28 +575,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Add-MgGroupSiteListContentTypeCopyFromContentTypeHub](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsitelistcontenttypecopyfromcontenttypehub)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsitelistcontenttypecopyfromcontenttypehub)
+- [](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-1.0)

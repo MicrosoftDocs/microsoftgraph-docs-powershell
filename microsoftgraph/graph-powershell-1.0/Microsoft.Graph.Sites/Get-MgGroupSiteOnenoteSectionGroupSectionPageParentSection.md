@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpageparentsection
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteOnenoteSectionGroupSectionPageParentSection
 ---
@@ -16,9 +16,6 @@ title: Get-MgGroupSiteOnenoteSectionGroupSectionPageParentSection
 The section that contains the page.
 Read-only.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageParentSection](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageParentSection?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -28,7 +25,7 @@ Get-MgGroupSiteOnenoteSectionGroupSectionPageParentSection -GroupId <string> -On
  -OnenoteSectionId <string> -SectionGroupId <string> -SiteId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -38,7 +35,7 @@ Get-MgGroupSiteOnenoteSectionGroupSectionPageParentSection -InputObject <ISitesI
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 
 The section that contains the page.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -423,7 +430,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -471,27 +478,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupSiteOnenoteSectionGroupSectionPageParentSection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpageparentsection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpageparentsection)

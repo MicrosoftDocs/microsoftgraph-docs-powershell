@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehost
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityThreatIntelligenceHost
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityThreatIntelligenceHost
 ## SYNOPSIS
 
 Update the navigation property hosts in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,7 +34,7 @@ Update-MgSecurityThreatIntelligenceHost -HostId <string> [-ResponseHeadersVariab
  [-Trackers <IMicrosoftGraphSecurityHostTracker[]>] [-Whois <IMicrosoftGraphSecurityWhoisRecord>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -47,7 +44,7 @@ Update-MgSecurityThreatIntelligenceHost -HostId <string>
  -BodyParameter <IMicrosoftGraphSecurityHost> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -68,7 +65,7 @@ Update-MgSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity>
  [-Trackers <IMicrosoftGraphSecurityHostTracker[]>] [-Whois <IMicrosoftGraphSecurityWhoisRecord>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -78,7 +75,7 @@ Update-MgSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityHost> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -89,6 +86,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property hosts in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -899,7 +906,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityHost>`: host
+BODYPARAMETER <IMicrosoftGraphSecurityHost>: host
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2279,7 +2286,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LinkKind <String>]: The reason that two hosts are identified as hostPair.
   [ParentHost <IMicrosoftGraphSecurityHost>]: host
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -3456,7 +3463,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   [Status <String>]: hostPortStatus
   [TimesObserved <Int32?>]: The total amount of times that Microsoft Defender Threat Intelligence has observed the hostPort in all its scans.
 
-REPUTATION `<IMicrosoftGraphSecurityHostReputation>`: hostReputation
+REPUTATION <IMicrosoftGraphSecurityHostReputation>: hostReputation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -4297,7 +4304,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   [Value <String>]: The identification value for the hostTracker.
 
-WHOIS `<IMicrosoftGraphSecurityWhoisRecord>`: whoisRecord
+WHOIS <IMicrosoftGraphSecurityWhoisRecord>: whoisRecord
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Abuse <IMicrosoftGraphSecurityWhoisContact>]: whoisContact
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -4576,27 +4583,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgSecurityThreatIntelligenceHost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehost)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehost)

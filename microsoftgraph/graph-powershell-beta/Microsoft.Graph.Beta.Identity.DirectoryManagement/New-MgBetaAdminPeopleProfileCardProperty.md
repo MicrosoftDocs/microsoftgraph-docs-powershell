@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAdminPeopleProfileCardProperty
 ---
@@ -17,9 +17,6 @@ Create a new profileCardProperty for an organization.
 The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,10 +24,9 @@ For more information about how to add properties to the profile card for an orga
 ```
 New-MgBetaAdminPeopleProfileCardProperty [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Annotations <IMicrosoftGraphProfileCardAnnotation[]>]
- [-DirectoryPropertyName <string>] [-Id <string>] [-Break] [-Headers <IDictionary>]
+ [-DirectoryPropertyName <string>] [-Id <string>] [-IsVisible] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -40,7 +36,6 @@ New-MgBetaAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileC
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -55,14 +50,14 @@ The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	directoryPropertyName = "CustomAttribute1"
+	isVisible = $true
 	annotations = @(
 		@{
 			displayName = "Cost Center"
@@ -77,10 +72,6 @@ $params = @{
 }
 
 New-MgBetaAdminPeopleProfileCardProperty -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaAdminPeopleProfileCardProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -301,6 +292,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IsVisible
+
+Indicates whether the given directory property should be shown on a user’s profile card.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -445,7 +457,7 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
     [DisplayName <String>]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
     [LanguageTag <String>]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
 
-BODYPARAMETER `<IMicrosoftGraphProfileCardProperty>`: profileCardProperty
+BODYPARAMETER <IMicrosoftGraphProfileCardProperty>: profileCardProperty
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -459,31 +471,10 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
 Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
 When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
+  [IsVisible <Boolean?>]: Indicates whether the given directory property should be shown on a user’s profile card.
 
 
 ## RELATED LINKS
 
-- [New-MgBetaAdminPeopleProfileCardProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty)
+- [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewset
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Export-MgSecurityCaseEdiscoveryCaseReviewSet
 ---
@@ -15,9 +15,6 @@ title: Export-MgSecurityCaseEdiscoveryCaseReviewSet
 
 Initiate an export from a ediscoveryReviewSet.
 For details, see Export documents from a review set in eDiscovery (Premium).
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Beta.Security/Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <string>
  [-ExportStructure <string>] [-OutputName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Export
@@ -42,7 +38,6 @@ Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ExportViaIdentityExpanded
@@ -54,7 +49,6 @@ Export-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ExportViaIdentity
@@ -65,7 +59,6 @@ Export-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -78,18 +71,9 @@ This cmdlet has the following aliases,
 Initiate an export from a ediscoveryReviewSet.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -101,10 +85,6 @@ $params = @{
 }
 
 Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
-
-```
-This example shows how to use the Export-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
-
 
 ## PARAMETERS
 
@@ -137,7 +117,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -208,7 +188,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -434,7 +414,7 @@ HelpMessage: ''
 
 ### -OutputName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -621,14 +601,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: 
   [ExportOptions <String>]: exportOptions
   [ExportStructure <String>]: exportFileStructure
   [OutputName <String>]: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -704,27 +684,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Export-MgSecurityCaseEdiscoveryCaseReviewSet](https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewset)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-export?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewset)
+- [](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-export?view=graph-rest-1.0)

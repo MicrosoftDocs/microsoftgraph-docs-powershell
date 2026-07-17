@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.DirectoryObjects-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/remove-mgdirectoryobject
 Locale: en-US
 Module Name: Microsoft.Graph.DirectoryObjects
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDirectoryObject
 ---
@@ -15,9 +15,6 @@ title: Remove-MgDirectoryObject
 
 Delete a directory object, for example, a group, user, application, or service principal.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Remove-MgBetaDirectoryObject?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -27,7 +24,6 @@ Remove-MgDirectoryObject -DirectoryObjectId <string> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,7 +33,6 @@ Remove-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-IfMatch <str
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,17 +45,12 @@ This cmdlet has the following aliases,
 Delete a directory object, for example, a group, user, application, or service principal.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DirectoryObjects
 
 Remove-MgDirectoryObject -DirectoryObjectId $directoryObjectId
-
-```
-This example shows how to use the Remove-MgDirectoryObject Cmdlet.
-
 
 ## PARAMETERS
 
@@ -392,7 +382,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
+INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
   [CertificateAuthorityDetailId <String>]: The unique identifier of certificateAuthorityDetail
   [CertificateBasedAuthPkiId <String>]: The unique identifier of certificateBasedAuthPki
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
@@ -400,27 +390,5 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgDirectoryObject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/remove-mgdirectoryobject)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/remove-mgdirectoryobject)
+- [](https://learn.microsoft.com/graph/api/directoryobject-delete?view=graph-rest-1.0)

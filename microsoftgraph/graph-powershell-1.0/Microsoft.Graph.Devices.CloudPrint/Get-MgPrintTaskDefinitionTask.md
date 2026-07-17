@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinitiontask
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPrintTaskDefinitionTask
 ---
@@ -16,9 +16,6 @@ title: Get-MgPrintTaskDefinitionTask
 Get details about a print task.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -29,7 +26,7 @@ Get-MgPrintTaskDefinitionTask -PrintTaskDefinitionId <string> [-ExpandProperty <
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -39,7 +36,7 @@ Get-MgPrintTaskDefinitionTask -PrintTaskDefinitionId <string> -PrintTaskId <stri
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +45,7 @@ Get-MgPrintTaskDefinitionTask -PrintTaskDefinitionId <string> -PrintTaskId <stri
 Get-MgPrintTaskDefinitionTask -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -62,17 +59,12 @@ Get details about a print task.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintTaskDefinitionTask -PrintTaskDefinitionId $printTaskDefinitionId
-
-```
-This example shows how to use the Get-MgPrintTaskDefinitionTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -561,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -579,28 +571,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgPrintTaskDefinitionTask](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinitiontask)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printtask-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printtaskdefinition-list-tasks?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinitiontask)
+- [](https://learn.microsoft.com/graph/api/printtask-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/printtaskdefinition-list-tasks?view=graph-rest-1.0)

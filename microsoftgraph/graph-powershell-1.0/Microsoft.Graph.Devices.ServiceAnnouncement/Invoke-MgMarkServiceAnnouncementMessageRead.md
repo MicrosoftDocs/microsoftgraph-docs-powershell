@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageread
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgMarkServiceAnnouncementMessageRead
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgMarkServiceAnnouncementMessageRead
 
 Mark a list of serviceUpdateMessages as read for the signed in user.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaMarkServiceAnnouncementMessageRead?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### MarkExpanded (Default)
@@ -27,7 +24,6 @@ Invoke-MgMarkServiceAnnouncementMessageRead [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-MessageIds <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Mark
@@ -38,7 +34,6 @@ Invoke-MgMarkServiceAnnouncementMessageRead
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,9 +46,8 @@ This cmdlet has the following aliases,
 Mark a list of serviceUpdateMessages as read for the signed in user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
@@ -65,10 +59,6 @@ $params = @{
 }
 
 Invoke-MgMarkServiceAnnouncementMessageRead -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgMarkServiceAnnouncementMessageRead Cmdlet.
-
 
 ## PARAMETERS
 
@@ -95,7 +85,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -223,7 +213,7 @@ HelpMessage: ''
 
 ### -MessageIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -379,34 +369,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths9Q4ErzAdminServiceannouncementMessagesMicrosoftGraphMarkreadPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths9Q4ErzAdminServiceannouncementMessagesMicrosoftGraphMarkreadPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MessageIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Invoke-MgMarkServiceAnnouncementMessageRead](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageread)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageread)
+- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-1.0)

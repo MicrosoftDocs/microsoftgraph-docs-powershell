@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupphotocontent
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgGroupPhotoContent
 ---
@@ -15,9 +15,6 @@ title: Set-MgGroupPhotoContent
 
 The group's profile photo
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaGroupPhotoContent](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupPhotoContent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -27,7 +24,6 @@ Set-MgGroupPhotoContent -GroupId <string> -InFile <string> [-Data <Stream>]
  [-ResponseHeadersVariable <string>] [-Break] [-ContentType <string>] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set1
@@ -37,7 +33,6 @@ Set-MgGroupPhotoContent -GroupId <string> -ProfilePhotoId <string> -InFile <stri
  [-ResponseHeadersVariable <string>] [-Break] [-ContentType <string>] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity1
@@ -47,7 +42,6 @@ Set-MgGroupPhotoContent -InputObject <IGroupsIdentity> -InFile <string> [-Data <
  [-ResponseHeadersVariable <string>] [-Break] [-ContentType <string>] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -57,7 +51,6 @@ Set-MgGroupPhotoContent -InputObject <IGroupsIdentity> -InFile <string> [-Data <
  [-ResponseHeadersVariable <string>] [-Break] [-ContentType <string>] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -69,13 +62,15 @@ This cmdlet has the following aliases,
 
 The group's profile photo
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ProfilePhoto.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ProfilePhoto.ReadWrite.All, Group.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -145,7 +140,7 @@ HelpMessage: ''
 
 ### -Data
 
-
+.
 
 ```yaml
 Type: System.IO.Stream
@@ -492,7 +487,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -516,27 +511,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgGroupPhotoContent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupphotocontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupphotocontent)

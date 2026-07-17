@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestore
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSolutionBackupRestore
 ---
@@ -15,9 +15,6 @@ title: Get-MgSolutionBackupRestore
 
 Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestore](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestore?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -26,7 +23,7 @@ Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
 Get-MgSolutionBackupRestore [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -276,28 +283,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgSolutionBackupRestore](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestore)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestore)
+- [](https://learn.microsoft.com/graph/api/backuprestoreroot-get?view=graph-rest-1.0)

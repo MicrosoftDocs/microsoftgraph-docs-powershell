@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSetting
 ---
@@ -16,9 +16,6 @@ title: Get-MgGroupSetting
 Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSetting?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List1 (Default)
@@ -29,7 +26,7 @@ Get-MgGroupSetting [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter 
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### List
@@ -40,7 +37,7 @@ Get-MgGroupSetting -GroupId <string> [-ExpandProperty <string[]>] [-Property <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -49,7 +46,7 @@ Get-MgGroupSetting -GroupId <string> [-ExpandProperty <string[]>] [-Property <st
 Get-MgGroupSetting -GroupId <string> -GroupSettingId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get1
@@ -58,7 +55,7 @@ Get-MgGroupSetting -GroupId <string> -GroupSettingId <string> [-ExpandProperty <
 Get-MgGroupSetting -GroupSettingId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -67,7 +64,7 @@ Get-MgGroupSetting -GroupSettingId <string> [-ExpandProperty <string[]>] [-Prope
 Get-MgGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -76,7 +73,7 @@ Get-MgGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <string[]>]
 Get-MgGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -89,26 +86,13 @@ This cmdlet has the following aliases,
 Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupSetting -GroupId $groupId
-
-```
-This example shows how to use the Get-MgGroupSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -657,7 +641,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -681,28 +665,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/groupsetting-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsetting)
+- [](https://learn.microsoft.com/graph/api/groupsetting-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0)

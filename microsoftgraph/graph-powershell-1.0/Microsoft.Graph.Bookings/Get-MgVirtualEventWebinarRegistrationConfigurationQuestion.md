@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistrationconfigurationquestion
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventWebinarRegistrationConfigurationQuestion
 ---
@@ -14,9 +14,6 @@ title: Get-MgVirtualEventWebinarRegistrationConfigurationQuestion
 ## SYNOPSIS
 
 Registration questions.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Get-MgVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarI
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -40,7 +36,7 @@ Get-MgVirtualEventWebinarRegistrationConfigurationQuestion
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -50,7 +46,7 @@ Get-MgVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBookin
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -63,17 +59,12 @@ This cmdlet has the following aliases,
 Registration questions.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId
-
-```
-This example shows how to use the Get-MgVirtualEventWebinarRegistrationConfigurationQuestion Cmdlet.
-
 
 ## PARAMETERS
 
@@ -562,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -586,27 +577,5 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgVirtualEventWebinarRegistrationConfigurationQuestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistrationconfigurationquestion)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventregistrationconfiguration-list-questions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistrationconfigurationquestion)
+- [](https://learn.microsoft.com/graph/api/virtualeventregistrationconfiguration-list-questions?view=graph-rest-1.0)

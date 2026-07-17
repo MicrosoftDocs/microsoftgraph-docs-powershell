@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupOwnerAsServicePrincipal
 ---
@@ -14,9 +14,6 @@ title: Get-MgGroupOwnerAsServicePrincipal
 ## SYNOPSIS
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerAsServicePrincipal?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Get-MgGroupOwnerAsServicePrincipal -GroupId <string> [-ExpandProperty <string[]>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -39,7 +35,7 @@ Get-MgGroupOwnerAsServicePrincipal -DirectoryObjectId <string> -GroupId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ConsistencyLevel <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -49,7 +45,7 @@ Get-MgGroupOwnerAsServicePrincipal -InputObject <IGroupsIdentity> [-ExpandProper
  [-Property <string[]>] [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -60,6 +56,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -570,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -594,27 +600,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupOwnerAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasserviceprincipal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasserviceprincipal)
