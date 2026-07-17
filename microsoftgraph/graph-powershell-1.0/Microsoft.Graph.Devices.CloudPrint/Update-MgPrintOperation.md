@@ -548,7 +548,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintoperation)
+- [Update-MgPrintOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintoperation)
 
 
 

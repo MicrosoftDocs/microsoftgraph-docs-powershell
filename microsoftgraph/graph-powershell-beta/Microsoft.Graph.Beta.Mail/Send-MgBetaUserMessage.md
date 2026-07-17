@@ -421,8 +421,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/send-mgbetausermessage)
-- [](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-beta)
+- [Send-MgBetaUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/send-mgbetausermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-beta)
 
 
 

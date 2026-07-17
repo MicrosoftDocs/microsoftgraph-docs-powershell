@@ -492,8 +492,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityidentitysensor)
-- [](https://learn.microsoft.com/graph/api/security-sensor-delete?view=graph-rest-beta)
+- [Remove-MgBetaSecurityIdentitySensor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityidentitysensor)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensor-delete?view=graph-rest-beta)
 
 
 

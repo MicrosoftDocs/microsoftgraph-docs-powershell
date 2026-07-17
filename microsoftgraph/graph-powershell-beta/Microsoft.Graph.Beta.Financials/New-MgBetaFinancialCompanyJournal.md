@@ -753,7 +753,7 @@ JOURNALLINES <IMicrosoftGraphJournalLine[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal)
+- [New-MgBetaFinancialCompanyJournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal)
 
 
 

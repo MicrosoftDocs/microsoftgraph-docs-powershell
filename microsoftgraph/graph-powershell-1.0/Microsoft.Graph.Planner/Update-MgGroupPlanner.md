@@ -835,7 +835,7 @@ Title of the plan.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mggroupplanner)
+- [Update-MgGroupPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mggroupplanner)
 
 
 

@@ -521,8 +521,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprinttaskdefinition)
-- [](https://learn.microsoft.com/graph/api/print-post-taskdefinitions?view=graph-rest-1.0)
+- [New-MgPrintTaskDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprinttaskdefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/print-post-taskdefinitions?view=graph-rest-1.0)
 
 
 

@@ -666,7 +666,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingwindowsinstance)
+- [Update-MgUserSettingWindowsInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingwindowsinstance)
 
 
 

@@ -1068,7 +1068,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistpermission)
+- [New-MgBetaDriveListPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistpermission)
 
 
 

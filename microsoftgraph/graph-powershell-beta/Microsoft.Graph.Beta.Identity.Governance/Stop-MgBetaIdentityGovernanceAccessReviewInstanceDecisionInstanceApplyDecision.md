@@ -490,7 +490,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceaccessreviewinstancedecisioninstanceapplydecision)
+- [Stop-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceApplyDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceaccessreviewinstancedecisioninstanceapplydecision)
 
 
 

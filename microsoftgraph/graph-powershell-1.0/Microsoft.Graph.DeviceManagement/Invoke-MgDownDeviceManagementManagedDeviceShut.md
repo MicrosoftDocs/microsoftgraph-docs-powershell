@@ -415,7 +415,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgdowndevicemanagementmanageddeviceshut)
+- [Invoke-MgDownDeviceManagementManagedDeviceShut](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgdowndevicemanagementmanageddeviceshut)
 
 
 

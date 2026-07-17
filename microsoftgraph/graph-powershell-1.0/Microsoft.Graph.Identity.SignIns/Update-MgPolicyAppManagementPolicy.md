@@ -824,8 +824,8 @@ For existing applications, the enforcement date can be retroactively applied.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyappmanagementpolicy)
-- [](https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0)
+- [Update-MgPolicyAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyappmanagementpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0)
 
 
 

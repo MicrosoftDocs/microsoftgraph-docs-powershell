@@ -585,8 +585,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptuserevent)
-- [](https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-1.0)
+- [Invoke-MgAcceptUserEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptuserevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-1.0)
 
 
 

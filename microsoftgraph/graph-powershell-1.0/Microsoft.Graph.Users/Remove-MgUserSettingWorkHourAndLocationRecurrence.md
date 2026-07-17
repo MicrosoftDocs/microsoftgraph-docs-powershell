@@ -428,7 +428,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersettingworkhourandlocationrecurrence)
+- [Remove-MgUserSettingWorkHourAndLocationRecurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersettingworkhourandlocationrecurrence)
 
 
 

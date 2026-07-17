@@ -843,8 +843,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganizationtenant)
-- [](https://learn.microsoft.com/graph/api/multitenantorganizationmember-update?view=graph-rest-1.0)
+- [Update-MgTenantRelationshipMultiTenantOrganizationTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganizationtenant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganizationmember-update?view=graph-rest-1.0)
 
 
 

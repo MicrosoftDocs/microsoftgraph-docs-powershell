@@ -630,9 +630,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledapp)
-- [](https://learn.microsoft.com/graph/api/userteamwork-get-installedapps?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/userteamwork-list-installedapps?view=graph-rest-1.0)
+- [Get-MgUserTeamworkInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-get-installedapps?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-list-installedapps?view=graph-rest-1.0)
 
 
 

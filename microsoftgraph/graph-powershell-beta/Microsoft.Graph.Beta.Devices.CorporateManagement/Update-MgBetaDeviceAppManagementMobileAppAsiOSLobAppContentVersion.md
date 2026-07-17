@@ -707,7 +707,7 @@ The content has a maximum size limit of 100KB.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappasioslobappcontentversion)
+- [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappasioslobappcontentversion)
 
 
 

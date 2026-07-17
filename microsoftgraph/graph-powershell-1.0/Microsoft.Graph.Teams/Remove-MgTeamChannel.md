@@ -460,8 +460,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannel)
-- [](https://learn.microsoft.com/graph/api/channel-delete?view=graph-rest-1.0)
+- [Remove-MgTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-delete?view=graph-rest-1.0)
 
 
 

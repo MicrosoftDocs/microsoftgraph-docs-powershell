@@ -784,7 +784,7 @@ Active labels should be hidden or disabled in user interfaces.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionpolicylabel)
+- [Update-MgBetaInformationProtectionPolicyLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionpolicylabel)
 
 
 

@@ -468,8 +468,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/disable-mguserauthenticationphonemethodsmssignin)
-- [](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-disablesmssignin?view=graph-rest-1.0)
+- [Disable-MgUserAuthenticationPhoneMethodSmsSignIn](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/disable-mguserauthenticationphonemethodsmssignin)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-disablesmssignin?view=graph-rest-1.0)
 
 
 

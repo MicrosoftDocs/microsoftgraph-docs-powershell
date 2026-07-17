@@ -738,7 +738,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistitemversion)
+- [Update-MgGroupDriveListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistitemversion)
 
 
 

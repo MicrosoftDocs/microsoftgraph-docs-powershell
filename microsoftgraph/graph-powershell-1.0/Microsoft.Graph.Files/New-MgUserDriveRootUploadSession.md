@@ -560,7 +560,7 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootuploadsession)
+- [New-MgUserDriveRootUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootuploadsession)
 
 
 

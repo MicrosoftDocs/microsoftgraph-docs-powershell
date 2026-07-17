@@ -436,8 +436,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref)
-- [](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0)
+- [Get-MgGroupRejectedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0)
 
 
 

@@ -662,9 +662,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagereply)
-- [](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/chatmessage-list-replies?view=graph-rest-1.0)
+- [Get-MgTeamChannelMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-list-replies?view=graph-rest-1.0)
 
 
 

@@ -3460,8 +3460,8 @@ WEB `<IMicrosoftGraphWebApplication>`: webApplication
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyuniquename)
-- [](https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-1.0)
+- [Update-MgApplicationByUniqueName](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyuniquename)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-1.0)
 
 
 

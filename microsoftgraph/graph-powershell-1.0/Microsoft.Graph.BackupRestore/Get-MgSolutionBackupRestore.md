@@ -276,8 +276,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestore)
-- [](https://learn.microsoft.com/graph/api/backuprestoreroot-get?view=graph-rest-1.0)
+- [Get-MgSolutionBackupRestore](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestore)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-get?view=graph-rest-1.0)
 
 
 

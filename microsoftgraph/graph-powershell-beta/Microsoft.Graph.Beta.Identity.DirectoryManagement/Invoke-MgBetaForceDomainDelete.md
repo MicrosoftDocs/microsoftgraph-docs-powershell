@@ -581,8 +581,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaforcedomaindelete)
-- [](https://learn.microsoft.com/graph/api/domain-forcedelete?view=graph-rest-beta)
+- [Invoke-MgBetaForceDomainDelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaforcedomaindelete)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-forcedelete?view=graph-rest-beta)
 
 
 

@@ -557,8 +557,8 @@ PROPERTIES `<IMicrosoftGraphPrintDocumentUploadProperties>`: printDocumentUpload
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjobdocumentuploadsession)
-- [](https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-beta)
+- [New-MgBetaPrintPrinterJobDocumentUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjobdocumentuploadsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-beta)
 
 
 

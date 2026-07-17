@@ -9618,7 +9618,7 @@ If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobileappmanagementpolicy)
+- [New-MgBetaPolicyMobileAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobileappmanagementpolicy)
 
 
 

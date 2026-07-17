@@ -843,8 +843,8 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessagereply)
-- [](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-beta)
+- [New-MgBetaUserMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-beta)
 
 
 

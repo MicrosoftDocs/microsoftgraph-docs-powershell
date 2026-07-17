@@ -572,7 +572,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecuritycaseediscoverycasereviewsetfileextractedtextcontent)
+- [Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecuritycaseediscoverycasereviewsetfileextractedtextcontent)
 
 
 

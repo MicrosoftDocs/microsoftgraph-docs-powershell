@@ -747,7 +747,7 @@ DO NOT SET THIS VALUE TO false.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthorizationpolicy)
+- [New-MgBetaPolicyAuthorizationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthorizationpolicy)
 
 
 

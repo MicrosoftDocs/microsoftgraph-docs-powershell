@@ -472,8 +472,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingregistrationregistrant)
-- [](https://learn.microsoft.com/graph/api/meetingregistrant-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserOnlineMeetingRegistrationRegistrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingregistrationregistrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/meetingregistrant-delete?view=graph-rest-beta)
 
 
 
