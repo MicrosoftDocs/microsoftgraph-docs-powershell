@@ -406,8 +406,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgroup)
-- [](https://learn.microsoft.com/graph/api/group-renew?view=graph-rest-beta)
+- [Invoke-MgBetaRenewGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-renew?view=graph-rest-beta)
 
 
 

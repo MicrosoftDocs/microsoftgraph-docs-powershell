@@ -2428,8 +2428,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevicebydeviceid)
-- [](https://learn.microsoft.com/graph/api/device-update?view=graph-rest-beta)
+- [Update-MgBetaDeviceByDeviceId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevicebydeviceid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-update?view=graph-rest-beta)
 
 
 

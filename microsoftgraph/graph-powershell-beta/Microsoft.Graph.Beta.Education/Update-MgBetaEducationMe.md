@@ -48247,7 +48247,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationme)
+- [Update-MgBetaEducationMe](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationme)
 
 
 

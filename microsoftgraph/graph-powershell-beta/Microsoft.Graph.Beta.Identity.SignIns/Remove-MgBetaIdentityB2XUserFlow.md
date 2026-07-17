@@ -499,8 +499,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflow)
-- [](https://learn.microsoft.com/graph/api/b2xidentityuserflow-delete?view=graph-rest-beta)
+- [Remove-MgBetaIdentityB2XUserFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/b2xidentityuserflow-delete?view=graph-rest-beta)
 
 
 

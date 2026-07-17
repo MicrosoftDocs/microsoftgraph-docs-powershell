@@ -412,8 +412,8 @@ BODYPARAMETER `<IPathsZip9X6IdentityprotectionRiskyusersMicrosoftGraphDismissPos
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyuser)
-- [](https://learn.microsoft.com/graph/api/riskyusers-dismiss?view=graph-rest-beta)
+- [Invoke-MgBetaDismissRiskyUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyusers-dismiss?view=graph-rest-beta)
 
 
 

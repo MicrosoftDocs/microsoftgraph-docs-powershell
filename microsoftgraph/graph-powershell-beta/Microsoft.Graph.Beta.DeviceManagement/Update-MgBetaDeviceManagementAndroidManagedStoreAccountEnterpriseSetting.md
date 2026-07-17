@@ -679,7 +679,7 @@ COMPANYCODES <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>: Company codes for 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting)
+- [Update-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting)
 
 
 

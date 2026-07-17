@@ -547,7 +547,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamchannelmessagehostedcontent)
+- [Set-MgBetaGroupTeamChannelMessageHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamchannelmessagehostedcontent)
 
 
 

@@ -713,8 +713,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage)
-- [](https://learn.microsoft.com/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-beta)
+- [New-MgBetaDeviceManagementVirtualEndpointDeviceImage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-beta)
 
 
 

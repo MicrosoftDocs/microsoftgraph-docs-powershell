@@ -986,8 +986,8 @@ If both are included in the request with different values, the value for isAtApp
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimecard)
-- [](https://learn.microsoft.com/graph/api/timecard-post?view=graph-rest-beta)
+- [New-MgBetaTeamScheduleTimeCard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimecard)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-post?view=graph-rest-beta)
 
 
 

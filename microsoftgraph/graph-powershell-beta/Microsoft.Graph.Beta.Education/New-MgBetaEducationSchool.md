@@ -29092,8 +29092,8 @@ Supports /$filter.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschool)
-- [](https://learn.microsoft.com/graph/api/educationroot-post-schools?view=graph-rest-beta)
+- [New-MgBetaEducationSchool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschool)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationroot-post-schools?view=graph-rest-beta)
 
 
 

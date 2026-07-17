@@ -9469,7 +9469,7 @@ This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamworkassociatedteam)
+- [Update-MgBetaUserTeamworkAssociatedTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamworkassociatedteam)
 
 
 

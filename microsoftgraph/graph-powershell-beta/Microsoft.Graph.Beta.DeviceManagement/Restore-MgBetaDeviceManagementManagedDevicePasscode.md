@@ -476,7 +476,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/restore-mgbetadevicemanagementmanageddevicepasscode)
+- [Restore-MgBetaDeviceManagementManagedDevicePasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/restore-mgbetadevicemanagementmanageddevicepasscode)
 
 
 

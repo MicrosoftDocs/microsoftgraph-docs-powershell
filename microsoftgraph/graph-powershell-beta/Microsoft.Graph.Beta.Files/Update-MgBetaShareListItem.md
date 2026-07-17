@@ -56280,7 +56280,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitem)
+- [Update-MgBetaShareListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitem)
 
 
 

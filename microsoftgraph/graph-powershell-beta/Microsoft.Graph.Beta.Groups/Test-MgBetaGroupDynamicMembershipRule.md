@@ -402,8 +402,8 @@ BODYPARAMETER `<IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRe
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule)
-- [](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)
+- [Test-MgBetaGroupDynamicMembershipRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)
 
 
 

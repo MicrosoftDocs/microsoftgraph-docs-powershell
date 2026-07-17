@@ -480,8 +480,8 @@ PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/search-mgbetasolutionbackuprestorepoint)
-- [](https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-beta)
+- [Search-MgBetaSolutionBackupRestorePoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/search-mgbetasolutionbackuprestorepoint)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-beta)
 
 
 
