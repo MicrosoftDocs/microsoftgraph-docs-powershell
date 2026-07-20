@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointdeviceimage
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementVirtualEndpointDeviceImage
 ---
@@ -27,11 +27,11 @@ Upload a custom OS image that you can later provision on Cloud PCs.
 New-MgDeviceManagementVirtualEndpointDeviceImage [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-ErrorCode <string>]
  [-ExpirationDate <datetime>] [-Id <string>] [-LastModifiedDateTime <datetime>]
- [-OSBuildNumber <string>] [-OSStatus <string>] [-OperatingSystem <string>]
- [-SourceImageResourceId <string>] [-Status <string>] [-Version <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-OSBuildNumber <string>] [-OSStatus <string>] [-OSVersionNumber <string>]
+ [-OperatingSystem <string>] [-SizeInGb <int>] [-SourceImageResourceId <string>] [-Status <string>]
+ [-Version <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -41,7 +41,6 @@ New-MgDeviceManagementVirtualEndpointDeviceImage -BodyParameter <IMicrosoftGraph
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -411,6 +410,29 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -OSVersionNumber
+
+The operating system version of this image.
+For example, 10.0.22000.296.
+Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -486,6 +508,29 @@ Aliases:
 - RHV
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -SizeInGb
+
+The size of the image in GB.
+For example, 64.
+Read-only.
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -633,8 +678,14 @@ Read-only.
 For example, 1909.
 Read-only.
   [OSStatus <String>]: cloudPcDeviceImageOsStatus
+  [OSVersionNumber <String>]: The operating system version of this image.
+For example, 10.0.22000.296.
+Read-only.
   [OperatingSystem <String>]: The operating system (OS) of the image.
 For example, Windows 11 Enterprise.
+Read-only.
+  [SizeInGb <Int32?>]: The size of the image in GB.
+For example, 64.
 Read-only.
   [SourceImageResourceId <String>]: The unique identifier (ID) of the source image resource on Azure.
 The required ID format is: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}'.

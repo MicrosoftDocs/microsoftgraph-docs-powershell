@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupConversation
 ---
@@ -29,7 +29,7 @@ New-MgGroupConversation -GroupId <string> [-ResponseHeadersVariable <string>]
  [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <string>] [-UniqueSenders <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +39,6 @@ New-MgGroupConversation -GroupId <string> -BodyParameter <IMicrosoftGraphConvers
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -51,7 +50,7 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> [-ResponseHeadersVariable
  [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <string>] [-UniqueSenders <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +60,6 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -697,7 +695,7 @@ Nullable.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [CcRecipients <IMicrosoftGraphRecipient[]>]: The Cc: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
       [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Address <String>]: The email address of the person or entity.
@@ -769,7 +767,7 @@ Read-only.
     [Preview <String>]: A short summary from the body of the latest post in this conversation.
 Returned by default.
     [ToRecipients <IMicrosoftGraphRecipient[]>]: The To: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
     [Topic <String>]: The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
 Returned by default.
@@ -807,7 +805,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [CcRecipients <IMicrosoftGraphRecipient[]>]: The Cc: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
     [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Address <String>]: The email address of the person or entity.
@@ -879,7 +877,7 @@ Read-only.
   [Preview <String>]: A short summary from the body of the latest post in this conversation.
 Returned by default.
   [ToRecipients <IMicrosoftGraphRecipient[]>]: The To: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
   [Topic <String>]: The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
 Returned by default.

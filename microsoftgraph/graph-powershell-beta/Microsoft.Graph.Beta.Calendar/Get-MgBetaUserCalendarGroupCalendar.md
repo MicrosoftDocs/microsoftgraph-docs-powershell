@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserCalendarGroupCalendar
 ---
@@ -32,7 +32,6 @@ Get-MgBetaUserCalendarGroupCalendar -CalendarGroupId <string> -UserId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,9 +50,9 @@ Nullable.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read.Shared, Calendars.Read,  |
-| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read.Shared, Calendars.Read,  |
-| Application | Calendars.ReadBasic, Calendars.ReadWrite, Calendars.Read,  |
+| Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite,  |
+| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite,  |
+| Application | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite,  |
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserCalendarGroupCalendar Cmdlet

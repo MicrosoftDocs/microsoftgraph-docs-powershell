@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasbuildingmaplevelunit
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPlaceAsBuildingMapLevelUnit
 ---
@@ -27,7 +27,6 @@ Remove-MgPlaceAsBuildingMapLevelUnit -LevelMapId <string> -PlaceId <string> -Uni
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,7 +36,6 @@ Remove-MgPlaceAsBuildingMapLevelUnit -InputObject <ICalendarIdentity> [-IfMatch 
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +46,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a unitMap object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+Remove-MgPlaceAsBuildingMapLevelUnit -PlaceId $placeId -LevelMapId $levelMapId -UnitMapId $unitMapId
+
+```
+This example shows how to use the Remove-MgPlaceAsBuildingMapLevelUnit Cmdlet.
+
 
 ## PARAMETERS
 
@@ -446,7 +457,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Remove-MgPlaceAsBuildingMapLevelUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasbuildingmaplevelunit)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/unitmap-delete?view=graph-rest-1.0)
-
 
 
 

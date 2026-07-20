@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Applications
-Module Guid: c6dd7a75-f3af-448f-a369-59c1ba4103c8
+Module Guid: cd60bce7-b23f-5333-ae9f-10648903432e
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -347,6 +347,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgServicePrincipalRemoteDesktopSecurityConfiguration](Get-MgServicePrincipalRemoteDesktopSecurityConfiguration.md)
 
+### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp.md)
+
+### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp.md)
+
+### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount.md)
+
 ### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
 
 ### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
@@ -501,6 +507,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgServicePrincipalOwnerByRef](New-MgServicePrincipalOwnerByRef.md)
 
+### [New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp.md)
+
 ### [New-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](New-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
 
 ### [New-MgServicePrincipalSynchronizationJob](New-MgServicePrincipalSynchronizationJob.md)
@@ -588,6 +596,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgServicePrincipalPassword](Remove-MgServicePrincipalPassword.md)
 
 ### [Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration](Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration.md)
+
+### [Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp.md)
 
 ### [Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
 
@@ -696,6 +706,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgServicePrincipalEndpoint](Update-MgServicePrincipalEndpoint.md)
 
 ### [Update-MgServicePrincipalRemoteDesktopSecurityConfiguration](Update-MgServicePrincipalRemoteDesktopSecurityConfiguration.md)
+
+### [Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp.md)
 
 ### [Update-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Update-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
 

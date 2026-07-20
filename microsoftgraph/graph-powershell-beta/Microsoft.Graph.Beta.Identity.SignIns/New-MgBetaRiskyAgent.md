@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyagent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRiskyAgent
 ---
@@ -21,11 +21,12 @@ Create new navigation property to riskyAgents for identityProtection
 
 ```
 New-MgBetaRiskyAgent [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AgentDisplayName <string>] [-Id <string>] [-IsDeleted] [-IsEnabled] [-IsProcessing]
- [-RiskDetail <string>] [-RiskLastModifiedDateTime <datetime>] [-RiskLevel <string>]
- [-RiskState <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-AgentDisplayName <string>] [-BlueprintId <string>] [-Id <string>] [-IdentityType <string>]
+ [-IsDeleted] [-IsEnabled] [-IsProcessing] [-RiskDetail <string>]
+ [-RiskLastModifiedDateTime <datetime>] [-RiskLevel <string>] [-RiskState <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -34,7 +35,7 @@ New-MgBetaRiskyAgent [-ResponseHeadersVariable <string>] [-AdditionalProperties 
 New-MgBetaRiskyAgent -BodyParameter <IMicrosoftGraphRiskyAgent> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -73,6 +74,28 @@ HelpMessage: ''
 
 Name of the agent.
 Supports $filter (eq, startsWith).
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BlueprintId
+
+The identifier of the blueprint associated with the agent.
+Nullable.
 
 ```yaml
 Type: System.String
@@ -223,6 +246,27 @@ HelpMessage: ''
 
 The unique identifier for an entity.
 Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IdentityType
+
+agentIdentityType
 
 ```yaml
 Type: System.String
@@ -534,6 +578,9 @@ BODYPARAMETER `<IMicrosoftGraphRiskyAgent>`: riskyAgent
 Read-only.
   [AgentDisplayName <String>]: Name of the agent.
  Supports $filter (eq, startsWith).
+  [BlueprintId <String>]: The identifier of the blueprint associated with the agent.
+Nullable.
+  [IdentityType <String>]: agentIdentityType
   [IsDeleted <Boolean?>]: Indicates whether the agent is deleted.
   [IsEnabled <Boolean?>]: Indicates whether the agent is enabled.
   [IsProcessing <Boolean?>]: Indicates whether an agent's risky state is processing in the backend.

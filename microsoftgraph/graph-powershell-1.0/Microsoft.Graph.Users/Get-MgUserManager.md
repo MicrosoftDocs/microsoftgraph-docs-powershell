@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserManager
 ---
@@ -13,8 +13,7 @@ title: Get-MgUserManager
 
 ## SYNOPSIS
 
-Returns the user or organizational contact assigned as the user's manager.
-Optionally, you can expand the manager's chain up to the root node.
+Returns the user or organizational contact assigned as the agentUser's manager.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManager?view=graph-powershell-beta)
@@ -27,7 +26,7 @@ Optionally, you can expand the manager's chain up to the root node.
 Get-MgUserManager -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -36,7 +35,7 @@ Get-MgUserManager -UserId <string> [-ExpandProperty <string[]>] [-Property <stri
 Get-MgUserManager -InputObject <IUsersIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -46,16 +45,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Returns the user or organizational contact assigned as the user's manager.
-Optionally, you can expand the manager's chain up to the root node.
+Returns the user or organizational contact assigned as the agentUser's manager.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get a user's manager
@@ -411,7 +409,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserManager](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list-manager?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-manager?view=graph-rest-1.0)
 
 
 

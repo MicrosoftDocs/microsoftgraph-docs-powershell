@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/set-mgenvironment
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgRequestContext
 ---
@@ -21,7 +21,7 @@ Sets request context for Microsoft Graph invocations
 
 ```
 Set-MgRequestContext [-RetryDelay <int>] [-MaxRetry <int>] [-RetriesTimeLimit <int>]
- [-ClientTimeout <int>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ClientTimeout <int>] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

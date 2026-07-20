@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendardelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserCalendarDelta
 ---
@@ -27,7 +27,7 @@ Get-MgBetaUserCalendarDelta -UserId <string> [-ExpandProperty <string[]>] [-Filt
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### DeltaViaIdentity
@@ -37,7 +37,7 @@ Get-MgBetaUserCalendarDelta -InputObject <ICalendarIdentity> [-ExpandProperty <s
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-Count] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -55,9 +55,9 @@ Using deltas allows you to incrementally maintain and synchronize a local store 
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
-| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
-| Application | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
+| Delegated (work or school account) | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
+| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
+| Application | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
