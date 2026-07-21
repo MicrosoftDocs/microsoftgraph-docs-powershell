@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property contentVersions in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -718,6 +708,7 @@ The content has a maximum size limit of 100KB.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappasmacoslobappcontentversion)
+
 
 
 
