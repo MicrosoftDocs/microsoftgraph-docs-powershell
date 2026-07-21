@@ -58,12 +58,17 @@ Print jobs can be canceled only on behalf of a user, using delegated permissions
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Stop-MgBetaPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId
+
+```
+This example shows how to use the Stop-MgBetaPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 

@@ -58,8 +58,9 @@ Create a new tokenLifetimePolicy object.
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -72,6 +73,10 @@ isOrganizationDefault = $true
 }
 
 New-MgBetaPolicyTokenLifetimePolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPolicyTokenLifetimePolicy Cmdlet.
+
 
 ## PARAMETERS
 

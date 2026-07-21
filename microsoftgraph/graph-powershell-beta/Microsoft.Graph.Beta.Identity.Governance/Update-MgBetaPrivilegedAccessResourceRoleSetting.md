@@ -80,16 +80,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property roleSettings in privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1411,6 +1401,7 @@ For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourcerolesetting)
+
 
 
 
