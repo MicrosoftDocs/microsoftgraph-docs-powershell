@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Read the properties of a b2cAuthenticationMethodsPolicy object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All,  |
+| Delegated (personal Microsoft account) | Policy.Read.All,  |
+| Application | Policy.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
