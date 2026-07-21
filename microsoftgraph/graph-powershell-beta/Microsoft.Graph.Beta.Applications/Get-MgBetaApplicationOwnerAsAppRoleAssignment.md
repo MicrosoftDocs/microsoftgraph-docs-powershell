@@ -15,6 +15,9 @@ title: Get-MgBetaApplicationOwnerAsAppRoleAssignment
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationOwnerAsAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerAsAppRoleAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

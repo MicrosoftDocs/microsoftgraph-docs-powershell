@@ -16,6 +16,9 @@ title: Get-MgBetaEducationUserDelta
 Get newly created or updated educationUser without having to perform a full read of the entire collection.
 See Use delta query for details.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaPrintConnector
 
 Delete (unregister) a printConnector.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

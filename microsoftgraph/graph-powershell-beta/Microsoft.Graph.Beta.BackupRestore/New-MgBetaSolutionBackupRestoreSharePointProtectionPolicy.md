@@ -17,6 +17,9 @@ Create a protection policy for a M365 service SharePoint.
 Policy will be created in inactive state.
 User can also provide a list of protection units under the policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSharePointProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSharePointProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
