@@ -1347,7 +1347,7 @@ HelpMessage: ''
 
 ### -JoinUrl
 
-.
+
 
 ```yaml
 Type: System.String
