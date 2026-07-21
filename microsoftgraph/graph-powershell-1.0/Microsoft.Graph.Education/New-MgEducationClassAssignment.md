@@ -20,6 +20,9 @@ Assignments start in draft status, which means that students can't see the assig
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

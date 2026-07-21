@@ -18,6 +18,9 @@ Create new navigation property to permissions for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathPermission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

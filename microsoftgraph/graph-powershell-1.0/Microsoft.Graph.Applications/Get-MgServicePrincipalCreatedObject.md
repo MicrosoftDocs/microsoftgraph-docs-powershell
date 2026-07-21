@@ -20,6 +20,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalCreatedObject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalCreatedObject?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalCreatedObject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalCreatedObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

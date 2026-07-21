@@ -20,6 +20,9 @@ Trending insights help the user to discover potentially useful content that the 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserInsightTrending](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightTrending?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightTrending](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightTrending?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

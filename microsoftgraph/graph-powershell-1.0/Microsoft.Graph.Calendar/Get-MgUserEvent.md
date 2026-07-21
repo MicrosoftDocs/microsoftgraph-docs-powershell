@@ -21,6 +21,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEvent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

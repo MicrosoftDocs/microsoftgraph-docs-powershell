@@ -20,6 +20,9 @@ The only one property that can be updated is displayName, for all resource types
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

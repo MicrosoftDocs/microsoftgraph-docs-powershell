@@ -18,6 +18,9 @@ Get a report that provides the details about which apps and platforms users have
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportM365AppUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserDetail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportM365AppUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ Create a new authenticationCombinationConfiguration object which can be of one o
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateViaIdentityExpanded (Default)

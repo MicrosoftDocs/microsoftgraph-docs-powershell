@@ -18,6 +18,9 @@ Reset passcode
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Reset-MgBetaUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Reset-MgBetaUserManagedDevicePasscode?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Reset-MgBetaUserManagedDevicePasscode?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reset (Default)

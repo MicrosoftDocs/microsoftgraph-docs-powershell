@@ -19,6 +19,9 @@ Because the amount of results for listed workflows as returned by the List workf
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Workflows (Default)

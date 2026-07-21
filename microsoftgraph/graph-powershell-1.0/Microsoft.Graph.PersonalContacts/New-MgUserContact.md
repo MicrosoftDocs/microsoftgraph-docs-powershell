@@ -18,6 +18,9 @@ Create new navigation property to contacts for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContact?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

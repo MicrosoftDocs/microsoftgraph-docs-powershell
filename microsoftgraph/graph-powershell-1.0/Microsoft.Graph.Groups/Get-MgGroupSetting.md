@@ -19,6 +19,9 @@ The setting can be a tenant-level or group-specific setting.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSetting?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)

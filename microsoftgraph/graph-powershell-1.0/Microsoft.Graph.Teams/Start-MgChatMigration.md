@@ -24,6 +24,9 @@ An optional createdDateTime property in the payload allows you to update this va
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Start-MgBetaChatMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Start-MgBetaChatMigration?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaChatMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Start-MgBetaChatMigration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### StartExpanded (Default)

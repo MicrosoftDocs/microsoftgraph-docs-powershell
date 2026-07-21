@@ -21,6 +21,9 @@ If you're creating a private channel, you can add a maximum of 200 members.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

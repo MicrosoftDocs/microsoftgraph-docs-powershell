@@ -21,6 +21,9 @@ Unarchiving is an asynchronous operation; a channel is unarchived when the async
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaUnarchiveGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveGroupTeamChannel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnarchiveGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveGroupTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unarchive (Default)

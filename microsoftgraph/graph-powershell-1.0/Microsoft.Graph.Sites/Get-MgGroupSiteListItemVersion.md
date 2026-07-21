@@ -18,6 +18,9 @@ The list of previous versions of the list item.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

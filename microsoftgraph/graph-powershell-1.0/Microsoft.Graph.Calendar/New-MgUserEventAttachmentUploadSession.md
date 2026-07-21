@@ -25,6 +25,9 @@ The following are the steps to attach a file to an Outlook item using an upload 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserEventAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventAttachmentUploadSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserEventAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventAttachmentUploadSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

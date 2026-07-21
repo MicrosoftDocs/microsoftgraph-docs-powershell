@@ -20,6 +20,9 @@ In Azure AD B2C, this operation can currently create a socialIdentityProvider, o
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityProvider?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

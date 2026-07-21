@@ -18,6 +18,9 @@ Update the navigation property members in teams
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamTagMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamTagMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

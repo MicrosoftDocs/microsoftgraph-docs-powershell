@@ -22,6 +22,9 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Confirm-MgBetaDeviceMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaDeviceMemberGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaDeviceMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaDeviceMemberGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)

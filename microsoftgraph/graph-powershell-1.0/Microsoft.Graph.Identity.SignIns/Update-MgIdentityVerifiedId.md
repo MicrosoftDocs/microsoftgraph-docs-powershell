@@ -18,6 +18,9 @@ Update the navigation property verifiedId in identity
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityVerifiedId](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityVerifiedId?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityVerifiedId](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityVerifiedId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

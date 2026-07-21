@@ -19,6 +19,9 @@ Sponsors are users and groups that are responsible for this agent user's privile
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsorByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsorByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

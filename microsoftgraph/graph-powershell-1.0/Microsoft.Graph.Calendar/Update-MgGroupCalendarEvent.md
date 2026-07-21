@@ -18,6 +18,9 @@ Update an event object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

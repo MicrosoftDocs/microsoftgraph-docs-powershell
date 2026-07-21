@@ -20,6 +20,9 @@ Attendees must have a valid United States phone number to receive these SMS noti
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaUserOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Send-MgBetaUserOnlineMeetingVirtualAppointmentSm?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaUserOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Send-MgBetaUserOnlineMeetingVirtualAppointmentSm?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SendExpanded (Default)

@@ -19,6 +19,9 @@ Only present on document libraries.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListDrive?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -19,6 +19,9 @@ For information about retention labels from an administrator's perspective, see 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemRetentionLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemRetentionLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ Update the navigation property checkIns in places
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingCheck?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -20,6 +20,9 @@ Requires $select to retrieve.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationInvitedUserMailboxSetting?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationInvitedUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

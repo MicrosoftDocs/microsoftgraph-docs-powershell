@@ -18,6 +18,9 @@ Update the properties of an existing fixtureMap object in IMDF format on a speci
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingMapLevelFixture](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingMapLevelFixture?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingMapLevelFixture](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingMapLevelFixture?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

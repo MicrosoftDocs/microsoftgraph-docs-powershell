@@ -20,6 +20,9 @@ For more information, see Best practices for discovering files and detecting cha
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAllSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAllSite?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAllSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAllSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get2 (Default)

@@ -22,6 +22,9 @@ If you get the DirectoryResultSizeLimitExceeded error code, use the List group t
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

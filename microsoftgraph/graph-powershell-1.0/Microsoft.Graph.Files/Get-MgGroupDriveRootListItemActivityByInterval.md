@@ -18,6 +18,9 @@ Invoke function getActivitiesByInterval
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemActivityByInterval?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemActivityByInterval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

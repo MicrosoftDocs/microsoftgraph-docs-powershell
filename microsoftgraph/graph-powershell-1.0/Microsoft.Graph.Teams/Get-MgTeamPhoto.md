@@ -21,6 +21,9 @@ You can get the metadata of the largest available photo or specify a size to get
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPhoto?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPhoto?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

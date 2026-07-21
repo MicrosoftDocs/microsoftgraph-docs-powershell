@@ -18,6 +18,9 @@ Invoke action restore
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaPolicyConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Restore-MgBetaPolicyConditionalAccessPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaPolicyConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Restore-MgBetaPolicyConditionalAccessPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

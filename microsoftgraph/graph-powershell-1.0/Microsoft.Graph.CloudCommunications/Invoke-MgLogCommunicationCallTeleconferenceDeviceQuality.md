@@ -24,6 +24,9 @@ This method is only for the CVI partners to provide their media quality data.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### LogExpanded (Default)

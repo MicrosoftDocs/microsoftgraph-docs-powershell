@@ -20,6 +20,9 @@ To get properties that are not returned by default, do a GET operation and speci
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupByUniqueName?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupByUniqueName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -19,6 +19,9 @@ This action can only be performed by a teacher on currently inactive assignments
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Initialize-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Initialize-MgBetaEducationMeAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Initialize-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Initialize-MgBetaEducationMeAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Activate (Default)

@@ -19,6 +19,9 @@ Only supported on the root of a drive.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

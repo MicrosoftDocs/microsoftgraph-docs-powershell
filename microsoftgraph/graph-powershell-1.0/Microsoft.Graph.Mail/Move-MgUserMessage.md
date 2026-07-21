@@ -19,6 +19,9 @@ This creates a new copy of the message in the destination folder and removes the
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Move-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Move-MgBetaUserMessage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Move-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Move-MgBetaUserMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MoveExpanded (Default)

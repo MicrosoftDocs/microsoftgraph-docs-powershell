@@ -18,6 +18,9 @@ Get the count of unique users by Outlook desktop version.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportEmailAppUsageVersionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageVersionUserCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportEmailAppUsageVersionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageVersionUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ Create new navigation property to endUserNotifications for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationEndUserNotification?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationEndUserNotification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

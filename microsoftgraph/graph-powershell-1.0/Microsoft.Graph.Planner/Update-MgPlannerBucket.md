@@ -18,6 +18,9 @@ Update the properties of plannerbucket object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerBucket?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerBucket?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

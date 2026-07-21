@@ -18,6 +18,9 @@ Update external
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

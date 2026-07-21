@@ -22,6 +22,9 @@ This API supportes the following channel types.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Complete-MgBetaTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamChannelMigration?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Complete-MgBetaTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamChannelMigration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Complete (Default)

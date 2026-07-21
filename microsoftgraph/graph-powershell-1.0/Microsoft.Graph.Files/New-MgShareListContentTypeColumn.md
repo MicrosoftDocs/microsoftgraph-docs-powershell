@@ -18,6 +18,9 @@ Create new navigation property to columns for shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

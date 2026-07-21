@@ -18,6 +18,9 @@ Unfollow a user's site or multiple sites.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserFollowedSite](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaUserFollowedSite?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserFollowedSite](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaUserFollowedSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

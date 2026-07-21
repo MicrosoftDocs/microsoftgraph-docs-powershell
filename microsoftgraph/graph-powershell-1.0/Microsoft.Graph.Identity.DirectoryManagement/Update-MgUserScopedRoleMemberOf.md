@@ -18,6 +18,9 @@ Update the navigation property scopedRoleMemberOf in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaUserScopedRoleMemberOf?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaUserScopedRoleMemberOf?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

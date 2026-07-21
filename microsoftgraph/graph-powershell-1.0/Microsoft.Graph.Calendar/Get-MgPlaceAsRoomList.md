@@ -19,6 +19,9 @@ The place object can be one of the following types: The listed resources are der
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomList](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomList?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomList](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

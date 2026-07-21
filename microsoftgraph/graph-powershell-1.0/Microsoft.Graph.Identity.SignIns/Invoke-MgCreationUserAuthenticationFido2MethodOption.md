@@ -21,6 +21,9 @@ All binary data in the response follows Base64URL encoding as defined in RFC 464
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaCreationUserAuthenticationFido2MethodOption](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaCreationUserAuthenticationFido2MethodOption?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCreationUserAuthenticationFido2MethodOption](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaCreationUserAuthenticationFido2MethodOption?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Creation (Default)

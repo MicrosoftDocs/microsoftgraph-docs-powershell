@@ -18,6 +18,9 @@ Configure domain federation with organizations whose identity provider (IdP) sup
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

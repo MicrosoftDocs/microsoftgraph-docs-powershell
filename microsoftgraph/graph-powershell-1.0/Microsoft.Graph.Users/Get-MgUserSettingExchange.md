@@ -20,6 +20,9 @@ To learn how to get a list of users in a tenant, see List users.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserSettingExchange](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingExchange?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingExchange](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingExchange?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

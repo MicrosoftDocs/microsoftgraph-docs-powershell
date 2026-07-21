@@ -18,6 +18,9 @@ Delete navigation property extensions for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupConversationThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversationThreadPostInReplyToExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupConversationThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversationThreadPostInReplyToExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

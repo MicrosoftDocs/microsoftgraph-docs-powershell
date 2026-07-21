@@ -20,6 +20,9 @@ We recommend using a transparent image with no padding around the logo.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingHeaderLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingHeaderLogo?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingHeaderLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingHeaderLogo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

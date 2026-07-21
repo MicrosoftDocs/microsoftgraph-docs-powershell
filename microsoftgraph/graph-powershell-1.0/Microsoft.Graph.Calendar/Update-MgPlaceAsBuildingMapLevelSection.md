@@ -18,6 +18,9 @@ Update the navigation property sections in places
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingMapLevelSection](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingMapLevelSection?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingMapLevelSection](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingMapLevelSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

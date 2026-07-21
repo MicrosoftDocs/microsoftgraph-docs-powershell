@@ -20,6 +20,9 @@ For more information on how to propose a time, and how to receive and accept a n
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupEventTentatively](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaAcceptGroupEventTentatively?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupEventTentatively](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaAcceptGroupEventTentatively?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AcceptExpanded (Default)

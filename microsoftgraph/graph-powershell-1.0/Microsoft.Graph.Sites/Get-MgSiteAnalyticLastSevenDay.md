@@ -18,6 +18,9 @@ Get lastSevenDays from sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticLastSevenDay?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticLastSevenDay?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ Invoke action permanentDelete
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemPermanent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemPermanent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemPermanent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemPermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

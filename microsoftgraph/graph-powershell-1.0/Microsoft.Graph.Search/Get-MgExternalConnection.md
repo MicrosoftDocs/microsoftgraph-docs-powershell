@@ -18,6 +18,9 @@ Read the properties and relationships of an externalConnection object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnection?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

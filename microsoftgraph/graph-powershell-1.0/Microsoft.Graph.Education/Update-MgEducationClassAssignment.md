@@ -21,6 +21,9 @@ Don't use a PATCH operation for this purpose.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

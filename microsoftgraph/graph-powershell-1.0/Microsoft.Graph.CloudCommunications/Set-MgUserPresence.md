@@ -19,6 +19,9 @@ For more information about presence sessions, states permutations, and timeouts,
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserPresence?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

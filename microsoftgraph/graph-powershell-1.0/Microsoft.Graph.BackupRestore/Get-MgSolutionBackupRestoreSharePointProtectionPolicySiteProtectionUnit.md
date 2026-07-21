@@ -18,6 +18,9 @@ The protection units (sites) that are protected under the site protection policy
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

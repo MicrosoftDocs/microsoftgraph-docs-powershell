@@ -20,6 +20,9 @@ Microsoft 365 Defender correlates alerts with the same attack techniques or the 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncident?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncident?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

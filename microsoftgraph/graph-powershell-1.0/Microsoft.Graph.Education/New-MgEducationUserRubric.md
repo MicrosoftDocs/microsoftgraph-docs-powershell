@@ -18,6 +18,9 @@ Create new navigation property to rubrics for education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserRubric?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

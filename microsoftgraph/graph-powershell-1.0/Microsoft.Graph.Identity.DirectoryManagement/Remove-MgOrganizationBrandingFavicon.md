@@ -18,6 +18,9 @@ A custom icon (favicon) to replace a default Microsoft product favicon on a Micr
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingFavicon?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingFavicon?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

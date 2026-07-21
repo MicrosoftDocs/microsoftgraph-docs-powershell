@@ -19,6 +19,9 @@ Only certain properties of a device can be updated through approved Mobile Devic
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDevice?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

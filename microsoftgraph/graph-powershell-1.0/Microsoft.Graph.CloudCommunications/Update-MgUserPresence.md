@@ -18,6 +18,9 @@ Update the navigation property presence in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserPresence?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

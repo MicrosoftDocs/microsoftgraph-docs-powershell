@@ -22,6 +22,9 @@ However, it will not cancel a subscribeToTone operation because it operates inde
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallMediaProcessing?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallMediaProcessing?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)

@@ -18,6 +18,9 @@ Retrieve properties and relationships for a site resource.\rA site resource repr
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

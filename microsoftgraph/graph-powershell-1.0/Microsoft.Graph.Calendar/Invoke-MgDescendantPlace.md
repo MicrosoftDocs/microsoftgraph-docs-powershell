@@ -18,6 +18,9 @@ Invoke function descendants
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaDescendantPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaDescendantPlace?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDescendantPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaDescendantPlace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Descendant (Default)

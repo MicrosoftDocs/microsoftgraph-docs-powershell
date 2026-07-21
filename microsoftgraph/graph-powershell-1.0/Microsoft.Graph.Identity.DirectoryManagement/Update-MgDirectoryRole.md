@@ -18,6 +18,9 @@ Update entity in directoryRoles
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryRole?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryRole?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

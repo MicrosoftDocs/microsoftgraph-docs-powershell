@@ -18,6 +18,9 @@ Update the properties of a profileSource object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaAdminPeopleProfileSourceBySourceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeopleProfileSourceBySourceId?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminPeopleProfileSourceBySourceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeopleProfileSourceBySourceId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

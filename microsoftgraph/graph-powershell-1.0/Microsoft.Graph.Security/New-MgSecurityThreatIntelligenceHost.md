@@ -18,6 +18,9 @@ Create new navigation property to hosts for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

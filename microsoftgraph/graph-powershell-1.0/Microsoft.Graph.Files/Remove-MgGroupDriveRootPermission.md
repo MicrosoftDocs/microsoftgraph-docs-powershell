@@ -18,6 +18,9 @@ Delete navigation property permissions for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -21,6 +21,9 @@ For more information, see contentType: getCompatibleHubContentTypes and the blog
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaSiteListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSiteListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaSiteListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSiteListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

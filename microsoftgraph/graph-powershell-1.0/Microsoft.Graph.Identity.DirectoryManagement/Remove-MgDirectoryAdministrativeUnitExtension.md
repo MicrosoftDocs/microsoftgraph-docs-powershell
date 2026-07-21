@@ -18,6 +18,9 @@ Delete navigation property extensions for directory
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAdministrativeUnitExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAdministrativeUnitExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -20,6 +20,9 @@ Maximum of 20 objects can be added to an application.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaApplicationFederatedIdentityCredentialByName](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationFederatedIdentityCredentialByName?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaApplicationFederatedIdentityCredentialByName](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationFederatedIdentityCredentialByName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

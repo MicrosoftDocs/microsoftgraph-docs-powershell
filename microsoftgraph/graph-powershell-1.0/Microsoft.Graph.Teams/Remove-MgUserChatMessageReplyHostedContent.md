@@ -18,6 +18,9 @@ Delete navigation property hostedContents for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessageReplyHostedContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessageReplyHostedContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

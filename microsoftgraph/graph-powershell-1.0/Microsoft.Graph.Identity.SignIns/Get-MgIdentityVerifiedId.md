@@ -18,6 +18,9 @@ Entry point for verified ID operations.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityVerifiedId](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityVerifiedId?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityVerifiedId](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityVerifiedId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

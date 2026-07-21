@@ -18,6 +18,9 @@ Get details about Yammer groups activity by group.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportYammerGroupActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityDetail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerGroupActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

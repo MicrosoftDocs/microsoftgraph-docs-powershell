@@ -18,6 +18,9 @@ Add a copy of a content type from a site to a list.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaGroupSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaGroupSiteListContentTypeCopy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaGroupSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaGroupSiteListContentTypeCopy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

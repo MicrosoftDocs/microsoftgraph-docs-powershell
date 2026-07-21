@@ -24,6 +24,9 @@ For example, subdomain.contoso.com is automatically be verified if contoso.com h
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomain?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomain?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -20,6 +20,9 @@ See Example 3: Update the passwordProfile of a user and reset their password.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserPassword](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserPassword?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserPassword](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ChangeExpanded (Default)

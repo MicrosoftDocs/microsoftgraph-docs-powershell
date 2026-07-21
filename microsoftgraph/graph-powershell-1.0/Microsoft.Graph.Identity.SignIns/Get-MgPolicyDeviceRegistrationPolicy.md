@@ -19,6 +19,9 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyDeviceRegistrationPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyDeviceRegistrationPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

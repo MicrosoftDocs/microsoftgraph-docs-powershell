@@ -18,6 +18,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedDeviceAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDeviceAsEndpoint?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedDeviceAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDeviceAsEndpoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

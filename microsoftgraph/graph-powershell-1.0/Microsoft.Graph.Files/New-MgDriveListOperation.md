@@ -18,6 +18,9 @@ Create new navigation property to operations for drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListOperation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

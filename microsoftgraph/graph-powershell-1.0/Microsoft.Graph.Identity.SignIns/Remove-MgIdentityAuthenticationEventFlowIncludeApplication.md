@@ -19,6 +19,9 @@ This disables the customized authentication experience defined for the applicati
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

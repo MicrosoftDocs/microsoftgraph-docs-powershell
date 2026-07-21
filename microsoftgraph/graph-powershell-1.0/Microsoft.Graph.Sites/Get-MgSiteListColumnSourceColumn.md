@@ -18,6 +18,9 @@ The source column for the content type column.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteListColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListColumnSourceColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteListColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListColumnSourceColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

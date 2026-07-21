@@ -19,6 +19,9 @@ For details about how to use this API to add pull printing support to Universal 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

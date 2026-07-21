@@ -22,6 +22,9 @@ Another alternative is to use application permissions.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemCheckout](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemCheckout?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemCheckout](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemCheckout?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Discard (Default)

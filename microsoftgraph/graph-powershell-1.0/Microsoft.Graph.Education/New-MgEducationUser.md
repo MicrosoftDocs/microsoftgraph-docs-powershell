@@ -18,6 +18,9 @@ Create a new educationUser object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -19,6 +19,9 @@ This function requires the startDateTime and endDateTime parameters.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence](/powershell/module/Microsoft.Graph.Beta.Users/Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence](/powershell/module/Microsoft.Graph.Beta.Users/Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### View (Default)

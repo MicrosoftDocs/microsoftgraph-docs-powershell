@@ -18,6 +18,9 @@ The collection of field definitions for this list.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

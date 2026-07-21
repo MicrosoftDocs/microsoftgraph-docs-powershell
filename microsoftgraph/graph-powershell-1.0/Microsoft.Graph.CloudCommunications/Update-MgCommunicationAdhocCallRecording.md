@@ -18,6 +18,9 @@ Update the navigation property recordings in communications
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaCommunicationAdhocCallRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationAdhocCallRecording?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationAdhocCallRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationAdhocCallRecording?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ Create new navigation property to attachments for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEventAttachment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEventAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

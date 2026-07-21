@@ -18,6 +18,9 @@ Classes for which the user is a teacher.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationUserTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserTaughtClass?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserTaughtClass?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

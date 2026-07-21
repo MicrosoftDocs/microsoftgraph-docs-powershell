@@ -18,6 +18,9 @@ Delete navigation property attachments for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessageAttachment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessageAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

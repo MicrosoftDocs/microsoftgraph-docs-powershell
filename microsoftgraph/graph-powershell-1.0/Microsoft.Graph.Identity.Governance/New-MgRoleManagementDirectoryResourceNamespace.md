@@ -18,6 +18,9 @@ Create new navigation property to resourceNamespaces for roleManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
