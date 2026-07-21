@@ -95,8 +95,9 @@ You can have multiple tokenLifetimePolicy policies in a tenant but can assign on
 | Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
@@ -105,6 +106,10 @@ $params = @{
 }
 
 New-MgServicePrincipalTokenLifetimePolicyByRef -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the New-MgServicePrincipalTokenLifetimePolicyByRef Cmdlet.
+
 
 ## PARAMETERS
 

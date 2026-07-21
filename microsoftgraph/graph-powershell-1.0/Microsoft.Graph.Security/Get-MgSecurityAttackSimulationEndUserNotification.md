@@ -70,7 +70,7 @@ Represents an end user's notification for an attack simulation training.
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityAttackSimulationEndUserNotification
+Get-MgSecurityAttackSimulationEndUserNotification -Filter "source eq 'global'" 
 
 ```
 This example shows how to use the Get-MgSecurityAttackSimulationEndUserNotification Cmdlet.

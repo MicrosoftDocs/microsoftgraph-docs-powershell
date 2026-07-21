@@ -76,7 +76,7 @@ To retrieve Stream types of the default branding, for example, bannerLogo and ba
 | Application | OrganizationalBranding.Read.All, Organization.Read.All, Organization.ReadWrite.All, OrganizationalBranding.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 2: Code snippet
+### Example 1: Code snippet
 
 ```powershell
 

@@ -77,7 +77,7 @@ The request includes a reference to the accessPackage that contains this policy,
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Create a direct assignment policy
 
 ```powershell
 
@@ -119,9 +119,9 @@ $params = @{
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
+This example will create a direct assignment policy
 
-### Example 2: Code snippet
+### Example 2: Create a policy for users from other organizations to request
 
 ```powershell
 
@@ -244,9 +244,9 @@ $params = @{
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
+This example will create a policy for users from other organizations to request
 
-### Example 3: Code snippet
+### Example 3: Create a policy that automatically creates assignments based on a membership rule
 
 ```powershell
 
@@ -276,9 +276,9 @@ $params = @{
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
+This example will create a policy that automatically creates assignments based on a membership rule
 
-### Example 4: Code snippet
+### Example 4: Create a policy where requestors are asked to answer questions while requesting access to provide additional information to approvers
 
 ```powershell
 
@@ -379,9 +379,9 @@ $params = @{
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
+This example will create a policy where requestors are asked to answer questions while requesting access to provide additional information to approvers
 
-### Example 5: Code snippet
+### Example 5: Create a policy and specify the stages to trigger predefined access package custom extensions
 
 ```powershell
 
@@ -432,7 +432,68 @@ $params = @{
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
+This example will create a policy and specify the stages to trigger predefined access package custom extensions
+
+### Example 6: Create a policy used to determine approvers dynamically from a Logic App
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	"@odata.context" = "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/$entity"
+	displayName = "Dynamic approver policy"
+	description = "Dynamic approver policy"
+	canExtend = $false
+	durationInDays = 
+	expirationDateTime = $null
+	accessPackageId = "fc29cdca-57f6-47e3-b20c-3fa18e4826ac"
+	accessReviewSettings = $null
+	questions = @(
+	)
+	accessPackageNotificationSettings = @{
+		isAssignmentNotificationDisabled = $false
+	}
+	verifiableCredentialSettings = @{
+		credentialTypes = @(
+		)
+	}
+	requestorSettings = @{
+		scopeType = "AllExistingDirectorySubjects"
+		acceptRequests = $true
+		allowedRequestors = @(
+		)
+	}
+	requestApprovalSettings = @{
+		isApprovalRequired = $true
+		isApprovalRequiredForExtension = $false
+		isRequestorJustificationRequired = $true
+		approvalMode = "SingleStage"
+		approvalStages = @(
+			@{
+				"@odata.type" = "#microsoft.graph.accessPackageDynamicApprovalStage"
+				customExtension = @{
+					"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"
+					id = "52036a43-10b5-444d-a1a2-d4f240420239"
+				}
+			}
+		)
+	}
+	customExtensionStageSettings = @(
+		@{
+			stage = "assignmentRequestDeterminingApprovalRequirements"
+			customExtension = @{
+				"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"
+				id = "52036a43-10b5-444d-a1a2-d4f240420239"
+			}
+		}
+	)
+}
+
+New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
+
+```
+This example will create a policy used to determine approvers dynamically from a logic app
 
 
 ## PARAMETERS

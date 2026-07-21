@@ -62,7 +62,7 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 | Application | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
-### Example
+### Example 1: Code snippet
 
 ```powershell
 

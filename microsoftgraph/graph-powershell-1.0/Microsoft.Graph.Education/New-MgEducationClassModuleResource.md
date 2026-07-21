@@ -95,7 +95,7 @@ You can create the following types of module resources: Every resource has an @o
 | Application | EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Create an educationLinkResource
 
 ```powershell
 
@@ -112,9 +112,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
+This example will create an educationlinkresource
 
-### Example 2: Code snippet
+### Example 2: Create an educationWordResource
 
 ```powershell
 
@@ -133,9 +133,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
+This example will create an educationwordresource
 
-### Example 3: Code snippet
+### Example 3: Create an educationFileResource
 
 ```powershell
 
@@ -154,9 +154,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
+This example will create an educationfileresource
 
-### Example 4: Code snippet
+### Example 4: Create an educationExcelResource
 
 ```powershell
 
@@ -175,9 +175,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
+This example will create an educationexcelresource
 
-### Example 5: Code snippet
+### Example 5: Create an educationPowerPointResource
 
 ```powershell
 
@@ -194,9 +194,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
+This example will create an educationpowerpointresource
 
-### Example 6: Code snippet
+### Example 6: Create an educationMediaResource
 
 ```powershell
 
@@ -213,9 +213,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
+This example will create an educationmediaresource
 
-### Example 7: Code snippet
+### Example 7: Create an educationChannelResource
 
 ```powershell
 
@@ -232,9 +232,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
+This example will create an educationchannelresource
 
-### Example 8: Code snippet
+### Example 8: Create an educationLinkedAssignmentResource
 
 ```powershell
 
@@ -251,7 +251,7 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
+This example will create an educationlinkedassignmentresource
 
 
 ## PARAMETERS
