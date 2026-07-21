@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityalert
@@ -817,7 +817,7 @@ AFFECTEDRESOURCES <IMicrosoftGraphPartnerSecurityAffectedResource[]>: Contains d
   [ResourceId <String>]: The resource path of the resource affected by the security alert.
   [ResourceType <String>]: The type of resource.
 
-BODYPARAMETER <IMicrosoftGraphPartnerSecurityAlert>: partnerSecurityAlert
+BODYPARAMETER `<IMicrosoftGraphPartnerSecurityAlert>`: partnerSecurityAlert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -866,3 +866,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityalert)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
