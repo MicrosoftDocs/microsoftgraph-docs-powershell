@@ -70,6 +70,14 @@ This cmdlet has the following aliases,
 
 Update the properties of a externalUserProfile object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ExternalUserProfile.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalUserProfile.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
