@@ -519,8 +519,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicyexclude)
-- [](https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete-excludes?view=graph-rest-beta)
+- [Remove-MgBetaPolicyPermissionGrantPolicyExclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicyexclude)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete-excludes?view=graph-rest-beta)
 
 
 

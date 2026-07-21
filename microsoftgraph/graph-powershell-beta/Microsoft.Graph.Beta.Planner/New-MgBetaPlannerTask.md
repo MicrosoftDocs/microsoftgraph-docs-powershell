@@ -1650,8 +1650,8 @@ A GUID-based value that serves as the unique identifier for a series.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannertask)
-- [](https://learn.microsoft.com/graph/api/planner-post-tasks?view=graph-rest-beta)
+- [New-MgBetaPlannerTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannertask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/planner-post-tasks?view=graph-rest-beta)
 
 
 

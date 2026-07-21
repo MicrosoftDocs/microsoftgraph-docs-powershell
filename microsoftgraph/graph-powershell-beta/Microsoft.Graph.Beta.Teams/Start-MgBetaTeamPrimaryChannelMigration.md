@@ -542,8 +542,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamprimarychannelmigration)
-- [](https://learn.microsoft.com/graph/api/channel-startmigration?view=graph-rest-beta)
+- [Start-MgBetaTeamPrimaryChannelMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamprimarychannelmigration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-startmigration?view=graph-rest-beta)
 
 
 

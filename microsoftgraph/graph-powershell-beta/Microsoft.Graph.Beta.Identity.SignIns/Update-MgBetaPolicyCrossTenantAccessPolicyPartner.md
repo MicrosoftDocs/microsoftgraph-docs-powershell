@@ -1344,8 +1344,8 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicypartner)
-- [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyCrossTenantAccessPolicyPartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicypartner)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-update?view=graph-rest-beta)
 
 
 

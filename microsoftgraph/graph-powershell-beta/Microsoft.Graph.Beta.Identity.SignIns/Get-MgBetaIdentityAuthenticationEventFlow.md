@@ -677,9 +677,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflow)
-- [](https://learn.microsoft.com/graph/api/authenticationeventsflow-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta)
+- [Get-MgBetaIdentityAuthenticationEventFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationeventsflow-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta)
 
 
 

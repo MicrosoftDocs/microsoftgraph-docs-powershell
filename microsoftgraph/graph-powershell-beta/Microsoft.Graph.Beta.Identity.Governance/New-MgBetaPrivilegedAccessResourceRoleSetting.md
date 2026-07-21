@@ -1372,7 +1372,7 @@ For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessresourcerolesetting)
+- [New-MgBetaPrivilegedAccessResourceRoleSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessresourcerolesetting)
 
 
 
