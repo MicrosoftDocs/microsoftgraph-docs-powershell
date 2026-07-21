@@ -59,6 +59,14 @@ The allowed format is .css format only and not larger than 25 KB.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -Break

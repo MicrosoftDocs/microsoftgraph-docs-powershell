@@ -55,6 +55,14 @@ Returns the user or organizational contact assigned as the agentUser's manager.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Get a user's manager
 

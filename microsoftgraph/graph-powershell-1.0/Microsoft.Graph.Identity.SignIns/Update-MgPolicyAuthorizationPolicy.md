@@ -60,6 +60,14 @@ Update the properties of an authorizationPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.Authorization,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.Authorization,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.Authorization,  |
+
 ## EXAMPLES
 ### Example 1: Update or set Guest user access level for the tenant
 

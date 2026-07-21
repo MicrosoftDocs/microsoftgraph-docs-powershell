@@ -66,6 +66,14 @@ This operation allows both admins and eligible users to add, revoke, or extend e
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |
+
 ## EXAMPLES
 ### Example 1: Admin to assign a role eligibility schedule request
 

@@ -99,6 +99,14 @@ Create new navigation property to calendarView for solutions
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalInformation

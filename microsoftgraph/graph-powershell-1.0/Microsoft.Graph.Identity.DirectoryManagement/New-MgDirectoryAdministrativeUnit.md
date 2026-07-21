@@ -60,6 +60,14 @@ Create a new administrativeUnit.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AdministrativeUnit.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AdministrativeUnit.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AdministrativeUnit.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Create an administrative unit
 

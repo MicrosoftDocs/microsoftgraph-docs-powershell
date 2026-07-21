@@ -66,6 +66,14 @@ When creating a new invitation, you have several options available:
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Invite.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Invite.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Invite.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Invite a user and send default invitation email
 ```powershell

@@ -80,6 +80,14 @@ Only one policy object can be assigned to an application or service principal.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

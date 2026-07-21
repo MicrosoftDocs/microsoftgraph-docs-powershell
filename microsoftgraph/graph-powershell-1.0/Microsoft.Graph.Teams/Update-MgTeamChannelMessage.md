@@ -108,6 +108,14 @@ Only the user in the tenant who sent the message can perform data loss preventio
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChannelMessage.UpdatePolicyViolation.All, Teamwork.Migrate.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMessage.UpdatePolicyViolation.All, Teamwork.Migrate.All,  |
+
 ## EXAMPLES
 ### Example 1: Update policyViolation property using application permissions
 

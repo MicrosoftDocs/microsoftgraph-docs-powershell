@@ -55,6 +55,14 @@ Delete the channel.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Channel.Delete.Group, Channel.Delete.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Channel.Delete.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Channel.Delete.Group, Channel.Delete.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

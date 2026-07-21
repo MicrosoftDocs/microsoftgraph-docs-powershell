@@ -96,6 +96,14 @@ Update the navigation property messages in chats
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Chat.UpdatePolicyViolation.All, Chat.ReadWrite.All, Group.ReadWrite.All, Teamwork.Migrate.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadWrite, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.UpdatePolicyViolation.All, Chat.ReadWrite.All, Group.ReadWrite.All, Teamwork.Migrate.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

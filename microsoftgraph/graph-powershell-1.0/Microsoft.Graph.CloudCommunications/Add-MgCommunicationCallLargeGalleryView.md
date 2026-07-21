@@ -78,6 +78,14 @@ For details about how to identify a large gallery view participant in a roster s
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calls.JoinGroupCallAsGuest.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.JoinGroupCallAsGuest.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

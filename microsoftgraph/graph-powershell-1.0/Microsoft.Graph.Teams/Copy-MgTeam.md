@@ -92,6 +92,14 @@ The recommended delay between GETs is 5 seconds.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Team.Create, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Team.Create, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Team.Create, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

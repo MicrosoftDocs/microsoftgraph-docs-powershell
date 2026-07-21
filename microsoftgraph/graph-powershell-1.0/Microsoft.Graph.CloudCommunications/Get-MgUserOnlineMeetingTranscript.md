@@ -98,6 +98,14 @@ Retrieving the content of the transcript returns the stream of text associated w
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetingTranscript.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat,  |
+
 ## EXAMPLES
 ### Example 1: Get a callTranscript
 

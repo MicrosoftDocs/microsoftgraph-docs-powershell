@@ -58,6 +58,14 @@ Search results are provided in the response.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Files.Read.All, Sites.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.Read, Acronym.Read.All, Bookmark.Read.All, Calendars.Read, Chat.Read, ExternalItem.Read.All, Files.Read.All, QnA.Read.All, Sites.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Files.Read.All, Sites.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Basic call to perform a search request
 

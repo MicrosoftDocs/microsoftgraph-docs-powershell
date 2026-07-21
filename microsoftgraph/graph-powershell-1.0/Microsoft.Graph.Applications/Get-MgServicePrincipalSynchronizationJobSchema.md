@@ -57,6 +57,14 @@ Retrieve the schema for a given synchronization job or template.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomSecAttributeProvisioning.Read.All, Application.ReadWrite.OwnedBy, CustomSecAttributeProvisioning.ReadWrite.All, Synchronization.Read.All, Synchronization.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Synchronization.Read.All, CustomSecAttributeProvisioning.Read.All, CustomSecAttributeProvisioning.ReadWrite.All, Synchronization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomSecAttributeProvisioning.Read.All, Application.ReadWrite.OwnedBy, CustomSecAttributeProvisioning.ReadWrite.All, Synchronization.Read.All, Synchronization.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

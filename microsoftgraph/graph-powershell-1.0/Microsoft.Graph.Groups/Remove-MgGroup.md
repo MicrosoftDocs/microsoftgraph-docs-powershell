@@ -63,6 +63,14 @@ To learn more, see deletedItems.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Remove a group
 

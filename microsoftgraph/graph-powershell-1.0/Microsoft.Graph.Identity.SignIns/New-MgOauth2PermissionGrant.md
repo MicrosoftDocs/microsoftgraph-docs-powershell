@@ -58,6 +58,14 @@ A delegated permission grant authorizes a client service principal (representing
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

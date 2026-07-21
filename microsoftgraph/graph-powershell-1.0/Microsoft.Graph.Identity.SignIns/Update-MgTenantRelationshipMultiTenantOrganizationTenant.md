@@ -85,6 +85,14 @@ Only owner tenants can call this API.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | MultiTenantOrganization.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MultiTenantOrganization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MultiTenantOrganization.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

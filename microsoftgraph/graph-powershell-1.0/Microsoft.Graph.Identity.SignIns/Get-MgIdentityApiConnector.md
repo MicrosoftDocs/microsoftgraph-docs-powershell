@@ -66,6 +66,14 @@ Read the properties of an identityApiConnector object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | APIConnectors.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | APIConnectors.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | APIConnectors.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -55,6 +55,14 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.FullControl.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.FullControl.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.FullControl.All,  |
+
 ## PARAMETERS
 
 ### -Break

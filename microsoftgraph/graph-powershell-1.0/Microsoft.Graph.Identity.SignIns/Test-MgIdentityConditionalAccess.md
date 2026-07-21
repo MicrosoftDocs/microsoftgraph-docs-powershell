@@ -58,6 +58,14 @@ Evaluates the applicability of Conditional Access Policies in your tenant based 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.ConditionalAccess, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.ConditionalAccess, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.ConditionalAccess, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
+
 ## EXAMPLES
 ### Example 1: Identify conditional access policies that would apply to a user accessing an application
 

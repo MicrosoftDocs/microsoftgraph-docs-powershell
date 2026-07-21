@@ -67,6 +67,14 @@ Returns the metadata for an item in a list.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Read.All, Sites.Manage.All, Sites.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Read.All, Sites.Manage.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Get list items with specific fields
 

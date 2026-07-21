@@ -46,6 +46,14 @@ Get the tenant-level settings for Microsoft 365 reports.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ReportSettings.Read.All, ReportSettings.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ReportSettings.Read.All, ReportSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ReportSettings.Read.All, ReportSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

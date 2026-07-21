@@ -59,6 +59,14 @@ The teacher determines the resources to upload in the assignment's folder.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduAssignments.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

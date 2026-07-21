@@ -67,6 +67,14 @@ Retrieve a single permissionGrantPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant,  |
+
 ## EXAMPLES
 ### Example 1:  List all permission grant policies
 

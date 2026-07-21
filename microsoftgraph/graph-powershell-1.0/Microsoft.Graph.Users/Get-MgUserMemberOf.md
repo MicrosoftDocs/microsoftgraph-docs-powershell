@@ -73,6 +73,14 @@ Supports $expand.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -56,6 +56,14 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthMethod-External.Read.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-External.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-External.Read, UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-External.Read.All, UserAuthMethod-External.ReadWrite, UserAuthMethod-External.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-External.Read.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-External.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -Break

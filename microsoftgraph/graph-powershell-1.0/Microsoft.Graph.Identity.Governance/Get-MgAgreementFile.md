@@ -68,6 +68,14 @@ The default file can have multiple versions, each with its own language, that ca
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Agreement.Read.All, Agreement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Get the agreement file for a specific language
 

@@ -58,6 +58,14 @@ These values are shown to a user during a user journey defined by a user flow.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

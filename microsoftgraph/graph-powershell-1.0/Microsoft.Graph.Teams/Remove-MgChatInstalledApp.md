@@ -55,6 +55,14 @@ Uninstall an app installed within a chat.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsAppInstallation.ReadWriteSelfForChat.All, Chat.Manage.Chat, TeamsAppInstallation.ManageSelectedForChat.All, TeamsAppInstallation.ReadWriteForChat.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ManageSelectedForChat, TeamsAppInstallation.ReadWriteForChat,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsAppInstallation.ReadWriteSelfForChat.All, Chat.Manage.Chat, TeamsAppInstallation.ManageSelectedForChat.All, TeamsAppInstallation.ReadWriteForChat.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

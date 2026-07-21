@@ -58,6 +58,14 @@ Invoke action processContentAsync
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Content.Process.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Content.Process.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Content.Process.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

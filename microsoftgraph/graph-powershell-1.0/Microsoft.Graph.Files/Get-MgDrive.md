@@ -66,6 +66,14 @@ Get entity from drives by key
 | Delegated (personal Microsoft account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All,  |
+| Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Using the Get-MgDrive Cmdlet
 ```powershell

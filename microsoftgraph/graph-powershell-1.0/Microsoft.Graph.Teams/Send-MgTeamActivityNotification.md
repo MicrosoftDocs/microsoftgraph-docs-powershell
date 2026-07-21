@@ -83,6 +83,14 @@ For more information about sending notifications and the requirements for doing 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsActivity.Send.Group, TeamsActivity.Send,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsActivity.Send,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsActivity.Send.Group, TeamsActivity.Send,  |
+
 ## EXAMPLES
 ### Example 1: Notify a user about pending finance approval requests
 

@@ -83,6 +83,14 @@ The rate limit for this API is 5 requests per 10 seconds.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Provision users from Microsoft Entra ID to third-party applications
 

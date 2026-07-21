@@ -55,6 +55,14 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.ReadBasic, PrintAlertSettings.Read.All, PrintAlertSettings.ReadWrite.All, PrintConnector.Read.All, PrintConnector.ReadWrite.All, Printer.Create, Printer.Read.All, Printer.ReadWrite.All, PrinterShare.Read.All, PrinterShare.ReadBasic.All, PrinterShare.ReadWrite.All, PrintJob.Create, PrintJob.Read, PrintJob.Read.All, PrintJob.ReadBasic.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic, PrintJob.ReadWriteBasic.All, PrintSettings.Read.All, PrintSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Break

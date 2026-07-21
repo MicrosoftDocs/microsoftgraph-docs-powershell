@@ -80,6 +80,14 @@ Update the properties of a profileSource object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PeopleSettings.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PeopleSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

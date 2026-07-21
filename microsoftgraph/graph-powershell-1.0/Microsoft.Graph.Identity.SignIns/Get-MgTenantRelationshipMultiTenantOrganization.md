@@ -46,6 +46,14 @@ Get properties of the multitenant organization.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MultiTenantOrganization.ReadBasic.All, MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -87,6 +87,14 @@ Alternatively, create a draft to reply-all to a message and send it later.
 | Delegated (personal Microsoft account) | Mail.Send,  |
 | Application | Mail.Send,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.Send,  |
+| Delegated (personal Microsoft account) | Mail.Send,  |
+| Application | Mail.Send,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

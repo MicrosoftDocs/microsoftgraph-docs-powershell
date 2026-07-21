@@ -77,6 +77,14 @@ Update the properties of an acronym object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

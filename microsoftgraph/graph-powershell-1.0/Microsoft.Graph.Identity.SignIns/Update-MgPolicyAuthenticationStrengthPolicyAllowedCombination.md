@@ -83,6 +83,14 @@ To update other properties of an authenticationStrengthPolicy object, use the Up
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

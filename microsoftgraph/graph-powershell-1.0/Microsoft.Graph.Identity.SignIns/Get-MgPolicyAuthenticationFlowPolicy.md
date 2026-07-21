@@ -46,6 +46,14 @@ Read the properties and relationships of an authenticationFlowsPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.AuthenticationFlows,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.AuthenticationFlows,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.AuthenticationFlows,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

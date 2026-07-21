@@ -149,6 +149,14 @@ To get properties that are not returned by default, do a GET operation and speci
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.ReadWrite.All, Group.ManageProtection.All, Group.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All, Group.ManageProtection.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All, Group.ManageProtection.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Update the properties of a group
 

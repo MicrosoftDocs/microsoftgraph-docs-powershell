@@ -68,6 +68,14 @@ Read the properties and relationships of oneDriveForBusinessBrowseSession object
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Restore.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BackupRestore-Restore.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BackupRestore-Restore.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -All

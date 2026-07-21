@@ -43,6 +43,14 @@ Read the properties and relationships of microsoft.graph.security.sensorCandidat
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.Read.All, SecurityIdentitiesSensors.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityIdentitiesSensors.Read.All, SecurityIdentitiesSensors.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityIdentitiesSensors.Read.All, SecurityIdentitiesSensors.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

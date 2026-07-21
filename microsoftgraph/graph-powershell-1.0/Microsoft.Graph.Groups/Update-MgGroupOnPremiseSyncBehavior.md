@@ -77,6 +77,14 @@ Update the navigation property onPremisesSyncBehavior in groups
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

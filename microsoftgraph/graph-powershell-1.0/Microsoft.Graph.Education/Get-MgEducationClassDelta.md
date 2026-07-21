@@ -50,6 +50,14 @@ See Use delta query for details.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduRoster.ReadBasic.All, EduRoster.Read.All, EduRoster.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.Read, EduRoster.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.ReadBasic.All, EduRoster.Read.All, EduRoster.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

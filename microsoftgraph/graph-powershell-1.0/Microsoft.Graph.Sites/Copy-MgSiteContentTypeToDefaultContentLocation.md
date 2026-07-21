@@ -81,6 +81,14 @@ The file can then be added as a default file or template via a POST operation.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

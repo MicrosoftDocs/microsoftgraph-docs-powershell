@@ -96,6 +96,14 @@ Update the properties of an alert object in an organization based on the specifi
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityAlert.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityAlert.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityAlert.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -62,6 +62,14 @@ This allows you to maintain and synchronize\ra local store of a user's mail fold
 | Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
 | Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
+| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
+| Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite,  |
+
 ## PARAMETERS
 
 ### -All

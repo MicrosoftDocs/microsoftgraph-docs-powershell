@@ -63,6 +63,14 @@ To access and assign members to other directory roles, you must first activate i
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.ReadWrite.Directory,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.ReadWrite.Directory,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

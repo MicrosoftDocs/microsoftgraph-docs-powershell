@@ -57,6 +57,14 @@ This method doesn't delete the rubric itself and can only be performed by teache
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Break

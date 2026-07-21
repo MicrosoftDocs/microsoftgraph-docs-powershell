@@ -91,6 +91,14 @@ For details about how to register a task trigger, see Extending Universal Print 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrintJob.ReadWriteBasic.All, PrintJob.Manage.All, PrintJob.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrintJob.ReadWriteBasic.All, PrintJob.Manage.All, PrintJob.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

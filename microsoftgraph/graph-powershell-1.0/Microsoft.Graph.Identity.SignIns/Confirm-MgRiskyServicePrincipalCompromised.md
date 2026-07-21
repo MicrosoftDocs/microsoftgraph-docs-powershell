@@ -59,6 +59,14 @@ This action sets the targeted service principal account's risk level to high.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityRiskyServicePrincipal.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityRiskyServicePrincipal.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityRiskyServicePrincipal.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

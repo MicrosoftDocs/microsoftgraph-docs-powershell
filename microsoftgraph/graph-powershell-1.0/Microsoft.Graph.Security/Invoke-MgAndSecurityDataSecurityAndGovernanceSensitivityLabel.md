@@ -58,6 +58,14 @@ Computes the rights and inheritance for sensitivity labels based on the input co
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

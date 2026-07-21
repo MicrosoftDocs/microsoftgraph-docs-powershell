@@ -113,6 +113,14 @@ Update the navigation property items in drives
 | Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
+| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

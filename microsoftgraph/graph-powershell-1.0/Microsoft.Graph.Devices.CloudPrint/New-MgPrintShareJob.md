@@ -86,6 +86,14 @@ Also creates a new printDocument associated with the printJob.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

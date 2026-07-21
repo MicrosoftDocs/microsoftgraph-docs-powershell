@@ -106,6 +106,14 @@ Only certain properties of a device can be updated through approved Mobile Devic
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Device.ReadWrite.All, Directory.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.AccessAsUser.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Device.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Update the accountEnabled property of a device
 

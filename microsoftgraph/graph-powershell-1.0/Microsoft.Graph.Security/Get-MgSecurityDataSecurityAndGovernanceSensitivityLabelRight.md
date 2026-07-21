@@ -57,6 +57,14 @@ Get the usage rights granted to the calling user for a specific sensitivity labe
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

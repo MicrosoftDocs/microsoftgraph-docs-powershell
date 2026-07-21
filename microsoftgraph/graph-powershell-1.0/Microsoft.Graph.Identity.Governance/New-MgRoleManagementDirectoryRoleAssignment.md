@@ -59,6 +59,14 @@ Create a new unifiedRoleAssignment object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.ReadWrite.Directory,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.ReadWrite.Directory,  |
+
 ## EXAMPLES
 ### Example 1: Create a role assignment with tenant scope
 

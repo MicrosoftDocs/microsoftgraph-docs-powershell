@@ -55,6 +55,14 @@ Delete a registered device.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Device.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.AccessAsUser.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Device.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

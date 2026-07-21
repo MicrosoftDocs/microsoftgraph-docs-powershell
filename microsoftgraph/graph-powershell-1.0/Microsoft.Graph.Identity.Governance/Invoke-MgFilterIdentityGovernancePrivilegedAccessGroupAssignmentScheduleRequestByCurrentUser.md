@@ -59,6 +59,14 @@ In PIM for Groups, retrieve the requests for membership or ownership assignments
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup,  |
+
 ## EXAMPLES
 ### Example 1: Retrieve a principal's requests scoped to a specific group and that are pending approval
 

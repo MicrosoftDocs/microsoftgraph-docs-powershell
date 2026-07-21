@@ -55,6 +55,14 @@ Delete a bookingCustomQuestion object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

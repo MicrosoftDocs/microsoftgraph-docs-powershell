@@ -82,6 +82,14 @@ For a list of roles that can be assigned with administrative unit scope, see Ass
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.ReadWrite.Directory,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.ReadWrite.Directory,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
