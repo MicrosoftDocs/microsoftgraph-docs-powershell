@@ -51,8 +51,9 @@ This cmdlet has the following aliases,
 Create a new governancePolicyTemplate that defines the configuration for establishing governance relationships, including role assignments and applications to provision.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -99,6 +100,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryTenantGovernancePolicyTemplate -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDirectoryTenantGovernancePolicyTemplate Cmdlet.
+
 
 ## PARAMETERS
 

@@ -54,12 +54,17 @@ Administrative units cannot be permanently deleted by using the deletedItems API
 Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaDirectoryDeletedItem Cmdlet.
+
 
 ## PARAMETERS
 
