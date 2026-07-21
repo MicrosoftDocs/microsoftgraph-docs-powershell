@@ -67,12 +67,17 @@ Retrieve a conversationMember from a chat.
 | Application | ChatMember.Read.All, Chat.Manage.Chat, Chat.Read.All, Chat.ReadBasic.All, Chat.ReadWrite.All, ChatMember.Read.Chat, ChatMember.ReadWrite.All, TeamMember.Read.Group,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
+
+```
+This example shows how to use the Get-MgBetaChatMember Cmdlet.
+
 
 ## PARAMETERS
 

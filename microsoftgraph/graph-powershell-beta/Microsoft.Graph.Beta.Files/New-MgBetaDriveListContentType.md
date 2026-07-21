@@ -80,16 +80,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to contentTypes for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -2273,6 +2263,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistcontenttype)
+
 
 
 

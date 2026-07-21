@@ -87,16 +87,6 @@ Note: you should only delete a folder locally if it's empty after syncing all th
 | Delegated (personal Microsoft account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -667,6 +657,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootdelta)
 - [](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-beta)
+
 
 
 

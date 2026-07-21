@@ -62,16 +62,6 @@ You should expect to see denied users, if any, being removed from the resource g
 A configured auto applying review, or selecting Apply doesn't have an effect on a group that originates in an on-premises directory or a dynamic group.
 If you want to change a group that originates on-premises, download the results and apply those changes to the representation of the group in that directory.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -517,6 +507,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaaccessreviewinstancedecision)
+
 
 
 

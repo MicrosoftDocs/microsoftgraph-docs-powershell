@@ -60,8 +60,9 @@ The template named Group.Unified can be used to configure tenant-wide Microsoft 
 | Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a directory or tenant-level setting
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -88,6 +89,10 @@ $params = @{
 }
 
 New-MgBetaDirectorySetting -BodyParameter $params
+
+```
+This example will create a directory or tenant-level setting
+
 
 ## PARAMETERS
 

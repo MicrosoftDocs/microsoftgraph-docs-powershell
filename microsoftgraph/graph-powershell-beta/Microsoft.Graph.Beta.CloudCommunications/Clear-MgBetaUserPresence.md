@@ -78,8 +78,9 @@ Read more about presence sessions and their time-out and expiration.
 | Application | Presence.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -88,6 +89,10 @@ $params = @{
 }
 
 Clear-MgBetaUserPresence -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Clear-MgBetaUserPresence Cmdlet.
+
 
 ## PARAMETERS
 

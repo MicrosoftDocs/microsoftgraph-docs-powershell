@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Complete an impactedResource object and update its status to completedByUser.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -413,6 +403,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryimpactedresource)
 - [](https://learn.microsoft.com/graph/api/impactedresource-complete?view=graph-rest-beta)
+
 
 
 

@@ -53,8 +53,9 @@ Create a new governanceRequest to establish a governance relationship with a gov
 The governed tenant can then accept or reject the request.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -64,6 +65,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryTenantGovernanceRequest -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDirectoryTenantGovernanceRequest Cmdlet.
+
 
 ## PARAMETERS
 
