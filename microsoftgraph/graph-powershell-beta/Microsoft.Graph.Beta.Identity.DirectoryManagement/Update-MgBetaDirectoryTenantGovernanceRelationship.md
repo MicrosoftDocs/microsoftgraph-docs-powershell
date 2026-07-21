@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelationship
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 07/17/2026
+ms.date: 07/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryTenantGovernanceRelationship
 ---
@@ -14,7 +14,7 @@ title: Update-MgBetaDirectoryTenantGovernanceRelationship
 ## SYNOPSIS
 
 Update the status property of a governanceRelationship to initiate the termination process.
-There are two models for termination:\r1) Initiated by the governing tenant: After the governing tenant updates the status to terminationRequestedByGoverningTenant, the governed tenant may subsequently update the status to terminated.\r1) Directly terminated by the governed tenant: The governed tenant updates the status to terminated to immediately terminate the relationship.
+There are two models for termination:\r\n1) Initiated by the governing tenant: After the governing tenant updates the status to terminationRequestedByGoverningTenant, the governed tenant may subsequently update the status to terminated.\r\n1) Directly terminated by the governed tenant: The governed tenant updates the status to terminated to immediately terminate the relationship.
 When the governed tenant updates the status to terminated in either model, the resources that were provisioned in the governed tenant upon relationship creation are deleted.
 
 ## SYNTAX
@@ -76,13 +76,12 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the status property of a governanceRelationship to initiate the termination process.
-There are two models for termination:\r1) Initiated by the governing tenant: After the governing tenant updates the status to terminationRequestedByGoverningTenant, the governed tenant may subsequently update the status to terminated.\r1) Directly terminated by the governed tenant: The governed tenant updates the status to terminated to immediately terminate the relationship.
+There are two models for termination:\r\n1) Initiated by the governing tenant: After the governing tenant updates the status to terminationRequestedByGoverningTenant, the governed tenant may subsequently update the status to terminated.\r\n1) Directly terminated by the governed tenant: The governed tenant updates the status to terminated to immediately terminate the relationship.
 When the governed tenant updates the status to terminated in either model, the resources that were provisioned in the governed tenant upon relationship creation are deleted.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -91,10 +90,6 @@ $params = @{
 }
 
 Update-MgBetaDirectoryTenantGovernanceRelationship -GovernanceRelationshipId $governanceRelationshipId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDirectoryTenantGovernanceRelationship Cmdlet.
-
 
 ## PARAMETERS
 
@@ -707,7 +702,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship>`: governanceRelationship
+BODYPARAMETER <IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship>: governanceRelationship
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -745,7 +740,7 @@ Supports $filter (eq, ne) and $orderBy.
     [PolicyId <String>]: The identifier of the source policy template from which this snapshot was created.
   [Status <RelationshipStatus?>]: relationshipStatus
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -811,7 +806,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
 
-POLICYSNAPSHOT `<IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>`: relationshipPolicy
+POLICYSNAPSHOT <IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>: relationshipPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedAdministrationRoleAssignments <IMicrosoftGraphTenantGovernanceServicesDelegatedAdministrationRoleAssignmentSnapshot[]>]: A snapshot of the delegated administration role assignments configured in this policy.
     [GroupId <String>]: The object ID of the role-assignable security group in the governing tenant that will be assigned the specified roles.
@@ -834,27 +829,5 @@ POLICYSNAPSHOT `<IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>`: re
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryTenantGovernanceRelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelationship)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantgovernanceservices-governancerelationship-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelationship)
+- [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-governancerelationship-update?view=graph-rest-beta)
