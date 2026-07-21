@@ -111,6 +111,14 @@ Update the navigation property events in groups
 | Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
 | Application | Calendars.ReadWrite,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.ReadWrite, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
+| Application | Calendars.ReadWrite,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -59,6 +59,14 @@ Create a new customSecurityAttributeDefinition object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomSecAttributeDefinition.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CustomSecAttributeDefinition.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomSecAttributeDefinition.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Add a custom security attribute
 

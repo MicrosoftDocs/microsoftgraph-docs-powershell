@@ -95,6 +95,14 @@ Remove a conversationMember from a team.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamMember.ReadWriteNonOwnerRole.All, TeamMember.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamMember.ReadWriteNonOwnerRole.All, TeamMember.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamMember.ReadWriteNonOwnerRole.All, TeamMember.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

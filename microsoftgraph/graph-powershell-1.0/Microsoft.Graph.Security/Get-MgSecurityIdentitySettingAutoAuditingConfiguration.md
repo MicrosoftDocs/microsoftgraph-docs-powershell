@@ -43,6 +43,14 @@ Get the properties and relationships of microsoft.graph.security.autoAuditingCon
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesAutoConfig.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityIdentitiesAutoConfig.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityIdentitiesAutoConfig.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

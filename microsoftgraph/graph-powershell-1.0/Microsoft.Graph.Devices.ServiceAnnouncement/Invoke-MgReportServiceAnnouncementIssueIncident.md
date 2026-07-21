@@ -59,6 +59,14 @@ The operation returns an error if the specified issue doesn't exist for the tena
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ServiceHealth.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ServiceHealth.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ServiceHealth.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

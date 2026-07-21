@@ -57,6 +57,14 @@ The usage category report categorizes a Cloud PC as Undersized, Oversized, Right
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudPC.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Get device recommendation reports grouped by service plan and usage category
 

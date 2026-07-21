@@ -55,6 +55,14 @@ Delete a member from a standard tag in a team.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamworkTag.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkTag.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkTag.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

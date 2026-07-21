@@ -87,6 +87,14 @@ This API specifically updates an app published to your organization's app catalo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Update an application previously published to the Microsoft Teams app catalog
 

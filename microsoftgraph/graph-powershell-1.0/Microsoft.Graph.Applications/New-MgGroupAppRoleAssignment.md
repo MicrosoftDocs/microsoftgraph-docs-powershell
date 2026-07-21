@@ -86,6 +86,14 @@ To grant an app role assignment to a group, you need three identifiers: Addition
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AppRoleAssignment.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AppRoleAssignment.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Assign an app role to a group
 

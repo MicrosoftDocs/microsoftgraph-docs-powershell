@@ -76,6 +76,14 @@ The owners are a set of users or service principals who are allowed to modify th
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Add an owner to a group
 

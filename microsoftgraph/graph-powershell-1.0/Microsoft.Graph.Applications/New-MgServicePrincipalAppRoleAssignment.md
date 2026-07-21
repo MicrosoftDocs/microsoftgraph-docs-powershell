@@ -87,6 +87,14 @@ To grant an app role assignment to a client service principal, you need three id
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.Read.All, AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.Read.All, AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

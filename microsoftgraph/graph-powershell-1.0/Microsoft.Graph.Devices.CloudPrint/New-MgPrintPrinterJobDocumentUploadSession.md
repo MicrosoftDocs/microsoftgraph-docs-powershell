@@ -84,6 +84,14 @@ This allows transfer to be resumed, in case the network connection is dropped du
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrintJob.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.Create, PrintJob.ReadWrite, PrintJob.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrintJob.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

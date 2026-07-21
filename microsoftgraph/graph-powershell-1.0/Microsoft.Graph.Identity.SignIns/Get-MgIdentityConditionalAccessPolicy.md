@@ -68,6 +68,14 @@ Retrieve the properties and relationships of a conditionalAccessPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Get a list of all conditional access policies in Azure AD.
 

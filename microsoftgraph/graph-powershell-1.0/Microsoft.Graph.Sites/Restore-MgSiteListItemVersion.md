@@ -57,6 +57,14 @@ This will create a new version with the contents of the previous version, but pr
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

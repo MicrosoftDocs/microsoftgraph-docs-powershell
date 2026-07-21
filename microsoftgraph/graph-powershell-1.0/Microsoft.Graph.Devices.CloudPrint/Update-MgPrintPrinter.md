@@ -88,6 +88,14 @@ Update the properties of a printer object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Printer.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Printer.ReadWrite.All, Printer.FullControl.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Printer.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

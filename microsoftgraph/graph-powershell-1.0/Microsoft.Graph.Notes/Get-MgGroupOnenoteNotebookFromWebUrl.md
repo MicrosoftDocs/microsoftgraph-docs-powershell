@@ -78,6 +78,14 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Notes.Read.All, Notes.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.Create, Notes.Read, Notes.Read.All, Notes.ReadWrite, Notes.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Notes.Read.All, Notes.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

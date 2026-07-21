@@ -57,6 +57,14 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduAssignments.Read.All, EduAssignments.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.Read, EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.Read.All, EduAssignments.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -Break

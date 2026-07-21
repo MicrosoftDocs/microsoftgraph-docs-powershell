@@ -57,6 +57,14 @@ Use this API to remove a member (user, group, or device) from an administrative 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AdministrativeUnit.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AdministrativeUnit.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AdministrativeUnit.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -76,6 +76,14 @@ Retrieve a single message or a message reply in a channel or a chat.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChatMessage.Read.Chat, Chat.Read.All, Group.Read.All, Group.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.Read, Chat.ReadWrite, Group.Read.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMessage.Read.Chat, Chat.Read.All, Group.Read.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Get a message in a chat
 

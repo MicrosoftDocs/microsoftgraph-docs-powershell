@@ -70,6 +70,14 @@ Read-only.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OnlineMeetingArtifact.Read.All, OnlineMeetingArtifact.Read.Chat,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetingArtifact.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetingArtifact.Read.All, OnlineMeetingArtifact.Read.Chat,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

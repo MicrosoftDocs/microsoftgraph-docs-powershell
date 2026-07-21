@@ -75,6 +75,14 @@ Add an educationUser member to an educationClass.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduRoster.ReadWrite.All, Member.Read.Hidden,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.ReadWrite.All, Member.Read.Hidden,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

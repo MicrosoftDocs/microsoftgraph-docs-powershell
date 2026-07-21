@@ -59,6 +59,14 @@ For information about retention labels from an administrator's perspective, see 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.ReadWrite.All, Sites.FullControl.All, Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Remove the retention label from a driveItem
 

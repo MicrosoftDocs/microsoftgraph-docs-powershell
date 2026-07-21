@@ -69,6 +69,14 @@ This cmdlet has the following aliases,
 
 Create a new delegatedAdminRelationshipRequest object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DelegatedAdminRelationship.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DelegatedAdminRelationship.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

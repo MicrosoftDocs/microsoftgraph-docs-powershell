@@ -69,6 +69,14 @@ Only teachers, students, and applications with application permissions can perfo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduCurricula.Read.All, EduCurricula.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduCurricula.Read, EduCurricula.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduCurricula.Read.All, EduCurricula.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Get an educationWordResource
 

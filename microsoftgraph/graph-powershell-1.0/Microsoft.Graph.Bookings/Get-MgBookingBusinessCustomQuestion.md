@@ -67,6 +67,14 @@ Read the properties and relationships of a bookingCustomQuestion object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.Read.All, Bookings.Manage.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.Read.All, Bookings.Manage.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.Read.All, Bookings.Manage.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

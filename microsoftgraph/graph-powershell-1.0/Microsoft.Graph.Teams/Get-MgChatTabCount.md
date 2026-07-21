@@ -55,6 +55,14 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsTab.Read.All, TeamsTab.ReadWrite.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWriteSelfForChat.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsTab.Read.All, TeamsTab.ReadWrite.All, TeamsTab.ReadWriteForChat, TeamsTab.ReadWriteSelfForChat,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsTab.Read.All, TeamsTab.ReadWrite.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWriteSelfForChat.All,  |
+
 ## PARAMETERS
 
 ### -Break

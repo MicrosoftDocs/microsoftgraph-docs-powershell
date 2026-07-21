@@ -60,6 +60,14 @@ Create a new conditionalAccessPolicy.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Application.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.Read.All, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Application.Read.All, Policy.ReadWrite.ConditionalAccess,  |
+
 ## EXAMPLES
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations
 

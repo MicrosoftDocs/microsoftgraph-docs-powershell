@@ -65,6 +65,14 @@ Create a new privilegedAccessGroupAssignmentScheduleRequest object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup, PrivilegedAssignmentSchedule.Remove.AzureADGroup,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup, PrivilegedAssignmentSchedule.Remove.AzureADGroup,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup, PrivilegedAssignmentSchedule.Remove.AzureADGroup,  |
+
 ## EXAMPLES
 ### Example 1: Create an assignment schedule request
 

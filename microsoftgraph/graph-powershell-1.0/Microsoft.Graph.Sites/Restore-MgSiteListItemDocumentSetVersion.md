@@ -56,6 +56,14 @@ Restore a document set version.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.Selected,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.Selected,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.Selected,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

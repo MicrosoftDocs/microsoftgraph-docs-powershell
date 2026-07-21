@@ -58,6 +58,14 @@ This operation is allowed only for channels with a membershipType value of share
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChannelMember.ReadWrite.Group, ChannelMember.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelMember.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMember.ReadWrite.Group, ChannelMember.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -77,6 +77,14 @@ Update the ref of navigation property postAttributeCollection in identity
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

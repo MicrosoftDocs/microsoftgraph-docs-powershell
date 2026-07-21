@@ -117,6 +117,14 @@ This method updates any solution that has a record of the referenced alert ID.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityEvents.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityEvents.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityEvents.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Request without Prefer header
 

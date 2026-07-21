@@ -84,6 +84,14 @@ Update the navigation property jobs in servicePrincipals
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Synchronization.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Synchronization.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

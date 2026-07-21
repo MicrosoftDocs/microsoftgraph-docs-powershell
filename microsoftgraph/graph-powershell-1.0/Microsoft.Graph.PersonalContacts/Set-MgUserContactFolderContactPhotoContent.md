@@ -59,6 +59,14 @@ You can get or set a photo for a contact.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Contacts.ReadWrite,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Contacts.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Contacts.ReadWrite,  |
+
 ## PARAMETERS
 
 ### -Break

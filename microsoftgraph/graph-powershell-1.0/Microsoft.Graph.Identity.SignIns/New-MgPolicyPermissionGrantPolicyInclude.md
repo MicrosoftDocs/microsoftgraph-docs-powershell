@@ -85,6 +85,14 @@ You do this by adding a permissionGrantConditionSet to the includes collection o
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.PermissionGrant,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.PermissionGrant,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.PermissionGrant,  |
+
 ## EXAMPLES
 ### Example 1: Create a permission grant policy include 
 

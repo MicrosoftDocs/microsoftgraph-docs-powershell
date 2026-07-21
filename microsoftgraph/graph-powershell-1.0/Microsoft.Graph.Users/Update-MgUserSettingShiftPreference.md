@@ -79,6 +79,14 @@ Update the properties and relationships of a shiftPreferences object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserShiftPreferences.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserShiftPreferences.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -57,6 +57,14 @@ Set the isPublished property to true, and the publicUrl property to the URL of t
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.Manage.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.Manage.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.Manage.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

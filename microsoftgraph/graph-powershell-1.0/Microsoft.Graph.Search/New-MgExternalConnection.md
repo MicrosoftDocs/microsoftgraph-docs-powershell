@@ -64,6 +64,14 @@ Create a new externalConnection object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

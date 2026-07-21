@@ -64,6 +64,14 @@ Create a new privilegedAccessGroupEligibilityScheduleRequest object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup, PrivilegedEligibilitySchedule.Remove.AzureADGroup,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup, PrivilegedEligibilitySchedule.Remove.AzureADGroup,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup, PrivilegedEligibilitySchedule.Remove.AzureADGroup,  |
+
 ## EXAMPLES
 ### Example 1: An admin creates an eligible group ownership request for a principal
 

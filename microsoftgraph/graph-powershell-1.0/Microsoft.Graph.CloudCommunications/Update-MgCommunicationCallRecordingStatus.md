@@ -79,6 +79,14 @@ This requires the use of the Teams policy-based recording solution.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calls.AccessMedia.All, Calls.JoinGroupCall.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.AccessMedia.All, Calls.JoinGroupCall.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

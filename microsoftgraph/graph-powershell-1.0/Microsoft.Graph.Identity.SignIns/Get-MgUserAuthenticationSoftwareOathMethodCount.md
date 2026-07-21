@@ -56,6 +56,14 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthMethod-SoftwareOATH.Read.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-SoftwareOATH.Read, UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.Read.All, UserAuthMethod-SoftwareOATH.ReadWrite, UserAuthMethod-SoftwareOATH.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-SoftwareOATH.Read.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -Break

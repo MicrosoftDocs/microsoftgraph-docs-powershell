@@ -77,6 +77,14 @@ Follow a user's site or multiple sites.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

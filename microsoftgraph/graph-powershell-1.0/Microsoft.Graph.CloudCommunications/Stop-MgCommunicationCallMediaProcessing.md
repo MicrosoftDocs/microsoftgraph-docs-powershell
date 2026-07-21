@@ -84,6 +84,14 @@ However, it will not cancel a subscribeToTone operation because it operates inde
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

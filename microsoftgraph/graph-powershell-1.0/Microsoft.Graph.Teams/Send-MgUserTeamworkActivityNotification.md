@@ -83,6 +83,14 @@ For more information, see sending Teams activity notifications.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsActivity.Send.User, TeamsActivity.Send,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsActivity.Send,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsActivity.Send.User, TeamsActivity.Send,  |
+
 ## EXAMPLES
 ### Example 1: Send notification to a user for a task created
 

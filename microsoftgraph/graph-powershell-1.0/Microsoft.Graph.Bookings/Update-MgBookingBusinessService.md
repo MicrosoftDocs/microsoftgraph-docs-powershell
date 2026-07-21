@@ -96,6 +96,14 @@ The following are some examples you can customize for a service:\r- Price\r- Typ
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.ReadWrite.All, Bookings.Manage.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalInformation

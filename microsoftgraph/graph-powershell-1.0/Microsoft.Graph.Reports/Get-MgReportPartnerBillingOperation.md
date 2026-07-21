@@ -66,6 +66,14 @@ Read the properties and relationships of an operation object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PartnerBilling.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PartnerBilling.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PartnerBilling.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Get operation succeeded
 
