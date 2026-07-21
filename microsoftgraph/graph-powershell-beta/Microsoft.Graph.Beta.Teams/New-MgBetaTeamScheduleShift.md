@@ -1011,8 +1011,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleshift)
-- [](https://learn.microsoft.com/graph/api/schedule-post-shifts?view=graph-rest-beta)
+- [New-MgBetaTeamScheduleShift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleshift)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-post-shifts?view=graph-rest-beta)
 
 
 

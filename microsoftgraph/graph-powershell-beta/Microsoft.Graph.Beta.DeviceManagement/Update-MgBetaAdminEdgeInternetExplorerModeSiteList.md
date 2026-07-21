@@ -1039,8 +1039,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelist)
-- [](https://learn.microsoft.com/graph/api/browsersitelist-update?view=graph-rest-beta)
+- [Update-MgBetaAdminEdgeInternetExplorerModeSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelist)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/browsersitelist-update?view=graph-rest-beta)
 
 
 

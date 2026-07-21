@@ -779,8 +779,8 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/move-mgbetacommunicationcall)
-- [](https://learn.microsoft.com/graph/api/call-transfer?view=graph-rest-beta)
+- [Move-MgBetaCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/move-mgbetacommunicationcall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-transfer?view=graph-rest-beta)
 
 
 

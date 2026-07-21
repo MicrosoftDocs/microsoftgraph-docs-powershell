@@ -450,7 +450,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetagroupdriveitemlistitemversion)
+- [Restore-MgBetaGroupDriveItemListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetagroupdriveitemlistitemversion)
 
 
 

@@ -499,8 +499,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfeaturerolloutpolicy)
-- [](https://learn.microsoft.com/graph/api/featurerolloutpolicy-delete?view=graph-rest-beta)
+- [Remove-MgBetaPolicyFeatureRolloutPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfeaturerolloutpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/featurerolloutpolicy-delete?view=graph-rest-beta)
 
 
 
