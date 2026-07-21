@@ -56,6 +56,14 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Mail.Read,  |
 | Application | Mail.Read,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.Read,  |
+| Delegated (personal Microsoft account) | Mail.Read,  |
+| Application | Mail.Read,  |
+
 ## PARAMETERS
 
 ### -Break

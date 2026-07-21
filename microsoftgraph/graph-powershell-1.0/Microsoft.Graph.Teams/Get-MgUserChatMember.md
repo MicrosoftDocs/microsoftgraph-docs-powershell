@@ -69,6 +69,14 @@ Nullable.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChatMember.Read.Chat, ChatMember.ReadWrite.All, ChatMember.Read.All, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMember.Read, Chat.Read, Chat.ReadBasic, Chat.ReadWrite, ChatMember.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMember.Read.Chat, Chat.Manage.Chat, Chat.Read.All, Chat.ReadBasic.All, Chat.ReadWrite.All, ChatMember.Read.All, ChatMember.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -All

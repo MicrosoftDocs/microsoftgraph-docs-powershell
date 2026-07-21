@@ -66,6 +66,14 @@ Read the properties and relationships of a healthIssue object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesHealth.Read.All, SecurityIdentitiesHealth.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityIdentitiesHealth.Read.All, SecurityIdentitiesHealth.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityIdentitiesHealth.Read.All, SecurityIdentitiesHealth.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

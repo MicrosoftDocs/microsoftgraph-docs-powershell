@@ -69,6 +69,14 @@ Read the properties and relationships of an allowedValue object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

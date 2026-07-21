@@ -49,6 +49,14 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Chat.ReadBasic.All, ChatSettings.ReadWrite.Chat, ChatSettings.Read.Chat, Chat.Read.All, Chat.Manage.Chat,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.ReadBasic.All, Chat.Manage.Chat, Chat.Read.All, ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat,  |
+
 ## PARAMETERS
 
 ### -Break

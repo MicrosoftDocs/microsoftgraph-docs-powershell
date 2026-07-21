@@ -68,6 +68,14 @@ Read the properties and relationships of the cloudPcOnPremisesConnection object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Get the default properties of an Azure network connection
 

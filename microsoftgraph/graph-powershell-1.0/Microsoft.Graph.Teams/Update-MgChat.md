@@ -91,6 +91,14 @@ Update the properties of a chat object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChatSettings.ReadWrite.Chat, Chat.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatSettings.ReadWrite.Chat, Chat.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

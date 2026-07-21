@@ -83,6 +83,14 @@ To grant an app role assignment to a user, you need three identifiers:
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AppRoleAssignment.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AppRoleAssignment.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Assign a user an application role
 

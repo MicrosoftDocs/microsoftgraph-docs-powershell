@@ -60,6 +60,14 @@ Create a new authenticationCombinationConfiguration object which can be of one o
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
+
 ## EXAMPLES
 ### Example 1: Create a fido2combinationConfiguration object
 

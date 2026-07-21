@@ -55,6 +55,14 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsAppInstallation.Read.Chat, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ManageSelectedForChat.All, ResourceSpecificPermissionGrant.ReadForChat.All, Chat.Manage.Chat,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ResourceSpecificPermissionGrant.ReadForChat, TeamsAppInstallation.ManageSelectedForChat, TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteSelfForChat,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsAppInstallation.Read.Chat, Chat.Manage.Chat, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ManageSelectedForChat.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All,  |
+
 ## PARAMETERS
 
 ### -Break

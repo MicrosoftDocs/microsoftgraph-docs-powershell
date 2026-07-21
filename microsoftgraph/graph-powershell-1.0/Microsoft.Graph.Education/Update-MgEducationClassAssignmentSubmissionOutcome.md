@@ -83,6 +83,14 @@ Only teachers can perform this operation.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduAssignments.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Update a feedback outcome
 

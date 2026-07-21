@@ -85,6 +85,14 @@ The app must have an associated service principal in the tenant.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EventListener.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EventListener.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EventListener.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

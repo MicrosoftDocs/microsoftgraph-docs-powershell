@@ -91,6 +91,14 @@ Update the properties of an incident object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIncident.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityIncident.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityIncident.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

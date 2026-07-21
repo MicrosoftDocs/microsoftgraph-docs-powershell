@@ -71,6 +71,14 @@ The operation returns an error if the message does not exist for the tenant.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ServiceMessage.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ServiceMessage.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ServiceMessage.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

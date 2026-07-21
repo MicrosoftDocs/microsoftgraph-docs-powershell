@@ -66,6 +66,14 @@ See examples of how to define a schema extension that describes a training cours
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Creating a schema extension using a verified domain
 

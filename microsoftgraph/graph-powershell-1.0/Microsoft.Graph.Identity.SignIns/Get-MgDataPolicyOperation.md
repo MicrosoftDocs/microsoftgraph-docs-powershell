@@ -66,6 +66,14 @@ Retrieve the properties of a dataPolicyOperation object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Export.All, User.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Export.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Export.All, User.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

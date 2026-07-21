@@ -61,6 +61,14 @@ Only teachers in the class can perform this operation.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduCurricula.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduCurricula.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduCurricula.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -58,6 +58,14 @@ Cancel a registrant's registration record for a webinar.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | VirtualEventRegistration-Anon.ReadWrite.Chat,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualEvent.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualEventRegistration-Anon.ReadWrite.Chat,  |
+
 ## PARAMETERS
 
 ### -Break

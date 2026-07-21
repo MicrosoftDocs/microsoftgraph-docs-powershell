@@ -76,6 +76,14 @@ For more information on audit logs for bitlocker recovery keys, see the KeyManag
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BitlockerKey.ReadBasic.All, BitlockerKey.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BitlockerKey.ReadBasic.All, BitlockerKey.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BitlockerKey.ReadBasic.All, BitlockerKey.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Get the BitLocker key by specifying the key id
 

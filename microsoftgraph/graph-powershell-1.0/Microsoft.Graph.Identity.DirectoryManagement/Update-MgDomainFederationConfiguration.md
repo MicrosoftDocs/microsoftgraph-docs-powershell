@@ -89,6 +89,14 @@ Update the properties of an internalDomainFederation object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Domain-InternalFederation.ReadWrite.All, Domain.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain-InternalFederation.ReadWrite.All, Domain.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain-InternalFederation.ReadWrite.All, Domain.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Update the federation settings for a federated domain
 

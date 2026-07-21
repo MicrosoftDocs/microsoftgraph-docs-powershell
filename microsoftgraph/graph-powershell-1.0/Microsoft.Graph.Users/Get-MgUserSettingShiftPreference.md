@@ -55,6 +55,14 @@ Retrieve the properties and relationships of a shiftPreferences object by ID.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserShiftPreferences.Read.All, UserShiftPreferences.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserShiftPreferences.Read.All, UserShiftPreferences.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

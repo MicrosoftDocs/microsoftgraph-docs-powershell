@@ -70,6 +70,14 @@ For information on using advanced hunting in the Microsoft 365 Defender portal, 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ThreatHunting.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatHunting.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ThreatHunting.Read.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -101,6 +101,14 @@ Assignments start in draft status, which means that students can't see the assig
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

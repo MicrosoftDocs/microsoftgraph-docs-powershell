@@ -95,6 +95,14 @@ A channel can’t be archived or unarchived if its team is archived.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChannelSettings.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Archive a channel
 

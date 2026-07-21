@@ -46,6 +46,14 @@ Get deviceRegistrationPolicy from policies
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.DeviceConfiguration, Policy.Read.All, Policy.ReadWrite.DeviceConfiguration,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration,  |
+
 ## PARAMETERS
 
 ### -Break

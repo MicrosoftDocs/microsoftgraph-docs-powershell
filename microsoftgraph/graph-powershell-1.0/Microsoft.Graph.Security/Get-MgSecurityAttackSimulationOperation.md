@@ -68,6 +68,14 @@ Get an attack simulation operation to track a long-running operation request for
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AttackSimulation.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AttackSimulation.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AttackSimulation.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
