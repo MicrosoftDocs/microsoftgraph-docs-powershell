@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgandsecuritydatasecurityandgovernancesensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel
 ---
@@ -28,7 +28,7 @@ Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel [-ResponseHeadersV
  [-ProtectedContents <IMicrosoftGraphProtectedContent[]>] [-SupportedContentFormats <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### And
@@ -39,7 +39,6 @@ Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -60,8 +59,9 @@ Computes the rights and inheritance for sensitivity labels based on the input co
 | Application | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -79,6 +79,10 @@ $params = @{
 }
 
 Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel Cmdlet.
+
 
 ## PARAMETERS
 

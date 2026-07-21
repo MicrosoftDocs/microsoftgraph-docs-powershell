@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthread
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupConversationThread
 ---
@@ -30,7 +30,7 @@ Update-MgGroupConversationThread -ConversationId <string> -ConversationThreadId 
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <string>] [-UniqueSenders <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -41,7 +41,6 @@ Update-MgGroupConversationThread -ConversationId <string> -ConversationThreadId 
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,7 +53,6 @@ Update-MgGroupConversationThread -InputObject <IGroupsIdentity> [-ResponseHeader
  [-UniqueSenders <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -64,7 +62,7 @@ Update-MgGroupConversationThread -InputObject <IGroupsIdentity>
  -BodyParameter <IMicrosoftGraphConversationThread> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -165,7 +163,7 @@ HelpMessage: ''
 ### -CcRecipients
 
 The Cc: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
 To construct, see NOTES section for CCRECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -670,7 +668,7 @@ HelpMessage: ''
 ### -ToRecipients
 
 The To: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
 To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -785,7 +783,7 @@ BODYPARAMETER `<IMicrosoftGraphConversationThread>`: conversationThread
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [CcRecipients <IMicrosoftGraphRecipient[]>]: The Cc: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
     [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Address <String>]: The email address of the person or entity.
@@ -857,7 +855,7 @@ Read-only.
   [Preview <String>]: A short summary from the body of the latest post in this conversation.
 Returned by default.
   [ToRecipients <IMicrosoftGraphRecipient[]>]: The To: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
   [Topic <String>]: The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
 Returned by default.
@@ -865,7 +863,7 @@ Returned by default.
 Returned by default.
 
 CCRECIPIENTS <IMicrosoftGraphRecipient[]>: The Cc: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Address <String>]: The email address of the person or entity.
@@ -957,7 +955,7 @@ Read-only.
     [Value <String>]: A property value.
 
 TORECIPIENTS <IMicrosoftGraphRecipient[]>: The To: recipients for the thread.
-Returned only on $select.
+Requires $select to retrieve.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Address <String>]: The email address of the person or entity.

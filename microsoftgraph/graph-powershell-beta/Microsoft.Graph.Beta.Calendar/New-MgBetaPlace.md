@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlace
 ---
@@ -31,7 +31,7 @@ New-MgBetaPlace [-ResponseHeadersVariable <string>] [-AdditionalProperties <hash
  [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -40,7 +40,7 @@ New-MgBetaPlace [-ResponseHeadersVariable <string>] [-AdditionalProperties <hash
 New-MgBetaPlace -BodyParameter <IMicrosoftGraphPlace> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -52,6 +52,121 @@ This cmdlet has the following aliases,
 
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Place.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Place.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Create a building
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.building"
+	displayName = "B001"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a building
+
+### Example 2: Create a floor
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.floor"
+	displayName = "F1"
+	parentId = "767a31a7-6987-41c9-b829-ab351b8aab53"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a floor
+
+### Example 3: Create a section
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.section"
+	displayName = "S1"
+	parentId = "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a section
+
+### Example 4: Create a desk
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.desk"
+	displayName = "D1"
+	parentId = "1ad0f725-6885-49c5-9a47-3b22a1f9409d"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a desk
+
+### Example 5: Create a room
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.room"
+	displayName = "Conf Room 4/3.3G11"
+	parentId = "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
+	bookingType = "standard"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a room
+
+### Example 6: Create a workspace
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.workspace"
+	parentId = "f7de7265-e420-47b4-9d49-28d728716241"
+	displayName = "testSpace001"
+	tags = @(
+	"test"
+)
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a workspace
+
 
 ## PARAMETERS
 
@@ -683,7 +798,6 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 - [New-MgBetaPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-beta)
-
 
 
 

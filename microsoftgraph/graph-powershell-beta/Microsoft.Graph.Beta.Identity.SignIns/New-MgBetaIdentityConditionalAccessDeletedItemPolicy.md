@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessdeleteditempolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ## SYNOPSIS
 
 Create new navigation property to policies for identity
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessDeletedItemPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessDeletedItemPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-MgBetaIdentityConditionalAccessDeletedItemPolicy [-ResponseHeadersVariable <
  [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +41,7 @@ New-MgBetaIdentityConditionalAccessDeletedItemPolicy
  -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -672,9 +675,10 @@ Supports $filter (eq, ne, not , and in).
       [PolicyType <String>]: authenticationStrengthPolicyType
       [RequirementsSatisfied <String>]: authenticationStrengthRequirements
     [BuiltInControls <String[]>]: List of values of built-in controls required by the policy.
-Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
+Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue, riskRemediation.
+Use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: riskRemediation.
     [CustomAuthenticationFactors <String[]>]: List of custom controls IDs required by the policy.
-To learn more about custom control, see Custom controls (preview).
+For more information, see Custom controls.
     [Operator <String>]: Defines the relationship of the grant controls.
 Possible values: AND, OR.
     [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.
@@ -825,9 +829,10 @@ Supports $filter (eq, ne, not , and in).
     [PolicyType <String>]: authenticationStrengthPolicyType
     [RequirementsSatisfied <String>]: authenticationStrengthRequirements
   [BuiltInControls <String[]>]: List of values of built-in controls required by the policy.
-Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
+Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue, riskRemediation.
+Use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: riskRemediation.
   [CustomAuthenticationFactors <String[]>]: List of custom controls IDs required by the policy.
-To learn more about custom control, see Custom controls (preview).
+For more information, see Custom controls.
   [Operator <String>]: Defines the relationship of the grant controls.
 Possible values: AND, OR.
   [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.

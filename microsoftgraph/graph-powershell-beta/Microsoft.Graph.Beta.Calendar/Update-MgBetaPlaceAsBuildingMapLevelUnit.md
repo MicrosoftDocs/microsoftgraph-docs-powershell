@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasbuildingmaplevelunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlaceAsBuildingMapLevelUnit
 ---
@@ -28,7 +28,6 @@ Update-MgBetaPlaceAsBuildingMapLevelUnit -LevelMapId <string> -PlaceId <string> 
  [-PlaceId1 <string>] [-Properties <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -38,7 +37,7 @@ Update-MgBetaPlaceAsBuildingMapLevelUnit -LevelMapId <string> -PlaceId <string> 
  -BodyParameter <IMicrosoftGraphUnitMap> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,7 +47,7 @@ Update-MgBetaPlaceAsBuildingMapLevelUnit -InputObject <ICalendarIdentity> [-Plac
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
  [-Properties <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -58,7 +57,7 @@ Update-MgBetaPlaceAsBuildingMapLevelUnit -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphUnitMap> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -69,6 +68,39 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of an existing unitMap object in IMDF format on a specified floor, or create one if it doesn't exist.
+
+## EXAMPLES
+### Example 1: Update an existing unitMap
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	placeId = $null
+	properties = '{"id":"005eb3b8-c95d-4d35-a8a0-22d3cb4d6542","type":"Feature","feature_type":"unit","geometry":{"type":"Polygon","coordinates":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},"properties":{"name":{"en":"Test room from Test Floor 1 (120.3)"},"level_id":"e537d463-475b-43c3-a650-184566c68bc9","display_point":{"type":"Point","coordinates":[-121.8888983,37.3295292]},"category":"room"}}'
+}
+
+Update-MgBetaPlaceAsBuildingMapLevelUnit -PlaceId $placeId -LevelMapId $levelMapId -UnitMapId $unitMapId -BodyParameter $params
+
+```
+This example will update an existing unitmap
+
+### Example 2: Create a unitMap if it doesn't exist
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	properties = '{"id":"005eb3b8-c95d-4d35-a8a0-22d3cb4d6996","type":"Feature","feature_type":"unit","geometry":{"type":"Polygon","coordinates":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},"properties":{"name":{"en":"Test Create room111111111111"},"level_id":"e537d463-475b-43c3-a650-184566c68bc9","display_point":{"type":"Point","coordinates":[-121.8888983,37.3295292]},"category":"room"}}'
+}
+
+Update-MgBetaPlaceAsBuildingMapLevelUnit -PlaceId $placeId -LevelMapId $levelMapId -UnitMapId $unitMapId -BodyParameter $params
+
+```
+This example will create a unitmap if it doesn't exist
+
 
 ## PARAMETERS
 
@@ -599,7 +631,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Update-MgBetaPlaceAsBuildingMapLevelUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasbuildingmaplevelunit)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/unitmap-update?view=graph-rest-beta)
-
 
 
 

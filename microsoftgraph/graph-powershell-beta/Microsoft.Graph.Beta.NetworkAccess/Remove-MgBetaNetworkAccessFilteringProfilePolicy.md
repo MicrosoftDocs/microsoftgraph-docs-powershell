@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaNetworkAccessFilteringProfilePolicy
 ---
@@ -13,7 +13,8 @@ title: Remove-MgBetaNetworkAccessFilteringProfilePolicy
 
 ## SYNOPSIS
 
-Delete a threatIntelligencePolicyLink object.
+Delete a filteringPolicyLink object.
+Use this operation to delete any derived type, including:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
 
 ## SYNTAX
 
@@ -24,7 +25,6 @@ Remove-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId <string> -P
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -34,7 +34,6 @@ Remove-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIde
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -44,7 +43,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a threatIntelligencePolicyLink object.
+Delete a filteringPolicyLink object.
+Use this operation to delete any derived type, including:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
 
 **Permissions**
 
@@ -53,6 +53,30 @@ Delete a threatIntelligencePolicyLink object.
 | Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Delete a filteringPolicyLink
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+Remove-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
+
+```
+This example will delete a filteringpolicylink
+
+### Example 2: Delete a tlsInspectionPolicyLink
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+Remove-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
+
+```
+This example will delete a tlsinspectionpolicylink
+
 
 ## PARAMETERS
 
@@ -410,6 +434,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
   [BranchSiteId <String>]: The unique identifier of branchSite
+  [CloudFirewallPolicyId <String>]: The unique identifier of cloudFirewallPolicy
   [ConditionalAccessPolicyId <String>]: The unique identifier of conditionalAccessPolicy
   [ConnectionId <String>]: The unique identifier of connection
   [ConnectivityConfigurationLinkId <String>]: The unique identifier of connectivityConfigurationLink
@@ -421,6 +446,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [FilteringProfileId <String>]: The unique identifier of filteringProfile
   [ForwardingPolicyId <String>]: The unique identifier of forwardingPolicy
   [ForwardingProfileId <String>]: The unique identifier of forwardingProfile
+  [GenerativeAiInsightTransactionId <String>]: The unique identifier of generativeAIInsight
   [NetworkAccessTrafficTransactionId <String>]: The unique identifier of networkAccessTraffic
   [PolicyLinkId <String>]: The unique identifier of policyLink
   [PolicyRuleId <String>]: The unique identifier of policyRule
@@ -435,8 +461,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgBetaNetworkAccessFilteringProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofilepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-delete?view=graph-rest-beta)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-delete?view=graph-rest-beta)
 
 
 

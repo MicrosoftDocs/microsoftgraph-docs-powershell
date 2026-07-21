@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessFilteringProfilePolicy
 ---
@@ -13,7 +13,8 @@ title: Update-MgBetaNetworkAccessFilteringProfilePolicy
 
 ## SYNOPSIS
 
-Update the properties of a threatIntelligencePolicyLink object.
+Modify the properties of an existing filteringPolicyLink object to update its traffic rules.
+Use this operation to update any derived type, including:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
 
 ## SYNTAX
 
@@ -25,7 +26,7 @@ Update-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId <string> -P
  [-Policy <IMicrosoftGraphNetworkaccessPolicy>] [-State <string>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -35,7 +36,7 @@ Update-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId <string> -P
  -BodyParameter <IMicrosoftGraphNetworkaccessPolicyLink> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -46,7 +47,7 @@ Update-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIde
  [-Policy <IMicrosoftGraphNetworkaccessPolicy>] [-State <string>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -56,7 +57,7 @@ Update-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIde
  -BodyParameter <IMicrosoftGraphNetworkaccessPolicyLink> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -66,7 +67,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a threatIntelligencePolicyLink object.
+Modify the properties of an existing filteringPolicyLink object to update its traffic rules.
+Use this operation to update any derived type, including:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
 
 **Permissions**
 
@@ -75,6 +77,39 @@ Update the properties of a threatIntelligencePolicyLink object.
 | Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Update a filteringPolicyLink
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.networkaccess.filteringPolicyLink"
+	state = "disabled"
+}
+
+Update-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId -BodyParameter $params
+
+```
+This example will update a filteringpolicylink
+
+### Example 2: Update a tlsInspectionPolicyLink
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+$params = @{
+	state = "disabled"
+}
+
+Update-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId -BodyParameter $params
+
+```
+This example will update a tlsinspectionpolicylink
+
 
 ## PARAMETERS
 
@@ -595,6 +630,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
   [BranchSiteId <String>]: The unique identifier of branchSite
+  [CloudFirewallPolicyId <String>]: The unique identifier of cloudFirewallPolicy
   [ConditionalAccessPolicyId <String>]: The unique identifier of conditionalAccessPolicy
   [ConnectionId <String>]: The unique identifier of connection
   [ConnectivityConfigurationLinkId <String>]: The unique identifier of connectivityConfigurationLink
@@ -606,6 +642,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [FilteringProfileId <String>]: The unique identifier of filteringProfile
   [ForwardingPolicyId <String>]: The unique identifier of forwardingPolicy
   [ForwardingProfileId <String>]: The unique identifier of forwardingProfile
+  [GenerativeAiInsightTransactionId <String>]: The unique identifier of generativeAIInsight
   [NetworkAccessTrafficTransactionId <String>]: The unique identifier of networkAccessTraffic
   [PolicyLinkId <String>]: The unique identifier of policyLink
   [PolicyRuleId <String>]: The unique identifier of policyRule
@@ -632,8 +669,7 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgBetaNetworkAccessFilteringProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofilepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-update?view=graph-rest-beta)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-update?view=graph-rest-beta)
 
 
 

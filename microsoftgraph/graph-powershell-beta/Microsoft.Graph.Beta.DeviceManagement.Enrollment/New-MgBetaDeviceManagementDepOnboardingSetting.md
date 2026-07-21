@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeponboardingsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementDepOnboardingSetting
 ---
@@ -33,7 +33,7 @@ New-MgBetaDeviceManagementDepOnboardingSetting [-ResponseHeadersVariable <string
  [-TokenExpirationDateTime <datetime>] [-TokenName <string>] [-TokenType <DepTokenType>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -43,7 +43,6 @@ New-MgBetaDeviceManagementDepOnboardingSetting -BodyParameter <IMicrosoftGraphDe
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -881,6 +880,14 @@ Read-only.
     [AutoAdvanceSetupEnabled <Boolean?>]: Indicates if Setup Assistant will automatically advance through its screen
     [AutoUnlockWithWatchDisabled <Boolean?>]: Indicates if UnlockWithWatch screen is disabled
     [ChooseYourLockScreenDisabled <Boolean?>]: Indicates if iCloud Documents and Desktop screen is disabled
+    [DepProfileAdminAccountPasswordRotationSetting <IMicrosoftGraphDepProfileAdminAccountPasswordRotationSetting>]: Settings for local admin account password automatic rotation.
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AutoRotationPeriodInDays <Int32?>]: Indicates the number of days between 1-180 since the last rotation after which to rotate the local admin password.
+      [DepProfileDelayAutoRotationSetting <IMicrosoftGraphDepProfileDelayAutoRotationSetting>]: Settings related to auto rotation of local admin account password after password retrieval through Graph.
+These are optional settings
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [OnRetrievalAutoRotatePasswordEnabled <Boolean?>]: Indicates whether the admin account password should be rotated when retrieved by IT Admin through Intune.
+        [OnRetrievalDelayAutoRotatePasswordInHours <Int32?>]: Indicates how long in hours (between 1 and 24 hours) after password retrieval through Graph should automatic rotation be initiated for the admin account password.
     [DontAutoPopulatePrimaryAccountInfo <Boolean?>]: Indicates whether Setup Assistant will auto populate the primary account information
     [EnableRestrictEditing <Boolean?>]: Indicates whether the user will enable blockediting
     [FileVaultDisabled <Boolean?>]: Indicates if file vault is disabled
@@ -894,6 +901,10 @@ Read-only.
     [RequestRequiresNetworkTether <Boolean?>]: Indicates if the device is network-tethered to run the command
     [SetPrimarySetupAccountAsRegularUser <Boolean?>]: Indicates whether Setup Assistant will set the account as a regular user
     [SkipPrimarySetupAccountCreation <Boolean?>]: Indicates whether Setup Assistant will skip the user interface for primary account setup
+    [UsePlatformSsoDuringSetupAssistant <Boolean?>]: Indicates whether Platform SSO is used as part of device enrollment during Setup Assistant.
+When TRUE, Platform SSO is used in device enrollment during Setup Assistant.
+When FALSE Platform SSO is not used in enrollment during Setup Assistant.
+Note: This value cannot be TRUE when configurationWebUrl is TRUE.
     [ZoomDisabled <Boolean?>]: Indicates if zoom setup pane is disabled
   [DefaultTvOSEnrollmentProfile <IMicrosoftGraphDepTvOSEnrollmentProfile>]: The depTvOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to Apple TV device configuration.
 This type of profile must be assigned to Apple TV devices before the devices can enroll via DEP.
@@ -1066,6 +1077,14 @@ Read-only.
   [AutoAdvanceSetupEnabled <Boolean?>]: Indicates if Setup Assistant will automatically advance through its screen
   [AutoUnlockWithWatchDisabled <Boolean?>]: Indicates if UnlockWithWatch screen is disabled
   [ChooseYourLockScreenDisabled <Boolean?>]: Indicates if iCloud Documents and Desktop screen is disabled
+  [DepProfileAdminAccountPasswordRotationSetting <IMicrosoftGraphDepProfileAdminAccountPasswordRotationSetting>]: Settings for local admin account password automatic rotation.
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AutoRotationPeriodInDays <Int32?>]: Indicates the number of days between 1-180 since the last rotation after which to rotate the local admin password.
+    [DepProfileDelayAutoRotationSetting <IMicrosoftGraphDepProfileDelayAutoRotationSetting>]: Settings related to auto rotation of local admin account password after password retrieval through Graph.
+These are optional settings
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [OnRetrievalAutoRotatePasswordEnabled <Boolean?>]: Indicates whether the admin account password should be rotated when retrieved by IT Admin through Intune.
+      [OnRetrievalDelayAutoRotatePasswordInHours <Int32?>]: Indicates how long in hours (between 1 and 24 hours) after password retrieval through Graph should automatic rotation be initiated for the admin account password.
   [DontAutoPopulatePrimaryAccountInfo <Boolean?>]: Indicates whether Setup Assistant will auto populate the primary account information
   [EnableRestrictEditing <Boolean?>]: Indicates whether the user will enable blockediting
   [FileVaultDisabled <Boolean?>]: Indicates if file vault is disabled
@@ -1079,6 +1098,10 @@ Read-only.
   [RequestRequiresNetworkTether <Boolean?>]: Indicates if the device is network-tethered to run the command
   [SetPrimarySetupAccountAsRegularUser <Boolean?>]: Indicates whether Setup Assistant will set the account as a regular user
   [SkipPrimarySetupAccountCreation <Boolean?>]: Indicates whether Setup Assistant will skip the user interface for primary account setup
+  [UsePlatformSsoDuringSetupAssistant <Boolean?>]: Indicates whether Platform SSO is used as part of device enrollment during Setup Assistant.
+When TRUE, Platform SSO is used in device enrollment during Setup Assistant.
+When FALSE Platform SSO is not used in enrollment during Setup Assistant.
+Note: This value cannot be TRUE when configurationWebUrl is TRUE.
   [ZoomDisabled <Boolean?>]: Indicates if zoom setup pane is disabled
 
 ENROLLMENTPROFILES <IMicrosoftGraphEnrollmentProfile[]>: The enrollment profiles.

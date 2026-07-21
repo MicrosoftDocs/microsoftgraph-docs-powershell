@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroom
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlaceAsRoom
 ---
@@ -31,7 +31,7 @@ Get-MgBetaPlaceAsRoom [-ExpandProperty <string[]>] [-Property <string[]>] [-Filt
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -40,7 +40,7 @@ Get-MgBetaPlaceAsRoom [-ExpandProperty <string[]>] [-Property <string[]>] [-Filt
 Get-MgBetaPlaceAsRoom -PlaceId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -49,7 +49,7 @@ Get-MgBetaPlaceAsRoom -PlaceId <string> [-ExpandProperty <string[]>] [-Property 
 Get-MgBetaPlaceAsRoom -InputObject <ICalendarIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -65,7 +65,7 @@ Compared with the findRooms and findRoomLists functions, this operation returns 
 For details about how they compare, see Using the places API.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: List all rooms defined in the tenant
 
 ```powershell
 
@@ -74,7 +74,7 @@ Import-Module Microsoft.Graph.Beta.Calendar
 Get-MgBetaPlaceAsRoom
 
 ```
-This example shows how to use the Get-MgBetaPlaceAsRoom Cmdlet.
+This example will list all rooms defined in the tenant
 
 
 ## PARAMETERS

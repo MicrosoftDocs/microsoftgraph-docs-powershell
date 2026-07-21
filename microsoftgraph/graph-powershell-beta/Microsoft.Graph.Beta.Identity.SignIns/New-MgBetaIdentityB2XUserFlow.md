@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityB2XUserFlow
 ---
@@ -33,7 +33,6 @@ New-MgBetaIdentityB2XUserFlow [-ResponseHeadersVariable <string>]
  [-UserFlowTypeVersion <float>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -43,7 +42,6 @@ New-MgBetaIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -62,6 +60,74 @@ Create a new b2xIdentityUserFlow object.
 | Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityUserFlow.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Create a user flow with the default values
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	id = "Partner"
+	userFlowType = "signUpOrSignIn"
+	userFlowTypeVersion = 1
+}
+
+New-MgBetaIdentityB2XUserFlow -BodyParameter $params
+
+```
+This example will create a user flow with the default values
+
+### Example 2: Create a user flow with the default values and an identity provider
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	id = "Partner"
+	userFlowType = "signUpOrSignIn"
+	userFlowTypeVersion = 1
+	identityProviders = @(
+		@{
+			id = "Facebook-OAuth"
+			type = "Facebook"
+			name = "Facebook"
+		}
+	)
+}
+
+New-MgBetaIdentityB2XUserFlow -BodyParameter $params
+
+```
+This example will create a user flow with the default values and an identity provider
+
+### Example 3: Create a user flow with the default values and configuration for API connectors
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	id = "UserFlowWithAPIConnector"
+	userFlowType = "signUpOrSignIn"
+	userFlowTypeVersion = 1
+	apiConnectorConfiguration = @{
+		postFederationSignup = @{
+			"@odata.id" = '{apiConnectorId}'
+		}
+		postAttributeCollection = @{
+			"@odata.id" = '{apiConnectorId}'
+		}
+	}
+}
+
+New-MgBetaIdentityB2XUserFlow -BodyParameter $params
+
+```
+This example will create a user flow with the default values and configuration for api connectors
+
 
 ## PARAMETERS
 
@@ -690,7 +756,6 @@ Read-only.
 
 - [New-MgBetaIdentityB2XUserFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflow)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-beta)
-
 
 
 

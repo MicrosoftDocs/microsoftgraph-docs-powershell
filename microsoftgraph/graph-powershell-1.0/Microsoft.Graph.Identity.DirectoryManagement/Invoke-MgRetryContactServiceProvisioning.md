@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgretrycontactserviceprovisioning
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/17/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgRetryContactServiceProvisioning
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgRetryContactServiceProvisioning
 
 ## SYNOPSIS
 
-Invoke action retryServiceProvisioning
+Retry the orgContact service provisioning.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRetryContactServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaRetryContactServiceProvisioning?view=graph-powershell-beta)
@@ -27,7 +27,6 @@ Invoke-MgRetryContactServiceProvisioning -OrgContactId <string> [-ResponseHeader
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RetryViaIdentity
@@ -37,7 +36,6 @@ Invoke-MgRetryContactServiceProvisioning -InputObject <IIdentityDirectoryManagem
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -47,7 +45,20 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke action retryServiceProvisioning
+Retry the orgContact service provisioning.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Invoke-MgRetryContactServiceProvisioning -OrgContactId $orgContactId
+
+```
+This example shows how to use the Invoke-MgRetryContactServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 
@@ -384,8 +395,11 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
+  [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
+  [ProfileSourceId <String>]: The unique identifier of profileSource
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
+  [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
@@ -394,7 +408,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgRetryContactServiceProvisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgretrycontactserviceprovisioning)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-1.0)
 
 
 
