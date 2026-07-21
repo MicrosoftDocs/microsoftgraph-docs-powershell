@@ -937,7 +937,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingconversationmessage)
+- [Update-MgBetaCommunicationOnlineMeetingConversationMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingconversationmessage)
 
 
 

@@ -833,7 +833,7 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddeviceconfigurationstate)
+- [New-MgBetaDeviceManagementComanagedDeviceConfigurationState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddeviceconfigurationstate)
 
 
 

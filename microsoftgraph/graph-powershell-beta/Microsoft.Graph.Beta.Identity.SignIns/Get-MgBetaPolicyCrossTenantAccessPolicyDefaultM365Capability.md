@@ -631,8 +631,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicydefaultm365capability)
-- [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities?view=graph-rest-beta)
+- [Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicydefaultm365capability)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities?view=graph-rest-beta)
 
 
 

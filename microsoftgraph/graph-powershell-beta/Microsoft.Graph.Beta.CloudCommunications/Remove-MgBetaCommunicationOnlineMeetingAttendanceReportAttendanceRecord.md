@@ -486,7 +486,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingattendancereportattendancerecord)
+- [Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingattendancereportattendancerecord)
 
 
 

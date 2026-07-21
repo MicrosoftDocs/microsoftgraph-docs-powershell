@@ -735,7 +735,7 @@ This property has no impact on existing users who have already been synchronized
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetapolicydeleteditemcrosstenantpartneridentitysynchronization)
+- [Set-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetapolicydeleteditemcrosstenantpartneridentitysynchronization)
 
 
 

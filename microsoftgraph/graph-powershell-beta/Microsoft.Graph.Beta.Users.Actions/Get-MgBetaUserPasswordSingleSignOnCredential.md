@@ -361,8 +361,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserpasswordsinglesignoncredential)
-- [](https://learn.microsoft.com/graph/api/user-getpasswordsinglesignoncredentials?view=graph-rest-beta)
+- [Get-MgBetaUserPasswordSingleSignOnCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserpasswordsinglesignoncredential)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-getpasswordsinglesignoncredentials?view=graph-rest-beta)
 
 
 

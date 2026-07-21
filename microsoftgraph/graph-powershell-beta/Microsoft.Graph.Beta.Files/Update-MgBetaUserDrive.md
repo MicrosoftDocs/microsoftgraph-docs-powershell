@@ -92188,7 +92188,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrive)
+- [Update-MgBetaUserDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrive)
 
 
 

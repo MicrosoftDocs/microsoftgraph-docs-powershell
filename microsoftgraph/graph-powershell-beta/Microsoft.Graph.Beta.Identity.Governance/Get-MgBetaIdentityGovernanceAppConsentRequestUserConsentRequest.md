@@ -682,9 +682,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequest)
-- [](https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-beta)
+- [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-beta)
 
 
 

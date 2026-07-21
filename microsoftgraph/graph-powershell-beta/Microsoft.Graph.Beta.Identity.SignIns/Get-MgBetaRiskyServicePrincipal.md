@@ -640,9 +640,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyserviceprincipal)
-- [](https://learn.microsoft.com/graph/api/riskyserviceprincipal-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/identityprotectionroot-list-riskyserviceprincipals?view=graph-rest-beta)
+- [Get-MgBetaRiskyServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyserviceprincipal)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyserviceprincipal-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityprotectionroot-list-riskyserviceprincipals?view=graph-rest-beta)
 
 
 

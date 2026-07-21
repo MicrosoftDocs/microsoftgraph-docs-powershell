@@ -534,8 +534,8 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetachatmember)
-- [](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)
+- [Add-MgBetaChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetachatmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)
 
 
 

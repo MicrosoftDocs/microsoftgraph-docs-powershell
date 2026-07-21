@@ -632,9 +632,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycustomsecurityattributedefinition)
-- [](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/directory-list-customsecurityattributedefinitions?view=graph-rest-beta)
+- [Get-MgBetaDirectoryCustomSecurityAttributeDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycustomsecurityattributedefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-list-customsecurityattributedefinitions?view=graph-rest-beta)
 
 
 

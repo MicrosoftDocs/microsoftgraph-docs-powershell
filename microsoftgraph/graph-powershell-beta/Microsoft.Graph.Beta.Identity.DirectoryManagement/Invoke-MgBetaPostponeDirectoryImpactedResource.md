@@ -527,8 +527,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapostponedirectoryimpactedresource)
-- [](https://learn.microsoft.com/graph/api/impactedresource-postpone?view=graph-rest-beta)
+- [Invoke-MgBetaPostponeDirectoryImpactedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapostponedirectoryimpactedresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/impactedresource-postpone?view=graph-rest-beta)
 
 
 

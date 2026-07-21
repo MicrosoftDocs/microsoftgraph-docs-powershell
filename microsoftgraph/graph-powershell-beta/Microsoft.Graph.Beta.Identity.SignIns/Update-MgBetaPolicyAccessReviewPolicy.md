@@ -458,8 +458,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy)
-- [](https://learn.microsoft.com/graph/api/accessreviewpolicy-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyAccessReviewPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewpolicy-update?view=graph-rest-beta)
 
 
 
