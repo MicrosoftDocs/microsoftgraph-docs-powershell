@@ -18,6 +18,9 @@ Get the deployment access key for Microsoft Defender for Identity that is requir
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentitySensorDeploymentAccessKey](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentitySensorDeploymentAccessKey?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentitySensorDeploymentAccessKey](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentitySensorDeploymentAccessKey?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

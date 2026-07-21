@@ -23,6 +23,9 @@ Customers through Microsoft Entra ID for customers can also use this API operati
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserByUserPrincipalName?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserByUserPrincipalName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

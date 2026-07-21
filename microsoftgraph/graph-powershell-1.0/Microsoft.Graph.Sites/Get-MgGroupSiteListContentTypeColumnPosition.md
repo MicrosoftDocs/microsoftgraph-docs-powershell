@@ -18,6 +18,9 @@ Column order information in a content type.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentTypeColumnPosition?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentTypeColumnPosition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

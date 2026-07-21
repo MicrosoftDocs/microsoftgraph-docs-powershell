@@ -19,6 +19,9 @@ The default file can have multiple versions, each with its own language, that ca
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFile?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

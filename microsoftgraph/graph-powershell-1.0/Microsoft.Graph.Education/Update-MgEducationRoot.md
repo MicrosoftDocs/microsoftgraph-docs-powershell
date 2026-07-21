@@ -18,6 +18,9 @@ Update education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationRoot?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

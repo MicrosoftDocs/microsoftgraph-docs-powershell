@@ -19,6 +19,9 @@ To learn how to customize the privacy of item insights in an organization, see C
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAdminPeopleItemInsight](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeopleItemInsight?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminPeopleItemInsight](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeopleItemInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

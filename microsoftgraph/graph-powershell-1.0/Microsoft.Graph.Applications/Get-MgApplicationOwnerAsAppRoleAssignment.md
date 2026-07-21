@@ -18,6 +18,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleA
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwnerAsAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerAsAppRoleAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwnerAsAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerAsAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

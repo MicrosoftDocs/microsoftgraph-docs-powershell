@@ -20,6 +20,9 @@ The following table shows the types of members that can be added to either secur
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMemberByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMemberByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

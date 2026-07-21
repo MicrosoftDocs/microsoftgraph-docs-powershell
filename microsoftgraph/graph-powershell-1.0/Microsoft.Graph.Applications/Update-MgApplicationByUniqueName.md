@@ -19,6 +19,9 @@ This API can also create an agentIdentityBlueprint object if it doesn't exist, o
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaApplicationByUniqueName](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationByUniqueName?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaApplicationByUniqueName](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationByUniqueName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

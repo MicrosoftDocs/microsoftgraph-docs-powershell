@@ -19,6 +19,9 @@ Read-only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationAdhocCallTranscriptContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationAdhocCallTranscriptContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationAdhocCallTranscriptContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationAdhocCallTranscriptContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

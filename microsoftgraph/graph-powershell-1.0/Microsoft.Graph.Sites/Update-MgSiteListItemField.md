@@ -18,6 +18,9 @@ Update the properties on a listItem.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItemField?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

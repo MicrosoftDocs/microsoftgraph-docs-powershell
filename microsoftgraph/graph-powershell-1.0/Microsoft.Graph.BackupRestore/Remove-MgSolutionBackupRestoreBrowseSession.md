@@ -18,6 +18,9 @@ Delete navigation property browseSessions for solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreBrowseSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreBrowseSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreBrowseSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreBrowseSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

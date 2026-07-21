@@ -18,6 +18,9 @@ Invoke action windowsDefenderScan
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ScanExpanded (Default)

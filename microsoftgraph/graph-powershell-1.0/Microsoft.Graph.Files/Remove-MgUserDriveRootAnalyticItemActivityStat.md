@@ -18,6 +18,9 @@ Delete navigation property itemActivityStats for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

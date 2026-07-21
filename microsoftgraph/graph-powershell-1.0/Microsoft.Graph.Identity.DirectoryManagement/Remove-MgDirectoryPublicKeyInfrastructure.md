@@ -18,6 +18,9 @@ Delete navigation property publicKeyInfrastructure for directory
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryPublicKeyInfrastructure](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryPublicKeyInfrastructure?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryPublicKeyInfrastructure](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryPublicKeyInfrastructure?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

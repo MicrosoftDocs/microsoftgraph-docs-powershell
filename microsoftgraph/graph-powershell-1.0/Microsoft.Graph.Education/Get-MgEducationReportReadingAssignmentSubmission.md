@@ -18,6 +18,9 @@ Details of submitted reading assignments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationReportReadingAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReportReadingAssignmentSubmission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationReportReadingAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReportReadingAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

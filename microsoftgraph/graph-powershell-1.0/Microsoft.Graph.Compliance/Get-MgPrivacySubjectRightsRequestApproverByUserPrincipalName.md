@@ -19,6 +19,9 @@ Currently only supported for requests of type delete.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestApproverByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestApproverByUserPrincipalName?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestApproverByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestApproverByUserPrincipalName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

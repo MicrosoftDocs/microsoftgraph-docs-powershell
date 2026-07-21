@@ -18,6 +18,9 @@ Confirm a timeCard.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Confirm-MgBetaTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaTeamScheduleTimeCard?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaTeamScheduleTimeCard?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Confirm (Default)

@@ -19,6 +19,9 @@ Details about optional risk properties such as riskScore and riskFactors are ava
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTemplate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

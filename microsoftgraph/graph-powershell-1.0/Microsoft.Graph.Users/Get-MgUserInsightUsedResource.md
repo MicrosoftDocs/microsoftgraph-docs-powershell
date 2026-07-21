@@ -20,6 +20,9 @@ For linked attachments, the type is driveItem.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserInsightUsedResource](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightUsedResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightUsedResource](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightUsedResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

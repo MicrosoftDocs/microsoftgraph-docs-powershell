@@ -18,6 +18,9 @@ Clock in to start a timeCard.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaClockTeamScheduleTimeCardIn](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaClockTeamScheduleTimeCardIn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaClockTeamScheduleTimeCardIn](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaClockTeamScheduleTimeCardIn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ClockExpanded (Default)

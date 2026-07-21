@@ -18,6 +18,9 @@ Create new navigation property to contentTypes for drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

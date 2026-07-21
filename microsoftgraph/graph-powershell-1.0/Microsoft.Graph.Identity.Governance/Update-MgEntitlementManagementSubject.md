@@ -18,6 +18,9 @@ Update the navigation property subjects in identityGovernance
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSubject?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSubject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

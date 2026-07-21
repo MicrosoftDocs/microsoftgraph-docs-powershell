@@ -18,6 +18,9 @@ The printer that this printer share is related to.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintSharePrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintSharePrinter?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintSharePrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintSharePrinter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

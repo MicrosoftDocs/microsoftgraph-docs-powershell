@@ -18,6 +18,9 @@ Follow a driveItem.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFollowUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaFollowUserDriveItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFollowUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaFollowUserDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Follow (Default)

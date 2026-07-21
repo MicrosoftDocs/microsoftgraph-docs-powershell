@@ -18,6 +18,9 @@ Update the navigation property notebooks in sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSiteOnenoteNotebookContent](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaSiteOnenoteNotebookContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteOnenoteNotebookContent](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaSiteOnenoteNotebookContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -20,6 +20,9 @@ This operation prevents access to the organization's data through applications o
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Revoke-MgBetaUserSignInSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Revoke-MgBetaUserSignInSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Revoke-MgBetaUserSignInSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Revoke-MgBetaUserSignInSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Revoke (Default)

@@ -18,6 +18,9 @@ Update the navigation property operations in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListOperation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

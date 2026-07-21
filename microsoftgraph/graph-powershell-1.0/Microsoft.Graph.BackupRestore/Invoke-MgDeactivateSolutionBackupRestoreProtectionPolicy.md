@@ -22,6 +22,9 @@ To reactivate a deactivated policy, use the activate API.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Deactivate (Default)

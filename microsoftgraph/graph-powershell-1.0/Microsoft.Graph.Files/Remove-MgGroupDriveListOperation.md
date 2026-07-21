@@ -18,6 +18,9 @@ Delete navigation property operations for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListOperation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

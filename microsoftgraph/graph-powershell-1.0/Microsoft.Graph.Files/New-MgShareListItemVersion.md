@@ -18,6 +18,9 @@ Create new navigation property to versions for shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)

@@ -19,6 +19,9 @@ This method along with addKey can be used to automate rolling its expiring keys.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationKey?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationKey?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

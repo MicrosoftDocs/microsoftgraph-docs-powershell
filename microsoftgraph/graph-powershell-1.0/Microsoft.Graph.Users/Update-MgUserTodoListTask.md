@@ -18,6 +18,9 @@ Update the navigation property tasks in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserTodoListTask](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTask?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserTodoListTask](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

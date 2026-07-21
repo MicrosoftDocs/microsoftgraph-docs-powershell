@@ -18,6 +18,9 @@ Get the number of unique pages visited by users.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityPage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityPage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityPage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

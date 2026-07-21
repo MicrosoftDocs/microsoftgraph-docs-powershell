@@ -18,6 +18,9 @@ Delete a profilePropertySetting object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaAdminPeopleProfilePropertySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaAdminPeopleProfilePropertySetting?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminPeopleProfilePropertySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaAdminPeopleProfilePropertySetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

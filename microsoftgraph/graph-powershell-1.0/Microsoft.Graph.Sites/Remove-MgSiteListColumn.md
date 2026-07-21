@@ -18,6 +18,9 @@ Delete navigation property columns for sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

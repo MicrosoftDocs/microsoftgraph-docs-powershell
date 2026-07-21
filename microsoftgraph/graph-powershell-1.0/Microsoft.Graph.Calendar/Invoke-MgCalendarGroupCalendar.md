@@ -18,6 +18,9 @@ Invoke function allowedCalendarSharingRoles
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaCalendarGroupCalendar?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaCalendarGroupCalendar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Calendar (Default)

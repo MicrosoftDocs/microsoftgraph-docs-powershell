@@ -26,6 +26,9 @@ When using Graph Explorer to update a schemaExtension resource, include the owne
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Update-MgBetaSchemaExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Update-MgBetaSchemaExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

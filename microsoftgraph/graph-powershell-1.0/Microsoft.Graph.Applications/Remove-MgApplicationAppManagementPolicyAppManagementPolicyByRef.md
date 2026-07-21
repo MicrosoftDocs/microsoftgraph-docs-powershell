@@ -19,6 +19,9 @@ When you remove the appManagementPolicy, the application or service principal ad
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

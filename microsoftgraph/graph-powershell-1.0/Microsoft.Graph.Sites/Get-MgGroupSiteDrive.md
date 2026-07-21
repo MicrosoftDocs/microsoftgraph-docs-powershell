@@ -18,6 +18,9 @@ The collection of drives (document libraries) under this site.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteDrive?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

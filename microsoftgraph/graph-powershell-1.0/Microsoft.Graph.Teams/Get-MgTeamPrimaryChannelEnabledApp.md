@@ -18,6 +18,9 @@ A collection of enabled apps in the channel.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelEnabledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelEnabledApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelEnabledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelEnabledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -21,6 +21,9 @@ For details about how to register a task trigger, see Extending Universal Print 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

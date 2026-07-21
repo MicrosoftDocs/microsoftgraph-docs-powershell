@@ -19,6 +19,9 @@ For security, the password itself is never returned in the object, but action ca
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationPasswordMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationPasswordMethod?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationPasswordMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationPasswordMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

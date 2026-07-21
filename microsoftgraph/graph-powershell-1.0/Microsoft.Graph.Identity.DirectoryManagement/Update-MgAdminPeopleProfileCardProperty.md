@@ -18,6 +18,9 @@ Update the properties of a profileCardProperty object, identified by its directo
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

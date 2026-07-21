@@ -18,6 +18,9 @@ Delete navigation property defaultPages for identity
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

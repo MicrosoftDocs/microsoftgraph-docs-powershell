@@ -20,6 +20,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTask](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTask?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTask](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ The collection of columns that are required by this content type.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentTypeColumnLink?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

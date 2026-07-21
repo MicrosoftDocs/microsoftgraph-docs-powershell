@@ -19,6 +19,9 @@ For more information about sending notifications and the requirements for doing 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamActivityNotification?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamActivityNotification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SendExpanded (Default)

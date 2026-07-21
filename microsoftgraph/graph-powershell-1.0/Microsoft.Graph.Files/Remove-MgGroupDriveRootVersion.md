@@ -18,6 +18,9 @@ Delete navigation property versions for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

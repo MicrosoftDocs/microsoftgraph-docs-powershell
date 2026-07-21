@@ -18,6 +18,9 @@ Update the navigation property synchronization in applications
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronization?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

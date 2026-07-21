@@ -20,6 +20,9 @@ The following derived subtypes are supported:\r- externalUsersSelfServiceSignupE
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventFlow?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventFlow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

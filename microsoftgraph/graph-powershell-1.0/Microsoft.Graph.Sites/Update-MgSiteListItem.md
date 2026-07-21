@@ -18,6 +18,9 @@ Update the navigation property items in sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

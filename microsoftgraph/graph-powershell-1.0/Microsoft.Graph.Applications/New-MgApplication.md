@@ -19,6 +19,9 @@ This API can also create an agentIdentityBlueprint object when the @odata.type p
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

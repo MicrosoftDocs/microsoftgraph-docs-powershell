@@ -21,6 +21,9 @@ Only a student in the class can determine what files to upload in a given submis
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaEducationUserAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationUserAssignmentSubmissionUpResourceFolder?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaEducationUserAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationUserAssignmentSubmissionUpResourceFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

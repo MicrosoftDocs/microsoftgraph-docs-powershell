@@ -18,6 +18,9 @@ Update the navigation property bulkUpload in servicePrincipals
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJobBulkUpload?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJobBulkUpload?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

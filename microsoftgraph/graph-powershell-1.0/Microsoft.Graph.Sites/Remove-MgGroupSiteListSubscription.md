@@ -18,6 +18,9 @@ Delete navigation property subscriptions for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

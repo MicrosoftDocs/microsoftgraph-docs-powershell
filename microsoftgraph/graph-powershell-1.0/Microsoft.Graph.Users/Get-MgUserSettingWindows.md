@@ -18,6 +18,9 @@ The Windows settings of the user stored in the cloud.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserSettingWindows](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingWindows?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingWindows](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingWindows?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

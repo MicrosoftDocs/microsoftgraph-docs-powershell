@@ -22,6 +22,9 @@ Any resources marked as deleted should be removed from your local state.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteDelta](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteDelta](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

@@ -18,6 +18,9 @@ Create new navigation property to dispositionReviewStages for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

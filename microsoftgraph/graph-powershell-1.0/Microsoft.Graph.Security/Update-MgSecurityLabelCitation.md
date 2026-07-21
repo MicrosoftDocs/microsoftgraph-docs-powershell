@@ -18,6 +18,9 @@ Update the navigation property citations in security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

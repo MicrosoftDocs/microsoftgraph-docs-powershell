@@ -22,6 +22,9 @@ The bot must download the recording promptly after the recording operation finis
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRecordCommunicationCallResponse](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRecordCommunicationCallResponse?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRecordCommunicationCallResponse](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRecordCommunicationCallResponse?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RecordExpanded (Default)

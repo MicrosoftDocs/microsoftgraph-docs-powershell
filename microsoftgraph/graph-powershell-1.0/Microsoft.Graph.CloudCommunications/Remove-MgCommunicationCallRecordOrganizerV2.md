@@ -18,6 +18,9 @@ Delete navigation property organizer_v2 for communications
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationCallRecordOrganizerV2](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCallRecordOrganizerV2?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationCallRecordOrganizerV2](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCallRecordOrganizerV2?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

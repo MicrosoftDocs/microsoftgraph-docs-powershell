@@ -18,6 +18,9 @@ Get labels from security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabel](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabel](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

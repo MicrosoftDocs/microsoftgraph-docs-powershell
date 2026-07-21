@@ -18,6 +18,9 @@ Update the navigation property analytics in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemAnalytic?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

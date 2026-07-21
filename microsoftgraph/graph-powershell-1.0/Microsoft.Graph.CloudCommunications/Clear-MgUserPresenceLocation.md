@@ -18,6 +18,9 @@ Clear the work location signals for a user, including both the manual and automa
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Clear-MgBetaUserPresenceLocation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaUserPresenceLocation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserPresenceLocation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaUserPresenceLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Clear (Default)

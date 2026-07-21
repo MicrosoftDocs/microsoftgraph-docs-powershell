@@ -19,6 +19,9 @@ Only one object is returned in the collection because only one tokenLifetimePoli
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenLifetimePolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenLifetimePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ Create new navigation property to participants for communications
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

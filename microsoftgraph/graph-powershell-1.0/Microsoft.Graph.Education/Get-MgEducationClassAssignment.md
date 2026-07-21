@@ -21,6 +21,9 @@ You can use the Prefer header in your request to get the inactive status in case
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

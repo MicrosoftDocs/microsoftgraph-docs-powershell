@@ -18,6 +18,9 @@ Delete navigation property sections for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenoteSectionGroupSection?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenoteSectionGroupSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

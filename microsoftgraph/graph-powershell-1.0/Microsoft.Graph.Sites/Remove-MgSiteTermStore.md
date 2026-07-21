@@ -18,6 +18,9 @@ Delete navigation property termStore for sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStore?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

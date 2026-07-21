@@ -18,6 +18,9 @@ Delete navigation property secureScores for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecuritySecureScore?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecuritySecureScore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

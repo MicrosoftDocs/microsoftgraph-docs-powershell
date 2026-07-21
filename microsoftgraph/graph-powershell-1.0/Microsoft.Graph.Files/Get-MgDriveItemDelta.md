@@ -21,6 +21,9 @@ Deleted items are returned with the deleted facet.\rItems with this property set
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveItemDelta](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemDelta](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

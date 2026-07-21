@@ -21,6 +21,9 @@ For example, GET /users/admin@contoso.com/authentication/platformCredentialAuthe
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationPlatformCredentialMethodDevice](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationPlatformCredentialMethodDevice?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationPlatformCredentialMethodDevice](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationPlatformCredentialMethodDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

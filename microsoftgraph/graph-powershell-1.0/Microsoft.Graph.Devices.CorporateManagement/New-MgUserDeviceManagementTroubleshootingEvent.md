@@ -18,6 +18,9 @@ Create new navigation property to deviceManagementTroubleshootingEvents for user
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserDeviceManagementTroubleshootingEvent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserDeviceManagementTroubleshootingEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

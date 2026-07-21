@@ -15,6 +15,9 @@ title: Get-MgBetaReportPartnerBillingManifest
 
 Read the properties and relationships of a manifest object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBillingManifest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

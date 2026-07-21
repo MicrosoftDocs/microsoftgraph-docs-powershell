@@ -18,6 +18,9 @@ Create a new profileSource object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaAdminPeopleProfileSource](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaAdminPeopleProfileSource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAdminPeopleProfileSource](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaAdminPeopleProfileSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

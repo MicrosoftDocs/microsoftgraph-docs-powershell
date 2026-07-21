@@ -23,6 +23,9 @@ The notifyTeam parameter further specifies which employees can view the item.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaShareGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaShareGroupTeamSchedule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaShareGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaShareGroupTeamSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ShareExpanded (Default)

@@ -19,6 +19,9 @@ For more information on settings to manage pronouns support, see Manage pronouns
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAdminPeoplePronoun](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeoplePronoun?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminPeoplePronoun](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeoplePronoun?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -22,6 +22,9 @@ That rubric can be retrieved using GET /education/classes/{class-id}/assignments
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeRubric?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

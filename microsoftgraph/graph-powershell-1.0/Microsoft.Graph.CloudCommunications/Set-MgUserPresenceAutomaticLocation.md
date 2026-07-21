@@ -20,6 +20,9 @@ It doesn't clear manual or scheduled signals.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceAutomaticLocation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserPresenceAutomaticLocation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceAutomaticLocation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserPresenceAutomaticLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

@@ -20,6 +20,9 @@ It allows you to maintain and synchronize a local store of a user's messages wit
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderMessageDelta](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessageDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderMessageDelta](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessageDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

@@ -19,6 +19,9 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChatRetainedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatRetainedMessage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatRetainedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatRetainedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

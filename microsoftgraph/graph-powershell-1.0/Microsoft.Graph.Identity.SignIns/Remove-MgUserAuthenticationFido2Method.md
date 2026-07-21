@@ -18,6 +18,9 @@ Deletes a user's FIDO2 security key authentication method object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

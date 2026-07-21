@@ -18,6 +18,9 @@ Get me from education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMe?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMe?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

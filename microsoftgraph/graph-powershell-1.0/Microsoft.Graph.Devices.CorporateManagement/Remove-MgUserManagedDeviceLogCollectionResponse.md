@@ -18,6 +18,9 @@ Delete navigation property logCollectionRequests for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceLogCollectionResponse?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceLogCollectionResponse?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

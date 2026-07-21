@@ -21,6 +21,9 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDevice?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

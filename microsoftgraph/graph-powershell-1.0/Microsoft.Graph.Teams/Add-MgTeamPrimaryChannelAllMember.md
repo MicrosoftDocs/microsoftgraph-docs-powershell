@@ -19,6 +19,9 @@ The response provides details about which memberships could and couldn't be crea
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaTeamPrimaryChannelAllMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaTeamPrimaryChannelAllMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaTeamPrimaryChannelAllMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaTeamPrimaryChannelAllMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

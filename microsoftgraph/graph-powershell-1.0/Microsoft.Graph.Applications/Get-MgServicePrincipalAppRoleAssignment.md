@@ -18,6 +18,9 @@ Read the properties and relationships of an appRoleAssignment object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppRoleAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ Delete navigation property resources for sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaSiteOnenoteResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaSiteOnenoteResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -18,6 +18,9 @@ Create new navigation property to documents for print
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareJobDocument?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareJobDocument?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

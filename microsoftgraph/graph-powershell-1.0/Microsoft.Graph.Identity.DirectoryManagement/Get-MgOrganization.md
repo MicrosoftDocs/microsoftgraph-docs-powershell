@@ -19,6 +19,9 @@ Since the organization resource supports extensions, you can also use the GET op
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganization?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ The user's settings for work hours and location preferences for scheduling and a
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserSettingWorkHourAndLocation](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingWorkHourAndLocation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingWorkHourAndLocation](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingWorkHourAndLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

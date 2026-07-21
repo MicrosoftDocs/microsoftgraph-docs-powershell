@@ -18,6 +18,9 @@ Create a new plannerTask.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

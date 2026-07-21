@@ -22,6 +22,9 @@ For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDomainNameReference](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainNameReference?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDomainNameReference](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainNameReference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

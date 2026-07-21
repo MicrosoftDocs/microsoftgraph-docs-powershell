@@ -18,6 +18,9 @@ Represents the external MFA registered to a user for authentication using an ext
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

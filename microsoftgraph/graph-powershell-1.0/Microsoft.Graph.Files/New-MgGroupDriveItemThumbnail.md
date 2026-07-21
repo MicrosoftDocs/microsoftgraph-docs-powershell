@@ -18,6 +18,9 @@ Create new navigation property to thumbnails for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemThumbnail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemThumbnail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

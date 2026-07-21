@@ -18,6 +18,9 @@ Read the properties and relationships of a approvedClientApp object for the remo
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

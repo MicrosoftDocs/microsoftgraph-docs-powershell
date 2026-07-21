@@ -18,6 +18,9 @@ Create new navigation property to events for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarEvent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)

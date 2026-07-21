@@ -25,6 +25,9 @@ Students can't see the grade or feedback until the assignment is released.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassRecentlyModifiedSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassRecentlyModifiedSubmission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassRecentlyModifiedSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassRecentlyModifiedSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

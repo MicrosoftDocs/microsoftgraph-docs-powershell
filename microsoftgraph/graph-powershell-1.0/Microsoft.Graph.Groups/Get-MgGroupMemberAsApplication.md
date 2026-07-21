@@ -18,6 +18,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.applicat
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberAsApplication](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberAsApplication?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberAsApplication](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberAsApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

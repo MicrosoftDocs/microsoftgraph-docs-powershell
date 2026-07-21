@@ -18,6 +18,9 @@ Delete navigation property installedApps for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

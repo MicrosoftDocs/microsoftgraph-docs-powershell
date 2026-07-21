@@ -18,6 +18,9 @@ Update the navigation property workspaces in places
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsRoomListWorkspace](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsRoomListWorkspace?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsRoomListWorkspace](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsRoomListWorkspace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

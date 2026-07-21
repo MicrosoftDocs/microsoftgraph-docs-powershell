@@ -19,6 +19,9 @@ Represents a WAF provider that can be used to verify or manage the host.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerificationProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerificationProvider?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerificationProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerificationProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

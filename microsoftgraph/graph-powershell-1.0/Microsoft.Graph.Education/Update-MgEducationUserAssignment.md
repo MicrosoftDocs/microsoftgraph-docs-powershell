@@ -18,6 +18,9 @@ Update the navigation property assignments in education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

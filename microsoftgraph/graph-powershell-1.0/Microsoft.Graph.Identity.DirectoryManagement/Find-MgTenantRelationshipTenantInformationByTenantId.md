@@ -19,6 +19,9 @@ You can use this API to validate tenant information and use the tenantId to conf
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Find-MgBetaTenantRelationshipTenantInformationByTenantId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Find-MgBetaTenantRelationshipTenantInformationByTenantId?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaTenantRelationshipTenantInformationByTenantId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Find-MgBetaTenantRelationshipTenantInformationByTenantId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Find (Default)

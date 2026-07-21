@@ -18,6 +18,9 @@ Update the navigation property notebooks in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

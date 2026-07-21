@@ -18,6 +18,9 @@ Get the number of Microsoft Teams unique users by device type over the selected 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportTeamDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamDeviceUsageDistributionUserCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamDeviceUsageDistributionUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ Update the navigation property subcategories in security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelCategorySubcategory?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelCategorySubcategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

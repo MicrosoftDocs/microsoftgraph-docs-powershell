@@ -18,6 +18,9 @@ List of channels either hosted in or shared with the team (incoming channels).
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAllGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllGroupTeamChannel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAllGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllGroupTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

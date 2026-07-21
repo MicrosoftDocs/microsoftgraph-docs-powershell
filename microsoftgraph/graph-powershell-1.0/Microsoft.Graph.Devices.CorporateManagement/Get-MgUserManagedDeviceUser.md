@@ -18,6 +18,9 @@ The primary users associated with the managed device.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceUser](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceUser](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

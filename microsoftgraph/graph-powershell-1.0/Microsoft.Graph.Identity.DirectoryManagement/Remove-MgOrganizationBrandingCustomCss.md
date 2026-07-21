@@ -19,6 +19,9 @@ The allowed format is .css format only and not larger than 25 KB.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingCustomCss?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingCustomCss?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

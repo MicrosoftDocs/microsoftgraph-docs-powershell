@@ -18,6 +18,9 @@ Search the hierarchy of items for items matching a query.\rYou can search within
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Search-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaGroupDrive?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Search-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaGroupDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Search (Default)

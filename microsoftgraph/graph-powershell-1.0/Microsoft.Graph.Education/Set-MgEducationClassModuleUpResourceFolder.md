@@ -20,6 +20,9 @@ The teacher determines what resources to upload to the SharePoint folder for the
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaEducationClassModuleUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassModuleUpResourceFolder?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaEducationClassModuleUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassModuleUpResourceFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

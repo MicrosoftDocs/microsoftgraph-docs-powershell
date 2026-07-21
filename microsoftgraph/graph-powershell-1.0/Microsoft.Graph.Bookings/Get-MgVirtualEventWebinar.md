@@ -19,6 +19,9 @@ All roles can get the details of a webinar event.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

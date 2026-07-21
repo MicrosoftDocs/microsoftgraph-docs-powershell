@@ -15,6 +15,9 @@ title: Remove-MgBetaRoleManagementDirectory
 
 Delete navigation property directory for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDirectory](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

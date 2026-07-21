@@ -18,6 +18,9 @@ Delete navigation property presenters for solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinarPresenter?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinarPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

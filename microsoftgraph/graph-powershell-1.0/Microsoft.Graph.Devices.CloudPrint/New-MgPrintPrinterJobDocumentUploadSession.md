@@ -21,6 +21,9 @@ This allows transfer to be resumed, in case the network connection is dropped du
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterJobDocumentUploadSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterJobDocumentUploadSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

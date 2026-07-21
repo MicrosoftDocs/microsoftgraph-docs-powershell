@@ -18,6 +18,9 @@ Update property mailboxSettings value.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -20,6 +20,9 @@ This allows you to maintain and synchronize a local store of a user's contacts w
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderContactDelta](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContactDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderContactDelta](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContactDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

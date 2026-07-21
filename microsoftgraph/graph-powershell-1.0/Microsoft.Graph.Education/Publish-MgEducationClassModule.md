@@ -21,6 +21,9 @@ When you call this API, the module appears in the student's class work list.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassModule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassModule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)

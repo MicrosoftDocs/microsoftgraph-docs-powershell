@@ -19,6 +19,9 @@ Only teachers in the class can remove a resource.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

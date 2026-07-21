@@ -19,6 +19,9 @@ All the progress, including job state, is persisted, and the job will continue f
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Suspend-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Suspend-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Suspend-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Suspend-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Pause (Default)
