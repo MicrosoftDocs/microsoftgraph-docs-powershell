@@ -526,7 +526,7 @@ HelpMessage: ''
 
 ### -UserFlowIdentityProviders
 
-.
+
 To construct, see NOTES section for USERFLOWIDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
@@ -581,7 +581,7 @@ HelpMessage: ''
 
 ### -UserFlowTypeVersion
 
-.
+
 
 ```yaml
 Type: System.Single
