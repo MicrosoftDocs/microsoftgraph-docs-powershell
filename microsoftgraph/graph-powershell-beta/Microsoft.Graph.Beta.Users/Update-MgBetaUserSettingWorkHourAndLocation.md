@@ -714,7 +714,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingworkhourandlocation)
+- [Update-MgBetaUserSettingWorkHourAndLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingworkhourandlocation)
 
 
 

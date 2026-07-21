@@ -488,8 +488,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpreapprovalpolicy)
-- [](https://learn.microsoft.com/graph/api/permissiongrantpreapprovalpolicy-delete?view=graph-rest-beta)
+- [Remove-MgBetaPolicyPermissionGrantPreApprovalPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpreapprovalpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permissiongrantpreapprovalpolicy-delete?view=graph-rest-beta)
 
 
 

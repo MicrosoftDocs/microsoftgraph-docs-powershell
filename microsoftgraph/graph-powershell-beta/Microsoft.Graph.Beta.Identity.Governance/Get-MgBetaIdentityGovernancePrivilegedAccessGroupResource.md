@@ -652,9 +652,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupresource)
-- [](https://learn.microsoft.com/graph/api/groupresource-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-resources?view=graph-rest-beta)
+- [Get-MgBetaIdentityGovernancePrivilegedAccessGroupResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/groupresource-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-resources?view=graph-rest-beta)
 
 
 

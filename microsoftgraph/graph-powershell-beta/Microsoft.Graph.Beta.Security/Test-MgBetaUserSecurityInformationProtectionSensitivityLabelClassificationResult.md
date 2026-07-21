@@ -666,8 +666,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetausersecurityinformationprotectionsensitivitylabelclassificationresult)
-- [](https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateclassificationresults?view=graph-rest-beta)
+- [Test-MgBetaUserSecurityInformationProtectionSensitivityLabelClassificationResult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetausersecurityinformationprotectionsensitivitylabelclassificationresult)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateclassificationresults?view=graph-rest-beta)
 
 
 

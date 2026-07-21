@@ -674,7 +674,7 @@ These commands run in sequence for the single recommended fix.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityhealthissue)
+- [New-MgBetaSecurityIdentityHealthIssue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityhealthissue)
 
 
 

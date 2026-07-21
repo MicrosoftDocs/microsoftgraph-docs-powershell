@@ -425,7 +425,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcalloperation)
+- [Remove-MgBetaCommunicationCallOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcalloperation)
 
 
 

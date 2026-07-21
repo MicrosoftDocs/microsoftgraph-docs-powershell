@@ -2291,7 +2291,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcontenttype)
+- [Update-MgBetaShareListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcontenttype)
 
 
 

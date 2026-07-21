@@ -585,7 +585,7 @@ BODY `<IPaths1E44FioDevicemanagementReportsMicrosoftGraphRetrievesecuritytaskapp
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportsecuritytaskappreport)
+- [Get-MgBetaDeviceManagementReportSecurityTaskAppReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportsecuritytaskappreport)
 
 
 

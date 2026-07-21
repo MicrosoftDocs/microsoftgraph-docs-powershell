@@ -466,7 +466,7 @@ It indicates that the 'user' who performed the activity was an application with 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlog)
+- [Update-MgBetaSecurityAuditLog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlog)
 
 
 

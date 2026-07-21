@@ -667,8 +667,8 @@ For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetauserdriveroot)
-- [](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
+- [Copy-MgBetaUserDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetauserdriveroot)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
 
 
 

@@ -1959,7 +1959,7 @@ For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistcolumn)
+- [Update-MgBetaSiteListColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistcolumn)
 
 
 

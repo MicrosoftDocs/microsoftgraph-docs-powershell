@@ -878,8 +878,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasetag)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-tags?view=graph-rest-beta)
+- [New-MgBetaSecurityCaseEdiscoveryCaseTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasetag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-tags?view=graph-rest-beta)
 
 
 
