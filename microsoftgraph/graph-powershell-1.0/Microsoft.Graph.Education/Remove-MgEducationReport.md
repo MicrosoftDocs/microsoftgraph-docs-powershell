@@ -18,6 +18,9 @@ Delete navigation property reports for education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationReport](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationReport?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationReport](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

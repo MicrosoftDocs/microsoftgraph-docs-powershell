@@ -18,6 +18,9 @@ Delete a driveRestoreArtifactsBulkAdditionRequest object associated with a oneDr
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

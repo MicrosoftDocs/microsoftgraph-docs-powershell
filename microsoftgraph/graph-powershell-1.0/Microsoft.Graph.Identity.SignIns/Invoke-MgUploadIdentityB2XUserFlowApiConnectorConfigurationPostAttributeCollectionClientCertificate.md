@@ -20,6 +20,9 @@ This method returns an apiConnector.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostAttributeCollectionClientCertificate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UploadExpanded (Default)

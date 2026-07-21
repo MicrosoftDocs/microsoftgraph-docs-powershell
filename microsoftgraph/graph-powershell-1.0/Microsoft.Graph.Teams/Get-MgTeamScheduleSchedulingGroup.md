@@ -18,6 +18,9 @@ Retrieve the properties and relationships of a schedulingGroup by ID.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

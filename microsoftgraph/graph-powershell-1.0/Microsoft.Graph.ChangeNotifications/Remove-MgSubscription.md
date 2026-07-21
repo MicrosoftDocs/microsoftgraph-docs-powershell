@@ -19,6 +19,9 @@ For the list of resources that support subscribing to change notifications, see 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Remove-MgBetaSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Remove-MgBetaSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

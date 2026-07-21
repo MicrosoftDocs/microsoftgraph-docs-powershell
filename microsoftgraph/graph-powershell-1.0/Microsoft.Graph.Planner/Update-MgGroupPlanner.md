@@ -18,6 +18,9 @@ Update the navigation property planner in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaGroupPlanner?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaGroupPlanner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

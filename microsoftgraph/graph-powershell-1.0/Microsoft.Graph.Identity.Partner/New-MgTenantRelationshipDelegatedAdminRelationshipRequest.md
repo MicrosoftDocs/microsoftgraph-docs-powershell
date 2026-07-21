@@ -18,6 +18,9 @@ Create a new delegatedAdminRelationshipRequest object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

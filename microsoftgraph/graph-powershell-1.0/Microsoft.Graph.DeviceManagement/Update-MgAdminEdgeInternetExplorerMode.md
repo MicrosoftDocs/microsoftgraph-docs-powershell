@@ -18,6 +18,9 @@ Update the navigation property internetExplorerMode in admin
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerMode?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerMode?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

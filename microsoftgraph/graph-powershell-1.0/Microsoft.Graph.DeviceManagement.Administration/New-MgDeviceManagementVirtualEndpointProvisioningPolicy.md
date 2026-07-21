@@ -18,6 +18,9 @@ Create a new cloudPcProvisioningPolicy object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

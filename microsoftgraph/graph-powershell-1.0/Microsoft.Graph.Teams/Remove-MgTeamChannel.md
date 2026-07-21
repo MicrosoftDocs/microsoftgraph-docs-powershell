@@ -18,6 +18,9 @@ Delete the channel.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

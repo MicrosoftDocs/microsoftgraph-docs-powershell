@@ -18,6 +18,9 @@ Delete navigation property analytics for sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteAnalytic?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

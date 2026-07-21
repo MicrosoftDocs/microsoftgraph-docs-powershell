@@ -18,6 +18,9 @@ The app that is installed.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkInstalledAppTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkInstalledAppTeamApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkInstalledAppTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkInstalledAppTeamApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

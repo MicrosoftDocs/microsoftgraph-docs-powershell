@@ -18,6 +18,9 @@ Update the navigation property extensions in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThreadPostInReplyToExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThreadPostInReplyToExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

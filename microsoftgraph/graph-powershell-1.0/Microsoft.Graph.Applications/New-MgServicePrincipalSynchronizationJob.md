@@ -20,6 +20,9 @@ Call Start job to start synchronization.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

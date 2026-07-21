@@ -20,6 +20,9 @@ The location provides a URL that returns an Add to review set operation.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet](/powershell/module/Microsoft.Graph.Beta.Security/Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet](/powershell/module/Microsoft.Graph.Beta.Security/Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

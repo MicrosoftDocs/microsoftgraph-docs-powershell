@@ -19,6 +19,9 @@ Supported for Microsoft 365 groups only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Reset-MgBetaGroupUnseenCount](/powershell/module/Microsoft.Graph.Beta.Groups/Reset-MgBetaGroupUnseenCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaGroupUnseenCount](/powershell/module/Microsoft.Graph.Beta.Groups/Reset-MgBetaGroupUnseenCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reset (Default)

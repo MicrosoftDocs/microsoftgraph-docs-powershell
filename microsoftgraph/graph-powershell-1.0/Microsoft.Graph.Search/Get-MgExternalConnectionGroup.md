@@ -18,6 +18,9 @@ Get an externalGroup object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

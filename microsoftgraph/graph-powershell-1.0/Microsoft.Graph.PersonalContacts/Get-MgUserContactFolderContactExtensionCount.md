@@ -18,6 +18,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderContactExtensionCount](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContactExtensionCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderContactExtensionCount](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContactExtensionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

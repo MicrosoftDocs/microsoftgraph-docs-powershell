@@ -19,6 +19,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

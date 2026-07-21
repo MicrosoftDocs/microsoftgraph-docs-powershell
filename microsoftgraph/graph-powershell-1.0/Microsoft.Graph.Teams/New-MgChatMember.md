@@ -18,6 +18,9 @@ Add a conversationMember to a chat.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

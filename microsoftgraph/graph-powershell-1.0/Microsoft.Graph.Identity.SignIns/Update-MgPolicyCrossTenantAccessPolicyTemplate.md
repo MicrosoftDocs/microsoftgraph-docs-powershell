@@ -18,6 +18,9 @@ Update the navigation property templates in policies
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicyTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicyTemplate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicyTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicyTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

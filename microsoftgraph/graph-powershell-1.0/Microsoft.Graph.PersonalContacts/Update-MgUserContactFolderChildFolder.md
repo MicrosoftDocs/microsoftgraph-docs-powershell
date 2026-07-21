@@ -18,6 +18,9 @@ Update the navigation property childFolders in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderChildFolder?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderChildFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

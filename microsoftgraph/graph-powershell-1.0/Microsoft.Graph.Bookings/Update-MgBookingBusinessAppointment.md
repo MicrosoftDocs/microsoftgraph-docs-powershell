@@ -18,6 +18,9 @@ Update the properties of a bookingAppointment object in the specified bookingBus
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

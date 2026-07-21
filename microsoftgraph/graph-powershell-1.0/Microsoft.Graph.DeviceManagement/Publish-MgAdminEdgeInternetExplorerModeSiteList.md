@@ -18,6 +18,9 @@ Publish the specified browserSiteList for devices to download.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Publish-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Publish-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### PublishExpanded (Default)

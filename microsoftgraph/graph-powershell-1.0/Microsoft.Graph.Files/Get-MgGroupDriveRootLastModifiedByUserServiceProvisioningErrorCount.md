@@ -18,6 +18,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootLastModifiedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootLastModifiedByUserServiceProvisioningErrorCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootLastModifiedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootLastModifiedByUserServiceProvisioningErrorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -27,6 +27,9 @@ To learn more about configuring naming policies, see Configure naming policy.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaApplicationProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationProperty?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaApplicationProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)

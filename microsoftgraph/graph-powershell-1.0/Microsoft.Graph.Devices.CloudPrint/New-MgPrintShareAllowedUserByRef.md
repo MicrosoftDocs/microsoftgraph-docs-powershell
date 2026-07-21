@@ -18,6 +18,9 @@ Grant the specified user access to submit print jobs to the associated printerSh
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

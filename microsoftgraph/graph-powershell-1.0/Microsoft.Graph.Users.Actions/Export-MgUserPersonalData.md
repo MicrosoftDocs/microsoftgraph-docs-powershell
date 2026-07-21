@@ -20,6 +20,9 @@ For more information about exporting data while complying with regulations, see 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Export-MgBetaUserPersonalData](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Export-MgBetaUserPersonalData?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Export-MgBetaUserPersonalData](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Export-MgBetaUserPersonalData?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)

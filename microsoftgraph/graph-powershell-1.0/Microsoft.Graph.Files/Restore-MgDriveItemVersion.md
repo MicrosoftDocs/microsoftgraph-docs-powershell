@@ -19,6 +19,9 @@ This operation creates a new version with the contents of the previous version, 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItemVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

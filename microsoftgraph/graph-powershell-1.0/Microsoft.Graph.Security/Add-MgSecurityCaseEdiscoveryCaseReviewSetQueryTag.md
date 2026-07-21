@@ -19,6 +19,9 @@ For details, see Tag documents in a review set in eDiscovery.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag](/powershell/module/Microsoft.Graph.Beta.Security/Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag](/powershell/module/Microsoft.Graph.Beta.Security/Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ApplyExpanded (Default)

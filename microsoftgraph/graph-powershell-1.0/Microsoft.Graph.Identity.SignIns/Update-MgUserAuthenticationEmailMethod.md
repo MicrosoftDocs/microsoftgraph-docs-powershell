@@ -19,6 +19,9 @@ Self-service operations aren't supported.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

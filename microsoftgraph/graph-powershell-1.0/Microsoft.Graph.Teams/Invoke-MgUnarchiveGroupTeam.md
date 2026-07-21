@@ -22,6 +22,9 @@ A team is unarchived once the async operation completes successfully, which migh
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaUnarchiveGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveGroupTeam?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnarchiveGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveGroupTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unarchive (Default)

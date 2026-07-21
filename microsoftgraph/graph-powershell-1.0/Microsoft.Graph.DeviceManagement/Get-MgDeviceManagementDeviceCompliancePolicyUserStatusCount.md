@@ -18,6 +18,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

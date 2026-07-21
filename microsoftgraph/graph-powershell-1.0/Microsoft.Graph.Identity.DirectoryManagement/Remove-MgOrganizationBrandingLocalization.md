@@ -19,6 +19,9 @@ To delete the organizationalBrandingLocalization object, all images (Stream type
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -18,6 +18,9 @@ Remove a column from a site, a list, or a content type.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

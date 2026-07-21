@@ -18,6 +18,9 @@ Represents the risk history of Microsoft Entra service principals.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

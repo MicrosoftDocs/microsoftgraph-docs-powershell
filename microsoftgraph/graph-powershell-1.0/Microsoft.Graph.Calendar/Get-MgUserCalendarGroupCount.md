@@ -18,6 +18,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarGroupCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroupCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarGroupCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroupCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

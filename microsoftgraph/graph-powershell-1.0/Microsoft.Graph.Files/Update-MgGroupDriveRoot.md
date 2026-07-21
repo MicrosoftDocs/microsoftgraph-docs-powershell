@@ -18,6 +18,9 @@ Update the navigation property root in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRoot?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

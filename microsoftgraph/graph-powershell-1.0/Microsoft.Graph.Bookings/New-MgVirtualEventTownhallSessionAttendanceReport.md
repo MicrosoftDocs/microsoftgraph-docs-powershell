@@ -18,6 +18,9 @@ Create new navigation property to attendanceReports for solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaVirtualEventTownhallSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventTownhallSessionAttendanceReport?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventTownhallSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventTownhallSessionAttendanceReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

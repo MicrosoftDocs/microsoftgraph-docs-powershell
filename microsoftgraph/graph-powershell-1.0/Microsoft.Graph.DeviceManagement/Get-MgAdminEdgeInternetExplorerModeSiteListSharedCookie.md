@@ -18,6 +18,9 @@ Get a session cookie that can be shared between a Microsoft Edge process and an 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

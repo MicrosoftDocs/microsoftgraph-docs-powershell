@@ -18,6 +18,9 @@ When set, the grading rubric attached to this assignment.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentRubric?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

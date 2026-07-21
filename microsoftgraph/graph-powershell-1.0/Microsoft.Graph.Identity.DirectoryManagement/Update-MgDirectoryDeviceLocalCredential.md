@@ -18,6 +18,9 @@ Update the navigation property deviceLocalCredentials in directory
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryDeviceLocalCredential?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryDeviceLocalCredential?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

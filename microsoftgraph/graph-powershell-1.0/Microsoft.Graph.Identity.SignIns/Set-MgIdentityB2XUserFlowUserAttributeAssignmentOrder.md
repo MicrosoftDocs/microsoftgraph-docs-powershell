@@ -18,6 +18,9 @@ Set the order of identityUserFlowAttributeAssignments being collected within a u
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

@@ -19,6 +19,9 @@ For details about investigating Identity Protection risks, see How to investigat
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaDismissAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Invoke-MgBetaDismissAuditLogSignIn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Invoke-MgBetaDismissAuditLogSignIn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### DismissExpanded (Default)

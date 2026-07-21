@@ -18,6 +18,9 @@ Get onPremisesSyncBehavior from contacts
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaContactOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactOnPremiseSyncBehavior?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactOnPremiseSyncBehavior?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

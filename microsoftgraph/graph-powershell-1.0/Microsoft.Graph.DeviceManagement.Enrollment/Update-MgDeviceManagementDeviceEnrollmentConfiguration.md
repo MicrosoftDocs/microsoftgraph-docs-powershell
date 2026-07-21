@@ -18,6 +18,9 @@ Update the navigation property deviceEnrollmentConfigurations in deviceManagemen
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

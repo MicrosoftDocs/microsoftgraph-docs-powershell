@@ -18,6 +18,9 @@ When action at the end of retention is chosen as 'dispositionReview', dispositio
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

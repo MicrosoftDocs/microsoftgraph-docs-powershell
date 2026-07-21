@@ -18,6 +18,9 @@ Update the navigation property mdmWindowsInformationProtectionPolicies in device
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

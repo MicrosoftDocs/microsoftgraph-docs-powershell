@@ -18,6 +18,9 @@ Update the navigation property list in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveList?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

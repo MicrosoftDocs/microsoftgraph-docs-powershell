@@ -18,6 +18,9 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Undo-MgBetaUserChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Undo-MgBetaUserChatMessageSoftDelete?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Undo-MgBetaUserChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Undo-MgBetaUserChatMessageSoftDelete?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Undo (Default)

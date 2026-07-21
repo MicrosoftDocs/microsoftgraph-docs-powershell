@@ -18,6 +18,9 @@ Update the navigation property photo in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

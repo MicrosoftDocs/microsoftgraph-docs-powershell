@@ -19,6 +19,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

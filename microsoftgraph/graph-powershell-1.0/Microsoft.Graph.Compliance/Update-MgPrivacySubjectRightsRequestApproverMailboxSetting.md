@@ -18,6 +18,9 @@ Update property mailboxSettings value.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

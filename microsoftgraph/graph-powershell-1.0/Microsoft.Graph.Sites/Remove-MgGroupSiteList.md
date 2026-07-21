@@ -18,6 +18,9 @@ Delete navigation property lists for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteList?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

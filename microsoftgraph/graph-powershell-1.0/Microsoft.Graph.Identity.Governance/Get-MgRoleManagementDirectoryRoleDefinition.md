@@ -19,6 +19,9 @@ The following role-based access control (RBAC) providers are currently supported
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

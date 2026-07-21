@@ -19,6 +19,9 @@ This API triggers provider-specific verification logic and returns a webApplicat
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### VerifyExpanded (Default)

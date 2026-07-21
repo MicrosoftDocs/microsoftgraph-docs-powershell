@@ -18,6 +18,9 @@ Update the properties of a bookingCustomQuestion object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

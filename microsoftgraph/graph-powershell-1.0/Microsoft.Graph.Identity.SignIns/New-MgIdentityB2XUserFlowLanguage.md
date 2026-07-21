@@ -18,6 +18,9 @@ Create new navigation property to languages for identity
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

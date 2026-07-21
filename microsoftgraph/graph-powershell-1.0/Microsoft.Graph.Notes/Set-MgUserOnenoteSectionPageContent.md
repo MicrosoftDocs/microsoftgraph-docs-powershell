@@ -18,6 +18,9 @@ The page's HTML content.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserOnenoteSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaUserOnenoteSectionPageContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserOnenoteSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaUserOnenoteSectionPageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

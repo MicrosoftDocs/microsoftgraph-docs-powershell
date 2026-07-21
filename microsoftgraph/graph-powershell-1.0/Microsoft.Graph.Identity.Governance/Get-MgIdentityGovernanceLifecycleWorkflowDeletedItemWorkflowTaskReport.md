@@ -18,6 +18,9 @@ Represents the aggregation of task execution data for tasks within a workflow ob
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

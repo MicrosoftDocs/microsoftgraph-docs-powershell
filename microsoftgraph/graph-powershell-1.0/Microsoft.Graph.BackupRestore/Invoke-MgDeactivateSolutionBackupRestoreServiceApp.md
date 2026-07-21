@@ -18,6 +18,9 @@ Deactivate a serviceApp.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Deactivate (Default)

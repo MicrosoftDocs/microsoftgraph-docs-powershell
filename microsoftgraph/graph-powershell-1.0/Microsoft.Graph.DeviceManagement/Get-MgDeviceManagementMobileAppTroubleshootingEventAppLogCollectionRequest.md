@@ -18,6 +18,9 @@ Indicates collection of App Log Upload Request.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

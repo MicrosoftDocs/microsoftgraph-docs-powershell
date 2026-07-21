@@ -18,6 +18,9 @@ Delete navigation property fields for sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemField?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

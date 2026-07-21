@@ -18,6 +18,9 @@ Remove an educationUser from an educationClass.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassMemberEducationUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassMemberEducationUserByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassMemberEducationUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassMemberEducationUserByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

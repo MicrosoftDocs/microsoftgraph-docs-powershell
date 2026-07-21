@@ -18,6 +18,9 @@ Get an app installed in a chat.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatInstalledApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

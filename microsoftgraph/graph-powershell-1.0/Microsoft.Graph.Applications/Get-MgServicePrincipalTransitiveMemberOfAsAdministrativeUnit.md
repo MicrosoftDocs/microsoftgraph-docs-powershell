@@ -18,6 +18,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -24,6 +24,9 @@ For information on using advanced hunting in the Microsoft 365 Defender portal, 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Start-MgBetaSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Beta.Security/Start-MgBetaSecurityHuntingQuery?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Beta.Security/Start-MgBetaSecurityHuntingQuery?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RunExpanded (Default)

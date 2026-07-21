@@ -18,6 +18,9 @@ Update the navigation property mailboxInclusionRules in solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreMailboxInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreMailboxInclusionRule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreMailboxInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreMailboxInclusionRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

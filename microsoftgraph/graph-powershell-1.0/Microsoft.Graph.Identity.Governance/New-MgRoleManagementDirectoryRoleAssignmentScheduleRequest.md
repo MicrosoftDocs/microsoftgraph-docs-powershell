@@ -19,6 +19,9 @@ See Enable per-user Microsoft Entra multifactor authentication to secure sign-in
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -19,6 +19,9 @@ To update other properties of an authenticationStrengthPolicy object, use the Up
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

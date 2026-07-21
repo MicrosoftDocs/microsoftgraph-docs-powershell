@@ -20,6 +20,9 @@ If the group was created less than 15 minutes ago, calls to create a team might 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeam?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

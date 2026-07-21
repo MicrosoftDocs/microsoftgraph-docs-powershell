@@ -18,6 +18,9 @@ Create new navigation property to outcomes for education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentSubmissionOutcome?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentSubmissionOutcome?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

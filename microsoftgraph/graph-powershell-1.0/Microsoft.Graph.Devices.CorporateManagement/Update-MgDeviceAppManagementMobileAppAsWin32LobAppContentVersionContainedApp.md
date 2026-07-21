@@ -18,6 +18,9 @@ Update the navigation property containedApps in deviceAppManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

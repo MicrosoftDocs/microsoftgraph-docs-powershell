@@ -20,6 +20,9 @@ After that time, they are permanently deleted.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationByAppId?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationByAppId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -18,6 +18,9 @@ Custodian sources that are included in the eDiscovery search.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

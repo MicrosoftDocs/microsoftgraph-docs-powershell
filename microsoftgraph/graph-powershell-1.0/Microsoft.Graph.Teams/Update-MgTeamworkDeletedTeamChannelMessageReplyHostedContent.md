@@ -18,6 +18,9 @@ Update the navigation property hostedContents in teamwork
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

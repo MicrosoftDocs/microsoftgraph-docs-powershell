@@ -19,6 +19,9 @@ Only teachers and students can perform this operation.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeRubric?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

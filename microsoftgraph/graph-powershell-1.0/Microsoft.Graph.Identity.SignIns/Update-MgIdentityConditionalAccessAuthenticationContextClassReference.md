@@ -19,6 +19,9 @@ If ID has been used, this call updates the authenticationContextClassReference o
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

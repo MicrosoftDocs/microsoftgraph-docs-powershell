@@ -18,6 +18,9 @@ Update the navigation property resources in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

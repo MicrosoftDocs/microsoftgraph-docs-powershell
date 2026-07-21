@@ -18,6 +18,9 @@ Create new navigation property to webApplicationFirewallVerifications for identi
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -18,6 +18,9 @@ Send a reminder to the reviewers of an active accessReviewInstance.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Send (Default)

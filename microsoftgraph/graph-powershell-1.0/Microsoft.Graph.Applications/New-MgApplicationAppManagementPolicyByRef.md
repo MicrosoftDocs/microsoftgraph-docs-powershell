@@ -20,6 +20,9 @@ Only one policy object can be assigned to an application or service principal.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationAppManagementPolicyByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationAppManagementPolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -18,6 +18,9 @@ Invoke function getActivitiesByInterval
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteGetGraphBPrePathActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetGraphBPrePathActivityByInterval?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetGraphBPrePathActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetGraphBPrePathActivityByInterval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

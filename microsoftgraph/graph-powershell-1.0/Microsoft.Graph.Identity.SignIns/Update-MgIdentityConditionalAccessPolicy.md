@@ -18,6 +18,9 @@ Update the properties of a conditionalAccessPolicy object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

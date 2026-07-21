@@ -18,6 +18,9 @@ Create new navigation property to lists for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteGetByPathList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathList?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteGetByPathList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

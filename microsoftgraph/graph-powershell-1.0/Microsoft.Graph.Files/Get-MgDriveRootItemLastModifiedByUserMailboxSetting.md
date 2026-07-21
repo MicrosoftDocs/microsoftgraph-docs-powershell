@@ -20,6 +20,9 @@ Returned only on $select.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveRootItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootItemLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootItemLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

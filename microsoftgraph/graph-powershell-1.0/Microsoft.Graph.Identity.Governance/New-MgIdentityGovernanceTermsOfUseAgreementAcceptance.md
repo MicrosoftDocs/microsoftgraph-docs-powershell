@@ -18,6 +18,9 @@ Create new navigation property to agreementAcceptances for identityGovernance
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

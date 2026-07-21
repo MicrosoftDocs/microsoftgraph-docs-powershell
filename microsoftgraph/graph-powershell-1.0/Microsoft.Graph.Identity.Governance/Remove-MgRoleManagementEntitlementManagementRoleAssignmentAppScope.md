@@ -18,6 +18,9 @@ Delete navigation property appScope for roleManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentAppScope?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentAppScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

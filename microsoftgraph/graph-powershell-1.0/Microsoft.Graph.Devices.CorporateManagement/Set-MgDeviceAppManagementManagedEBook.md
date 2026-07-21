@@ -18,6 +18,9 @@ Invoke action assign
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

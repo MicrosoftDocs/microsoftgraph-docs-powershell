@@ -18,6 +18,9 @@ Read the properties and relationships of a specific cloudPcGalleryImage object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointGalleryImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointGalleryImage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointGalleryImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointGalleryImage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

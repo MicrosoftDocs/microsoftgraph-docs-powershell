@@ -18,6 +18,9 @@ Create new navigation property to sessions for solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

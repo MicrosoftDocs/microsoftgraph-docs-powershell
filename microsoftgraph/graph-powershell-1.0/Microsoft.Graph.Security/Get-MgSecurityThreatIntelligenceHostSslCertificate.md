@@ -18,6 +18,9 @@ Get the properties and relationships of a hostSslCertificate object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

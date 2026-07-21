@@ -18,6 +18,9 @@ Update the properties of a browserSharedCookie object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

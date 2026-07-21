@@ -20,6 +20,9 @@ For help creating the required Certificate Signing Request (CSR) for creating pr
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinter?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)

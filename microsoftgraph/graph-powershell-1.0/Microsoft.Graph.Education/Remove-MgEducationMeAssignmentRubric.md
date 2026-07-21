@@ -18,6 +18,9 @@ Delete navigation property rubric for education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationMeAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMeAssignmentRubric?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationMeAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMeAssignmentRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

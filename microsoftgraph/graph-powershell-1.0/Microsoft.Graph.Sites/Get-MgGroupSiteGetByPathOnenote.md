@@ -18,6 +18,9 @@ Calls the OneNote service for notebook related operations.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathOnenote?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathOnenote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

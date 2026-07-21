@@ -19,6 +19,9 @@ Each requirement object corresponds to an access package assignment policy that 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

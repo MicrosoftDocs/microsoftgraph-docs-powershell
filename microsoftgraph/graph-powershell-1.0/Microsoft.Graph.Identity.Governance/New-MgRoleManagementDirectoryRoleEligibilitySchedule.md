@@ -18,6 +18,9 @@ Create new navigation property to roleEligibilitySchedules for roleManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

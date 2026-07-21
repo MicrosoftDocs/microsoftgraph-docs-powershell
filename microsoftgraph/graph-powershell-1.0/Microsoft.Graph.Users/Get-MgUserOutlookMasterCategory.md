@@ -18,6 +18,9 @@ A list of categories defined for the user.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

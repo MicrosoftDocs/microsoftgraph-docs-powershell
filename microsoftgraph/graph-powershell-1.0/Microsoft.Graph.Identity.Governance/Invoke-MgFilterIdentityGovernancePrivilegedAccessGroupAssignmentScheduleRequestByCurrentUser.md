@@ -18,6 +18,9 @@ In PIM for Groups, retrieve the requests for membership or ownership assignments
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

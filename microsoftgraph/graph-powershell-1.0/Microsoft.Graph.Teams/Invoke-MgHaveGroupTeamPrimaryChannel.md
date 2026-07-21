@@ -18,6 +18,9 @@ Determine whether a user has access to a channel.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaHaveGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaHaveGroupTeamPrimaryChannel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaHaveGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaHaveGroupTeamPrimaryChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Have (Default)

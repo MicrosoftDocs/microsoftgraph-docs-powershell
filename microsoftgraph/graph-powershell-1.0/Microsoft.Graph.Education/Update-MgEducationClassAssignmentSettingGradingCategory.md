@@ -19,6 +19,9 @@ Only teachers can perform this operation.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSettingGradingCategory?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSettingGradingCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

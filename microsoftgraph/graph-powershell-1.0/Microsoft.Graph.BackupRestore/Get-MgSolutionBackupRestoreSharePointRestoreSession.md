@@ -18,6 +18,9 @@ The list of SharePoint restore sessions available in the tenant.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSharePointRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSharePointRestoreSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSharePointRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSharePointRestoreSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

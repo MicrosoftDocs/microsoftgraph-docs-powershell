@@ -20,6 +20,9 @@ This allows you to maintain and synchronize\ra local store of a user's mail fold
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

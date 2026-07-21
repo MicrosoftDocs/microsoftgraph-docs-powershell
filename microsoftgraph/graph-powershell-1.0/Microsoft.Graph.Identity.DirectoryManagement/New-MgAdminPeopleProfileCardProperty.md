@@ -20,6 +20,9 @@ For more information about how to add properties to the profile card for an orga
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

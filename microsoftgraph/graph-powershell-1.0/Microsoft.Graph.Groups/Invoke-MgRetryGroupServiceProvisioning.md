@@ -18,6 +18,9 @@ Retry the group service provisioning.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRetryGroupServiceProvisioning?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRetryGroupServiceProvisioning?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Retry (Default)

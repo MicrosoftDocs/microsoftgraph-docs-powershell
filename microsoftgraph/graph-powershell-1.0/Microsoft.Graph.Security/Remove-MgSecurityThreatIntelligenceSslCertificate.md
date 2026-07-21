@@ -18,6 +18,9 @@ Delete navigation property sslCertificates for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

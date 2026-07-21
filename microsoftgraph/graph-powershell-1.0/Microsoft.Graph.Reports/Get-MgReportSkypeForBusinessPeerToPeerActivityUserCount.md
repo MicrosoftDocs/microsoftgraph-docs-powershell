@@ -19,6 +19,9 @@ Types of sessions include IM, audio, video, application sharing, and file transf
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessPeerToPeerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessPeerToPeerActivityUserCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessPeerToPeerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessPeerToPeerActivityUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -19,6 +19,9 @@ You can specify both the parent conversation and thread in the request, \ror, yo
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)

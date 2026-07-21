@@ -18,6 +18,9 @@ The list of Compliance Management Partners configured by the tenant.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

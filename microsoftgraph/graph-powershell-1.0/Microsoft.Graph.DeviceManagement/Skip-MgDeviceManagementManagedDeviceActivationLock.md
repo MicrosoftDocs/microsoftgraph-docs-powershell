@@ -18,6 +18,9 @@ Bypass activation lock
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Skip-MgBetaDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Skip-MgBetaDeviceManagementManagedDeviceActivationLock?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Skip-MgBetaDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Skip-MgBetaDeviceManagementManagedDeviceActivationLock?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Bypass (Default)

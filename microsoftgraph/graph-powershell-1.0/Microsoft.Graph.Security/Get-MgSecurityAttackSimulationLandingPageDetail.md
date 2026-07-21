@@ -18,6 +18,9 @@ The detail information for a landing page associated with a simulation during it
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationLandingPageDetail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationLandingPageDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

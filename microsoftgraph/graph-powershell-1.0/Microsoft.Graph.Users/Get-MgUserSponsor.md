@@ -20,6 +20,9 @@ Supports $expand.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserSponsor](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsor?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSponsor](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

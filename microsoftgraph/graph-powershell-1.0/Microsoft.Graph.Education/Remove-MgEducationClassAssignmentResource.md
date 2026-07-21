@@ -20,6 +20,9 @@ However, teachers can't remove resources marked as 'distributeToStudents', after
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

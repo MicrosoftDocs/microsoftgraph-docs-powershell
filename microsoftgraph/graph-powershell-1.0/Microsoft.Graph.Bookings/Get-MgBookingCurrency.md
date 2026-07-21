@@ -19,6 +19,9 @@ Use the id property, which is the currency code, to specify the currency.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrency?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrency?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -21,6 +21,9 @@ Alternatively, send a new message in a single operation.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Send-MgBetaUserMessage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Send-MgBetaUserMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Send (Default)

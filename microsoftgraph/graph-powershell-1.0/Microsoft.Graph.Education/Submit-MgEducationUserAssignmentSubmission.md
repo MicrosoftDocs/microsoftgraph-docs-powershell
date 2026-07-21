@@ -23,6 +23,9 @@ A teacher can also submit a student's assignment on their behalf.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Submit-MgBetaEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationUserAssignmentSubmission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Submit-MgBetaEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationUserAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Submit (Default)

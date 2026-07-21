@@ -19,6 +19,9 @@ The external sponsors are a set of users who can approve requests on behalf of o
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

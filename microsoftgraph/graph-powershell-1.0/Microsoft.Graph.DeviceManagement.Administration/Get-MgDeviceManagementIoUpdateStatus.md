@@ -18,6 +18,9 @@ The IOS software update installation statuses for this account.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

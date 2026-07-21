@@ -22,6 +22,9 @@ See support for filtering on user flows for syntax information.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

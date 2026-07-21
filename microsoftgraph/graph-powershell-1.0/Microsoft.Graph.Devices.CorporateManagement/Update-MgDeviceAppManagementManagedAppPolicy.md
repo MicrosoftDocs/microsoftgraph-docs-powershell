@@ -18,6 +18,9 @@ Update the navigation property managedAppPolicies in deviceAppManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ Create new navigation property to servicePrincipalRiskDetections for identityPro
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

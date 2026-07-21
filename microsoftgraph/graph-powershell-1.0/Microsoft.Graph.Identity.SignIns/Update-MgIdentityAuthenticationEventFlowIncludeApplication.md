@@ -18,6 +18,9 @@ Update the navigation property includeApplications in identity
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ Create new navigation property to authenticationContextClassReferences for ident
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

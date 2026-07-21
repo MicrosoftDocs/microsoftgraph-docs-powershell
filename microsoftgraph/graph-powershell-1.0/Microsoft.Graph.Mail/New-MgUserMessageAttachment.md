@@ -18,6 +18,9 @@ Create new navigation property to attachments for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageAttachment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

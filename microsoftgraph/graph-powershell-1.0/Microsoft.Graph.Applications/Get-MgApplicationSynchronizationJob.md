@@ -18,6 +18,9 @@ Performs synchronization by periodically running in the background, polling for 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

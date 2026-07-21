@@ -21,6 +21,9 @@ For requests completed more than 14 days, you will need to ask the users to canc
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reprocess (Default)

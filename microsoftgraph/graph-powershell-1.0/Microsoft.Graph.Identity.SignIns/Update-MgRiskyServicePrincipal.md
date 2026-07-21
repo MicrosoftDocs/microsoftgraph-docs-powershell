@@ -18,6 +18,9 @@ Update the navigation property riskyServicePrincipals in identityProtection
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

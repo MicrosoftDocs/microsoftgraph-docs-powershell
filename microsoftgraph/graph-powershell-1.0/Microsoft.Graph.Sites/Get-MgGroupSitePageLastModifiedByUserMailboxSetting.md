@@ -20,6 +20,9 @@ Returned only on $select.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

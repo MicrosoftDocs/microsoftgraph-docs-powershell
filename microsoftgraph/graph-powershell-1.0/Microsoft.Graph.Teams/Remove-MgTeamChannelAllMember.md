@@ -19,6 +19,9 @@ The response provides details about which memberships could and couldn't be remo
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamChannelAllMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannelAllMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamChannelAllMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannelAllMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

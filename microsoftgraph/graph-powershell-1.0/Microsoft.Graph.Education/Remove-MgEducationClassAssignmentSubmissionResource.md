@@ -22,6 +22,9 @@ If the resource wasn't copied from the assignment but was added from the student
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

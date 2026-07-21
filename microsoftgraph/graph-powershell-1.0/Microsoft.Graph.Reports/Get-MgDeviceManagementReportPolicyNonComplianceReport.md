@@ -18,6 +18,9 @@ Invoke action getPolicyNonComplianceReport
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportPolicyNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportPolicyNonComplianceReport?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportPolicyNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportPolicyNonComplianceReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

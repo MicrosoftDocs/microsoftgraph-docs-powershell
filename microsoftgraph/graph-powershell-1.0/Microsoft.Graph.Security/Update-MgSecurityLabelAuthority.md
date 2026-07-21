@@ -18,6 +18,9 @@ Update the navigation property authorities in security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

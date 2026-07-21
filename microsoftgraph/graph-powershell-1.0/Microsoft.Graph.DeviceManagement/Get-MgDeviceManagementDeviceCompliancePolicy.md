@@ -18,6 +18,9 @@ The device compliance policies.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

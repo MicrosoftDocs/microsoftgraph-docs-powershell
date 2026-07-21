@@ -18,6 +18,9 @@ Delete navigation property columnLinks for shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

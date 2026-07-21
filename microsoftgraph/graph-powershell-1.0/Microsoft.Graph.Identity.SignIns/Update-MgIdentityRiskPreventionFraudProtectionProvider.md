@@ -19,6 +19,9 @@ The following derived types are currently supported.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityRiskPreventionFraudProtectionProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityRiskPreventionFraudProtectionProvider?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityRiskPreventionFraudProtectionProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityRiskPreventionFraudProtectionProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

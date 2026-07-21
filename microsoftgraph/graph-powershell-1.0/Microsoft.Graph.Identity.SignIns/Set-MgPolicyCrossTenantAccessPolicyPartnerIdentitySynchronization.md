@@ -18,6 +18,9 @@ Create a cross-tenant user synchronization policy for a partner-specific configu
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

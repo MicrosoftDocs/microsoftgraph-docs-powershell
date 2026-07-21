@@ -18,6 +18,9 @@ Update the navigation property groups in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

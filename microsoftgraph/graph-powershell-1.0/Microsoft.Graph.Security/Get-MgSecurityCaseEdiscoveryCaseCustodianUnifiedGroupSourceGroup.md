@@ -18,6 +18,9 @@ Represents a group.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

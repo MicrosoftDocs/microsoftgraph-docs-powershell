@@ -20,6 +20,9 @@ The duration of a shift can't be less than one minute or longer than 24 hours.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleShift?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleShift?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

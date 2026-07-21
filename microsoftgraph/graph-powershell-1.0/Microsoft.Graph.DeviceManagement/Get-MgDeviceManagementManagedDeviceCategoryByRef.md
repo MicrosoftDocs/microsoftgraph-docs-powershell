@@ -18,6 +18,9 @@ Device category
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDeviceCategoryByRef](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDeviceCategoryByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDeviceCategoryByRef](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDeviceCategoryByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

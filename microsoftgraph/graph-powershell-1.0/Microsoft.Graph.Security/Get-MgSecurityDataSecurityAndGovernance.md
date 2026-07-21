@@ -18,6 +18,9 @@ Get dataSecurityAndGovernance from security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityDataSecurityAndGovernance](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityDataSecurityAndGovernance?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityDataSecurityAndGovernance](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityDataSecurityAndGovernance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

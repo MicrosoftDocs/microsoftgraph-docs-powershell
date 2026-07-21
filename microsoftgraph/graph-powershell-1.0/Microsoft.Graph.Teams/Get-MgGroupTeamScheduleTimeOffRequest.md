@@ -18,6 +18,9 @@ The time off requests in the schedule.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleTimeOffRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleTimeOffRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

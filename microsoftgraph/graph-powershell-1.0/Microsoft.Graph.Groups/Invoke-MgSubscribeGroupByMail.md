@@ -19,6 +19,9 @@ Supported for Microsoft 365 groups only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSubscribeGroupByMail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSubscribeGroupByMail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Subscribe (Default)

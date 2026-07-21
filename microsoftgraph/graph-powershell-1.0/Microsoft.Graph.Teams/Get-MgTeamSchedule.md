@@ -22,6 +22,9 @@ Clients can also inspect the configuration of the schedule.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamSchedule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

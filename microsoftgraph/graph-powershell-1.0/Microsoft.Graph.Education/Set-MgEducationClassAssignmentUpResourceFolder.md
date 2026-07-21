@@ -20,6 +20,9 @@ The teacher determines the resources to upload in the assignment's folder.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaEducationClassAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentUpResourceFolder?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaEducationClassAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentUpResourceFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

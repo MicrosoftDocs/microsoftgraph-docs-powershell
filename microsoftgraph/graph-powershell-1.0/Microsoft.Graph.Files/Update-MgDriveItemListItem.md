@@ -18,6 +18,9 @@ Update the navigation property listItem in drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemListItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

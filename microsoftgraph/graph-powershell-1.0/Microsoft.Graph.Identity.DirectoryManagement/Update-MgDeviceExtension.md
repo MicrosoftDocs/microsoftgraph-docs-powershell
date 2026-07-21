@@ -18,6 +18,9 @@ Update the navigation property extensions in devices
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDeviceExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDeviceExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

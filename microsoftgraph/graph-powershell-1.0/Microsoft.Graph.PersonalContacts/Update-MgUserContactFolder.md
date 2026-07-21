@@ -18,6 +18,9 @@ Update the navigation property contactFolders in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolder?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ Read the properties and relationships of a store object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStore?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

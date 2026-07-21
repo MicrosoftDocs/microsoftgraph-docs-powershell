@@ -18,6 +18,9 @@ Retrieve the metadata for a content type in a site or a list.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

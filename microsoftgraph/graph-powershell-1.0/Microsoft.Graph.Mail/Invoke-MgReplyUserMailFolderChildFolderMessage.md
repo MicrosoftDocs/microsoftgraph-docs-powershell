@@ -23,6 +23,9 @@ Alternatively, create a draft to reply to an existing message and send it later.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReplyUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Invoke-MgBetaReplyUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Invoke-MgBetaReplyUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ReplyExpanded (Default)

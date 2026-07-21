@@ -18,6 +18,9 @@ Update the navigation property columns in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListContentTypeColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

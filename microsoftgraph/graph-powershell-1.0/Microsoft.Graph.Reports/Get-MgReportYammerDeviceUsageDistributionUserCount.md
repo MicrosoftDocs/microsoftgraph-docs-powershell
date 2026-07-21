@@ -18,6 +18,9 @@ Get the number of users by device type.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportYammerDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerDeviceUsageDistributionUserCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerDeviceUsageDistributionUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

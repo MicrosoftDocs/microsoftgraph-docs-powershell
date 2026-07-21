@@ -19,6 +19,9 @@ Search results are provided in the response.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### QueryExpanded (Default)

@@ -18,6 +18,9 @@ Another way to input exempt apps through xml files
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

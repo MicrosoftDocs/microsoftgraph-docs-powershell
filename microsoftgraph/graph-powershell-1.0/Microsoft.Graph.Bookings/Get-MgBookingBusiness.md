@@ -18,6 +18,9 @@ Get the properties and relationships of a bookingBusiness object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusiness?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusiness?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

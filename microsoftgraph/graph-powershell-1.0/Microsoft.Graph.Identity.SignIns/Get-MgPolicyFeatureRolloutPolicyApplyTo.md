@@ -19,6 +19,9 @@ Specifies a list of directoryObject resources that feature is enabled for.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

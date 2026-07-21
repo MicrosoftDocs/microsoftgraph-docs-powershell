@@ -18,6 +18,9 @@ Update teamwork
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamwork?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamwork?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -19,6 +19,9 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookFromWebUrl?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookFromWebUrl?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

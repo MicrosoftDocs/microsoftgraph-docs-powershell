@@ -19,6 +19,9 @@ This API request is transitive, and will also return all groups and administrati
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceTransitiveMemberOfAsGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceTransitiveMemberOfAsGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

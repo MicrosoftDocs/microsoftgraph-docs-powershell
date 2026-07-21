@@ -18,6 +18,9 @@ Delete navigation property intendedPolicies for deviceAppManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

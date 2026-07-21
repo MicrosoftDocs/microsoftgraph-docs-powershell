@@ -21,6 +21,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

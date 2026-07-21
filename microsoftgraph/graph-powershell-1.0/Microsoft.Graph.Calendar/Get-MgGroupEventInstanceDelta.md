@@ -21,6 +21,9 @@ This allows you to maintain and synchronize a local store of events in the speci
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupEventInstanceDelta](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstanceDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventInstanceDelta](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstanceDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

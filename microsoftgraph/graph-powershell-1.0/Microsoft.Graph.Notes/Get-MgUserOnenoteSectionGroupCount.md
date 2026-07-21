@@ -18,6 +18,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSectionGroupCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionGroupCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSectionGroupCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionGroupCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)

@@ -18,6 +18,9 @@ Update the navigation property webparts in sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

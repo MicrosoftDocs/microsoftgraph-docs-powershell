@@ -20,6 +20,9 @@ To access a chat, at least one chat member must belong to the tenant the request
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChat?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

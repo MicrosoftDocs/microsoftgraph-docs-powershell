@@ -18,6 +18,9 @@ Collection of all groups available in the term store.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

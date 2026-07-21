@@ -18,6 +18,9 @@ Delete navigation property sets for sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreSetParentGroupSet?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreSetParentGroupSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

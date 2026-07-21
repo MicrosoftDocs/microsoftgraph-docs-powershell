@@ -18,6 +18,9 @@ Update the navigation property managedDevices in deviceManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Update1 (Default)

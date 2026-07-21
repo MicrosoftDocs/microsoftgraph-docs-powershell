@@ -19,6 +19,9 @@ Compliance policy must have one and only one block scheduled action.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

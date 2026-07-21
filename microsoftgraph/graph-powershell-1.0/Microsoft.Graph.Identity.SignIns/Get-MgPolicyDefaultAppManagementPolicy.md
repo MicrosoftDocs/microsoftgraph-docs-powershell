@@ -18,6 +18,9 @@ Read the properties of a tenantAppManagementPolicy object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

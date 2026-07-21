@@ -19,6 +19,9 @@ Not nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationLogo?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationLogo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

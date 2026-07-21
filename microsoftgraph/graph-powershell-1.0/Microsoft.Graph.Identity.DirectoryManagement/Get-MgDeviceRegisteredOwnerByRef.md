@@ -21,6 +21,9 @@ Currently, there can be only one owner.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwnerByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

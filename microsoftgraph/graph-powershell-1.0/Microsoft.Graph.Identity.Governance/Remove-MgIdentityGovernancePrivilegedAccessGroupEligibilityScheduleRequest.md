@@ -18,6 +18,9 @@ Delete navigation property eligibilityScheduleRequests for identityGovernance
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

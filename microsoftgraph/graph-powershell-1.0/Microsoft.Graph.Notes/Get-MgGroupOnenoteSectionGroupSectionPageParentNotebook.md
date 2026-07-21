@@ -19,6 +19,9 @@ Read-only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteSectionGroupSectionPageParentNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteSectionGroupSectionPageParentNotebook?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteSectionGroupSectionPageParentNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteSectionGroupSectionPageParentNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

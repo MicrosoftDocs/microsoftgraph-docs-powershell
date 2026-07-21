@@ -18,6 +18,9 @@ Invoke action endBreak
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Beta.Teams/Stop-MgBetaTeamScheduleTimeCardBreak?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Beta.Teams/Stop-MgBetaTeamScheduleTimeCardBreak?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### EndExpanded (Default)

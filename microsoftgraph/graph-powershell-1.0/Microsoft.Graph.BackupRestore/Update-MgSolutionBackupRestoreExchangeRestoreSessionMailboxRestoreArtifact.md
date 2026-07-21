@@ -18,6 +18,9 @@ Update the navigation property mailboxRestoreArtifacts in solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

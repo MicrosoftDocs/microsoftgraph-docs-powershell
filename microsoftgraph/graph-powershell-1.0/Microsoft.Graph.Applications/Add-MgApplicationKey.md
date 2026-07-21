@@ -22,6 +22,9 @@ You can use the Update application operation to perform an update instead.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationKey?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationKey?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

@@ -18,6 +18,9 @@ Retrieve a collection of appConsentRequest objects for which the current user is
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

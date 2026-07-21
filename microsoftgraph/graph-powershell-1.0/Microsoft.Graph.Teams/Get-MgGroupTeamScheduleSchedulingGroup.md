@@ -18,6 +18,9 @@ The logical grouping of users in the schedule (usually by role).
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ Get the userTeamwork settings for a specified user, which includes the Microsoft
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamwork?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamwork?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

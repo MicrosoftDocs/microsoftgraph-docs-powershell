@@ -18,6 +18,9 @@ Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanBucket?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanBucket?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

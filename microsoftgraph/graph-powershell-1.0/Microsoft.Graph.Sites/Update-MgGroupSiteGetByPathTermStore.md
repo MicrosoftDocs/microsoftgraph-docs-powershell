@@ -18,6 +18,9 @@ Update the navigation property termStore in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteGetByPathTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteGetByPathTermStore?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteGetByPathTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteGetByPathTermStore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

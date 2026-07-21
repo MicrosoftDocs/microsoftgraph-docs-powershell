@@ -19,6 +19,9 @@ You can create either a predefined registration question or a custom registratio
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

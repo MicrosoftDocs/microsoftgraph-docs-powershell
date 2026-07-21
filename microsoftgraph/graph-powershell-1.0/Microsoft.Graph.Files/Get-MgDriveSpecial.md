@@ -20,6 +20,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveSpecial?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveSpecial?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

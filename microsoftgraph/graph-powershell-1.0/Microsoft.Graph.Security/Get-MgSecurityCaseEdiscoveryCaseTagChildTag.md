@@ -18,6 +18,9 @@ Returns the tags that are a child of a tag.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

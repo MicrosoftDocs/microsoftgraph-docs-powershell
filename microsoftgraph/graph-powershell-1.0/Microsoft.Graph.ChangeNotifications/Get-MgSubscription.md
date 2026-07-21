@@ -19,6 +19,9 @@ See the table in the Permissions section for the list of resources that support 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Get-MgBetaSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Get-MgBetaSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

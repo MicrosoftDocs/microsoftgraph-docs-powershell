@@ -18,6 +18,9 @@ Update the navigation property masterCategories in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

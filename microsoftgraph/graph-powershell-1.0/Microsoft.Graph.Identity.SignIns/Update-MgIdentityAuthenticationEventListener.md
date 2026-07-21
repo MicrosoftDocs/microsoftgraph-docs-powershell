@@ -20,6 +20,9 @@ The following derived types are currently supported.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ To indicate which terms are related to the current term as either pinned or reus
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreGroupSetTermChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetTermChildRelation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreGroupSetTermChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetTermChildRelation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

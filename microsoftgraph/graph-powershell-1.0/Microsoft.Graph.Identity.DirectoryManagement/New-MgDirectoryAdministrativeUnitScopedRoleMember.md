@@ -19,6 +19,9 @@ For a list of roles that can be assigned with administrative unit scope, see Ass
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -19,6 +19,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

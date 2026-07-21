@@ -18,6 +18,9 @@ Delete navigation property documents for print
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintPrinterJobDocument?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintPrinterJobDocument?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -18,6 +18,9 @@ Check out a driveItem resource to prevent others from editing the document, and 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaCheckoutUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckoutUserDriveItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckoutUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckoutUserDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Checkout (Default)

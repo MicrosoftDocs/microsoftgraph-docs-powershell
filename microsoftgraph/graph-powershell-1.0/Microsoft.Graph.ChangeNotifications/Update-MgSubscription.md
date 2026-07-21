@@ -22,6 +22,9 @@ See subscription for maximum length of a subscription for each resource type.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Update-MgBetaSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Update-MgBetaSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

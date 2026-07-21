@@ -18,6 +18,9 @@ Computes the rights and inheritance for sensitivity labels based on the input co
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AndExpanded (Default)

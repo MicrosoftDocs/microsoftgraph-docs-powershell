@@ -18,6 +18,9 @@ Update the navigation property operations in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

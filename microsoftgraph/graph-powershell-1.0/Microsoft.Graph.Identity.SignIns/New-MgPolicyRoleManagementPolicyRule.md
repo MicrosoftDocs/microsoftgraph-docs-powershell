@@ -18,6 +18,9 @@ Create new navigation property to rules for policies
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyRoleManagementPolicyRule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyRoleManagementPolicyRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

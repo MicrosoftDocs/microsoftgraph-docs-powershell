@@ -18,6 +18,9 @@ Delete navigation property retentionLabel for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemRetentionLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemRetentionLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

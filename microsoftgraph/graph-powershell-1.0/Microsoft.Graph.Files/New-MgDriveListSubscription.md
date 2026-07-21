@@ -18,6 +18,9 @@ Create new navigation property to subscriptions for drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -23,6 +23,9 @@ Alternatively, reply to a message in a single operation.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageReply](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageReply?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageReply](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

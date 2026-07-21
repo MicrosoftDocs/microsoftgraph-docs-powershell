@@ -18,6 +18,9 @@ Analytics about the view activities that took place on this item.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ Update the navigation property galleryImages in deviceManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementVirtualEndpointGalleryImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementVirtualEndpointGalleryImage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementVirtualEndpointGalleryImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementVirtualEndpointGalleryImage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

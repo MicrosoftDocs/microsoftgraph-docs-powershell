@@ -19,6 +19,9 @@ This property is read-only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ Update the navigation property importedWindowsAutopilotDeviceIdentities in devic
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

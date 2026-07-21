@@ -23,6 +23,9 @@ For details, see the examples section.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReassignEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReassignEducationUserAssignmentSubmission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReassignEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReassignEducationUserAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reassign (Default)

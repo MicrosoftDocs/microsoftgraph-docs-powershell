@@ -18,6 +18,9 @@ Get details about users who have activated Microsoft 365.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActivationUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationUserDetail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActivationUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

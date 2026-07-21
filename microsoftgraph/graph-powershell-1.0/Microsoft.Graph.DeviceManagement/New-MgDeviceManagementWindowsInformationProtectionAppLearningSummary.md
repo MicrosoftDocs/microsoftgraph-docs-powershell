@@ -18,6 +18,9 @@ Create new navigation property to windowsInformationProtectionAppLearningSummari
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

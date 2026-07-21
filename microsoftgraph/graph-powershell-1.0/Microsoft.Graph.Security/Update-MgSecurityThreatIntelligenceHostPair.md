@@ -18,6 +18,9 @@ Update the navigation property hostPairs in security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

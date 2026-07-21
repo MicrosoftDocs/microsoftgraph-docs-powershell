@@ -19,6 +19,9 @@ This API can't create a new chat; you must use the list chats method to retrieve
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -19,6 +19,9 @@ The response provides details about which memberships could and couldn't be crea
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaGroupTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaGroupTeamMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaGroupTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaGroupTeamMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

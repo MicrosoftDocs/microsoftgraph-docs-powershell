@@ -18,6 +18,9 @@ Delete navigation property notebooks for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOnenoteNotebook?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOnenoteNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -19,6 +19,9 @@ This action is supported only if the managedGroupTypes property of the policy is
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaGroupToLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupToLifecyclePolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaGroupToLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupToLifecyclePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

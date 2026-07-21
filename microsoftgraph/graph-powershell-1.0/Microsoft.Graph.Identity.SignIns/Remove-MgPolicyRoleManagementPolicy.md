@@ -18,6 +18,9 @@ Delete navigation property roleManagementPolicies for policies
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyRoleManagementPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyRoleManagementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

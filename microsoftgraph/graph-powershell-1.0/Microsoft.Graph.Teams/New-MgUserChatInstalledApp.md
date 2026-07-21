@@ -18,6 +18,9 @@ Create new navigation property to installedApps for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

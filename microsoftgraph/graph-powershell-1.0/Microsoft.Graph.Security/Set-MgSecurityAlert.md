@@ -18,6 +18,9 @@ Create a comment for an existing alert based on the specified alert id property.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Set-MgBetaSecurityAlert?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Set-MgBetaSecurityAlert?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

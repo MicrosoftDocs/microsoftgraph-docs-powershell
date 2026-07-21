@@ -20,6 +20,9 @@ To allow for asynchronous processing, you must wait up to 2 hours before joining
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

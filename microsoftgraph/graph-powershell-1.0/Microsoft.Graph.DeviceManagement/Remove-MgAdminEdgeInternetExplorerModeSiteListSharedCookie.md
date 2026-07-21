@@ -18,6 +18,9 @@ Delete a browserSharedCookie from a browserSiteList.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

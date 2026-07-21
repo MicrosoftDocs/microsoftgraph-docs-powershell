@@ -18,6 +18,9 @@ Return instances of membership and ownership eligibility schedules for the calli
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

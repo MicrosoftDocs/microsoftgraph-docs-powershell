@@ -18,6 +18,9 @@ Delete navigation property sharedWithTeams for teams
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

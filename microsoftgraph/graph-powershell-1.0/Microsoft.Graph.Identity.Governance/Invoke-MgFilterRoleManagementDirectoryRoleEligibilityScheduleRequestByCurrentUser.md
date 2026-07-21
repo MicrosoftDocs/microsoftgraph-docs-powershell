@@ -19,6 +19,9 @@ The principal can be the creator or approver of the unifiedRoleEligibilitySchedu
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

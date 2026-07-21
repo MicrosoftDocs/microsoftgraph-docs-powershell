@@ -19,6 +19,9 @@ After calling this action, the status of the cancelled unifiedRoleEligibilitySch
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Cancel (Default)

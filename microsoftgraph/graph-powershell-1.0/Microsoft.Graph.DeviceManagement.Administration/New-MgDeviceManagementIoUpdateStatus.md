@@ -18,6 +18,9 @@ Create new navigation property to iosUpdateStatuses for deviceManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -21,6 +21,9 @@ For more information, see contentType: addCopyFromContentTypeHub and the blog po
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

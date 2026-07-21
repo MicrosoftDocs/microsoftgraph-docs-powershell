@@ -18,6 +18,9 @@ The async operations that ran or are running on this team.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamOperation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

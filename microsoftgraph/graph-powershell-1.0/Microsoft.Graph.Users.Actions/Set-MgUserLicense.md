@@ -21,6 +21,9 @@ Direct user licensing method is an alternative to group-based licensing.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserLicense](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserLicense?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserLicense](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserLicense?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

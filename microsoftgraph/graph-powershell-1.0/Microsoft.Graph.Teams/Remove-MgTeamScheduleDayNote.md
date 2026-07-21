@@ -18,6 +18,9 @@ Delete navigation property dayNotes for teams
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleDayNote](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleDayNote?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleDayNote](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleDayNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

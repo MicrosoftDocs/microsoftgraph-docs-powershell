@@ -18,6 +18,9 @@ Get the count of user mailboxes in each quota category.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportMailboxUsageQuotaStatusMailboxCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageQuotaStatusMailboxCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportMailboxUsageQuotaStatusMailboxCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageQuotaStatusMailboxCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

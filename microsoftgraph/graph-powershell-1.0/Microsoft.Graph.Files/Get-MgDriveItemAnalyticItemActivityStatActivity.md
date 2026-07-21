@@ -18,6 +18,9 @@ Exposes the itemActivities represented in this itemActivityStat resource.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

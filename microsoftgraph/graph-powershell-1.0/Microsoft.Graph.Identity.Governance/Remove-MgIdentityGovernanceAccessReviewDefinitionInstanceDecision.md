@@ -18,6 +18,9 @@ Delete navigation property decisions for identityGovernance
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

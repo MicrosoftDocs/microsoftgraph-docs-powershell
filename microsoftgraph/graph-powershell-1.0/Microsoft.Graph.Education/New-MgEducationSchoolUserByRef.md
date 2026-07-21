@@ -18,6 +18,9 @@ Add a user to a school.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

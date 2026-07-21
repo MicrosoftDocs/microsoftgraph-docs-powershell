@@ -18,6 +18,9 @@ Update the navigation property sessions in solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhallSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhallSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhallSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhallSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

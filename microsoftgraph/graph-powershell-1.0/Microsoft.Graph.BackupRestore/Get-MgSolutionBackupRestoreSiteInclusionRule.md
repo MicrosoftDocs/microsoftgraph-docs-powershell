@@ -18,6 +18,9 @@ The list of site inclusion rules applied to the tenant.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSiteInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSiteInclusionRule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSiteInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSiteInclusionRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

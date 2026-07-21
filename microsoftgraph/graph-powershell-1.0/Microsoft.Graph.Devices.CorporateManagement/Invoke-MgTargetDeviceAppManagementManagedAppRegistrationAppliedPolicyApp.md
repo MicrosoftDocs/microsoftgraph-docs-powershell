@@ -18,6 +18,9 @@ Invoke action targetApps
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### TargetExpanded (Default)

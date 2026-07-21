@@ -18,6 +18,9 @@ Create new navigation property to permissions for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

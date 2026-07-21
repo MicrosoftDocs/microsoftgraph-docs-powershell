@@ -19,6 +19,9 @@ You can do the following for a given tenant:\r- List all buildings.\r- List all 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsWorkspace](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsWorkspace?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsWorkspace](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsWorkspace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

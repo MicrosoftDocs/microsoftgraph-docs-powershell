@@ -18,6 +18,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.serviceP
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnerAsServicePrincipal?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnerAsServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

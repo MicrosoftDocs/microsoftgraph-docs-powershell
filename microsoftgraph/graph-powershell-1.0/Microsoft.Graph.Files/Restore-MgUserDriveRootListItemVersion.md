@@ -19,6 +19,9 @@ This will create a new version with the contents of the previous version, but pr
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaUserDriveRootListItemVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaUserDriveRootListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

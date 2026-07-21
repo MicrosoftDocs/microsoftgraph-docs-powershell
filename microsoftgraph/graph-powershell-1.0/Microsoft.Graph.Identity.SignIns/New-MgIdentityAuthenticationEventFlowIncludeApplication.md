@@ -21,6 +21,9 @@ The app must have an associated service principal in the tenant.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

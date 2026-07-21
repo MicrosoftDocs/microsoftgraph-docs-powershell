@@ -18,6 +18,9 @@ Create new navigation property to tasks for identityGovernance
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

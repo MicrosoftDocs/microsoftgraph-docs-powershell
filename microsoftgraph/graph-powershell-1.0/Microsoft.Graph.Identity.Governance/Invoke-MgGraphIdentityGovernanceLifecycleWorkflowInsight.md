@@ -19,6 +19,9 @@ This allows you to quickly get category information, by numerical value, bypassi
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Graph (Default)

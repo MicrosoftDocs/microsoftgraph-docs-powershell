@@ -18,6 +18,9 @@ Represents an abstract type that contains resources for attack simulation and tr
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSecurity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurity?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSecurity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

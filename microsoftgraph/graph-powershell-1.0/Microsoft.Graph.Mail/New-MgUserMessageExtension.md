@@ -18,6 +18,9 @@ Create new navigation property to extensions for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

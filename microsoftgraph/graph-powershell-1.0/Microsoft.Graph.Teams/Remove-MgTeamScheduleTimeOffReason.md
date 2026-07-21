@@ -21,6 +21,9 @@ timeOffItem instances that have been assigned this reason remain assigned to thi
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

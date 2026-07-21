@@ -20,6 +20,9 @@ We recommend using a transparent image with no padding around the logo.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingLocalizationSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationSquareLogoDark?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingLocalizationSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationSquareLogoDark?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

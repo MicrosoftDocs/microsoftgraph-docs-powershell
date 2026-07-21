@@ -19,6 +19,9 @@ This operation allows both admins and eligible users to add, revoke, or extend e
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

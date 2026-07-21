@@ -18,6 +18,9 @@ Zero or more managed app registrations that belong to the user.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedAppRegistration?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedAppRegistration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

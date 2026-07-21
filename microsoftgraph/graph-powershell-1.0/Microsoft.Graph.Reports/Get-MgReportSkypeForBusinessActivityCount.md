@@ -19,6 +19,9 @@ The report also includes the number of peer-to-peer sessions.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessActivityCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

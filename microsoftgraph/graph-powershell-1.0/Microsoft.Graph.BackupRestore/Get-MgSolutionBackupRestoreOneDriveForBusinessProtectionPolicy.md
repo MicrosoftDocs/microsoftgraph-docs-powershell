@@ -18,6 +18,9 @@ The list of OneDrive for Business protection policies in the tenant.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ The tags associated with the team.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTag?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

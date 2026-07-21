@@ -18,6 +18,9 @@ Update the navigation property roleAssignments in deviceManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

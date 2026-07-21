@@ -18,6 +18,9 @@ The content stream
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteResourceContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteResourceContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

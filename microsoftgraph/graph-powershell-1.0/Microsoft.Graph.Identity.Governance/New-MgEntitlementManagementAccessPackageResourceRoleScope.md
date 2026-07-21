@@ -20,6 +20,9 @@ Once you add the resource role scope to the access package, the user will receiv
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

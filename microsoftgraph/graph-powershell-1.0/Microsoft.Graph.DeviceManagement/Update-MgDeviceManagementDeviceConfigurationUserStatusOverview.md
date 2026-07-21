@@ -18,6 +18,9 @@ Update the navigation property userStatusOverview in deviceManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

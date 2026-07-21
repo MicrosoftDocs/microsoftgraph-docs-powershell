@@ -18,6 +18,9 @@ Create new navigation property to authenticationMethodConfigurations for policie
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

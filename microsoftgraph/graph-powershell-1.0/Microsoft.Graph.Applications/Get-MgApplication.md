@@ -18,6 +18,9 @@ Get the properties and relationships of an application object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplication?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

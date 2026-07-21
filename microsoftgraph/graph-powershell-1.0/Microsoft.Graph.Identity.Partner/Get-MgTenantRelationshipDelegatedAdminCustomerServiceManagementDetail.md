@@ -18,6 +18,9 @@ Contains the management details of a service in the customer tenant that's manag
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -21,6 +21,9 @@ The following types are supported:\r- administrativeUnit\r- application\r- certi
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemAsGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemAsGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

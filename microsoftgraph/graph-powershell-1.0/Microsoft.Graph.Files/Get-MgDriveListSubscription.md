@@ -18,6 +18,9 @@ The set of subscriptions on the list.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

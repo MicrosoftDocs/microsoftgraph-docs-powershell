@@ -19,6 +19,9 @@ The following are some examples you can customize for a service:\r- Price\r- Typ
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessService?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessService?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

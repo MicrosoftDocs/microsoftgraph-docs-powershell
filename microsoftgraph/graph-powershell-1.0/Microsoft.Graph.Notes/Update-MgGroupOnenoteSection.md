@@ -18,6 +18,9 @@ Update the navigation property sections in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaGroupOnenoteSection?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaGroupOnenoteSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

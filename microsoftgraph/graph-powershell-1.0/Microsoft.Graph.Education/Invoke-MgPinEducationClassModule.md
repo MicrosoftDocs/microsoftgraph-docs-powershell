@@ -20,6 +20,9 @@ Only teachers can perform this action and only one module at a time can be pinne
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaPinEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaPinEducationClassModule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPinEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaPinEducationClassModule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Pin (Default)

@@ -18,6 +18,9 @@ Update the navigation property inheritsPermissionsFrom in roleManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

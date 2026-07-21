@@ -18,6 +18,9 @@ Create new navigation property to subjectRightsRequests for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecuritySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySubjectRightsRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecuritySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySubjectRightsRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

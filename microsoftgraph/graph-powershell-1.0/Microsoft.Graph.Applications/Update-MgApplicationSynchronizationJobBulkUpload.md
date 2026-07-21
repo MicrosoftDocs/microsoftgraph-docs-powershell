@@ -18,6 +18,9 @@ Update the navigation property bulkUpload in applications
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJobBulkUpload?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJobBulkUpload?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

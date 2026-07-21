@@ -19,6 +19,9 @@ If a configuration includes a user synchronization policy, you must first delete
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

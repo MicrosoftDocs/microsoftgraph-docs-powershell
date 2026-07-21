@@ -18,6 +18,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemDocumentSetVersionCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemDocumentSetVersionCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemDocumentSetVersionCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemDocumentSetVersionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

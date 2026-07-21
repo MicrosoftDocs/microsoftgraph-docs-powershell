@@ -19,6 +19,9 @@ Supports $expand.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

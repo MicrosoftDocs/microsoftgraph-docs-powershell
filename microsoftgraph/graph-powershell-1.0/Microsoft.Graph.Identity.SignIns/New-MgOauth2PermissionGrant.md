@@ -19,6 +19,9 @@ A delegated permission grant authorizes a client service principal (representing
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

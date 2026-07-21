@@ -18,6 +18,9 @@ Delete navigation property contentTypes for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

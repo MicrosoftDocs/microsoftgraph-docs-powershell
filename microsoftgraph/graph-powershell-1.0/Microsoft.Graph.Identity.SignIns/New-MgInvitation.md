@@ -21,6 +21,9 @@ When creating a new invitation, you have several options available:
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInvitation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInvitation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

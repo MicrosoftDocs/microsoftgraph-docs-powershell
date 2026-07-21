@@ -18,6 +18,9 @@ Create new navigation property to sets for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

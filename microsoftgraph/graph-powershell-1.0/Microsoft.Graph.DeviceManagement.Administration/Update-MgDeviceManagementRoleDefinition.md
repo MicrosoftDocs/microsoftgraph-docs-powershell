@@ -18,6 +18,9 @@ Update the navigation property roleDefinitions in deviceManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

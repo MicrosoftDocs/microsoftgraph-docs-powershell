@@ -19,6 +19,9 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ParseExpanded (Default)

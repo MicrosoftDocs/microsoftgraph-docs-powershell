@@ -20,6 +20,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

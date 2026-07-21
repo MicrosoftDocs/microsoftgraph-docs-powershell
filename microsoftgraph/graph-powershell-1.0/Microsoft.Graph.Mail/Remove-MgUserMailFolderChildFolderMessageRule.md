@@ -18,6 +18,9 @@ Delete navigation property messageRules for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

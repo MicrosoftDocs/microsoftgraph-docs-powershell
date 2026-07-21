@@ -19,6 +19,9 @@ Supports $expand and $select nested in $expand for id only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

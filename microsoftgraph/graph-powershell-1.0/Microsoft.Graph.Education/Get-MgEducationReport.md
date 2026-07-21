@@ -18,6 +18,9 @@ Get reports from education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationReport](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReport?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationReport](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ All items contained in the list.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

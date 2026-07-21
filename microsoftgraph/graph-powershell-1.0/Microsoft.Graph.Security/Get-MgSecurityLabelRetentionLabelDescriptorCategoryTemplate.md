@@ -18,6 +18,9 @@ Specifies a group of similar types of content in a particular department.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDescriptorCategoryTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorCategoryTemplate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDescriptorCategoryTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorCategoryTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

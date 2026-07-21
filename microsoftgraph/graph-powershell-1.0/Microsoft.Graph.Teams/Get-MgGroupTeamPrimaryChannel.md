@@ -18,6 +18,9 @@ The general channel for the team.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

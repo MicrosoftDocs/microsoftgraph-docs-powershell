@@ -18,6 +18,9 @@ Retrieve a list of groups that have been granted access to submit print jobs to 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintShareAllowedGroup](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareAllowedGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareAllowedGroup](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareAllowedGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

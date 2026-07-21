@@ -19,6 +19,9 @@ Removing remoteDesktopSecurityConfiguration object on the servicePrincipal disab
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

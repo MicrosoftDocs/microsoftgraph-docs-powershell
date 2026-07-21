@@ -21,6 +21,9 @@ When you run a workflow on demand, the tasks are executed regardless of whether 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ActivateExpanded (Default)

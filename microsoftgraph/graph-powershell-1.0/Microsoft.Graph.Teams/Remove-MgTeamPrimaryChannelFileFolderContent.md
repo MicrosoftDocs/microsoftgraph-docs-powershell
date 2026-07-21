@@ -18,6 +18,9 @@ The content stream, if the item represents a file.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelFileFolderContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelFileFolderContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

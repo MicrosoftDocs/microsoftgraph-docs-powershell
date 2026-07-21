@@ -18,6 +18,9 @@ Update the properties of a remoteAssistancePartner object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

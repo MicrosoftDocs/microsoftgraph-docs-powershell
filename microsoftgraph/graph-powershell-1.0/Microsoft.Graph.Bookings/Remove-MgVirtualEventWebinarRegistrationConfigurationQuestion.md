@@ -19,6 +19,9 @@ The question can either be a predefined registration question or a custom regist
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

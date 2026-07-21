@@ -18,6 +18,9 @@ Create a new subjectRightsRequest object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/New-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/New-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

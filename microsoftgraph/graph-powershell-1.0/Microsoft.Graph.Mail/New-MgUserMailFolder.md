@@ -18,6 +18,9 @@ Create new navigation property to mailFolders for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolder?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

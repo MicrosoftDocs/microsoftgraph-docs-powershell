@@ -18,6 +18,9 @@ Invoke action createLink
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemListItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemListItemLink?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemListItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemListItemLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

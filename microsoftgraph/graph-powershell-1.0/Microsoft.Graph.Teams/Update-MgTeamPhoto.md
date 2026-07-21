@@ -20,6 +20,9 @@ You can use either PATCH or PUT for this operation.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPhoto?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPhoto?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

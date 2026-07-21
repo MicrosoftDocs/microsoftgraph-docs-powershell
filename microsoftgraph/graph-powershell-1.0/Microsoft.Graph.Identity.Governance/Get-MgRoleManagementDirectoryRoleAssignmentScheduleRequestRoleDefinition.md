@@ -19,6 +19,9 @@ Supports $expand and $select nested in $expand.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

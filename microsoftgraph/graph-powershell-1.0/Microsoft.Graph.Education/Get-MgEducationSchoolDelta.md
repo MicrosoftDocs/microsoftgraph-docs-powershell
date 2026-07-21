@@ -19,6 +19,9 @@ See Use delta query for details.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

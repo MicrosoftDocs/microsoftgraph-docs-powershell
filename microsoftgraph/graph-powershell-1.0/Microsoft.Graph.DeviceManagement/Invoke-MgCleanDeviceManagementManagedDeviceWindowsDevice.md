@@ -18,6 +18,9 @@ Clean Windows device
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Invoke-MgBetaCleanDeviceManagementManagedDeviceWindowsDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CleanExpanded (Default)

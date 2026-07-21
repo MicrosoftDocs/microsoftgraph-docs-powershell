@@ -18,6 +18,9 @@ Invoke action unsetReaction
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Clear-MgBetaUserChatMessageReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaUserChatMessageReaction?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserChatMessageReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaUserChatMessageReaction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UnsetExpanded (Default)

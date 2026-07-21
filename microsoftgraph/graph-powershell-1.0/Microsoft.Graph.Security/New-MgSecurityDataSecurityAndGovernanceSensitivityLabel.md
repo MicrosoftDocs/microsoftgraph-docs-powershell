@@ -18,6 +18,9 @@ Create new navigation property to sensitivityLabels for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

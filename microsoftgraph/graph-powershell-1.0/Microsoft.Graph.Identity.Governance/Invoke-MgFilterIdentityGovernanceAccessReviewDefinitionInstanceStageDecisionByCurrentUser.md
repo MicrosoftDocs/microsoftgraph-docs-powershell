@@ -19,6 +19,9 @@ The decision items are represented by accessReviewInstanceDecisionItem objects o
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

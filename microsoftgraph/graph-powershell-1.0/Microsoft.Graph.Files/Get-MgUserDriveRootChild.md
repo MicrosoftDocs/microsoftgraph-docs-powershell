@@ -21,6 +21,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootChild?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

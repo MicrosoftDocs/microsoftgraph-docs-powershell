@@ -19,6 +19,9 @@ An oAuth2PermissionGrant can be updated to change which delegated permissions ar
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

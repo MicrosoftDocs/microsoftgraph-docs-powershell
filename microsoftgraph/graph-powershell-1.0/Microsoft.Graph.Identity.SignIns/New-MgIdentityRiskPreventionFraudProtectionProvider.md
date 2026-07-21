@@ -19,6 +19,9 @@ You can create one of the following subtypes that are derived from fraudProtecti
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityRiskPreventionFraudProtectionProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityRiskPreventionFraudProtectionProvider?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityRiskPreventionFraudProtectionProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityRiskPreventionFraudProtectionProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

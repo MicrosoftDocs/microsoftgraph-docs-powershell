@@ -18,6 +18,9 @@ Create new navigation property to extensions for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -18,6 +18,9 @@ Unpublish a contentType from a content type hub site.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Unpublish-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaUserDriveListContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Unpublish-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaUserDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unpublish (Default)

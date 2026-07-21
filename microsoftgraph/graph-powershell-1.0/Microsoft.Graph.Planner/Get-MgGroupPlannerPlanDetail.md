@@ -20,6 +20,9 @@ Extra details about the plan.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanDetail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

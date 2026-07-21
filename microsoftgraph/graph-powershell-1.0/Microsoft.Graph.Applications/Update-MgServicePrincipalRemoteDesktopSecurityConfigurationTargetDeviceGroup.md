@@ -19,6 +19,9 @@ You can configure a maximum of 10 target device groups for the remoteDesktopSecu
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

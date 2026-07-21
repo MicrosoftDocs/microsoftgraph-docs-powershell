@@ -19,6 +19,9 @@ If the specified timeOff object doesn't exist, this method returns 404 Not found
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

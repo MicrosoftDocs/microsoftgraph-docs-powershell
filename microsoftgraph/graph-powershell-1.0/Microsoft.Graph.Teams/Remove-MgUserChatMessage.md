@@ -18,6 +18,9 @@ Delete navigation property messages for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

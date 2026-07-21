@@ -18,6 +18,9 @@ A collection of permissions granted to apps to access the team.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPermissionGrant?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

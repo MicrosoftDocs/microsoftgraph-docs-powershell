@@ -18,6 +18,9 @@ Create a new userSource object associated with an eDiscovery custodian.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

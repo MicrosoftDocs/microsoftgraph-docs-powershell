@@ -18,6 +18,9 @@ Update the navigation property columnLinks in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentTypeColumnLink?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

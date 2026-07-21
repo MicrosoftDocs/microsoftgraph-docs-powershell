@@ -19,6 +19,9 @@ Supports $expand for channel messages.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageReply?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

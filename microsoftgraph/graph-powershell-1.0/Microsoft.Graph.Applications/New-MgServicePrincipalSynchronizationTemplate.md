@@ -18,6 +18,9 @@ Create new navigation property to templates for servicePrincipals
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationTemplate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

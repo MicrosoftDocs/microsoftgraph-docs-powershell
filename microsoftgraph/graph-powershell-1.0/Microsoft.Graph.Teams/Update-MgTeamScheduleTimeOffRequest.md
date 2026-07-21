@@ -18,6 +18,9 @@ Update the navigation property timeOffRequests in teams
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

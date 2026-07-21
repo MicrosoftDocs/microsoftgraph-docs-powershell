@@ -18,6 +18,9 @@ Read the properties and relationships of a federatedIdentityCredential object as
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationFederatedIdentityCredentialByName](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationFederatedIdentityCredentialByName?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationFederatedIdentityCredentialByName](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationFederatedIdentityCredentialByName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

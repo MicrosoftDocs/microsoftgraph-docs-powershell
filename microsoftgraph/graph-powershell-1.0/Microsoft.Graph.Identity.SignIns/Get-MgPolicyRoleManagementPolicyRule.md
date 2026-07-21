@@ -19,6 +19,9 @@ The rule can be one of the following types that are derived from the unifiedRole
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyRoleManagementPolicyRule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyRoleManagementPolicyRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

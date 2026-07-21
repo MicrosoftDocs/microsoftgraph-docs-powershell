@@ -20,6 +20,9 @@ If the definition is 30 days or older, a 404 Not Found error is returned.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

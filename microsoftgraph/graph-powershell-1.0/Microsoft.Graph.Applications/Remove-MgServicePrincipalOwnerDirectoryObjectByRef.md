@@ -19,6 +19,9 @@ As a recommended best practice, service principals should have at least two owne
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

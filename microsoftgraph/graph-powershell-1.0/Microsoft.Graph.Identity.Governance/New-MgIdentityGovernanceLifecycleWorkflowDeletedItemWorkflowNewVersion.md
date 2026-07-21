@@ -18,6 +18,9 @@ Create a new version of the workflow object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

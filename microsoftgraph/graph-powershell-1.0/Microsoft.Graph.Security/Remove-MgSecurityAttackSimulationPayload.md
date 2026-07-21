@@ -18,6 +18,9 @@ Delete navigation property payloads for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationPayload?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationPayload?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

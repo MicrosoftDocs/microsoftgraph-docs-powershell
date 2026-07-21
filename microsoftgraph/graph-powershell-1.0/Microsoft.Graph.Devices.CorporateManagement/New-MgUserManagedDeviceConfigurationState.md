@@ -18,6 +18,9 @@ Create new navigation property to deviceConfigurationStates for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserManagedDeviceConfigurationState?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserManagedDeviceConfigurationState?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

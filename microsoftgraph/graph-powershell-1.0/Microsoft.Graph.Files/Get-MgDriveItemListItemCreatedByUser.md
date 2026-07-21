@@ -19,6 +19,9 @@ Read-only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveItemListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemListItemCreatedByUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemListItemCreatedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

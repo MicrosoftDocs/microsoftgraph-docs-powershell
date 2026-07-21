@@ -18,6 +18,9 @@ Create a new claimsMappingPolicy object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

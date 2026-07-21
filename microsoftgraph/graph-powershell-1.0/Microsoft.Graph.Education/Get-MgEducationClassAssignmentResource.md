@@ -19,6 +19,9 @@ Only teachers, students, and applications with application permissions can perfo
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

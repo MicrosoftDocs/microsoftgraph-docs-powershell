@@ -19,6 +19,9 @@ Currently the supported virtual event types are:\r- virtualEventWebinar.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinarPresenter?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinarPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

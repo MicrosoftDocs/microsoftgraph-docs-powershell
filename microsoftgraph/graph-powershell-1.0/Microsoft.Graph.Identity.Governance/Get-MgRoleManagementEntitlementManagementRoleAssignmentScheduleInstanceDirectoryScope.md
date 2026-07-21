@@ -19,6 +19,9 @@ Read-only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirectoryScope?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirectoryScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

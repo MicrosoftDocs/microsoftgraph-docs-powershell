@@ -18,6 +18,9 @@ Get the properties and relationships of a bookingStaffMember in the specified bo
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

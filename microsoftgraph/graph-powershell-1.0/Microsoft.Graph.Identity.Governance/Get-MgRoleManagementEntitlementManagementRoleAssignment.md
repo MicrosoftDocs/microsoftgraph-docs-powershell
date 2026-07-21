@@ -18,6 +18,9 @@ Resource to grant access to users or groups.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

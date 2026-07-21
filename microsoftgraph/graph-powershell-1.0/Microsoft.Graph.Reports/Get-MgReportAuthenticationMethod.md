@@ -18,6 +18,9 @@ Container for navigation properties for Microsoft Entra authentication methods r
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportAuthenticationMethod?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportAuthenticationMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

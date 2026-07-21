@@ -24,6 +24,9 @@ After 30 days, the item is permanently deleted.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Restore-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Restore-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

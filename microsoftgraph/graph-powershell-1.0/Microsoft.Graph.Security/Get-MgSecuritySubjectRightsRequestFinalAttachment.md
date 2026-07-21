@@ -19,6 +19,9 @@ The attachment is a zip file that contains all the files that were included by t
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestFinalAttachment](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestFinalAttachment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestFinalAttachment](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestFinalAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

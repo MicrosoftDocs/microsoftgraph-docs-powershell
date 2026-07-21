@@ -18,6 +18,9 @@ Get a list of recentNotebook instances that have been accessed by the signed-in 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteNotebookRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookRecentNotebook?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteNotebookRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookRecentNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

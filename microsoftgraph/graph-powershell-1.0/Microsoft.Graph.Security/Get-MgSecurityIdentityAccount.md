@@ -19,6 +19,9 @@ This allows retrieving information about available identity accounts.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentityAccount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentityAccount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

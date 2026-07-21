@@ -18,6 +18,9 @@ Delete navigation property notificationMessageTemplates for deviceManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

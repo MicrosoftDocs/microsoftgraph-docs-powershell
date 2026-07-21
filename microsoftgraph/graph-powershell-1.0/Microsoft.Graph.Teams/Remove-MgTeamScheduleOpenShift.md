@@ -18,6 +18,9 @@ Delete an openShift object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

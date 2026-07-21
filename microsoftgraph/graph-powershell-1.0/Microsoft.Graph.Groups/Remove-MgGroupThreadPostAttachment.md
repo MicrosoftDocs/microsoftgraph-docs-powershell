@@ -18,6 +18,9 @@ Delete navigation property attachments for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThreadPostAttachment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThreadPostAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -19,6 +19,9 @@ Supports $filter (eq, not, for isResolved and serviceInstance).
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningError?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningError?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

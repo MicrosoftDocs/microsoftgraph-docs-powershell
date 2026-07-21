@@ -18,6 +18,9 @@ The list of group assignments for this mobile app.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

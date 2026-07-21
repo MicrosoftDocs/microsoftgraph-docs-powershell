@@ -19,6 +19,9 @@ Any user authenticating using the Microsoft Entra ID Remote Desktop Services (RD
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -20,6 +20,9 @@ Modules start in the draft state, which means that students can't see the module
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

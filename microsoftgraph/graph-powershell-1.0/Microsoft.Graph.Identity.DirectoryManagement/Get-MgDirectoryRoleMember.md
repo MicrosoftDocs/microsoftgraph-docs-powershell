@@ -21,6 +21,9 @@ For details, see Role template IDs.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

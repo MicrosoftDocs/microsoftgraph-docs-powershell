@@ -20,6 +20,9 @@ The following table lists the three scenarios where you can get an open extensio
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ The content stream for this version of the item.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemVersionContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

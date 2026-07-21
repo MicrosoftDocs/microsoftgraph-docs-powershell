@@ -18,6 +18,9 @@ Create a new application object if it doesn't exist, or update the properties of
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplication?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

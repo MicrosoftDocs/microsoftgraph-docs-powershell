@@ -19,6 +19,9 @@ Read-only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageCreatedByUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageCreatedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -24,6 +24,9 @@ This reset is a long-running operation and returns a Location header with a link
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Reset-MgBetaUserAuthenticationMethodPassword](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Reset-MgBetaUserAuthenticationMethodPassword?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaUserAuthenticationMethodPassword](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Reset-MgBetaUserAuthenticationMethodPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ResetExpanded (Default)

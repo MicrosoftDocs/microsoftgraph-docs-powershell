@@ -18,6 +18,9 @@ Delete navigation property exchangeConnectors for deviceManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

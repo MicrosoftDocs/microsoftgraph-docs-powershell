@@ -18,6 +18,9 @@ The task lists in the users mailbox.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoList?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

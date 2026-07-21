@@ -20,6 +20,9 @@ The operation returns an error if the message does not exist for the tenant.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

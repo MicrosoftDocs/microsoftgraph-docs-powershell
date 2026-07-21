@@ -23,6 +23,9 @@ Soft-deleted administrative units will be permanently deleted 30 days after init
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

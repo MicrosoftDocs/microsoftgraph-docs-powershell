@@ -19,6 +19,9 @@ Types of conference sessions include IM, audio/video, application sharing, web, 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessParticipantActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessParticipantActivityUserCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessParticipantActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessParticipantActivityUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

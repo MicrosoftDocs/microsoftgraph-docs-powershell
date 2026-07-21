@@ -18,6 +18,9 @@ Deletes an appRoleAssignment that a user, group, or client service principal has
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

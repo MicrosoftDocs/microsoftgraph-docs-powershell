@@ -19,6 +19,9 @@ For cloud joined devices and registered personal devices, registered users are s
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredUser](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredUser](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

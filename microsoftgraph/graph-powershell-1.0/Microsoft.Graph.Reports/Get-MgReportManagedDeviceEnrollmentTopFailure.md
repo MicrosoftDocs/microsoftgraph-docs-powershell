@@ -18,6 +18,9 @@ Invoke function managedDeviceEnrollmentTopFailures
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportManagedDeviceEnrollmentTopFailure](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportManagedDeviceEnrollmentTopFailure?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportManagedDeviceEnrollmentTopFailure](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportManagedDeviceEnrollmentTopFailure?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Top (Default)

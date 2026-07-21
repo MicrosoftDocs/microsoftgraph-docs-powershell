@@ -19,6 +19,9 @@ To update a disposition review stage, include the actionAfterRetentionPeriod pro
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelRetentionLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelRetentionLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ Update the navigation property children in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSetParentGroupSetChild?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSetParentGroupSetChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

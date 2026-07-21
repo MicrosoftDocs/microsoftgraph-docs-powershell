@@ -24,6 +24,9 @@ Items with this property should be removed from your local state.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemDelta](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemDelta](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

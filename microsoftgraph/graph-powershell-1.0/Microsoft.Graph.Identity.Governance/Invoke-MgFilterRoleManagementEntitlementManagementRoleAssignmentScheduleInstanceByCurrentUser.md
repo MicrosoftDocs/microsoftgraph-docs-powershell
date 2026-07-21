@@ -18,6 +18,9 @@ Get the instances of active role assignments for the calling principal.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceByCurrentUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

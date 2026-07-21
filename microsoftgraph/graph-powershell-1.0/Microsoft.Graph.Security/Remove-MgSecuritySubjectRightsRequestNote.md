@@ -18,6 +18,9 @@ Delete navigation property notes for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

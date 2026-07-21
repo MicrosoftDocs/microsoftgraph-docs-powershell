@@ -18,6 +18,9 @@ Delete navigation property deviceCompliancePolicyStates for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceCompliancePolicyState?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceCompliancePolicyState?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -18,6 +18,9 @@ Delete navigation property jobs for applications
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

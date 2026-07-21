@@ -18,6 +18,9 @@ The list of users that meet the workflowExecutionConditions of a workflow.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ Entry-point to Planner resource that might exist for a Unified Group.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlanner?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlanner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

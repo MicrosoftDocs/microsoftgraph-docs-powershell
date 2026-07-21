@@ -19,6 +19,9 @@ Because the amount of runs returned by the List API call can be overwhelming, th
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Summary (Default)

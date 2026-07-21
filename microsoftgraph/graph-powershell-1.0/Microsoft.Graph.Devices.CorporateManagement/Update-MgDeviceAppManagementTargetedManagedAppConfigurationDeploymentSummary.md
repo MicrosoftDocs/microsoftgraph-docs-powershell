@@ -18,6 +18,9 @@ Update the navigation property deploymentSummary in deviceAppManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

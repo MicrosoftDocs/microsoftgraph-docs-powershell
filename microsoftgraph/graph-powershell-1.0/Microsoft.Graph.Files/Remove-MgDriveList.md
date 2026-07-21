@@ -18,6 +18,9 @@ Delete navigation property list for drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveList?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

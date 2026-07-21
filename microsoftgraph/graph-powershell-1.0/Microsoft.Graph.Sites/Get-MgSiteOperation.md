@@ -18,6 +18,9 @@ Get the status of a rich long-running operation on a site or a list.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteOperation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

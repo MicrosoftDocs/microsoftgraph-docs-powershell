@@ -19,6 +19,9 @@ To delete the organizationalBranding object, all images (Stream types) must firs
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBranding?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBranding?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

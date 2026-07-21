@@ -21,6 +21,9 @@ Ordered by recency of share.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserInsightShared](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightShared?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightShared](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightShared?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

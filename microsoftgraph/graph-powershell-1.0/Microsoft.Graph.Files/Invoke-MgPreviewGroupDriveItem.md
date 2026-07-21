@@ -18,6 +18,9 @@ Invoke action preview
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaPreviewGroupDriveItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaPreviewGroupDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### PreviewExpanded (Default)

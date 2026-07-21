@@ -18,6 +18,9 @@ Delete navigation property billing for reports
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaReportPartnerBilling](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBilling?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaReportPartnerBilling](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBilling?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

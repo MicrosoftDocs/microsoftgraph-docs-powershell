@@ -20,6 +20,9 @@ Returned only on $select.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

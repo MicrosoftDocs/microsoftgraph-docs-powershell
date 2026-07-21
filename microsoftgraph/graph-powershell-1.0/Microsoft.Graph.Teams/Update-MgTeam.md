@@ -18,6 +18,9 @@ Update the properties of the specified team.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeam?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

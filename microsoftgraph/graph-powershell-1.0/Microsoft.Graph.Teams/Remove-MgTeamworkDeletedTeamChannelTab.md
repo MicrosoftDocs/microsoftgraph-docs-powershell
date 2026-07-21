@@ -18,6 +18,9 @@ Delete navigation property tabs for teamwork
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

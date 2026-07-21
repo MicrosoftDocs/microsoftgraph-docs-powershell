@@ -18,6 +18,9 @@ Delete a tag object permanently.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamTag?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

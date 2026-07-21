@@ -18,6 +18,9 @@ Create new navigation property to documentSetVersions for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListItemDocumentSetVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListItemDocumentSetVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

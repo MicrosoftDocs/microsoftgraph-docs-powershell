@@ -18,6 +18,9 @@ Create new navigation property to presenters for solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaVirtualEventPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventPresenter?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

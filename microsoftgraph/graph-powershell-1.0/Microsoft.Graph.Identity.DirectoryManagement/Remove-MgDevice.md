@@ -18,6 +18,9 @@ Delete a registered device.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDevice?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

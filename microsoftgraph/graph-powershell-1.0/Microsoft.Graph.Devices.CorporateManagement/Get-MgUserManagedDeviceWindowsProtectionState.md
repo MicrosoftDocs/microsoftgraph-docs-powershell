@@ -19,6 +19,9 @@ This property is read-only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

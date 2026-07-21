@@ -18,6 +18,9 @@ Delete a fixture on a specified floor.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPlaceAsBuildingMapLevelFixture](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsBuildingMapLevelFixture?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlaceAsBuildingMapLevelFixture](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsBuildingMapLevelFixture?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

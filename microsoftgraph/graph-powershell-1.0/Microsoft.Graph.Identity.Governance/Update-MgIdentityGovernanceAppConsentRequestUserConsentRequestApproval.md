@@ -18,6 +18,9 @@ Update the navigation property approval in identityGovernance
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

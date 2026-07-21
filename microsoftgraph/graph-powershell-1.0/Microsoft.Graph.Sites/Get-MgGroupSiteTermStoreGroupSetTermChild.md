@@ -18,6 +18,9 @@ Children of current term.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreGroupSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupSetTermChild?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreGroupSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupSetTermChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

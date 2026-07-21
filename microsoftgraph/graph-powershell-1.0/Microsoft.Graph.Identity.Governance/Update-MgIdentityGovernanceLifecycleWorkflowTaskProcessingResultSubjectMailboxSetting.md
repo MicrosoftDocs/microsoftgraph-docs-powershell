@@ -18,6 +18,9 @@ Update property mailboxSettings value.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectMailboxSetting?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ Delete navigation property dispositionReviewStages for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -18,6 +18,9 @@ Update the navigation property allMembers in teamwork
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

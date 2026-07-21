@@ -19,6 +19,9 @@ Only teachers can perform this operation.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaEducationClassAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentRubricByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaEducationClassAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentRubricByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

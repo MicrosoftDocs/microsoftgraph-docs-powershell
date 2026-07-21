@@ -18,6 +18,9 @@ Publishes a contentType present in the content type hub site.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgBetaSiteListContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgBetaSiteListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)

@@ -18,6 +18,9 @@ Update the navigation property extensions in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupEventExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupEventExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

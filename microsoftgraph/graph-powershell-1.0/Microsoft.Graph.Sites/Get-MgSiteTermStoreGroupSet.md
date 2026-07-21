@@ -18,6 +18,9 @@ All sets under the group in a term [store].
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSet?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

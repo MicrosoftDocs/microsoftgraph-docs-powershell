@@ -18,6 +18,9 @@ Revoke the specified user's access to submit print jobs to the associated printe
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

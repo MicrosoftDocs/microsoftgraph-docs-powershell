@@ -18,6 +18,9 @@ Update the navigation property protectedAppLockerFiles in deviceAppManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

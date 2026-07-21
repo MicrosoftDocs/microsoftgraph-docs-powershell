@@ -20,6 +20,9 @@ You can include other information such as business address, web site address, an
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusiness?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusiness?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

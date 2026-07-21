@@ -18,6 +18,9 @@ The content streams that are uploaded.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskAttachmentSessionContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskAttachmentSessionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

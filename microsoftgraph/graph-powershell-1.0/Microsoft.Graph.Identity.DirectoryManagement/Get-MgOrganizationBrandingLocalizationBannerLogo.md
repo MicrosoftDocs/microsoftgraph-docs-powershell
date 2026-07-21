@@ -22,6 +22,9 @@ To retrieve Stream types of the default branding, for example, bannerLogo and ba
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationBannerLogo?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationBannerLogo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

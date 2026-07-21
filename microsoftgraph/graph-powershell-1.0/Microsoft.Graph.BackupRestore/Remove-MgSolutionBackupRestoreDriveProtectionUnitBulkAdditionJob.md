@@ -18,6 +18,9 @@ Delete navigation property driveProtectionUnitsBulkAdditionJobs for solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

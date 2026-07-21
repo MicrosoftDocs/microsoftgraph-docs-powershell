@@ -18,6 +18,9 @@ Invoke action retryServiceProvisioning
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRetryContactServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaRetryContactServiceProvisioning?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRetryContactServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaRetryContactServiceProvisioning?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Retry (Default)

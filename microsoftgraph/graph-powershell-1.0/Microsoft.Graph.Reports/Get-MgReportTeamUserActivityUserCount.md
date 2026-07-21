@@ -19,6 +19,9 @@ The activity types are number of teams chat messages, private chat messages, cal
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportTeamUserActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityUserCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamUserActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

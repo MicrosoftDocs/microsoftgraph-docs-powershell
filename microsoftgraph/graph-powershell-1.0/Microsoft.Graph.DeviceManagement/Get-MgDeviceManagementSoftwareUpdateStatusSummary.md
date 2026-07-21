@@ -18,6 +18,9 @@ The software update status summary.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

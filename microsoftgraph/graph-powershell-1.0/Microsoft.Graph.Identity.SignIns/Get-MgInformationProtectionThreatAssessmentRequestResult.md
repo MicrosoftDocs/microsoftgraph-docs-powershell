@@ -20,6 +20,9 @@ By default, a GET /threatAssessmentRequests/{id} does not return this property u
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

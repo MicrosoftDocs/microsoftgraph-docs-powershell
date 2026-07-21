@@ -20,6 +20,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteNotebookSectionGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteNotebookSectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

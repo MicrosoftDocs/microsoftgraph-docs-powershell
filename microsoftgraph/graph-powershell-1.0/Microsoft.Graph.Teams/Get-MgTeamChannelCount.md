@@ -18,6 +18,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ Delete navigation property details for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationLandingPageDetail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationLandingPageDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

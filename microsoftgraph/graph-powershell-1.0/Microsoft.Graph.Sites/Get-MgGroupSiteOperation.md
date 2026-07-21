@@ -18,6 +18,9 @@ The collection of long-running operations on the site.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOperation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

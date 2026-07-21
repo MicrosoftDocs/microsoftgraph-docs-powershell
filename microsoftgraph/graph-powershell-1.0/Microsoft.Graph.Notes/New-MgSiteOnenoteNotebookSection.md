@@ -18,6 +18,9 @@ Create new navigation property to sections for sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteNotebookSection?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteNotebookSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

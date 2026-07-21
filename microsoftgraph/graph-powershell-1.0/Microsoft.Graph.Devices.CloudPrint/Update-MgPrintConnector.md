@@ -18,6 +18,9 @@ Update the properties of a printConnector object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintConnector?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

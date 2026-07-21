@@ -19,6 +19,9 @@ This method updates any solution that has a record of the referenced alert ID.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ Version information for a document set version created by a user.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemDocumentSetVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemDocumentSetVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)

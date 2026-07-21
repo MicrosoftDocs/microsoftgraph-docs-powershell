@@ -18,6 +18,9 @@ Create a new list in a site.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteList?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

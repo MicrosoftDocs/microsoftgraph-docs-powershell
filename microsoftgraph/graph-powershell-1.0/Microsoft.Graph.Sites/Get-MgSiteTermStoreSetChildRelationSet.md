@@ -18,6 +18,9 @@ The [set] in which the relation is relevant.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetChildRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetChildRelationSet?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetChildRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetChildRelationSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)

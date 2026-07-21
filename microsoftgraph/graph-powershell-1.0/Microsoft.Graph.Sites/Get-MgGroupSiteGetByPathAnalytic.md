@@ -18,6 +18,9 @@ Analytics about the view activities that took place on this site.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathAnalytic?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

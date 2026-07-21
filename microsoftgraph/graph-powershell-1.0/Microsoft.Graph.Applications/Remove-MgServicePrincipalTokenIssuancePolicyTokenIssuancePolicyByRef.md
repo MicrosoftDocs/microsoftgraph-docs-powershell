@@ -18,6 +18,9 @@ Delete ref of navigation property tokenIssuancePolicies for servicePrincipals
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalTokenIssuancePolicyTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalTokenIssuancePolicyTokenIssuancePolicyByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalTokenIssuancePolicyTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalTokenIssuancePolicyTokenIssuancePolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

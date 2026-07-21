@@ -18,6 +18,9 @@ The appManagementPolicy applied to this application.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppManagementPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppManagementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

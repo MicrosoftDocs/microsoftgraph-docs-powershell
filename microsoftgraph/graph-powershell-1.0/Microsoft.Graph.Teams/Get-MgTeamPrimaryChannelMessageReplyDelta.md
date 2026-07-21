@@ -25,6 +25,9 @@ For more information, see the delta query documentation.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelMessageReplyDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelMessageReplyDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

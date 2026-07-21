@@ -21,6 +21,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteOperation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

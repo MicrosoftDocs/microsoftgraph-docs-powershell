@@ -18,6 +18,9 @@ Get externalSponsors from identityGovernance
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

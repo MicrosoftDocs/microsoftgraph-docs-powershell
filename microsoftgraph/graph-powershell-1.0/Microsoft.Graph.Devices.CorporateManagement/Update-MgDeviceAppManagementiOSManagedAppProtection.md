@@ -18,6 +18,9 @@ Update the navigation property iosManagedAppProtections in deviceAppManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ Delete navigation property healthIssues for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityIdentityHealthIssue](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIdentityHealthIssue?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityIdentityHealthIssue](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIdentityHealthIssue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

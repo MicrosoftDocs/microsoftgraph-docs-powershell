@@ -18,6 +18,9 @@ Delete navigation property reportSettings for admin
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaAdminReportSetting](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaAdminReportSetting?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminReportSetting](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaAdminReportSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
