@@ -75,8 +75,9 @@ The operation behaves differently for resources that are directory objects vs ot
 For the list of resources that support open extensions, see the table in the Permissions section.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 Update-MgBetaGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaGroupThreadPostExtension Cmdlet.
+
 
 ## PARAMETERS
 

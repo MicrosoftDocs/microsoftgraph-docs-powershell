@@ -80,8 +80,9 @@ Provide credentials for establishing connectivity with the target system.
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -107,6 +108,10 @@ $params = @{
 }
 
 Set-MgBetaServicePrincipalSynchronizationSecret -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaServicePrincipalSynchronizationSecret Cmdlet.
+
 
 ## PARAMETERS
 
