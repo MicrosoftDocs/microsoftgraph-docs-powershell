@@ -642,3 +642,25 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
