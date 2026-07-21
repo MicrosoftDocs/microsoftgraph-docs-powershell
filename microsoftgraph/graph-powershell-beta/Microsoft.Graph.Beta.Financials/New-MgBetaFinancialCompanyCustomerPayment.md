@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpayment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 02/20/2026
+ms.date: 07/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaFinancialCompanyCustomerPayment
 ---
@@ -29,7 +29,6 @@ New-MgBetaFinancialCompanyCustomerPayment -CompanyId <string> [-ResponseHeadersV
  [-LineNumber <int>] [-PostingDate <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +38,7 @@ New-MgBetaFinancialCompanyCustomerPayment -CompanyId <string>
  -BodyParameter <IMicrosoftGraphCustomerPayment> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -54,7 +53,7 @@ New-MgBetaFinancialCompanyCustomerPayment -InputObject <IFinancialsIdentity>
  [-LastModifiedDateTime <datetime>] [-LineNumber <int>] [-PostingDate <datetime>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -64,7 +63,7 @@ New-MgBetaFinancialCompanyCustomerPayment -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphCustomerPayment> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -75,6 +74,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to customerPayments for financials
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -107,7 +116,7 @@ HelpMessage: ''
 
 ### -Amount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -134,7 +143,7 @@ HelpMessage: ''
 
 ### -AppliesToInvoiceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -161,7 +170,7 @@ HelpMessage: ''
 
 ### -AppliesToInvoiceNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -237,7 +246,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -313,7 +322,7 @@ HelpMessage: ''
 
 ### -ContactId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -368,7 +377,7 @@ HelpMessage: ''
 
 ### -CustomerId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -395,7 +404,7 @@ HelpMessage: ''
 
 ### -CustomerNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -422,7 +431,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -449,7 +458,7 @@ HelpMessage: ''
 
 ### -DocumentNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -476,7 +485,7 @@ HelpMessage: ''
 
 ### -ExternalDocumentNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -566,7 +575,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -621,7 +630,7 @@ HelpMessage: ''
 
 ### -JournalDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -648,7 +657,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -675,7 +684,7 @@ HelpMessage: ''
 
 ### -LineNumber
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -702,7 +711,7 @@ HelpMessage: ''
 
 ### -PostingDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -868,7 +877,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCustomerPayment>`: customerPayment
+BODYPARAMETER <IMicrosoftGraphCustomerPayment>: customerPayment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Amount <Decimal?>]: 
   [AppliesToInvoiceId <String>]: 
@@ -950,7 +959,7 @@ BODYPARAMETER `<IMicrosoftGraphCustomerPayment>`: customerPayment
   [LineNumber <Int32?>]: 
   [PostingDate <DateTime?>]: 
 
-CUSTOMER `<IMicrosoftGraphCustomer>`: customer
+CUSTOMER <IMicrosoftGraphCustomer>: customer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1015,7 +1024,7 @@ CUSTOMER `<IMicrosoftGraphCustomer>`: customer
   [Type <String>]: 
   [Website <String>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1056,27 +1065,4 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaFinancialCompanyCustomerPayment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpayment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpayment)

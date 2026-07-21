@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyjournalline
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 02/20/2026
+ms.date: 07/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanyJournalLine
 ---
@@ -28,7 +28,7 @@ Update-MgBetaFinancialCompanyJournalLine -CompanyId <string> -JournalLineId <str
  [-LastModifiedDateTime <datetime>] [-LineNumber <int>] [-PostingDate <datetime>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateExpanded1
@@ -42,7 +42,7 @@ Update-MgBetaFinancialCompanyJournalLine -CompanyId <string> -JournalLineId <str
  [-LastModifiedDateTime <datetime>] [-LineNumber <int>] [-PostingDate <datetime>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update1
@@ -52,7 +52,7 @@ Update-MgBetaFinancialCompanyJournalLine -CompanyId <string> -JournalLineId <str
  -JournalId <string> -BodyParameter <IMicrosoftGraphJournalLine> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -62,7 +62,7 @@ Update-MgBetaFinancialCompanyJournalLine -CompanyId <string> -JournalLineId <str
  -BodyParameter <IMicrosoftGraphJournalLine> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -76,7 +76,7 @@ Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
  [-LastModifiedDateTime <datetime>] [-LineNumber <int>] [-PostingDate <datetime>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -90,7 +90,7 @@ Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
  [-LastModifiedDateTime <datetime>] [-LineNumber <int>] [-PostingDate <datetime>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity1
@@ -100,7 +100,7 @@ Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphJournalLine> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -110,7 +110,7 @@ Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphJournalLine> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -121,6 +121,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property journalLines in financials
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -166,7 +176,7 @@ HelpMessage: ''
 
 ### -AccountId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -205,7 +215,7 @@ HelpMessage: ''
 
 ### -AccountNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -283,7 +293,7 @@ HelpMessage: ''
 
 ### -Amount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -383,7 +393,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -483,7 +493,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -522,7 +532,7 @@ HelpMessage: ''
 
 ### -DocumentNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -561,7 +571,7 @@ HelpMessage: ''
 
 ### -ExternalDocumentNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -663,7 +673,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -742,7 +752,7 @@ HelpMessage: ''
 
 ### -JournalDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -847,7 +857,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -886,7 +896,7 @@ HelpMessage: ''
 
 ### -LineNumber
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -925,7 +935,7 @@ HelpMessage: ''
 
 ### -PostingDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -1103,7 +1113,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCOUNT `<IMicrosoftGraphAccount>`: account
+ACCOUNT <IMicrosoftGraphAccount>: account
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Blocked <Boolean?>]: 
   [Category <String>]: 
@@ -1113,7 +1123,7 @@ ACCOUNT `<IMicrosoftGraphAccount>`: account
   [Number <String>]: 
   [SubCategory <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphJournalLine>`: journalLine
+BODYPARAMETER <IMicrosoftGraphJournalLine>: journalLine
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Account <IMicrosoftGraphAccount>]: account
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1137,7 +1147,7 @@ BODYPARAMETER `<IMicrosoftGraphJournalLine>`: journalLine
   [LineNumber <Int32?>]: 
   [PostingDate <DateTime?>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1178,27 +1188,4 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaFinancialCompanyJournalLine](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyjournalline)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyjournalline)

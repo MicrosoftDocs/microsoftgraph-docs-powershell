@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryImpactedResource
 ---
@@ -23,12 +23,11 @@ Create new navigation property to impactedResources for directory
 New-MgBetaDirectoryImpactedResource [-ResponseHeadersVariable <string>] [-AddedDateTime <datetime>]
  [-AdditionalDetails <IMicrosoftGraphKeyValue[]>] [-AdditionalProperties <hashtable>]
  [-ApiUrl <string>] [-DisplayName <string>] [-Id <string>] [-LastModifiedBy <string>]
- [-LastModifiedDateTime <string>] [-Owner <string>] [-PortalUrl <string>]
+ [-LastModifiedDateTime <datetime>] [-Owner <string>] [-PortalUrl <string>]
  [-PostponeUntilDateTime <datetime>] [-Rank <int>] [-RecommendationId <string>]
  [-ResourceType <string>] [-Status <string>] [-SubjectId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -38,7 +37,6 @@ New-MgBetaDirectoryImpactedResource -BodyParameter <IMicrosoftGraphImpactedResou
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to impactedResources for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -334,7 +342,7 @@ HelpMessage: ''
 The date and time when the status was last updated.
 
 ```yaml
-Type: System.String
+Type: System.DateTime
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -662,7 +670,7 @@ ADDITIONALDETAILS <IMicrosoftGraphKeyValue[]>: Additional information unique to 
   [Key <String>]: Key.
   [Value <String>]: Value.
 
-BODYPARAMETER `<IMicrosoftGraphImpactedResource>`: impactedResource
+BODYPARAMETER <IMicrosoftGraphImpactedResource>: impactedResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -673,7 +681,7 @@ Read-only.
   [ApiUrl <String>]: The URL link to the corresponding Microsoft Entra resource.
   [DisplayName <String>]: Friendly name of the Microsoft Entra resource.
   [LastModifiedBy <String>]: Name of the user or service that last updated the status.
-  [LastModifiedDateTime <String>]: The date and time when the status was last updated.
+  [LastModifiedDateTime <DateTime?>]: The date and time when the status was last updated.
   [Owner <String>]: The user responsible for maintaining the resource.
   [PortalUrl <String>]: The URL link to the corresponding Microsoft Entra admin center page of the resource.
   [PostponeUntilDateTime <DateTime?>]: The future date and time when the status of a postponed impactedResource will be active again.
@@ -689,27 +697,4 @@ For example, this property is set to the applicationId if the resourceType is an
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryImpactedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource)
