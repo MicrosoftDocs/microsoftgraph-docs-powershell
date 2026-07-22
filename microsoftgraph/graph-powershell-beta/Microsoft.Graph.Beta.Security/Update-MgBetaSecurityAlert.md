@@ -106,6 +106,14 @@ This cmdlet has the following aliases,
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityEvents.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityEvents.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

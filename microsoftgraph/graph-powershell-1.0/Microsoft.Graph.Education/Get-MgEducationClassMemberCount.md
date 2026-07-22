@@ -53,7 +53,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, Member.Read.Hidden, EduRoster.ReadWrite.All,  |
+| Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Member.Read.Hidden,  |
 
 ## PARAMETERS
 

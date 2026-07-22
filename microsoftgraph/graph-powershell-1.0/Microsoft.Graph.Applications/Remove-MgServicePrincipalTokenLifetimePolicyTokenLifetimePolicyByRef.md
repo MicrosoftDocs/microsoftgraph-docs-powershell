@@ -55,9 +55,9 @@ Remove a tokenLifetimePolicy object from a service principal.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Application.ReadWrite.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+| Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
 

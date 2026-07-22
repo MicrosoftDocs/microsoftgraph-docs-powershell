@@ -42,9 +42,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.Read.All, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, EntitlementManagement.ReadWrite.All,  |
+| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.Read.All, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, EntitlementManagement.ReadWrite.All,  |
+| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## PARAMETERS
 

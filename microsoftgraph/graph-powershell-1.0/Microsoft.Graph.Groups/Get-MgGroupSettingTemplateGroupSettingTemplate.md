@@ -63,9 +63,9 @@ This operation allows retrieval of the properties of the groupSettingTemplate ob
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | GroupSettings.Read.All, Directory.Read.All, Directory.ReadWrite.All, GroupSettings.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | GroupSettings.Read.All, Directory.Read.All, Directory.ReadWrite.All, GroupSettings.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

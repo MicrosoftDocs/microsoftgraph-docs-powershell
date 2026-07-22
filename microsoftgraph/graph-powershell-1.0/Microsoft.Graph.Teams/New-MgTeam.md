@@ -67,9 +67,9 @@ Create a new team.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Team.Create, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | Team.Create, Directory.ReadWrite.All, Group.ReadWrite.All, Teamwork.Migrate.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

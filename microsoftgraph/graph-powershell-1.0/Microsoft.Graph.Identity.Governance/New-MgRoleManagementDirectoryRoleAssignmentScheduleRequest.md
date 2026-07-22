@@ -65,9 +65,9 @@ See Enable per-user Microsoft Entra multifactor authentication to secure sign-in
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleEligibilitySchedule.Remove.Directory, RoleAssignmentSchedule.Remove.Directory,  |
+| Delegated (work or school account) | RoleAssignmentSchedule.ReadWrite.Directory, RoleAssignmentSchedule.Remove.Directory, RoleEligibilitySchedule.Remove.Directory, RoleManagement.ReadWrite.Directory,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleEligibilitySchedule.Remove.Directory, RoleAssignmentSchedule.Remove.Directory,  |
+| Application | RoleAssignmentSchedule.ReadWrite.Directory, RoleAssignmentSchedule.Remove.Directory, RoleEligibilitySchedule.Remove.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
 ### Example 1: Admin assigning a directory role to a principal

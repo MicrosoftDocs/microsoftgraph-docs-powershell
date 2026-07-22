@@ -53,7 +53,7 @@ Deletes a user's FIDO2 security key authentication method object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite, UserAuthenticationMethod.ReadWrite,  |
+| Delegated (work or school account) | UserAuthMethod-Passkey.ReadWrite, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All,  |
 

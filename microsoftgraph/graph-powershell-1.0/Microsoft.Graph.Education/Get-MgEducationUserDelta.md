@@ -46,9 +46,9 @@ See Use delta query for details.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.ReadWrite, EduRoster.Read,  |
+| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.Read, EduRoster.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.ReadBasic.All, EduRoster.WriteWrite.All, EduRoster.ReadWrite.All, EduRoster.Read.All,  |
+| Application | EduRoster.ReadBasic.All, EduRoster.Read.All, EduRoster.ReadWrite.All, EduRoster.WriteWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

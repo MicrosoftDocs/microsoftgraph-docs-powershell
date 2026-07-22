@@ -51,9 +51,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ResourceSpecificPermissionGrant.ReadForTeam, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ManageSelectedForTeam,  |
+| Delegated (work or school account) | ResourceSpecificPermissionGrant.ReadForTeam, TeamsAppInstallation.ManageSelectedForTeam, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadWriteSelfForTeam,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsAppInstallation.Read.Group, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ManageSelectedForTeam.All, TeamsApp.Read.Group, ResourceSpecificPermissionGrant.ReadForTeam.All,  |
+| Application | TeamsAppInstallation.Read.Group, ResourceSpecificPermissionGrant.ReadForTeam.All, TeamsApp.Read.Group, TeamsAppInstallation.ManageSelectedForTeam.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam.All,  |
 
 ## PARAMETERS
 

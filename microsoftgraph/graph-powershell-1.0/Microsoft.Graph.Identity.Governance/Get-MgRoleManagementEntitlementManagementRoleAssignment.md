@@ -64,9 +64,9 @@ Resource to grant access to users or groups.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.Read.All, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, EntitlementManagement.ReadWrite.All,  |
+| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.Read.All, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, EntitlementManagement.ReadWrite.All,  |
+| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
 ### Example 1: Request using $filter for role assignments on an access package catalog and expand the principal object

@@ -44,9 +44,9 @@ Get joinedTeams from users
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Team.ReadBasic.All, User.ReadWrite.All, User.Read.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | Team.ReadBasic.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Team.ReadBasic.All, User.ReadWrite.All, User.Read.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | Team.ReadBasic.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

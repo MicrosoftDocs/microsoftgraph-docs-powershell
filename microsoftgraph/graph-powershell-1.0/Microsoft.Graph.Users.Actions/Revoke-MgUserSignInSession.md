@@ -55,9 +55,9 @@ This operation prevents access to the organization's data through applications o
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.RevokeSessions.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | User.RevokeSessions.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.RevokeSessions.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | User.RevokeSessions.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All, User.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

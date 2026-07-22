@@ -63,9 +63,9 @@ Retrieve the app installed in the specified team.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ManageSelectedForTeam, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ReadWriteAndConsentForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadForTeam, Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, TeamsAppInstallation.ReadWriteForTeam,  |
+| Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, TeamsAppInstallation.ManageSelectedForTeam, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteAndConsentForTeam, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ReadWriteForTeam,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsAppInstallation.Read.Group, Group.Read.All, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.Read.All, TeamsAppInstallation.ManageSelectedForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | TeamsAppInstallation.Read.Group, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, TeamsAppInstallation.ManageSelectedForTeam.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteSelfForTeam.All,  |
 
 ## EXAMPLES
 ### Example 1: Get the installed app

@@ -70,6 +70,14 @@ This cmdlet has the following aliases,
 Create a new externalAuthenticationMethod object.
 This API doesn't support self-service operations.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-External.ReadWrite, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-External.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-External.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

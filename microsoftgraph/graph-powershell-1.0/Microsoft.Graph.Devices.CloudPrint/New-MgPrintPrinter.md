@@ -60,7 +60,7 @@ For help creating the required Certificate Signing Request (CSR) for creating pr
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All,  |
+| Delegated (work or school account) | Printer.Create, Printer.FullControl.All, Printer.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 

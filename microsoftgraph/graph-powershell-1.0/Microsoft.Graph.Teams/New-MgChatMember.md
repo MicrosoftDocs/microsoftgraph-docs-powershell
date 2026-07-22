@@ -77,7 +77,7 @@ Add a conversationMember to a chat.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | ChatMember.ReadWrite, Chat.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.Manage.Chat, ChatMember.ReadWrite.All, Chat.ReadWrite.All,  |
+| Application | Chat.Manage.Chat, Chat.ReadWrite.All, ChatMember.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Add a single member to a chat and specify the timespan for the conversation history

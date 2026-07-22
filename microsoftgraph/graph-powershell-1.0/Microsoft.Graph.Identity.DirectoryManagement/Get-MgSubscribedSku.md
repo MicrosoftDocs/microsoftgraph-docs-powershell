@@ -62,9 +62,9 @@ Get a specific commercial subscription that an organization has acquired.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LicenseAssignment.Read.All, Organization.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | LicenseAssignment.Read.All, Directory.Read.All, Directory.ReadWrite.All, Organization.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | LicenseAssignment.Read.All, Organization.ReadWrite.All, Organization.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | LicenseAssignment.Read.All, Directory.Read.All, Directory.ReadWrite.All, Organization.Read.All, Organization.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get subscribed SKUs

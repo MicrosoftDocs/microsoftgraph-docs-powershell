@@ -83,9 +83,9 @@ Update the properties of a conditionalAccessPolicy object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+| Delegated (work or school account) | Application.Read.All, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Application.Read.All,  |
+| Application | Policy.Read.All, Application.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
 ### Example 1: Add sign in risk levels to an existing conditional access policy

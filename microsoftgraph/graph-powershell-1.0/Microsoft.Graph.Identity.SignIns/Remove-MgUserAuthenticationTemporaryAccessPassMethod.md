@@ -54,7 +54,7 @@ Delete a users's temporaryAccessPassAuthenticationMethod object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthMethod-TAP.ReadWrite.All, UserAuthMethod-TAP.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-TAP.ReadWrite, UserAuthMethod-TAP.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-TAP.ReadWrite.All,  |
 

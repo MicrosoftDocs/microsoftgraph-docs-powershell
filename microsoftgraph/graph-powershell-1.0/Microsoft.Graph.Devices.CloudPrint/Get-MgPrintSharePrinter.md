@@ -51,7 +51,7 @@ The printer that this printer share is related to.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All,  |
+| Delegated (work or school account) | Printer.Read.All, Printer.FullControl.All, Printer.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Printer.Read.All, Printer.ReadWrite.All,  |
 

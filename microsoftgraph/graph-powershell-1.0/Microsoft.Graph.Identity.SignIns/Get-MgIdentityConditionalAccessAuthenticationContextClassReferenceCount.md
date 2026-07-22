@@ -42,9 +42,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuthenticationContext.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.ConditionalAccess, AuthenticationContext.ReadWrite.All,  |
+| Delegated (work or school account) | AuthenticationContext.Read.All, AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AuthenticationContext.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.ConditionalAccess, AuthenticationContext.ReadWrite.All,  |
+| Application | AuthenticationContext.Read.All, AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess,  |
 
 ## PARAMETERS
 

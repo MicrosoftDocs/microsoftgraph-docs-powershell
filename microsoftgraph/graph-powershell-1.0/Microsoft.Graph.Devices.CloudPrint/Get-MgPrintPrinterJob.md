@@ -62,9 +62,9 @@ Retrieve the properties and relationships of a print job.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrintJob.ReadBasic, PrintJob.ReadWriteBasic.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.Read,  |
+| Delegated (work or school account) | PrintJob.ReadBasic, PrintJob.Read, PrintJob.Read.All, PrintJob.ReadBasic.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic, PrintJob.ReadWriteBasic.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | PrintJob.ReadBasic.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Read.All,  |
+| Application | PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic.All,  |
 
 ## EXAMPLES
 ### Example 1: Get print job

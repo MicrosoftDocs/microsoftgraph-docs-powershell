@@ -79,9 +79,9 @@ Currently it's only possible to add one member at a time to an administrative un
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AdministrativeUnit.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All,  |
+| Delegated (work or school account) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AdministrativeUnit.ReadWrite.All, Group.ReadWrite.All, Group.Create, Directory.ReadWrite.All,  |
+| Application | AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Group.Create, Group.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Add an existing user or group

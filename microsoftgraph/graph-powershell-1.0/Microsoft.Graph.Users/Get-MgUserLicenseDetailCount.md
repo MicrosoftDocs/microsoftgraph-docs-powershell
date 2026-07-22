@@ -51,9 +51,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LicenseAssignment.Read.All, User.ReadWrite.All, User.Read.All, User.Read, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | LicenseAssignment.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.Read, User.Read.All, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | User.Read,  |
-| Application | LicenseAssignment.Read.All, User.ReadWrite.All, User.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | LicenseAssignment.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.Read.All, User.ReadWrite.All,  |
 
 ## PARAMETERS
 

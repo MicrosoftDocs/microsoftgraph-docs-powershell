@@ -83,9 +83,9 @@ Content in a message hosted by Microsoft Teams - for example, images or code sni
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.Read, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite,  |
+| Delegated (work or school account) | Chat.Read, Chat.ReadWrite, Group.Read.All, Group.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMessage.Read.Chat, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite.All, Chat.Read.All,  |
+| Application | ChatMessage.Read.Chat, Chat.Read.All, Chat.ReadWrite.All, Group.Read.All, Group.ReadWrite.All,  |
 
 ## PARAMETERS
 

@@ -64,9 +64,9 @@ After 30 days, the item is permanently deleted.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.DeleteRestore.All, User.ReadWrite.All,  |
+| Delegated (work or school account) | User.DeleteRestore.All, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprint.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.DeleteRestore.All, User.ReadWrite.CrossCloud, User.ReadWrite.All,  |
+| Application | User.DeleteRestore.All, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprint.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All, User.ReadWrite.CrossCloud,  |
 
 ## EXAMPLES
 ### Example 1: Restore a deleted item

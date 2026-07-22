@@ -62,9 +62,9 @@ Retrieve the properties and relationships of contract object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | Directory.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

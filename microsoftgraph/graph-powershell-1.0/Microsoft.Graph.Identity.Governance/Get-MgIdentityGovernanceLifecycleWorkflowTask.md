@@ -64,9 +64,9 @@ Get a specific task from a workflow or workflowVersion.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All,  |
+| Delegated (work or school account) | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All,  |
+| Application | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Get a task from a workflow

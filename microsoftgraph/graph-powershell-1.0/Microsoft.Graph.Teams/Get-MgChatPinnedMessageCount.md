@@ -53,7 +53,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Chat.Read, Chat.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMessage.Read.All, Chat.ReadWrite.All, Chat.Read.All,  |
+| Application | ChatMessage.Read.All, Chat.Read.All, Chat.ReadWrite.All,  |
 
 ## PARAMETERS
 

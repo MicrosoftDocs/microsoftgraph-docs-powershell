@@ -51,7 +51,7 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserWindowsSettings.Read, UserWindowsSettings.ReadWrite.All, UserWindowsSettings.Read.All,  |
+| Delegated (work or school account) | UserWindowsSettings.Read, UserWindowsSettings.Read.All, UserWindowsSettings.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | UserWindowsSettings.Read,  |
 | Application | Not supported |
 

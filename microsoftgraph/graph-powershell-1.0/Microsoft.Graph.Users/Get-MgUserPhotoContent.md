@@ -71,9 +71,9 @@ Read-only.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.ReadBasic.All, ProfilePhoto.ReadWrite.All, ProfilePhoto.Read.All,  |
+| Delegated (work or school account) | User.Read, ProfilePhoto.Read.All, ProfilePhoto.ReadWrite.All, User.ReadBasic.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ProfilePhoto.Read.All, User.ReadWrite.CrossCloud, User.ReadBasic.All, User.Read.All, ProfilePhoto.ReadWrite.All,  |
+| Application | ProfilePhoto.Read.All, ProfilePhoto.ReadWrite.All, User.Read.All, User.ReadBasic.All, User.ReadWrite.CrossCloud,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

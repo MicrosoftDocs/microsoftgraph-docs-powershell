@@ -60,9 +60,9 @@ It allows you to maintain and synchronize a local store of a user's messages wit
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
-| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
-| Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
+| Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
+| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
+| Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

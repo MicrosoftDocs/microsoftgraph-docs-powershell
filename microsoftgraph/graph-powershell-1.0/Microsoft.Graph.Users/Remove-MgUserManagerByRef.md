@@ -53,9 +53,9 @@ Remove a user's manager.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Remove the manager of a user

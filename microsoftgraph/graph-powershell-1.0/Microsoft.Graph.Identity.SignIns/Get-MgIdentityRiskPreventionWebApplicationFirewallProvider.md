@@ -66,7 +66,7 @@ Read the properties and relationships of webApplicationFirewallProvider object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
+| Application | Not supported |
 
 ## PARAMETERS
 

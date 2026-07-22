@@ -60,6 +60,14 @@ The collection of task folders in the task group.
 Read-only.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.Read,  |
+| Delegated (personal Microsoft account) | Tasks.Read,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -54,7 +54,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+| Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy,  |
 
 ## PARAMETERS
 

@@ -51,7 +51,7 @@ Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat ob
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |
+| Delegated (work or school account) | Tasks.Read, Group.Read.All, Group.ReadWrite.All, Tasks.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 

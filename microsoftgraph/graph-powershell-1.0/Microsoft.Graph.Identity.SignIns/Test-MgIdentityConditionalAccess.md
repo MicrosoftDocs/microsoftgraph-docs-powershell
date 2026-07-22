@@ -56,9 +56,9 @@ Evaluates the applicability of Conditional Access Policies in your tenant based 
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+| Delegated (work or school account) | Policy.Read.ConditionalAccess, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+| Application | Policy.Read.ConditionalAccess, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
 

@@ -39,6 +39,14 @@ This cmdlet has the following aliases,
 Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

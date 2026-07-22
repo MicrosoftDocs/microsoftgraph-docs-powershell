@@ -48,7 +48,7 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All, Directory.ReadWrite.All, DelegatedPermissionGrant.ReadWrite.All,  |
+| Application | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

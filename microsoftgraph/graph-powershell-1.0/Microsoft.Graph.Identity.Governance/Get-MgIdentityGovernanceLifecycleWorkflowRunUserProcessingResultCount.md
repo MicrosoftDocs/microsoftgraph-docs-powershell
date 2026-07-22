@@ -53,9 +53,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All,  |
+| Delegated (work or school account) | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All,  |
+| Application | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## PARAMETERS
 

@@ -64,9 +64,9 @@ Retrieve the properties and relationships of a authenticationContextClassReferen
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuthenticationContext.Read.All, Policy.Read.ConditionalAccess, AuthenticationContext.ReadWrite.All,  |
+| Delegated (work or school account) | AuthenticationContext.Read.All, AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AuthenticationContext.Read.All, Policy.Read.ConditionalAccess, AuthenticationContext.ReadWrite.All,  |
+| Application | AuthenticationContext.Read.All, AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

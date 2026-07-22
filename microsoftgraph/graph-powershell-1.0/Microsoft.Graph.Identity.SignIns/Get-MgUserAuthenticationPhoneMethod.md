@@ -64,9 +64,9 @@ The phone numbers registered to a user for authentication.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-Phone.Read, UserAuthMethod-Phone.ReadWrite.All, UserAuthMethod-Phone.ReadWrite, UserAuthMethod-Phone.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.Read,  |
+| Delegated (work or school account) | UserAuthMethod-Phone.Read, UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Phone.Read.All, UserAuthMethod-Phone.ReadWrite, UserAuthMethod-Phone.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthMethod-Phone.Read.All, UserAuthMethod-Phone.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
+| Application | UserAuthMethod-Phone.Read.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Phone.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -85,9 +85,9 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LicenseAssignment.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | LicenseAssignment.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | LicenseAssignment.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | LicenseAssignment.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Add licenses to the group

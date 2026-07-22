@@ -94,7 +94,7 @@ To get properties that are not returned by default, do a GET operation and speci
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | Group.Create, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Create a new group

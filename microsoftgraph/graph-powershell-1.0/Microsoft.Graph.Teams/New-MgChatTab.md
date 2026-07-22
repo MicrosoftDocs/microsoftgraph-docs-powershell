@@ -77,9 +77,9 @@ Add (pin) a tab to the specified chat.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWriteSelfForChat, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All,  |
+| Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWrite.All, TeamsTab.ReadWriteForChat, TeamsTab.ReadWriteSelfForChat,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsTab.Create, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWrite.All, TeamsTab.Create.Chat,  |
+| Application | TeamsTab.Create, TeamsTab.Create.Chat, TeamsTab.ReadWrite.All, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWriteSelfForChat.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

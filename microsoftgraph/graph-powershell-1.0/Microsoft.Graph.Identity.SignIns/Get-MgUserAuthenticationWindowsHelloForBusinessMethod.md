@@ -64,9 +64,9 @@ Read the properties and relationships of a windowsHelloForBusinessAuthentication
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-WindowsHello.Read, UserAuthMethod-WindowsHello.ReadWrite.All, UserAuthMethod-WindowsHello.ReadWrite, UserAuthMethod-WindowsHello.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.Read,  |
+| Delegated (work or school account) | UserAuthMethod-WindowsHello.Read, UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-WindowsHello.Read.All, UserAuthMethod-WindowsHello.ReadWrite, UserAuthMethod-WindowsHello.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthMethod-WindowsHello.Read.All, UserAuthMethod-WindowsHello.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
+| Application | UserAuthMethod-WindowsHello.Read.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-WindowsHello.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

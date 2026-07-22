@@ -83,9 +83,9 @@ When you run a workflow on demand, the tasks are executed regardless of whether 
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows-Workflow.Activate, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows-Workflow.ReadWrite.All,  |
+| Delegated (work or school account) | LifecycleWorkflows-Workflow.Activate, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows-Workflow.Activate, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows-Workflow.ReadWrite.All,  |
+| Application | LifecycleWorkflows-Workflow.Activate, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

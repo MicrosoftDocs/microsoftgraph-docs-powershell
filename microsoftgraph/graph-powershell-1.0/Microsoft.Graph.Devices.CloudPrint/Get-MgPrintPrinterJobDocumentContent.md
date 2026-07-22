@@ -54,7 +54,7 @@ Calling this method yields a redirect response with a preauthenticated URL that 
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrintJob.Read, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.Read.All,  |
+| Delegated (work or school account) | PrintJob.Read, PrintJob.Read.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrintJob.Read.All, PrintJob.ReadWrite.All,  |
 

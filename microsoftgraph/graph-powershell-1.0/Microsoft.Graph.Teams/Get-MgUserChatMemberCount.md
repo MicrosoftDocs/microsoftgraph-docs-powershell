@@ -51,9 +51,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadWrite, Chat.ReadBasic, Chat.Read,  |
+| Delegated (work or school account) | ChatMember.Read, Chat.Read, Chat.ReadBasic, Chat.ReadWrite, ChatMember.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMember.Read.All, ChatMember.ReadWrite.All, ChatMember.Read.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
+| Application | ChatMember.Read.All, Chat.Manage.Chat, Chat.Read.All, Chat.ReadBasic.All, Chat.ReadWrite.All, ChatMember.Read.Chat, ChatMember.ReadWrite.All,  |
 
 ## PARAMETERS
 

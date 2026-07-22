@@ -53,9 +53,9 @@ Removes (unpins) a tab from the specified channel within a team.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsTab.ReadWriteSelfForTeam, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | TeamsTab.ReadWriteSelfForTeam, Directory.ReadWrite.All, Group.ReadWrite.All, TeamsTab.ReadWrite.All, TeamsTab.ReadWriteForTeam,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsTab.Delete.Group, TeamsTab.ReadWriteSelfForTeam.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.Group, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | TeamsTab.Delete.Group, Directory.ReadWrite.All, Group.ReadWrite.All, TeamsTab.ReadWrite.All, TeamsTab.ReadWrite.Group, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWriteSelfForTeam.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

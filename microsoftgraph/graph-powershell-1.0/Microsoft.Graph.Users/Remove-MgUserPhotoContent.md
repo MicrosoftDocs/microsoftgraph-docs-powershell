@@ -77,7 +77,7 @@ Read-only.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | User.ReadWrite, ProfilePhoto.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ProfilePhoto.ReadWrite.All, User.ReadWrite.All,  |
+| Application | ProfilePhoto.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
 
 ## PARAMETERS
 

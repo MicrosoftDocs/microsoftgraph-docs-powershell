@@ -68,7 +68,7 @@ The following derived types are currently supported.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
+| Application | Not supported |
 
 ## PARAMETERS
 

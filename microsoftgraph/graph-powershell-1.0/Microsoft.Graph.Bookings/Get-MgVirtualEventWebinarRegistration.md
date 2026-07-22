@@ -65,7 +65,7 @@ Get the properties and relationships of a virtualEventRegistration object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | VirtualEvent.Read.Chat, VirtualEventRegistration-Anon.ReadWrite.All, VirtualEvent.Read.All,  |
+| Application | VirtualEvent.Read.Chat, VirtualEvent.Read.All, VirtualEventRegistration-Anon.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

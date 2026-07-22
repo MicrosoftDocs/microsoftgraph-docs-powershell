@@ -68,9 +68,9 @@ The hasMembersWithLicenseErrors and isArchived properties are an exception and a
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Group-XTenantIdentitySync.Read.All, Group.ManageProtection.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | Directory.Read.All, Directory.ReadWrite.All, Group-XTenantIdentitySync.Read.All, Group.ManageProtection.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Get a list of groups

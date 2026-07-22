@@ -77,7 +77,7 @@ Update the properties of a bookingCustomQuestion object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
+| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 

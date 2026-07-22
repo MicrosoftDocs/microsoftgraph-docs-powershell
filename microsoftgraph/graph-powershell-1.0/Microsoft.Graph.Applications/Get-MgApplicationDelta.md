@@ -46,9 +46,9 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Application.ReadWrite.All, Application.Read.All,  |
+| Delegated (work or school account) | Directory.Read.All, Application.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All, Application.Read.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

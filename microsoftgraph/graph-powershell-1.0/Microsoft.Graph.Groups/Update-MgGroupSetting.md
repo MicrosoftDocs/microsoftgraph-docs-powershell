@@ -117,9 +117,9 @@ Update the properties of a groupSetting object for tenant-wide group settings or
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupSettings.ReadWrite.All, Policy.ReadWrite.Authorization, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Policy.ReadWrite.Authorization,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | GroupSettings.ReadWrite.All, Policy.ReadWrite.Authorization, Directory.ReadWrite.All,  |
+| Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Policy.ReadWrite.Authorization,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

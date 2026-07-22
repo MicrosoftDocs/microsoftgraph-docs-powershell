@@ -51,9 +51,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChannelMember.Read.All, Group.Read.All, ChannelMember.ReadWrite.All,  |
+| Delegated (work or school account) | ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMember.Read.Group, ChannelMember.ReadWrite.Group, ChannelMember.ReadWrite.All, ChannelMember.Read.All,  |
+| Application | ChannelMember.Read.Group, ChannelMember.Read.All, ChannelMember.ReadWrite.All, ChannelMember.ReadWrite.Group,  |
 
 ## PARAMETERS
 

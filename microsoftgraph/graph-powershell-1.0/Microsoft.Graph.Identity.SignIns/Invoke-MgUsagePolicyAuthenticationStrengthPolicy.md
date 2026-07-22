@@ -55,9 +55,9 @@ Policies in the former category are restricted in what kinds of changes may be m
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod, Policy.Read.All,  |
+| Delegated (work or school account) | Policy.Read.AuthenticationMethod, Policy.Read.All, Policy.ReadWrite.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod, Policy.Read.All,  |
+| Application | Policy.Read.AuthenticationMethod, Policy.Read.All, Policy.ReadWrite.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

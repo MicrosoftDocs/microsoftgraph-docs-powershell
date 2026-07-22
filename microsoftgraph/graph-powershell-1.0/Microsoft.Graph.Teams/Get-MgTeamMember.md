@@ -64,7 +64,7 @@ Get a conversationMember from a team.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | TeamMember.Read.Group, TeamMember.ReadWrite.All, TeamMember.Read.All,  |
+| Application | TeamMember.Read.Group, TeamMember.Read.All, TeamMember.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get list of members in team

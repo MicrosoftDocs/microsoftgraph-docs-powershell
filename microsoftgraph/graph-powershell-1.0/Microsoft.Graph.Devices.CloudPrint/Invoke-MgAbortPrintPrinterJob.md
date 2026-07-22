@@ -85,7 +85,7 @@ For details about how to register a task trigger, see Extending Universal Print 
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All,  |
+| Application | PrintJob.ReadWriteBasic.All, PrintJob.Manage.All, PrintJob.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

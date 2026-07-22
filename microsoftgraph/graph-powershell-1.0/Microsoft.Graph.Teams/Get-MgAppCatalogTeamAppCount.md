@@ -42,7 +42,7 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppCatalog.Submit, Directory.ReadWrite.All, Directory.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Read.All,  |
+| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AppCatalog.Read.All, AppCatalog.ReadWrite.All,  |
 

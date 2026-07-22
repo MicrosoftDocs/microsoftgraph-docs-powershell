@@ -66,7 +66,7 @@ Retrieve the existing synchronization job and its properties.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.Read.All, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

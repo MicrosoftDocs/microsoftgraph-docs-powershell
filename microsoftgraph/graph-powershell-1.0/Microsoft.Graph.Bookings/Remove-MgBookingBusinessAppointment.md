@@ -53,9 +53,9 @@ Delete a bookingAppointment in the specified bookingBusiness.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
+| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Read.All, Bookings.Manage.All,  |
+| Application | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

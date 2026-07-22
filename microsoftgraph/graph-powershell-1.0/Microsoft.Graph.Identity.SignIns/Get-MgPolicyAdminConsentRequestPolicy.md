@@ -42,9 +42,9 @@ Read the properties and relationships of an adminConsentRequestPolicy object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | Policy.Read.All, Directory.Read.All, Directory.ReadWrite.All, Policy.ReadWrite.ConsentRequest,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | Policy.Read.All, Directory.Read.All, Directory.ReadWrite.All, Policy.ReadWrite.ConsentRequest,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

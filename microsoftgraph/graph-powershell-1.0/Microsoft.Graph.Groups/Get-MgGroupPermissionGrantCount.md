@@ -51,9 +51,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupMember.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Group.Read.All,  |
+| Delegated (work or school account) | GroupMember.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | GroupMember.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Group.Read.All,  |
+| Application | GroupMember.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.ReadWrite.All,  |
 
 ## PARAMETERS
 

@@ -54,7 +54,7 @@ Delete a user's Software OATH token authentication method object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthMethod-SoftwareOATH.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite, UserAuthMethod-SoftwareOATH.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite.All,  |
 

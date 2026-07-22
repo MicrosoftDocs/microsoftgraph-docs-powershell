@@ -95,7 +95,7 @@ This API can't create a new chat; you must use the list chats method to retrieve
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChatMessage.Send, Group.ReadWrite.All, Chat.ReadWrite,  |
+| Delegated (work or school account) | ChatMessage.Send, Chat.ReadWrite, Group.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Teamwork.Migrate.All,  |
 

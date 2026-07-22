@@ -42,9 +42,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All, ExternalConnection.Read.All,  |
+| Delegated (work or school account) | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All, ExternalConnection.Read.All,  |
+| Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All,  |
 
 ## PARAMETERS
 

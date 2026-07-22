@@ -81,7 +81,7 @@ Get the availability information of staff members of a Microsoft Bookings calend
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Bookings.Read.All, Calendars.ReadWrite, Calendars.Read, Bookings.ReadWrite.All, Bookings.Manage.All,  |
+| Application | Bookings.Read.All, Bookings.Manage.All, Bookings.ReadWrite.All, Calendars.Read, Calendars.ReadWrite,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -56,7 +56,7 @@ Delete navigation property schema for servicePrincipals
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Synchronization.ReadWrite.All, CustomSecAttributeProvisioning.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, CustomSecAttributeProvisioning.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, CustomSecAttributeProvisioning.ReadWrite.All, Synchronization.ReadWrite.All,  |
 
 ## PARAMETERS
 

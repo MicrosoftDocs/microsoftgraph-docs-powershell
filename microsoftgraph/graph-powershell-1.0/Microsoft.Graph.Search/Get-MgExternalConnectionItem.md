@@ -63,9 +63,9 @@ Read the properties and relationships of an externalItem object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All, ExternalItem.Read.All,  |
+| Delegated (work or school account) | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All, ExternalItem.Read.All,  |
+| Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

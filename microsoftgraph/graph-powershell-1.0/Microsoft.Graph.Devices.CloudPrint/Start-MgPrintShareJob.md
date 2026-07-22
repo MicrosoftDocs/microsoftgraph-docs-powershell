@@ -54,7 +54,7 @@ It will be printed after any existing pending jobs are completed, aborted, or ca
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrintJob.Create, PrintJob.ReadWriteBasic.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite.All, PrintJob.ReadWrite,  |
+| Delegated (work or school account) | PrintJob.Create, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic, PrintJob.ReadWriteBasic.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 

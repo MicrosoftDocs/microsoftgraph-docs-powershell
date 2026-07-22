@@ -51,9 +51,9 @@ Get the default channel, General, of a team.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.ReadWrite.All, ChannelSettings.Read.All,  |
+| Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelSettings.Read.Group, ChannelSettings.ReadWrite.Group, ChannelSettings.ReadWrite.All, ChannelSettings.Read.All, Channel.ReadBasic.All,  |
+| Application | ChannelSettings.Read.Group, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, ChannelSettings.ReadWrite.Group,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -73,9 +73,9 @@ To learn more about configuring naming policies, see Configure naming policy.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: A successful validation request

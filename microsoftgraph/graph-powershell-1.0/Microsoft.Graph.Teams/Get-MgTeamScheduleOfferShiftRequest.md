@@ -63,7 +63,7 @@ Retrieve the properties and relationships of an offerShiftRequest object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All, Group.Read.All,  |
+| Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Group.ReadWrite.All, Schedule.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Schedule.Read.All, Schedule.ReadWrite.All,  |
 

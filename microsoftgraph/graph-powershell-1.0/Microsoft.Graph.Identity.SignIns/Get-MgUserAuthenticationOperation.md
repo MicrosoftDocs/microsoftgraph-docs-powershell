@@ -68,7 +68,7 @@ The possible states of the long-running operation are notStarted, running, succe
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read,  |
+| Delegated (work or school account) | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 

@@ -42,9 +42,9 @@ Retrieve the simple directory user that corresponds to this educationUser.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic, User.Read, EduRoster.Write, EduRoster.Read, Directory.Read.All,  |
+| Delegated (work or school account) | EduRoster.ReadBasic, Directory.Read.All, EduRoster.Read, EduRoster.Write, User.Read,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Directory.Read.All,  |
+| Application | EduRoster.Read.All, Directory.Read.All, EduRoster.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
