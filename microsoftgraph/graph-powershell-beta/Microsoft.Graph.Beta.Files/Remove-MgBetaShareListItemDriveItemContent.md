@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitemdriveitemcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaShareListItemDriveItemContent
 ---
@@ -30,6 +30,7 @@ Remove-MgBetaShareListItemDriveItemContent -SharedDriveItemId <string> [-IfMatch
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Delete
@@ -39,6 +40,7 @@ Remove-MgBetaShareListItemDriveItemContent -ListItemId <string> -SharedDriveItem
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
@@ -48,6 +50,7 @@ Remove-MgBetaShareListItemDriveItemContent -InputObject <IFilesIdentity> [-IfMat
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -57,6 +60,7 @@ Remove-MgBetaShareListItemDriveItemContent -InputObject <IFilesIdentity> [-IfMat
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

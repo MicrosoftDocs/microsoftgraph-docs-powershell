@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementassignmentrequestaccesspackageassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEntitlementManagementAssignmentRequestAccessPackageAssignment
 ---
@@ -14,7 +14,7 @@ title: Get-MgBetaEntitlementManagementAssignmentRequestAccessPackageAssignment
 ## SYNOPSIS
 
 For a requestType of UserAdd or AdminAdd, an access package assignment requested to be created.
-For a requestType of UserRemove, AdminRemove, ApproverRemove, or SystemRemove, this property has the id property of an existing assignment to be removed.
+For a requestType of UserRemove, AdminRemove, or SystemRemove, this property has the id property of an existing assignment to be removed.
 Supports $expand.
 
 ## SYNTAX
@@ -26,7 +26,7 @@ Get-MgBetaEntitlementManagementAssignmentRequestAccessPackageAssignment
  -AccessPackageAssignmentRequestId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -36,7 +36,7 @@ Get-MgBetaEntitlementManagementAssignmentRequestAccessPackageAssignment
  -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 For a requestType of UserAdd or AdminAdd, an access package assignment requested to be created.
-For a requestType of UserRemove, AdminRemove, ApproverRemove, or SystemRemove, this property has the id property of an existing assignment to be removed.
+For a requestType of UserRemove, AdminRemove, or SystemRemove, this property has the id property of an existing assignment to be removed.
 Supports $expand.
 
 ## PARAMETERS
@@ -386,7 +386,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
-  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource

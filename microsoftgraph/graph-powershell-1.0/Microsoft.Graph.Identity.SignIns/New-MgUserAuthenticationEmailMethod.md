@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationemailmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserAuthenticationEmailMethod
 ---
@@ -27,10 +27,10 @@ Self-service operations aren't supported.
 
 ```
 New-MgUserAuthenticationEmailMethod -UserId <string> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-CreatedDateTime <datetime>] [-EmailAddress <string>]
- [-Id <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-AdditionalProperties <hashtable>] [-EmailAddress <string>] [-Id <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -40,18 +40,17 @@ New-MgUserAuthenticationEmailMethod -UserId <string>
  -BodyParameter <IMicrosoftGraphEmailAuthenticationMethod> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 
 ```
 New-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-CreatedDateTime <datetime>] [-EmailAddress <string>] [-Id <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-EmailAddress <string>]
+ [-Id <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +60,7 @@ New-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphEmailAuthenticationMethod> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -80,7 +79,7 @@ Self-service operations aren't supported.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-Email.ReadWrite, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Email.ReadWrite.All,  |
+| Delegated (work or school account) | UserAuthMethod-Email.ReadWrite, UserAuthMethod-Email.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Email.ReadWrite.All,  |
 
@@ -191,34 +190,6 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -CreatedDateTime
-
-Represents the date and time when an entity was created.
-Read-only.
-
-```yaml
-Type: System.DateTime
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -545,8 +516,6 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphEmailAuthenticationMethod>`: emailAuthenticationMethod
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
-Read-only.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [EmailAddress <String>]: The email address registered to this user.
@@ -574,7 +543,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
-  [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
   [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
@@ -613,7 +581,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
-  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
   [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod

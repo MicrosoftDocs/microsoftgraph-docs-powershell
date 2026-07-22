@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaredirectprintprinterjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRedirectPrintPrinterJob
 ---
@@ -30,7 +30,7 @@ Invoke-MgBetaRedirectPrintPrinterJob -PrintJobId <string> -PrinterId <string>
  [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-DestinationPrinterId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Redirect
@@ -41,6 +41,7 @@ Invoke-MgBetaRedirectPrintPrinterJob -PrintJobId <string> -PrinterId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### RedirectViaIdentityExpanded
@@ -51,7 +52,7 @@ Invoke-MgBetaRedirectPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity>
  [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-DestinationPrinterId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RedirectViaIdentity
@@ -62,6 +63,7 @@ Invoke-MgBetaRedirectPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectasserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserCreatedObjectAsServicePrincipal
 ---
@@ -28,7 +28,7 @@ Get-MgUserCreatedObjectAsServicePrincipal -UserId <string> [-ExpandProperty <str
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -38,7 +38,7 @@ Get-MgUserCreatedObjectAsServicePrincipal -DirectoryObjectId <string> -UserId <s
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -47,7 +47,7 @@ Get-MgUserCreatedObjectAsServicePrincipal -DirectoryObjectId <string> -UserId <s
 Get-MgUserCreatedObjectAsServicePrincipal -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES

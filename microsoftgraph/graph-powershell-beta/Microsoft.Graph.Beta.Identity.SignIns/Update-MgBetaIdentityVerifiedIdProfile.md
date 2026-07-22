@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedidprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityVerifiedIdProfile
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaIdentityVerifiedIdProfile
 ## SYNOPSIS
 
 Update the properties of a verifiedIdProfile object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityVerifiedIdProfile](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityVerifiedIdProfile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ Update-MgBetaIdentityVerifiedIdProfile -VerifiedIdProfileId <string>
  [-VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]
  [-VerifierDid <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -41,7 +38,7 @@ Update-MgBetaIdentityVerifiedIdProfile -VerifiedIdProfileId <string>
  -BodyParameter <IMicrosoftGraphVerifiedIdProfile> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -55,7 +52,7 @@ Update-MgBetaIdentityVerifiedIdProfile -InputObject <IIdentitySignInsIdentity>
  [-VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]
  [-VerifierDid <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +62,7 @@ Update-MgBetaIdentityVerifiedIdProfile -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphVerifiedIdProfile> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -76,28 +73,6 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of a verifiedIdProfile object.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-$params = @{
-	verifiedIdUsageConfigurations = @(
-		@{
-			isEnabledForTestOnly = $false
-			purpose = "recovery"
-		}
-	)
-}
-
-Update-MgBetaIdentityVerifiedIdProfile -VerifiedIdProfileId $verifiedIdProfileId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaIdentityVerifiedIdProfile Cmdlet.
-
 
 ## PARAMETERS
 
@@ -749,8 +724,7 @@ Required.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IsEnabled <Boolean?>]: Defines if Face Check is required.
 Currently must always be true.
-    [SourcePhotoClaimName <String>]: Source of photo to validate Face Check against.
-Currently must always be portrait
+    [SourcePhotoClaimName <String>]: 
   [LastModifiedDateTime <DateTime?>]: DateTime the profile was last modified.
 Optional.
   [Name <String>]: Display name for the verified ID profile.
@@ -763,13 +737,8 @@ Optional.
     [AcceptedIssuer <String>]: Trusted Verified ID issuer.
     [ClaimBindingSource <String>]: claimBindingSource
     [ClaimBindings <IMicrosoftGraphClaimBinding[]>]: Claim bindings from Verified ID to source attributes.
-      [MatchConfidenceLevel <String>]: matchConfidenceLevel
       [SourceAttribute <String>]: Source attribute value
       [VerifiedIdClaim <String>]: Entra ID attribute value
-    [ClaimValidation <IMicrosoftGraphClaimValidation>]: claimValidation
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [CustomExtensionId <String>]: The identifier of a custom extension for claim validation.
-      [IsEnabled <Boolean?>]: Indicates whether claim validation is enabled.
     [Type <String>]: Verified ID type.
   [VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]: Collection defining the usage purpose for the profile.
 The possible values are: recovery, onboarding, all, unknownFutureValue.
@@ -783,8 +752,7 @@ FACECHECKCONFIGURATION `<IMicrosoftGraphFaceCheckConfiguration>`: faceCheckConfi
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Defines if Face Check is required.
 Currently must always be true.
-  [SourcePhotoClaimName <String>]: Source of photo to validate Face Check against.
-Currently must always be portrait
+  [SourcePhotoClaimName <String>]: 
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
@@ -836,7 +804,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
-  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -889,13 +856,8 @@ VERIFIEDIDPROFILECONFIGURATION `<IMicrosoftGraphVerifiedIdProfileConfiguration>`
   [AcceptedIssuer <String>]: Trusted Verified ID issuer.
   [ClaimBindingSource <String>]: claimBindingSource
   [ClaimBindings <IMicrosoftGraphClaimBinding[]>]: Claim bindings from Verified ID to source attributes.
-    [MatchConfidenceLevel <String>]: matchConfidenceLevel
     [SourceAttribute <String>]: Source attribute value
     [VerifiedIdClaim <String>]: Entra ID attribute value
-  [ClaimValidation <IMicrosoftGraphClaimValidation>]: claimValidation
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [CustomExtensionId <String>]: The identifier of a custom extension for claim validation.
-    [IsEnabled <Boolean?>]: Indicates whether claim validation is enabled.
   [Type <String>]: Verified ID type.
 
 VERIFIEDIDUSAGECONFIGURATIONS <IMicrosoftGraphVerifiedIdUsageConfiguration[]>: Collection defining the usage purpose for the profile.
@@ -909,6 +871,7 @@ Required.
 
 - [Update-MgBetaIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedidprofile)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/verifiedidprofile-update?view=graph-rest-beta)
+
 
 
 

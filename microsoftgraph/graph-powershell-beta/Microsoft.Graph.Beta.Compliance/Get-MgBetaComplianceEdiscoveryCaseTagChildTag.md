@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetagchildtag
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaComplianceEdiscoveryCaseTagChildTag
 ---
@@ -26,6 +26,7 @@ Get-MgBetaComplianceEdiscoveryCaseTagChildTag -CaseId <string> -TagId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -35,7 +36,7 @@ Get-MgBetaComplianceEdiscoveryCaseTagChildTag -CaseId <string> -TagId <string> -
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -45,7 +46,7 @@ Get-MgBetaComplianceEdiscoveryCaseTagChildTag -InputObject <IComplianceIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES

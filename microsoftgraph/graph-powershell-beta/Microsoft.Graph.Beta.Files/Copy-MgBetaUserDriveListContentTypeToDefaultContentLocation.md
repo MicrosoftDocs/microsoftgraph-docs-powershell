@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetauserdrivelistcontenttypetodefaultcontentlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation
 ---
@@ -29,6 +29,7 @@ Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation -ContentTypeId <stri
  [-SourceFile <IMicrosoftGraphItemReference>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Copy
@@ -40,6 +41,7 @@ Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation -ContentTypeId <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
@@ -51,6 +53,7 @@ Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation -InputObject <IFiles
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
@@ -61,6 +64,7 @@ Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation -InputObject <IFiles
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

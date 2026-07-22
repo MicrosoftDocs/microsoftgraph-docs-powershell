@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaWindowsUpdatesPolicy
 ---
@@ -13,18 +13,18 @@ title: Remove-MgBetaWindowsUpdatesPolicy
 
 ## SYNOPSIS
 
-Delete a Windows update policy object.
-You can use this method with the following child object type: qualityUpdatePolicy.
+Delete an updatePolicy object.
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgBetaWindowsUpdatesPolicy -PolicyId <string> [-IfMatch <string>]
+Remove-MgBetaWindowsUpdatesPolicy -UpdatePolicyId <string> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -34,6 +34,7 @@ Remove-MgBetaWindowsUpdatesPolicy -InputObject <IWindowsUpdatesIdentity> [-IfMat
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -43,8 +44,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a Windows update policy object.
-You can use this method with the following child object type: qualityUpdatePolicy.
+Delete an updatePolicy object.
 
 **Permissions**
 
@@ -61,7 +61,7 @@ You can use this method with the following child object type: qualityUpdatePolic
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
-Remove-MgBetaWindowsUpdatesPolicy -PolicyId $policyId
+Remove-MgBetaWindowsUpdatesPolicy -UpdatePolicyId $updatePolicyId
 
 ```
 This example shows how to use the Remove-MgBetaWindowsUpdatesPolicy Cmdlet.
@@ -239,27 +239,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PolicyId
-
-The unique identifier of policy
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -Proxy
 
 The URI for the proxy server to use
@@ -345,6 +324,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -UpdatePolicyId
+
+The unique identifier of updatePolicy
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -408,12 +408,9 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   [EditionId <String>]: The unique identifier of edition
   [KbNumber <Int32?>]: Usage: kbNumber={kbNumber}
   [KnownIssueId <String>]: The unique identifier of knownIssue
-  [PolicyApprovalId <String>]: The unique identifier of policyApproval
-  [PolicyId <String>]: The unique identifier of policy
   [ProductId <String>]: The unique identifier of product
   [ProductRevisionId <String>]: The unique identifier of productRevision
   [ResourceConnectionId <String>]: The unique identifier of resourceConnection
-  [RingId <String>]: The unique identifier of ring
   [UpdatableAssetId <String>]: The unique identifier of updatableAsset
   [UpdatePolicyId <String>]: The unique identifier of updatePolicy
 
@@ -421,7 +418,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgBetaWindowsUpdatesPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-policy-delete?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-updatepolicy-delete?view=graph-rest-beta)
 
 
 

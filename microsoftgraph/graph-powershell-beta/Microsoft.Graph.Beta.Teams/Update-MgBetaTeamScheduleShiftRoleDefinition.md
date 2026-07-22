@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshiftroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTeamScheduleShiftRoleDefinition
 ---
@@ -26,6 +26,7 @@ Update-MgBetaTeamScheduleShiftRoleDefinition -ShiftsRoleDefinitionId <string> -T
  [-ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -35,7 +36,7 @@ Update-MgBetaTeamScheduleShiftRoleDefinition -ShiftsRoleDefinitionId <string> -T
  -BodyParameter <IMicrosoftGraphShiftsRoleDefinition> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -47,6 +48,7 @@ Update-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity>
  [-ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -56,7 +58,7 @@ Update-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphShiftsRoleDefinition> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchat
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgChat
 ---
@@ -30,6 +30,7 @@ Get-MgChat [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -38,7 +39,7 @@ Get-MgChat [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter <string>
 Get-MgChat -ChatId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -47,7 +48,7 @@ Get-MgChat -ChatId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
 Get-MgChat -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -65,9 +66,9 @@ To access a chat, at least one chat member must belong to the tenant the request
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite,  |
+| Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ReadBasic.All, Chat.Manage.Chat, Chat.Read.All, ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat,  |
+| Application | Chat.ReadBasic.All, ChatSettings.ReadWrite.Chat, ChatSettings.Read.Chat, Chat.Read.All, Chat.Manage.Chat,  |
 
 ## EXAMPLES
 ### Example 1: Get a group chat
@@ -596,7 +597,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
-  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp

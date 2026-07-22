@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintserviceendpoint
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPrintServiceEndpoint
 ---
@@ -28,7 +28,7 @@ Get-MgBetaPrintServiceEndpoint -PrintServiceId <string> [-ExpandProperty <string
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -38,7 +38,7 @@ Get-MgBetaPrintServiceEndpoint -PrintServiceEndpointId <string> -PrintServiceId 
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -48,7 +48,7 @@ Get-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -64,7 +64,7 @@ Retrieve the properties and relationships of a print service endpoint.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrintJob.ReadBasic, PrintAlertSettings.Read.All, PrintAlertSettings.ReadWrite.All, PrintConnector.Read.All, PrintConnector.ReadWrite.All, Printer.Create, Printer.Read.All, Printer.ReadWrite.All, PrinterShare.Read.All, PrinterShare.ReadBasic.All, PrinterShare.ReadWrite.All, PrintJob.Create, PrintJob.Read, PrintJob.Read.All, PrintJob.ReadBasic.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic, PrintJob.ReadWriteBasic.All, PrintSettings.Read.All, PrintSettings.ReadWrite.All,  |
+| Delegated (work or school account) | PrintJob.ReadBasic, PrintSettings.ReadWrite.All, PrintSettings.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite.All, PrintJob.ReadWrite, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.Read, PrintJob.Create, PrinterShare.ReadWrite.All, PrinterShare.ReadBasic.All, PrinterShare.Read.All, Printer.ReadWrite.All, Printer.Read.All, Printer.Create, PrintConnector.ReadWrite.All, PrintConnector.Read.All, PrintAlertSettings.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 

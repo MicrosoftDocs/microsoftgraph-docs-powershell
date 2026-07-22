@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityverifiedid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaIdentityVerifiedId
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaIdentityVerifiedId
 
 Delete navigation property verifiedId for identity
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityVerifiedId](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityVerifiedId?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -27,6 +24,7 @@ Remove-MgBetaIdentityVerifiedId [-IfMatch <string>] [-ResponseHeadersVariable <s
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

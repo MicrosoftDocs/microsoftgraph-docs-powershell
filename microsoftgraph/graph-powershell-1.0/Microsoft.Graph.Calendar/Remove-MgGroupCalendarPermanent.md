@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgGroupCalendarPermanent
 ---
@@ -13,7 +13,8 @@ title: Remove-MgGroupCalendarPermanent
 
 ## SYNOPSIS
 
-Invoke action permanentDelete
+Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
+For more information about item retention, see Configure deleted item retention and recoverable items quotas.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupCalendarPermanent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarPermanent?view=graph-powershell-beta)
@@ -27,6 +28,7 @@ Remove-MgGroupCalendarPermanent -GroupId <string> [-ResponseHeadersVariable <str
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -36,6 +38,7 @@ Remove-MgGroupCalendarPermanent -InputObject <ICalendarIdentity> [-ResponseHeade
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -45,7 +48,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke action permanentDelete
+Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
+For more information about item retention, see Configure deleted item retention and recoverable items quotas.
 
 ## PARAMETERS
 
@@ -380,6 +384,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgGroupCalendarPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-1.0)
 
 
 

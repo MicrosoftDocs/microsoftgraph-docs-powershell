@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdrivebundlecontent
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgGroupDriveBundleContent
 ---
@@ -27,7 +27,7 @@ Set-MgGroupDriveBundleContent -DriveId <string> -DriveItemId <string> -GroupId <
  -InFile <string> [-Data <Stream>] [-ResponseHeadersVariable <string>] [-Break]
  [-ContentType <string>] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -37,6 +37,7 @@ Set-MgGroupDriveBundleContent -InputObject <IFilesIdentity> -InFile <string> [-D
  [-ResponseHeadersVariable <string>] [-Break] [-ContentType <string>] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

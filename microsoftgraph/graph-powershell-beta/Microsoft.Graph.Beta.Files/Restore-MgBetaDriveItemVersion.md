@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitemversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgBetaDriveItemVersion
 ---
@@ -28,6 +28,7 @@ Restore-MgBetaDriveItemVersion -DriveId <string> -DriveItemId <string> -DriveIte
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
@@ -37,6 +38,7 @@ Restore-MgBetaDriveItemVersion -InputObject <IFilesIdentity> [-ResponseHeadersVa
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -53,7 +55,7 @@ This operation creates a new version with the contents of the previous version, 
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All,  |
+| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 

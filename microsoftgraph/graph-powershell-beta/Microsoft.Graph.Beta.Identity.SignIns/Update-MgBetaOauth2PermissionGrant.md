@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaoauth2permissiongrant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOauth2PermissionGrant
 ---
@@ -30,6 +30,7 @@ Update-MgBetaOauth2PermissionGrant -OAuth2PermissionGrantId <string>
  [-ResourceId <string>] [-Scope <string>] [-StartTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -39,7 +40,7 @@ Update-MgBetaOauth2PermissionGrant -OAuth2PermissionGrantId <string>
  -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,6 +52,7 @@ Update-MgBetaOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity>
  [-ResourceId <string>] [-Scope <string>] [-StartTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -60,7 +62,7 @@ Update-MgBetaOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -772,7 +774,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
-  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy

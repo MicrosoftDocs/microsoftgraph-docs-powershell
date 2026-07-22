@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsubjectbyobjectid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEntitlementManagementSubjectByObjectId
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaEntitlementManagementSubjectByObjectId
 ## SYNOPSIS
 
 Update an existing accessPackageSubject object to change the subject lifecycle.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementSubjectByObjectId](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementSubjectByObjectId?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ Update-MgBetaEntitlementManagementSubjectByObjectId -ObjectId <string>
  [-OnPremisesSecurityIdentifier <string>] [-PrincipalName <string>] [-SubjectLifecycle <string>]
  [-Type <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,7 +42,7 @@ Update-MgBetaEntitlementManagementSubjectByObjectId -InputObject <IIdentityGover
  [-PrincipalName <string>] [-SubjectLifecycle <string>] [-Type <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -55,7 +52,7 @@ Update-MgBetaEntitlementManagementSubjectByObjectId -ObjectId <string>
  -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +62,7 @@ Update-MgBetaEntitlementManagementSubjectByObjectId -InputObject <IIdentityGover
  -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -907,7 +904,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
-  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource

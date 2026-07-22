@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetauserdrivelistcontenttypecopyfromcontenttypehub
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub
 ---
@@ -30,7 +30,7 @@ Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub -DriveId <string> -User
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-ContentTypeId <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
@@ -41,6 +41,7 @@ Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub -DriveId <string> -User
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
@@ -50,7 +51,7 @@ Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub -InputObject <IFilesIde
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-ContentTypeId <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
@@ -61,6 +62,7 @@ Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub -InputObject <IFilesIde
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

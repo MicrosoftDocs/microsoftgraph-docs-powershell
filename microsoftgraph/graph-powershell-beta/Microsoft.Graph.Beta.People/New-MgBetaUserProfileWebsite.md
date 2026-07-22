@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilewebsite
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserProfileWebsite
 ---
@@ -29,6 +29,7 @@ New-MgBetaUserProfileWebsite -UserId <string> [-ResponseHeadersVariable <string>
  [-ThumbnailUrl <string>] [-WebUrl <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -38,6 +39,7 @@ New-MgBetaUserProfileWebsite -UserId <string> -BodyParameter <IMicrosoftGraphPer
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -52,6 +54,7 @@ New-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> [-ResponseHeadersVar
  [-ThumbnailUrl <string>] [-WebUrl <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +64,7 @@ New-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity>
  -BodyParameter <IMicrosoftGraphPersonWebsite> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,9 +80,9 @@ Create new navigation property to websites for users
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
+| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | User.ReadWrite,  |
-| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
+| Application | User.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentcategory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationUserAssignmentCategory
 ---
@@ -31,6 +31,7 @@ Get-MgBetaEducationUserAssignmentCategory -EducationAssignmentId <string> -Educa
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaforwardgroupteamchannelmessagereplytochat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaForwardGroupTeamChannelMessageReplyToChat
 ---
@@ -26,6 +26,7 @@ Invoke-MgBetaForwardGroupTeamChannelMessageReplyToChat -ChannelId <string> -Chat
  [-MessageIds <string[]>] [-TargetChatIds <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Forward
@@ -37,6 +38,7 @@ Invoke-MgBetaForwardGroupTeamChannelMessageReplyToChat -ChannelId <string> -Chat
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ForwardViaIdentityExpanded
@@ -47,7 +49,7 @@ Invoke-MgBetaForwardGroupTeamChannelMessageReplyToChat -InputObject <ITeamsIdent
  [-AdditionalProperties <hashtable>] [-MessageIds <string[]>] [-TargetChatIds <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ForwardViaIdentity
@@ -58,6 +60,7 @@ Invoke-MgBetaForwardGroupTeamChannelMessageReplyToChat -InputObject <ITeamsIdent
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

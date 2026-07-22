@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetasignreportauthenticationmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaSignReportAuthenticationMethod
 ---
@@ -24,7 +24,7 @@ Invoke-MgBetaSignReportAuthenticationMethod -Period <string> [-Count] [-ExpandPr
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### SignViaIdentity
@@ -35,7 +35,7 @@ Invoke-MgBetaSignReportAuthenticationMethod -InputObject <IReportsIdentity> [-Co
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,17 +48,12 @@ This cmdlet has the following aliases,
 Gets a list of the number of successful sign ins for each authentication method that is available.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Invoke-MgBetaSignReportAuthenticationMethod -Period $periodId 
-
-```
-This example shows how to use the Invoke-MgBetaSignReportAuthenticationMethod Cmdlet.
-
+Invoke-MgBetaSignReportAuthenticationMethod -Period $periodId
 
 ## PARAMETERS
 

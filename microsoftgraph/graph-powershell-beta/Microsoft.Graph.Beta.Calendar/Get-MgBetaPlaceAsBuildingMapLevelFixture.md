@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmaplevelfixture
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlaceAsBuildingMapLevelFixture
 ---
@@ -30,6 +30,7 @@ Get-MgBetaPlaceAsBuildingMapLevelFixture -LevelMapId <string> -PlaceId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -39,7 +40,7 @@ Get-MgBetaPlaceAsBuildingMapLevelFixture -FixtureMapId <string> -LevelMapId <str
  -PlaceId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -49,7 +50,7 @@ Get-MgBetaPlaceAsBuildingMapLevelFixture -InputObject <ICalendarIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -61,19 +62,6 @@ This cmdlet has the following aliases,
 
 Collection of fixtures (such as furniture or equipment) on this level.
 Supports upsert.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Get-MgBetaPlaceAsBuildingMapLevelFixture -PlaceId $placeId -LevelMapId $levelMapId
-
-```
-This example shows how to use the Get-MgBetaPlaceAsBuildingMapLevelFixture Cmdlet.
-
 
 ## PARAMETERS
 
@@ -616,6 +604,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Get-MgBetaPlaceAsBuildingMapLevelFixture](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmaplevelfixture)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/levelmap-list-fixtures?view=graph-rest-beta)
+
 
 
 

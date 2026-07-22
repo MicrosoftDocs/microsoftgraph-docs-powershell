@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaChatMember
 ---
@@ -28,7 +28,7 @@ Get-MgBetaChatMember -ChatId <string> [-ExpandProperty <string[]>] [-Property <s
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -37,7 +37,7 @@ Get-MgBetaChatMember -ChatId <string> [-ExpandProperty <string[]>] [-Property <s
 Get-MgBetaChatMember -ChatId <string> -ConversationMemberId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -46,7 +46,7 @@ Get-MgBetaChatMember -ChatId <string> -ConversationMemberId <string> [-ExpandPro
 Get-MgBetaChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -62,9 +62,9 @@ Retrieve a conversationMember from a chat.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite, ChatMember.Read, ChatMember.ReadWrite,  |
+| Delegated (work or school account) | Chat.ReadBasic, ChatMember.ReadWrite, ChatMember.Read, Chat.ReadWrite, Chat.Read,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMember.Read.All, Chat.Manage.Chat, Chat.Read.All, Chat.ReadBasic.All, Chat.ReadWrite.All, ChatMember.Read.Chat, ChatMember.ReadWrite.All, TeamMember.Read.Group,  |
+| Application | ChatMember.Read.All, TeamMember.Read.Group, ChatMember.ReadWrite.All, ChatMember.Read.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

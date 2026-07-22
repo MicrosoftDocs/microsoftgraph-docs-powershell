@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggrouptolifecyclepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgGroupToLifecyclePolicy
 ---
@@ -28,6 +28,7 @@ Add-MgGroupToLifecyclePolicy -GroupLifecyclePolicyId <string> [-ResponseHeadersV
  [-AdditionalProperties <hashtable>] [-GroupId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Add
@@ -38,6 +39,7 @@ Add-MgGroupToLifecyclePolicy -GroupLifecyclePolicyId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
@@ -47,6 +49,7 @@ Add-MgGroupToLifecyclePolicy -InputObject <IGroupsIdentity> [-ResponseHeadersVar
  [-AdditionalProperties <hashtable>] [-GroupId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AddViaIdentity
@@ -57,6 +60,7 @@ Add-MgGroupToLifecyclePolicy -InputObject <IGroupsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsiteonenotenotebooksectiongroupsectiontosectiongroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionToSectionGroup
 ---
@@ -30,7 +30,7 @@ Copy-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionToSectionGroup -GroupId <s
  [-Id <string>] [-RenameAs <string>] [-SiteCollectionId <string>] [-SiteId1 <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
@@ -42,6 +42,7 @@ Copy-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionToSectionGroup -InputObjec
  [-SiteCollectionId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Copy
@@ -53,6 +54,7 @@ Copy-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionToSectionGroup -GroupId <s
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
@@ -63,6 +65,7 @@ Copy-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionToSectionGroup -InputObjec
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipal
 ---
@@ -14,7 +14,6 @@ title: Get-MgServicePrincipal
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a servicePrincipal object.
-This API can be used to get agentIdentityBlueprintPrincipal objects as well by their ID.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipal?view=graph-powershell-beta)
@@ -29,7 +28,7 @@ Get-MgServicePrincipal [-ExpandProperty <string[]>] [-Property <string[]>] [-Fil
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -38,7 +37,7 @@ Get-MgServicePrincipal [-ExpandProperty <string[]>] [-Property <string[]>] [-Fil
 Get-MgServicePrincipal -ServicePrincipalId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -47,7 +46,7 @@ Get-MgServicePrincipal -ServicePrincipalId <string> [-ExpandProperty <string[]>]
 Get-MgServicePrincipal -InputObject <IApplicationsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -58,15 +57,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties and relationships of a servicePrincipal object.
-This API can be used to get agentIdentityBlueprintPrincipal objects as well by their ID.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, AgentIdentity.Read.All, AgentIdentityBlueprintPrincipal.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, AgentIdentity.Read.All, AgentIdentityBlueprintPrincipal.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All, Directory.ReadWrite.All,  |
+| Application | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get all service principals from the directory
@@ -663,7 +661,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
-  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition

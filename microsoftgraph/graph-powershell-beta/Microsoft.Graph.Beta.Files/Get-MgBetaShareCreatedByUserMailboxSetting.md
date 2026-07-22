@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharecreatedbyusermailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaShareCreatedByUserMailboxSetting
 ---
@@ -16,7 +16,7 @@ title: Get-MgBetaShareCreatedByUserMailboxSetting
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
-Requires $select to retrieve.
+Returned only on $select.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgShareCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Get-MgShareCreatedByUserMailboxSetting?view=graph-powershell-1.0)
@@ -29,7 +29,7 @@ Requires $select to retrieve.
 Get-MgBetaShareCreatedByUserMailboxSetting -SharedDriveItemId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -39,7 +39,7 @@ Get-MgBetaShareCreatedByUserMailboxSetting -InputObject <IFilesIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,7 +52,7 @@ This cmdlet has the following aliases,
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
-Requires $select to retrieve.
+Returned only on $select.
 
 ## PARAMETERS
 

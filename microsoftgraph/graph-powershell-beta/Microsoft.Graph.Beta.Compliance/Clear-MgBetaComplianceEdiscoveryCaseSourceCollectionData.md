@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/clear-mgbetacomplianceediscoverycasesourcecollectiondata
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Clear-MgBetaComplianceEdiscoveryCaseSourceCollectionData
 ---
@@ -28,6 +28,7 @@ Clear-MgBetaComplianceEdiscoveryCaseSourceCollectionData -CaseId <string>
  -SourceCollectionId <string> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### PurgeViaIdentity
@@ -37,6 +38,7 @@ Clear-MgBetaComplianceEdiscoveryCaseSourceCollectionData -InputObject <IComplian
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

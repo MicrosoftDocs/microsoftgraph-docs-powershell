@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaward
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserProfileAward
 ---
@@ -30,7 +30,7 @@ Update-MgBetaUserProfileAward -PersonAwardId <string> -UserId <string>
  [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-ThumbnailUrl <string>] [-WebUrl <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -40,7 +40,7 @@ Update-MgBetaUserProfileAward -PersonAwardId <string> -UserId <string>
  -BodyParameter <IMicrosoftGraphPersonAward> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -56,6 +56,7 @@ Update-MgBetaUserProfileAward -InputObject <IPeopleIdentity> [-ResponseHeadersVa
  [-ThumbnailUrl <string>] [-WebUrl <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +66,7 @@ Update-MgBetaUserProfileAward -InputObject <IPeopleIdentity>
  -BodyParameter <IMicrosoftGraphPersonAward> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -81,9 +82,9 @@ Update the properties of a personAward object from a user's profile.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
+| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | User.ReadWrite,  |
-| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
+| Application | User.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

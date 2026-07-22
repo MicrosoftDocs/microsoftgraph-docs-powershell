@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyusermailfoldermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReplyUserMailFolderMessage
 ---
@@ -33,6 +33,7 @@ Invoke-MgReplyUserMailFolderMessage -MailFolderId <string> -MessageId <string> -
  [-Message <IMicrosoftGraphMessage>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Reply
@@ -43,6 +44,7 @@ Invoke-MgReplyUserMailFolderMessage -MailFolderId <string> -MessageId <string> -
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ReplyViaIdentityExpanded
@@ -53,6 +55,7 @@ Invoke-MgReplyUserMailFolderMessage -InputObject <IMailIdentity> [-ResponseHeade
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ReplyViaIdentity
@@ -63,6 +66,7 @@ Invoke-MgReplyUserMailFolderMessage -InputObject <IMailIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -638,7 +642,7 @@ To verify the existence of inline attachments, parse the body property to look f
     [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Requires $select to retrieve.
+ Returned only on applying a $select query option.
 Read-only.
       [Name <String>]: Represents the key in a key-value pair.
       [Value <String>]: The value in a key-value pair.
@@ -745,7 +749,7 @@ To verify the existence of inline attachments, parse the body property to look f
   [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Requires $select to retrieve.
+ Returned only on applying a $select query option.
 Read-only.
     [Name <String>]: Represents the key in a key-value pair.
     [Value <String>]: The value in a key-value pair.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow
 ---
@@ -25,7 +25,7 @@ New-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow
  [-AdditionalProperties <hashtable>] [-Id <string>] [-ReadinessStatus <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -36,7 +36,7 @@ New-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow
  -BodyParameter <IMicrosoftGraphIndustryDataProvisioningFlow> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -47,7 +47,7 @@ New-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow
  [-AdditionalProperties <hashtable>] [-Id <string>] [-ReadinessStatus <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -58,6 +58,7 @@ New-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponpremisesyncbehavior
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupOnPremiseSyncBehavior
 ---
@@ -28,7 +28,7 @@ If true, updates from on-premises Active Directory are blocked in the cloud; if 
 Get-MgBetaGroupOnPremiseSyncBehavior -GroupId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -37,7 +37,7 @@ Get-MgBetaGroupOnPremiseSyncBehavior -GroupId <string> [-ExpandProperty <string[
 Get-MgBetaGroupOnPremiseSyncBehavior -InputObject <IGroupsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -58,19 +58,6 @@ If true, updates from on-premises Active Directory are blocked in the cloud; if 
 | Delegated (work or school account) | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Groups
-
-Get-MgBetaGroupOnPremiseSyncBehavior -GroupId $groupId
-
-```
-This example shows how to use the Get-MgBetaGroupOnPremiseSyncBehavior Cmdlet.
-
 
 ## PARAMETERS
 
@@ -389,6 +376,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [Get-MgBetaGroupOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponpremisesyncbehavior)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/onpremisessyncbehavior-get?view=graph-rest-beta)
+
 
 
 

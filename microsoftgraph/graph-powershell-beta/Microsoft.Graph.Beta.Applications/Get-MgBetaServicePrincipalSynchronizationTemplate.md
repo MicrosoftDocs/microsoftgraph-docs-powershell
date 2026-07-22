@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalSynchronizationTemplate
 ---
@@ -29,6 +29,7 @@ Get-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -38,7 +39,7 @@ Get-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId <string>
  -SynchronizationTemplateId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -48,7 +49,7 @@ Get-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIde
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -66,20 +67,7 @@ Pre-configured synchronization settings for a particular application.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.Read.All, Synchronization.ReadWrite.All,  |
-
-## EXAMPLES
-### Example
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Applications
-
-Get-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgBetaServicePrincipalSynchronizationTemplate Cmdlet.
-
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
 
 ## PARAMETERS
 
@@ -611,6 +599,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Get-MgBetaServicePrincipalSynchronizationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-beta)
+
+
 
 
 

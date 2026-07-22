@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlinspectionpolicyrule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessTlInspectionPolicyRule
 ---
@@ -25,7 +25,7 @@ Update-MgBetaNetworkAccessTlInspectionPolicyRule -PolicyRuleId <string>
  [-AdditionalProperties <hashtable>] [-Id <string>] [-Name <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -36,6 +36,7 @@ Update-MgBetaNetworkAccessTlInspectionPolicyRule -PolicyRuleId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,7 +46,7 @@ Update-MgBetaNetworkAccessTlInspectionPolicyRule -InputObject <INetworkAccessIde
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
  [-Name <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -55,7 +56,7 @@ Update-MgBetaNetworkAccessTlInspectionPolicyRule -InputObject <INetworkAccessIde
  -BodyParameter <IMicrosoftGraphNetworkaccessPolicyRule> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -76,9 +77,8 @@ Update the properties of a tlsInspectionRule object.
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -104,10 +104,6 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessTlInspectionPolicyRule -TlsInspectionPolicyId $tlsInspectionPolicyId -PolicyRuleId $policyRuleId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaNetworkAccessTlInspectionPolicyRule Cmdlet.
-
 
 ## PARAMETERS
 
@@ -561,7 +557,6 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
   [BranchSiteId <String>]: The unique identifier of branchSite
-  [CloudFirewallPolicyId <String>]: The unique identifier of cloudFirewallPolicy
   [ConditionalAccessPolicyId <String>]: The unique identifier of conditionalAccessPolicy
   [ConnectionId <String>]: The unique identifier of connection
   [ConnectivityConfigurationLinkId <String>]: The unique identifier of connectivityConfigurationLink
@@ -573,7 +568,6 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [FilteringProfileId <String>]: The unique identifier of filteringProfile
   [ForwardingPolicyId <String>]: The unique identifier of forwardingPolicy
   [ForwardingProfileId <String>]: The unique identifier of forwardingProfile
-  [GenerativeAiInsightTransactionId <String>]: The unique identifier of generativeAIInsight
   [NetworkAccessTrafficTransactionId <String>]: The unique identifier of networkAccessTraffic
   [PolicyLinkId <String>]: The unique identifier of policyLink
   [PolicyRuleId <String>]: The unique identifier of policyRule

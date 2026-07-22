@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotepage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupOnenotePage
 ---
@@ -31,7 +31,7 @@ New-MgBetaGroupOnenotePage -GroupId <string> [-ResponseHeadersVariable <string>]
  [-ParentSection <IMicrosoftGraphOnenoteSection>] [-Self <string>] [-Title <string>]
  [-UserTags <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -41,6 +41,7 @@ New-MgBetaGroupOnenotePage -GroupId <string> -BodyParameter <IMicrosoftGraphOnen
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -54,7 +55,7 @@ New-MgBetaGroupOnenotePage -InputObject <INotesIdentity> [-ResponseHeadersVariab
  [-ParentSection <IMicrosoftGraphOnenoteSection>] [-Self <string>] [-Title <string>]
  [-UserTags <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -64,6 +65,7 @@ New-MgBetaGroupOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicros
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -79,7 +81,7 @@ Create new navigation property to pages for groups
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All,  |
+| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite,  |
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
 | Application | Notes.ReadWrite.All,  |
 

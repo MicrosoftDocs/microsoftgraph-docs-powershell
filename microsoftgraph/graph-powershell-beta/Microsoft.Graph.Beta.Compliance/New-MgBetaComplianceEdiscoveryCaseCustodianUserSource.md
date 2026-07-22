@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasecustodianusersource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaComplianceEdiscoveryCaseCustodianUserSource
 ---
@@ -26,7 +26,7 @@ New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId <string> -Custodia
  [-Email <string>] [-HoldStatus <string>] [-Id <string>] [-IncludedSources <string>]
  [-SiteWebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -36,7 +36,7 @@ New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId <string> -Custodia
  -BodyParameter <IMicrosoftGraphEdiscoveryUserSource> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -48,7 +48,7 @@ New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceI
  [-Email <string>] [-HoldStatus <string>] [-Id <string>] [-IncludedSources <string>]
  [-SiteWebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -58,7 +58,7 @@ New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceI
  -BodyParameter <IMicrosoftGraphEdiscoveryUserSource> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES

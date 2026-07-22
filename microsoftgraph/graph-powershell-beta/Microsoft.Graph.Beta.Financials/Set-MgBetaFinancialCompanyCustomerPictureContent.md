@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/set-mgbetafinancialcompanycustomerpicturecontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaFinancialCompanyCustomerPictureContent
 ---
@@ -24,7 +24,7 @@ Set-MgBetaFinancialCompanyCustomerPictureContent -CompanyId <string> -CustomerId
  -PictureId <string> -InFile <string> [-Data <Stream>] [-ResponseHeadersVariable <string>] [-Break]
  [-ContentType <string>] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -34,7 +34,7 @@ Set-MgBetaFinancialCompanyCustomerPictureContent -InputObject <IFinancialsIdenti
  [-Data <Stream>] [-ResponseHeadersVariable <string>] [-Break] [-ContentType <string>]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES

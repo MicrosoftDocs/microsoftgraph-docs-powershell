@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberof
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserTransitiveMemberOf
 ---
@@ -29,7 +29,7 @@ Get-MgUserTransitiveMemberOf -UserId <string> [-ExpandProperty <string[]>] [-Pro
  [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -39,7 +39,7 @@ Get-MgUserTransitiveMemberOf -DirectoryObjectId <string> -UserId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ConsistencyLevel <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -49,7 +49,7 @@ Get-MgUserTransitiveMemberOf -InputObject <IUsersIdentity> [-ExpandProperty <str
  [-Property <string[]>] [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -615,7 +615,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserTransitiveMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberof)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-transitivememberof?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list-transitivememberof?view=graph-rest-1.0)
 
 
 

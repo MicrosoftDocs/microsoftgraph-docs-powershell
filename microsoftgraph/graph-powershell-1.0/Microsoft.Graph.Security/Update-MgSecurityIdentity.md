@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentity
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIdentity
 ---
@@ -28,10 +28,10 @@ Update-MgSecurityIdentity [-ResponseHeadersVariable <string>] [-AdditionalProper
  [-IdentityAccounts <IMicrosoftGraphSecurityIdentityAccounts[]>]
  [-SensorCandidateActivationConfiguration <IMicrosoftGraphSecuritySensorCandidateActivationConfiguration>]
  [-SensorCandidates <IMicrosoftGraphSecuritySensorCandidate[]>]
- [-Sensors <IMicrosoftGraphSecuritySensor[]>] [-Settings <IMicrosoftGraphSecuritySettingsContainer>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-Sensors <IMicrosoftGraphSecuritySensor[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -41,6 +41,7 @@ Update-MgSecurityIdentity -BodyParameter <IMicrosoftGraphSecurityIdentityContain
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -420,28 +421,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Settings
-
-settingsContainer
-To construct, see NOTES section for SETTINGS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySettingsContainer
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -574,15 +553,6 @@ Read-only.
         [IsEnabled <Boolean?>]: Indicates whether the network adapter is selected for capturing and analyzing network traffic.
         [Name <String>]: The name of the network adapter.
     [Version <String>]: The version of the sensor.
-  [Settings <IMicrosoftGraphSecuritySettingsContainer>]: settingsContainer
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [AutoAuditingConfiguration <IMicrosoftGraphSecurityAutoAuditingConfiguration>]: autoAuditingConfiguration
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [IsAutomatic <Boolean?>]: Indicates whether automatic auditing is enabled for Defender for Identity monitoring.
 
 HEALTHISSUES <IMicrosoftGraphSecurityHealthIssue[]>: Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration.
   [Id <String>]: The unique identifier for an entity.
@@ -688,16 +658,6 @@ Read-only.
       [IsEnabled <Boolean?>]: Indicates whether the network adapter is selected for capturing and analyzing network traffic.
       [Name <String>]: The name of the network adapter.
   [Version <String>]: The version of the sensor.
-
-SETTINGS `<IMicrosoftGraphSecuritySettingsContainer>`: settingsContainer
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [AutoAuditingConfiguration <IMicrosoftGraphSecurityAutoAuditingConfiguration>]: autoAuditingConfiguration
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [IsAutomatic <Boolean?>]: Indicates whether automatic auditing is enabled for Defender for Identity monitoring.
 
 
 ## RELATED LINKS

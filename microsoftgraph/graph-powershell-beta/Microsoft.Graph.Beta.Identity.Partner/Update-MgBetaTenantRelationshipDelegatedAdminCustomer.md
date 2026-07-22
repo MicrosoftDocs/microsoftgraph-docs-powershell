@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Partner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadmincustomer
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Partner
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipDelegatedAdminCustomer
 ---
@@ -28,7 +28,7 @@ Update-MgBetaTenantRelationshipDelegatedAdminCustomer -DelegatedAdminCustomerId 
  [-Id <string>] [-ServiceManagementDetails <IMicrosoftGraphDelegatedAdminServiceManagementDetail[]>]
  [-TenantId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -38,7 +38,7 @@ Update-MgBetaTenantRelationshipDelegatedAdminCustomer -DelegatedAdminCustomerId 
  -BodyParameter <IMicrosoftGraphDelegatedAdminCustomer> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,7 +49,7 @@ Update-MgBetaTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPar
  [-Id <string>] [-ServiceManagementDetails <IMicrosoftGraphDelegatedAdminServiceManagementDetail[]>]
  [-TenantId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -59,7 +59,7 @@ Update-MgBetaTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPar
  -BodyParameter <IMicrosoftGraphDelegatedAdminCustomer> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES

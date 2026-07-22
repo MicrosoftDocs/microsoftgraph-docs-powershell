@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseronpremisesyncbehavior
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserOnPremiseSyncBehavior
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaUserOnPremiseSyncBehavior
 
 Update the navigation property onPremisesSyncBehavior in users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Users/Update-MgUserOnPremiseSyncBehavior?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -27,7 +24,7 @@ Update-MgBetaUserOnPremiseSyncBehavior -UserId <string> [-ResponseHeadersVariabl
  [-AdditionalProperties <hashtable>] [-Id <string>] [-IsCloudManaged] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -37,7 +34,7 @@ Update-MgBetaUserOnPremiseSyncBehavior -UserId <string>
  -BodyParameter <IMicrosoftGraphOnPremisesSyncBehavior> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -47,7 +44,7 @@ Update-MgBetaUserOnPremiseSyncBehavior -InputObject <IUsersIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
  [-IsCloudManaged] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -57,7 +54,7 @@ Update-MgBetaUserOnPremiseSyncBehavior -InputObject <IUsersIdentity>
  -BodyParameter <IMicrosoftGraphOnPremisesSyncBehavior> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintprinterjob
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgPrintPrinterJob
 ---
@@ -28,6 +28,7 @@ Stop-MgPrintPrinterJob -PrintJobId <string> -PrinterId <string> [-ResponseHeader
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CancelViaIdentity
@@ -37,6 +38,7 @@ Stop-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeade
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -53,7 +55,7 @@ Print jobs can be canceled only on behalf of a user, using delegated permissions
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic.All,  |
+| Delegated (work or school account) | PrintJob.ReadWriteBasic, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 

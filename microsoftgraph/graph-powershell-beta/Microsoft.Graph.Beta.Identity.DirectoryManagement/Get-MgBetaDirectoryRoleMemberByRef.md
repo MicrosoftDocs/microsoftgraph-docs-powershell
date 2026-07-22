@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolememberbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryRoleMemberByRef
 ---
@@ -32,7 +32,7 @@ Get-MgBetaDirectoryRoleMemberByRef -DirectoryRoleId <string> [-Filter <string>] 
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,9 +52,9 @@ For details, see Role template IDs.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
+| Delegated (work or school account) | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
+| Application | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## PARAMETERS
 

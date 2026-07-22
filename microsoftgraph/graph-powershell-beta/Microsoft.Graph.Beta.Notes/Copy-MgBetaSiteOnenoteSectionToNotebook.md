@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetasiteonenotesectiontonotebook
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaSiteOnenoteSectionToNotebook
 ---
@@ -29,7 +29,7 @@ Copy-MgBetaSiteOnenoteSectionToNotebook -OnenoteSectionId <string> -SiteId <stri
  [-Id <string>] [-RenameAs <string>] [-SiteCollectionId <string>] [-SiteId1 <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
@@ -40,6 +40,7 @@ Copy-MgBetaSiteOnenoteSectionToNotebook -OnenoteSectionId <string> -SiteId <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
@@ -50,6 +51,7 @@ Copy-MgBetaSiteOnenoteSectionToNotebook -InputObject <INotesIdentity> [-SiteId <
  [-Id <string>] [-RenameAs <string>] [-SiteCollectionId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
@@ -60,6 +62,7 @@ Copy-MgBetaSiteOnenoteSectionToNotebook -InputObject <INotesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -76,7 +79,7 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All,  |
+| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite,  |
 | Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
 | Application | Notes.ReadWrite.All,  |
 

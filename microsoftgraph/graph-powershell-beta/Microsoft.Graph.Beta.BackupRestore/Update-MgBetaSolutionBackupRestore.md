@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestore
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestore
 ---
@@ -24,19 +24,15 @@ Update the navigation property backupRestore in solutions
 
 ```
 Update-MgBetaSolutionBackupRestore [-ResponseHeadersVariable <string>]
- [-ActivityLogs <IMicrosoftGraphActivityLogBase[]>] [-AdditionalProperties <hashtable>]
+ [-AdditionalProperties <hashtable>] [-AllDrivesBackup <hashtable>]
+ [-AllMailboxesBackup <hashtable>] [-AllSitesBackup <hashtable>]
  [-BrowseSessions <IMicrosoftGraphBrowseSessionBase[]>]
- [-DriveExclusionUnits <IMicrosoftGraphDriveExclusionUnit[]>]
- [-DriveExclusionUnitsBulkAdditionJobs <IMicrosoftGraphDriveExclusionUnitsBulkAdditionJob[]>]
  [-DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]
  [-DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit[]>]
  [-DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob[]>]
  [-EmailNotificationsSetting <IMicrosoftGraphEmailNotificationsSetting>]
  [-ExchangeProtectionPolicies <IMicrosoftGraphExchangeProtectionPolicy[]>]
- [-ExchangeRestoreSessions <IMicrosoftGraphExchangeRestoreSession[]>]
- [-ExclusionUnits <IMicrosoftGraphExclusionUnitBase[]>] [-Id <string>]
- [-MailboxExclusionUnits <IMicrosoftGraphMailboxExclusionUnit[]>]
- [-MailboxExclusionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxExclusionUnitsBulkAdditionJob[]>]
+ [-ExchangeRestoreSessions <IMicrosoftGraphExchangeRestoreSession[]>] [-Id <string>]
  [-MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule[]>]
  [-MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit[]>]
  [-MailboxProtectionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob[]>]
@@ -44,21 +40,19 @@ Update-MgBetaSolutionBackupRestore [-ResponseHeadersVariable <string>]
  [-OneDriveForBusinessProtectionPolicies <IMicrosoftGraphOneDriveForBusinessProtectionPolicy[]>]
  [-OneDriveForBusinessRestoreSessions <IMicrosoftGraphOneDriveForBusinessRestoreSession[]>]
  [-ProtectionPolicies <IMicrosoftGraphProtectionPolicyBase[]>]
- [-ProtectionUnits <IMicrosoftGraphProtectionUnitBase[]>] [-Reports <hashtable>]
+ [-ProtectionUnits <IMicrosoftGraphProtectionUnitBase[]>]
  [-RestorePoints <IMicrosoftGraphRestorePoint[]>]
  [-RestoreSessions <IMicrosoftGraphRestoreSessionBase[]>]
  [-ServiceApps <IMicrosoftGraphServiceApp[]>] [-ServiceStatus <IMicrosoftGraphServiceStatus>]
  [-SharePointBrowseSessions <IMicrosoftGraphSharePointBrowseSession[]>]
  [-SharePointProtectionPolicies <IMicrosoftGraphSharePointProtectionPolicy[]>]
  [-SharePointRestoreSessions <IMicrosoftGraphSharePointRestoreSession[]>]
- [-SiteExclusionUnits <IMicrosoftGraphSiteExclusionUnit[]>]
- [-SiteExclusionUnitsBulkAdditionJobs <IMicrosoftGraphSiteExclusionUnitsBulkAdditionJob[]>]
  [-SiteInclusionRules <IMicrosoftGraphSiteProtectionRule[]>]
  [-SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit[]>]
  [-SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -68,6 +62,7 @@ Update-MgBetaSolutionBackupRestore -BodyParameter <IMicrosoftGraphBackupRestoreR
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -81,13 +76,12 @@ Update the navigation property backupRestore in solutions
 
 ## PARAMETERS
 
-### -ActivityLogs
+### -AdditionalProperties
 
-
-To construct, see NOTES section for ACTIVITYLOGS properties and create a hash table.
+Additional Parameters
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphActivityLogBase[]
+Type: System.Collections.Hashtable
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -103,9 +97,51 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -AdditionalProperties
+### -AllDrivesBackup
 
-Additional Parameters
+allDrivesBackup
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AllMailboxesBackup
+
+allMailboxesBackup
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AllSitesBackup
+
+allSitesBackup
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -169,7 +205,7 @@ HelpMessage: ''
 
 ### -BrowseSessions
 
-The list of browse sessions in the tenant.
+
 To construct, see NOTES section for BROWSESESSIONS properties and create a hash table.
 
 ```yaml
@@ -201,50 +237,6 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -DriveExclusionUnits
-
-The list of drive exclusion units in the tenant.
-To construct, see NOTES section for DRIVEEXCLUSIONUNITS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveExclusionUnit[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -DriveExclusionUnitsBulkAdditionJobs
-
-The list of bulk addition jobs for drive exclusion units in the tenant.
-To construct, see NOTES section for DRIVEEXCLUSIONUNITSBULKADDITIONJOBS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveExclusionUnitsBulkAdditionJob[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -387,28 +379,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ExclusionUnits
-
-The list of exclusion units in the tenant.
-To construct, see NOTES section for EXCLUSIONUNITS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExclusionUnitBase[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -Headers
 
 Optional headers that will be added to the request.
@@ -494,50 +464,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -MailboxExclusionUnits
-
-The list of mailbox exclusion units in the tenant.
-To construct, see NOTES section for MAILBOXEXCLUSIONUNITS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailboxExclusionUnit[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -MailboxExclusionUnitsBulkAdditionJobs
-
-The list of bulk addition jobs for mailbox exclusion units in the tenant.
-To construct, see NOTES section for MAILBOXEXCLUSIONUNITSBULKADDITIONJOBS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailboxExclusionUnitsBulkAdditionJob[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -MailboxInclusionRules
 
 The list of mailbox inclusion rules applied to the tenant.
@@ -606,7 +532,7 @@ HelpMessage: ''
 
 ### -OneDriveForBusinessBrowseSessions
 
-The list of OneDrive for work or school browse sessions in the tenant.
+
 To construct, see NOTES section for ONEDRIVEFORBUSINESSBROWSESESSIONS properties and create a hash table.
 
 ```yaml
@@ -777,27 +703,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Reports
-
-backupReport
-
-```yaml
-Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -910,7 +815,7 @@ HelpMessage: ''
 
 ### -SharePointBrowseSessions
 
-The list of SharePoint browse sessions in the tenant.
+
 To construct, see NOTES section for SHAREPOINTBROWSESESSIONS properties and create a hash table.
 
 ```yaml
@@ -959,50 +864,6 @@ To construct, see NOTES section for SHAREPOINTRESTORESESSIONS properties and cre
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharePointRestoreSession[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -SiteExclusionUnits
-
-The list of site exclusion units in the tenant.
-To construct, see NOTES section for SITEEXCLUSIONUNITS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSiteExclusionUnit[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -SiteExclusionUnitsBulkAdditionJobs
-
-The list of bulk addition jobs for site exclusion units in the tenant.
-To construct, see NOTES section for SITEEXCLUSIONUNITSBULKADDITIONJOBS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSiteExclusionUnitsBulkAdditionJob[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1136,39 +997,55 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITYLOGS <IMicrosoftGraphActivityLogBase[]>: .
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [ActivityType <String>]: activityLogOperationType
-  [Error <IMicrosoftGraphPublicError>]: publicError
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Code <String>]: Represents the error code.
-    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
-      [Code <String>]: The error code.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Code <String>]: The error code.
-      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [Message <String>]: A non-localized message for the developer.
-    [Target <String>]: The target of the error.
-  [EventDateTime <DateTime?>]: 
-  [PerformedBy <String>]: 
-  [ResultStatus <String>]: activityLogResultStatus
-  [ServiceType <String>]: serviceType
-  [Severity <String>]: activityLogSeverity
-
 BODYPARAMETER `<IMicrosoftGraphBackupRestoreRoot>`: backupRestoreRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ActivityLogs <IMicrosoftGraphActivityLogBase[]>]: 
+  [AllDrivesBackup <IMicrosoftGraphAllDrivesBackup>]: allDrivesBackup
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [ActionOnExistingPolicy <String>]: fullServiceBackupDisableMode
+    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Application <IMicrosoftGraphIdentity>]: identity
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+      [Device <IMicrosoftGraphIdentity>]: identity
+      [User <IMicrosoftGraphIdentity>]: identity
+    [LastModifiedDateTime <DateTime?>]: 
+    [LastRunDateTime <DateTime?>]: 
+    [PolicyId <String>]: 
+    [Status <String>]: fullServiceBackupStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [ActivityType <String>]: activityLogOperationType
+  [AllMailboxesBackup <IMicrosoftGraphAllMailboxesBackup>]: allMailboxesBackup
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [ActionOnExistingPolicy <String>]: fullServiceBackupDisableMode
+    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [LastModifiedDateTime <DateTime?>]: 
+    [LastRunDateTime <DateTime?>]: 
+    [PolicyId <String>]: 
+    [Status <String>]: fullServiceBackupStatus
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [AllSitesBackup <IMicrosoftGraphAllSitesBackup>]: allSitesBackup
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [ActionOnExistingPolicy <String>]: fullServiceBackupDisableMode
+    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [LastModifiedDateTime <DateTime?>]: 
+    [LastRunDateTime <DateTime?>]: 
+    [PolicyId <String>]: 
+    [Status <String>]: fullServiceBackupStatus
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [BrowseSessions <IMicrosoftGraphBrowseSessionBase[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [BackupSizeInBytes <String>]: 
+    [CreatedDateTime <DateTime?>]: 
     [Error <IMicrosoftGraphPublicError>]: publicError
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Code <String>]: Represents the error code.
@@ -1184,62 +1061,9 @@ Read-only.
         [Target <String>]: The target of the error.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
-    [EventDateTime <DateTime?>]: 
-    [PerformedBy <String>]: 
-    [ResultStatus <String>]: activityLogResultStatus
-    [ServiceType <String>]: serviceType
-    [Severity <String>]: activityLogSeverity
-  [BrowseSessions <IMicrosoftGraphBrowseSessionBase[]>]: The list of browse sessions in the tenant.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [BackupSizeInBytes <String>]: The size of the backup in bytes.
-    [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [Error <IMicrosoftGraphPublicError>]: publicError
-    [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
-    [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
-    [RestorePointId <String>]: 
+    [ExpirationDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
     [Status <String>]: browseSessionStatus
-  [DriveExclusionUnits <IMicrosoftGraphDriveExclusionUnit[]>]: The list of drive exclusion units in the tenant.
-    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Application <IMicrosoftGraphIdentity>]: identity
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-      [Device <IMicrosoftGraphIdentity>]: identity
-      [User <IMicrosoftGraphIdentity>]: identity
-    [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [Error <IMicrosoftGraphPublicError>]: publicError
-    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [DirectoryObjectId <String>]: The unique identifier of the directory object (user) associated with the drive.
-  [DriveExclusionUnitsBulkAdditionJobs <IMicrosoftGraphDriveExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for drive exclusion units in the tenant.
-    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [DisplayName <String>]: The display name of the bulk addition job.
-    [Error <IMicrosoftGraphPublicError>]: publicError
-    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [Status <String>]: exclusionUnitBulkJobStatus
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [Drives <String[]>]: The email addresses or user principal names of the users whose OneDrive drives are to be added as exclusion units to the protection policy.
   [DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]: The list of drive inclusion rules applied to the tenant.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The time of creation of the rule.
@@ -1253,19 +1077,12 @@ Read-only.
     [DriveExpression <String>]: Contains a drive expression.
 For examples, see driveExpression examples.
   [DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit[]>]: The list of drive protection units in the tenant.
-    [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-    [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
     [Error <IMicrosoftGraphPublicError>]: publicError
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
     [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-    [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [EffectiveFromDateTime <DateTime?>]: 
-      [Status <String>]: retentionPeriodChangeStatus
-      [TargetRetentionPeriodInDays <Int32?>]: 
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
     [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
@@ -1307,13 +1124,10 @@ For example, in the access reviews decisions API, this property might record the
     [CreatedDateTime <DateTime?>]: The date and time when the policy was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [DisplayName <String>]: The name of the policy.
+    [DisplayName <String>]: The name of the policy to be created.
     [IsEnabled <Boolean?>]: Indicates whether the policy is enabled.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [OffboardRequestedDateTime <DateTime?>]: The date and time when offboarding was requested for the protection policy.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [ProtectionMode <String>]: BackupPolicyProtectionMode
@@ -1329,36 +1143,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Status <String>]: protectionPolicyStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [MailboxExclusionUnits <IMicrosoftGraphMailboxExclusionUnit[]>]: The mailbox exclusion units associated with the Exchange protection policy.
-      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-      [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      [Error <IMicrosoftGraphPublicError>]: publicError
-      [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-      [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [DirectoryObjectId <String>]: The unique identifier of the directory object (user) associated with the mailbox.
-      [MailboxType <String>]: mailboxType
-    [MailboxExclusionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for mailbox exclusion units associated with the Exchange protection policy.
-      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-      [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      [DisplayName <String>]: The display name of the bulk addition job.
-      [Error <IMicrosoftGraphPublicError>]: publicError
-      [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-      [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      [Status <String>]: exclusionUnitBulkJobStatus
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [Mailboxes <String[]>]: The email addresses of the mailboxes to be added as exclusion units to the protection policy.
     [MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule[]>]: The rules associated with the Exchange protection policy.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [CreatedDateTime <DateTime?>]: The time of creation of the rule.
@@ -1372,15 +1156,12 @@ Read-only.
       [MailboxExpression <String>]: Contains a mailbox expression.
 For examples, see mailboxExpression examples.
     [MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit[]>]: The protection units (mailboxes) that are  protected under the Exchange protection policy.
-      [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-      [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
       [Error <IMicrosoftGraphPublicError>]: publicError
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
       [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-      [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
       [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
       [ProtectionSources <String>]: protectionSource
       [Status <String>]: protectionUnitStatus
@@ -1433,15 +1214,12 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
-          [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-          [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
           [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
           [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
           [Error <IMicrosoftGraphPublicError>]: publicError
           [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
           [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
           [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-          [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
           [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
           [ProtectionSources <String>]: protectionSource
           [Status <String>]: protectionUnitStatus
@@ -1486,50 +1264,29 @@ Future value; don't use.
 Read-only.
       [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
       [Mailboxes <String[]>]: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
-  [ExclusionUnits <IMicrosoftGraphExclusionUnitBase[]>]: The list of exclusion units in the tenant.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [Error <IMicrosoftGraphPublicError>]: publicError
-    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
-  [MailboxExclusionUnits <IMicrosoftGraphMailboxExclusionUnit[]>]: The list of mailbox exclusion units in the tenant.
-  [MailboxExclusionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for mailbox exclusion units in the tenant.
   [MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule[]>]: The list of mailbox inclusion rules applied to the tenant.
   [MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit[]>]: The list of mailbox protection units in the tenant.
   [MailboxProtectionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob[]>]: 
-  [OneDriveForBusinessBrowseSessions <IMicrosoftGraphOneDriveForBusinessBrowseSession[]>]: The list of OneDrive for work or school browse sessions in the tenant.
-    [BackupSizeInBytes <String>]: The size of the backup in bytes.
-    [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [OneDriveForBusinessBrowseSessions <IMicrosoftGraphOneDriveForBusinessBrowseSession[]>]: 
+    [BackupSizeInBytes <String>]: 
+    [CreatedDateTime <DateTime?>]: 
     [Error <IMicrosoftGraphPublicError>]: publicError
-    [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
-    [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
-    [RestorePointId <String>]: 
+    [ExpirationDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
     [Status <String>]: browseSessionStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DirectoryObjectId <String>]: Id of the backed-up OneDrive.
+    [DirectoryObjectId <String>]: 
   [OneDriveForBusinessProtectionPolicies <IMicrosoftGraphOneDriveForBusinessProtectionPolicy[]>]: The list of OneDrive for Business protection policies in the tenant.
     [BillingPolicyId <String>]: 
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The date and time when the policy was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [DisplayName <String>]: The name of the policy.
+    [DisplayName <String>]: The name of the policy to be created.
     [IsEnabled <Boolean?>]: Indicates whether the policy is enabled.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [OffboardRequestedDateTime <DateTime?>]: The date and time when offboarding was requested for the protection policy.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [ProtectionMode <String>]: BackupPolicyProtectionMode
@@ -1538,8 +1295,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Status <String>]: protectionPolicyStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DriveExclusionUnits <IMicrosoftGraphDriveExclusionUnit[]>]: The drive exclusion units associated with the OneDrive for work or school protection policy.
-    [DriveExclusionUnitsBulkAdditionJobs <IMicrosoftGraphDriveExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for drive exclusion units associated with the OneDrive for work or school protection policy.
     [DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]: Contains the details of the OneDrive for Work or School protection rule.
     [DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit[]>]: Contains the protection units associated with a  OneDrive for Work or School protection policy.
     [DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob[]>]: 
@@ -1584,21 +1339,19 @@ Future value; don't use.
 Read-only.
       [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
       [Drives <String[]>]: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
-    [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: A collection of browse session id and item key details that can be used to restore OneDrive for work or school files and folders.
-      [BrowseSessionId <String>]: The unique identifier of the browseSession
-      [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
-      [DestinationType <String>]: destinationType
-      [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
-      [RestoredItemKey <String>]: The unique identifier for the restored artifact.
-      [RestoredItemPath <String>]: The path of the restored artifact.
-It's the path of the folder where all the artifacts are restored within a granular restore session.
-      [RestoredItemWebUrl <String>]: The web url of the restored artifact.
-      [StartDateTime <DateTime?>]: The start time of the restoration.
+    [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: 
+      [BrowseSessionId <String>]: 
+      [CompletionDateTime <DateTime?>]: 
+      [RestorePointDateTime <DateTime?>]: 
+      [RestoredItemKey <String>]: 
+      [RestoredItemPath <String>]: 
+      [RestoredItemWebUrl <String>]: 
+      [StartDateTime <DateTime?>]: 
       [Status <String>]: artifactRestoreStatus
-      [WebUrl <String>]: The original web url of the artifact being restored.
+      [WebUrl <String>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
+      [DirectoryObjectId <String>]: 
   [ProtectionPolicies <IMicrosoftGraphProtectionPolicyBase[]>]: List of protection policies in the tenant.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1607,13 +1360,10 @@ Read-only.
     [CreatedDateTime <DateTime?>]: The date and time when the policy was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [DisplayName <String>]: The name of the policy.
+    [DisplayName <String>]: The name of the policy to be created.
     [IsEnabled <Boolean?>]: Indicates whether the policy is enabled.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [OffboardRequestedDateTime <DateTime?>]: The date and time when offboarding was requested for the protection policy.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [ProtectionMode <String>]: BackupPolicyProtectionMode
@@ -1621,10 +1371,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [RetentionSettings <IMicrosoftGraphRetentionSetting[]>]: Contains the retention setting details for the policy.
     [Status <String>]: protectionPolicyStatus
   [ProtectionUnits <IMicrosoftGraphProtectionUnitBase[]>]: List of protection units in the tenant.
-  [Reports <IMicrosoftGraphBackupReport>]: backupReport
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
   [RestorePoints <IMicrosoftGraphRestorePoint[]>]: List of restore points in the tenant.
   [RestoreSessions <IMicrosoftGraphRestoreSessionBase[]>]: List of restore sessions in the tenant.
     [Id <String>]: The unique identifier for an entity.
@@ -1656,32 +1402,26 @@ Read-only.
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of the entity.
     [RestoreAllowedTillDateTime <DateTime?>]: The expiration time of the restoration allowed period.
     [Status <String>]: backupServiceStatus
-  [SharePointBrowseSessions <IMicrosoftGraphSharePointBrowseSession[]>]: The list of SharePoint browse sessions in the tenant.
-    [BackupSizeInBytes <String>]: The size of the backup in bytes.
-    [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [SharePointBrowseSessions <IMicrosoftGraphSharePointBrowseSession[]>]: 
+    [BackupSizeInBytes <String>]: 
+    [CreatedDateTime <DateTime?>]: 
     [Error <IMicrosoftGraphPublicError>]: publicError
-    [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
-    [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
-    [RestorePointId <String>]: 
+    [ExpirationDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
     [Status <String>]: browseSessionStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [SiteId <String>]: Id of the backed-up SharePoint site.
+    [SiteId <String>]: 
   [SharePointProtectionPolicies <IMicrosoftGraphSharePointProtectionPolicy[]>]: The list of SharePoint protection policies in the tenant.
     [BillingPolicyId <String>]: 
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The date and time when the policy was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [DisplayName <String>]: The name of the policy.
+    [DisplayName <String>]: The name of the policy to be created.
     [IsEnabled <Boolean?>]: Indicates whether the policy is enabled.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [OffboardRequestedDateTime <DateTime?>]: The date and time when offboarding was requested for the protection policy.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [ProtectionMode <String>]: BackupPolicyProtectionMode
@@ -1690,35 +1430,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Status <String>]: protectionPolicyStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [SiteExclusionUnits <IMicrosoftGraphSiteExclusionUnit[]>]: The site exclusion units associated with the SharePoint protection policy.
-      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-      [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      [Error <IMicrosoftGraphPublicError>]: publicError
-      [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-      [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [SiteId <String>]: The unique identifier of the SharePoint site.
-    [SiteExclusionUnitsBulkAdditionJobs <IMicrosoftGraphSiteExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for site exclusion units associated with the SharePoint protection policy.
-      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-      [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      [DisplayName <String>]: The display name of the bulk addition job.
-      [Error <IMicrosoftGraphPublicError>]: publicError
-      [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-      [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      [Status <String>]: exclusionUnitBulkJobStatus
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [SiteWebUrls <String[]>]: The URLs of SharePoint sites to be added as exclusion units to the protection policy.
     [SiteInclusionRules <IMicrosoftGraphSiteProtectionRule[]>]: The rules associated with the SharePoint Protection policy.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [CreatedDateTime <DateTime?>]: The time of creation of the rule.
@@ -1732,15 +1443,12 @@ Read-only.
       [SiteExpression <String>]: Contains a site expression.
 For examples, see siteExpression example.
     [SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit[]>]: The protection units (sites) that are protected under the site protection policy.
-      [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-      [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
       [Error <IMicrosoftGraphPublicError>]: publicError
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
       [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-      [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
       [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
       [ProtectionSources <String>]: protectionSource
       [Status <String>]: protectionUnitStatus
@@ -1771,21 +1479,19 @@ Read-only.
     [Status <String>]: restoreSessionStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
-      [BrowseSessionId <String>]: The unique identifier of the browseSession
-      [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
-      [DestinationType <String>]: destinationType
-      [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
-      [RestoredItemKey <String>]: The unique identifier for the restored artifact.
-      [RestoredItemPath <String>]: The path of the restored artifact.
-It's the path of the folder where all the artifacts are restored within a granular restore session.
-      [RestoredItemWebUrl <String>]: The web url of the restored artifact.
-      [StartDateTime <DateTime?>]: The start time of the restoration.
+    [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
+      [BrowseSessionId <String>]: 
+      [CompletionDateTime <DateTime?>]: 
+      [RestorePointDateTime <DateTime?>]: 
+      [RestoredItemKey <String>]: 
+      [RestoredItemPath <String>]: 
+      [RestoredItemWebUrl <String>]: 
+      [StartDateTime <DateTime?>]: 
       [Status <String>]: artifactRestoreStatus
-      [WebUrl <String>]: The original web url of the artifact being restored.
+      [WebUrl <String>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [SiteId <String>]: Id of the site in which artifact is present.
+      [SiteId <String>]: 
     [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
       [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
       [DestinationType <String>]: destinationType
@@ -1815,19 +1521,15 @@ Future value; don't use.
 Read-only.
       [SiteIds <String[]>]: The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation.
       [SiteWebUrls <String[]>]: The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
-  [SiteExclusionUnits <IMicrosoftGraphSiteExclusionUnit[]>]: The list of site exclusion units in the tenant.
-  [SiteExclusionUnitsBulkAdditionJobs <IMicrosoftGraphSiteExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for site exclusion units in the tenant.
   [SiteInclusionRules <IMicrosoftGraphSiteProtectionRule[]>]: The list of site inclusion rules applied to the tenant.
   [SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit[]>]: The list of site protection units in the tenant.
   [SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob[]>]: 
 
-BROWSESESSIONS <IMicrosoftGraphBrowseSessionBase[]>: The list of browse sessions in the tenant.
+BROWSESESSIONS <IMicrosoftGraphBrowseSessionBase[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [BackupSizeInBytes <String>]: The size of the backup in bytes.
-  [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [BackupSizeInBytes <String>]: 
+  [CreatedDateTime <DateTime?>]: 
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -1843,89 +1545,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
-  [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
-  [RestorePointId <String>]: 
+  [ExpirationDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
   [Status <String>]: browseSessionStatus
-
-DRIVEEXCLUSIONUNITS <IMicrosoftGraphDriveExclusionUnit[]>: The list of drive exclusion units in the tenant.
-  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Application <IMicrosoftGraphIdentity>]: identity
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [Device <IMicrosoftGraphIdentity>]: identity
-    [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [Error <IMicrosoftGraphPublicError>]: publicError
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Code <String>]: Represents the error code.
-    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
-      [Code <String>]: The error code.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Code <String>]: The error code.
-      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [Message <String>]: A non-localized message for the developer.
-    [Target <String>]: The target of the error.
-  [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [DirectoryObjectId <String>]: The unique identifier of the directory object (user) associated with the drive.
-
-DRIVEEXCLUSIONUNITSBULKADDITIONJOBS <IMicrosoftGraphDriveExclusionUnitsBulkAdditionJob[]>: The list of bulk addition jobs for drive exclusion units in the tenant.
-  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Application <IMicrosoftGraphIdentity>]: identity
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [Device <IMicrosoftGraphIdentity>]: identity
-    [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [DisplayName <String>]: The display name of the bulk addition job.
-  [Error <IMicrosoftGraphPublicError>]: publicError
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Code <String>]: Represents the error code.
-    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
-      [Code <String>]: The error code.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Code <String>]: The error code.
-      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [Message <String>]: A non-localized message for the developer.
-    [Target <String>]: The target of the error.
-  [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [Status <String>]: exclusionUnitBulkJobStatus
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [Drives <String[]>]: The email addresses or user principal names of the users whose OneDrive drives are to be added as exclusion units to the protection policy.
 
 DRIVEINCLUSIONRULES <IMicrosoftGraphDriveProtectionRule[]>: The list of drive inclusion rules applied to the tenant.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1965,8 +1587,6 @@ Read-only.
 For examples, see driveExpression examples.
 
 DRIVEPROTECTIONUNITS <IMicrosoftGraphDriveProtectionUnit[]>: The list of drive protection units in the tenant.
-  [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-  [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
@@ -1997,11 +1617,6 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
   [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-  [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [EffectiveFromDateTime <DateTime?>]: 
-    [Status <String>]: retentionPeriodChangeStatus
-    [TargetRetentionPeriodInDays <Int32?>]: 
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
   [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus
@@ -2080,13 +1695,10 @@ For example, in the access reviews decisions API, this property might record the
   [CreatedDateTime <DateTime?>]: The date and time when the policy was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [DisplayName <String>]: The name of the policy.
+  [DisplayName <String>]: The name of the policy to be created.
   [IsEnabled <Boolean?>]: Indicates whether the policy is enabled.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [OffboardRequestedDateTime <DateTime?>]: The date and time when offboarding was requested for the protection policy.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [ProtectionMode <String>]: BackupPolicyProtectionMode
@@ -2102,11 +1714,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Status <String>]: protectionPolicyStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [MailboxExclusionUnits <IMicrosoftGraphMailboxExclusionUnit[]>]: The mailbox exclusion units associated with the Exchange protection policy.
+  [MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule[]>]: The rules associated with the Exchange protection policy.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [CreatedDateTime <DateTime?>]: The time of creation of the rule.
     [Error <IMicrosoftGraphPublicError>]: publicError
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Code <String>]: Represents the error code.
@@ -2122,34 +1732,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [Target <String>]: The target of the error.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
-    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [DirectoryObjectId <String>]: The unique identifier of the directory object (user) associated with the mailbox.
-    [MailboxType <String>]: mailboxType
-  [MailboxExclusionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for mailbox exclusion units associated with the Exchange protection policy.
-    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [DisplayName <String>]: The display name of the bulk addition job.
-    [Error <IMicrosoftGraphPublicError>]: publicError
-    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [Status <String>]: exclusionUnitBulkJobStatus
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [Mailboxes <String[]>]: The email addresses of the mailboxes to be added as exclusion units to the protection policy.
-  [MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule[]>]: The rules associated with the Exchange protection policy.
-    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: The time of creation of the rule.
-    [Error <IMicrosoftGraphPublicError>]: publicError
     [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
@@ -2159,19 +1741,12 @@ Read-only.
     [MailboxExpression <String>]: Contains a mailbox expression.
 For examples, see mailboxExpression examples.
   [MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit[]>]: The protection units (mailboxes) that are  protected under the Exchange protection policy.
-    [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-    [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
     [Error <IMicrosoftGraphPublicError>]: publicError
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
     [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-    [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [EffectiveFromDateTime <DateTime?>]: 
-      [Status <String>]: retentionPeriodChangeStatus
-      [TargetRetentionPeriodInDays <Int32?>]: 
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
     [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
@@ -2249,19 +1824,12 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-        [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
         [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
         [Error <IMicrosoftGraphPublicError>]: publicError
         [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
         [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-        [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [EffectiveFromDateTime <DateTime?>]: 
-          [Status <String>]: retentionPeriodChangeStatus
-          [TargetRetentionPeriodInDays <Int32?>]: 
         [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
         [ProtectionSources <String>]: protectionSource
         [Status <String>]: protectionUnitStatus
@@ -2307,124 +1875,6 @@ Read-only.
     [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding Exchange restore session in a bulk operation.
     [Mailboxes <String[]>]: The list of email addresses that are added to the corresponding Exchange restore session in a bulk operation.
 
-EXCLUSIONUNITS <IMicrosoftGraphExclusionUnitBase[]>: The list of exclusion units in the tenant.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Application <IMicrosoftGraphIdentity>]: identity
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [Device <IMicrosoftGraphIdentity>]: identity
-    [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [Error <IMicrosoftGraphPublicError>]: publicError
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Code <String>]: Represents the error code.
-    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
-      [Code <String>]: The error code.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Code <String>]: The error code.
-      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [Message <String>]: A non-localized message for the developer.
-    [Target <String>]: The target of the error.
-  [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
-
-MAILBOXEXCLUSIONUNITS <IMicrosoftGraphMailboxExclusionUnit[]>: The list of mailbox exclusion units in the tenant.
-  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Application <IMicrosoftGraphIdentity>]: identity
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [Device <IMicrosoftGraphIdentity>]: identity
-    [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [Error <IMicrosoftGraphPublicError>]: publicError
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Code <String>]: Represents the error code.
-    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
-      [Code <String>]: The error code.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Code <String>]: The error code.
-      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [Message <String>]: A non-localized message for the developer.
-    [Target <String>]: The target of the error.
-  [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [DirectoryObjectId <String>]: The unique identifier of the directory object (user) associated with the mailbox.
-  [MailboxType <String>]: mailboxType
-
-MAILBOXEXCLUSIONUNITSBULKADDITIONJOBS <IMicrosoftGraphMailboxExclusionUnitsBulkAdditionJob[]>: The list of bulk addition jobs for mailbox exclusion units in the tenant.
-  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Application <IMicrosoftGraphIdentity>]: identity
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [Device <IMicrosoftGraphIdentity>]: identity
-    [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [DisplayName <String>]: The display name of the bulk addition job.
-  [Error <IMicrosoftGraphPublicError>]: publicError
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Code <String>]: Represents the error code.
-    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
-      [Code <String>]: The error code.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Code <String>]: The error code.
-      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [Message <String>]: A non-localized message for the developer.
-    [Target <String>]: The target of the error.
-  [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [Status <String>]: exclusionUnitBulkJobStatus
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [Mailboxes <String[]>]: The email addresses of the mailboxes to be added as exclusion units to the protection policy.
-
 MAILBOXINCLUSIONRULES <IMicrosoftGraphMailboxProtectionRule[]>: The list of mailbox inclusion rules applied to the tenant.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2463,8 +1913,6 @@ Read-only.
 For examples, see mailboxExpression examples.
 
 MAILBOXPROTECTIONUNITS <IMicrosoftGraphMailboxProtectionUnit[]>: The list of mailbox protection units in the tenant.
-  [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-  [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
@@ -2495,11 +1943,6 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
   [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-  [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [EffectiveFromDateTime <DateTime?>]: 
-    [Status <String>]: retentionPeriodChangeStatus
-    [TargetRetentionPeriodInDays <Int32?>]: 
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
   [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus
@@ -2545,11 +1988,9 @@ Read-only.
   [DirectoryObjectIds <String[]>]: The list of Exchange directoryObjectIds to add to the Exchange protection policy.
   [Mailboxes <String[]>]: The list of Exchange email addresses to add to the Exchange protection policy.
 
-ONEDRIVEFORBUSINESSBROWSESESSIONS <IMicrosoftGraphOneDriveForBusinessBrowseSession[]>: The list of OneDrive for work or school browse sessions in the tenant.
-  [BackupSizeInBytes <String>]: The size of the backup in bytes.
-  [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+ONEDRIVEFORBUSINESSBROWSESESSIONS <IMicrosoftGraphOneDriveForBusinessBrowseSession[]>: .
+  [BackupSizeInBytes <String>]: 
+  [CreatedDateTime <DateTime?>]: 
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -2565,13 +2006,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
-  [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
-  [RestorePointId <String>]: 
+  [ExpirationDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
   [Status <String>]: browseSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DirectoryObjectId <String>]: Id of the backed-up OneDrive.
+  [DirectoryObjectId <String>]: 
 
 ONEDRIVEFORBUSINESSPROTECTIONPOLICIES <IMicrosoftGraphOneDriveForBusinessProtectionPolicy[]>: The list of OneDrive for Business protection policies in the tenant.
   [BillingPolicyId <String>]: 
@@ -2589,13 +2029,10 @@ For example, in the access reviews decisions API, this property might record the
   [CreatedDateTime <DateTime?>]: The date and time when the policy was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [DisplayName <String>]: The name of the policy.
+  [DisplayName <String>]: The name of the policy to be created.
   [IsEnabled <Boolean?>]: Indicates whether the policy is enabled.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [OffboardRequestedDateTime <DateTime?>]: The date and time when offboarding was requested for the protection policy.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [ProtectionMode <String>]: BackupPolicyProtectionMode
@@ -2611,11 +2048,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Status <String>]: protectionPolicyStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DriveExclusionUnits <IMicrosoftGraphDriveExclusionUnit[]>]: The drive exclusion units associated with the OneDrive for work or school protection policy.
+  [DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]: Contains the details of the OneDrive for Work or School protection rule.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [CreatedDateTime <DateTime?>]: The time of creation of the rule.
     [Error <IMicrosoftGraphPublicError>]: publicError
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Code <String>]: Represents the error code.
@@ -2631,33 +2066,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [Target <String>]: The target of the error.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
-    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [DirectoryObjectId <String>]: The unique identifier of the directory object (user) associated with the drive.
-  [DriveExclusionUnitsBulkAdditionJobs <IMicrosoftGraphDriveExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for drive exclusion units associated with the OneDrive for work or school protection policy.
-    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [DisplayName <String>]: The display name of the bulk addition job.
-    [Error <IMicrosoftGraphPublicError>]: publicError
-    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [Status <String>]: exclusionUnitBulkJobStatus
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [Drives <String[]>]: The email addresses or user principal names of the users whose OneDrive drives are to be added as exclusion units to the protection policy.
-  [DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]: Contains the details of the OneDrive for Work or School protection rule.
-    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: The time of creation of the rule.
-    [Error <IMicrosoftGraphPublicError>]: publicError
     [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
@@ -2667,19 +2075,12 @@ Read-only.
     [DriveExpression <String>]: Contains a drive expression.
 For examples, see driveExpression examples.
   [DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit[]>]: Contains the protection units associated with a  OneDrive for Work or School protection policy.
-    [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-    [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
     [Error <IMicrosoftGraphPublicError>]: publicError
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
     [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-    [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [EffectiveFromDateTime <DateTime?>]: 
-      [Status <String>]: retentionPeriodChangeStatus
-      [TargetRetentionPeriodInDays <Int32?>]: 
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
     [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
@@ -2754,19 +2155,12 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-        [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
         [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
         [Error <IMicrosoftGraphPublicError>]: publicError
         [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
         [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-        [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [EffectiveFromDateTime <DateTime?>]: 
-          [Status <String>]: retentionPeriodChangeStatus
-          [TargetRetentionPeriodInDays <Int32?>]: 
         [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
         [ProtectionSources <String>]: protectionSource
         [Status <String>]: protectionUnitStatus
@@ -2798,21 +2192,19 @@ Future value; don't use.
 Read-only.
     [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
     [Drives <String[]>]: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
-  [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: A collection of browse session id and item key details that can be used to restore OneDrive for work or school files and folders.
-    [BrowseSessionId <String>]: The unique identifier of the browseSession
-    [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
-    [DestinationType <String>]: destinationType
-    [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
-    [RestoredItemKey <String>]: The unique identifier for the restored artifact.
-    [RestoredItemPath <String>]: The path of the restored artifact.
-It's the path of the folder where all the artifacts are restored within a granular restore session.
-    [RestoredItemWebUrl <String>]: The web url of the restored artifact.
-    [StartDateTime <DateTime?>]: The start time of the restoration.
+  [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: 
+    [BrowseSessionId <String>]: 
+    [CompletionDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
+    [RestoredItemKey <String>]: 
+    [RestoredItemPath <String>]: 
+    [RestoredItemWebUrl <String>]: 
+    [StartDateTime <DateTime?>]: 
     [Status <String>]: artifactRestoreStatus
-    [WebUrl <String>]: The original web url of the artifact being restored.
+    [WebUrl <String>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
+    [DirectoryObjectId <String>]: 
 
 PROTECTIONPOLICIES <IMicrosoftGraphProtectionPolicyBase[]>: List of protection policies in the tenant.
   [Id <String>]: The unique identifier for an entity.
@@ -2832,13 +2224,10 @@ For example, in the access reviews decisions API, this property might record the
   [CreatedDateTime <DateTime?>]: The date and time when the policy was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [DisplayName <String>]: The name of the policy.
+  [DisplayName <String>]: The name of the policy to be created.
   [IsEnabled <Boolean?>]: Indicates whether the policy is enabled.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [OffboardRequestedDateTime <DateTime?>]: The date and time when offboarding was requested for the protection policy.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [ProtectionMode <String>]: BackupPolicyProtectionMode
@@ -2856,8 +2245,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 PROTECTIONUNITS <IMicrosoftGraphProtectionUnitBase[]>: List of protection units in the tenant.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-  [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
@@ -2888,11 +2275,6 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
   [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-  [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [EffectiveFromDateTime <DateTime?>]: 
-    [Status <String>]: retentionPeriodChangeStatus
-    [TargetRetentionPeriodInDays <Int32?>]: 
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
   [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus
@@ -2906,8 +2288,6 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-    [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Application <IMicrosoftGraphIdentity>]: identity
@@ -2938,11 +2318,6 @@ For example, in the access reviews decisions API, this property might record the
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
     [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-    [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [EffectiveFromDateTime <DateTime?>]: 
-      [Status <String>]: retentionPeriodChangeStatus
-      [TargetRetentionPeriodInDays <Int32?>]: 
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
     [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
@@ -3030,11 +2405,9 @@ For example, in the access reviews decisions API, this property might record the
   [RestoreAllowedTillDateTime <DateTime?>]: The expiration time of the restoration allowed period.
   [Status <String>]: backupServiceStatus
 
-SHAREPOINTBROWSESESSIONS <IMicrosoftGraphSharePointBrowseSession[]>: The list of SharePoint browse sessions in the tenant.
-  [BackupSizeInBytes <String>]: The size of the backup in bytes.
-  [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+SHAREPOINTBROWSESESSIONS <IMicrosoftGraphSharePointBrowseSession[]>: .
+  [BackupSizeInBytes <String>]: 
+  [CreatedDateTime <DateTime?>]: 
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -3050,13 +2423,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
-  [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
-  [RestorePointId <String>]: 
+  [ExpirationDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
   [Status <String>]: browseSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [SiteId <String>]: Id of the backed-up SharePoint site.
+  [SiteId <String>]: 
 
 SHAREPOINTPROTECTIONPOLICIES <IMicrosoftGraphSharePointProtectionPolicy[]>: The list of SharePoint protection policies in the tenant.
   [BillingPolicyId <String>]: 
@@ -3074,13 +2446,10 @@ For example, in the access reviews decisions API, this property might record the
   [CreatedDateTime <DateTime?>]: The date and time when the policy was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [DisplayName <String>]: The name of the policy.
+  [DisplayName <String>]: The name of the policy to be created.
   [IsEnabled <Boolean?>]: Indicates whether the policy is enabled.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: The date and time when the policy was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [OffboardRequestedDateTime <DateTime?>]: The date and time when offboarding was requested for the protection policy.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [ProtectionMode <String>]: BackupPolicyProtectionMode
@@ -3096,11 +2465,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Status <String>]: protectionPolicyStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [SiteExclusionUnits <IMicrosoftGraphSiteExclusionUnit[]>]: The site exclusion units associated with the SharePoint protection policy.
+  [SiteInclusionRules <IMicrosoftGraphSiteProtectionRule[]>]: The rules associated with the SharePoint Protection policy.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [CreatedDateTime <DateTime?>]: The time of creation of the rule.
     [Error <IMicrosoftGraphPublicError>]: publicError
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Code <String>]: Represents the error code.
@@ -3116,33 +2483,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [Target <String>]: The target of the error.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
-    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [SiteId <String>]: The unique identifier of the SharePoint site.
-  [SiteExclusionUnitsBulkAdditionJobs <IMicrosoftGraphSiteExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for site exclusion units associated with the SharePoint protection policy.
-    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [DisplayName <String>]: The display name of the bulk addition job.
-    [Error <IMicrosoftGraphPublicError>]: publicError
-    [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    [Status <String>]: exclusionUnitBulkJobStatus
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [SiteWebUrls <String[]>]: The URLs of SharePoint sites to be added as exclusion units to the protection policy.
-  [SiteInclusionRules <IMicrosoftGraphSiteProtectionRule[]>]: The rules associated with the SharePoint Protection policy.
-    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: The time of creation of the rule.
-    [Error <IMicrosoftGraphPublicError>]: publicError
     [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
@@ -3152,19 +2492,12 @@ Read-only.
     [SiteExpression <String>]: Contains a site expression.
 For examples, see siteExpression example.
   [SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit[]>]: The protection units (sites) that are protected under the site protection policy.
-    [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-    [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
     [Error <IMicrosoftGraphPublicError>]: publicError
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
     [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-    [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [EffectiveFromDateTime <DateTime?>]: 
-      [Status <String>]: retentionPeriodChangeStatus
-      [TargetRetentionPeriodInDays <Int32?>]: 
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
     [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
@@ -3225,21 +2558,19 @@ For example, in the access reviews decisions API, this property might record the
   [Status <String>]: restoreSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
-    [BrowseSessionId <String>]: The unique identifier of the browseSession
-    [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
-    [DestinationType <String>]: destinationType
-    [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
-    [RestoredItemKey <String>]: The unique identifier for the restored artifact.
-    [RestoredItemPath <String>]: The path of the restored artifact.
-It's the path of the folder where all the artifacts are restored within a granular restore session.
-    [RestoredItemWebUrl <String>]: The web url of the restored artifact.
-    [StartDateTime <DateTime?>]: The start time of the restoration.
+  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
+    [BrowseSessionId <String>]: 
+    [CompletionDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
+    [RestoredItemKey <String>]: 
+    [RestoredItemPath <String>]: 
+    [RestoredItemWebUrl <String>]: 
+    [StartDateTime <DateTime?>]: 
     [Status <String>]: artifactRestoreStatus
-    [WebUrl <String>]: The original web url of the artifact being restored.
+    [WebUrl <String>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [SiteId <String>]: Id of the site in which artifact is present.
+    [SiteId <String>]: 
   [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
     [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
     [DestinationType <String>]: destinationType
@@ -3254,19 +2585,12 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-        [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
         [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
         [Error <IMicrosoftGraphPublicError>]: publicError
         [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
         [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-        [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [EffectiveFromDateTime <DateTime?>]: 
-          [Status <String>]: retentionPeriodChangeStatus
-          [TargetRetentionPeriodInDays <Int32?>]: 
         [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
         [ProtectionSources <String>]: protectionSource
         [Status <String>]: protectionUnitStatus
@@ -3298,85 +2622,6 @@ Future value; don't use.
 Read-only.
     [SiteIds <String[]>]: The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation.
     [SiteWebUrls <String[]>]: The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
-
-SITEEXCLUSIONUNITS <IMicrosoftGraphSiteExclusionUnit[]>: The list of site exclusion units in the tenant.
-  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Application <IMicrosoftGraphIdentity>]: identity
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [Device <IMicrosoftGraphIdentity>]: identity
-    [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [Error <IMicrosoftGraphPublicError>]: publicError
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Code <String>]: Represents the error code.
-    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
-      [Code <String>]: The error code.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Code <String>]: The error code.
-      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [Message <String>]: A non-localized message for the developer.
-    [Target <String>]: The target of the error.
-  [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [SiteId <String>]: The unique identifier of the SharePoint site.
-
-SITEEXCLUSIONUNITSBULKADDITIONJOBS <IMicrosoftGraphSiteExclusionUnitsBulkAdditionJob[]>: The list of bulk addition jobs for site exclusion units in the tenant.
-  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Application <IMicrosoftGraphIdentity>]: identity
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [Device <IMicrosoftGraphIdentity>]: identity
-    [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [DisplayName <String>]: The display name of the bulk addition job.
-  [Error <IMicrosoftGraphPublicError>]: publicError
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Code <String>]: Represents the error code.
-    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
-      [Code <String>]: The error code.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Code <String>]: The error code.
-      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
-      [Message <String>]: The error message.
-      [Target <String>]: The target of the error.
-    [Message <String>]: A non-localized message for the developer.
-    [Target <String>]: The target of the error.
-  [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [Status <String>]: exclusionUnitBulkJobStatus
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [SiteWebUrls <String[]>]: The URLs of SharePoint sites to be added as exclusion units to the protection policy.
 
 SITEINCLUSIONRULES <IMicrosoftGraphSiteProtectionRule[]>: The list of site inclusion rules applied to the tenant.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -3416,8 +2661,6 @@ Read-only.
 For examples, see siteExpression example.
 
 SITEPROTECTIONUNITS <IMicrosoftGraphSiteProtectionUnit[]>: The list of site protection units in the tenant.
-  [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
-  [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
@@ -3448,11 +2691,6 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
   [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
-  [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [EffectiveFromDateTime <DateTime?>]: 
-    [Status <String>]: retentionPeriodChangeStatus
-    [TargetRetentionPeriodInDays <Int32?>]: 
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
   [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus

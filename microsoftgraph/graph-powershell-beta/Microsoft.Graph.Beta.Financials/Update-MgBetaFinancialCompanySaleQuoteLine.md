@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalequoteline
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanySaleQuoteLine
 ---
@@ -30,7 +30,7 @@ Update-MgBetaFinancialCompanySaleQuoteLine -CompanyId <string> -SalesQuoteLineId
  [-TaxPercent <decimal>] [-TotalTaxAmount <decimal>] [-UnitOfMeasureId <string>]
  [-UnitPrice <decimal>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
@@ -47,6 +47,7 @@ Update-MgBetaFinancialCompanySaleQuoteLine -CompanyId <string> -SalesQuoteLineId
  [-UnitOfMeasureId <string>] [-UnitPrice <decimal>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update1
@@ -57,6 +58,7 @@ Update-MgBetaFinancialCompanySaleQuoteLine -CompanyId <string> -SalesQuoteLineId
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -66,7 +68,7 @@ Update-MgBetaFinancialCompanySaleQuoteLine -CompanyId <string> -SalesQuoteLineId
  -BodyParameter <IMicrosoftGraphSalesQuoteLine> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -82,7 +84,7 @@ Update-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity>
  [-TaxPercent <decimal>] [-TotalTaxAmount <decimal>] [-UnitOfMeasureId <string>]
  [-UnitPrice <decimal>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -98,7 +100,7 @@ Update-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity>
  [-TaxPercent <decimal>] [-TotalTaxAmount <decimal>] [-UnitOfMeasureId <string>]
  [-UnitPrice <decimal>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
@@ -108,7 +110,7 @@ Update-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphSalesQuoteLine> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -118,7 +120,7 @@ Update-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity>
  -BodyParameter <IMicrosoftGraphSalesQuoteLine> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES

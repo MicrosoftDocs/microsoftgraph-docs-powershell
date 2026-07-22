@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementsubject
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEntitlementManagementSubject
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaEntitlementManagementSubject
 ## SYNOPSIS
 
 Create new navigation property to subjects for identityGovernance
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementSubject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ New-MgBetaEntitlementManagementSubject [-ResponseHeadersVariable <string>]
  [-OnPremisesSecurityIdentifier <string>] [-PrincipalName <string>] [-SubjectLifecycle <string>]
  [-Type <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -40,6 +37,7 @@ New-MgBetaEntitlementManagementSubject -BodyParameter <IMicrosoftGraphAccessPack
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

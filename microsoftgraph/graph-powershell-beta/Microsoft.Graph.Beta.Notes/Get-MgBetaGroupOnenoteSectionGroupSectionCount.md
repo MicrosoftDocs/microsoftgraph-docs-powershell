@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotesectiongroupsectioncount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupOnenoteSectionGroupSectionCount
 ---
@@ -27,7 +27,7 @@ Get-MgBetaGroupOnenoteSectionGroupSectionCount -GroupId <string> -SectionGroupId
  [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -36,7 +36,7 @@ Get-MgBetaGroupOnenoteSectionGroupSectionCount -GroupId <string> -SectionGroupId
 Get-MgBetaGroupOnenoteSectionGroupSectionCount -InputObject <INotesIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,8 +52,8 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Create, Notes.Read, Notes.Read.All, Notes.ReadWrite, Notes.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Notes.Create, Notes.Read, Notes.ReadWrite,  |
+| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite, Notes.Read.All, Notes.Read,  |
+| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
 | Application | Notes.Read.All, Notes.ReadWrite.All,  |
 
 ## PARAMETERS

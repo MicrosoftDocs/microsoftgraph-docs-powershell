@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinterjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPrintPrinterJob
 ---
@@ -36,6 +36,7 @@ Update-MgBetaPrintPrinterJob -PrintJobId <string> -PrinterId <string>
  [-Tasks <IMicrosoftGraphPrintTask[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -45,7 +46,7 @@ Update-MgBetaPrintPrinterJob -PrintJobId <string> -PrinterId <string>
  -BodyParameter <IMicrosoftGraphPrintJob> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -61,6 +62,7 @@ Update-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity>
  [-Tasks <IMicrosoftGraphPrintTask[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -70,7 +72,7 @@ Update-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IMicrosoftGraphPrintJob> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -91,7 +93,7 @@ For details about how to register a task trigger, see Extending Universal Print 
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | PrintJob.ReadWriteBasic.All, PrintJob.Manage.All, PrintJob.ReadWrite.All,  |
+| Application | PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

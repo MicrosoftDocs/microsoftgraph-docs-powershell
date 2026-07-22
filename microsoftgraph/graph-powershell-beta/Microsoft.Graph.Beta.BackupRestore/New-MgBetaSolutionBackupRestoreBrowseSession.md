@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestorebrowsesession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreBrowseSession
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaSolutionBackupRestoreBrowseSession
 
 Create new navigation property to browseSessions for solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreBrowseSession?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -26,10 +23,10 @@ Create new navigation property to browseSessions for solutions
 New-MgBetaSolutionBackupRestoreBrowseSession [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-BackupSizeInBytes <string>] [-CreatedDateTime <datetime>]
  [-Error <IMicrosoftGraphPublicError>] [-ExpirationDateTime <datetime>] [-Id <string>]
- [-RestorePointDateTime <datetime>] [-RestorePointId <string>] [-Status <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-RestorePointDateTime <datetime>] [-Status <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -39,6 +36,7 @@ New-MgBetaSolutionBackupRestoreBrowseSession -BodyParameter <IMicrosoftGraphBrow
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,7 +73,7 @@ HelpMessage: ''
 
 ### -BackupSizeInBytes
 
-The size of the backup in bytes.
+
 
 ```yaml
 Type: System.String
@@ -161,9 +159,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-The date and time when the browse session was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+
 
 ```yaml
 Type: System.DateTime
@@ -206,7 +202,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-The date and time after which the browse session is deleted automatically.
+
 
 ```yaml
 Type: System.DateTime
@@ -397,31 +393,10 @@ HelpMessage: ''
 
 ### -RestorePointDateTime
 
-The date and time of the restore point on which the browse session is created.
+
 
 ```yaml
 Type: System.DateTime
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -RestorePointId
-
-
-
-```yaml
-Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -514,10 +489,8 @@ BODYPARAMETER `<IMicrosoftGraphBrowseSessionBase>`: browseSessionBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [BackupSizeInBytes <String>]: The size of the backup in bytes.
-  [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [BackupSizeInBytes <String>]: 
+  [CreatedDateTime <DateTime?>]: 
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -533,9 +506,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
-  [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
-  [RestorePointId <String>]: 
+  [ExpirationDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
   [Status <String>]: browseSessionStatus
 
 ERROR `<IMicrosoftGraphPublicError>`: publicError

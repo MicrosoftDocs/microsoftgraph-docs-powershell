@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilesource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAdminPeopleProfileSource
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaAdminPeopleProfileSource
 ## SYNOPSIS
 
 Create a new profileSource object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAdminPeopleProfileSource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdminPeopleProfileSource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ New-MgBetaAdminPeopleProfileSource [-ResponseHeadersVariable <string>]
  [-Localizations <IMicrosoftGraphProfileSourceLocalization[]>] [-SourceId <string>]
  [-WebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -38,6 +35,7 @@ New-MgBetaAdminPeopleProfileSource -BodyParameter <IMicrosoftGraphProfileSource>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -429,7 +427,7 @@ HelpMessage: ''
 
 ### -WebUrl
 
-Web URL of the profile source that directs users to the page view of the profile data.
+Web URL of the profile source that directs users to the page view of profile data.
 
 ```yaml
 Type: System.String
@@ -511,7 +509,7 @@ Read-only.
     [LanguageTag <String>]: Language locale.
     [WebUrl <String>]: Localized profile source URL.
   [SourceId <String>]: Profile source identifier used as an alternate key.
-  [WebUrl <String>]: Web URL of the profile source that directs users to the page view of the profile data.
+  [WebUrl <String>]: Web URL of the profile source that directs users to the page view of profile data.
 
 LOCALIZATIONS <IMicrosoftGraphProfileSourceLocalization[]>: Alternative localized labels specified by an administrator.
   [DisplayName <String>]: Localized display name.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityincidentalertcomment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaSecurityIncidentAlertComment
 ---
@@ -28,6 +28,7 @@ Set-MgBetaSecurityIncidentAlertComment -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Set
@@ -38,6 +39,7 @@ Set-MgBetaSecurityIncidentAlertComment -AlertId <string> -IncidentId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -380,7 +382,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlertComment
 
 {{ Fill in the Description }}
 
@@ -389,6 +391,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 {{ Fill in the Description }}
 
 ### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
 
 {{ Fill in the Description }}
 

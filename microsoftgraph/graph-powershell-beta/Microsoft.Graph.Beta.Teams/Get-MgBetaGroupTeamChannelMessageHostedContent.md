@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelmessagehostedcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupTeamChannelMessageHostedContent
 ---
@@ -29,7 +29,7 @@ Get-MgBetaGroupTeamChannelMessageHostedContent -ChannelId <string> -ChatMessageI
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get1
@@ -39,7 +39,7 @@ Get-MgBetaGroupTeamChannelMessageHostedContent -ChannelId <string>
  -ChatMessageHostedContentId <string> -ChatMessageId <string> -GroupId <string> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PassThru]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PassThru] [<CommonParameters>]
 ```
 
 ### Get
@@ -50,7 +50,7 @@ Get-MgBetaGroupTeamChannelMessageHostedContent -ChannelId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -59,7 +59,7 @@ Get-MgBetaGroupTeamChannelMessageHostedContent -ChannelId <string>
 Get-MgBetaGroupTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PassThru]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -69,7 +69,7 @@ Get-MgBetaGroupTeamChannelMessageHostedContent -InputObject <ITeamsIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES

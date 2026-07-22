@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityThreatSubmissionEmailThreat
 ---
@@ -32,7 +32,7 @@ New-MgBetaSecurityThreatSubmissionEmailThreat [-ResponseHeadersVariable <string>
  [-TenantAllowOrBlockListAction <IMicrosoftGraphSecurityTenantAllowOrBlockListAction>]
  [-TenantId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -42,7 +42,7 @@ New-MgBetaSecurityThreatSubmissionEmailThreat
  -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmission> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -58,7 +58,7 @@ Create a new emailThreatSubmission object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ThreatSubmission.ReadWrite.All,  |
+| Delegated (work or school account) | ThreatSubmission.ReadWrite, ThreatSubmission.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ThreatSubmission.ReadWrite.All,  |
 

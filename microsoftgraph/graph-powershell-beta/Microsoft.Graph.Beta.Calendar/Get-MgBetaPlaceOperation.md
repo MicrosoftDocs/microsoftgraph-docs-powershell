@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlaceOperation
 ---
@@ -25,7 +25,7 @@ Get-MgBetaPlaceOperation [-ExpandProperty <string[]>] [-Filter <string>] [-Prope
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -34,7 +34,7 @@ Get-MgBetaPlaceOperation [-ExpandProperty <string[]>] [-Filter <string>] [-Prope
 Get-MgBetaPlaceOperation -Id <string> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -43,7 +43,7 @@ Get-MgBetaPlaceOperation -Id <string> [-ResponseHeadersVariable <string>] [-Brea
 Get-MgBetaPlaceOperation -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -59,33 +59,9 @@ Get a placeOperation by ID.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.Read.All, Place.ReadWrite.All,  |
+| Delegated (work or school account) | Place.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Place.Read.All, Place.ReadWrite.All,  |
-
-## EXAMPLES
-### Example 1: Get a succeeded operation
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Get-MgBetaPlaceOperation
-
-```
-This example will get a succeeded operation
-
-### Example 2: Get a partially succeeded operation with errors
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Get-MgBetaPlaceOperation
-
-```
-This example will get a partially succeeded operation with errors
-
+| Application | Place.Read.All,  |
 
 ## PARAMETERS
 
@@ -575,6 +551,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 - [Get-MgBetaPlaceOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceoperation)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/place-getoperation?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/place-listoperations?view=graph-rest-beta)
+
 
 
 

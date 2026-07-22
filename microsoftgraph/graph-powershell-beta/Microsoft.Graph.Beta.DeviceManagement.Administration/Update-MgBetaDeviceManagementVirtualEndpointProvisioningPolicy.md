@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointprovisioningpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 ---
@@ -39,6 +39,7 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvision
  [-WindowsSettings <IMicrosoftGraphCloudPcWindowsSettings>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -48,7 +49,7 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvision
  -BodyParameter <IMicrosoftGraphCloudPcProvisioningPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -70,6 +71,7 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
  [-WindowsSettings <IMicrosoftGraphCloudPcWindowsSettings>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -80,7 +82,7 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
  -BodyParameter <IMicrosoftGraphCloudPcProvisioningPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -132,10 +134,6 @@ $params = @{
 		devicePreparationProfileId = "59e5d3d2-ec68-4bfe-9693-27975b318990"
 		applicationTimeoutInMinutes = 30
 		onFailureDeviceAccessDenied = $false
-	}
-	userSettingsPersistenceConfiguration = @{
-		userSettingsPersistenceEnabled = $false
-		userSettingsPersistenceStorageSizeCategory = "fourGB"
 	}
 }
 

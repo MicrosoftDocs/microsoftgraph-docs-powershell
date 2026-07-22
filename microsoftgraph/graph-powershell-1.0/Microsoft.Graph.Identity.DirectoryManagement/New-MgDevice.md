@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDevice
 ---
@@ -41,7 +41,7 @@ New-MgDevice [-ResponseHeadersVariable <string>] [-AccountEnabled]
  [-SystemLabels <string[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
  [-TrustType <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -50,7 +50,7 @@ New-MgDevice [-ResponseHeadersVariable <string>] [-AccountEnabled]
 New-MgDevice -BodyParameter <IMicrosoftGraphDevice> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -639,7 +639,7 @@ Indicates whether the device is a member of a restricted management administrati
 If not set, the default value is null and the default behavior is false.
 Read-only.
 To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
-Requires $select to retrieve.
+Returned only on $select.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -823,7 +823,7 @@ HelpMessage: ''
 
 The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Requires $select to retrieve.
+Returned only on $select.
 Supports $filter (eq).
 
 ```yaml
@@ -1310,7 +1310,7 @@ Supports $filter (eq, ne, not).
 If not set, the default value is null and the default behavior is false.
 Read-only.
  To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
-Requires $select to retrieve.
+Returned only on $select.
   [IsRooted <Boolean?>]: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
   [ManagementType <String>]: The management channel of the device.
@@ -1337,7 +1337,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
   [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Requires $select to retrieve.
+Returned only on $select.
 Supports $filter (eq).
   [OnPremisesSyncEnabled <Boolean?>]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.

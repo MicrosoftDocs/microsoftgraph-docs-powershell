@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemdocumentsetversion
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteListItemDocumentSetVersion
 ---
@@ -29,6 +29,7 @@ Get-MgSiteListItemDocumentSetVersion -ListId <string> -ListItemId <string> -Site
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -38,7 +39,7 @@ Get-MgSiteListItemDocumentSetVersion -DocumentSetVersionId <string> -ListId <str
  -ListItemId <string> -SiteId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -47,7 +48,7 @@ Get-MgSiteListItemDocumentSetVersion -DocumentSetVersionId <string> -ListId <str
 Get-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -63,9 +64,9 @@ Read the properties and relationships of a documentSetVersion object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Read.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All, Sites.Selected,  |
+| Delegated (work or school account) | Sites.Read.All, Sites.Selected, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All, Sites.Selected,  |
+| Application | Sites.Read.All, Sites.Selected, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

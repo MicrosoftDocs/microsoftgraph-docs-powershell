@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermailfolderchildfoldermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Move-MgUserMailFolderChildFolderMessage
 ---
@@ -29,6 +29,7 @@ Move-MgUserMailFolderChildFolderMessage -MailFolderId <string> -MailFolderId1 <s
  [-AdditionalProperties <hashtable>] [-DestinationId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Move
@@ -40,6 +41,7 @@ Move-MgUserMailFolderChildFolderMessage -MailFolderId <string> -MailFolderId1 <s
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### MoveViaIdentityExpanded
@@ -49,7 +51,7 @@ Move-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DestinationId <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MoveViaIdentity
@@ -60,6 +62,7 @@ Move-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

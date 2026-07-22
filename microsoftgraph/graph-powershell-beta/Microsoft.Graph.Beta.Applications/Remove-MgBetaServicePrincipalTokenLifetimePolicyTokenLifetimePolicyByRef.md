@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipaltokenlifetimepolicytokenlifetimepolicybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef
 ---
@@ -28,6 +28,7 @@ Remove-MgBetaServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,6 +39,7 @@ Remove-MgBetaServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -53,22 +55,17 @@ Remove a tokenLifetimePolicy object from a service principal.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration,  |
+| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration,  |
+| Application | Policy.ReadWrite.ApplicationConfiguration, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef -ServicePrincipalId $servicePrincipalId -TokenLifetimePolicyId $tokenLifetimePolicyId
-
-```
-This example shows how to use the Remove-MgBetaServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef Cmdlet.
-
 
 ## PARAMETERS
 

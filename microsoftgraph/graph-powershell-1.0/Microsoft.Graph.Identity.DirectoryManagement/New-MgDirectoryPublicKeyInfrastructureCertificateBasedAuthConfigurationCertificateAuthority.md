@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority
 ---
@@ -33,6 +33,7 @@ New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertifica
  [-IssuerSubjectKeyIdentifier <string>] [-Thumbprint <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -43,6 +44,7 @@ New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertifica
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -58,6 +60,7 @@ New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertifica
  [-IssuerSubjectKeyIdentifier <string>] [-Thumbprint <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -68,7 +71,7 @@ New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertifica
  -BodyParameter <IMicrosoftGraphCertificateAuthorityDetail> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -87,23 +90,6 @@ Create a new certificateAuthorityDetail object.
 | Delegated (work or school account) | PublicKeyInfrastructure.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PublicKeyInfrastructure.ReadWrite.All,  |
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-$params = @{
-	certificateAuthorityType = "intermediate"
-}
-
-New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority -CertificateBasedAuthPkiId $certificateBasedAuthPkiId -BodyParameter $params
-
-```
-This example shows how to use the New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority Cmdlet.
-
 
 ## PARAMETERS
 
@@ -869,11 +855,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [OrganizationId <String>]: The unique identifier of organization
   [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
-  [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
-  [ProfileSourceId <String>]: The unique identifier of profileSource
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
-  [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
@@ -883,6 +866,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedauthpki-post-certificateauthorities?view=graph-rest-1.0)
+
 
 
 

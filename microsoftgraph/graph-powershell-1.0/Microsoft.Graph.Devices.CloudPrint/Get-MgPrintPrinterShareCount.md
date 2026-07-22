@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintersharecount
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPrintPrinterShareCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgPrintPrinterShareCount -PrinterId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -35,7 +35,7 @@ Get-MgPrintPrinterShareCount -PrinterId <string> [-Filter <string>] [-Search <st
 Get-MgPrintPrinterShareCount -InputObject <IDevicesCloudPrintIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,7 +51,7 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All,  |
+| Delegated (work or school account) | PrinterShare.ReadBasic.All, PrinterShare.ReadWrite.All, PrinterShare.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 

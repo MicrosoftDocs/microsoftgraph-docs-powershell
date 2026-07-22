@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateammember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamMember
 ---
@@ -28,7 +28,7 @@ Get-MgBetaTeamMember -TeamId <string> [-ExpandProperty <string[]>] [-Property <s
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -37,7 +37,7 @@ Get-MgBetaTeamMember -TeamId <string> [-ExpandProperty <string[]>] [-Property <s
 Get-MgBetaTeamMember -ConversationMemberId <string> -TeamId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -46,7 +46,7 @@ Get-MgBetaTeamMember -ConversationMemberId <string> -TeamId <string> [-ExpandPro
 Get-MgBetaTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -64,7 +64,7 @@ Get a conversationMember from a team.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | TeamMember.Read.Group, TeamMember.Read.All, TeamMember.ReadWrite.All,  |
+| Application | TeamMember.Read.Group, TeamMember.ReadWrite.All, TeamMember.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Get list of members in team

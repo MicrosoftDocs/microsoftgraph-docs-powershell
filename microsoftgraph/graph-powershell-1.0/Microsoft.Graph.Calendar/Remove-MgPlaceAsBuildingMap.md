@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasbuildingmap
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPlaceAsBuildingMap
 ---
@@ -27,6 +27,7 @@ Remove-MgPlaceAsBuildingMap -PlaceId <string> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -36,6 +37,7 @@ Remove-MgPlaceAsBuildingMap -InputObject <ICalendarIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -46,19 +48,6 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete the map of a specific building.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Calendar
-
-Remove-MgPlaceAsBuildingMap -PlaceId $placeId
-
-```
-This example shows how to use the Remove-MgPlaceAsBuildingMap Cmdlet.
-
 
 ## PARAMETERS
 
@@ -415,6 +404,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Remove-MgPlaceAsBuildingMap](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasbuildingmap)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/buildingmap-delete?view=graph-rest-1.0)
+
 
 
 

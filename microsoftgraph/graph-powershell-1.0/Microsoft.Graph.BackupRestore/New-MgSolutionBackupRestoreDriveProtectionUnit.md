@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoredriveprotectionunit
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSolutionBackupRestoreDriveProtectionUnit
 ---
@@ -30,7 +30,7 @@ New-MgSolutionBackupRestoreDriveProtectionUnit [-ResponseHeadersVariable <string
  [-OffboardRequestedDateTime <datetime>] [-PolicyId <string>] [-ProtectionSources <string>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -40,6 +40,7 @@ New-MgSolutionBackupRestoreDriveProtectionUnit -BodyParameter <IMicrosoftGraphDr
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

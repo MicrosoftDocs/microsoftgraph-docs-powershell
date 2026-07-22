@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionresourcedependentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassAssignmentSubmissionResourceDependentResource
 ---
@@ -30,6 +30,7 @@ Get-MgEducationClassAssignmentSubmissionResourceDependentResource -EducationAssi
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -40,7 +41,7 @@ Get-MgEducationClassAssignmentSubmissionResourceDependentResource -EducationAssi
  -EducationSubmissionResourceId1 <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -50,7 +51,7 @@ Get-MgEducationClassAssignmentSubmissionResourceDependentResource -InputObject <
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -61,19 +62,6 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 A collection of submission resources that depend on the parent educationSubmissionResource.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationClassAssignmentSubmissionResourceDependentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
-
-```
-This example shows how to use the Get-MgEducationClassAssignmentSubmissionResourceDependentResource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -670,6 +658,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Get-MgEducationClassAssignmentSubmissionResourceDependentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionresourcedependentresource)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationsubmissionresource-list-dependentresources?view=graph-rest-1.0)
+
 
 
 

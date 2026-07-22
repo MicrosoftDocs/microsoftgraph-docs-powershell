@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffavailability
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaBookingBusinessStaffAvailability
 ---
@@ -29,6 +29,7 @@ Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId <string>
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -39,6 +40,7 @@ Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
@@ -50,6 +52,7 @@ Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -60,6 +63,7 @@ Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,7 +81,7 @@ Get the availability information of staff members of a Microsoft Bookings calend
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Bookings.Read.All, Bookings.Manage.All, Bookings.ReadWrite.All, Calendars.Read, Calendars.ReadWrite,  |
+| Application | Bookings.Read.All, Calendars.ReadWrite, Calendars.Read, Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

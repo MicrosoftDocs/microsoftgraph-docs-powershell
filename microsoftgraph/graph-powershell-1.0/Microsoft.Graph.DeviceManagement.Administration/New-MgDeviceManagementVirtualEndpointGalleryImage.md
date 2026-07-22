@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointgalleryimage
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementVirtualEndpointGalleryImage
 ---
@@ -25,11 +25,11 @@ Create new navigation property to galleryImages for deviceManagement
 ```
 New-MgDeviceManagementVirtualEndpointGalleryImage [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-EndDate <datetime>]
- [-ExpirationDate <datetime>] [-Id <string>] [-OSVersionNumber <string>] [-OfferName <string>]
- [-PublisherName <string>] [-SizeInGb <int>] [-SkuName <string>] [-StartDate <datetime>]
- [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-ExpirationDate <datetime>] [-Id <string>] [-OfferName <string>] [-PublisherName <string>]
+ [-SizeInGb <int>] [-SkuName <string>] [-StartDate <datetime>] [-Status <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +39,7 @@ New-MgDeviceManagementVirtualEndpointGalleryImage
  -BodyParameter <IMicrosoftGraphCloudPcGalleryImage> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -299,29 +299,6 @@ HelpMessage: ''
 ### -OfferName
 
 The offer name of this gallery image that is passed to Azure Resource Manager (ARM) to retrieve the image resource.
-Read-only.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -OSVersionNumber
-
-The operating system version of this gallery image.
-For example, 10.0.22000.296.
 Read-only.
 
 ```yaml
@@ -604,9 +581,6 @@ Read-only.
 Users are unable to provision new Cloud PCs if the current time is later than expirationDate.
 The value is usually endDate plus six months.
 For example, if the startDate is 2025-10-14, the expirationDate is usually 2026-04-14.
-Read-only.
-  [OSVersionNumber <String>]: The operating system version of this gallery image.
-For example, 10.0.22000.296.
 Read-only.
   [OfferName <String>]: The offer name of this gallery image that is passed to Azure Resource Manager (ARM) to retrieve the image resource.
 Read-only.

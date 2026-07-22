@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentresourcedependentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassAssignmentResourceDependentResource
 ---
@@ -29,7 +29,7 @@ Get-MgEducationClassAssignmentResourceDependentResource -EducationAssignmentId <
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -40,7 +40,7 @@ Get-MgEducationClassAssignmentResourceDependentResource -EducationAssignmentId <
  -EducationClassId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -50,7 +50,7 @@ Get-MgEducationClassAssignmentResourceDependentResource -InputObject <IEducation
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -61,19 +61,6 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 A collection of assignment resources that depend on the parent educationAssignmentResource.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationClassAssignmentResourceDependentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
-
-```
-This example shows how to use the Get-MgEducationClassAssignmentResourceDependentResource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -643,6 +630,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Get-MgEducationClassAssignmentResourceDependentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentresourcedependentresource)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignmentresource-list-dependentresources?view=graph-rest-1.0)
+
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointonpremiseconnection
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementVirtualEndpointOnPremiseConnection
 ---
@@ -26,14 +26,14 @@ Update the properties of a cloudPcOnPremisesConnection object.
 Update-MgDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId <string>
  [-ResponseHeadersVariable <string>] [-AdDomainName <string>] [-AdDomainPassword <string>]
  [-AdDomainUsername <string>] [-AdditionalProperties <hashtable>] [-AlternateResourceUrl <string>]
- [-ConnectionType <string>] [-DisplayName <string>] [-HealthCheckPaused]
- [-HealthCheckStatus <string>]
+ [-ConnectionType <string>] [-DisplayName <string>] [-HealthCheckStatus <string>]
  [-HealthCheckStatusDetail <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>] [-Id <string>]
- [-InUse] [-InUseByCloudPc] [-OrganizationalUnit <string>] [-ResourceGroupId <string>]
- [-ScopeIds <string[]>] [-SubnetId <string>] [-SubscriptionId <string>] [-SubscriptionName <string>]
- [-VirtualNetworkId <string>] [-VirtualNetworkLocation <string>] [-Break] [-Headers <IDictionary>]
+ [-InUse] [-OrganizationalUnit <string>] [-ResourceGroupId <string>] [-SubnetId <string>]
+ [-SubscriptionId <string>] [-SubscriptionName <string>] [-VirtualNetworkId <string>]
+ [-VirtualNetworkLocation <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -43,7 +43,7 @@ Update-MgDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesCo
  -BodyParameter <IMicrosoftGraphCloudPcOnPremisesConnection> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,13 +53,14 @@ Update-MgDeviceManagementVirtualEndpointOnPremiseConnection
  -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <string>]
  [-AdDomainName <string>] [-AdDomainPassword <string>] [-AdDomainUsername <string>]
  [-AdditionalProperties <hashtable>] [-AlternateResourceUrl <string>] [-ConnectionType <string>]
- [-DisplayName <string>] [-HealthCheckPaused] [-HealthCheckStatus <string>]
+ [-DisplayName <string>] [-HealthCheckStatus <string>]
  [-HealthCheckStatusDetail <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>] [-Id <string>]
- [-InUse] [-InUseByCloudPc] [-OrganizationalUnit <string>] [-ResourceGroupId <string>]
- [-ScopeIds <string[]>] [-SubnetId <string>] [-SubscriptionId <string>] [-SubscriptionName <string>]
- [-VirtualNetworkId <string>] [-VirtualNetworkLocation <string>] [-Break] [-Headers <IDictionary>]
+ [-InUse] [-OrganizationalUnit <string>] [-ResourceGroupId <string>] [-SubnetId <string>]
+ [-SubscriptionId <string>] [-SubscriptionName <string>] [-VirtualNetworkId <string>]
+ [-VirtualNetworkLocation <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -70,7 +71,7 @@ Update-MgDeviceManagementVirtualEndpointOnPremiseConnection
  -BodyParameter <IMicrosoftGraphCloudPcOnPremisesConnection> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -225,7 +226,7 @@ HelpMessage: ''
 ### -AlternateResourceUrl
 
 The interface URL of the partner service's resource that links to this Azure network connection.
-Requires $select to retrieve.
+Returned only on $select.
 
 ```yaml
 Type: System.String
@@ -423,40 +424,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -HealthCheckPaused
-
-Indicates whether regular health checks on the network or domain configuration are paused or active.
-false if the regular health checks on the network or domain configuration are currently active.
-true if the checks are paused.
-If you perform a create or update operation on a onPremisesNetworkConnection resource, this value is set to false for four weeks.
-If you retry a health check on network or domain configuration, this value is set to false for two weeks.
-If the onPremisesNetworkConnection resource is attached in a provisioningPolicy or used by a Cloud PC in the past four weeks, healthCheckPaused is set to false.
-Read-only.
-Default is false.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -HealthCheckStatus
 
 cloudPcOnPremisesConnectionStatus
@@ -642,37 +609,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -InUseByCloudPc
-
-Indicates whether a Cloud PC is using this on-premises network connection.
-true if at least one Cloud PC is using it.
-Otherwise, false.
-Read-only.
-Default is false.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -OrganizationalUnit
 
 The organizational unit (OU) in which the computer account is created.
@@ -805,34 +741,6 @@ Aliases:
 - RHV
 ParameterSets:
 - Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ScopeIds
-
-The scope IDs of the corresponding permission.
-Currently, it's the Intune scope tag ID.
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -1051,17 +959,9 @@ Optional.
 Required format: admin@contoso.com.
 Optional.
   [AlternateResourceUrl <String>]: The interface URL of the partner service's resource that links to this Azure network connection.
-Requires $select to retrieve.
+Returned only on $select.
   [ConnectionType <String>]: cloudPcOnPremisesConnectionType
   [DisplayName <String>]: The display name for the Azure network connection.
-  [HealthCheckPaused <Boolean?>]: Indicates whether regular health checks on the network or domain configuration are paused or active.
-false if the regular health checks on the network or domain configuration are currently active.
-true if the checks are paused.
-If you perform a create or update operation on a onPremisesNetworkConnection resource, this value is set to false for four weeks.
-If you retry a health check on network or domain configuration, this value is set to false for two weeks.
-If the onPremisesNetworkConnection resource is attached in a provisioningPolicy or used by a Cloud PC in the past four weeks, healthCheckPaused is set to false.
-Read-only.
-Default is false.
   [HealthCheckStatus <String>]: cloudPcOnPremisesConnectionStatus
   [HealthCheckStatusDetail <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>]: cloudPcOnPremisesConnectionStatusDetail
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1101,18 +1001,11 @@ You can't delete a connection that’s in use.
 Returned only on $select.
 For an example that shows how to get the inUse property, see Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetail.
 Read-only.
-  [InUseByCloudPc <Boolean?>]: Indicates whether a Cloud PC is using this on-premises network connection.
-true if at least one Cloud PC is using it.
-Otherwise, false.
-Read-only.
-Default is false.
   [OrganizationalUnit <String>]: The organizational unit (OU) in which the computer account is created.
 If left null, the OU configured as the default (a well-known computer object container) in the tenant's Active Directory domain (OU) is used.
 Optional.
   [ResourceGroupId <String>]: The unique identifier of the target resource group used associated with the on-premises network connectivity for Cloud PCs.
 Required format: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}'
-  [ScopeIds <String[]>]: The scope IDs of the corresponding permission.
-Currently, it's the Intune scope tag ID.
   [SubnetId <String>]: The unique identifier of the target subnet used associated with the on-premises network connectivity for Cloud PCs.
 Required format: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}'
   [SubscriptionId <String>]: The unique identifier of the Azure subscription associated with the tenant.

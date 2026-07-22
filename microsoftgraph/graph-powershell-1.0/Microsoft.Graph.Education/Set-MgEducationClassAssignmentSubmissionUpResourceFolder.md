@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentsubmissionupresourcefolder
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgEducationClassAssignmentSubmissionUpResourceFolder
 ---
@@ -30,7 +30,7 @@ Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationAssignmentId 
  -EducationClassId <string> -EducationSubmissionId <string> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -40,6 +40,7 @@ Set-MgEducationClassAssignmentSubmissionUpResourceFolder -InputObject <IEducatio
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -55,7 +56,7 @@ Note that files must be located in this folder in order to be added as resources
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
 
 ## EXAMPLES
-### Example 1: Set up a resource folder for a submission
+### Example 1: Code snippet
 
 ```powershell
 
@@ -67,23 +68,9 @@ $params = @{
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
 ```
-This example will set up a resource folder for a submission
+This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
 
-### Example 2: Set up a resource folder when the assignment is no longer open for submission
-
-```powershell
-
-Import-Module Microsoft.Graph.Education
-
-$params = @{
-}
-
-Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
-
-```
-This example will set up a resource folder when the assignment is no longer open for submission
-
-### Example 3: Set up a resource folder when the assignment is already in submitted state
+### Example 2: Code snippet
 
 ```powershell
 
@@ -95,7 +82,21 @@ $params = @{
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
 ```
-This example will set up a resource folder when the assignment is already in submitted state
+This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+$params = @{
+}
+
+Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
 
 
 ## PARAMETERS

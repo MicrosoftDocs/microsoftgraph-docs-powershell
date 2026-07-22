@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupConversation
 ---
@@ -30,7 +30,7 @@ New-MgBetaGroupConversation -GroupId <string> [-ResponseHeadersVariable <string>
  [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <string>] [-UniqueSenders <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -40,6 +40,7 @@ New-MgBetaGroupConversation -GroupId <string> -BodyParameter <IMicrosoftGraphCon
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -51,7 +52,7 @@ New-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-ResponseHeadersVari
  [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <string>] [-UniqueSenders <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +62,7 @@ New-MgBetaGroupConversation -InputObject <IGroupsIdentity>
  -BodyParameter <IMicrosoftGraphConversation> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -90,27 +91,32 @@ Use reply thread or reply post to further post to that conversation.
 Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
-	topic = "New head count"
-	threads = @(
+	Topic = "Does anyone have a second?"
+	Threads = @(
 		@{
-			posts = @(
+			Posts = @(
 				@{
-					body = @{
-						contentType = "html"
-						content = "The confirmation will come by the end of the week."
+					Body = @{
+						ContentType = "HTML"
+						Content = "This is urgent!"
 					}
-					newParticipants = @(
+					Extensions = @(
 						@{
-							emailAddress = @{
-								name = "Adele Vance"
-								address = "AdeleV@contoso.com"
-							}
-						}
-					)
-				}
-			)
-		}
-	)
+							"@odata.type" = "microsoft.graph.openTypeExtension"
+							extensionName = "Com.Contoso.Benefits"
+							companyName = "Contoso"
+							expirationDate = "2016-08-03T11:00:00.000Z"
+							topPicks = @(
+							"Employees only"
+						"Add spouse or guest"
+					"Add family"
+				)
+			}
+		)
+	}
+)
+}
+)
 }
 
 New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params

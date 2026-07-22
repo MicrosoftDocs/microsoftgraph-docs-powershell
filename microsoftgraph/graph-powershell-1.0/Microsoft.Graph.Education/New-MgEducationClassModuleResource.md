@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationClassModuleResource
 ---
@@ -30,6 +30,7 @@ New-MgEducationClassModuleResource -EducationClassId <string> -EducationModuleId
  [-Resource <IMicrosoftGraphEducationResource>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +40,7 @@ New-MgEducationClassModuleResource -EducationClassId <string> -EducationModuleId
  -BodyParameter <IMicrosoftGraphEducationModuleResource> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -50,6 +51,7 @@ New-MgEducationClassModuleResource -InputObject <IEducationIdentity>
  [-Resource <IMicrosoftGraphEducationResource>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -59,7 +61,7 @@ New-MgEducationClassModuleResource -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationModuleResource> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -82,7 +84,7 @@ You can create the following types of module resources: Every resource has an @o
 | Application | EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Create an educationLinkResource
+### Example 1: Code snippet
 
 ```powershell
 
@@ -99,9 +101,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example will create an educationlinkresource
+This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
 
-### Example 2: Create an educationWordResource
+### Example 2: Code snippet
 
 ```powershell
 
@@ -120,9 +122,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example will create an educationwordresource
+This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
 
-### Example 3: Create an educationFileResource
+### Example 3: Code snippet
 
 ```powershell
 
@@ -141,9 +143,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example will create an educationfileresource
+This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
 
-### Example 4: Create an educationExcelResource
+### Example 4: Code snippet
 
 ```powershell
 
@@ -162,9 +164,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example will create an educationexcelresource
+This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
 
-### Example 5: Create an educationPowerPointResource
+### Example 5: Code snippet
 
 ```powershell
 
@@ -181,9 +183,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example will create an educationpowerpointresource
+This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
 
-### Example 6: Create an educationMediaResource
+### Example 6: Code snippet
 
 ```powershell
 
@@ -200,9 +202,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example will create an educationmediaresource
+This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
 
-### Example 7: Create an educationChannelResource
+### Example 7: Code snippet
 
 ```powershell
 
@@ -219,9 +221,9 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example will create an educationchannelresource
+This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
 
-### Example 8: Create an educationLinkedAssignmentResource
+### Example 8: Code snippet
 
 ```powershell
 
@@ -238,7 +240,7 @@ $params = @{
 New-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
 ```
-This example will create an educationlinkedassignmentresource
+This example shows how to use the New-MgEducationClassModuleResource Cmdlet.
 
 
 ## PARAMETERS
