@@ -2,6 +2,8 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
+    [ValidateSet("v1.0", "beta", "both")]
+    [string] $GraphProfile = "both",
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc")
 )
 function Get-GraphMapping {
@@ -10,15 +12,26 @@ function Get-GraphMapping {
     $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
+function Get-ProfilesToProcess {
+    param (
+        [string] $GraphProfile = "both"
+    )
+    if ($GraphProfile -eq "both") {
+        return @("v1.0", "beta")
+    }
+    return @($GraphProfile)
+}
 
 function Remove-InvalidFullStops {
     Param(
-        $ModulesToGenerate = @()
+        $ModulesToGenerate = @(),
+        [ValidateSet("v1.0", "beta", "both")]
+        [string] $GraphProfile = "both"
     )
 
     $ModulePrefix = "Microsoft.Graph"
     $GraphMapping = Get-GraphMapping 
-    $GraphMapping.Keys | ForEach-Object {
+    Get-ProfilesToProcess -GraphProfile $GraphProfile | ForEach-Object {
         $graphProfile = $_
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
@@ -88,7 +101,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-Remove-InvalidFullStops -ModulesToGenerate $ModulesToGenerate
+Remove-InvalidFullStops -ModulesToGenerate $ModulesToGenerate -GraphProfile $GraphProfile
 
 
 

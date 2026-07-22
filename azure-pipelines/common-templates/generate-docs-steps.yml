@@ -1,0 +1,169 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License.
+#
+# Reusable steps that generate and post-process the reference docs for a single
+# Graph profile (v1.0 or beta), then push the result and open a pull request.
+# The Microsoft.Graph.Authentication module ships only in v1.0, so it is
+# regenerated as part of the v1.0 profile run.
+
+parameters:
+  - name: GraphProfile
+    displayName: Graph profile to generate (v1.0 or beta)
+    type: string
+    values:
+      - v1.0
+      - beta
+  - name: BranchPrefix
+    type: string
+  - name: PrTitle
+    type: string
+  - name: PrBody
+    type: string
+  - name: BaseBranch
+    type: string
+    default: main
+
+steps:
+  - template: ../update-template.yml
+  - task: PowerShell@2
+    name: "ComputeBranch"
+    displayName: 'Compute Branch Name'
+    inputs:
+      targetType: 'inline'
+      script: |
+        git submodule update --init --recursive
+        $branch = "{0}_{1}" -f "${{ parameters.BranchPrefix }}", (Get-Date -Format yyyyMMddHHmm)
+        Write-Host "Compute branch: $branch"
+        Write-Host "##vso[task.setvariable variable=WeeklyReferenceDocsBranch;isOutput=true]$branch"
+  - task: Bash@3
+    displayName: "Create weekly refresh branch"
+    inputs:
+      targetType: inline
+      script: |
+        git status
+        git branch $(ComputeBranch.WeeklyReferenceDocsBranch)
+        git checkout $(ComputeBranch.WeeklyReferenceDocsBranch)
+        git status
+  - task: PowerShell@2
+    displayName: 'Create missing external docs folder'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/CreateExternalDocsFolder.ps1
+
+  - task: PowerShell@2
+    displayName: 'Generate markdown files from PowerShell help files (${{ parameters.GraphProfile }})'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/GenerateMarkDown.ps1
+      arguments: '-GraphProfile ${{ parameters.GraphProfile }}'
+  - task: PowerShell@2
+    displayName: 'Escape disallowed html tags (${{ parameters.GraphProfile }})'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/EscapeDisallowedHtmlTags.ps1
+      arguments: '-GraphProfile ${{ parameters.GraphProfile }}'
+  - task: PowerShell@2
+    displayName: 'Update metadata header (${{ parameters.GraphProfile }})'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/MsSubserviceUpdate.ps1
+      arguments: '-GraphProfile ${{ parameters.GraphProfile }}'
+  - task: PowerShell@2
+    displayName: 'Generate permissions table (${{ parameters.GraphProfile }})'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/GeneratePermissionsTable.ps1
+      arguments: '-GraphProfile ${{ parameters.GraphProfile }}'
+  - task: PowerShell@2
+    displayName: 'Update Links (${{ parameters.GraphProfile }})'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/UpdateLinks.ps1
+      arguments: '-GraphProfile ${{ parameters.GraphProfile }}'
+      errorActionPreference: 'stop'
+  - task: PowerShell@2
+    displayName: 'Repair Examples and Descriptions and Title (${{ parameters.GraphProfile }})'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/RepairExamplesDescriptionsAndTitle.ps1
+      arguments: '-GraphProfile ${{ parameters.GraphProfile }}'
+  - task: PowerShell@2
+    displayName: 'Remove boiler plate code (${{ parameters.GraphProfile }})'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/RemoveBoilerPlateCode.ps1
+      arguments: '-GraphProfile ${{ parameters.GraphProfile }}'
+  - task: PowerShell@2
+    displayName: 'Remove invalid fullstops (${{ parameters.GraphProfile }})'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/RemoveInvalidFullStops.ps1
+      arguments: '-GraphProfile ${{ parameters.GraphProfile }}'
+  - task: PowerShell@2
+    displayName: 'Generate missing docs for aliased cmdlets (${{ parameters.GraphProfile }})'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/GenerateAliasedDocs.ps1
+      arguments: '-GraphProfile ${{ parameters.GraphProfile }}'
+  - task: PowerShell@2
+    displayName: 'Correct related links section (${{ parameters.GraphProfile }})'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/CorrectRelatedLinks-AllFiles.ps1
+      arguments: '-GraphProfile ${{ parameters.GraphProfile }}'
+  - task: AzureKeyVault@2
+    displayName: "Azure Key Vault: Get GitHub App secrets"
+    inputs:
+      azureSubscription: "Federated AKV Managed Identity Connection"
+      KeyVaultName: akv-prod-eastus
+      SecretsFilter: "microsoft-graph-devx-bot-appid,microsoft-graph-devx-bot-privatekey"
+  - task: PowerShell@2
+    displayName: Pushing to github
+    env:
+      GhAppId: $(microsoft-graph-devx-bot-appid)
+      GhAppKey: $(microsoft-graph-devx-bot-privatekey)
+    inputs:
+      targetType: inline
+      pwsh: true
+      script: |
+        git config --global user.email "GraphTooling@service.microsoft.com"
+        git config --global user.name "Microsoft Graph DevX Tooling"
+        git config --system core.longpaths true
+        # The microsoft-graph-devx-bot GitHub App must have contents:write on this repo.
+        $token = & "$(Build.SourcesDirectory)/scripts/Generate-Github-Token.ps1" -AppClientId $env:GhAppId -AppPrivateKeyContents $env:GhAppKey -Repository "MicrosoftDocs/microsoftgraph-docs-powershell"
+        if ([string]::IsNullOrWhiteSpace($token)) { throw "Failed to generate GitHub App installation token." }
+        # Mask the token so it is never surfaced in pipeline logs.
+        Write-Host "##vso[task.setsecret]$token"
+        git status
+        git add .
+        git commit -m "Updating reference docs (${{ parameters.GraphProfile }})"
+        git push --set-upstream "******github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $(ComputeBranch.WeeklyReferenceDocsBranch)
+        git status
+  - template: create-pr.yml
+    parameters:
+      BaseBranch: "${{ parameters.BaseBranch }}"
+      TargetBranch: $(ComputeBranch.WeeklyReferenceDocsBranch)
+      Title: "${{ parameters.PrTitle }}"
+      Body: "${{ parameters.PrBody }}"

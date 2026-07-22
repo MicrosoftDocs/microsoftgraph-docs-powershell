@@ -2,6 +2,8 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
+    [ValidateSet("v1.0", "beta", "both")]
+    [string] $GraphProfile = "both",
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph")
@@ -13,20 +15,30 @@ function Get-GraphMapping {
    
     return $graphMapping
 }
+function Get-ProfilesToProcess {
+    param (
+        [string] $GraphProfile = "both"
+    )
+    if ($GraphProfile -eq "both") {
+        return @("v1.0", "beta")
+    }
+    return @($GraphProfile)
+}
 function Start-Update {
     Param(
-        $ModulesToGenerate = @()
+        $ModulesToGenerate = @(),
+        [ValidateSet("v1.0", "beta", "both")]
+        [string] $GraphProfile = "both"
     )
 
     $ModulePrefix = "Microsoft.Graph"
-    $GraphMapping = Get-GraphMapping 
-    $GraphMapping.Keys | ForEach-Object {
-        $GraphProfile = $_
+    Get-ProfilesToProcess -GraphProfile $GraphProfile | ForEach-Object {
+        $currentProfile = $_
         $profilePath = "graph-powershell-1.0"
-        if ($GraphProfile -eq "beta") {
-            $ProfilePath = "graph-powershell-beta"
+        if ($currentProfile -eq "beta") {
+            $profilePath = "graph-powershell-beta"
         }
-        Get-FilesByProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate -GraphProfile $GraphProfile
+        Get-FilesByProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate -GraphProfile $currentProfile
     }
 
     git config --global user.email "GraphTooling@service.microsoft.com"
@@ -201,5 +213,5 @@ if ($ModulesToGenerate.Count -eq 0) {
 
 
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
-Start-Update -ModulesToGenerate $ModulesToGenerate
+Start-Update -ModulesToGenerate $ModulesToGenerate -GraphProfile $GraphProfile
 Write-Host -ForegroundColor Green "-------------Done-------------"

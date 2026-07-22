@@ -1,15 +1,24 @@
 param(
+    [ValidateSet("v1.0", "beta", "both")]
+    [string]$GraphProfile = "both",
     [string]$MgCommandMetadatJsonFile = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json"),
     [string[]]$CmdList = @()
 )
 
 function Start-Generator {
+    param (
+        [ValidateSet("v1.0", "beta", "both")]
+        [string] $TargetProfile = "both"
+    )
     # Load the JSON file
     $MgCommandMetadatJson = Get-Content $MgCommandMetadatJsonFile | ConvertFrom-Json;
     try {
         $MgCommandMetadatJson | ForEach-Object {
             $CommandName = $_.Command;
             $ApiVersion = $_.ApiVersion
+            if ($TargetProfile -ne "both" -and $ApiVersion -ne $TargetProfile) {
+                return
+            }
             $Module = $_.Module;
             #Array for DelegatedWork Permissions
             $DelegatedWorkPermissions = @();
@@ -158,4 +167,4 @@ function New-ReferenceTable {
     }
 }
 
-Start-Generator;
+Start-Generator -TargetProfile $GraphProfile;

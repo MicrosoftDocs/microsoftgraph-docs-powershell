@@ -3,6 +3,8 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
+    [ValidateSet("v1.0", "beta", "both")]
+    [string] $GraphProfile = "both",
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config\ModulesMapping.jsonc"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
     [string] $CmdletMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json")
@@ -12,6 +14,15 @@ function Get-GraphMapping {
     $graphMapping.Add("v1.0", "graph-powershell-1.0")
     $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
+}
+function Get-ProfilesToProcess {
+    param (
+        [string] $GraphProfile = "both"
+    )
+    if ($GraphProfile -eq "both") {
+        return @("v1.0", "beta")
+    }
+    return @($GraphProfile)
 }
 function Set-Help {
     param (
@@ -49,26 +60,31 @@ function Set-Help {
 
 function Start-GraphHelp {
     Param(
-        $ModulesToGenerate = @()
+        $ModulesToGenerate = @(),
+        [ValidateSet("v1.0", "beta", "both")]
+        [string] $GraphProfile = "both"
     )
-    
-    #Generate for auth module first
+
     $ModulePrefix = "Microsoft.Graph"
     $AuthPath = "$ModulePrefix.Authentication"
     $AuthDestination = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" $AuthPath
-    Get-ChildItem -Path $AuthDestination * -File -Recurse | foreach { $_.Delete() }
-    
+    $ProfilesToProcess = Get-ProfilesToProcess -GraphProfile $GraphProfile
+
     Import-Module Microsoft.Graph.Authentication -Global
-    $GraphMapping = Get-GraphMapping 
-    $GraphMapping.Keys | ForEach-Object {
+
+    # The Authentication module only ships in v1.0, so only (re)generate it when v1.0 is in scope.
+    if ($ProfilesToProcess -contains "v1.0") {
+        Get-ChildItem -Path $AuthDestination * -File -Recurse | foreach { $_.Delete() }
+        $AuthenticationDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\graph-powershell-1.0"
+        Set-Help -ModuleDocsPath $AuthenticationDocsPath -Command "Connect-MgGraph" -Module "Microsoft.Graph.Authentication"
+    }
+
+    $ProfilesToProcess | ForEach-Object {
         $graphProfile = $_
         $profilePath = "graph-powershell-1.0"
         if ($graphProfile -eq "beta") {
             $profilePath = "graph-powershell-beta"
         }
-
-        $AuthenticationDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\graph-powershell-1.0"
-        Set-Help -ModuleDocsPath $AuthenticationDocsPath -Command "Connect-MgGraph" -Module "Microsoft.Graph.Authentication" 
          Get-FolderByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
     git config --global user.email "GraphTooling@service.microsoft.com"
@@ -168,5 +184,5 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
-Start-GraphHelp -ModulesToGenerate $ModulesToGenerate
+Start-GraphHelp -ModulesToGenerate $ModulesToGenerate -GraphProfile $GraphProfile
 Write-Host -ForegroundColor Green "-------------Done-------------"

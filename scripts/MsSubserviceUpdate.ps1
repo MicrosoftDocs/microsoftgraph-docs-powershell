@@ -1,6 +1,8 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT License.
 Param(
+    [ValidateSet("v1.0", "beta", "both")]
+    [string] $GraphProfile = "both",
     [string] $CommandMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json"),
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
     [string] $SDKOpenApiPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell"),
@@ -8,11 +10,18 @@ Param(
     [string] $MissingMsSubserviceHeaderPath = (Join-Path $PSScriptRoot "../missingexternaldocsurl")
 )
 function Start-Generator {
+    param (
+        [ValidateSet("v1.0", "beta", "both")]
+        [string] $TargetProfile = "both"
+    )
     if (Test-Path $CommandMetadataPath) {
         $CommandMetadataContent = Get-Content $CommandMetadataPath | ConvertFrom-Json
         $CommandMetadataContent | ForEach-Object {
             $ModuleName = $_.Module
             $GraphProfile = $_.ApiVersion
+            if ($TargetProfile -ne "both" -and $GraphProfile -ne $TargetProfile) {
+                return
+            }
             $Command = $_.Command
             $ExternalDocUrl = $_.ApiReferenceLink
             $GraphProfilePath = "graph-powershell-1.0"
@@ -141,5 +150,5 @@ If (-not (Get-Module -ErrorAction Ignore -ListAvailable PowerHTML)) {
 }
 Import-Module -ErrorAction Stop PowerHTML
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
-Start-Generator
+Start-Generator -TargetProfile $GraphProfile
 Write-Host -ForegroundColor Green "-------------Done-------------"

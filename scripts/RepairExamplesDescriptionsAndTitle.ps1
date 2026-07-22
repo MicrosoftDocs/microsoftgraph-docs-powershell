@@ -2,18 +2,27 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
+    [ValidateSet("v1.0", "beta", "both")]
+    [string] $GraphProfile = "both",
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
     [string] $CommandMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json")
 )
 
 function Start-Copy {
+    param (
+        [ValidateSet("v1.0", "beta", "both")]
+        [string] $TargetProfile = "both"
+    )
 
     if (Test-Path $CommandMetadataPath) {
         $CommandMetadataContent = Get-Content $CommandMetadataPath | ConvertFrom-Json
         $CommandMetadataContent | ForEach-Object {
             $ModuleName = $_.Module
             $GraphProfile = $_.ApiVersion
+            if ($TargetProfile -ne "both" -and $GraphProfile -ne $TargetProfile) {
+                return
+            }
             $Command = $_.Command
             $GraphProfilePath = "graph-powershell-1.0"
             $ModulePrefix = "Microsoft.Graph"
@@ -228,6 +237,6 @@ function Remove-WrongExamples {
 }
 
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
-Start-Copy
+Start-Copy -TargetProfile $GraphProfile
 #Copy-Files -DocPath "..\msgraph-sdk-powershell\src\DeviceManagement.Enrollment\beta\examples\New-MgBetaRoleManagementCloudPcRoleDefinition.md" -GraphProfilePath "graph-powershell-beta" -ModuleName "DeviceManagement.Enrollment" -ModulePrefix "Microsoft.Graph.Beta" -GraphProfile "beta" -Command "New-MgBetaRoleManagementCloudPcRoleDefinition"
 Write-Host -ForegroundColor Green "-------------Done-------------"

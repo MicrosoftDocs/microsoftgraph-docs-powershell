@@ -2,6 +2,8 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
+    [ValidateSet("v1.0", "beta", "both")]
+    [string] $GraphProfile = "both",
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
     [string] $AuthLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Authentication")
@@ -13,24 +15,38 @@ function Get-GraphMapping {
    
     return $graphMapping
 }
+function Get-ProfilesToProcess {
+    param (
+        [string] $GraphProfile = "both"
+    )
+    if ($GraphProfile -eq "both") {
+        return @("v1.0", "beta")
+    }
+    return @($GraphProfile)
+}
 
 function Start-Repair {
     Param(
-        $ModulesToGenerate = @()
+        $ModulesToGenerate = @(),
+        [ValidateSet("v1.0", "beta", "both")]
+        [string] $GraphProfile = "both"
     )
     
-    #Cleanup Authentication Module first
-    $files = Get-ChildItem -Path $AuthLoadDocsPath -Filter *.md -Recurse
-    foreach ($file in $files) {
-        $content = Get-Content -Path $file.FullName
-        # Remove lines that contain '{{ Fill in the Description }}' or '### This' or '### *' or '### have' or '### certain' or '### the'
-        $cleanedContent = $content | Where-Object { $_ -notmatch '^\s*{{ Fill in the Description }}|^\s*### This|^\s*### \*|^\s*### have|^\s*### certain|^\s*### the' }
-        # Write the cleaned content back to the file
-        $cleanedContent | Set-Content -Path $file.FullName
+    $ProfilesToProcess = Get-ProfilesToProcess -GraphProfile $GraphProfile
+
+    #Cleanup Authentication Module first (v1.0 only)
+    if ($ProfilesToProcess -contains "v1.0") {
+        $files = Get-ChildItem -Path $AuthLoadDocsPath -Filter *.md -Recurse
+        foreach ($file in $files) {
+            $content = Get-Content -Path $file.FullName
+            # Remove lines that contain '{{ Fill in the Description }}' or '### This' or '### *' or '### have' or '### certain' or '### the'
+            $cleanedContent = $content | Where-Object { $_ -notmatch '^\s*{{ Fill in the Description }}|^\s*### This|^\s*### \*|^\s*### have|^\s*### certain|^\s*### the' }
+            # Write the cleaned content back to the file
+            $cleanedContent | Set-Content -Path $file.FullName
+        }
     }
     $ModulePrefix = "Microsoft.Graph"
-    $GraphMapping = Get-GraphMapping 
-    $GraphMapping.Keys | ForEach-Object {
+    $ProfilesToProcess | ForEach-Object {
         $graphProfile = $_
         $profilePath = "graph-powershell-1.0"
         if ($graphProfile -eq "beta") {
@@ -118,5 +134,5 @@ if ($ModulesToGenerate.Count -eq 0) {
 }
 
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
-Start-Repair -ModulesToGenerate $ModulesToGenerate
+Start-Repair -ModulesToGenerate $ModulesToGenerate -GraphProfile $GraphProfile
 Write-Host -ForegroundColor Green "-------------Done-------------"
