@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappaswin32lobappassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment
 ## SYNOPSIS
 
 Update the navigation property assignments in deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment -MobileAppAssig
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -41,7 +37,6 @@ Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment -MobileAppAssig
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,7 +49,6 @@ Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment
  [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +59,7 @@ Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment
  -BodyParameter <IMicrosoftGraphMobileAppAssignment> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -76,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property assignments in deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -600,7 +604,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMobileAppAssignment>`: A class containing the properties used for Group Assignment of a Mobile App.
+BODYPARAMETER <IMicrosoftGraphMobileAppAssignment>: A class containing the properties used for Group Assignment of a Mobile App.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -613,7 +617,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -688,7 +692,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [WindowsInformationProtectionWipeActionId <String>]: The unique identifier of windowsInformationProtectionWipeAction
   [WindowsManagedAppProtectionId <String>]: The unique identifier of windowsManagedAppProtection
 
-TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for assignment targets.
+TARGET <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>: Base type for assignment targets.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
   [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
@@ -696,27 +700,4 @@ TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for 
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappaswin32lobappassignment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappaswin32lobappassignment)

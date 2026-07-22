@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewinstancedecisioninstancecontactedreviewer
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedReviewer
 ---
@@ -27,7 +27,6 @@ Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedRevi
  [-Id <string>] [-UserPrincipalName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -39,7 +38,6 @@ Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedRevi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,7 +49,6 @@ Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedRevi
  [-Id <string>] [-UserPrincipalName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +59,6 @@ Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedRevi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property contactedReviewers in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -596,7 +602,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewReviewer>`: accessReviewReviewer
+BODYPARAMETER <IMicrosoftGraphAccessReviewReviewer>: accessReviewReviewer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -604,7 +610,7 @@ Read-only.
   [DisplayName <String>]: Name of reviewer.
   [UserPrincipalName <String>]: User principal name of the user.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -652,6 +658,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -717,27 +724,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedReviewer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewinstancedecisioninstancecontactedreviewer)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewinstancedecisioninstancecontactedreviewer)

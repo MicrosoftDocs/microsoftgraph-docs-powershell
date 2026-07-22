@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskbuckettaskboardformat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat
 ---
@@ -26,7 +26,7 @@ Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat -BusinessScen
  -BusinessScenarioTaskId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -36,7 +36,7 @@ Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat
  -InputObject <IBusinessScenarioIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,6 +49,16 @@ This cmdlet has the following aliases,
 Read-only.
 Nullable.
 Used to render the task correctly in the task board view when grouped by bucket.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -359,36 +369,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
+INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [UniqueName <String>]: Alternate key of businessScenario
 
 
 ## RELATED LINKS
 
-- [Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskbuckettaskboardformat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskbuckettaskboardformat)

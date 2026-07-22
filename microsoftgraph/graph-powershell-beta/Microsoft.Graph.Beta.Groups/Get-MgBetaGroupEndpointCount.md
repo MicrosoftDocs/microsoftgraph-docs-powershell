@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpointcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupEndpointCount
 ---
@@ -23,7 +23,7 @@ Get the number of the resource
 Get-MgBetaGroupEndpointCount -GroupId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -32,7 +32,7 @@ Get-MgBetaGroupEndpointCount -GroupId <string> [-Filter <string>] [-Search <stri
 Get-MgBetaGroupEndpointCount -InputObject <IGroupsIdentity> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -44,13 +44,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group.Read.All, Group.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -338,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -365,27 +367,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupEndpointCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpointcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpointcount)

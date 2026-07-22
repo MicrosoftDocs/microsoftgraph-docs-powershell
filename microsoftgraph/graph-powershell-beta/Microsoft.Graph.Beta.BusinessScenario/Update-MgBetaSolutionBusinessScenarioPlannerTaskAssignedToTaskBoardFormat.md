@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskassignedtotaskboardformat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBusinessScenarioPlannerTaskAssignedToTaskBoardFormat
 ---
@@ -26,7 +26,7 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskAssignedToTaskBoardFormat
  [-OrderHintsByAssignee <hashtable>] [-UnassignedOrderHint <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +38,6 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskAssignedToTaskBoardFormat
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,7 +49,6 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskAssignedToTaskBoardFormat
  [-UnassignedOrderHint <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +60,6 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskAssignedToTaskBoardFormat
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property assignedToTaskBoardFormat in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -564,7 +571,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>`: plannerAssignedToTaskBoardTaskFormat
+BODYPARAMETER <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>: plannerAssignedToTaskBoardTaskFormat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -573,36 +580,14 @@ Read-only.
   [UnassignedOrderHint <String>]: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
+INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [UniqueName <String>]: Alternate key of businessScenario
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskassignedtotaskboardformat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskassignedtotaskboardformat)

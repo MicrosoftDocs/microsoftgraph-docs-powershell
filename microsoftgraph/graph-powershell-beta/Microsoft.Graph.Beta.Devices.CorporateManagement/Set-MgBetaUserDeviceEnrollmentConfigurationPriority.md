@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetauserdeviceenrollmentconfigurationpriority
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaUserDeviceEnrollmentConfigurationPriority
 ---
@@ -25,7 +25,6 @@ Set-MgBetaUserDeviceEnrollmentConfigurationPriority -DeviceEnrollmentConfigurati
  [-Priority <int>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set
@@ -37,7 +36,6 @@ Set-MgBetaUserDeviceEnrollmentConfigurationPriority -DeviceEnrollmentConfigurati
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -48,7 +46,6 @@ Set-MgBetaUserDeviceEnrollmentConfigurationPriority
  [-AdditionalProperties <hashtable>] [-Priority <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -60,7 +57,6 @@ Set-MgBetaUserDeviceEnrollmentConfigurationPriority
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -71,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action setPriority
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -103,7 +109,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -313,7 +319,7 @@ HelpMessage: ''
 
 ### -Priority
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -506,11 +512,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths64E37UUsersUserIdDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphSetpriorityPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths64E37UUsersUserIdDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphSetpriorityPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Priority <Int32?>]: 
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -588,27 +594,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaUserDeviceEnrollmentConfigurationPriority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetauserdeviceenrollmentconfigurationpriority)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetauserdeviceenrollmentconfigurationpriority)

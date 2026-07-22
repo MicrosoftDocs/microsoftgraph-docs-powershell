@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbrandinglocalizationcustomcss
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaOrganizationBrandingLocalizationCustomCss
 ---
@@ -16,9 +16,6 @@ title: Remove-MgBetaOrganizationBrandingLocalizationCustomCss
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationBrandingLocalizationCustomCss?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,7 +26,6 @@ Remove-MgBetaOrganizationBrandingLocalizationCustomCss -OrganizationId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -40,7 +36,6 @@ Remove-MgBetaOrganizationBrandingLocalizationCustomCss
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,6 +47,16 @@ This cmdlet has the following aliases,
 
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -404,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -431,6 +436,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExtensionId <String>]: The unique identifier of extension
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
+  [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
+  [GovernancePolicyTemplateId <String>]: The unique identifier of governancePolicyTemplate
+  [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
+  [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
   [IdentityProviderBaseId <String>]: The unique identifier of identityProviderBase
   [ImpactedResourceId <String>]: The unique identifier of impactedResource
@@ -450,10 +459,15 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
+  [RecoveryJobId <String>]: The unique identifier of recoveryJob
+  [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
+  [RelatedTenantId <String>]: The unique identifier of relatedTenant
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
   [SharedEmailDomainInvitationId <String>]: The unique identifier of sharedEmailDomainInvitation
+  [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
@@ -464,27 +478,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaOrganizationBrandingLocalizationCustomCss](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbrandinglocalizationcustomcss)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbrandinglocalizationcustomcss)

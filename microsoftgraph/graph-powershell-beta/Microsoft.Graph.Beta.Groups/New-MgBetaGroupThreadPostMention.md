@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostmention
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupThreadPostMention
 ---
@@ -27,7 +27,7 @@ New-MgBetaGroupThreadPostMention -ConversationThreadId <string> -GroupId <string
  [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <datetime>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -37,7 +37,7 @@ New-MgBetaGroupThreadPostMention -ConversationThreadId <string> -GroupId <string
  -BodyParameter <IMicrosoftGraphMention> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -50,7 +50,6 @@ New-MgBetaGroupThreadPostMention -InputObject <IGroupsIdentity> [-ResponseHeader
  [-ServerCreatedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -60,7 +59,7 @@ New-MgBetaGroupThreadPostMention -InputObject <IGroupsIdentity>
  -BodyParameter <IMicrosoftGraphMention> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -71,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to mentions for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -741,7 +750,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMention>`: mention
+BODYPARAMETER <IMicrosoftGraphMention>: mention
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -767,12 +776,12 @@ To get the mentions in a message, see the bodyPreview property of the message in
 Optional.
 Not used and defaulted as null for message.
 
-CREATEDBY `<IMicrosoftGraphEmailAddress>`: emailAddress
+CREATEDBY <IMicrosoftGraphEmailAddress>: emailAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <String>]: The email address of an entity instance.
   [Name <String>]: The display name of an entity instance.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -796,7 +805,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [UniqueName <String>]: Alternate key of group
   [UserId <String>]: The unique identifier of user
 
-MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
+MENTIONED <IMicrosoftGraphEmailAddress>: emailAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <String>]: The email address of an entity instance.
   [Name <String>]: The display name of an entity instance.
@@ -804,27 +813,4 @@ MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupThreadPostMention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostmention)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostmention)

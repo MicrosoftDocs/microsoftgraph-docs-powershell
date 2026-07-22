@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicemobileappconfigurationstate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState
 ---
@@ -28,7 +28,7 @@ Update-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState -ManagedDe
  [-State <string>] [-UserId <string>] [-UserPrincipalName <string>] [-Version <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -40,7 +40,6 @@ Update-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState -ManagedDe
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,7 +53,7 @@ Update-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState
  [-State <string>] [-UserId <string>] [-UserPrincipalName <string>] [-Version <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -66,7 +65,6 @@ Update-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property managedDeviceMobileAppConfigurationStates in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -519,7 +527,7 @@ HelpMessage: ''
 
 ### -SettingStates
 
-
+.
 To construct, see NOTES section for SETTINGSTATES properties and create a hash table.
 
 ```yaml
@@ -709,7 +717,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedDeviceMobileAppConfigurationState>`: Managed Device Mobile App Configuration State for a given device.
+BODYPARAMETER <IMicrosoftGraphManagedDeviceMobileAppConfigurationState>: Managed Device Mobile App Configuration State for a given device.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -738,7 +746,7 @@ Read-only.
   [UserPrincipalName <String>]: User Principal Name
   [Version <Int32?>]: The version of the policy
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -868,27 +876,4 @@ SETTINGSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicemobileappconfigurationstate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicemobileappconfigurationstate)

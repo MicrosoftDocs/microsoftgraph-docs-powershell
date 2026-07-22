@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestcollaboratormailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting
 ---
@@ -16,10 +16,7 @@ title: Get-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestCollaboratorMailboxSetting](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestCollaboratorMailboxSetting?view=graph-powershell-1.0)
+Requires $select to retrieve.
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Get-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting -SubjectRightsRe
  -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -40,7 +37,7 @@ Get-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting -InputObject <IC
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -53,7 +50,17 @@ This cmdlet has the following aliases,
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
-Returned only on $select.
+Requires $select to retrieve.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -364,7 +371,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -387,27 +394,4 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestcollaboratormailboxsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestcollaboratormailboxsetting)

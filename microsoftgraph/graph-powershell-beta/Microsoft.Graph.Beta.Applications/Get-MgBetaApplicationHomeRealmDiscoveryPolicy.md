@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationhomerealmdiscoverypolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaApplicationHomeRealmDiscoveryPolicy
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaApplicationHomeRealmDiscoveryPolicy
 ## SYNOPSIS
 
 Get homeRealmDiscoveryPolicies from applications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgBetaApplicationHomeRealmDiscoveryPolicy -ApplicationId <string> [-ExpandPr
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +35,7 @@ Get-MgBetaApplicationHomeRealmDiscoveryPolicy -ApplicationId <string>
  -HomeRealmDiscoveryPolicyId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +45,7 @@ Get-MgBetaApplicationHomeRealmDiscoveryPolicy -InputObject <IApplicationsIdentit
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -59,6 +56,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get homeRealmDiscoveryPolicies from applications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -548,7 +555,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -589,28 +596,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaApplicationHomeRealmDiscoveryPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationhomerealmdiscoverypolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationhomerealmdiscoverypolicy)

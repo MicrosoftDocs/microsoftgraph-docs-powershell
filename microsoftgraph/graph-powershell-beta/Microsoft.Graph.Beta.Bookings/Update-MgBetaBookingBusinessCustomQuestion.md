@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomquestion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaBookingBusinessCustomQuestion
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaBookingBusinessCustomQuestion
 ## SYNOPSIS
 
 Update the navigation property customQuestions in bookingBusinesses
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ Update-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <string>
  [-LastUpdatedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
@@ -43,7 +39,6 @@ Update-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <string>
  [-LastUpdatedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update1
@@ -54,7 +49,6 @@ Update-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -65,7 +59,6 @@ Update-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -77,7 +70,6 @@ Update-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
  [-LastUpdatedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -89,7 +81,6 @@ Update-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
  [-LastUpdatedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
@@ -99,7 +90,7 @@ Update-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphBookingCustomQuestion> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -109,7 +100,7 @@ Update-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphBookingCustomQuestion> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -121,17 +112,10 @@ This cmdlet has the following aliases,
 
 Update the navigation property customQuestions in bookingBusinesses
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaBookingBusinessCustomQuestion Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomQuestion"
@@ -141,9 +125,6 @@ $params = @{
 	)
 }
 Update-MgBetaBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaBookingBusinessCustomQuestion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -826,7 +807,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBookingCustomQuestion>`: Represents a custom question of the business.
+BODYPARAMETER <IMicrosoftGraphBookingCustomQuestion>: Represents a custom question of the business.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -836,7 +817,7 @@ Read-only.
   [DisplayName <String>]: Display name of this entity.
   [LastUpdatedDateTime <DateTime?>]: The date, time and timezone when the custom question was last updated.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -861,26 +842,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaBookingBusinessCustomQuestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomquestion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomquestion)

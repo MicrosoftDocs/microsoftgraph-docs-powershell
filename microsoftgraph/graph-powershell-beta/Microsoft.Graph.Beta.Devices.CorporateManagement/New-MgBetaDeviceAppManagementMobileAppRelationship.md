@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileapprelationship
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceAppManagementMobileAppRelationship
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceAppManagementMobileAppRelationship
 ## SYNOPSIS
 
 Create new navigation property to mobileAppRelationships for deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppRelationship](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppRelationship?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ New-MgBetaDeviceAppManagementMobileAppRelationship [-ResponseHeadersVariable <st
  [-TargetType <MobileAppRelationshipType>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateExpanded1
@@ -39,7 +35,6 @@ New-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <string>
  [-TargetId <string>] [-TargetType <MobileAppRelationshipType>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create1
@@ -49,7 +44,7 @@ New-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <string>
  -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -61,7 +56,6 @@ New-MgBetaDeviceAppManagementMobileAppRelationship
  [-TargetType <MobileAppRelationshipType>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -72,7 +66,7 @@ New-MgBetaDeviceAppManagementMobileAppRelationship
  -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -82,7 +76,7 @@ New-MgBetaDeviceAppManagementMobileAppRelationship
  -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -93,6 +87,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to mobileAppRelationships for deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -570,7 +574,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMobileAppRelationship>`: The MobileAppRelationship describes the relationship between two mobile applications by providing information that tells if an application is dependent on or superseded by another application.
+BODYPARAMETER <IMicrosoftGraphMobileAppRelationship>: The MobileAppRelationship describes the relationship between two mobile applications by providing information that tells if an application is dependent on or superseded by another application.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -582,7 +586,7 @@ Supports: $select.
 Does not support $search, $filter, $orderBy.
   [TargetType <MobileAppRelationshipType?>]: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -660,27 +664,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceAppManagementMobileAppRelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileapprelationship)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileapprelationship)

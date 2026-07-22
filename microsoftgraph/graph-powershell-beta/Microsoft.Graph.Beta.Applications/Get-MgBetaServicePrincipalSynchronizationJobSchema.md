@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschema
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalSynchronizationJobSchema
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaServicePrincipalSynchronizationJobSchema
 
 Retrieve the schema for a given synchronization job or template.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -27,7 +24,7 @@ Get-MgBetaServicePrincipalSynchronizationJobSchema -ServicePrincipalId <string>
  -SynchronizationJobId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -37,7 +34,7 @@ Get-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsId
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 
 Retrieve the schema for a given synchronization job or template.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All, CustomSecAttributeProvisioning.ReadWrite.All, CustomSecAttributeProvisioning.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CustomSecAttributeProvisioning.Read.All, Synchronization.ReadWrite.All, Synchronization.Read.All, CustomSecAttributeProvisioning.ReadWrite.All, Application.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Get-MgBetaServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
-
-```
-This example shows how to use the Get-MgBetaServicePrincipalSynchronizationJobSchema Cmdlet.
-
 
 ## PARAMETERS
 
@@ -379,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -420,27 +404,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaServicePrincipalSynchronizationJobSchema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschema)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschema)
+- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-get?view=graph-rest-beta)

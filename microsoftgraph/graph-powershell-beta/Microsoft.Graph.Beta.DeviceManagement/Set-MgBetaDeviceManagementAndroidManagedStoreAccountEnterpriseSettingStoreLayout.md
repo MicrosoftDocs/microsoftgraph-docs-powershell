@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingstorelayout
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingStoreLayout
 ---
@@ -25,7 +25,6 @@ Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingStoreLayout
  [-StoreLayoutType <AndroidManagedStoreLayoutType>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set
@@ -36,7 +35,6 @@ Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingStoreLayout
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -47,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Sets the Managed Google Play store layout type via Google EMM API.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -73,7 +81,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -379,7 +387,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1LchbyDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphSetstorelayoutPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1LchbyDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphSetstorelayoutPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [StoreLayoutType <AndroidManagedStoreLayoutType?>]: The store layout types for Managed Google Play.
 Values correspond directly to the store layout types of Google enterprise objects.
@@ -387,27 +395,4 @@ Values correspond directly to the store layout types of Google enterprise object
 
 ## RELATED LINKS
 
-- [Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingStoreLayout](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingstorelayout)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingstorelayout)

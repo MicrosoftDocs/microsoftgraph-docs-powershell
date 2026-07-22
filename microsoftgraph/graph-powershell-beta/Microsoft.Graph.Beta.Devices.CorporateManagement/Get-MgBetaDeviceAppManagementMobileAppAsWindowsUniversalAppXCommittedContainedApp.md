@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappaswindowsuniversalappxcommittedcontainedapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedCont
 
 The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.
 This property is read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAp
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -40,7 +37,7 @@ Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAp
  -MobileAppId <string> -MobileContainedAppId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -50,7 +47,7 @@ Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAp
  -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -62,6 +59,16 @@ This cmdlet has the following aliases,
 
 The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.
 This property is read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -554,7 +561,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -632,27 +639,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappaswindowsuniversalappxcommittedcontainedapp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappaswindowsuniversalappxcommittedcontainedapp)

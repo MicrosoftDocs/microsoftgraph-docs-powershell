@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductrevisionknowledgebasearticle
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaWindowsUpdatesProductRevisionKnowledgeBaseArticle
 ---
@@ -25,7 +25,6 @@ Update-MgBetaWindowsUpdatesProductRevisionKnowledgeBaseArticle -ProductId <strin
  [-Id <string>] [-Url <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -36,7 +35,6 @@ Update-MgBetaWindowsUpdatesProductRevisionKnowledgeBaseArticle -ProductId <strin
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -47,7 +45,7 @@ Update-MgBetaWindowsUpdatesProductRevisionKnowledgeBaseArticle
  [-AdditionalProperties <hashtable>] [-Id <string>] [-Url <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -59,7 +57,6 @@ Update-MgBetaWindowsUpdatesProductRevisionKnowledgeBaseArticle
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -70,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property knowledgeBaseArticle in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -513,14 +520,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>`: knowledgeBaseArticle
+BODYPARAMETER <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>: knowledgeBaseArticle
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Url <String>]: The URL of the knowledge base article.
 Read-only.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -531,36 +538,16 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   [EditionId <String>]: The unique identifier of edition
   [KbNumber <Int32?>]: Usage: kbNumber={kbNumber}
   [KnownIssueId <String>]: The unique identifier of knownIssue
+  [PolicyApprovalId <String>]: The unique identifier of policyApproval
+  [PolicyId <String>]: The unique identifier of policy
   [ProductId <String>]: The unique identifier of product
   [ProductRevisionId <String>]: The unique identifier of productRevision
   [ResourceConnectionId <String>]: The unique identifier of resourceConnection
+  [RingId <String>]: The unique identifier of ring
   [UpdatableAssetId <String>]: The unique identifier of updatableAsset
   [UpdatePolicyId <String>]: The unique identifier of updatePolicy
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaWindowsUpdatesProductRevisionKnowledgeBaseArticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductrevisionknowledgebasearticle)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductrevisionknowledgebasearticle)

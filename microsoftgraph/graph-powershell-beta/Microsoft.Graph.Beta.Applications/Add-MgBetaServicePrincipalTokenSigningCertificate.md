@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaServicePrincipalTokenSigningCertificate
 ---
@@ -14,16 +14,13 @@ title: Add-MgBetaServicePrincipalTokenSigningCertificate
 ## SYNOPSIS
 
 Creates a self-signed signing certificate and returns a selfSignedCertificate object, which is the public part of the generated certificate.
-The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \r+ The keyCredentials object with the following objects:\r    + A private key object with usage set to Sign.\r    + A public key object with usage set to Verify.\r+ The passwordCredentials object.
+The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \r\n+ The keyCredentials object with the following objects:\r\n    + A private key object with usage set to Sign.\r\n    + A public key object with usage set to Verify.\r\n+ The passwordCredentials object.
 All the objects have the same value of customKeyIdentifier.
 The passwordCredential is used to open the PFX file (private key).
 It and the associated private key object have the same value of keyId.
 Once set during creation through the displayName property, the subject of the certificate cannot be updated.
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Applications/Add-MgServicePrincipalTokenSigningCertificate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,7 +31,7 @@ Add-MgBetaServicePrincipalTokenSigningCertificate -ServicePrincipalId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
  [-EndDateTime <datetime>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Add
@@ -45,7 +42,6 @@ Add-MgBetaServicePrincipalTokenSigningCertificate -ServicePrincipalId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
@@ -55,7 +51,7 @@ Add-MgBetaServicePrincipalTokenSigningCertificate -InputObject <IApplicationsIde
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
  [-EndDateTime <datetime>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### AddViaIdentity
@@ -66,7 +62,6 @@ Add-MgBetaServicePrincipalTokenSigningCertificate -InputObject <IApplicationsIde
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,7 +72,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Creates a self-signed signing certificate and returns a selfSignedCertificate object, which is the public part of the generated certificate.
-The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \r+ The keyCredentials object with the following objects:\r    + A private key object with usage set to Sign.\r    + A public key object with usage set to Verify.\r+ The passwordCredentials object.
+The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \r\n+ The keyCredentials object with the following objects:\r\n    + A private key object with usage set to Sign.\r\n    + A public key object with usage set to Verify.\r\n+ The passwordCredentials object.
 All the objects have the same value of customKeyIdentifier.
 The passwordCredential is used to open the PFX file (private key).
 It and the associated private key object have the same value of keyId.
@@ -85,18 +80,9 @@ Once set during creation through the displayName property, the subject of the ce
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -106,10 +92,6 @@ $params = @{
 }
 
 Add-MgBetaServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
-This example shows how to use the Add-MgBetaServicePrincipalTokenSigningCertificate Cmdlet.
-
 
 ## PARAMETERS
 
@@ -142,7 +124,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -213,7 +195,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -240,7 +222,7 @@ HelpMessage: ''
 
 ### -EndDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -524,12 +506,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: 
   [EndDateTime <DateTime?>]: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -570,27 +552,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Add-MgBetaServicePrincipalTokenSigningCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostinreplytoextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupConversationThreadPostInReplyToExtension
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaGroupConversationThreadPostInReplyToExtension
 ## SYNOPSIS
 
 Create new navigation property to extensions for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupConversationThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThreadPostInReplyToExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ New-MgBetaGroupConversationThreadPostInReplyToExtension -ConversationId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +36,6 @@ New-MgBetaGroupConversationThreadPostInReplyToExtension -ConversationId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -49,7 +45,7 @@ New-MgBetaGroupConversationThreadPostInReplyToExtension -InputObject <IGroupsIde
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -59,7 +55,6 @@ New-MgBetaGroupConversationThreadPostInReplyToExtension -InputObject <IGroupsIde
  -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -70,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to extensions for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -538,7 +543,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -565,27 +570,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupConversationThreadPostInReplyToExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostinreplytoextension)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostinreplytoextension)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestnotecount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPrivacySubjectRightsRequestNoteCount
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaPrivacySubjectRightsRequestNoteCount
 
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestNoteCount](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestNoteCount?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -26,7 +23,7 @@ Get the number of the resource
 Get-MgBetaPrivacySubjectRightsRequestNoteCount -SubjectRightsRequestId <string> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +32,7 @@ Get-MgBetaPrivacySubjectRightsRequestNoteCount -SubjectRightsRequestId <string> 
 Get-MgBetaPrivacySubjectRightsRequestNoteCount -InputObject <IComplianceIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,13 +44,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -341,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -364,27 +363,4 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPrivacySubjectRightsRequestNoteCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestnotecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestnotecount)

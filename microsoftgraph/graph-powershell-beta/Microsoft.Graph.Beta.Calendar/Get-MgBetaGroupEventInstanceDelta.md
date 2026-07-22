@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstancedelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupEventInstanceDelta
 ---
@@ -22,9 +22,6 @@ The initial call is a full synchronization, and every subsequent delta call in t
 Using deltas allows you to incrementally maintain and synchronize a local store of events in the specified calendar.
 The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventInstanceDelta](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceDelta?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delta (Default)
@@ -36,7 +33,7 @@ Get-MgBetaGroupEventInstanceDelta -EventId <string> -GroupId <string> -EndDateTi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### DeltaViaIdentity
@@ -47,7 +44,7 @@ Get-MgBetaGroupEventInstanceDelta -InputObject <ICalendarIdentity> -EndDateTime 
  [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-Count]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -65,6 +62,16 @@ Typically, synchronizing events in a calendar or calendarView in a local store e
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 Using deltas allows you to incrementally maintain and synchronize a local store of events in the specified calendar.
 The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -612,7 +619,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -637,28 +644,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupEventInstanceDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstancedelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstancedelta)
+- [](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-beta)

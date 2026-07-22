@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesresourceconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaWindowsUpdatesResourceConnection
 ---
@@ -25,7 +25,7 @@ Get-MgBetaWindowsUpdatesResourceConnection [-ExpandProperty <string[]>] [-Proper
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -35,7 +35,7 @@ Get-MgBetaWindowsUpdatesResourceConnection -ResourceConnectionId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -45,7 +45,7 @@ Get-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -57,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an operationalInsightsConnection object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WindowsUpdates.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 Get-MgBetaWindowsUpdatesResourceConnection
-
-```
-This example shows how to use the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -538,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -549,37 +536,18 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   [EditionId <String>]: The unique identifier of edition
   [KbNumber <Int32?>]: Usage: kbNumber={kbNumber}
   [KnownIssueId <String>]: The unique identifier of knownIssue
+  [PolicyApprovalId <String>]: The unique identifier of policyApproval
+  [PolicyId <String>]: The unique identifier of policy
   [ProductId <String>]: The unique identifier of product
   [ProductRevisionId <String>]: The unique identifier of productRevision
   [ResourceConnectionId <String>]: The unique identifier of resourceConnection
+  [RingId <String>]: The unique identifier of ring
   [UpdatableAssetId <String>]: The unique identifier of updatableAsset
   [UpdatePolicyId <String>]: The unique identifier of updatePolicy
 
 
 ## RELATED LINKS
 
-- [Get-MgBetaWindowsUpdatesResourceConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesresourceconnection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-operationalinsightsconnection-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/adminwindowsupdates-list-resourceconnections?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesresourceconnection)
+- [](https://learn.microsoft.com/graph/api/windowsupdates-operationalinsightsconnection-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/adminwindowsupdates-list-resourceconnections?view=graph-rest-beta)

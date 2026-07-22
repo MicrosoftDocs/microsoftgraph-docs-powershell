@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementAuditEvent
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDeviceManagementAuditEvent
 ## SYNOPSIS
 
 Update the navigation property auditEvents in deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementAuditEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,6 @@ Update-MgBetaDeviceManagementAuditEvent -AuditEventId <string> [-ResponseHeaders
  [-Resources <IMicrosoftGraphAuditResource[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -41,7 +37,7 @@ Update-MgBetaDeviceManagementAuditEvent -AuditEventId <string>
  -BodyParameter <IMicrosoftGraphAuditEvent> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -55,7 +51,6 @@ Update-MgBetaDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministr
  [-Resources <IMicrosoftGraphAuditResource[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +60,7 @@ Update-MgBetaDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministr
  -BodyParameter <IMicrosoftGraphAuditEvent> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -77,13 +72,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property auditEvents in deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -771,7 +768,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
+ACTOR <IMicrosoftGraphAuditActor>: A class containing the properties for Audit Actor.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplicationDisplayName <String>]: Name of the Application.
   [ApplicationId <String>]: AAD Application Id.
@@ -788,7 +785,7 @@ ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit
     [DisplayName <String>]: Scope Tag Display name.
     [RoleScopeTagId <String>]: Scope Tag Id.
 
-BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
+BODYPARAMETER <IMicrosoftGraphAuditEvent>: A class containing the properties for Audit Event.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -827,7 +824,7 @@ Read-only.
     [ResourceId <String>]: Audit resource's Id.
     [Type <String>]: Audit resource's type.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -898,27 +895,4 @@ RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementAuditEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent)

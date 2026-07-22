@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaexecutesecurityincidenttaskresponseaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction
 ---
@@ -25,7 +25,6 @@ Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction -IncidentTaskId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ExecuteViaIdentity
@@ -35,7 +34,6 @@ Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction -InputObject <ISecurityId
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -365,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -467,27 +465,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaexecutesecurityincidenttaskresponseaction)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-incidenttask-executeresponseaction?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaexecutesecurityincidenttaskresponseaction)
+- [](https://learn.microsoft.com/graph/api/security-incidenttask-executeresponseaction?view=graph-rest-beta)

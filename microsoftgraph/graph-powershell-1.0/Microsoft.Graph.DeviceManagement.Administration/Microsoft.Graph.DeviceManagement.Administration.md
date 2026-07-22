@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-Module Guid: 258bae96-18f6-4e61-9a2c-23c65b9a7a0f
+Module Guid: 228a1d96-1aaf-d273-a5d0-34a1e9c1cfcc
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -125,6 +125,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementVirtualEndpointCloudPcCount](Get-MgDeviceManagementVirtualEndpointCloudPcCount.md)
 
+### [Get-MgDeviceManagementVirtualEndpointCloudPcLaunchDetail](Get-MgDeviceManagementVirtualEndpointCloudPcLaunchDetail.md)
+
 ### [Get-MgDeviceManagementVirtualEndpointDeviceImage](Get-MgDeviceManagementVirtualEndpointDeviceImage.md)
 
 ### [Get-MgDeviceManagementVirtualEndpointDeviceImage](Get-MgDeviceManagementVirtualEndpointDeviceImage.md)
@@ -171,6 +173,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyCount](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyCount.md)
 
+### [Get-MgDeviceManagementVirtualEndpointReport](Get-MgDeviceManagementVirtualEndpointReport.md)
+
+### [Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport](Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport.md)
+
 ### [Get-MgDeviceManagementVirtualEndpointUserSetting](Get-MgDeviceManagementVirtualEndpointUserSetting.md)
 
 ### [Get-MgDeviceManagementVirtualEndpointUserSetting](Get-MgDeviceManagementVirtualEndpointUserSetting.md)
@@ -186,6 +192,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding.md)
 
 ### [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
+
+### [Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc](Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc.md)
 
 ### [Invoke-MgTerminateDeviceManagementPartner](Invoke-MgTerminateDeviceManagementPartner.md)
 
@@ -273,6 +281,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Remove-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 
+### [Remove-MgDeviceManagementVirtualEndpointReport](Remove-MgDeviceManagementVirtualEndpointReport.md)
+
 ### [Remove-MgDeviceManagementVirtualEndpointUserSetting](Remove-MgDeviceManagementVirtualEndpointUserSetting.md)
 
 ### [Remove-MgDeviceManagementVirtualEndpointUserSettingAssignment](Remove-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
@@ -331,32 +341,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgDeviceManagementVirtualEndpointOnPremiseConnection](Update-MgDeviceManagementVirtualEndpointOnPremiseConnection.md)
 
+### [Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword](Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword.md)
+
 ### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicy](Update-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 
 ### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 
 ### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting](Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting.md)
 
+### [Update-MgDeviceManagementVirtualEndpointReport](Update-MgDeviceManagementVirtualEndpointReport.md)
+
 ### [Update-MgDeviceManagementVirtualEndpointUserSetting](Update-MgDeviceManagementVirtualEndpointUserSetting.md)
 
 ### [Update-MgDeviceManagementVirtualEndpointUserSettingAssignment](Update-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

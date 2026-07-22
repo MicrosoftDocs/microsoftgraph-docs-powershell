@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranchforwardingprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 02/20/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy
 ---
@@ -26,7 +26,6 @@ Update-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy -BranchSiteI
  [-State <string>] [-Version <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -37,7 +36,7 @@ Update-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy -BranchSiteI
  -BodyParameter <IMicrosoftGraphNetworkaccessPolicyLink> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,7 +48,6 @@ Update-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy
  [-State <string>] [-Version <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -60,7 +58,6 @@ Update-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -71,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property policies in networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -595,7 +602,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessPolicyLink>`: policyLink
+BODYPARAMETER <IMicrosoftGraphNetworkaccessPolicyLink>: policyLink
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -613,11 +620,12 @@ Read-only.
   [State <String>]: status
   [Version <String>]: Version.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
   [BranchSiteId <String>]: The unique identifier of branchSite
+  [CloudFirewallPolicyId <String>]: The unique identifier of cloudFirewallPolicy
   [ConditionalAccessPolicyId <String>]: The unique identifier of conditionalAccessPolicy
   [ConnectionId <String>]: The unique identifier of connection
   [ConnectivityConfigurationLinkId <String>]: The unique identifier of connectivityConfigurationLink
@@ -629,6 +637,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [FilteringProfileId <String>]: The unique identifier of filteringProfile
   [ForwardingPolicyId <String>]: The unique identifier of forwardingPolicy
   [ForwardingProfileId <String>]: The unique identifier of forwardingProfile
+  [GenerativeAiInsightTransactionId <String>]: The unique identifier of generativeAIInsight
   [NetworkAccessTrafficTransactionId <String>]: The unique identifier of networkAccessTraffic
   [PolicyLinkId <String>]: The unique identifier of policyLink
   [PolicyRuleId <String>]: The unique identifier of policyRule
@@ -639,7 +648,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
   [Url <String>]: Usage: url='{url}'
 
-POLICY `<IMicrosoftGraphNetworkaccessPolicy>`: policy
+POLICY <IMicrosoftGraphNetworkaccessPolicy>: policy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -654,27 +663,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranchforwardingprofilepolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranchforwardingprofilepolicy)
