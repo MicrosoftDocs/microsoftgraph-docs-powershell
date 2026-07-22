@@ -158,14 +158,6 @@ extends:
             targetType: 'filePath'
             pwsh: true
             filePath: scripts/CorrectRelatedLinks-AllFiles.ps1
-        - task: PowerShell@2
-          displayName: 'Stabilize ms.date values'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/StabilizeMsDate.ps1
-            errorActionPreference: 'stop'
         - task: AzureKeyVault@2
           displayName: "Azure Key Vault: Get GitHub App secrets"
           inputs:
