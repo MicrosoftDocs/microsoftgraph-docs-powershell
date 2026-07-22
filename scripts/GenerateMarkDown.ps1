@@ -13,36 +13,6 @@ function Get-GraphMapping {
     $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
-
-function Get-NormalizedContent {
-    param (
-        [ValidateNotNullOrEmpty()]
-        [string] $FilePath
-    )
-    $content = Get-Content $FilePath -Raw
-    # Normalize line endings to LF and trim trailing whitespace
-    $content = $content -replace "`r`n", "`n"
-    $content = $content.TrimEnd()
-    # Strip ms.date line so date-only changes are ignored during comparison
-    $content = $content -replace '(?m)^ms\.date: .+$', ''
-    return $content
-}
-
-function Get-DeterministicGuid {
-    param (
-        [ValidateNotNullOrEmpty()]
-        [string] $InputString
-    )
-    $bytes = [System.Text.Encoding]::UTF8.GetBytes($InputString)
-    $sha256 = [System.Security.Cryptography.SHA256]::Create()
-    try {
-        $hash = $sha256.ComputeHash($bytes)
-        return [guid]::new([byte[]]$hash[0..15]).ToString()
-    } finally {
-        $sha256.Dispose()
-    }
-}
-
 function Set-Help {
     param (
         [ValidateNotNullOrEmpty()]
@@ -86,11 +56,10 @@ function Start-GraphHelp {
     $ModulePrefix = "Microsoft.Graph"
     $AuthPath = "$ModulePrefix.Authentication"
     $AuthDestination = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" $AuthPath
+    Get-ChildItem -Path $AuthDestination * -File -Recurse | foreach { $_.Delete() }
     
     Import-Module Microsoft.Graph.Authentication -Global
     $GraphMapping = Get-GraphMapping 
-    $TempAuthDir = Join-Path ([System.IO.Path]::GetTempPath()) "GraphDocsTempAuth_$([guid]::NewGuid().ToString('N'))"
-    New-Item -Path $TempAuthDir -ItemType Directory -Force | Out-Null
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
         $profilePath = "graph-powershell-1.0"
@@ -98,34 +67,10 @@ function Start-GraphHelp {
             $profilePath = "graph-powershell-beta"
         }
 
-        # Generate all auth module docs to temp directory using module-level generation
-        Set-Help -ModuleDocsPath $TempAuthDir -Command "Connect-MgGraph" -Module "Microsoft.Graph.Authentication"
-
-        # Compare and copy all generated auth files
-        $TempAuthModuleDir = Join-Path $TempAuthDir $AuthPath
-        if (Test-Path $TempAuthModuleDir) {
-            if (-not (Test-Path $AuthDestination)) {
-                New-Item -Path $AuthDestination -ItemType Directory -Force | Out-Null
-            }
-            Get-ChildItem -Path $TempAuthModuleDir -Filter "*.md" -File | ForEach-Object {
-                $tempFile = $_.FullName
-                $existingFile = Join-Path $AuthDestination $_.Name
-                if (Test-Path $existingFile) {
-                    $existingContent = Get-NormalizedContent -FilePath $existingFile
-                    $newContent = Get-NormalizedContent -FilePath $tempFile
-                    if ($existingContent -ne $newContent) {
-                        Copy-Item -Path $tempFile -Destination $existingFile -Force
-                        Write-Host "Updated auth doc: $($_.BaseName)"
-                    }
-                } else {
-                    Copy-Item -Path $tempFile -Destination $existingFile -Force
-                    Write-Host "Added auth doc: $($_.BaseName)"
-                }
-            }
-        }
+        $AuthenticationDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\graph-powershell-1.0"
+        Set-Help -ModuleDocsPath $AuthenticationDocsPath -Command "Connect-MgGraph" -Module "Microsoft.Graph.Authentication" 
          Get-FolderByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    Remove-Item -Path $TempAuthDir -Recurse -Force -ErrorAction SilentlyContinue
     git config --global user.email "GraphTooling@service.microsoft.com"
     git config --global user.name "Microsoft Graph DevX Tooling"
     git add .
@@ -144,11 +89,7 @@ function Get-FolderByProfile {
         $ModulesToGenerate = @()
     )
     $CommandMetadataContent = Get-Content $CmdletMetadataPath | ConvertFrom-Json
-
-    # Create a single temp directory for this profile's generation
-    $TempOutputDir = Join-Path ([System.IO.Path]::GetTempPath()) "GraphDocsTemp_$([guid]::NewGuid().ToString('N'))"
-    New-Item -Path $TempOutputDir -ItemType Directory -Force | Out-Null
-
+   
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         Write-Host $ModuleName
@@ -163,104 +104,52 @@ function Get-FolderByProfile {
         if (-not(Test-Path $Destination)) {
             New-Item -Path $Destination -ItemType Directory
         }
-
+            
+        Get-ChildItem -Path $Destination * -File -Recurse | foreach { $_.Delete() }
         $CmdletCount = 0
-        $MetadataCommands = @{}
-
-        # Generate table of contents for each module using a deterministic GUID
+        # Generate table of contents for each module
         $TocFileName = "$Path.md"
-        $ModuleGuid = Get-DeterministicGuid -InputString $Path
+        $ModuleGuid = [guid]::NewGuid().ToString()
         $LinkProfile = $GraphProfile.Replace("v", "")
         $LinkModuleName = $Path.ToLower()
         $HelpVersion = "1.0.0.0"
         $HelpLocale = "en-US"
-        $DownloadLink = "https://learn.microsoft.com/en-us/powershell/module/$LinkModuleName/?view=graph-powershell-$LinkProfile"
-
-        # Build TOC content in memory to compare before writing
-        $TocContent = @()
-        $TocContent += "---"
-        $TocContent += "Module Name: $Path"
-        $TocContent += "Module Guid: $ModuleGuid"
-        $TocContent += "Download Help Link: $DownloadLink"
-        $TocContent += "Help Version: $HelpVersion"
-        $TocContent += "Locale: $HelpLocale"
-        $TocContent += "---"
-        $TocContent += ""
-        $TocContent += "# $Path Module"
-        $TocContent += "## Description"
-        $TocContent += "Microsoft Graph PowerShell Cmdlets"
-        $TocContent += ""
-        $TocContent += "## $Path Cmdlets"
-
+        $DownloadLink = "https://learn.microsoft.com/en-us/powershell/module/$LinkModuleName/?view=graph-powershell-$LinkProfile"  
+        New-Item -Path $Destination -Name $TocFileName -ItemType File -Force
+        Add-Content -Path $Destination\$TocFileName -Value "---"
+        Add-Content -Path $Destination\$TocFileName -Value "Module Name: $Path"
+        Add-Content -Path $Destination\$TocFileName -Value "Module Guid: $ModuleGuid"
+        Add-Content -Path $Destination\$TocFileName -Value "Download Help Link: $DownloadLink"
+        Add-Content -Path $Destination\$TocFileName -Value "Help Version: $HelpVersion"
+        Add-Content -Path $Destination\$TocFileName -Value "Locale: $HelpLocale"
+        Add-Content -Path $Destination\$TocFileName -Value "---"
+        Add-Content -Path $Destination\$TocFileName -Value ""
+        Add-Content -Path $Destination\$TocFileName -Value "# $Path Module"
+        Add-Content -Path $Destination\$TocFileName -Value "## Description"
+        Add-Content -Path $Destination\$TocFileName -Value "Microsoft Graph PowerShell Cmdlets"
+        Add-Content -Path $Destination\$TocFileName -Value ""
+        Add-Content -Path $Destination\$TocFileName -Value "## $Path Cmdlets"
         $CommandMetadataContent | Where-Object { $_.Module -eq $ModName -and $_.ApiVersion -eq $GraphProfile } | ForEach-Object {
             $Command = $_.Command
-            $MetadataCommands[$Command] = $true
             $CmdletDocsPath = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path "$Command.md"
-
-            # Generate to temp directory and compare with existing
-            if (Get-Command -Name $Command -ErrorAction SilentlyContinue) {
-                Set-Help -ModuleDocsPath $TempOutputDir -Command $Command -Module $Path
-                $TempFilePath = Join-Path $TempOutputDir $Path "$Command.md"
-                if (Test-Path $TempFilePath) {
-                    if (Test-Path $CmdletDocsPath) {
-                        $existingContent = Get-NormalizedContent -FilePath $CmdletDocsPath
-                        $newContent = Get-NormalizedContent -FilePath $TempFilePath
-                        if ($existingContent -ne $newContent) {
-                            Copy-Item -Path $TempFilePath -Destination $CmdletDocsPath -Force
-                            Write-Host "Updated: $Command"
-                        }
-                    } else {
-                        Copy-Item -Path $TempFilePath -Destination $CmdletDocsPath -Force
-                        Write-Host "Added: $Command"
-                    }
+            if (-not(Test-Path $CmdletDocsPath)) {
+                if (Get-Command -Name $Command -ErrorAction SilentlyContinue) {
+                    Set-Help -ModuleDocsPath $DocsDestination -Command $Command -Module $Path
+                } else {
+                    Write-Warning "Cmdlet $Command is not available."
                 }
-            } elseif (-not (Test-Path $CmdletDocsPath)) {
-                Write-Warning "Cmdlet $Command is not available."
+                
             }
-
-            $TocContent += "### [$Command]($Command.md)"
-            $TocContent += ""
+            Add-Content -Path $Destination\$TocFileName -Value "### [$Command]($Command.md)"
+            Add-Content -Path $Destination\$TocFileName -Value ""
             $CmdletCount++
         }
-
-        if ($CmdletCount -eq 0) {
+        if($CmdletCount -eq 0){
             Remove-Item -LiteralPath $Destination -Force -Recurse
-        } else {
-            # Only write TOC if content has changed
-            $TocFilePath = Join-Path $Destination $TocFileName
-            $newTocText = ($TocContent -join "`r`n") + "`r`n"
-            if (Test-Path $TocFilePath) {
-                $existingTocText = Get-Content $TocFilePath -Raw
-                # Normalize both to LF for comparison
-                $existingNormalized = $existingTocText -replace "`r`n", "`n"
-                $newNormalized = $newTocText -replace "`r`n", "`n"
-                if ($existingNormalized.TrimEnd() -ne $newNormalized.TrimEnd()) {
-                    $newTocText | Out-File $TocFilePath -Encoding UTF8 -NoNewline
-                    Write-Host "Updated TOC: $TocFileName"
-                }
-            } else {
-                $newTocText | Out-File $TocFilePath -Encoding UTF8 -NoNewline
-                Write-Host "Added TOC: $TocFileName"
-            }
-
-            # Remove orphaned docs — files for commands no longer in metadata
-            Get-ChildItem -Path $Destination -Filter "*.md" -File | Where-Object {
-                $cmdName = $_.BaseName
-                -not $MetadataCommands.ContainsKey($cmdName) -and $_.Name -ne $TocFileName
-            } | ForEach-Object {
-                Write-Host "Removing orphaned doc: $($_.Name)"
-                Remove-Item $_.FullName -Force
-            }
         }
 
-        # Clean up temp module folder for this iteration
-        $TempModuleDir = Join-Path $TempOutputDir $Path
-        if (Test-Path $TempModuleDir) {
-            Remove-Item -Path $TempModuleDir -Recurse -Force -ErrorAction SilentlyContinue
-        }
     }
-
-    Remove-Item -Path $TempOutputDir -Recurse -Force -ErrorAction SilentlyContinue
+   
 }
 # Install PlatyPS
 Install-Module -Name Microsoft.PowerShell.PlatyPS -Force
