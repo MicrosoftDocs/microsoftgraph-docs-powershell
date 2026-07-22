@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlace
 ---
@@ -52,6 +52,91 @@ This cmdlet has the following aliases,
 
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Place.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Place.ReadWrite.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.building"
+	displayName = "B001"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.floor"
+	displayName = "F1"
+	parentId = "767a31a7-6987-41c9-b829-ab351b8aab53"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+### EXAMPLE 3
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.section"
+	displayName = "S1"
+	parentId = "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+### EXAMPLE 4
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.desk"
+	displayName = "D1"
+	parentId = "1ad0f725-6885-49c5-9a47-3b22a1f9409d"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+### EXAMPLE 5
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.room"
+	displayName = "Conf Room 4/3.3G11"
+	parentId = "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
+	bookingType = "standard"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+### EXAMPLE 6
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.workspace"
+	parentId = "f7de7265-e420-47b4-9d49-28d728716241"
+	displayName = "testSpace001"
+	tags = @(
+	"test"
+)
+}
+
+New-MgBetaPlace -BodyParameter $params
 
 ## PARAMETERS
 
@@ -683,7 +768,6 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 - [New-MgBetaPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-beta)
-
 
 
 

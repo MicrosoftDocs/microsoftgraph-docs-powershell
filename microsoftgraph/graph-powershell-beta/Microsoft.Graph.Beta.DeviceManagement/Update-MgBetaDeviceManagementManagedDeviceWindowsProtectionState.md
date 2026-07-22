@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicewindowsprotectionstate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState
 ---
@@ -25,7 +25,8 @@ Update the navigation property windowsProtectionState in deviceManagement
 ```
 Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -ManagedDeviceId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AntiMalwareVersion <string>] [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
+ [-AntiMalwareVersion <string>] [-ControlledConfigurationEnabled]
+ [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
  [-DeviceState <WindowsDeviceHealthState>] [-EngineVersion <string>] [-FullScanOverdue]
  [-FullScanRequired] [-Id <string>] [-IsVirtualMachine] [-LastFullScanDateTime <datetime>]
  [-LastFullScanSignatureVersion <string>] [-LastQuickScanDateTime <datetime>]
@@ -54,6 +55,7 @@ Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState -ManagedDeviceI
 Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState
  -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AntiMalwareVersion <string>]
+ [-ControlledConfigurationEnabled]
  [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
  [-DeviceState <WindowsDeviceHealthState>] [-EngineVersion <string>] [-FullScanOverdue]
  [-FullScanRequired] [-Id <string>] [-IsVirtualMachine] [-LastFullScanDateTime <datetime>]
@@ -204,6 +206,34 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ControlledConfigurationEnabled
+
+When TRUE indicates the Windows Defender controlled configuration feature is enabled, when FALSE indicates the Windows Defender controlled configuration feature is not enabled.
+Defaults to setting on client device.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -1056,6 +1086,8 @@ BODYPARAMETER `<IMicrosoftGraphWindowsProtectionState>`: Device protection statu
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [AntiMalwareVersion <String>]: Current anti malware version
+  [ControlledConfigurationEnabled <Boolean?>]: When TRUE indicates the Windows Defender controlled configuration feature is enabled, when FALSE indicates the Windows Defender controlled configuration feature is not enabled.
+Defaults to setting on client device.
   [DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]: Device malware list
     [Id <String>]: The unique identifier for an entity.
 Read-only.

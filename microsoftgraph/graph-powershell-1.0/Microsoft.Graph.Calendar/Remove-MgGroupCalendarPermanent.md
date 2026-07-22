@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgGroupCalendarPermanent
 ---
@@ -13,8 +13,7 @@ title: Remove-MgGroupCalendarPermanent
 
 ## SYNOPSIS
 
-Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
-For more information about item retention, see Configure deleted item retention and recoverable items quotas.
+Invoke action permanentDelete
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupCalendarPermanent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarPermanent?view=graph-powershell-beta)
@@ -48,8 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
-For more information about item retention, see Configure deleted item retention and recoverable items quotas.
+Invoke action permanentDelete
 
 ## PARAMETERS
 
@@ -384,7 +382,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgGroupCalendarPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-1.0)
 
 
 

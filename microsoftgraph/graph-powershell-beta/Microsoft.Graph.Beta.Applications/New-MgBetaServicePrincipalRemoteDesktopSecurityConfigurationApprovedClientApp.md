@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
@@ -13,7 +13,8 @@ title: New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClien
 
 ## SYNOPSIS
 
-Create new navigation property to approvedClientApps for servicePrincipals
+Create a new approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
+You can configure a maximum of 20 approved client apps.
 
 ## SYNTAX
 
@@ -68,7 +69,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create new navigation property to approvedClientApps for servicePrincipals
+Create a new approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
+You can configure a maximum of 20 approved client apps.
 
 **Permissions**
 
@@ -180,7 +182,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+Display name for the client application.
 
 ```yaml
 Type: System.String
@@ -496,7 +498,7 @@ BODYPARAMETER `<IMicrosoftGraphApprovedClientApp>`: approvedClientApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DisplayName <String>]: 
+  [DisplayName <String>]: Display name for the client application.
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of application
@@ -540,6 +542,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-post-approvedclientapps?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfolder
 Locale: en-US
 Module Name: Microsoft.Graph.PersonalContacts
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserContactFolderChildFolder
 ---
@@ -778,7 +778,9 @@ Read-only.
 Read-only.
       [Width <Int32?>]: The width of the photo.
 Read-only.
+    [PrimaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [Profession <String>]: The contact's profession.
+    [SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -787,6 +789,7 @@ Read-only.
       [Value <String>]: A property value.
     [SpouseName <String>]: The name of the contact's spouse/partner.
     [Surname <String>]: The contact's surname.
+    [TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [Title <String>]: The contact's title.
     [YomiCompanyName <String>]: The phonetic Japanese company name of the contact.
     [YomiGivenName <String>]: The phonetic Japanese given name (first name) of the contact.
@@ -884,7 +887,9 @@ Read-only.
 Read-only.
       [Width <Int32?>]: The width of the photo.
 Read-only.
+    [PrimaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [Profession <String>]: The contact's profession.
+    [SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -893,6 +898,7 @@ Read-only.
       [Value <String>]: A property value.
     [SpouseName <String>]: The name of the contact's spouse/partner.
     [Surname <String>]: The contact's surname.
+    [TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [Title <String>]: The contact's title.
     [YomiCompanyName <String>]: The phonetic Japanese company name of the contact.
     [YomiGivenName <String>]: The phonetic Japanese given name (first name) of the contact.
@@ -980,7 +986,9 @@ Read-only.
 Read-only.
     [Width <Int32?>]: The width of the photo.
 Read-only.
+  [PrimaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [Profession <String>]: The contact's profession.
+  [SecondaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
@@ -989,6 +997,7 @@ Read-only.
     [Value <String>]: A property value.
   [SpouseName <String>]: The name of the contact's spouse/partner.
   [Surname <String>]: The contact's surname.
+  [TertiaryEmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
   [Title <String>]: The contact's title.
   [YomiCompanyName <String>]: The phonetic Japanese company name of the contact.
   [YomiGivenName <String>]: The phonetic Japanese given name (first name) of the contact.

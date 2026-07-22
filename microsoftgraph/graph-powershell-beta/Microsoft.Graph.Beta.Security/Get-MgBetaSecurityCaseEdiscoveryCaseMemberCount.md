@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasemembercount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityCaseEdiscoveryCaseMemberCount
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseMemberCount
 ## SYNOPSIS
 
 Get the number of the resource
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseMemberCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseMemberCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 

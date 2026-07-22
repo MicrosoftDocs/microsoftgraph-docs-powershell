@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserSetting
 ---
@@ -51,9 +51,9 @@ Get settings from users
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read.All, User.ReadWrite.All,  |
+| Delegated (work or school account) | User.Read.All, User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.Read.All, User.ReadWrite.All,  |
+| Application | User.Read.All, User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

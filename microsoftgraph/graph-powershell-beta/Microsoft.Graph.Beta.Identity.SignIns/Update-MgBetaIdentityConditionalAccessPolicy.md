@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccesspolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityConditionalAccessPolicy
 ---
@@ -859,9 +859,10 @@ Supports $filter (eq, ne, not , and in).
       [PolicyType <String>]: authenticationStrengthPolicyType
       [RequirementsSatisfied <String>]: authenticationStrengthRequirements
     [BuiltInControls <String[]>]: List of values of built-in controls required by the policy.
-Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
+Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue, riskRemediation.
+Use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: riskRemediation.
     [CustomAuthenticationFactors <String[]>]: List of custom controls IDs required by the policy.
-To learn more about custom control, see Custom controls (preview).
+For more information, see Custom controls.
     [Operator <String>]: Defines the relationship of the grant controls.
 Possible values: AND, OR.
     [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.
@@ -1012,9 +1013,10 @@ Supports $filter (eq, ne, not , and in).
     [PolicyType <String>]: authenticationStrengthPolicyType
     [RequirementsSatisfied <String>]: authenticationStrengthRequirements
   [BuiltInControls <String[]>]: List of values of built-in controls required by the policy.
-Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
+Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue, riskRemediation.
+Use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: riskRemediation.
   [CustomAuthenticationFactors <String[]>]: List of custom controls IDs required by the policy.
-To learn more about custom control, see Custom controls (preview).
+For more information, see Custom controls.
   [Operator <String>]: Defines the relationship of the grant controls.
 Possible values: AND, OR.
   [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.

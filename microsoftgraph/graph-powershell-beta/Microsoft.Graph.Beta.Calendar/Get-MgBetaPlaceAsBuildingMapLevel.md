@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmaplevel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlaceAsBuildingMapLevel
 ---
@@ -575,6 +575,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Get-MgBetaPlaceAsBuildingMapLevel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmaplevel)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/buildingmap-list-levels?view=graph-rest-beta)
+
 
 
 

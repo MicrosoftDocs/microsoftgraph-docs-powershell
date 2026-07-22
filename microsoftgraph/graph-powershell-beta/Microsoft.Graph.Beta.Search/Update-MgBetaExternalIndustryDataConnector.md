@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaExternalIndustryDataConnector
 ---
@@ -84,8 +84,8 @@ Update the properties of an azureDataLakeConnector object.
 Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
-	"@odata.type" = "microsoft.graph.industryData.oneRosterApiDataConnector"
-	displayName = "One Roster Connector"
+	"@odata.type" = "microsoft.graph.industryData.azureDataLakeConnector"
+	displayName = "CSV files from SIS"
 }
 
 Update-MgBetaExternalIndustryDataConnector -IndustryDataConnectorId $industryDataConnectorId -BodyParameter $params

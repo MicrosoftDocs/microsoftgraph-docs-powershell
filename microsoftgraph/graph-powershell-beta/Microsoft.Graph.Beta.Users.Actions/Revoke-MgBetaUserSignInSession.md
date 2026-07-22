@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetausersigninsession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Revoke-MgBetaUserSignInSession
 ---
@@ -60,9 +60,9 @@ If this happens, the application will need to acquire a new refresh token by mak
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.RevokeSessions.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | User.RevokeSessions.All, User.ReadWrite.All, Directory.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.RevokeSessions.All, User.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | User.RevokeSessions.All, User.ReadWrite.All, Directory.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

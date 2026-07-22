@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannertask
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBusinessScenarioPlannerTask
 ---
@@ -35,8 +35,9 @@ New-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId <string>
  [-Details <IMicrosoftGraphPlannerTaskDetails>] [-DueDateTime <datetime>] [-HasChat]
  [-HasDescription] [-Id <string>] [-IsArchived] [-IsOnMyDay] [-IsOnMyDayLastModifiedDate <datetime>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-OrderHint <string>] [-PercentComplete <int>] [-PlanId <string>] [-PreviewType <string>]
- [-Priority <int>] [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
+ [-Messages <IMicrosoftGraphPlannerTaskChatMessage[]>] [-OrderHint <string>]
+ [-PercentComplete <int>] [-PlanId <string>] [-PreviewType <string>] [-Priority <int>]
+ [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <int>]
  [-SpecifiedCompletionRequirements <string>] [-StartDateTime <datetime>]
  [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <string>] [-Break]
@@ -73,8 +74,9 @@ New-MgBetaSolutionBusinessScenarioPlannerTask -InputObject <IBusinessScenarioIde
  [-Details <IMicrosoftGraphPlannerTaskDetails>] [-DueDateTime <datetime>] [-HasChat]
  [-HasDescription] [-Id <string>] [-IsArchived] [-IsOnMyDay] [-IsOnMyDayLastModifiedDate <datetime>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-OrderHint <string>] [-PercentComplete <int>] [-PlanId <string>] [-PreviewType <string>]
- [-Priority <int>] [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
+ [-Messages <IMicrosoftGraphPlannerTaskChatMessage[]>] [-OrderHint <string>]
+ [-PercentComplete <int>] [-PlanId <string>] [-PreviewType <string>] [-Priority <int>]
+ [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <int>]
  [-SpecifiedCompletionRequirements <string>] [-StartDateTime <datetime>]
  [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <string>] [-Break]
@@ -777,7 +779,9 @@ HelpMessage: ''
 
 ### -HasChat
 
-
+Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -806,7 +810,7 @@ HelpMessage: ''
 
 Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1090,10 +1094,40 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Messages
+
+Read-only.
+Nullable.
+Chat messages associated with the task.
+To construct, see NOTES section for MESSAGES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskChatMessage[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -OrderHint
 
 The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
 
 ```yaml
 Type: System.String
@@ -1706,10 +1740,12 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  [HasChat <Boolean?>]: 
+  [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
   [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
   [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -1719,8 +1755,34 @@ If true, it shows the task.
 The date on which task is added to or removed from MyDay.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: 
+  [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [DeletedDateTime <DateTime?>]: 
+    [EditedDateTime <DateTime?>]: 
+    [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+      [MentionType <String>]: plannerTaskChatMentionType
+      [Mentioned <String>]: The ID of the mentioned user.
+      [Position <Int32?>]: The zero-based position of the mention in the message content.
+    [MessageType <String>]: plannerTaskChatMessageType
+    [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+    [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+      [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+        [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
   [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
   [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
   [PlanId <String>]: Plan ID to which the task belongs.
@@ -1912,6 +1974,7 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [UniqueName <String>]: Alternate key of businessScenario
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
@@ -1925,6 +1988,43 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
+
+MESSAGES <IMicrosoftGraphPlannerTaskChatMessage[]>: Read-only.
+Nullable.
+Chat messages associated with the task.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Application <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [DeletedDateTime <DateTime?>]: 
+  [EditedDateTime <DateTime?>]: 
+  [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+    [MentionType <String>]: plannerTaskChatMentionType
+    [Mentioned <String>]: The ID of the mentioned user.
+    [Position <Int32?>]: The zero-based position of the mention in the message content.
+  [MessageType <String>]: plannerTaskChatMessageType
+  [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+  [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+    [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
 
 PROGRESSTASKBOARDFORMAT `<IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>`: plannerProgressTaskBoardTaskFormat
   [(Any) <Object>]: This indicates any property can be added to this object.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevel
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceAsBuildingMapLevel
 ---
@@ -572,6 +572,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Get-MgPlaceAsBuildingMapLevel](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevel)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/buildingmap-list-levels?view=graph-rest-1.0)
+
 
 
 

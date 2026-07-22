@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationexternalauthenticationmethodcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserAuthenticationExternalAuthenticationMethodCount
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaUserAuthenticationExternalAuthenticationMethodCount
 ## SYNOPSIS
 
 Get the number of the resource
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationExternalAuthenticationMethodCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationExternalAuthenticationMethodCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 

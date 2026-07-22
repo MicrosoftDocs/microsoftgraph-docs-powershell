@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainvitedriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaInviteDriveItem
 ---
@@ -87,7 +87,7 @@ A sharing invitation provides permissions to the recipients and, optionally, sen
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Send a sharing invitation
 
 ```powershell
 
@@ -112,7 +112,37 @@ expirationDateTime = "2018-07-15T14:00:00.000Z"
 Invoke-MgBetaInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```
-This example shows how to use the Invoke-MgBetaInviteDriveItem Cmdlet.
+This example will send a sharing invitation
+
+### Example 2: Send sharing invitation with partial success
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+$params = @{
+	recipients = @(
+		@{
+			email = "helga@contoso.com"
+		}
+		@{
+			email = "robin@contoso.org"
+		}
+	)
+	message = "Here's the file that we're collaborating on."
+	requireSignIn = $true
+	sendInvitation = $true
+	roles = @(
+	"write"
+)
+password = "password123"
+expirationDateTime = "2018-07-15T14:00:00.000Z"
+}
+
+Invoke-MgBetaInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example will send sharing invitation with partial success
 
 
 ## PARAMETERS

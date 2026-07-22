@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUser
 ---
@@ -72,9 +72,9 @@ Customers through Microsoft Entra ID for customers can also use this API operati
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadBasic.All, DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, User.Read, User.Read.All, User.ReadWrite, User.ReadWrite.All,  |
+| Delegated (work or school account) | User.ReadBasic.All, AgentIdUser.ReadWrite.IdentityParentedBy, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementApps.Read.All, User.ReadWrite.All, User.ReadWrite, User.Read.All, User.Read, Directory.ReadWrite.All, AgentIdUser.ReadWrite.All, Directory.Read.All, DeviceManagementServiceConfig.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementApps.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
-| Application | User.ReadBasic.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, User.Read.All, User.ReadWrite.All, User.ReadWrite.CrossCloud, DeviceManagementApps.Read.All,  |
+| Application | User.ReadBasic.All, DeviceManagementManagedDevices.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.Read.All, User.ReadWrite.CrossCloud, DeviceManagementServiceConfig.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, User.Read.All, User.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, AgentIdUser.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Get the list of all the users

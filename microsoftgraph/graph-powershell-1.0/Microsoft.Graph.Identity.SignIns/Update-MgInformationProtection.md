@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgInformationProtection
 ---
@@ -394,7 +394,7 @@ Not nullable.
     [DeviceId <String>]: Identifier of the device the BitLocker key is originally backed up from.
 Supports $filter (eq).
     [Key <String>]: The BitLocker recovery key.
-Returned only on $select.
+Requires $select to retrieve.
 Not nullable.
     [VolumeType <String>]: volumeType
 
@@ -412,7 +412,7 @@ Not nullable.
       [DeviceId <String>]: Identifier of the device the BitLocker key is originally backed up from.
 Supports $filter (eq).
       [Key <String>]: The BitLocker recovery key.
-Returned only on $select.
+Requires $select to retrieve.
 Not nullable.
       [VolumeType <String>]: volumeType
   [ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>]: 

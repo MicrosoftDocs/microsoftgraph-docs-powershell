@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentresourcedependentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassAssignmentResourceDependentResource
 ---
@@ -630,6 +630,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Get-MgEducationClassAssignmentResourceDependentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentresourcedependentresource)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignmentresource-list-dependentresources?view=graph-rest-1.0)
+
 
 
 

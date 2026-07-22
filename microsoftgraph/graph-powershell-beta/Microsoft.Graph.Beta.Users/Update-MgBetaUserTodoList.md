@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolist
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserTodoList
 ---
@@ -26,6 +26,7 @@ Update the navigation property lists in users
 Update-MgBetaUserTodoList -TodoTaskListId <string> -UserId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Id <string>] [-IsOwner] [-IsShared]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]
  [-Tasks <IMicrosoftGraphTodoTask[]>] [-WellknownListName <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -48,6 +49,7 @@ Update-MgBetaUserTodoList -TodoTaskListId <string> -UserId <string>
 Update-MgBetaUserTodoList -InputObject <IUsersIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-DisplayName <string>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Id <string>] [-IsOwner] [-IsShared]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]
  [-Tasks <IMicrosoftGraphTodoTask[]>] [-WellknownListName <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -513,6 +515,36 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SingleValueExtendedProperties
+
+The collection of single-value extended properties defined for the task list.
+Read-only.
+Nullable.
+To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSingleValueExtendedProperty[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Tasks
 
 The tasks in this task list.
@@ -691,6 +723,12 @@ Nullable.
 Read-only.
   [IsOwner <Boolean?>]: True if the user is owner of the given task list.
   [IsShared <Boolean?>]: True if the task list is shared with other users
+  [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: The collection of single-value extended properties defined for the task list.
+Read-only.
+Nullable.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Value <String>]: The value of the property.
   [Tasks <IMicrosoftGraphTodoTask[]>]: The tasks in this task list.
 Read-only.
 Nullable.
@@ -793,9 +831,6 @@ Required.
         [Type <String>]: recurrenceRangeType
     [ReminderDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: A collection of custom fields linked to the task.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [Value <String>]: The value of the property.
     [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [Status <String>]: taskStatus
     [Title <String>]: A brief description of the task.
@@ -839,6 +874,13 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WindowsSettingInstanceId <String>]: The unique identifier of windowsSettingInstance
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
+
+SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueExtendedProperty[]>: The collection of single-value extended properties defined for the task list.
+Read-only.
+Nullable.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Value <String>]: The value of the property.
 
 TASKS <IMicrosoftGraphTodoTask[]>: The tasks in this task list.
 Read-only.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdescendantplace
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgDescendantPlace
 ---
@@ -53,9 +53,9 @@ Invoke function descendants
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.Read.All,  |
+| Delegated (work or school account) | Place.Read.All, Place.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Place.Read.All,  |
+| Application | Place.Read.All, Place.ReadWrite.All,  |
 
 ## PARAMETERS
 

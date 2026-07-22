@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityAlertV2
 ---
@@ -25,8 +25,8 @@ Update the properties of an alert object in an organization based on the specifi
 ```
 Update-MgSecurityAlertV2 -AlertId <string> [-ResponseHeadersVariable <string>]
  [-ActorDisplayName <string>] [-AdditionalData <hashtable>] [-AdditionalProperties <hashtable>]
- [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Category <string>]
- [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
+ [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Categories <string[]>]
+ [-Category <string>] [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
  [-CreatedDateTime <datetime>] [-CustomDetails <hashtable>] [-Description <string>]
  [-DetectionSource <string>] [-DetectorId <string>] [-Determination <string>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <datetime>]
@@ -56,8 +56,8 @@ Update-MgSecurityAlertV2 -AlertId <string> -BodyParameter <IMicrosoftGraphSecuri
 ```
 Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <string>]
  [-ActorDisplayName <string>] [-AdditionalData <hashtable>] [-AdditionalProperties <hashtable>]
- [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Category <string>]
- [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
+ [-AlertPolicyId <string>] [-AlertWebUrl <string>] [-AssignedTo <string>] [-Categories <string[]>]
+ [-Category <string>] [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
  [-CreatedDateTime <datetime>] [-CustomDetails <hashtable>] [-Description <string>]
  [-DetectionSource <string>] [-DetectorId <string>] [-Determination <string>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <datetime>]
@@ -349,6 +349,33 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Categories
+
+
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -1437,6 +1464,7 @@ Read-only.
   [AlertPolicyId <String>]: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
   [AlertWebUrl <String>]: URL for the Microsoft 365 Defender portal alert page.
   [AssignedTo <String>]: Owner of the alert, or null if no owner is assigned.
+  [Categories <String[]>]: 
   [Category <String>]: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
   [Classification <String>]: alertClassification

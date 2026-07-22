@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoredriveprotectionunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreDriveProtectionUnit
 ---
@@ -24,9 +24,10 @@ Create new navigation property to driveProtectionUnits for solutions
 
 ```
 New-MgBetaSolutionBackupRestoreDriveProtectionUnit [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <datetime>] [-DirectoryObjectId <string>] [-Error <IMicrosoftGraphPublicError>]
- [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
+ [-AdditionalProperties <hashtable>] [-BackupRetentionPeriodInDays <int>]
+ [-BillingPolicyId <string>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
+ [-DirectoryObjectId <string>] [-Error <IMicrosoftGraphPublicError>] [-Id <string>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
  [-OffboardRequestedDateTime <datetime>] [-PolicyId <string>] [-ProtectionSources <string>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -60,6 +61,48 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BackupRetentionPeriodInDays
+
+The retention period of the backup, in days.
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BillingPolicyId
+
+The unique identifier of the billing policy assigned to the protection unit for cost allocation.
+
+```yaml
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -577,6 +620,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphDriveProtectionUnit>`: driveProtectionUnit
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
+  [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity

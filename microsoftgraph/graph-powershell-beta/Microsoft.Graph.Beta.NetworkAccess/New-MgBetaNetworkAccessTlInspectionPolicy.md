@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlinspectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessTlInspectionPolicy
 ---
@@ -58,8 +58,9 @@ Create a new tlsInspectionPolicy object.
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -72,6 +73,10 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessTlInspectionPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaNetworkAccessTlInspectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

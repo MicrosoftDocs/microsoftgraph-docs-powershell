@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityCaseEdiscoveryCaseSetting
 ---
@@ -91,16 +91,26 @@ Update the properties of an ediscoveryCaseSettings object.
 Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.security.ediscoveryCaseSettings"
+	"@odata.type" = "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/settings/$entity"
 	redundancyDetection = @{
-		"@odata.type" = "microsoft.graph.security.redundancyDetectionSettings"
+		isEnabled = $true
+		similarityThreshold = 65
+		minWords = 10
+		maxWords = 500000
 	}
 	topicModeling = @{
-		"@odata.type" = "microsoft.graph.security.topicModelingSettings"
+		isEnabled = $false
+		ignoreNumbers = $true
+		topicCount = 100
+		dynamicallyAdjustTopicCount = $true
 	}
 	ocr = @{
-		"@odata.type" = "microsoft.graph.security.ocrSettings"
+		isEnabled = $false
+		maxImageSize = 24576
+		timeout = "PT1M"
 	}
+	caseType = "standard"
+	reviewSetSettings = "disableGrouping"
 }
 
 Update-MgBetaSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params

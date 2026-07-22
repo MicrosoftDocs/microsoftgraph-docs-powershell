@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleiteminsight
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAdminPeopleItemInsight
 ---
@@ -44,7 +44,7 @@ To learn how to customize the privacy of item insights in an organization, see C
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.ReadWrite.All, User.ReadWrite, User.Read.All, PeopleSettings.ReadWrite.All, PeopleSettings.Read.All,  |
+| Delegated (work or school account) | User.Read, User.ReadWrite.All, User.ReadWrite, User.Read.All, PeopleSettings.ReadWrite.All, PeopleSettings.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
 

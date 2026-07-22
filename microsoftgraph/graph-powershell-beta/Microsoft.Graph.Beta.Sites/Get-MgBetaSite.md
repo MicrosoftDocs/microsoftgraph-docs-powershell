@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasite
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSite
 ---
@@ -73,7 +73,18 @@ Retrieve properties and relationships for a site resource.\rA site resource repr
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSite -Search '"{query}"' 
+Get-MgBetaSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null" 
+
+```
+This example shows how to use the Get-MgBetaSite Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSite
 
 ```
 This example shows how to use the Get-MgBetaSite Cmdlet.

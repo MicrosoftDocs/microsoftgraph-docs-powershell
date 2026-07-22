@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgChat
 ---
@@ -28,7 +28,8 @@ New-MgChat [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable
  [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>] [-IsHiddenForAllMembers]
  [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <datetime>]
  [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage[]>]
- [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
+ [-MigrationMode <string>] [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
+ [-OriginalCreatedDateTime <datetime>]
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]
  [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
  [-TenantId <string>] [-Topic <string>] [-Viewpoint <IMicrosoftGraphChatViewpoint>]
@@ -588,6 +589,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -MigrationMode
+
+migrationMode
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -OnlineMeetingInfo
 
 teamworkOnlineMeetingInfo
@@ -595,6 +617,27 @@ To construct, see NOTES section for ONLINEMEETINGINFO properties and create a ha
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkOnlineMeetingInfo
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -OriginalCreatedDateTime
+
+
+
+```yaml
+Type: System.DateTime
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1102,6 +1145,7 @@ ID of the parent chat message or root chat message of the thread.
 Only applies to channel chat messages, not chat messages in a chat.
     [WebUrl <String>]: Read-only.
 Link to the message in Microsoft Teams.
+  [MigrationMode <String>]: migrationMode
   [OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]: teamworkOnlineMeetingInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CalendarEventId <String>]: The identifier of the calendar event associated with the meeting.
@@ -1113,6 +1157,7 @@ For example, if a user changes their display name the API might show the new val
       [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       [UserIdentityType <String>]: teamworkUserIdentityType
+  [OriginalCreatedDateTime <DateTime?>]: 
   [PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]: A collection of permissions granted to apps for the chat.
     [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.

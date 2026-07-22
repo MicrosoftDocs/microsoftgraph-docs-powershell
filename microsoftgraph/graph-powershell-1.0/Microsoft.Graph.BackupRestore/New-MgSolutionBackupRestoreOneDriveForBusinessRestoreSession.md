@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreonedriveforbusinessrestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession
 ---
@@ -28,8 +28,10 @@ New-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession [-ResponseHeadersVa
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-DriveRestoreArtifacts <IMicrosoftGraphDriveRestoreArtifact[]>]
  [-DriveRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphDriveRestoreArtifactsBulkAdditionRequest[]>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <datetime>] [-RestoreJobType <string>]
+ [-Error <IMicrosoftGraphPublicError>]
+ [-GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>] [-Id <string>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
+ [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -259,6 +261,28 @@ To construct, see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublicError
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -GranularDriveRestoreArtifacts
+
+
+To construct, see NOTES section for GRANULARDRIVERESTOREARTIFACTS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGranularDriveRestoreArtifact[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -701,6 +725,19 @@ Future value; don't use.
 Read-only.
     [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
     [Drives <String[]>]: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
+  [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: 
+    [BrowseSessionId <String>]: 
+    [CompletionDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
+    [RestoredItemKey <String>]: 
+    [RestoredItemPath <String>]: 
+    [RestoredItemWebUrl <String>]: 
+    [StartDateTime <DateTime?>]: 
+    [Status <String>]: artifactRestoreStatus
+    [WebUrl <String>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DirectoryObjectId <String>]: 
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -833,6 +870,20 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
     [Target <String>]: The target of the error.
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
+
+GRANULARDRIVERESTOREARTIFACTS <IMicrosoftGraphGranularDriveRestoreArtifact[]>: .
+  [BrowseSessionId <String>]: 
+  [CompletionDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
+  [RestoredItemKey <String>]: 
+  [RestoredItemPath <String>]: 
+  [RestoredItemWebUrl <String>]: 
+  [StartDateTime <DateTime?>]: 
+  [Status <String>]: artifactRestoreStatus
+  [WebUrl <String>]: 
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DirectoryObjectId <String>]: 
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.

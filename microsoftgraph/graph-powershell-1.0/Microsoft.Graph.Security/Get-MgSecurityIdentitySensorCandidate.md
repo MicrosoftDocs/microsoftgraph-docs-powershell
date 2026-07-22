@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensorcandidate
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIdentitySensorCandidate
 ---
@@ -593,6 +593,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [Get-MgSecurityIdentitySensorCandidate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensorcandidate)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensorcandidates?view=graph-rest-1.0)
+
 
 
 

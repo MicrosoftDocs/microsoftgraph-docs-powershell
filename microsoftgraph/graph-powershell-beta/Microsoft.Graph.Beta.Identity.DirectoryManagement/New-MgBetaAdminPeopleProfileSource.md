@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilesource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAdminPeopleProfileSource
 ---
@@ -427,7 +427,7 @@ HelpMessage: ''
 
 ### -WebUrl
 
-Web URL of the profile source that directs users to the page view of profile data.
+Web URL of the profile source that directs users to the page view of the profile data.
 
 ```yaml
 Type: System.String
@@ -509,7 +509,7 @@ Read-only.
     [LanguageTag <String>]: Language locale.
     [WebUrl <String>]: Localized profile source URL.
   [SourceId <String>]: Profile source identifier used as an alternate key.
-  [WebUrl <String>]: Web URL of the profile source that directs users to the page view of profile data.
+  [WebUrl <String>]: Web URL of the profile source that directs users to the page view of the profile data.
 
 LOCALIZATIONS <IMicrosoftGraphProfileSourceLocalization[]>: Alternative localized labels specified by an administrator.
   [DisplayName <String>]: Localized display name.

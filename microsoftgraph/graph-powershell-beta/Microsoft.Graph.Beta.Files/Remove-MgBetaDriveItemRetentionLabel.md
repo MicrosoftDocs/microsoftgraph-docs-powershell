@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemretentionlabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaDriveItemRetentionLabel
 ---
@@ -13,7 +13,8 @@ title: Remove-MgBetaDriveItemRetentionLabel
 
 ## SYNOPSIS
 
-Remove a retention label from a driveItem.
+Remove the retention label from a driveItem.
+This operation clears the retention label and all associated retention settings enforced on the item.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
 > [!NOTE]
@@ -48,7 +49,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove a retention label from a driveItem.
+Remove the retention label from a driveItem.
+This operation clears the retention label and all associated retention settings enforced on the item.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
 ## EXAMPLES

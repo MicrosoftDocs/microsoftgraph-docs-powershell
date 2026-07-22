@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectiondatalosspreventionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaInformationProtectionDataLossPreventionPolicy
 ---
@@ -21,7 +21,8 @@ Invoke action evaluate
 
 ```
 Test-MgBetaInformationProtectionDataLossPreventionPolicy [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
+ [-AdditionalProperties <hashtable>] [-ClassifyText <IMicrosoftGraphTextClassificationRequest>]
+ [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
  [-NotificationInfo <IMicrosoftGraphDlpNotification>] [-Target <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -104,6 +105,28 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ClassifyText
+
+textClassificationRequest
+To construct, see NOTES section for CLASSIFYTEXT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTextClassificationRequest
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: EvaluateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -403,6 +426,18 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [ClassifyText <IMicrosoftGraphTextClassificationRequest>]: textClassificationRequest
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ContentMetaData <IMicrosoftGraphClassificationRequestContentMetaData>]: classificationRequestContentMetaData
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [SourceId <String>]: 
+    [FileExtension <String>]: 
+    [MatchTolerancesToInclude <String>]: mlClassificationMatchTolerance
+    [ScopesToRun <String>]: sensitiveTypeScope
+    [SensitiveTypeIds <String[]>]: 
+    [Text <String>]: 
   [EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]: dlpEvaluationInput
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CurrentLabel <IMicrosoftGraphCurrentLabel>]: currentLabel
@@ -420,6 +455,19 @@ BODYPARAMETER `<IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicr
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Author <String>]: 
   [Target <String>]: 
+
+CLASSIFYTEXT `<IMicrosoftGraphTextClassificationRequest>`: textClassificationRequest
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ContentMetaData <IMicrosoftGraphClassificationRequestContentMetaData>]: classificationRequestContentMetaData
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [SourceId <String>]: 
+  [FileExtension <String>]: 
+  [MatchTolerancesToInclude <String>]: mlClassificationMatchTolerance
+  [ScopesToRun <String>]: sensitiveTypeScope
+  [SensitiveTypeIds <String[]>]: 
+  [Text <String>]: 
 
 EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
   [(Any) <Object>]: This indicates any property can be added to this object.

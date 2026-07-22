@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityverifiedidprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityVerifiedIdProfile
 ---
@@ -627,6 +627,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [Get-MgBetaIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityverifiedidprofile)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/verifiedidprofile-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/identityverifiedidroot-list-profiles?view=graph-rest-beta)
+
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaExternalIndustryDataInboundFlow
 ---
@@ -90,7 +90,7 @@ Update the properties of an inboundApiFlow object.
 Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.industryData.inboundFileFlow"
+	"@odata.type" = "#microsoft.graph.industryData.inboundApiFlow"
 	displayName = "Updated flow name"
 }
 

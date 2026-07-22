@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClien
 
 ## SYNOPSIS
 
-Get approvedClientApps from servicePrincipals
+Read the properties and relationships of a approvedClientApp object for the remoteDesktopSecurityConfiguration object on a servicePrincipal.
 
 ## SYNTAX
 
@@ -56,7 +56,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get approvedClientApps from servicePrincipals
+Read the properties and relationships of a approvedClientApp object for the remoteDesktopSecurityConfiguration object on a servicePrincipal.
 
 **Permissions**
 
@@ -65,6 +65,14 @@ Get approvedClientApps from servicePrincipals
 | Delegated (work or school account) | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.All, Application-RemoteDesktopConfig.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, Directory.ReadWrite.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Application-RemoteDesktopConfig.ReadWrite.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId
 
 ## PARAMETERS
 
@@ -595,7 +603,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/approvedclientapp-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-list-approvedclientapps?view=graph-rest-beta)
 
 
 

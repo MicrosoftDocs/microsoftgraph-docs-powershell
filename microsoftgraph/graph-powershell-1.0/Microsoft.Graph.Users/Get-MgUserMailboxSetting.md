@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserMailboxSetting
 ---
@@ -15,7 +15,7 @@ title: Get-MgUserMailboxSetting
 
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-Returned only on $select.
+Requires $select to retrieve.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMailboxSetting?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ This cmdlet has the following aliases,
 
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-Returned only on $select.
+Requires $select to retrieve.
 
 **Permissions**
 

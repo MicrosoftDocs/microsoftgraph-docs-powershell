@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRoleManagementCloudPcRoleDefinition
 ---
@@ -15,7 +15,7 @@ title: New-MgBetaRoleManagementCloudPcRoleDefinition
 
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- Defender (Microsoft Defender XDR)- directory (Microsoft Entra ID)
+The following RBAC providers are currently supported:\r- Cloud PC\r- device management (Intune)\r- Defender (Microsoft Defender XDR)\r- directory (Microsoft Entra ID)
 
 ## SYNTAX
 
@@ -52,7 +52,7 @@ This cmdlet has the following aliases,
 
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- Defender (Microsoft Defender XDR)- directory (Microsoft Entra ID)
+The following RBAC providers are currently supported:\r- Cloud PC\r- device management (Intune)\r- Defender (Microsoft Defender XDR)\r- directory (Microsoft Entra ID)
 
 **Permissions**
 

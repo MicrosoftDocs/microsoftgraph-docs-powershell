@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointrestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSolutionBackupRestoreSharePointRestoreSession
 ---
@@ -26,7 +26,8 @@ Update the navigation property sharePointRestoreSessions in solutions
 Update-MgSolutionBackupRestoreSharePointRestoreSession -SharePointRestoreSessionId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-CompletedDateTime <datetime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <datetime>] [-Error <IMicrosoftGraphPublicError>] [-Id <string>]
+ [-CreatedDateTime <datetime>] [-Error <IMicrosoftGraphPublicError>]
+ [-GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>] [-Id <string>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
  [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]
@@ -53,7 +54,8 @@ Update-MgSolutionBackupRestoreSharePointRestoreSession -SharePointRestoreSession
 Update-MgSolutionBackupRestoreSharePointRestoreSession -InputObject <IBackupRestoreIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-CompletedDateTime <datetime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <datetime>] [-Error <IMicrosoftGraphPublicError>] [-Id <string>]
+ [-CreatedDateTime <datetime>] [-Error <IMicrosoftGraphPublicError>]
+ [-GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>] [-Id <string>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
  [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]
@@ -272,6 +274,34 @@ To construct, see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublicError
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -GranularSiteRestoreArtifacts
+
+
+To construct, see NOTES section for GRANULARSITERESTOREARTIFACTS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGranularSiteRestoreArtifact[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -814,6 +844,19 @@ For example, in the access reviews decisions API, this property might record the
   [Status <String>]: restoreSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
+    [BrowseSessionId <String>]: 
+    [CompletionDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
+    [RestoredItemKey <String>]: 
+    [RestoredItemPath <String>]: 
+    [RestoredItemWebUrl <String>]: 
+    [StartDateTime <DateTime?>]: 
+    [Status <String>]: artifactRestoreStatus
+    [WebUrl <String>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [SiteId <String>]: 
   [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
     [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
     [DestinationType <String>]: destinationType
@@ -899,7 +942,22 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
+GRANULARSITERESTOREARTIFACTS <IMicrosoftGraphGranularSiteRestoreArtifact[]>: .
+  [BrowseSessionId <String>]: 
+  [CompletionDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
+  [RestoredItemKey <String>]: 
+  [RestoredItemPath <String>]: 
+  [RestoredItemWebUrl <String>]: 
+  [StartDateTime <DateTime?>]: 
+  [Status <String>]: artifactRestoreStatus
+  [WebUrl <String>]: 
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [SiteId <String>]: 
+
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+  [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -907,12 +965,16 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [DriveRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   [ExchangeProtectionPolicyId <String>]: The unique identifier of exchangeProtectionPolicy
   [ExchangeRestoreSessionId <String>]: The unique identifier of exchangeRestoreSession
+  [GranularDriveRestoreArtifactId <String>]: The unique identifier of granularDriveRestoreArtifact
   [GranularMailboxRestoreArtifactId <String>]: The unique identifier of granularMailboxRestoreArtifact
+  [GranularSiteRestoreArtifactId <String>]: The unique identifier of granularSiteRestoreArtifact
   [MailboxProtectionRuleId <String>]: The unique identifier of mailboxProtectionRule
   [MailboxProtectionUnitId <String>]: The unique identifier of mailboxProtectionUnit
   [MailboxProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
   [MailboxRestoreArtifactId <String>]: The unique identifier of mailboxRestoreArtifact
   [MailboxRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
+  [NextFetchToken <String>]: Usage: nextFetchToken='{nextFetchToken}'
+  [OneDriveForBusinessBrowseSessionId <String>]: The unique identifier of oneDriveForBusinessBrowseSession
   [OneDriveForBusinessProtectionPolicyId <String>]: The unique identifier of oneDriveForBusinessProtectionPolicy
   [OneDriveForBusinessRestoreSessionId <String>]: The unique identifier of oneDriveForBusinessRestoreSession
   [ProtectionPolicyBaseId <String>]: The unique identifier of protectionPolicyBase
@@ -920,6 +982,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [RestorePointId <String>]: The unique identifier of restorePoint
   [RestoreSessionBaseId <String>]: The unique identifier of restoreSessionBase
   [ServiceAppId <String>]: The unique identifier of serviceApp
+  [SharePointBrowseSessionId <String>]: The unique identifier of sharePointBrowseSession
   [SharePointProtectionPolicyId <String>]: The unique identifier of sharePointProtectionPolicy
   [SharePointRestoreSessionId <String>]: The unique identifier of sharePointRestoreSession
   [SiteProtectionRuleId <String>]: The unique identifier of siteProtectionRule

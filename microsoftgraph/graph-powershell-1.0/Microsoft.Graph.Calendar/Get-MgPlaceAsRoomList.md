@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlist
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceAsRoomList
 ---
@@ -13,7 +13,8 @@ title: Get-MgPlaceAsRoomList
 
 ## SYNOPSIS
 
-Get the item of type microsoft.graph.place as microsoft.graph.roomList
+Read the properties of a place object specified by its ID.
+The place object can be one of the following types: The listed resources are derived from the place object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomList](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomList?view=graph-powershell-beta)
@@ -56,7 +57,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the item of type microsoft.graph.place as microsoft.graph.roomList
+Read the properties of a place object specified by its ID.
+The place object can be one of the following types: The listed resources are derived from the place object.
 
 ## PARAMETERS
 
@@ -542,6 +544,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgPlaceAsRoomList](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlist)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/place-get?view=graph-rest-1.0)
 
 
 

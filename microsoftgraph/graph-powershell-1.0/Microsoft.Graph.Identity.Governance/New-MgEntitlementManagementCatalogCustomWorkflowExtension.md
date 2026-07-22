@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogcustomworkflowextension
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEntitlementManagementCatalogCustomWorkflowExtension
 ---
@@ -75,7 +75,7 @@ Create a new accessPackageAssignmentRequestWorkflowExtension or accessPackageAss
 You must explicitly provide an @odata.type property that indicates whether the object is an  accessPackageAssignmentRequestWorkflowExtension or an accessPackageAssignmentWorkflowExtension.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 2: Create a custom extension for use with an access package assignment
 
 ```powershell
 
@@ -103,9 +103,9 @@ $params = @{
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEntitlementManagementCatalogCustomWorkflowExtension Cmdlet.
+This example will create a custom extension for use with an access package assignment
 
-### Example 2: Code snippet
+### Example 3: Create a custom extension for use with an approval stage callback
 
 ```powershell
 
@@ -131,7 +131,7 @@ $params = @{
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgEntitlementManagementCatalogCustomWorkflowExtension Cmdlet.
+This example will create a custom extension for use with an approval stage callback
 
 
 ## PARAMETERS

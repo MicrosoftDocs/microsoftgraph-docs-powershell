@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetauserreportauthenticationmethodregistrationactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUserReportAuthenticationMethodRegistrationActivity
 ---
@@ -49,12 +49,17 @@ This cmdlet has the following aliases,
 Get a list of the authentication methods and their corresponding number of successful and unsuccessful  registration and reset activities as defined in the userRegistrationActivity object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Invoke-MgBetaUserReportAuthenticationMethodRegistrationActivity -Period $periodId
+Invoke-MgBetaUserReportAuthenticationMethodRegistrationActivity -Period $periodId 
+
+```
+This example shows how to use the Invoke-MgBetaUserReportAuthenticationMethodRegistrationActivity Cmdlet.
+
 
 ## PARAMETERS
 

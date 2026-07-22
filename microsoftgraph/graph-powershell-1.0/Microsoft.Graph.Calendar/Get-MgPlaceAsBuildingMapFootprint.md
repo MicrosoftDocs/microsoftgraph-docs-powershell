@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmapfootprint
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceAsBuildingMapFootprint
 ---
@@ -573,6 +573,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Get-MgPlaceAsBuildingMapFootprint](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmapfootprint)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/buildingmap-list-footprints?view=graph-rest-1.0)
+
 
 
 
