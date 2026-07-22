@@ -15,6 +15,9 @@ title: Get-MgBetaReportPartnerBillingReconciliationBilled
 
 Represents details for billed invoice reconciliation data.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBillingReconciliationBilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

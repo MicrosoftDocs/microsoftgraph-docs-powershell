@@ -15,6 +15,9 @@ title: Test-MgBetaShareListContentTypePublished
 
 Invoke function isPublished
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgShareListContentTypePublished](/powershell/module/Microsoft.Graph.Files/Test-MgShareListContentTypePublished?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Is (Default)

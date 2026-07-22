@@ -15,6 +15,9 @@ title: Update-MgBetaDomainVerificationDnsRecord
 
 Update the navigation property verificationDnsRecords in domains
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomainVerificationDnsRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

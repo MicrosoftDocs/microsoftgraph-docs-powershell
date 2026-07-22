@@ -16,6 +16,9 @@ title: Get-MgBetaPlaceAsBuildingMapLevelSection
 Collection of sections (such as zones or partitions) on this level.
 Supports upsert.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsBuildingMapLevelSection](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsBuildingMapLevelSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
