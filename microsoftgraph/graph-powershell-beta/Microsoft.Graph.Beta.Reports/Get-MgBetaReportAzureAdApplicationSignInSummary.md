@@ -533,5 +533,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary)
-- [](https://learn.microsoft.com/graph/api/reportroot-getazureadapplicationsigninsummary?view=graph-rest-beta)
+- [Get-MgBetaReportAzureAdApplicationSignInSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getazureadapplicationsigninsummary?view=graph-rest-beta)

@@ -479,5 +479,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationcallcontentsharingsessionpngofcurrentslide)
+- [Set-MgBetaCommunicationCallContentSharingSessionPngOfCurrentSlide](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationcallcontentsharingsessionpngofcurrentslide)
 

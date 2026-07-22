@@ -391,5 +391,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleopenshiftchangerequestcount)
+- [Get-MgBetaTeamScheduleOpenShiftChangeRequestCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleopenshiftchangerequestcount)
 

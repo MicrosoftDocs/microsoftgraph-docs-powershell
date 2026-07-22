@@ -475,5 +475,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyserviceprincipalcreationpolicy)
+- [Remove-MgBetaPolicyServicePrincipalCreationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyserviceprincipalcreationpolicy)
 

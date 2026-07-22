@@ -803,5 +803,5 @@ Active labels should be hidden or disabled in user interfaces.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionpolicylabel)
+- [Update-MgBetaGroupSiteInformationProtectionPolicyLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionpolicylabel)
 

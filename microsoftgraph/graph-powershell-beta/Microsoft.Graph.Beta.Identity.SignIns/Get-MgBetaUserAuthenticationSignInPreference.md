@@ -449,5 +449,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationsigninpreference)
-- [](https://learn.microsoft.com/graph/api/authentication-get?view=graph-rest-beta)
+- [Get-MgBetaUserAuthenticationSignInPreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationsigninpreference)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authentication-get?view=graph-rest-beta)

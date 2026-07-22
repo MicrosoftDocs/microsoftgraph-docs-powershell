@@ -476,5 +476,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityhostsecurityprofile)
+- [Remove-MgBetaSecurityHostSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityhostsecurityprofile)
 

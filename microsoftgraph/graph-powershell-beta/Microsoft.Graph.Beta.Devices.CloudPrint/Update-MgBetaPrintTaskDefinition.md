@@ -654,5 +654,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinition)
-- [](https://learn.microsoft.com/graph/api/print-update-taskdefinition?view=graph-rest-beta)
+- [Update-MgBetaPrintTaskDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/print-update-taskdefinition?view=graph-rest-beta)

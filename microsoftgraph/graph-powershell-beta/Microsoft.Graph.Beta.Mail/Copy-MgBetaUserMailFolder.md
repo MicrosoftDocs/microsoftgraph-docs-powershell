@@ -527,5 +527,5 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/copy-mgbetausermailfolder)
-- [](https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-beta)
+- [Copy-MgBetaUserMailFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/copy-mgbetausermailfolder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-beta)

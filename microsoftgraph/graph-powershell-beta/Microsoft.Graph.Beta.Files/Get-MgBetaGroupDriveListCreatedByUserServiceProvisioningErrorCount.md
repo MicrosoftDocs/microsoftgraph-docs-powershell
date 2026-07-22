@@ -386,5 +386,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistcreatedbyuserserviceprovisioningerrorcount)
+- [Get-MgBetaGroupDriveListCreatedByUserServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistcreatedbyuserserviceprovisioningerrorcount)
 

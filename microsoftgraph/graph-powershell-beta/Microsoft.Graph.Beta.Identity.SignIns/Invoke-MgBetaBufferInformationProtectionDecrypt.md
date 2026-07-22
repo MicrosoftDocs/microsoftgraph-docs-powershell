@@ -427,5 +427,5 @@ BODY `<IPaths41K0CwInformationprotectionMicrosoftGraphDecryptbufferPostRequestbo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectiondecrypt)
+- [Invoke-MgBetaBufferInformationProtectionDecrypt](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectiondecrypt)
 

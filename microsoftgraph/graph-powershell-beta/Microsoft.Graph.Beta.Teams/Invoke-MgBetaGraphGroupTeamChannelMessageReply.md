@@ -1016,6 +1016,6 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphgroupteamchannelmessagereply)
-- [](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-beta)
+- [Invoke-MgBetaGraphGroupTeamChannelMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphgroupteamchannelmessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-beta)
 

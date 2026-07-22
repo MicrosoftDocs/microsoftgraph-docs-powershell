@@ -714,6 +714,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementtemplatemigratabletocategoryrecommendedsetting)
+- [Get-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementtemplatemigratabletocategoryrecommendedsetting)
 
 

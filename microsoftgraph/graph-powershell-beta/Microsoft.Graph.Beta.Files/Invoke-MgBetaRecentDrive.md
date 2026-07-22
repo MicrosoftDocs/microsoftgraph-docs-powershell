@@ -508,5 +508,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentdrive)
-- [](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-beta)
+- [Invoke-MgBetaRecentDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentdrive)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-beta)

@@ -585,5 +585,5 @@ BODYPARAMETER `<IPathsTq6Um7DevicemanagementReportsMicrosoftGraphGetconfiguratio
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportconfigurationpolicydevicesummaryreport)
+- [Get-MgBetaDeviceManagementReportConfigurationPolicyDeviceSummaryReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportconfigurationpolicydevicesummaryreport)
 

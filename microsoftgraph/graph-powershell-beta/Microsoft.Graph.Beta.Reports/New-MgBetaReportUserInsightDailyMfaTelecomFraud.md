@@ -498,5 +498,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightdailymfatelecomfraud)
+- [New-MgBetaReportUserInsightDailyMfaTelecomFraud](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightdailymfatelecomfraud)
 

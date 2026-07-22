@@ -391,5 +391,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateammembercount)
+- [Get-MgBetaTeamMemberCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateammembercount)
 

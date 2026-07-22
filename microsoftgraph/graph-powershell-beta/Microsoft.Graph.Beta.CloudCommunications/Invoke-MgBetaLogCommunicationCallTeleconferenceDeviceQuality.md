@@ -577,5 +577,5 @@ The CVI partner needs to copy over Call.MyParticipantId to this property.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality)
-- [](https://learn.microsoft.com/graph/api/call-logteleconferencedevicequality?view=graph-rest-beta)
+- [Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-logteleconferencedevicequality?view=graph-rest-beta)

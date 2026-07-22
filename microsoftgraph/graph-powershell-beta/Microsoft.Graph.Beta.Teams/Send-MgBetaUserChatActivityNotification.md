@@ -795,6 +795,6 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetauserchatactivitynotification)
-- [](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-beta)
+- [Send-MgBetaUserChatActivityNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetauserchatactivitynotification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-beta)
 

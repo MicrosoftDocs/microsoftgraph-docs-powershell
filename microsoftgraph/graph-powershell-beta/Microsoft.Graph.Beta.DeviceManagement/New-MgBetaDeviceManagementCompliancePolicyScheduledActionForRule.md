@@ -662,5 +662,5 @@ This collection can contain a maximum of 100 elements.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcompliancepolicyscheduledactionforrule)
+- [New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcompliancepolicyscheduledactionforrule)
 

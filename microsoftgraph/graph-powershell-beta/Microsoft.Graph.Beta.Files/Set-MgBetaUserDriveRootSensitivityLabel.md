@@ -595,5 +595,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootsensitivitylabel)
+- [Set-MgBetaUserDriveRootSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootsensitivitylabel)
 

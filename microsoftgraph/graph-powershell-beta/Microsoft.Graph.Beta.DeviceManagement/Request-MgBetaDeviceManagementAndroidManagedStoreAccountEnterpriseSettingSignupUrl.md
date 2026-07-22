@@ -370,5 +370,5 @@ BODYPARAMETER `<IPaths1Mblqr0DevicemanagementAndroidmanagedstoreaccountenterpris
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/request-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignupurl)
+- [Request-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupUrl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/request-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignupurl)
 

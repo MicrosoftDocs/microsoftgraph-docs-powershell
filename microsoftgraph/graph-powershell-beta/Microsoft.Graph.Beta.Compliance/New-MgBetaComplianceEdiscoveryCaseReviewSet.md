@@ -697,5 +697,5 @@ For details, see Document metadata fields in Advanced eDiscovery.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasereviewset)
-- [](https://learn.microsoft.com/graph/api/ediscovery-case-post-reviewsets?view=graph-rest-beta)
+- [New-MgBetaComplianceEdiscoveryCaseReviewSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasereviewset)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-case-post-reviewsets?view=graph-rest-beta)

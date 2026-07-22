@@ -372,5 +372,5 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementwindowsfeatureupdateprofileassignmentcount)
+- [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignmentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementwindowsfeatureupdateprofileassignmentcount)
 

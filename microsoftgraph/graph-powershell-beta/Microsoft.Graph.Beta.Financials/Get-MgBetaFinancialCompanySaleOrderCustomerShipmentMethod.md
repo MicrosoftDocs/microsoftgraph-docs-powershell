@@ -396,5 +396,5 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleordercustomershipmentmethod)
+- [Get-MgBetaFinancialCompanySaleOrderCustomerShipmentMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleordercustomershipmentmethod)
 

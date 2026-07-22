@@ -701,5 +701,5 @@ DirectoryRole is the only currently supported scope type for Microsoft Entra rol
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalert)
+- [New-MgBetaIdentityGovernanceRoleManagementAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalert)
 

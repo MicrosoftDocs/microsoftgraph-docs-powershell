@@ -590,5 +590,5 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenoteresource)
+- [Update-MgBetaUserOnenoteResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenoteresource)
 

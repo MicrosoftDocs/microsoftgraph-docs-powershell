@@ -424,5 +424,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentsubmissionsubmittedresourcedependentresourcecount)
+- [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentsubmissionsubmittedresourcedependentresourcecount)
 

@@ -616,5 +616,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetgraphbprepathactivitybyinterval)
+- [Get-MgBetaSiteGetGraphBPrePathActivityByInterval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetgraphbprepathactivitybyinterval)
 

@@ -573,6 +573,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamphoto)
-- [](https://learn.microsoft.com/graph/api/profilephoto-update?view=graph-rest-beta)
+- [Update-MgBetaTeamPhoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamphoto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/profilephoto-update?view=graph-rest-beta)
 

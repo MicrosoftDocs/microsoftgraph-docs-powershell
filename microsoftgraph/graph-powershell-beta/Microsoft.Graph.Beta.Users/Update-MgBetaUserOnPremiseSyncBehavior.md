@@ -533,5 +533,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseronpremisesyncbehavior)
+- [Update-MgBetaUserOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseronpremisesyncbehavior)
 

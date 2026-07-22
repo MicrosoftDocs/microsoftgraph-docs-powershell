@@ -66767,5 +66767,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveroot)
+- [Update-MgBetaGroupDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveroot)
 

@@ -452,5 +452,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelplannerplantaskbuckettaskboardformat)
+- [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskBucketTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelplannerplantaskbuckettaskboardformat)
 

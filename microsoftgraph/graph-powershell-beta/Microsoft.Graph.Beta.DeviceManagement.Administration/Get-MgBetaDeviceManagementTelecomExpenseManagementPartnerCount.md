@@ -279,5 +279,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementtelecomexpensemanagementpartnercount)
+- [Get-MgBetaDeviceManagementTelecomExpenseManagementPartnerCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementtelecomexpensemanagementpartnercount)
 

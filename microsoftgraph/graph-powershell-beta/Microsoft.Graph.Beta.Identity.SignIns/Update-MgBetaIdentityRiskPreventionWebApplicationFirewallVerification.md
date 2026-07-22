@@ -763,5 +763,5 @@ This is the host or zone name to which the configuration applies.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityriskpreventionwebapplicationfirewallverification)
+- [Update-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityriskpreventionwebapplicationfirewallverification)
 

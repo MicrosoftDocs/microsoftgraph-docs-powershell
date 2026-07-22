@@ -415,5 +415,5 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenoteresourcecontent)
+- [Remove-MgBetaUserOnenoteResourceContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenoteresourcecontent)
 

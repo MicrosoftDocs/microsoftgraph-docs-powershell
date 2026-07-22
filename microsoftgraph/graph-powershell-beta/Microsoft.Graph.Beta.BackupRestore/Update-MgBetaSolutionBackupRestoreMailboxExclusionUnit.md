@@ -810,5 +810,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoremailboxexclusionunit)
+- [Update-MgBetaSolutionBackupRestoreMailboxExclusionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoremailboxexclusionunit)
 

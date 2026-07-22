@@ -395,5 +395,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsightsharedlastsharedmethod)
+- [Get-MgBetaUserInsightSharedLastSharedMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsightsharedlastsharedmethod)
 

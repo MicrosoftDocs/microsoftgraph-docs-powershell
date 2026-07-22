@@ -677,5 +677,5 @@ Must be unique within the referenceType.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow)
-- [](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-post?view=graph-rest-beta)
+- [New-MgBetaExternalIndustryDataInboundFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-post?view=graph-rest-beta)

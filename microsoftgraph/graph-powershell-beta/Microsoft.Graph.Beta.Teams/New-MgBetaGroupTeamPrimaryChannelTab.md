@@ -892,5 +892,5 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamprimarychanneltab)
+- [New-MgBetaGroupTeamPrimaryChannelTab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamprimarychanneltab)
 

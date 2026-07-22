@@ -588,5 +588,5 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalhold)
-- [](https://learn.microsoft.com/graph/api/ediscovery-legalhold-get?view=graph-rest-beta)
+- [Get-MgBetaComplianceEdiscoveryCaseLegalHold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalhold)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-legalhold-get?view=graph-rest-beta)

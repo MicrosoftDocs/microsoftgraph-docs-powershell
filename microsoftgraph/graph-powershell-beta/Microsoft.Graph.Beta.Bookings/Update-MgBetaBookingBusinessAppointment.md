@@ -2392,5 +2392,5 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessappointment)
-- [](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-beta)
+- [Update-MgBetaBookingBusinessAppointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessappointment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-beta)

@@ -625,5 +625,5 @@ POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails[]>: Policy Details
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceencryptionstate)
+- [New-MgBetaDeviceManagementManagedDeviceEncryptionState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceencryptionstate)
 

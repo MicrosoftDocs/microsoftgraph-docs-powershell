@@ -381,5 +381,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientappcount)
+- [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientappcount)
 

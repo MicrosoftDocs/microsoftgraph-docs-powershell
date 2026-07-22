@@ -534,5 +534,5 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootuploadsession)
+- [New-MgBetaDriveRootUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootuploadsession)
 

@@ -411,5 +411,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseronpremisesyncbehavior)
+- [Remove-MgBetaUserOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseronpremisesyncbehavior)
 

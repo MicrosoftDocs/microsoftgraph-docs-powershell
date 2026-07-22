@@ -489,5 +489,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamprimarychannelplannerplanbuckettaskassignedtotaskboardformat)
+- [Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskAssignedToTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamprimarychannelplannerplanbuckettaskassignedtotaskboardformat)
 

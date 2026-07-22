@@ -666,6 +666,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementembeddedsimactivationcodepoolassignment)
+- [Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementembeddedsimactivationcodepoolassignment)
 
 

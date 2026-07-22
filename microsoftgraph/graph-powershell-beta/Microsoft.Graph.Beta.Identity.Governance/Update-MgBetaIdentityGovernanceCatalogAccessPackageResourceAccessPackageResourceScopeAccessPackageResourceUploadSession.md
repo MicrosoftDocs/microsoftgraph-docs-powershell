@@ -875,5 +875,5 @@ STATS `<IMicrosoftGraphCustomDataProvidedResourceUploadStats>`: customDataProvid
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceaccesspackageresourcescopeaccesspackageresourceuploadsession)
+- [Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceaccesspackageresourcescopeaccesspackageresourceuploadsession)
 

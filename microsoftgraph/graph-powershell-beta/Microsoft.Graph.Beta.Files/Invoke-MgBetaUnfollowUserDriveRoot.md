@@ -407,6 +407,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaunfollowuserdriveroot)
-- [](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-beta)
+- [Invoke-MgBetaUnfollowUserDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaunfollowuserdriveroot)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-beta)
 

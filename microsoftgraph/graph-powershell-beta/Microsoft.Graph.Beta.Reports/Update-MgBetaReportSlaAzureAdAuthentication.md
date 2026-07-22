@@ -399,5 +399,5 @@ Values are expressed as a percentage of availability for the tenant.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication)
+- [Update-MgBetaReportSlaAzureAdAuthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication)
 

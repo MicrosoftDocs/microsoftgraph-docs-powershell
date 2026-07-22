@@ -455,5 +455,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/restore-mgbetausermanageddevicepasscode)
+- [Restore-MgBetaUserManagedDevicePasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/restore-mgbetausermanageddevicepasscode)
 

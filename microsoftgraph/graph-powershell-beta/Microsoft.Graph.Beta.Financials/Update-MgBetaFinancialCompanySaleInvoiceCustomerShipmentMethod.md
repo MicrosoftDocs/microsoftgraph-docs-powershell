@@ -610,5 +610,5 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoicecustomershipmentmethod)
+- [Update-MgBetaFinancialCompanySaleInvoiceCustomerShipmentMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoicecustomershipmentmethod)
 

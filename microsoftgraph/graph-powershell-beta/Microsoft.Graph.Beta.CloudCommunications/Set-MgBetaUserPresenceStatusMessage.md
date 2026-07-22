@@ -590,5 +590,5 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresencestatusmessage)
-- [](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-beta)
+- [Set-MgBetaUserPresenceStatusMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresencestatusmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-beta)

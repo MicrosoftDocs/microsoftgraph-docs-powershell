@@ -606,5 +606,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofasadministrativeunit)
+- [Get-MgBetaUserMemberOfAsAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofasadministrativeunit)
 

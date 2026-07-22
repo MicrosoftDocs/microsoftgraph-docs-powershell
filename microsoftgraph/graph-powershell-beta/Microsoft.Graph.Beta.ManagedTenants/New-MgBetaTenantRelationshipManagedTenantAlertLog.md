@@ -678,5 +678,5 @@ CONTENT `<IMicrosoftGraphManagedTenantsAlertLogContent>`: alertLogContent
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertlog)
+- [New-MgBetaTenantRelationshipManagedTenantAlertLog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertlog)
 

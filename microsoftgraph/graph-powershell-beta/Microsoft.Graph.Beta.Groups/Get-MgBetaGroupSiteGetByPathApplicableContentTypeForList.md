@@ -557,6 +557,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitegetbypathapplicablecontenttypeforlist)
-- [](https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-beta)
+- [Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitegetbypathapplicablecontenttypeforlist)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-beta)
 

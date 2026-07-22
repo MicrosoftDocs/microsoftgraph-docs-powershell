@@ -890,5 +890,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschooladministrativeunit)
+- [Update-MgBetaEducationSchoolAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschooladministrativeunit)
 

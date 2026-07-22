@@ -386,5 +386,5 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivitybranchforwardingprofileserviceprincipal)
+- [Get-MgBetaNetworkAccessConnectivityBranchForwardingProfileServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivitybranchforwardingprofileserviceprincipal)
 

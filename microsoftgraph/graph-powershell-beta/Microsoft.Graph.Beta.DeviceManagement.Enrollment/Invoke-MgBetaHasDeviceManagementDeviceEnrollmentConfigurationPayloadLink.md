@@ -362,5 +362,5 @@ BODY `<IPaths1Uvh7JwDevicemanagementDeviceenrollmentconfigurationsMicrosoftGraph
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetahasdevicemanagementdeviceenrollmentconfigurationpayloadlink)
+- [Invoke-MgBetaHasDeviceManagementDeviceEnrollmentConfigurationPayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetahasdevicemanagementdeviceenrollmentconfigurationpayloadlink)
 

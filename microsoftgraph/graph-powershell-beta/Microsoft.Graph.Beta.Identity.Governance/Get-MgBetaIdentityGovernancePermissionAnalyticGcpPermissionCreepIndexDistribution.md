@@ -633,5 +633,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistribution)
+- [Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistribution)
 

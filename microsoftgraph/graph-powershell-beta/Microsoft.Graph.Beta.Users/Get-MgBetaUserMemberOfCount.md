@@ -401,5 +401,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofcount)
+- [Get-MgBetaUserMemberOfCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofcount)
 

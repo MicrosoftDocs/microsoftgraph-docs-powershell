@@ -398,5 +398,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteexternalcolumncount)
+- [Get-MgBetaSiteExternalColumnCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteexternalcolumncount)
 

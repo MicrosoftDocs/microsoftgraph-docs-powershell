@@ -751,5 +751,5 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemretentionlabel)
+- [Update-MgBetaGroupDriveItemRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemretentionlabel)
 

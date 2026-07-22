@@ -569,5 +569,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelmessagereplyhostedcontent)
+- [Remove-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelmessagereplyhostedcontent)
 

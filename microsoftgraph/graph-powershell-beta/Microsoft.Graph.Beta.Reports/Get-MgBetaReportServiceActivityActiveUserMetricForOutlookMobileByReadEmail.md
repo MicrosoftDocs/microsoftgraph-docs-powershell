@@ -509,5 +509,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityactiveusermetricforoutlookmobilebyreademail)
-- [](https://learn.microsoft.com/graph/api/serviceactivity-getactiveusermetricsforoutlookmobilebyreademail?view=graph-rest-beta)
+- [Get-MgBetaReportServiceActivityActiveUserMetricForOutlookMobileByReadEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityactiveusermetricforoutlookmobilebyreademail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceactivity-getactiveusermetricsforoutlookmobilebyreademail?view=graph-rest-beta)

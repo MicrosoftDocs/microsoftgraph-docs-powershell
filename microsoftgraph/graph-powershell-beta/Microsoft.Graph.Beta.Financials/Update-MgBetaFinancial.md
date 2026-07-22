@@ -1585,5 +1585,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancial)
+- [Update-MgBetaFinancial](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancial)
 

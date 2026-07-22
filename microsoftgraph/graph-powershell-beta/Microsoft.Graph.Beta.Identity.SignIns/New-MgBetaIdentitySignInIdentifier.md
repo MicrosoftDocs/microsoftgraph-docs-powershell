@@ -392,5 +392,5 @@ Possible values include: Email, UPN, Username, CustomUsername1, CustomUsername2.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitysigninidentifier)
+- [New-MgBetaIdentitySignInIdentifier](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitysigninidentifier)
 

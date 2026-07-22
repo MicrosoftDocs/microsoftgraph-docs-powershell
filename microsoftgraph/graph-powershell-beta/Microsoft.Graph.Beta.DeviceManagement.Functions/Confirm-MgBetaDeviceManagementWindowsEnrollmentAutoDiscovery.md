@@ -311,5 +311,5 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/confirm-mgbetadevicemanagementwindowsenrollmentautodiscovery)
+- [Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/confirm-mgbetadevicemanagementwindowsenrollmentautodiscovery)
 

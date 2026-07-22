@@ -1195,5 +1195,5 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitempermission)
+- [Update-MgBetaSiteListItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitempermission)
 

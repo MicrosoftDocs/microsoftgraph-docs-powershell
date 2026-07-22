@@ -464,5 +464,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetasharelistitemversion)
+- [Restore-MgBetaShareListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetasharelistitemversion)
 

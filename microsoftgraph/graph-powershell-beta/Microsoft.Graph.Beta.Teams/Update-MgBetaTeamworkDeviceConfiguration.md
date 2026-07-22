@@ -1182,5 +1182,5 @@ This is a common scenario in a hybrid environment where an on-premises Exchange 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration)
+- [Update-MgBetaTeamworkDeviceConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration)
 

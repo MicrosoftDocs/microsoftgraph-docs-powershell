@@ -585,5 +585,5 @@ BODY `<IPaths5BdhisDevicemanagementReportsMicrosoftGraphRetrieveappleosupdatefai
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportappleosupdatefailure)
+- [Get-MgBetaDeviceManagementReportAppleOSUpdateFailure](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportappleosupdatefailure)
 

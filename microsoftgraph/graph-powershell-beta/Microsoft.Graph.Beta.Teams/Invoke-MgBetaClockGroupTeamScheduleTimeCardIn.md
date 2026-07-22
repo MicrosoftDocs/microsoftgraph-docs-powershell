@@ -603,6 +603,6 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockgroupteamscheduletimecardin)
-- [](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta)
+- [Invoke-MgBetaClockGroupTeamScheduleTimeCardIn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockgroupteamscheduletimecardin)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta)
 

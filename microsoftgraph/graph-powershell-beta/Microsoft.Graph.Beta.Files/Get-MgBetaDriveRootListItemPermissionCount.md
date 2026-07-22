@@ -360,5 +360,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootlistitempermissioncount)
+- [Get-MgBetaDriveRootListItemPermissionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootlistitempermissioncount)
 

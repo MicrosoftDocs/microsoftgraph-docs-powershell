@@ -276,5 +276,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternal)
+- [Get-MgBetaExternal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternal)
 

@@ -427,5 +427,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelmessagereplyhostedcontentcount)
+- [Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelmessagereplyhostedcontentcount)
 

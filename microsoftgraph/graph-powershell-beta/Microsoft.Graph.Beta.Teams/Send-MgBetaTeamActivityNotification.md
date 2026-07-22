@@ -979,5 +979,5 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamactivitynotification)
-- [](https://learn.microsoft.com/graph/api/team-sendactivitynotification?view=graph-rest-beta)
+- [Send-MgBetaTeamActivityNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamactivitynotification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-sendactivitynotification?view=graph-rest-beta)

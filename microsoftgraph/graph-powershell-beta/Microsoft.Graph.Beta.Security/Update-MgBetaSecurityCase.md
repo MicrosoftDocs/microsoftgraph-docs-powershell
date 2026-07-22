@@ -17871,5 +17871,5 @@ To learn more, see Maximum number of themes.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycase)
+- [Update-MgBetaSecurityCase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycase)
 

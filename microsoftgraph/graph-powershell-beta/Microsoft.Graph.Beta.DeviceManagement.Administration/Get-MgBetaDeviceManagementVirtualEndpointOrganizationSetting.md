@@ -296,5 +296,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting)
-- [](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-get?view=graph-rest-beta)
+- [Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-get?view=graph-rest-beta)

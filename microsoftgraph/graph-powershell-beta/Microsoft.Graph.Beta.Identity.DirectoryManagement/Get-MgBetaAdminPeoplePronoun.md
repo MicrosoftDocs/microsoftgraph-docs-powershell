@@ -299,5 +299,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplepronoun)
-- [](https://learn.microsoft.com/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-beta)
+- [Get-MgBetaAdminPeoplePronoun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplepronoun)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-beta)

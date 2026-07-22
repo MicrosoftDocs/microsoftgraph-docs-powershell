@@ -390,5 +390,5 @@ BODYPARAMETER `<IPaths1Wi1TrqDevicemanagementAssignmentfiltersMicrosoftGraphEnab
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/enable-mgbetadevicemanagementassignmentfilter)
+- [Enable-MgBetaDeviceManagementAssignmentFilter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/enable-mgbetadevicemanagementassignmentfilter)
 

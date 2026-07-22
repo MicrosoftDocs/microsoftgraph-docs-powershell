@@ -588,6 +588,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagemention)
+- [Get-MgBetaUserMessageMention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagemention)
 
 

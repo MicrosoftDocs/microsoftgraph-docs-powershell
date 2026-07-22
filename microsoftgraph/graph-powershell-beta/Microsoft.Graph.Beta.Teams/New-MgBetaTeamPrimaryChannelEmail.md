@@ -391,6 +391,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelemail)
-- [](https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-beta)
+- [New-MgBetaTeamPrimaryChannelEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-beta)
 

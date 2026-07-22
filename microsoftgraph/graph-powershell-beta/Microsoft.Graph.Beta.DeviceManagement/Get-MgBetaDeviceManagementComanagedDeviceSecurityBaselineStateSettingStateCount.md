@@ -465,5 +465,5 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementcomanageddevicesecuritybaselinestatesettingstatecount)
+- [Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingStateCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementcomanageddevicesecuritybaselinestatesettingstatecount)
 

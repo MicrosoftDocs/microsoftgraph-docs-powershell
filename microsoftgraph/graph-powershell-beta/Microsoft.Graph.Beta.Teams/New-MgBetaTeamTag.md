@@ -728,5 +728,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtag)
-- [](https://learn.microsoft.com/graph/api/teamworktag-post?view=graph-rest-beta)
+- [New-MgBetaTeamTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworktag-post?view=graph-rest-beta)

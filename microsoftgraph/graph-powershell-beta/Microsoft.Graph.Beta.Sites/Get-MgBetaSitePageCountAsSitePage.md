@@ -406,5 +406,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagecountassitepage)
+- [Get-MgBetaSitePageCountAsSitePage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagecountassitepage)
 

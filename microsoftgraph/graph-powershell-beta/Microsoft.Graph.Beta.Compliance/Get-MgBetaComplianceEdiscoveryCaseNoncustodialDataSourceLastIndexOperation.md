@@ -378,5 +378,5 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasenoncustodialdatasourcelastindexoperation)
+- [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasenoncustodialdatasourcelastindexoperation)
 

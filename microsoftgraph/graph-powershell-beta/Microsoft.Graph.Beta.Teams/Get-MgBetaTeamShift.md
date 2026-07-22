@@ -410,6 +410,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamshift)
-- [](https://learn.microsoft.com/graph/api/team-getshifts?view=graph-rest-beta)
+- [Get-MgBetaTeamShift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamshift)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-getshifts?view=graph-rest-beta)
 

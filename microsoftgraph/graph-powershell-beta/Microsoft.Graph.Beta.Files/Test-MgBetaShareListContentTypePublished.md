@@ -342,6 +342,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetasharelistcontenttypepublished)
-- [](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta)
+- [Test-MgBetaShareListContentTypePublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetasharelistcontenttypepublished)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta)
 

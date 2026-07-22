@@ -604,5 +604,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetainitiateusermanageddeviceondemandproactiveremediation)
+- [Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetainitiateusermanageddeviceondemandproactiveremediation)
 

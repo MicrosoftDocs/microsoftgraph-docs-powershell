@@ -420,5 +420,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwdacsupplementalpolicydeploysummary)
+- [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyDeploySummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwdacsupplementalpolicydeploysummary)
 

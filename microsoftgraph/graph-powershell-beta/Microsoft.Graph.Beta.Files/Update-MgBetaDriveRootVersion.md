@@ -713,5 +713,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootversion)
+- [Update-MgBetaDriveRootVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootversion)
 

@@ -384,5 +384,5 @@ BODY `<IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectionencrypt)
+- [Invoke-MgBetaBufferInformationProtectionEncrypt](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectionencrypt)
 

@@ -2020,5 +2020,5 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchat)
+- [Update-MgBetaUserChat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchat)
 

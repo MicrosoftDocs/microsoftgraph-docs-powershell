@@ -390,5 +390,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinvitedby)
-- [](https://learn.microsoft.com/graph/api/user-list-invitedby?view=graph-rest-beta)
+- [Get-MgBetaUserInvitedBy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinvitedby)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list-invitedby?view=graph-rest-beta)

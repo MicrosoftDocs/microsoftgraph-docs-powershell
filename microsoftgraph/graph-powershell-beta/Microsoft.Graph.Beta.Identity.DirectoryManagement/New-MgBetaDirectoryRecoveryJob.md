@@ -532,5 +532,5 @@ Not all calculated object changes may be successfully applied; see totalObjectsM
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecoveryjob)
+- [New-MgBetaDirectoryRecoveryJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecoveryjob)
 

@@ -516,5 +516,5 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddevicepowerliftappdiagnosticdetail)
+- [Get-MgBetaDeviceManagementManagedDevicePowerliftAppDiagnosticDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddevicepowerliftappdiagnosticdetail)
 

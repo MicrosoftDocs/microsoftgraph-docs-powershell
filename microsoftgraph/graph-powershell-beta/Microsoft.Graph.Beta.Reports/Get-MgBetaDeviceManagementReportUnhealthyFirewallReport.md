@@ -585,5 +585,5 @@ BODYPARAMETER `<IPaths4Dr5S6DevicemanagementReportsMicrosoftGraphGetunhealthyfir
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportunhealthyfirewallreport)
+- [Get-MgBetaDeviceManagementReportUnhealthyFirewallReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportunhealthyfirewallreport)
 

@@ -403,5 +403,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeviceactivity)
-- [](https://learn.microsoft.com/graph/api/teamworkdeviceactivity-get?view=graph-rest-beta)
+- [Get-MgBetaTeamworkDeviceActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeviceactivity)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworkdeviceactivity-get?view=graph-rest-beta)

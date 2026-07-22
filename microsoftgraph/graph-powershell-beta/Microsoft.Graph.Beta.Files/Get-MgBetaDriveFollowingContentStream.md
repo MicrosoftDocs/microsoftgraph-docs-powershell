@@ -381,5 +381,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowingcontentstream)
+- [Get-MgBetaDriveFollowingContentStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowingcontentstream)
 

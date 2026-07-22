@@ -714,5 +714,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingstoragequota)
+- [Update-MgBetaUserSettingStorageQuota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingstoragequota)
 

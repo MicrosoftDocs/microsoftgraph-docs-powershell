@@ -888,5 +888,5 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelplannerplanbuckettaskdetail)
+- [Update-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelplannerplanbuckettaskdetail)
 

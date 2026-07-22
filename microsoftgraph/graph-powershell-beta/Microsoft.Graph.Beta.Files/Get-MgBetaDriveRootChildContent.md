@@ -411,5 +411,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootchildcontent)
+- [Get-MgBetaDriveRootChildContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootchildcontent)
 

@@ -648,5 +648,5 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaacceptusereventtentatively)
-- [](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-beta)
+- [Invoke-MgBetaAcceptUserEventTentatively](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaacceptusereventtentatively)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-beta)

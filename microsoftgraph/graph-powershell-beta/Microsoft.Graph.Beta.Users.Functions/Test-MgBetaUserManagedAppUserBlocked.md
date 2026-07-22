@@ -307,5 +307,5 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetausermanagedappuserblocked)
+- [Test-MgBetaUserManagedAppUserBlocked](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetausermanagedappuserblocked)
 

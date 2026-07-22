@@ -630,5 +630,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberasuser)
-- [](https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-beta)
+- [Get-MgBetaGroupTransitiveMemberAsUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberasuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-beta)

@@ -579,5 +579,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryrecommendationimpactedresource)
-- [](https://learn.microsoft.com/graph/api/impactedresource-dismiss?view=graph-rest-beta)
+- [Invoke-MgBetaDismissDirectoryRecommendationImpactedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryrecommendationimpactedresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/impactedresource-dismiss?view=graph-rest-beta)

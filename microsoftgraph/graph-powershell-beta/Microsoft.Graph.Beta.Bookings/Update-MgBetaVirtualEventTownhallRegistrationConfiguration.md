@@ -622,5 +622,5 @@ The default value is false.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhallregistrationconfiguration)
+- [Update-MgBetaVirtualEventTownhallRegistrationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhallregistrationconfiguration)
 

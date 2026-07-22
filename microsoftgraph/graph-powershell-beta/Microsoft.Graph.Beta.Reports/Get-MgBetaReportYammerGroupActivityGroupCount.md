@@ -389,5 +389,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportyammergroupactivitygroupcount)
+- [Get-MgBetaReportYammerGroupActivityGroupCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportyammergroupactivitygroupcount)
 

@@ -430,5 +430,5 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness)
-- [](https://learn.microsoft.com/graph/api/bookingbusiness-unpublish?view=graph-rest-beta)
+- [Unpublish-MgBetaBookingBusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-unpublish?view=graph-rest-beta)

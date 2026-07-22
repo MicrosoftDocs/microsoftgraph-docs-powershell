@@ -365,5 +365,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcreatedbyuserserviceprovisioningerrorcount)
+- [Get-MgBetaShareListCreatedByUserServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcreatedbyuserserviceprovisioningerrorcount)
 

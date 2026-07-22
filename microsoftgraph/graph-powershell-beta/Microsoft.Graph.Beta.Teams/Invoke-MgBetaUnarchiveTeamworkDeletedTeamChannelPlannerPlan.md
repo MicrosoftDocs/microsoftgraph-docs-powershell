@@ -586,6 +586,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteamworkdeletedteamchannelplannerplan)
-- [](https://learn.microsoft.com/graph/api/plannerplan-unarchive?view=graph-rest-beta)
+- [Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannelPlannerPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteamworkdeletedteamchannelplannerplan)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-unarchive?view=graph-rest-beta)
 

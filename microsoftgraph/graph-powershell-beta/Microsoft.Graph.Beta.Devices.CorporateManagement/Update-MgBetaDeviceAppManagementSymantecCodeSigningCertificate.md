@@ -572,5 +572,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementsymanteccodesigningcertificate)
+- [Update-MgBetaDeviceAppManagementSymantecCodeSigningCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementsymanteccodesigningcertificate)
 

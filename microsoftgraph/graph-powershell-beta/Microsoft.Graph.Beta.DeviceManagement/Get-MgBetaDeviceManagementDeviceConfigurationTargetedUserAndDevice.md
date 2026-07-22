@@ -362,5 +362,5 @@ BODYPARAMETER `<IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphG
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationtargeteduseranddevice)
+- [Get-MgBetaDeviceManagementDeviceConfigurationTargetedUserAndDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationtargeteduseranddevice)
 

@@ -626,5 +626,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatunreadforuser)
-- [](https://learn.microsoft.com/graph/api/chat-markchatunreadforuser?view=graph-rest-beta)
+- [Invoke-MgBetaMarkChatUnreadForUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatunreadforuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-markchatunreadforuser?view=graph-rest-beta)

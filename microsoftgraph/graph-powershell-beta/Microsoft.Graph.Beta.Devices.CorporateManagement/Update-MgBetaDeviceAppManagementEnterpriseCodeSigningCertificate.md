@@ -820,5 +820,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagemententerprisecodesigningcertificate)
+- [Update-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagemententerprisecodesigningcertificate)
 

@@ -488,6 +488,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententitlementmanagementrole)
-- [](https://learn.microsoft.com/graph/api/rbacapplication-roleschedules?view=graph-rest-beta)
+- [Invoke-MgBetaScheduleRoleManagementEntitlementManagementRole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententitlementmanagementrole)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplication-roleschedules?view=graph-rest-beta)
 

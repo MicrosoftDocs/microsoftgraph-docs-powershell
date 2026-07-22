@@ -477,5 +477,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicydeleteditemcrosstenantpartneridentitysynchronization)
+- [Remove-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicydeleteditemcrosstenantpartneridentitysynchronization)
 

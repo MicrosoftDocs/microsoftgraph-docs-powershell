@@ -493,5 +493,5 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/set-mgbetausercontactfoldercontactphotocontent)
+- [Set-MgBetaUserContactFolderContactPhotoContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/set-mgbetausercontactfoldercontactphotocontent)
 

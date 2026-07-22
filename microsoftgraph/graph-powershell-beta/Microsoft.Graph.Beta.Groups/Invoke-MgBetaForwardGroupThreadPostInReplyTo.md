@@ -603,6 +603,6 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto)
-- [](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta)
+- [Invoke-MgBetaForwardGroupThreadPostInReplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta)
 

@@ -370,5 +370,5 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidatealluserrefreshtoken)
-- [](https://learn.microsoft.com/graph/api/user-invalidateallrefreshtokens?view=graph-rest-beta)
+- [Invoke-MgBetaInvalidateAllUserRefreshToken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidatealluserrefreshtoken)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-invalidateallrefreshtokens?view=graph-rest-beta)

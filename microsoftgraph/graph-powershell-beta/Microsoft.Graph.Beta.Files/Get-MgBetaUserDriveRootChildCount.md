@@ -384,5 +384,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootchildcount)
+- [Get-MgBetaUserDriveRootChildCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootchildcount)
 

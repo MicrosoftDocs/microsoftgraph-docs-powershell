@@ -557,5 +557,5 @@ CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementexternaloriginresourceconnector)
+- [New-MgBetaEntitlementManagementExternalOriginResourceConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementexternaloriginresourceconnector)
 

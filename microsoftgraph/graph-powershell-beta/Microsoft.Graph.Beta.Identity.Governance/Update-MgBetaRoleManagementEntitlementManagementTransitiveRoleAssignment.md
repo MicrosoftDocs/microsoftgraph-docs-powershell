@@ -1045,5 +1045,5 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementtransitiveroleassignment)
+- [Update-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementtransitiveroleassignment)
 

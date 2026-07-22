@@ -1352,5 +1352,5 @@ The default value is empty.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicydefinitionpreviouversiondefinition)
+- [Update-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicydefinitionpreviouversiondefinition)
 

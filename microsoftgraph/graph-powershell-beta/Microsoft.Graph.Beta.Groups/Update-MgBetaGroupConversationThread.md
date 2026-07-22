@@ -1018,5 +1018,5 @@ Returned only on $select.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthread)
+- [Update-MgBetaGroupConversationThread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthread)
 

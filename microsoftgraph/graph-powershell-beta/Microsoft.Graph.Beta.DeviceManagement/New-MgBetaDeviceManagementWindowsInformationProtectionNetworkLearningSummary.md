@@ -419,5 +419,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsinformationprotectionnetworklearningsummary)
+- [New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsinformationprotectionnetworklearningsummary)
 

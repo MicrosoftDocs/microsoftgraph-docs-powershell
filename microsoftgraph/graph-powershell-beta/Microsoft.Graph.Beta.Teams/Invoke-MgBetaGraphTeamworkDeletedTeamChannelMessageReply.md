@@ -1016,6 +1016,6 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphteamworkdeletedteamchannelmessagereply)
-- [](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-beta)
+- [Invoke-MgBetaGraphTeamworkDeletedTeamChannelMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphteamworkdeletedteamchannelmessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-beta)
 

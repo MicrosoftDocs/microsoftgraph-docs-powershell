@@ -437,5 +437,5 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanysaleinvoicecustomershipmentmethod)
+- [Remove-MgBetaFinancialCompanySaleInvoiceCustomerShipmentMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanysaleinvoicecustomershipmentmethod)
 

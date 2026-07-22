@@ -28927,5 +28927,5 @@ VERIFIABLECREDENTIALSETTINGS `<IMicrosoftGraphVerifiableCredentialSettings>`: ve
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
-- [](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-update?view=graph-rest-beta)
+- [Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-update?view=graph-rest-beta)

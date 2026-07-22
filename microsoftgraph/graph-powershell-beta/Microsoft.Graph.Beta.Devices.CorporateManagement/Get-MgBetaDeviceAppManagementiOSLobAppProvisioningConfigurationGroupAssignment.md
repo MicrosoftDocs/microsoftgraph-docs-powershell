@@ -632,5 +632,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementioslobappprovisioningconfigurationgroupassignment)
+- [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementioslobappprovisioningconfigurationgroupassignment)
 

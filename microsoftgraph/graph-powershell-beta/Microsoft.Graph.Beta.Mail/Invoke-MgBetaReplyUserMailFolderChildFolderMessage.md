@@ -878,6 +878,6 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyusermailfolderchildfoldermessage)
-- [](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-beta)
+- [Invoke-MgBetaReplyUserMailFolderChildFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyusermailfolderchildfoldermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-beta)
 

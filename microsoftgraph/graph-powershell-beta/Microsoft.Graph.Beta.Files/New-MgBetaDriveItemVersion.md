@@ -713,5 +713,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemversion)
+- [New-MgBetaDriveItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemversion)
 

@@ -457,5 +457,5 @@ False if the label is a parent with child labels.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotection)
+- [Update-MgBetaSecurityInformationProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotection)
 

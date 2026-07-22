@@ -18849,5 +18849,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetauserauthenticationhardwareoathmethodandactivate)
-- [](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-assignandactivate?view=graph-rest-beta)
+- [Set-MgBetaUserAuthenticationHardwareOathMethodAndActivate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetauserauthenticationhardwareoathmethodandactivate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-assignandactivate?view=graph-rest-beta)

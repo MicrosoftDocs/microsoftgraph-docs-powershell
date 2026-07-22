@@ -318,5 +318,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetaadminsharepoint)
+- [Remove-MgBetaAdminSharepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetaadminsharepoint)
 

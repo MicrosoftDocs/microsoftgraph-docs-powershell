@@ -452,5 +452,5 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementresourceaccessprofileassignmentcount)
+- [Get-MgBetaDeviceManagementResourceAccessProfileAssignmentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementresourceaccessprofileassignmentcount)
 

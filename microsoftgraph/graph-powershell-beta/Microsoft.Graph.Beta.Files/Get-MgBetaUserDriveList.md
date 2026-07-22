@@ -390,5 +390,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelist)
+- [Get-MgBetaUserDriveList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelist)
 

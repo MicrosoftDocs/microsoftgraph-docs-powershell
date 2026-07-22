@@ -826,5 +826,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfiguration)
-- [](https://learn.microsoft.com/graph/api/plannerplanconfiguration-update?view=graph-rest-beta)
+- [Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplanconfiguration-update?view=graph-rest-beta)

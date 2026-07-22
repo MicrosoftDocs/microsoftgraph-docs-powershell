@@ -504,5 +504,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteanalyticitemactivitystatactivitydriveitemcontentstream)
+- [Remove-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContentStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteanalyticitemactivitystatactivitydriveitemcontentstream)
 

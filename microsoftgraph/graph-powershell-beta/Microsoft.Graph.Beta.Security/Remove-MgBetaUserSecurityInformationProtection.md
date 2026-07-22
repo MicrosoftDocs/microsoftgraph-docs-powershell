@@ -476,5 +476,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetausersecurityinformationprotection)
+- [Remove-MgBetaUserSecurityInformationProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetausersecurityinformationprotection)
 

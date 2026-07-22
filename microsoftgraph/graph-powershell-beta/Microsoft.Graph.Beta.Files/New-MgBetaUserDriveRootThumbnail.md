@@ -680,5 +680,5 @@ This is only available when a folder thumbnail is requested.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootthumbnail)
+- [New-MgBetaUserDriveRootThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootthumbnail)
 

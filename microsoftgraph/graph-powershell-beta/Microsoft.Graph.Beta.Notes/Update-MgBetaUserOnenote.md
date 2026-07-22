@@ -1277,5 +1277,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenote)
+- [Update-MgBetaUserOnenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenote)
 

@@ -575,5 +575,5 @@ MATCHEDDEVICES <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch[]>: Co
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesdeploymentaudienceapplicablecontent)
+- [New-MgBetaWindowsUpdatesDeploymentAudienceApplicableContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesdeploymentaudienceapplicablecontent)
 

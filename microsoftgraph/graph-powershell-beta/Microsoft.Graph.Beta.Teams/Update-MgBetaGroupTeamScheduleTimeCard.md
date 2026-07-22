@@ -962,5 +962,5 @@ If both are included in the request with different values, the value for isAtApp
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduletimecard)
+- [Update-MgBetaGroupTeamScheduleTimeCard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduletimecard)
 

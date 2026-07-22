@@ -513,5 +513,5 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalauthorizationsystemdatacollectioninfo)
+- [Update-MgBetaExternalAuthorizationSystemDataCollectionInfo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalauthorizationsystemdatacollectioninfo)
 

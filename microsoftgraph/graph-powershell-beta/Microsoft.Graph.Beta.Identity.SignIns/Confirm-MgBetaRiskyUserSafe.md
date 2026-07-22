@@ -416,5 +416,5 @@ BODYPARAMETER `<IPaths1Kyb54HIdentityprotectionRiskyusersMicrosoftGraphConfirmsa
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyusersafe)
-- [](https://learn.microsoft.com/graph/api/riskyuser-confirmsafe?view=graph-rest-beta)
+- [Confirm-MgBetaRiskyUserSafe](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyusersafe)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyuser-confirmsafe?view=graph-rest-beta)

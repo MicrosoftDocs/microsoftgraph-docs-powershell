@@ -465,6 +465,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitecontentmodelgetbynameapplieddrive)
-- [](https://learn.microsoft.com/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta)
+- [Get-MgBetaGroupSiteContentModelGetByNameAppliedDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitecontentmodelgetbynameapplieddrive)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta)
 

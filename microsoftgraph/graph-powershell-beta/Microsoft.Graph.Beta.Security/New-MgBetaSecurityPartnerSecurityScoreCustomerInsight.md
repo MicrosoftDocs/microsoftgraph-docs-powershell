@@ -401,5 +401,5 @@ MFA `<IMicrosoftGraphPartnerSecurityCustomerMfaInsight>`: customerMfaInsight
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorecustomerinsight)
+- [New-MgBetaSecurityPartnerSecurityScoreCustomerInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorecustomerinsight)
 

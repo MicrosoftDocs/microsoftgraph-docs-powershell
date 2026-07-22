@@ -610,5 +610,5 @@ REQUEST `<IMicrosoftGraphPowerliftDownloadRequest>`: Request used to download ap
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetadownloadusermanageddeviceappdiagnostic)
+- [Invoke-MgBetaDownloadUserManagedDeviceAppDiagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetadownloadusermanageddeviceappdiagnostic)
 

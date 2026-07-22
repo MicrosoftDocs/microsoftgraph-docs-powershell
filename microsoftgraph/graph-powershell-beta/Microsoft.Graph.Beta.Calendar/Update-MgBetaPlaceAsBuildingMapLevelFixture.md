@@ -630,5 +630,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasbuildingmaplevelfixture)
-- [](https://learn.microsoft.com/graph/api/fixturemap-update?view=graph-rest-beta)
+- [Update-MgBetaPlaceAsBuildingMapLevelFixture](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasbuildingmaplevelfixture)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/fixturemap-update?view=graph-rest-beta)

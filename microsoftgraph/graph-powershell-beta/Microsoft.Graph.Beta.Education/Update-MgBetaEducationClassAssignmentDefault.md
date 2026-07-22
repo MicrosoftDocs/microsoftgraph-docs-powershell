@@ -633,5 +633,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault)
-- [](https://learn.microsoft.com/graph/api/educationassignmentdefaults-update?view=graph-rest-beta)
+- [Update-MgBetaEducationClassAssignmentDefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignmentdefaults-update?view=graph-rest-beta)

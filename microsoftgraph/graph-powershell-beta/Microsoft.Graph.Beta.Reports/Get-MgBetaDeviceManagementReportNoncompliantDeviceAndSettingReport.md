@@ -596,5 +596,5 @@ BODYPARAMETER `<IPaths11Lc6EuDevicemanagementReportsMicrosoftGraphGetnoncomplian
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportnoncompliantdeviceandsettingreport)
+- [Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportnoncompliantdeviceandsettingreport)
 

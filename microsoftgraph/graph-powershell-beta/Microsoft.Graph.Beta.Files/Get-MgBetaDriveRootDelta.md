@@ -655,6 +655,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootdelta)
-- [](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-beta)
+- [Get-MgBetaDriveRootDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-beta)
 

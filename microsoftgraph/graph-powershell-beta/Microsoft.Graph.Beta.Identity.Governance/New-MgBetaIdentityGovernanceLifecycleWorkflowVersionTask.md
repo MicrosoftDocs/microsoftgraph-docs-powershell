@@ -18642,5 +18642,5 @@ Required.Supports $filter(eq, ne).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowversiontask)
+- [New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowversiontask)
 

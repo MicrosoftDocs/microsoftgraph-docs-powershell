@@ -747,5 +747,5 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/clear-mgbetadevicemanagementcomanageddevice)
+- [Clear-MgBetaDeviceManagementComanagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/clear-mgbetadevicemanagementcomanageddevice)
 

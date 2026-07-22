@@ -440,5 +440,5 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicycompliancechange)
-- [](https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-delete?view=graph-rest-beta)
+- [Remove-MgBetaWindowsUpdatesPolicyComplianceChange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicycompliancechange)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-compliancechange-delete?view=graph-rest-beta)

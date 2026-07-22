@@ -634,5 +634,5 @@ Supports $filter (eq) and $orderby.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessloggenerativeaiinsight)
+- [New-MgBetaNetworkAccessLogGenerativeAiInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessloggenerativeaiinsight)
 

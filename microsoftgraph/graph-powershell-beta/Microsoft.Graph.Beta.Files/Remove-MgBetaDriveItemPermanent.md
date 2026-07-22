@@ -407,5 +407,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitempermanent)
+- [Remove-MgBetaDriveItemPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitempermanent)
 

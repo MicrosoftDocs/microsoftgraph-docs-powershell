@@ -1239,5 +1239,5 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign)
-- [](https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityAttackSimulationTrainingCampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-beta)

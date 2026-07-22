@@ -473,5 +473,5 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/sync-mgbetadevicemanagementcomanageddevice)
+- [Sync-MgBetaDeviceManagementComanagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/sync-mgbetadevicemanagementcomanageddevice)
 

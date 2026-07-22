@@ -527,5 +527,5 @@ Supports $filter (eq, startsWith) and $orderby.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportauthenticationmethodusereventsummary)
+- [New-MgBetaReportAuthenticationMethodUserEventSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportauthenticationmethodusereventsummary)
 

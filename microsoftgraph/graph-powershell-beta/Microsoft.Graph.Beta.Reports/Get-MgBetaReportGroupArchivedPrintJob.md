@@ -510,5 +510,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportgrouparchivedprintjob)
-- [](https://learn.microsoft.com/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta)
+- [Get-MgBetaReportGroupArchivedPrintJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportgrouparchivedprintjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta)

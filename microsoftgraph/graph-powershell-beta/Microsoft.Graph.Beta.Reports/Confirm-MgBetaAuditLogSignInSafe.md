@@ -418,5 +418,5 @@ BODYPARAMETER `<IPaths1Yhfzi3AuditlogsSigninsMicrosoftGraphConfirmsafePostReques
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsigninsafe)
-- [](https://learn.microsoft.com/graph/api/signin-confirmsafe?view=graph-rest-beta)
+- [Confirm-MgBetaAuditLogSignInSafe](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsigninsafe)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-confirmsafe?view=graph-rest-beta)

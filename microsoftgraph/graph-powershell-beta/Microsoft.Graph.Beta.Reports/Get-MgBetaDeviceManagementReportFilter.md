@@ -595,5 +595,5 @@ BODYPARAMETER `<IPaths1J4Do9UDevicemanagementReportsMicrosoftGraphGetreportfilte
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportfilter)
+- [Get-MgBetaDeviceManagementReportFilter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportfilter)
 

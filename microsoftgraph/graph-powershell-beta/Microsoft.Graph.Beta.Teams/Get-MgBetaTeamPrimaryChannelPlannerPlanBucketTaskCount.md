@@ -424,5 +424,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelplannerplanbuckettaskcount)
+- [Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelplannerplanbuckettaskcount)
 

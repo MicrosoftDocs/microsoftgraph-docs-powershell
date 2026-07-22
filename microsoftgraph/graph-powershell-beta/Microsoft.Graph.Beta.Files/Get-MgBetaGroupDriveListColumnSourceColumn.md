@@ -409,5 +409,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistcolumnsourcecolumn)
+- [Get-MgBetaGroupDriveListColumnSourceColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistcolumnsourcecolumn)
 

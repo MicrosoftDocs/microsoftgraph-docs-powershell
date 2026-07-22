@@ -407,5 +407,5 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration)
+- [Remove-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration)
 

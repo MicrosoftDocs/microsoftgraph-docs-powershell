@@ -429,5 +429,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelastmodifiedbyusermailboxsetting)
+- [Get-MgBetaSiteLastModifiedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelastmodifiedbyusermailboxsetting)
 

@@ -602,5 +602,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/suspend-mgbetausermanageddevicemanagedhomescreen)
+- [Suspend-MgBetaUserManagedDeviceManagedHomeScreen](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/suspend-mgbetausermanageddevicemanagedhomescreen)
 

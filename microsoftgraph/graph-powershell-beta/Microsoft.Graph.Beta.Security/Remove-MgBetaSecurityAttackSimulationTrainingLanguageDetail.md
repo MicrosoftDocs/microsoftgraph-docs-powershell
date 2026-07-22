@@ -501,5 +501,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationtraininglanguagedetail)
+- [Remove-MgBetaSecurityAttackSimulationTrainingLanguageDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationtraininglanguagedetail)
 

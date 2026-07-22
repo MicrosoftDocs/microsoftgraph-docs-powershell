@@ -424,5 +424,5 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchacronym)
-- [](https://learn.microsoft.com/graph/api/search-acronym-delete?view=graph-rest-beta)
+- [Remove-MgBetaSearchAcronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchacronym)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-acronym-delete?view=graph-rest-beta)

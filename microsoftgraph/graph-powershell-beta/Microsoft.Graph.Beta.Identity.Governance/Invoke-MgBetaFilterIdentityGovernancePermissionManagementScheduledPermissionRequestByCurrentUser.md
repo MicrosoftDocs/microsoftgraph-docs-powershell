@@ -578,5 +578,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernancepermissionmanagementscheduledpermissionrequestbycurrentuser)
+- [Invoke-MgBetaFilterIdentityGovernancePermissionManagementScheduledPermissionRequestByCurrentUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernancepermissionmanagementscheduledpermissionrequestbycurrentuser)
 

@@ -504,5 +504,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagetemplatecanvalayouthorizontalsectioncolumnwebpartpositionofwebpart)
+- [Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagetemplatecanvalayouthorizontalsectioncolumnwebpartpositionofwebpart)
 

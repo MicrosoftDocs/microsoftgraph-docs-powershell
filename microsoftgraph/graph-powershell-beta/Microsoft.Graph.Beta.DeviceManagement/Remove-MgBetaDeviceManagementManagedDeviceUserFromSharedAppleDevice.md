@@ -601,5 +601,5 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmanageddeviceuserfromsharedappledevice)
+- [Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmanageddeviceuserfromsharedappledevice)
 

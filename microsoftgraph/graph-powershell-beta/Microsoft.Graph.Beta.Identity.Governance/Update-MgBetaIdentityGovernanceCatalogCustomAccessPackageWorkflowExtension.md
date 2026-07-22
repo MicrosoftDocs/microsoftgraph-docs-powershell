@@ -833,5 +833,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogcustomaccesspackageworkflowextension)
+- [Update-MgBetaIdentityGovernanceCatalogCustomAccessPackageWorkflowExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogcustomaccesspackageworkflowextension)
 

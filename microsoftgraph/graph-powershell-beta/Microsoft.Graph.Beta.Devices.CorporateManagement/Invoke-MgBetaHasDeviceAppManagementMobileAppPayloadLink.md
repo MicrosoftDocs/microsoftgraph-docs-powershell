@@ -361,5 +361,5 @@ BODY `<IPaths99Fc39DeviceappmanagementMobileappsMicrosoftGraphHaspayloadlinksPos
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementmobileapppayloadlink)
+- [Invoke-MgBetaHasDeviceAppManagementMobileAppPayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementmobileapppayloadlink)
 

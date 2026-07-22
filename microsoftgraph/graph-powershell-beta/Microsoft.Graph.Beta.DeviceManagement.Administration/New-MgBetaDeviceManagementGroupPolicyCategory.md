@@ -834,5 +834,5 @@ For example: edge.admx
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicycategory)
+- [New-MgBetaDeviceManagementGroupPolicyCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicycategory)
 

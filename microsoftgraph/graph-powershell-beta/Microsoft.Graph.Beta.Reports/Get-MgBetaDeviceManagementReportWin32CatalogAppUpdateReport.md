@@ -585,5 +585,5 @@ BODY `<IPaths1617WkgDevicemanagementReportsMicrosoftGraphRetrievewin32Catalogapp
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportwin32catalogappupdatereport)
+- [Get-MgBetaDeviceManagementReportWin32CatalogAppUpdateReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportwin32catalogappupdatereport)
 

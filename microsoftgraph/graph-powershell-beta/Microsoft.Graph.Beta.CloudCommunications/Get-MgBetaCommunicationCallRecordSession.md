@@ -604,5 +604,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordsession)
-- [](https://learn.microsoft.com/graph/api/callrecords-callrecord-list-sessions?view=graph-rest-beta)
+- [Get-MgBetaCommunicationCallRecordSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/callrecords-callrecord-list-sessions?view=graph-rest-beta)

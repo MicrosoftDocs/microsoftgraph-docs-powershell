@@ -362,5 +362,5 @@ BODY `<IPathsRrufjsDevicemanagementWindowsautopilotdeploymentprofilesMicrosoftGr
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetahasdevicemanagementwindowsautopilotdeploymentprofilepayloadlink)
+- [Invoke-MgBetaHasDeviceManagementWindowsAutopilotDeploymentProfilePayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetahasdevicemanagementwindowsautopilotdeploymentprofilepayloadlink)
 

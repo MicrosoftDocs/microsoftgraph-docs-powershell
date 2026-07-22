@@ -469,5 +469,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserteamworkinstalledapp)
-- [](https://learn.microsoft.com/graph/api/userteamwork-delete-installedapps?view=graph-rest-beta)
+- [Remove-MgBetaUserTeamworkInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserteamworkinstalledapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-delete-installedapps?view=graph-rest-beta)

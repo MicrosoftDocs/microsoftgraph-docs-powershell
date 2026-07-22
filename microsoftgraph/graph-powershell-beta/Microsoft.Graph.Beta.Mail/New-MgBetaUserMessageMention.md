@@ -764,5 +764,5 @@ MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessagemention)
+- [New-MgBetaUserMessageMention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessagemention)
 

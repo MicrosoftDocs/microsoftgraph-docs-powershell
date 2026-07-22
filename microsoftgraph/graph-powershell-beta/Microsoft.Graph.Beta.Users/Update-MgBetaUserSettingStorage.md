@@ -562,5 +562,5 @@ The possible values are: normal, nearing, critical, full, and overLimit.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingstorage)
+- [Update-MgBetaUserSettingStorage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingstorage)
 

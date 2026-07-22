@@ -672,5 +672,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouppermissiongrant)
+- [New-MgBetaGroupPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouppermissiongrant)
 

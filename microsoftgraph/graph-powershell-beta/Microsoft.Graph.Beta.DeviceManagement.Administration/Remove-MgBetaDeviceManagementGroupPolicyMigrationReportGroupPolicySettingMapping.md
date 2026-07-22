@@ -466,5 +466,5 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementgrouppolicymigrationreportgrouppolicysettingmapping)
+- [Remove-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementgrouppolicymigrationreportgrouppolicysettingmapping)
 

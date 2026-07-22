@@ -2194,5 +2194,5 @@ Supports $filter (eq, in).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectory)
+- [Update-MgBetaRoleManagementDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectory)
 

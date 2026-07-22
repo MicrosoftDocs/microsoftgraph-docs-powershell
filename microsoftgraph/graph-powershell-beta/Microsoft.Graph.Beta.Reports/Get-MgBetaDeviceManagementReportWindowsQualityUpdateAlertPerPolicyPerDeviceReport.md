@@ -585,5 +585,5 @@ BODYPARAMETER `<IPaths1Tgit55DevicemanagementReportsMicrosoftGraphGetwindowsqual
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportwindowsqualityupdatealertperpolicyperdevicereport)
+- [Get-MgBetaDeviceManagementReportWindowsQualityUpdateAlertPerPolicyPerDeviceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportwindowsqualityupdatealertperpolicyperdevicereport)
 

@@ -394,5 +394,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobjectcountasapplication)
+- [Get-MgBetaUserOwnedObjectCountAsApplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobjectcountasapplication)
 

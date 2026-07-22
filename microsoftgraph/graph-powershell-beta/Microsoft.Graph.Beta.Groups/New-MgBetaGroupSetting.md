@@ -619,5 +619,5 @@ VALUES <IMicrosoftGraphSettingValue[]>: Collection of name-value pairs correspon
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting)
-- [](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-beta)
+- [New-MgBetaGroupSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-beta)

@@ -1997,5 +1997,5 @@ TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall)
-- [](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-beta)
+- [New-MgBetaCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-beta)

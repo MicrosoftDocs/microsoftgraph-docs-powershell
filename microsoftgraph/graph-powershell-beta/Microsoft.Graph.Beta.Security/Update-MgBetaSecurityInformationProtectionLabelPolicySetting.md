@@ -453,5 +453,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotectionlabelpolicysetting)
+- [Update-MgBetaSecurityInformationProtectionLabelPolicySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotectionlabelpolicysetting)
 

@@ -570,5 +570,5 @@ Examples include user, group, application, servicePrincipal, device.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalert)
+- [New-MgBetaReportHealthMonitoringAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalert)
 

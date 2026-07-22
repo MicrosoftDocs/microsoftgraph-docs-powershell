@@ -594,5 +594,5 @@ BODYPARAMETER `<IPaths1Xqz72ODevicemanagementReportsMicrosoftGraphGetmobileappli
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportmobileapplicationmanagementappregistrationsummaryreport)
+- [Get-MgBetaDeviceManagementReportMobileApplicationManagementAppRegistrationSummaryReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportmobileapplicationmanagementappregistrationsummaryreport)
 

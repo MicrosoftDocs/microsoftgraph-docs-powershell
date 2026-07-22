@@ -443,5 +443,5 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilenote)
-- [](https://learn.microsoft.com/graph/api/personannotation-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserProfileNote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilenote)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/personannotation-delete?view=graph-rest-beta)

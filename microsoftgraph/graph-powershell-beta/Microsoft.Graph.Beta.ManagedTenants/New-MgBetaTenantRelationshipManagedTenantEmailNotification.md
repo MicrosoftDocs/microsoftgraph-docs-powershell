@@ -720,5 +720,5 @@ EMAILADDRESSES <IMicrosoftGraphManagedTenantsEmail[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantemailnotification)
+- [New-MgBetaTenantRelationshipManagedTenantEmailNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantemailnotification)
 

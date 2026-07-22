@@ -573,5 +573,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcontenttypecolumnlink)
+- [Update-MgBetaShareListContentTypeColumnLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcontenttypecolumnlink)
 

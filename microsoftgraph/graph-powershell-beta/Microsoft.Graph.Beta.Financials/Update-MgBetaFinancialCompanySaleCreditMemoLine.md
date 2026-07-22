@@ -1292,5 +1292,5 @@ ITEM `<IMicrosoftGraphItem>`: item
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemoline)
+- [Update-MgBetaFinancialCompanySaleCreditMemoLine](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemoline)
 

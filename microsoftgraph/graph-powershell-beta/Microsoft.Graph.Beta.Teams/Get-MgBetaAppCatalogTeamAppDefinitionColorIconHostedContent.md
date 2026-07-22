@@ -533,5 +533,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloriconhostedcontent)
-- [](https://learn.microsoft.com/graph/api/teamworkhostedcontent-get?view=graph-rest-beta)
+- [Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloriconhostedcontent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworkhostedcontent-get?view=graph-rest-beta)

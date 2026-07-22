@@ -274,5 +274,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharecount)
+- [Get-MgBetaShareCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharecount)
 

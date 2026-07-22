@@ -443,5 +443,5 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepatent)
-- [](https://learn.microsoft.com/graph/api/itempatent-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserProfilePatent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepatent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/itempatent-delete?view=graph-rest-beta)

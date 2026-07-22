@@ -627,5 +627,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthread)
-- [](https://learn.microsoft.com/graph/api/conversation-list-threads?view=graph-rest-beta)
+- [Get-MgBetaGroupConversationThread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversation-list-threads?view=graph-rest-beta)

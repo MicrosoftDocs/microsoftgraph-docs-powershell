@@ -506,5 +506,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootextension)
+- [Update-MgBetaDriveRootExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootextension)
 

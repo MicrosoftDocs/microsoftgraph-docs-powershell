@@ -466,5 +466,5 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetarotatedevicemanagementmanageddevicerecoverylockpasscode)
+- [Invoke-MgBetaRotateDeviceManagementManagedDeviceRecoveryLockPasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetarotatedevicemanagementmanageddevicerecoverylockpasscode)
 

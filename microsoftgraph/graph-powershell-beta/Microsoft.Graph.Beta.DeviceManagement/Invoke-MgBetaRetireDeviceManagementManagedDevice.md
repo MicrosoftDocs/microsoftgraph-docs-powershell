@@ -476,5 +476,5 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaretiredevicemanagementmanageddevice)
+- [Invoke-MgBetaRetireDeviceManagementManagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaretiredevicemanagementmanageddevice)
 

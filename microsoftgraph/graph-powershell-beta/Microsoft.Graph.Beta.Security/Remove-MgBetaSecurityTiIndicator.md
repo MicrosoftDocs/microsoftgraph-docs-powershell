@@ -497,5 +497,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicator)
-- [](https://learn.microsoft.com/graph/api/tiindicator-delete?view=graph-rest-beta)
+- [Remove-MgBetaSecurityTiIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicator)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tiindicator-delete?view=graph-rest-beta)

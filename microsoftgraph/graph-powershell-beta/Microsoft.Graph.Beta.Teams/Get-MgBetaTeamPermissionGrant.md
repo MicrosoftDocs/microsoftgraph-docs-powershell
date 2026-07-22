@@ -609,5 +609,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateampermissiongrant)
-- [](https://learn.microsoft.com/graph/api/team-list-permissiongrants?view=graph-rest-beta)
+- [Get-MgBetaTeamPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateampermissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-list-permissiongrants?view=graph-rest-beta)

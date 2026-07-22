@@ -443,5 +443,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteitemlastmodifiedbyuser)
+- [Get-MgBetaSiteItemLastModifiedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteitemlastmodifiedbyuser)
 

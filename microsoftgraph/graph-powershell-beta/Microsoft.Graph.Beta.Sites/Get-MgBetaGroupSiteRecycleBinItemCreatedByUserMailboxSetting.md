@@ -447,5 +447,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiterecyclebinitemcreatedbyusermailboxsetting)
+- [Get-MgBetaGroupSiteRecycleBinItemCreatedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiterecyclebinitemcreatedbyusermailboxsetting)
 

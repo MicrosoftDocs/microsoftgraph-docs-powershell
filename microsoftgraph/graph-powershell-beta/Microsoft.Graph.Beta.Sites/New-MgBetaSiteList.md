@@ -56463,5 +56463,5 @@ See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelist)
-- [](https://learn.microsoft.com/graph/api/list-create?view=graph-rest-beta)
+- [New-MgBetaSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelist)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/list-create?view=graph-rest-beta)

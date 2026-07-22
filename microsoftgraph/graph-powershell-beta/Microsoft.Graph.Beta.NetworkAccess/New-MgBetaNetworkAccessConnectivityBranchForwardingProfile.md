@@ -1685,5 +1685,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchforwardingprofile)
+- [New-MgBetaNetworkAccessConnectivityBranchForwardingProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchforwardingprofile)
 

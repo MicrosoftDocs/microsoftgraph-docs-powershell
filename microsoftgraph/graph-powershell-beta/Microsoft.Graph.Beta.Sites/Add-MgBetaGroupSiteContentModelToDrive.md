@@ -577,6 +577,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetagroupsitecontentmodeltodrive)
-- [](https://learn.microsoft.com/graph/api/contentmodel-addtodrive?view=graph-rest-beta)
+- [Add-MgBetaGroupSiteContentModelToDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetagroupsitecontentmodeltodrive)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contentmodel-addtodrive?view=graph-rest-beta)
 

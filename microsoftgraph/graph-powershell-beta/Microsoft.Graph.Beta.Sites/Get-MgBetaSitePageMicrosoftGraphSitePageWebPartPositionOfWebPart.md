@@ -443,5 +443,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagemicrosoftgraphsitepagewebpartpositionofwebpart)
+- [Get-MgBetaSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagemicrosoftgraphsitepagewebpartpositionofwebpart)
 

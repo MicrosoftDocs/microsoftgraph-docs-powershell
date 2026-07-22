@@ -18990,5 +18990,5 @@ Defaults to setting on client device.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementscriptuserrunstatedevicerunstate)
+- [Update-MgBetaDeviceManagementScriptUserRunStateDeviceRunState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementscriptuserrunstatedevicerunstate)
 

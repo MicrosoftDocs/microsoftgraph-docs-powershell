@@ -453,5 +453,5 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodianunifiedgroupsource)
-- [](https://learn.microsoft.com/graph/api/ediscovery-unifiedgroupsource-delete?view=graph-rest-beta)
+- [Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodianunifiedgroupsource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-unifiedgroupsource-delete?view=graph-rest-beta)

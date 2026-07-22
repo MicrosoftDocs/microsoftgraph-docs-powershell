@@ -410,6 +410,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtimeoff)
-- [](https://learn.microsoft.com/graph/api/team-gettimesoff?view=graph-rest-beta)
+- [Get-MgBetaTeamTimeOff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtimeoff)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-gettimesoff?view=graph-rest-beta)
 

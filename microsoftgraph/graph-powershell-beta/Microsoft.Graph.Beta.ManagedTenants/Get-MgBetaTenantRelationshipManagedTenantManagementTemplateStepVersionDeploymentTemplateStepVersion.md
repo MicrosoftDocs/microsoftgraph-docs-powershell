@@ -399,5 +399,5 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversiondeploymenttemplatestepversion)
+- [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeploymentTemplateStepVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversiondeploymenttemplatestepversion)
 

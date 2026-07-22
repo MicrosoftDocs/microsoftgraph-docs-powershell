@@ -493,5 +493,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbrandingthemelocalizationbannerlogo)
+- [Remove-MgBetaOrganizationBrandingThemeLocalizationBannerLogo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbrandingthemelocalizationbannerlogo)
 

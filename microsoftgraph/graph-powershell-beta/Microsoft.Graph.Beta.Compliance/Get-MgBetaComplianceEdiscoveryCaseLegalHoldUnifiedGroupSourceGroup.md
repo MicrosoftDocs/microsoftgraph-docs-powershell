@@ -399,5 +399,5 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalholdunifiedgroupsourcegroup)
+- [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalholdunifiedgroupsourcegroup)
 

@@ -384,5 +384,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivebundlecount)
+- [Get-MgBetaUserDriveBundleCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivebundlecount)
 

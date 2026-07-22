@@ -918,5 +918,5 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchattab)
+- [New-MgBetaUserChatTab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchattab)
 

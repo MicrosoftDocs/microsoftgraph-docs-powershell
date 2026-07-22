@@ -363,5 +363,5 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivitybranchconnectivityconfigurationlinkcount)
+- [Get-MgBetaNetworkAccessConnectivityBranchConnectivityConfigurationLinkCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivitybranchconnectivityconfigurationlinkcount)
 

@@ -662,5 +662,5 @@ RULES <IMicrosoftGraphSecurityHostReputationRule[]>: A collection of rules that 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostreputation)
+- [Update-MgBetaSecurityThreatIntelligenceHostReputation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostreputation)
 

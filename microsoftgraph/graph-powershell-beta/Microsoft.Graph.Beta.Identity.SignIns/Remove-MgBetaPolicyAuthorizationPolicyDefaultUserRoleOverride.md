@@ -498,5 +498,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthorizationpolicydefaultuserroleoverride)
+- [Remove-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthorizationpolicydefaultuserroleoverride)
 

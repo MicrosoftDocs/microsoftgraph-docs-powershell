@@ -385,5 +385,5 @@ BODYPARAMETER `<IPaths180CsoDevicemanagementMonitoringAlertrecordsMicrosoftGraph
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/rename-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent)
+- [Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/rename-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent)
 

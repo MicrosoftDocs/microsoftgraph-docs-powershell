@@ -643,5 +643,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurity)
+- [Update-MgBetaUserSecurity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurity)
 

@@ -384,5 +384,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberwithlicenseerrorcountasgroup)
+- [Get-MgBetaGroupMemberWithLicenseErrorCountAsGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberwithlicenseerrorcountasgroup)
 

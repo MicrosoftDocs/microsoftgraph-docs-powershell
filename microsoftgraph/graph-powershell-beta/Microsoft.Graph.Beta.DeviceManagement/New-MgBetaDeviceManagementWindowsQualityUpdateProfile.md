@@ -601,5 +601,5 @@ EXPEDITEDUPDATESETTINGS `<IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>`
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsqualityupdateprofile)
+- [New-MgBetaDeviceManagementWindowsQualityUpdateProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsqualityupdateprofile)
 

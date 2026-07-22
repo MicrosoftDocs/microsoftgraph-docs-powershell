@@ -783,5 +783,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedapprovalroleinfo)
+- [Update-MgBetaPrivilegedApprovalRoleInfo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedapprovalroleinfo)
 

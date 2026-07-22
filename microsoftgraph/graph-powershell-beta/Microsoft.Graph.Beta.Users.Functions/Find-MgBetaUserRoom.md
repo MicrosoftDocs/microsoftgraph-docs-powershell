@@ -467,5 +467,5 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroom)
+- [Find-MgBetaUserRoom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroom)
 

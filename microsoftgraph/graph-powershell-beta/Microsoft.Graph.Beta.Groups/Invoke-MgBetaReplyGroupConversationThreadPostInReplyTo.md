@@ -767,5 +767,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthreadpostinreplyto)
+- [Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthreadpostinreplyto)
 

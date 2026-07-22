@@ -431,5 +431,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappasmacospkgappcontentversionscriptcount)
+- [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionScriptCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappasmacospkgappcontentversionscriptcount)
 

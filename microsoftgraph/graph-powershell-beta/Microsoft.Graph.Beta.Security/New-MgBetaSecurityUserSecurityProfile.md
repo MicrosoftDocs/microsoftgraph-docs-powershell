@@ -618,5 +618,5 @@ Required
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityusersecurityprofile)
+- [New-MgBetaSecurityUserSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityusersecurityprofile)
 

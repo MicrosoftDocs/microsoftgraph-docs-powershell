@@ -455,5 +455,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostwhoi)
-- [](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-beta)
+- [Get-MgBetaSecurityThreatIntelligenceHostWhoi](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostwhoi)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-beta)

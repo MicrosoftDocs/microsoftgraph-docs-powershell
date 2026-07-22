@@ -302,5 +302,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaunbinddevicemanagementandroidforworksetting)
+- [Invoke-MgBetaUnbindDeviceManagementAndroidForWorkSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaunbinddevicemanagementandroidforworksetting)
 

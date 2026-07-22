@@ -508,5 +508,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityaccount)
+- [New-MgBetaSecurityIdentityAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityaccount)
 

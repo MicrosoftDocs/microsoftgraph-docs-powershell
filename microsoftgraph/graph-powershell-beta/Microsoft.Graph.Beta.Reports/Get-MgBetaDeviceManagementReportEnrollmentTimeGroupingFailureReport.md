@@ -585,5 +585,5 @@ BODY `<IPathsOurw91DevicemanagementReportsMicrosoftGraphRetrieveenrollmenttimegr
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportenrollmenttimegroupingfailurereport)
+- [Get-MgBetaDeviceManagementReportEnrollmentTimeGroupingFailureReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportenrollmenttimegroupingfailurereport)
 

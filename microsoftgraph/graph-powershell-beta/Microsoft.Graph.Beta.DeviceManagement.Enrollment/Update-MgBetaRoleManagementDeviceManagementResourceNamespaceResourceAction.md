@@ -841,5 +841,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementresourcenamespaceresourceaction)
+- [Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementresourcenamespaceresourceaction)
 

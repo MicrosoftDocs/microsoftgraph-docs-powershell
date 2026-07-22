@@ -677,6 +677,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowuserattributeassignment)
-- [](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-userattributeassignments?view=graph-rest-beta)
+- [Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowuserattributeassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-userattributeassignments?view=graph-rest-beta)

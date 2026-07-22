@@ -436,5 +436,5 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanysalecreditmemocurrency)
+- [Remove-MgBetaFinancialCompanySaleCreditMemoCurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanysalecreditmemocurrency)
 

@@ -381,5 +381,5 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestapproverbyuserprincipalname)
+- [Get-MgBetaPrivacySubjectRightsRequestApproverByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestapproverbyuserprincipalname)
 

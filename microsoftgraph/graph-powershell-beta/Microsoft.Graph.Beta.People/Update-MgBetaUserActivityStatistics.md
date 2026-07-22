@@ -662,5 +662,5 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauseractivitystatistics)
+- [Update-MgBetaUserActivityStatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauseractivitystatistics)
 

@@ -452,5 +452,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetaappcatalogteamapp)
-- [](https://learn.microsoft.com/graph/api/teamsapp-delete?view=graph-rest-beta)
+- [Remove-MgBetaAppCatalogTeamApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetaappcatalogteamapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsapp-delete?view=graph-rest-beta)

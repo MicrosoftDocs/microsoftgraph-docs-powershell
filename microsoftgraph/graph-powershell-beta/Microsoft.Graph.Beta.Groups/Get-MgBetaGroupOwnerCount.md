@@ -391,5 +391,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownercount)
+- [Get-MgBetaGroupOwnerCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownercount)
 

@@ -456,5 +456,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationqrcodepinmethodstandardqrcode)
-- [](https://learn.microsoft.com/graph/api/qrcode-get?view=graph-rest-beta)
+- [Get-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationqrcodepinmethodstandardqrcode)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/qrcode-get?view=graph-rest-beta)

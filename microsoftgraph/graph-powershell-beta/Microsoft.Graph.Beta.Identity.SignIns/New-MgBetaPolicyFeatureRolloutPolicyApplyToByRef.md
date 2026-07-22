@@ -608,5 +608,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyfeaturerolloutpolicyapplytobyref)
-- [](https://learn.microsoft.com/graph/api/featurerolloutpolicy-post-appliesto?view=graph-rest-beta)
+- [New-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyfeaturerolloutpolicyapplytobyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/featurerolloutpolicy-post-appliesto?view=graph-rest-beta)

@@ -1448,5 +1448,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetagrouponenotenotebooksectiongroup)
+- [Update-MgBetaGroupOnenoteNotebookSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetagrouponenotenotebooksectiongroup)
 

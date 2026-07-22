@@ -625,5 +625,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobject)
-- [](https://learn.microsoft.com/graph/api/agentuser-list-ownedobjects?view=graph-rest-beta)
+- [Get-MgBetaUserOwnedObject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobject)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-ownedobjects?view=graph-rest-beta)

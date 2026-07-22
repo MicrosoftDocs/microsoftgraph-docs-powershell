@@ -474,5 +474,5 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/request-mgbetadevicemanagementcomanageddeviceremoteassistance)
+- [Request-MgBetaDeviceManagementComanagedDeviceRemoteAssistance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/request-mgbetadevicemanagementcomanageddeviceremoteassistance)
 

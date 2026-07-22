@@ -506,5 +506,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteonenotenotebooksectiongroup)
+- [Remove-MgBetaGroupSiteOnenoteNotebookSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteonenotenotebooksectiongroup)
 

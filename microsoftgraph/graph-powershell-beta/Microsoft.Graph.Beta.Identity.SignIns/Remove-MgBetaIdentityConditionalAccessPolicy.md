@@ -497,5 +497,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccesspolicy)
-- [](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-delete?view=graph-rest-beta)
+- [Remove-MgBetaIdentityConditionalAccessPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccesspolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-delete?view=graph-rest-beta)

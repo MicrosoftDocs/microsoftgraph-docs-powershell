@@ -476,5 +476,5 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinessappointment)
-- [](https://learn.microsoft.com/graph/api/bookingappointment-delete?view=graph-rest-beta)
+- [Remove-MgBetaBookingBusinessAppointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinessappointment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingappointment-delete?view=graph-rest-beta)

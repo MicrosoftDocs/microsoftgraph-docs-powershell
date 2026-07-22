@@ -546,5 +546,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationownerbyref)
-- [](https://learn.microsoft.com/graph/api/application-post-owners?view=graph-rest-beta)
+- [New-MgBetaApplicationOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationownerbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-post-owners?view=graph-rest-beta)

@@ -585,5 +585,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetascanusermanageddevicewindowsdefender)
+- [Invoke-MgBetaScanUserManagedDeviceWindowsDefender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetascanusermanageddevicewindowsdefender)
 

@@ -594,5 +594,5 @@ joe@contoso.com
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementembeddedsimactivationcodepool)
+- [New-MgBetaDeviceManagementEmbeddedSimActivationCodePool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementembeddedsimactivationcodepool)
 

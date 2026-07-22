@@ -435,5 +435,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserlicensedetail)
+- [Remove-MgBetaUserLicenseDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserlicensedetail)
 

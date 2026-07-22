@@ -365,5 +365,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivecreatedbyuser)
+- [Get-MgBetaDriveCreatedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivecreatedbyuser)
 

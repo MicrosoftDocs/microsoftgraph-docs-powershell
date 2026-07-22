@@ -585,5 +585,5 @@ BODYPARAMETER `<IPaths10RpajiDevicemanagementReportsMicrosoftGraphGetuserinstall
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportuserinstallstatusreport)
+- [Get-MgBetaDeviceManagementReportUserInstallStatusReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportuserinstallstatusreport)
 

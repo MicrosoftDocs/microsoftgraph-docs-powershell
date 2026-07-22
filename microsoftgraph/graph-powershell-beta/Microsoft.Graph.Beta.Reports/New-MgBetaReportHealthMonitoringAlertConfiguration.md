@@ -399,5 +399,5 @@ All group types with configured email addresses are supported.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalertconfiguration)
+- [New-MgBetaReportHealthMonitoringAlertConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalertconfiguration)
 

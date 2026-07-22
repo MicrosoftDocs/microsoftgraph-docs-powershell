@@ -1068,5 +1068,5 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistpermission)
+- [New-MgBetaShareListPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistpermission)
 

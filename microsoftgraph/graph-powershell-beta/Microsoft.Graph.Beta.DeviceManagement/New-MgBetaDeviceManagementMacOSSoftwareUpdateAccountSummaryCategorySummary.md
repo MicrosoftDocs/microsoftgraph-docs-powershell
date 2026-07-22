@@ -861,5 +861,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummary)
+- [New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummary)
 

@@ -511,5 +511,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagemententerpriseapproleeligibilityscheduleinstance)
+- [Remove-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagemententerpriseapproleeligibilityscheduleinstance)
 
