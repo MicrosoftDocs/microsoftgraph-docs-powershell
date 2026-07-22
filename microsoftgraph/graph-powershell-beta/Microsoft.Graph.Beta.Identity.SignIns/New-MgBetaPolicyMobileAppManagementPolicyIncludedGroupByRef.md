@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobileappmanagementpolicyincludedgroupbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef
 ---
@@ -81,7 +81,7 @@ $params = @{
 	"@odata.id" = "https://graph.microsoft.com/odata/groups('1a9db3ab-0acf-4808-99ae-e8ed581cb2e0')"
 }
 
-New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
+New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobileAppManagementPolicyId $mobileAppManagementPolicyId -BodyParameter $params
 
 ```
 This example shows how to use the New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef Cmdlet.

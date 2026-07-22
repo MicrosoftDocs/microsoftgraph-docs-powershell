@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyuniquename
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupByUniqueName
 ---
@@ -59,9 +59,9 @@ Because the group resource supports extensions, you can also use the GET operati
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Group.ManageProtection.All, Directory.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Group.ManageProtection.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## PARAMETERS
 

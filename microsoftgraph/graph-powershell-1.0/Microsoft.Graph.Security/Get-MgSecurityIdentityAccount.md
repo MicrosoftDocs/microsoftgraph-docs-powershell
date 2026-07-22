@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityaccount
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIdentityAccount
 ---
@@ -607,6 +607,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [Get-MgSecurityIdentityAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityaccount)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/security-identityaccounts-get?view=graph-rest-1.0)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/security-identitycontainer-list-identityaccounts?view=graph-rest-1.0)
+
 
 
 

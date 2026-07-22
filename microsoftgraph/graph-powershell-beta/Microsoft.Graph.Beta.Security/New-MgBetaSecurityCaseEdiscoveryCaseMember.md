@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasemember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityCaseEdiscoveryCaseMember
 ---
@@ -15,6 +15,9 @@ title: New-MgBetaSecurityCaseEdiscoveryCaseMember
 
 Add an ediscoveryCaseMember to an ediscoveryCase.
 The ediscoveryCaseMember can be one of two types: a user or a role group.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseMember](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 

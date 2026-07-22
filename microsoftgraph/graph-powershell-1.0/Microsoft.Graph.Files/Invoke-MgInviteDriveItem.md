@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgInviteDriveItem
 ---
@@ -86,7 +86,7 @@ A sharing invitation provides permissions to the recipients and, optionally, sen
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Send a sharing invitation
 
 ```powershell
 
@@ -111,7 +111,37 @@ expirationDateTime = "2018-07-15T14:00:00.000Z"
 Invoke-MgInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```
-This example shows how to use the Invoke-MgInviteDriveItem Cmdlet.
+This example will send a sharing invitation
+
+### Example 2: Send sharing invitation with partial success
+
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+$params = @{
+	recipients = @(
+		@{
+			email = "helga@contoso.com"
+		}
+		@{
+			email = "robin@contoso.com"
+		}
+	)
+	message = "Here's the file that we're collaborating on."
+	requireSignIn = $true
+	sendInvitation = $true
+	roles = @(
+	"write"
+)
+password = "password123"
+expirationDateTime = "2018-07-15T14:00:00.000Z"
+}
+
+Invoke-MgInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example will send sharing invitation with partial success
 
 
 ## PARAMETERS

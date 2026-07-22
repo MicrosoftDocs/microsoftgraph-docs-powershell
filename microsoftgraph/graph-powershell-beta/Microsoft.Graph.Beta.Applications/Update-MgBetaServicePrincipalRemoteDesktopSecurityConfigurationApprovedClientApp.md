@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
@@ -13,7 +13,7 @@ title: Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedCl
 
 ## SYNOPSIS
 
-Update the navigation property approvedClientApps in servicePrincipals
+Update the properties of an approvedClientApp object for a remotedesktopsecurityconfiguration.
 
 ## SYNTAX
 
@@ -68,7 +68,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the navigation property approvedClientApps in servicePrincipals
+Update the properties of an approvedClientApp object for a remotedesktopsecurityconfiguration.
 
 **Permissions**
 
@@ -207,7 +207,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+Display name for the client application.
 
 ```yaml
 Type: System.String
@@ -523,7 +523,7 @@ BODYPARAMETER `<IMicrosoftGraphApprovedClientApp>`: approvedClientApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DisplayName <String>]: 
+  [DisplayName <String>]: Display name for the client application.
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of application
@@ -567,6 +567,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/approvedclientapp-update?view=graph-rest-beta)
 
 
 

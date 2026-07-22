@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessthreatintelligencepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessThreatIntelligencePolicy
 ---
@@ -59,8 +59,9 @@ Create a new threatIntelligencePolicy object.
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -76,6 +77,10 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessThreatIntelligencePolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaNetworkAccessThreatIntelligencePolicy Cmdlet.
+
 
 ## PARAMETERS
 

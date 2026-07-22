@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgServicePrincipal
 ---
@@ -14,6 +14,7 @@ title: New-MgServicePrincipal
 ## SYNOPSIS
 
 Create a new servicePrincipal object.
+This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipal?view=graph-powershell-beta)
@@ -30,14 +31,14 @@ New-MgServicePrincipal [-ResponseHeadersVariable <string>] [-AccountEnabled]
  [-AppOwnerOrganizationId <string>] [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>]
  [-AppRoleAssignmentRequired] [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
  [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <string>]
- [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
+ [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>] [-CreatedByAppId <string>]
  [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>] [-CustomSecurityAttributes <hashtable>]
  [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
  [-DeletedDateTime <datetime>] [-Description <string>] [-DisabledByMicrosoftStatus <string>]
  [-DisplayName <string>] [-Endpoints <IMicrosoftGraphEndpoint[]>]
  [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
  [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <string>]
- [-Id <string>] [-Info <IMicrosoftGraphInformationalUrl>]
+ [-Id <string>] [-Info <IMicrosoftGraphInformationalUrl>] [-IsDisabled]
  [-KeyCredentials <IMicrosoftGraphKeyCredential[]>] [-LoginUrl <string>] [-LogoutUrl <string>]
  [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <string>]
  [-NotificationEmailAddresses <string[]>]
@@ -79,14 +80,15 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new servicePrincipal object.
+This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, AgentIdentityBlueprintPrincipal.Create, AgentIdentity.Create.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All, AgentIdentityBlueprintPrincipal.Create, AgentIdentity.CreateAsManager, AgentIdentity.Create.All,  |
 
 ## EXAMPLES
 ### Example 1: Create a new service principal object
@@ -515,6 +517,29 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -CreatedByAppId
+
+The appId of the application that created this service principal.
+Set internally by Microsoft Entra ID.
+Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -CreatedObjects
 
 Directory objects created by this service principal.
@@ -855,6 +880,27 @@ To construct, see NOTES section for INFO properties and create a hash table.
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationalUrl
 DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IsDisabled
+
+
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -1905,6 +1951,9 @@ Required.
 Always null when the object hasn't been deleted.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [CreatedByAppId <String>]: The appId of the application that created this service principal.
+Set internally by Microsoft Entra ID.
+Read-only.
   [CreatedObjects <IMicrosoftGraphDirectoryObject[]>]: Directory objects created by this service principal.
 Read-only.
 Nullable.
@@ -1997,6 +2046,7 @@ For example, https://www.contoso.com/app/privacy
 For example, https://www.contoso.com/app/support
     [TermsOfServiceUrl <String>]: Link to the application's terms of service statement.
 For example, https://www.contoso.com/app/termsofservice
+  [IsDisabled <Boolean?>]: 
   [KeyCredentials <IMicrosoftGraphKeyCredential[]>]: The collection of key credentials associated with the service principal.
 Not nullable.
 Supports $filter (eq, not, ge, le).
@@ -2010,7 +2060,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Key <Byte[]>]: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     [KeyId <String>]: The unique identifier (GUID) for the key.
@@ -2117,9 +2167,13 @@ For applications that aren't SAML, don't write or otherwise rely on this propert
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: The collection of approved client apps that are associated with the RDS configuration.
+Supports $expand.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [DisplayName <String>]: The display name of the approved client application.
     [IsRemoteDesktopProtocolEnabled <Boolean?>]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
     [TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
-<br/<Supports $expand.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Display name for the target device group.
@@ -2574,7 +2628,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Key <Byte[]>]: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
   [KeyId <String>]: The unique identifier (GUID) for the key.
@@ -2685,9 +2739,13 @@ REMOTEDESKTOPSECURITYCONFIGURATION `<IMicrosoftGraphRemoteDesktopSecurityConfigu
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: The collection of approved client apps that are associated with the RDS configuration.
+Supports $expand.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DisplayName <String>]: The display name of the approved client application.
   [IsRemoteDesktopProtocolEnabled <Boolean?>]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
   [TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
-<br/<Supports $expand.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Display name for the target device group.

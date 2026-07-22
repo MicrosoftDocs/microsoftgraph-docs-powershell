@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartneridentitysynchronization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 
 ## SYNOPSIS
 
-Get the user synchronization policy of a partner-specific configuration.
+Get the user and group synchronization policy of a partner-specific configuration.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the user synchronization policy of a partner-specific configuration.
+Get the user and group synchronization policy of a partner-specific configuration.
 
 **Permissions**
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaApplicationFederatedIdentityCredential
 ---
@@ -76,7 +76,7 @@ Read the properties and relationships of a federatedIdentityCredential object as
 
 Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId
+Get-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId
 
 ```
 This example shows how to use the Get-MgBetaApplicationFederatedIdentityCredential Cmdlet.

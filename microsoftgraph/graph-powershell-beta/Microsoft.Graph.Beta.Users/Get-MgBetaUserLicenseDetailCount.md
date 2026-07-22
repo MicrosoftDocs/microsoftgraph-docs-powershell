@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserlicensedetailcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserLicenseDetailCount
 ---
@@ -51,9 +51,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LicenseAssignment.Read.All, User.ReadWrite.All, User.Read.All, User.Read, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | LicenseAssignment.Read.All, User.ReadWrite.All, User.Read.All, User.Read, Directory.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | User.Read,  |
-| Application | LicenseAssignment.Read.All, User.ReadWrite.All, User.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | LicenseAssignment.Read.All, User.ReadWrite.All, User.Read.All, Directory.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 
 ## PARAMETERS
 

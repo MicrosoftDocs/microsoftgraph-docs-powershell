@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationexternalauthenticationmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserAuthenticationExternalAuthenticationMethod
 ---
@@ -13,7 +13,10 @@ title: Get-MgBetaUserAuthenticationExternalAuthenticationMethod
 
 ## SYNOPSIS
 
-Represents the external methods registered to a user for authentication.
+Represents the external MFA registered to a user for authentication.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Represents the external methods registered to a user for authentication.
+Represents the external MFA registered to a user for authentication.
 
 **Permissions**
 

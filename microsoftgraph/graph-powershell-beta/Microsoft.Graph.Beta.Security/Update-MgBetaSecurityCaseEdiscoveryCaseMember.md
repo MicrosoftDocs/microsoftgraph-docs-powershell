@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasemember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityCaseEdiscoveryCaseMember
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaSecurityCaseEdiscoveryCaseMember
 ## SYNOPSIS
 
 Update the navigation property caseMembers in security
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseMember](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 

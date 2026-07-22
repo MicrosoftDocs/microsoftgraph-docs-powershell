@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityriskpreventionwebapplicationfirewallverification
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification
 ---
@@ -66,7 +66,7 @@ Read the properties and relationships of webApplicationFirewallVerificationModel
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
+| Application | Not supported |
 
 ## PARAMETERS
 
@@ -631,6 +631,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityriskpreventionwebapplicationfirewallverification)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/webapplicationfirewallverificationmodel-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-list-webapplicationfirewallverifications?view=graph-rest-beta)
+
 
 
 

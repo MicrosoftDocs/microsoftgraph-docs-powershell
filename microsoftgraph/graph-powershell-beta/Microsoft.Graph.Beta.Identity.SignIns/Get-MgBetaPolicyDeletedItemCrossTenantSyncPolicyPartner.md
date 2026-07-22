@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeleteditemcrosstenantsyncpolicypartner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner
 ---
@@ -620,6 +620,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeleteditemcrosstenantsyncpolicypartner)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/policydeletableitem-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/policydeletableitem-list?view=graph-rest-beta)
+
 
 
 

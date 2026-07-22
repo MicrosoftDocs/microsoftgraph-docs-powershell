@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventlistener
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityAuthenticationEventListener
 ---
@@ -13,7 +13,9 @@ title: Get-MgBetaIdentityAuthenticationEventListener
 
 ## SYNOPSIS
 
-Get authenticationEventListeners from identity
+Read the properties and relationships of an authenticationEventListener object.
+The @odata.type property in the response object indicates the type of the authenticationEventListener object.
+The following derived types are currently supported.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
@@ -58,7 +60,9 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get authenticationEventListeners from identity
+Read the properties and relationships of an authenticationEventListener object.
+The @odata.type property in the response object indicates the type of the authenticationEventListener object.
+The following derived types are currently supported.
 
 **Permissions**
 
@@ -642,6 +646,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgBetaIdentityAuthenticationEventListener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventlistener)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationeventlistener-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventlisteners?view=graph-rest-beta)
 
 

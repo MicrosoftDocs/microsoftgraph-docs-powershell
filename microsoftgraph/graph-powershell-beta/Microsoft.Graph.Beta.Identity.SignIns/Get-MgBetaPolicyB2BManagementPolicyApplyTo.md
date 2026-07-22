@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyb2bmanagementpolicyapplyto
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyB2BManagementPolicyApplyTo
 ---
@@ -647,6 +647,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [Get-MgBetaPolicyB2BManagementPolicyApplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyb2bmanagementpolicyapplyto)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/b2bmanagementpolicy-list-appliesto?view=graph-rest-beta)
+
 
 
 

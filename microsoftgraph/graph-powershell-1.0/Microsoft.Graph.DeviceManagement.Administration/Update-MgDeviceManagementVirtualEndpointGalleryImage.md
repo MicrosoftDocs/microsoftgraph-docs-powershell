@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointgalleryimage
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementVirtualEndpointGalleryImage
 ---
@@ -25,11 +25,12 @@ Update the navigation property galleryImages in deviceManagement
 ```
 Update-MgDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
- [-EndDate <datetime>] [-ExpirationDate <datetime>] [-Id <string>] [-OfferName <string>]
- [-PublisherName <string>] [-SizeInGb <int>] [-SkuName <string>] [-StartDate <datetime>]
- [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EndDate <datetime>] [-ExpirationDate <datetime>] [-Id <string>] [-OSVersionNumber <string>]
+ [-OfferName <string>] [-PublisherName <string>] [-SizeInGb <int>] [-SkuName <string>]
+ [-StartDate <datetime>] [-Status <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -48,9 +49,9 @@ Update-MgDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId <str
 Update-MgDeviceManagementVirtualEndpointGalleryImage
  -InputObject <IDeviceManagementAdministrationIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-EndDate <datetime>]
- [-ExpirationDate <datetime>] [-Id <string>] [-OfferName <string>] [-PublisherName <string>]
- [-SizeInGb <int>] [-SkuName <string>] [-StartDate <datetime>] [-Status <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-ExpirationDate <datetime>] [-Id <string>] [-OSVersionNumber <string>] [-OfferName <string>]
+ [-PublisherName <string>] [-SizeInGb <int>] [-SkuName <string>] [-StartDate <datetime>]
+ [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -439,6 +440,35 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -OSVersionNumber
+
+The operating system version of this gallery image.
+For example, 10.0.22000.296.
+Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -736,6 +766,9 @@ Read-only.
 Users are unable to provision new Cloud PCs if the current time is later than expirationDate.
 The value is usually endDate plus six months.
 For example, if the startDate is 2025-10-14, the expirationDate is usually 2026-04-14.
+Read-only.
+  [OSVersionNumber <String>]: The operating system version of this gallery image.
+For example, 10.0.22000.296.
 Read-only.
   [OfferName <String>]: The offer name of this gallery image that is passed to Azure Resource Manager (ARM) to retrieve the image resource.
 Read-only.

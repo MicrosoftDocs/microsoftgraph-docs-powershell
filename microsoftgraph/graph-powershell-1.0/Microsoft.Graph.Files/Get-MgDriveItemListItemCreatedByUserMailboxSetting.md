@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemcreatedbyusermailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDriveItemListItemCreatedByUserMailboxSetting
 ---
@@ -15,7 +15,7 @@ title: Get-MgDriveItemListItemCreatedByUserMailboxSetting
 
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-Returned only on $select.
+Requires $select to retrieve.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveItemListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)
@@ -51,7 +51,7 @@ This cmdlet has the following aliases,
 
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-Returned only on $select.
+Requires $select to retrieve.
 
 ## PARAMETERS
 

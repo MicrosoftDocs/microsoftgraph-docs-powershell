@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplication
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgApplication
 ---
@@ -14,6 +14,7 @@ title: New-MgApplication
 ## SYNOPSIS
 
 Create a new application object.
+This API can also create an agentIdentityBlueprint object when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprint.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta)
@@ -28,18 +29,19 @@ New-MgApplication [-ResponseHeadersVariable <string>] [-AddIns <IMicrosoftGraphA
  [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
  [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <string>]
  [-AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]
- [-Certification <IMicrosoftGraphCertification>] [-CreatedDateTime <datetime>]
- [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>] [-DefaultRedirectUri <string>]
- [-DeletedDateTime <datetime>] [-Description <string>] [-DisabledByMicrosoftStatus <string>]
- [-DisplayName <string>] [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
+ [-Certification <IMicrosoftGraphCertification>] [-CreatedByAppId <string>]
+ [-CreatedDateTime <datetime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
+ [-DefaultRedirectUri <string>] [-DeletedDateTime <datetime>] [-Description <string>]
+ [-DisabledByMicrosoftStatus <string>] [-DisplayName <string>]
+ [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
  [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
  [-GroupMembershipClaims <string>]
  [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Id <string>]
  [-IdentifierUris <string[]>] [-Info <IMicrosoftGraphInformationalUrl>] [-IsDeviceOnlyAuthSupported]
- [-IsFallbackPublicClient] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
- [-LogoInputFile <string>] [-NativeAuthenticationApisEnabled <string>] [-Notes <string>]
- [-Oauth2RequirePostResponse] [-OptionalClaims <IMicrosoftGraphOptionalClaims>]
- [-Owners <IMicrosoftGraphDirectoryObject[]>]
+ [-IsDisabled] [-IsFallbackPublicClient] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
+ [-LogoInputFile <string>] [-ManagerApplications <string[]>]
+ [-NativeAuthenticationApisEnabled <string>] [-Notes <string>] [-Oauth2RequirePostResponse]
+ [-OptionalClaims <IMicrosoftGraphOptionalClaims>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
  [-ParentalControlSettings <IMicrosoftGraphParentalControlSettings>]
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]
  [-PublicClient <IMicrosoftGraphPublicClientApplication>] [-PublisherDomain <string>]
@@ -74,14 +76,15 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new application object.
+This API can also create an agentIdentityBlueprint object when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprint.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentityBlueprint.Create,  |
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, AgentIdentityBlueprint.Create,  |
 
 ## EXAMPLES
 ### Example 1: Create a new application
@@ -362,6 +365,29 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CreatedByAppId
+
+The appId of the application that created this application.
+Set internally by Microsoft Entra ID.
+Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -776,6 +802,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IsDisabled
+
+
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -IsFallbackPublicClient
 
 Specifies the fallback application type as public client, such as an installed application running on a mobile device.
@@ -832,6 +879,32 @@ Not nullable.)
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ManagerApplications
+
+A collection of application IDs for Microsoft first-party applications designated as managers.
+Manager applications can create service principals, agent identities, and agent users for managed agent blueprints.
+Limited to a maximum of 10 entries.
+Not nullable.
+Only supported on agentIdentityBlueprint objects; attempts to set this property on non-agent-blueprint applications return an error.
+Not returned by default; must be explicitly requested via $select.
+
+```yaml
+Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1786,6 +1859,9 @@ null if the app wasn't created from an application template.
     [CertificationExpirationDateTime <DateTime?>]: The timestamp when the current certification for the application expires.
     [IsPublisherAttested <Boolean?>]: Indicates whether the application developer or publisher completed Publisher Attestation.
     [LastCertificationDateTime <DateTime?>]: The timestamp when the certification for the application was most recently added or updated.
+  [CreatedByAppId <String>]: The appId of the application that created this application.
+Set internally by Microsoft Entra ID.
+Read-only.
   [CreatedDateTime <DateTime?>]: The date and time the application was registered.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1894,6 +1970,7 @@ For example, https://www.contoso.com/app/support
 For example, https://www.contoso.com/app/termsofservice
   [IsDeviceOnlyAuthSupported <Boolean?>]: Specifies whether this application supports device authentication without a user.
 The default is false.
+  [IsDisabled <Boolean?>]: 
   [IsFallbackPublicClient <Boolean?>]: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
 The default value is false, which means the fallback application type is confidential client such as a web app.
 There are certain scenarios where Microsoft Entra ID can't determine the client application type.
@@ -1912,7 +1989,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Key <Byte[]>]: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     [KeyId <String>]: The unique identifier (GUID) for the key.
@@ -1922,6 +1999,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Usage <String>]: A string that describes the purpose for which the key can be used; for example, Verify.
   [Logo <Byte[]>]: The main logo for the application.
 Not nullable.
+  [ManagerApplications <String[]>]: A collection of application IDs for Microsoft first-party applications designated as managers.
+Manager applications can create service principals, agent identities, and agent users for managed agent blueprints.
+Limited to a maximum of 10 entries.
+Not nullable.
+Only supported on agentIdentityBlueprint objects; attempts to set this property on non-agent-blueprint applications return an error.
+Not returned by default; must be explicitly requested via $select.
   [NativeAuthenticationApisEnabled <String>]: nativeAuthenticationApisEnabled
   [Notes <String>]: Notes relevant for the management of the application.
   [Oauth2RequirePostResponse <Boolean?>]: 
@@ -2446,7 +2529,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Key <Byte[]>]: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
   [KeyId <String>]: The unique identifier (GUID) for the key.

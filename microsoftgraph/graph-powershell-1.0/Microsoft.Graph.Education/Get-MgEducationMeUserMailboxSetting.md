@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeusermailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationMeUserMailboxSetting
 ---
@@ -15,7 +15,7 @@ title: Get-MgEducationMeUserMailboxSetting
 
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-Returned only on $select.
+Requires $select to retrieve.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUserMailboxSetting?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ This cmdlet has the following aliases,
 
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-Returned only on $select.
+Requires $select to retrieve.
 
 ## PARAMETERS
 

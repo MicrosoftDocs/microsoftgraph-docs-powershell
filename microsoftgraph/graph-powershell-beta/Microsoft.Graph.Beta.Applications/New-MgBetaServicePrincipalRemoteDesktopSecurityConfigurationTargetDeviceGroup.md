@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
 ---
@@ -14,7 +14,7 @@ title: New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceG
 ## SYNOPSIS
 
 Create a new targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
-You can configure a maximum of 10 target device groups for the remoteDesktopSecurityConfiguraiton object on the servicePrincipal.
+You can configure a maximum of 10 target device groups for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup?view=graph-powershell-1.0)
@@ -73,7 +73,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
-You can configure a maximum of 10 target device groups for the remoteDesktopSecurityConfiguraiton object on the servicePrincipal.
+You can configure a maximum of 10 target device groups for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
 
 **Permissions**
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsessionattendancereportattendancerecord
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord
 ---
@@ -65,7 +65,7 @@ List of attendance records of an attendance report.
 Read-only.
 
 ## EXAMPLES
-### Example 2: List attendance records of a webinar session's attendance report
+### Example 1: List attendance records of a webinar session's attendance report
 
 ```powershell
 

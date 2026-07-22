@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetaidentityriskpreventionwebapplicationfirewallprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
 ---
@@ -76,14 +76,6 @@ This cmdlet has the following aliases,
 
 Initiate a verification operation for a webApplicationFirewallProvider object.
 This API triggers provider-specific verification logic and returns a webApplicationFirewallVerificationModel object describing the verification result.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RiskPreventionProviders.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RiskPreventionProviders.ReadWrite.All,  |
 
 ## PARAMETERS
 

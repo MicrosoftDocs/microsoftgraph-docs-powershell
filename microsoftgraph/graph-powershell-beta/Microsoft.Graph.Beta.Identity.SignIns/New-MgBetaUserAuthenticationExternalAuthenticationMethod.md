@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationexternalauthenticationmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserAuthenticationExternalAuthenticationMethod
 ---
@@ -15,6 +15,9 @@ title: New-MgBetaUserAuthenticationExternalAuthenticationMethod
 
 Create a new externalAuthenticationMethod object.
 This API doesn't support self-service operations.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,8 +82,9 @@ This API doesn't support self-service operations.
 | Application | UserAuthMethod-External.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -91,6 +95,10 @@ $params = @{
 }
 
 New-MgBetaUserAuthenticationExternalAuthenticationMethod -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserAuthenticationExternalAuthenticationMethod Cmdlet.
+
 
 ## PARAMETERS
 
@@ -253,7 +261,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-Custom name given to the registered external authentication method.
+Custom name given to the registered external MFA.
 
 ```yaml
 Type: System.String
@@ -614,7 +622,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
-  [DisplayName <String>]: Custom name given to the registered external authentication method.
+  [DisplayName <String>]: Custom name given to the registered external MFA.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy

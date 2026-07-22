@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact
 ---
@@ -156,7 +156,7 @@ HelpMessage: ''
 
 ### -BrowseSessionId
 
-
+The unique identifier of the browseSession
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ HelpMessage: ''
 
 ### -CompletionDateTime
 
-
+Date time when the artifact's restoration completes.
 
 ```yaml
 Type: System.DateTime
@@ -463,7 +463,7 @@ HelpMessage: ''
 
 ### -RestoredItemKey
 
-
+The unique identifier for the restored artifact.
 
 ```yaml
 Type: System.String
@@ -490,7 +490,8 @@ HelpMessage: ''
 
 ### -RestoredItemPath
 
-
+The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
 
 ```yaml
 Type: System.String
@@ -517,7 +518,7 @@ HelpMessage: ''
 
 ### -RestoredItemWebUrl
 
-
+The web url of the restord artifact.
 
 ```yaml
 Type: System.String
@@ -544,7 +545,7 @@ HelpMessage: ''
 
 ### -RestorePointDateTime
 
-
+The restore point date time to which the artifact is restored.
 
 ```yaml
 Type: System.DateTime
@@ -598,7 +599,7 @@ HelpMessage: ''
 
 ### -SiteId
 
-
+Id of the site in which artifact is present.
 
 ```yaml
 Type: System.String
@@ -625,7 +626,7 @@ HelpMessage: ''
 
 ### -StartDateTime
 
-
+The start time of the restoration.
 
 ```yaml
 Type: System.DateTime
@@ -679,7 +680,7 @@ HelpMessage: ''
 
 ### -WebUrl
 
-
+The original web url of the artifact being restored.
 
 ```yaml
 Type: System.String
@@ -762,21 +763,25 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphGranularSiteRestoreArtifact>`: granularSiteRestoreArtifact
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [BrowseSessionId <String>]: 
-  [CompletionDateTime <DateTime?>]: 
-  [RestorePointDateTime <DateTime?>]: 
-  [RestoredItemKey <String>]: 
-  [RestoredItemPath <String>]: 
-  [RestoredItemWebUrl <String>]: 
-  [StartDateTime <DateTime?>]: 
+  [BrowseSessionId <String>]: The unique identifier of the browseSession
+  [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+  [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+  [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+  [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+  [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+  [StartDateTime <DateTime?>]: The start time of the restoration.
   [Status <String>]: artifactRestoreStatus
-  [WebUrl <String>]: 
+  [WebUrl <String>]: The original web url of the artifact being restored.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [SiteId <String>]: 
+  [SiteId <String>]: Id of the site in which artifact is present.
 
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+  [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
+  [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
+  [DriveExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of driveExclusionUnitsBulkAdditionJob
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -784,9 +789,12 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [DriveRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   [ExchangeProtectionPolicyId <String>]: The unique identifier of exchangeProtectionPolicy
   [ExchangeRestoreSessionId <String>]: The unique identifier of exchangeRestoreSession
+  [ExclusionUnitBaseId <String>]: The unique identifier of exclusionUnitBase
   [GranularDriveRestoreArtifactId <String>]: The unique identifier of granularDriveRestoreArtifact
   [GranularMailboxRestoreArtifactId <String>]: The unique identifier of granularMailboxRestoreArtifact
   [GranularSiteRestoreArtifactId <String>]: The unique identifier of granularSiteRestoreArtifact
+  [MailboxExclusionUnitId <String>]: The unique identifier of mailboxExclusionUnit
+  [MailboxExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxExclusionUnitsBulkAdditionJob
   [MailboxProtectionRuleId <String>]: The unique identifier of mailboxProtectionRule
   [MailboxProtectionUnitId <String>]: The unique identifier of mailboxProtectionUnit
   [MailboxProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
@@ -796,6 +804,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [OneDriveForBusinessBrowseSessionId <String>]: The unique identifier of oneDriveForBusinessBrowseSession
   [OneDriveForBusinessProtectionPolicyId <String>]: The unique identifier of oneDriveForBusinessProtectionPolicy
   [OneDriveForBusinessRestoreSessionId <String>]: The unique identifier of oneDriveForBusinessRestoreSession
+  [PolicyId <String>]: Usage: policyId='{policyId}'
   [ProtectionPolicyBaseId <String>]: The unique identifier of protectionPolicyBase
   [ProtectionUnitBaseId <String>]: The unique identifier of protectionUnitBase
   [RestorePointId <String>]: The unique identifier of restorePoint
@@ -804,6 +813,8 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SharePointBrowseSessionId <String>]: The unique identifier of sharePointBrowseSession
   [SharePointProtectionPolicyId <String>]: The unique identifier of sharePointProtectionPolicy
   [SharePointRestoreSessionId <String>]: The unique identifier of sharePointRestoreSession
+  [SiteExclusionUnitId <String>]: The unique identifier of siteExclusionUnit
+  [SiteExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of siteExclusionUnitsBulkAdditionJob
   [SiteProtectionRuleId <String>]: The unique identifier of siteProtectionRule
   [SiteProtectionUnitId <String>]: The unique identifier of siteProtectionUnit
   [SiteProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of siteProtectionUnitsBulkAdditionJob

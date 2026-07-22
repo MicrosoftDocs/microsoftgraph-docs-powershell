@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyactivitybasedtimeoutpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyActivityBasedTimeoutPolicy
 ---
@@ -89,11 +89,7 @@ Update the properties of an activityBasedTimeoutPolicy object.
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
-	definition = @(
-	"definition-value"
-)
-displayName = "displayName-value"
-isOrganizationDefault = $true
+	displayName = "Idle timeout for all apps"
 }
 
 Update-MgBetaPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId -BodyParameter $params

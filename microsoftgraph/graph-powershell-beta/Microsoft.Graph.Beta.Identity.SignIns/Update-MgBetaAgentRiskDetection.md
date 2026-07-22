@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaagentriskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAgentRiskDetection
 ---
@@ -22,10 +22,11 @@ Update the navigation property agentRiskDetections in identityProtection
 ```
 Update-MgBetaAgentRiskDetection -AgentRiskDetectionId <string> [-ResponseHeadersVariable <string>]
  [-ActivityDateTime <datetime>] [-AdditionalInfo <string>] [-AdditionalProperties <hashtable>]
- [-AgentDisplayName <string>] [-AgentId <string>] [-DetectedDateTime <datetime>]
- [-DetectionTimingType <string>] [-Id <string>] [-LastModifiedDateTime <datetime>]
- [-RiskDetail <string>] [-RiskEventType <string>] [-RiskEvidence <string>] [-RiskLevel <string>]
- [-RiskState <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-AgentDisplayName <string>] [-AgentId <string>] [-BlueprintId <string>]
+ [-DetectedDateTime <datetime>] [-DetectionTimingType <string>] [-Id <string>]
+ [-IdentityType <string>] [-LastModifiedDateTime <datetime>] [-RiskDetail <string>]
+ [-RiskEventType <string>] [-RiskEvidence <string>] [-RiskLevel <string>] [-RiskState <string>]
+ [-Source <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,10 +47,10 @@ Update-MgBetaAgentRiskDetection -AgentRiskDetectionId <string>
 Update-MgBetaAgentRiskDetection -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <string>] [-ActivityDateTime <datetime>] [-AdditionalInfo <string>]
  [-AdditionalProperties <hashtable>] [-AgentDisplayName <string>] [-AgentId <string>]
- [-DetectedDateTime <datetime>] [-DetectionTimingType <string>] [-Id <string>]
- [-LastModifiedDateTime <datetime>] [-RiskDetail <string>] [-RiskEventType <string>]
- [-RiskEvidence <string>] [-RiskLevel <string>] [-RiskState <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-BlueprintId <string>] [-DetectedDateTime <datetime>] [-DetectionTimingType <string>]
+ [-Id <string>] [-IdentityType <string>] [-LastModifiedDateTime <datetime>] [-RiskDetail <string>]
+ [-RiskEventType <string>] [-RiskEvidence <string>] [-RiskLevel <string>] [-RiskState <string>]
+ [-Source <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -236,6 +237,34 @@ ParameterSets:
 - Name: Update
   Position: Named
   IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BlueprintId
+
+The identifier of the blueprint associated with the agent.
+Nullable.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -439,6 +468,33 @@ HelpMessage: ''
 
 The unique identifier for an entity.
 Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IdentityType
+
+agentIdentityType
 
 ```yaml
 Type: System.String
@@ -741,6 +797,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Source
+
+The source system that generated the risk detection.
+Nullable.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -812,11 +896,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 This is equivalent to 'id' to the specific agent type.
 See riskyAgentIdentity, riskyAgentIdentityBlueprintPrincipal, and riskyAgentUser.
  Supports $filter (eq, startsWith).
+  [BlueprintId <String>]: The identifier of the blueprint associated with the agent.
+Nullable.
   [DetectedDateTime <DateTime?>]: Date and time that the risk was detected.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $filter (eq, le, and ge).
   [DetectionTimingType <String>]: riskDetectionTimingType
+  [IdentityType <String>]: agentIdentityType
   [LastModifiedDateTime <DateTime?>]: Date and time that the risk detection was last updated.
  Supports $filter (eq, le, and ge).
   [RiskDetail <String>]: riskDetail
@@ -826,6 +913,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $filter (eq).
   [RiskLevel <String>]: riskLevel
   [RiskState <String>]: riskState
+  [Source <String>]: The source system that generated the risk detection.
+Nullable.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy

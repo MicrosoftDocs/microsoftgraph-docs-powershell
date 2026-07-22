@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointprovisioningpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 ---
@@ -134,6 +134,10 @@ $params = @{
 		devicePreparationProfileId = "59e5d3d2-ec68-4bfe-9693-27975b318990"
 		applicationTimeoutInMinutes = 30
 		onFailureDeviceAccessDenied = $false
+	}
+	userSettingsPersistenceConfiguration = @{
+		userSettingsPersistenceEnabled = $false
+		userSettingsPersistenceStorageSizeCategory = "fourGB"
 	}
 }
 

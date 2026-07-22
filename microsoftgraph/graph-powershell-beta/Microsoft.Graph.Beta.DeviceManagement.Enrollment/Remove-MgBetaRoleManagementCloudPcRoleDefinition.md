@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementcloudpcroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaRoleManagementCloudPcRoleDefinition
 ---
@@ -16,7 +16,7 @@ title: Remove-MgBetaRoleManagementCloudPcRoleDefinition
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- Defender (Microsoft Defender XDR Unified RBAC)- directory (Microsoft Entra ID)
+The following RBAC providers are currently supported:\r- Cloud PC\r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC)\r- directory (Microsoft Entra ID)
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ This cmdlet has the following aliases,
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- Defender (Microsoft Defender XDR Unified RBAC)- directory (Microsoft Entra ID)
+The following RBAC providers are currently supported:\r- Cloud PC\r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC)\r- directory (Microsoft Entra ID)
 
 **Permissions**
 

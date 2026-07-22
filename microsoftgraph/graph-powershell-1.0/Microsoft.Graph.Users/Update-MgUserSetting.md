@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserSetting
 ---
@@ -25,8 +25,8 @@ Update the navigation property settings in users
 ```
 Update-MgUserSetting -UserId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-ContributionToContentDiscoveryAsOrganizationDisabled]
- [-ContributionToContentDiscoveryDisabled] [-Id <string>]
- [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
+ [-ContributionToContentDiscoveryDisabled] [-Exchange <IMicrosoftGraphExchangeSettings>]
+ [-Id <string>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
  [-Windows <IMicrosoftGraphWindowsSetting[]>]
  [-WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>] [-Break]
@@ -50,8 +50,8 @@ Update-MgUserSetting -UserId <string> -BodyParameter <IMicrosoftGraphUserSetting
 ```
 Update-MgUserSetting -InputObject <IUsersIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-ContributionToContentDiscoveryAsOrganizationDisabled]
- [-ContributionToContentDiscoveryDisabled] [-Id <string>]
- [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
+ [-ContributionToContentDiscoveryDisabled] [-Exchange <IMicrosoftGraphExchangeSettings>]
+ [-Id <string>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
  [-Windows <IMicrosoftGraphWindowsSetting[]>]
  [-WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>] [-Break]
@@ -83,9 +83,9 @@ Update the navigation property settings in users
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
+| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadWrite.All,  |
+| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -245,6 +245,34 @@ Users can control this setting in Office Delve.
 ```yaml
 Type: System.Management.Automation.SwitchParameter
 DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Exchange
+
+exchangeSettings
+To construct, see NOTES section for EXCHANGE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExchangeSettings
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -704,6 +732,11 @@ This setting is read-only and can only be changed by administrators in the Share
 When set to true, documents in the user's Office Delve are disabled.
 When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected.
 Users can control this setting in Office Delve.
+  [Exchange <IMicrosoftGraphExchangeSettings>]: exchangeSettings
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [PrimaryMailboxId <String>]: 
   [ItemInsights <IMicrosoftGraphUserInsightsSettings>]: userInsightsSettings
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
@@ -831,6 +864,12 @@ Only applicable when workLocationType is set to office.
       [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
       [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
       [WorkLocationType <String>]: workLocationType
+
+EXCHANGE `<IMicrosoftGraphExchangeSettings>`: exchangeSettings
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [PrimaryMailboxId <String>]: 
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase

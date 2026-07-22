@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementcloudpcroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaRoleManagementCloudPcRoleAssignment
 ---
@@ -14,7 +14,7 @@ title: Get-MgBetaRoleManagementCloudPcRoleAssignment
 ## SYNOPSIS
 
 Get the properties and relationships of a unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
+The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
 ## SYNTAX
 
@@ -57,7 +57,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the properties and relationships of a unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
+The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
 **Permissions**
 

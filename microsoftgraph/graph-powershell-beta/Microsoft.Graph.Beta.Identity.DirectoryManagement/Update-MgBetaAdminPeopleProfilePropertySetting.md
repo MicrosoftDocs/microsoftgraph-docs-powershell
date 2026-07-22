@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilepropertysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminPeopleProfilePropertySetting
 ---
@@ -21,12 +21,11 @@ Update the properties of a profilePropertySetting object.
 
 ```
 Update-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AllowedAudiences <string>] [-Id <string>] [-IsUserOverrideForAudienceEnabled] [-Name <string>]
- [-PrioritizedSourceUrls <string[]>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
+ [-Id <string>] [-Name <string>] [-PrioritizedSourceUrls <string[]>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -43,12 +42,11 @@ Update-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId <string
 
 ```
 Update-MgBetaAdminPeopleProfilePropertySetting -InputObject <IIdentityDirectoryManagementIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AllowedAudiences <string>] [-Id <string>] [-IsUserOverrideForAudienceEnabled] [-Name <string>]
- [-PrioritizedSourceUrls <string[]>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
+ [-Id <string>] [-Name <string>] [-PrioritizedSourceUrls <string[]>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -107,33 +105,6 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -AllowedAudiences
-
-organizationAllowedAudiences
-
-```yaml
-Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -216,6 +187,33 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DisplayName
+
+Name of the property-level setting.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -345,36 +343,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IsUserOverrideForAudienceEnabled
-
-Defines whether a user is allowed to override the tenant admin privacy setting.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -Name
 
-Name of the property-level setting.
+Other name of the property-level setting.
+For backward compatibility.
 
 ```yaml
 Type: System.String
@@ -598,9 +570,9 @@ BODYPARAMETER `<IMicrosoftGraphProfilePropertySetting>`: profilePropertySetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AllowedAudiences <String>]: organizationAllowedAudiences
-  [IsUserOverrideForAudienceEnabled <Boolean?>]: Defines whether a user is allowed to override the tenant admin privacy setting.
-  [Name <String>]: Name of the property-level setting.
+  [DisplayName <String>]: Name of the property-level setting.
+  [Name <String>]: Other name of the property-level setting.
+For backward compatibility.
   [PrioritizedSourceUrls <String[]>]: A collection of prioritized profile source URLs ordered by data precedence within an organization.
 
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
@@ -630,6 +602,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExtensionId <String>]: The unique identifier of extension
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
+  [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
+  [GovernancePolicyTemplateId <String>]: The unique identifier of governancePolicyTemplate
+  [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
+  [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
   [IdentityProviderBaseId <String>]: The unique identifier of identityProviderBase
   [ImpactedResourceId <String>]: The unique identifier of impactedResource
@@ -649,10 +625,15 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
+  [RecoveryJobId <String>]: The unique identifier of recoveryJob
+  [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
+  [RelatedTenantId <String>]: The unique identifier of relatedTenant
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
   [SharedEmailDomainInvitationId <String>]: The unique identifier of sharedEmailDomainInvitation
+  [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'

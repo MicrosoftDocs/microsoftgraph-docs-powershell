@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalclaimpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaServicePrincipalClaimPolicy
 ---
@@ -77,6 +77,31 @@ Update a customClaimsPolicy object.
 | Delegated (work or school account) | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.customClaimsPolicy"
+	includeBasicClaimSet = "Boolean"
+	includeApplicationIdInIssuer = "Boolean"
+	audienceOverride = "String"
+	claims = @(
+		@{
+			"@odata.type" = "microsoft.graph.customClaim"
+		}
+	)
+}
+
+Update-MgBetaServicePrincipalClaimPolicy -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaServicePrincipalClaimPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -667,7 +692,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Update-MgBetaServicePrincipalClaimPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalclaimpolicy)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/customclaimspolicy-update?view=graph-rest-beta)
-
 
 
 

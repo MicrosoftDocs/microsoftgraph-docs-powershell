@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgServicePrincipalKey
 ---
@@ -587,7 +587,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Key <Byte[]>]: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     [KeyId <String>]: The unique identifier (GUID) for the key.
@@ -621,6 +621,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
+  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition
@@ -653,7 +654,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Key <Byte[]>]: The certificate's raw data in byte array converted to Base64 string.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
   [KeyId <String>]: The unique identifier (GUID) for the key.

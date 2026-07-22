@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationkey
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaApplicationKey
 ---
@@ -124,7 +124,7 @@ $params = @{
 		key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
 	}
 	passwordCredential = @{
-		secretText = "MKTr0w1..."
+		secretText = "<secret here>"
 	}
 	proof = "eyJ0eXAiOiJ..."
 }
@@ -592,7 +592,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Key <Byte[]>]: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     [KeyId <String>]: The unique identifier for the key.
@@ -672,7 +672,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Key <Byte[]>]: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
   [KeyId <String>]: The unique identifier for the key.

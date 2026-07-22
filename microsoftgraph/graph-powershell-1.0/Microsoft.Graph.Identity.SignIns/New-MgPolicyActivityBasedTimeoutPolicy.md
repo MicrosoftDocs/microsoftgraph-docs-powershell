@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPolicyActivityBasedTimeoutPolicy
 ---
@@ -68,9 +68,9 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	definition = @(
-	"definition-value"
+	'{"ActivityBasedTimeoutPolicy":{"Version":1,"ApplicationPolicies":[{"ApplicationId":"default","WebSessionIdleTimeout":"00:05:00"}]}}'
 )
-displayName = "displayName-value"
+displayName = "activityBasedTimeoutPolicies test"
 isOrganizationDefault = $true
 }
 

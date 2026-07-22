@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlaceOperation
 ---
@@ -59,9 +59,9 @@ Get a placeOperation by ID.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.Read.All,  |
+| Delegated (work or school account) | Place.Read.All, Place.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Place.Read.All,  |
+| Application | Place.Read.All, Place.ReadWrite.All,  |
 
 ## PARAMETERS
 
@@ -551,6 +551,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 - [Get-MgBetaPlaceOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceoperation)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/place-getoperation?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/place-listoperations?view=graph-rest-beta)
+
 
 
 

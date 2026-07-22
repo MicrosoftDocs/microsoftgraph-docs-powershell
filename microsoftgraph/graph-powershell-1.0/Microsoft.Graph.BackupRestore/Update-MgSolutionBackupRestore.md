@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestore
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSolutionBackupRestore
 ---
@@ -24,7 +24,8 @@ Update the navigation property backupRestore in solutions
 
 ```
 Update-MgSolutionBackupRestore [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]
+ [-AdditionalProperties <hashtable>] [-BrowseSessions <IMicrosoftGraphBrowseSessionBase[]>]
+ [-DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]
  [-DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit[]>]
  [-DriveProtectionUnitsBulkAdditionJobs <IMicrosoftGraphDriveProtectionUnitsBulkAdditionJob[]>]
  [-ExchangeProtectionPolicies <IMicrosoftGraphExchangeProtectionPolicy[]>]
@@ -32,6 +33,7 @@ Update-MgSolutionBackupRestore [-ResponseHeadersVariable <string>]
  [-MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule[]>]
  [-MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit[]>]
  [-MailboxProtectionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob[]>]
+ [-OneDriveForBusinessBrowseSessions <IMicrosoftGraphOneDriveForBusinessBrowseSession[]>]
  [-OneDriveForBusinessProtectionPolicies <IMicrosoftGraphOneDriveForBusinessProtectionPolicy[]>]
  [-OneDriveForBusinessRestoreSessions <IMicrosoftGraphOneDriveForBusinessRestoreSession[]>]
  [-ProtectionPolicies <IMicrosoftGraphProtectionPolicyBase[]>]
@@ -39,6 +41,7 @@ Update-MgSolutionBackupRestore [-ResponseHeadersVariable <string>]
  [-RestorePoints <IMicrosoftGraphRestorePoint[]>]
  [-RestoreSessions <IMicrosoftGraphRestoreSessionBase[]>]
  [-ServiceApps <IMicrosoftGraphServiceApp[]>] [-ServiceStatus <IMicrosoftGraphServiceStatus>]
+ [-SharePointBrowseSessions <IMicrosoftGraphSharePointBrowseSession[]>]
  [-SharePointProtectionPolicies <IMicrosoftGraphSharePointProtectionPolicy[]>]
  [-SharePointRestoreSessions <IMicrosoftGraphSharePointRestoreSession[]>]
  [-SiteInclusionRules <IMicrosoftGraphSiteProtectionRule[]>]
@@ -124,6 +127,28 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BrowseSessions
+
+
+To construct, see NOTES section for BROWSESESSIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBrowseSessionBase[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -417,6 +442,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -OneDriveForBusinessBrowseSessions
+
+
+To construct, see NOTES section for ONEDRIVEFORBUSINESSBROWSESESSIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOneDriveForBusinessBrowseSession[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -OneDriveForBusinessProtectionPolicies
 
 The list of OneDrive for Business protection policies in the tenant.
@@ -678,6 +725,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SharePointBrowseSessions
+
+
+To construct, see NOTES section for SHAREPOINTBROWSESESSIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharePointBrowseSession[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -SharePointProtectionPolicies
 
 The list of SharePoint protection policies in the tenant.
@@ -844,18 +913,11 @@ BODYPARAMETER `<IMicrosoftGraphBackupRestoreRoot>`: backupRestoreRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]: The list of drive inclusion rules applied to the tenant.
-    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Application <IMicrosoftGraphIdentity>]: identity
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-        [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-      [Device <IMicrosoftGraphIdentity>]: identity
-      [User <IMicrosoftGraphIdentity>]: identity
-    [CreatedDateTime <DateTime?>]: The time of creation of the rule.
+  [BrowseSessions <IMicrosoftGraphBrowseSessionBase[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [BackupSizeInBytes <String>]: 
+    [CreatedDateTime <DateTime?>]: 
     [Error <IMicrosoftGraphPublicError>]: publicError
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Code <String>]: Represents the error code.
@@ -871,6 +933,23 @@ For example, in the access reviews decisions API, this property might record the
         [Target <String>]: The target of the error.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
+    [ExpirationDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
+    [RestorePointId <String>]: 
+    [Status <String>]: browseSessionStatus
+  [DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]: The list of drive inclusion rules applied to the tenant.
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Application <IMicrosoftGraphIdentity>]: identity
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+      [Device <IMicrosoftGraphIdentity>]: identity
+      [User <IMicrosoftGraphIdentity>]: identity
+    [CreatedDateTime <DateTime?>]: The time of creation of the rule.
+    [Error <IMicrosoftGraphPublicError>]: publicError
     [IsAutoApplyEnabled <Boolean?>]: true indicates that the protection rule is dynamic; false that it's static.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification made to the rule.
@@ -1064,6 +1143,17 @@ Read-only.
   [MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule[]>]: The list of mailbox inclusion rules applied to the tenant.
   [MailboxProtectionUnits <IMicrosoftGraphMailboxProtectionUnit[]>]: The list of mailbox protection units in the tenant.
   [MailboxProtectionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxProtectionUnitsBulkAdditionJob[]>]: 
+  [OneDriveForBusinessBrowseSessions <IMicrosoftGraphOneDriveForBusinessBrowseSession[]>]: 
+    [BackupSizeInBytes <String>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Error <IMicrosoftGraphPublicError>]: publicError
+    [ExpirationDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
+    [RestorePointId <String>]: 
+    [Status <String>]: browseSessionStatus
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DirectoryObjectId <String>]: 
   [OneDriveForBusinessProtectionPolicies <IMicrosoftGraphOneDriveForBusinessProtectionPolicy[]>]: The list of OneDrive for Business protection policies in the tenant.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The time of creation of the policy.
@@ -1120,6 +1210,19 @@ Future value; don't use.
 Read-only.
       [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
       [Drives <String[]>]: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
+    [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: 
+      [BrowseSessionId <String>]: 
+      [CompletionDateTime <DateTime?>]: 
+      [RestorePointDateTime <DateTime?>]: 
+      [RestoredItemKey <String>]: 
+      [RestoredItemPath <String>]: 
+      [RestoredItemWebUrl <String>]: 
+      [StartDateTime <DateTime?>]: 
+      [Status <String>]: artifactRestoreStatus
+      [WebUrl <String>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [DirectoryObjectId <String>]: 
   [ProtectionPolicies <IMicrosoftGraphProtectionPolicyBase[]>]: List of protection policies in the tenant.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1164,6 +1267,17 @@ Read-only.
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of the entity.
     [RestoreAllowedTillDateTime <DateTime?>]: The expiration time of the restoration allowed period.
     [Status <String>]: backupServiceStatus
+  [SharePointBrowseSessions <IMicrosoftGraphSharePointBrowseSession[]>]: 
+    [BackupSizeInBytes <String>]: 
+    [CreatedDateTime <DateTime?>]: 
+    [Error <IMicrosoftGraphPublicError>]: publicError
+    [ExpirationDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
+    [RestorePointId <String>]: 
+    [Status <String>]: browseSessionStatus
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [SiteId <String>]: 
   [SharePointProtectionPolicies <IMicrosoftGraphSharePointProtectionPolicy[]>]: The list of SharePoint protection policies in the tenant.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The time of creation of the policy.
@@ -1231,6 +1345,19 @@ Read-only.
     [Status <String>]: restoreSessionStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
+      [BrowseSessionId <String>]: 
+      [CompletionDateTime <DateTime?>]: 
+      [RestorePointDateTime <DateTime?>]: 
+      [RestoredItemKey <String>]: 
+      [RestoredItemPath <String>]: 
+      [RestoredItemWebUrl <String>]: 
+      [StartDateTime <DateTime?>]: 
+      [Status <String>]: artifactRestoreStatus
+      [WebUrl <String>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [SiteId <String>]: 
     [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
       [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
       [DestinationType <String>]: destinationType
@@ -1263,6 +1390,31 @@ Read-only.
   [SiteInclusionRules <IMicrosoftGraphSiteProtectionRule[]>]: The list of site inclusion rules applied to the tenant.
   [SiteProtectionUnits <IMicrosoftGraphSiteProtectionUnit[]>]: The list of site protection units in the tenant.
   [SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob[]>]: 
+
+BROWSESESSIONS <IMicrosoftGraphBrowseSessionBase[]>: .
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [BackupSizeInBytes <String>]: 
+  [CreatedDateTime <DateTime?>]: 
+  [Error <IMicrosoftGraphPublicError>]: publicError
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Code <String>]: Represents the error code.
+    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
+      [Code <String>]: The error code.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Code <String>]: The error code.
+      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [Message <String>]: A non-localized message for the developer.
+    [Target <String>]: The target of the error.
+  [ExpirationDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
+  [RestorePointId <String>]: 
+  [Status <String>]: browseSessionStatus
 
 DRIVEINCLUSIONRULES <IMicrosoftGraphDriveProtectionRule[]>: The list of drive inclusion rules applied to the tenant.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1693,6 +1845,32 @@ Read-only.
   [DirectoryObjectIds <String[]>]: The list of Exchange directoryObjectIds to add to the Exchange protection policy.
   [Mailboxes <String[]>]: The list of Exchange email addresses to add to the Exchange protection policy.
 
+ONEDRIVEFORBUSINESSBROWSESESSIONS <IMicrosoftGraphOneDriveForBusinessBrowseSession[]>: .
+  [BackupSizeInBytes <String>]: 
+  [CreatedDateTime <DateTime?>]: 
+  [Error <IMicrosoftGraphPublicError>]: publicError
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Code <String>]: Represents the error code.
+    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
+      [Code <String>]: The error code.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Code <String>]: The error code.
+      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [Message <String>]: A non-localized message for the developer.
+    [Target <String>]: The target of the error.
+  [ExpirationDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
+  [RestorePointId <String>]: 
+  [Status <String>]: browseSessionStatus
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DirectoryObjectId <String>]: 
+
 ONEDRIVEFORBUSINESSPROTECTIONPOLICIES <IMicrosoftGraphOneDriveForBusinessProtectionPolicy[]>: The list of OneDrive for Business protection policies in the tenant.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1876,6 +2054,19 @@ Future value; don't use.
 Read-only.
     [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
     [Drives <String[]>]: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
+  [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: 
+    [BrowseSessionId <String>]: 
+    [CompletionDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
+    [RestoredItemKey <String>]: 
+    [RestoredItemPath <String>]: 
+    [RestoredItemWebUrl <String>]: 
+    [StartDateTime <DateTime?>]: 
+    [Status <String>]: artifactRestoreStatus
+    [WebUrl <String>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DirectoryObjectId <String>]: 
 
 PROTECTIONPOLICIES <IMicrosoftGraphProtectionPolicyBase[]>: List of protection policies in the tenant.
   [Id <String>]: The unique identifier for an entity.
@@ -2076,6 +2267,32 @@ For example, in the access reviews decisions API, this property might record the
   [RestoreAllowedTillDateTime <DateTime?>]: The expiration time of the restoration allowed period.
   [Status <String>]: backupServiceStatus
 
+SHAREPOINTBROWSESESSIONS <IMicrosoftGraphSharePointBrowseSession[]>: .
+  [BackupSizeInBytes <String>]: 
+  [CreatedDateTime <DateTime?>]: 
+  [Error <IMicrosoftGraphPublicError>]: publicError
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Code <String>]: Represents the error code.
+    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
+      [Code <String>]: The error code.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Code <String>]: The error code.
+      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [Message <String>]: A non-localized message for the developer.
+    [Target <String>]: The target of the error.
+  [ExpirationDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
+  [RestorePointId <String>]: 
+  [Status <String>]: browseSessionStatus
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [SiteId <String>]: 
+
 SHAREPOINTPROTECTIONPOLICIES <IMicrosoftGraphSharePointProtectionPolicy[]>: The list of SharePoint protection policies in the tenant.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2202,6 +2419,19 @@ For example, in the access reviews decisions API, this property might record the
   [Status <String>]: restoreSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
+    [BrowseSessionId <String>]: 
+    [CompletionDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
+    [RestoredItemKey <String>]: 
+    [RestoredItemPath <String>]: 
+    [RestoredItemWebUrl <String>]: 
+    [StartDateTime <DateTime?>]: 
+    [Status <String>]: artifactRestoreStatus
+    [WebUrl <String>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [SiteId <String>]: 
   [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
     [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
     [DestinationType <String>]: destinationType

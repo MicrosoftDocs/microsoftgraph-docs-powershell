@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoresharepointrestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSolutionBackupRestoreSharePointRestoreSession
 ---
@@ -26,8 +26,10 @@ Create a new sharePointRestoreSession object.
 New-MgSolutionBackupRestoreSharePointRestoreSession [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-CompletedDateTime <datetime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <datetime>] [-RestoreJobType <string>]
+ [-Error <IMicrosoftGraphPublicError>]
+ [-GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>] [-Id <string>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
+ [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]
  [-SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]
  [-SiteRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest[]>]
@@ -214,6 +216,28 @@ To construct, see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublicError
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -GranularSiteRestoreArtifacts
+
+
+To construct, see NOTES section for GRANULARSITERESTOREARTIFACTS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGranularSiteRestoreArtifact[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -643,6 +667,19 @@ For example, in the access reviews decisions API, this property might record the
   [Status <String>]: restoreSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
+    [BrowseSessionId <String>]: 
+    [CompletionDateTime <DateTime?>]: 
+    [RestorePointDateTime <DateTime?>]: 
+    [RestoredItemKey <String>]: 
+    [RestoredItemPath <String>]: 
+    [RestoredItemWebUrl <String>]: 
+    [StartDateTime <DateTime?>]: 
+    [Status <String>]: artifactRestoreStatus
+    [WebUrl <String>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [SiteId <String>]: 
   [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
     [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
     [DestinationType <String>]: destinationType
@@ -727,6 +764,20 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
     [Target <String>]: The target of the error.
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
+
+GRANULARSITERESTOREARTIFACTS <IMicrosoftGraphGranularSiteRestoreArtifact[]>: .
+  [BrowseSessionId <String>]: 
+  [CompletionDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
+  [RestoredItemKey <String>]: 
+  [RestoredItemPath <String>]: 
+  [RestoredItemWebUrl <String>]: 
+  [StartDateTime <DateTime?>]: 
+  [Status <String>]: artifactRestoreStatus
+  [WebUrl <String>]: 
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [SiteId <String>]: 
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.

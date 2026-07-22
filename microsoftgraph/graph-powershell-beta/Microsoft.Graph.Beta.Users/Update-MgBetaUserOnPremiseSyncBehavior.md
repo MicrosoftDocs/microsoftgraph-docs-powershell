@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseronpremisesyncbehavior
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserOnPremiseSyncBehavior
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaUserOnPremiseSyncBehavior
 ## SYNOPSIS
 
 Update the navigation property onPremisesSyncBehavior in users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Users/Update-MgUserOnPremiseSyncBehavior?view=graph-powershell-1.0)
 
 ## SYNTAX
 

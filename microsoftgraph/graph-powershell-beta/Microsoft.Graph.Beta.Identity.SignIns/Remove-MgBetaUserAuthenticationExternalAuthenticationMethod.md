@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationexternalauthenticationmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserAuthenticationExternalAuthenticationMethod
 ---
@@ -15,6 +15,9 @@ title: Remove-MgBetaUserAuthenticationExternalAuthenticationMethod
 
 Delete an externalAuthenticationMethod object.
 This API doesn't support self-service operations.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 

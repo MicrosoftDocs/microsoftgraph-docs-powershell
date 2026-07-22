@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyonpremauthenticationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyOnPremAuthenticationPolicy
 ---
@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Read the properties and relationships of onPremAuthenticationPolicy object.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.OnPremAuthenticationPolicy, Policy.ReadWrite.OnPremAuthenticationPolicy,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
 
 ## PARAMETERS
 
@@ -620,6 +628,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [Get-MgBetaPolicyOnPremAuthenticationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyonpremauthenticationpolicy)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/onpremauthenticationpolicy-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/policyroot-list-onpremauthenticationpolicies?view=graph-rest-beta)
+
 
 
 

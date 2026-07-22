@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityriskpreventionfraudprotectionprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityRiskPreventionFraudProtectionProvider
 ---
@@ -66,7 +66,7 @@ Represents entry point for fraud protection provider configurations for Microsof
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
+| Application | Not supported |
 
 ## PARAMETERS
 

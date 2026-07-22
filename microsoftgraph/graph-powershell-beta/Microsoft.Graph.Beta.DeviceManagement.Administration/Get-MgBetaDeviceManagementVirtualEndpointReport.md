@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointreport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementVirtualEndpointReport
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaDeviceManagementVirtualEndpointReport
 ## SYNOPSIS
 
 Cloud PC related reports.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 

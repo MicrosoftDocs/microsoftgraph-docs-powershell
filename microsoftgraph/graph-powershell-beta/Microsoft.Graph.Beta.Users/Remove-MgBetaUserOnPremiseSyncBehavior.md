@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseronpremisesyncbehavior
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserOnPremiseSyncBehavior
 ---
@@ -14,6 +14,9 @@ title: Remove-MgBetaUserOnPremiseSyncBehavior
 ## SYNOPSIS
 
 Delete navigation property onPremisesSyncBehavior for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOnPremiseSyncBehavior?view=graph-powershell-1.0)
 
 ## SYNTAX
 

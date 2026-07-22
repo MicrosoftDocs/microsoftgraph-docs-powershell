@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobiledevicemanagementpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 06/05/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPolicyMobileDeviceManagementPolicy
 ---
@@ -53,7 +53,7 @@ Delete a mobilityManagementPolicy object.
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Remove-MgBetaPolicyMobileDeviceManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId
+Remove-MgBetaPolicyMobileDeviceManagementPolicy -MobileDeviceManagementPolicyId $mobileDeviceManagementPolicyId
 
 ```
 This example shows how to use the Remove-MgBetaPolicyMobileDeviceManagementPolicy Cmdlet.

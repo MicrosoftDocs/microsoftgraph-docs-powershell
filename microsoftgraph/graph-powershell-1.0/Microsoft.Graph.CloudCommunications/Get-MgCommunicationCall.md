@@ -1,0 +1,417 @@
+---
+document type: cmdlet
+external help file: Microsoft.Graph.CloudCommunications-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcall
+Locale: en-US
+Module Name: Microsoft.Graph.CloudCommunications
+ms.date: 06/05/2026
+PlatyPS schema version: 2024-05-01
+title: Get-MgCommunicationCall
+---
+
+# Get-MgCommunicationCall
+
+## SYNOPSIS
+
+Retrieve the properties and relationships of a call object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCall?view=graph-powershell-beta)
+
+## SYNTAX
+
+### Get (Default)
+
+```
+Get-MgCommunicationCall -CallId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+```
+
+### GetViaIdentity
+
+```
+Get-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+```
+
+## ALIASES
+
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
+## DESCRIPTION
+
+Retrieve the properties and relationships of a call object.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
+
+## EXAMPLES
+### Example 1: Getting a Peer-to-Peer call
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgCommunicationCall -CallId $callId
+
+```
+This example shows getting a peer-to-peer call
+
+### Example 2: Getting a group call
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgCommunicationCall -CallId $callId
+
+```
+This example shows getting a group call
+
+
+## PARAMETERS
+
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CallId
+
+The unique identifier of call
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ExpandProperty
+
+Expand related entities
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- Expand
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Headers
+
+Optional headers that will be added to the request.
+
+```yaml
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -InputObject
+
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: GetViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Property
+
+Select properties to be returned
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- Select
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ResponseHeadersVariable
+
+Optional Response Headers Variable.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### CommonParameters
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
+{{ Fill in the Description }}
+
+### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
+## OUTPUTS
+
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
+
+{{ Fill in the Description }}
+
+## NOTES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+  [AdhocCallId <String>]: The unique identifier of adhocCall
+  [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
+  [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
+  [CallId <String>]: The unique identifier of call
+  [CallRecordId <String>]: The unique identifier of callRecord
+  [CallRecordingId <String>]: The unique identifier of callRecording
+  [CallTranscriptId <String>]: The unique identifier of callTranscript
+  [CommsOperationId <String>]: The unique identifier of commsOperation
+  [ContentSharingSessionId <String>]: The unique identifier of contentSharingSession
+  [EngagementConversationMessageId <String>]: The unique identifier of engagementConversationMessage
+  [EngagementConversationMessageId1 <String>]: The unique identifier of engagementConversationMessage
+  [EngagementConversationMessageReactionId <String>]: The unique identifier of engagementConversationMessageReaction
+  [MeetingAttendanceReportId <String>]: The unique identifier of meetingAttendanceReport
+  [OnlineMeetingEngagementConversationId <String>]: The unique identifier of onlineMeetingEngagementConversation
+  [OnlineMeetingId <String>]: The unique identifier of onlineMeeting
+  [ParticipantId <String>]: The unique identifier of participant
+  [PresenceId <String>]: The unique identifier of presence
+  [SessionId <String>]: The unique identifier of session
+  [UserId <String>]: The unique identifier of user
+
+
+## RELATED LINKS
+
+- [Get-MgCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-get?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
