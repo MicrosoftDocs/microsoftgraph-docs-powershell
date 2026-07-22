@@ -370,7 +370,7 @@ HelpMessage: ''
 
 ### -PresenterParticipantId
 
-.
+
 
 ```yaml
 Type: System.String
