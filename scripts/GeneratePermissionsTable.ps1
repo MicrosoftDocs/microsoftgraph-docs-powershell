@@ -136,18 +136,25 @@ function New-ReferenceTable {
 "@;
 
 
-                if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
-                    $Link = "**Permissions**`r`n`n$markdownTable`r`n`n## EXAMPLES"
-    (Get-Content $File) | 
-                    Foreach-Object { $_ -replace '## EXAMPLES', $Link }  | 
-                    Out-File $File
+                # Read the full file and strip any previously inserted Permissions
+                # block(s) first so insertion is idempotent. Docs that are not
+                # regenerated from scratch (e.g. unchanged cmdlets) still retain the
+                # block from the previous run; without this strip they accumulate a
+                # duplicate Permissions block on every pipeline run.
+                $content = Get-Content -Raw -Path $File
+                $content = [regex]::Replace(
+                    $content,
+                    '(?s)\*\*Permissions\*\*\r?\n\r?\n\| Permission type \|.*?\| Application \|[^\r\n]*(\r?\n)+',
+                    ''
+                )
+
+                if ($content -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
+                    $content = $content -replace '## EXAMPLES', "**Permissions**`r`n`n$markdownTable`r`n`n## EXAMPLES"
                 }
                 else {
-                    $Link = "**Permissions**`r`n`n$markdownTable`r`n`n## PARAMETERS"
-    (Get-Content $File) | 
-                    Foreach-Object { $_ -replace '## PARAMETERS', $Link }  | 
-                    Out-File $File
+                    $content = $content -replace '## PARAMETERS', "**Permissions**`r`n`n$markdownTable`r`n`n## PARAMETERS"
                 }
+                [System.IO.File]::WriteAllText($File, $content)
             }
 
         }

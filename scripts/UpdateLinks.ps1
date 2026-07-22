@@ -176,9 +176,17 @@ function Add-Link {
             $ConfirmFile = Join-Path $WorkLoadDocsPath "$Folder" "$ModuleName" "$CommandRename.md"
             $ConfirmCommandAvailability = Find-MgGraphCommand -Command $CommandRename
             if ($ConfirmCommandAvailability -and (Test-Path $ConfirmFile)) {
-                (Get-Content $File) | 
-                Foreach-Object { $_ -replace '## SYNTAX', $Link }  | 
-                Out-File $File
+                $content = Get-Content -Raw -Path $File
+                # Strip any previously inserted release-note callout first so the note
+                # is not duplicated when the doc is retained from a previous run
+                # instead of being regenerated from scratch.
+                $content = [regex]::Replace(
+                    $content,
+                    '(?s)> \[!NOTE\]\r?\n> To view the (?:beta|v1\.0) release of this cmdlet, view \[[^\]]*\]\([^)]*\)\r?\n(\r?\n)+',
+                    ''
+                )
+                $content = $content -replace '## SYNTAX', $Link
+                [System.IO.File]::WriteAllText($File, $content)
             }
         }
     }

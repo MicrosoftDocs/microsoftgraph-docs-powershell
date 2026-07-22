@@ -311,6 +311,12 @@ function CleanupFile {
         $Content = $Content.Replace("- _ !", "")
         $Content = $Content.Replace("Only the following characters are allowed A - Z, a - z, 0 - 9, ' .", "Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,")
         $Content = $Content.Replace("Allowed characters are : !", "Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges")
+        # Collapse accumulated trailing blank lines to a single newline. The
+        # repeated Get-Content -Raw | Out-File passes in this script (each of
+        # which appends a newline) otherwise grow the blank-line block at the
+        # end of retained docs on every pipeline run. CleanupFile is the last
+        # per-file step, so normalizing here caps the file every run.
+        if ($null -ne $Content) { $Content = $Content.TrimEnd() }
         $Content | Out-File $File -Encoding UTF8
     }
     catch {
