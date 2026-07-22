@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagrouplicense
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaGroupLicense
 ---
@@ -32,6 +32,7 @@ Set-MgBetaGroupLicense -GroupId <string> [-ResponseHeadersVariable <string>]
  [-RemoveLicenses <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Assign
@@ -42,6 +43,7 @@ Set-MgBetaGroupLicense -GroupId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
@@ -52,6 +54,7 @@ Set-MgBetaGroupLicense -InputObject <IGroupsIdentity> [-ResponseHeadersVariable 
  [-RemoveLicenses <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
@@ -62,6 +65,7 @@ Set-MgBetaGroupLicense -InputObject <IGroupsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -81,9 +85,9 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LicenseAssignment.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (work or school account) | LicenseAssignment.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | LicenseAssignment.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Application | LicenseAssignment.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Add licenses to the group

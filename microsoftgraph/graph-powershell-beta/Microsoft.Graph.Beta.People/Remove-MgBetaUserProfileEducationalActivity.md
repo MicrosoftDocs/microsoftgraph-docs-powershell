@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileeducationalactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserProfileEducationalActivity
 ---
@@ -24,6 +24,7 @@ Remove-MgBetaUserProfileEducationalActivity -EducationalActivityId <string> -Use
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -33,6 +34,7 @@ Remove-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-IfM
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,9 +50,9 @@ Delete navigation property educationalActivities for users
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
+| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | User.ReadWrite,  |
-| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
+| Application | User.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmapfootprint
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceAsBuildingMapFootprint
 ---
@@ -29,7 +29,7 @@ Get-MgPlaceAsBuildingMapFootprint -PlaceId <string> [-ExpandProperty <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -39,7 +39,7 @@ Get-MgPlaceAsBuildingMapFootprint -FootprintMapId <string> -PlaceId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -48,7 +48,7 @@ Get-MgPlaceAsBuildingMapFootprint -FootprintMapId <string> -PlaceId <string>
 Get-MgPlaceAsBuildingMapFootprint -InputObject <ICalendarIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -60,19 +60,6 @@ This cmdlet has the following aliases,
 
 Represents the approximate physical extent of a referenced building.
 It corresponds to footprint.geojson in IMDF format.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Calendar
-
-Get-MgPlaceAsBuildingMapFootprint -PlaceId $placeId
-
-```
-This example shows how to use the Get-MgPlaceAsBuildingMapFootprint Cmdlet.
-
 
 ## PARAMETERS
 
@@ -586,6 +573,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Get-MgPlaceAsBuildingMapFootprint](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmapfootprint)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/buildingmap-list-footprints?view=graph-rest-1.0)
+
 
 
 

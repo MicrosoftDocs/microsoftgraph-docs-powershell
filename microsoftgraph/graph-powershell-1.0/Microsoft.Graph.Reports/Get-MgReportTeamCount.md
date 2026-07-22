@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportTeamCount
 ---
@@ -26,7 +26,7 @@ Get the number of teams of a particular type in an instance of Microsoft Teams.
 Get-MgReportTeamCount -Period <string> -OutFile <string> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -35,7 +35,7 @@ Get-MgReportTeamCount -Period <string> -OutFile <string> [-ResponseHeadersVariab
 Get-MgReportTeamCount -InputObject <IReportsIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -46,19 +46,6 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the number of teams of a particular type in an instance of Microsoft Teams.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Reports
-
-Get-MgReportTeamCount -Format "text/csv"  -Period $periodId 
-
-```
-This example shows how to use the Get-MgReportTeamCount Cmdlet.
-
 
 ## PARAMETERS
 
@@ -375,6 +362,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [Get-MgReportTeamCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getteamsteamcounts?view=graph-rest-1.0)
+
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlink
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDriveItemLink
 ---
@@ -31,6 +31,7 @@ New-MgDriveItemLink -DriveId <string> -DriveItemId <string> [-ResponseHeadersVar
  [-Scope <string>] [-SendNotification] [-Type <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -41,6 +42,7 @@ New-MgDriveItemLink -DriveId <string> -DriveItemId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -52,6 +54,7 @@ New-MgDriveItemLink -InputObject <IFilesIdentity> [-ResponseHeadersVariable <str
  [-Scope <string>] [-SendNotification] [-Type <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -62,6 +65,7 @@ New-MgDriveItemLink -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -79,12 +83,12 @@ DriveItem resources inherit sharing permissions from their ancestors.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All,  |
+| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Creating sharable links
+### Example 1: Code snippet
 
 ```powershell
 
@@ -100,9 +104,9 @@ $params = @{
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```
-This example shows creating sharable links
+This example shows how to use the New-MgDriveItemLink Cmdlet.
 
-### Example 2: Creating company sharable links
+### Example 2: Code snippet
 
 ```powershell
 
@@ -116,9 +120,9 @@ $params = @{
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```
-This example shows creating company sharable links
+This example shows how to use the New-MgDriveItemLink Cmdlet.
 
-### Example 3: Creating embeddable links
+### Example 3: Code snippet
 
 ```powershell
 
@@ -131,7 +135,7 @@ $params = @{
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```
-This example shows creating embeddable links
+This example shows how to use the New-MgDriveItemLink Cmdlet.
 
 
 ## PARAMETERS

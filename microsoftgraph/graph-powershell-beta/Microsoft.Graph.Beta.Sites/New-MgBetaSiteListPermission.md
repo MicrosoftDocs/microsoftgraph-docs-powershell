@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSiteListPermission
 ---
@@ -29,7 +29,7 @@ New-MgBetaSiteListPermission -ListId <string> -SiteId <string> [-ResponseHeaders
  [-Link <IMicrosoftGraphSharingLink>] [-Roles <string[]>] [-ShareId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +39,7 @@ New-MgBetaSiteListPermission -ListId <string> -SiteId <string>
  -BodyParameter <IMicrosoftGraphPermission> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -54,7 +54,7 @@ New-MgBetaSiteListPermission -InputObject <ISitesIdentity> [-ResponseHeadersVari
  [-Link <IMicrosoftGraphSharingLink>] [-Roles <string[]>] [-ShareId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -64,7 +64,7 @@ New-MgBetaSiteListPermission -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphPermission> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -80,34 +80,9 @@ Create a new permission object on a list.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
+| Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Sites
-
-$params = @{
-	grantedToV2 = @{
-		application = @{
-			id = "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
-			displayName = "Contoso Time Manager App"
-		}
-	}
-	roles = @(
-	"write"
-)
-}
-
-New-MgBetaSiteListPermission -SiteId $siteId -ListId $listId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSiteListPermission Cmdlet.
-
+| Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 
 ## PARAMETERS
 
@@ -864,17 +839,6 @@ Read-only.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
     [Group <IMicrosoftGraphIdentity>]: identity
-    [SharePointGroup <IMicrosoftGraphSharePointGroupIdentity>]: sharePointGroupIdentity
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-      [PrincipalId <String>]: The principal ID of the SharePoint group in the tenant.
-Read-only.
-      [Title <String>]: The title of the SharePoint group.
-Read-only.
     [SiteGroup <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.
@@ -979,17 +943,6 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
   [Group <IMicrosoftGraphIdentity>]: identity
-  [SharePointGroup <IMicrosoftGraphSharePointGroupIdentity>]: sharePointGroupIdentity
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [PrincipalId <String>]: The principal ID of the SharePoint group in the tenant.
-Read-only.
-    [Title <String>]: The title of the SharePoint group.
-Read-only.
   [SiteGroup <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
@@ -1012,17 +965,6 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
   [Group <IMicrosoftGraphIdentity>]: identity
-  [SharePointGroup <IMicrosoftGraphSharePointGroupIdentity>]: sharePointGroupIdentity
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [PrincipalId <String>]: The principal ID of the SharePoint group in the tenant.
-Read-only.
-    [Title <String>]: The title of the SharePoint group.
-Read-only.
   [SiteGroup <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.
@@ -1166,6 +1108,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 - [New-MgBetaSiteListPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistpermission)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/list-post-permissions?view=graph-rest-beta)
+
 
 
 

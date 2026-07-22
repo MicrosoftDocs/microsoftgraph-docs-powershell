@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelenabledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamChannelEnabledApp
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaTeamChannelEnabledApp
 ## SYNOPSIS
 
 A collection of enabled apps in the channel.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelEnabledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelEnabledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgBetaTeamChannelEnabledApp -ChannelId <string> -TeamId <string> [-ExpandPro
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -38,7 +35,7 @@ Get-MgBetaTeamChannelEnabledApp -ChannelId <string> -TeamId <string> -TeamsAppId
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -47,7 +44,7 @@ Get-MgBetaTeamChannelEnabledApp -ChannelId <string> -TeamId <string> -TeamsAppId
 Get-MgBetaTeamChannelEnabledApp -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -63,9 +60,9 @@ A collection of enabled apps in the channel.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ManageSelectedForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteForTeam,  |
+| Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ManageSelectedForTeam,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsAppInstallation.Read.Group, TeamsAppInstallation.ManageSelectedForTeam.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All,  |
+| Application | TeamsAppInstallation.Read.Group, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ManageSelectedForTeam.All,  |
 
 ## PARAMETERS
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserdefaultcalendarevent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserDefaultCalendarEvent
 ---
@@ -46,6 +46,7 @@ New-MgUserDefaultCalendarEvent -UserId <string> [-ResponseHeadersVariable <strin
  [-Type <string>] [-WebLink <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -55,6 +56,7 @@ New-MgUserDefaultCalendarEvent -UserId <string> -BodyParameter <IMicrosoftGraphE
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -83,6 +85,7 @@ New-MgUserDefaultCalendarEvent -InputObject <ICalendarIdentity> [-ResponseHeader
  [-Type <string>] [-WebLink <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -92,7 +95,7 @@ New-MgUserDefaultCalendarEvent -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphEvent> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -365,8 +368,7 @@ HelpMessage: ''
 ### -CancelledOccurrences
 
 Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are canceled are called canceled occurences.Requires $select to retrieve.
-Only returned in a Get operation that specifies the ID (seriesMasterId property value) of a series master event.
+Instances in a recurring series that are canceled are called canceled occurences.Returned only on $select in a Get operation which specifies the ID (seriesMasterId property value) of a series master event.
 
 ```yaml
 Type: System.String[]
@@ -529,8 +531,7 @@ HelpMessage: ''
 ### -ExceptionOccurrences
 
 Contains the id property values of the event instances that are exceptions in a recurring series.Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees.
-Exceptions don't include canceled occurrences.Requires $select and $expand to retrieve.
-Only returned in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
+Exceptions don't include canceled occurrences.Returned only on $select and $expand in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
 To construct, see NOTES section for EXCEPTIONOCCURRENCES properties and create a hash table.
 
 ```yaml
@@ -2011,12 +2012,10 @@ Nullable.
 Read-only.
       [Value <String>]: A property value.
   [CancelledOccurrences <String[]>]: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are canceled are called canceled occurences.Requires $select to retrieve.
-Only returned in a Get operation that specifies the ID (seriesMasterId property value) of a series master event.
+Instances in a recurring series that are canceled are called canceled occurences.Returned only on $select in a Get operation which specifies the ID (seriesMasterId property value) of a series master event.
   [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [ExceptionOccurrences <IMicrosoftGraphEvent[]>]: Contains the id property values of the event instances that are exceptions in a recurring series.Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees.
-Exceptions don't include canceled occurrences.Requires $select and $expand to retrieve.
-Only returned in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
+Exceptions don't include canceled occurrences.Returned only on $select and $expand in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
   [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the event.
 Nullable.
     [Id <String>]: The unique identifier for an entity.
@@ -2231,12 +2230,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 It's in text format.
     [Calendar <IMicrosoftGraphCalendar>]: calendar
     [CancelledOccurrences <String[]>]: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are canceled are called canceled occurences.Requires $select to retrieve.
-Only returned in a Get operation that specifies the ID (seriesMasterId property value) of a series master event.
+Instances in a recurring series that are canceled are called canceled occurences.Returned only on $select in a Get operation which specifies the ID (seriesMasterId property value) of a series master event.
     [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [ExceptionOccurrences <IMicrosoftGraphEvent[]>]: Contains the id property values of the event instances that are exceptions in a recurring series.Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees.
-Exceptions don't include canceled occurrences.Requires $select and $expand to retrieve.
-Only returned in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
+Exceptions don't include canceled occurrences.Returned only on $select and $expand in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
     [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the event.
 Nullable.
       [Id <String>]: The unique identifier for an entity.
@@ -2420,8 +2417,7 @@ END `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
 See below for more possible values.
 
 EXCEPTIONOCCURRENCES <IMicrosoftGraphEvent[]>: Contains the id property values of the event instances that are exceptions in a recurring series.Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees.
-Exceptions don't include canceled occurrences.Requires $select and $expand to retrieve.
-Only returned in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
+Exceptions don't include canceled occurrences.Returned only on $select and $expand in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
 Every time the item is changed, changeKey changes as well.
@@ -2531,12 +2527,10 @@ Nullable.
 Read-only.
       [Value <String>]: A property value.
   [CancelledOccurrences <String[]>]: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are canceled are called canceled occurences.Requires $select to retrieve.
-Only returned in a Get operation that specifies the ID (seriesMasterId property value) of a series master event.
+Instances in a recurring series that are canceled are called canceled occurences.Returned only on $select in a Get operation which specifies the ID (seriesMasterId property value) of a series master event.
   [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [ExceptionOccurrences <IMicrosoftGraphEvent[]>]: Contains the id property values of the event instances that are exceptions in a recurring series.Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees.
-Exceptions don't include canceled occurrences.Requires $select and $expand to retrieve.
-Only returned in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
+Exceptions don't include canceled occurrences.Returned only on $select and $expand in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
   [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the event.
 Nullable.
     [Id <String>]: The unique identifier for an entity.
@@ -2816,12 +2810,10 @@ Nullable.
 Read-only.
       [Value <String>]: A property value.
   [CancelledOccurrences <String[]>]: Contains occurrenceId property values of canceled instances in a recurring series, if the event is the series master.
-Instances in a recurring series that are canceled are called canceled occurences.Requires $select to retrieve.
-Only returned in a Get operation that specifies the ID (seriesMasterId property value) of a series master event.
+Instances in a recurring series that are canceled are called canceled occurences.Returned only on $select in a Get operation which specifies the ID (seriesMasterId property value) of a series master event.
   [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [ExceptionOccurrences <IMicrosoftGraphEvent[]>]: Contains the id property values of the event instances that are exceptions in a recurring series.Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees.
-Exceptions don't include canceled occurrences.Requires $select and $expand to retrieve.
-Only returned in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
+Exceptions don't include canceled occurrences.Returned only on $select and $expand in a GET operation that specifies the ID (seriesMasterId property value) of a series master event.
   [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the event.
 Nullable.
     [Id <String>]: The unique identifier for an entity.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarsessionattendancereportattendancerecord
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
 ---
@@ -27,13 +27,12 @@ New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
  -MeetingAttendanceReportId <string> -VirtualEventSessionId <string> -VirtualEventWebinarId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <string>]
- [-Engagements <IMicrosoftGraphMeetingEngagement[]>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]
  [-Id <string>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <string>]
  [-RegistrationId <string>] [-Role <string>] [-TotalAttendanceInSeconds <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -44,7 +43,7 @@ New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
  -BodyParameter <IMicrosoftGraphAttendanceRecord> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -53,13 +52,13 @@ New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
 New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
  -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
- [-EmailAddress <string>] [-Engagements <IMicrosoftGraphMeetingEngagement[]>]
+ [-EmailAddress <string>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]
  [-Id <string>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <string>]
  [-RegistrationId <string>] [-Role <string>] [-TotalAttendanceInSeconds <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -70,6 +69,7 @@ New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -215,34 +215,6 @@ Email address of the user associated with this attendance record.
 
 ```yaml
 Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Engagements
-
-The list of real-time participant interaction behaviors during a meeting.
-To construct, see NOTES section for ENGAGEMENTS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingEngagement[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -787,10 +759,6 @@ Read-only.
     [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
     [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
   [EmailAddress <String>]: Email address of the user associated with this attendance record.
-  [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
-    [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
-    [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
-    [EngagementType <String>]: meetingEngagementType
   [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -813,11 +781,6 @@ Presents for all participant who has registered for the virtualEventWebinar.
   [Role <String>]: Role of the attendee.
 The possible values are: None, Attendee, Presenter, and Organizer.
   [TotalAttendanceInSeconds <Int32?>]: Total duration of the attendances in seconds.
-
-ENGAGEMENTS <IMicrosoftGraphMeetingEngagement[]>: The list of real-time participant interaction behaviors during a meeting.
-  [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
-  [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
-  [EngagementType <String>]: meetingEngagementType
 
 EXTERNALREGISTRATIONINFORMATION `<IMicrosoftGraphVirtualEventExternalRegistrationInformation>`: virtualEventExternalRegistrationInformation
   [(Any) <Object>]: This indicates any property can be added to this object.

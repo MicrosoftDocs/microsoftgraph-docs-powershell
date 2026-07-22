@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleassignmentschedulerequest
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
 ---
@@ -37,6 +37,7 @@ New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest [-ResponseHeadersVari
  [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -47,6 +48,7 @@ New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -63,9 +65,9 @@ See Enable per-user Microsoft Entra multifactor authentication to secure sign-in
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleAssignmentSchedule.ReadWrite.Directory, RoleAssignmentSchedule.Remove.Directory, RoleEligibilitySchedule.Remove.Directory, RoleManagement.ReadWrite.Directory,  |
+| Delegated (work or school account) | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleEligibilitySchedule.Remove.Directory, RoleAssignmentSchedule.Remove.Directory,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | RoleAssignmentSchedule.ReadWrite.Directory, RoleAssignmentSchedule.Remove.Directory, RoleEligibilitySchedule.Remove.Directory, RoleManagement.ReadWrite.Directory,  |
+| Application | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleEligibilitySchedule.Remove.Directory, RoleAssignmentSchedule.Remove.Directory,  |
 
 ## EXAMPLES
 ### Example 1: Admin assigning a directory role to a principal

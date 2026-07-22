@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgInformationProtection
 ---
@@ -28,7 +28,7 @@ Update-MgInformationProtection [-ResponseHeadersVariable <string>]
  [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -38,6 +38,7 @@ Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtect
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -393,7 +394,7 @@ Not nullable.
     [DeviceId <String>]: Identifier of the device the BitLocker key is originally backed up from.
 Supports $filter (eq).
     [Key <String>]: The BitLocker recovery key.
-Requires $select to retrieve.
+Returned only on $select.
 Not nullable.
     [VolumeType <String>]: volumeType
 
@@ -411,7 +412,7 @@ Not nullable.
       [DeviceId <String>]: Identifier of the device the BitLocker key is originally backed up from.
 Supports $filter (eq).
       [Key <String>]: The BitLocker recovery key.
-Requires $select to retrieve.
+Returned only on $select.
 Not nullable.
       [VolumeType <String>]: volumeType
   [ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>]: 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointbrowsesession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreSharePointBrowseSession
 ---
@@ -13,10 +13,7 @@ title: New-MgBetaSolutionBackupRestoreSharePointBrowseSession
 
 ## SYNOPSIS
 
-Create a new sharePointBrowseSession object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSharePointBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSharePointBrowseSession?view=graph-powershell-1.0)
+Create new navigation property to sharePointBrowseSessions for solutions
 
 ## SYNTAX
 
@@ -26,10 +23,10 @@ Create a new sharePointBrowseSession object.
 New-MgBetaSolutionBackupRestoreSharePointBrowseSession [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-BackupSizeInBytes <string>] [-CreatedDateTime <datetime>]
  [-Error <IMicrosoftGraphPublicError>] [-ExpirationDateTime <datetime>] [-Id <string>]
- [-RestorePointDateTime <datetime>] [-RestorePointId <string>] [-SiteId <string>] [-Status <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-RestorePointDateTime <datetime>] [-SiteId <string>] [-Status <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +36,7 @@ New-MgBetaSolutionBackupRestoreSharePointBrowseSession
  -BodyParameter <IMicrosoftGraphSharePointBrowseSession> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,7 +46,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a new sharePointBrowseSession object.
+Create new navigation property to sharePointBrowseSessions for solutions
 
 **Permissions**
 
@@ -84,7 +81,7 @@ HelpMessage: ''
 
 ### -BackupSizeInBytes
 
-The size of the backup in bytes.
+
 
 ```yaml
 Type: System.String
@@ -170,9 +167,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-The date and time when the browse session was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+
 
 ```yaml
 Type: System.DateTime
@@ -215,7 +210,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-The date and time after which the browse session is deleted automatically.
+
 
 ```yaml
 Type: System.DateTime
@@ -406,7 +401,7 @@ HelpMessage: ''
 
 ### -RestorePointDateTime
 
-The date and time of the restore point on which the browse session is created.
+
 
 ```yaml
 Type: System.DateTime
@@ -425,30 +420,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -RestorePointId
-
-
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -SiteId
 
-Id of the backed-up SharePoint site.
+
 
 ```yaml
 Type: System.String
@@ -542,10 +516,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphSharePointBrowseSession>`: sharePointBrowseSession
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [BackupSizeInBytes <String>]: The size of the backup in bytes.
-  [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [BackupSizeInBytes <String>]: 
+  [CreatedDateTime <DateTime?>]: 
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -561,13 +533,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Target <String>]: The target of the error.
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
-  [ExpirationDateTime <DateTime?>]: The date and time after which the browse session is deleted automatically.
-  [RestorePointDateTime <DateTime?>]: The date and time of the restore point on which the browse session is created.
-  [RestorePointId <String>]: 
+  [ExpirationDateTime <DateTime?>]: 
+  [RestorePointDateTime <DateTime?>]: 
   [Status <String>]: browseSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [SiteId <String>]: Id of the backed-up SharePoint site.
+  [SiteId <String>]: 
 
 ERROR `<IMicrosoftGraphPublicError>`: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -589,7 +560,6 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
 ## RELATED LINKS
 
 - [New-MgBetaSolutionBackupRestoreSharePointBrowseSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointbrowsesession)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointbrowsesessions?view=graph-rest-beta)
 
 
 

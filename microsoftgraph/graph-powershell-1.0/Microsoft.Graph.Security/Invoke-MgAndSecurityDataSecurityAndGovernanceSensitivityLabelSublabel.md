@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgandsecuritydatasecurityandgovernancesensitivitylabelsublabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel
 ---
@@ -29,7 +29,7 @@ Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel -Sensitivi
  [-ProtectedContents <IMicrosoftGraphProtectedContent[]>] [-SupportedContentFormats <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### And
@@ -40,6 +40,7 @@ Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel -Sensitivi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AndViaIdentityExpanded
@@ -51,7 +52,7 @@ Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel
  [-ProtectedContents <IMicrosoftGraphProtectedContent[]>] [-SupportedContentFormats <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AndViaIdentity
@@ -63,6 +64,7 @@ Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

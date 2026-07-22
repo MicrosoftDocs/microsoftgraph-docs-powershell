@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowwithscope
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope
 ---
@@ -31,6 +31,7 @@ Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope -WorkflowId <strin
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Activate
@@ -41,6 +42,7 @@ Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope -WorkflowId <strin
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ActivateViaIdentityExpanded
@@ -51,6 +53,7 @@ Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope
  [-AdditionalProperties <hashtable>] [-Scope <hashtable>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
@@ -62,6 +65,7 @@ Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,78 +79,6 @@ Run a workflow object on-demand with a specific scope.
 You can run any workflow on-demand, including scheduled workflows.
 Workflows created from the 'Real-time employee termination' template are run on-demand only.
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
-
-## EXAMPLES
-### Example 1: Activate a workflow with a specific scope of 2 users
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-$params = @{
-	subjects = @(
-		@{
-			id = "8cdf25a8-c9d2-423e-a03d-3f39f03c3e97"
-		}
-		@{
-			id = "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
-		}
-	)
-}
-
-Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope -WorkflowId $workflowId -BodyParameter $params
-
-```
-This example will activate a workflow with a specific scope of 2 users
-
-### Example 2: Activate a workflow with a specific scope of 2 users who don't exist
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-$params = @{
-	scope = @{
-		"@odata.type" = "microsoft.graph.identityGovernance.activateProcessingResultScope"
-		processingResults = @(
-			@{
-				id = "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_638927021459371237_0cdd8963-aaaa-4632-a1f2-aaaa7230aaaa"
-			}
-			@{
-				id = "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_388131231459357126_aaaa8963-1c30-4632-aaaa-ac96723069cb"
-			}
-		)
-		taskScope = "allTasks"
-	}
-}
-
-Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope -WorkflowId $workflowId -BodyParameter $params
-
-```
-This example will activate a workflow with a specific scope of 2 users who don't exist
-
-### Example 3: Activate a workflow with a specific processing result scope
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-$params = @{
-	subjects = @(
-		@{
-			id = "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_638927021459371237_0cdd8963-aaaa-4632-a1f2-aaaa7230aaaa"
-		}
-		@{
-			id = "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_388131231459357126_aaaa8963-1c30-4632-aaaa-ac96723069cb"
-		}
-	)
-}
-
-Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope -WorkflowId $workflowId -BodyParameter $params
-
-```
-This example will activate a workflow with a specific processing result scope
-
 
 ## PARAMETERS
 
@@ -608,7 +540,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
-  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -676,6 +607,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [Initialize-MgBetaIdentityGovernanceLifecycleWorkflowWithScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowwithscope)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activatewithscope?view=graph-rest-beta)
+
 
 
 

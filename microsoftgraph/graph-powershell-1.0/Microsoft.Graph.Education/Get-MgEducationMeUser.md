@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationMeUser
 ---
@@ -26,7 +26,7 @@ Retrieve the simple directory user that corresponds to this educationUser.
 Get-MgEducationMeUser [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -42,9 +42,9 @@ Retrieve the simple directory user that corresponds to this educationUser.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic, Directory.Read.All, EduRoster.Read, EduRoster.Write, User.Read,  |
+| Delegated (work or school account) | EduRoster.ReadBasic, User.Read, EduRoster.Write, EduRoster.Read, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, Directory.Read.All, EduRoster.ReadWrite.All,  |
+| Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

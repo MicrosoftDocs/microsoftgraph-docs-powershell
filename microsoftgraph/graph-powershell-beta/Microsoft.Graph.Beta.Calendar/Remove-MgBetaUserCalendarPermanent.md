@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendarpermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserCalendarPermanent
 ---
@@ -13,7 +13,8 @@ title: Remove-MgBetaUserCalendarPermanent
 
 ## SYNOPSIS
 
-Invoke action permanentDelete
+Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
+For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserCalendarPermanent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserCalendarPermanent?view=graph-powershell-1.0)
@@ -27,6 +28,7 @@ Remove-MgBetaUserCalendarPermanent -UserId <string> [-ResponseHeadersVariable <s
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Delete1
@@ -36,6 +38,7 @@ Remove-MgBetaUserCalendarPermanent -UserId <string> -CalendarId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
@@ -45,6 +48,7 @@ Remove-MgBetaUserCalendarPermanent -InputObject <ICalendarIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -54,6 +58,7 @@ Remove-MgBetaUserCalendarPermanent -InputObject <ICalendarIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -63,7 +68,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke action permanentDelete
+Permanently delete a calendar folder and the events that it contains and remove them from the mailbox.
+For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
 **Permissions**
 
@@ -454,6 +460,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgBetaUserCalendarPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendarpermanent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-beta)
 
 
 

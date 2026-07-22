@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivityremotenetworkforwardingprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile
 ---
@@ -27,6 +27,7 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -RemoteNetwork
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -36,7 +37,7 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile -ForwardingPro
  -RemoteNetworkId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -46,7 +47,7 @@ Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile
  -InputObject <INetworkAccessIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -551,7 +552,6 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
   [BranchSiteId <String>]: The unique identifier of branchSite
-  [CloudFirewallPolicyId <String>]: The unique identifier of cloudFirewallPolicy
   [ConditionalAccessPolicyId <String>]: The unique identifier of conditionalAccessPolicy
   [ConnectionId <String>]: The unique identifier of connection
   [ConnectivityConfigurationLinkId <String>]: The unique identifier of connectivityConfigurationLink
@@ -563,7 +563,6 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [FilteringProfileId <String>]: The unique identifier of filteringProfile
   [ForwardingPolicyId <String>]: The unique identifier of forwardingPolicy
   [ForwardingProfileId <String>]: The unique identifier of forwardingProfile
-  [GenerativeAiInsightTransactionId <String>]: The unique identifier of generativeAIInsight
   [NetworkAccessTrafficTransactionId <String>]: The unique identifier of networkAccessTraffic
   [PolicyLinkId <String>]: The unique identifier of policyLink
   [PolicyRuleId <String>]: The unique identifier of policyRule

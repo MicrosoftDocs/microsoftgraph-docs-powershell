@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphotocontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupPhotoContent
 ---
@@ -26,7 +26,7 @@ The group's profile photo.
 Get-MgBetaGroupPhotoContent -GroupId <string> -OutFile <string> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### Get1
@@ -35,7 +35,7 @@ Get-MgBetaGroupPhotoContent -GroupId <string> -OutFile <string> [-ResponseHeader
 Get-MgBetaGroupPhotoContent -GroupId <string> -ProfilePhotoId <string> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -44,7 +44,7 @@ Get-MgBetaGroupPhotoContent -GroupId <string> -ProfilePhotoId <string> -OutFile 
 Get-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -53,7 +53,7 @@ Get-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <string>
 Get-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -69,9 +69,9 @@ The group's profile photo.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ProfilePhoto.Read.All, Group.Read.All, ProfilePhoto.ReadWrite.All,  |
+| Delegated (work or school account) | ProfilePhoto.Read.All, ProfilePhoto.ReadWrite.All, Group.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ProfilePhoto.Read.All, Group.Read.All, ProfilePhoto.ReadWrite.All,  |
+| Application | ProfilePhoto.Read.All, ProfilePhoto.ReadWrite.All, Group.Read.All,  |
 
 ## PARAMETERS
 

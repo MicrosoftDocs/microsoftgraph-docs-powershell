@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaexecutesecurityincidenttaskresponseaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction
 ---
@@ -25,6 +25,7 @@ Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction -IncidentTaskId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ExecuteViaIdentity
@@ -34,6 +35,7 @@ Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction -InputObject <ISecurityId
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -47,17 +49,12 @@ Execute a remediation action on a Microsoft Defender XDR incident task.
 Only the following actionType values are supported for automated execution: collectInvestigationPackage, isolateDevice, unRestrictAppExecution, unIsolateDevice, restrictAppExecution, runAntiVirusScan, stopAndQuarantineFile, submitIocRule.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction -IncidentTaskId $incidentTaskId
-
-```
-This example shows how to use the Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction Cmdlet.
-
 
 ## PARAMETERS
 

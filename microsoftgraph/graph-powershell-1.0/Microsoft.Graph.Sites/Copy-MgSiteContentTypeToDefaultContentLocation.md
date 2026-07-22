@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypetodefaultcontentlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgSiteContentTypeToDefaultContentLocation
 ---
@@ -30,6 +30,7 @@ Copy-MgSiteContentTypeToDefaultContentLocation -ContentTypeId <string> -SiteId <
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Copy
@@ -40,6 +41,7 @@ Copy-MgSiteContentTypeToDefaultContentLocation -ContentTypeId <string> -SiteId <
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
@@ -51,6 +53,7 @@ Copy-MgSiteContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
@@ -61,6 +64,7 @@ Copy-MgSiteContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,9 +81,9 @@ The file can then be added as a default file or template via a POST operation.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
+| Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
+| Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

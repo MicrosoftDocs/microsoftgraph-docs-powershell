@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlexternalcertificateauthoritycertificate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate
 ---
@@ -28,6 +28,7 @@ New-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate [-ResponseHeade
  [-Validity <IMicrosoftGraphNetworkaccessValidityDate>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -38,6 +39,7 @@ New-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -59,9 +61,8 @@ This request generates the Certificate Signing Request (CSR) that you download t
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -73,10 +74,6 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate Cmdlet.
-
 
 ## PARAMETERS
 

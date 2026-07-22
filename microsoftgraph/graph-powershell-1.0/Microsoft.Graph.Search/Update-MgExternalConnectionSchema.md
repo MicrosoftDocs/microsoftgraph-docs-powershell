@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgExternalConnectionSchema
 ---
@@ -28,6 +28,7 @@ Update-MgExternalConnectionSchema -ExternalConnectionId <string> [-ResponseHeade
  [-Properties <IMicrosoftGraphExternalConnectorsProperty[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -37,7 +38,7 @@ Update-MgExternalConnectionSchema -ExternalConnectionId <string>
  -BodyParameter <IMicrosoftGraphExternalConnectorsSchema> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,6 +49,7 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity> [-ResponseHeade
  [-Properties <IMicrosoftGraphExternalConnectorsProperty[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -57,7 +59,7 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
  -BodyParameter <IMicrosoftGraphExternalConnectorsSchema> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -574,10 +576,6 @@ Maximum 32 characters.
 Only alphanumeric characters allowed.
 For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
 Optional.
-    [Description <String>]: Specifies a human-readable description that explains the purpose, usage, or guidance related to the property.
-This property enhances semantic understanding by helping Copilot interpret queries and accurately map them to properties that results in more relevant and precise responses.
-Optional but we recommend that you use this property for queryable properties.
-The maximum supported length is 200 characters.
     [IsQueryable <Boolean?>]: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
 Optional.
@@ -595,8 +593,8 @@ Optional.
     [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
-Optional..The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
-Use the Prefer: include-unknown-enum-members request header to retrieve additional values defined in this evolvable enum,For People Connectors you can include : personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
+Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl.
+Use the Prefer: include-unknown-enum-members request header to get the following members in this evolvable enum: iconUrl.
     [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
@@ -622,10 +620,6 @@ Maximum 32 characters.
 Only alphanumeric characters allowed.
 For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
 Optional.
-  [Description <String>]: Specifies a human-readable description that explains the purpose, usage, or guidance related to the property.
-This property enhances semantic understanding by helping Copilot interpret queries and accurately map them to properties that results in more relevant and precise responses.
-Optional but we recommend that you use this property for queryable properties.
-The maximum supported length is 200 characters.
   [IsQueryable <Boolean?>]: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
 Optional.
@@ -643,8 +637,8 @@ Optional.
   [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
-Optional..The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
-Use the Prefer: include-unknown-enum-members request header to retrieve additional values defined in this evolvable enum,For People Connectors you can include : personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
+Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl.
+Use the Prefer: include-unknown-enum-members request header to get the following members in this evolvable enum: iconUrl.
   [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.

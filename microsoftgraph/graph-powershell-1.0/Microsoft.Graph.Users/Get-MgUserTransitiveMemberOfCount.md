@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofcount
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserTransitiveMemberOfCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgUserTransitiveMemberOfCount -UserId <string> -ConsistencyLevel <string> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -36,7 +36,7 @@ Get-MgUserTransitiveMemberOfCount -InputObject <IUsersIdentity> -ConsistencyLeve
  [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,9 +52,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, GroupMember.Read.All, User.Read.All,  |
+| Delegated (work or school account) | User.Read, User.Read.All, GroupMember.Read.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, GroupMember.Read.All,  |
+| Application | User.Read.All, GroupMember.Read.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## PARAMETERS
 

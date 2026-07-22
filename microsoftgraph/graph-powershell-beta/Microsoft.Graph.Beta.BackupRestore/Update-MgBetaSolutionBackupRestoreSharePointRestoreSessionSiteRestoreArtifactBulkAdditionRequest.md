@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifactbulkadditionrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest
 ---
@@ -34,6 +34,7 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBul
  [-Status <string>] [-Tags <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -45,6 +46,7 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBul
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -60,6 +62,7 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBul
  [-SiteWebUrls <string[]>] [-Status <string>] [-Tags <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -71,6 +74,7 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBul
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -957,10 +961,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Target <String>]: The target of the error.
 
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
-  [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
-  [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
-  [DriveExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of driveExclusionUnitsBulkAdditionJob
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -968,12 +969,9 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [DriveRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   [ExchangeProtectionPolicyId <String>]: The unique identifier of exchangeProtectionPolicy
   [ExchangeRestoreSessionId <String>]: The unique identifier of exchangeRestoreSession
-  [ExclusionUnitBaseId <String>]: The unique identifier of exclusionUnitBase
   [GranularDriveRestoreArtifactId <String>]: The unique identifier of granularDriveRestoreArtifact
   [GranularMailboxRestoreArtifactId <String>]: The unique identifier of granularMailboxRestoreArtifact
   [GranularSiteRestoreArtifactId <String>]: The unique identifier of granularSiteRestoreArtifact
-  [MailboxExclusionUnitId <String>]: The unique identifier of mailboxExclusionUnit
-  [MailboxExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxExclusionUnitsBulkAdditionJob
   [MailboxProtectionRuleId <String>]: The unique identifier of mailboxProtectionRule
   [MailboxProtectionUnitId <String>]: The unique identifier of mailboxProtectionUnit
   [MailboxProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
@@ -983,7 +981,6 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [OneDriveForBusinessBrowseSessionId <String>]: The unique identifier of oneDriveForBusinessBrowseSession
   [OneDriveForBusinessProtectionPolicyId <String>]: The unique identifier of oneDriveForBusinessProtectionPolicy
   [OneDriveForBusinessRestoreSessionId <String>]: The unique identifier of oneDriveForBusinessRestoreSession
-  [PolicyId <String>]: Usage: policyId='{policyId}'
   [ProtectionPolicyBaseId <String>]: The unique identifier of protectionPolicyBase
   [ProtectionUnitBaseId <String>]: The unique identifier of protectionUnitBase
   [RestorePointId <String>]: The unique identifier of restorePoint
@@ -992,8 +989,6 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SharePointBrowseSessionId <String>]: The unique identifier of sharePointBrowseSession
   [SharePointProtectionPolicyId <String>]: The unique identifier of sharePointProtectionPolicy
   [SharePointRestoreSessionId <String>]: The unique identifier of sharePointRestoreSession
-  [SiteExclusionUnitId <String>]: The unique identifier of siteExclusionUnit
-  [SiteExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of siteExclusionUnitsBulkAdditionJob
   [SiteProtectionRuleId <String>]: The unique identifier of siteProtectionRule
   [SiteProtectionUnitId <String>]: The unique identifier of siteProtectionUnit
   [SiteProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of siteProtectionUnitsBulkAdditionJob

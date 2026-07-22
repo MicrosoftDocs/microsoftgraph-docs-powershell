@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyuniquename
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgApplicationByUniqueName
 ---
@@ -14,7 +14,6 @@ title: Update-MgApplicationByUniqueName
 ## SYNOPSIS
 
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
-This API can also create an agentIdentityBlueprint object if it doesn't exist, or update properties of an existing agentIdentityBlueprint, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprint.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaApplicationByUniqueName](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationByUniqueName?view=graph-powershell-beta)
@@ -30,19 +29,18 @@ Update-MgApplicationByUniqueName -UniqueName <string> [-ResponseHeadersVariable 
  [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
  [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <string>]
  [-AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]
- [-Certification <IMicrosoftGraphCertification>] [-CreatedByAppId <string>]
- [-CreatedDateTime <datetime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
- [-DefaultRedirectUri <string>] [-DeletedDateTime <datetime>] [-Description <string>]
- [-DisabledByMicrosoftStatus <string>] [-DisplayName <string>]
- [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
+ [-Certification <IMicrosoftGraphCertification>] [-CreatedDateTime <datetime>]
+ [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>] [-DefaultRedirectUri <string>]
+ [-DeletedDateTime <datetime>] [-Description <string>] [-DisabledByMicrosoftStatus <string>]
+ [-DisplayName <string>] [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
  [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
  [-GroupMembershipClaims <string>]
  [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Id <string>]
  [-IdentifierUris <string[]>] [-Info <IMicrosoftGraphInformationalUrl>] [-IsDeviceOnlyAuthSupported]
- [-IsDisabled] [-IsFallbackPublicClient] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
- [-LogoInputFile <string>] [-ManagerApplications <string[]>]
- [-NativeAuthenticationApisEnabled <string>] [-Notes <string>] [-Oauth2RequirePostResponse]
- [-OptionalClaims <IMicrosoftGraphOptionalClaims>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
+ [-IsFallbackPublicClient] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
+ [-LogoInputFile <string>] [-NativeAuthenticationApisEnabled <string>] [-Notes <string>]
+ [-Oauth2RequirePostResponse] [-OptionalClaims <IMicrosoftGraphOptionalClaims>]
+ [-Owners <IMicrosoftGraphDirectoryObject[]>]
  [-ParentalControlSettings <IMicrosoftGraphParentalControlSettings>]
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]
  [-PublicClient <IMicrosoftGraphPublicClientApplication>] [-PublisherDomain <string>]
@@ -57,7 +55,7 @@ Update-MgApplicationByUniqueName -UniqueName <string> [-ResponseHeadersVariable 
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -69,19 +67,18 @@ Update-MgApplicationByUniqueName -InputObject <IApplicationsIdentity> [-UniqueNa
  [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
  [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <string>]
  [-AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]
- [-Certification <IMicrosoftGraphCertification>] [-CreatedByAppId <string>]
- [-CreatedDateTime <datetime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
- [-DefaultRedirectUri <string>] [-DeletedDateTime <datetime>] [-Description <string>]
- [-DisabledByMicrosoftStatus <string>] [-DisplayName <string>]
- [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
+ [-Certification <IMicrosoftGraphCertification>] [-CreatedDateTime <datetime>]
+ [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>] [-DefaultRedirectUri <string>]
+ [-DeletedDateTime <datetime>] [-Description <string>] [-DisabledByMicrosoftStatus <string>]
+ [-DisplayName <string>] [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
  [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
  [-GroupMembershipClaims <string>]
  [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Id <string>]
  [-IdentifierUris <string[]>] [-Info <IMicrosoftGraphInformationalUrl>] [-IsDeviceOnlyAuthSupported]
- [-IsDisabled] [-IsFallbackPublicClient] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
- [-LogoInputFile <string>] [-ManagerApplications <string[]>]
- [-NativeAuthenticationApisEnabled <string>] [-Notes <string>] [-Oauth2RequirePostResponse]
- [-OptionalClaims <IMicrosoftGraphOptionalClaims>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
+ [-IsFallbackPublicClient] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
+ [-LogoInputFile <string>] [-NativeAuthenticationApisEnabled <string>] [-Notes <string>]
+ [-Oauth2RequirePostResponse] [-OptionalClaims <IMicrosoftGraphOptionalClaims>]
+ [-Owners <IMicrosoftGraphDirectoryObject[]>]
  [-ParentalControlSettings <IMicrosoftGraphParentalControlSettings>]
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]
  [-PublicClient <IMicrosoftGraphPublicClientApplication>] [-PublisherDomain <string>]
@@ -96,7 +93,7 @@ Update-MgApplicationByUniqueName -InputObject <IApplicationsIdentity> [-UniqueNa
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -106,6 +103,7 @@ Update-MgApplicationByUniqueName -UniqueName <string> -BodyParameter <IMicrosoft
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -115,7 +113,7 @@ Update-MgApplicationByUniqueName -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphApplication> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -126,7 +124,6 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
-This API can also create an agentIdentityBlueprint object if it doesn't exist, or update properties of an existing agentIdentityBlueprint, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprint.
 
 ## EXAMPLES
 ### Example 1: Create a new application if it doesn't exist
@@ -483,35 +480,6 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -CreatedByAppId
-
-The appId of the application that created this application.
-Set internally by Microsoft Entra ID.
-Read-only.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -1044,33 +1012,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IsDisabled
-
-
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -IsFallbackPublicClient
 
 Specifies the fallback application type as public client, such as an installed application running on a mobile device.
@@ -1139,38 +1080,6 @@ Not nullable.)
 
 ```yaml
 Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ManagerApplications
-
-A collection of application IDs for Microsoft first-party applications designated as managers.
-Manager applications can create service principals, agent identities, and agent users for managed agent blueprints.
-Limited to a maximum of 10 entries.
-Not nullable.
-Only supported on agentIdentityBlueprint objects; attempts to set this property on non-agent-blueprint applications return an error.
-Not returned by default; must be explicitly requested via $select.
-
-```yaml
-Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -2125,22 +2034,14 @@ Always null when the object hasn't been deleted.
   [Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]: customAppManagementConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
     [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: The collection of customSecurityAttributeExemption to exempt from the policy enforcement.
-Limit of 5.
-          [Id <String>]: The unique identifier for an entity.
-Read-only.
-          [Operator <String>]: customSecurityAttributeComparisonOperator
       [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to asymmetricKeyLifetime.
+This property is required when restrictionType is set to keyLifetime.
       [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
       [RestrictionType <String>]: appKeyCredentialRestrictionType
       [State <String>]: appManagementRestrictionState
     [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: Collection of password restrictions settings to be applied to an application or service principal.
-      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
       [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -2148,19 +2049,6 @@ This property is required when restrictionType is set to passwordLifetime.
 For existing applications, the enforcement date can be retroactively applied.
       [RestrictionType <String>]: appCredentialRestrictionType
       [State <String>]: appManagementRestrictionState
-    [ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]: customAppManagementApplicationConfiguration
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]: identifierUriConfiguration
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-          [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
-          [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
-          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
-For existing applications, the enforcement date can be retroactively applied.
-          [State <String>]: appManagementRestrictionState
-        [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
 
 APPROLES <IMicrosoftGraphAppRole[]>: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
@@ -2275,22 +2163,14 @@ Always null when the object hasn't been deleted.
     [Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]: customAppManagementConfiguration
       [(Any) <Object>]: This indicates any property can be added to this object.
       [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-        [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: The collection of customSecurityAttributeExemption to exempt from the policy enforcement.
-Limit of 5.
-            [Id <String>]: The unique identifier for an entity.
-Read-only.
-            [Operator <String>]: customSecurityAttributeComparisonOperator
         [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to asymmetricKeyLifetime.
+This property is required when restrictionType is set to keyLifetime.
         [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
         [RestrictionType <String>]: appKeyCredentialRestrictionType
         [State <String>]: appManagementRestrictionState
       [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: Collection of password restrictions settings to be applied to an application or service principal.
-        [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
         [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -2298,19 +2178,6 @@ This property is required when restrictionType is set to passwordLifetime.
 For existing applications, the enforcement date can be retroactively applied.
         [RestrictionType <String>]: appCredentialRestrictionType
         [State <String>]: appManagementRestrictionState
-      [ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]: customAppManagementApplicationConfiguration
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]: identifierUriConfiguration
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-            [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
-            [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
-            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
-For existing applications, the enforcement date can be retroactively applied.
-            [State <String>]: appManagementRestrictionState
-          [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
   [AppRoles <IMicrosoftGraphAppRole[]>]: The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
@@ -2348,9 +2215,6 @@ null if the app wasn't created from an application template.
     [CertificationExpirationDateTime <DateTime?>]: The timestamp when the current certification for the application expires.
     [IsPublisherAttested <Boolean?>]: Indicates whether the application developer or publisher completed Publisher Attestation.
     [LastCertificationDateTime <DateTime?>]: The timestamp when the certification for the application was most recently added or updated.
-  [CreatedByAppId <String>]: The appId of the application that created this application.
-Set internally by Microsoft Entra ID.
-Read-only.
   [CreatedDateTime <DateTime?>]: The date and time the application was registered.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -2459,7 +2323,6 @@ For example, https://www.contoso.com/app/support
 For example, https://www.contoso.com/app/termsofservice
   [IsDeviceOnlyAuthSupported <Boolean?>]: Specifies whether this application supports device authentication without a user.
 The default is false.
-  [IsDisabled <Boolean?>]: 
   [IsFallbackPublicClient <Boolean?>]: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
 The default value is false, which means the fallback application type is confidential client such as a web app.
 There are certain scenarios where Microsoft Entra ID can't determine the client application type.
@@ -2478,7 +2341,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Key <Byte[]>]: The certificate's raw data in byte array converted to Base64 string.
-Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     [KeyId <String>]: The unique identifier (GUID) for the key.
@@ -2488,12 +2351,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Usage <String>]: A string that describes the purpose for which the key can be used; for example, Verify.
   [Logo <Byte[]>]: The main logo for the application.
 Not nullable.
-  [ManagerApplications <String[]>]: A collection of application IDs for Microsoft first-party applications designated as managers.
-Manager applications can create service principals, agent identities, and agent users for managed agent blueprints.
-Limited to a maximum of 10 entries.
-Not nullable.
-Only supported on agentIdentityBlueprint objects; attempts to set this property on non-agent-blueprint applications return an error.
-Not returned by default; must be explicitly requested via $select.
   [NativeAuthenticationApisEnabled <String>]: nativeAuthenticationApisEnabled
   [Notes <String>]: Notes relevant for the management of the application.
   [Oauth2RequirePostResponse <Boolean?>]: 
@@ -3011,7 +2868,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
-  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition
@@ -3045,7 +2901,7 @@ Optional.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Key <Byte[]>]: The certificate's raw data in byte array converted to Base64 string.
-Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
   [KeyId <String>]: The unique identifier (GUID) for the key.

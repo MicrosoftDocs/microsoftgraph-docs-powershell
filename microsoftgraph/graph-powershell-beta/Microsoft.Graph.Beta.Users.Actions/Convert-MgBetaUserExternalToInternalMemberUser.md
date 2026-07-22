@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Convert-MgBetaUserExternalToInternalMemberUser
 ---
@@ -27,7 +27,7 @@ Convert-MgBetaUserExternalToInternalMemberUser -UserId <string> [-ResponseHeader
  [-PasswordProfile <IMicrosoftGraphPasswordProfile>] [-UserPrincipalName <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Convert
@@ -38,6 +38,7 @@ Convert-MgBetaUserExternalToInternalMemberUser -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ConvertViaIdentityExpanded
@@ -48,7 +49,7 @@ Convert-MgBetaUserExternalToInternalMemberUser -InputObject <IUsersActionsIdenti
  [-PasswordProfile <IMicrosoftGraphPasswordProfile>] [-UserPrincipalName <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ConvertViaIdentity
@@ -59,6 +60,7 @@ Convert-MgBetaUserExternalToInternalMemberUser -InputObject <IUsersActionsIdenti
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

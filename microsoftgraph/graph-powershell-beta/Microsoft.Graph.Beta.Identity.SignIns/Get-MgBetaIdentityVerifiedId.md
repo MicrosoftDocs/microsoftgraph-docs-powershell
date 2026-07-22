@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityverifiedid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityVerifiedId
 ---
@@ -13,10 +13,7 @@ title: Get-MgBetaIdentityVerifiedId
 
 ## SYNOPSIS
 
-Entry point for verified ID operations.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityVerifiedId](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityVerifiedId?view=graph-powershell-1.0)
+Get verifiedId from identity
 
 ## SYNTAX
 
@@ -26,7 +23,7 @@ Entry point for verified ID operations.
 Get-MgBetaIdentityVerifiedId [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -36,7 +33,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Entry point for verified ID operations.
+Get verifiedId from identity
 
 ## PARAMETERS
 

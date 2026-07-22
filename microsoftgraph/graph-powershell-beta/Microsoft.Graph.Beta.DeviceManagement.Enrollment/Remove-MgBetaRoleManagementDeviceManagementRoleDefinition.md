@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementdevicemanagementroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaRoleManagementDeviceManagementRoleDefinition
 ---
@@ -24,6 +24,7 @@ Remove-MgBetaRoleManagementDeviceManagementRoleDefinition -UnifiedRoleDefinition
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -34,6 +35,7 @@ Remove-MgBetaRoleManagementDeviceManagementRoleDefinition
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,9 +51,9 @@ Delete navigation property roleDefinitions for roleManagement
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
+| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, RoleManagement.ReadWrite.Directory, RoleManagement.ReadWrite.CloudPC, Directory.ReadWrite.All, CloudPC.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
+| Application | DeviceManagementRBAC.ReadWrite.All, RoleManagement.ReadWrite.Directory, RoleManagement.ReadWrite.CloudPC, Directory.ReadWrite.All, CloudPC.ReadWrite.All,  |
 
 ## PARAMETERS
 

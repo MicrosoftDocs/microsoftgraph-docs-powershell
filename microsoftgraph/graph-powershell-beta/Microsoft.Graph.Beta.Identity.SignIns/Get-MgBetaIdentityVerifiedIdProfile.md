@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityverifiedidprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityVerifiedIdProfile
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaIdentityVerifiedIdProfile
 ## SYNOPSIS
 
 Read the properties and relationships of verifiedIdProfile object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityVerifiedIdProfile](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityVerifiedIdProfile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgBetaIdentityVerifiedIdProfile [-ExpandProperty <string[]>] [-Property <str
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -37,7 +34,7 @@ Get-MgBetaIdentityVerifiedIdProfile [-ExpandProperty <string[]>] [-Property <str
 Get-MgBetaIdentityVerifiedIdProfile -VerifiedIdProfileId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -47,7 +44,7 @@ Get-MgBetaIdentityVerifiedIdProfile -InputObject <IIdentitySignInsIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -66,19 +63,6 @@ Read the properties and relationships of verifiedIdProfile object.
 | Delegated (work or school account) | VerifiedId-Profile.Read.All, VerifiedId-Profile.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | VerifiedId-Profile.Read.All,  |
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaIdentityVerifiedIdProfile
-
-```
-This example shows how to use the Get-MgBetaIdentityVerifiedIdProfile Cmdlet.
-
 
 ## PARAMETERS
 
@@ -590,7 +574,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
-  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -644,6 +627,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [Get-MgBetaIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityverifiedidprofile)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/verifiedidprofile-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/identityverifiedidroot-list-profiles?view=graph-rest-beta)
+
 
 
 

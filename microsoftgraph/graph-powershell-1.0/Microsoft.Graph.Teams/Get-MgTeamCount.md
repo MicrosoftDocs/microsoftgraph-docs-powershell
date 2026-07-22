@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamcount
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeamCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgTeamCount [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -42,9 +42,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All,  |
+| Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All,  |
+| Application | Team.ReadBasic.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All,  |
 
 ## PARAMETERS
 

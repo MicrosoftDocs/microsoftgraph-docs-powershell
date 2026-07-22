@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitempermission
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDriveItemPermission
 ---
@@ -33,7 +33,7 @@ Update-MgDriveItemPermission -DriveId <string> -DriveItemId <string> -Permission
  [-Link <IMicrosoftGraphSharingLink>] [-Roles <string[]>] [-ShareId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -43,7 +43,7 @@ Update-MgDriveItemPermission -DriveId <string> -DriveItemId <string> -Permission
  -BodyParameter <IMicrosoftGraphPermission> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -58,7 +58,7 @@ Update-MgDriveItemPermission -InputObject <IFilesIdentity> [-ResponseHeadersVari
  [-Link <IMicrosoftGraphSharingLink>] [-Roles <string[]>] [-ShareId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -68,7 +68,7 @@ Update-MgDriveItemPermission -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphPermission> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -84,7 +84,7 @@ Update the navigation property permissions in drives
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All,  |
+| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
@@ -888,16 +888,6 @@ Read-only.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
     [Group <IMicrosoftGraphIdentity>]: identity
-    [SharePointGroup <IMicrosoftGraphSharePointGroupIdentity>]: sharePointGroupIdentity
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-      [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-      [PrincipalId <String>]: The principal ID of the SharePoint group in the tenant.
-Read-only.
-      [Title <String>]: The title of the SharePoint group.
-Read-only.
     [SiteGroup <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -997,16 +987,6 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
   [Group <IMicrosoftGraphIdentity>]: identity
-  [SharePointGroup <IMicrosoftGraphSharePointGroupIdentity>]: sharePointGroupIdentity
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [PrincipalId <String>]: The principal ID of the SharePoint group in the tenant.
-Read-only.
-    [Title <String>]: The title of the SharePoint group.
-Read-only.
   [SiteGroup <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -1027,16 +1007,6 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
   [Group <IMicrosoftGraphIdentity>]: identity
-  [SharePointGroup <IMicrosoftGraphSharePointGroupIdentity>]: sharePointGroupIdentity
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [PrincipalId <String>]: The principal ID of the SharePoint group in the tenant.
-Read-only.
-    [Title <String>]: The title of the SharePoint group.
-Read-only.
   [SiteGroup <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.

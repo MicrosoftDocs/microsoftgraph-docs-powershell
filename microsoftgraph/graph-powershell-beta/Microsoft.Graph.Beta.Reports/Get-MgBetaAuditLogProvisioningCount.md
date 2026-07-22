@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogprovisioningcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAuditLogProvisioningCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgBetaAuditLogProvisioningCount [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -42,9 +42,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ProvisioningLog.Read.All, AuditLog.Read.All, Directory.Read.All,  |
+| Delegated (work or school account) | ProvisioningLog.Read.All, Directory.Read.All, AuditLog.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All, ProvisioningLog.Read.All,  |
+| Application | ProvisioningLog.Read.All, Directory.Read.All, AuditLog.Read.All,  |
 
 ## PARAMETERS
 

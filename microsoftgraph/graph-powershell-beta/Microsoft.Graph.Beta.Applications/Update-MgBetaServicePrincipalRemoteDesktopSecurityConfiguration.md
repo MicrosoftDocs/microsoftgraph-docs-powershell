@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration
 ---
@@ -30,7 +30,7 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipa
  [-IsRemoteDesktopProtocolEnabled] [-TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -41,6 +41,7 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipa
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,7 +53,7 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IA
  [-IsRemoteDesktopProtocolEnabled] [-TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -63,6 +64,7 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IA
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -79,9 +81,9 @@ Use this configuration to enable or disable the Microsoft Entra ID Remote Deskto
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -132,8 +134,7 @@ HelpMessage: ''
 
 ### -ApprovedClientApps
 
-The collection of approved client apps that are associated with the RDS configuration.
-Supports $expand.
+
 To construct, see NOTES section for APPROVEDCLIENTAPPS properties and create a hash table.
 
 ```yaml
@@ -491,6 +492,7 @@ HelpMessage: ''
 ### -TargetDeviceGroups
 
 The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
+<br/<Supports $expand.
 To construct, see NOTES section for TARGETDEVICEGROUPS properties and create a hash table.
 
 ```yaml
@@ -572,23 +574,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPROVEDCLIENTAPPS <IMicrosoftGraphApprovedClientApp[]>: The collection of approved client apps that are associated with the RDS configuration.
-Supports $expand.
+APPROVEDCLIENTAPPS <IMicrosoftGraphApprovedClientApp[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DisplayName <String>]: Display name for the client application.
+  [DisplayName <String>]: 
 
 BODYPARAMETER `<IMicrosoftGraphRemoteDesktopSecurityConfiguration>`: remoteDesktopSecurityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: The collection of approved client apps that are associated with the RDS configuration.
-Supports $expand.
+  [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DisplayName <String>]: Display name for the client application.
+    [DisplayName <String>]: 
   [IsRemoteDesktopProtocolEnabled <Boolean?>]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
   [TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
+<br/<Supports $expand.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Display name for the target device group.
@@ -632,6 +633,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
 TARGETDEVICEGROUPS <IMicrosoftGraphTargetDeviceGroup[]>: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
+<br/<Supports $expand.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: Display name for the target device group.

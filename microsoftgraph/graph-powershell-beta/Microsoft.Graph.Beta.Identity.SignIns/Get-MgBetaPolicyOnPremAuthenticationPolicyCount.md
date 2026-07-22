@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyonpremauthenticationpolicycount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyOnPremAuthenticationPolicyCount
 ---
@@ -23,7 +23,7 @@ Get the number of the resource
 Get-MgBetaPolicyOnPremAuthenticationPolicyCount [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -34,14 +34,6 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the number of the resource
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.OnPremAuthenticationPolicy, Policy.ReadWrite.OnPremAuthenticationPolicy,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
 
 ## PARAMETERS
 

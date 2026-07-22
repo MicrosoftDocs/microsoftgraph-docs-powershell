@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaServicePrincipal
 ---
@@ -63,6 +63,7 @@ Update-MgBetaServicePrincipal -ServicePrincipalId <string> [-ResponseHeadersVari
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -72,7 +73,7 @@ Update-MgBetaServicePrincipal -ServicePrincipalId <string>
  -BodyParameter <IMicrosoftGraphServicePrincipal> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -117,6 +118,7 @@ Update-MgBetaServicePrincipal -InputObject <IApplicationsIdentity>
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -126,7 +128,7 @@ Update-MgBetaServicePrincipal -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphServicePrincipal> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -143,9 +145,9 @@ This API can also create an agentIdentityBlueprintPrincipal object from an agent
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentity.EnableDisable.All, AgentIdentity.ReadWrite.All, AgentIdentityBlueprintPrincipal.EnableDisable.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, AgentIdentity.EnableDisable.All, AgentIdentity.ReadWrite.All, AgentIdentityBlueprintPrincipal.EnableDisable.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Update the properties of a service principal
@@ -695,7 +697,7 @@ HelpMessage: ''
 
 ### -CreatedByAppId
 
-The appId of the application that created this service principal.
+The appId (called Application (client) ID on the Microsoft Entra admin center) of the application used to create the service principal.
 Set internally by Microsoft Entra ID.
 Read-only.
 
@@ -2361,23 +2363,22 @@ Always null when the object hasn't been deleted.
   [IsEnabled <Boolean?>]: Denotes whether the policy is enabled.
   [Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]: customAppManagementConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of certificate restrictions settings to be applied to an application or service principal.
+    [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: 
       [CertificateBasedApplicationConfigurationIds <String[]>]: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
       [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: The collection of customSecurityAttributeExemption to exempt from the policy enforcement.
-Limit of 5.
+        [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [Operator <String>]: customSecurityAttributeComparisonOperator
       [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to asymmetricKeyLifetime.
+This property is required when restrictionType is set to keyLifetime.
       [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
       [RestrictionType <String>]: appKeyCredentialRestrictionType
       [State <String>]: appManagementRestrictionState
-    [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: Collection of password restrictions settings to be applied to an application or service principal.
+    [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: 
       [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
       [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -2407,69 +2408,12 @@ For existing applications, the enforcement date can be retroactively applied.
         [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
           [(Any) <Object>]: This indicates any property can be added to this object.
           [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-          [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
+          [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
           [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
           [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
           [State <String>]: appManagementRestrictionState
         [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
-      [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [BlockedDomains <String[]>]: 
-          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-          [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [BlockedDomains <String[]>]: 
-          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
-          [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
-          [State <String>]: appManagementRestrictionState
-          [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
-        [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [BlockedSchemes <String[]>]: 
-          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-          [ExemptFormats <String[]>]: 
-          [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [BlockedSchemes <String[]>]: 
-            [ExemptFormats <String[]>]: 
-          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
-          [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
-          [State <String>]: appManagementRestrictionState
-          [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
-        [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-          [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [ExcludeWildcardsInPath <Boolean?>]: 
-            [ExcludeWildcardsInPathWithDomains <String[]>]: 
-          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
-          [State <String>]: appManagementRestrictionState
-        [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [AllowedDomains <String[]>]: 
-          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-          [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [AllowedDomains <String[]>]: 
-          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
-          [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
-          [State <String>]: appManagementRestrictionState
-          [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
-        [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [AllowedSchemes <String[]>]: 
-          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-          [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [AllowedSchemes <String[]>]: 
-          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
-          [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
-          [State <String>]: appManagementRestrictionState
-          [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
 
 APPROLEASSIGNEDTO <IMicrosoftGraphAppRoleAssignment[]>: App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -2599,23 +2543,22 @@ Always null when the object hasn't been deleted.
     [IsEnabled <Boolean?>]: Denotes whether the policy is enabled.
     [Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]: customAppManagementConfiguration
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of certificate restrictions settings to be applied to an application or service principal.
+      [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: 
         [CertificateBasedApplicationConfigurationIds <String[]>]: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
         [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
           [(Any) <Object>]: This indicates any property can be added to this object.
-          [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: The collection of customSecurityAttributeExemption to exempt from the policy enforcement.
-Limit of 5.
+          [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [Operator <String>]: customSecurityAttributeComparisonOperator
         [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to asymmetricKeyLifetime.
+This property is required when restrictionType is set to keyLifetime.
         [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
         [RestrictionType <String>]: appKeyCredentialRestrictionType
         [State <String>]: appManagementRestrictionState
-      [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: Collection of password restrictions settings to be applied to an application or service principal.
+      [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: 
         [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
         [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -2645,69 +2588,12 @@ For existing applications, the enforcement date can be retroactively applied.
           [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
             [(Any) <Object>]: This indicates any property can be added to this object.
             [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-            [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
+            [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
             [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
             [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
             [State <String>]: appManagementRestrictionState
           [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
-        [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [BlockedDomains <String[]>]: 
-            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-            [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
-              [(Any) <Object>]: This indicates any property can be added to this object.
-              [BlockedDomains <String[]>]: 
-            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
-            [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
-            [State <String>]: appManagementRestrictionState
-            [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
-          [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [BlockedSchemes <String[]>]: 
-            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-            [ExemptFormats <String[]>]: 
-            [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
-              [(Any) <Object>]: This indicates any property can be added to this object.
-              [BlockedSchemes <String[]>]: 
-              [ExemptFormats <String[]>]: 
-            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
-            [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
-            [State <String>]: appManagementRestrictionState
-            [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
-          [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-            [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
-              [(Any) <Object>]: This indicates any property can be added to this object.
-              [ExcludeWildcardsInPath <Boolean?>]: 
-              [ExcludeWildcardsInPathWithDomains <String[]>]: 
-            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
-            [State <String>]: appManagementRestrictionState
-          [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [AllowedDomains <String[]>]: 
-            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-            [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
-              [(Any) <Object>]: This indicates any property can be added to this object.
-              [AllowedDomains <String[]>]: 
-            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
-            [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
-            [State <String>]: appManagementRestrictionState
-            [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
-          [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [AllowedSchemes <String[]>]: 
-            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-            [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
-              [(Any) <Object>]: This indicates any property can be added to this object.
-              [AllowedSchemes <String[]>]: 
-            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
-            [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
-            [State <String>]: appManagementRestrictionState
-            [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
   [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -2817,7 +2703,7 @@ Optional.
     [IncludeBasicClaimSet <Boolean?>]: Determines whether the basic claim set is included in tokens affected by this policy.
 If set to true, all claims in the basic claim set are emitted in tokens affected by the policy.
 By default the basic claim set isn't in the tokens unless they're explicitly configured in this policy.
-  [CreatedByAppId <String>]: The appId of the application that created this service principal.
+  [CreatedByAppId <String>]: The appId (called Application (client) ID on the Microsoft Entra admin center) of the application used to create the service principal.
 Set internally by Microsoft Entra ID.
 Read-only.
   [CreatedObjects <IMicrosoftGraphDirectoryObject[]>]: Directory objects created by this service principal.
@@ -2949,7 +2835,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Key <Byte[]>]: Value for the key credential.
 Should be a Base64 encoded value.
-Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
     [KeyId <String>]: The unique identifier for the key.
@@ -3108,13 +2994,13 @@ May not begin with ..
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: The collection of approved client apps that are associated with the RDS configuration.
-Supports $expand.
+    [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [DisplayName <String>]: Display name for the client application.
+      [DisplayName <String>]: 
     [IsRemoteDesktopProtocolEnabled <Boolean?>]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
     [TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
+<br/<Supports $expand.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Display name for the target device group.
@@ -3650,7 +3536,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Key <Byte[]>]: Value for the key credential.
 Should be a Base64 encoded value.
-Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
+Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
   [KeyId <String>]: The unique identifier for the key.
@@ -3812,13 +3698,13 @@ REMOTEDESKTOPSECURITYCONFIGURATION `<IMicrosoftGraphRemoteDesktopSecurityConfigu
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: The collection of approved client apps that are associated with the RDS configuration.
-Supports $expand.
+  [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DisplayName <String>]: Display name for the client application.
+    [DisplayName <String>]: 
   [IsRemoteDesktopProtocolEnabled <Boolean?>]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
   [TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
+<br/<Supports $expand.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Display name for the target device group.

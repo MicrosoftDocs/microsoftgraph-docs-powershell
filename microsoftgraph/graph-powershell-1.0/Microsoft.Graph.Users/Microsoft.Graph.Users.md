@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 8538c9a6-1582-e94c-2368-5420b6f47b93
+Module Guid: 05825af1-d15e-4a08-bc54-959b28b6e7c0
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -127,8 +127,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOauth2PermissionGrantCount](Get-MgUserOauth2PermissionGrantCount.md)
 
-### [Get-MgUserOnPremiseSyncBehavior](Get-MgUserOnPremiseSyncBehavior.md)
-
 ### [Get-MgUserOutlookMasterCategory](Get-MgUserOutlookMasterCategory.md)
 
 ### [Get-MgUserOutlookMasterCategory](Get-MgUserOutlookMasterCategory.md)
@@ -215,8 +213,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserSetting](Get-MgUserSetting.md)
 
-### [Get-MgUserSettingExchange](Get-MgUserSettingExchange.md)
-
 ### [Get-MgUserSettingItemInsight](Get-MgUserSettingItemInsight.md)
 
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
@@ -243,23 +239,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserSettingWindowsInstanceCount](Get-MgUserSettingWindowsInstanceCount.md)
 
-### [Get-MgUserSettingWorkHourAndLocation](Get-MgUserSettingWorkHourAndLocation.md)
-
-### [Get-MgUserSettingWorkHourAndLocationOccurrence](Get-MgUserSettingWorkHourAndLocationOccurrence.md)
-
-### [Get-MgUserSettingWorkHourAndLocationOccurrence](Get-MgUserSettingWorkHourAndLocationOccurrence.md)
-
-### [Get-MgUserSettingWorkHourAndLocationOccurrenceCount](Get-MgUserSettingWorkHourAndLocationOccurrenceCount.md)
-
-### [Get-MgUserSettingWorkHourAndLocationRecurrence](Get-MgUserSettingWorkHourAndLocationRecurrence.md)
-
-### [Get-MgUserSettingWorkHourAndLocationRecurrence](Get-MgUserSettingWorkHourAndLocationRecurrence.md)
-
-### [Get-MgUserSettingWorkHourAndLocationRecurrenceCount](Get-MgUserSettingWorkHourAndLocationRecurrenceCount.md)
-
 ### [Get-MgUserSponsor](Get-MgUserSponsor.md)
 
-### [Get-MgUserSponsorByRef](Get-MgUserSponsorByRef.md)
+### [Get-MgUserSponsor](Get-MgUserSponsor.md)
 
 ### [Get-MgUserSponsorCount](Get-MgUserSponsorCount.md)
 
@@ -347,8 +329,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgTimeUserOutlook](Invoke-MgTimeUserOutlook.md)
 
-### [Invoke-MgViewUserSettingWorkHourAndLocationOccurrence](Invoke-MgViewUserSettingWorkHourAndLocationOccurrence.md)
-
 ### [New-MgUser](New-MgUser.md)
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
@@ -366,12 +346,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgUserSettingWindows](New-MgUserSettingWindows.md)
 
 ### [New-MgUserSettingWindowsInstance](New-MgUserSettingWindowsInstance.md)
-
-### [New-MgUserSettingWorkHourAndLocationOccurrence](New-MgUserSettingWorkHourAndLocationOccurrence.md)
-
-### [New-MgUserSettingWorkHourAndLocationRecurrence](New-MgUserSettingWorkHourAndLocationRecurrence.md)
-
-### [New-MgUserSponsorByRef](New-MgUserSponsorByRef.md)
 
 ### [New-MgUserTodoList](New-MgUserTodoList.md)
 
@@ -407,8 +381,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgUserManagerByRef](Remove-MgUserManagerByRef.md)
 
-### [Remove-MgUserOnPremiseSyncBehavior](Remove-MgUserOnPremiseSyncBehavior.md)
-
 ### [Remove-MgUserOutlookMasterCategory](Remove-MgUserOutlookMasterCategory.md)
 
 ### [Remove-MgUserPhoto](Remove-MgUserPhoto.md)
@@ -430,14 +402,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgUserSettingWindows](Remove-MgUserSettingWindows.md)
 
 ### [Remove-MgUserSettingWindowsInstance](Remove-MgUserSettingWindowsInstance.md)
-
-### [Remove-MgUserSettingWorkHourAndLocationOccurrence](Remove-MgUserSettingWorkHourAndLocationOccurrence.md)
-
-### [Remove-MgUserSettingWorkHourAndLocationRecurrence](Remove-MgUserSettingWorkHourAndLocationRecurrence.md)
-
-### [Remove-MgUserSponsorByRef](Remove-MgUserSponsorByRef.md)
-
-### [Remove-MgUserSponsorDirectoryObjectByRef](Remove-MgUserSponsorDirectoryObjectByRef.md)
 
 ### [Remove-MgUserTodoList](Remove-MgUserTodoList.md)
 
@@ -463,12 +427,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgUserPhotoContent](Set-MgUserPhotoContent.md)
 
-### [Set-MgUserSettingWorkHourAndLocationOccurrence](Set-MgUserSettingWorkHourAndLocationOccurrence.md)
-
-### [Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation](Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation.md)
-
-### [Set-MgUserSettingWorkHourAndLocationRecurrence](Set-MgUserSettingWorkHourAndLocationRecurrence.md)
-
 ### [Set-MgUserTodoListTaskAttachmentContent](Set-MgUserTodoListTaskAttachmentContent.md)
 
 ### [Set-MgUserTodoListTaskAttachmentSessionContent](Set-MgUserTodoListTaskAttachmentSessionContent.md)
@@ -491,8 +449,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgUserMailboxSetting](Update-MgUserMailboxSetting.md)
 
-### [Update-MgUserOnPremiseSyncBehavior](Update-MgUserOnPremiseSyncBehavior.md)
-
 ### [Update-MgUserOutlookMasterCategory](Update-MgUserOutlookMasterCategory.md)
 
 ### [Update-MgUserSetting](Update-MgUserSetting.md)
@@ -510,8 +466,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserSettingWindows](Update-MgUserSettingWindows.md)
 
 ### [Update-MgUserSettingWindowsInstance](Update-MgUserSettingWindowsInstance.md)
-
-### [Update-MgUserSettingWorkHourAndLocation](Update-MgUserSettingWorkHourAndLocation.md)
 
 ### [Update-MgUserTodoList](Update-MgUserTodoList.md)
 

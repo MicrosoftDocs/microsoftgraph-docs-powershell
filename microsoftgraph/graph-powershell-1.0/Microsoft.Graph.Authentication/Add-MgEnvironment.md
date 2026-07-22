@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/add-mgenvironment
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgEnvironment
 ---
@@ -21,7 +21,7 @@ Adds Microsoft Graph environment to the settings file.
 
 ```
 Add-MgEnvironment [-Name] <string> [-AzureADEndpoint] <string> [-GraphEndpoint] <string> [-WhatIf]
- [-Confirm]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES

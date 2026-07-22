@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownercount
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupOwnerCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgGroupOwnerCount -GroupId <string> -ConsistencyLevel <string> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -35,7 +35,7 @@ Get-MgGroupOwnerCount -GroupId <string> -ConsistencyLevel <string> [-Filter <str
 Get-MgGroupOwnerCount -InputObject <IGroupsIdentity> -ConsistencyLevel <string> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,9 +51,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupMember.Read.All, Directory.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.ReadWrite.All,  |
+| Delegated (work or school account) | GroupMember.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | GroupMember.Read.All, Directory.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.ReadWrite.All,  |
+| Application | GroupMember.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
 
 ## PARAMETERS
 

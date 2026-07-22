@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/confirm-mgdevicemanagementwindowsenrollmentautodiscovery
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery
 ---
@@ -26,7 +26,7 @@ Invoke function verifyWindowsEnrollmentAutoDiscovery
 Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery -DomainName <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### VerifyViaIdentity
@@ -36,7 +36,7 @@ Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery
  -InputObject <IDeviceManagementFunctionsIdentity> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES

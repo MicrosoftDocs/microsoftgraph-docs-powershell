@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.BackupRestore
-Module Guid: 6a85b199-3881-6695-d480-81f35a3f665b
+Module Guid: 5f3aac87-9415-439c-9590-46dc3926e07e
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.backuprestore/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,15 +11,21 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.BackupRestore Cmdlets
+### [Disable-MgBetaSolutionBackupRestoreAllDrivesBackup](Disable-MgBetaSolutionBackupRestoreAllDrivesBackup.md)
+
+### [Disable-MgBetaSolutionBackupRestoreAllMailboxesBackup](Disable-MgBetaSolutionBackupRestoreAllMailboxesBackup.md)
+
+### [Disable-MgBetaSolutionBackupRestoreAllSitesBackup](Disable-MgBetaSolutionBackupRestoreAllSitesBackup.md)
+
 ### [Enable-MgBetaSolutionBackupRestore](Enable-MgBetaSolutionBackupRestore.md)
 
+### [Enable-MgBetaSolutionBackupRestoreAllDrivesBackup](Enable-MgBetaSolutionBackupRestoreAllDrivesBackup.md)
+
+### [Enable-MgBetaSolutionBackupRestoreAllMailboxesBackup](Enable-MgBetaSolutionBackupRestoreAllMailboxesBackup.md)
+
+### [Enable-MgBetaSolutionBackupRestoreAllSitesBackup](Enable-MgBetaSolutionBackupRestoreAllSitesBackup.md)
+
 ### [Get-MgBetaSolutionBackupRestore](Get-MgBetaSolutionBackupRestore.md)
-
-### [Get-MgBetaSolutionBackupRestoreActivityLog](Get-MgBetaSolutionBackupRestoreActivityLog.md)
-
-### [Get-MgBetaSolutionBackupRestoreActivityLog](Get-MgBetaSolutionBackupRestoreActivityLog.md)
-
-### [Get-MgBetaSolutionBackupRestoreActivityLogCount](Get-MgBetaSolutionBackupRestoreActivityLogCount.md)
 
 ### [Get-MgBetaSolutionBackupRestoreBrowseSession](Get-MgBetaSolutionBackupRestoreBrowseSession.md)
 
@@ -27,17 +33,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSolutionBackupRestoreBrowseSessionCount](Get-MgBetaSolutionBackupRestoreBrowseSessionCount.md)
 
-### [Get-MgBetaSolutionBackupRestoreDriveExclusionUnit](Get-MgBetaSolutionBackupRestoreDriveExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreDriveExclusionUnit](Get-MgBetaSolutionBackupRestoreDriveExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJobCount.md)
-
-### [Get-MgBetaSolutionBackupRestoreDriveExclusionUnitCount](Get-MgBetaSolutionBackupRestoreDriveExclusionUnitCount.md)
+### [Get-MgBetaSolutionBackupRestoreDriveBackup](Get-MgBetaSolutionBackupRestoreDriveBackup.md)
 
 ### [Get-MgBetaSolutionBackupRestoreDriveInclusionRule](Get-MgBetaSolutionBackupRestoreDriveInclusionRule.md)
 
@@ -64,18 +60,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicy](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicy.md)
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyCount](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyCount.md)
-
-### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnit](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnit](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnitBulkAdditionJobCount.md)
-
-### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnitCount](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxExclusionUnitCount.md)
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRule](Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRule.md)
 
@@ -123,23 +107,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint](Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint.md)
 
-### [Get-MgBetaSolutionBackupRestoreExclusionUnit](Get-MgBetaSolutionBackupRestoreExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreExclusionUnit](Get-MgBetaSolutionBackupRestoreExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreExclusionUnitCount](Get-MgBetaSolutionBackupRestoreExclusionUnitCount.md)
-
-### [Get-MgBetaSolutionBackupRestoreMailboxExclusionUnit](Get-MgBetaSolutionBackupRestoreMailboxExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreMailboxExclusionUnit](Get-MgBetaSolutionBackupRestoreMailboxExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJobCount.md)
-
-### [Get-MgBetaSolutionBackupRestoreMailboxExclusionUnitCount](Get-MgBetaSolutionBackupRestoreMailboxExclusionUnitCount.md)
+### [Get-MgBetaSolutionBackupRestoreMailboxBackup](Get-MgBetaSolutionBackupRestoreMailboxBackup.md)
 
 ### [Get-MgBetaSolutionBackupRestoreMailboxInclusionRule](Get-MgBetaSolutionBackupRestoreMailboxInclusionRule.md)
 
@@ -170,18 +138,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy.md)
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyCount](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyCount.md)
-
-### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnit](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnit](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnitBulkAdditionJobCount.md)
-
-### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnitCount](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveExclusionUnitCount.md)
 
 ### [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule](Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule.md)
 
@@ -265,10 +221,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSolutionBackupRestoreProtectionUnitCountAsSiteProtectionUnit](Get-MgBetaSolutionBackupRestoreProtectionUnitCountAsSiteProtectionUnit.md)
 
-### [Get-MgBetaSolutionBackupRestoreReport](Get-MgBetaSolutionBackupRestoreReport.md)
-
-### [Get-MgBetaSolutionBackupRestoreReportStatisticsByPolicy](Get-MgBetaSolutionBackupRestoreReportStatisticsByPolicy.md)
-
 ### [Get-MgBetaSolutionBackupRestoreServiceApp](Get-MgBetaSolutionBackupRestoreServiceApp.md)
 
 ### [Get-MgBetaSolutionBackupRestoreServiceApp](Get-MgBetaSolutionBackupRestoreServiceApp.md)
@@ -292,18 +244,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicy](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicy.md)
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicyCount](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicyCount.md)
-
-### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnit](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnit](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnitBulkAdditionJobCount.md)
-
-### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnitCount](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnitCount.md)
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRule](Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRule.md)
 
@@ -349,17 +289,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint](Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint.md)
 
-### [Get-MgBetaSolutionBackupRestoreSiteExclusionUnit](Get-MgBetaSolutionBackupRestoreSiteExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreSiteExclusionUnit](Get-MgBetaSolutionBackupRestoreSiteExclusionUnit.md)
-
-### [Get-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJob](Get-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJob.md)
-
-### [Get-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJobCount](Get-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJobCount.md)
-
-### [Get-MgBetaSolutionBackupRestoreSiteExclusionUnitCount](Get-MgBetaSolutionBackupRestoreSiteExclusionUnitCount.md)
+### [Get-MgBetaSolutionBackupRestoreSiteBackup](Get-MgBetaSolutionBackupRestoreSiteBackup.md)
 
 ### [Get-MgBetaSolutionBackupRestoreSiteInclusionRule](Get-MgBetaSolutionBackupRestoreSiteInclusionRule.md)
 
@@ -393,13 +323,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaOffboardSolutionBackupRestoreProtectionUnit](Invoke-MgBetaOffboardSolutionBackupRestoreProtectionUnit.md)
 
-### [New-MgBetaSolutionBackupRestoreActivityLog](New-MgBetaSolutionBackupRestoreActivityLog.md)
-
 ### [New-MgBetaSolutionBackupRestoreBrowseSession](New-MgBetaSolutionBackupRestoreBrowseSession.md)
-
-### [New-MgBetaSolutionBackupRestoreDriveExclusionUnit](New-MgBetaSolutionBackupRestoreDriveExclusionUnit.md)
-
-### [New-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJob](New-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJob.md)
 
 ### [New-MgBetaSolutionBackupRestoreDriveInclusionRule](New-MgBetaSolutionBackupRestoreDriveInclusionRule.md)
 
@@ -416,10 +340,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
 
 ### [New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest](New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest.md)
-
-### [New-MgBetaSolutionBackupRestoreMailboxExclusionUnit](New-MgBetaSolutionBackupRestoreMailboxExclusionUnit.md)
-
-### [New-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJob](New-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJob.md)
 
 ### [New-MgBetaSolutionBackupRestoreMailboxInclusionRule](New-MgBetaSolutionBackupRestoreMailboxInclusionRule.md)
 
@@ -459,10 +379,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest.md)
 
-### [New-MgBetaSolutionBackupRestoreSiteExclusionUnit](New-MgBetaSolutionBackupRestoreSiteExclusionUnit.md)
-
-### [New-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJob](New-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJob.md)
-
 ### [New-MgBetaSolutionBackupRestoreSiteInclusionRule](New-MgBetaSolutionBackupRestoreSiteInclusionRule.md)
 
 ### [New-MgBetaSolutionBackupRestoreSiteProtectionUnit](New-MgBetaSolutionBackupRestoreSiteProtectionUnit.md)
@@ -471,13 +387,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaSolutionBackupRestore](Remove-MgBetaSolutionBackupRestore.md)
 
-### [Remove-MgBetaSolutionBackupRestoreActivityLog](Remove-MgBetaSolutionBackupRestoreActivityLog.md)
-
 ### [Remove-MgBetaSolutionBackupRestoreBrowseSession](Remove-MgBetaSolutionBackupRestoreBrowseSession.md)
 
-### [Remove-MgBetaSolutionBackupRestoreDriveExclusionUnit](Remove-MgBetaSolutionBackupRestoreDriveExclusionUnit.md)
-
-### [Remove-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJob](Remove-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJob.md)
+### [Remove-MgBetaSolutionBackupRestoreDriveBackup](Remove-MgBetaSolutionBackupRestoreDriveBackup.md)
 
 ### [Remove-MgBetaSolutionBackupRestoreDriveInclusionRule](Remove-MgBetaSolutionBackupRestoreDriveInclusionRule.md)
 
@@ -497,9 +409,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest](Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest.md)
 
-### [Remove-MgBetaSolutionBackupRestoreMailboxExclusionUnit](Remove-MgBetaSolutionBackupRestoreMailboxExclusionUnit.md)
-
-### [Remove-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJob](Remove-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJob.md)
+### [Remove-MgBetaSolutionBackupRestoreMailboxBackup](Remove-MgBetaSolutionBackupRestoreMailboxBackup.md)
 
 ### [Remove-MgBetaSolutionBackupRestoreMailboxInclusionRule](Remove-MgBetaSolutionBackupRestoreMailboxInclusionRule.md)
 
@@ -523,8 +433,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaSolutionBackupRestoreProtectionPolicy](Remove-MgBetaSolutionBackupRestoreProtectionPolicy.md)
 
-### [Remove-MgBetaSolutionBackupRestoreReport](Remove-MgBetaSolutionBackupRestoreReport.md)
-
 ### [Remove-MgBetaSolutionBackupRestoreServiceApp](Remove-MgBetaSolutionBackupRestoreServiceApp.md)
 
 ### [Remove-MgBetaSolutionBackupRestoreSession](Remove-MgBetaSolutionBackupRestoreSession.md)
@@ -541,9 +449,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest.md)
 
-### [Remove-MgBetaSolutionBackupRestoreSiteExclusionUnit](Remove-MgBetaSolutionBackupRestoreSiteExclusionUnit.md)
-
-### [Remove-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJob](Remove-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJob.md)
+### [Remove-MgBetaSolutionBackupRestoreSiteBackup](Remove-MgBetaSolutionBackupRestoreSiteBackup.md)
 
 ### [Remove-MgBetaSolutionBackupRestoreSiteInclusionRule](Remove-MgBetaSolutionBackupRestoreSiteInclusionRule.md)
 
@@ -557,13 +463,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaSolutionBackupRestore](Update-MgBetaSolutionBackupRestore.md)
 
-### [Update-MgBetaSolutionBackupRestoreActivityLog](Update-MgBetaSolutionBackupRestoreActivityLog.md)
-
 ### [Update-MgBetaSolutionBackupRestoreBrowseSession](Update-MgBetaSolutionBackupRestoreBrowseSession.md)
 
-### [Update-MgBetaSolutionBackupRestoreDriveExclusionUnit](Update-MgBetaSolutionBackupRestoreDriveExclusionUnit.md)
-
-### [Update-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJob](Update-MgBetaSolutionBackupRestoreDriveExclusionUnitBulkAdditionJob.md)
+### [Update-MgBetaSolutionBackupRestoreDriveBackup](Update-MgBetaSolutionBackupRestoreDriveBackup.md)
 
 ### [Update-MgBetaSolutionBackupRestoreDriveInclusionRule](Update-MgBetaSolutionBackupRestoreDriveInclusionRule.md)
 
@@ -583,9 +485,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest](Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest.md)
 
-### [Update-MgBetaSolutionBackupRestoreMailboxExclusionUnit](Update-MgBetaSolutionBackupRestoreMailboxExclusionUnit.md)
-
-### [Update-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJob](Update-MgBetaSolutionBackupRestoreMailboxExclusionUnitBulkAdditionJob.md)
+### [Update-MgBetaSolutionBackupRestoreMailboxBackup](Update-MgBetaSolutionBackupRestoreMailboxBackup.md)
 
 ### [Update-MgBetaSolutionBackupRestoreMailboxInclusionRule](Update-MgBetaSolutionBackupRestoreMailboxInclusionRule.md)
 
@@ -609,8 +509,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaSolutionBackupRestoreProtectionPolicy](Update-MgBetaSolutionBackupRestoreProtectionPolicy.md)
 
-### [Update-MgBetaSolutionBackupRestoreReport](Update-MgBetaSolutionBackupRestoreReport.md)
-
 ### [Update-MgBetaSolutionBackupRestoreServiceApp](Update-MgBetaSolutionBackupRestoreServiceApp.md)
 
 ### [Update-MgBetaSolutionBackupRestoreSession](Update-MgBetaSolutionBackupRestoreSession.md)
@@ -627,9 +525,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest.md)
 
-### [Update-MgBetaSolutionBackupRestoreSiteExclusionUnit](Update-MgBetaSolutionBackupRestoreSiteExclusionUnit.md)
-
-### [Update-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJob](Update-MgBetaSolutionBackupRestoreSiteExclusionUnitBulkAdditionJob.md)
+### [Update-MgBetaSolutionBackupRestoreSiteBackup](Update-MgBetaSolutionBackupRestoreSiteBackup.md)
 
 ### [Update-MgBetaSolutionBackupRestoreSiteInclusionRule](Update-MgBetaSolutionBackupRestoreSiteInclusionRule.md)
 

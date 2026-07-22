@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasemember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSecurityCaseEdiscoveryCaseMember
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaSecurityCaseEdiscoveryCaseMember
 ## SYNOPSIS
 
 Remove an ediscoveryCaseMember from an ediscoveryCase.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseMember](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +25,7 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,6 +35,7 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity> [
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

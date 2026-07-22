@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageforward
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserMessageForward
 ---
@@ -13,7 +13,13 @@ title: New-MgUserMessageForward
 
 ## SYNOPSIS
 
-Invoke action createForward
+Create a draft to forward an existing message, in either JSON or MIME format.
+When using JSON format, you can:\r- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\r- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+Specifying both or specifying neither will return an HTTP 400 Bad Request error.\r- Update the draft later to add content to the body or change other message properties.
+When using MIME format:\r- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r- Add any attachments and S/MIME properties to the MIME content.
+Send the draft message in a subsequent operation.
+Alternatively, forward a message in a single operation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMessageForward](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageForward?view=graph-powershell-beta)
@@ -28,6 +34,7 @@ New-MgUserMessageForward -MessageId <string> -UserId <string> [-ResponseHeadersV
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -38,6 +45,7 @@ New-MgUserMessageForward -MessageId <string> -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -48,6 +56,7 @@ New-MgUserMessageForward -InputObject <IMailIdentity> [-ResponseHeadersVariable 
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -58,6 +67,7 @@ New-MgUserMessageForward -InputObject <IMailIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -67,7 +77,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke action createForward
+Create a draft to forward an existing message, in either JSON or MIME format.
+When using JSON format, you can:\r- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\r- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+Specifying both or specifying neither will return an HTTP 400 Bad Request error.\r- Update the draft later to add content to the body or change other message properties.
+When using MIME format:\r- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r- Add any attachments and S/MIME properties to the MIME content.
+Send the draft message in a subsequent operation.
+Alternatively, forward a message in a single operation.
 
 **Permissions**
 
@@ -84,23 +100,8 @@ Invoke action createForward
 
 Import-Module Microsoft.Graph.Mail
 
-$params = @{
-	message = @{
-		isDeliveryReceiptRequested = $true
-		toRecipients = @(
-			@{
-				emailAddress = @{
-					address = "danas@contoso.com"
-					name = "Dana Swope"
-				}
-			}
-		)
-	}
-	comment = "Dana, just want to make sure you get this; you'll need this if the project gets approved."
-}
-
 # A UPN can also be used as -UserId.
-New-MgUserMessageForward -UserId $userId -MessageId $messageId -BodyParameter $params
+New-MgUserMessageForward -UserId $userId -MessageId $messageId
 
 ```
 This example shows how to use the New-MgUserMessageForward Cmdlet.
@@ -637,7 +638,7 @@ To verify the existence of inline attachments, parse the body property to look f
     [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Requires $select to retrieve.
+ Returned only on applying a $select query option.
 Read-only.
       [Name <String>]: Represents the key in a key-value pair.
       [Value <String>]: The value in a key-value pair.
@@ -745,7 +746,7 @@ To verify the existence of inline attachments, parse the body property to look f
   [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Requires $select to retrieve.
+ Returned only on applying a $select query option.
 Read-only.
     [Name <String>]: Represents the key in a key-value pair.
     [Value <String>]: The value in a key-value pair.
@@ -793,6 +794,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 ## RELATED LINKS
 
 - [New-MgUserMessageForward](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageforward)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-1.0)
 
 
 
