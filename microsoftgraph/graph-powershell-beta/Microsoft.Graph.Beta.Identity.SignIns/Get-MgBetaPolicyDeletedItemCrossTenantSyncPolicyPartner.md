@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeleteditemcrosstenantsyncpolicypartner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner
 ---
@@ -25,7 +25,7 @@ Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner [-ExpandProperty <string
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -35,7 +35,7 @@ Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner
  -CrossTenantIdentitySyncPolicyPartnerTenantId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -45,7 +45,7 @@ Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner -InputObject <IIdentityS
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -56,19 +56,6 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Read the properties and relationships of a policyDeletableItem object, which might be one of the following deleted policy types:\r- crossTenantAccessPolicyConfigurationPartner\r- crossTenantIdentitySyncPolicyPartner\r- conditionalAccessPolicy\r- namedLocation
-
-## EXAMPLES
-### Example 1: Retrieve a deleted crossTenantIdentitySyncPolicyPartner object
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner -CrossTenantIdentitySyncPolicyPartnerTenantId $crossTenantIdentitySyncPolicyPartnerTenantId
-
-```
-This example will retrieve a deleted crosstenantidentitysyncpolicypartner object
-
 
 ## PARAMETERS
 
@@ -580,7 +567,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
-  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -634,6 +620,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeleteditemcrosstenantsyncpolicypartner)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/policydeletableitem-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/policydeletableitem-list?view=graph-rest-beta)
+
 
 
 

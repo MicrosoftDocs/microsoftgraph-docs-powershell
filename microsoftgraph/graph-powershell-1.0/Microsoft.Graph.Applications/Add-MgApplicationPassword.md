@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgApplicationPassword
 ---
@@ -28,7 +28,7 @@ Add-MgApplicationPassword -ApplicationId <string> [-ResponseHeadersVariable <str
  [-AdditionalProperties <hashtable>] [-PasswordCredential <IMicrosoftGraphPasswordCredential>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
@@ -39,6 +39,7 @@ Add-MgApplicationPassword -ApplicationId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
@@ -48,7 +49,7 @@ Add-MgApplicationPassword -InputObject <IApplicationsIdentity> [-ResponseHeaders
  [-AdditionalProperties <hashtable>] [-PasswordCredential <IMicrosoftGraphPasswordCredential>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
@@ -59,6 +60,7 @@ Add-MgApplicationPassword -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,7 +79,7 @@ You can also add passwords while creating the application.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Add a password credential to an application with a six month expiry
@@ -101,7 +103,7 @@ DisplayName          : Created in PowerShell
 EndDateTime          : 26/11/2022 12:03:31 pm
 Hint                 : Q_e
 KeyId                : c82bb763-741b-4575-9d9d-df7e766f6999
-SecretText           : <secret here>
+SecretText           : Q_e8Q~ZDWJD.bkgajbREp-VFFUayCuEk8b1hDcr9
 StartDateTime        : 26/5/2022 1:03:31 pm
 AdditionalProperties : {[@odata.context,
                        https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
@@ -134,7 +136,7 @@ DisplayName          : Created in PowerShell
 EndDateTime          : 26/11/2022 1:00:00 pm
 Hint                 : TiA
 KeyId                : 082bf20f-63d6-4970-bb4e-55e504f50d8b
-SecretText           : <secret here>
+SecretText           : TiA8Q~Zs7ej1cGtlW0qnmuFi~JlxXTZew_tU1bGA
 StartDateTime        : 26/5/2022 2:00:00 pm
 AdditionalProperties : {[@odata.context,
                        https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
@@ -559,7 +561,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
-  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition

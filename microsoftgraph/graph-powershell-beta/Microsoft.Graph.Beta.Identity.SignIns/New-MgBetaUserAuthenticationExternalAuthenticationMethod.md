@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationexternalauthenticationmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserAuthenticationExternalAuthenticationMethod
 ---
@@ -16,9 +16,6 @@ title: New-MgBetaUserAuthenticationExternalAuthenticationMethod
 Create a new externalAuthenticationMethod object.
 This API doesn't support self-service operations.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,7 +26,7 @@ New-MgBetaUserAuthenticationExternalAuthenticationMethod -UserId <string>
  [-CreatedDateTime <datetime>] [-DisplayName <string>] [-Id <string>] [-LastUsedDateTime <datetime>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +36,7 @@ New-MgBetaUserAuthenticationExternalAuthenticationMethod -UserId <string>
  -BodyParameter <IMicrosoftGraphExternalAuthenticationMethod> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -50,7 +47,7 @@ New-MgBetaUserAuthenticationExternalAuthenticationMethod -InputObject <IIdentity
  [-CreatedDateTime <datetime>] [-DisplayName <string>] [-Id <string>] [-LastUsedDateTime <datetime>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -60,7 +57,7 @@ New-MgBetaUserAuthenticationExternalAuthenticationMethod -InputObject <IIdentity
  -BodyParameter <IMicrosoftGraphExternalAuthenticationMethod> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,14 +74,13 @@ This API doesn't support self-service operations.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-External.ReadWrite, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-External.ReadWrite.All,  |
+| Delegated (work or school account) | UserAuthMethod-External.ReadWrite, UserAuthMethod-External.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthMethod-External.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -95,10 +91,6 @@ $params = @{
 }
 
 New-MgBetaUserAuthenticationExternalAuthenticationMethod -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaUserAuthenticationExternalAuthenticationMethod Cmdlet.
-
 
 ## PARAMETERS
 
@@ -261,7 +253,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-Custom name given to the registered external MFA.
+Custom name given to the registered external authentication method.
 
 ```yaml
 Type: System.String
@@ -622,7 +614,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
-  [DisplayName <String>]: Custom name given to the registered external MFA.
+  [DisplayName <String>]: Custom name given to the registered external authentication method.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
@@ -674,7 +666,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
-  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy

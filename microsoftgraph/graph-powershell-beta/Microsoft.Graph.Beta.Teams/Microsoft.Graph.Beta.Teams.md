@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Teams
-Module Guid: 14234cdf-9e5f-dfdc-a02b-283718066553
+Module Guid: d27e97a9-d91e-4659-9618-7642e1e98a92
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.teams/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -2309,25 +2309,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgBetaUserChatMessageReplyReaction](Set-MgBetaUserChatMessageReplyReaction.md)
 
-### [Start-MgBetaChatMigration](Start-MgBetaChatMigration.md)
-
-### [Start-MgBetaGroupTeamChannelMigration](Start-MgBetaGroupTeamChannelMigration.md)
-
-### [Start-MgBetaGroupTeamPrimaryChannelMigration](Start-MgBetaGroupTeamPrimaryChannelMigration.md)
-
 ### [Start-MgBetaGroupTeamScheduleTimeCardBreak](Start-MgBetaGroupTeamScheduleTimeCardBreak.md)
-
-### [Start-MgBetaTeamChannelMigration](Start-MgBetaTeamChannelMigration.md)
-
-### [Start-MgBetaTeamPrimaryChannelMigration](Start-MgBetaTeamPrimaryChannelMigration.md)
 
 ### [Start-MgBetaTeamScheduleTimeCardBreak](Start-MgBetaTeamScheduleTimeCardBreak.md)
 
-### [Start-MgBetaTeamworkDeletedTeamChannelMigration](Start-MgBetaTeamworkDeletedTeamChannelMigration.md)
-
 ### [Start-MgBetaTeamworkDeviceDiagnostic](Start-MgBetaTeamworkDeviceDiagnostic.md)
-
-### [Start-MgBetaUserChatMigration](Start-MgBetaUserChatMigration.md)
 
 ### [Stop-MgBetaGroupTeamScheduleTimeCardBreak](Stop-MgBetaGroupTeamScheduleTimeCardBreak.md)
 

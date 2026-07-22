@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatedelta
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSettingTemplateDelta
 ---
@@ -26,7 +26,7 @@ Get-MgGroupSettingTemplateDelta [-ExpandProperty <string[]>] [-Filter <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -43,9 +43,9 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupSettings.Read.All, Directory.Read.All, Directory.ReadWrite.All, GroupSettings.ReadWrite.All,  |
+| Delegated (work or school account) | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | GroupSettings.Read.All, Directory.Read.All, Directory.ReadWrite.All, GroupSettings.ReadWrite.All,  |
+| Application | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
 
 ## PARAMETERS
 

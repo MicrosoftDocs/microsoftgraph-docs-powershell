@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/connect-mggraph
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Connect-MgGraph
 ---
@@ -22,7 +22,7 @@ Microsoft Graph PowerShell supports two types of authentication: delegated and a
 ```
 Connect-MgGraph [[-Scopes] <string[]>] [[-TenantId] <string>] [-ClientId <string>]
  [-ContextScope <ContextScope>] [-Environment <string>] [-UseDeviceCode] [-ClientTimeout <double>]
- [-NoWelcome] [-Break]
+ [-NoWelcome] [-Break] [<CommonParameters>]
 ```
 
 ### AppCertificateParameterSet
@@ -31,14 +31,14 @@ Connect-MgGraph [[-Scopes] <string[]>] [[-TenantId] <string>] [-ClientId <string
 Connect-MgGraph [-ClientId] <string> [[-CertificateSubjectName] <string>]
  [[-CertificateThumbprint] <string>] [-SendCertificateChain <bool>]
  [-Certificate <X509Certificate2>] [-TenantId <string>] [-ContextScope <ContextScope>]
- [-Environment <string>] [-ClientTimeout <double>] [-NoWelcome] [-Break]
+ [-Environment <string>] [-ClientTimeout <double>] [-NoWelcome] [-Break] [<CommonParameters>]
 ```
 
 ### IdentityParameterSet
 
 ```
 Connect-MgGraph [-Identity] [-ClientId <string>] [-ContextScope <ContextScope>]
- [-Environment <string>] [-ClientTimeout <double>] [-NoWelcome] [-Break]
+ [-Environment <string>] [-ClientTimeout <double>] [-NoWelcome] [-Break] [<CommonParameters>]
 ```
 
 ### AppSecretCredentialParameterSet
@@ -46,21 +46,21 @@ Connect-MgGraph [-Identity] [-ClientId <string>] [-ContextScope <ContextScope>]
 ```
 Connect-MgGraph [-ClientSecretCredential <pscredential>] [-TenantId <string>]
  [-ContextScope <ContextScope>] [-Environment <string>] [-ClientTimeout <double>] [-NoWelcome]
- [-Break]
+ [-Break] [<CommonParameters>]
 ```
 
 ### AccessTokenParameterSet
 
 ```
 Connect-MgGraph [-AccessToken] <securestring> [-Environment <string>] [-ClientTimeout <double>]
- [-NoWelcome] [-Break]
+ [-NoWelcome] [-Break] [<CommonParameters>]
 ```
 
 ### EnvironmentVariableParameterSet
 
 ```
 Connect-MgGraph [-ContextScope <ContextScope>] [-Environment <string>] [-ClientTimeout <double>]
- [-EnvironmentVariable] [-NoWelcome] [-Break]
+ [-EnvironmentVariable] [-NoWelcome] [-Break] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -143,37 +143,16 @@ Uses a user created managed identity as a standalone Azure resource.
 ### Connecting to an environment or cloud
 
 PS C:\> Get-MgEnvironment
-Name         AzureADEndpoint                        GraphEndpoint                           Type
-----         ---------------                        -------------                           ----
-BleuCloud    https://login.sovcloud-identity.fr     https://graph.svc.sovcloud.fr           Built-in
-China        https://login.chinacloudapi.cn         https://microsoftgraph.chinacloudapi.cn Built-in
-DelosCloud   https://login.sovcloud-identity.de     https://graph.svc.sovcloud.de           Built-in
-Global       https://login.microsoftonline.com      https://graph.microsoft.com             Built-in
-GovSGCloud   https://login.sovcloud-identity.sg     https://graph.svc.sovcloud.sg           Built-in
-USGov        https://login.microsoftonline.us       https://graph.microsoft.us              Built-in
-USGovDoD     https://login.microsoftonline.us       https://dod-graph.microsoft.us          Built-in
+Name     AzureADEndpoint                   GraphEndpoint                           Type
+----     ---------------                   -------------                           ----
+China    https://login.chinacloudapi.cn    https://microsoftgraph.chinacloudapi.cn Built-in
+Global   https://login.microsoftonline.com https://graph.microsoft.com             Built-in
+USGov    https://login.microsoftonline.us  https://graph.microsoft.us              Built-in
+USGovDoD https://login.microsoftonline.us  https://dod-graph.microsoft.us          Built-in
 PS C:\> Connect-MgGraph -Environment USGov
 
 When you use Connect-MgGraph, you can choose to target other environments.
 By default, Connect-MgGraph targets the global public cloud.
-
-### Connecting to a sovereign cloud with a custom application
-
-PS C:\> Connect-MgGraph -ClientId "YOUR_APP_CLIENT_ID" -TenantId "YOUR_TENANT_ID" -Environment BleuCloud -Scopes "User.Read.All"
-
-Sovereign cloud environments (BleuCloud, DelosCloud, GovSGCloud) require a custom application registration.
-You cannot use the default Microsoft Graph PowerShell application in these environments.
-When registering your application, add an additional redirect URI of `ms-appx-web://Microsoft.AAD.BrokerPlugin/<YOUR_APP_CLIENT_ID>` to support WAM broker-based authentication.
-Requires Microsoft.Graph.Authentication v2.36.1 or later.
-
-### Connecting to a sovereign cloud when WAM authentication hangs
-
-PS C:\> Set-MgGraphOption -DisableLoginByWAM $true
-PS C:\> Connect-MgGraph -ClientId "YOUR_APP_CLIENT_ID" -TenantId "YOUR_TENANT_ID" -Environment BleuCloud
-
-If the authentication popup hangs or times out when connecting to a sovereign cloud (for example, from a jumpbox), WAM broker-based login may not work in that environment.
-Disable WAM to use interactive browser sign-in instead.
-You only need to run `Set-MgGraphOption -DisableLoginByWAM $true` once; the setting persists across sessions.
 
 ### Connecting to an environment as a different identity
 

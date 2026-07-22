@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetauserinformationprotectiondatalosspreventionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaUserInformationProtectionDataLossPreventionPolicy
 ---
@@ -22,12 +22,11 @@ Invoke action evaluate
 ```
 Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -UserId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-ClassifyText <IMicrosoftGraphTextClassificationRequest>]
  [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
  [-NotificationInfo <IMicrosoftGraphDlpNotification>] [-Target <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
@@ -38,6 +37,7 @@ Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
@@ -45,12 +45,11 @@ Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -UserId <string>
 ```
 Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-ClassifyText <IMicrosoftGraphTextClassificationRequest>]
  [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
  [-NotificationInfo <IMicrosoftGraphDlpNotification>] [-Target <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
@@ -61,6 +60,7 @@ Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -InputObject <IIden
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -140,34 +140,6 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ClassifyText
-
-textClassificationRequest
-To construct, see NOTES section for CLASSIFYTEXT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTextClassificationRequest
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: EvaluateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: EvaluateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -544,18 +516,6 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1EzienbUsersUserIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [ClassifyText <IMicrosoftGraphTextClassificationRequest>]: textClassificationRequest
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [ContentMetaData <IMicrosoftGraphClassificationRequestContentMetaData>]: classificationRequestContentMetaData
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [SourceId <String>]: 
-    [FileExtension <String>]: 
-    [MatchTolerancesToInclude <String>]: mlClassificationMatchTolerance
-    [ScopesToRun <String>]: sensitiveTypeScope
-    [SensitiveTypeIds <String[]>]: 
-    [Text <String>]: 
   [EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]: dlpEvaluationInput
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CurrentLabel <IMicrosoftGraphCurrentLabel>]: currentLabel
@@ -573,19 +533,6 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Author <String>]: 
   [Target <String>]: 
-
-CLASSIFYTEXT `<IMicrosoftGraphTextClassificationRequest>`: textClassificationRequest
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [ContentMetaData <IMicrosoftGraphClassificationRequestContentMetaData>]: classificationRequestContentMetaData
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [SourceId <String>]: 
-  [FileExtension <String>]: 
-  [MatchTolerancesToInclude <String>]: mlClassificationMatchTolerance
-  [ScopesToRun <String>]: sensitiveTypeScope
-  [SensitiveTypeIds <String[]>]: 
-  [Text <String>]: 
 
 EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -651,7 +598,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
-  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy

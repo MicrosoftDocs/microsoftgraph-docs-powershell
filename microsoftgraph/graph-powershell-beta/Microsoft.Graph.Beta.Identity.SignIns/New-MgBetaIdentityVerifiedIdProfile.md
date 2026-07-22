@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityverifiedidprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityVerifiedIdProfile
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaIdentityVerifiedIdProfile
 ## SYNOPSIS
 
 Create a new verifiedIdProfile object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityVerifiedIdProfile](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityVerifiedIdProfile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ New-MgBetaIdentityVerifiedIdProfile [-ResponseHeadersVariable <string>]
  [-VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]
  [-VerifierDid <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -41,6 +38,7 @@ New-MgBetaIdentityVerifiedIdProfile -BodyParameter <IMicrosoftGraphVerifiedIdPro
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,53 +49,6 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new verifiedIdProfile object.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-$params = @{
-	name = "Contoso Verified ID"
-	description = "Contoso Verified Identity"
-	lastModifiedDateTime = $null
-	state = "enabled"
-	verifierDid = "did:web:eu.did-dev.contoso.io"
-	priority = 0
-	verifiedIdProfileConfiguration = @{
-		type = "verifiedIdentity"
-		acceptedIssuer = "did:web:eu.did-dev.contoso.io"
-		claimBindingSource = "directory"
-		claimBindings = @(
-			@{
-				sourceAttribute = "First name"
-				verifiedIdClaim = "vc.credentialSubject.firstName"
-			}
-			@{
-				sourceAttribute = "Last name"
-				verifiedIdClaim = "vc.credentialSubject.lastName"
-			}
-		)
-	}
-	faceCheckConfiguration = @{
-		isEnabled = $true
-		sourcePhotoClaimName = "portrait"
-	}
-	verifiedIdUsageConfigurations = @(
-		@{
-			isEnabledForTestOnly = $true
-			purpose = "recovery"
-		}
-	)
-}
-
-New-MgBetaIdentityVerifiedIdProfile -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaIdentityVerifiedIdProfile Cmdlet.
-
 
 ## PARAMETERS
 
@@ -618,8 +569,7 @@ Required.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IsEnabled <Boolean?>]: Defines if Face Check is required.
 Currently must always be true.
-    [SourcePhotoClaimName <String>]: Source of photo to validate Face Check against.
-Currently must always be portrait
+    [SourcePhotoClaimName <String>]: 
   [LastModifiedDateTime <DateTime?>]: DateTime the profile was last modified.
 Optional.
   [Name <String>]: Display name for the verified ID profile.
@@ -632,13 +582,8 @@ Optional.
     [AcceptedIssuer <String>]: Trusted Verified ID issuer.
     [ClaimBindingSource <String>]: claimBindingSource
     [ClaimBindings <IMicrosoftGraphClaimBinding[]>]: Claim bindings from Verified ID to source attributes.
-      [MatchConfidenceLevel <String>]: matchConfidenceLevel
       [SourceAttribute <String>]: Source attribute value
       [VerifiedIdClaim <String>]: Entra ID attribute value
-    [ClaimValidation <IMicrosoftGraphClaimValidation>]: claimValidation
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [CustomExtensionId <String>]: The identifier of a custom extension for claim validation.
-      [IsEnabled <Boolean?>]: Indicates whether claim validation is enabled.
     [Type <String>]: Verified ID type.
   [VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]: Collection defining the usage purpose for the profile.
 The possible values are: recovery, onboarding, all, unknownFutureValue.
@@ -652,21 +597,15 @@ FACECHECKCONFIGURATION `<IMicrosoftGraphFaceCheckConfiguration>`: faceCheckConfi
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Defines if Face Check is required.
 Currently must always be true.
-  [SourcePhotoClaimName <String>]: Source of photo to validate Face Check against.
-Currently must always be portrait
+  [SourcePhotoClaimName <String>]: 
 
 VERIFIEDIDPROFILECONFIGURATION `<IMicrosoftGraphVerifiedIdProfileConfiguration>`: verifiedIdProfileConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcceptedIssuer <String>]: Trusted Verified ID issuer.
   [ClaimBindingSource <String>]: claimBindingSource
   [ClaimBindings <IMicrosoftGraphClaimBinding[]>]: Claim bindings from Verified ID to source attributes.
-    [MatchConfidenceLevel <String>]: matchConfidenceLevel
     [SourceAttribute <String>]: Source attribute value
     [VerifiedIdClaim <String>]: Entra ID attribute value
-  [ClaimValidation <IMicrosoftGraphClaimValidation>]: claimValidation
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [CustomExtensionId <String>]: The identifier of a custom extension for claim validation.
-    [IsEnabled <Boolean?>]: Indicates whether claim validation is enabled.
   [Type <String>]: Verified ID type.
 
 VERIFIEDIDUSAGECONFIGURATIONS <IMicrosoftGraphVerifiedIdUsageConfiguration[]>: Collection defining the usage purpose for the profile.
@@ -680,6 +619,7 @@ Required.
 
 - [New-MgBetaIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityverifiedidprofile)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/identityverifiedidroot-post-profiles?view=graph-rest-beta)
+
 
 
 

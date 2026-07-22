@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorypublickeyinfrastructurecertificatebasedauthconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
 ---
@@ -30,7 +30,7 @@ New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
  [-LastModifiedDateTime <datetime>] [-Status <string>] [-StatusDetails <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -40,7 +40,7 @@ New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
  -BodyParameter <IMicrosoftGraphCertificateBasedAuthPki> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -59,23 +59,6 @@ Create a new certificateBasedAuthPki object.
 | Delegated (work or school account) | PublicKeyInfrastructure.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PublicKeyInfrastructure.ReadWrite.All,  |
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-$params = @{
-	displayName = "Contoso PKI"
-}
-
-New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration -BodyParameter $params
-
-```
-This example shows how to use the New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -574,6 +557,7 @@ Supports $filter (eq, startswith).
 
 - [New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations?view=graph-rest-1.0)
+
 
 
 

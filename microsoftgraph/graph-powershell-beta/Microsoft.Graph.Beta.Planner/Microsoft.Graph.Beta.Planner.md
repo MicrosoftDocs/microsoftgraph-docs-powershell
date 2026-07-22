@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Planner
-Module Guid: 5a7457a7-b7c0-358e-f506-567b8a9542b0
+Module Guid: ee229b92-ae87-4416-9920-ea4deab8e098
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.planner/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,8 +11,6 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.Planner Cmdlets
-### [Clear-MgBetaPlannerTaskMessageReaction](Clear-MgBetaPlannerTaskMessageReaction.md)
-
 ### [Get-MgBetaGroupPlanner](Get-MgBetaGroupPlanner.md)
 
 ### [Get-MgBetaGroupPlannerPlan](Get-MgBetaGroupPlannerPlan.md)
@@ -91,12 +89,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlannerTaskDetail](Get-MgBetaPlannerTaskDetail.md)
 
-### [Get-MgBetaPlannerTaskMessage](Get-MgBetaPlannerTaskMessage.md)
-
-### [Get-MgBetaPlannerTaskMessage](Get-MgBetaPlannerTaskMessage.md)
-
-### [Get-MgBetaPlannerTaskMessageCount](Get-MgBetaPlannerTaskMessageCount.md)
-
 ### [Get-MgBetaPlannerTaskProgressTaskBoardFormat](Get-MgBetaPlannerTaskProgressTaskBoardFormat.md)
 
 ### [Get-MgBetaUserPlanner](Get-MgBetaUserPlanner.md)
@@ -165,8 +157,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaPlannerTask](New-MgBetaPlannerTask.md)
 
-### [New-MgBetaPlannerTaskMessage](New-MgBetaPlannerTaskMessage.md)
-
 ### [Remove-MgBetaGroupPlannerPlanDetail](Remove-MgBetaGroupPlannerPlanDetail.md)
 
 ### [Remove-MgBetaPlannerBucket](Remove-MgBetaPlannerBucket.md)
@@ -183,13 +173,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaPlannerTaskBucketTaskBoardFormat](Remove-MgBetaPlannerTaskBucketTaskBoardFormat.md)
 
-### [Remove-MgBetaPlannerTaskMessage](Remove-MgBetaPlannerTaskMessage.md)
-
 ### [Remove-MgBetaPlannerTaskProgressTaskBoardFormat](Remove-MgBetaPlannerTaskProgressTaskBoardFormat.md)
 
 ### [Set-MgBetaPlannerRosterSensitivityLabel](Set-MgBetaPlannerRosterSensitivityLabel.md)
-
-### [Set-MgBetaPlannerTaskMessageReaction](Set-MgBetaPlannerTaskMessageReaction.md)
 
 ### [Update-MgBetaGroupPlanner](Update-MgBetaGroupPlanner.md)
 
@@ -214,8 +200,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaPlannerTaskBucketTaskBoardFormat](Update-MgBetaPlannerTaskBucketTaskBoardFormat.md)
 
 ### [Update-MgBetaPlannerTaskDetail](Update-MgBetaPlannerTaskDetail.md)
-
-### [Update-MgBetaPlannerTaskMessage](Update-MgBetaPlannerTaskMessage.md)
 
 ### [Update-MgBetaPlannerTaskProgressTaskBoardFormat](Update-MgBetaPlannerTaskProgressTaskBoardFormat.md)
 

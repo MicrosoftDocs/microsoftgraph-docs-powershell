@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPlace
 ---
@@ -28,6 +28,7 @@ Remove-MgBetaPlace -PlaceId <string> [-IfMatch <string>] [-ResponseHeadersVariab
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,6 +38,7 @@ Remove-MgBetaPlace -InputObject <ICalendarIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,27 +50,6 @@ This cmdlet has the following aliases,
 
 Delete a place object.
 You can also use this method to delete the following child object types: building, floor, section, or desk.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Place.ReadWrite.All,  |
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Remove-MgBetaPlace -PlaceId $placeId
-
-```
-This example shows how to use the Remove-MgBetaPlace Cmdlet.
-
 
 ## PARAMETERS
 
@@ -427,6 +408,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Remove-MgBetaPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplace)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-beta)
+
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuilding
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlaceAsBuilding
 ---
@@ -31,7 +31,7 @@ Get-MgBetaPlaceAsBuilding [-ExpandProperty <string[]>] [-Property <string[]>] [-
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### Get
@@ -40,7 +40,7 @@ Get-MgBetaPlaceAsBuilding [-ExpandProperty <string[]>] [-Property <string[]>] [-
 Get-MgBetaPlaceAsBuilding -PlaceId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -49,7 +49,7 @@ Get-MgBetaPlaceAsBuilding -PlaceId <string> [-ExpandProperty <string[]>] [-Prope
 Get-MgBetaPlaceAsBuilding -InputObject <ICalendarIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -63,19 +63,6 @@ Get a collection of the specified type of place objects defined in a tenant.
 You can do the following for a given tenant:\r- List all buildings.\r- List all floors.\r- List all sections.\r- List all desks.\r- List all rooms.\r- List all workspaces.\r- List all room lists.\r- List rooms in a specific room list.\r- List workspaces in a specific room list.
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 For details about how they compare, see Using the places API.
-
-## EXAMPLES
-### Example 1: List all buildings defined in the tenant
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Get-MgBetaPlaceAsBuilding
-
-```
-This example will list all buildings defined in the tenant
-
 
 ## PARAMETERS
 
@@ -564,6 +551,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Get-MgBetaPlaceAsBuilding](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuilding)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-beta)
+
 
 
 

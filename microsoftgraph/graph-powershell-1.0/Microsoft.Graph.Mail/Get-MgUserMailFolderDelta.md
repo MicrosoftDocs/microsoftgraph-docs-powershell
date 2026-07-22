@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserMailFolderDelta
 ---
@@ -30,7 +30,7 @@ Get-MgUserMailFolderDelta -UserId <string> [-ExpandProperty <string[]>] [-Filter
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-CountVariable <string>] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity
@@ -40,7 +40,7 @@ Get-MgUserMailFolderDelta -InputObject <IMailIdentity> [-ExpandProperty <string[
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-Count] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -58,9 +58,9 @@ This allows you to maintain and synchronize\ra local store of a user's mail fold
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
-| Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite,  |
+| Delegated (work or school account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
+| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
+| Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
 
 ## PARAMETERS
 

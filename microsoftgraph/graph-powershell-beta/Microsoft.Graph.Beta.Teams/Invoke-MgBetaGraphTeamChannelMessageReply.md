@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphteamchannelmessagereply
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaGraphTeamChannelMessageReply
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaGraphTeamChannelMessageReply
 ## SYNOPSIS
 
 Reply with quote to a single chat message or multiple chat messages in a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Invoke-MgGraphTeamChannelMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Invoke-MgBetaGraphTeamChannelMessageReply -ChannelId <string> -ChatMessageId <st
  [-MessageIds <string[]>] [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Graph
@@ -40,6 +37,7 @@ Invoke-MgBetaGraphTeamChannelMessageReply -ChannelId <string> -ChatMessageId <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### GraphViaIdentityExpanded
@@ -50,6 +48,7 @@ Invoke-MgBetaGraphTeamChannelMessageReply -InputObject <ITeamsIdentity>
  [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### GraphViaIdentity
@@ -60,6 +59,7 @@ Invoke-MgBetaGraphTeamChannelMessageReply -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES

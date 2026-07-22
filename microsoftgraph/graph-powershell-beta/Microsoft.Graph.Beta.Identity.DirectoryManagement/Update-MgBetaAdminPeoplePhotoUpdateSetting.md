@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplephotoupdatesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminPeoplePhotoUpdateSetting
 ---
@@ -24,7 +24,7 @@ Update-MgBetaAdminPeoplePhotoUpdateSetting [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AllowedRoles <string[]>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -34,6 +34,7 @@ Update-MgBetaAdminPeoplePhotoUpdateSetting -BodyParameter <IMicrosoftGraphPhotoU
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,9 +55,8 @@ Update the properties of a photoUpdateSettings object.
 | Application | PeopleSettings.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -69,10 +69,6 @@ $params = @{
 }
 
 Update-MgBetaAdminPeoplePhotoUpdateSetting -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaAdminPeoplePhotoUpdateSetting Cmdlet.
-
 
 ## PARAMETERS
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/find-mggraphpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgGraphPermission
 ---
@@ -21,12 +21,13 @@ The Microsoft Graph PowerShell SDK application requires users to have domain kno
 
 ```
 Find-MgGraphPermission [-SearchString] <string> [-ExactMatch] [-PermissionType <string>] [-Online]
+ [<CommonParameters>]
 ```
 
 ### All
 
 ```
-Find-MgGraphPermission [-PermissionType <string>] [-Online] [-All]
+Find-MgGraphPermission [-PermissionType <string>] [-Online] [-All] [<CommonParameters>]
 ```
 
 ## ALIASES

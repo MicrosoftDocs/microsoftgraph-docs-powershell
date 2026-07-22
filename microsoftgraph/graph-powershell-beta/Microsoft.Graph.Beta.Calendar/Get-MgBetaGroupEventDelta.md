@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupEventDelta
 ---
@@ -36,6 +36,7 @@ Get-MgBetaGroupEventDelta -GroupId <string> -EndDateTime <string> -StartDateTime
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+ [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity
@@ -46,7 +47,7 @@ Get-MgBetaGroupEventDelta -InputObject <ICalendarIdentity> -EndDateTime <string>
  [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-Count]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -69,9 +70,9 @@ The following table lists the differences between the delta function on events a
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
-| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
-| Application | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
+| Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
+| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
+| Application | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
 
 ## PARAMETERS
 

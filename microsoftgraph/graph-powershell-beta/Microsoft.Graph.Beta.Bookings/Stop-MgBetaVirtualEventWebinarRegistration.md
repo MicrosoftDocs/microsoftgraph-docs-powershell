@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventwebinarregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaVirtualEventWebinarRegistration
 ---
@@ -13,7 +13,7 @@ title: Stop-MgBetaVirtualEventWebinarRegistration
 
 ## SYNOPSIS
 
-Cancel a registrant's registration record for a webinar or town hall.
+Cancel a registrant's registration record for a webinar.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Stop-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/Stop-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
@@ -28,6 +28,7 @@ Stop-MgBetaVirtualEventWebinarRegistration -VirtualEventRegistrationId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CancelViaIdentity
@@ -37,6 +38,7 @@ Stop-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -46,7 +48,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Cancel a registrant's registration record for a webinar or town hall.
+Cancel a registrant's registration record for a webinar.
 
 **Permissions**
 

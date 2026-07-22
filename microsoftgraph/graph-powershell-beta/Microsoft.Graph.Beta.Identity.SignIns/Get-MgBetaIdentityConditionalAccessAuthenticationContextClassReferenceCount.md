@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationcontextclassreferencecount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReferenceCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReferenceCount [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -42,9 +42,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuthenticationContext.Read.All, AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess,  |
+| Delegated (work or school account) | AuthenticationContext.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.ConditionalAccess, AuthenticationContext.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AuthenticationContext.Read.All, AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess,  |
+| Application | AuthenticationContext.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.ConditionalAccess, AuthenticationContext.ReadWrite.All,  |
 
 ## PARAMETERS
 

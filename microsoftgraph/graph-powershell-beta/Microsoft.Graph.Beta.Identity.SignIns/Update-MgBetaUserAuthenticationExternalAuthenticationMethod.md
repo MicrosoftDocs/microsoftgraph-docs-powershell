@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationexternalauthenticationmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserAuthenticationExternalAuthenticationMethod
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserAuthenticationExternalAuthenticationMethod
 ## SYNOPSIS
 
 Update the navigation property externalAuthenticationMethods in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +26,7 @@ Update-MgBetaUserAuthenticationExternalAuthenticationMethod -ExternalAuthenticat
  [-LastUsedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -39,6 +37,7 @@ Update-MgBetaUserAuthenticationExternalAuthenticationMethod -ExternalAuthenticat
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,7 +48,7 @@ Update-MgBetaUserAuthenticationExternalAuthenticationMethod -InputObject <IIdent
  [-CreatedDateTime <datetime>] [-DisplayName <string>] [-Id <string>] [-LastUsedDateTime <datetime>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -59,7 +58,7 @@ Update-MgBetaUserAuthenticationExternalAuthenticationMethod -InputObject <IIdent
  -BodyParameter <IMicrosoftGraphExternalAuthenticationMethod> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -232,7 +231,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-Custom name given to the registered external MFA.
+Custom name given to the registered external authentication method.
 
 ```yaml
 Type: System.String
@@ -620,7 +619,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
-  [DisplayName <String>]: Custom name given to the registered external MFA.
+  [DisplayName <String>]: Custom name given to the registered external authentication method.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
@@ -672,7 +671,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
-  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy

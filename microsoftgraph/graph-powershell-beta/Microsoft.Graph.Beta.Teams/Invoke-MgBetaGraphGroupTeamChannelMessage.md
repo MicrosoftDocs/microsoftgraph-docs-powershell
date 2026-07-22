@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphgroupteamchannelmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 07/17/2026
+ms.date: 02/20/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaGraphGroupTeamChannelMessage
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaGraphGroupTeamChannelMessage
 ## SYNOPSIS
 
 Reply with quote to a single chat message or multiple chat messages in a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Invoke-MgGraphGroupTeamChannelMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +25,7 @@ Invoke-MgBetaGraphGroupTeamChannelMessage -ChannelId <string> -GroupId <string>
  [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Graph
@@ -38,6 +36,7 @@ Invoke-MgBetaGraphGroupTeamChannelMessage -ChannelId <string> -GroupId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### GraphViaIdentityExpanded
@@ -48,6 +47,7 @@ Invoke-MgBetaGraphGroupTeamChannelMessage -InputObject <ITeamsIdentity>
  [-ReplyMessage <IMicrosoftGraphChatMessage>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### GraphViaIdentity
@@ -58,6 +58,7 @@ Invoke-MgBetaGraphGroupTeamChannelMessage -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## ALIASES
