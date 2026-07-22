@@ -57,16 +57,6 @@ This cmdlet has the following aliases,
 
 Represents a known issue related to a Windows product.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -578,3 +568,4 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesproductknownissue)
+

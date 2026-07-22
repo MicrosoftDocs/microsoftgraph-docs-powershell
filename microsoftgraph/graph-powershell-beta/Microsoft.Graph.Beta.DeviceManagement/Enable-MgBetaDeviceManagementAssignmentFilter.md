@@ -53,16 +53,6 @@ Invoke action enable
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -401,3 +391,4 @@ BODYPARAMETER `<IPaths1Wi1TrqDevicemanagementAssignmentfiltersMicrosoftGraphEnab
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/enable-mgbetadevicemanagementassignmentfilter)
+

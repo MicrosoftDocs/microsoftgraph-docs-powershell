@@ -70,16 +70,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property activities in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Action
@@ -28092,3 +28082,4 @@ TIMES `<IMicrosoftGraphItemActivityTimeSet>`: itemActivityTimeSet
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemactivity)
+

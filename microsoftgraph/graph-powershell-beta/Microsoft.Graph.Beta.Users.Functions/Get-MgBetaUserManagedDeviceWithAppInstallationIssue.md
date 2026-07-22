@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Retrieves the list of devices with failed or pending apps
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -418,3 +408,4 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddevicewithappinstallationissue)
+

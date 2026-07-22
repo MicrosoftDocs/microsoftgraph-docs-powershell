@@ -57,16 +57,6 @@ Must have at least one identity provider linked.
 Supports $filter (eq).
 See support for filtering on user flows for syntax information.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId
@@ -457,3 +447,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasexternaluserselfservicesignupeventflowonauthenticationmethodloadstart)
+

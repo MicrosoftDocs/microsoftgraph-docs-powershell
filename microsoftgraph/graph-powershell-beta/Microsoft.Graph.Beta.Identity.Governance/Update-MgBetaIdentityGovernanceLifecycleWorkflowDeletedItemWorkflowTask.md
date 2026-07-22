@@ -77,16 +77,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property tasks in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -18653,3 +18643,4 @@ Required.Supports $filter(eq, ne).
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowtask)
+

@@ -98,16 +98,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to tasks for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount
@@ -1926,3 +1916,4 @@ A GUID-based value that serves as the unique identifier for a series.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamprimarychannelplannerplantask)
+

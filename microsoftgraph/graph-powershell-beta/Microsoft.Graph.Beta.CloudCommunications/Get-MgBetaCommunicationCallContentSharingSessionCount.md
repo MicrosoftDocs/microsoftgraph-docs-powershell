@@ -53,16 +53,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calls.JoinGroupCallAsGuest.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -380,3 +370,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsessioncount)
+

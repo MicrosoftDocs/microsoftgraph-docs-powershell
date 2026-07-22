@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property assignedToTaskBoardFormat for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -479,3 +469,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelplannerplantaskassignedtotaskboardformat)
+

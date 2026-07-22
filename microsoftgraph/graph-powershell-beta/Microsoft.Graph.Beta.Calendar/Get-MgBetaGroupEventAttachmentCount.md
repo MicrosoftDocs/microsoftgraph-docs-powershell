@@ -55,16 +55,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Calendars.Read,  |
 | Application | Calendars.Read,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -398,3 +388,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventattachmentcount)
+

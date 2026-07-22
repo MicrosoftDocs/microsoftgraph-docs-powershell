@@ -57,16 +57,6 @@ This cmdlet has the following aliases,
 
 Used to represent the decision associated with a single step in the approval process configured in approvalStage.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -669,3 +659,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionmanagementscheduledpermissionapprovalstep)
+

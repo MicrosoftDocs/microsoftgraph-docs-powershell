@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Get broadcastRecording for the navigation property onlineMeeting from communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -373,3 +363,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingconversationonlinemeetingbroadcastrecording)
+
