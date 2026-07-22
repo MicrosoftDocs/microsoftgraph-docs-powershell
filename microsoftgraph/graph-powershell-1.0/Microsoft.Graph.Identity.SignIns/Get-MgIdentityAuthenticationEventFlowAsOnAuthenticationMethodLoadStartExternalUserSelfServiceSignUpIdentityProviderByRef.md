@@ -430,3 +430,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbyref)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders?view=graph-rest-1.0)
+

@@ -493,3 +493,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgUserContactExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactextension)
+

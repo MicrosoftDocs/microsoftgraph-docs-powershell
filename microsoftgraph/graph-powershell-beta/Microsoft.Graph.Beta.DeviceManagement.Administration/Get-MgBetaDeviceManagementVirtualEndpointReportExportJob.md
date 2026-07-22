@@ -72,18 +72,28 @@ The property becomes completed when the report finishes downloading in the locat
 | Application | CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get an export job for the TotalAggregatedRemoteConnectionReports report
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId $cloudPcExportJobId
+
+```
+This example will get an export job for the totalaggregatedremoteconnectionreports report
+
+### Example 2: Get an export job for the RemoteConnectionQualityReports report
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 Get-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId $cloudPcExportJobId
 
-### EXAMPLE 2
+```
+This example will get an export job for the remoteconnectionqualityreports report
 
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-
-Get-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId $cloudPcExportJobId
 
 ## PARAMETERS
 

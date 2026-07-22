@@ -399,3 +399,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Publish-MgEducationUserAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationuserassignment)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-publish?view=graph-rest-1.0)
+

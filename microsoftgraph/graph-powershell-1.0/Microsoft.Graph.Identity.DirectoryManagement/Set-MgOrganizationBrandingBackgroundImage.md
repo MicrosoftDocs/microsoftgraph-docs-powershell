@@ -472,3 +472,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgOrganizationBrandingBackgroundImage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandingbackgroundimage)
+

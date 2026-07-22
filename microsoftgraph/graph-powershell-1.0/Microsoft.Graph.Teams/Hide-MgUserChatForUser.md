@@ -568,3 +568,4 @@ For example, in the access reviews decisions API, this property might record the
 
 - [Hide-MgUserChatForUser](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/hide-mguserchatforuser)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-1.0)
+

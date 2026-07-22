@@ -421,3 +421,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [Invoke-MgSoftChatMessageDelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftchatmessagedelete)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-1.0)
+

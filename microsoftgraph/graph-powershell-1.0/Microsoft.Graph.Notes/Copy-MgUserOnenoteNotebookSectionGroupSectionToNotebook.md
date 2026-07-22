@@ -677,3 +677,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 - [Copy-MgUserOnenoteNotebookSectionGroupSectionToNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/copy-mguseronenotenotebooksectiongroupsectiontonotebook)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/section-copytonotebook?view=graph-rest-1.0)
+

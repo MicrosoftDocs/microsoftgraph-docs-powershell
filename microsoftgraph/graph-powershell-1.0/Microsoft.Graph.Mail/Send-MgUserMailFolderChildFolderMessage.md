@@ -443,3 +443,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 - [Send-MgUserMailFolderChildFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/send-mgusermailfolderchildfoldermessage)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-1.0)
+

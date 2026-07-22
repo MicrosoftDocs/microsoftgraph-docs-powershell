@@ -406,3 +406,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgReportEmailAppUsageUserDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageuserdetail)
+

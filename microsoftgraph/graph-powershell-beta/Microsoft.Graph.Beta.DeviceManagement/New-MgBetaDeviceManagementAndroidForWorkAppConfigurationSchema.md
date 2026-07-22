@@ -55,16 +55,6 @@ Create new navigation property to androidForWorkAppConfigurationSchemas for devi
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -453,3 +443,4 @@ SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>: Collect
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidforworkappconfigurationschema)
+

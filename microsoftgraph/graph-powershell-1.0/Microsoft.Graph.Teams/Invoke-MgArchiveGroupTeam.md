@@ -540,3 +540,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [Invoke-MgArchiveGroupTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchivegroupteam)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/team-archive?view=graph-rest-1.0)
+

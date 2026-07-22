@@ -469,3 +469,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgRiskyUserHistory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgriskyuserhistory)
+

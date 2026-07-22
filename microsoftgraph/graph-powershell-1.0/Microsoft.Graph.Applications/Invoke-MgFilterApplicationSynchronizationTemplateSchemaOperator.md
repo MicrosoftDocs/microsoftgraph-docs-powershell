@@ -528,3 +528,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterapplicationsynchronizationtemplateschemaoperator)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-1.0)
+

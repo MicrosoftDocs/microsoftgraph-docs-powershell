@@ -389,3 +389,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Set-MgEducationUserAssignmentUpFeedbackResourceFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationuserassignmentupfeedbackresourcefolder)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-1.0)
+

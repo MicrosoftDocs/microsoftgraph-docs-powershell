@@ -508,3 +508,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [Get-MgDeviceMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberobject)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
+

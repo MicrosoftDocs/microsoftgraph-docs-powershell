@@ -413,3 +413,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Suspend-MgApplicationSynchronizationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgapplicationsynchronizationjob)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-1.0)
+

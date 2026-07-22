@@ -533,3 +533,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgUserEventExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusereventextension)
+

@@ -394,3 +394,4 @@ BODYPARAMETER `<IPaths15YkyvsServiceprincipalsMicrosoftGraphGetbyidsPostRequestb
 
 - [Get-MgServicePrincipalById](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalbyid)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
+

@@ -77,8 +77,9 @@ An optional expiration date and time can be supplied.
 | Application | Presence.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Set status message with expiry date
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -97,7 +98,12 @@ $params = @{
 
 Set-MgBetaUserPresenceStatusMessage -UserId $userId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will set status message with expiry date
+
+### Example 2: Set status message of another user
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -111,6 +117,10 @@ $params = @{
 }
 
 Set-MgBetaUserPresenceStatusMessage -UserId $userId -BodyParameter $params
+
+```
+This example will set status message of another user
+
 
 ## PARAMETERS
 

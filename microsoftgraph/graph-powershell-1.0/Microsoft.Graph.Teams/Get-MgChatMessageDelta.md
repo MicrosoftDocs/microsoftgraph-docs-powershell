@@ -595,3 +595,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [Get-MgChatMessageDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagedelta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0)
+

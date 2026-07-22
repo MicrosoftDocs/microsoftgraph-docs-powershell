@@ -60,16 +60,6 @@ This cmdlet has the following aliases,
 
 List of notes associated with the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -660,3 +650,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestnote)
+
+

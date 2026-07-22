@@ -65,16 +65,6 @@ The list of group assignments for the device management script.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -675,3 +665,5 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementscriptgroupassignment)
+
+

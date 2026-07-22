@@ -421,3 +421,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgRetireUserManagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgretireusermanageddevice)
+

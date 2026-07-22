@@ -374,3 +374,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Get-MgServicePrincipalByAppId](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalbyappid)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-get?view=graph-rest-1.0)
+

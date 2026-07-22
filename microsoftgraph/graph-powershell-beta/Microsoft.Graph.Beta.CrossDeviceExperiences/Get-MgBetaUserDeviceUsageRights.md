@@ -57,16 +57,6 @@ This cmdlet has the following aliases,
 
 Represents the usage rights a device has been granted.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -596,3 +586,5 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceusagerights)
+
+

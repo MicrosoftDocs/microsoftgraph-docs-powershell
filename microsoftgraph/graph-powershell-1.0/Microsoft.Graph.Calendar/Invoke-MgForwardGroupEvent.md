@@ -587,3 +587,4 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 - [Invoke-MgForwardGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgforwardgroupevent)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0)
+

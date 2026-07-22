@@ -1019,3 +1019,4 @@ Must match one of the directory definitions in synchronizationSchema.
 
 - [Update-MgApplicationSynchronizationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplate)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationtemplate-update?view=graph-rest-1.0)
+

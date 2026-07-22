@@ -78,8 +78,9 @@ For more information about presence sessions, states permutations, and timeouts,
 | Application | Presence.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -91,6 +92,10 @@ $params = @{
 }
 
 Set-MgBetaUserPresence -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaUserPresence Cmdlet.
+
 
 ## PARAMETERS
 

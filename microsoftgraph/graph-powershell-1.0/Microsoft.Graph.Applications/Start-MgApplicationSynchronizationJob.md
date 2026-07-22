@@ -419,3 +419,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Start-MgApplicationSynchronizationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/start-mgapplicationsynchronizationjob)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-1.0)
+

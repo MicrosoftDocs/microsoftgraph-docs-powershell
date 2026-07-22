@@ -629,3 +629,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgEducationUserAssignmentSubmissionResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentsubmissionresource)
+
+

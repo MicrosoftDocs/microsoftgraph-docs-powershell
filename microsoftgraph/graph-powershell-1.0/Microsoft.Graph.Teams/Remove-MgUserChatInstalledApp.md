@@ -462,3 +462,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserChatInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatinstalledapp)
+

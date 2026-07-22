@@ -555,3 +555,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgIdentityB2XUserFlowIdentityProviderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflowidentityproviderbyref)
+

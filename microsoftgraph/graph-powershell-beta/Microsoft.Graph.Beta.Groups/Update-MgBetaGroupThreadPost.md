@@ -85,16 +85,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property posts in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1370,3 +1360,4 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpost)
+

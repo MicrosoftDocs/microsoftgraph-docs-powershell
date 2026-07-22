@@ -448,3 +448,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgEducationClassAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentsubmission)
+

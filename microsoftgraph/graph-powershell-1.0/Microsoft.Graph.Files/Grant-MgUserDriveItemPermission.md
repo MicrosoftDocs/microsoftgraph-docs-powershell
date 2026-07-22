@@ -612,3 +612,4 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 - [Grant-MgUserDriveItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mguserdriveitempermission)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
+

@@ -413,3 +413,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [Get-MgSecuritySubjectRightsRequestFinalReport](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestfinalreport)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-1.0)
+

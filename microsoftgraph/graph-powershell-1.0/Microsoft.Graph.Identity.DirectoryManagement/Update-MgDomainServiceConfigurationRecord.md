@@ -672,3 +672,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgDomainServiceConfigurationRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainserviceconfigurationrecord)
+

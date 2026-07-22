@@ -620,3 +620,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgGroupSiteListContentTypeColumnLink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistcontenttypecolumnlink)
+

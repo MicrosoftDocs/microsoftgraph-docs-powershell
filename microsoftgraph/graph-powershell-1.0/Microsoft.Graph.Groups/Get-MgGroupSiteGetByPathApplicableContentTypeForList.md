@@ -556,3 +556,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [Get-MgGroupSiteGetByPathApplicableContentTypeForList](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetbypathapplicablecontenttypeforlist)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-1.0)
+

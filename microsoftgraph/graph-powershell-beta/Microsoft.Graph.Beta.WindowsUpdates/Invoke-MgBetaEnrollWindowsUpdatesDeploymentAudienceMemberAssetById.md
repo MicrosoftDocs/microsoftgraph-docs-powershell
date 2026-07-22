@@ -68,16 +68,6 @@ This cmdlet has the following aliases,
 
 Invoke action enrollAssetsById
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -591,3 +581,4 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesdeploymentaudiencememberassetbyid)
+

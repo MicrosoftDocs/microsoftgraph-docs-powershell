@@ -349,3 +349,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [Invoke-MgAvailableDirectoryFederationConfigurationProviderType](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgavailabledirectoryfederationconfigurationprovidertype)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-1.0)
+

@@ -406,3 +406,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgReportTeamDeviceUsageUserDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusageuserdetail)
+

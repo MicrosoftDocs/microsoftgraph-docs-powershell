@@ -59,16 +59,6 @@ Create new navigation property to microsoftTunnelConfigurations for deviceManage
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -753,3 +743,4 @@ This property is going to be deprecated with the option of using the new propert
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelconfiguration)
+

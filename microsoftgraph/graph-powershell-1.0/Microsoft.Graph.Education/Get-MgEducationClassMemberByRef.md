@@ -437,3 +437,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [Get-MgEducationClassMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0)
+

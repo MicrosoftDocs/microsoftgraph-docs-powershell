@@ -414,3 +414,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Remove-MgApplicationByAppId](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationbyappid)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-1.0)
+

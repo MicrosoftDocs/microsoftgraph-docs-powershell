@@ -575,3 +575,4 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 - [Grant-MgSitePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/grant-mgsitepermission)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
+

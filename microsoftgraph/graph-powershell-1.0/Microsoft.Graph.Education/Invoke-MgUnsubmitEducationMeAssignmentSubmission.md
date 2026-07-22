@@ -395,3 +395,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Invoke-MgUnsubmitEducationMeAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunsubmiteducationmeassignmentsubmission)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationsubmission-unsubmit?view=graph-rest-1.0)
+

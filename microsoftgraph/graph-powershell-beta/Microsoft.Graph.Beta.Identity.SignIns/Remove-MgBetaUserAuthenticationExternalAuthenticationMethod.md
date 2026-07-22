@@ -55,16 +55,6 @@ This API doesn't support self-service operations.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthMethod-External.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -519,3 +509,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationexternalauthenticationmethod)
 - [](https://learn.microsoft.com/graph/api/authentication-delete-externalauthenticationmethods?view=graph-rest-beta)
+

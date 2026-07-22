@@ -375,3 +375,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgDeviceManagementManagedDeviceCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddevicecategory)
+

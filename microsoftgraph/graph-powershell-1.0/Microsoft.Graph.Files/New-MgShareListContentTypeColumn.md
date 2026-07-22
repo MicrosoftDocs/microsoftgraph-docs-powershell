@@ -1891,3 +1891,4 @@ For examples, see Examples of common formulas in lists.
 ## RELATED LINKS
 
 - [New-MgShareListContentTypeColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistcontenttypecolumn)
+

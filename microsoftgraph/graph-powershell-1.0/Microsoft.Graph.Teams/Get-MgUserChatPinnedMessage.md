@@ -663,3 +663,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserChatPinnedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatpinnedmessage)
+
+

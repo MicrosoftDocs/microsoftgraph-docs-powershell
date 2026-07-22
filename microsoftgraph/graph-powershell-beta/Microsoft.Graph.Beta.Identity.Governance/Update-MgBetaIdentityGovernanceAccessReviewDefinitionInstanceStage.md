@@ -93,8 +93,9 @@ To update an accessReviewStage, its status must be NotStarted, Initializing, or 
 | Application | AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -119,6 +120,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
+
 
 ## PARAMETERS
 

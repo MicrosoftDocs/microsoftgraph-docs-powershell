@@ -648,3 +648,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgGroupSiteListContentTypeColumnLink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistcontenttypecolumnlink)
+

@@ -497,3 +497,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Confirm-MgContractMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgcontractmemberobject)
+

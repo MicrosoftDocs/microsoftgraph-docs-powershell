@@ -522,3 +522,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [Get-MgVirtualEventTownhallByUserIdAndRole](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallbyuseridandrole)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventtownhall-getbyuseridandrole?view=graph-rest-1.0)
+

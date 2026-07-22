@@ -122,16 +122,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property journalLines in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Account
@@ -1189,3 +1179,4 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyjournalline)
+

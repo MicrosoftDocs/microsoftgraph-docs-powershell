@@ -472,3 +472,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgOrganizationBrandingSquareLogo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandingsquarelogo)
+

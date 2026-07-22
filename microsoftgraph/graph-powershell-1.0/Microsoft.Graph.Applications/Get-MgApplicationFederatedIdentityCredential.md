@@ -69,16 +69,16 @@ Read the properties and relationships of a federatedIdentityCredential object as
 | Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example: List federated identity credentials for an application
 
 ```powershell
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId
+Get-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId
 
 ```
-This example shows how to use the Get-MgApplicationFederatedIdentityCredential Cmdlet.
+This example will### example: list federated identity credentials for an application
 
 
 ## PARAMETERS

@@ -796,3 +796,4 @@ QUALITIES <IMicrosoftGraphRubricQuality[]>: The collection of qualities making u
 ## RELATED LINKS
 
 - [Update-MgEducationUserAssignmentRubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserassignmentrubric)
+

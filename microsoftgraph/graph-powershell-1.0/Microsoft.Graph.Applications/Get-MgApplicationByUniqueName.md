@@ -374,3 +374,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Get-MgApplicationByUniqueName](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyuniquename)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0)
+

@@ -72,16 +72,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property excludes in policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -743,3 +733,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyserviceprincipalcreationpolicyexclude)
+

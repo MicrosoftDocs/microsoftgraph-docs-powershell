@@ -710,3 +710,4 @@ Not nullable.
 
 - [Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationtemplateschemaexpression)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-1.0)
+

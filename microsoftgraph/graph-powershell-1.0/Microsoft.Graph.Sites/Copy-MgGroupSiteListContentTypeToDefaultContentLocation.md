@@ -705,3 +705,4 @@ For OneDrive, this property is not populated.
 
 - [Copy-MgGroupSiteListContentTypeToDefaultContentLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsitelistcontenttypetodefaultcontentlocation)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0)
+

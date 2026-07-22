@@ -616,3 +616,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgUserContactFolderChildFolderContactPhoto](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfoldercontactphoto)
+

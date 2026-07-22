@@ -420,3 +420,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamschedule)
+

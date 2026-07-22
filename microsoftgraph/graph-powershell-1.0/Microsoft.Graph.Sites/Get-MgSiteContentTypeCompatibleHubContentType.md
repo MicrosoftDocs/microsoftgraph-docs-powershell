@@ -531,3 +531,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [Get-MgSiteContentTypeCompatibleHubContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecompatiblehubcontenttype)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-1.0)
+

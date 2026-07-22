@@ -1476,3 +1476,4 @@ See below for more possible values.
 
 - [New-MgBookingBusinessAppointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-post-appointments?view=graph-rest-1.0)
+

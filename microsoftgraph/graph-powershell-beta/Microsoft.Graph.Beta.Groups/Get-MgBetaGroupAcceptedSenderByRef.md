@@ -51,16 +51,6 @@ Make sure you do not specify the same user or group in the accepted senders and 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -450,3 +440,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref)
 - [](https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-beta)
+

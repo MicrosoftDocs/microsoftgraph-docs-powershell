@@ -516,3 +516,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgBookingCurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingcurrency)
+

@@ -379,3 +379,4 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgPrintPrinterTaskTriggerDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintertasktriggerdefinition)
+

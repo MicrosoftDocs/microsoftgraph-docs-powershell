@@ -385,3 +385,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Remove-MgGroupCalendarPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-1.0)
+

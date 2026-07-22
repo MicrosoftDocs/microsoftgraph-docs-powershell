@@ -501,3 +501,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Confirm-MgApplicationMemberGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/confirm-mgapplicationmembergroup)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0)
+

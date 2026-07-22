@@ -555,3 +555,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 - [Get-MgUserContactDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactdelta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/contact-delta?view=graph-rest-1.0)
+

@@ -663,3 +663,4 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 - [Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgandsecuritydatasecurityandgovernancesensitivitylabelsublabel)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-1.0)
+

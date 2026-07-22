@@ -681,3 +681,4 @@ This is only available when a folder thumbnail is requested.
 ## RELATED LINKS
 
 - [Update-MgDriveRootThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootthumbnail)
+

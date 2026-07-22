@@ -58,16 +58,6 @@ This means that the reassigned status will be mapped to the returned status, and
 If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -404,3 +394,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationmeassignmentsubmission)
 - [](https://learn.microsoft.com/graph/api/educationsubmission-reassign?view=graph-rest-beta)
+

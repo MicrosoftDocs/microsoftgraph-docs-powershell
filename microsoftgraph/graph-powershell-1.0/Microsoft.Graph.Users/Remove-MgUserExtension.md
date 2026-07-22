@@ -431,3 +431,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserextension)
+

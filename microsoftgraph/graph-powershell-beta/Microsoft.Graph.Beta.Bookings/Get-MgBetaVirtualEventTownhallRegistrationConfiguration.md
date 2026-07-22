@@ -47,14 +47,17 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a virtualEventTownhallRegistrationConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Bookings
 
-### EXAMPLE 2
+Get-MgBetaVirtualEventTownhallRegistrationConfiguration -VirtualEventTownhallId $virtualEventTownhallId
 
-{{ Add code here }}
+```
+This example shows how to use the Get-MgBetaVirtualEventTownhallRegistrationConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

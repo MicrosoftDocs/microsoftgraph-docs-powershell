@@ -70,8 +70,9 @@ This cmdlet has the following aliases,
 Forward a chat message, a channel message, or a channel message reply to a chat.
 
 ## EXAMPLES
+### Example 1: Forward a reply message from a channel to a chat
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -90,6 +91,10 @@ body = @{
 }
 
 Invoke-MgBetaForwardTeamChannelMessageReplyToChat -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+
+```
+This example will forward a reply message from a channel to a chat
+
 
 ## PARAMETERS
 

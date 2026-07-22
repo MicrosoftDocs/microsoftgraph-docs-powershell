@@ -525,3 +525,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [Add-MgSiteContentTypeCopyFromContentTypeHub](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitecontenttypecopyfromcontenttypehub)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-1.0)
+

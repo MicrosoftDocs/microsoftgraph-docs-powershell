@@ -420,3 +420,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserChatInstalledAppTeamAppDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatinstalledappteamappdefinition)
+

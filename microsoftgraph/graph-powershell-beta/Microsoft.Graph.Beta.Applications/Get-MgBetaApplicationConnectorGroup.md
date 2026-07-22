@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 The connectorGroup the application is using with Microsoft Entra application proxy.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -388,3 +378,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationconnectorgroup)
+

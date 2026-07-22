@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to sensitivityLabels for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -619,3 +609,4 @@ False if the label is a parent with child labels.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityinformationprotectionsensitivitylabel)
+

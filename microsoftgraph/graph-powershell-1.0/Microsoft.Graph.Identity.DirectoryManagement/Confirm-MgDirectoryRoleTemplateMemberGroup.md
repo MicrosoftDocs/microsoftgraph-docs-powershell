@@ -506,3 +506,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [Confirm-MgDirectoryRoleTemplateMemberGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdirectoryroletemplatemembergroup)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0)
+

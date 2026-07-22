@@ -73,7 +73,6 @@ Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count 
 
 Import-Module Microsoft.Graph.Users
 
-# A UPN can also be used as -UserId.
 Get-MgUserOwnedObject -UserId $userId
 
 ```

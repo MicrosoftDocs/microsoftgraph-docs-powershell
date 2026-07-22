@@ -609,3 +609,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupDriveRootThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootthumbnail)
+
+

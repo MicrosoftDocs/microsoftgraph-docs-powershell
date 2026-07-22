@@ -775,3 +775,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgGroupTeamChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmember)
+

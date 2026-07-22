@@ -454,3 +454,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserContactFolderContactExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfoldercontactextension)
+

@@ -69,16 +69,6 @@ This cmdlet has the following aliases,
 
 Start a break in a specific timeCard.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -613,3 +603,4 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetagroupteamscheduletimecardbreak)
 - [](https://learn.microsoft.com/graph/api/timecard-startbreak?view=graph-rest-beta)
+

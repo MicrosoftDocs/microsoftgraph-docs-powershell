@@ -89,11 +89,7 @@ Update the properties of an activityBasedTimeoutPolicy object.
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	definition = @(
-	"definition-value"
-)
-displayName = "displayName-value"
-isOrganizationDefault = $true
+	displayName = "Idle timeout for all apps"
 }
 
 Update-MgPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId -BodyParameter $params

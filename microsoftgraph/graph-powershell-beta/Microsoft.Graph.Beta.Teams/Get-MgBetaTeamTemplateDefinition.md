@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Generic representation of a team template definition for a team with a specific structure and configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -393,3 +383,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtemplatedefinition)
+

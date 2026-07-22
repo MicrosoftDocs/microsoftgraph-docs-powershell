@@ -549,3 +549,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgUserContactFolderChildFolderContactExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfoldercontactextension)
+

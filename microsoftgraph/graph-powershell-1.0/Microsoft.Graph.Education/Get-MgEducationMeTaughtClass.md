@@ -544,3 +544,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgEducationMeTaughtClass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmetaughtclass)
+
+

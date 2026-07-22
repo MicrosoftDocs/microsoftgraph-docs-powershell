@@ -413,3 +413,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserContactFolderChildFolderContactPhoto](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercontactphoto)
+

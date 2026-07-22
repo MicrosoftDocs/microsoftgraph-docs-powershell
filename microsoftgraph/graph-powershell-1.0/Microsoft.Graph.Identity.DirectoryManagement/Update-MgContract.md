@@ -656,3 +656,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgContract](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontract)
+

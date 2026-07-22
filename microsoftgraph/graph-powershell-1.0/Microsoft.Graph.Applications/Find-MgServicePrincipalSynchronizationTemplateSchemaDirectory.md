@@ -411,3 +411,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Find-MgServicePrincipalSynchronizationTemplateSchemaDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgserviceprincipalsynchronizationtemplateschemadirectory)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-1.0)
+

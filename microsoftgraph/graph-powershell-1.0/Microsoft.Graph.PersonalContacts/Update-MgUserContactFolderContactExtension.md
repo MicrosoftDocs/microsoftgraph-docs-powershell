@@ -549,3 +549,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgUserContactFolderContactExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfoldercontactextension)
+

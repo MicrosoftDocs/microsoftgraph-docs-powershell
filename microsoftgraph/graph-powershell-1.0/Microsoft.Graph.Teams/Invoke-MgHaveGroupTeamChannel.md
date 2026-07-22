@@ -418,3 +418,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [Invoke-MgHaveGroupTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghavegroupteamchannel)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/channel-doesuserhaveaccess?view=graph-rest-1.0)
+

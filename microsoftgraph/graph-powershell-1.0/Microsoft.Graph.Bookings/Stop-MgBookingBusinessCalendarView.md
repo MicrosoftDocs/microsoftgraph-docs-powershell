@@ -537,3 +537,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [Stop-MgBookingBusinessCalendarView](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgbookingbusinesscalendarview)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/bookingappointment-cancel?view=graph-rest-1.0)
+

@@ -63,16 +63,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property attendanceReports for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -494,3 +484,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingattendancereport)
+

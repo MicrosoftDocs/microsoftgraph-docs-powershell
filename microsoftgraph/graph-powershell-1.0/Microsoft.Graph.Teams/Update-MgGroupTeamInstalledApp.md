@@ -564,3 +564,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [Update-MgGroupTeamInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteaminstalledapp)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-1.0)
+

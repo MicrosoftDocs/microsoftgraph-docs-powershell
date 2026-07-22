@@ -1937,3 +1937,4 @@ For examples, see Examples of common formulas in lists.
 ## RELATED LINKS
 
 - [New-MgGroupSiteListColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistcolumn)
+

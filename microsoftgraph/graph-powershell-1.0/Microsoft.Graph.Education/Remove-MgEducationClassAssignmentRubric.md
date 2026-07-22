@@ -437,3 +437,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Remove-MgEducationClassAssignmentRubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentrubric)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-delete-rubric?view=graph-rest-1.0)
+

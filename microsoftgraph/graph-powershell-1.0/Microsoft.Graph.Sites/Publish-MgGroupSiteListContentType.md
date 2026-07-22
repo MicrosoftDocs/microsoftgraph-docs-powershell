@@ -471,3 +471,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [Publish-MgGroupSiteListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mggroupsitelistcontenttype)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
+

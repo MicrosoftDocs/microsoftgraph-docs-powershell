@@ -1206,3 +1206,4 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgSiteTermStoreSetParentGroupSetTermChildRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetparentgroupsettermchildrelation)
+

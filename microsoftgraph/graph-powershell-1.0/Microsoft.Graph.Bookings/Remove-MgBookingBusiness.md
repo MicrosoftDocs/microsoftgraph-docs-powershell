@@ -405,3 +405,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [Remove-MgBookingBusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusiness)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-delete?view=graph-rest-1.0)
+

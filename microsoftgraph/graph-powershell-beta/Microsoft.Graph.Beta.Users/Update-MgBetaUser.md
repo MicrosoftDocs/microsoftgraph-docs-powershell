@@ -256,10 +256,13 @@ Update the properties of a user or agentUser object.
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All, Directory.ReadWrite.All, User-Mail.ReadWrite.All, User-PasswordProfile.ReadWrite.All, User-Phone.ReadWrite.All, User.EnableDisableAccount.All, User.ManageIdentities.All, User.ReadWrite.CrossCloud,  |
 
 ## EXAMPLES
+### Example 1: Update a user's display name
 
-### EXAMPLE 1
-
+```powershell
 Update-MgBetaUser -UserId '2a1fa0b8-87d6-4f39-be8d-68d0db617b02' -DisplayName 'Kristi Laar'
+```
+
+This example updates the specified user's display name.
 
 ## PARAMETERS
 

@@ -398,3 +398,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [Get-MgApplicationFederatedIdentityCredentialByName](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredentialbyname)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0)
+

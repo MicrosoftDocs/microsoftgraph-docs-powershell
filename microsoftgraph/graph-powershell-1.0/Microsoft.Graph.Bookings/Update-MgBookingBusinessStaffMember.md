@@ -516,3 +516,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [Update-MgBookingBusinessStaffMember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/bookingstaffmember-update?view=graph-rest-1.0)
+

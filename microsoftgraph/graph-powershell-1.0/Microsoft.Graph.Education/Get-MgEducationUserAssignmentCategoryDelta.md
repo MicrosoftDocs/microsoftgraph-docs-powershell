@@ -581,3 +581,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Get-MgEducationUserAssignmentCategoryDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategorydelta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationcategory-delta?view=graph-rest-1.0)
+

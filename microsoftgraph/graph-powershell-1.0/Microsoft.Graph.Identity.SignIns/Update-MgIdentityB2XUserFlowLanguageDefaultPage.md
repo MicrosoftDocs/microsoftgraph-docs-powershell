@@ -580,3 +580,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgIdentityB2XUserFlowLanguageDefaultPage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowlanguagedefaultpage)
+

@@ -664,3 +664,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgServicePrincipalEndpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalendpoint)
+

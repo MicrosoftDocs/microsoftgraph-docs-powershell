@@ -703,3 +703,4 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 - [Invoke-MgInviteDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveroot)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
+

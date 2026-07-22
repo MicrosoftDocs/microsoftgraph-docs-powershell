@@ -430,3 +430,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgDriveRootThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootthumbnail)
+

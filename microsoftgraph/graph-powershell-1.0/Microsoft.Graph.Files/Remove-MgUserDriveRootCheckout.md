@@ -418,3 +418,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [Remove-MgUserDriveRootCheckout](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootcheckout)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-discardcheckout?view=graph-rest-1.0)
+

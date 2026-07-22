@@ -65,7 +65,7 @@ List of attendance records of an attendance report.
 Read-only.
 
 ## EXAMPLES
-### Example 2: List attendance records of a webinar session's attendance report
+### Example 1: List attendance records of a webinar session's attendance report
 
 ```powershell
 

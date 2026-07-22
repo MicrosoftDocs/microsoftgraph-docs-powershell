@@ -628,3 +628,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgTeamPrimaryChannelSharedWithTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelsharedwithteam)
+
+

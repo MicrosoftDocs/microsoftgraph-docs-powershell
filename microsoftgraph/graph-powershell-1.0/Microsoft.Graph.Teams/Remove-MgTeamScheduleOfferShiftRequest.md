@@ -441,3 +441,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgTeamScheduleOfferShiftRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleoffershiftrequest)
+

@@ -437,3 +437,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [Get-MgGroupAcceptedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupacceptedsenderbyref)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-1.0)
+

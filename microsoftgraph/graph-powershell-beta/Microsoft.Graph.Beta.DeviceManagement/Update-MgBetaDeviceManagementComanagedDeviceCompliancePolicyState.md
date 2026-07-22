@@ -74,16 +74,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property deviceCompliancePolicyStates in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -875,3 +865,4 @@ SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState[]>: .
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicecompliancepolicystate)
+

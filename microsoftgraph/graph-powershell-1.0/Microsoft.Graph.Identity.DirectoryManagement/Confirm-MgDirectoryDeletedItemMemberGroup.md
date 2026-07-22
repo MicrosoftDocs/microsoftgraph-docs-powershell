@@ -506,3 +506,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [Confirm-MgDirectoryDeletedItemMemberGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdirectorydeleteditemmembergroup)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0)
+

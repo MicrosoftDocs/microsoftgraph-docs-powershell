@@ -668,3 +668,4 @@ When users select this answer variation from the search results, they're directe
 ## RELATED LINKS
 
 - [Update-MgSearchEntity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchentity)
+

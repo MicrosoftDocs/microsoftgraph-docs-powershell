@@ -491,3 +491,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [Get-MgGroupSiteOnenoteNotebookRecentNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebookrecentnotebook)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-1.0)
+

@@ -88,7 +88,7 @@ DriveItem resources inherit sharing permissions from their ancestors.
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Creating sharable links
 
 ```powershell
 
@@ -104,9 +104,9 @@ $params = @{
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgDriveItemLink Cmdlet.
+This example shows creating sharable links
 
-### Example 2: Code snippet
+### Example 2: Creating company sharable links
 
 ```powershell
 
@@ -120,9 +120,9 @@ $params = @{
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgDriveItemLink Cmdlet.
+This example shows creating company sharable links
 
-### Example 3: Code snippet
+### Example 3: Creating embeddable links
 
 ```powershell
 
@@ -135,7 +135,7 @@ $params = @{
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgDriveItemLink Cmdlet.
+This example shows creating embeddable links
 
 
 ## PARAMETERS

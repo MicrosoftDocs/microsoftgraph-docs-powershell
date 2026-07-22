@@ -846,3 +846,4 @@ Required.
 ## RELATED LINKS
 
 - [Update-MgGroupTeamScheduleShift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleshift)
+

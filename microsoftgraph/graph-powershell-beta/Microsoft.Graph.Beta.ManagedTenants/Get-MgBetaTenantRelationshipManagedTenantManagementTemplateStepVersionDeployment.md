@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 Get deployments from tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -600,3 +590,5 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversiondeployment)
+
+

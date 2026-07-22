@@ -574,3 +574,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgEducationUserSchool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserschool)
+
+

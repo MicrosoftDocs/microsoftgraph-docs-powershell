@@ -27492,3 +27492,4 @@ See the possible resource path values for each supported resource.
 ## RELATED LINKS
 
 - [New-MgGroupSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelist)
+

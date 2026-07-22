@@ -1275,3 +1275,4 @@ See below for more possible values.
 
 - [New-MgVirtualEventWebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinar)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventsroot-post-webinars?view=graph-rest-1.0)
+

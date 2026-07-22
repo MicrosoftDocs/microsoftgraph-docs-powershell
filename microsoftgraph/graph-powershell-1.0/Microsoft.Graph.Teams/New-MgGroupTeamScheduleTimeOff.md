@@ -733,3 +733,4 @@ Required.
 ## RELATED LINKS
 
 - [New-MgGroupTeamScheduleTimeOff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimeoff)
+

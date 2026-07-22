@@ -863,3 +863,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [Update-MgAppCatalogTeamAppDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinition)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-1.0)
+

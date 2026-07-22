@@ -426,3 +426,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [Remove-MgGroupRejectedSenderDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouprejectedsenderdirectoryobjectbyref)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-1.0)
+

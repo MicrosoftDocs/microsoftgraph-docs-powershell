@@ -829,3 +829,4 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 - [New-MgUserMailFolderChildFolderMessageForward](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessageforward)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-1.0)
+

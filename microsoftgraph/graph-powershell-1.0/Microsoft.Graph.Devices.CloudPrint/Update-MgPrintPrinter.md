@@ -11532,3 +11532,4 @@ Read-only.
 
 - [Update-MgPrintPrinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinter)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-1.0)
+

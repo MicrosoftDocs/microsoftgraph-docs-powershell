@@ -681,3 +681,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgAppCatalogTeamApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamapp)
+

@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 
 Add new entity to subscribedSkus
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccountId
@@ -645,3 +635,4 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetasubscribedsku)
+

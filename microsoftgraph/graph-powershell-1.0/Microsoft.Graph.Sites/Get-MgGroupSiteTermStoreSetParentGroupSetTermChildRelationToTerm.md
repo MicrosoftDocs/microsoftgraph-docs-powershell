@@ -605,3 +605,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupSiteTermStoreSetParentGroupSetTermChildRelationToTerm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupsettermchildrelationtoterm)
+

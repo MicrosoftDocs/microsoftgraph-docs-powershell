@@ -692,3 +692,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgServicePrincipalEndpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalendpoint)
+

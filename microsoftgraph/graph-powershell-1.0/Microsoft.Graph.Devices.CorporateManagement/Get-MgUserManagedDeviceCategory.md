@@ -400,3 +400,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserManagedDeviceCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddevicecategory)
+

@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Delete navigation property permissions for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Remove-MgBetaSitePermission -SiteId $siteId -PermissionId $permissionId
+
+```
+This example shows how to use the Remove-MgBetaSitePermission Cmdlet.
+
 
 ## PARAMETERS
 

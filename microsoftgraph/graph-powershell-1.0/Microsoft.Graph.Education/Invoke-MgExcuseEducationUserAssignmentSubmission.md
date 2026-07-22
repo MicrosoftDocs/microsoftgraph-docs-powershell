@@ -418,3 +418,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Invoke-MgExcuseEducationUserAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgexcuseeducationuserassignmentsubmission)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationsubmission-excuse?view=graph-rest-1.0)
+

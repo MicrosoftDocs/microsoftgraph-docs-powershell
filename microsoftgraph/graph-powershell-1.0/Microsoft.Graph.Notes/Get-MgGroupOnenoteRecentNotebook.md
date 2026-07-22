@@ -447,3 +447,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 - [Get-MgGroupOnenoteRecentNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenoterecentnotebook)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-1.0)
+

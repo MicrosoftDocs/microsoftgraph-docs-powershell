@@ -68,16 +68,6 @@ This cmdlet has the following aliases,
 
 Revoke access to a listItem or driveItem granted via a sharing link by removing the specified recipient from the link.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -625,3 +615,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/revoke-mgbetasitelistitempermissiongrant)
 - [](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
+

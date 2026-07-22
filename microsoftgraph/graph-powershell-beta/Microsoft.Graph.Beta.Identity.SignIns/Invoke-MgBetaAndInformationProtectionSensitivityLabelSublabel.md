@@ -71,16 +71,6 @@ This cmdlet has the following aliases,
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -693,3 +683,4 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaandinformationprotectionsensitivitylabelsublabel)
 - [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
+

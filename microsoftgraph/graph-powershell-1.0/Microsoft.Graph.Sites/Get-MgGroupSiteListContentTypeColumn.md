@@ -677,3 +677,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupSiteListContentTypeColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcontenttypecolumn)
+
+

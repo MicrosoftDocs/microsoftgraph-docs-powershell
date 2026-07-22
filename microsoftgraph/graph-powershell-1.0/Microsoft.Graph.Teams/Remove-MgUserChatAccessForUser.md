@@ -568,3 +568,4 @@ For example, in the access reviews decisions API, this property might record the
 
 - [Remove-MgUserChatAccessForUser](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchataccessforuser)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/chat-removeallaccessforuser?view=graph-rest-1.0)
+

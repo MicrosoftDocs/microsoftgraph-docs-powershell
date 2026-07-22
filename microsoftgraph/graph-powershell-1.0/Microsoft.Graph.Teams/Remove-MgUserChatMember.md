@@ -670,3 +670,4 @@ This property is settable only for members of a chat.
 
 - [Remove-MgUserChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmember)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
+

@@ -16828,3 +16828,4 @@ null if the subject isn't yet a user in the tenant.
 ## RELATED LINKS
 
 - [New-MgEntitlementManagementAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignment)
+
