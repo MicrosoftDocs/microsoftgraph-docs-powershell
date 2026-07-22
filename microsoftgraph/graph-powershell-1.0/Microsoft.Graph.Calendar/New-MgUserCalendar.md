@@ -1832,25 +1832,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgUserCalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendar)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

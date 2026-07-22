@@ -403,26 +403,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupSiteContentTypeCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecontenttypecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

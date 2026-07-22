@@ -395,26 +395,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserChatTabCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattabcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

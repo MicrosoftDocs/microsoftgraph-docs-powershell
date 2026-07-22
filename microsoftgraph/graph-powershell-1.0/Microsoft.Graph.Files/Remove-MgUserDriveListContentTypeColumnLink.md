@@ -473,26 +473,3 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserDriveListContentTypeColumnLink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistcontenttypecolumnlink)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

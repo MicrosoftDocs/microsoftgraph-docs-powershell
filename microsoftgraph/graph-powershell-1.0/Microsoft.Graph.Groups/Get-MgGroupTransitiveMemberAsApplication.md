@@ -595,26 +595,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupTransitiveMemberAsApplication](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberasapplication)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

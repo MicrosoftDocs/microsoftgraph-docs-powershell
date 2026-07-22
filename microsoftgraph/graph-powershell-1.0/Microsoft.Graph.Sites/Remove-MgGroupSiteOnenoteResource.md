@@ -470,26 +470,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgGroupSiteOnenoteResource](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenoteresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

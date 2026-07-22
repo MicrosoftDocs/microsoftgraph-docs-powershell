@@ -478,26 +478,3 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Confirm-MgDirectoryObjectMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/confirm-mgdirectoryobjectmemberobject)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

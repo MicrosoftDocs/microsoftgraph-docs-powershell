@@ -378,26 +378,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgPlaceAsBuildingMapLevelUnitCount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevelunitcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

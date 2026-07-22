@@ -486,26 +486,3 @@ This is the host or zone name to which the configuration applies.
 ## RELATED LINKS
 
 - [Update-MgIdentityRiskPrevention](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskprevention)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

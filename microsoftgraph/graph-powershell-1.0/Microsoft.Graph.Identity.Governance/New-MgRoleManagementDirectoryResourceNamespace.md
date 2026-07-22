@@ -432,26 +432,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgRoleManagementDirectoryResourceNamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryresourcenamespace)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

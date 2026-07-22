@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligence
@@ -789,7 +789,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Tags <String[]>]: Tags for this article, communicating keywords, or key concepts.
   [Title <String>]: The title of this article.
 
-BODYPARAMETER <IMicrosoftGraphSecurityThreatIntelligence>: threatIntelligence
+BODYPARAMETER `<IMicrosoftGraphSecurityThreatIntelligence>`: threatIntelligence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.

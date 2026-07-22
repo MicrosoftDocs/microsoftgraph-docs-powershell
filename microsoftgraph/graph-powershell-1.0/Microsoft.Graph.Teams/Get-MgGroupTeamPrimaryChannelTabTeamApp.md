@@ -400,26 +400,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupTeamPrimaryChannelTabTeamApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychanneltabteamapp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

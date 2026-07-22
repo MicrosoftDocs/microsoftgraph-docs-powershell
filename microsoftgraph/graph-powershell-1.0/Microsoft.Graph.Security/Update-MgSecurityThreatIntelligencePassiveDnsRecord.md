@@ -1259,26 +1259,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgSecurityThreatIntelligencePassiveDnsRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencepassivednsrecord)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

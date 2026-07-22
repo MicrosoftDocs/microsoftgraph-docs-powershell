@@ -421,26 +421,3 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgDownUserManagedDeviceShut](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgdownusermanageddeviceshut)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

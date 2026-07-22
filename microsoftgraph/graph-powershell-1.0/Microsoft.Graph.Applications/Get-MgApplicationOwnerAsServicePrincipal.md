@@ -601,26 +601,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgApplicationOwnerAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasserviceprincipal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

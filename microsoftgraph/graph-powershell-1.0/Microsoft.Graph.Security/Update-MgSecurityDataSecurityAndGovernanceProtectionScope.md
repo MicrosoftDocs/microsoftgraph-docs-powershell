@@ -356,26 +356,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Update-MgSecurityDataSecurityAndGovernanceProtectionScope](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritydatasecurityandgovernanceprotectionscope)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

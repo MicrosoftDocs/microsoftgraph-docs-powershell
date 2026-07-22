@@ -283,26 +283,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgPlaceCountAsSection](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecountassection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

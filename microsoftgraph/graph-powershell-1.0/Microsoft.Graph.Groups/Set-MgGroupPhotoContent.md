@@ -517,26 +517,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgGroupPhotoContent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupphotocontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

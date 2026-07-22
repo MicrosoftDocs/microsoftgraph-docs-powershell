@@ -718,26 +718,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgPrintShareJobTask](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejobtask)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

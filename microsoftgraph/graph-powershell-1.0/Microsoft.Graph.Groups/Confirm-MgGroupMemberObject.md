@@ -494,26 +494,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Confirm-MgGroupMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupmemberobject)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -411,26 +411,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserAuthenticationSoftwareOathMethodCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationsoftwareoathmethodcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

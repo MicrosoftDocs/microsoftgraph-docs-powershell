@@ -533,26 +533,3 @@ This is the host or zone name to which the configuration applies.
 ## RELATED LINKS
 
 - [New-MgIdentityRiskPreventionWebApplicationFirewallVerification](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityriskpreventionwebapplicationfirewallverification)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

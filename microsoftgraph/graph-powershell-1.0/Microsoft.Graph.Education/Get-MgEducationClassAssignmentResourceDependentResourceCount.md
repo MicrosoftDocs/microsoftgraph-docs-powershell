@@ -411,26 +411,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgEducationClassAssignmentResourceDependentResourceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentresourcedependentresourcecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

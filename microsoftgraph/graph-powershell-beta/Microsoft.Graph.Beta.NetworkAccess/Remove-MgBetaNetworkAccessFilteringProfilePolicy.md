@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofilepolicy
@@ -14,7 +14,7 @@ title: Remove-MgBetaNetworkAccessFilteringProfilePolicy
 ## SYNOPSIS
 
 Delete a filteringPolicyLink object.
-Use this operation to delete any derived type, including:\r\n- cloudFirewallPolicyLink\r\n- threatIntelligencePolicyLink\r\n- tlsInspectionPolicyLink
+Use this operation to delete any derived type, including:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a filteringPolicyLink object.
-Use this operation to delete any derived type, including:\r\n- cloudFirewallPolicyLink\r\n- threatIntelligencePolicyLink\r\n- tlsInspectionPolicyLink
+Use this operation to delete any derived type, including:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
 
 ## EXAMPLES
 
@@ -411,7 +411,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
+INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert

@@ -451,26 +451,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgGroupTeamPrimaryChannelFileFolderContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamprimarychannelfilefoldercontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

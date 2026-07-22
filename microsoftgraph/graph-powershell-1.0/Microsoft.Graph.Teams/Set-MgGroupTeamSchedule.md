@@ -1706,26 +1706,3 @@ Required.
 ## RELATED LINKS
 
 - [Set-MgGroupTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamschedule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

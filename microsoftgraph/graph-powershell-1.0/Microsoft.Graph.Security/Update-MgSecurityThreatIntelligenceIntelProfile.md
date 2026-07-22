@@ -881,26 +881,3 @@ TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 ## RELATED LINKS
 
 - [Update-MgSecurityThreatIntelligenceIntelProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligenceintelprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

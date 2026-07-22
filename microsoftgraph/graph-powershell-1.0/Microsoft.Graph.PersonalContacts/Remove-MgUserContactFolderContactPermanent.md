@@ -419,26 +419,3 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserContactFolderContactPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfoldercontactpermanent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

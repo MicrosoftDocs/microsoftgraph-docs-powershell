@@ -743,26 +743,3 @@ Supports $filter (eq, startsWith) and $orderby.
 ## RELATED LINKS
 
 - [New-MgReportAuthenticationMethodUserRegistrationDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

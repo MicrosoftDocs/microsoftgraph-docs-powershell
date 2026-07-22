@@ -471,26 +471,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgGroupSitePageAsSitePageCanvaLayout](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitepageassitepagecanvalayout)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

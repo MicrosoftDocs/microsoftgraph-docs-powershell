@@ -612,25 +612,3 @@ Valid values 0 to 8760
 ## RELATED LINKS
 
 - [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledactionforrule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

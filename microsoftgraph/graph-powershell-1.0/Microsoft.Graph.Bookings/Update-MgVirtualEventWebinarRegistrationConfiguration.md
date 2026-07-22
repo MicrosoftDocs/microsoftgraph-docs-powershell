@@ -645,26 +645,3 @@ The default value is false.
 ## RELATED LINKS
 
 - [Update-MgVirtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

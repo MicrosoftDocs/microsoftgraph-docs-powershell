@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabel
@@ -519,7 +519,7 @@ Read-only.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODYPARAMETER <IMicrosoftGraphSecurityLabelsRoot>: labelsRoot
+BODYPARAMETER `<IMicrosoftGraphSecurityLabelsRoot>`: labelsRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.

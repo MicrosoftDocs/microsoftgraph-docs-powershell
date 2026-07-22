@@ -539,26 +539,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgEducationUserAssignmentCategoryByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentcategorybyref)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

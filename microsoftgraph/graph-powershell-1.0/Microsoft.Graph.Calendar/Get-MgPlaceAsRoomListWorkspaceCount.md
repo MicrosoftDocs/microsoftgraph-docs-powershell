@@ -357,26 +357,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgPlaceAsRoomListWorkspaceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlistworkspacecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

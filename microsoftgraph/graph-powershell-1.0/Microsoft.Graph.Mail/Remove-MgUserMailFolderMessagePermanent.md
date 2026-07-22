@@ -422,26 +422,3 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserMailFolderMessagePermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessagepermanent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

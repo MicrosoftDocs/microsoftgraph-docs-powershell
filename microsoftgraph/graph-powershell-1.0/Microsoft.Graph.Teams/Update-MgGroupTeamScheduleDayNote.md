@@ -722,26 +722,3 @@ SHAREDDAYNOTE `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 - [Update-MgGroupTeamScheduleDayNote](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduledaynote)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

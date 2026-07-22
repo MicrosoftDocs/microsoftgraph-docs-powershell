@@ -708,26 +708,3 @@ This is only available when a folder thumbnail is requested.
 ## RELATED LINKS
 
 - [Update-MgGroupDriveRootThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootthumbnail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

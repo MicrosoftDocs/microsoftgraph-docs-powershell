@@ -1309,26 +1309,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgSiteTermStoreSetParentGroupSetTermChild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetparentgroupsettermchild)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

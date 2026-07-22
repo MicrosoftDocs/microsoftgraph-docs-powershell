@@ -401,26 +401,3 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserMailFolderPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolderpermanent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

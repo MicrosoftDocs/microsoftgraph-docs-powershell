@@ -426,26 +426,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepageassitepagecanvalayouthorizontalsectioncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

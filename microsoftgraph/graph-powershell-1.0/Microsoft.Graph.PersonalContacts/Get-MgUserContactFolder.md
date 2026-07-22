@@ -582,25 +582,3 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserContactFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

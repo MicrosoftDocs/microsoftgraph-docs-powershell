@@ -374,26 +374,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupTeamPrimaryChannelAllMemberCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelallmembercount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

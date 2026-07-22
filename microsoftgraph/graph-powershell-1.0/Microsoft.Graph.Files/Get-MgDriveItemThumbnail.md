@@ -633,25 +633,3 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgDriveItemThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemthumbnail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1156,26 +1156,3 @@ See below for more possible values.
 ## RELATED LINKS
 
 - [Update-MgVirtualEventWebinarRegistrationByEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationbyemail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

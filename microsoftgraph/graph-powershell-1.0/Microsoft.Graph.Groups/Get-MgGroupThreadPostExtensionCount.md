@@ -401,26 +401,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupThreadPostExtensionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostextensioncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

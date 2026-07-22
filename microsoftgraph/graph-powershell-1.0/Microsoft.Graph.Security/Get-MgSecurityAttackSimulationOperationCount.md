@@ -275,26 +275,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgSecurityAttackSimulationOperationCount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationoperationcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

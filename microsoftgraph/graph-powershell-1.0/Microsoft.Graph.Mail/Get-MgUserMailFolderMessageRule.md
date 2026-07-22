@@ -601,25 +601,3 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserMailFolderMessageRule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagerule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

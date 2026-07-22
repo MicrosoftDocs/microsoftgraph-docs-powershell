@@ -743,26 +743,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgGroupTeamOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

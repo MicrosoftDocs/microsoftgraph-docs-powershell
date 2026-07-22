@@ -425,26 +425,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgPreviewGroupSiteOnenoteSectionGroupSectionPage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewgroupsiteonenotesectiongroupsectionpage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

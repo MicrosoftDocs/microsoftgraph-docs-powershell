@@ -592,27 +592,3 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserContactExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactextension)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

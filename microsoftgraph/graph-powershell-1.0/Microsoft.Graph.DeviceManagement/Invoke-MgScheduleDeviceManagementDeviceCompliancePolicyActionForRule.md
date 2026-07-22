@@ -589,25 +589,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/invoke-mgscheduledevicemanagementdevicecompliancepolicyactionforrule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

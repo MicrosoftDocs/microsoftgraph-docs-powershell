@@ -819,26 +819,3 @@ Required.
 ## RELATED LINKS
 
 - [New-MgGroupTeamScheduleShift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleshift)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

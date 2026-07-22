@@ -470,26 +470,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgInformationProtectionThreatAssessmentRequestResult](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mginformationprotectionthreatassessmentrequestresult)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -470,26 +470,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgSiteContentTypeColumnLink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecontenttypecolumnlink)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

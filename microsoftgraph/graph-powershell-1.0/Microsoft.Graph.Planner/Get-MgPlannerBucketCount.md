@@ -283,26 +283,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgPlannerBucketCount](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbucketcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

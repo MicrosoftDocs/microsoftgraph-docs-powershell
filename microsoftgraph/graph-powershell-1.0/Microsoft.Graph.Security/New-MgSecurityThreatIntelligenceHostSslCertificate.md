@@ -1315,26 +1315,3 @@ Note: This is not the signature.
 ## RELATED LINKS
 
 - [New-MgSecurityThreatIntelligenceHostSslCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostsslcertificate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

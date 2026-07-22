@@ -1109,27 +1109,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupSiteTermStoreSetChild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetchild)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

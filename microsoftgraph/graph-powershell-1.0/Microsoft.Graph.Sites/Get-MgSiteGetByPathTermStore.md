@@ -600,26 +600,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSiteGetByPathTermStore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathtermstore)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

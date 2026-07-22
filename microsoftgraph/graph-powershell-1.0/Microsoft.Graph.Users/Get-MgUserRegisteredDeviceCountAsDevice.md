@@ -388,26 +388,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserRegisteredDeviceCountAsDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddevicecountasdevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

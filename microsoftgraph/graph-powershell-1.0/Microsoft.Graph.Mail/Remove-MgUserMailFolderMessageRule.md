@@ -449,25 +449,3 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserMailFolderMessageRule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessagerule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

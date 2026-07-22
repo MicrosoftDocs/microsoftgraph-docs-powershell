@@ -399,26 +399,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserTeamworkInstalledAppTeamAppDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledappteamappdefinition)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

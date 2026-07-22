@@ -1150,4 +1150,3 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityTriggerType](Update-MgSecurityTriggerType.md)
 
 ### [Update-MgSecurityTriggerTypeRetentionEventType](Update-MgSecurityTriggerTypeRetentionEventType.md)
-

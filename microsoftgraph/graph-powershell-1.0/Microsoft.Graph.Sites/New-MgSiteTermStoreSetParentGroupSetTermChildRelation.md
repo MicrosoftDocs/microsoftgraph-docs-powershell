@@ -1167,26 +1167,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgSiteTermStoreSetParentGroupSetTermChildRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetparentgroupsettermchildrelation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

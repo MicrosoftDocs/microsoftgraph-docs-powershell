@@ -1860,25 +1860,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgUserCalendarGroupCalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroupcalendar)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

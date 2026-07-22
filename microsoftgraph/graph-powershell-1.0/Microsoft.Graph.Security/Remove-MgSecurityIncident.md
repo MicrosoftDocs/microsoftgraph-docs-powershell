@@ -456,26 +456,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityincident)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

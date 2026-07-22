@@ -378,26 +378,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgTeamTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamtemplate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

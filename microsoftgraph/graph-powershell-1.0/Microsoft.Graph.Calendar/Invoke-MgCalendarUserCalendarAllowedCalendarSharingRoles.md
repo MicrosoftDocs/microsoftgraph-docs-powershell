@@ -503,26 +503,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendarusercalendarallowedcalendarsharingroles)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -384,26 +384,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserEventCalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventcalendar)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

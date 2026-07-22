@@ -606,25 +606,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgUserOutlookMasterCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseroutlookmastercategory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

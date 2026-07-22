@@ -631,26 +631,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepageassitepagecanvalayoutverticalsection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -390,26 +390,3 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgPlannerTaskBucketTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertaskbuckettaskboardformat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

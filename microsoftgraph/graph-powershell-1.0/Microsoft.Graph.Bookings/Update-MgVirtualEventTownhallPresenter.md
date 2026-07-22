@@ -641,26 +641,3 @@ PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPr
 ## RELATED LINKS
 
 - [Update-MgVirtualEventTownhallPresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventtownhallpresenter)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

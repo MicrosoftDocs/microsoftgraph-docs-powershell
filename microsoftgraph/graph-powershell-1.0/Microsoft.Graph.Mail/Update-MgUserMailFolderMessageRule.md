@@ -933,25 +933,3 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgUserMailFolderMessageRule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfoldermessagerule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

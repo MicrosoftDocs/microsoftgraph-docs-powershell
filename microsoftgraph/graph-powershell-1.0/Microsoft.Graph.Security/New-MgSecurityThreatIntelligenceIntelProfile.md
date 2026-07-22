@@ -646,26 +646,3 @@ TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 ## RELATED LINKS
 
 - [New-MgSecurityThreatIntelligenceIntelProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceintelprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

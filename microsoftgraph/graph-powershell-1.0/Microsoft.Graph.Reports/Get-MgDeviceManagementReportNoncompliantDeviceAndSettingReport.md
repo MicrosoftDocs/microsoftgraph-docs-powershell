@@ -630,25 +630,3 @@ BODYPARAMETER `<IPaths11Lc6EuDevicemanagementReportsMicrosoftGraphGetnoncomplian
 ## RELATED LINKS
 
 - [Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportnoncompliantdeviceandsettingreport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

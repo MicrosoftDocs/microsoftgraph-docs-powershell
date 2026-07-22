@@ -395,26 +395,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgServicePrincipalTransitiveMemberOfCount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltransitivememberofcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

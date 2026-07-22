@@ -396,26 +396,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgTeamPrimaryChannelMessageHostedContentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmessagehostedcontentcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

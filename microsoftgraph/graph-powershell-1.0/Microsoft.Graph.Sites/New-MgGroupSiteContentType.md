@@ -2311,26 +2311,3 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 ## RELATED LINKS
 
 - [New-MgGroupSiteContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

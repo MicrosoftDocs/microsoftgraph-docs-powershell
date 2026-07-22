@@ -1477,25 +1477,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgDeviceAppManagementAndroidManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementandroidmanagedappprotection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

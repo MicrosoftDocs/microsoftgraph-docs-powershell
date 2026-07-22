@@ -413,26 +413,3 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Stop-MgVirtualEventWebinarRegistration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualeventwebinarregistration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

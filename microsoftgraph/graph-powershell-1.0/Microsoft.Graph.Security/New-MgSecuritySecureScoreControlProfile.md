@@ -841,26 +841,3 @@ Required
 ## RELATED LINKS
 
 - [New-MgSecuritySecureScoreControlProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescorecontrolprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

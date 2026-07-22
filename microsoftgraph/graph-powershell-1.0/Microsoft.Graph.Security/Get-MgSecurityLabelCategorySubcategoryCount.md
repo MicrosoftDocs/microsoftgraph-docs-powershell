@@ -410,26 +410,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSecurityLabelCategorySubcategoryCount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcategorysubcategorycount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

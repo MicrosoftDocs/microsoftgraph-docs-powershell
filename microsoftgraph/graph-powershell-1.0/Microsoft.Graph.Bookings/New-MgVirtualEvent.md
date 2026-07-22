@@ -955,26 +955,3 @@ See below for more possible values.
 ## RELATED LINKS
 
 - [New-MgVirtualEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

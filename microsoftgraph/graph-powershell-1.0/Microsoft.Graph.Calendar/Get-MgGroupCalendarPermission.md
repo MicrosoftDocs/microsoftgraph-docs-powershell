@@ -570,27 +570,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupCalendarPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarpermission)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

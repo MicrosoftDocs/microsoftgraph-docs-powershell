@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainrootdomain
@@ -13,7 +13,7 @@ title: Get-MgBetaDomainRootDomain
 
 ## SYNOPSIS
 
-Get the root domain of a subdomain.\r\nThe API returns a single object which is the root domain of the specified subdomain.
+Get the root domain of a subdomain.\rThe API returns a single object which is the root domain of the specified subdomain.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the root domain of a subdomain.\r\nThe API returns a single object which is the root domain of the specified subdomain.
+Get the root domain of a subdomain.\rThe API returns a single object which is the root domain of the specified subdomain.
 
 ## EXAMPLES
 
@@ -341,7 +341,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet

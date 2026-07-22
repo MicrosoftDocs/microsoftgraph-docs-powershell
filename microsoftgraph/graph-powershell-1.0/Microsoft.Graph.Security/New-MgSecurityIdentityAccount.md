@@ -513,26 +513,3 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
 ## RELATED LINKS
 
 - [New-MgSecurityIdentityAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentityaccount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

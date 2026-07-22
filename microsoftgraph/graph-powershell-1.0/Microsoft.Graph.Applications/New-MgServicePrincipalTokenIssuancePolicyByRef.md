@@ -516,26 +516,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgServicePrincipalTokenIssuancePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipaltokenissuancepolicybyref)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -275,26 +275,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgReportPartnerBillingOperationCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperationcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -432,26 +432,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgEducationMeAssignmentCategoryByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcategorybyref)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

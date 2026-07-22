@@ -1424,26 +1424,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgGroupOnenoteNotebookSection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebooksection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

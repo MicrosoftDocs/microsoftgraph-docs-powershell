@@ -456,26 +456,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgSecurityAlertV2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityalertv2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

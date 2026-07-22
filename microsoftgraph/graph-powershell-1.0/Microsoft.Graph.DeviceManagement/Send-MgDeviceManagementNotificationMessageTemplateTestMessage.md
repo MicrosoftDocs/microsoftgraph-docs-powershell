@@ -420,25 +420,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Send-MgDeviceManagementNotificationMessageTemplateTestMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/send-mgdevicemanagementnotificationmessagetemplatetestmessage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

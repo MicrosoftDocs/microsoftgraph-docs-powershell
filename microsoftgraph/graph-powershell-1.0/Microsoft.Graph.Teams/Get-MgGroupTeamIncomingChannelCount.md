@@ -374,26 +374,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupTeamIncomingChannelCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamincomingchannelcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

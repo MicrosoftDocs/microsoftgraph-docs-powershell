@@ -547,26 +547,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgPlaceAsRoomCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomcheck)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

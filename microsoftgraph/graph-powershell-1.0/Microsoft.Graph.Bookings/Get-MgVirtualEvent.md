@@ -543,26 +543,3 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgVirtualEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

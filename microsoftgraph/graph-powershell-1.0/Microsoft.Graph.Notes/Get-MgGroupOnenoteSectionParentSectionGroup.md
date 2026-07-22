@@ -378,26 +378,3 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupOnenoteSectionParentSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectionparentsectiongroup)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

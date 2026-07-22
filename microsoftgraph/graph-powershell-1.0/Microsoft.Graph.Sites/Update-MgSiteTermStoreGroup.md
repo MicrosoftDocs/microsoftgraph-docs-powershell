@@ -1015,26 +1015,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgSiteTermStoreGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoregroup)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

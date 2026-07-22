@@ -616,26 +616,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgRiskyUser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

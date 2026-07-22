@@ -427,26 +427,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgEducationMeAssignmentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmeassignmentresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

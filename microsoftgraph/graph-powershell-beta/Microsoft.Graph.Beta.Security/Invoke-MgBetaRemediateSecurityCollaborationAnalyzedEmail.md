@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail
@@ -649,7 +649,7 @@ The possible values are: unknown, spam, malware, phish, none, unknownFutureValue
     [Url <String>]: The URL that is found in the email.
 This is full URL string, including query parameters.
 
-BODY <IPaths12L9AgpSecurityCollaborationAnalyzedemailsMicrosoftGraphSecurityRemediatePostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPaths12L9AgpSecurityCollaborationAnalyzedemailsMicrosoftGraphSecurityRemediatePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <String>]: remediationAction
   [AnalyzedEmails <IMicrosoftGraphSecurityAnalyzedEmail[]>]: 

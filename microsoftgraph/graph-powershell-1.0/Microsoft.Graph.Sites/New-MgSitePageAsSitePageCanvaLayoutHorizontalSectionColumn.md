@@ -636,26 +636,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepageassitepagecanvalayouthorizontalsectioncolumn)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

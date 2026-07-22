@@ -629,26 +629,3 @@ Refers to the user's Windows device that modified the object at the specified da
 ## RELATED LINKS
 
 - [New-MgUserSettingWindows](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingwindows)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

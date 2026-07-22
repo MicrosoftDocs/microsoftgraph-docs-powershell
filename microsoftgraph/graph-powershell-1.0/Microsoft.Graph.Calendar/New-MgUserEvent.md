@@ -3232,25 +3232,3 @@ See below for more possible values.
 ## RELATED LINKS
 
 - [New-MgUserEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

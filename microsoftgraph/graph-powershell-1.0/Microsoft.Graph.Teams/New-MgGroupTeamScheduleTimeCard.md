@@ -896,26 +896,3 @@ ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
 ## RELATED LINKS
 
 - [New-MgGroupTeamScheduleTimeCard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimecard)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

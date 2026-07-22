@@ -1108,26 +1108,3 @@ Some settings are inherited from the template.
 ## RELATED LINKS
 
 - [New-MgApplicationSynchronizationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjob)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

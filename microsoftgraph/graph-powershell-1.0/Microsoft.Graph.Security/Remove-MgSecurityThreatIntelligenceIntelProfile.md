@@ -456,26 +456,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgSecurityThreatIntelligenceIntelProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligenceintelprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

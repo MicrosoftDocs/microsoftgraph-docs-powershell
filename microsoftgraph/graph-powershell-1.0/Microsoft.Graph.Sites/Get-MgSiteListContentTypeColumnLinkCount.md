@@ -425,26 +425,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSiteListContentTypeColumnLinkCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecolumnlinkcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -406,26 +406,3 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupDriveItemThumbnailCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemthumbnailcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

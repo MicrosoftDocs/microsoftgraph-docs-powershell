@@ -374,26 +374,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupTeamTagCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtagcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

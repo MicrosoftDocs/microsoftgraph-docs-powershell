@@ -686,26 +686,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgGroupTeamPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteampermissiongrant)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

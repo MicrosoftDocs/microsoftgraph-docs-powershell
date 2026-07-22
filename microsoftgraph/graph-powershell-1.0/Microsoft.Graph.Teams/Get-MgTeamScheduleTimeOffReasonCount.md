@@ -382,26 +382,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgTeamScheduleTimeOffReasonCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoffreasoncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

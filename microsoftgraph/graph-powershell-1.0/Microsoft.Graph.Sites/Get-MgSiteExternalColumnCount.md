@@ -382,26 +382,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSiteExternalColumnCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteexternalcolumncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

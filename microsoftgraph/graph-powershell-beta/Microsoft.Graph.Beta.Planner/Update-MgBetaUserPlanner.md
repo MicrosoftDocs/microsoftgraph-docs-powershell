@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner
@@ -774,7 +774,7 @@ ALL <IMicrosoftGraphPlannerDelta[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODYPARAMETER <IMicrosoftGraphPlannerUser>: plannerUser
+BODYPARAMETER `<IMicrosoftGraphPlannerUser>`: plannerUser
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1456,7 +1456,7 @@ Nullable.
   [Title <String>]: Required.
 Title of the plan.
 
-INPUTOBJECT <IPlannerIdentity>: Identity Parameter
+INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta

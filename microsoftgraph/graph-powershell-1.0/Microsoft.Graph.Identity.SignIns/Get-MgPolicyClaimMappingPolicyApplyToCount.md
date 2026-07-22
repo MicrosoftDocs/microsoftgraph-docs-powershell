@@ -411,26 +411,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgPolicyClaimMappingPolicyApplyToCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyclaimmappingpolicyapplytocount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -3090,26 +3090,3 @@ See below for more possible values.
 ## RELATED LINKS
 
 - [New-MgUserDefaultCalendarEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserdefaultcalendarevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

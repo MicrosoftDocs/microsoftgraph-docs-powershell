@@ -405,26 +405,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgEducationReportReadingAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationreportreadingassignmentsubmission)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

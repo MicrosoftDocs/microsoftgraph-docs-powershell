@@ -426,26 +426,3 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgVirtualEventTownhallSession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventtownhallsession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

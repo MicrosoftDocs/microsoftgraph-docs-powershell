@@ -479,26 +479,3 @@ This property isn't in use and updating it isn't supported.
 ## RELATED LINKS
 
 - [New-MgDirectoryOnPremiseSynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryonpremisesynchronization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

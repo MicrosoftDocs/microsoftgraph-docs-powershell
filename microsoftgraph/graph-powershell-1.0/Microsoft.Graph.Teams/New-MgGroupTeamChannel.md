@@ -16654,26 +16654,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgGroupTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannel)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

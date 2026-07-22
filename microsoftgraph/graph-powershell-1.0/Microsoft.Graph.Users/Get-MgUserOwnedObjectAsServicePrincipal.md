@@ -601,26 +601,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserOwnedObjectAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectasserviceprincipal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

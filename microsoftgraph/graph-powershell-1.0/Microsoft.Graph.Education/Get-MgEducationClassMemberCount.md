@@ -367,26 +367,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgEducationClassMemberCount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmembercount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

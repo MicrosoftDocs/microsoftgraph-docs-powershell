@@ -1585,26 +1585,3 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 - [Update-MgGroupTeamPrimaryChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmessage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

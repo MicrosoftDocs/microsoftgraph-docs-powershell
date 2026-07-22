@@ -576,27 +576,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgServicePrincipalEndpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalendpoint)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

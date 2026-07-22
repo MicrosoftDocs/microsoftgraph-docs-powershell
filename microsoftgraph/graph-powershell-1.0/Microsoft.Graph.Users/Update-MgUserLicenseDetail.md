@@ -634,26 +634,3 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 - [Update-MgUserLicenseDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

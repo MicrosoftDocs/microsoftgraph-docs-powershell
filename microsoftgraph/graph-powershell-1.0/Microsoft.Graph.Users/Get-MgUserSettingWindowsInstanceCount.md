@@ -393,26 +393,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserSettingWindowsInstanceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingwindowsinstancecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

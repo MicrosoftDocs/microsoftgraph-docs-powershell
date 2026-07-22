@@ -547,26 +547,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgPlaceAsDeskCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasdeskcheck)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

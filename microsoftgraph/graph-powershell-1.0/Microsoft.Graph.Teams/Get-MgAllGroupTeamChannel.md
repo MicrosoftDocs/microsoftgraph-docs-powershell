@@ -586,27 +586,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgAllGroupTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallgroupteamchannel)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

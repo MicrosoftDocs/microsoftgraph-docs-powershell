@@ -453,26 +453,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserSettingWindowsInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersettingwindowsinstance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

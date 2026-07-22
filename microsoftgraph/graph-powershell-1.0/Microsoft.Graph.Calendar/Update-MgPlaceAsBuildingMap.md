@@ -661,26 +661,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgPlaceAsBuildingMap](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmap)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

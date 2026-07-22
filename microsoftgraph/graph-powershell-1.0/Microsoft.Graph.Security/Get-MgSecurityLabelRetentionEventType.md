@@ -412,26 +412,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSecurityLabelRetentionEventType](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentioneventtype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

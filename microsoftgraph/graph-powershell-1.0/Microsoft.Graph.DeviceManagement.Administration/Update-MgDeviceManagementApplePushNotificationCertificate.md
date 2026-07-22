@@ -558,25 +558,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgDeviceManagementApplePushNotificationCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementapplepushnotificationcertificate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

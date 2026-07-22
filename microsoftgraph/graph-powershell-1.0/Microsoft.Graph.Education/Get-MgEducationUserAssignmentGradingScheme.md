@@ -384,26 +384,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgEducationUserAssignmentGradingScheme](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentgradingscheme)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -415,26 +415,3 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgDeviceManagementEffectivePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementeffectivepermission)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

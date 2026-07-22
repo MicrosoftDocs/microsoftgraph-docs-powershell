@@ -478,26 +478,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgSecurityAttackSimulationTrainingLanguageDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulationtraininglanguagedetail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

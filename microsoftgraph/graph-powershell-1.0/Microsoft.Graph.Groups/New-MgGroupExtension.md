@@ -480,26 +480,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgGroupExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupextension)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

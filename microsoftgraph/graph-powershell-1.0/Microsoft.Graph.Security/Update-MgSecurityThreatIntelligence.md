@@ -4562,26 +4562,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgSecurityThreatIntelligence](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligence)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

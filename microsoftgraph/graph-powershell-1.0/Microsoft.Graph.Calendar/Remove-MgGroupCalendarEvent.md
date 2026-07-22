@@ -432,26 +432,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgGroupCalendarEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

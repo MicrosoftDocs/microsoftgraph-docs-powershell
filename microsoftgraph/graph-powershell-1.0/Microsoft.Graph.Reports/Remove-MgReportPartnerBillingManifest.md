@@ -407,26 +407,3 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgReportPartnerBillingManifest](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbillingmanifest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

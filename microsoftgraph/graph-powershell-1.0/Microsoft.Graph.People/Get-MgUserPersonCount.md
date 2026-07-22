@@ -349,26 +349,3 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserPersonCount](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserpersoncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

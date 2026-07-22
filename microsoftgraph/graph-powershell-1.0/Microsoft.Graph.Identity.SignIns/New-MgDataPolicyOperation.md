@@ -507,26 +507,3 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 - [New-MgDataPolicyOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

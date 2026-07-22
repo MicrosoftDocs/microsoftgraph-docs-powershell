@@ -1475,26 +1475,3 @@ See below for more possible values.
 ## RELATED LINKS
 
 - [New-MgBookingBusinessCalendarView](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscalendarview)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

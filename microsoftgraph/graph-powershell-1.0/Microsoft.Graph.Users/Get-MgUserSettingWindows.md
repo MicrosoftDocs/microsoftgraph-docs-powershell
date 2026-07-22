@@ -584,26 +584,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserSettingWindows](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingwindows)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

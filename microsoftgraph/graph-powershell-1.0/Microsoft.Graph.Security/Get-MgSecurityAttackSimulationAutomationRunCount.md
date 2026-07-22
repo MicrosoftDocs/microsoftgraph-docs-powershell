@@ -418,26 +418,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSecurityAttackSimulationAutomationRunCount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomationruncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

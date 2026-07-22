@@ -426,26 +426,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgEducationUserAssignmentRubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentrubric)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

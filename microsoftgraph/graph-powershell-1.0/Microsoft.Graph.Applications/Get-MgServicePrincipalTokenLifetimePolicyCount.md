@@ -372,26 +372,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgServicePrincipalTokenLifetimePolicyCount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenlifetimepolicycount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

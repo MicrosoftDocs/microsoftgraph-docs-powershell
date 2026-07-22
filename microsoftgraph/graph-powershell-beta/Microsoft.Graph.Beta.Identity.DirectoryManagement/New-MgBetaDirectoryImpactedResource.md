@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource
@@ -670,7 +670,7 @@ ADDITIONALDETAILS <IMicrosoftGraphKeyValue[]>: Additional information unique to 
   [Key <String>]: Key.
   [Value <String>]: Value.
 
-BODYPARAMETER <IMicrosoftGraphImpactedResource>: impactedResource
+BODYPARAMETER `<IMicrosoftGraphImpactedResource>`: impactedResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.

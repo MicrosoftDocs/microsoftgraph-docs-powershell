@@ -542,26 +542,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgEducationClassAssignmentCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentcategory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

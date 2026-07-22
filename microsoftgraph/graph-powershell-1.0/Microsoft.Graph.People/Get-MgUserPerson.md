@@ -571,25 +571,3 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserPerson](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserperson)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

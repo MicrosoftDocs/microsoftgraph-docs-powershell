@@ -624,27 +624,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupSitePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepermission)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

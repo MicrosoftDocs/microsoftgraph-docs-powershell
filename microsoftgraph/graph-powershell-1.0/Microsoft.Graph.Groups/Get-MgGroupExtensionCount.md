@@ -358,26 +358,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupExtensionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupextensioncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

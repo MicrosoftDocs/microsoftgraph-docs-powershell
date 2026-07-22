@@ -410,26 +410,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgApplicationSynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationsynchronization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

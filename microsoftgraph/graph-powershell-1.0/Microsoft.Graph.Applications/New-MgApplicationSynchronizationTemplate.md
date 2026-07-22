@@ -981,26 +981,3 @@ Must match one of the directory definitions in synchronizationSchema.
 ## RELATED LINKS
 
 - [New-MgApplicationSynchronizationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationtemplate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

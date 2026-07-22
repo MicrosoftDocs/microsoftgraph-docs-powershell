@@ -450,26 +450,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupSiteItemLastModifiedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteitemlastmodifiedbyuser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

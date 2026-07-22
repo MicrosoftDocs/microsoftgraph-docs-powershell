@@ -410,26 +410,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSecurityIdentitySensorHealthIssueCount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensorhealthissuecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

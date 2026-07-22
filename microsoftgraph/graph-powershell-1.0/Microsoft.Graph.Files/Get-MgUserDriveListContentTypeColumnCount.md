@@ -406,26 +406,3 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserDriveListContentTypeColumnCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcontenttypecolumncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

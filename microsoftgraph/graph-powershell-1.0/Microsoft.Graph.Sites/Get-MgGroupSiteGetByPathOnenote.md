@@ -427,26 +427,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupSiteGetByPathOnenote](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathonenote)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

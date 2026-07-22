@@ -422,25 +422,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgDirectoryFederationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryfederationconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -438,26 +438,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserChatMessageReplyHostedContentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmessagereplyhostedcontentcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

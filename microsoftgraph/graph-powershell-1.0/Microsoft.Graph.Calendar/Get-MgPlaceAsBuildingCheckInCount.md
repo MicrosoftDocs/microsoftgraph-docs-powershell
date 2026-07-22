@@ -357,26 +357,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgPlaceAsBuildingCheckInCount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingcheckincount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

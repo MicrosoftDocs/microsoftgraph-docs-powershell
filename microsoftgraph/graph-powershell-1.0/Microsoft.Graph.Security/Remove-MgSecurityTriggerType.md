@@ -320,26 +320,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Remove-MgSecurityTriggerType](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritytriggertype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

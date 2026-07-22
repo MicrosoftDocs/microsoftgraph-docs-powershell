@@ -444,25 +444,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgDeviceManagementDeviceCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecategory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

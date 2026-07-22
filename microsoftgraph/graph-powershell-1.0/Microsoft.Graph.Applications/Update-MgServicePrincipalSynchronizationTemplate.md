@@ -1010,26 +1010,3 @@ Must match one of the directory definitions in synchronizationSchema.
 ## RELATED LINKS
 
 - [Update-MgServicePrincipalSynchronizationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationtemplate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

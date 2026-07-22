@@ -781,26 +781,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgEducationReportReflectCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationreportreflectcheck)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1404,25 +1404,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgDeviceAppManagementiOSManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -783,26 +783,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgServicePrincipalAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalapproleassignment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

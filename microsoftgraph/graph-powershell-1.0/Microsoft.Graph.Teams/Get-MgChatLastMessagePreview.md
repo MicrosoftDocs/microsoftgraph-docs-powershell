@@ -380,26 +380,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgChatLastMessagePreview](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatlastmessagepreview)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

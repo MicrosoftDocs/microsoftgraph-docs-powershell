@@ -408,26 +408,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserCalendarPermissionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarpermissioncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -372,26 +372,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserCreatedObjectCount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

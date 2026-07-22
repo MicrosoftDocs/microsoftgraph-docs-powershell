@@ -601,26 +601,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgPlaceAsRoomListRoomCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasroomlistroomcheck)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

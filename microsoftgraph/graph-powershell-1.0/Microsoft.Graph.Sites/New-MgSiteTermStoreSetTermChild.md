@@ -1267,26 +1267,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgSiteTermStoreSetTermChild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresettermchild)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

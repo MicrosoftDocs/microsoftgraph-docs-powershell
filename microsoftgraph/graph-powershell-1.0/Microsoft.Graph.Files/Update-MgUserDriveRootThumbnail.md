@@ -708,26 +708,3 @@ This is only available when a folder thumbnail is requested.
 ## RELATED LINKS
 
 - [Update-MgUserDriveRootThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriverootthumbnail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

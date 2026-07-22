@@ -420,26 +420,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgTeamPrimaryChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychannel)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

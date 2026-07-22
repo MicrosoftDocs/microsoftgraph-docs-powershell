@@ -446,26 +446,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgPlaceAsRoomListRoomCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasroomlistroomcheck)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

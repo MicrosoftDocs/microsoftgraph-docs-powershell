@@ -574,26 +574,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgPlaceAsBuildingCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingcheck)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

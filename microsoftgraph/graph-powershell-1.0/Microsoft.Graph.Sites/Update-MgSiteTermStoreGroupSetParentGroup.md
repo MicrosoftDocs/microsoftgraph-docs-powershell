@@ -1055,26 +1055,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgSiteTermStoreGroupSetParentGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoregroupsetparentgroup)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

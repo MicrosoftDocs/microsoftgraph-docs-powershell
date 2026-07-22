@@ -697,26 +697,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgSecurityLabelCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelcategory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

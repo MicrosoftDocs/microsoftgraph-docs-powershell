@@ -768,26 +768,3 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgVirtualEventSessionAttendanceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventsessionattendancereport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1019,25 +1019,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgUserContactFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

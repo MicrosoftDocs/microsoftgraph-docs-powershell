@@ -1177,26 +1177,3 @@ It's a free-format string value, for example, 'United States'.
 ## RELATED LINKS
 
 - [New-MgSecurityThreatIntelligenceSslCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencesslcertificate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

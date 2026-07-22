@@ -408,26 +408,3 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgReportTeamActivityDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydetail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -620,25 +620,3 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserMailFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

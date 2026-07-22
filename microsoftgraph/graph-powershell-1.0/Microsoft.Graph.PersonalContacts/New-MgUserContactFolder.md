@@ -990,25 +990,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgUserContactFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

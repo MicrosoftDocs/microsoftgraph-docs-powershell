@@ -387,26 +387,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgServicePrincipalOwnerCountAsUser](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownercountasuser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

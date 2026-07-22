@@ -425,26 +425,3 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgVirtualEventSession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventsession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

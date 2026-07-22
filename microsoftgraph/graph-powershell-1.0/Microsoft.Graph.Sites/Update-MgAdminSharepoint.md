@@ -475,26 +475,3 @@ For a list of possible values, see SPRegionalSettings.TimeZones property.
 ## RELATED LINKS
 
 - [Update-MgAdminSharepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepoint)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

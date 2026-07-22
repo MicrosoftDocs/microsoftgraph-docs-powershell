@@ -604,26 +604,3 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgDriveContentTypeBaseType](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivecontenttypebasetype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

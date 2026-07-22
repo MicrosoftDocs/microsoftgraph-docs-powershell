@@ -1472,26 +1472,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgGroupOnenoteNotebookSectionGroupSection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotenotebooksectiongroupsection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

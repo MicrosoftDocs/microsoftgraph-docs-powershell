@@ -577,26 +577,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserCreatedObjectAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectasserviceprincipal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

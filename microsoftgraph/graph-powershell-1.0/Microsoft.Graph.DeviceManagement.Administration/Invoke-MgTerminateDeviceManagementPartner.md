@@ -395,26 +395,3 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgTerminateDeviceManagementPartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgterminatedevicemanagementpartner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

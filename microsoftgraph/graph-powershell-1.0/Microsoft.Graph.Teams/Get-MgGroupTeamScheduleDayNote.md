@@ -586,26 +586,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupTeamScheduleDayNote](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduledaynote)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

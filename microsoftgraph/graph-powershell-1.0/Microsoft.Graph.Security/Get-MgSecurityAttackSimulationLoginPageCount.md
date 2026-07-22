@@ -283,26 +283,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgSecurityAttackSimulationLoginPageCount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpagecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

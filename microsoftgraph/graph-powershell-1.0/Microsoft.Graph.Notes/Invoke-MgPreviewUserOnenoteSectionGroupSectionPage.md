@@ -373,26 +373,3 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgPreviewUserOnenoteSectionGroupSectionPage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/invoke-mgpreviewuseronenotesectiongroupsectionpage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

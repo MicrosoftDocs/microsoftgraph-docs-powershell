@@ -602,26 +602,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgEducationMeAssignmentResourceDependentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentresourcedependentresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

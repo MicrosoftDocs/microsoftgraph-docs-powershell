@@ -384,4 +384,3 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaWindowsUpdatesUpdatableAsset](Update-MgBetaWindowsUpdatesUpdatableAsset.md)
 
 ### [Update-MgBetaWindowsUpdatesUpdatePolicy](Update-MgBetaWindowsUpdatesUpdatePolicy.md)
-

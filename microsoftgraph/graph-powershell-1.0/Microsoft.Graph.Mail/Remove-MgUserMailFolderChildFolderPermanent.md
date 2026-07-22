@@ -414,26 +414,3 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserMailFolderChildFolderPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolderchildfolderpermanent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -370,26 +370,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsight)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

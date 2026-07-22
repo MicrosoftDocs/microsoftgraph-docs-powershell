@@ -425,26 +425,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgGroupPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouppermissiongrant)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

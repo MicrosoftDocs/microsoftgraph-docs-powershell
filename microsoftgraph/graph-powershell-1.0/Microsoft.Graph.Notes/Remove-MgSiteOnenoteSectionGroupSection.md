@@ -440,26 +440,3 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgSiteOnenoteSectionGroupSection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mgsiteonenotesectiongroupsection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

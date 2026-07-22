@@ -407,26 +407,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSiteListCreatedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcreatedbyuser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

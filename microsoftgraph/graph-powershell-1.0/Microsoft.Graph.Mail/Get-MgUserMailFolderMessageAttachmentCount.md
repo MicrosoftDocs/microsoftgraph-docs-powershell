@@ -398,26 +398,3 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserMailFolderMessageAttachmentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageattachmentcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

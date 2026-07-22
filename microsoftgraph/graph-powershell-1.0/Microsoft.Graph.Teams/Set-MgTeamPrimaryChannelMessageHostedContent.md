@@ -518,26 +518,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgTeamPrimaryChannelMessageHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamprimarychannelmessagehostedcontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -444,26 +444,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Invoke-MgCalendarGroupCalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendargroupcalendar)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

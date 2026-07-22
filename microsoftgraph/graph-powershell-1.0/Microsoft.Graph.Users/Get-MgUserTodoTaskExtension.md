@@ -638,26 +638,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserTodoTaskExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskextension)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

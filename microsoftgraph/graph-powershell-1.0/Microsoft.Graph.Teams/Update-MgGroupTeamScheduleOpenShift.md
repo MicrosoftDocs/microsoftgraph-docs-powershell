@@ -817,26 +817,3 @@ Required.
 ## RELATED LINKS
 
 - [Update-MgGroupTeamScheduleOpenShift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleopenshift)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -639,26 +639,3 @@ PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPr
 ## RELATED LINKS
 
 - [Update-MgVirtualEventPresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventpresenter)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

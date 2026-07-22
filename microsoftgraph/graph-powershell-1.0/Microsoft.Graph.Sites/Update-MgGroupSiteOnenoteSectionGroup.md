@@ -1605,26 +1605,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgGroupSiteOnenoteSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotesectiongroup)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

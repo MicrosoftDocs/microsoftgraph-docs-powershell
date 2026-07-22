@@ -382,26 +382,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserTeamworkAssociatedTeamCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkassociatedteamcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

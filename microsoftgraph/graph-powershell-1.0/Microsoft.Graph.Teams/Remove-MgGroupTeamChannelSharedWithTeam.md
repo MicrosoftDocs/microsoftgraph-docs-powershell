@@ -463,26 +463,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgGroupTeamChannelSharedWithTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelsharedwithteam)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

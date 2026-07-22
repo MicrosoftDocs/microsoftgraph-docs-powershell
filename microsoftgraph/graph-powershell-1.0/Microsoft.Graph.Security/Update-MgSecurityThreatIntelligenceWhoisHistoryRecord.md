@@ -1754,26 +1754,3 @@ No format is guaranteed.
 ## RELATED LINKS
 
 - [Update-MgSecurityThreatIntelligenceWhoisHistoryRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencewhoishistoryrecord)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

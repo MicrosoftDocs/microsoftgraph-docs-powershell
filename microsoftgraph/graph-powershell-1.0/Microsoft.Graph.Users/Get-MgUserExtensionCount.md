@@ -364,26 +364,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserExtensionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserextensioncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -369,26 +369,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgEducationClassGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroup)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

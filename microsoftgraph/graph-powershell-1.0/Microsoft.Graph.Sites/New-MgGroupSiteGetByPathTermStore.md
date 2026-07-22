@@ -828,26 +828,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgGroupSiteGetByPathTermStore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathtermstore)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -501,26 +501,3 @@ Location value is specific for concretetype of the  policyLocation - policyLocat
 ## RELATED LINKS
 
 - [Invoke-MgComputeSecurityDataSecurityAndGovernanceProtectionScope](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgcomputesecuritydatasecurityandgovernanceprotectionscope)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

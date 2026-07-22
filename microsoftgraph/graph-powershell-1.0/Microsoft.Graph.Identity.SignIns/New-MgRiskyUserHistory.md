@@ -912,26 +912,3 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgRiskyUserHistory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuserhistory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

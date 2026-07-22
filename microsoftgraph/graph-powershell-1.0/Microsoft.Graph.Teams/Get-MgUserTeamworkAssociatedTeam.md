@@ -642,25 +642,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserTeamworkAssociatedTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkassociatedteam)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

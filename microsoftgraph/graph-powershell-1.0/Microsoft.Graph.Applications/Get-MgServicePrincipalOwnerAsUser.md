@@ -600,26 +600,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgServicePrincipalOwnerAsUser](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerasuser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

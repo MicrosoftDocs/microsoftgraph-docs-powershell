@@ -1335,25 +1335,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgUserMailFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

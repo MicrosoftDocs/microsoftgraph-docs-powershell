@@ -551,26 +551,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSiteTermStoreSetTermChildRelationFromTerm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresettermchildrelationfromterm)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

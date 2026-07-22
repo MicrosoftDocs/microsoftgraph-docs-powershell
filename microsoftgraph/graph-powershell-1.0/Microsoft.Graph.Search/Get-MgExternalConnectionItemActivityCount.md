@@ -370,26 +370,3 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgExternalConnectionItemActivityCount](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivitycount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -395,26 +395,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgApplicationOwnerCount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownercount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

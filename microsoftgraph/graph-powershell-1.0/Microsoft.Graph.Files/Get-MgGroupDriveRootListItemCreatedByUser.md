@@ -389,26 +389,3 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupDriveRootListItemCreatedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemcreatedbyuser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

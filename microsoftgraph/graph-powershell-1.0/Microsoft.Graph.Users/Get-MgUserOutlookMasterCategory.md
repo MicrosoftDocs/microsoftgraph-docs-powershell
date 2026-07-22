@@ -599,25 +599,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserOutlookMasterCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

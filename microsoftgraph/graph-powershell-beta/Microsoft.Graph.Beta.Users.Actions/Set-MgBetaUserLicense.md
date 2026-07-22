@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserlicense
@@ -598,7 +598,7 @@ IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus
   [SkuId <String>]: The unique identifier for the SKU.
 Corresponds to the skuId from subscribedSkus or companySubscription.
 
-BODYPARAMETER <IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AddLicenses <IMicrosoftGraphAssignedLicense[]>]: 
     [DisabledPlans <String[]>]: A collection of the unique identifiers for plans that have been disabled.
@@ -607,7 +607,7 @@ IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus
 Corresponds to the skuId from subscribedSkus or companySubscription.
   [RemoveLicenses <String[]>]: 
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
 

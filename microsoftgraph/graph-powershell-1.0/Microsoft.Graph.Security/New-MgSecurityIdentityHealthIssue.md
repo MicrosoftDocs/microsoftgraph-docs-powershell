@@ -676,26 +676,3 @@ These commands run in sequence for the single recommended fix.
 ## RELATED LINKS
 
 - [New-MgSecurityIdentityHealthIssue](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentityhealthissue)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

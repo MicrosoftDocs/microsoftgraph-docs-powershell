@@ -603,27 +603,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserEventExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventextension)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

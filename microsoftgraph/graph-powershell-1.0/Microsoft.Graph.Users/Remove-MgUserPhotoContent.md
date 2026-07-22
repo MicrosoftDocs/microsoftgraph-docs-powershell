@@ -473,26 +473,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserPhotoContent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserphotocontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

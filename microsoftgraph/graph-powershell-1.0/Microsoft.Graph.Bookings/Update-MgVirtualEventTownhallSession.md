@@ -1770,26 +1770,3 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 - [Update-MgVirtualEventTownhallSession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventtownhallsession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

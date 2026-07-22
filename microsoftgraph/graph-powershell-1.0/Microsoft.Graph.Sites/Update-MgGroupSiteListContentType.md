@@ -2366,26 +2366,3 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 ## RELATED LINKS
 
 - [Update-MgGroupSiteListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistcontenttype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

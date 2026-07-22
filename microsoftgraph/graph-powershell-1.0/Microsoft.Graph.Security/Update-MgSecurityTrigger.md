@@ -505,26 +505,3 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgSecurityTrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytrigger)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

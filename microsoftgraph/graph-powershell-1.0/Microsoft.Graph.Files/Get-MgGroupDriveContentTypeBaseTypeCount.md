@@ -406,26 +406,3 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupDriveContentTypeBaseTypeCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivecontenttypebasetypecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

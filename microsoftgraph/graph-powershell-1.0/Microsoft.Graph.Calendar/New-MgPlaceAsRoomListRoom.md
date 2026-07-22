@@ -1137,26 +1137,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgPlaceAsRoomListRoom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistroom)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -437,26 +437,3 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgExternalConnectionItemActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitemactivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

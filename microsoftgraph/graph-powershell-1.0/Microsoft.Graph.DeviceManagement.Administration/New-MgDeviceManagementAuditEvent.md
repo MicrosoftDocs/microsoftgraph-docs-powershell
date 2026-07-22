@@ -716,25 +716,3 @@ RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
 ## RELATED LINKS
 
 - [New-MgDeviceManagementAuditEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementauditevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

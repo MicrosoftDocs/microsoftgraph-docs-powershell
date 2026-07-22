@@ -600,26 +600,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserOwnedDeviceAsDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddeviceasdevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -624,26 +624,3 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSecurityIdentitySensorHealthIssue](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensorhealthissue)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

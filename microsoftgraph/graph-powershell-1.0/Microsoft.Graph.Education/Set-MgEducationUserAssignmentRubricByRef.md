@@ -567,26 +567,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgEducationUserAssignmentRubricByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationuserassignmentrubricbyref)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

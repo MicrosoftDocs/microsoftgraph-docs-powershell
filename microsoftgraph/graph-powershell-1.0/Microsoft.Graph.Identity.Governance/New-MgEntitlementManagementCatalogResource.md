@@ -1111,26 +1111,3 @@ Supports $expand.
 ## RELATED LINKS
 
 - [New-MgEntitlementManagementCatalogResource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

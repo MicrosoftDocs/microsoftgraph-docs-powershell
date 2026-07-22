@@ -365,26 +365,3 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserContactExtensionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactextensioncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

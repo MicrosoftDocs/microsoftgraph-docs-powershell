@@ -606,26 +606,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgExternalConnectionItemActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitemactivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

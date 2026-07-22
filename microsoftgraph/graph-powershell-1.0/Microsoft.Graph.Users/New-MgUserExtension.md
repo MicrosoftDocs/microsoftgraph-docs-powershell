@@ -485,26 +485,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgUserExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserextension)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

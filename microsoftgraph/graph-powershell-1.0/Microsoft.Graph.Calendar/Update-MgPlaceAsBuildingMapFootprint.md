@@ -533,26 +533,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgPlaceAsBuildingMapFootprint](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmapfootprint)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -416,25 +416,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgDeviceAppManagementMobileAppCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

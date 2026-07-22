@@ -629,26 +629,3 @@ Required
 ## RELATED LINKS
 
 - [New-MgSecuritySecureScore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

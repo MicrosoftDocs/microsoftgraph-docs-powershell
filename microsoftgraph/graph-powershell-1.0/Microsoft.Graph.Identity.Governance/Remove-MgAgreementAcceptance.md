@@ -474,26 +474,3 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgAgreementAcceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgagreementacceptance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

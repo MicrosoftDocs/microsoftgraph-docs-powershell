@@ -568,26 +568,3 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 - [Invoke-MgClockGroupTeamScheduleTimeCardOut](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockgroupteamscheduletimecardout)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -572,27 +572,3 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgEducationUserRubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserrubric)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

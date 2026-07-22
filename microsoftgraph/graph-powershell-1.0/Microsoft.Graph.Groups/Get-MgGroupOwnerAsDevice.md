@@ -594,26 +594,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupOwnerAsDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasdevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

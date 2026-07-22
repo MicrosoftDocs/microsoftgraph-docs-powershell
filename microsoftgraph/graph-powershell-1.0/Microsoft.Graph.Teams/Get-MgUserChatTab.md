@@ -616,27 +616,3 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserChatTab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattab)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

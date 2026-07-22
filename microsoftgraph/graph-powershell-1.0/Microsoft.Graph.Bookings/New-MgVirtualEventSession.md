@@ -1740,26 +1740,3 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 - [New-MgVirtualEventSession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventsession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

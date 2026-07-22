@@ -465,26 +465,3 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgGroupPhotoContent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupphotocontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -387,26 +387,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserDirectReportCountAsUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserdirectreportcountasuser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

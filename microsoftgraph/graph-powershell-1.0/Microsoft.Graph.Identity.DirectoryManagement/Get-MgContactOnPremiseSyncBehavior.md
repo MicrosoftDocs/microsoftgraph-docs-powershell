@@ -372,26 +372,3 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgContactOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactonpremisesyncbehavior)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

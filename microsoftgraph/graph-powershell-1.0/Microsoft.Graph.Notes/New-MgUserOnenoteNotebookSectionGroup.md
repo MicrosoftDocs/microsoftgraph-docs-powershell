@@ -1573,25 +1573,3 @@ Read-only.
 ## RELATED LINKS
 
 - [New-MgUserOnenoteNotebookSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebooksectiongroup)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

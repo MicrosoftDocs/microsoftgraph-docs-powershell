@@ -424,26 +424,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgPlaceAsBuildingCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasbuildingcheck)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

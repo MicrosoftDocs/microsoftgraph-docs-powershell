@@ -575,26 +575,3 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 - [Start-MgTeamScheduleTimeCardBreak](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgteamscheduletimecardbreak)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

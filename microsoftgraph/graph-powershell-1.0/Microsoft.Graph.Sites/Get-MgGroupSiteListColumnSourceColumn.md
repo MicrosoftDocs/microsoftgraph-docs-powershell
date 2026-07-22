@@ -448,26 +448,3 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgGroupSiteListColumnSourceColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcolumnsourcecolumn)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

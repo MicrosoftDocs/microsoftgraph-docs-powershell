@@ -418,25 +418,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Request-MgDeviceManagementManagedDeviceRemoteAssistance](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/request-mgdevicemanagementmanageddeviceremoteassistance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

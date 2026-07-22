@@ -411,26 +411,3 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgUserEventPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventpermanent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

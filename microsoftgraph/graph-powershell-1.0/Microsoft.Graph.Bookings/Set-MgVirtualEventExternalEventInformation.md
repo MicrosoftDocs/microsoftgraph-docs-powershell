@@ -509,26 +509,3 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgVirtualEventExternalEventInformation](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/set-mgvirtualeventexternaleventinformation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
