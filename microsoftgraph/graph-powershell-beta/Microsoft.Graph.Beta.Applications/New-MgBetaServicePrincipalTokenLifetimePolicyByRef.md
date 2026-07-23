@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Assign a tokenLifetimePolicy to a servicePrincipal.
 You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per service principal.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

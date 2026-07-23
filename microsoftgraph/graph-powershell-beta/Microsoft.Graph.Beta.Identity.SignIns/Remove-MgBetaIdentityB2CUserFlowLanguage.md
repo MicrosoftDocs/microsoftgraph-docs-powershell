@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 Deletes a userFlowLanguageConfiguration object from a Azure AD B2C user flow.
 Note: You cannot delete languages from an Microsoft Entra user flow.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

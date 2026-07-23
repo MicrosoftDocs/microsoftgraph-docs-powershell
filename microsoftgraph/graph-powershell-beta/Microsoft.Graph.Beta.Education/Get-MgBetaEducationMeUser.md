@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Retrieve the simple directory user that corresponds to this educationUser.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic, Directory.Read.All, EduRoster.Read, EduRoster.Write, User.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.Read.All, Directory.Read.All, EduRoster.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

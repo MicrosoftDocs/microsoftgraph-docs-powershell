@@ -48,6 +48,14 @@ Validate the ownership of a domain.
 This operation only applies to an unverified domain.
 For an unverified domain, the isVerified property is false.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
