@@ -48,16 +48,6 @@ Represents relationships between a user and items such as OneDrive for work or s
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -384,6 +374,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsight)
+
 
 
 

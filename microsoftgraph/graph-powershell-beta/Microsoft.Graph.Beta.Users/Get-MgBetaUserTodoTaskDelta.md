@@ -55,16 +55,6 @@ Invoke function delta
 | Delegated (personal Microsoft account) | Tasks.Read, Tasks.ReadWrite,  |
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -605,6 +595,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskdelta)
+
 
 
 

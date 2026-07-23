@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 Get a siteRestoreArtifactsBulkAdditionRequest object by its id, associated with a sharePointRestoreSession.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -606,6 +596,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifactbulkadditionrequest)
 - [](https://learn.microsoft.com/graph/api/siterestoreartifactsbulkadditionrequest-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/sharepointrestoresession-list-siterestoreartifactsbulkadditionrequests?view=graph-rest-beta)
+
 
 
 

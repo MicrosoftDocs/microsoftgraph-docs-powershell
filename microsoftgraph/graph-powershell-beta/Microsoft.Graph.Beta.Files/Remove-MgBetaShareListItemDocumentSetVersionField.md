@@ -64,16 +64,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property fields for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -495,6 +485,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitemdocumentsetversionfield)
+
 
 
 

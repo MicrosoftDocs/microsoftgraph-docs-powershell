@@ -54,16 +54,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -442,6 +432,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicetransitivememberofcount)
+
 
 
 

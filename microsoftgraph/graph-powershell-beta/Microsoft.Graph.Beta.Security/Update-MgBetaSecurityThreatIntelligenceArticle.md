@@ -72,16 +72,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property articles in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -869,6 +859,7 @@ SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle)
+
 
 
 

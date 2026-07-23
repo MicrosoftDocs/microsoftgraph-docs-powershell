@@ -55,16 +55,6 @@ Invoke action validateFilter
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -427,6 +417,7 @@ For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/test-mgbetadevicemanagementassignmentfilter)
+
 
 
 
