@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestfinalreport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 06/05/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPrivacySubjectRightsRequestFinalReport
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaPrivacySubjectRightsRequestFinalReport
 Get the final report for a subject rights request.
 The report is a text file that contains information about the files that were included by the privacy administrator.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestFinalReport](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestFinalReport?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -27,7 +24,7 @@ The report is a text file that contains information about the files that were in
 Get-MgBetaPrivacySubjectRightsRequestFinalReport -SubjectRightsRequestId <string> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -36,7 +33,7 @@ Get-MgBetaPrivacySubjectRightsRequestFinalReport -SubjectRightsRequestId <string
 Get-MgBetaPrivacySubjectRightsRequestFinalReport -InputObject <IComplianceIdentity>
  -OutFile <string> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -50,17 +47,12 @@ Get the final report for a subject rights request.
 The report is a text file that contains information about the files that were included by the privacy administrator.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
 Get-MgBetaPrivacySubjectRightsRequestFinalReport -SubjectRightsRequestId $subjectRightsRequestId
-
-```
-This example shows how to use the Get-MgBetaPrivacySubjectRightsRequestFinalReport Cmdlet.
-
 
 ## PARAMETERS
 
@@ -348,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -371,27 +363,5 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPrivacySubjectRightsRequestFinalReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestfinalreport)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestfinalreport)
+- [](https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-beta)

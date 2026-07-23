@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/get-mgenvironment
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 06/05/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGraphOption
 ---
@@ -20,7 +20,7 @@ Gets global configurations that apply to the SDK. For example, check if Web Acco
 ### __AllParameterSets
 
 ```
-Get-MgGraphOption [<CommonParameters>]
+Get-MgGraphOption
 ```
 
 ## ALIASES
@@ -60,6 +60,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Authentication.IGraphOption
 
+{{ Fill in the Description }}
 
 ## NOTES
 

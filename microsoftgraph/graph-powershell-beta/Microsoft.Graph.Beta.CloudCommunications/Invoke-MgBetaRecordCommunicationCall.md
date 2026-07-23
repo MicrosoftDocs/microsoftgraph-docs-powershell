@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcall
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRecordCommunicationCall
 ---
@@ -27,7 +27,6 @@ Invoke-MgBetaRecordCommunicationCall -CallId <string> [-ResponseHeadersVariable 
  [-StopTones <string[]>] [-StreamWhileRecording] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Record
@@ -38,7 +37,6 @@ Invoke-MgBetaRecordCommunicationCall -CallId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RecordViaIdentityExpanded
@@ -51,7 +49,7 @@ Invoke-MgBetaRecordCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <string[]>] [-StreamWhileRecording] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### RecordViaIdentity
@@ -62,7 +60,6 @@ Invoke-MgBetaRecordCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action record
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -105,7 +112,7 @@ HelpMessage: ''
 
 ### -BargeInAllowed
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +139,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -208,7 +215,7 @@ HelpMessage: ''
 
 ### -ClientContext
 
-
+.
 
 ```yaml
 Type: System.String
@@ -320,7 +327,7 @@ HelpMessage: ''
 
 ### -InitialSilenceTimeoutInSeconds
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -375,7 +382,7 @@ HelpMessage: ''
 
 ### -MaxRecordDurationInSeconds
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -402,7 +409,7 @@ HelpMessage: ''
 
 ### -MaxSilenceTimeoutInSeconds
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -429,7 +436,7 @@ HelpMessage: ''
 
 ### -PlayBeep
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -456,7 +463,7 @@ HelpMessage: ''
 
 ### -Prompts
 
-
+.
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrompt[]
@@ -568,7 +575,7 @@ HelpMessage: ''
 
 ### -StopTones
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -595,7 +602,7 @@ HelpMessage: ''
 
 ### -StreamWhileRecording
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -676,7 +683,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Mdqe66CommunicationsCallsCallIdMicrosoftGraphRecordPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Mdqe66CommunicationsCallsCallIdMicrosoftGraphRecordPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BargeInAllowed <Boolean?>]: 
   [ClientContext <String>]: 
@@ -688,7 +695,7 @@ BODYPARAMETER `<IPaths1Mdqe66CommunicationsCallsCallIdMicrosoftGraphRecordPostRe
   [StopTones <String[]>]: 
   [StreamWhileRecording <Boolean?>]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -718,27 +725,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaRecordCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcall)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcall)

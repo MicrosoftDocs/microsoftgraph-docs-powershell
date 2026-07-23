@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationsecret
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaServicePrincipalSynchronizationSecret
 ---
@@ -14,9 +14,6 @@ title: Set-MgBetaServicePrincipalSynchronizationSecret
 ## SYNOPSIS
 
 Provide credentials for establishing connectivity with the target system.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Applications/Set-MgServicePrincipalSynchronizationSecret?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Set-MgBetaServicePrincipalSynchronizationSecret -ServicePrincipalId <string>
  [-Value <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Set
@@ -39,7 +36,6 @@ Set-MgBetaServicePrincipalSynchronizationSecret -ServicePrincipalId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -50,7 +46,7 @@ Set-MgBetaServicePrincipalSynchronizationSecret -InputObject <IApplicationsIdent
  [-Value <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### SetViaIdentity
@@ -61,7 +57,6 @@ Set-MgBetaServicePrincipalSynchronizationSecret -InputObject <IApplicationsIdent
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,18 +68,9 @@ This cmdlet has the following aliases,
 
 Provide credentials for establishing connectivity with the target system.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -110,10 +96,6 @@ $params = @{
 }
 
 Set-MgBetaServicePrincipalSynchronizationSecret -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgBetaServicePrincipalSynchronizationSecret Cmdlet.
-
 
 ## PARAMETERS
 
@@ -146,7 +128,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -420,7 +402,7 @@ HelpMessage: ''
 
 ### -Value
 
-
+.
 To construct, see NOTES section for VALUE properties and create a hash table.
 
 ```yaml
@@ -502,13 +484,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths3BjevjServiceprincipalsServiceprincipalIdSynchronizationSecretsPutRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths3BjevjServiceprincipalsServiceprincipalIdSynchronizationSecretsPutRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Value <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]: 
     [Key <String>]: synchronizationSecret
     [Value <String>]: The value of the secret.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -553,27 +535,5 @@ VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: .
 
 ## RELATED LINKS
 
-- [Set-MgBetaServicePrincipalSynchronizationSecret](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationsecret)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationsecret)
+- [](https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-beta)

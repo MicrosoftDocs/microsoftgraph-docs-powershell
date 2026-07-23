@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 07/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectorySetting
 ---
@@ -25,7 +25,6 @@ Update-MgBetaDirectorySetting -DirectorySettingId <string> [-ResponseHeadersVari
  [-Values <IMicrosoftGraphSettingValue[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -35,7 +34,7 @@ Update-MgBetaDirectorySetting -DirectorySettingId <string>
  -BodyParameter <IMicrosoftGraphDirectorySetting> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -46,7 +45,7 @@ Update-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity
  [-Id <string>] [-TemplateId <string>] [-Values <IMicrosoftGraphSettingValue[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -56,7 +55,7 @@ Update-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity
  -BodyParameter <IMicrosoftGraphDirectorySetting> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -68,18 +67,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a specific directory setting object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupSettings.ReadWrite.All, Policy.ReadWrite.Authorization, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | GroupSettings.ReadWrite.All, Policy.ReadWrite.Authorization, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -93,10 +83,6 @@ $params = @{
 }
 
 Update-MgBetaDirectorySetting -DirectorySettingId $directorySettingId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDirectorySetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -569,7 +555,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDirectorySetting>`: directorySetting
+BODYPARAMETER <IMicrosoftGraphDirectorySetting>: directorySetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -581,7 +567,7 @@ Read-only.
     [Name <String>]: Name of the setting (as defined by the directorySettingTemplate).
     [Value <String>]: Value of the setting.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -654,27 +640,5 @@ VALUES <IMicrosoftGraphSettingValue[]>: Collection of name-value pairs correspon
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectorySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directorysetting-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysetting)
+- [](https://learn.microsoft.com/graph/api/directorysetting-update?view=graph-rest-beta)
