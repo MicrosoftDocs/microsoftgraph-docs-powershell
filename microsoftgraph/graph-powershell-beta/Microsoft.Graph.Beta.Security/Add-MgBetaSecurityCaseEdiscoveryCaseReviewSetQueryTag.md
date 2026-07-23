@@ -132,7 +132,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -481,7 +481,7 @@ HelpMessage: ''
 
 ### -TagsToAdd
 
-.
+
 To construct, see NOTES section for TAGSTOADD properties and create a hash table.
 
 ```yaml
@@ -509,7 +509,7 @@ HelpMessage: ''
 
 ### -TagsToRemove
 
-.
+
 To construct, see NOTES section for TAGSTOREMOVE properties and create a hash table.
 
 ```yaml

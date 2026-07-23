@@ -121,7 +121,7 @@ HelpMessage: ''
 
 ### -BillingPolicyId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -842,7 +842,7 @@ HelpMessage: ''
 
 ### -SiteProtectionUnitsBulkAdditionJobs
 
-.
+
 To construct, see NOTES section for SITEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml

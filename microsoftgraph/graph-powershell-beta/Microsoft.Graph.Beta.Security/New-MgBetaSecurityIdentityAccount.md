@@ -50,7 +50,7 @@ Create new navigation property to identityAccounts for security
 
 ### -Accounts
 
-.
+
 To construct, see NOTES section for ACCOUNTS properties and create a hash table.
 
 ```yaml
@@ -136,7 +136,7 @@ HelpMessage: ''
 
 ### -CloudSecurityIdentifier
 
-.
+
 
 ```yaml
 Type: System.String
@@ -179,7 +179,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -200,7 +200,7 @@ HelpMessage: ''
 
 ### -Domain
 
-.
+
 
 ```yaml
 Type: System.String
@@ -306,7 +306,7 @@ HelpMessage: ''
 
 ### -IsEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -327,7 +327,7 @@ HelpMessage: ''
 
 ### -OnPremisesSecurityIdentifier
 
-.
+
 
 ```yaml
 Type: System.String

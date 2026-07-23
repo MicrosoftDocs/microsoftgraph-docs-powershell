@@ -439,7 +439,7 @@ HelpMessage: ''
 
 ### -Outcomes
 
-.
+
 To construct, see NOTES section for OUTCOMES properties and create a hash table.
 
 ```yaml
@@ -585,7 +585,7 @@ HelpMessage: ''
 
 ### -Resources
 
-.
+
 To construct, see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
@@ -718,7 +718,7 @@ HelpMessage: ''
 
 ### -SubmittedResources
 
-.
+
 To construct, see NOTES section for SUBMITTEDRESOURCES properties and create a hash table.
 
 ```yaml

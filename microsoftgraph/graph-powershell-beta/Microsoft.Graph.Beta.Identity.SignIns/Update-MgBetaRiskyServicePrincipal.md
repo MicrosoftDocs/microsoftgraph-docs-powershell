@@ -402,7 +402,7 @@ HelpMessage: ''
 
 ### -IsEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -100,7 +100,7 @@ HelpMessage: ''
 
 ### -ActivityDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
