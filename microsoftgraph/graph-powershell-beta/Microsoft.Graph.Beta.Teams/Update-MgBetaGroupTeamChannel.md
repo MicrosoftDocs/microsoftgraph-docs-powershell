@@ -28395,7 +28395,7 @@ Read only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannel)
+- [Update-MgBetaGroupTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannel)
 
 
 

@@ -894,7 +894,7 @@ False if the label is a parent with child labels.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotectionsensitivitylabel)
+- [Update-MgBetaUserSecurityInformationProtectionSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotectionsensitivitylabel)
 
 
 

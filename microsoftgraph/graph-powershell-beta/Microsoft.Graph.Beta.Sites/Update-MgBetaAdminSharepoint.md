@@ -469,7 +469,7 @@ For a list of possible values, see SPRegionalSettings.TimeZones property.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepoint)
+- [Update-MgBetaAdminSharepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepoint)
 
 
 

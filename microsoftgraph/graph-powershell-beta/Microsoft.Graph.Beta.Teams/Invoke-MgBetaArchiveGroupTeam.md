@@ -541,8 +541,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchivegroupteam)
-- [](https://learn.microsoft.com/graph/api/team-archive?view=graph-rest-beta)
+- [Invoke-MgBetaArchiveGroupTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchivegroupteam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-archive?view=graph-rest-beta)
 
 
 

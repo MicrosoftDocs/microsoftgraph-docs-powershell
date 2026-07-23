@@ -910,7 +910,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingconversationstarterreply)
+- [New-MgBetaCommunicationOnlineMeetingConversationStarterReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingconversationstarterreply)
 
 
 

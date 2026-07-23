@@ -484,7 +484,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdrivefollowingcontent)
+- [Set-MgBetaUserDriveFollowingContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdrivefollowingcontent)
 
 
 

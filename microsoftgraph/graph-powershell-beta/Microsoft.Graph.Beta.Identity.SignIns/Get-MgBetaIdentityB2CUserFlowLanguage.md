@@ -685,9 +685,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage)
-- [](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-languages?view=graph-rest-beta)
+- [Get-MgBetaIdentityB2CUserFlowLanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-languages?view=graph-rest-beta)
 
 
 

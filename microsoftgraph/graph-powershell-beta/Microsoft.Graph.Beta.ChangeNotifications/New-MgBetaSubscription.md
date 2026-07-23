@@ -826,8 +826,8 @@ See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription)
-- [](https://learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-beta)
+- [New-MgBetaSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-beta)
 
 
 

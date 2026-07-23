@@ -1162,7 +1162,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamprimarychannelplannerplanbucket)
+- [New-MgBetaGroupTeamPrimaryChannelPlannerPlanBucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamprimarychannelplannerplanbucket)
 
 
 

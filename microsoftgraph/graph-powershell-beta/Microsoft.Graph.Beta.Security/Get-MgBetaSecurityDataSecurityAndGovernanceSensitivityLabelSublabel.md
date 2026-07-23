@@ -646,7 +646,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritydatasecurityandgovernancesensitivitylabelsublabel)
+- [Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritydatasecurityandgovernancesensitivitylabelsublabel)
 
 
 

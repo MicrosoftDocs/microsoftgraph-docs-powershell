@@ -720,8 +720,8 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyapproval)
-- [](https://learn.microsoft.com/graph/api/windowsupdates-policyapproval-update?view=graph-rest-beta)
+- [Update-MgBetaWindowsUpdatesPolicyApproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyapproval)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-policyapproval-update?view=graph-rest-beta)
 
 
 

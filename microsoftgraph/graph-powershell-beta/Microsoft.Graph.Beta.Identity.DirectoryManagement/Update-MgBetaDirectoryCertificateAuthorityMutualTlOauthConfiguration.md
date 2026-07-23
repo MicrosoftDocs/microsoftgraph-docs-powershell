@@ -728,8 +728,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthoritymutualtloauthconfiguration)
-- [](https://learn.microsoft.com/graph/api/mutualtlsoauthconfiguration-update?view=graph-rest-beta)
+- [Update-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthoritymutualtloauthconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mutualtlsoauthconfiguration-update?view=graph-rest-beta)
 
 
 

@@ -490,7 +490,7 @@ It isn't automatically updated if the customer tenant's display name changes.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract)
+- [New-MgBetaContract](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract)
 
 
 

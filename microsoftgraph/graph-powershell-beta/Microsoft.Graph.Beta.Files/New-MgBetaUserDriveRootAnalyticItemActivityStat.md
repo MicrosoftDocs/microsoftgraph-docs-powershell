@@ -19023,7 +19023,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootanalyticitemactivitystat)
+- [New-MgBetaUserDriveRootAnalyticItemActivityStat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootanalyticitemactivitystat)
 
 
 

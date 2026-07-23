@@ -474,7 +474,7 @@ The allowed values are: 0, 1H, 3H, 12H, or 24H.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityrule)
+- [Update-MgBetaSecurityRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityrule)
 
 
 

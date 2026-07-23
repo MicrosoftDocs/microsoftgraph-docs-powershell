@@ -562,8 +562,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplacecheck)
-- [](https://learn.microsoft.com/graph/api/place-post-checkins?view=graph-rest-beta)
+- [New-MgBetaPlaceCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplacecheck)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/place-post-checkins?view=graph-rest-beta)
 
 
 
