@@ -90,7 +90,17 @@ function Start-GraphHelp {
     git config --global user.email "GraphTooling@service.microsoft.com"
     git config --global user.name "Microsoft Graph DevX Tooling"
     git add .
-    git commit -m "Updated markdown help" 
+
+    # Check for staged changes; commit only if any exist (avoids git exit code 1 failing the task)
+    $pending = git status --porcelain
+    if (-not [string]::IsNullOrWhiteSpace($pending)) {
+        git commit -m "Updated markdown help"
+        Write-Host "Committed markdown help."
+    }
+    else {
+        Write-Host "Nothing to commit; skipping commit step."
+        $global:LASTEXITCODE = 0
+    }
 }
 
 function Get-FolderByProfile {

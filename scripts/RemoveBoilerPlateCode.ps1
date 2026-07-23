@@ -57,7 +57,17 @@ function Start-Repair {
     git config --global user.email "GraphTooling@service.microsoft.com"
     git config --global user.name "Microsoft Graph DevX Tooling"
     git add .
-    git commit -m "Remove boiler plate code injected by Autorest" 
+
+    # Check for staged changes; commit only if any exist (avoids git exit code 1 failing the task)
+    $pending = git status --porcelain
+    if (-not [string]::IsNullOrWhiteSpace($pending)) {
+        git commit -m "Remove boiler plate code injected by Autorest"
+        Write-Host "Committed boiler plate removal."
+    }
+    else {
+        Write-Host "Nothing to commit; skipping commit step."
+        $global:LASTEXITCODE = 0
+    }
 }
 function Get-FilesByProfile {
     Param(

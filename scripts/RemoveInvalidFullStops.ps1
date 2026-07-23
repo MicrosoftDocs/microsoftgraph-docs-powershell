@@ -39,7 +39,17 @@ function Remove-InvalidFullStops {
     git config --global user.email "timwamalwa@gmail.com"
     git config --global user.name "Timothy Wamalwa"
     git add .
-    git commit -m "Removed invalid full stops from the beginning of lines" 	
+
+    # Check for staged changes; commit only if any exist (avoids git exit code 1 failing the task)
+    $pending = git status --porcelain
+    if (-not [string]::IsNullOrWhiteSpace($pending)) {
+        git commit -m "Removed invalid full stops from the beginning of lines"
+        Write-Host "Committed invalid full stop removal."
+    }
+    else {
+        Write-Host "Nothing to commit; skipping commit step."
+        $global:LASTEXITCODE = 0
+    }
 }
 function Get-FilesByProfile {
     Param(
