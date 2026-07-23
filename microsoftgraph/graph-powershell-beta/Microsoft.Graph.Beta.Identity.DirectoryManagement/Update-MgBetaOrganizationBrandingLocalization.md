@@ -103,8 +103,9 @@ Update the properties of an organizationalBrandingLocalization object for a spec
 | Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -115,7 +116,12 @@ $params = @{
 
 Update-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update the backgroundcolor and signinpagetext for the fr-fr localization using patch
+
+### Example 2: Override a default branding value with a blank string
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -125,6 +131,10 @@ $params = @{
 }
 
 Update-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+
+```
+This example will override a default branding value with a blank string
+
 
 ## PARAMETERS
 

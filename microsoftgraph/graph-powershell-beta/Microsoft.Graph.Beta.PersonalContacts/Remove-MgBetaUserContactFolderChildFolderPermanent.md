@@ -55,16 +55,6 @@ For more information about item retention, see Configure Deleted Item retention 
 | Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
 | Application | Contacts.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -428,6 +418,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolderchildfolderpermanent)
 - [](https://learn.microsoft.com/graph/api/contactfolder-permanentdelete?view=graph-rest-beta)
+
 
 
 

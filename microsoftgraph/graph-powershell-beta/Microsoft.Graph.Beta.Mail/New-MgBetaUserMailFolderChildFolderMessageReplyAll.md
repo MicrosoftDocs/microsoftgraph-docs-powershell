@@ -78,16 +78,6 @@ When using MIME format:- Provide the applicable Internet message headers and the
 Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -866,6 +856,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessagereplyall)
 - [](https://learn.microsoft.com/graph/api/message-createreplyall?view=graph-rest-beta)
+
 
 
 

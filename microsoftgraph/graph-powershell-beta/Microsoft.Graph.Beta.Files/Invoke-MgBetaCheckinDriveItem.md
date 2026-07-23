@@ -75,8 +75,9 @@ Check in a checked out driveItem resource, which makes the version of the docume
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -85,6 +86,10 @@ $params = @{
 }
 
 Invoke-MgBetaCheckinDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaCheckinDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

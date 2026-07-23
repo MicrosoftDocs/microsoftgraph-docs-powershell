@@ -68,16 +68,6 @@ This cmdlet has the following aliases,
 
 Mark a chat as unread for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -643,6 +633,7 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkuserchatunreadforuser)
 - [](https://learn.microsoft.com/graph/api/chat-markchatunreadforuser?view=graph-rest-beta)
+
 
 
 

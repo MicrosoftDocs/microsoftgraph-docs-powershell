@@ -72,16 +72,6 @@ Nullable.
 | Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite,  |
 | Application | Contacts.Read, Contacts.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -634,6 +624,8 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontact)
+
+
 
 
 

@@ -81,8 +81,9 @@ The following derived types are currently supported.
 | Application | EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -98,7 +99,12 @@ $params = @{
 
 Update-MgBetaIdentityAuthenticationEventListener -AuthenticationEventListenerId $authenticationEventListenerId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows how to use the Update-MgBetaIdentityAuthenticationEventListener Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -122,6 +128,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityAuthenticationEventListener -AuthenticationEventListenerId $authenticationEventListenerId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityAuthenticationEventListener Cmdlet.
+
 
 ## PARAMETERS
 

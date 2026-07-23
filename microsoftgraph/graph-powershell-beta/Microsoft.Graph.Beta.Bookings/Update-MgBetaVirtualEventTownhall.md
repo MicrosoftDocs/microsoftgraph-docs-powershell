@@ -87,8 +87,9 @@ This cmdlet has the following aliases,
 Update the properties of a virtualEventTownhall object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
@@ -104,6 +105,10 @@ $params = @{
 }
 
 Update-MgBetaVirtualEventTownhall -VirtualEventTownhallId $virtualEventTownhallId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaVirtualEventTownhall Cmdlet.
+
 
 ## PARAMETERS
 

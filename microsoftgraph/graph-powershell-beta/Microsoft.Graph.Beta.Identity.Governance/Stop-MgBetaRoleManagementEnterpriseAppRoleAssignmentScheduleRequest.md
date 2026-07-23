@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a Granted status, and have the system automatically delete the canceled request after 30 days.
 After calling this action, the status of the canceled unifiedRoleAssignmentScheduleRequest changes to Canceled.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -504,6 +494,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetarolemanagemententerpriseapproleassignmentschedulerequest)
 - [](https://learn.microsoft.com/graph/api/unifiedroleassignmentschedulerequest-cancel?view=graph-rest-beta)
+
 
 
 

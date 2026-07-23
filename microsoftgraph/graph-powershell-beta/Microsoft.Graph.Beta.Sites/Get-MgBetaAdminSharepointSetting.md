@@ -44,12 +44,17 @@ Get the tenant-level settings for SharePoint and OneDrive.
 | Application | SharePointTenantSettings.Read.All, SharePointTenantSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaAdminSharepointSetting
+
+```
+This example shows how to use the Get-MgBetaAdminSharepointSetting Cmdlet.
+
 
 ## PARAMETERS
 

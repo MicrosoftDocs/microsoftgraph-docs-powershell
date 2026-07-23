@@ -54,8 +54,9 @@ Update tenant-level settings for Microsoft 365 reports.
 | Application | ReportSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
@@ -64,6 +65,10 @@ $params = @{
 }
 
 Update-MgBetaAdminReportSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaAdminReportSetting Cmdlet.
+
 
 ## PARAMETERS
 

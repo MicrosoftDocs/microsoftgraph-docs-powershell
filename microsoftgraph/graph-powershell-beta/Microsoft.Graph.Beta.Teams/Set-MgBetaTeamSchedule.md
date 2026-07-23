@@ -107,8 +107,9 @@ Clients can also inspect the configuration of the schedule.
 | Application | Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update a schedule
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -119,7 +120,12 @@ $params = @{
 
 Set-MgBetaTeamSchedule -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update a schedule
+
+### Example 2: Enable location detection for time clock
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -140,6 +146,10 @@ $params = @{
 }
 
 Set-MgBetaTeamSchedule -TeamId $teamId -BodyParameter $params
+
+```
+This example will enable location detection for time clock
+
 
 ## PARAMETERS
 

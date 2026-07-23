@@ -77,9 +77,9 @@ Update the navigation property groups in external
 | Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
+```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
@@ -88,6 +88,11 @@ $params = @{
 }
 
 Update-MgBetaExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaExternalConnectionGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

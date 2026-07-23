@@ -91,8 +91,9 @@ Update the properties of an ediscoverySearch object.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -101,6 +102,10 @@ $params = @{
 }
 
 Update-MgBetaSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityCaseEdiscoveryCaseSearch Cmdlet.
+
 
 ## PARAMETERS
 

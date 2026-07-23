@@ -67,16 +67,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to thumbnails for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -659,6 +649,7 @@ This is only available when a folder thumbnail is requested.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootthumbnail)
+
 
 
 

@@ -78,16 +78,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property mobileAppTroubleshootingEvents in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -955,6 +945,7 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileapptroubleshootingevent)
+
 
 
 

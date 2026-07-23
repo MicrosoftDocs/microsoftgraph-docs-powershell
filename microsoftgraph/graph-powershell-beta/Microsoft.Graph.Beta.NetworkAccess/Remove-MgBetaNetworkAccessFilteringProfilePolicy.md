@@ -55,18 +55,28 @@ Use this operation to delete any derived type, including:\r- cloudFirewallPolicy
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Delete a filteringPolicyLink
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+Remove-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
+
+```
+This example will delete a filteringpolicylink
+
+### Example 2: Delete a tlsInspectionPolicyLink
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Remove-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
 
-### EXAMPLE 2
+```
+This example will delete a tlsinspectionpolicylink
 
-Import-Module Microsoft.Graph.Beta.NetworkAccess
-
-Remove-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
 
 ## PARAMETERS
 

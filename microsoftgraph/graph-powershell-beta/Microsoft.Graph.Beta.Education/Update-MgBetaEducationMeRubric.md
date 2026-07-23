@@ -89,8 +89,9 @@ That rubric can be retrieved using GET /education/classes/{id}/assignments/{id}/
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -99,6 +100,10 @@ $params = @{
 }
 
 Update-MgBetaEducationMeRubric -EducationRubricId $educationRubricId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaEducationMeRubric Cmdlet.
+
 
 ## PARAMETERS
 

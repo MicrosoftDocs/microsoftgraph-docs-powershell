@@ -66,16 +66,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to rules for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -633,6 +623,7 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyrolemanagementpolicyrule)
+
 
 
 

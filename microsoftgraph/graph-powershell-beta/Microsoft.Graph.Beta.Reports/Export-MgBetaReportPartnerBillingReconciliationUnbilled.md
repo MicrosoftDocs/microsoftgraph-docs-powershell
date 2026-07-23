@@ -47,8 +47,9 @@ This cmdlet has the following aliases,
 Export the unbilled invoice reconciliation data for a specific billing period and a given currency.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
@@ -59,6 +60,10 @@ $params = @{
 }
 
 Export-MgBetaReportPartnerBillingReconciliationUnbilled -BodyParameter $params
+
+```
+This example shows how to use the Export-MgBetaReportPartnerBillingReconciliationUnbilled Cmdlet.
+
 
 ## PARAMETERS
 

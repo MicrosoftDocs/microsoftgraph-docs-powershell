@@ -70,16 +70,6 @@ Delete entity from bookingBusinesses
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BookingsAppointment.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -449,6 +439,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusiness)
 - [](https://learn.microsoft.com/graph/api/bookingbusiness-delete?view=graph-rest-beta)
+
 
 
 

@@ -69,16 +69,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property scopedRoleMembers in directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -667,6 +657,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryadministrativeunitscopedrolemember)
+
 
 
 

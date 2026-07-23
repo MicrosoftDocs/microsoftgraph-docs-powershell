@@ -86,16 +86,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property assignments in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AddedStudentAction
@@ -1480,6 +1470,7 @@ If the value is null, the student uploaded the resource.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignment)
+
 
 
 

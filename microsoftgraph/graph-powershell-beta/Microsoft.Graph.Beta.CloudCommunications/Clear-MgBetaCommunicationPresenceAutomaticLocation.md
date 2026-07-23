@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 Clear the automatic work location signal for a user.
 After clearing, the user’s final aggregated work location is recomputed according to the precedence rules: Use this operation when you need to remove the current autodetected signal without affecting manual or scheduled layers.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -397,6 +387,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetacommunicationpresenceautomaticlocation)
 - [](https://learn.microsoft.com/graph/api/presence-clearautomaticlocation?view=graph-rest-beta)
+
 
 
 

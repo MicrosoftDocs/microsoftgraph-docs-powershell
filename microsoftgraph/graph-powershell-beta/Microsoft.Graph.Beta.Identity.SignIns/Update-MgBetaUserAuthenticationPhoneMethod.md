@@ -85,8 +85,9 @@ Self-service operations aren't supported.
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Phone.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -96,6 +97,10 @@ $params = @{
 }
 
 Update-MgBetaUserAuthenticationPhoneMethod -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserAuthenticationPhoneMethod Cmdlet.
+
 
 ## PARAMETERS
 

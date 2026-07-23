@@ -75,8 +75,9 @@ Create a new externalGroupMember object.
 | Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Add an Azure Active Directory user as a member
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -87,7 +88,12 @@ $params = @{
 
 New-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will add an azure active directory user as a member
+
+### Example 2: Add an Azure Active Directory group as a member
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -98,7 +104,12 @@ $params = @{
 
 New-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will add an azure active directory group as a member
+
+### Example 3: Add another external group as a member
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -108,6 +119,10 @@ $params = @{
 }
 
 New-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
+
+```
+This example will add another external group as a member
+
 
 ## PARAMETERS
 

@@ -60,8 +60,9 @@ For more information, see sending Teams activity notifications.
 | Application | TeamsActivity.Send.User, TeamsActivity.Send,  |
 
 ## EXAMPLES
+### Example 1: Notify multiple users about pending finance approval requests
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -98,7 +99,12 @@ $params = @{
 
 Send-MgBetaTeamworkActivityNotificationToRecipient -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will notify multiple users about pending finance approval requests
+
+### Example 2: Notify multiple users about an event using a custom topic
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -135,6 +141,10 @@ $params = @{
 }
 
 Send-MgBetaTeamworkActivityNotificationToRecipient -BodyParameter $params
+
+```
+This example will notify multiple users about an event using a custom topic
+
 
 ## PARAMETERS
 

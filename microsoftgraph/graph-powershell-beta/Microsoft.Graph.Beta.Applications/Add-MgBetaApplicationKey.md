@@ -85,8 +85,9 @@ You can use the Update application operation to perform an update instead.
 | Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Add a new key credential to an application
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -102,7 +103,12 @@ $params = @{
 
 Add-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will add a new key credential to an application
+
+### Example 2: Add a key credential and an associated password for the key
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -119,6 +125,10 @@ $params = @{
 }
 
 Add-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
+
+```
+This example will add a key credential and an associated password for the key
+
 
 ## PARAMETERS
 

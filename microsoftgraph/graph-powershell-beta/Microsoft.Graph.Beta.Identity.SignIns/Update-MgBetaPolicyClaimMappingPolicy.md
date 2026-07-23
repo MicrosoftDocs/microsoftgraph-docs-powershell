@@ -77,8 +77,9 @@ Update the properties of a claimsMappingPolicy object.
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -87,6 +88,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyClaimMappingPolicy -ClaimsMappingPolicyId $claimsMappingPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyClaimMappingPolicy Cmdlet.
+
 
 ## PARAMETERS
 

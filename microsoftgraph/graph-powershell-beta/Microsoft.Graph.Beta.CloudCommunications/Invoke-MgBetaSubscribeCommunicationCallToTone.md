@@ -68,8 +68,9 @@ Subscribe to DTMF (dual-tone multi-frequency signaling) to allow you to be notif
 This action is supported only for calls that are initiated with serviceHostedMediaConfig.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -78,6 +79,10 @@ $params = @{
 }
 
 Invoke-MgBetaSubscribeCommunicationCallToTone -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaSubscribeCommunicationCallToTone Cmdlet.
+
 
 ## PARAMETERS
 

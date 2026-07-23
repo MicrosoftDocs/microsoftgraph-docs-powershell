@@ -85,8 +85,9 @@ For more information, see: Lifecycle Workflows extensibility approach.
 | Application | LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -99,6 +100,10 @@ $params = @{
 }
 
 Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult -WorkflowId $workflowId -TaskId $taskId -TaskProcessingResultId $taskProcessingResultId -BodyParameter $params
+
+```
+This example shows how to use the Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult Cmdlet.
+
 
 ## PARAMETERS
 

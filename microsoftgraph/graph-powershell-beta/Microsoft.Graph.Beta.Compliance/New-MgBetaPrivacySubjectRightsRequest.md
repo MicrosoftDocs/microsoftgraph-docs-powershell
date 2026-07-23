@@ -57,8 +57,9 @@ This cmdlet has the following aliases,
 Create a new subjectRightsRequest object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -94,6 +95,10 @@ approvers = @(
 }
 
 New-MgBetaPrivacySubjectRightsRequest -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrivacySubjectRightsRequest Cmdlet.
+
 
 ## PARAMETERS
 
