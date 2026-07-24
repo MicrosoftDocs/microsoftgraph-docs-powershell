@@ -19,6 +19,9 @@ The explicit value chosen by a user or an authorized client overrides any automa
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceManualLocation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserPresenceManualLocation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceManualLocation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserPresenceManualLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

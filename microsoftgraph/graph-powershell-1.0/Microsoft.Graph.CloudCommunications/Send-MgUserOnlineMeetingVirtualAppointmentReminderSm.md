@@ -19,6 +19,9 @@ This feature requires Teams premium and attendees must have a valid United State
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SendExpanded (Default)

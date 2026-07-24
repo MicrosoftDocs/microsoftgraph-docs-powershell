@@ -19,6 +19,9 @@ This relationship is expanded by default in callRecord methods.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecordOrganizerV2](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecordOrganizerV2?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecordOrganizerV2](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecordOrganizerV2?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
