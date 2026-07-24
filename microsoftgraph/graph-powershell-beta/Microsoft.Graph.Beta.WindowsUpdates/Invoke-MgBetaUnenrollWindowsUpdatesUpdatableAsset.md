@@ -1,4 +1,4 @@
-﻿---
+---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaunenrollwindowsupdatesupdatableasset
@@ -414,7 +414,7 @@ ASSETS <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODY <IPathsP6Z74XAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPathsP6Z74XAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -425,3 +425,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaunenrollwindowsupdatesupdatableasset)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

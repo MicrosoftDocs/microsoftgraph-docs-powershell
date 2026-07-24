@@ -719,3 +719,25 @@ TIMEOFFDETAILS `<IMicrosoftGraphTimeOffDetails>`: timeOffDetails
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
