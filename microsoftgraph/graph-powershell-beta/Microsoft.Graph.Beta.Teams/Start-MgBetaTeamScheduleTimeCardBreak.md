@@ -630,8 +630,8 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamscheduletimecardbreak)
-- [](https://learn.microsoft.com/graph/api/timecard-startbreak?view=graph-rest-beta)
+- [Start-MgBetaTeamScheduleTimeCardBreak](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamscheduletimecardbreak)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-startbreak?view=graph-rest-beta)
 
 
 

@@ -449,8 +449,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftgroupteamprimarychannelmessagereplydelete)
-- [](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-beta)
+- [Invoke-MgBetaSoftGroupTeamPrimaryChannelMessageReplyDelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftgroupteamprimarychannelmessagereplydelete)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-beta)
 
 
 

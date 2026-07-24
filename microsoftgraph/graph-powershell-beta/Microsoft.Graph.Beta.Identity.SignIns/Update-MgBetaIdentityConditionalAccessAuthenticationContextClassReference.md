@@ -690,8 +690,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationcontextclassreference)
-- [](https://learn.microsoft.com/graph/api/authenticationcontextclassreference-update?view=graph-rest-beta)
+- [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationcontextclassreference)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationcontextclassreference-update?view=graph-rest-beta)
 
 
 

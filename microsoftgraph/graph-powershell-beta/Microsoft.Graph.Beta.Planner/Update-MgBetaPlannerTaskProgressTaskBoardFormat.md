@@ -552,8 +552,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskprogresstaskboardformat)
-- [](https://learn.microsoft.com/graph/api/plannerprogresstaskboardtaskformat-update?view=graph-rest-beta)
+- [Update-MgBetaPlannerTaskProgressTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskprogresstaskboardformat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerprogresstaskboardtaskformat-update?view=graph-rest-beta)
 
 
 

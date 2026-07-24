@@ -567,8 +567,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref)
-- [](https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-beta)
+- [Set-MgBetaUserManagerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-beta)
 
 
 

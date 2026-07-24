@@ -597,7 +597,7 @@ SENDEREMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride)
+- [Update-MgBetaUserInferenceClassificationOverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride)
 
 
 

@@ -777,8 +777,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
-- [](https://learn.microsoft.com/graph/api/certificatebasedauthpki-update?view=graph-rest-beta)
+- [Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedauthpki-update?view=graph-rest-beta)
 
 
 

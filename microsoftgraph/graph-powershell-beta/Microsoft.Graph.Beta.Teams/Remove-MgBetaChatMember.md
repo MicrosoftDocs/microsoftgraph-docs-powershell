@@ -662,9 +662,9 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatmember)
-- [](https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
+- [Remove-MgBetaChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
 
 
 

@@ -1522,8 +1522,8 @@ LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandinglocalization)
-- [](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-beta)
+- [Update-MgBetaOrganizationBrandingLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandinglocalization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-beta)
 
 
 

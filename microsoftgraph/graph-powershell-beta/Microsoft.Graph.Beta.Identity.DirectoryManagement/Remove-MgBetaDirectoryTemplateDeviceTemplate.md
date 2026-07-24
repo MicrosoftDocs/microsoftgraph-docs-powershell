@@ -468,8 +468,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorytemplatedevicetemplate)
-- [](https://learn.microsoft.com/graph/api/devicetemplate-delete?view=graph-rest-beta)
+- [Remove-MgBetaDirectoryTemplateDeviceTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorytemplatedevicetemplate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/devicetemplate-delete?view=graph-rest-beta)
 
 
 

@@ -460,7 +460,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationonlinemeetingalternativerecording)
+- [Set-MgBetaCommunicationOnlineMeetingAlternativeRecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationonlinemeetingalternativerecording)
 
 
 

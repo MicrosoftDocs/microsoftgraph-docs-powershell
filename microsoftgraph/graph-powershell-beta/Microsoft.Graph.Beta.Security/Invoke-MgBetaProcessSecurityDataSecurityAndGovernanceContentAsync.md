@@ -471,7 +471,7 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontentasync)
+- [Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontentasync)
 
 
 

@@ -940,8 +940,8 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermail)
-- [](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-beta)
+- [Send-MgBetaUserMail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-beta)
 
 
 
