@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdeviceconfigurationdevicestatesummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 07/24/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary
 
 Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -27,7 +24,6 @@ Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary [-IfMatch <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -38,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -319,27 +325,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdeviceconfigurationdevicestatesummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdeviceconfigurationdevicestatesummary)

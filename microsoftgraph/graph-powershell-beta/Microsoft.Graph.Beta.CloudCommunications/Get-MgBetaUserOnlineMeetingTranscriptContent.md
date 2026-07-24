@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/24/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserOnlineMeetingTranscriptContent
 ---
@@ -19,9 +19,6 @@ Private channel meetings are not supported.
 Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscriptContent?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -31,7 +28,7 @@ Get-MgBetaUserOnlineMeetingTranscriptContent -CallTranscriptId <string> -OnlineM
  -UserId <string> -OutFile <string> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -40,7 +37,7 @@ Get-MgBetaUserOnlineMeetingTranscriptContent -CallTranscriptId <string> -OnlineM
 Get-MgBetaUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsIdentity>
  -OutFile <string> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -56,37 +53,19 @@ Private channel meetings are not supported.
 Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OnlineMeetingTranscript.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat,  |
-
 ## EXAMPLES
-### Example 1: Get a callTranscript content
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
 
-```
-This example will get a calltranscript content
-
-### Example 2: Get a callTranscript content specifying $format query param
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
-Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt" 
-
-```
-This example will get a calltranscript content specifying $format query param
-
+Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
 
 ## PARAMETERS
 
@@ -416,7 +395,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -446,27 +425,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserOnlineMeetingTranscriptContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptcontent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptcontent)
+- [](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-beta)

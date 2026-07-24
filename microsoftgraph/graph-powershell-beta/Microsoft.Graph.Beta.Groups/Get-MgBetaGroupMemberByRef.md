@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 06/05/2026
+ms.date: 07/24/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupMemberByRef
 ---
@@ -17,9 +17,6 @@ Get a list of the group's direct members.
 A group can have users, contacts, devices, service principals, and other groups as members.
 This operation isn't transitive.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberByRef?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -30,7 +27,6 @@ Get-MgBetaGroupMemberByRef -GroupId <string> [-Filter <string>] [-Search <string
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -44,13 +40,15 @@ Get a list of the group's direct members.
 A group can have users, contacts, devices, service principals, and other groups as members.
 This operation isn't transitive.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupMember.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | GroupMember.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -461,28 +459,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberbyref)
+- [](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-beta)

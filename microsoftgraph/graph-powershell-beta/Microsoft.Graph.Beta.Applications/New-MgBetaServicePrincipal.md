@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/24/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaServicePrincipal
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaServicePrincipal
 
 Create a new servicePrincipal object.
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,7 +60,6 @@ New-MgBetaServicePrincipal [-ResponseHeadersVariable <string>] [-AccountEnabled]
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -73,7 +69,6 @@ New-MgBetaServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -86,18 +81,10 @@ This cmdlet has the following aliases,
 Create a new servicePrincipal object.
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, AgentIdentityBlueprintPrincipal.Create, AgentIdentity.Create.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All, AgentIdentityBlueprintPrincipal.Create, AgentIdentity.CreateAsManager, AgentIdentity.Create.All,  |
-
 ## EXAMPLES
-### Example 1: Create a new service principal object
 
-```powershell
+### EXAMPLE 1
+
 $ServicePrincipalID=@{
   "AppId" = "fc876dd1-6bcb-4304-b9b6-18ddf1526b62"
   }
@@ -108,9 +95,6 @@ Id             : ac483a5f-f291-4499-8a62-058547724579
 DisplayName    : Example App
 AppId          : ffdf268a-2fe2-49e1-8cd7-66ecb61641ec
 SignInAudience : AzureADandPersonalMicrosoftAccount
-```
-
-In this example, the first command defines the service principal object in the variable $ServiceprincipalId. The second command creates a new service principal object.
 
 ## PARAMETERS
 
@@ -771,7 +755,7 @@ HelpMessage: ''
 
 ### -FederatedIdentityCredentials
 
-
+.
 To construct, see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
 
 ```yaml
@@ -990,7 +974,7 @@ HelpMessage: ''
 
 ### -LicenseDetails
 
-
+.
 To construct, see NOTES section for LICENSEDETAILS properties and create a hash table.
 
 ```yaml
@@ -1244,7 +1228,7 @@ HelpMessage: ''
 
 ### -PermissionGrantPreApprovalPolicies
 
-
+.
 To construct, see NOTES section for PERMISSIONGRANTPREAPPROVALPOLICIES properties and create a hash table.
 
 ```yaml
@@ -1741,7 +1725,7 @@ HelpMessage: ''
 
 ### -TransitiveMemberOf
 
-
+.
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
@@ -1874,7 +1858,7 @@ Read-only.
           [Operator <String>]: customSecurityAttributeComparisonOperator
       [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
       [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
       [RestrictionType <String>]: appKeyCredentialRestrictionType
@@ -1909,7 +1893,7 @@ For existing applications, the enforcement date can be retroactively applied.
         [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
           [(Any) <Object>]: This indicates any property can be added to this object.
           [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-          [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+          [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
           [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
           [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
@@ -2052,12 +2036,12 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipal>`: servicePrincipal
+BODYPARAMETER <IMicrosoftGraphServicePrincipal>: servicePrincipal
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -2112,7 +2096,7 @@ Read-only.
             [Operator <String>]: customSecurityAttributeComparisonOperator
         [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
         [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
         [RestrictionType <String>]: appKeyCredentialRestrictionType
@@ -2147,7 +2131,7 @@ For existing applications, the enforcement date can be retroactively applied.
           [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
             [(Any) <Object>]: This indicates any property can be added to this object.
             [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-            [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+            [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
             [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
             [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
@@ -2267,8 +2251,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -2601,8 +2585,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -2959,7 +2943,7 @@ Always null when the object hasn't been deleted.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CLAIMSPOLICY `<IMicrosoftGraphCustomClaimsPolicy>`: customClaimsPolicy
+CLAIMSPOLICY <IMicrosoftGraphCustomClaimsPolicy>: customClaimsPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3088,7 +3072,7 @@ Always null when the object hasn't been deleted.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INFO `<IMicrosoftGraphInformationalUrl>`: informationalUrl
+INFO <IMicrosoftGraphInformationalUrl>: informationalUrl
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LogoUrl <String>]: CDN URL to the application's logo, Read-only.
   [MarketingUrl <String>]: Link to the application's marketing page.
@@ -3219,7 +3203,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
-PASSWORDSINGLESIGNONSETTINGS `<IMicrosoftGraphPasswordSingleSignOnSettings>`: passwordSingleSignOnSettings
+PASSWORDSINGLESIGNONSETTINGS <IMicrosoftGraphPasswordSingleSignOnSettings>: passwordSingleSignOnSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Fields <IMicrosoftGraphPasswordSingleSignOnField[]>]: The fields to capture to fill the user credentials for password-based single sign-on.
     [CustomizedLabel <String>]: Title/label override for customization.
@@ -3267,12 +3251,12 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
   [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
-REMOTEDESKTOPSECURITYCONFIGURATION `<IMicrosoftGraphRemoteDesktopSecurityConfiguration>`: remoteDesktopSecurityConfiguration
+REMOTEDESKTOPSECURITYCONFIGURATION <IMicrosoftGraphRemoteDesktopSecurityConfiguration>: remoteDesktopSecurityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3287,11 +3271,11 @@ Read-only.
 Read-only.
     [DisplayName <String>]: Display name for the target device group.
 
-SAMLSINGLESIGNONSETTINGS `<IMicrosoftGraphSamlSingleSignOnSettings>`: samlSingleSignOnSettings
+SAMLSINGLESIGNONSETTINGS <IMicrosoftGraphSamlSingleSignOnSettings>: samlSingleSignOnSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RelayState <String>]: The relative URI the service provider would redirect to after completion of the single sign-on flow.
 
-SYNCHRONIZATION `<IMicrosoftGraphSynchronization>`: synchronization
+SYNCHRONIZATION <IMicrosoftGraphSynchronization>: synchronization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3592,7 +3576,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
+VERIFIEDPUBLISHER <IMicrosoftGraphVerifiedPublisher>: verifiedPublisher
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AddedDateTime <DateTime?>]: The timestamp when the verified publisher was first added or most recently updated.
   [DisplayName <String>]: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
@@ -3601,27 +3585,5 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
 
 ## RELATED LINKS
 
-- [New-MgBetaServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipal)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipal)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta)

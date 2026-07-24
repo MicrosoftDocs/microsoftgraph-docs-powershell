@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 07/24/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
 
 Update the protection policy for the OneDrive service in Microsoft 365.
 This method adds a driveProtectionUnit to or removes it from a oneDriveForBusinessProtectionPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,7 +37,7 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
  [-RetentionSettings <IMicrosoftGraphRetentionSetting[]>] [-Status <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -52,7 +49,6 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -74,7 +70,7 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
  [-RetentionSettings <IMicrosoftGraphRetentionSetting[]>] [-Status <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -86,7 +82,6 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -98,6 +93,16 @@ This cmdlet has the following aliases,
 
 Update the protection policy for the OneDrive service in Microsoft 365.
 This method adds a driveProtectionUnit to or removes it from a oneDriveForBusinessProtectionPolicy object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -130,7 +135,7 @@ HelpMessage: ''
 
 ### -BillingPolicyId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -312,7 +317,7 @@ HelpMessage: ''
 
 ### -DriveExclusionUnits
 
-
+The drive exclusion units associated with the OneDrive for work or school protection policy.
 To construct, see NOTES section for DRIVEEXCLUSIONUNITS properties and create a hash table.
 
 ```yaml
@@ -340,7 +345,7 @@ HelpMessage: ''
 
 ### -DriveExclusionUnitsBulkAdditionJobs
 
-
+The list of bulk addition jobs for drive exclusion units associated with the OneDrive for work or school protection policy.
 To construct, see NOTES section for DRIVEEXCLUSIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -424,7 +429,7 @@ HelpMessage: ''
 
 ### -DriveProtectionUnitsBulkAdditionJobs
 
-
+.
 To construct, see NOTES section for DRIVEPROTECTIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -960,7 +965,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOneDriveForBusinessProtectionPolicy>`: oneDriveForBusinessProtectionPolicy
+BODYPARAMETER <IMicrosoftGraphOneDriveForBusinessProtectionPolicy>: oneDriveForBusinessProtectionPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BillingPolicyId <String>]: 
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -999,9 +1004,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Status <String>]: protectionPolicyStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DriveExclusionUnits <IMicrosoftGraphDriveExclusionUnit[]>]: 
+  [DriveExclusionUnits <IMicrosoftGraphDriveExclusionUnit[]>]: The drive exclusion units associated with the OneDrive for work or school protection policy.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: 
+    [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Error <IMicrosoftGraphPublicError>]: publicError
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Code <String>]: Represents the error code.
@@ -1018,22 +1025,28 @@ Read-only.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: 
-    [PolicyId <String>]: 
+    [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DirectoryObjectId <String>]: 
-  [DriveExclusionUnitsBulkAdditionJobs <IMicrosoftGraphDriveExclusionUnitsBulkAdditionJob[]>]: 
+    [DirectoryObjectId <String>]: The unique identifier of the directory object (user) associated with the drive.
+  [DriveExclusionUnitsBulkAdditionJobs <IMicrosoftGraphDriveExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for drive exclusion units associated with the OneDrive for work or school protection policy.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: 
-    [DisplayName <String>]: 
+    [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [DisplayName <String>]: The display name of the bulk addition job.
     [Error <IMicrosoftGraphPublicError>]: publicError
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: 
+    [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Status <String>]: exclusionUnitBulkJobStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Drives <String[]>]: 
+    [Drives <String[]>]: The email addresses or user principal names of the users whose OneDrive drives are to be added as exclusion units to the protection policy.
   [DriveInclusionRules <IMicrosoftGraphDriveProtectionRule[]>]: Contains the details of the OneDrive for Work or School protection rule.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The time of creation of the rule.
@@ -1055,6 +1068,11 @@ For examples, see driveExpression examples.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
     [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+    [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [EffectiveFromDateTime <DateTime?>]: 
+      [Status <String>]: retentionPeriodChangeStatus
+      [TargetRetentionPeriodInDays <Int32?>]: 
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
     [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
@@ -1074,7 +1092,7 @@ Read-only.
     [DirectoryObjectIds <String[]>]: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
     [Drives <String[]>]: The list of email addresses to add to the OneDrive protection policy.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1086,7 +1104,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DRIVEEXCLUSIONUNITS <IMicrosoftGraphDriveExclusionUnit[]>: .
+DRIVEEXCLUSIONUNITS <IMicrosoftGraphDriveExclusionUnit[]>: The drive exclusion units associated with the OneDrive for work or school protection policy.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
@@ -1098,7 +1116,9 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: 
+  [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -1115,13 +1135,15 @@ For example, in the access reviews decisions API, this property might record the
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: 
-  [PolicyId <String>]: 
+  [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DirectoryObjectId <String>]: 
+  [DirectoryObjectId <String>]: The unique identifier of the directory object (user) associated with the drive.
 
-DRIVEEXCLUSIONUNITSBULKADDITIONJOBS <IMicrosoftGraphDriveExclusionUnitsBulkAdditionJob[]>: .
+DRIVEEXCLUSIONUNITSBULKADDITIONJOBS <IMicrosoftGraphDriveExclusionUnitsBulkAdditionJob[]>: The list of bulk addition jobs for drive exclusion units associated with the OneDrive for work or school protection policy.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
@@ -1133,8 +1155,10 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: 
-  [DisplayName <String>]: 
+  [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [DisplayName <String>]: The display name of the bulk addition job.
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -1151,11 +1175,13 @@ For example, in the access reviews decisions API, this property might record the
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: 
+  [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Status <String>]: exclusionUnitBulkJobStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Drives <String[]>]: 
+  [Drives <String[]>]: The email addresses or user principal names of the users whose OneDrive drives are to be added as exclusion units to the protection policy.
 
 DRIVEINCLUSIONRULES <IMicrosoftGraphDriveProtectionRule[]>: Contains the details of the OneDrive for Work or School protection rule.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1227,6 +1253,11 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
   [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+  [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [EffectiveFromDateTime <DateTime?>]: 
+    [Status <String>]: retentionPeriodChangeStatus
+    [TargetRetentionPeriodInDays <Int32?>]: 
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
   [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus
@@ -1271,7 +1302,7 @@ Read-only.
   [DirectoryObjectIds <String[]>]: The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.
   [Drives <String[]>]: The list of email addresses to add to the OneDrive protection policy.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -1315,7 +1346,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
   [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1327,7 +1358,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PROTECTIONPOLICYARTIFACTCOUNT `<IMicrosoftGraphProtectionPolicyArtifactCount>`: protectionPolicyArtifactCount
+PROTECTIONPOLICYARTIFACTCOUNT <IMicrosoftGraphProtectionPolicyArtifactCount>: protectionPolicyArtifactCount
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Completed <Int32?>]: The number of artifacts whose protection is completed.
   [Failed <Int32?>]: The number of artifacts whose protection failed.
@@ -1341,28 +1372,5 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting[]>: Contains the retention se
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessprotectionpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessprotectionpolicy)
+- [](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-update?view=graph-rest-beta)

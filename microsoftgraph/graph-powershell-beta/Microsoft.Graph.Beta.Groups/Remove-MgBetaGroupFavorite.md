@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 06/05/2026
+ms.date: 07/24/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaGroupFavorite
 ---
@@ -16,9 +16,6 @@ title: Remove-MgBetaGroupFavorite
 Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupFavorite](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupFavorite?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Remove (Default)
@@ -28,7 +25,6 @@ Remove-MgBetaGroupFavorite -GroupId <string> [-ResponseHeadersVariable <string>]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
@@ -38,7 +34,6 @@ Remove-MgBetaGroupFavorite -InputObject <IGroupsIdentity> [-ResponseHeadersVaria
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,17 +47,12 @@ Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Remove-MgBetaGroupFavorite -GroupId $groupId
-
-```
-This example shows how to use the Remove-MgBetaGroupFavorite Cmdlet.
-
 
 ## PARAMETERS
 
@@ -373,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -400,27 +390,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaGroupFavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-removefavorite?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite)
+- [](https://learn.microsoft.com/graph/api/group-removefavorite?view=graph-rest-beta)

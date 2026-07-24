@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryimpactedresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 07/24/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDismissDirectoryImpactedResource
 ---
@@ -24,7 +24,7 @@ Invoke-MgBetaDismissDirectoryImpactedResource -ImpactedResourceId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DismissReason <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Dismiss
@@ -35,7 +35,6 @@ Invoke-MgBetaDismissDirectoryImpactedResource -ImpactedResourceId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DismissViaIdentityExpanded
@@ -45,7 +44,7 @@ Invoke-MgBetaDismissDirectoryImpactedResource -InputObject <IIdentityDirectoryMa
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DismissReason <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### DismissViaIdentity
@@ -56,7 +55,6 @@ Invoke-MgBetaDismissDirectoryImpactedResource -InputObject <IIdentityDirectoryMa
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -67,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Dismiss an impactedResources object and update its status to dismissed.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -99,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -170,7 +178,7 @@ HelpMessage: ''
 
 ### -DismissReason
 
-
+.
 
 ```yaml
 Type: System.String
@@ -454,11 +462,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths930Y3QDirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths930Y3QDirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DismissReason <String>]: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -527,28 +535,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaDismissDirectoryImpactedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryimpactedresource)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/impactedresource-dismiss?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryimpactedresource)
+- [](https://learn.microsoft.com/graph/api/impactedresource-dismiss?view=graph-rest-beta)

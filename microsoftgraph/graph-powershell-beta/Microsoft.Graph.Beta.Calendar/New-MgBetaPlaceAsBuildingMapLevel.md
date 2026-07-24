@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasbuildingmaplevel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 06/05/2026
+ms.date: 07/24/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlaceAsBuildingMapLevel
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaPlaceAsBuildingMapLevel
 ## SYNOPSIS
 
 Create new navigation property to levels for places
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlaceAsBuildingMapLevel](/powershell/module/Microsoft.Graph.Calendar/New-MgPlaceAsBuildingMapLevel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ New-MgBetaPlaceAsBuildingMapLevel -PlaceId <string> [-ResponseHeadersVariable <s
  [-Units <IMicrosoftGraphUnitMap[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -41,7 +37,7 @@ New-MgBetaPlaceAsBuildingMapLevel -InputObject <ICalendarIdentity> [-PlaceId <st
  [-Sections <IMicrosoftGraphSectionMap[]>] [-Units <IMicrosoftGraphUnitMap[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -51,7 +47,6 @@ New-MgBetaPlaceAsBuildingMapLevel -PlaceId <string> -BodyParameter <IMicrosoftGr
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +56,7 @@ New-MgBetaPlaceAsBuildingMapLevel -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphLevelMap> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -72,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to levels for places
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -601,7 +606,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphLevelMap>`: levelMap
+BODYPARAMETER <IMicrosoftGraphLevelMap>: levelMap
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Properties <String>]: Concatenated key-value pair of all properties of a GeoJSON file for this baseMapFeature.
   [Id <String>]: The unique identifier for an entity.
@@ -633,7 +638,7 @@ Supports upsert.
 Read-only.
   [PlaceId <String>]: Identifier for the floor to which this fixtureMap belongs.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -672,27 +677,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaPlaceAsBuildingMapLevel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasbuildingmaplevel)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasbuildingmaplevel)
