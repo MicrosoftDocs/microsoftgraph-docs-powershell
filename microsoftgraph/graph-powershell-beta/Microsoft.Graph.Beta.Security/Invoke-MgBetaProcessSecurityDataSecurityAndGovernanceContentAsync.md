@@ -80,7 +80,7 @@ HelpMessage: ''
 
 ### -Body
 
-.
+
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -208,7 +208,7 @@ HelpMessage: ''
 
 ### -ProcessContentRequests
 
-.
+
 To construct, see NOTES section for PROCESSCONTENTREQUESTS properties and create a hash table.
 
 ```yaml

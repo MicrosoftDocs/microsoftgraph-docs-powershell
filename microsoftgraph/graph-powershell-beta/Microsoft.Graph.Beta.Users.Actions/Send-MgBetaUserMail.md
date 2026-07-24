@@ -262,7 +262,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -558,7 +558,7 @@ HelpMessage: ''
 
 ### -SaveToSentItems
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

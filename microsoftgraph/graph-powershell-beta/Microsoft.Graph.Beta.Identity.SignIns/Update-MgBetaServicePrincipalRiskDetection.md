@@ -603,7 +603,7 @@ HelpMessage: ''
 
 ### -MitreTechniqueId
 
-.
+
 
 ```yaml
 Type: System.String

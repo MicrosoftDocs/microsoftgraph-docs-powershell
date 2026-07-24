@@ -343,7 +343,7 @@ HelpMessage: ''
 
 ### -ItemActivityStats
 
-.
+
 To construct, see NOTES section for ITEMACTIVITYSTATS properties and create a hash table.
 
 ```yaml
