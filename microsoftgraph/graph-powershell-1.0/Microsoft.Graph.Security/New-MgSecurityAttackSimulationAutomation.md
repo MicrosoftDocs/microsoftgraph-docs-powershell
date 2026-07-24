@@ -18,6 +18,9 @@ Create new navigation property to simulationAutomations for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationAutomation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationAutomation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

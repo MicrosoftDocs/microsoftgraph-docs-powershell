@@ -18,6 +18,9 @@ Get the educationClass resources owned by an educationSchool.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolClass?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolClass?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

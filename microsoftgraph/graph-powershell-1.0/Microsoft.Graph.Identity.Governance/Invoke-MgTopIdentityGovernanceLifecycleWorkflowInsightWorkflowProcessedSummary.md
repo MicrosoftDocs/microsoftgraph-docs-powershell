@@ -20,6 +20,9 @@ For information about tasks processed, see insights: topTasksProcessedSummary.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Top (Default)

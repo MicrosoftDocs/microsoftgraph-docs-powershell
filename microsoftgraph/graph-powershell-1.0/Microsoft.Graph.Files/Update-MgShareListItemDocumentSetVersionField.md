@@ -18,6 +18,9 @@ Update the navigation property fields in shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaShareListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItemDocumentSetVersionField?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItemDocumentSetVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)

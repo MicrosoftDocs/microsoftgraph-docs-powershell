@@ -20,6 +20,9 @@ For information about retention labels from an administrator's perspective, see 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemRetentionLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemRetentionLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

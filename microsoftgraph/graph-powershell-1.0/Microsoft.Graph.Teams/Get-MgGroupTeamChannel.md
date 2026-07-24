@@ -18,6 +18,9 @@ The collection of channels and messages associated with the team.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)

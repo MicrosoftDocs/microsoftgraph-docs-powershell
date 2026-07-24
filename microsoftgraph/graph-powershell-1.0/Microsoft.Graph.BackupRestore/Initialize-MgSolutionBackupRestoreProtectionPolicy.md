@@ -20,6 +20,9 @@ You can add or remove artifacts (sites or user accounts) to or from each active 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Initialize-MgBetaSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Initialize-MgBetaSolutionBackupRestoreProtectionPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Initialize-MgBetaSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Initialize-MgBetaSolutionBackupRestoreProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Activate (Default)

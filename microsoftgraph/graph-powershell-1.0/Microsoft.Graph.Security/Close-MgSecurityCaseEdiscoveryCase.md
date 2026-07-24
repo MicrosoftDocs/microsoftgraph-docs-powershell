@@ -19,6 +19,9 @@ For details, see Close a case.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Close (Default)

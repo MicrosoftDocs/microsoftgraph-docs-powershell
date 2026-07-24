@@ -19,6 +19,9 @@ This check-in confirms that the reserved space is in use and prevents automatic 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlaceCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceCheck?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlaceCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

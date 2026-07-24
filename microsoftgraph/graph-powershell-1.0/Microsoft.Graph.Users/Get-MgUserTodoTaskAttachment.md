@@ -18,6 +18,9 @@ A collection of file attachments for the task.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ Create a new exchangeRestoreSession object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreExchangeRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreExchangeRestoreSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreExchangeRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreExchangeRestoreSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -22,6 +22,9 @@ For more information on audit logs for bitlocker recovery keys, see the KeyManag
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlockerRecoveryKey?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlockerRecoveryKey?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

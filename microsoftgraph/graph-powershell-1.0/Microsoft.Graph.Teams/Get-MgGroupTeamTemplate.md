@@ -19,6 +19,9 @@ See available templates.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamTemplate](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTemplate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamTemplate](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ Invoke action onenotePatchContent
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaGroupOnenotePageContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaGroupOnenotePageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### PatchExpanded (Default)

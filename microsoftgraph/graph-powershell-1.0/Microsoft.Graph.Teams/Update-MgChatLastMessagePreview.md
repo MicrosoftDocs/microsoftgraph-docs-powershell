@@ -18,6 +18,9 @@ Update the navigation property lastMessagePreview in chats
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatLastMessagePreview?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatLastMessagePreview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

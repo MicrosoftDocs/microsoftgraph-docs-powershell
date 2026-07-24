@@ -20,6 +20,9 @@ A null value would indicate the relation is directly with the [set].
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelationFromTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelationFromTerm?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelationFromTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelationFromTerm?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

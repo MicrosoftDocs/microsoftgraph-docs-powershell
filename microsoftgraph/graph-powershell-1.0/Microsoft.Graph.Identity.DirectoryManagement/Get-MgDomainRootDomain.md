@@ -19,6 +19,9 @@ This API returns a single object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDomainRootDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainRootDomain?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDomainRootDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainRootDomain?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

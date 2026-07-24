@@ -18,6 +18,9 @@ Get the count of Microsoft 365 activations on desktops and devices.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActivationCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActivationCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

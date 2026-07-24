@@ -25,6 +25,9 @@ To restore a team from its archived state, use the API to unarchive.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaArchiveGroupTeam?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaArchiveGroupTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ArchiveExpanded (Default)

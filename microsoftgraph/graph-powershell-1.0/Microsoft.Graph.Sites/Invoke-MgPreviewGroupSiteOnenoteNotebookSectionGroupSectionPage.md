@@ -18,6 +18,9 @@ Invoke function preview
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaPreviewGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaPreviewGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Preview (Default)

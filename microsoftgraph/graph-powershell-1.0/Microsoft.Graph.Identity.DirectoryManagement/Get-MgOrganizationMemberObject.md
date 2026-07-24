@@ -19,6 +19,9 @@ Only users and role-enabled groups can be members of directory roles.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganizationMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationMemberObject?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationMemberObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

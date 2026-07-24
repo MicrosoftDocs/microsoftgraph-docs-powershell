@@ -25,6 +25,9 @@ A channel can’t be archived or unarchived if its team is archived.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaArchiveTeamPrimaryChannel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaArchiveTeamPrimaryChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ArchiveExpanded (Default)

@@ -18,6 +18,9 @@ Update the navigation property fields in drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemVersionField?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ Update the navigation property recurrences in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserSettingWorkHourAndLocationRecurrence](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserSettingWorkHourAndLocationRecurrence?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserSettingWorkHourAndLocationRecurrence](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserSettingWorkHourAndLocationRecurrence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

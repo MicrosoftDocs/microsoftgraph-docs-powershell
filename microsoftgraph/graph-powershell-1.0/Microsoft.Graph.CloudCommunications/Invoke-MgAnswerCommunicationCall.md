@@ -23,6 +23,9 @@ This API supports the following PSTN scenarios:
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AnswerExpanded (Default)

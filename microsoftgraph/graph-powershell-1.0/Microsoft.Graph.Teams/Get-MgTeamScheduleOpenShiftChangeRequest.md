@@ -18,6 +18,9 @@ Retrieve the properties and relationships of an openShiftChangeRequest object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOpenShiftChangeRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOpenShiftChangeRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

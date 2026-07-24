@@ -18,6 +18,9 @@ Delete navigation property readingCoachPassages for education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationReportReadingCoachPassage](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationReportReadingCoachPassage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationReportReadingCoachPassage](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationReportReadingCoachPassage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

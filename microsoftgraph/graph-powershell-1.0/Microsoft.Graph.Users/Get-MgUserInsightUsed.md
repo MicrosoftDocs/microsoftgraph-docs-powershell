@@ -18,6 +18,9 @@ Calculated relationship that identifies the latest documents viewed or modified 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserInsightUsed](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightUsed?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightUsed](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightUsed?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

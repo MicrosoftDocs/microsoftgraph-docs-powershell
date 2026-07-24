@@ -22,6 +22,9 @@ To retrieve the default branding, see Get branding.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

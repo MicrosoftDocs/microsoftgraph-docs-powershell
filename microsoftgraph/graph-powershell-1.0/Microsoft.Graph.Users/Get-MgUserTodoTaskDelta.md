@@ -20,6 +20,9 @@ This allows you to maintain and synchronize a local store of a user's todoTask r
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

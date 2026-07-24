@@ -18,6 +18,9 @@ Get an event object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEvent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

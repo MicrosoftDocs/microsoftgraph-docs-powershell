@@ -18,6 +18,9 @@ Delete navigation property speakerAssignmentSubmissions for education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationReportSpeakerAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationReportSpeakerAssignmentSubmission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationReportSpeakerAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationReportSpeakerAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

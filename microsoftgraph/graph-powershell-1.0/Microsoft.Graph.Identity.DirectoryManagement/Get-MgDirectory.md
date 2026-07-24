@@ -18,6 +18,9 @@ Get directory
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectory?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

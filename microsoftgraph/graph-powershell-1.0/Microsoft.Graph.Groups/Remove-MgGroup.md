@@ -22,6 +22,9 @@ To learn more, see deletedItems.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -19,6 +19,9 @@ When invoked with delegated permissions, this operation only works for tenant ad
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChat?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -21,6 +21,9 @@ The current timeout value is 15 seconds.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRedirectCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRedirectCommunicationCall?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRedirectCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRedirectCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RedirectExpanded (Default)

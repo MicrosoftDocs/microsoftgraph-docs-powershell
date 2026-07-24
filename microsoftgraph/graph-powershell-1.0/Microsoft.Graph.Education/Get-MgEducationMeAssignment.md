@@ -18,6 +18,9 @@ Assignments belonging to the user.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

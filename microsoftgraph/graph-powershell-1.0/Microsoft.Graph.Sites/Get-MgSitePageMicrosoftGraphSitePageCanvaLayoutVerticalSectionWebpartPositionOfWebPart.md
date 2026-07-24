@@ -18,6 +18,9 @@ Invoke action getPositionOfWebPart
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

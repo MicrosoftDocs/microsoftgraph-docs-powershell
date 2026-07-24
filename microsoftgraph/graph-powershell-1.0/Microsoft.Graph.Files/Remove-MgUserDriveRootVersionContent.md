@@ -18,6 +18,9 @@ The content stream for this version of the item.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootVersionContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

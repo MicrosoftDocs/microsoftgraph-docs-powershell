@@ -18,6 +18,9 @@ Update an editable secureScoreControlProfile object within any integrated soluti
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

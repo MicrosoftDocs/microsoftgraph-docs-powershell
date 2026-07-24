@@ -19,6 +19,9 @@ The file can then be added as a default file or template via a POST operation.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

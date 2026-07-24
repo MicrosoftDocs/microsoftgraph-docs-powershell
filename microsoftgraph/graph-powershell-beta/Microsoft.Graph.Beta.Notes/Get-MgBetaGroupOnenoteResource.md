@@ -18,6 +18,9 @@ Getting a resources collection isn't supported, but you can get the binary conte
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteResource](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

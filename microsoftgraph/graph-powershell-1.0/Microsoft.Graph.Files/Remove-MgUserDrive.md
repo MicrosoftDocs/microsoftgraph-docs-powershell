@@ -18,6 +18,9 @@ Delete navigation property drives for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDrive?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

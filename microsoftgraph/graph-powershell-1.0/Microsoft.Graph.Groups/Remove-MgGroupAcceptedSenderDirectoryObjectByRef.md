@@ -18,6 +18,9 @@ Remove acceptedSender
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

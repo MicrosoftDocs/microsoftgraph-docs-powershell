@@ -19,6 +19,9 @@ This action allows you to quickly update your work location without modifying in
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

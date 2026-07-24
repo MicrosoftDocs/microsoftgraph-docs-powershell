@@ -19,6 +19,9 @@ Set the isPublished property to true, and the publicUrl property to the URL of t
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Publish-MgBetaBookingBusiness?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Publish-MgBetaBookingBusiness?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)

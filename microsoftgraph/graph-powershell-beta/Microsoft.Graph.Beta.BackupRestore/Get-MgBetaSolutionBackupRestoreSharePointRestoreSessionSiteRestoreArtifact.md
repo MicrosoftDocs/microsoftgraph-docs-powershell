@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifac
 
 A collection of restore points and destination details that can be used to restore SharePoint sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

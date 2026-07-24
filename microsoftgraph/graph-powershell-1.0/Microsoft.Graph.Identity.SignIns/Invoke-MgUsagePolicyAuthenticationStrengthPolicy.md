@@ -20,6 +20,9 @@ Policies in the former category are restricted in what kinds of changes may be m
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Usage (Default)

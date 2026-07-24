@@ -18,6 +18,9 @@ Delete navigation property attendanceRecords for solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

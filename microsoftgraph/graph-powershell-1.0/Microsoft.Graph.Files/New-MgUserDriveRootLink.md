@@ -20,6 +20,9 @@ DriveItem resources inherit sharing permissions from their ancestors.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootLink?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

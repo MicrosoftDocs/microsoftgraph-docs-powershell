@@ -18,6 +18,9 @@ Update the navigation property roleDefinitions in roleManagement
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

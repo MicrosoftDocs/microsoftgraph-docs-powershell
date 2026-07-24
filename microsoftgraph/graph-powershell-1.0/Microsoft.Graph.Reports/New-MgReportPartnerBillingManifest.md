@@ -18,6 +18,9 @@ Create new navigation property to manifests for reports
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportPartnerBillingManifest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportPartnerBillingManifest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

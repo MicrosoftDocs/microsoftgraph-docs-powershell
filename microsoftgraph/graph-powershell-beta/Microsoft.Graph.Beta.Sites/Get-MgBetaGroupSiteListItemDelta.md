@@ -22,6 +22,9 @@ You should use the last occurrence you see.
 Deleted items are returned with the deleted facet.
 Deleted indicates that the item is deleted and can't be restored.\rItems with this property should be removed from your local state.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListItemDelta](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)

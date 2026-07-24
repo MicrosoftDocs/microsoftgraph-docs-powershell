@@ -19,6 +19,9 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

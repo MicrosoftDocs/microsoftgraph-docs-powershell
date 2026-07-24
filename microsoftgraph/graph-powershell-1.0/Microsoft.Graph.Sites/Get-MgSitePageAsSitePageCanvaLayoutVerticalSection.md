@@ -18,6 +18,9 @@ Vertical section on the SharePoint page.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

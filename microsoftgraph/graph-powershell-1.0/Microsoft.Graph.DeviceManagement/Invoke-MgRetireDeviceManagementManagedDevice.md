@@ -18,6 +18,9 @@ Retire a device
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRetireDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Invoke-MgBetaRetireDeviceManagementManagedDevice?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRetireDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Invoke-MgBetaRetireDeviceManagementManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Retire (Default)

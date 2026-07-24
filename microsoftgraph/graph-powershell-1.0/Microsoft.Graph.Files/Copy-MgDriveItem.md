@@ -18,6 +18,9 @@ Invoke action copy
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Copy-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaDriveItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

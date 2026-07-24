@@ -18,6 +18,9 @@ Delete navigation property trending for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserInsightTrending](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserInsightTrending?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserInsightTrending](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserInsightTrending?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

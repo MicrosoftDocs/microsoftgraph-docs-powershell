@@ -18,6 +18,9 @@ Retrieve the properties of a contentSharingSession object in a call.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

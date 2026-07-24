@@ -18,6 +18,9 @@ The list of mailbox inclusion rules applied to the tenant.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreMailboxInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreMailboxInclusionRule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreMailboxInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreMailboxInclusionRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

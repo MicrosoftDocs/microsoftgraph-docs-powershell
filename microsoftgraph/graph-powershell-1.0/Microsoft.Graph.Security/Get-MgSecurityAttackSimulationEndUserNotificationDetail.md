@@ -18,6 +18,9 @@ Get details from security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

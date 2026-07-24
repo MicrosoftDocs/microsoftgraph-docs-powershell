@@ -18,6 +18,9 @@ Represents potential issues within a customer's Microsoft Defender for Identity 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentitySensorHealthIssue](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentitySensorHealthIssue?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentitySensorHealthIssue](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentitySensorHealthIssue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

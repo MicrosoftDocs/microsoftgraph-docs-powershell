@@ -18,6 +18,9 @@ Update the navigation property speakerAssignmentSubmissions in education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationReportSpeakerAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationReportSpeakerAssignmentSubmission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationReportSpeakerAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationReportSpeakerAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

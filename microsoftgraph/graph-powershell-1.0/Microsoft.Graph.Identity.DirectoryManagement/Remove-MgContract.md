@@ -18,6 +18,9 @@ Delete entity from contracts
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaContract?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaContract?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

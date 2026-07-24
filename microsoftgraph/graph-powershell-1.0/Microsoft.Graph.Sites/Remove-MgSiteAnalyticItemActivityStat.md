@@ -18,6 +18,9 @@ Delete navigation property itemActivityStats for sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

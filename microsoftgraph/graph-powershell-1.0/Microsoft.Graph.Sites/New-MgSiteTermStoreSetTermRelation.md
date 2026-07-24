@@ -18,6 +18,9 @@ Create new navigation property to relations for sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetTermRelation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetTermRelation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

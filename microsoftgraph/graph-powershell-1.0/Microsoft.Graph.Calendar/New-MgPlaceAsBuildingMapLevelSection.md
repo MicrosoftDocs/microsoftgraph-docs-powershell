@@ -18,6 +18,9 @@ Create new navigation property to sections for places
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlaceAsBuildingMapLevelSection](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsBuildingMapLevelSection?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsBuildingMapLevelSection](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsBuildingMapLevelSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

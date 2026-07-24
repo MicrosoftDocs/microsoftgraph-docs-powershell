@@ -18,6 +18,9 @@ Update the navigation property analytics in sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteGetByPathAnalytic?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteGetByPathAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

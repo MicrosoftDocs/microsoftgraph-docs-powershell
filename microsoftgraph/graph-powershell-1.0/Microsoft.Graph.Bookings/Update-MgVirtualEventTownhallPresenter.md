@@ -18,6 +18,9 @@ Update the navigation property presenters in solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhallPresenter?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhallPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ The most recent sslCertificate used to communicate on the port.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPortMostRecentSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPortMostRecentSslCertificate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPortMostRecentSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPortMostRecentSslCertificate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

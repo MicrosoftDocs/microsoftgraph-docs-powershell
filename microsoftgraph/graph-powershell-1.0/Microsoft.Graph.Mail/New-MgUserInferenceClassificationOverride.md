@@ -18,6 +18,9 @@ Create new navigation property to overrides for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

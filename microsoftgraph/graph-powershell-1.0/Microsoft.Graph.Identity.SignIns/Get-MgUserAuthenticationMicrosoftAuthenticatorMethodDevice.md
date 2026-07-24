@@ -19,6 +19,9 @@ This property is null if the device isn't registered for passwordless Phone Sign
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

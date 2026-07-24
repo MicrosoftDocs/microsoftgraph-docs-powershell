@@ -18,6 +18,9 @@ Details of practiced Reading Coach passages.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationReportReadingCoachPassage](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReportReadingCoachPassage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationReportReadingCoachPassage](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReportReadingCoachPassage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

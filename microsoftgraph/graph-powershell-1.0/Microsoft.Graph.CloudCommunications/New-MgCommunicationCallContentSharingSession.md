@@ -18,6 +18,9 @@ Create new navigation property to contentSharingSessions for communications
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

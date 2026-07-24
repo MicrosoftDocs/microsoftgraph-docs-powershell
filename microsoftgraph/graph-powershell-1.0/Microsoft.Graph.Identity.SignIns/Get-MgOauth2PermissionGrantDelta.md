@@ -19,6 +19,9 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOauth2PermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaOauth2PermissionGrantDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOauth2PermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaOauth2PermissionGrantDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

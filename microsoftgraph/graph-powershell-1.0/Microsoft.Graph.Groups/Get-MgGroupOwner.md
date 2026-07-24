@@ -20,6 +20,9 @@ Owners are currently not available in Microsoft Graph for groups that were creat
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupOwner](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwner?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOwner](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

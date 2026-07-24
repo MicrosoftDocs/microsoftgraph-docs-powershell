@@ -18,6 +18,9 @@ List a set of items recently used by the signed-in user.\rThis collection includ
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaRecentUserDrive?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaRecentUserDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Recent (Default)

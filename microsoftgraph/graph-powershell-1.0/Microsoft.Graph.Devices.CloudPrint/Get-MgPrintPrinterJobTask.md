@@ -18,6 +18,9 @@ A list of printTasks that were triggered by this print job.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJobTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobTask?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJobTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

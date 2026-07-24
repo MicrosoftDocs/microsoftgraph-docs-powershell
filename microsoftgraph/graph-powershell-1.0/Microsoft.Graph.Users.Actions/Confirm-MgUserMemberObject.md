@@ -18,6 +18,9 @@ Invoke action checkMemberObjects
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Confirm-MgBetaUserMemberObject](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Confirm-MgBetaUserMemberObject?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaUserMemberObject](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Confirm-MgBetaUserMemberObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)

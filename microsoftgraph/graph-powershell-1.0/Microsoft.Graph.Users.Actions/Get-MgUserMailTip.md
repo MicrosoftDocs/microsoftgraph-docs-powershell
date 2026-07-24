@@ -20,6 +20,9 @@ The requested MailTips are returned in a mailTips collection.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMailTip](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMailTip?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailTip](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMailTip?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

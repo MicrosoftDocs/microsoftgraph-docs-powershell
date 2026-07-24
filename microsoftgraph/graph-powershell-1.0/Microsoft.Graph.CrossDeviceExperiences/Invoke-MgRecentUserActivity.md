@@ -25,6 +25,9 @@ To get your application's activities, use the nextLink property to paginate.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Recent (Default)

@@ -18,6 +18,9 @@ Get workspaces from places
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomListWorkspace](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomListWorkspace?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomListWorkspace](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomListWorkspace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

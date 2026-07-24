@@ -18,6 +18,9 @@ Update the navigation property subscriptions in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

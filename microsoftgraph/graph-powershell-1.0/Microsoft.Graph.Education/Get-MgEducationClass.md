@@ -21,6 +21,9 @@ If you're using the delegated token, the user will only see classes in which the
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClass?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClass?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

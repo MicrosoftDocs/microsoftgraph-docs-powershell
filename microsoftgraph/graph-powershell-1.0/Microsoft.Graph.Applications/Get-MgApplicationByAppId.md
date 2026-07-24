@@ -19,6 +19,9 @@ This API can be used to get agentIdentityBlueprint objects as well by their ID.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationByAppId?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationByAppId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

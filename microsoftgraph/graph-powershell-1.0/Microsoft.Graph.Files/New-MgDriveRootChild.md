@@ -18,6 +18,9 @@ Create new navigation property to children for drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootChild?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

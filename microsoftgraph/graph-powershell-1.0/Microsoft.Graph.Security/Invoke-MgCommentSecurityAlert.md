@@ -18,6 +18,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaCommentSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaCommentSecurityAlert?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCommentSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaCommentSecurityAlert?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Comment (Default)

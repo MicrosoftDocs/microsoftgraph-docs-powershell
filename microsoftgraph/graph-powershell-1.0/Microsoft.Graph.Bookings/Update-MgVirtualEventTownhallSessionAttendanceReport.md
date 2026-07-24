@@ -18,6 +18,9 @@ Update the navigation property attendanceReports in solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhallSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhallSessionAttendanceReport?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhallSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhallSessionAttendanceReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

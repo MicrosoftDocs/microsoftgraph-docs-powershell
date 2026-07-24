@@ -18,6 +18,9 @@ Container for actions related to computing tenant-wide data protection scopes.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityDataSecurityAndGovernanceProtectionScope](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityDataSecurityAndGovernanceProtectionScope?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityDataSecurityAndGovernanceProtectionScope](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityDataSecurityAndGovernanceProtectionScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

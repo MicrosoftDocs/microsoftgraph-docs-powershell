@@ -18,6 +18,9 @@ Collection of webparts on the SharePoint page.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageWebPart?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageWebPart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ Get a mailboxProtectionUnitsBulkAdditionJob object by the ID associated with an 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

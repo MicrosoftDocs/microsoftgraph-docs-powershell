@@ -19,6 +19,9 @@ A sharing invitation provides permissions to the recipients and, optionally, sen
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaInviteDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaInviteDriveItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaInviteDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaInviteDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### InviteExpanded (Default)

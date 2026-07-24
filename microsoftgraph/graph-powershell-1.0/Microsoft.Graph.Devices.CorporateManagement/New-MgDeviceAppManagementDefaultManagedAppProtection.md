@@ -18,6 +18,9 @@ Create new navigation property to defaultManagedAppProtections for deviceAppMana
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

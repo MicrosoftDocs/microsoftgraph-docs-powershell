@@ -18,6 +18,9 @@ Delete plannerBucket.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerBucket?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerBucket?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

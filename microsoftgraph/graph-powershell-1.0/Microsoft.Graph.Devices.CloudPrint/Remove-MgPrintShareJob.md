@@ -18,6 +18,9 @@ Delete navigation property jobs for print
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -18,6 +18,9 @@ Update the navigation property protectionScopes in security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityDataSecurityAndGovernanceProtectionScope](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityDataSecurityAndGovernanceProtectionScope?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityDataSecurityAndGovernanceProtectionScope](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityDataSecurityAndGovernanceProtectionScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

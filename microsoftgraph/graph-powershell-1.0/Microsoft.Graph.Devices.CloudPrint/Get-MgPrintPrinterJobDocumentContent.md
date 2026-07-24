@@ -19,6 +19,9 @@ Calling this method yields a redirect response with a preauthenticated URL that 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJobDocumentContent](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobDocumentContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJobDocumentContent](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobDocumentContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

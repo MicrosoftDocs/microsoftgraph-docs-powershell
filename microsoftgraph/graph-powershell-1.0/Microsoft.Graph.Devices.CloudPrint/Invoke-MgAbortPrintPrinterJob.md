@@ -21,6 +21,9 @@ For details about how to register a task trigger, see Extending Universal Print 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaAbortPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Invoke-MgBetaAbortPrintPrinterJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAbortPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Invoke-MgBetaAbortPrintPrinterJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AbortExpanded (Default)

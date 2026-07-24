@@ -20,6 +20,9 @@ If the printer is shared again in the future, any Windows users who had previous
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShare?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShare?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

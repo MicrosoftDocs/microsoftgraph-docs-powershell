@@ -18,6 +18,9 @@ Invoke action permanentDelete
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupCalendarPermanent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarPermanent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupCalendarPermanent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarPermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

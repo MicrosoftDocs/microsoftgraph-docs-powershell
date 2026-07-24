@@ -18,6 +18,9 @@ Set mobile device management authority
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaOrganizationMobileDeviceManagementAuthority](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationMobileDeviceManagementAuthority?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationMobileDeviceManagementAuthority](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationMobileDeviceManagementAuthority?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

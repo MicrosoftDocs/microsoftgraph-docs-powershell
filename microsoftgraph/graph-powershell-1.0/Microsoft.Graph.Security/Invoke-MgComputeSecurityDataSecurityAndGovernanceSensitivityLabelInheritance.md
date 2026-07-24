@@ -18,6 +18,9 @@ Calculate the sensitivity label that should be inherited by an output artifact, 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Compute (Default)

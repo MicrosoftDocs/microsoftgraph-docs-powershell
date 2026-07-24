@@ -18,6 +18,9 @@ Delete navigation property operations for print
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintOperation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

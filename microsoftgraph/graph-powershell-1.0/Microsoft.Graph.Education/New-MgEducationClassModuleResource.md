@@ -20,6 +20,9 @@ You can create the following types of module resources: Every resource has an @o
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

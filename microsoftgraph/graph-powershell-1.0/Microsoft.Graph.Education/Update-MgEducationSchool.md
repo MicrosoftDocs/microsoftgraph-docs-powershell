@@ -18,6 +18,9 @@ Update the properties of an educationSchool object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchool?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

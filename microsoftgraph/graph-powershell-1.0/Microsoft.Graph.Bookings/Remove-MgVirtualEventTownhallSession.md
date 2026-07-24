@@ -18,6 +18,9 @@ Delete navigation property sessions for solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventTownhallSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventTownhallSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventTownhallSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventTownhallSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

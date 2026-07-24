@@ -22,6 +22,9 @@ To manage the deleted user object, see deletedItems.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserByUserPrincipalName?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserByUserPrincipalName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

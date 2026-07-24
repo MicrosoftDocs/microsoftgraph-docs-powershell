@@ -18,6 +18,9 @@ Create new navigation property to bundles for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveBundle?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveBundle?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

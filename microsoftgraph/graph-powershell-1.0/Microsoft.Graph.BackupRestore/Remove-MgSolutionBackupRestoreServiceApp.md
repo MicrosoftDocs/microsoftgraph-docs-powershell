@@ -19,6 +19,9 @@ When this API is called via Microsoft Graph PowerShell, it returns a 403 Forbidd
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreServiceApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreServiceApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

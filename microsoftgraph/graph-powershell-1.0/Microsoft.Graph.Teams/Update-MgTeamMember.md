@@ -18,6 +18,9 @@ Update the role of a conversationMember in a team.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

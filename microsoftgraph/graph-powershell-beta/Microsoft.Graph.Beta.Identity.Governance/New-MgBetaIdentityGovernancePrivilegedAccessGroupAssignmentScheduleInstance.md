@@ -15,6 +15,9 @@ title: New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstan
 
 Create new navigation property to assignmentScheduleInstances for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

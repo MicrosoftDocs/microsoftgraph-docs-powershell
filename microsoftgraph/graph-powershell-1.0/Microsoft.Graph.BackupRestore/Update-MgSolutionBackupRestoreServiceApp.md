@@ -18,6 +18,9 @@ Update the navigation property serviceApps in solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreServiceApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreServiceApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

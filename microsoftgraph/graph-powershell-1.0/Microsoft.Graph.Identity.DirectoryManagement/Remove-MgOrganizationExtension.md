@@ -18,6 +18,9 @@ Delete navigation property extensions for organization
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

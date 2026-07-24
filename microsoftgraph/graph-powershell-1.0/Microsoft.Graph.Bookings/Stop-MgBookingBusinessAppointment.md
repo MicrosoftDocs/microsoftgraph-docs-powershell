@@ -18,6 +18,9 @@ Cancel the specified bookingAppointment in the specified bookingBusiness and sen
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)

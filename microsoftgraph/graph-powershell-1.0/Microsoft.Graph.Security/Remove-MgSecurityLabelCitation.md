@@ -18,6 +18,9 @@ Delete a citationTemplate object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

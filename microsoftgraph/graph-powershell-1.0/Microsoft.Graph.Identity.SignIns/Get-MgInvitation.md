@@ -18,6 +18,9 @@ Get entities from invitations
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

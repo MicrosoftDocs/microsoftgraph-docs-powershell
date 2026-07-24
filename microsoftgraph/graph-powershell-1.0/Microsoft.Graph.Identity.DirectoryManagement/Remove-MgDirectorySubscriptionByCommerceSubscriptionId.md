@@ -18,6 +18,9 @@ Delete navigation property subscriptions for directory
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDirectorySubscriptionByCommerceSubscriptionId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectorySubscriptionByCommerceSubscriptionId?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectorySubscriptionByCommerceSubscriptionId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectorySubscriptionByCommerceSubscriptionId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

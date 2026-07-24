@@ -18,6 +18,9 @@ Information about the Microsoft Teams team that was created for the request.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestTeam?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

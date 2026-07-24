@@ -18,6 +18,9 @@ Delete navigation property members for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamTagMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamTagMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

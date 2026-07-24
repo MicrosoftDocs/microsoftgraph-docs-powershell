@@ -18,6 +18,9 @@ Update the navigation property sharepoint in admin
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepoint?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ When set, enables users to configure custom string grades based on the percentag
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentGradingScheme](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentGradingScheme?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentGradingScheme](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentGradingScheme?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

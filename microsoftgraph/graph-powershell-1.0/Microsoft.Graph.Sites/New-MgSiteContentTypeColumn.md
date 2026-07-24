@@ -18,6 +18,9 @@ Add a column to a content type in a site, or a list with a request that specifie
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

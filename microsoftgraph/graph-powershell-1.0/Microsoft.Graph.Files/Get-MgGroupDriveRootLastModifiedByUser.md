@@ -19,6 +19,9 @@ Read-only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootLastModifiedByUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootLastModifiedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

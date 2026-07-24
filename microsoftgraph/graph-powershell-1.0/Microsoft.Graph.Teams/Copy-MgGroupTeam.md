@@ -25,6 +25,9 @@ The recommended delay between GETs is 5 seconds.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Copy-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Copy-MgBetaGroupTeam?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Copy-MgBetaGroupTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CloneExpanded (Default)

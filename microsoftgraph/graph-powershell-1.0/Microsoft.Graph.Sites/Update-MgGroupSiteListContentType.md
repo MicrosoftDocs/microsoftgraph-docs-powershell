@@ -18,6 +18,9 @@ Update the navigation property contentTypes in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

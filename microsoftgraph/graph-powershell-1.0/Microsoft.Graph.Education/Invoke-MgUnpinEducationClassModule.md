@@ -20,6 +20,9 @@ Only teachers in the class can perform this operation.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaUnpinEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaUnpinEducationClassModule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnpinEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaUnpinEducationClassModule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unpin (Default)

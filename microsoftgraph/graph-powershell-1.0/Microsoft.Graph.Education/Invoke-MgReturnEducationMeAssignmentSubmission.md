@@ -20,6 +20,9 @@ This action can only be done by the teacher.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReturnEducationMeAssignmentSubmission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReturnEducationMeAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Return (Default)

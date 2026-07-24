@@ -20,6 +20,9 @@ Specify the desired whoisRecord in one of the following two ways:\r- Identify a 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostWhoi](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostWhoi?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostWhoi](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostWhoi?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

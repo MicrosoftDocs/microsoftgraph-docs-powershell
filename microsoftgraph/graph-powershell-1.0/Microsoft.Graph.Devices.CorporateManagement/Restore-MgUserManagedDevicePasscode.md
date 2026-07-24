@@ -18,6 +18,9 @@ Recover passcode
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Restore-MgBetaUserManagedDevicePasscode?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Restore-MgBetaUserManagedDevicePasscode?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Recover (Default)

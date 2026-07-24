@@ -18,6 +18,9 @@ Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeGroupDriveItemSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeGroupDriveItemSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reauthorize (Default)

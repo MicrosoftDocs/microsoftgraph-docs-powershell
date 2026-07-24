@@ -20,6 +20,9 @@ Doesn't support $expand.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

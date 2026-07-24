@@ -18,6 +18,9 @@ Update the navigation property whoisRecords in security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

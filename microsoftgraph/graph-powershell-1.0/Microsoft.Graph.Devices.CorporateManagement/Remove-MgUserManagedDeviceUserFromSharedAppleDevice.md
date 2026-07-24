@@ -18,6 +18,9 @@ Delete user from shared Apple device
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### DeleteExpanded (Default)

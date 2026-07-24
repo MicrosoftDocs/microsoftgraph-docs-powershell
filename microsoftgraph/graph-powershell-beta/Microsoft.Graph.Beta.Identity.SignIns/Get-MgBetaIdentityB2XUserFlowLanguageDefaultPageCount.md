@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguageDefaultPageCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageDefaultPageCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

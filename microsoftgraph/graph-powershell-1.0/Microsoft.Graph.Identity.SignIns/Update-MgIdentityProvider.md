@@ -20,6 +20,9 @@ In Azure AD B2C, this operation can currently update a socialIdentityProvider, o
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityProvider?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

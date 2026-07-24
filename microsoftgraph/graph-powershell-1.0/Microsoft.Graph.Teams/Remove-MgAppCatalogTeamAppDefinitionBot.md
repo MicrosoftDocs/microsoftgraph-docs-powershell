@@ -18,6 +18,9 @@ Delete navigation property bot for appCatalogs
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

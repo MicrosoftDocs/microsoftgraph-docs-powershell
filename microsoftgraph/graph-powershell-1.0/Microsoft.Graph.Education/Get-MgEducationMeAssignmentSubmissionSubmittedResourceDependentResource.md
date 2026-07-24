@@ -18,6 +18,9 @@ A collection of submission resources that depend on the parent educationSubmissi
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

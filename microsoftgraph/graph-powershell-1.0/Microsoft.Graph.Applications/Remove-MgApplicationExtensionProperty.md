@@ -19,6 +19,9 @@ You can delete only directory extensions that aren't synced from on-premises act
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

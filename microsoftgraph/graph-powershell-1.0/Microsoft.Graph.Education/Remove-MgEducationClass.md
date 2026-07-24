@@ -19,6 +19,9 @@ Because a class is also a universal group, deleting a class deletes the group.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClass?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClass?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

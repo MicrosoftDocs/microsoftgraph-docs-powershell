@@ -19,6 +19,9 @@ Optionally clears existing the synchronization state and previous errors.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restart-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Restart-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restart-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Restart-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RestartExpanded (Default)

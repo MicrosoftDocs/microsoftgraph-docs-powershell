@@ -18,6 +18,9 @@ Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsMobileM
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

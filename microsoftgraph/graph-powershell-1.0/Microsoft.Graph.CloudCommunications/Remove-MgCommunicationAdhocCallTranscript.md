@@ -18,6 +18,9 @@ Delete navigation property transcripts for communications
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationAdhocCallTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationAdhocCallTranscript?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationAdhocCallTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationAdhocCallTranscript?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

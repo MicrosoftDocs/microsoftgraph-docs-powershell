@@ -19,6 +19,9 @@ Any site on which users viewed, modified, uploaded, downloaded, shared, or synce
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageAccountCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageAccountCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageAccountCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageAccountCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

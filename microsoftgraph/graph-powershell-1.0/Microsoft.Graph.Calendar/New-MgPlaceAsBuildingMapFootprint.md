@@ -18,6 +18,9 @@ Create new navigation property to footprints for places
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlaceAsBuildingMapFootprint](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsBuildingMapFootprint?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsBuildingMapFootprint](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsBuildingMapFootprint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

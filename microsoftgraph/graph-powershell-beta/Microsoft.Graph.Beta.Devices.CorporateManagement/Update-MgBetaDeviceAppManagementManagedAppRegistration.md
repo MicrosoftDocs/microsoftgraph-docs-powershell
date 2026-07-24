@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementManagedAppRegistration
 
 Update the navigation property managedAppRegistrations in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementManagedAppRegistration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

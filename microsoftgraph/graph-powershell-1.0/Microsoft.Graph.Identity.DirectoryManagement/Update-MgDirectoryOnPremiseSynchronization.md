@@ -18,6 +18,9 @@ Update the properties of an onPremisesDirectorySynchronization object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
