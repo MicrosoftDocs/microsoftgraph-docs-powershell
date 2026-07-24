@@ -89,6 +89,14 @@ Create a new internalDomainFederation object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Domain-InternalFederation.ReadWrite.All, Domain.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain-InternalFederation.ReadWrite.All, Domain.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain-InternalFederation.ReadWrite.All, Domain.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Configure federation settings for a federated domain
 

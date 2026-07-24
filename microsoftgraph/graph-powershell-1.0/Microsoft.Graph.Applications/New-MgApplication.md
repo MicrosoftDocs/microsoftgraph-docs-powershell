@@ -86,6 +86,14 @@ This API can also create an agentIdentityBlueprint object when the @odata.type p
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
 | Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, AgentIdentityBlueprint.Create,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentityBlueprint.Create,  |
+| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, AgentIdentityBlueprint.Create, Application.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Create a new application
 

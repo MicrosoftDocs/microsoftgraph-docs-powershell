@@ -77,6 +77,14 @@ After the rule is applied, the state is either completed or completedWithErrors.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Configuration.Read.All, BackupRestore-Configuration.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BackupRestore-Configuration.Read.All, BackupRestore-Configuration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BackupRestore-Configuration.Read.All, BackupRestore-Configuration.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -All

@@ -79,6 +79,14 @@ An API to check validity of the endpoint and and authentication configuration fo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomAuthenticationExtension.Read.All, CustomAuthenticationExtension.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CustomAuthenticationExtension.Read.All, CustomAuthenticationExtension.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomAuthenticationExtension.Read.All, CustomAuthenticationExtension.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

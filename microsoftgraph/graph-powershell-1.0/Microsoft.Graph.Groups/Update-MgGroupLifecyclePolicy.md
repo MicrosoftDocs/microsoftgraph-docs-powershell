@@ -122,6 +122,14 @@ Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource typ
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

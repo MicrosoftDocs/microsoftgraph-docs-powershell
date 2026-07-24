@@ -83,6 +83,14 @@ For more information about how to handle mute operations, see muteParticipantOpe
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallasGuest.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallasGuest.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

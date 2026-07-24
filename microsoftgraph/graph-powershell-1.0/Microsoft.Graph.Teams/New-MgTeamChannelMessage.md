@@ -97,6 +97,14 @@ Send a new chatMessage in the specified channel.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Teamwork.Migrate.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelMessage.Send, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Teamwork.Migrate.All,  |
+
 ## EXAMPLES
 ### Example 1: Send a Hello World message in a channel
 

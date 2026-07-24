@@ -59,6 +59,14 @@ With Teams Premium, you can configure a custom lobby room experience for attende
 | Delegated (personal Microsoft account) | Not supported |
 | Application | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualAppointment.Read, OnlineMeetings.Read, OnlineMeetings.ReadWrite, VirtualAppointment.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

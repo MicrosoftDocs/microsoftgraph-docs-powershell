@@ -70,6 +70,14 @@ Microsoft 365 Defender correlates alerts with the same attack techniques or the 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIncident.Read.All, SecurityIncident.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityIncident.Read.All, SecurityIncident.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityIncident.Read.All, SecurityIncident.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: List all incidents
 

@@ -83,6 +83,14 @@ For more information about exporting data while complying with regulations, see 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Export.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Export.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Export.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

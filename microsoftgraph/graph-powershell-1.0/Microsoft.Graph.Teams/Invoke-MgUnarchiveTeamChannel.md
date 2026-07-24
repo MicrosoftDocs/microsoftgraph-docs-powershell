@@ -63,6 +63,14 @@ Unarchiving is an asynchronous operation; a channel is unarchived when the async
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChannelSettings.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Unarchive a channel
 

@@ -99,6 +99,14 @@ This API can't create a new chat; you must use the list chats method to retrieve
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Teamwork.Migrate.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMessage.Send, Chat.ReadWrite, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Teamwork.Migrate.All,  |
+
 ## EXAMPLES
 ### Example 1: Send inline images along with the message
 

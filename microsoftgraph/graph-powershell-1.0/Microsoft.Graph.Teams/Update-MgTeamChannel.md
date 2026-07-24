@@ -93,6 +93,14 @@ Update the properties of the specified channel.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ChannelSettings.ReadWrite.Group, Group.ReadWrite.All, Directory.ReadWrite.All, ChannelSettings.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelSettings.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelSettings.ReadWrite.Group, ChannelSettings.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

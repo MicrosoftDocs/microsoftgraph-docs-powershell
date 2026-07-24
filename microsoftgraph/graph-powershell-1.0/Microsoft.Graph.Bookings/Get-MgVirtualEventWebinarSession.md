@@ -69,6 +69,14 @@ Currently, the following virtual event types are supported: \r- virtualEventTown
 | Delegated (personal Microsoft account) | Not supported |
 | Application | VirtualEvent.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualEvent.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

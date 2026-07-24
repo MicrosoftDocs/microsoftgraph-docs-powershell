@@ -69,6 +69,14 @@ Read the properties and relationships of a userConsentRequest object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

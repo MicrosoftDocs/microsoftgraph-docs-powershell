@@ -58,6 +58,14 @@ Create a comment for an existing alert based on the specified alert id property.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityAlert.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityAlert.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityAlert.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

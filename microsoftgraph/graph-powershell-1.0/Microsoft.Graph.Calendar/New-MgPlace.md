@@ -60,6 +60,14 @@ You can also use this method to create the following child object types: buildin
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Place.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Place.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Place.ReadWrite.All,  |
+
 ## PARAMETERS
 
 ### -AdditionalProperties

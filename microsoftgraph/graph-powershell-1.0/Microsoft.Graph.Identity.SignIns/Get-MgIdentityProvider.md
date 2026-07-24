@@ -70,6 +70,14 @@ In Azure AD B2C, this operation can currently get a socialIdentityProvider, or a
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Retrieve a specific social identity provider (Azure AD or Azure AD B2C)
 

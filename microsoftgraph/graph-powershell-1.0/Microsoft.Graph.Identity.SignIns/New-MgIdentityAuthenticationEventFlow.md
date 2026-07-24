@@ -60,6 +60,14 @@ The following derived subtypes are supported:\r- externalUsersSelfServiceSignupE
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EventListener.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EventListener.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EventListener.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Create a basic External Identities sign-up and sign-in user flow in an external tenant
 

@@ -68,6 +68,14 @@ Read the properties and relationships of a customTaskExtension object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | LifecycleWorkflows-CustomExt.Read.All, LifecycleWorkflows.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows-CustomExt.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LifecycleWorkflows-CustomExt.Read.All, LifecycleWorkflows-CustomExt.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecycleWorkflows-CustomExt.Read.All, LifecycleWorkflows-CustomExt.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

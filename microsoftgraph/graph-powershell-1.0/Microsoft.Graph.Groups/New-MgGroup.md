@@ -98,6 +98,14 @@ To get properties that are not returned by default, do a GET operation and speci
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.Create, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Create a new group
 
