@@ -73,20 +73,6 @@ For example, subdomain.contoso.com is automatically be verified if contoso.com h
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Domain.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1126,6 +1112,7 @@ Not nullable.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomain)
 - [](https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-beta)
+
 
 
 

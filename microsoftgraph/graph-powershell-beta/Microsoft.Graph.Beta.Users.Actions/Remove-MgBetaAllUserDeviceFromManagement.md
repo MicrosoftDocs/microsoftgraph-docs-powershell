@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Retire all devices from management for this user
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -370,6 +360,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetaalluserdevicefrommanagement)
+
 
 
 

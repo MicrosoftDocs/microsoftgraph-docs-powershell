@@ -78,16 +78,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property siteProtectionUnits in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -970,6 +960,7 @@ PENDINGRETENTIONPERIODCHANGE `<IMicrosoftGraphRetentionPeriodChange>`: retention
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresiteprotectionunit)
+
 
 
 

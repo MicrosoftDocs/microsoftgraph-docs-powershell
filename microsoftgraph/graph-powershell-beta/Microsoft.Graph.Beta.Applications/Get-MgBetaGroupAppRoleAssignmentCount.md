@@ -54,16 +54,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -414,6 +404,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignmentcount)
+
 
 
 

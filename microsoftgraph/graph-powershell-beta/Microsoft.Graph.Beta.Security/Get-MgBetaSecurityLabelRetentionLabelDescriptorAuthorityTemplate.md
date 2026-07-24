@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -447,6 +437,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabeldescriptorauthoritytemplate)
+
 
 
 

@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property publicKeyInfrastructure in directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -459,6 +449,7 @@ Maximum length is 256 characters.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypublickeyinfrastructure)
+
 
 
 
