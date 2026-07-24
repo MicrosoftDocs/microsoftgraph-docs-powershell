@@ -93,8 +93,9 @@ This API doesn't support self-service operations.
 | Application | UserAuthMethod-External.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -105,6 +106,10 @@ $params = @{
 }
 
 New-MgUserAuthenticationExternalAuthenticationMethod -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgUserAuthenticationExternalAuthenticationMethod Cmdlet.
+
 
 ## PARAMETERS
 

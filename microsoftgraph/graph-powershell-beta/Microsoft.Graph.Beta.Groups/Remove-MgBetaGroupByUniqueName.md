@@ -55,16 +55,6 @@ After that time, they are permanently deleted.
 This doesn't apply to Distribution groups that are permanently deleted immediately.
 To learn more, see deletedItems.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -424,6 +414,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupbyuniquename)
 - [](https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-beta)
+
 
 
 

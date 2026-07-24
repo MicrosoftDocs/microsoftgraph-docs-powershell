@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Get a specific commercial subscription that an organization has acquired.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -415,6 +405,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbyocpsubscriptionid)
 - [](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-beta)
+
 
 
 

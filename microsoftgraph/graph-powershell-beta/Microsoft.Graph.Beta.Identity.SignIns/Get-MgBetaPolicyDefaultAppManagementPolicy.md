@@ -47,12 +47,17 @@ Read the properties of a tenantAppManagementPolicy object.
 | Application | Policy.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyDefaultAppManagementPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyDefaultAppManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

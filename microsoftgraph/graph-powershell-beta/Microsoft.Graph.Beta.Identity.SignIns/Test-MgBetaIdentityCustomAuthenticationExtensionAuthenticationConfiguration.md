@@ -79,12 +79,17 @@ An API to check validity of the endpoint and and authentication configuration fo
 | Application | CustomAuthenticationExtension.Read.All, CustomAuthenticationExtension.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration -CustomAuthenticationExtensionId $customAuthenticationExtensionId
+
+```
+This example shows how to use the Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
