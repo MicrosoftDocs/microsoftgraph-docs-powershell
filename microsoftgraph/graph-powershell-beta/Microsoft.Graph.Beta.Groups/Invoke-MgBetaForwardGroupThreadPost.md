@@ -78,8 +78,9 @@ You can specify both the parent conversation and thread in the request, \ror, yo
 | Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -96,6 +97,10 @@ $params = @{
 }
 
 Invoke-MgBetaForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaForwardGroupThreadPost Cmdlet.
+
 
 ## PARAMETERS
 

@@ -85,8 +85,9 @@ Call Start job to start synchronization.
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -95,6 +96,10 @@ $params = @{
 }
 
 New-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 

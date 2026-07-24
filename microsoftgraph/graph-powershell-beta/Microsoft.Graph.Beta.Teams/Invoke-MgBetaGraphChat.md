@@ -67,8 +67,9 @@ This cmdlet has the following aliases,
 Unhide a chat for a user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -80,6 +81,10 @@ $params = @{
 }
 
 Invoke-MgBetaGraphChat -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaGraphChat Cmdlet.
+
 
 ## PARAMETERS
 

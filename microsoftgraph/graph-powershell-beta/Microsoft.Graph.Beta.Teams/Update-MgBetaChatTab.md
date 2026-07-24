@@ -79,8 +79,9 @@ Update the properties of the specified tab in a chat.
 | Application | TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWrite.All, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWriteForChat,  |
 
 ## EXAMPLES
+### Example 1: Update the name of a tab in a chat
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -89,6 +90,10 @@ $params = @{
 }
 
 Update-MgBetaChatTab -ChatId $chatId -TeamsTabId $teamsTabId -BodyParameter $params
+
+```
+This example will update the name of a tab in a chat
+
 
 ## PARAMETERS
 

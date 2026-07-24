@@ -72,8 +72,9 @@ Update the properties on a listItem.
 | Application | Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -83,6 +84,10 @@ $params = @{
 }
 
 Update-MgBetaSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSiteListItemField Cmdlet.
+
 
 ## PARAMETERS
 

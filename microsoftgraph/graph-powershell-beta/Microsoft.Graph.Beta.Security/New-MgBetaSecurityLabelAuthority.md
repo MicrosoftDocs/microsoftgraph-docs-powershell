@@ -47,8 +47,9 @@ This cmdlet has the following aliases,
 Create a new authorityTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -58,6 +59,10 @@ $params = @{
 }
 
 New-MgBetaSecurityLabelAuthority -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelAuthority Cmdlet.
+
 
 ## PARAMETERS
 

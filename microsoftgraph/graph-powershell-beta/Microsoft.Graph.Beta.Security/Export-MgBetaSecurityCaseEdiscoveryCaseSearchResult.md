@@ -84,8 +84,9 @@ For details, see Manage a collection estimate.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Export results with search hits only, excluding partially indexed items, with no additional options, as .pst files for each mailbox
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -98,7 +99,12 @@ $params = @{
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will export results with search hits only, excluding partially indexed items, with no additional options, as .pst files for each mailbox
+
+### Example 2: Export results with search hits and partially indexed items in all locations, with no additional options, as .pst files for each mailbox.
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -112,7 +118,12 @@ $params = @{
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will export results with search hits and partially indexed items in all locations, with no additional options, as .pst files for each mailbox.
+
+### Example 3: Export results with search hits and partially indexed items in locations with search hits, with no additional options, as .msg files for each message
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -126,7 +137,12 @@ $params = @{
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will export results with search hits and partially indexed items in locations with search hits, with no additional options, as .msg files for each message
+
+### Example 4: Export results with partially indexed items in all targeted locations, with all additional options, as .eml files for each message
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -140,7 +156,12 @@ $params = @{
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will export results with partially indexed items in all targeted locations, with all additional options, as .eml files for each message
+
+### Example 5: Export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each message
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -153,6 +174,10 @@ $params = @{
 }
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each message
+
 
 ## PARAMETERS
 

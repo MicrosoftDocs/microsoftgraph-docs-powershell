@@ -67,8 +67,9 @@ Create a new accessPackageAssignmentPolicy object in Microsoft Entra entitlement
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a direct assignment policy
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -95,7 +96,12 @@ $params = @{
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a direct assignment policy
+
+### Example 2: Create a policy for users from other organizations to request
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -185,7 +191,12 @@ $params = @{
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create a policy for users from other organizations to request
+
+### Example 3: Create assignment policy with questions
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -295,7 +306,12 @@ $params = @{
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will create assignment policy with questions
+
+### Example 4: Create a policy and specify the stages to trigger pre-defined custom workflow extensions
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -337,7 +353,12 @@ $params = @{
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will create a policy and specify the stages to trigger pre-defined custom workflow extensions
+
+### Example 5: Create a policy and specify the stages to trigger pre-defined access package custom extensions
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -379,7 +400,12 @@ $params = @{
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 6
+```
+This example will create a policy and specify the stages to trigger pre-defined access package custom extensions
+
+### Example 6: Create a policy with a verifiable credential requirement
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -418,6 +444,10 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
+
+```
+This example will create a policy with a verifiable credential requirement
+
 
 ## PARAMETERS
 

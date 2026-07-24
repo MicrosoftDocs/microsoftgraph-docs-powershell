@@ -109,8 +109,9 @@ If the group was created less than 15 minutes ago, calls to create a team might 
 | Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -132,6 +133,10 @@ $params = @{
 }
 
 Set-MgBetaGroupTeam -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaGroupTeam Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,8 +49,9 @@ This cmdlet has the following aliases,
 Update the properties of a multi-tenant organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -60,6 +61,10 @@ $params = @{
 }
 
 Update-MgBetaTenantRelationshipMultiTenantOrganization -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTenantRelationshipMultiTenantOrganization Cmdlet.
+
 
 ## PARAMETERS
 

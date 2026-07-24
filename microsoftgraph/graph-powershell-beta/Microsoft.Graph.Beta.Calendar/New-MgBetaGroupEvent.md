@@ -103,8 +103,9 @@ This cmdlet has the following aliases,
 Use this API to create a new event.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -137,6 +138,10 @@ $params = @{
 }
 
 New-MgBetaGroupEvent -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaGroupEvent Cmdlet.
+
 
 ## PARAMETERS
 

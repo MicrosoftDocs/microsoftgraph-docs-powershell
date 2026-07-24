@@ -75,8 +75,9 @@ Assign a tokenIssuancePolicy to an application.
 | Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -85,6 +86,10 @@ $params = @{
 }
 
 New-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId $applicationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaApplicationTokenIssuancePolicyByRef Cmdlet.
+
 
 ## PARAMETERS
 

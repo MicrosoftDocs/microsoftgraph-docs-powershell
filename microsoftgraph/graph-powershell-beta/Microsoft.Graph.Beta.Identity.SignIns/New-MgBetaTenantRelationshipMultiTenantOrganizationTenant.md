@@ -64,8 +64,9 @@ A tenant can be part of only one multitenant organization.
 | Application | MultiTenantOrganization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -75,6 +76,10 @@ $params = @{
 }
 
 New-MgBetaTenantRelationshipMultiTenantOrganizationTenant -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTenantRelationshipMultiTenantOrganizationTenant Cmdlet.
+
 
 ## PARAMETERS
 

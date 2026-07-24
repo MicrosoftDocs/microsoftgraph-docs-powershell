@@ -79,8 +79,9 @@ This convenience is not available when forwarding from an Outlook.com account.
 | Application | Calendars.Read,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -98,6 +99,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaForwardUserEvent Cmdlet.
+
 
 ## PARAMETERS
 

@@ -109,8 +109,9 @@ To retrieve the default branding, see Get branding.
 | Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -121,6 +122,10 @@ $params = @{
 }
 
 New-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaOrganizationBrandingLocalization Cmdlet.
+
 
 ## PARAMETERS
 

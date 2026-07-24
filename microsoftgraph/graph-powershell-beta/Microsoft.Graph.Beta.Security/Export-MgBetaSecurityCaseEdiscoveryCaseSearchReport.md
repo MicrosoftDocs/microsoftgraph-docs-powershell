@@ -82,8 +82,9 @@ For details, see Manage a collection estimate.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Export a report of items with search hits only, excluding partially indexed items, without additional options
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -95,7 +96,12 @@ $params = @{
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will export a report of items with search hits only, excluding partially indexed items, without additional options
+
+### Example 2: Export a report of items with search hits and partially indexed items in all targeted locations, without additional options
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -108,7 +114,12 @@ $params = @{
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will export a report of items with search hits and partially indexed items in all targeted locations, without additional options
+
+### Example 3: Export a report of items with search hits and partially indexed items in locations with search hits, without additional options
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -121,7 +132,12 @@ $params = @{
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will export a report of items with search hits and partially indexed items in locations with search hits, without additional options
+
+### Example 4: Export a report of partially indexed items in all targeted locations with all additional options selected
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -134,7 +150,12 @@ $params = @{
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will export a report of partially indexed items in all targeted locations with all additional options selected
+
+### Example 5: Export a report of partially indexed items in locations with search hits and cloud attachments
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -148,6 +169,10 @@ $params = @{
 }
 
 Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example will export a report of partially indexed items in locations with search hits and cloud attachments
+
 
 ## PARAMETERS
 

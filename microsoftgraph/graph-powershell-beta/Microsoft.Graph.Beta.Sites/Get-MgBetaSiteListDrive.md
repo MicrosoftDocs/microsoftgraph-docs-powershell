@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -431,6 +421,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistdrive)
+
 
 
 

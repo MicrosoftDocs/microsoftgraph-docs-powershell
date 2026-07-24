@@ -119,8 +119,9 @@ Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource typ
 | Application | Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -131,6 +132,10 @@ $params = @{
 }
 
 Update-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaGroupLifecyclePolicy Cmdlet.
+
 
 ## PARAMETERS
 

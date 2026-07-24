@@ -78,16 +78,6 @@ The provided timestamp must be older than the current createdDateTime for a chan
 The provided timestamp is used to replace the existing createdDateTime of the channel.
 This API supportes the following channel types.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -551,6 +541,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamprimarychannelmigration)
 - [](https://learn.microsoft.com/graph/api/channel-startmigration?view=graph-rest-beta)
+
 
 
 

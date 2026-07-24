@@ -45,16 +45,6 @@ This cmdlet has the following aliases,
 
 Restore a document set version.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -459,6 +449,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriveitemlistitemdocumentsetversion)
 - [](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-beta)
+
 
 
 

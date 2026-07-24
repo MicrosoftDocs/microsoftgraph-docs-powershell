@@ -65,13 +65,18 @@ Represents the details of certifications associated with a person.
 | Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileCertification -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileCertification Cmdlet.
+
 
 ## PARAMETERS
 

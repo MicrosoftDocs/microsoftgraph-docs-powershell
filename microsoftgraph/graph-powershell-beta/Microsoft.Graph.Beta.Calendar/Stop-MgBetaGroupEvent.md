@@ -80,16 +80,6 @@ You need to be an organizer to cancel a meeting.' This action differs from Delet
 | Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
 | Application | Calendars.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -555,6 +545,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/stop-mgbetagroupevent)
 - [](https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-beta)
+
 
 
 

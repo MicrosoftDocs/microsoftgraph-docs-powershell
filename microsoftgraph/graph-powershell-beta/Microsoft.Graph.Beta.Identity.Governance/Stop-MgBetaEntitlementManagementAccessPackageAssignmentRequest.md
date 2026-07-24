@@ -47,8 +47,9 @@ This cmdlet has the following aliases,
 In Microsoft Entra Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancelable state: accepted, pendingApproval, pendingNotBefore, pendingApprovalEscalated.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -58,6 +59,10 @@ $params = @{
 }
 
 Stop-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
+
+```
+This example shows how to use the Stop-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet.
+
 
 ## PARAMETERS
 

@@ -53,12 +53,15 @@ Delete a countryNamedLocation object.
 | Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
+### Example 1: Remove a named location
 
-### EXAMPLE 1
-
+```powershell
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 
 Remove-MgBetaIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
+```
+
+This example removed the named location specified by `$namedLocationId`.
 
 ## PARAMETERS
 

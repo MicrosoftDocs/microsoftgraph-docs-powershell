@@ -79,8 +79,9 @@ You can create the following types of module resources: Every resource has an @o
 | Application | EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create an educationLinkResource
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -94,7 +95,12 @@ $params = @{
 
 New-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create an educationlinkresource
+
+### Example 2: Create an educationWordResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -110,7 +116,12 @@ $params = @{
 
 New-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create an educationwordresource
+
+### Example 3: Create an educationFileResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -126,7 +137,12 @@ $params = @{
 
 New-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will create an educationfileresource
+
+### Example 4: Create an educationExcelResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -142,7 +158,12 @@ $params = @{
 
 New-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will create an educationexcelresource
+
+### Example 5: Create an educationPowerPointResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -156,7 +177,12 @@ $params = @{
 
 New-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-### EXAMPLE 6
+```
+This example will create an educationpowerpointresource
+
+### Example 6: Create an educationMediaResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -170,7 +196,12 @@ $params = @{
 
 New-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-### EXAMPLE 7
+```
+This example will create an educationmediaresource
+
+### Example 7: Create an educationChannelResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -184,7 +215,12 @@ $params = @{
 
 New-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
 
-### EXAMPLE 8
+```
+This example will create an educationchannelresource
+
+### Example 8: Create an educationLinkedAssignmentResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -197,6 +233,10 @@ $params = @{
 }
 
 New-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
+
+```
+This example will create an educationlinkedassignmentresource
+
 
 ## PARAMETERS
 

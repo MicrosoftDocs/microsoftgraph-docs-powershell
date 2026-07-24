@@ -77,8 +77,9 @@ The ediscoveryCaseMember can be one of two types: a user or a role group.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Add a case member of type **user** using **smtpAddress**
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -89,7 +90,12 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will add a case member of type **user** using **smtpaddress**
+
+### Example 2: Add a case member of type **roleGroup** using **displayName**
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -100,7 +106,12 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will add a case member of type **rolegroup** using **displayname**
+
+### Example 3: Add a case member of type **user** using **ID*
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -111,7 +122,12 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will add a case member of type **user** using **id*
+
+### Example 4: Add a case member of type **roleGroup** using **ID**
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -121,6 +137,10 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+```
+This example will add a case member of type **rolegroup** using **id**
+
 
 ## PARAMETERS
 

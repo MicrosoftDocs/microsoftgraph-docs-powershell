@@ -78,8 +78,9 @@ Install a teamsApp to the specified chat.
 | Application | TeamsAppInstallation.ReadWriteSelfForChat.All, Chat.Manage.Chat, TeamsAppInstallation.ManageSelectedForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All,  |
 
 ## EXAMPLES
+### Example 1: Install app in a chat
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -89,7 +90,12 @@ $params = @{
 
 New-MgBetaChatInstalledApp -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will install app in a chat
+
+### Example 2: Install app in a chat and consent to the resource-specific permissions required by the app
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -118,6 +124,10 @@ $params = @{
 }
 
 New-MgBetaChatInstalledApp -ChatId $chatId -BodyParameter $params
+
+```
+This example will install app in a chat and consent to the resource-specific permissions required by the app
+
 
 ## PARAMETERS
 
