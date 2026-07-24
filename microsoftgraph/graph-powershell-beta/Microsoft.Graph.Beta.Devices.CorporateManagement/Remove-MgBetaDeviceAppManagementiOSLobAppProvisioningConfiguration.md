@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property iosLobAppProvisioningConfigurations for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -465,6 +455,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementioslobappprovisioningconfiguration)
+
 
 
 
