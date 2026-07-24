@@ -56,9 +56,15 @@ function Start-GraphHelp {
     $ModulePrefix = "Microsoft.Graph"
     $AuthPath = "$ModulePrefix.Authentication"
     $AuthDestination = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" $AuthPath
+
+    # Guard against catastrophic deletions: never remove existing docs unless the module
+    # is available to regenerate them. Authentication is required for every run, so abort
+    # if it failed to install rather than wiping committed documentation.
+    if (-not (Get-Module -Name Microsoft.Graph.Authentication -ListAvailable -ErrorAction SilentlyContinue)) {
+        throw "Microsoft.Graph.Authentication module is not available. Aborting generation to avoid deleting existing documentation."
+    }
+    Import-Module Microsoft.Graph.Authentication -Force -Global
     Get-ChildItem -Path $AuthDestination * -File -Recurse | foreach { $_.Delete() }
-    
-    Import-Module Microsoft.Graph.Authentication -Global
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
@@ -101,6 +107,16 @@ function Get-FolderByProfile {
         }
         $Destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
         $DocsDestination = Join-Path $WorkLoadDocsPath $GraphProfilePath
+
+        # Guard against catastrophic deletions: if the module failed to install/import,
+        # skip it entirely so its committed docs are preserved instead of being deleted
+        # and never regenerated (which is what produced the mass-deletion refresh PRs).
+        if (-not (Get-Module -Name $Path -ListAvailable -ErrorAction SilentlyContinue)) {
+            Write-Warning "Module $Path is not available; skipping to preserve existing documentation."
+            return
+        }
+        Import-Module $Path -Force -Global -ErrorAction SilentlyContinue
+
         if (-not(Test-Path $Destination)) {
             New-Item -Path $Destination -ItemType Directory
         }
