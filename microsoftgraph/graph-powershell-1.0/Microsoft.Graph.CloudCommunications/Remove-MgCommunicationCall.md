@@ -59,6 +59,14 @@ For group calls, this will only delete your call leg and the underlying group ca
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -52,6 +52,14 @@ You can enroll an azureADDevice resource in update management, but may not enrol
 Enrolling a Microsoft Entra device in update management automatically creates an azureADDevice object if it does not already exist.
 You can also use the method enrollAssetsById to enroll assets.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | WindowsUpdates.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
