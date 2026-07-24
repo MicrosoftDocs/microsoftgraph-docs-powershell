@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetauploaddirectorypublickeyinfrastructurecertificatebasedauthconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 07/24/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
 ---
@@ -18,9 +18,6 @@ Only one operation can run at a time and this operation can take up to 30 minute
 To know whether another upload is in progress, call the Get certificateBasedAuthPki.
 The status property will have the value running.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UploadExpanded (Default)
@@ -32,7 +29,6 @@ Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigura
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Upload
@@ -44,7 +40,6 @@ Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigura
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UploadViaIdentityExpanded
@@ -56,7 +51,6 @@ Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigura
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UploadViaIdentity
@@ -68,7 +62,6 @@ Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigura
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -83,18 +76,9 @@ Only one operation can run at a time and this operation can take up to 30 minute
 To know whether another upload is in progress, call the Get certificateBasedAuthPki.
 The status property will have the value running.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PublicKeyInfrastructure.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PublicKeyInfrastructure.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -104,10 +88,6 @@ $params = @{
 }
 
 Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration -CertificateBasedAuthPkiId $certificateBasedAuthPkiId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -140,7 +120,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -435,7 +415,7 @@ HelpMessage: ''
 
 ### -Sha256FileHash
 
-
+.
 
 ```yaml
 Type: System.String
@@ -462,7 +442,7 @@ HelpMessage: ''
 
 ### -UploadUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -543,12 +523,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths135Qp0QDirectoryPublickeyinfrastructureCertificatebasedauthconfigurationsCertificatebasedauthpkiIdMicrosoftGraphUploadPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths135Qp0QDirectoryPublickeyinfrastructureCertificatebasedauthconfigurationsCertificatebasedauthpkiIdMicrosoftGraphUploadPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Sha256FileHash <String>]: 
   [UploadUrl <String>]: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -617,27 +597,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetauploaddirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedauthpki-upload?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetauploaddirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
+- [](https://learn.microsoft.com/graph/api/certificatebasedauthpki-upload?view=graph-rest-beta)

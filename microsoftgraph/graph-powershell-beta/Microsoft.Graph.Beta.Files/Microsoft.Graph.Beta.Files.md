@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Files
-Module Guid: a401b4f6-a4dc-4b34-88d7-70a8c3de80b8
+Module Guid: 9c764821-9c1a-4b61-b787-30eef2189acc
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.files/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1685,6 +1685,18 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Grant-MgBetaUserDriveRootPermission](Grant-MgBetaUserDriveRootPermission.md)
 
+### [Invoke-MgBetaArchiveDriveItem](Invoke-MgBetaArchiveDriveItem.md)
+
+### [Invoke-MgBetaArchiveDriveRoot](Invoke-MgBetaArchiveDriveRoot.md)
+
+### [Invoke-MgBetaArchiveGroupDriveItem](Invoke-MgBetaArchiveGroupDriveItem.md)
+
+### [Invoke-MgBetaArchiveGroupDriveRoot](Invoke-MgBetaArchiveGroupDriveRoot.md)
+
+### [Invoke-MgBetaArchiveUserDriveItem](Invoke-MgBetaArchiveUserDriveItem.md)
+
+### [Invoke-MgBetaArchiveUserDriveRoot](Invoke-MgBetaArchiveUserDriveRoot.md)
+
 ### [Invoke-MgBetaCheckinDriveItem](Invoke-MgBetaCheckinDriveItem.md)
 
 ### [Invoke-MgBetaCheckinDriveRoot](Invoke-MgBetaCheckinDriveRoot.md)
@@ -1788,6 +1800,18 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaRecentGroupDrive](Invoke-MgBetaRecentGroupDrive.md)
 
 ### [Invoke-MgBetaRecentUserDrive](Invoke-MgBetaRecentUserDrive.md)
+
+### [Invoke-MgBetaUnarchiveDriveItem](Invoke-MgBetaUnarchiveDriveItem.md)
+
+### [Invoke-MgBetaUnarchiveDriveRoot](Invoke-MgBetaUnarchiveDriveRoot.md)
+
+### [Invoke-MgBetaUnarchiveGroupDriveItem](Invoke-MgBetaUnarchiveGroupDriveItem.md)
+
+### [Invoke-MgBetaUnarchiveGroupDriveRoot](Invoke-MgBetaUnarchiveGroupDriveRoot.md)
+
+### [Invoke-MgBetaUnarchiveUserDriveItem](Invoke-MgBetaUnarchiveUserDriveItem.md)
+
+### [Invoke-MgBetaUnarchiveUserDriveRoot](Invoke-MgBetaUnarchiveUserDriveRoot.md)
 
 ### [Invoke-MgBetaUnfollowDriveItem](Invoke-MgBetaUnfollowDriveItem.md)
 
@@ -3308,23 +3332,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserDriveRootThumbnail](Update-MgBetaUserDriveRootThumbnail.md)
 
 ### [Update-MgBetaUserDriveRootVersion](Update-MgBetaUserDriveRootVersion.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

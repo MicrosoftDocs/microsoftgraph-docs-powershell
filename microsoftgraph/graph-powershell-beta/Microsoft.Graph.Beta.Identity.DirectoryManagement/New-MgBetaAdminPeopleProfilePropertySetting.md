@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilepropertysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 07/24/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAdminPeopleProfilePropertySetting
 ---
@@ -25,7 +25,6 @@ New-MgBetaAdminPeopleProfilePropertySetting [-ResponseHeadersVariable <string>]
  [-PrioritizedSourceUrls <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -35,7 +34,6 @@ New-MgBetaAdminPeopleProfilePropertySetting -BodyParameter <IMicrosoftGraphProfi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -47,33 +45,22 @@ This cmdlet has the following aliases,
 
 Create a new profilePropertySetting object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PeopleSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.profilePropertySetting"
+	displayName = "Profile priority config"
+	name = "Profile priority config"
 	prioritizedSourceUrls = @(
 	"https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')"
 )
 }
 
 New-MgBetaAdminPeopleProfilePropertySetting -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaAdminPeopleProfilePropertySetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -449,7 +436,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphProfilePropertySetting>`: profilePropertySetting
+BODYPARAMETER <IMicrosoftGraphProfilePropertySetting>: profilePropertySetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -461,27 +448,5 @@ For backward compatibility.
 
 ## RELATED LINKS
 
-- [New-MgBetaAdminPeopleProfilePropertySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilepropertysetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilepropertysettings?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilepropertysetting)
+- [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilepropertysettings?view=graph-rest-beta)
