@@ -455,7 +455,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceprofileindicator)
+- [New-MgBetaSecurityThreatIntelligenceProfileIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceprofileindicator)
 
 
 

@@ -427,8 +427,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriverootversion)
-- [](https://learn.microsoft.com/graph/api/driveitemversion-restoreversion?view=graph-rest-beta)
+- [Restore-MgBetaUserDriveRootVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriverootversion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitemversion-restoreversion?view=graph-rest-beta)
 
 
 

@@ -754,7 +754,7 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausersettingworkhourandlocationrecurrence)
+- [Set-MgBetaUserSettingWorkHourAndLocationRecurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausersettingworkhourandlocationrecurrence)
 
 
 

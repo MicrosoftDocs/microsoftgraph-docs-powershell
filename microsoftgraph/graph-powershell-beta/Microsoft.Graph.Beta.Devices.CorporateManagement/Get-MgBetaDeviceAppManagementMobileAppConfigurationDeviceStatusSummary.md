@@ -420,7 +420,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappconfigurationdevicestatussummary)
+- [Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappconfigurationdevicestatussummary)
 
 
 

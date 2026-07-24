@@ -431,7 +431,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagehostedcontentcount)
+- [Get-MgBetaTeamChannelMessageHostedContentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagehostedcontentcount)
 
 
 

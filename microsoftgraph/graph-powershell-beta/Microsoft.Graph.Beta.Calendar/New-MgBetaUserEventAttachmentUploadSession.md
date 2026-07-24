@@ -559,8 +559,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventattachmentuploadsession)
-- [](https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-beta)
+- [New-MgBetaUserEventAttachmentUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventattachmentuploadsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-beta)
 
 
 

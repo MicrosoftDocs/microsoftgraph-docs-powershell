@@ -511,8 +511,8 @@ BODYPARAMETER `<IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPost
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
+- [Test-MgBetaDirectoryObjectProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
 
 
 

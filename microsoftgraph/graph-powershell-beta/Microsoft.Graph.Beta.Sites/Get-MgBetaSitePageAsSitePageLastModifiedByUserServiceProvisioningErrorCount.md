@@ -418,7 +418,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepagelastmodifiedbyuserserviceprovisioningerrorcount)
+- [Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepagelastmodifiedbyuserserviceprovisioningerrorcount)
 
 
 

@@ -607,9 +607,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorytenantgovernancerelatedtenant)
-- [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-relatedtenant-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-list-relatedtenants?view=graph-rest-beta)
+- [Get-MgBetaDirectoryTenantGovernanceRelatedTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorytenantgovernancerelatedtenant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantgovernanceservices-relatedtenant-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantgovernanceservices-list-relatedtenants?view=graph-rest-beta)
 
 
 

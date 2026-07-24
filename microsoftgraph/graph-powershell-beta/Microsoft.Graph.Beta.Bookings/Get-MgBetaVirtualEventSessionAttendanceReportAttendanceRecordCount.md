@@ -400,7 +400,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionattendancereportattendancerecordcount)
+- [Get-MgBetaVirtualEventSessionAttendanceReportAttendanceRecordCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionattendancereportattendancerecordcount)
 
 
 

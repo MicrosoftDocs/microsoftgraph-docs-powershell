@@ -1277,7 +1277,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenotepage)
+- [Update-MgBetaGroupSiteOnenotePage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenotepage)
 
 
 

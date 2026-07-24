@@ -737,7 +737,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemversion)
+- [Update-MgBetaDriveItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemversion)
 
 
 

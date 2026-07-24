@@ -1066,7 +1066,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoregroupset)
+- [Update-MgBetaSiteTermStoreGroupSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoregroupset)
 
 
 

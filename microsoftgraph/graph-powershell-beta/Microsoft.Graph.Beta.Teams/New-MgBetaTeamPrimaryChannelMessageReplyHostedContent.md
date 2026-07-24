@@ -613,7 +613,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelmessagereplyhostedcontent)
+- [New-MgBetaTeamPrimaryChannelMessageReplyHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelmessagereplyhostedcontent)
 
 
 

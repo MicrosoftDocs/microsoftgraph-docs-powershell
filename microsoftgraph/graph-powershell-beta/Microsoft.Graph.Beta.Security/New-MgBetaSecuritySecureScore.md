@@ -622,7 +622,7 @@ Required
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore)
+- [New-MgBetaSecuritySecureScore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore)
 
 
 

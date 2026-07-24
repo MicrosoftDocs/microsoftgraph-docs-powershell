@@ -502,7 +502,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasbuildingmapfootprint)
+- [New-MgBetaPlaceAsBuildingMapFootprint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasbuildingmapfootprint)
 
 
 

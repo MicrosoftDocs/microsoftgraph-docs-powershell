@@ -807,7 +807,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsightshared)
+- [Update-MgBetaUserInsightShared](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsightshared)
 
 
 

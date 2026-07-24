@@ -600,7 +600,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduledaynote)
+- [Get-MgBetaTeamScheduleDayNote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduledaynote)
 
 
 

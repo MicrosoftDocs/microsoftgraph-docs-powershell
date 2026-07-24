@@ -433,7 +433,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingworkhourandlocationoccurrence)
+- [Remove-MgBetaUserSettingWorkHourAndLocationOccurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingworkhourandlocationoccurrence)
 
 
 

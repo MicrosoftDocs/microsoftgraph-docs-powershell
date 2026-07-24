@@ -632,7 +632,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphoto)
+- [Get-MgBetaUserPhoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphoto)
 
 
 

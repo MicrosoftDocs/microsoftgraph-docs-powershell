@@ -532,8 +532,8 @@ Supports $filter (eq, ne) and $orderBy.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernanceinvitation)
-- [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-post-governanceinvitations?view=graph-rest-beta)
+- [New-MgBetaDirectoryTenantGovernanceInvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernanceinvitation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantgovernanceservices-post-governanceinvitations?view=graph-rest-beta)
 
 
 

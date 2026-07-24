@@ -953,7 +953,7 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicydeleteditemcrosstenantpartner)
+- [New-MgBetaPolicyDeletedItemCrossTenantPartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicydeleteditemcrosstenantpartner)
 
 
 

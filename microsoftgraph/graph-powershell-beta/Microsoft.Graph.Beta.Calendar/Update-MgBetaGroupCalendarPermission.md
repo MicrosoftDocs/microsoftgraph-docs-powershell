@@ -667,7 +667,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupcalendarpermission)
+- [Update-MgBetaGroupCalendarPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupcalendarpermission)
 
 
 

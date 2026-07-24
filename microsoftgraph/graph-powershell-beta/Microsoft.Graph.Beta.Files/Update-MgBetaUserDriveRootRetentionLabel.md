@@ -721,7 +721,7 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootretentionlabel)
+- [Update-MgBetaUserDriveRootRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootretentionlabel)
 
 
 

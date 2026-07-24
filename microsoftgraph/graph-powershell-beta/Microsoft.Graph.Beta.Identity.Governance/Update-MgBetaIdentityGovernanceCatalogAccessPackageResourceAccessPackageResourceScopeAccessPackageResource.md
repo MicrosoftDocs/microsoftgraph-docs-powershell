@@ -1625,8 +1625,8 @@ The only possible value currently is: accessReviewDataUploadTriggerCallbackData
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceaccesspackageresourcescopeaccesspackageresource)
-- [](https://learn.microsoft.com/graph/api/accesspackageresource-refresh?view=graph-rest-beta)
+- [Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceaccesspackageresourcescopeaccesspackageresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageresource-refresh?view=graph-rest-beta)
 
 
 

@@ -604,7 +604,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappaswindowsuniversalappxrelationship)
+- [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappaswindowsuniversalappxrelationship)
 
 
 

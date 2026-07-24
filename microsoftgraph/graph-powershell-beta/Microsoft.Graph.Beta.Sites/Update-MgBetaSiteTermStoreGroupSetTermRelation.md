@@ -949,7 +949,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoregroupsettermrelation)
+- [Update-MgBetaSiteTermStoreGroupSetTermRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoregroupsettermrelation)
 
 
 

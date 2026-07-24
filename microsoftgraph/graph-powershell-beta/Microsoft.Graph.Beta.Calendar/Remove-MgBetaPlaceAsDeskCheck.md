@@ -420,7 +420,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasdeskcheck)
+- [Remove-MgBetaPlaceAsDeskCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasdeskcheck)
 
 
 

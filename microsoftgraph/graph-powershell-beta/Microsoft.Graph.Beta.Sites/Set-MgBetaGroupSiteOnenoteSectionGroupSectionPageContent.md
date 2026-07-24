@@ -557,7 +557,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteonenotesectiongroupsectionpagecontent)
+- [Set-MgBetaGroupSiteOnenoteSectionGroupSectionPageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteonenotesectiongroupsectionpagecontent)
 
 
 

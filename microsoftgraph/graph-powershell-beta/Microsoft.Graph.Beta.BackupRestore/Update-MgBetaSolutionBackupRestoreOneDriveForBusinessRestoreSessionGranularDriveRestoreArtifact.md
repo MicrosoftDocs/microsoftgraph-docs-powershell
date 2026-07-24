@@ -851,7 +851,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiongranulardriverestoreartifact)
+- [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiongranulardriverestoreartifact)
 
 
 

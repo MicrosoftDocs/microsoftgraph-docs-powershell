@@ -485,7 +485,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebooksectionpageparentnotebook)
+- [Get-MgBetaGroupSiteOnenoteNotebookSectionPageParentNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebooksectionpageparentnotebook)
 
 
 
