@@ -136,7 +136,12 @@ function New-ReferenceTable {
 "@;
 
 
-                if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
+                if ((Get-Content -Raw -Path $File) -match '\*\*Permissions\*\*') {
+                    # A permissions table has already been inserted on a previous run.
+                    # Skip to avoid prepending a duplicate '**Permissions**' block.
+                    Write-Host "Skipping $CommandName as it already has a permissions table";
+                }
+                elseif ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
                     $Link = "**Permissions**`r`n`n$markdownTable`r`n`n## EXAMPLES"
     (Get-Content $File) | 
                     Foreach-Object { $_ -replace '## EXAMPLES', $Link }  | 

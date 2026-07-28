@@ -175,7 +175,11 @@ function Add-Link {
             $Folder = $View.Split("=")[1]
             $ConfirmFile = Join-Path $WorkLoadDocsPath "$Folder" "$ModuleName" "$CommandRename.md"
             $ConfirmCommandAvailability = Find-MgGraphCommand -Command $CommandRename
-            if ($ConfirmCommandAvailability -and (Test-Path $ConfirmFile)) {
+            # Only insert the note if it isn't already present, otherwise every run
+            # prepends another copy of the same '[!NOTE]' block before '## SYNTAX'.
+            $NoteMarker = "$LinkTitle [$CommandRename]($BaseUrl/$FullModuleName$View)"
+            $AlreadyLinked = (Get-Content -Raw -Path $File) -match [regex]::Escape($NoteMarker)
+            if ($ConfirmCommandAvailability -and (Test-Path $ConfirmFile) -and -not $AlreadyLinked) {
                 (Get-Content $File) | 
                 Foreach-Object { $_ -replace '## SYNTAX', $Link }  | 
                 Out-File $File

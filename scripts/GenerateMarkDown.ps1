@@ -27,7 +27,7 @@ function Set-Help {
         Command               = (Get-Command $Command)
         OutputFolder          = $ModuleDocsPath
         Force                 = $true
-        Encoding              = [System.Text.Encoding]::UTF8
+        Encoding              = [System.Text.UTF8Encoding]::new($false)
     }
 
     if ($Module -eq "Microsoft.Graph.Authentication") {
@@ -35,7 +35,7 @@ function Set-Help {
             Module                = (Get-Module $Module)
             OutputFolder          = $ModuleDocsPath
             WithModulePage        = $true
-            Encoding              = [System.Text.Encoding]::UTF8
+            Encoding              = [System.Text.UTF8Encoding]::new($false)
         }
         Import-Module $Module -Force -Global
     }
