@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 06/05/2026
+ms.date: 07/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaVirtualEventWebinarRegistration
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaVirtualEventWebinarRegistration
 ## SYNOPSIS
 
 Get the properties and relationships of a virtualEventRegistration object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -39,7 +35,7 @@ Get-MgBetaVirtualEventWebinarRegistration -VirtualEventRegistrationId <string>
  -VirtualEventWebinarId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -49,7 +45,7 @@ Get-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -61,48 +57,25 @@ This cmdlet has the following aliases,
 
 Get the properties and relationships of a virtualEventRegistration object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | VirtualEvent.Read.Chat, VirtualEventRegistration-Anon.ReadWrite.All, VirtualEvent.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Retrieve a list of virtual event registrations
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
 Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId
 
-```
-This example will retrieve a list of virtual event registrations
-
-### Example 2: Retrieve a virtual event registration by user ID
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
-Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -Filter "userId eq 'b7ef013a-c73c-4ec7-8ccb-e56290f45f68'" 
+Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -Filter "userId eq 'b7ef013a-c73c-4ec7-8ccb-e56290f45f68'"
 
-```
-This example will retrieve a virtual event registration by user id
-
-### Example 3: Retrieve a virtual event registration by email
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
-Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -Filter "email eq 'EmileeMPham@contoso.com'" 
-
-```
-This example will retrieve a virtual event registration by email
-
+Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -Filter "email eq 'EmileeMPham@contoso.com'"
 
 ## PARAMETERS
 
@@ -591,7 +564,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -616,28 +589,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaVirtualEventWebinarRegistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventregistration-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventregistration-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistration)
+- [](https://learn.microsoft.com/graph/api/virtualeventregistration-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/virtualeventregistration-list?view=graph-rest-beta)

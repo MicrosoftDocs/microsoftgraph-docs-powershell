@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetaexecuteusermanageddeviceaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 06/05/2026
+ms.date: 07/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaExecuteUserManagedDeviceAction
 ---
@@ -27,7 +27,6 @@ Invoke-MgBetaExecuteUserManagedDeviceAction -UserId <string> [-ResponseHeadersVa
  [-OrganizationalUnitPath <string>] [-PersistEsimDataPlan] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Execute
@@ -38,7 +37,6 @@ Invoke-MgBetaExecuteUserManagedDeviceAction -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ExecuteViaIdentityExpanded
@@ -51,7 +49,7 @@ Invoke-MgBetaExecuteUserManagedDeviceAction -InputObject <IDevicesCorporateManag
  [-NotificationBody <string>] [-NotificationTitle <string>] [-OrganizationalUnitPath <string>]
  [-PersistEsimDataPlan] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### ExecuteViaIdentity
@@ -62,7 +60,6 @@ Invoke-MgBetaExecuteUserManagedDeviceAction -InputObject <IDevicesCorporateManag
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action executeAction
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -132,7 +139,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -181,7 +188,7 @@ HelpMessage: ''
 
 ### -CarrierUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -230,7 +237,7 @@ HelpMessage: ''
 
 ### -DeprovisionReason
 
-
+.
 
 ```yaml
 Type: System.String
@@ -257,7 +264,7 @@ HelpMessage: ''
 
 ### -DeviceIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -284,7 +291,7 @@ HelpMessage: ''
 
 ### -DeviceName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -402,7 +409,7 @@ HelpMessage: ''
 
 ### -KeepEnrollmentData
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -429,7 +436,7 @@ HelpMessage: ''
 
 ### -KeepUserData
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -456,7 +463,7 @@ HelpMessage: ''
 
 ### -NotificationBody
 
-
+.
 
 ```yaml
 Type: System.String
@@ -483,7 +490,7 @@ HelpMessage: ''
 
 ### -NotificationTitle
 
-
+.
 
 ```yaml
 Type: System.String
@@ -510,7 +517,7 @@ HelpMessage: ''
 
 ### -OrganizationalUnitPath
 
-
+.
 
 ```yaml
 Type: System.String
@@ -537,7 +544,7 @@ HelpMessage: ''
 
 ### -PersistEsimDataPlan
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -730,7 +737,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1V92H65UsersUserIdManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1V92H65UsersUserIdManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActionName <ManagedDeviceRemoteAction?>]: managedDeviceRemoteAction
   [CarrierUrl <String>]: 
@@ -744,7 +751,7 @@ BODYPARAMETER `<IPaths1V92H65UsersUserIdManageddevicesMicrosoftGraphExecuteactio
   [OrganizationalUnitPath <String>]: 
   [PersistEsimDataPlan <Boolean?>]: 
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -822,27 +829,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaExecuteUserManagedDeviceAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetaexecuteusermanageddeviceaction)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetaexecuteusermanageddeviceaction)

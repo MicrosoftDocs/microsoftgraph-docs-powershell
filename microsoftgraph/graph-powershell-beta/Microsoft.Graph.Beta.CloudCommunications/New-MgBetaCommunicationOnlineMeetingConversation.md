@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingconversation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaCommunicationOnlineMeetingConversation
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaCommunicationOnlineMeetingConversation
 ## SYNOPSIS
 
 Create new navigation property to onlineMeetingConversations for communications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgCommunicationOnlineMeetingConversation](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationOnlineMeetingConversation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,7 +29,7 @@ New-MgBetaCommunicationOnlineMeetingConversation [-ResponseHeadersVariable <stri
  [-Starter <IMicrosoftGraphEngagementConversationMessage>] [-StarterId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -43,7 +40,6 @@ New-MgBetaCommunicationOnlineMeetingConversation
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to onlineMeetingConversations for communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -538,7 +544,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnlineMeetingEngagementConversation>`: A conversation for Teams QA online meeting.
+BODYPARAMETER <IMicrosoftGraphOnlineMeetingEngagementConversation>: A conversation for Teams QA online meeting.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreationMode <EngagementCreationMode?>]: Indicates that the resource is in migration state and is currently being used for migration purposes.
   [Messages <IMicrosoftGraphEngagementConversationMessage[]>]: The messages in a Viva Engage conversation.
@@ -615,6 +621,10 @@ Read-only.
           [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
           [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
         [EmailAddress <String>]: Email address of the user associated with this attendance record.
+        [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+          [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+          [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+          [EngagementType <String>]: meetingEngagementType
         [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -663,6 +673,11 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+    [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [MoreInfoWebUrl <String>]: 
+      [TenantKey <String>]: 
+      [VideoTeleconferenceId <String>]: 
     [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -896,7 +911,7 @@ Read-only.
   [ReplyTo <IMicrosoftGraphEngagementConversationMessage>]: A Viva Engage conversation message.
   [ReplyToId <String>]: The ID of the parent message to which this message is a reply, if applicable.
 
-ONLINEMEETING `<IMicrosoftGraphOnlineMeeting>`: Represents a Microsoft online meeting.
+ONLINEMEETING <IMicrosoftGraphOnlineMeeting>: Represents a Microsoft online meeting.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
   [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
@@ -928,6 +943,10 @@ Read-only.
         [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
         [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
       [EmailAddress <String>]: Email address of the user associated with this attendance record.
+      [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+        [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+        [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+        [EngagementType <String>]: meetingEngagementType
       [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -982,6 +1001,11 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+  [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [MoreInfoWebUrl <String>]: 
+    [TenantKey <String>]: 
+    [VideoTeleconferenceId <String>]: 
   [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1177,7 +1201,7 @@ Read-only.
     [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
 
-ORGANIZER `<IMicrosoftGraphEngagementIdentitySet>`: The Viva Engage identities.
+ORGANIZER <IMicrosoftGraphEngagementIdentitySet>: The Viva Engage identities.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1191,7 +1215,7 @@ For example, in the access reviews decisions API, this property might record the
   [Audience <IMicrosoftGraphIdentity>]: identity
   [Group <IMicrosoftGraphIdentity>]: identity
 
-STARTER `<IMicrosoftGraphEngagementConversationMessage>`: A Viva Engage conversation message.
+STARTER <IMicrosoftGraphEngagementConversationMessage>: A Viva Engage conversation message.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1233,27 +1257,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaCommunicationOnlineMeetingConversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingconversation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingconversation)

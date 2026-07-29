@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasbuildingmaplevelfixture
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 06/05/2026
+ms.date: 07/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlaceAsBuildingMapLevelFixture
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPlaceAsBuildingMapLevelFixture
 ## SYNOPSIS
 
 Update the properties of an existing fixtureMap object in IMDF format on a specified floor, or create one if it doesn't exist.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlaceAsBuildingMapLevelFixture](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlaceAsBuildingMapLevelFixture?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Update-MgBetaPlaceAsBuildingMapLevelFixture -FixtureMapId <string> -LevelMapId <
  [-Id <string>] [-PlaceId1 <string>] [-Properties <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -38,7 +34,7 @@ Update-MgBetaPlaceAsBuildingMapLevelFixture -FixtureMapId <string> -LevelMapId <
  -PlaceId <string> -BodyParameter <IMicrosoftGraphFixtureMap> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,7 +44,7 @@ Update-MgBetaPlaceAsBuildingMapLevelFixture -InputObject <ICalendarIdentity> [-P
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
  [-Properties <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -58,7 +54,7 @@ Update-MgBetaPlaceAsBuildingMapLevelFixture -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphFixtureMap> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -69,6 +65,30 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of an existing fixtureMap object in IMDF format on a specified floor, or create one if it doesn't exist.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	placeId = "67149ec1-4b99-42d4-88a4-d92cd23cb606"
+	properties = '{"id":"005eb3b8-c95d-4d35-a8a0-22d3cb4d6002","type":"Feature","feature_type":"fixture","geometry":{"type":"Polygon","coordinates":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},"properties":{"name":{"en":"Test Fixture update"},"level_id":"e537d463-475b-43c3-a650-184566c68bc9","display_point":{"type":"Point","coordinates":[-121.8888983,37.3295292]}}}'
+}
+
+Update-MgBetaPlaceAsBuildingMapLevelFixture -PlaceId $placeId -LevelMapId $levelMapId -FixtureMapId $fixtureMapId -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	placeId = "67149ec1-4b99-42d4-88a4-d92cd23cb606"
+	properties = '{"id":"005eb3b8-c95d-4d35-a8a0-22d3cb4d6002","type":"Feature","feature_type":"fixture","geometry":{"type":"Polygon","coordinates":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},"properties":{"name":{"en":"Test Fixture 01"},"level_id":"e537d463-475b-43c3-a650-184566c68bc9","display_point":{"type":"Point","coordinates":[-121.8888983,37.3295292]}}}'
+}
+
+Update-MgBetaPlaceAsBuildingMapLevelFixture -PlaceId $placeId -LevelMapId $levelMapId -FixtureMapId $fixtureMapId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -565,14 +585,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFixtureMap>`: fixtureMap
+BODYPARAMETER <IMicrosoftGraphFixtureMap>: fixtureMap
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Properties <String>]: Concatenated key-value pair of all properties of a GeoJSON file for this baseMapFeature.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [PlaceId <String>]: Identifier for the floor to which this fixtureMap belongs.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -597,28 +617,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPlaceAsBuildingMapLevelFixture](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasbuildingmaplevelfixture)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/fixturemap-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasbuildingmaplevelfixture)
+- [](https://learn.microsoft.com/graph/api/fixturemap-update?view=graph-rest-beta)

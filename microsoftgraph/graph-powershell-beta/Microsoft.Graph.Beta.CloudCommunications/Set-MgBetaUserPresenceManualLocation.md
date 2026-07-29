@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresencemanuallocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/28/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaUserPresenceManualLocation
 ---
@@ -16,9 +16,6 @@ title: Set-MgBetaUserPresenceManualLocation
 Set the manual work location signal for a user.
 The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserPresenceManualLocation](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserPresenceManualLocation?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -29,7 +26,6 @@ Set-MgBetaUserPresenceManualLocation -UserId <string> [-ResponseHeadersVariable 
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set
@@ -40,7 +36,6 @@ Set-MgBetaUserPresenceManualLocation -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -51,7 +46,6 @@ Set-MgBetaUserPresenceManualLocation -InputObject <ICloudCommunicationsIdentity>
  [-WorkLocationType <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -62,7 +56,6 @@ Set-MgBetaUserPresenceManualLocation -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,6 +67,20 @@ This cmdlet has the following aliases,
 
 Set the manual work location signal for a user.
 The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+$params = @{
+	workLocationType = "office"
+	placeId = "eb706f15-137e-4722-b4d1-b601481d9251"
+}
+
+# A UPN can also be used as -UserId.
+Set-MgBetaUserPresenceManualLocation -UserId $userId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -106,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -289,7 +296,7 @@ HelpMessage: ''
 
 ### -PlaceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -509,12 +516,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths4TijaiUsersUserIdPresenceMicrosoftGraphSetmanuallocationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths4TijaiUsersUserIdPresenceMicrosoftGraphSetmanuallocationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PlaceId <String>]: 
   [WorkLocationType <String>]: workLocationType
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -544,28 +551,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaUserPresenceManualLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresencemanuallocation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-setmanuallocation?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresencemanuallocation)
+- [](https://learn.microsoft.com/graph/api/presence-setmanuallocation?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/connect-mggraph
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 06/05/2026
+ms.date: 07/28/2026
 PlatyPS schema version: 2024-05-01
 title: Connect-MgGraph
 ---
@@ -22,7 +22,7 @@ Microsoft Graph PowerShell supports two types of authentication: delegated and a
 ```
 Connect-MgGraph [[-Scopes] <string[]>] [[-TenantId] <string>] [-ClientId <string>]
  [-ContextScope <ContextScope>] [-Environment <string>] [-UseDeviceCode] [-ClientTimeout <double>]
- [-NoWelcome] [-Break] [<CommonParameters>]
+ [-NoWelcome] [-Break]
 ```
 
 ### AppCertificateParameterSet
@@ -31,14 +31,14 @@ Connect-MgGraph [[-Scopes] <string[]>] [[-TenantId] <string>] [-ClientId <string
 Connect-MgGraph [-ClientId] <string> [[-CertificateSubjectName] <string>]
  [[-CertificateThumbprint] <string>] [-SendCertificateChain <bool>]
  [-Certificate <X509Certificate2>] [-TenantId <string>] [-ContextScope <ContextScope>]
- [-Environment <string>] [-ClientTimeout <double>] [-NoWelcome] [-Break] [<CommonParameters>]
+ [-Environment <string>] [-ClientTimeout <double>] [-NoWelcome] [-Break]
 ```
 
 ### IdentityParameterSet
 
 ```
 Connect-MgGraph [-Identity] [-ClientId <string>] [-ContextScope <ContextScope>]
- [-Environment <string>] [-ClientTimeout <double>] [-NoWelcome] [-Break] [<CommonParameters>]
+ [-Environment <string>] [-ClientTimeout <double>] [-NoWelcome] [-Break]
 ```
 
 ### AppSecretCredentialParameterSet
@@ -46,21 +46,21 @@ Connect-MgGraph [-Identity] [-ClientId <string>] [-ContextScope <ContextScope>]
 ```
 Connect-MgGraph [-ClientSecretCredential <pscredential>] [-TenantId <string>]
  [-ContextScope <ContextScope>] [-Environment <string>] [-ClientTimeout <double>] [-NoWelcome]
- [-Break] [<CommonParameters>]
+ [-Break]
 ```
 
 ### AccessTokenParameterSet
 
 ```
 Connect-MgGraph [-AccessToken] <securestring> [-Environment <string>] [-ClientTimeout <double>]
- [-NoWelcome] [-Break] [<CommonParameters>]
+ [-NoWelcome] [-Break]
 ```
 
 ### EnvironmentVariableParameterSet
 
 ```
 Connect-MgGraph [-ContextScope <ContextScope>] [-Environment <string>] [-ClientTimeout <double>]
- [-EnvironmentVariable] [-NoWelcome] [-Break] [<CommonParameters>]
+ [-EnvironmentVariable] [-NoWelcome] [-Break]
 ```
 
 ## ALIASES
@@ -688,6 +688,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Object
 
+{{ Fill in the Description }}
 
 ## NOTES
 

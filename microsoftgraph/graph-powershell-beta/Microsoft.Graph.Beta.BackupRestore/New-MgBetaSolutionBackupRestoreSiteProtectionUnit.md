@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresiteprotectionunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 07/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreSiteProtectionUnit
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaSolutionBackupRestoreSiteProtectionUnit
 
 Create new navigation property to siteProtectionUnits for solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSiteProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSiteProtectionUnit?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,11 +24,12 @@ New-MgBetaSolutionBackupRestoreSiteProtectionUnit [-ResponseHeadersVariable <str
  [-AdditionalProperties <hashtable>] [-BackupRetentionPeriodInDays <int>]
  [-BillingPolicyId <string>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <datetime>] [-OffboardRequestedDateTime <datetime>] [-PolicyId <string>]
+ [-LastModifiedDateTime <datetime>] [-OffboardRequestedDateTime <datetime>]
+ [-PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>] [-PolicyId <string>]
  [-ProtectionSources <string>] [-SiteId <string>] [-Status <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -41,7 +39,6 @@ New-MgBetaSolutionBackupRestoreSiteProtectionUnit -BodyParameter <IMicrosoftGrap
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to siteProtectionUnits for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -397,6 +404,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PendingRetentionPeriodChange
+
+retentionPeriodChange
+To construct, see NOTES section for PENDINGRETENTIONPERIODCHANGE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRetentionPeriodChange
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -PolicyId
 
 The unique identifier of the protection policy based on which protection unit was created.
@@ -618,7 +647,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSiteProtectionUnit>`: siteProtectionUnit
+BODYPARAMETER <IMicrosoftGraphSiteProtectionUnit>: siteProtectionUnit
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
   [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
@@ -652,6 +681,11 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
   [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+  [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [EffectiveFromDateTime <DateTime?>]: 
+    [Status <String>]: retentionPeriodChangeStatus
+    [TargetRetentionPeriodInDays <Int32?>]: 
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
   [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus
@@ -659,7 +693,7 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   [SiteId <String>]: Unique identifier of the SharePoint site.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -671,7 +705,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -687,7 +721,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -699,30 +733,13 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
+PENDINGRETENTIONPERIODCHANGE <IMicrosoftGraphRetentionPeriodChange>: retentionPeriodChange
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [EffectiveFromDateTime <DateTime?>]: 
+  [Status <String>]: retentionPeriodChangeStatus
+  [TargetRetentionPeriodInDays <Int32?>]:
+
 
 ## RELATED LINKS
 
-- [New-MgBetaSolutionBackupRestoreSiteProtectionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresiteprotectionunit)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresiteprotectionunit)

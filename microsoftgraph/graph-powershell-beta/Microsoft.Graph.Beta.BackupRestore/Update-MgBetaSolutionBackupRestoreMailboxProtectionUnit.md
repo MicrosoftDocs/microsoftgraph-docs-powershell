@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoremailboxprotectionunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 07/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit
 ## SYNOPSIS
 
 Update the navigation property mailboxProtectionUnits in solutions
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreMailboxProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreMailboxProtectionUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,11 +26,11 @@ Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit -MailboxProtectionUnitId
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-DirectoryObjectId <string>] [-Error <IMicrosoftGraphPublicError>] [-Id <string>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-MailboxType <string>] [-OffboardRequestedDateTime <datetime>] [-PolicyId <string>]
+ [-MailboxType <string>] [-OffboardRequestedDateTime <datetime>]
+ [-PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>] [-PolicyId <string>]
  [-ProtectionSources <string>] [-Status <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -43,7 +40,7 @@ Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit -MailboxProtectionUnitId
  -BodyParameter <IMicrosoftGraphMailboxProtectionUnit> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -55,11 +52,11 @@ Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit -InputObject <IBackupRes
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-DirectoryObjectId <string>] [-Error <IMicrosoftGraphPublicError>] [-Id <string>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-MailboxType <string>] [-OffboardRequestedDateTime <datetime>] [-PolicyId <string>]
+ [-MailboxType <string>] [-OffboardRequestedDateTime <datetime>]
+ [-PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>] [-PolicyId <string>]
  [-ProtectionSources <string>] [-Status <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -69,7 +66,7 @@ Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit -InputObject <IBackupRes
  -BodyParameter <IMicrosoftGraphMailboxProtectionUnit> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -80,6 +77,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property mailboxProtectionUnits in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -600,6 +607,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PendingRetentionPeriodChange
+
+retentionPeriodChange
+To construct, see NOTES section for PENDINGRETENTIONPERIODCHANGE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRetentionPeriodChange
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -PolicyId
 
 The unique identifier of the protection policy based on which protection unit was created.
@@ -822,7 +857,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMailboxProtectionUnit>`: mailboxProtectionUnit
+BODYPARAMETER <IMicrosoftGraphMailboxProtectionUnit>: mailboxProtectionUnit
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
   [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
@@ -856,6 +891,11 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
   [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+  [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [EffectiveFromDateTime <DateTime?>]: 
+    [Status <String>]: retentionPeriodChangeStatus
+    [TargetRetentionPeriodInDays <Int32?>]: 
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
   [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus
@@ -864,7 +904,7 @@ Read-only.
   [DirectoryObjectId <String>]: The ID of the directory object.
   [MailboxType <String>]: mailboxType
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -876,7 +916,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -892,7 +932,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -936,7 +976,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
   [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -948,30 +988,13 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
+PENDINGRETENTIONPERIODCHANGE <IMicrosoftGraphRetentionPeriodChange>: retentionPeriodChange
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [EffectiveFromDateTime <DateTime?>]: 
+  [Status <String>]: retentionPeriodChangeStatus
+  [TargetRetentionPeriodInDays <Int32?>]:
+
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBackupRestoreMailboxProtectionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoremailboxprotectionunit)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoremailboxprotectionunit)
