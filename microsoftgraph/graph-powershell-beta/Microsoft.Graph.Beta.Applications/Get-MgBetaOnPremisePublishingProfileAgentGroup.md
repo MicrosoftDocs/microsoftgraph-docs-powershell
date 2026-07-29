@@ -85,6 +85,14 @@ List of existing onPremisesAgentGroup objects.
 Read-only.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.HybridAuthentication, Directory.ReadWrite.All, Policy.ReadWrite.HybridAuthentication,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
