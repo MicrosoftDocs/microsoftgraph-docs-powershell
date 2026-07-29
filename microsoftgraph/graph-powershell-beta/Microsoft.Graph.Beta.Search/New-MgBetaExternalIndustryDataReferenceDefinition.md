@@ -510,8 +510,8 @@ Must be unique within the referenceType.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition)
-- [](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-post?view=graph-rest-beta)
+- [New-MgBetaExternalIndustryDataReferenceDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-post?view=graph-rest-beta)
 
 
 

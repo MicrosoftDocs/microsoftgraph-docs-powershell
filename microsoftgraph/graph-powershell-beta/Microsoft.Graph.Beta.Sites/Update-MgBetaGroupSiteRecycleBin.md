@@ -37343,7 +37343,7 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiterecyclebin)
+- [Update-MgBetaGroupSiteRecycleBin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiterecyclebin)
 
 
 

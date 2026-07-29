@@ -416,7 +416,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistsubscriptioncount)
+- [Get-MgBetaSiteListSubscriptionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistsubscriptioncount)
 
 
 

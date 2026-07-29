@@ -470,8 +470,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaexecutesecurityincidenttaskresponseaction)
-- [](https://learn.microsoft.com/graph/api/security-incidenttask-executeresponseaction?view=graph-rest-beta)
+- [Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaexecutesecurityincidenttaskresponseaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-incidenttask-executeresponseaction?view=graph-rest-beta)
 
 
 

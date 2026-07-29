@@ -18298,7 +18298,7 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance)
+- [New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance)
 
 
 

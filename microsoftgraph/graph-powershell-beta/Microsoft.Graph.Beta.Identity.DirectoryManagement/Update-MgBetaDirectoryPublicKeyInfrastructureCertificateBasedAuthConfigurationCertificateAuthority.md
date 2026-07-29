@@ -937,8 +937,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
-- [](https://learn.microsoft.com/graph/api/certificateauthoritydetail-update?view=graph-rest-beta)
+- [Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificateauthoritydetail-update?view=graph-rest-beta)
 
 
 

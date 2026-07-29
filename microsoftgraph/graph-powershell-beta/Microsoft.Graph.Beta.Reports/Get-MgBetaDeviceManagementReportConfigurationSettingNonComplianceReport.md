@@ -593,7 +593,7 @@ BODYPARAMETER `<IPaths19DnnqbDevicemanagementReportsMicrosoftGraphGetconfigurati
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportconfigurationsettingnoncompliancereport)
+- [Get-MgBetaDeviceManagementReportConfigurationSettingNonComplianceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportconfigurationsettingnoncompliancereport)
 
 
 

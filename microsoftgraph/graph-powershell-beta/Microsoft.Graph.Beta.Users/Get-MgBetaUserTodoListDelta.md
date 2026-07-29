@@ -573,7 +573,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolistdelta)
+- [Get-MgBetaUserTodoListDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolistdelta)
 
 
 

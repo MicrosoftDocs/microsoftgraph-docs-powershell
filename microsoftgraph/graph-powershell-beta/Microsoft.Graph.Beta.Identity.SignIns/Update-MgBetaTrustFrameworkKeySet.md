@@ -761,8 +761,8 @@ For more information, see RFC 5280.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset)
-- [](https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-beta)
+- [Update-MgBetaTrustFrameworkKeySet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-beta)
 
 
 

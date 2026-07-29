@@ -594,8 +594,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageattachmentuploadsession)
-- [](https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-beta)
+- [New-MgBetaUserMessageAttachmentUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageattachmentuploadsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-beta)
 
 
 

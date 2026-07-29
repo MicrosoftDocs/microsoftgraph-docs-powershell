@@ -1164,8 +1164,8 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistpermission)
-- [](https://learn.microsoft.com/graph/api/list-post-permissions?view=graph-rest-beta)
+- [New-MgBetaSiteListPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistpermission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/list-post-permissions?view=graph-rest-beta)
 
 
 

@@ -83052,7 +83052,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetashareshareddriveitemshareddriveitem)
+- [Update-MgBetaShareSharedDriveItemSharedDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetashareshareddriveitemshareddriveitem)
 
 
 

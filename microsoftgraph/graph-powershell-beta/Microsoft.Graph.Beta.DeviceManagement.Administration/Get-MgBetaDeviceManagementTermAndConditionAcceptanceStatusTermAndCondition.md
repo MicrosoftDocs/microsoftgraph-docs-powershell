@@ -425,7 +425,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementtermandconditionacceptancestatustermandcondition)
+- [Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementtermandconditionacceptancestatustermandcondition)
 
 
 

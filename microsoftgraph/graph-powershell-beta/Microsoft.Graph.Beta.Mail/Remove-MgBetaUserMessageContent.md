@@ -421,7 +421,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagecontent)
+- [Remove-MgBetaUserMessageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagecontent)
 
 
 

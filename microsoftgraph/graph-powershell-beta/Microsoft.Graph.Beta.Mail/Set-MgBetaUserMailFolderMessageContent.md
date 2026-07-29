@@ -488,7 +488,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/set-mgbetausermailfoldermessagecontent)
+- [Set-MgBetaUserMailFolderMessageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/set-mgbetausermailfoldermessagecontent)
 
 
 
