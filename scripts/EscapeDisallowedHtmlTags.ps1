@@ -29,7 +29,18 @@ function EscapeDisallowedHtmlTags {
     git config --global user.email "GraphTooling@service.microsoft.com"
     git config --global user.name "Microsoft Graph DevX Tooling"
     git add .
-    git commit -m "Escaped disallowed html tags" 	
+
+    # Check for staged changes; commit only if any exist
+    $pending = git status --porcelain
+    if (-not [string]::IsNullOrWhiteSpace($pending)) {
+        git commit -m "Escaped disallowed html tags"
+        Write-Host "Committed escaping of disallowed html tags."
+    }
+    else {
+        Write-Host "Nothing to commit; skipping commit step."
+        # Ensure a clean exit code even if earlier native commands returned 1
+        $global:LASTEXITCODE = 0
+    }
 }
 function Get-FilesByProfile {
     Param(
