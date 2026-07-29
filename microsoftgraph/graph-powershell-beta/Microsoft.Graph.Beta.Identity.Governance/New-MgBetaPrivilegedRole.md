@@ -491,7 +491,7 @@ Read-only.
       [UsersCount <Int32?>]: 
   [UserId <String>]: 
 
-BODYPARAMETER <IMicrosoftGraphPrivilegedRole>: privilegedRole
+BODYPARAMETER `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -529,7 +529,7 @@ Read-only.
     [Status <String>]: roleSummaryStatus
     [UsersCount <Int32?>]: 
 
-SETTINGS <IMicrosoftGraphPrivilegedRoleSettings>: privilegedRoleSettings
+SETTINGS `<IMicrosoftGraphPrivilegedRoleSettings>`: privilegedRoleSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -544,7 +544,7 @@ Read-only.
   [NotificationToUserOnElevation <Boolean?>]: 
   [TicketingInfoOnElevation <Boolean?>]: 
 
-SUMMARY <IMicrosoftGraphPrivilegedRoleSummary>: privilegedRoleSummary
+SUMMARY `<IMicrosoftGraphPrivilegedRoleSummary>`: privilegedRoleSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -558,3 +558,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedrole)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

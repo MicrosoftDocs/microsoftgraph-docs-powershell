@@ -549,7 +549,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsDqhne3IdentityConditionalaccessMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsDqhne3IdentityConditionalaccessMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppliedPoliciesOnly <Boolean?>]: 
   [SignInConditions <IMicrosoftGraphSignInConditions>]: signInConditions
@@ -604,7 +604,7 @@ This property is set by Intune.
   [SignInIdentity <IMicrosoftGraphSignInIdentity>]: signInIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-SIGNINCONDITIONS <IMicrosoftGraphSignInConditions>: signInConditions
+SIGNINCONDITIONS `<IMicrosoftGraphSignInConditions>`: signInConditions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AgentIdRiskLevel <String>]: agentIdRiskLevel
   [AuthenticationFlow <IMicrosoftGraphAuthenticationFlow>]: authenticationFlow
@@ -657,3 +657,25 @@ This property is set by Intune.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetaidentityconditionalaccess)
 - [](https://learn.microsoft.com/graph/api/conditionalaccessroot-evaluate?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

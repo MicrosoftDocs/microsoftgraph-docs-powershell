@@ -13,7 +13,7 @@ title: Remove-MgBetaIdentityConditionalAccessDeletedItemPolicy
 
 ## SYNOPSIS
 
-Permanently delete a policyDeletableItem object, which might be one of the following deleted policy types:\r\n- crossTenantAccessPolicyConfigurationPartner\r\n- crossTenantIdentitySyncPolicyPartner\r\n- conditionalAccessPolicy\r\n- namedLocation
+Permanently delete a policyDeletableItem object, which might be one of the following deleted policy types:\r- crossTenantAccessPolicyConfigurationPartner\r- crossTenantIdentitySyncPolicyPartner\r- conditionalAccessPolicy\r- namedLocation
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Permanently delete a policyDeletableItem object, which might be one of the following deleted policy types:\r\n- crossTenantAccessPolicyConfigurationPartner\r\n- crossTenantIdentitySyncPolicyPartner\r\n- conditionalAccessPolicy\r\n- namedLocation
+Permanently delete a policyDeletableItem object, which might be one of the following deleted policy types:\r- crossTenantAccessPolicyConfigurationPartner\r- crossTenantIdentitySyncPolicyPartner\r- conditionalAccessPolicy\r- namedLocation
 
 ## EXAMPLES
 
@@ -382,7 +382,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -485,3 +485,25 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccessdeleteditempolicy)
 - [](https://learn.microsoft.com/graph/api/policydeletableitem-delete?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -15,7 +15,7 @@ title: Update-MgBetaIdentityAuthenticationEventFlow
 
 Update the properties of an authenticationEventsFlow object by ID.
 You must specify the @odata.type property and the value of the authenticationEventsFlow object type to update.
-The following derived subtypes are supported:\r\n- externalUsersSelfServiceSignupEventsFlow
+The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow
 
 ## SYNTAX
 
@@ -70,7 +70,7 @@ This cmdlet has the following aliases,
 
 Update the properties of an authenticationEventsFlow object by ID.
 You must specify the @odata.type property and the value of the authenticationEventsFlow object type to update.
-The following derived subtypes are supported:\r\n- externalUsersSelfServiceSignupEventsFlow
+The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow
 
 ## EXAMPLES
 
@@ -724,7 +724,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphAuthenticationEventsFlow>: authenticationEventsFlow
+BODYPARAMETER `<IMicrosoftGraphAuthenticationEventsFlow>`: authenticationEventsFlow
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -743,7 +743,7 @@ The display name for the events policy.
 If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged.
 Defaults to 500.
 
-CONDITIONS <IMicrosoftGraphAuthenticationConditions>: authenticationConditions
+CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Applications <IMicrosoftGraphAuthenticationConditionsApplications>]: authenticationConditionsApplications
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -752,7 +752,7 @@ This property must be set to false for listener of type onTokenIssuanceStartList
     [IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication[]>]: 
       [AppId <String>]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -855,3 +855,25 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventflow)
 - [](https://learn.microsoft.com/graph/api/authenticationeventsflow-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

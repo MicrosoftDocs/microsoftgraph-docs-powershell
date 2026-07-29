@@ -408,14 +408,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Request <IMicrosoftGraphPowerliftDownloadRequest>]: Request used to download app diagnostic files.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Files <String[]>]: The list of files to download
     [PowerliftId <String>]: The unique id for the request
 
-REQUEST <IMicrosoftGraphPowerliftDownloadRequest>: Request used to download app diagnostic files.
+REQUEST `<IMicrosoftGraphPowerliftDownloadRequest>`: Request used to download app diagnostic files.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Files <String[]>]: The list of files to download
   [PowerliftId <String>]: The unique id for the request
@@ -424,3 +424,25 @@ REQUEST <IMicrosoftGraphPowerliftDownloadRequest>: Request used to download app 
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementmanageddeviceappdiagnostic)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

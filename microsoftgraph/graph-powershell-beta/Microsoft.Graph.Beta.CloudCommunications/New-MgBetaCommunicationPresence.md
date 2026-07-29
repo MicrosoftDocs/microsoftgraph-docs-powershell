@@ -477,7 +477,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphPresence>: presence
+BODYPARAMETER `<IMicrosoftGraphPresence>`: presence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -508,12 +508,12 @@ See below for possible values.
     [Source <String>]: workLocationSource
     [WorkLocationType <String>]: workLocationType
 
-OUTOFOFFICESETTINGS <IMicrosoftGraphOutOfOfficeSettings>: outOfOfficeSettings
+OUTOFOFFICESETTINGS `<IMicrosoftGraphOutOfOfficeSettings>`: outOfOfficeSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsOutOfOffice <Boolean?>]: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
   [Message <String>]: The out of office message that the user configured on Outlook client (Automatic Replies (Out of Office)) or the Teams client (Schedule out of office).
 
-STATUSMESSAGE <IMicrosoftGraphPresenceStatusMessage>: presenceStatusMessage
+STATUSMESSAGE `<IMicrosoftGraphPresenceStatusMessage>`: presenceStatusMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpiryDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -527,7 +527,7 @@ See below for possible values.
     [ContentType <String>]: bodyType
   [PublishedDateTime <DateTime?>]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
-WORKLOCATION <IMicrosoftGraphUserWorkLocation>: userWorkLocation
+WORKLOCATION `<IMicrosoftGraphUserWorkLocation>`: userWorkLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PlaceId <String>]: Identifier of the place, if applicable.
   [Source <String>]: workLocationSource
@@ -537,3 +537,25 @@ WORKLOCATION <IMicrosoftGraphUserWorkLocation>: userWorkLocation
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationpresence)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

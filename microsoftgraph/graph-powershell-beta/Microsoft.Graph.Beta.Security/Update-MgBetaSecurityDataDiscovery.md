@@ -388,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityDataDiscoveryRoot>: dataDiscoveryRoot
+BODYPARAMETER `<IMicrosoftGraphSecurityDataDiscoveryRoot>`: dataDiscoveryRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -421,7 +421,7 @@ Possible values are: userName, ipAddress, machineName, other, unknown, unknownFu
       [SupportedTrafficTypes <String[]>]: The supported traffic type.
 Possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue.
 
-CLOUDAPPDISCOVERY <IMicrosoftGraphSecurityDataDiscoveryReport>: dataDiscoveryReport
+CLOUDAPPDISCOVERY `<IMicrosoftGraphSecurityDataDiscoveryReport>`: dataDiscoveryReport
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -454,3 +454,25 @@ Possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscovery)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

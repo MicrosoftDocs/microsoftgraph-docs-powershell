@@ -606,7 +606,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCEPTEDFOR <IMicrosoftGraphManagedTenantsManagementTemplateStep>: managementTemplateStep
+ACCEPTEDFOR `<IMicrosoftGraphManagedTenantsManagementTemplateStep>`: managementTemplateStep
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -731,7 +731,7 @@ Read-only.
   [UserImpact <String>]: 
   [Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]>]: 
 
-BODYPARAMETER <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>: managementTemplateStepVersion
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>`: managementTemplateStepVersion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -981,7 +981,7 @@ Read-only.
     [VersionInformation <String>]: 
   [TenantId <String>]: 
 
-TEMPLATESTEP <IMicrosoftGraphManagedTenantsManagementTemplateStep>: managementTemplateStep
+TEMPLATESTEP `<IMicrosoftGraphManagedTenantsManagementTemplateStep>`: managementTemplateStep
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1110,3 +1110,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversion)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
