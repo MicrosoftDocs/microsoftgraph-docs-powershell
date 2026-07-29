@@ -19,6 +19,7 @@ param(
     
     [Parameter(Mandatory = $false)]
     [ValidateSet("v1.0", "beta", "both")]
+    [Alias("GraphProfileFilter")]
     [string]$GraphProfile = "both"
 )
 

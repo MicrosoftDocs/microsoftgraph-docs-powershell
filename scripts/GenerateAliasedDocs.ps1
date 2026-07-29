@@ -6,12 +6,17 @@
     See related PR <https://github.com/microsoftgraph/msgraph-sdk-powershell/pull/2721> for more information.
 #>
 
+param(
+    [ValidateSet("v1.0", "beta", "both")]
+    [string]$GraphProfileFilter = "both"
+)
+
 function Start-GenerateAliasedDocs {
     $BreakingChangeReportV1Report = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/docs/PowerShellBreakingChanges-V1.0.csv")
     $BreakingChangeReportBetaReport = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/docs/PowerShellBreakingChanges-beta.csv")
     $Reports = @()
-    $Reports += $BreakingChangeReportV1Report
-    $Reports += $BreakingChangeReportBetaReport
+    if ($GraphProfileFilter -ne 'beta') { $Reports += $BreakingChangeReportV1Report }
+    if ($GraphProfileFilter -ne 'v1.0') { $Reports += $BreakingChangeReportBetaReport }
     foreach ($BreakingChangeReport in $Reports) {
         Import-Csv $BreakingChangeReport | ForEach-Object {
             $Command = $_."NewCmdlet"

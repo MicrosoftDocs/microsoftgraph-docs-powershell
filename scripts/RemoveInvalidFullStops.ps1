@@ -2,7 +2,9 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc")
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
+    [ValidateSet("v1.0", "beta", "both")]
+    [string] $GraphProfileFilter = "both"
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -18,7 +20,8 @@ function Remove-InvalidFullStops {
 
     $ModulePrefix = "Microsoft.Graph"
     $GraphMapping = Get-GraphMapping 
-    $GraphMapping.Keys | ForEach-Object {
+    $profilesToProcess = if ($GraphProfileFilter -eq 'both') { $GraphMapping.Keys } else { @($GraphProfileFilter) }
+    $profilesToProcess | ForEach-Object {
         $graphProfile = $_
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }

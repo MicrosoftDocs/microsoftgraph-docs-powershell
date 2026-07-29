@@ -1,6 +1,8 @@
 param(
     [string]$MgCommandMetadatJsonFile = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json"),
-    [string[]]$CmdList = @()
+    [string[]]$CmdList = @(),
+    [ValidateSet("v1.0", "beta", "both")]
+    [string]$GraphProfileFilter = "both"
 )
 
 function Start-Generator {
@@ -11,6 +13,7 @@ function Start-Generator {
             $CommandName = $_.Command;
             $ApiVersion = $_.ApiVersion
             $Module = $_.Module;
+            if ($GraphProfileFilter -ne 'both' -and $ApiVersion -ne $GraphProfileFilter) { return }
             #Array for DelegatedWork Permissions
             $DelegatedWorkPermissions = @();
             #Array for Application Permissions
