@@ -336,7 +336,7 @@ HelpMessage: ''
 
 ### -IsRegistrationEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -357,7 +357,7 @@ HelpMessage: ''
 
 ### -IsRegistrationRequired
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

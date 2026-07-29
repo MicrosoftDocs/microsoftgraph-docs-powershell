@@ -98,7 +98,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -147,7 +147,7 @@ HelpMessage: ''
 
 ### -Commands
 
-.
+
 To construct, see NOTES section for COMMANDS properties and create a hash table.
 
 ```yaml

@@ -189,7 +189,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -405,9 +405,8 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Proof
 
-.
+
 
 ```yaml
 Type: System.String

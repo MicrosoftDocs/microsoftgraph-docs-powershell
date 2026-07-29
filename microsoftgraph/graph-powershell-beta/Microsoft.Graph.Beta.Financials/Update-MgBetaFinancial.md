@@ -112,7 +112,7 @@ HelpMessage: ''
 
 ### -Companies
 
-.
+
 To construct, see NOTES section for COMPANIES properties and create a hash table.
 
 ```yaml
@@ -219,7 +219,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String

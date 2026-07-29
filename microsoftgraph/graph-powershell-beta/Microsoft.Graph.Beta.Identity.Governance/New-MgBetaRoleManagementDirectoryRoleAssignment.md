@@ -231,7 +231,7 @@ HelpMessage: ''
 
 ### -Condition
 
-.
+
 
 ```yaml
 Type: System.String

@@ -230,7 +230,7 @@ HelpMessage: ''
 
 ### -AlertDetections
 
-.
+
 To construct, see NOTES section for ALERTDETECTIONS properties and create a hash table.
 
 ```yaml
@@ -947,7 +947,7 @@ HelpMessage: ''
 
 ### -InvestigationSecurityStates
 
-.
+
 To construct, see NOTES section for INVESTIGATIONSECURITYSTATES properties and create a hash table.
 
 ```yaml
@@ -975,7 +975,7 @@ HelpMessage: ''
 
 ### -LastEventDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -1059,7 +1059,7 @@ HelpMessage: ''
 
 ### -MessageSecurityStates
 
-.
+
 To construct, see NOTES section for MESSAGESECURITYSTATES properties and create a hash table.
 
 ```yaml
@@ -1478,7 +1478,7 @@ HelpMessage: ''
 
 ### -UriClickSecurityStates
 
-.
+
 To construct, see NOTES section for URICLICKSECURITYSTATES properties and create a hash table.
 
 ```yaml

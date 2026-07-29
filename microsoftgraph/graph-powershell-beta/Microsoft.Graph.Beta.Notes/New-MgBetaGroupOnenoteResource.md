@@ -452,7 +452,7 @@ HelpMessage: ''
 
 ### -Self
 
-.
+
 
 ```yaml
 Type: System.String

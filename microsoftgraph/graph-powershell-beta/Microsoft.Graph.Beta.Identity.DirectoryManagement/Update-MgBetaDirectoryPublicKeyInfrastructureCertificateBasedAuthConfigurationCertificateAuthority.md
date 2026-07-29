@@ -395,7 +395,7 @@ HelpMessage: ''
 
 ### -DeltaCertificateRevocationListUrl
 
-.
+
 
 ```yaml
 Type: System.String

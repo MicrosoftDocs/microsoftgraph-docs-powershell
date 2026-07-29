@@ -478,7 +478,7 @@ HelpMessage: ''
 
 ### -Posts
 
-.
+
 To construct, see NOTES section for POSTS properties and create a hash table.
 
 ```yaml

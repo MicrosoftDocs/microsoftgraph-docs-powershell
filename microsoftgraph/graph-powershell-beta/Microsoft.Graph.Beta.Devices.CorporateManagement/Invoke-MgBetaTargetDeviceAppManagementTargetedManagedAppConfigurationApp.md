@@ -136,7 +136,7 @@ HelpMessage: ''
 
 ### -Apps
 
-.
+
 To construct, see NOTES section for APPS properties and create a hash table.
 
 ```yaml
@@ -164,7 +164,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml

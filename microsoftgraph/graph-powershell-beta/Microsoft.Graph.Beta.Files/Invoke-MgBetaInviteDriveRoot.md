@@ -103,7 +103,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -201,7 +201,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-.
+
 
 ```yaml
 Type: System.String
@@ -319,7 +319,7 @@ HelpMessage: ''
 
 ### -Message
 
-.
+
 
 ```yaml
 Type: System.String
@@ -346,7 +346,7 @@ HelpMessage: ''
 
 ### -Password
 
-.
+
 
 ```yaml
 Type: System.String
@@ -436,7 +436,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-.
+
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -464,7 +464,7 @@ HelpMessage: ''
 
 ### -RequireSignIn
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -513,7 +513,7 @@ HelpMessage: ''
 
 ### -RetainInheritedPermissions
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -540,7 +540,7 @@ HelpMessage: ''
 
 ### -Roles
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -567,7 +567,7 @@ HelpMessage: ''
 
 ### -SendInvitation
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
