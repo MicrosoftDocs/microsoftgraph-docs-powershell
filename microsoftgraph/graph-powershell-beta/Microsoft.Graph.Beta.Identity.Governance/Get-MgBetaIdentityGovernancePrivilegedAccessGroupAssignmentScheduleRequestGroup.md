@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 References the group that is the scope of the membership or ownership assignment request through PIM for Groups.
 Supports $expand and $select nested in $expand for select properties like id, displayName, and mail.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -461,6 +451,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedulerequestgroup)
+
 
 
 

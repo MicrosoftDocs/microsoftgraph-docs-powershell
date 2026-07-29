@@ -56,16 +56,6 @@ This cmdlet has the following aliases,
 
 Get the properties of a restoreSession object by ID.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -576,6 +566,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresession)
 - [](https://learn.microsoft.com/graph/api/restoresessionbase-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-list-restoresessions?view=graph-rest-beta)
+
 
 
 

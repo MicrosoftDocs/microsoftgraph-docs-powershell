@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Cancel the offboarding of a protectionUnitBase.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -391,6 +381,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/stop-mgbetasolutionbackuprestoreprotectionunitoffboard)
 - [](https://learn.microsoft.com/graph/api/protectionunitbase-canceloffboard?view=graph-rest-beta)
+
 
 
 
