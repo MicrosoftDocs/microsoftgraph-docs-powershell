@@ -58,12 +58,17 @@ For details, see Use delta query to track changes in Microsoft Graph data.
 | Application | Tasks.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Get delta on plans in a group
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaGroupPlannerPlanDelta -GroupId $groupId
+
+```
+This example will get delta on plans in a group
+
 
 ## PARAMETERS
 

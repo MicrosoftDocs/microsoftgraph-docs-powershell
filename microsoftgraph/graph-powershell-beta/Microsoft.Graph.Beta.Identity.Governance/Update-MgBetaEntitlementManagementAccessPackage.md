@@ -93,8 +93,9 @@ Update an existing accessPackage object to change one or more of its properties,
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -103,6 +104,10 @@ $params = @{
 }
 
 Update-MgBetaEntitlementManagementAccessPackage -AccessPackageId $accessPackageId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaEntitlementManagementAccessPackage Cmdlet.
+
 
 ## PARAMETERS
 

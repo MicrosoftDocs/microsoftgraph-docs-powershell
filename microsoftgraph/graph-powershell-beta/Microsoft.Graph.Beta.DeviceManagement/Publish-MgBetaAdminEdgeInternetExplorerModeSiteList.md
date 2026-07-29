@@ -77,8 +77,9 @@ Publish the specified browserSiteList for devices to download.
 | Application | BrowserSiteLists.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Publish all sites and shared cookies
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement
 
@@ -88,7 +89,12 @@ $params = @{
 
 Publish-MgBetaAdminEdgeInternetExplorerModeSiteList -BrowserSiteListId $browserSiteListId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will publish all sites and shared cookies
+
+### Example 2: Publish specific sites and shared cookies
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement
 
@@ -110,6 +116,10 @@ $params = @{
 }
 
 Publish-MgBetaAdminEdgeInternetExplorerModeSiteList -BrowserSiteListId $browserSiteListId -BodyParameter $params
+
+```
+This example will publish specific sites and shared cookies
+
 
 ## PARAMETERS
 

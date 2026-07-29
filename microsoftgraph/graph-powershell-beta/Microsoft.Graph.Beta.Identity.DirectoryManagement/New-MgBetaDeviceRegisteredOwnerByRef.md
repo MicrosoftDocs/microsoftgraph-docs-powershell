@@ -66,8 +66,9 @@ This cmdlet has the following aliases,
 Add a user as a registered owner of the device.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -76,6 +77,10 @@ $params = @{
 }
 
 New-MgBetaDeviceRegisteredOwnerByRef -DeviceId $deviceId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDeviceRegisteredOwnerByRef Cmdlet.
+
 
 ## PARAMETERS
 

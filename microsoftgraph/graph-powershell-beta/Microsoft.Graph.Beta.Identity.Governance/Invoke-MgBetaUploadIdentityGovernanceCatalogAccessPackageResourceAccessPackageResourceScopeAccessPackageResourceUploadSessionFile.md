@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Upload a file in a customDataProvidedResourceUploadSession created for a customDataProvidedResource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -524,6 +514,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetauploadidentitygovernancecatalogaccesspackageresourceaccesspackageresourcescopeaccesspackageresourceuploadsessionfile)
 - [](https://learn.microsoft.com/graph/api/customdataprovidedresourceuploadsession-uploadfile?view=graph-rest-beta)
+
 
 
 

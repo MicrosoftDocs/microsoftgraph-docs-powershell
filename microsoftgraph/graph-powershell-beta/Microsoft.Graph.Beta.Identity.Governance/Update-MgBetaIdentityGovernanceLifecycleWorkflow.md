@@ -99,8 +99,9 @@ To update any other workflow properties, see workflow: createNewVersion.
 | Application | LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -112,6 +113,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityGovernanceLifecycleWorkflow Cmdlet.
+
 
 ## PARAMETERS
 

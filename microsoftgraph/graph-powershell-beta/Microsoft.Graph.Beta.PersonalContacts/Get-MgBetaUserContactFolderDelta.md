@@ -60,16 +60,6 @@ This allows you to maintain and synchronize \ra local store of a user's contact 
 | Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite,  |
 | Application | Contacts.Read, Contacts.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -563,6 +553,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderdelta)
 - [](https://learn.microsoft.com/graph/api/contactfolder-delta?view=graph-rest-beta)
+
 
 
 

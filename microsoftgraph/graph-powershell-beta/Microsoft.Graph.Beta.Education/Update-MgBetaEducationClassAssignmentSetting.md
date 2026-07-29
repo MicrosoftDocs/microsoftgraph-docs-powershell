@@ -83,8 +83,9 @@ Only teachers can update these settings.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Update submissionAnimationDisabled
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -94,7 +95,12 @@ $params = @{
 
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update submissionanimationdisabled
+
+### Example 2: Create grading categories
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -117,7 +123,12 @@ $params = @{
 
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create grading categories
+
+### Example 3: Delta payload to delete, modify, and add grading categories
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -145,7 +156,12 @@ $params = @{
 
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will delta payload to delete, modify, and add grading categories
+
+### Example 4: Create grading schemes
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -195,6 +211,10 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example will create grading schemes
+
 
 ## PARAMETERS
 

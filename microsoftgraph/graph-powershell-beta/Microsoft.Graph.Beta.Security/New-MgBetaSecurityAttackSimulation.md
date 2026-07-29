@@ -65,8 +65,9 @@ Create an attack simulation campaign for a tenant.
 | Application | AttackSimulation.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -108,6 +109,10 @@ endUserNotificationSetting = @{
 }
 
 New-MgBetaSecurityAttackSimulation -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityAttackSimulation Cmdlet.
+
 
 ## PARAMETERS
 

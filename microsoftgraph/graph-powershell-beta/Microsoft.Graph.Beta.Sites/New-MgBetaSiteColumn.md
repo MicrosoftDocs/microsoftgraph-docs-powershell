@@ -97,9 +97,9 @@ Create columnDefinition for a site
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
@@ -117,6 +117,11 @@ $params = @{
 }
 
 New-MgBetaSiteColumn -SiteId $siteId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaSiteColumn Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -77,8 +77,9 @@ Update the properties of an identityApiConnector object.
 | Application | APIConnectors.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Changing display name, targetUrl, and username & password used for basic authentication
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -94,7 +95,12 @@ $params = @{
 
 Update-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows changing display name, targeturl, and username & password used for basic authentication
+
+### Example 2: Changing API connector to use client certificate authentication
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -107,6 +113,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
+
+```
+This example shows changing api connector to use client certificate authentication
+
 
 ## PARAMETERS
 

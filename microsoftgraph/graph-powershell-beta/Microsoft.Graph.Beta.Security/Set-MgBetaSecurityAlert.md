@@ -54,8 +54,9 @@ Create a comment for an existing alert based on the specified alert id property.
 | Application | SecurityAlert.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -65,6 +66,10 @@ $params = @{
 }
 
 Set-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaSecurityAlert Cmdlet.
+
 
 ## PARAMETERS
 

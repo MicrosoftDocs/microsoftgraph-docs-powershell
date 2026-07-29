@@ -170,16 +170,6 @@ Create new navigation property to calendarView for bookingBusinesses
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -2334,6 +2324,7 @@ See below for possible values.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscalendarview)
+
 
 
 

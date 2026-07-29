@@ -83,8 +83,9 @@ Update the properties of a healthIssue object.
 | Application | SecurityIdentitiesHealth.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -93,6 +94,10 @@ $params = @{
 }
 
 Update-MgBetaSecurityIdentityHealthIssue -HealthIssueId $healthIssueId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityIdentityHealthIssue Cmdlet.
+
 
 ## PARAMETERS
 

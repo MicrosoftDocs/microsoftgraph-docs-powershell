@@ -69,16 +69,6 @@ This cmdlet has the following aliases,
 Move a planner plan object from one planner plan container to another.
 Planner plans can only be moved from a user container to a group container.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -590,6 +580,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/move-mgbetateamchannelplannerplantocontainer)
 - [](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta)
+
 
 
 

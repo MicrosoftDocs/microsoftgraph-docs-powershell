@@ -55,8 +55,9 @@ Export the billed Azure usage data.
 | Application | PartnerBilling.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
@@ -66,6 +67,10 @@ $params = @{
 }
 
 Export-MgBetaReportPartnerBillingUsageBilled -BodyParameter $params
+
+```
+This example shows how to use the Export-MgBetaReportPartnerBillingUsageBilled Cmdlet.
+
 
 ## PARAMETERS
 
