@@ -63,7 +63,7 @@ function Start-GraphHelp {
     if (-not (Get-Module -Name Microsoft.Graph.Authentication -ListAvailable -ErrorAction SilentlyContinue)) {
         throw "Microsoft.Graph.Authentication module is not available. Aborting generation to avoid deleting existing documentation."
     }
-    Import-Module Microsoft.Graph.Authentication -Force -Global
+    Import-Module Microsoft.Graph.Authentication -Force -Global -ErrorAction Stop
     Get-ChildItem -Path $AuthDestination * -File -Recurse | foreach { $_.Delete() }
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
@@ -108,21 +108,37 @@ function Get-FolderByProfile {
         $Destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
         $DocsDestination = Join-Path $WorkLoadDocsPath $GraphProfilePath
 
-        # Guard against catastrophic deletions: if the module failed to install/import,
-        # skip it entirely so its committed docs are preserved instead of being deleted
+        # Guard against catastrophic deletions. A module can be installed yet fail to
+        # import (e.g. an Authentication version conflict), and ListAvailable alone does
+        # not catch that. Verify the module actually imports AND exposes commands; if it
+        # does not, skip it so its committed docs are preserved instead of being wiped
         # and never regenerated (which is what produced the mass-deletion refresh PRs).
-        if (-not (Get-Module -Name $Path -ListAvailable -ErrorAction SilentlyContinue)) {
-            Write-Warning "Module $Path is not available; skipping to preserve existing documentation."
+        $ModuleUsable = $false
+        if (Get-Module -Name $Path -ListAvailable -ErrorAction SilentlyContinue) {
+            try {
+                Import-Module $Path -Force -Global -ErrorAction Stop
+                if (Get-Command -Module $Path -ErrorAction SilentlyContinue) {
+                    $ModuleUsable = $true
+                }
+            } catch {
+                Write-Warning "Module $Path failed to import: $($_.Exception.Message)"
+            }
+        }
+        if (-not $ModuleUsable) {
+            Write-Warning "Module $Path is not usable; skipping to preserve existing documentation."
             return
         }
-        Import-Module $Path -Force -Global -ErrorAction SilentlyContinue
 
         if (-not(Test-Path $Destination)) {
             New-Item -Path $Destination -ItemType Directory
         }
-            
-        Get-ChildItem -Path $Destination * -File -Recurse | foreach { $_.Delete() }
+
+        # NOTE: docs are intentionally NOT bulk-deleted here. Each doc is overwritten in
+        # place as it is regenerated, and only genuine orphans (commands no longer in the
+        # metadata) are removed afterwards. This guarantees that a transient generation
+        # failure can never wipe a module's documentation.
         $CmdletCount = 0
+        $MetadataCommands = @{}
         # Generate table of contents for each module
         $TocFileName = "$Path.md"
         $ModuleGuid = [guid]::NewGuid().ToString()
@@ -147,19 +163,27 @@ function Get-FolderByProfile {
         Add-Content -Path $Destination\$TocFileName -Value "## $Path Cmdlets"
         $CommandMetadataContent | Where-Object { $_.Module -eq $ModName -and $_.ApiVersion -eq $GraphProfile } | ForEach-Object {
             $Command = $_.Command
-            $CmdletDocsPath = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path "$Command.md"
-            if (-not(Test-Path $CmdletDocsPath)) {
-                if (Get-Command -Name $Command -ErrorAction SilentlyContinue) {
-                    Set-Help -ModuleDocsPath $DocsDestination -Command $Command -Module $Path
-                } else {
-                    Write-Warning "Cmdlet $Command is not available."
-                }
-                
+            $MetadataCommands[$Command] = $true
+            if (Get-Command -Name $Command -ErrorAction SilentlyContinue) {
+                Set-Help -ModuleDocsPath $DocsDestination -Command $Command -Module $Path
+            } else {
+                Write-Warning "Cmdlet $Command is not available."
             }
             Add-Content -Path $Destination\$TocFileName -Value "### [$Command]($Command.md)"
             Add-Content -Path $Destination\$TocFileName -Value ""
             $CmdletCount++
         }
+
+        # Remove only genuine orphans: docs whose command is no longer in the metadata.
+        # Docs for commands still in metadata are preserved even if this run failed to
+        # regenerate them, so a bad run cannot delete valid documentation.
+        Get-ChildItem -Path $Destination -Filter "*.md" -File | Where-Object {
+            $_.Name -ne $TocFileName -and -not $MetadataCommands.ContainsKey($_.BaseName)
+        } | ForEach-Object {
+            Write-Host "Removing orphaned doc: $($_.Name)"
+            Remove-Item $_.FullName -Force
+        }
+
         if($CmdletCount -eq 0){
             Remove-Item -LiteralPath $Destination -Force -Recurse
         }
