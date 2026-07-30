@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.SecurityDefaults,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.SecurityDefaults,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
