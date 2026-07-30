@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationadhoccalltranscriptcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaCommunicationAdhocCallTranscriptContent
 ---
@@ -16,9 +16,6 @@ title: Remove-MgBetaCommunicationAdhocCallTranscriptContent
 The content of the transcript.
 Read-only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationAdhocCallTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationAdhocCallTranscriptContent?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,7 +26,6 @@ Remove-MgBetaCommunicationAdhocCallTranscriptContent -AdhocCallId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -39,7 +35,6 @@ Remove-MgBetaCommunicationAdhocCallTranscriptContent -InputObject <ICloudCommuni
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,6 +46,16 @@ This cmdlet has the following aliases,
 
 The content of the transcript.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -403,7 +408,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -433,27 +438,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaCommunicationAdhocCallTranscriptContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationadhoccalltranscriptcontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationadhoccalltranscriptcontent)

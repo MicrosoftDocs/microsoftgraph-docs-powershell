@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamuteallcommunicationcallparticipant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaMuteAllCommunicationCallParticipant
 ---
@@ -25,7 +25,6 @@ Invoke-MgBetaMuteAllCommunicationCallParticipant -CallId <string>
  [-Participants <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Mute1
@@ -36,7 +35,6 @@ Invoke-MgBetaMuteAllCommunicationCallParticipant -CallId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### MuteViaIdentityExpanded1
@@ -47,7 +45,6 @@ Invoke-MgBetaMuteAllCommunicationCallParticipant -InputObject <ICloudCommunicati
  [-Participants <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### MuteViaIdentity1
@@ -58,7 +55,6 @@ Invoke-MgBetaMuteAllCommunicationCallParticipant -InputObject <ICloudCommunicati
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -70,18 +66,9 @@ This cmdlet has the following aliases,
 
 Mute all participants in the call.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallasGuest.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -93,10 +80,6 @@ clientContext = "clientContext-value"
 }
 
 Invoke-MgBetaMuteAllCommunicationCallParticipant -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaMuteAllCommunicationCallParticipant Cmdlet.
-
 
 ## PARAMETERS
 
@@ -129,7 +112,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -205,7 +188,7 @@ HelpMessage: ''
 
 ### -ClientContext
 
-
+.
 
 ```yaml
 Type: System.String
@@ -345,7 +328,7 @@ HelpMessage: ''
 
 ### -Participants
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -511,12 +494,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsKpvac3CommunicationsCallsCallIdParticipantsMicrosoftGraphMuteallPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsKpvac3CommunicationsCallsCallIdParticipantsMicrosoftGraphMuteallPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClientContext <String>]: 
   [Participants <String[]>]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -546,27 +529,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaMuteAllCommunicationCallParticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamuteallcommunicationcallparticipant)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/participant-muteall?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamuteallcommunicationcallparticipant)
+- [](https://learn.microsoft.com/graph/api/participant-muteall?view=graph-rest-beta)

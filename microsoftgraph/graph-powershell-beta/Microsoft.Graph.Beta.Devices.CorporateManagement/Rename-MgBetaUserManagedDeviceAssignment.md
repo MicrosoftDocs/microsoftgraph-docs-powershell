@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/rename-mgbetausermanageddeviceassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: Rename-MgBetaUserManagedDeviceAssignment
 ---
@@ -25,7 +25,6 @@ Rename-MgBetaUserManagedDeviceAssignment -ManagedDeviceId <string> -UserId <stri
  [-DeviceAssignmentItems <IMicrosoftGraphDeviceAssignmentItem[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Change
@@ -36,7 +35,6 @@ Rename-MgBetaUserManagedDeviceAssignment -ManagedDeviceId <string> -UserId <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ChangeViaIdentityExpanded
@@ -47,7 +45,6 @@ Rename-MgBetaUserManagedDeviceAssignment -InputObject <IDevicesCorporateManageme
  [-DeviceAssignmentItems <IMicrosoftGraphDeviceAssignmentItem[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ChangeViaIdentity
@@ -58,7 +55,6 @@ Rename-MgBetaUserManagedDeviceAssignment -InputObject <IDevicesCorporateManageme
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -69,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action changeAssignments
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -101,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -172,7 +178,7 @@ HelpMessage: ''
 
 ### -DeviceAssignmentItems
 
-
+.
 To construct, see NOTES section for DEVICEASSIGNMENTITEMS properties and create a hash table.
 
 ```yaml
@@ -505,7 +511,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsR6R1R2UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphChangeassignmentsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsR6R1R2UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphChangeassignmentsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceAssignmentItems <IMicrosoftGraphDeviceAssignmentItem[]>]: 
     [AssignmentItemActionIntent <DeviceAssignmentItemIntent?>]: A list of possible assignment item action intent values on the application or configuration when executing this action on the managed device.
@@ -535,7 +541,7 @@ Max length is 40
 Device assignment item represents existing assigned Intune resource such as application or configuration.
 Currently supported device assignment item types are Application, DeviceConfiguration, DeviceManagementConfigurationPolicy and MobileAppConfiguration
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -613,27 +619,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Rename-MgBetaUserManagedDeviceAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/rename-mgbetausermanageddeviceassignment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/rename-mgbetausermanageddeviceassignment)

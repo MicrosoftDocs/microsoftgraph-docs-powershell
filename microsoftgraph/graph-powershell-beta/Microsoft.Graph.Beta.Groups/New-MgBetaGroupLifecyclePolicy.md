@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouplifecyclepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupLifecyclePolicy
 ---
@@ -16,9 +16,6 @@ title: New-MgBetaGroupLifecyclePolicy
 Creates a new groupLifecyclePolicy.
 Only one policy exists in the tenant.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/New-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,7 +26,7 @@ New-MgBetaGroupLifecyclePolicy [-ResponseHeadersVariable <string>]
  [-GroupLifetimeInDays <int>] [-Id <string>] [-ManagedGroupTypes <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateExpanded1
@@ -40,7 +37,7 @@ New-MgBetaGroupLifecyclePolicy -GroupId <string> [-ResponseHeadersVariable <stri
  [-GroupLifetimeInDays <int>] [-Id <string>] [-ManagedGroupTypes <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create1
@@ -50,7 +47,7 @@ New-MgBetaGroupLifecyclePolicy -GroupId <string>
  -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -61,7 +58,7 @@ New-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-ResponseHeadersV
  [-GroupLifetimeInDays <int>] [-Id <string>] [-ManagedGroupTypes <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -71,7 +68,7 @@ New-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity>
  -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -81,7 +78,6 @@ New-MgBetaGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePoli
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -94,18 +90,9 @@ This cmdlet has the following aliases,
 Creates a new groupLifecyclePolicy.
 Only one policy exists in the tenant.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -116,10 +103,6 @@ $params = @{
 }
 
 New-MgBetaGroupLifecyclePolicy -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaGroupLifecyclePolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -628,7 +611,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGroupLifecyclePolicy>`: groupLifecyclePolicy
+BODYPARAMETER <IMicrosoftGraphGroupLifecyclePolicy>: groupLifecyclePolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -639,7 +622,7 @@ Once renewed, the group expiration is extended by the number of days defined.
   [ManagedGroupTypes <String>]: The group type for which the expiration policy applies.
 Possible values are All, Selected or None.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -666,27 +649,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupLifecyclePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouplifecyclepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-post-grouplifecyclepolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouplifecyclepolicy)
+- [](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-post-grouplifecyclepolicies?view=graph-rest-beta)

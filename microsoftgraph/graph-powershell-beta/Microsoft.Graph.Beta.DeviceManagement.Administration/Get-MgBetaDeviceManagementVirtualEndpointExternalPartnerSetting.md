@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointexternalpartnersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ---
@@ -25,7 +25,7 @@ Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting [-ExpandProperty
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -35,7 +35,7 @@ Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
  -CloudPcExternalPartnerSettingId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -45,7 +45,7 @@ Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
  -InputObject <IDeviceManagementAdministrationIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -57,37 +57,19 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a cloudPcExternalPartnerSetting object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get all external partner settings
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 
-```
-This example will get all external partner settings
-
-### Example 2: Use $select to get all external partner settings
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
-Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -Property "id,partnerId,enableConnection" 
-
-```
-This example will use $select to get all external partner settings
-
+Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -Property "id,partnerId,enableConnection"
 
 ## PARAMETERS
 
@@ -549,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -610,28 +592,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-list-externalpartnersettings?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
+- [](https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/virtualendpoint-list-externalpartnersettings?view=graph-rest-beta)

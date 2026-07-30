@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/restart-mgbetaapplicationsynchronizationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: Restart-MgBetaApplicationSynchronizationJob
 ---
@@ -16,9 +16,6 @@ title: Restart-MgBetaApplicationSynchronizationJob
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restart-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Restart-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### RestartExpanded (Default)
@@ -29,7 +26,6 @@ Restart-MgBetaApplicationSynchronizationJob -ApplicationId <string> -Synchroniza
  [-Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Restart
@@ -40,7 +36,6 @@ Restart-MgBetaApplicationSynchronizationJob -ApplicationId <string> -Synchroniza
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RestartViaIdentityExpanded
@@ -51,7 +46,6 @@ Restart-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
  [-Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RestartViaIdentity
@@ -62,7 +56,6 @@ Restart-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,6 +67,16 @@ This cmdlet has the following aliases,
 
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -134,7 +137,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -511,17 +514,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths113Dr1CApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths113Dr1CApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>]: synchronizationJobRestartCriteria
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ResetScope <String>]: synchronizationJobRestartScope
 
-CRITERIA `<IMicrosoftGraphSynchronizationJobRestartCriteria>`: synchronizationJobRestartCriteria
+CRITERIA <IMicrosoftGraphSynchronizationJobRestartCriteria>: synchronizationJobRestartCriteria
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ResetScope <String>]: synchronizationJobRestartScope
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -562,28 +565,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Restart-MgBetaApplicationSynchronizationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/restart-mgbetaapplicationsynchronizationjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-restart?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/restart-mgbetaapplicationsynchronizationjob)
+- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-restart?view=graph-rest-beta)

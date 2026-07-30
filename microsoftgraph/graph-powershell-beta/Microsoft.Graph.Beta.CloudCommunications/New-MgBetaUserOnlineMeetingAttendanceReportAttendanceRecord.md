@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingattendancereportattendancerecord
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
 
 Create new navigation property to attendanceRecords for users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgUserOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -26,12 +23,13 @@ Create new navigation property to attendanceRecords for users
 New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <string>
  -UserId <string> [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <string>]
+ [-Engagements <IMicrosoftGraphMeetingEngagement[]>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]
  [-Id <string>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <string>]
  [-RegistrationId <string>] [-Role <string>] [-TotalAttendanceInSeconds <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateExpanded
@@ -40,13 +38,13 @@ New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <st
 New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceReportId <string>
  -OnlineMeetingId <string> -UserId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
- [-EmailAddress <string>]
+ [-EmailAddress <string>] [-Engagements <IMicrosoftGraphMeetingEngagement[]>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]
  [-Id <string>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <string>]
  [-RegistrationId <string>] [-Role <string>] [-TotalAttendanceInSeconds <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -57,7 +55,6 @@ New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceRe
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create1
@@ -68,7 +65,6 @@ New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -77,13 +73,13 @@ New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <st
 New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
  -InputObject <ICloudCommunicationsIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
- [-EmailAddress <string>]
+ [-EmailAddress <string>] [-Engagements <IMicrosoftGraphMeetingEngagement[]>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]
  [-Id <string>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <string>]
  [-RegistrationId <string>] [-Role <string>] [-TotalAttendanceInSeconds <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -92,13 +88,13 @@ New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
 New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
  -InputObject <ICloudCommunicationsIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
- [-EmailAddress <string>]
+ [-EmailAddress <string>] [-Engagements <IMicrosoftGraphMeetingEngagement[]>]
  [-ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]
  [-Id <string>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <string>]
  [-RegistrationId <string>] [-Role <string>] [-TotalAttendanceInSeconds <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity1
@@ -109,7 +105,6 @@ New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -120,7 +115,6 @@ New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -131,6 +125,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to attendanceRecords for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -302,6 +306,46 @@ Email address of the user associated with this attendance record.
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded1
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded1
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Engagements
+
+The list of real-time participant interaction behaviors during a meeting.
+To construct, see NOTES section for ENGAGEMENTS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingEngagement[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -969,7 +1013,7 @@ ATTENDANCEINTERVALS <IMicrosoftGraphAttendanceInterval[]>: List of time periods 
   [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
   [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
 
-BODYPARAMETER `<IMicrosoftGraphAttendanceRecord>`: attendanceRecord
+BODYPARAMETER <IMicrosoftGraphAttendanceRecord>: attendanceRecord
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -978,6 +1022,10 @@ Read-only.
     [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
     [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
   [EmailAddress <String>]: Email address of the user associated with this attendance record.
+  [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+    [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+    [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+    [EngagementType <String>]: meetingEngagementType
   [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -1001,7 +1049,12 @@ Presents for all participant who has registered for the virtualEventWebinar.
 The possible values are: None, Attendee, Presenter, and Organizer.
   [TotalAttendanceInSeconds <Int32?>]: Total duration of the attendances in seconds.
 
-EXTERNALREGISTRATIONINFORMATION `<IMicrosoftGraphVirtualEventExternalRegistrationInformation>`: virtualEventExternalRegistrationInformation
+ENGAGEMENTS <IMicrosoftGraphMeetingEngagement[]>: The list of real-time participant interaction behaviors during a meeting.
+  [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+  [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+  [EngagementType <String>]: meetingEngagementType
+
+EXTERNALREGISTRATIONINFORMATION <IMicrosoftGraphVirtualEventExternalRegistrationInformation>: virtualEventExternalRegistrationInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
 Optional.
@@ -1009,7 +1062,7 @@ Optional.
 Optional.
 If set, the maximum supported length is 256 characters.
 
-IDENTITY `<IMicrosoftGraphIdentity>`: identity
+IDENTITY <IMicrosoftGraphIdentity>: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1017,7 +1070,7 @@ For example, if a user changes their display name the API might show the new val
   [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -1047,27 +1100,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingattendancereportattendancerecord)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingattendancereportattendancerecord)

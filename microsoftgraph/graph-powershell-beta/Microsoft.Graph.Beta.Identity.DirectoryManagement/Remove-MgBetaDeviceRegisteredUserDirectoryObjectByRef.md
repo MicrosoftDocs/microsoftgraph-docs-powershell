@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadeviceregistereduserdirectoryobjectbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef
 
 Remove a user as a registered user of the device.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceRegisteredUserDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceRegisteredUserDirectoryObjectByRef?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -27,7 +24,6 @@ Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef -DeviceId <string> -Direct
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,7 +34,6 @@ Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,17 +46,12 @@ This cmdlet has the following aliases,
 Remove a user as a registered user of the device.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
-
-```
-This example shows how to use the Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -414,7 +404,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -483,27 +473,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadeviceregistereduserdirectoryobjectbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-delete-registeredusers?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadeviceregistereduserdirectoryobjectbyref)
+- [](https://learn.microsoft.com/graph/api/device-delete-registeredusers?view=graph-rest-beta)

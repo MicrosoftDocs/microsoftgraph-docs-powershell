@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.People
-Module Guid: cff4f5ca-4592-4222-8a32-a59a274c9586
+Module Guid: 5d367f00-5690-4051-bbec-81ba5fa3ebb4
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.people/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -262,23 +262,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserProfileWebAccount](Update-MgBetaUserProfileWebAccount.md)
 
 ### [Update-MgBetaUserProfileWebsite](Update-MgBetaUserProfileWebsite.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

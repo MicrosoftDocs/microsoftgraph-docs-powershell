@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration
 ---
@@ -25,7 +25,6 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -BusinessScenarioI
  [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -35,7 +34,7 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -BusinessScenarioI
  -BodyParameter <IMicrosoftGraphPlannerTaskConfiguration> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -46,7 +45,7 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration
  [-AdditionalProperties <hashtable>] [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -57,7 +56,6 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -69,18 +67,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a plannerTaskConfiguration object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.BusinessScenario
 
@@ -143,10 +132,6 @@ overrides = @(
 }
 
 Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -563,7 +548,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfiguration
+BODYPARAMETER <IMicrosoftGraphPlannerTaskConfiguration>: plannerTaskConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -614,7 +599,7 @@ Accepted values are allow and block.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [RoleKind <String>]: plannerUserRoleKind
 
-EDITPOLICY `<IMicrosoftGraphPlannerTaskPolicy>`: plannerTaskPolicy
+EDITPOLICY <IMicrosoftGraphPlannerTaskPolicy>: plannerTaskPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Rules <IMicrosoftGraphPlannerTaskRoleBasedRule[]>]: The rules that should be enforced on the tasks when they're being changed outside of the scenario, based on the role of the caller.
     [DefaultRule <String>]: Default rule that applies when a property or action-specific rule is not provided.
@@ -661,7 +646,7 @@ Accepted values are allow and block.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [RoleKind <String>]: plannerUserRoleKind
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
+INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
@@ -671,27 +656,5 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBusinessScenarioPlannerTaskConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertaskconfiguration-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskconfiguration)
+- [](https://learn.microsoft.com/graph/api/plannertaskconfiguration-update?view=graph-rest-beta)

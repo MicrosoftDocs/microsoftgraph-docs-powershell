@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskdetail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail
 ---
@@ -29,7 +29,6 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail -BusinessScenarioId <stri
  [-PreviewType <string>] [-References <hashtable>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -40,7 +39,7 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail -BusinessScenarioId <stri
  -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,7 +53,6 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail -InputObject <IBusinessSc
  [-PreviewType <string>] [-References <hashtable>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +63,6 @@ Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail -InputObject <IBusinessSc
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -76,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property details in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -731,11 +738,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPROVALATTACHMENT `<IMicrosoftGraphPlannerBaseApprovalAttachment>`: plannerBaseApprovalAttachment
+APPROVALATTACHMENT <IMicrosoftGraphPlannerBaseApprovalAttachment>: plannerBaseApprovalAttachment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Status <String>]: plannerApprovalStatus
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
+BODYPARAMETER <IMicrosoftGraphPlannerTaskDetails>: plannerTaskDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -768,7 +775,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [References <IMicrosoftGraphPlannerExternalReferences>]: plannerExternalReferences
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-COMPLETIONREQUIREMENTS `<IMicrosoftGraphPlannerTaskCompletionRequirementDetails>`: plannerTaskCompletionRequirementDetails
+COMPLETIONREQUIREMENTS <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>: plannerTaskCompletionRequirementDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApprovalRequirement <IMicrosoftGraphPlannerApprovalRequirement>]: plannerApprovalRequirement
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -782,14 +789,14 @@ If set to true, the task can only be marked as complete if an approval is create
     [RequiredForms <String[]>]: Read-only.
 A collection of keys from the plannerFormsDictionary that identify the plannerFormReference objects that specify the requirements to complete the plannerTask.
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
+INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
   [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [UniqueName <String>]: Alternate key of businessScenario
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+NOTES <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -797,27 +804,4 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskdetail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskdetail)

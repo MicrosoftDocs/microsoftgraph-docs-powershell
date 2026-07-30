@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Security
-Module Guid: 7c9ff173-b4bc-46e8-a9a3-7bc704272742
+Module Guid: 5a80ecf3-d61f-4ea6-9622-74fb434eb1b3
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.security/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1638,23 +1638,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserSecurityInformationProtectionSensitivityLabel](Update-MgBetaUserSecurityInformationProtectionSensitivityLabel.md)
 
 ### [Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent](Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

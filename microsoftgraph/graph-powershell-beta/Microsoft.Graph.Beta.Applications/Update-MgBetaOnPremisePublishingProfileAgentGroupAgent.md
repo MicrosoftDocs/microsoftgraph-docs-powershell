@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroupagent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOnPremisePublishingProfileAgentGroupAgent
 ---
@@ -27,7 +27,7 @@ Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <
  [-MachineName <string>] [-Status <string>] [-SupportedPublishingTypes <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +38,7 @@ Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <
  -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,7 +50,7 @@ Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicatio
  [-MachineName <string>] [-Status <string>] [-SupportedPublishingTypes <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -60,7 +60,7 @@ Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicatio
  -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -71,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property agents in onPremisesPublishingProfiles
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -690,7 +700,7 @@ Nullable.
     [ResourceName <String>]: Name of the publishedResource.
   [PublishingType <String>]: onPremisesPublishingType
 
-BODYPARAMETER `<IMicrosoftGraphOnPremisesAgent>`: onPremisesAgent
+BODYPARAMETER <IMicrosoftGraphOnPremisesAgent>: onPremisesAgent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -725,7 +735,7 @@ Read-only
   [SupportedPublishingTypes <String[]>]: The possible values are: applicationProxy, exchangeOnline, authentication, provisioning, intunePfx, oflineDomainJoin, unknownFutureValue, privateAccess.
 Use the Prefer: include-unknown-enum-members request header to get the following values from this evolvable enum: privateAccess.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -766,27 +776,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaOnPremisePublishingProfileAgentGroupAgent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroupagent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroupagent)

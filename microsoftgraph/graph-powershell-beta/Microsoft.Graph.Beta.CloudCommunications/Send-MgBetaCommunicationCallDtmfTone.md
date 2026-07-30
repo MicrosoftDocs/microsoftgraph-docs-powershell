@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationcalldtmftone
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgBetaCommunicationCallDtmfTone
 ---
@@ -15,9 +15,6 @@ title: Send-MgBetaCommunicationCallDtmfTone
 
 Invoke action sendDtmfTones
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgCommunicationCallDtmfTone](/powershell/module/Microsoft.Graph.CloudCommunications/Send-MgCommunicationCallDtmfTone?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### SendExpanded (Default)
@@ -27,7 +24,7 @@ Send-MgBetaCommunicationCallDtmfTone -CallId <string> [-ResponseHeadersVariable 
  [-AdditionalProperties <hashtable>] [-ClientContext <string>] [-DelayBetweenTonesMS <int>]
  [-Tones <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Send
@@ -38,7 +35,6 @@ Send-MgBetaCommunicationCallDtmfTone -CallId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
@@ -49,7 +45,6 @@ Send-MgBetaCommunicationCallDtmfTone -InputObject <ICloudCommunicationsIdentity>
  [-DelayBetweenTonesMS <int>] [-Tones <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SendViaIdentity
@@ -60,7 +55,6 @@ Send-MgBetaCommunicationCallDtmfTone -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -71,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action sendDtmfTones
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -103,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -179,7 +183,7 @@ HelpMessage: ''
 
 ### -ClientContext
 
-
+.
 
 ```yaml
 Type: System.String
@@ -228,7 +232,7 @@ HelpMessage: ''
 
 ### -DelayBetweenTonesMS
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -431,7 +435,7 @@ HelpMessage: ''
 
 ### -Tones
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -512,13 +516,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsO55L3LCommunicationsCallsCallIdMicrosoftGraphSenddtmftonesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsO55L3LCommunicationsCallsCallIdMicrosoftGraphSenddtmftonesPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClientContext <String>]: 
   [DelayBetweenTonesMS <Int32?>]: 
   [Tones <String[]>]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -548,27 +552,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Send-MgBetaCommunicationCallDtmfTone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationcalldtmftone)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationcalldtmftone)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcallresponse
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/29/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRecordCommunicationCallResponse
 ---
@@ -20,9 +20,6 @@ This action isn't intended to record the entire call.
 The maximum length of recording is 2 minutes.The Cloud Communications Platform doesn't save the recording permanently and discards it shortly after the call ends.
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value provided in the completed notification.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRecordCommunicationCallResponse](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRecordCommunicationCallResponse?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### RecordExpanded (Default)
@@ -35,7 +32,6 @@ Invoke-MgBetaRecordCommunicationCallResponse -CallId <string> [-ResponseHeadersV
  [-StopTones <string[]>] [-StreamWhileRecording] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Record
@@ -46,7 +42,6 @@ Invoke-MgBetaRecordCommunicationCallResponse -CallId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RecordViaIdentityExpanded
@@ -59,7 +54,7 @@ Invoke-MgBetaRecordCommunicationCallResponse -InputObject <ICloudCommunicationsI
  [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <string[]>] [-StreamWhileRecording] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### RecordViaIdentity
@@ -70,7 +65,6 @@ Invoke-MgBetaRecordCommunicationCallResponse -InputObject <ICloudCommunicationsI
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -88,9 +82,8 @@ The maximum length of recording is 2 minutes.The Cloud Communications Platform d
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value provided in the completed notification.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -118,10 +111,6 @@ $params = @{
 }
 
 Invoke-MgBetaRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaRecordCommunicationCallResponse Cmdlet.
-
 
 ## PARAMETERS
 
@@ -154,7 +143,7 @@ HelpMessage: ''
 
 ### -BargeInAllowed
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +170,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -257,7 +246,7 @@ HelpMessage: ''
 
 ### -ClientContext
 
-
+.
 
 ```yaml
 Type: System.String
@@ -369,7 +358,7 @@ HelpMessage: ''
 
 ### -InitialSilenceTimeoutInSeconds
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -424,7 +413,7 @@ HelpMessage: ''
 
 ### -MaxRecordDurationInSeconds
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -451,7 +440,7 @@ HelpMessage: ''
 
 ### -MaxSilenceTimeoutInSeconds
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -478,7 +467,7 @@ HelpMessage: ''
 
 ### -PlayBeep
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -505,7 +494,7 @@ HelpMessage: ''
 
 ### -Prompts
 
-
+.
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrompt[]
@@ -617,7 +606,7 @@ HelpMessage: ''
 
 ### -StopTones
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -644,7 +633,7 @@ HelpMessage: ''
 
 ### -StreamWhileRecording
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -725,7 +714,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BargeInAllowed <Boolean?>]: 
   [ClientContext <String>]: 
@@ -737,7 +726,7 @@ BODYPARAMETER `<IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordrespon
   [StopTones <String[]>]: 
   [StreamWhileRecording <Boolean?>]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -767,27 +756,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaRecordCommunicationCallResponse](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcallresponse)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/call-record?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcallresponse)
+- [](https://learn.microsoft.com/graph/api/call-record?view=graph-rest-beta)
