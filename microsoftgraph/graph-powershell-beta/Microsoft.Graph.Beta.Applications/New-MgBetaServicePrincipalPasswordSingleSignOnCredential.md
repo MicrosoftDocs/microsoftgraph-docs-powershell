@@ -75,8 +75,9 @@ Create single sign-on credentials using a password for a user or group.
 | Application | Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 New-MgBetaServicePrincipalPasswordSingleSignOnCredential -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaServicePrincipalPasswordSingleSignOnCredential Cmdlet.
+
 
 ## PARAMETERS
 

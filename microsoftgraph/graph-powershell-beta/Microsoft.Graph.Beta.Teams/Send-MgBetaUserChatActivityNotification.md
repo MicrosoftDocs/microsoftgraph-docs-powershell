@@ -77,16 +77,6 @@ This cmdlet has the following aliases,
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ActivityType
@@ -807,6 +797,7 @@ Optional when source is entityUrl; required when source is text.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetauserchatactivitynotification)
 - [](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-beta)
+
 
 
 

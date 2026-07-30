@@ -85,8 +85,9 @@ Update the properties of a personAnnotation object in a user's profile.
 | Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
@@ -95,6 +96,10 @@ $params = @{
 }
 
 Update-MgBetaUserProfileNote -UserId $userId -PersonAnnotationId $personAnnotationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileNote Cmdlet.
+
 
 ## PARAMETERS
 
