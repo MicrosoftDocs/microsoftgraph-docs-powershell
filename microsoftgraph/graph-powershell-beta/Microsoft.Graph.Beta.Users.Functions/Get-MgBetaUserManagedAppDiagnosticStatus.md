@@ -15,6 +15,9 @@ title: Get-MgBetaUserManagedAppDiagnosticStatus
 
 Gets diagnostics validation status for a given user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedAppDiagnosticStatus](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppDiagnosticStatus?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

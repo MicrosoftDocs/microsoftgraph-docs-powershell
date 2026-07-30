@@ -15,6 +15,9 @@ title: New-MgBetaSecurityAttackSimulationLoginPage
 
 Create new navigation property to loginPages for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLoginPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

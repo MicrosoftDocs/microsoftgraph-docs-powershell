@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile
 
 Delete navigation property files for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

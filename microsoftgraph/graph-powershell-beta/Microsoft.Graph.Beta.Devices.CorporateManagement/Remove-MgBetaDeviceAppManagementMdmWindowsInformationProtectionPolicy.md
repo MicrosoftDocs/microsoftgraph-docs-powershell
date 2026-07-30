@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy
 
 Delete navigation property mdmWindowsInformationProtectionPolicies for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

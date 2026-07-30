@@ -15,6 +15,9 @@ title: Update-MgBetaGroupLifecyclePolicy
 
 Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
