@@ -541,7 +541,7 @@ HelpMessage: ''
 
 ### -RestorePointId
 
-.
+
 
 ```yaml
 Type: System.String
