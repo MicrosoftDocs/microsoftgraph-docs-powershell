@@ -739,11 +739,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPROVALATTACHMENT <IMicrosoftGraphPlannerBaseApprovalAttachment>: plannerBaseApprovalAttachment
+APPROVALATTACHMENT `<IMicrosoftGraphPlannerBaseApprovalAttachment>`: plannerBaseApprovalAttachment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Status <String>]: plannerApprovalStatus
 
-BODYPARAMETER <IMicrosoftGraphPlannerTaskDetails>: plannerTaskDetails
+BODYPARAMETER `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -776,7 +776,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [References <IMicrosoftGraphPlannerExternalReferences>]: plannerExternalReferences
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-COMPLETIONREQUIREMENTS <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>: plannerTaskCompletionRequirementDetails
+COMPLETIONREQUIREMENTS `<IMicrosoftGraphPlannerTaskCompletionRequirementDetails>`: plannerTaskCompletionRequirementDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApprovalRequirement <IMicrosoftGraphPlannerApprovalRequirement>]: plannerApprovalRequirement
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -790,7 +790,7 @@ If set to true, the task can only be marked as complete if an approval is create
     [RequiredForms <String[]>]: Read-only.
 A collection of keys from the plannerFormsDictionary that identify the plannerFormReference objects that specify the requirements to complete the plannerTask.
 
-INPUTOBJECT <IPlannerIdentity>: Identity Parameter
+INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
@@ -801,7 +801,7 @@ INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [UserId <String>]: The unique identifier of user
 
-NOTES <IMicrosoftGraphItemBody>: itemBody
+NOTES `<IMicrosoftGraphItemBody>`: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -811,3 +811,25 @@ NOTES <IMicrosoftGraphItemBody>: itemBody
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail)
 - [](https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

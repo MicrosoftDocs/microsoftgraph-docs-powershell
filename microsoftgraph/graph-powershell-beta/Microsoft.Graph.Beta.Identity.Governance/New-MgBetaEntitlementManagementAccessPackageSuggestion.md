@@ -410,7 +410,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGE <IMicrosoftGraphAvailableAccessPackage>: availableAccessPackage
+ACCESSPACKAGE `<IMicrosoftGraphAvailableAccessPackage>`: availableAccessPackage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -536,7 +536,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-BODYPARAMETER <IMicrosoftGraphAccessPackageSuggestion>: accessPackageSuggestion
+BODYPARAMETER `<IMicrosoftGraphAccessPackageSuggestion>`: accessPackageSuggestion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -671,3 +671,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagesuggestion)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
