@@ -585,7 +585,7 @@ BODY `<IPathsPcgz3PDevicemanagementReportsMicrosoftGraphRetrieveappledeviceosupd
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportappledeviceosupdatestatus)
+- [Get-MgBetaDeviceManagementReportAppleDeviceOSUpdateStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportappledeviceosupdatestatus)
 
 
 

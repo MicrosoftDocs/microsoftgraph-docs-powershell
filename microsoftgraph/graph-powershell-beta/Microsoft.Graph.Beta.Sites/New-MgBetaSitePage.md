@@ -28291,8 +28291,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepage)
-- [](https://learn.microsoft.com/graph/api/newslinkpage-create?view=graph-rest-beta)
+- [New-MgBetaSitePage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/newslinkpage-create?view=graph-rest-beta)
 
 
 

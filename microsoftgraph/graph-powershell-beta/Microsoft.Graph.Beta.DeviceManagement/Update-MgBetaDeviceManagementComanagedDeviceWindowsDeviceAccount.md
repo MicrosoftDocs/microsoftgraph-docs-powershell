@@ -622,7 +622,7 @@ UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER `<IMicrosoftGraphUpdateWindowsDeviceAc
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicewindowsdeviceaccount)
+- [Update-MgBetaDeviceManagementComanagedDeviceWindowsDeviceAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicewindowsdeviceaccount)
 
 
 

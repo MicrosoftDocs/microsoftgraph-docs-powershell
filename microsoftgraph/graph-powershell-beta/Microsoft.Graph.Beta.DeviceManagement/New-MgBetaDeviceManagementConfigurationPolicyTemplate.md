@@ -709,7 +709,7 @@ Applicable for reusable setting.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicytemplate)
+- [New-MgBetaDeviceManagementConfigurationPolicyTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicytemplate)
 
 
 

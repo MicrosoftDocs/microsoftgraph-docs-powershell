@@ -1440,7 +1440,7 @@ This is full URL string, including query parameters.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycollaborationanalyzedemail)
+- [New-MgBetaSecurityCollaborationAnalyzedEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycollaborationanalyzedemail)
 
 
 

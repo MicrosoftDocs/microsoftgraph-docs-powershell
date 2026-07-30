@@ -370,7 +370,7 @@ BODYPARAMETER `<IPaths17Ccqu0DeviceappmanagementMobileappsMicrosoftGraphValidate
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/test-mgbetadeviceappmanagementmobileappxml)
+- [Test-MgBetaDeviceAppManagementMobileAppXml](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/test-mgbetadeviceappmanagementmobileappxml)
 
 
 

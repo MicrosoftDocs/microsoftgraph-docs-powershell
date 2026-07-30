@@ -404,7 +404,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatinstalledappcount)
+- [Get-MgBetaUserChatInstalledAppCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatinstalledappcount)
 
 
 

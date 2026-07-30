@@ -1255,7 +1255,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicewindowsprotectionstate)
+- [Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicewindowsprotectionstate)
 
 
 

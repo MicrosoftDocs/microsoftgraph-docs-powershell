@@ -423,7 +423,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmapfootprint)
+- [Remove-MgBetaPlaceAsBuildingMapFootprint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmapfootprint)
 
 
 

@@ -18924,8 +18924,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainvitation)
-- [](https://learn.microsoft.com/graph/api/invitation-post?view=graph-rest-beta)
+- [New-MgBetaInvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainvitation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/invitation-post?view=graph-rest-beta)
 
 
 

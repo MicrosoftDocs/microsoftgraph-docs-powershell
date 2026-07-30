@@ -618,8 +618,8 @@ NEWASSIGNMENTORDER `<IMicrosoftGraphAssignmentOrder>`: assignmentOrder
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowuserattributeassignmentorder)
-- [](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-setorder?view=graph-rest-beta)
+- [Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowuserattributeassignmentorder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-setorder?view=graph-rest-beta)
 
 
 

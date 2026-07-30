@@ -602,7 +602,7 @@ Supports $filter (eq only) and $orderby.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceappconsentrequest)
+- [New-MgBetaIdentityGovernanceAppConsentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceappconsentrequest)
 
 
 

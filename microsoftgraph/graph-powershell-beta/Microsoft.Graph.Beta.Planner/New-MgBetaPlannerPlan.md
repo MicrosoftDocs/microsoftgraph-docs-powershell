@@ -1605,8 +1605,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan)
-- [](https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-beta)
+- [New-MgBetaPlannerPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-beta)
 
 
 

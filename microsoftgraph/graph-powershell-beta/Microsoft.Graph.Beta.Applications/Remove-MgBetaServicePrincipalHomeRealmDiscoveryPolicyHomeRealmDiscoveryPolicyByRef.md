@@ -462,8 +462,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalhomerealmdiscoverypolicyhomerealmdiscoverypolicybyref)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-delete-homerealmdiscoverypolicies?view=graph-rest-beta)
+- [Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyHomeRealmDiscoveryPolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalhomerealmdiscoverypolicyhomerealmdiscoverypolicybyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-delete-homerealmdiscoverypolicies?view=graph-rest-beta)
 
 
 

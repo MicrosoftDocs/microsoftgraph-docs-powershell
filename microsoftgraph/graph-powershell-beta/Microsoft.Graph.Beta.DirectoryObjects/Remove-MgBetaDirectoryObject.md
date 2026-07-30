@@ -398,8 +398,8 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/remove-mgbetadirectoryobject)
-- [](https://learn.microsoft.com/graph/api/directoryobject-delete?view=graph-rest-beta)
+- [Remove-MgBetaDirectoryObject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/remove-mgbetadirectoryobject)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-delete?view=graph-rest-beta)
 
 
 

@@ -66739,7 +66739,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivebundle)
+- [New-MgBetaDriveBundle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivebundle)
 
 
 

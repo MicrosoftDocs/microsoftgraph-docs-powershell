@@ -904,8 +904,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedidprofile)
-- [](https://learn.microsoft.com/graph/api/verifiedidprofile-update?view=graph-rest-beta)
+- [Update-MgBetaIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedidprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/verifiedidprofile-update?view=graph-rest-beta)
 
 
 

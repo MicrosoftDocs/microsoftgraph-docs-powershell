@@ -698,8 +698,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationemailmethod)
-- [](https://learn.microsoft.com/graph/api/authentication-post-emailmethods?view=graph-rest-beta)
+- [New-MgBetaUserAuthenticationEmailMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationemailmethod)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authentication-post-emailmethods?view=graph-rest-beta)
 
 
 

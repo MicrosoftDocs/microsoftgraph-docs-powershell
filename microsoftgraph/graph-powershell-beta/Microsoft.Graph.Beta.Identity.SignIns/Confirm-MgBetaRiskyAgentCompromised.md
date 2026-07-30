@@ -412,8 +412,8 @@ BODYPARAMETER `<IPathsC90MeqIdentityprotectionRiskyagentsMicrosoftGraphConfirmco
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyagentcompromised)
-- [](https://learn.microsoft.com/graph/api/riskyagent-confirmcompromised?view=graph-rest-beta)
+- [Confirm-MgBetaRiskyAgentCompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyagentcompromised)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyagent-confirmcompromised?view=graph-rest-beta)
 
 
 

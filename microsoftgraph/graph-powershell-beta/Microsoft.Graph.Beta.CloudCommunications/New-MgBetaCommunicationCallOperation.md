@@ -588,7 +588,7 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcalloperation)
+- [New-MgBetaCommunicationCallOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcalloperation)
 
 
 

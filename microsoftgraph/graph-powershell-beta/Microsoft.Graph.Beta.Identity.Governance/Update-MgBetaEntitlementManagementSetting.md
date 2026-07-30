@@ -436,8 +436,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsetting)
-- [](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta)
+- [Update-MgBetaEntitlementManagementSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta)
 
 
 

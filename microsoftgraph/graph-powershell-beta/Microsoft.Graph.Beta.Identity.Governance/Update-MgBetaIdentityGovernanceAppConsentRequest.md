@@ -844,7 +844,7 @@ Supports $filter (eq only) and $orderby.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequest)
+- [Update-MgBetaIdentityGovernanceAppConsentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequest)
 
 
 

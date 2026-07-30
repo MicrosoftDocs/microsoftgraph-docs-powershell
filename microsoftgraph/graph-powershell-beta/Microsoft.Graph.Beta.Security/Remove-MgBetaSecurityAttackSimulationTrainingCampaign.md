@@ -497,8 +497,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationtrainingcampaign)
-- [](https://learn.microsoft.com/graph/api/attacksimulationroot-delete-trainingcampaigns?view=graph-rest-beta)
+- [Remove-MgBetaSecurityAttackSimulationTrainingCampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationtrainingcampaign)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/attacksimulationroot-delete-trainingcampaigns?view=graph-rest-beta)
 
 
 

@@ -519,8 +519,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationpasswordlessmicrosoftauthenticatormethod)
-- [](https://learn.microsoft.com/graph/api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationpasswordlessmicrosoftauthenticatormethod)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete?view=graph-rest-beta)
 
 
 

@@ -3348,7 +3348,7 @@ WEBCATEGORIES <IMicrosoftGraphNetworkaccessWebCategory[]>: The URL category.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivity)
+- [Update-MgBetaNetworkAccessConnectivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivity)
 
 
 

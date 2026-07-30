@@ -630,8 +630,8 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardout)
-- [](https://learn.microsoft.com/graph/api/timecard-clockout?view=graph-rest-beta)
+- [Invoke-MgBetaClockTeamScheduleTimeCardOut](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardout)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-clockout?view=graph-rest-beta)
 
 
 

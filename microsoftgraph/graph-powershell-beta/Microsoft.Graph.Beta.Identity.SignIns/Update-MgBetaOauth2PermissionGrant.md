@@ -823,8 +823,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaoauth2permissiongrant)
-- [](https://learn.microsoft.com/graph/api/oauth2permissiongrant-update?view=graph-rest-beta)
+- [Update-MgBetaOauth2PermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaoauth2permissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/oauth2permissiongrant-update?view=graph-rest-beta)
 
 
 

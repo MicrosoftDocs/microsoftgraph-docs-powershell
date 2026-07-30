@@ -521,8 +521,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaorganizationcertificatebasedauthconfiguration)
-- [](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-delete?view=graph-rest-beta)
+- [Remove-MgBetaOrganizationCertificateBasedAuthConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaorganizationcertificatebasedauthconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-delete?view=graph-rest-beta)
 
 
 
