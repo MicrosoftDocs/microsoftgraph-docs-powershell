@@ -85,16 +85,6 @@ Only teachers can perform this operation.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -815,6 +805,7 @@ QUALITIES <IMicrosoftGraphRubricQuality[]>: The collection of qualities making u
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentrubric)
 - [](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-1.0)
+
 
 
 

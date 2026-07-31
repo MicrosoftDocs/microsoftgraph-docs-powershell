@@ -82,8 +82,9 @@ Only teachers can update these settings.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
@@ -93,6 +94,10 @@ $params = @{
 }
 
 Update-MgEducationClassAssignmentDefault -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEducationClassAssignmentDefault Cmdlet.
+
 
 ## PARAMETERS
 
