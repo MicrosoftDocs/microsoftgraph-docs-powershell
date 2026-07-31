@@ -18,6 +18,9 @@ Invoke action compute
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceProtectionScope](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceProtectionScope?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceProtectionScope](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceProtectionScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ComputeExpanded (Default)

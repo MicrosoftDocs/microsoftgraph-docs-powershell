@@ -18,6 +18,9 @@ Create a new listItem in a list.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

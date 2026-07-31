@@ -18,6 +18,9 @@ Get the properties of an activityBasedTimeoutPolicy object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ Get lastSevenDays from drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

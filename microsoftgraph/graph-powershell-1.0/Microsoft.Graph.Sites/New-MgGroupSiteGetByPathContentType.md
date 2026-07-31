@@ -18,6 +18,9 @@ Create new navigation property to contentTypes for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteGetByPathContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteGetByPathContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

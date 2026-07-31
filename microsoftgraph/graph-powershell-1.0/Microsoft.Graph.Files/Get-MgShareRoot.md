@@ -19,6 +19,9 @@ Deprecated -- use driveItem instead.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareRoot?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

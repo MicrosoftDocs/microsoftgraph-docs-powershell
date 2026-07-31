@@ -18,6 +18,9 @@ Create new navigation property to messages for communications
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaCommunicationOnlineMeetingConversationMessage](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeetingConversationMessage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationOnlineMeetingConversationMessage](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeetingConversationMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

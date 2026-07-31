@@ -20,6 +20,9 @@ The table in the Permissions section lists the resources that support open exten
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEventExtension?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEventExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

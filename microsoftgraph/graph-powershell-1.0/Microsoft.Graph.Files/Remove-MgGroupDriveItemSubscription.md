@@ -18,6 +18,9 @@ Delete navigation property subscriptions for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

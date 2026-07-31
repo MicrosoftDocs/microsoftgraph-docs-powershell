@@ -19,6 +19,9 @@ A file (user or system) is considered active if it has been saved, synced, modif
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageFileCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageFileCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -19,6 +19,9 @@ For group calls, this will only delete your call leg and the underlying group ca
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCall?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

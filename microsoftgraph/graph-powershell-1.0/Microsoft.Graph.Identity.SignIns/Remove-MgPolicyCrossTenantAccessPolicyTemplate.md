@@ -18,6 +18,9 @@ Delete navigation property templates for policies
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

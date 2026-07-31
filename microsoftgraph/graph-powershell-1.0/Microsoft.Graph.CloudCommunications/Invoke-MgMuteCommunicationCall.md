@@ -20,6 +20,9 @@ For more details about how to handle mute operations, see muteParticipantOperati
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaMuteCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaMuteCommunicationCall?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMuteCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaMuteCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MuteExpanded (Default)

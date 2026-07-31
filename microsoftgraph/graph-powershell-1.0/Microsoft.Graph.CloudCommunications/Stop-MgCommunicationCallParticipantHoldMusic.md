@@ -18,6 +18,9 @@ Reincorporate a participant previously put on hold to the call.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### StopExpanded (Default)

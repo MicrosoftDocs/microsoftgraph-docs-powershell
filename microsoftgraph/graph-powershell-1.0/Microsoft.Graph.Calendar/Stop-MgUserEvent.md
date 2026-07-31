@@ -22,6 +22,9 @@ You need to be an organizer to cancel a meeting.' This action differs from Delet
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Stop-MgBetaUserEvent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Stop-MgBetaUserEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)

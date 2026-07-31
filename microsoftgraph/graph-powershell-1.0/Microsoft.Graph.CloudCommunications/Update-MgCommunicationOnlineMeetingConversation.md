@@ -18,6 +18,9 @@ Update the navigation property onlineMeetingConversations in communications
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaCommunicationOnlineMeetingConversation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationOnlineMeetingConversation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationOnlineMeetingConversation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationOnlineMeetingConversation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ Sends test message using the specified notificationMessageTemplate in the defaul
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Send (Default)

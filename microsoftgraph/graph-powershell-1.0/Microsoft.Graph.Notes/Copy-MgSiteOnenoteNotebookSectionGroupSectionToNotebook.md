@@ -18,6 +18,9 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToNotebook?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

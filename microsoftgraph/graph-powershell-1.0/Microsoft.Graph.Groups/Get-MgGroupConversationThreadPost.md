@@ -18,6 +18,9 @@ Get posts from groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPost?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPost?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

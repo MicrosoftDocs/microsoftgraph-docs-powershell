@@ -18,6 +18,9 @@ Delete navigation property cases for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCase?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCase?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

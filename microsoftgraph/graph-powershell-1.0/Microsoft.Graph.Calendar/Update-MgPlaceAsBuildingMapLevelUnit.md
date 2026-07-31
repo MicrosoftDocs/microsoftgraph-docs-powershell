@@ -18,6 +18,9 @@ Update the properties of an existing unitMap object in IMDF format on a specifie
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingMapLevelUnit](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingMapLevelUnit?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingMapLevelUnit](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingMapLevelUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

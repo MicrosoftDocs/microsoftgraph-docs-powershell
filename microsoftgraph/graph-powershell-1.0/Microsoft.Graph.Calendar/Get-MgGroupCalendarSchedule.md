@@ -18,6 +18,9 @@ Get the free/busy availability information for a collection of users, distributi
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarSchedule?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

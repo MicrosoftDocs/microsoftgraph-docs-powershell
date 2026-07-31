@@ -18,6 +18,9 @@ Delete navigation property history for identityProtection
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaRiskyUserHistory?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaRiskyUserHistory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -18,6 +18,9 @@ Create new navigation property to subscriptions for directory
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectorySubscription](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectorySubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectorySubscription](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectorySubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

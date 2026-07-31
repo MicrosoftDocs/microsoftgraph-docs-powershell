@@ -19,6 +19,9 @@ For details about how to identify a large gallery view participant in a roster s
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaCommunicationCallLargeGalleryView](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Add-MgBetaCommunicationCallLargeGalleryView?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaCommunicationCallLargeGalleryView](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Add-MgBetaCommunicationCallLargeGalleryView?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

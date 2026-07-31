@@ -18,6 +18,9 @@ Delete a samlOrWsFedExternalDomainFederation object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

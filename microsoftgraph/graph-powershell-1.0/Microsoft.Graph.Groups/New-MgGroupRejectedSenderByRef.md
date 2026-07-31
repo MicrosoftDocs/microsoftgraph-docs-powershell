@@ -20,6 +20,9 @@ Make sure you don't specify the same user or group in the rejected senders and a
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -18,6 +18,9 @@ Delete navigation property versions for drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

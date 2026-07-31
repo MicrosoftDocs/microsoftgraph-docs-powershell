@@ -18,6 +18,9 @@ Update the navigation property retentionEventTypes in security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

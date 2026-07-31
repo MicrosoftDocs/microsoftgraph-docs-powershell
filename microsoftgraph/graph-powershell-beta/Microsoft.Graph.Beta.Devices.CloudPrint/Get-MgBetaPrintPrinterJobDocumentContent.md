@@ -16,6 +16,9 @@ title: Get-MgBetaPrintPrinterJobDocumentContent
 Download the binary file associated with a printDocument.
 Calling this method yields a redirect response with a preauthenticated URL that can be used to download the payload.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJobDocumentContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

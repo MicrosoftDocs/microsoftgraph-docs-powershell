@@ -18,6 +18,9 @@ Delete a domain from a tenant.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

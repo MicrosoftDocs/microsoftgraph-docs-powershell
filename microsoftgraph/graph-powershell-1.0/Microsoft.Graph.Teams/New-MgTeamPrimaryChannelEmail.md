@@ -21,6 +21,9 @@ To remove the email address of a channel, use the removeEmail method.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamPrimaryChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamPrimaryChannelEmail?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamPrimaryChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamPrimaryChannelEmail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Provision (Default)

@@ -18,6 +18,9 @@ Update the navigation property endpoints in print
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -20,6 +20,9 @@ It's performed on an accessPackageAssignmentRequest object whose requestStatus i
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Resume-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Resume-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Resume-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Resume-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ResumeExpanded (Default)

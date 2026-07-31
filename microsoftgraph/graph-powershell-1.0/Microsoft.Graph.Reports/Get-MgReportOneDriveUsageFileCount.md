@@ -19,6 +19,9 @@ A file is considered active if it has been saved, synced, modified, or shared wi
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageFileCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageFileCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

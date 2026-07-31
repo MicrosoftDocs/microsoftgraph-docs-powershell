@@ -18,6 +18,9 @@ Get all identity providers supported in a directory.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Available (Default)

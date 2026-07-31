@@ -25,6 +25,9 @@ To update the properties of a published assignment, see update an assignment.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)

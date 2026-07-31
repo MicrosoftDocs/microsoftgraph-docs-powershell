@@ -24,6 +24,9 @@ For more information about how to use this header, see the Examples section.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaExcuseEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaExcuseEducationUserAssignmentSubmission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaExcuseEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaExcuseEducationUserAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Excuse (Default)

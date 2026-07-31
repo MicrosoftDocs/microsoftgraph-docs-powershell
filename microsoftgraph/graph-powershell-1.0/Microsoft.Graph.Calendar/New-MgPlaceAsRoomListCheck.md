@@ -18,6 +18,9 @@ Create new navigation property to checkIns for places
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlaceAsRoomListCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsRoomListCheck?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsRoomListCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsRoomListCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

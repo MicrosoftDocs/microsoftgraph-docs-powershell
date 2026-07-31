@@ -18,6 +18,9 @@ Specifies the event that will start the retention period for labels that use thi
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEventType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEventType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

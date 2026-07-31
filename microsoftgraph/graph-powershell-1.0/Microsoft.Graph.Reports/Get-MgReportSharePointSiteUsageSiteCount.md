@@ -18,6 +18,9 @@ Get the trend of total and active site count during the reporting period.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageSiteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageSiteCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageSiteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageSiteCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

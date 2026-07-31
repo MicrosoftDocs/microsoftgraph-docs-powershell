@@ -19,6 +19,9 @@ Access the default site with /sites/root.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSite?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get2 (Default)

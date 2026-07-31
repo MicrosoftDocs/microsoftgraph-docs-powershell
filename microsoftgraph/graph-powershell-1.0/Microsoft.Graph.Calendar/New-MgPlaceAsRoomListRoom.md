@@ -18,6 +18,9 @@ Create new navigation property to rooms for places
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

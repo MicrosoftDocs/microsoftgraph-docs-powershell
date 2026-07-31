@@ -18,6 +18,9 @@ Remove a content type from a list or a site.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

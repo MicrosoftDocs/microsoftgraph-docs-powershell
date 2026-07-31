@@ -19,6 +19,9 @@ You can also use this method to delete the following child object types: buildin
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlace?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

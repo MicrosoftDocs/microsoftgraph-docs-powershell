@@ -20,6 +20,9 @@ For details about presences sessions, see presence: setPresence.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Clear-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaUserPresence?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ClearExpanded (Default)

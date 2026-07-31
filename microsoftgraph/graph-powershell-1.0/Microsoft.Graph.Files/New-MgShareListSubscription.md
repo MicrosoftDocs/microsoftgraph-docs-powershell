@@ -18,6 +18,9 @@ Create new navigation property to subscriptions for shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

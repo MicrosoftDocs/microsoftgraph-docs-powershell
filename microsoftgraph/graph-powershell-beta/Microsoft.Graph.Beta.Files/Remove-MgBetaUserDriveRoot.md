@@ -15,6 +15,9 @@ title: Remove-MgBetaUserDriveRoot
 
 Delete navigation property root for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

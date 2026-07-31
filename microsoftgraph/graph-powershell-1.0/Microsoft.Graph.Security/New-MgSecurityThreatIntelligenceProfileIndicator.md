@@ -18,6 +18,9 @@ Create new navigation property to intelligenceProfileIndicators for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

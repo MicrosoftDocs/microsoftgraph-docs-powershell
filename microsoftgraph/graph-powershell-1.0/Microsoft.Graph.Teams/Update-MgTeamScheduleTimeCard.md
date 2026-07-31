@@ -18,6 +18,9 @@ Update the navigation property timeCards in teams
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleTimeCard?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleTimeCard?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

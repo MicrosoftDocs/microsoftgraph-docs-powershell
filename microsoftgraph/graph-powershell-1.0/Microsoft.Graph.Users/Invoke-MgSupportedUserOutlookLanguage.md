@@ -20,6 +20,9 @@ You can subsequently get the preferred language by\rgetting the user's mailbox s
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Supported (Default)

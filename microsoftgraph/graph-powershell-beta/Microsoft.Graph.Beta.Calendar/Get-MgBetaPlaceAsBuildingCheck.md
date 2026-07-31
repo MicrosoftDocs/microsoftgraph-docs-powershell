@@ -15,6 +15,9 @@ title: Get-MgBetaPlaceAsBuildingCheck
 
 A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsBuildingCheck](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsBuildingCheck?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

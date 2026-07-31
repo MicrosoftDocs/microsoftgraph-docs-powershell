@@ -18,6 +18,9 @@ Update the navigation property privilegedAccess in identityGovernance
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernancePrivilegedAccess](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccess?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernancePrivilegedAccess](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccess?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

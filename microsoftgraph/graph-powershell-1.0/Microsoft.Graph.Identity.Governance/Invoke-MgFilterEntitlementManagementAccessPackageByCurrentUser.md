@@ -18,6 +18,9 @@ In Microsoft Entra Entitlement Management, retrieve a list of accessPackage obje
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

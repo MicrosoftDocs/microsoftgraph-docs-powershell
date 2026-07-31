@@ -18,6 +18,9 @@ Create new navigation property to members for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMember?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

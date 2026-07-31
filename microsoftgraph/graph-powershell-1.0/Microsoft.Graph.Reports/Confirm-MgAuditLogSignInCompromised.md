@@ -21,6 +21,9 @@ For details about investigating Identity Protection risks, see How to investigat
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Confirm-MgBetaAuditLogSignInCompromised](/powershell/module/Microsoft.Graph.Beta.Reports/Confirm-MgBetaAuditLogSignInCompromised?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaAuditLogSignInCompromised](/powershell/module/Microsoft.Graph.Beta.Reports/Confirm-MgBetaAuditLogSignInCompromised?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ConfirmExpanded (Default)

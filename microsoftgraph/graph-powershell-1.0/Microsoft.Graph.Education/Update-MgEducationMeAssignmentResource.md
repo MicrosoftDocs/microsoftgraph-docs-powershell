@@ -18,6 +18,9 @@ Update the navigation property resources in education
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeAssignmentResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeAssignmentResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

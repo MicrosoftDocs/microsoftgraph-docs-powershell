@@ -18,6 +18,9 @@ Update the navigation property itemActivityStats in sites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

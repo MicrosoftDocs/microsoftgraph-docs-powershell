@@ -20,6 +20,9 @@ For example, if a physical printer device breaks, an administrator can register 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintShare?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintShare?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

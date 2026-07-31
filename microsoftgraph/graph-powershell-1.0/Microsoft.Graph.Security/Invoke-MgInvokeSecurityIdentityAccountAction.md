@@ -19,6 +19,9 @@ This action allows reading and performing identity security actions on behalf of
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaInvokeSecurityIdentityAccountAction](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaInvokeSecurityIdentityAccountAction?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaInvokeSecurityIdentityAccountAction](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaInvokeSecurityIdentityAccountAction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### InvokeExpanded (Default)

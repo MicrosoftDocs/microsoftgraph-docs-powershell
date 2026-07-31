@@ -18,6 +18,9 @@ Get a list of virtualEventTownhall objects where the signed-in user is either th
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallByUserRole](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallByUserRole?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallByUserRole](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallByUserRole?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

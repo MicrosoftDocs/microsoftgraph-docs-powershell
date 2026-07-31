@@ -15,6 +15,9 @@ title: New-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionIn
 
 Create new navigation property to insights for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

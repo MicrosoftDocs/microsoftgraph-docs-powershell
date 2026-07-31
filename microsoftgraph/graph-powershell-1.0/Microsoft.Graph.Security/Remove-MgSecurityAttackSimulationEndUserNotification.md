@@ -18,6 +18,9 @@ Delete navigation property endUserNotifications for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationEndUserNotification?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationEndUserNotification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

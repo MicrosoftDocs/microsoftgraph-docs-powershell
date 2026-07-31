@@ -18,6 +18,9 @@ Invoke action assignSensitivityLabel
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemSensitivityLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemSensitivityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

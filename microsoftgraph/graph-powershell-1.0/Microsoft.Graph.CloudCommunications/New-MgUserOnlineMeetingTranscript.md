@@ -18,6 +18,9 @@ Create new navigation property to transcripts for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeetingTranscript?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeetingTranscript?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

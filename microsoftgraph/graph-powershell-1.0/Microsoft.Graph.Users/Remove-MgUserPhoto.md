@@ -18,6 +18,9 @@ Delete navigation property photo for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserPhoto?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserPhoto?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

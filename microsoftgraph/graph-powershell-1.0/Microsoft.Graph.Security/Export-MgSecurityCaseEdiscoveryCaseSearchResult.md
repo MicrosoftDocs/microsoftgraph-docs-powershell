@@ -19,6 +19,9 @@ For details, see Manage a collection estimate.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult](/powershell/module/Microsoft.Graph.Beta.Security/Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult](/powershell/module/Microsoft.Graph.Beta.Security/Export-MgBetaSecurityCaseEdiscoveryCaseSearchResult?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)

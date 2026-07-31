@@ -16,6 +16,9 @@ title: Get-MgBetaGroupDriveFollowing
 The list of items the user is following.
 Only in OneDrive for Business.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveFollowing](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveFollowing?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -18,6 +18,9 @@ Get itemAnalytics about the views that took place under this resource.\rThe item
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemAnalyticTime?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemAnalyticTime?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

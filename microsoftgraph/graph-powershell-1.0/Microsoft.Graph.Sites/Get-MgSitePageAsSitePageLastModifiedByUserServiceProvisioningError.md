@@ -19,6 +19,9 @@ Supports $filter (eq, not, for isResolved and serviceInstance).
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

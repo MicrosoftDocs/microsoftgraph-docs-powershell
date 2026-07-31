@@ -18,6 +18,9 @@ Commits a file of a given app.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSLobAppContentVersionFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CommitExpanded (Default)

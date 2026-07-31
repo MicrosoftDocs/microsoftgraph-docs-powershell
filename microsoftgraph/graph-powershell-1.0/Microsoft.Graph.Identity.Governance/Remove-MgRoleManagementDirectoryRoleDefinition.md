@@ -20,6 +20,9 @@ This feature requires a Microsoft Entra ID P1 or P2 license.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

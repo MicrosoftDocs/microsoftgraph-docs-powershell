@@ -15,6 +15,9 @@ title: Update-MgBetaReportPartnerBillingOperation
 
 Update the navigation property operations in reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

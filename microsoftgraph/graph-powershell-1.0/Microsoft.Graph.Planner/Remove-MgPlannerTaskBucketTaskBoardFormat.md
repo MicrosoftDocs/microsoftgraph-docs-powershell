@@ -18,6 +18,9 @@ Delete navigation property bucketTaskBoardFormat for planner
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

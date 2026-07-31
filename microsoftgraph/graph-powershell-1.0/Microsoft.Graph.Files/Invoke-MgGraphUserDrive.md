@@ -19,6 +19,9 @@ The driveItems returned from the sharedWithMe method always include the remoteIt
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaGraphUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaGraphUserDrive?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaGraphUserDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Graph (Default)

@@ -19,6 +19,9 @@ This API can also create an agentIdentityBlueprintPrincipal object from an agent
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

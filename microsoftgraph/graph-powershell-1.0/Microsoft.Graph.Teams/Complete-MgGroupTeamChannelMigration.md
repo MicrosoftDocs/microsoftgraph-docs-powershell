@@ -21,6 +21,9 @@ You can add members to the team after the request returns a successful response.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Complete-MgBetaGroupTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaGroupTeamChannelMigration?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Complete-MgBetaGroupTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaGroupTeamChannelMigration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Complete (Default)

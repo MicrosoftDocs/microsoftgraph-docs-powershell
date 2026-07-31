@@ -19,6 +19,9 @@ You may only delete the values in an overridesPage, which is used to customize t
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

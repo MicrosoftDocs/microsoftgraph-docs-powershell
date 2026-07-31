@@ -18,6 +18,9 @@ Delete a retentionEventType object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

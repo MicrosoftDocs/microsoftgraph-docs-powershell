@@ -20,6 +20,9 @@ For more information about how you can lock and unlock retention labels, see Use
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemRetentionLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemRetentionLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

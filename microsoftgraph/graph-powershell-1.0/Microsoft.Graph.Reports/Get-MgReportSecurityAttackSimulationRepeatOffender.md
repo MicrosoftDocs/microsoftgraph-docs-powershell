@@ -19,6 +19,9 @@ This function supports @odata.nextLink for pagination.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

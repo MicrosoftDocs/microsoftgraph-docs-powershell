@@ -19,6 +19,9 @@ This API provides the check-in status for a specific place, such as a desk, room
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlaceCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceCheck?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

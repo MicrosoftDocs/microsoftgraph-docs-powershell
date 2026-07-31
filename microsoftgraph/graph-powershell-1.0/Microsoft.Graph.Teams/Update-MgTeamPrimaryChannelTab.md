@@ -18,6 +18,9 @@ Update the navigation property tabs in teams
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

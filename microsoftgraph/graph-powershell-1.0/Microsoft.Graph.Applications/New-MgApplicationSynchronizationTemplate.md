@@ -18,6 +18,9 @@ Create new navigation property to templates for applications
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

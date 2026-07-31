@@ -18,6 +18,9 @@ Invoke action createUploadSession
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemUploadSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemUploadSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -18,6 +18,9 @@ Represents the entry point for fraud and risk prevention configurations in Micro
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityRiskPrevention](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityRiskPrevention?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityRiskPrevention](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityRiskPrevention?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

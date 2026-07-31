@@ -18,6 +18,9 @@ The content stream, if the item represents a file.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaSiteListItemDriveItemContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaSiteListItemDriveItemContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

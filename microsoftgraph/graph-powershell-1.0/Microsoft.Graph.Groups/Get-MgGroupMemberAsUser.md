@@ -20,6 +20,9 @@ This operation is not transitive.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberAsUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberAsUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

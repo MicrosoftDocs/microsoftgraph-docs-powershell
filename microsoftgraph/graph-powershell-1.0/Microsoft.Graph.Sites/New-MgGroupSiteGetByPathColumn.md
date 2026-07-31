@@ -18,6 +18,9 @@ Create new navigation property to columns for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteGetByPathColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteGetByPathColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

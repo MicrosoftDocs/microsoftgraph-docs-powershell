@@ -18,6 +18,9 @@ Update the navigation property dayNotes in teams
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleDayNote](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleDayNote?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleDayNote](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleDayNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

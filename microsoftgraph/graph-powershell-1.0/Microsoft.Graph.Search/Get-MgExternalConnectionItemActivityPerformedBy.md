@@ -18,6 +18,9 @@ Represents an identity used to identify who is responsible for the activity.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionItemActivityPerformedBy](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivityPerformedBy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionItemActivityPerformedBy](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivityPerformedBy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

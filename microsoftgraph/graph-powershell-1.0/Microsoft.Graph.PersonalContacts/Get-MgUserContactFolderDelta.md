@@ -20,6 +20,9 @@ This allows you to maintain and synchronize \ra local store of a user's contact 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderDelta](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderDelta](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

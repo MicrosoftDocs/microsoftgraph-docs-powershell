@@ -18,6 +18,9 @@ Update the navigation property registrations in solutions
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinarRegistrationByUserId](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinarRegistrationByUserId?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinarRegistrationByUserId](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinarRegistrationByUserId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

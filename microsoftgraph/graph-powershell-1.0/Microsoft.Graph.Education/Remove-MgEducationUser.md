@@ -18,6 +18,9 @@ Delete a user.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

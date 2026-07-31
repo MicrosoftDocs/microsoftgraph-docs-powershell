@@ -20,6 +20,9 @@ This convenience is not available when forwarding from an Outlook.com account.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaForwardUserEvent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaForwardUserEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)

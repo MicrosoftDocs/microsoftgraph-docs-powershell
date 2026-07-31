@@ -21,6 +21,9 @@ The hasMembersWithLicenseErrors and isArchived properties are an exception and a
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupByUniqueName?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupByUniqueName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

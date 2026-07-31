@@ -19,6 +19,9 @@ A user is considered active if they have executed a file activity (save, sync, m
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityUserCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

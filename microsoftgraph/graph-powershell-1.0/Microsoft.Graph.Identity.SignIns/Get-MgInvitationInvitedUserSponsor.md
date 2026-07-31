@@ -19,6 +19,9 @@ Sponsors are users and groups that are responsible for guest users' privileges i
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaInvitationInvitedUserSponsor](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationInvitedUserSponsor?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaInvitationInvitedUserSponsor](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationInvitedUserSponsor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

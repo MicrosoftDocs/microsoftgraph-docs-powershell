@@ -18,6 +18,9 @@ Update the navigation property analytics in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

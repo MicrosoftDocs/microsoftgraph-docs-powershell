@@ -18,6 +18,9 @@ Get the usage rights granted to the calling user for a specific sensitivity labe
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelRight](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelRight?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelRight](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelRight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ Cancel a registrant's registration record for a webinar.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaVirtualEventWebinarRegistrationUserId](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaVirtualEventWebinarRegistrationUserId?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaVirtualEventWebinarRegistrationUserId](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaVirtualEventWebinarRegistrationUserId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Cancel (Default)

@@ -18,6 +18,9 @@ Represents details for unbilled Azure usage data.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingUsageUnbilled?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingUsageUnbilled?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

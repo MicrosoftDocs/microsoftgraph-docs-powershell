@@ -18,6 +18,9 @@ Create new navigation property to sublabels for security
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelSublabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelSublabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -19,6 +19,9 @@ Read-only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

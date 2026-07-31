@@ -18,6 +18,9 @@ Delete navigation property historyItems for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Remove-MgBetaUserActivityHistoryItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Remove-MgBetaUserActivityHistoryItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

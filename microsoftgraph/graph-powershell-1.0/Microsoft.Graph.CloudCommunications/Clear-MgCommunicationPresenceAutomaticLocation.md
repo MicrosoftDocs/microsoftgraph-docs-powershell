@@ -19,6 +19,9 @@ After clearing, the user’s final aggregated work location is recomputed accord
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Clear-MgBetaCommunicationPresenceAutomaticLocation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaCommunicationPresenceAutomaticLocation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaCommunicationPresenceAutomaticLocation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaCommunicationPresenceAutomaticLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Clear (Default)

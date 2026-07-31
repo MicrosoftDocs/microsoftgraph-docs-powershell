@@ -18,6 +18,9 @@ Used for navigating to the trending document.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserInsightTrendingResource](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightTrendingResource?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightTrendingResource](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightTrendingResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

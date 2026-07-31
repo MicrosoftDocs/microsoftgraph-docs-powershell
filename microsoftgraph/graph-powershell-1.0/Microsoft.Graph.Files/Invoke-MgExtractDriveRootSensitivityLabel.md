@@ -18,6 +18,9 @@ Invoke action extractSensitivityLabels
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaExtractDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaExtractDriveRootSensitivityLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaExtractDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaExtractDriveRootSensitivityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Extract (Default)

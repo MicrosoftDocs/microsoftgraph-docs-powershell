@@ -18,6 +18,9 @@ Search for the restorePoint objects associated with a protectionUnit.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Search-MgBetaSolutionBackupRestorePoint](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Search-MgBetaSolutionBackupRestorePoint?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Search-MgBetaSolutionBackupRestorePoint](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Search-MgBetaSolutionBackupRestorePoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SearchExpanded (Default)

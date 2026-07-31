@@ -18,6 +18,9 @@ Update the properties of a user object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserByUserPrincipalName?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserByUserPrincipalName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

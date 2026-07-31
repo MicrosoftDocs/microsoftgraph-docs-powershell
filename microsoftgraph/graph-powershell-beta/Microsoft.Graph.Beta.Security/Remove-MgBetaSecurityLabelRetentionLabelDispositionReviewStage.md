@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityLabelRetentionLabelDispositionReviewStage
 
 Delete navigation property dispositionReviewStages for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -19,6 +19,9 @@ The following derived subtypes are supported:\r- externalUsersSelfServiceSignupE
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlow?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

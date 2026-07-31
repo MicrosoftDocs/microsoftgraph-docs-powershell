@@ -18,6 +18,9 @@ Delete a departmentTemplate object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

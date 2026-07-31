@@ -18,6 +18,9 @@ The specific rule or regulation created by a jurisdiction used to determine whet
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDescriptorCitationTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorCitationTemplate?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDescriptorCitationTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorCitationTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ Create a new team.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeam?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

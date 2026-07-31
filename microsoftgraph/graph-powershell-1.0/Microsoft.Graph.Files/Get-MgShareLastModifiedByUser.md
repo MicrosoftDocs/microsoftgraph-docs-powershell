@@ -19,6 +19,9 @@ Read-only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareLastModifiedByUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareLastModifiedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

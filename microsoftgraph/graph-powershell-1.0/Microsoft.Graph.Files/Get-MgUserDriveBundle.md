@@ -19,6 +19,9 @@ Only in personal OneDrive.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveBundle?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveBundle?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

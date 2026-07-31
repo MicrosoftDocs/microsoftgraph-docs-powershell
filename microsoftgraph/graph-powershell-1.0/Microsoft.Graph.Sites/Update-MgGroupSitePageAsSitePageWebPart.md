@@ -18,6 +18,9 @@ Update the navigation property webParts in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePageAsSitePageWebPart?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePageAsSitePageWebPart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

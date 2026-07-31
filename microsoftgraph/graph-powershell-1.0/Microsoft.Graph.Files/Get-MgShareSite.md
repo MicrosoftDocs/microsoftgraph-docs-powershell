@@ -18,6 +18,9 @@ Used to access the underlying site
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareSite](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareSite?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareSite](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -18,6 +18,9 @@ Get a list of archived print jobs for a particular group.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportGroupArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportGroupArchivedPrintJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportGroupArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportGroupArchivedPrintJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

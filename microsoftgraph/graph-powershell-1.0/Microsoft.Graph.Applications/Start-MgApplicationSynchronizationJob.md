@@ -22,6 +22,9 @@ Use the start job only when the job is currently paused or in quarantine.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Start-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Start-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Start-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Start (Default)

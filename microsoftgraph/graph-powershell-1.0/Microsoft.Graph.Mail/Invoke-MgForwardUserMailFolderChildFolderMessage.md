@@ -24,6 +24,9 @@ Alternatively, create a draft to forward a message, and send it later.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Invoke-MgBetaForwardUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Invoke-MgBetaForwardUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)

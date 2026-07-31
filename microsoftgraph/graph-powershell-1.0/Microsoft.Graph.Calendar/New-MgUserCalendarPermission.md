@@ -18,6 +18,9 @@ Create new navigation property to calendarPermissions for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarPermission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

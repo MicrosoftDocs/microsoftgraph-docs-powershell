@@ -20,6 +20,9 @@ In Azure AD B2C, this operation can currently delete a socialIdentityProvider, o
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityProvider?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
