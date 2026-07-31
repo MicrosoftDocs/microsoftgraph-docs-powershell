@@ -1,45 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetbypathapplicablecontenttypeforlist
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupMemberByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
 ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgGroupSiteGetByPathApplicableContentTypeForList
+title: Remove-MgGroupMemberByRef
 ---
 
-# Get-MgGroupSiteGetByPathApplicableContentTypeForList
+# Remove-MgGroupMemberByRef
 
 ## SYNOPSIS
 
-Get site contentTypes that can be added to a list.
+Remove a member from a group via the members navigation property.
+You can't remove a member from groups with dynamic memberships.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupMemberDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Get (Default)
+### Delete (Default)
 
 ```
-Get-MgGroupSiteGetByPathApplicableContentTypeForList -GroupId <string> -ListId <string>
- -Path <string> -SiteId <string> [-Count] [-ExpandProperty <string[]>] [-Filter <string>]
- [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
+Remove-MgGroupMemberByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### DeleteViaIdentity
+
+```
+Remove-MgGroupMemberByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
-```
-
-### GetViaIdentity
-
-```
-Get-MgGroupSiteGetByPathApplicableContentTypeForList -InputObject <IGroupsIdentity> [-Count]
- [-ExpandProperty <string[]>] [-Filter <string>] [-Property <string[]>] [-Search <string>]
- [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -49,7 +46,29 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get site contentTypes that can be added to a list.
+Remove a member from a group via the members navigation property.
+You can't remove a member from groups with dynamic memberships.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+Remove-MgGroupMemberByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgGroupMemberByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -74,37 +93,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Count
+### -Confirm
 
-Include count of items
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ExpandProperty
-
-Expand related entities
-
-```yaml
-Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- Expand
+- cf
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -117,9 +115,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Filter
+### -DirectoryObjectId
 
-Filter items by property values
+The unique identifier of directoryObject
 
 ```yaml
 Type: System.String
@@ -127,9 +125,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: Delete
   Position: Named
-  IsRequired: false
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -148,7 +146,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Get
+- Name: Delete
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -222,6 +220,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IfMatch
+
+ETag
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -InputObject
 
 Identity Parameter
@@ -233,7 +252,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: GetViaIdentity
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -244,58 +263,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ListId
+### -PassThru
 
-Usage: listId='{listId}'
+Returns true when the command succeeds
 
 ```yaml
-Type: System.String
-DefaultValue: ''
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
-ParameterSets:
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Path
-
-Usage: path='{path}'
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Property
-
-Select properties to be returned
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- Select
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -393,101 +369,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Search
+### -WhatIf
 
-Search items by search phrases
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -SiteId
-
-The unique identifier of site
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Skip
-
-Skip the first n items
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Sort
-
-Order items by property values
-
-```yaml
-Type: System.String[]
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- OrderBy
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Top
-
-Show only the first n items
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases:
-- Limit
+- wi
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -519,7 +410,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -554,9 +445,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupSiteGetByPathApplicableContentTypeForList](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetbypathapplicablecontenttypeforlist)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-1.0)
-
+- [Remove-MgGroupMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupMemberByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-1.0)
 
 
 
