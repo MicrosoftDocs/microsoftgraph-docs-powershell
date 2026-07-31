@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSearchBookmark
 ---
@@ -14,9 +14,6 @@ title: New-MgSearchBookmark
 ## SYNOPSIS
 
 Create a new bookmark object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,7 +29,7 @@ New-MgSearchBookmark [-ResponseHeadersVariable <string>] [-AdditionalProperties 
  [-State <string>] [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -42,7 +39,6 @@ New-MgSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,18 +50,9 @@ This cmdlet has the following aliases,
 
 Create a new bookmark object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Search
 
@@ -99,10 +86,6 @@ state = "published"
 }
 
 New-MgSearchBookmark -BodyParameter $params
-
-```
-This example shows how to use the New-MgSearchBookmark Cmdlet.
-
 
 ## PARAMETERS
 
@@ -772,7 +755,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSearchBookmark>`: bookmark
+BODYPARAMETER <IMicrosoftGraphSearchBookmark>: bookmark
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: The search answer description that is shown on the search results page.
   [DisplayName <String>]: The search answer name that is displayed in search results.
@@ -829,13 +812,13 @@ The date and group settings apply to all variations.
     [WebUrl <String>]: The URL link for the answer variation.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
-KEYWORDS `<IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
+KEYWORDS <IMicrosoftGraphSearchAnswerKeyword>: answerKeyword
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Keywords <String[]>]: A collection of keywords used to trigger the search answer.
   [MatchSimilarKeywords <Boolean?>]: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
   [ReservedKeywords <String[]>]: Unique keywords that guarantee the search answer is triggered.
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphSearchIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -857,27 +840,5 @@ When users select this answer variation from the search results, they're directe
 
 ## RELATED LINKS
 
-- [New-MgSearchBookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/search-searchentity-post-bookmarks?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark)
+- [](https://learn.microsoft.com/graph/api/search-searchentity-post-bookmarks?view=graph-rest-1.0)
