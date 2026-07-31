@@ -1557,8 +1557,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
-- [](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
+- [Update-MgBookingBusinessAppointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
 
 
 

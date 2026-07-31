@@ -443,8 +443,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinesscustomquestion)
-- [](https://learn.microsoft.com/graph/api/bookingcustomquestion-delete?view=graph-rest-1.0)
+- [Remove-MgBookingBusinessCustomQuestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinesscustomquestion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingcustomquestion-delete?view=graph-rest-1.0)
 
 
 
