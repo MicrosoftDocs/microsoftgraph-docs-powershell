@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduserserviceprovisioningerror
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPrintShareAllowedUserServiceProvisioningError
 ---
@@ -15,9 +15,6 @@ title: Get-MgPrintShareAllowedUserServiceProvisioningError
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareAllowedUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareAllowedUserServiceProvisioningError?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ Get-MgPrintShareAllowedUserServiceProvisioningError -PrinterShareId <string> -Us
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -42,6 +38,16 @@ This cmdlet has the following aliases,
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -495,27 +501,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgPrintShareAllowedUserServiceProvisioningError](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduserserviceprovisioningerror)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduserserviceprovisioningerror)

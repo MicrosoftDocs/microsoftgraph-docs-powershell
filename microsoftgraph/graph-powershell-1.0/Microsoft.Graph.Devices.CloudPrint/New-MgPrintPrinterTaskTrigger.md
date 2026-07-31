@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPrintPrinterTaskTrigger
 ---
@@ -16,9 +16,6 @@ title: New-MgPrintPrinterTaskTrigger
 Create a new task trigger on the specified printer.
 Currently, only one task trigger can be specified per printer, but this limit might be removed in the future.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterTaskTrigger?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,7 +26,6 @@ New-MgPrintPrinterTaskTrigger -PrinterId <string> [-ResponseHeadersVariable <str
  [-Event <string>] [-Id <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +35,6 @@ New-MgPrintPrinterTaskTrigger -PrinterId <string> -BodyParameter <IMicrosoftGrap
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -50,7 +45,7 @@ New-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
  [-Definition <IMicrosoftGraphPrintTaskDefinition>] [-Event <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -60,7 +55,7 @@ New-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IMicrosoftGraphPrintTaskTrigger> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -73,18 +68,9 @@ This cmdlet has the following aliases,
 Create a new task trigger on the specified printer.
 Currently, only one task trigger can be specified per printer, but this limit might be removed in the future.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Printer.ReadWrite.All, Printer.FullControl.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
@@ -94,10 +80,6 @@ $params = @{
 }
 
 New-MgPrintPrinterTaskTrigger -PrinterId $printerId -BodyParameter $params
-
-```
-This example shows how to use the New-MgPrintPrinterTaskTrigger Cmdlet.
-
 
 ## PARAMETERS
 
@@ -541,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintTaskTrigger>`: printTaskTrigger
+BODYPARAMETER <IMicrosoftGraphPrintTaskTrigger>: printTaskTrigger
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -572,7 +554,7 @@ Read-only.
       [Trigger <IMicrosoftGraphPrintTaskTrigger>]: printTaskTrigger
   [Event <String>]: printEvent
 
-DEFINITION `<IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
+DEFINITION <IMicrosoftGraphPrintTaskDefinition>: printTaskDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -603,7 +585,7 @@ Read-only.
       [Definition <IMicrosoftGraphPrintTaskDefinition>]: printTaskDefinition
       [Event <String>]: printEvent
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -621,27 +603,5 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgPrintPrinterTaskTrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printer-post-tasktriggers?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger)
+- [](https://learn.microsoft.com/graph/api/printer-post-tasktriggers?view=graph-rest-1.0)
