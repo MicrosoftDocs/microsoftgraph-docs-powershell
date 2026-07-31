@@ -77,6 +77,14 @@ This cmdlet has the following aliases,
 Create a new servicePrincipal object.
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentity.Create.All, AgentIdentityBlueprintPrincipal.Create, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, AgentIdentity.Create.All, AgentIdentity.CreateAsManager, AgentIdentityBlueprintPrincipal.Create, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
