@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasbuildingmaplevel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlaceAsBuildingMapLevel
 ---
@@ -30,7 +30,6 @@ Update-MgBetaPlaceAsBuildingMapLevel -LevelMapId <string> -PlaceId <string>
  [-Units <IMicrosoftGraphUnitMap[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -40,7 +39,7 @@ Update-MgBetaPlaceAsBuildingMapLevel -LevelMapId <string> -PlaceId <string>
  -BodyParameter <IMicrosoftGraphLevelMap> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,7 +51,7 @@ Update-MgBetaPlaceAsBuildingMapLevel -InputObject <ICalendarIdentity> [-PlaceId 
  [-Sections <IMicrosoftGraphSectionMap[]>] [-Units <IMicrosoftGraphUnitMap[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +61,7 @@ Update-MgBetaPlaceAsBuildingMapLevel -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphLevelMap> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

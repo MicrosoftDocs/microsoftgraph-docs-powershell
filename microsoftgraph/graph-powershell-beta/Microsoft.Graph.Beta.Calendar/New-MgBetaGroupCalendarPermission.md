@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupcalendarpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupCalendarPermission
 ---
@@ -28,7 +28,7 @@ New-MgBetaGroupCalendarPermission -GroupId <string> [-ResponseHeadersVariable <s
  [-EmailAddress <IMicrosoftGraphEmailAddress>] [-Id <string>] [-IsInsideOrganization] [-IsRemovable]
  [-Role <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +38,7 @@ New-MgBetaGroupCalendarPermission -GroupId <string>
  -BodyParameter <IMicrosoftGraphCalendarPermission> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -49,7 +49,7 @@ New-MgBetaGroupCalendarPermission -InputObject <ICalendarIdentity>
  [-EmailAddress <IMicrosoftGraphEmailAddress>] [-Id <string>] [-IsInsideOrganization] [-IsRemovable]
  [-Role <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -59,7 +59,7 @@ New-MgBetaGroupCalendarPermission -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphCalendarPermission> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

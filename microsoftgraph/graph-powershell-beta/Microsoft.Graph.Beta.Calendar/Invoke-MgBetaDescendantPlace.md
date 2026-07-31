@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadescendantplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDescendantPlace
 ---
@@ -27,7 +27,7 @@ Invoke-MgBetaDescendantPlace -PlaceId <string> [-Count] [-ExpandProperty <string
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### DescendantViaIdentity
@@ -37,7 +37,7 @@ Invoke-MgBetaDescendantPlace -InputObject <ICalendarIdentity> [-Count] [-ExpandP
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

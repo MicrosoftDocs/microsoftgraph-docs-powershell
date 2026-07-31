@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetacalendarusercalendarallowedcalendarsharingroles
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles
 ---
@@ -27,7 +27,7 @@ Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles -User <string> -Use
  [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Calendar1
@@ -37,7 +37,7 @@ Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles -User <string> -Use
  -CalendarId <string> [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### CalendarViaIdentity1
@@ -47,7 +47,7 @@ Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <ICale
  [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### CalendarViaIdentity
@@ -57,7 +57,7 @@ Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <ICale
  [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
