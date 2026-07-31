@@ -90,6 +90,14 @@ This API can also create an agentIdentityBlueprintPrincipal object from an agent
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All, AgentIdentityBlueprintPrincipal.Create, AgentIdentity.CreateAsManager, AgentIdentity.Create.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentity.Create.All, AgentIdentityBlueprintPrincipal.Create, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, AgentIdentity.Create.All, AgentIdentity.CreateAsManager, AgentIdentityBlueprintPrincipal.Create, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Create a new service principal object
 

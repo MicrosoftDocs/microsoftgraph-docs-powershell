@@ -61,6 +61,14 @@ In Azure AD B2C, this operation can currently delete a socialIdentityProvider, o
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityProvider.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityProvider.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityProvider.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

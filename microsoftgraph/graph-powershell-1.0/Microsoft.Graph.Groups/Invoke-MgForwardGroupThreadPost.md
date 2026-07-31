@@ -83,6 +83,14 @@ You can specify both the parent conversation and thread in the request, \ror, yo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

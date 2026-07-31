@@ -68,6 +68,14 @@ Read the properties and relationships of a retentionEventType object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

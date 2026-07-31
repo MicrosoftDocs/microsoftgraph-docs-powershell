@@ -68,6 +68,14 @@ Get a sensitivity label available for the entire tenant.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SensitivityLabel.Read, SensitivityLabels.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

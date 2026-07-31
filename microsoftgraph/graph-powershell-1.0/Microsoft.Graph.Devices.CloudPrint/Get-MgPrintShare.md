@@ -66,6 +66,14 @@ Retrieve the properties and relationships of a printer share.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 ### Example 1: Get a printerShare
 

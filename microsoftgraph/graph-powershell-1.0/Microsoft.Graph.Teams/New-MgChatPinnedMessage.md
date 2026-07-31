@@ -79,6 +79,14 @@ This API cannot create a new chat; you must use the list chats method to retriev
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Chat.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMessage.Send, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

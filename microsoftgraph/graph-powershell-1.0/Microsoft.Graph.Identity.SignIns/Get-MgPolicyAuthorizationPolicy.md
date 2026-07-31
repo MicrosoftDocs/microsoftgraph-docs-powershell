@@ -46,6 +46,14 @@ Retrieve the properties of an authorizationPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.Authorization,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.Authorization,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.Authorization,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

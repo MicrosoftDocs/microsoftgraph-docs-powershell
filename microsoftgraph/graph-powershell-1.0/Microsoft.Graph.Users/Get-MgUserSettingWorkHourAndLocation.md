@@ -55,6 +55,14 @@ The user's settings for work hours and location preferences for scheduling and a
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MailboxSettings.Read, Calendars.Read, Calendars.ReadWrite, MailboxSettings.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## PARAMETERS
 
 ### -Break

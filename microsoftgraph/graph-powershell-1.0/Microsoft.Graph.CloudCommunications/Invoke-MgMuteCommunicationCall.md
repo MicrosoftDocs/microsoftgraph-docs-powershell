@@ -83,6 +83,14 @@ For more details about how to handle mute operations, see muteParticipantOperati
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

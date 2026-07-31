@@ -67,6 +67,14 @@ A list of categories defined for the user.
 | Delegated (personal Microsoft account) | MailboxSettings.Read,  |
 | Application | MailboxSettings.Read,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MailboxSettings.Read,  |
+| Delegated (personal Microsoft account) | MailboxSettings.Read,  |
+| Application | MailboxSettings.Read,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

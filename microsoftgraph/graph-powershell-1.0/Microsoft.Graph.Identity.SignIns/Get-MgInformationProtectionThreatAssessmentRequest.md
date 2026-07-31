@@ -70,6 +70,14 @@ A threat assessment request can be one of the following types:
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ThreatAssessment.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatAssessment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ThreatAssessment.Read.All,  |
+
 ## EXAMPLES
 ### Example 1: Get the properties of a mail assessment request
 

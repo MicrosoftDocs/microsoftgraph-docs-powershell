@@ -105,6 +105,14 @@ The template named Group.Unified can be used to configure tenant-wide Microsoft 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupSettings.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

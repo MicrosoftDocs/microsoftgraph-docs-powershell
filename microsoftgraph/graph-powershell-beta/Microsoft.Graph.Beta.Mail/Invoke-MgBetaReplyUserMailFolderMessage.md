@@ -76,6 +76,14 @@ When using MIME format:- Provide the applicable Internet message headers and the
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to a message, and send it later.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.Send,  |
+| Delegated (personal Microsoft account) | Mail.Send,  |
+| Application | Mail.Send,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

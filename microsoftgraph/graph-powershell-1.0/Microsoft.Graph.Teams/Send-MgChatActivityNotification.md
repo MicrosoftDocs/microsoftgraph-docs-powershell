@@ -87,6 +87,14 @@ For more information about sending notifications and the requirements for doing 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsActivity.Send.Chat, TeamsActivity.Send,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsActivity.Send,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsActivity.Send.Chat, TeamsActivity.Send,  |
+
 ## EXAMPLES
 ### Example 1: Notify a user about a task created in a chat
 

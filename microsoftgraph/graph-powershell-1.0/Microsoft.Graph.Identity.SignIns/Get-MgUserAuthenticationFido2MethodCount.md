@@ -55,6 +55,14 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthMethod-Passkey.Read.All, UserAuthMethod-Passkey.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-Passkey.Read, UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite, UserAuthMethod-Passkey.Read.All, UserAuthMethod-Passkey.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-Passkey.Read.All,  |
+
 ## PARAMETERS
 
 ### -Break
