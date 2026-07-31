@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserMailFolderChildFolderMessage
 ---
@@ -14,9 +14,6 @@ title: New-MgUserMailFolderChildFolderMessage
 ## SYNOPSIS
 
 Create new navigation property to messages for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,7 +40,6 @@ New-MgUserMailFolderChildFolderMessage -MailFolderId <string> -MailFolderId1 <st
  [-UniqueBody <IMicrosoftGraphItemBody>] [-WebLink <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -53,7 +49,7 @@ New-MgUserMailFolderChildFolderMessage -MailFolderId <string> -MailFolderId1 <st
  -UserId <string> -BodyParameter <IMicrosoftGraphMessage> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -79,7 +75,6 @@ New-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity>
  [-UniqueBody <IMicrosoftGraphItemBody>] [-WebLink <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -89,7 +84,7 @@ New-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity>
  -BodyParameter <IMicrosoftGraphMessage> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -100,6 +95,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to messages for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1514,12 +1519,12 @@ BCCRECIPIENTS <IMicrosoftGraphRecipient[]>: The Bcc: recipients for the message.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphMessage>`: message
+BODYPARAMETER <IMicrosoftGraphMessage>: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -1627,7 +1632,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-FLAG `<IMicrosoftGraphFollowupFlag>`: followupFlag
+FLAG <IMicrosoftGraphFollowupFlag>: followupFlag
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletedDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1638,14 +1643,14 @@ See below for more possible values.
   [FlagStatus <String>]: followupFlagStatus
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-FROM `<IMicrosoftGraphRecipient>`: recipient
+FROM <IMicrosoftGraphRecipient>: recipient
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -1675,7 +1680,7 @@ REPLYTO <IMicrosoftGraphRecipient[]>: The email addresses to use when replying.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-SENDER `<IMicrosoftGraphRecipient>`: recipient
+SENDER <IMicrosoftGraphRecipient>: recipient
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1694,7 +1699,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: The To: recipients for the message.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
+UNIQUEBODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -1702,27 +1707,4 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [New-MgUserMailFolderChildFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessage)
