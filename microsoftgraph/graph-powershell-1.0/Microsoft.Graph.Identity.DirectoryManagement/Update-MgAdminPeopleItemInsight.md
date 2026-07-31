@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleiteminsight
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgAdminPeopleItemInsight
 ---
@@ -17,9 +17,6 @@ Update privacy settings to display or return the specified type of insights in a
 Currently, itemInsights is the only supported type of settings.
 To learn more about customizing insights privacy for your organization, see Customize item insights privacy in Microsoft Graph.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminPeopleItemInsight](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeopleItemInsight?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -30,7 +27,6 @@ Update-MgAdminPeopleItemInsight [-ResponseHeadersVariable <string>]
  [-IsEnabledInOrganization] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -40,7 +36,6 @@ Update-MgAdminPeopleItemInsight -BodyParameter <IMicrosoftGraphInsightsSettings>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,18 +49,9 @@ Update privacy settings to display or return the specified type of insights in a
 Currently, itemInsights is the only supported type of settings.
 To learn more about customizing insights privacy for your organization, see Customize item insights privacy in Microsoft Graph.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PeopleSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -74,10 +60,6 @@ $params = @{
 }
 
 Update-MgAdminPeopleItemInsight -BodyParameter $params
-
-```
-This example shows how to use the Update-MgAdminPeopleItemInsight Cmdlet.
-
 
 ## PARAMETERS
 
@@ -435,7 +417,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphInsightsSettings>`: insightsSettings
+BODYPARAMETER <IMicrosoftGraphInsightsSettings>: insightsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -449,27 +431,5 @@ Optional.
 
 ## RELATED LINKS
 
-- [Update-MgAdminPeopleItemInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleiteminsight)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleiteminsight)
+- [](https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-1.0)
