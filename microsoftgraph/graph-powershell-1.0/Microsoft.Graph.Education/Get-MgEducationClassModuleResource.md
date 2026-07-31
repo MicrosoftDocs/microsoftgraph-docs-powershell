@@ -698,9 +698,9 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmoduleresource)
-- [](https://learn.microsoft.com/graph/api/educationmoduleresource-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/educationmodule-list-resources?view=graph-rest-1.0)
+- [Get-MgEducationClassModuleResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmoduleresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmoduleresource-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-list-resources?view=graph-rest-1.0)
 
 
 
