@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationTemplate
 ---
@@ -14,6 +14,7 @@ title: Get-MgApplicationTemplate
 ## SYNOPSIS
 
 Retrieve the properties of an applicationTemplate object.
+Details about optional risk properties such as riskScore and riskFactors are available with either the Microsoft Entra Suite or Microsoft Entra Internet Access license.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTemplate?view=graph-powershell-beta)
@@ -28,7 +29,7 @@ Get-MgApplicationTemplate [-ExpandProperty <string[]>] [-Property <string[]>] [-
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +38,7 @@ Get-MgApplicationTemplate [-ExpandProperty <string[]>] [-Property <string[]>] [-
 Get-MgApplicationTemplate -ApplicationTemplateId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +47,7 @@ Get-MgApplicationTemplate -ApplicationTemplateId <string> [-ExpandProperty <stri
 Get-MgApplicationTemplate -InputObject <IApplicationsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -57,18 +58,30 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties of an applicationTemplate object.
+Details about optional risk properties such as riskScore and riskFactors are available with either the Microsoft Entra Suite or Microsoft Entra Internet Access license.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get application template
 
 ```powershell
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgApplicationTemplate
+Get-MgApplicationTemplate -ApplicationTemplateId $applicationTemplateId
 
 ```
-This example shows how to use the Get-MgApplicationTemplate Cmdlet.
+This example will get application template
+
+### Example 2: Get application template with optional properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+Get-MgApplicationTemplate -ApplicationTemplateId $applicationTemplateId -Property "id,displayName,riskScore,riskFactors" 
+
+```
+This example will get application template with optional properties
 
 
 ## PARAMETERS

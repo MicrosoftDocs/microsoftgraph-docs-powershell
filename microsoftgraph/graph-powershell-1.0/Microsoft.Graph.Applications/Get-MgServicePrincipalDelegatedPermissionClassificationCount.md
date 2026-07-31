@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelegatedpermissionclassificationcount
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalDelegatedPermissionClassificationCount
 ---
@@ -27,7 +27,7 @@ Get-MgServicePrincipalDelegatedPermissionClassificationCount -ServicePrincipalId
  [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -37,7 +37,7 @@ Get-MgServicePrincipalDelegatedPermissionClassificationCount -InputObject <IAppl
  [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -55,7 +55,7 @@ Get the number of the resource
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Application.Read.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy,  |
+| Application | Application.Read.All, Application.ReadWrite.OwnedBy, Directory.Read.All,  |
 
 ## PARAMETERS
 
