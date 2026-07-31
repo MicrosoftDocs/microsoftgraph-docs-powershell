@@ -588,7 +588,7 @@ BODY `<IPaths1Bog3HuDevicemanagementReportsMicrosoftGraphRetrievedeviceappinstal
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdeviceappinstallationstatusreport)
+- [Get-MgDeviceManagementReportDeviceAppInstallationStatusReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportdeviceappinstallationstatusreport)
 
 
 
