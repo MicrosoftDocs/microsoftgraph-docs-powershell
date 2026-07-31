@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecheck
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceCheck
 ---
@@ -29,7 +29,7 @@ Get-MgPlaceCheck -PlaceId <string> [-ExpandProperty <string[]>] [-Property <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -39,7 +39,7 @@ Get-MgPlaceCheck -CheckInClaimCalendarEventId <string> -PlaceId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +48,7 @@ Get-MgPlaceCheck -CheckInClaimCalendarEventId <string> -PlaceId <string>
 Get-MgPlaceCheck -InputObject <ICalendarIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -60,6 +60,19 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a checkInClaim object.
 This API provides the check-in status for a specific place, such as a desk, room, or workspace, associated with a particular reservation.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+Get-MgPlaceCheck -PlaceId $placeId -CheckInClaimCalendarEventId $checkInClaimCalendarEventId
+
+```
+This example shows how to use the Get-MgPlaceCheck Cmdlet.
+
 
 ## PARAMETERS
 
@@ -573,8 +586,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [Get-MgPlaceCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecheck)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/checkinclaim-get?view=graph-rest-1.0)
-
-
 
 
 

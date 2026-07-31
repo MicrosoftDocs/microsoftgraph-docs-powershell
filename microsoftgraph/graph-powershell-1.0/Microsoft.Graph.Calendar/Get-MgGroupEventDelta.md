@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupEventDelta
 ---
@@ -32,7 +32,6 @@ Get-MgGroupEventDelta -GroupId <string> -EndDateTime <string> -StartDateTime <st
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity
@@ -43,7 +42,7 @@ Get-MgGroupEventDelta -InputObject <ICalendarIdentity> -EndDateTime <string> -St
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-Count] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -62,9 +61,9 @@ This allows you to maintain and synchronize a local store of events in the speci
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
-| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
-| Application | Calendars.Read, Calendars.ReadWrite, Calendars.ReadBasic,  |
+| Delegated (work or school account) | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
+| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
+| Application | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
 
 ## PARAMETERS
 
