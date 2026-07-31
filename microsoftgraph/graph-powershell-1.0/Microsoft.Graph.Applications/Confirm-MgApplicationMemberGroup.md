@@ -497,8 +497,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/confirm-mgapplicationmembergroup)
-- [](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0)
+- [Confirm-MgApplicationMemberGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/confirm-mgapplicationmembergroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0)
 
 
 
