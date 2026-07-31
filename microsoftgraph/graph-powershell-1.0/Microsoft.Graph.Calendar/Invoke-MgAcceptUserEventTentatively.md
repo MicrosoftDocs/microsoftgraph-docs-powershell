@@ -644,8 +644,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptusereventtentatively)
-- [](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0)
+- [Invoke-MgAcceptUserEventTentatively](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptusereventtentatively)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0)
 
 
 
