@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationaccesstoken
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaApplicationSynchronizationAccessToken
 ---
@@ -29,7 +29,6 @@ Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Acquire
@@ -40,7 +39,6 @@ Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AcquireViaIdentityExpanded
@@ -52,7 +50,6 @@ Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdent
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AcquireViaIdentity
@@ -63,7 +60,6 @@ Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdent
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

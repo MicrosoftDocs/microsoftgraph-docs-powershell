@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationTokenIssuancePolicyByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaApplicationTokenIssuancePolicyByRef
 ---
@@ -28,7 +28,6 @@ Remove-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -39,7 +38,6 @@ Remove-MgBetaApplicationTokenIssuancePolicyByRef
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -55,9 +53,9 @@ Remove a tokenIssuancePolicy from an application.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+| Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

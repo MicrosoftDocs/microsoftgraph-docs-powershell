@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationtemplateschemadirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaApplicationSynchronizationTemplateSchemaDirectory
 ---
@@ -30,7 +30,7 @@ Update-MgBetaApplicationSynchronizationTemplateSchemaDirectory -ApplicationId <s
  [-Objects <IMicrosoftGraphObjectDefinition[]>] [-ReadOnly] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -41,7 +41,7 @@ Update-MgBetaApplicationSynchronizationTemplateSchemaDirectory -ApplicationId <s
  -BodyParameter <IMicrosoftGraphDirectoryDefinition> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,7 +53,7 @@ Update-MgBetaApplicationSynchronizationTemplateSchemaDirectory -InputObject <IAp
  [-Objects <IMicrosoftGraphObjectDefinition[]>] [-ReadOnly] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -63,7 +63,7 @@ Update-MgBetaApplicationSynchronizationTemplateSchemaDirectory -InputObject <IAp
  -BodyParameter <IMicrosoftGraphDirectoryDefinition> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

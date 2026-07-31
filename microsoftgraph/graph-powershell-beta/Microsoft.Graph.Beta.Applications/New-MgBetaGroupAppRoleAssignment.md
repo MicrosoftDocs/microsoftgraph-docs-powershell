@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetagroupapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupAppRoleAssignment
 ---
@@ -32,7 +32,7 @@ New-MgBetaGroupAppRoleAssignment -GroupId <string> [-ResponseHeadersVariable <st
  [-PrincipalId <string>] [-PrincipalType <string>] [-ResourceDisplayName <string>]
  [-ResourceId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -42,7 +42,6 @@ New-MgBetaGroupAppRoleAssignment -GroupId <string> -BodyParameter <IMicrosoftGra
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -55,7 +54,6 @@ New-MgBetaGroupAppRoleAssignment -InputObject <IApplicationsIdentity>
  [-ResourceDisplayName <string>] [-ResourceId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -65,7 +63,7 @@ New-MgBetaGroupAppRoleAssignment -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphAppRoleAssignment> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

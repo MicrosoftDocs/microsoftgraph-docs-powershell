@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOnPremisePublishingProfileAgentGroup
 ---
@@ -27,7 +27,7 @@ Update-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <strin
  [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-PublishingType <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +38,6 @@ Update-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <strin
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,7 +49,7 @@ Update-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIde
  [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-PublishingType <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -60,7 +59,7 @@ Update-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIde
  -BodyParameter <IMicrosoftGraphOnPremisesAgentGroup> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

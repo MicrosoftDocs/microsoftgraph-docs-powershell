@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
@@ -26,7 +26,7 @@ New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -37,7 +37,6 @@ New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -48,7 +47,7 @@ New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -59,7 +58,6 @@ New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -76,9 +74,27 @@ You can configure a maximum of 20 approved client apps.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+| Application | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.approvedClientApp"
+	id = "cd57c330-a543-4249-9486-c1c257341de6"
+}
+
+New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp Cmdlet.
+
 
 ## PARAMETERS
 
@@ -543,7 +559,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-post-approvedclientapps?view=graph-rest-beta)
-
 
 
 

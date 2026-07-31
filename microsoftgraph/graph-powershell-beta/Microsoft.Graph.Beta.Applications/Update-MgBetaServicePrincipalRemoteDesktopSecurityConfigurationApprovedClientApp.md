@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
@@ -25,7 +25,7 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -36,7 +36,7 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  -BodyParameter <IMicrosoftGraphApprovedClientApp> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -47,7 +47,7 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -58,7 +58,6 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,9 +73,9 @@ Update the properties of an approvedClientApp object for a remotedesktopsecurity
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+| Application | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.ReadWrite.All,  |
 
 ## PARAMETERS
 

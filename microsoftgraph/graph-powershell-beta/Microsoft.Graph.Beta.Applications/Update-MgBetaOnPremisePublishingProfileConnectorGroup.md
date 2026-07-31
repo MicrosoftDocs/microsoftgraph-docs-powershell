@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnectorgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOnPremisePublishingProfileConnectorGroup
 ---
@@ -27,7 +27,6 @@ Update-MgBetaOnPremisePublishingProfileConnectorGroup -ConnectorGroupId <string>
  [-Name <string>] [-Region <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -38,7 +37,6 @@ Update-MgBetaOnPremisePublishingProfileConnectorGroup -ConnectorGroupId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,7 +48,7 @@ Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplication
  [-IsDefault] [-Members <IMicrosoftGraphConnector[]>] [-Name <string>] [-Region <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -60,7 +58,7 @@ Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplication
  -BodyParameter <IMicrosoftGraphConnectorGroup> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -747,7 +745,7 @@ Read-only.
             [Operator <String>]: customSecurityAttributeComparisonOperator
         [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
         [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
         [RestrictionType <String>]: appKeyCredentialRestrictionType
@@ -782,7 +780,7 @@ For existing applications, the enforcement date can be retroactively applied.
           [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
             [(Any) <Object>]: This indicates any property can be added to this object.
             [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-            [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+            [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
             [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
             [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
@@ -1028,8 +1026,10 @@ For example, https://www.contoso.com/app/support
 For example, https://www.contoso.com/app/termsofservice
   [IsDeviceOnlyAuthSupported <Boolean?>]: Specifies whether this application supports device authentication without a user.
 The default is false.
-  [IsDisabled <Boolean?>]: Specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources.
+  [IsDisabled <Boolean?>]: Deactivate an app without deleting it.
+This configuration specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources.
 When set to true, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.true if the application is deactivated (disabled); otherwise false.
+Learn more in Deactivate an app registration.
   [IsFallbackPublicClient <Boolean?>]: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
 The default value is false, which means the fallback application type is confidential client such as a web app.
 There are certain scenarios where Microsoft Entra ID can't determine the client application type.
@@ -1674,7 +1674,7 @@ Read-only.
               [Operator <String>]: customSecurityAttributeComparisonOperator
           [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
           [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
           [RestrictionType <String>]: appKeyCredentialRestrictionType
@@ -1709,7 +1709,7 @@ For existing applications, the enforcement date can be retroactively applied.
             [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
               [(Any) <Object>]: This indicates any property can be added to this object.
               [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-              [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+              [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
               [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
               [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
@@ -1934,8 +1934,10 @@ For example, https://www.contoso.com/app/support
 For example, https://www.contoso.com/app/termsofservice
     [IsDeviceOnlyAuthSupported <Boolean?>]: Specifies whether this application supports device authentication without a user.
 The default is false.
-    [IsDisabled <Boolean?>]: Specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources.
+    [IsDisabled <Boolean?>]: Deactivate an app without deleting it.
+This configuration specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources.
 When set to true, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.true if the application is deactivated (disabled); otherwise false.
+Learn more in Deactivate an app registration.
     [IsFallbackPublicClient <Boolean?>]: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
 The default value is false, which means the fallback application type is confidential client such as a web app.
 There are certain scenarios where Microsoft Entra ID can't determine the client application type.
@@ -2641,7 +2643,7 @@ Read-only.
                 [Operator <String>]: customSecurityAttributeComparisonOperator
             [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
             [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
             [RestrictionType <String>]: appKeyCredentialRestrictionType
@@ -2676,7 +2678,7 @@ For existing applications, the enforcement date can be retroactively applied.
               [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-                [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+                [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
                 [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
                 [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
@@ -2901,8 +2903,10 @@ For example, https://www.contoso.com/app/support
 For example, https://www.contoso.com/app/termsofservice
       [IsDeviceOnlyAuthSupported <Boolean?>]: Specifies whether this application supports device authentication without a user.
 The default is false.
-      [IsDisabled <Boolean?>]: Specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources.
+      [IsDisabled <Boolean?>]: Deactivate an app without deleting it.
+This configuration specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources.
 When set to true, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.true if the application is deactivated (disabled); otherwise false.
+Learn more in Deactivate an app registration.
       [IsFallbackPublicClient <Boolean?>]: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
 The default value is false, which means the fallback application type is confidential client such as a web app.
 There are certain scenarios where Microsoft Entra ID can't determine the client application type.

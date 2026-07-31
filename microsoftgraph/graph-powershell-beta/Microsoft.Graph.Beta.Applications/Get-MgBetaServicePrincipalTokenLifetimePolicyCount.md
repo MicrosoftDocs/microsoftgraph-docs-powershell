@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltokenlifetimepolicycount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalTokenLifetimePolicyCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgBetaServicePrincipalTokenLifetimePolicyCount -ServicePrincipalId <string> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -36,7 +36,7 @@ Get-MgBetaServicePrincipalTokenLifetimePolicyCount -InputObject <IApplicationsId
  [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -52,9 +52,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+| Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## PARAMETERS
 

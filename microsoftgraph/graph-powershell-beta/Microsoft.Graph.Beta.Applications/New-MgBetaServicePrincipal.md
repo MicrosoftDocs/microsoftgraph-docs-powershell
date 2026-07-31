@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaServicePrincipal
 ---
@@ -63,7 +63,6 @@ New-MgBetaServicePrincipal [-ResponseHeadersVariable <string>] [-AccountEnabled]
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -73,7 +72,6 @@ New-MgBetaServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -90,9 +88,9 @@ This API can also create an agentIdentityBlueprintPrincipal object from an agent
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, AgentIdentityBlueprintPrincipal.Create, AgentIdentity.Create.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentity.Create.All, AgentIdentityBlueprintPrincipal.Create, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All, AgentIdentityBlueprintPrincipal.Create, AgentIdentity.CreateAsManager, AgentIdentity.Create.All,  |
+| Application | Application.ReadWrite.OwnedBy, AgentIdentity.Create.All, AgentIdentity.CreateAsManager, AgentIdentityBlueprintPrincipal.Create, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Create a new service principal object
@@ -1874,7 +1872,7 @@ Read-only.
           [Operator <String>]: customSecurityAttributeComparisonOperator
       [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
       [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
       [RestrictionType <String>]: appKeyCredentialRestrictionType
@@ -1909,7 +1907,7 @@ For existing applications, the enforcement date can be retroactively applied.
         [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
           [(Any) <Object>]: This indicates any property can be added to this object.
           [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-          [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+          [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
           [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
           [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
@@ -2112,7 +2110,7 @@ Read-only.
             [Operator <String>]: customSecurityAttributeComparisonOperator
         [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
         [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
         [RestrictionType <String>]: appKeyCredentialRestrictionType
@@ -2147,7 +2145,7 @@ For existing applications, the enforcement date can be retroactively applied.
           [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
             [(Any) <Object>]: This indicates any property can be added to this object.
             [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-            [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+            [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
             [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
             [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.

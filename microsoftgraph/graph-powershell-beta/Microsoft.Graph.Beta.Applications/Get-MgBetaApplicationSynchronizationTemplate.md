@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaApplicationSynchronizationTemplate
 ---
@@ -28,7 +28,7 @@ Get-MgBetaApplicationSynchronizationTemplate -ApplicationId <string> [-ExpandPro
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +38,7 @@ Get-MgBetaApplicationSynchronizationTemplate -ApplicationId <string>
  -SynchronizationTemplateId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +48,7 @@ Get-MgBetaApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -66,7 +66,7 @@ Pre-configured synchronization settings for a particular application.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.Read.All, Synchronization.ReadWrite.All,  |
 
 ## PARAMETERS
 

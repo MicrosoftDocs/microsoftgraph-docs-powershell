@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationownerdirectoryobjectbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaApplicationOwnerDirectoryObjectByRef
 ---
@@ -29,7 +29,6 @@ Remove-MgBetaApplicationOwnerDirectoryObjectByRef -ApplicationId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -39,7 +38,6 @@ Remove-MgBetaApplicationOwnerDirectoryObjectByRef -InputObject <IApplicationsIde
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -58,7 +56,7 @@ As a recommended best practice, apps should have at least two owners.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration
 ---
@@ -30,7 +30,7 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipa
  [-IsRemoteDesktopProtocolEnabled] [-TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -41,7 +41,6 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipa
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,7 +52,7 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IA
  [-IsRemoteDesktopProtocolEnabled] [-TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -64,7 +63,6 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IA
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -81,9 +79,9 @@ Use this configuration to enable or disable the Microsoft Entra ID Remote Deskto
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application-RemoteDesktopConfig.ReadWrite.All, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Application | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

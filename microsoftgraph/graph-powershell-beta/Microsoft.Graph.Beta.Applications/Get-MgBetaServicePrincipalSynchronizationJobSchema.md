@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschema
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalSynchronizationJobSchema
 ---
@@ -27,7 +27,7 @@ Get-MgBetaServicePrincipalSynchronizationJobSchema -ServicePrincipalId <string>
  -SynchronizationJobId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -37,7 +37,7 @@ Get-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsId
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -53,9 +53,9 @@ Retrieve the schema for a given synchronization job or template.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All, CustomSecAttributeProvisioning.ReadWrite.All, CustomSecAttributeProvisioning.Read.All,  |
+| Delegated (work or school account) | Synchronization.Read.All, CustomSecAttributeProvisioning.Read.All, CustomSecAttributeProvisioning.ReadWrite.All, Synchronization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | CustomSecAttributeProvisioning.Read.All, Synchronization.ReadWrite.All, Synchronization.Read.All, CustomSecAttributeProvisioning.ReadWrite.All, Application.ReadWrite.OwnedBy,  |
+| Application | CustomSecAttributeProvisioning.Read.All, Application.ReadWrite.OwnedBy, CustomSecAttributeProvisioning.ReadWrite.All, Synchronization.Read.All, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

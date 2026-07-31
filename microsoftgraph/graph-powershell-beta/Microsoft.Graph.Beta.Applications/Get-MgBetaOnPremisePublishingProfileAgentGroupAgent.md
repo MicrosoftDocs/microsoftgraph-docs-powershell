@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagentgroupagent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaOnPremisePublishingProfileAgentGroupAgent
 ---
@@ -28,7 +28,7 @@ Get-MgBetaOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <str
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +38,7 @@ Get-MgBetaOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <str
  -OnPremisesAgentId <string> -OnPremisesPublishingProfileId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +48,7 @@ Get-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsI
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

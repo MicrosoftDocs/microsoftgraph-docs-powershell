@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationpassword
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaApplicationPassword
 ---
@@ -27,7 +27,6 @@ Remove-MgBetaApplicationPassword -ApplicationId <string> [-ResponseHeadersVariab
  [-AdditionalProperties <hashtable>] [-KeyId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Remove
@@ -38,7 +37,6 @@ Remove-MgBetaApplicationPassword -ApplicationId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RemoveViaIdentityExpanded
@@ -49,7 +47,6 @@ Remove-MgBetaApplicationPassword -InputObject <IApplicationsIdentity>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
@@ -60,7 +57,6 @@ Remove-MgBetaApplicationPassword -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -78,7 +74,7 @@ Removes a password from an application.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalmembergroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalMemberGroup
 ---
@@ -31,7 +31,7 @@ Get-MgBetaServicePrincipalMemberGroup -ServicePrincipalId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-SecurityEnabledOnly]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Get
@@ -42,7 +42,6 @@ Get-MgBetaServicePrincipalMemberGroup -ServicePrincipalId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
@@ -52,7 +51,7 @@ Get-MgBetaServicePrincipalMemberGroup -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-SecurityEnabledOnly]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### GetViaIdentity
@@ -63,7 +62,6 @@ Get-MgBetaServicePrincipalMemberGroup -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -83,9 +81,9 @@ If you get the DirectoryResultSizeLimitExceeded error code, use the List group t
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, User.Read.All, Group.ReadWrite.All, GroupMember.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All,  |
+| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Application.ReadWrite.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, User.Read.All, Device.ReadWrite.All, Device.Read.All, Directory.Read.All,  |
+| Application | Application.Read.All, Application.ReadWrite.All, Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read.All,  |
 
 ## PARAMETERS
 
