@@ -15,6 +15,9 @@ title: Get-MgSearchQna
 
 Read the properties and relationships of a qna object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchQna?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
