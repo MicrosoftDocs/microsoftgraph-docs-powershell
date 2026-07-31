@@ -509,7 +509,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootlistitemversionfield)
+- [Update-MgDriveRootListItemVersionField](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootlistitemversionfield)
 
 
 

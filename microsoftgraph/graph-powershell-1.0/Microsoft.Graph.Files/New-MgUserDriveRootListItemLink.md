@@ -723,7 +723,7 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootlistitemlink)
+- [New-MgUserDriveRootListItemLink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootlistitemlink)
 
 
 

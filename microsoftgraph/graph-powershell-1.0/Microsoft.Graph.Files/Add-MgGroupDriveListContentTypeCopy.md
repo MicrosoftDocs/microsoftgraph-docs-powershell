@@ -515,8 +515,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mggroupdrivelistcontenttypecopy)
-- [](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
+- [Add-MgGroupDriveListContentTypeCopy](https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mggroupdrivelistcontenttypecopy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
 
 
 

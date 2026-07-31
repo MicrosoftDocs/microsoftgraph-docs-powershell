@@ -692,7 +692,7 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootretentionlabel)
+- [Update-MgDriveRootRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootretentionlabel)
 
 
 

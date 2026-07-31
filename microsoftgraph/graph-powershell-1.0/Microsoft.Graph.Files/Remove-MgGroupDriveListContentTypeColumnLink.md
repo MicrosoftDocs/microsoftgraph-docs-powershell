@@ -470,7 +470,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistcontenttypecolumnlink)
+- [Remove-MgGroupDriveListContentTypeColumnLink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistcontenttypecolumnlink)
 
 
 
