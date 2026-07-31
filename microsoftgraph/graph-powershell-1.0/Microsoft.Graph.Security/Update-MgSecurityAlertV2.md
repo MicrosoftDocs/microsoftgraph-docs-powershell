@@ -97,8 +97,9 @@ Update the properties of an alert object in an organization based on the specifi
 | Application | SecurityAlert.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -110,6 +111,10 @@ $params = @{
 }
 
 Update-MgSecurityAlertV2 -AlertId $alertId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSecurityAlertV2 Cmdlet.
+
 
 ## PARAMETERS
 

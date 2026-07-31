@@ -67,12 +67,17 @@ Read the properties and relationships of a sensor object.
 | Application | SecurityIdentitiesSensors.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityIdentitySensor
+
+```
+This example shows how to use the Get-MgSecurityIdentitySensor Cmdlet.
+
 
 ## PARAMETERS
 
