@@ -4,7 +4,10 @@ Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
-    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph")
+    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
+    [ValidateSet("both", "v1.0", "beta")]
+    [string] $GraphProfileFilter = "both",
+    [string] $ModuleFilter = ""
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -22,6 +25,7 @@ function Start-Update {
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
         $GraphProfile = $_
+        if ($GraphProfileFilter -ne "both" -and $GraphProfile -ne $GraphProfileFilter) { return }
         $profilePath = "graph-powershell-1.0"
         if ($GraphProfile -eq "beta") {
             $ProfilePath = "graph-powershell-beta"
@@ -205,5 +209,12 @@ if ($ModulesToGenerate.Count -eq 0) {
 
 
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
+if (-not [string]::IsNullOrWhiteSpace($ModuleFilter)) {
+    $ModulesToGenerate = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
+}
+if ($ModulesToGenerate.Count -eq 0) {
+    Write-Host "No post-processing target for module '$ModuleFilter' (e.g. Authentication); skipping."
+    return
+}
 Start-Update -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"

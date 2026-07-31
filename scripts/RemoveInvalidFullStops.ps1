@@ -2,7 +2,10 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc")
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
+    [ValidateSet("both", "v1.0", "beta")]
+    [string] $GraphProfileFilter = "both",
+    [string] $ModuleFilter = ""
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -20,13 +23,19 @@ function Remove-InvalidFullStops {
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
+        if ($GraphProfileFilter -ne "both" -and $graphProfile -ne $GraphProfileFilter) { return }
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
     
     git config --global user.email "GraphTooling@service.microsoft.com"
     git config --global user.name "Microsoft Graph DevX Tooling"
     git add .
-    git commit -m "Removed invalid full stops from the beginning of lines" 	
+    $pending = git status --porcelain
+    if (-not [string]::IsNullOrWhiteSpace($pending)) {
+        git commit -m "Removed invalid full stops from the beginning of lines"
+    } else {
+        $global:LASTEXITCODE = 0
+    }
 }
 function Get-FilesByProfile {
     Param(
@@ -87,6 +96,13 @@ if (-not (Test-Path $ModuleMappingConfigPath)) {
 if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
+}
+if (-not [string]::IsNullOrWhiteSpace($ModuleFilter)) {
+    $ModulesToGenerate = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
+}
+if ($ModulesToGenerate.Count -eq 0) {
+    Write-Host "No post-processing target for module '$ModuleFilter' (e.g. Authentication); skipping."
+    return
 }
 Remove-InvalidFullStops -ModulesToGenerate $ModulesToGenerate
 

@@ -47,148 +47,106 @@ extends:
     customBuildTags:
     - ES365AIMigrationTooling
     stages:
-    - stage: stage
-      jobs:
-      - job: PowerShellDocsUpdate
-        timeoutInMinutes: ${{ parameters.PipelineTimeout }}
-        templateContext:
-          outputs:
-          - output: pipelineArtifact
-            displayName: 'Publish Examples to be reviewed as artifact'
-            targetPath: missingexternaldocsurl
-            artifactName: 'MissingExternalDocs'
-            publishLocation: 'Container'
-        steps:
-        - template: azure-pipelines/update-template.yml@self
-        - task : PowerShell@2
-          name: "ComputeBranch"
-          displayName: 'Compute Branch Name'
-          inputs:
-            targetType: 'inline'
-            script: |
-              git submodule update --init --recursive
-              $branch = "{0}_{1}" -f "WeeklyReferenceDocsUpdate", (Get-Date -Format yyyyMMddHHmm)
-              Write-Host "Compute branch: $branch"
-              Write-Host "##vso[task.setvariable variable=WeeklyReferenceDocsBranch;isOutput=true]$branch"
-        - task: Bash@3
-          displayName: "Create weekly refresh branch"
-          inputs:
-            targetType: inline
-            script: |
-              git status
-              git branch $(ComputeBranch.WeeklyReferenceDocsBranch)
-              git checkout $(ComputeBranch.WeeklyReferenceDocsBranch)
-              git status              
-        - task: PowerShell@2
-          displayName: 'Create missing external docs folder'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/CreateExternalDocsFolder.ps1
-
-        - task: PowerShell@2
-          displayName: 'Generate markdown files from PowerShell help files'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/GenerateMarkDown.ps1
-        - task: PowerShell@2
-          displayName: 'Escape disallowed html tags'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/EscapeDisallowedHtmlTags.ps1
-        - task: PowerShell@2
-          displayName: 'Update metadata header'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/MsSubserviceUpdate.ps1
-        - task: PowerShell@2
-          displayName: 'Generate permissions table'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/GeneratePermissionsTable.ps1
-        - task: PowerShell@2
-          displayName: 'Update Links'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/UpdateLinks.ps1
-            errorActionPreference: 'stop'
-        - task: PowerShell@2
-          displayName: 'Repair Examples and Descriptions and Title'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/RepairExamplesDescriptionsAndTitle.ps1
-        - task: PowerShell@2
-          displayName: 'Remove boiler plate code'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/RemoveBoilerPlateCode.ps1
-        - task: PowerShell@2
-          displayName: 'Remove invalid fullstops'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/RemoveInvalidFullStops.ps1
-        - task: PowerShell@2
-          displayName: 'Generate missing docs for aliased cmdlets'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/GenerateAliasedDocs.ps1
-        - task: PowerShell@2
-          displayName: 'Correct related links section'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: scripts/CorrectRelatedLinks-AllFiles.ps1
-        - task: AzureKeyVault@2
-          displayName: "Azure Key Vault: Get GitHub App secrets"
-          inputs:
-            azureSubscription: "Federated AKV Managed Identity Connection"
-            KeyVaultName: akv-prod-eastus
-            SecretsFilter: "microsoft-graph-devx-bot-appid,microsoft-graph-devx-bot-privatekey"
-        - task: PowerShell@2
-          displayName: Pushing to github
-          env:
-            GhAppId: $(microsoft-graph-devx-bot-appid)
-            GhAppKey: $(microsoft-graph-devx-bot-privatekey)
-          inputs:
-            targetType: inline
-            pwsh: true
-            script: |
-              git config --global user.email "GraphTooling@service.microsoft.com"
-              git config --global user.name "Microsoft Graph DevX Tooling"
-              git config --system core.longpaths true
-              # The microsoft-graph-devx-bot GitHub App must have contents:write on this repo.
-              $token = & "$(Build.SourcesDirectory)/scripts/Generate-Github-Token.ps1" -AppClientId $env:GhAppId -AppPrivateKeyContents $env:GhAppKey -Repository "MicrosoftDocs/microsoftgraph-docs-powershell"
-              if ([string]::IsNullOrWhiteSpace($token)) { throw "Failed to generate GitHub App installation token." }
-              # Mask the token so it is never surfaced in pipeline logs.
-              Write-Host "##vso[task.setsecret]$token"
-              git status
-              git add .
-              git commit -m "Updating reference docs"
-              git push --set-upstream "https://x-access-token:$token@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $(ComputeBranch.WeeklyReferenceDocsBranch)
-              git status
-        - template: azure-pipelines/common-templates/create-pr.yml@self
-          parameters:
-            BaseBranch: "main"
-            TargetBranch: $(ComputeBranch.WeeklyReferenceDocsBranch)
-            Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
-            Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."
+    - template: common-templates/module-stages.yml@self
+      parameters:
+        GraphProfileFilter: "v1.0"
+        ProfileLabel: "v1"
+        BranchPrefix: "WeeklyDocs"
+        BaseBranch: "main"
+        PipelineTimeout: ${{ parameters.PipelineTimeout }}
+        Modules:
+          - Authentication
+          - Applications
+          - Bookings
+          - BusinessScenario
+          - BackupRestore
+          - Calendar
+          - ChangeNotifications
+          - CloudCommunications
+          - Compliance
+          - CrossDeviceExperiences
+          - Devices.CloudPrint
+          - Devices.CorporateManagement
+          - Devices.ServiceAnnouncement
+          - DeviceManagement
+          - DeviceManagement.Administration
+          - DeviceManagement.Enrollment
+          - DeviceManagement.Actions
+          - DeviceManagement.Functions
+          - DirectoryObjects
+          - Education
+          - Files
+          - Financials
+          - Groups
+          - Identity.DirectoryManagement
+          - Identity.Governance
+          - Identity.SignIns
+          - Identity.Partner
+          - Mail
+          - ManagedTenants
+          - NetworkAccess
+          - Notes
+          - People
+          - PersonalContacts
+          - Planner
+          - Reports
+          - SchemaExtensions
+          - Search
+          - Security
+          - Sites
+          - Teams
+          - Users
+          - Users.Actions
+          - Users.Functions
+          - WindowsUpdates
+    - template: common-templates/module-stages.yml@self
+      parameters:
+        GraphProfileFilter: "beta"
+        ProfileLabel: "beta"
+        BranchPrefix: "WeeklyDocs"
+        BaseBranch: "main"
+        PipelineTimeout: ${{ parameters.PipelineTimeout }}
+        Modules:
+          - Applications
+          - Bookings
+          - BusinessScenario
+          - BackupRestore
+          - Calendar
+          - ChangeNotifications
+          - CloudCommunications
+          - Compliance
+          - CrossDeviceExperiences
+          - Devices.CloudPrint
+          - Devices.CorporateManagement
+          - Devices.ServiceAnnouncement
+          - DeviceManagement
+          - DeviceManagement.Administration
+          - DeviceManagement.Enrollment
+          - DeviceManagement.Actions
+          - DeviceManagement.Functions
+          - DirectoryObjects
+          - Education
+          - Files
+          - Financials
+          - Groups
+          - Identity.DirectoryManagement
+          - Identity.Governance
+          - Identity.SignIns
+          - Identity.Partner
+          - Mail
+          - ManagedTenants
+          - NetworkAccess
+          - Notes
+          - People
+          - PersonalContacts
+          - Planner
+          - Reports
+          - SchemaExtensions
+          - Search
+          - Security
+          - Sites
+          - Teams
+          - Users
+          - Users.Actions
+          - Users.Functions
+          - WindowsUpdates

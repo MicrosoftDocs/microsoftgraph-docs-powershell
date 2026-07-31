@@ -5,7 +5,10 @@ Param(
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
     [string] $SDKOpenApiPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
-    [string] $MissingMsSubserviceHeaderPath = (Join-Path $PSScriptRoot "../missingexternaldocsurl")
+    [string] $MissingMsSubserviceHeaderPath = (Join-Path $PSScriptRoot "../missingexternaldocsurl"),
+    [ValidateSet("both", "v1.0", "beta")]
+    [string] $GraphProfileFilter = "both",
+    [string] $ModuleFilter = ""
 )
 function Start-Generator {
     if (Test-Path $CommandMetadataPath) {
@@ -22,6 +25,8 @@ function Start-Generator {
                 $ModulePrefix = "Microsoft.Graph.Beta"
                 $ModuleName = $ModuleName.Replace("Beta.", "")
             }
+            if ($GraphProfileFilter -ne "both" -and $GraphProfile -ne $GraphProfileFilter) { return }
+            if (-not [string]::IsNullOrWhiteSpace($ModuleFilter) -and $ModuleName -ne $ModuleFilter) { return }
             $Path = "$ModulePrefix.$ModuleName"
             $DestinationFile = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path "$Command.md"
             try {
