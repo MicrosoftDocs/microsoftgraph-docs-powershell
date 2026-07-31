@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernanceAppConsentRequest
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityGovernanceAppConsentRequest
 ## SYNOPSIS
 
 Create new navigation property to appConsentRequests for identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ New-MgIdentityGovernanceAppConsentRequest [-ResponseHeadersVariable <string>]
  [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +35,6 @@ New-MgIdentityGovernanceAppConsentRequest -BodyParameter <IMicrosoftGraphAppCons
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to appConsentRequests for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -453,7 +458,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAppConsentRequest>`: appConsentRequest
+BODYPARAMETER <IMicrosoftGraphAppConsentRequest>: appConsentRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -569,27 +574,4 @@ Supports $filter (eq only) and $orderby.
 
 ## RELATED LINKS
 
-- [New-MgIdentityGovernanceAppConsentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest)

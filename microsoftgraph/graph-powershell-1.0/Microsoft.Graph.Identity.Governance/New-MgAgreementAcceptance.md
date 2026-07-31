@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementacceptance
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgAgreementAcceptance
 ---
@@ -14,9 +14,6 @@ title: New-MgAgreementAcceptance
 ## SYNOPSIS
 
 Create new navigation property to acceptances for agreements
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementAcceptance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,7 +28,6 @@ New-MgAgreementAcceptance -AgreementId <string> [-ResponseHeadersVariable <strin
  [-UserId <string>] [-UserPrincipalName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -45,7 +41,6 @@ New-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-Agreement
  [-UserId <string>] [-UserPrincipalName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -55,7 +50,6 @@ New-MgAgreementAcceptance -AgreementId <string> -BodyParameter <IMicrosoftGraphA
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -65,7 +59,7 @@ New-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphAgreementAcceptance> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -76,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to acceptances for agreements
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -821,7 +825,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAgreementAcceptance>`: agreementAcceptance
+BODYPARAMETER <IMicrosoftGraphAgreementAcceptance>: agreementAcceptance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -845,7 +849,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq).
   [UserPrincipalName <String>]: UPN of the user when the acceptance was recorded.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -861,6 +865,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -883,6 +888,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
   [PrivilegedAccessGroupAssignmentScheduleId <String>]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   [PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
@@ -918,27 +924,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgAgreementAcceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementacceptance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementacceptance)

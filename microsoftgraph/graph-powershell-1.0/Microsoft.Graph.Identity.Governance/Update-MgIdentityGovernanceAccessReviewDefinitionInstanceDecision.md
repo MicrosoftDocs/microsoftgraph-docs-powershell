@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancedecision
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
 ---
@@ -14,9 +14,6 @@ title: Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
 ## SYNOPSIS
 
 Update the navigation property decisions in identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,7 +31,7 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
  [-ResourceLink <string>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -47,7 +44,6 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -63,7 +59,7 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
  [-ResourceLink <string>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -75,7 +71,6 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -86,6 +81,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property decisions in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -934,7 +939,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+APPLIEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -943,7 +948,7 @@ For example, in the access reviews decisions API, this property might record the
   [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
   [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewInstanceDecisionItem>`: accessReviewInstanceDecisionItem
+BODYPARAMETER <IMicrosoftGraphAccessReviewInstanceDecisionItem>: accessReviewInstanceDecisionItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1005,7 +1010,7 @@ Read-only.
 Supports $select.
 Read-only.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1021,6 +1026,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -1043,6 +1049,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
   [PrivilegedAccessGroupAssignmentScheduleId <String>]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   [PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
@@ -1081,21 +1088,21 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
   [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
 
-PRINCIPAL `<IMicrosoftGraphIdentity>`: identity
+PRINCIPAL <IMicrosoftGraphIdentity>: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
   [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-RESOURCE `<IMicrosoftGraphAccessReviewInstanceDecisionItemResource>`: accessReviewInstanceDecisionItemResource
+RESOURCE <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>: accessReviewInstanceDecisionItemResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: Display name of the resource
   [Id <String>]: Identifier of the resource
   [Type <String>]: Type of resource.
 Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
 
-REVIEWEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+REVIEWEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -1107,27 +1114,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancedecision)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancedecision)

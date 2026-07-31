@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowcustomtaskextensioncreatedbymailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByM
 ## SYNOPSIS
 
 Update property mailboxSettings value.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,7 +29,6 @@ Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxS
  [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -43,7 +39,6 @@ Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxS
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -58,7 +53,6 @@ Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxS
  [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -69,7 +63,6 @@ Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxS
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -80,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update property mailboxSettings value.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -686,7 +689,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTOMATICREPLIESSETTING `<IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
+AUTOMATICREPLIESSETTING <IMicrosoftGraphAutomaticRepliesSetting>: automaticRepliesSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExternalAudience <String>]: externalAudienceScope
   [ExternalReplyMessage <String>]: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
@@ -699,7 +702,7 @@ See below for more possible values.
   [ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [Status <String>]: automaticRepliesStatus
 
-BODYPARAMETER `<IMicrosoftGraphMailboxSettings>`: mailboxSettings
+BODYPARAMETER <IMicrosoftGraphMailboxSettings>: mailboxSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ArchiveFolder <String>]: Folder ID of an archive folder for the user.
   [AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]: automaticRepliesSetting
@@ -735,7 +738,7 @@ The language component follows 2-letter codes as defined in ISO 639-1, and the c
       [Name <String>]: The name of a time zone.
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -751,6 +754,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -773,6 +777,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
   [PrivilegedAccessGroupAssignmentScheduleId <String>]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   [PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
@@ -805,14 +810,14 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-LANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+LANGUAGE <IMicrosoftGraphLocaleInfo>: localeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: A name representing the user's locale in natural language, for example, 'English (United States)'.
   [Locale <String>]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
+WORKINGHOURS <IMicrosoftGraphWorkingHours>: workingHours
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DaysOfWeek <String[]>]: The days of the week on which the user works.
   [EndTime <String>]: The time of the day that the user stops working.
@@ -825,27 +830,4 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 
 ## RELATED LINKS
 
-- [Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowcustomtaskextensioncreatedbymailboxsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowcustomtaskextensioncreatedbymailboxsetting)

@@ -1,46 +1,39 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementsubjectbyobjectid
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
+title: Get-MgEntitlementManagementSubjectByObjectId
 ---
 
-# Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
+# Get-MgEntitlementManagementSubjectByObjectId
 
 ## SYNOPSIS
 
-Remove a user or a group from the connected organization's internal sponsors.
-The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef?view=graph-powershell-beta)
+Get subjects from identityGovernance
 
 ## SYNTAX
 
-### Delete (Default)
+### Get (Default)
 
 ```
-Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
- -ConnectedOrganizationId <string> -DirectoryObjectId <string> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Get-MgEntitlementManagementSubjectByObjectId -ObjectId <string> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
-### DeleteViaIdentity
+### GetViaIdentity
 
 ```
-Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
- -InputObject <IIdentityGovernanceIdentity> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Get-MgEntitlementManagementSubjectByObjectId -InputObject <IIdentityGovernanceIdentity>
+ [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -50,29 +43,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove a user or a group from the connected organization's internal sponsors.
-The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
+Get subjects from identityGovernance
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Identity.Governance
+{{ Add code here }}
 
-Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -DirectoryObjectId $directoryObjectId
+### EXAMPLE 2
 
-```
-This example shows how to use the Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef Cmdlet.
-
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -97,62 +78,20 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Confirm
+### -ExpandProperty
 
-Prompts you for confirmation before running the cmdlet.
+Expand related entities
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- cf
+- Expand
 ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ConnectedOrganizationId
-
-The unique identifier of connectedOrganization
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -DirectoryObjectId
-
-The unique identifier of directoryObject
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -224,27 +163,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -256,7 +174,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -267,15 +185,37 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PassThru
+### -ObjectId
 
-Returns true when the command succeeds
+Alternate key of accessPackageSubject
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
+Type: System.String
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Property
+
+Select properties to be returned
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- Select
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -373,28 +313,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -WhatIf
-
-Runs the command in a mode that only reports what would happen without performing the actions.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- wi
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -414,7 +332,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
 
 {{ Fill in the Description }}
 
@@ -425,7 +343,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -441,6 +359,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -463,6 +382,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
   [PrivilegedAccessGroupAssignmentScheduleId <String>]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   [PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
@@ -498,27 +418,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/connectedorganization-delete-internalsponsors?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementsubjectbyobjectid)

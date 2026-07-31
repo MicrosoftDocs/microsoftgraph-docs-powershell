@@ -1,46 +1,38 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementsubjectbyobjectid
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef
+title: Remove-MgEntitlementManagementSubjectByObjectId
 ---
 
-# Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef
+# Remove-MgEntitlementManagementSubjectByObjectId
 
 ## SYNOPSIS
 
-Remove a user or a group from the connected organization's external sponsors.
-The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef?view=graph-powershell-beta)
+Delete navigation property subjects for identityGovernance
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef
- -ConnectedOrganizationId <string> -DirectoryObjectId <string> [-IfMatch <string>]
+Remove-MgEntitlementManagementSubjectByObjectId -ObjectId <string> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 
 ```
-Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef
- -InputObject <IIdentityGovernanceIdentity> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgEntitlementManagementSubjectByObjectId -InputObject <IIdentityGovernanceIdentity>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -50,29 +42,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove a user or a group from the connected organization's external sponsors.
-The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
+Delete navigation property subjects for identityGovernance
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Identity.Governance
+{{ Add code here }}
 
-Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -DirectoryObjectId $directoryObjectId
+### EXAMPLE 2
 
-```
-This example shows how to use the Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef Cmdlet.
-
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -111,48 +91,6 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ConnectedOrganizationId
-
-The unique identifier of connectedOrganization
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -DirectoryObjectId
-
-The unique identifier of directoryObject
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -260,6 +198,27 @@ ParameterSets:
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ObjectId
+
+Alternate key of accessPackageSubject
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -425,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -441,6 +400,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -463,6 +423,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
   [PrivilegedAccessGroupAssignmentScheduleId <String>]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   [PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
@@ -498,27 +459,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/connectedorganization-delete-externalsponsors?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementsubjectbyobjectid)
