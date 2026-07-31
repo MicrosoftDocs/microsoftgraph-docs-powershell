@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlace
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaPlace
 
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlace](/powershell/module/Microsoft.Graph.Calendar/New-MgPlace?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ New-MgBetaPlace [-ResponseHeadersVariable <string>] [-AdditionalProperties <hash
  [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -40,7 +37,7 @@ New-MgBetaPlace [-ResponseHeadersVariable <string>] [-AdditionalProperties <hash
 New-MgBetaPlace -BodyParameter <IMicrosoftGraphPlace> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -52,14 +49,6 @@ This cmdlet has the following aliases,
 
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Place.ReadWrite.All,  |
 
 ## EXAMPLES
 
@@ -662,7 +651,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -673,7 +662,7 @@ It's a free-format string value, for example, 'United States'.
   [Street <String>]: The street.
   [Type <String>]: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphPlace>`: place
+BODYPARAMETER <IMicrosoftGraphPlace>: place
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -754,7 +743,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Phone <String>]: The phone number of the place.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
@@ -766,27 +755,5 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 ## RELATED LINKS
 
-- [New-MgBetaPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace)
+- [](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-beta)
