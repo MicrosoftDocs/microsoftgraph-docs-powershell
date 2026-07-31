@@ -523,7 +523,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintservice)
+- [Update-MgPrintService](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintservice)
 
 
 
