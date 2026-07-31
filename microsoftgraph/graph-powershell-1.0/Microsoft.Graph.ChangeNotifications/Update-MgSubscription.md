@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ChangeNotifications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription
 Locale: en-US
 Module Name: Microsoft.Graph.ChangeNotifications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSubscription
 ---
@@ -19,9 +19,6 @@ Subscriptions expire after a length of time that varies by resource type.
 In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date.
 See subscription for maximum length of a subscription for each resource type.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Update-MgBetaSubscription?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -35,7 +32,7 @@ Update-MgSubscription -SubscriptionId <string> [-ResponseHeadersVariable <string
  [-NotificationQueryOptions <string>] [-NotificationUrl <string>] [-NotificationUrlAppId <string>]
  [-Resource <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -45,7 +42,6 @@ Update-MgSubscription -SubscriptionId <string> -BodyParameter <IMicrosoftGraphSu
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -60,7 +56,7 @@ Update-MgSubscription -InputObject <IChangeNotificationsIdentity>
  [-NotificationQueryOptions <string>] [-NotificationUrl <string>] [-NotificationUrlAppId <string>]
  [-Resource <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -70,7 +66,7 @@ Update-MgSubscription -InputObject <IChangeNotificationsIdentity>
  -BodyParameter <IMicrosoftGraphSubscription> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -87,9 +83,8 @@ In order to avoid missing change notifications, an app should renew its subscrip
 See subscription for maximum length of a subscription for each resource type.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.ChangeNotifications
 
@@ -98,10 +93,6 @@ $params = @{
 }
 
 Update-MgSubscription -SubscriptionId $subscriptionId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -915,7 +906,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSubscription>`: subscription
+BODYPARAMETER <IMicrosoftGraphSubscription>: subscription
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -981,33 +972,11 @@ Specifies the resource that is monitored for changes.
 Don't include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
+INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
   [SubscriptionId <String>]: The unique identifier of subscription
 
 
 ## RELATED LINKS
 
-- [Update-MgSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription)
+- [](https://learn.microsoft.com/graph/api/subscription-update?view=graph-rest-1.0)

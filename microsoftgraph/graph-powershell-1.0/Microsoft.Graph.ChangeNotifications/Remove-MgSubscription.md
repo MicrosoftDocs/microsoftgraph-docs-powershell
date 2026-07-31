@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ChangeNotifications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription
 Locale: en-US
 Module Name: Microsoft.Graph.ChangeNotifications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSubscription
 ---
@@ -16,9 +16,6 @@ title: Remove-MgSubscription
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Remove-MgBetaSubscription?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,7 +25,6 @@ Remove-MgSubscription -SubscriptionId <string> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,7 +34,6 @@ Remove-MgSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch <str
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,17 +47,12 @@ Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.ChangeNotifications
 
 Remove-MgSubscription -SubscriptionId $subscriptionId
-
-```
-This example shows how to use the Remove-MgSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -394,33 +384,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
+INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
   [SubscriptionId <String>]: The unique identifier of subscription
 
 
 ## RELATED LINKS
 
-- [Remove-MgSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription)
+- [](https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-1.0)
