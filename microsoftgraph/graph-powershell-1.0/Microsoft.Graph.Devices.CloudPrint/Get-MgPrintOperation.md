@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPrintOperation
 ---
@@ -14,9 +14,6 @@ title: Get-MgPrintOperation
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a printOperation object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgPrintOperation [-ExpandProperty <string[]>] [-Property <string[]>] [-Filte
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +34,7 @@ Get-MgPrintOperation [-ExpandProperty <string[]>] [-Property <string[]>] [-Filte
 Get-MgPrintOperation -PrintOperationId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +43,7 @@ Get-MgPrintOperation -PrintOperationId <string> [-ExpandProperty <string[]>] [-P
 Get-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -58,26 +55,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a printOperation object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintOperation -PrintOperationId $printOperationId
-
-```
-This example shows how to use the Get-MgPrintOperation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -539,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -557,27 +541,5 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgPrintOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintoperation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printoperation-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintoperation)
+- [](https://learn.microsoft.com/graph/api/printoperation-get?view=graph-rest-1.0)

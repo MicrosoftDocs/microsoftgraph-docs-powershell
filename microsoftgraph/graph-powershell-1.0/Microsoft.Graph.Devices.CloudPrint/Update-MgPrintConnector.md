@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPrintConnector
 ---
@@ -14,9 +14,6 @@ title: Update-MgPrintConnector
 ## SYNOPSIS
 
 Update the properties of a printConnector object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Update-MgPrintConnector -PrintConnectorId <string> [-ResponseHeadersVariable <st
  [-OperatingSystem <string>] [-RegisteredDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -39,7 +35,6 @@ Update-MgPrintConnector -PrintConnectorId <string> -BodyParameter <IMicrosoftGra
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,7 +47,6 @@ Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
  [-RegisteredDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +56,7 @@ Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IMicrosoftGraphPrintConnector> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -73,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of a printConnector object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -624,7 +628,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
+BODYPARAMETER <IMicrosoftGraphPrintConnector>: printConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -657,7 +661,7 @@ The elements should be in hierarchical order.
   [OperatingSystem <String>]: The connector machine's operating system version.
   [RegisteredDateTime <DateTime?>]: The DateTimeOffset when the connector was registered.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -672,7 +676,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   [PrinterShareId <String>]: The unique identifier of printerShare
   [UserId <String>]: The unique identifier of user
 
-LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
+LOCATION <IMicrosoftGraphPrinterLocation>: printerLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AltitudeInMeters <Int32?>]: The altitude, in meters, that the printer is located at.
   [Building <String>]: The building that the printer is located in.
@@ -699,28 +703,5 @@ The elements should be in hierarchical order.
 
 ## RELATED LINKS
 
-- [Update-MgPrintConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector)
+- [](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0)

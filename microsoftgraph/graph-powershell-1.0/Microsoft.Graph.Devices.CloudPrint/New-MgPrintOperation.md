@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPrintOperation
 ---
@@ -15,9 +15,6 @@ title: New-MgPrintOperation
 
 Create new navigation property to operations for print
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintOperation?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,7 +24,7 @@ New-MgPrintOperation [-ResponseHeadersVariable <string>] [-AdditionalProperties 
  [-CreatedDateTime <datetime>] [-Id <string>] [-Status <IMicrosoftGraphPrintOperationStatus>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -37,7 +34,6 @@ New-MgPrintOperation -BodyParameter <IMicrosoftGraphPrintOperation>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to operations for print
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -403,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintOperation>`: printOperation
+BODYPARAMETER <IMicrosoftGraphPrintOperation>: printOperation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -415,7 +421,7 @@ Read-only.
 Read-only.
     [State <String>]: printOperationProcessingState
 
-STATUS `<IMicrosoftGraphPrintOperationStatus>`: printOperationStatus
+STATUS <IMicrosoftGraphPrintOperationStatus>: printOperationStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: A human-readable description of the printOperation's current processing state.
 Read-only.
@@ -424,27 +430,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgPrintOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintoperation)

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CloudPrint
-Module Guid: 47a5860b-c421-44a4-9cac-c053d52bafeb
+Module Guid: 9c52145d-7390-475f-9a24-cc6d2a705480
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -286,23 +286,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgPrintTaskDefinition](Update-MgPrintTaskDefinition.md)
 
 ### [Update-MgPrintTaskDefinitionTask](Update-MgPrintTaskDefinitionTask.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
