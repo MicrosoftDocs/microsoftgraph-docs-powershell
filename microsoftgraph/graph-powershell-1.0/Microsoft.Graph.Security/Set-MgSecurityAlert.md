@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgSecurityAlert
 ---
@@ -15,9 +15,6 @@ title: Set-MgSecurityAlert
 
 Create a comment for an existing alert based on the specified alert id property.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Set-MgBetaSecurityAlert?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -27,7 +24,6 @@ Set-MgSecurityAlert -AlertId <string> -BodyParameter <IMicrosoftGraphSecurityAle
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -38,7 +34,6 @@ Set-MgSecurityAlert -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,18 +45,9 @@ This cmdlet has the following aliases,
 
 Create a comment for an existing alert based on the specified alert id property.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityAlert.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityAlert.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -71,10 +57,6 @@ $params = @{
 }
 
 Set-MgSecurityAlert -AlertId $alertId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgSecurityAlert Cmdlet.
-
 
 ## PARAMETERS
 
@@ -386,7 +368,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlertComment
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
 
 {{ Fill in the Description }}
 
@@ -395,10 +377,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 {{ Fill in the Description }}
 
 ### System.Collections.IDictionary
-
-{{ Fill in the Description }}
-
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
 
 {{ Fill in the Description }}
 
@@ -420,7 +398,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityAlertComment[]>: Array of microsoft.graph.
   [CreatedByDisplayName <String>]: The person or app name that submitted the comment.
   [CreatedDateTime <DateTime?>]: The time when the comment was submitted.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -496,27 +474,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert)
+- [](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-1.0)

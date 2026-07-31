@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityIncident
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityIncident
 ## SYNOPSIS
 
 Create new navigation property to incidents for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,7 +30,6 @@ New-MgSecurityIncident [-ResponseHeadersVariable <string>] [-AdditionalPropertie
  [-SystemTags <string[]>] [-TenantId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -43,7 +39,6 @@ New-MgSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to incidents for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -804,9 +809,12 @@ Read-only.
   [AlertPolicyId <String>]: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
   [AlertWebUrl <String>]: URL for the Microsoft 365 Defender portal alert page.
   [AssignedTo <String>]: Owner of the alert, or null if no owner is assigned.
-  [Categories <String[]>]: 
+  [Categories <String[]>]: The attack kill-chain categories that the alert belongs to.
+Aligned with the MITRE ATT&CK framework.
   [Category <String>]: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
+This property is in the process of being deprecated.
+Use the categories property instead.
   [Classification <String>]: alertClassification
   [Comments <IMicrosoftGraphSecurityAlertComment[]>]: Array of comments created by the Security Operations (SecOps) team during the alert management process.
     [Comment <String>]: The comment text.
@@ -849,7 +857,7 @@ Values are free-form.
   [ThreatFamilyName <String>]: Threat family associated with this alert.
   [Title <String>]: Brief identifying string value describing the alert.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
+BODYPARAMETER <IMicrosoftGraphSecurityIncident>: incident
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -863,9 +871,12 @@ Read-only.
     [AlertPolicyId <String>]: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
     [AlertWebUrl <String>]: URL for the Microsoft 365 Defender portal alert page.
     [AssignedTo <String>]: Owner of the alert, or null if no owner is assigned.
-    [Categories <String[]>]: 
+    [Categories <String[]>]: The attack kill-chain categories that the alert belongs to.
+Aligned with the MITRE ATT&CK framework.
     [Category <String>]: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
+This property is in the process of being deprecated.
+Use the categories property instead.
     [Classification <String>]: alertClassification
     [Comments <IMicrosoftGraphSecurityAlertComment[]>]: Array of comments created by the Security Operations (SecOps) team during the alert management process.
       [Comment <String>]: The comment text.
@@ -941,27 +952,4 @@ COMMENTS <IMicrosoftGraphSecurityAlertComment[]>: Array of comments created by t
 
 ## RELATED LINKS
 
-- [New-MgSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident)

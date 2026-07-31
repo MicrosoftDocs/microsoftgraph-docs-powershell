@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgcomputesecuritydatasecurityandgovernancesensitivitylabelinheritance
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelInherita
 
 Calculate the sensitivity label that should be inherited by an output artifact, given a set of sensitivity labels from input or referenced artifacts.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Compute (Default)
@@ -27,7 +24,7 @@ Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance
  -ContentFormats <string[]> -LabelIds <string[]> -Locale <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### ComputeViaIdentity
@@ -37,7 +34,7 @@ Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance
  -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,13 +46,15 @@ This cmdlet has the following aliases,
 
 Calculate the sensitivity label that should be inherited by an output artifact, given a set of sensitivity labels from input or referenced artifacts.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -343,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -419,28 +418,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgcomputesecuritydatasecurityandgovernancesensitivitylabelinheritance)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgcomputesecuritydatasecurityandgovernancesensitivitylabelinheritance)
+- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-1.0)
