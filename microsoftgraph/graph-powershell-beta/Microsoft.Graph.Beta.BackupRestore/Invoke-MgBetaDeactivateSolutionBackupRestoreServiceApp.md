@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetadeactivatesolutionbackuprestoreserviceapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp
 
 Deactivate a serviceApp.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDeactivateSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.BackupRestore/Invoke-MgDeactivateSolutionBackupRestoreServiceApp?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Deactivate (Default)
@@ -27,7 +24,6 @@ Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp -ServiceAppId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeactivateViaIdentity
@@ -37,7 +33,6 @@ Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp -InputObject <IBackupRest
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Deactivate a serviceApp.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -337,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -384,28 +389,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetadeactivatesolutionbackuprestoreserviceapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceapp-deactivate?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetadeactivatesolutionbackuprestoreserviceapp)
+- [](https://learn.microsoft.com/graph/api/serviceapp-deactivate?view=graph-rest-beta)
