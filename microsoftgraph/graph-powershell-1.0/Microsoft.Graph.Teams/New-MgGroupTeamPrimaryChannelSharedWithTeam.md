@@ -11207,7 +11207,7 @@ This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelsharedwithteam)
+- [New-MgGroupTeamPrimaryChannelSharedWithTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelsharedwithteam)
 
 
 

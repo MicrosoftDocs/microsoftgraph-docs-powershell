@@ -426,8 +426,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mguserchatmigration)
-- [](https://learn.microsoft.com/graph/api/chat-completemigration?view=graph-rest-1.0)
+- [Complete-MgUserChatMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mguserchatmigration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-completemigration?view=graph-rest-1.0)
 
 
 
