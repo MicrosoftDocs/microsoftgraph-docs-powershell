@@ -15,9 +15,6 @@ title: Remove-MgGroupCalendarPermanent
 
 Invoke action permanentDelete
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupCalendarPermanent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarPermanent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action permanentDelete
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -356,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -379,27 +386,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgGroupCalendarPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermanent)

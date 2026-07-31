@@ -15,9 +15,6 @@ title: Remove-MgUserCalendarGroup
 
 Delete navigation property calendarGroups for users
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarGroup?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -47,27 +44,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property calendarGroups for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadWrite,  |
-| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
-| Application | Calendars.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Calendar
 
 # A UPN can also be used as -UserId.
 Remove-MgUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId
-```
-This example shows how to use the Remove-MgUserCalendarGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -420,7 +404,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -443,26 +427,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgUserCalendarGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup)

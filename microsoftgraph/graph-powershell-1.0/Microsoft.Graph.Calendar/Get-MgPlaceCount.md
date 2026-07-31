@@ -15,9 +15,6 @@ title: Get-MgPlaceCount
 
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlaceCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -274,27 +281,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgPlaceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplacecount)

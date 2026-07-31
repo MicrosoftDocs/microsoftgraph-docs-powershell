@@ -15,9 +15,6 @@ title: Invoke-MgDismissUserEventReminder
 
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaDismissUserEventReminder?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Dismiss (Default)
@@ -47,27 +44,14 @@ This cmdlet has the following aliases,
 
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadWrite,  |
-| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
-| Application | Calendars.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Calendar
 
 # A UPN can also be used as -UserId.
 Invoke-MgDismissUserEventReminder -UserId $userId -EventId $eventId
-
-```
-This example shows how to use the Invoke-MgDismissUserEventReminder Cmdlet.
-
 
 ## PARAMETERS
 
@@ -399,7 +383,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -422,27 +406,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgDismissUserEventReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdismissusereventreminder)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdismissusereventreminder)
+- [](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0)

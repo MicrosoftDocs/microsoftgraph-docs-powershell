@@ -17,9 +17,6 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarView](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarView?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -43,6 +40,16 @@ This cmdlet has the following aliases,
 The calendar view for the calendar.
 Navigation property.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -519,27 +526,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgGroupCalendarView](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarview)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarview)
