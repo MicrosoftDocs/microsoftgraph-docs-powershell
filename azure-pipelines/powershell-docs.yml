@@ -47,7 +47,7 @@ extends:
     customBuildTags:
     - ES365AIMigrationTooling
     stages:
-    - template: azure-pipelines/common-templates/module-stages.yml@self
+    - template: common-templates/module-stages.yml@self
       parameters:
         GraphProfileFilter: "v1.0"
         ProfileLabel: "v1"
@@ -99,7 +99,7 @@ extends:
           - Users.Actions
           - Users.Functions
           - WindowsUpdates
-    - template: azure-pipelines/common-templates/module-stages.yml@self
+    - template: common-templates/module-stages.yml@self
       parameters:
         GraphProfileFilter: "beta"
         ProfileLabel: "beta"
