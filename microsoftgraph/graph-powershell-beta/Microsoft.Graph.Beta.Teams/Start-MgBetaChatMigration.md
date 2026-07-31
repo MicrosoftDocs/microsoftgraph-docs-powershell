@@ -79,18 +79,28 @@ Imported content is always limited by the createdDateTime of the target thread.
 An optional createdDateTime property in the payload allows you to update this value, but with strict rules: This API supportes the following channel types.
 
 ## EXAMPLES
+### Example 1: Start the migration in a chat
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Start-MgBetaChatMigration -ChatId $chatId
+
+```
+This example will start the migration in a chat
+
+### Example 2: Start the migration when a chat is already in migration mode
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Start-MgBetaChatMigration -ChatId $chatId
 
-### EXAMPLE 2
+```
+This example will start the migration when a chat is already in migration mode
 
-Import-Module Microsoft.Graph.Beta.Teams
-
-Start-MgBetaChatMigration -ChatId $chatId
 
 ## PARAMETERS
 

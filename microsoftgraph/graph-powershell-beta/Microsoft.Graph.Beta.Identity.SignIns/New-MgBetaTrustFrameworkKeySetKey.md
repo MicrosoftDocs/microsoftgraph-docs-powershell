@@ -77,8 +77,9 @@ The caller doesn't have to provide a secret.
 | Application | TrustFrameworkKeySet.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 New-MgBetaTrustFrameworkKeySetKey -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTrustFrameworkKeySetKey Cmdlet.
+
 
 ## PARAMETERS
 

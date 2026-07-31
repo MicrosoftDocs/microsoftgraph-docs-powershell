@@ -67,12 +67,17 @@ Read the properties and relationships of an ediscoveryFile object.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
-Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -Top 5
+Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -Top 5 
+
+```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile Cmdlet.
+
 
 ## PARAMETERS
 

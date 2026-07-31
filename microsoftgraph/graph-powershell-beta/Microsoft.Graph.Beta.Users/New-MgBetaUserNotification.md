@@ -77,16 +77,6 @@ Create new navigation property to notifications for users
 | Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp,  |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -755,6 +745,7 @@ By default, all push endpoint types (Windows, iOS, Android and WebPush) are enab
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausernotification)
+
 
 
 
