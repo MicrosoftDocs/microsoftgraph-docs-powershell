@@ -500,14 +500,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphEnrollmentConfigurationAssignment>: Enrollment Configuration Assignment
+BODYPARAMETER `<IMicrosoftGraphEnrollmentConfigurationAssignment>`: Enrollment Configuration Assignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [DeviceEnrollmentConfigurationId <String>]: The unique identifier of deviceEnrollmentConfiguration
   [EnrollmentConfigurationAssignmentId <String>]: The unique identifier of enrollmentConfigurationAssignment
   [ImportedWindowsAutopilotDeviceIdentityId <String>]: The unique identifier of importedWindowsAutopilotDeviceIdentity
@@ -517,3 +517,25 @@ INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfigurationassignment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
