@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Close-MgBetaComplianceEdiscoveryCase
 ---
@@ -25,7 +25,6 @@ Close-MgBetaComplianceEdiscoveryCase -CaseId <string> [-ResponseHeadersVariable 
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CloseViaIdentity
@@ -35,7 +34,6 @@ Close-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,26 +46,13 @@ This cmdlet has the following aliases,
 Close an eDiscovery case.
 For details, see Close a case.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
 Close-MgBetaComplianceEdiscoveryCase -CaseId $caseId
-
-```
-This example shows how to use the Close-MgBetaComplianceEdiscoveryCase Cmdlet.
-
 
 ## PARAMETERS
 
@@ -378,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -401,27 +386,5 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Close-MgBetaComplianceEdiscoveryCase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-case-close?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase)
+- [](https://learn.microsoft.com/graph/api/ediscovery-case-close?view=graph-rest-beta)
