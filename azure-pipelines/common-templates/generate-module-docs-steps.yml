@@ -1,0 +1,219 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License.
+#
+# Reusable steps that generate and post-process documentation for a SINGLE module in a SINGLE
+# SDK profile, then open a dedicated pull request for it. Designed to run inside an isolated
+# per-module stage so an import/assembly conflict for one module can never affect another.
+#
+# Failure containment: the generate step runs with continueOnError, and every step after it is
+# gated on the ModuleGenerated variable (set only when generation actually succeeds). If the
+# module fails to import, nothing is deleted, no PR is opened, and the stage is marked
+# partially-succeeded WITHOUT failing the overall pipeline or any other module's stage.
+
+parameters:
+  - name: Module
+    type: string
+  - name: GraphProfileFilter
+    type: string
+  - name: BranchPrefix
+    type: string
+    default: WeeklyDocs
+  - name: BaseBranch
+    type: string
+    default: main
+
+steps:
+  - template: ../update-template.yml
+    parameters:
+      InstallProfile: ${{ parameters.GraphProfileFilter }}
+      Module: ${{ parameters.Module }}
+
+  - task: PowerShell@2
+    name: ComputeBranch
+    displayName: 'Compute branch name'
+    inputs:
+      targetType: 'inline'
+      pwsh: true
+      script: |
+        git submodule update --init --recursive
+        $branch = "{0}-{1}-{2}_{3}" -f "${{ parameters.BranchPrefix }}", "${{ parameters.GraphProfileFilter }}", "${{ parameters.Module }}", (Get-Date -Format yyyyMMddHHmm)
+        Write-Host "Compute branch: $branch"
+        Write-Host "##vso[task.setvariable variable=ModuleBranch;isOutput=true]$branch"
+
+  - task: Bash@3
+    displayName: 'Create module refresh branch'
+    inputs:
+      targetType: inline
+      script: |
+        git status
+        git branch $(ComputeBranch.ModuleBranch)
+        git checkout $(ComputeBranch.ModuleBranch)
+        git status
+
+  - task: PowerShell@2
+    displayName: 'Create missing external docs folder'
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/CreateExternalDocsFolder.ps1
+
+  - task: PowerShell@2
+    name: GenerateDocs
+    displayName: 'Generate markdown (${{ parameters.Module }} / ${{ parameters.GraphProfileFilter }})'
+    continueOnError: true
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/GenerateMarkDown.ps1
+      arguments: -GraphProfileFilter "${{ parameters.GraphProfileFilter }}" -ModuleFilter "${{ parameters.Module }}"
+
+  - task: PowerShell@2
+    displayName: 'Escape disallowed html tags'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    continueOnError: true
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/EscapeDisallowedHtmlTags.ps1
+      arguments: -GraphProfileFilter "${{ parameters.GraphProfileFilter }}" -ModuleFilter "${{ parameters.Module }}"
+
+  - task: PowerShell@2
+    displayName: 'Update metadata header'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    continueOnError: true
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/MsSubserviceUpdate.ps1
+      arguments: -GraphProfileFilter "${{ parameters.GraphProfileFilter }}" -ModuleFilter "${{ parameters.Module }}"
+
+  - task: PowerShell@2
+    displayName: 'Generate permissions table'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    continueOnError: true
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/GeneratePermissionsTable.ps1
+      arguments: -GraphProfileFilter "${{ parameters.GraphProfileFilter }}" -ModuleFilter "${{ parameters.Module }}"
+
+  - task: PowerShell@2
+    displayName: 'Update Links'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    continueOnError: true
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/UpdateLinks.ps1
+      arguments: -GraphProfileFilter "${{ parameters.GraphProfileFilter }}" -ModuleFilter "${{ parameters.Module }}"
+
+  - task: PowerShell@2
+    displayName: 'Repair Examples and Descriptions and Title'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    continueOnError: true
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/RepairExamplesDescriptionsAndTitle.ps1
+      arguments: -GraphProfileFilter "${{ parameters.GraphProfileFilter }}" -ModuleFilter "${{ parameters.Module }}"
+
+  - task: PowerShell@2
+    displayName: 'Remove boiler plate code'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    continueOnError: true
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/RemoveBoilerPlateCode.ps1
+      arguments: -GraphProfileFilter "${{ parameters.GraphProfileFilter }}" -ModuleFilter "${{ parameters.Module }}"
+
+  - task: PowerShell@2
+    displayName: 'Remove invalid fullstops'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    continueOnError: true
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/RemoveInvalidFullStops.ps1
+      arguments: -GraphProfileFilter "${{ parameters.GraphProfileFilter }}" -ModuleFilter "${{ parameters.Module }}"
+
+  - task: PowerShell@2
+    displayName: 'Generate missing docs for aliased cmdlets'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    continueOnError: true
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/GenerateAliasedDocs.ps1
+      arguments: -GraphProfileFilter "${{ parameters.GraphProfileFilter }}" -ModuleFilter "${{ parameters.Module }}"
+
+  - task: PowerShell@2
+    displayName: 'Correct related links section'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    continueOnError: true
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/CorrectRelatedLinks-AllFiles.ps1
+      arguments: -GraphProfileFilter "${{ parameters.GraphProfileFilter }}" -ModuleFilter "${{ parameters.Module }}"
+
+  - task: AzureKeyVault@2
+    displayName: "Azure Key Vault: Get GitHub App secrets"
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    inputs:
+      azureSubscription: "Federated AKV Managed Identity Connection"
+      KeyVaultName: akv-prod-eastus
+      SecretsFilter: "microsoft-graph-devx-bot-appid,microsoft-graph-devx-bot-privatekey"
+
+  - task: PowerShell@2
+    displayName: 'Push ${{ parameters.Module }} (${{ parameters.GraphProfileFilter }}) branch'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    continueOnError: true
+    env:
+      GhAppId: $(microsoft-graph-devx-bot-appid)
+      GhAppKey: $(microsoft-graph-devx-bot-privatekey)
+    inputs:
+      targetType: inline
+      pwsh: true
+      script: |
+        git config --global user.email "GraphTooling@service.microsoft.com"
+        git config --global user.name "Microsoft Graph DevX Tooling"
+        git config --system core.longpaths true
+        # The microsoft-graph-devx-bot GitHub App must have contents:write on this repo.
+        $token = & "$(Build.SourcesDirectory)/scripts/Generate-Github-Token.ps1" -AppClientId $env:GhAppId -AppPrivateKeyContents $env:GhAppKey -Repository "MicrosoftDocs/microsoftgraph-docs-powershell"
+        if ([string]::IsNullOrWhiteSpace($token)) { throw "Failed to generate GitHub App installation token." }
+        # Mask the token so it is never surfaced in pipeline logs.
+        Write-Host "##vso[task.setsecret]$token"
+        git status
+        git add .
+        $pending = git status --porcelain
+        if (-not [string]::IsNullOrWhiteSpace($pending)) {
+            git commit -m "Updating reference docs for ${{ parameters.Module }} (${{ parameters.GraphProfileFilter }})"
+        }
+        else {
+            $global:LASTEXITCODE = 0
+        }
+        git push --set-upstream "https://x-access-token:$token@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $(ComputeBranch.ModuleBranch)
+        git status
+
+  - task: PowerShell@2
+    displayName: 'Create PR for ${{ parameters.Module }} (${{ parameters.GraphProfileFilter }})'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    continueOnError: true
+    env:
+      GhAppId: $(microsoft-graph-devx-bot-appid)
+      GhAppKey: $(microsoft-graph-devx-bot-privatekey)
+    inputs:
+      targetType: inline
+      pwsh: true
+      script: |
+        $BaseBranchName = "${{ parameters.BaseBranch }}"
+        $Head = "MicrosoftDocs:$(ComputeBranch.ModuleBranch)"
+        $Title = "Weekly Docs Refresh: ${{ parameters.Module }} (${{ parameters.GraphProfileFilter }})"
+        $Body = "This pull request was automatically created by Azure Pipelines for the ``${{ parameters.Module }}`` module (``${{ parameters.GraphProfileFilter }}`` profile). **Important** Check for unexpected deletions or changes in this PR."
+        # The microsoft-graph-devx-bot GitHub App must have pull_requests:write on this repo.
+        $env:GITHUB_TOKEN = & "$(Build.SourcesDirectory)/scripts/Generate-Github-Token.ps1" -AppClientId $env:GhAppId -AppPrivateKeyContents $env:GhAppKey -Repository "MicrosoftDocs/microsoftgraph-docs-powershell"
+        if ([string]::IsNullOrWhiteSpace($env:GITHUB_TOKEN)) { throw "Failed to generate GitHub App installation token." }
+        # Mask the token so it is never surfaced in pipeline logs.
+        Write-Host "##vso[task.setsecret]$env:GITHUB_TOKEN"
+        gh pr create -t $Title -b $Body -B $BaseBranchName -H $Head

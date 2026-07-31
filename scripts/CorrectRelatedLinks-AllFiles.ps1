@@ -19,7 +19,11 @@ param(
     
     [Parameter(Mandatory = $false)]
     [ValidateSet("v1.0", "beta", "both")]
-    [string]$GraphProfile = "both"
+    [Alias("GraphProfileFilter")]
+    [string]$GraphProfile = "both",
+
+    [Parameter(Mandatory = $false)]
+    [string]$ModuleFilter = ""
 )
 
 function Get-GraphMapping {
@@ -215,6 +219,10 @@ if ($ModulesToGenerate.Count -eq 0) {
         Write-Error "Failed to parse module mapping file: $($_.Exception.Message)"
         exit 1
     }
+}
+
+if (-not [string]::IsNullOrWhiteSpace($ModuleFilter)) {
+    $ModulesToGenerate = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
 }
 
 # Main execution

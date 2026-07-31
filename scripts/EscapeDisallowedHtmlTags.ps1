@@ -2,7 +2,10 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc")
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
+    [ValidateSet("both", "v1.0", "beta")]
+    [string] $GraphProfileFilter = "both",
+    [string] $ModuleFilter = ""
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -20,13 +23,19 @@ function EscapeDisallowedHtmlTags {
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
+        if ($GraphProfileFilter -ne "both" -and $graphProfile -ne $GraphProfileFilter) { return }
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
     
     git config --global user.email "GraphTooling@service.microsoft.com"
     git config --global user.name "Microsoft Graph DevX Tooling"
     git add .
-    git commit -m "Escaped disallowed html tags" 	
+    $pending = git status --porcelain
+    if (-not [string]::IsNullOrWhiteSpace($pending)) {
+        git commit -m "Escaped disallowed html tags"
+    } else {
+        $global:LASTEXITCODE = 0
+    }
 }
 function Get-FilesByProfile {
     Param(
@@ -322,5 +331,8 @@ function CleanupFile {
 }
 
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
+if (-not [string]::IsNullOrWhiteSpace($ModuleFilter)) {
+    $ModulesToGenerate = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
+}
 EscapeDisallowedHtmlTags -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"

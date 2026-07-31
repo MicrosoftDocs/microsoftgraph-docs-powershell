@@ -1,3 +1,16 @@
+parameters:
+  # Which SDK profile to install for. "both" preserves the original full-run behaviour and
+  # installs the Microsoft.Graph and Microsoft.Graph.Beta meta modules.
+  - name: InstallProfile
+    type: string
+    default: both
+  # When set, only the single workload submodule for that module (plus Authentication) is
+  # installed instead of the whole SDK. This keeps each isolated per-module stage fast and
+  # guarantees only one workload module is ever present in the session.
+  - name: Module
+    type: string
+    default: ""
+
 steps:
 - task: PowerShell@2
   displayName: Install Required Modules
@@ -12,25 +25,44 @@ steps:
           if (-not (Get-PSRepository -Name PowerShell_V2_Build -ErrorAction SilentlyContinue)) {
               Register-PSRepository -Name PowerShell_V2_Build -SourceLocation $feedUrl -InstallationPolicy Trusted -Credential $cred
           }
-          try{
-              # Try to update the V1 module first.
-              Install-Module Microsoft.Graph.Beta -Repository PowerShell_V2_Build -Credential $cred -Scope AllUsers -AcceptLicense -SkipPublisherCheck -Force -AllowClobber
-          }catch{
-                # If the module is not installed, install it.
-                echo "Error when installing Beta"
-          }
-          try{
-              # Try to update the beta module first.
-              Install-Module Microsoft.Graph -Repository PowerShell_V2_Build -Credential $cred -Scope AllUsers -AcceptLicense -SkipPublisherCheck -Force -AllowClobber
-          }catch{
-                # If the module is not installed, install it.
-                echo "Error when installing V1"
-          }
-          $modules = Get-Module -Name Microsoft.Graph -ListAvailable
 
+          $installProfile = "${{ parameters.InstallProfile }}"
+          $module = "${{ parameters.Module }}"
+
+          # Build the list of modules to install.
+          $toInstall = @()
+          if ([string]::IsNullOrWhiteSpace($module)) {
+              # Full-run behaviour: install the meta module(s) for the requested profile(s).
+              if ($installProfile -ne 'v1.0') { $toInstall += 'Microsoft.Graph.Beta' }
+              if ($installProfile -ne 'beta') { $toInstall += 'Microsoft.Graph' }
+          }
+          else {
+              # Isolated per-module run: install only Authentication + the single workload
+              # submodule for the target profile.
+              $toInstall += 'Microsoft.Graph.Authentication'
+              if ($installProfile -eq 'beta') {
+                  $toInstall += "Microsoft.Graph.Beta.$module"
+              }
+              else {
+                  $toInstall += "Microsoft.Graph.$module"
+              }
+          }
+
+          foreach ($m in $toInstall) {
+              try {
+                  Install-Module $m -Repository PowerShell_V2_Build -Credential $cred -Scope AllUsers -AcceptLicense -SkipPublisherCheck -Force -AllowClobber
+              }
+              catch {
+                  # Do not fail the install step; a missing/failed module surfaces later as a
+                  # fail-safe (no deletion, no PR) in the isolated generation stage.
+                  Write-Host "##vso[task.logissue type=warning]Failed to install $m : $($_.Exception.Message)"
+              }
+          }
+
+          $modules = Get-Module -Name Microsoft.Graph* -ListAvailable
           foreach($r in $modules)
           {
-            echo $r.Version
+            echo "$($r.Name) $($r.Version)"
           }
   env:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)

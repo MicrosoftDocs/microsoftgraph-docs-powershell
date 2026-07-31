@@ -4,7 +4,10 @@ Param(
     $ModulesToGenerate = @(),
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
-    [string] $CommandMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json")
+    [string] $CommandMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json"),
+    [ValidateSet("both", "v1.0", "beta")]
+    [string] $GraphProfileFilter = "both",
+    [string] $ModuleFilter = ""
 )
 
 function Start-Copy {
@@ -22,6 +25,8 @@ function Start-Copy {
                 $ModulePrefix = "Microsoft.Graph.Beta"
                 $ModuleName = $ModuleName.Replace("Beta.", "")
             }
+            if ($GraphProfileFilter -ne "both" -and $GraphProfile -ne $GraphProfileFilter) { return }
+            if (-not [string]::IsNullOrWhiteSpace($ModuleFilter) -and $ModuleName -ne $ModuleFilter) { return }
             $DocPath = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples" "$Command.md"
             try {
                 
@@ -38,7 +43,12 @@ function Start-Copy {
         git config --global user.email "GraphTooling@service.microsoft.com"
         git config --global user.name "Microsoft Graph DevX Tooling"
         git add .
-        git commit -m "Repaired examples and descriptions" 
+        $pending = git status --porcelain
+        if (-not [string]::IsNullOrWhiteSpace($pending)) {
+            git commit -m "Repaired examples and descriptions"
+        } else {
+            $global:LASTEXITCODE = 0
+        }
 
     }
     
