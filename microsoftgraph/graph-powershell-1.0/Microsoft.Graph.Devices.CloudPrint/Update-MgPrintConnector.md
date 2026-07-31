@@ -628,7 +628,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphPrintConnector>: printConnector
+BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -661,7 +661,7 @@ The elements should be in hierarchical order.
   [OperatingSystem <String>]: The connector machine's operating system version.
   [RegisteredDateTime <DateTime?>]: The DateTimeOffset when the connector was registered.
 
-INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -676,7 +676,7 @@ INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [PrinterShareId <String>]: The unique identifier of printerShare
   [UserId <String>]: The unique identifier of user
 
-LOCATION <IMicrosoftGraphPrinterLocation>: printerLocation
+LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AltitudeInMeters <Int32?>]: The altitude, in meters, that the printer is located at.
   [Building <String>]: The building that the printer is located in.
@@ -705,3 +705,25 @@ The elements should be in hierarchical order.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector)
 - [](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
