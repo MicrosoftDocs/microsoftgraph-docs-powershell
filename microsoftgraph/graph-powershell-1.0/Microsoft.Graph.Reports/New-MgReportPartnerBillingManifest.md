@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingmanifest
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgReportPartnerBillingManifest
 ---
@@ -14,9 +14,6 @@ title: New-MgReportPartnerBillingManifest
 ## SYNOPSIS
 
 Create new navigation property to manifests for reports
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportPartnerBillingManifest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ New-MgReportPartnerBillingManifest [-ResponseHeadersVariable <string>]
  [-PartnerTenantId <string>] [-RootDirectory <string>] [-SasToken <string>]
  [-SchemaVersion <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -40,7 +37,6 @@ New-MgReportPartnerBillingManifest -BodyParameter <IMicrosoftGraphPartnersBillin
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to manifests for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -586,7 +592,7 @@ BLOBS <IMicrosoftGraphPartnersBillingBlob[]>: A collection of blob objects that 
   [PartitionValue <String>]: The partition that contains the file.
 A large partition is split into multiple files, each with the same partitionValue.
 
-BODYPARAMETER `<IMicrosoftGraphPartnersBillingManifest>`: manifest
+BODYPARAMETER <IMicrosoftGraphPartnersBillingManifest>: manifest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -615,27 +621,4 @@ By default, the data in the file is partitioned by the number of line items.
 
 ## RELATED LINKS
 
-- [New-MgReportPartnerBillingManifest](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingmanifest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingmanifest)
