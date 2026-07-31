@@ -212,5 +212,9 @@ Write-Host -ForegroundColor Green "-------------finished checking out to today's
 if (-not [string]::IsNullOrWhiteSpace($ModuleFilter)) {
     $ModulesToGenerate = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
 }
+if ($ModulesToGenerate.Count -eq 0) {
+    Write-Host "No post-processing target for module '$ModuleFilter' (e.g. Authentication); skipping."
+    return
+}
 Start-Update -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"

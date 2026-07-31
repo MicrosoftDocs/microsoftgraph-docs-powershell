@@ -100,6 +100,10 @@ if ($ModulesToGenerate.Count -eq 0) {
 if (-not [string]::IsNullOrWhiteSpace($ModuleFilter)) {
     $ModulesToGenerate = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
 }
+if ($ModulesToGenerate.Count -eq 0) {
+    Write-Host "No post-processing target for module '$ModuleFilter' (e.g. Authentication); skipping."
+    return
+}
 Remove-InvalidFullStops -ModulesToGenerate $ModulesToGenerate
 
 

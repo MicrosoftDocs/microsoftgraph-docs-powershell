@@ -224,6 +224,10 @@ if ($ModulesToGenerate.Count -eq 0) {
 if (-not [string]::IsNullOrWhiteSpace($ModuleFilter)) {
     $ModulesToGenerate = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
 }
+if ($ModulesToGenerate.Count -eq 0) {
+    Write-Host "No post-processing target for module '$ModuleFilter' (e.g. Authentication); skipping."
+    return
+}
 
 # Main execution
 Write-Host "=== Related Links Correction Script ===" -ForegroundColor Blue
