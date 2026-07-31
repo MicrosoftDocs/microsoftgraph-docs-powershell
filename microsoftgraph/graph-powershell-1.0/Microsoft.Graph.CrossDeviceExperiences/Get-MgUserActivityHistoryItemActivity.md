@@ -388,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
+INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   [ActivityHistoryItemId <String>]: The unique identifier of activityHistoryItem
   [UserActivityId <String>]: The unique identifier of userActivity
   [UserId <String>]: The unique identifier of user
@@ -397,3 +397,25 @@ INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitemactivity)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
