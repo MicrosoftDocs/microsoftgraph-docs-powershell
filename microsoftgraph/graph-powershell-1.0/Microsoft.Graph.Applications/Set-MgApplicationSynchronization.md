@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronization
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgApplicationSynchronization
 ---
@@ -14,9 +14,6 @@ title: Set-MgApplicationSynchronization
 ## SYNOPSIS
 
 Update the navigation property synchronization in applications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Set-MgApplicationSynchronization -ApplicationId <string> [-ResponseHeadersVariab
  [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set
@@ -39,7 +35,7 @@ Set-MgApplicationSynchronization -ApplicationId <string>
  -BodyParameter <IMicrosoftGraphSynchronization> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### SetViaIdentityExpanded
@@ -52,7 +48,6 @@ Set-MgApplicationSynchronization -InputObject <IApplicationsIdentity>
  [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -62,7 +57,7 @@ Set-MgApplicationSynchronization -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphSynchronization> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -73,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property synchronization in applications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -546,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSynchronization>`: synchronization
+BODYPARAMETER <IMicrosoftGraphSynchronization>: synchronization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -793,7 +798,7 @@ Unless mentioned explicitly, metadata values should not be changed.
       [Value <String>]: Value of the metadata property.
     [Schema <IMicrosoftGraphSynchronizationSchema>]: synchronizationSchema
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -1204,27 +1209,4 @@ Must match one of the directory definitions in synchronizationSchema.
 
 ## RELATED LINKS
 
-- [Set-MgApplicationSynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronization)

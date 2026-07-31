@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationtemplateschema
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationSynchronizationTemplateSchema
 ---
@@ -15,9 +15,6 @@ title: Get-MgApplicationSynchronizationTemplateSchema
 
 Default synchronization schema for the jobs based on this template.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -27,7 +24,7 @@ Get-MgApplicationSynchronizationTemplateSchema -ApplicationId <string>
  -SynchronizationTemplateId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -37,7 +34,7 @@ Get-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIdenti
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,13 +46,15 @@ This cmdlet has the following aliases,
 
 Default synchronization schema for the jobs based on this template.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.Read.All, Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All, Synchronization.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -367,7 +366,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -397,27 +396,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgApplicationSynchronizationTemplateSchema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationtemplateschema)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationtemplateschema)

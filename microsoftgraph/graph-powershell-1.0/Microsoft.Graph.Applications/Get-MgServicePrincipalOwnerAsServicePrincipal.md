@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerasserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalOwnerAsServicePrincipal
 ---
@@ -14,9 +14,6 @@ title: Get-MgServicePrincipalOwnerAsServicePrincipal
 ## SYNOPSIS
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnerAsServicePrincipal?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ Get-MgServicePrincipalOwnerAsServicePrincipal -ServicePrincipalId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -39,7 +36,7 @@ Get-MgServicePrincipalOwnerAsServicePrincipal -DirectoryObjectId <string>
  -ServicePrincipalId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -49,7 +46,7 @@ Get-MgServicePrincipalOwnerAsServicePrincipal -InputObject <IApplicationsIdentit
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ConsistencyLevel <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -60,6 +57,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -570,7 +577,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -600,27 +607,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgServicePrincipalOwnerAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerasserviceprincipal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerasserviceprincipal)

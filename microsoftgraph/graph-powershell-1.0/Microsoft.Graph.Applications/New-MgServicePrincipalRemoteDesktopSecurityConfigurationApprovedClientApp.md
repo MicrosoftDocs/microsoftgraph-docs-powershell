@@ -1,44 +1,63 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationTokenLifetimePolicyByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgApplicationTokenLifetimePolicyByRef
+title: New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
 
-# Remove-MgApplicationTokenLifetimePolicyByRef
+# New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 
 ## SYNOPSIS
 
-Remove a tokenLifetimePolicy from an application.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef?view=graph-powershell-beta)
+Create a new approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
+You can configure a maximum of 20 approved client apps.
 
 ## SYNTAX
 
-### Delete (Default)
+### CreateExpanded (Default)
 
 ```
-Remove-MgApplicationTokenLifetimePolicyByRef -ApplicationId <string>
- -TokenLifetimePolicyId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
+New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -ServicePrincipalId <string> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### Create
+
+```
+New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -ServicePrincipalId <string> -BodyParameter <IMicrosoftGraphApprovedClientApp>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### CreateViaIdentityExpanded
 
 ```
-Remove-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### CreateViaIdentity
+
+```
+New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphApprovedClientApp>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -48,46 +67,72 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove a tokenLifetimePolicy from an application.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+Create a new approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
+You can configure a maximum of 20 approved client apps.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
-Remove-MgApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -TokenLifetimePolicyId $tokenLifetimePolicyId
+$params = @{
+	"@odata.type" = "#microsoft.graph.approvedClientApp"
+	displayName = "Client App 1"
+}
 
-```
-This example shows how to use the Remove-MgApplicationTokenLifetimePolicyByRef Cmdlet.
-
+New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 
 ## PARAMETERS
 
-### -ApplicationId
+### -AdditionalProperties
 
-The unique identifier of application
+Additional Parameters
 
 ```yaml
-Type: System.String
+Type: System.Collections.Hashtable
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- ObjectId
+Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+approvedClientApp
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovedClientApp
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentity
   Position: Named
   IsRequired: true
-  ValueFromPipeline: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -128,6 +173,33 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DisplayName
+
+The display name of the approved client application.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -201,9 +273,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
+### -Id
 
-ETag
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: System.String
@@ -211,7 +284,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -233,31 +312,16 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
+- Name: CreateViaIdentity
   Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -350,9 +414,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -TokenLifetimePolicyId
+### -ServicePrincipalId
 
-The unique identifier of tokenLifetimePolicy
+The unique identifier of servicePrincipal
 
 ```yaml
 Type: System.String
@@ -360,7 +424,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -406,13 +476,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovedClientApp
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovedClientApp
 
 {{ Fill in the Description }}
 
@@ -423,7 +497,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+BODYPARAMETER <IMicrosoftGraphApprovedClientApp>: approvedClientApp
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DisplayName <String>]: The display name of the approved client application.
+
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -453,27 +533,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgApplicationTokenLifetimePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationTokenLifetimePolicyByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-delete-tokenlifetimepolicies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
+- [](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-post-approvedclientapps?view=graph-rest-1.0)
