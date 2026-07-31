@@ -861,7 +861,7 @@ Required
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescore)
+- [Update-MgSecuritySecureScore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescore)
 
 
 

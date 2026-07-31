@@ -486,7 +486,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityincidentalertcomment)
+- [Set-MgSecurityIncidentAlertComment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityincidentalertcomment)
 
 
 

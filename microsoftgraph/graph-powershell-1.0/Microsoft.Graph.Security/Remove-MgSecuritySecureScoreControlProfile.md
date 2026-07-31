@@ -453,7 +453,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritysecurescorecontrolprofile)
+- [Remove-MgSecuritySecureScoreControlProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritysecurescorecontrolprofile)
 
 
 

@@ -318,7 +318,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityidentity)
+- [Remove-MgSecurityIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityidentity)
 
 
 
