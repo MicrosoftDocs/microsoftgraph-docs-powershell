@@ -1,31 +1,32 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfiguration
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
-title: Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration
+title: Update-MgBetaSolutionBusinessScenarioPlannerTaskMessage
 ---
 
-# Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration
+# Update-MgBetaSolutionBusinessScenarioPlannerTaskMessage
 
 ## SYNOPSIS
 
-Update the properties of a plannerPlanConfiguration object and its plannerPlanConfigurationLocalization collection for a businessScenario.
+Update the navigation property messages in solutions
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 
 ```
-Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>] [-DefaultLanguage <string>]
- [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>] [-Break]
+Update-MgBetaSolutionBusinessScenarioPlannerTaskMessage -BusinessScenarioId <string>
+ -BusinessScenarioTaskId <string> -PlannerTaskChatMessageId <string>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Content <string>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
+ [-DeletedDateTime <datetime>] [-EditedDateTime <datetime>] [-Id <string>]
+ [-Mentions <IMicrosoftGraphPlannerTaskChatMention[]>] [-MessageType <string>]
+ [-ParentEntityId <string>] [-Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -34,9 +35,10 @@ Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -BusinessScenarioI
 ### Update
 
 ```
-Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId <string>
- -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration> [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+Update-MgBetaSolutionBusinessScenarioPlannerTaskMessage -BusinessScenarioId <string>
+ -BusinessScenarioTaskId <string> -PlannerTaskChatMessageId <string>
+ -BodyParameter <IMicrosoftGraphPlannerTaskChatMessage> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -44,13 +46,12 @@ Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -BusinessScenarioI
 ### UpdateViaIdentityExpanded
 
 ```
-Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration
- -InputObject <IBusinessScenarioIdentity> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>]
- [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>] [-DefaultLanguage <string>]
- [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>] [-Break]
+Update-MgBetaSolutionBusinessScenarioPlannerTaskMessage -InputObject <IBusinessScenarioIdentity>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Content <string>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
+ [-DeletedDateTime <datetime>] [-EditedDateTime <datetime>] [-Id <string>]
+ [-Mentions <IMicrosoftGraphPlannerTaskChatMention[]>] [-MessageType <string>]
+ [-ParentEntityId <string>] [-Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -59,11 +60,11 @@ Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration
 ### UpdateViaIdentity
 
 ```
-Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration
- -InputObject <IBusinessScenarioIdentity> -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Update-MgBetaSolutionBusinessScenarioPlannerTaskMessage -InputObject <IBusinessScenarioIdentity>
+ -BodyParameter <IMicrosoftGraphPlannerTaskChatMessage> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -73,81 +74,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the properties of a plannerPlanConfiguration object and its plannerPlanConfigurationLocalization collection for a businessScenario.
+Update the navigation property messages in solutions
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Beta.BusinessScenario
+{{ Add code here }}
 
-$params = @{
-	defaultLanguage = "en-us"
-	buckets = @(
-		@{
-			externalBucketId = "deliveryBucket"
-		}
-		@{
-			externalBucketId = "storePickupBucket"
-		}
-		@{
-			externalBucketId = "specialOrdersBucket"
-		}
-		@{
-			externalBucketId = "returnProcessingBucket"
-		}
-	)
-	localizations = @(
-		@{
-			id = "en-us"
-			languageTag = "en-us"
-			planTitle = "Order Tracking"
-			buckets = @(
-				@{
-					externalBucketId = "deliveryBucket"
-					name = "Deliveries"
-				}
-				@{
-					externalBucketId = "storePickupBucket"
-					name = "Pickup"
-				}
-				@{
-					externalBucketId = "specialOrdersBucket"
-					name = "Special Orders"
-				}
-				@{
-					externalBucketId = "returnProcessingBucket"
-					name = "Customer Returns"
-				}
-			)
-		}
-		@{
-			id = "es-es"
-			languageTag = "es-es"
-			planTitle = "Seguimiento de pedidos"
-			buckets = @(
-				@{
-					externalBucketId = "deliveryBucket"
-					name = "Entregas"
-				}
-				@{
-					externalBucketId = "storePickupBucket"
-					name = "Recogida"
-				}
-				@{
-					externalBucketId = "specialOrdersBucket"
-					name = "Pedidos especiales"
-				}
-				@{
-					externalBucketId = "specialOrdersBucket"
-					name = "Devoluciones de clientes"
-				}
-			)
-		}
-	)
-}
+### EXAMPLE 2
 
-Update-MgBetaSolutionBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -180,11 +117,11 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-plannerPlanConfiguration
+plannerTaskChatMessage
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskChatMessage
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -227,26 +164,25 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Buckets
+### -BusinessScenarioId
 
-List the buckets that should be created in the plan.
-To construct, see NOTES section for BUCKETS properties and create a hash table.
+The unique identifier of businessScenario
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: UpdateExpanded
   Position: Named
-  IsRequired: false
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: Update
   Position: Named
-  IsRequired: false
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -255,9 +191,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -BusinessScenarioId
+### -BusinessScenarioTaskId
 
-The unique identifier of businessScenario
+The unique identifier of businessScenarioTask
 
 ```yaml
 Type: System.String
@@ -304,6 +240,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Content
+
+The content of the chat message.
+Supports plain text and sanitized HTML.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -CreatedBy
 
 identitySet
@@ -334,8 +298,8 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-The date and time when the plan configuration was created.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
@@ -361,12 +325,39 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -DefaultLanguage
+### -DeletedDateTime
 
-The language code for the default language to be used for the names of the objects created for the plan.
+.
 
 ```yaml
-Type: System.String
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -EditedDateTime
+
+.
+
+```yaml
+Type: System.DateTime
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -507,13 +498,13 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -LastModifiedBy
+### -Mentions
 
-identitySet
-To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+The list of mentions in the message.
+To construct, see NOTES section for MENTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskChatMention[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -535,14 +526,12 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -LastModifiedDateTime
+### -MessageType
 
-The date and time when the plan configuration was last modified.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+plannerTaskChatMessageType
 
 ```yaml
-Type: System.DateTime
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -564,13 +553,12 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Localizations
+### -ParentEntityId
 
-Localized names for the plan configuration.
-To construct, see NOTES section for LOCALIZATIONS properties and create a hash table.
+The ID of the parent plannerTask that this message belongs to.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationLocalization[]
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -584,6 +572,33 @@ ParameterSets:
 - Name: UpdateExpanded
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PlannerTaskChatMessageId
+
+The unique identifier of plannerTaskChatMessage
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -655,6 +670,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Reactions
+
+The reactions on the message.
+To construct, see NOTES section for REACTIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskChatReaction[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -712,7 +755,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfiguration
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskChatMessage
 
 {{ Fill in the Description }}
 
@@ -722,7 +765,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfiguration
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskChatMessage
 
 {{ Fill in the Description }}
 
@@ -733,12 +776,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphPlannerPlanConfiguration>: plannerPlanConfiguration
+BODYPARAMETER <IMicrosoftGraphPlannerTaskChatMessage>: plannerTaskChatMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]: List the buckets that should be created in the plan.
-    [ExternalBucketId <String>]: Application-specified identifier of the bucket.
+  [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
@@ -750,25 +793,24 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: The date and time when the plan configuration was created.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [DefaultLanguage <String>]: The language code for the default language to be used for the names of the objects created for the plan.
-  [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: The date and time when the plan configuration was last modified.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  [DeletedDateTime <DateTime?>]: 
+  [EditedDateTime <DateTime?>]: 
+  [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+    [MentionType <String>]: plannerTaskChatMentionType
+    [Mentioned <String>]: The ID of the mentioned user.
+    [Position <Int32?>]: The zero-based position of the mention in the message content.
+  [MessageType <String>]: plannerTaskChatMessageType
+  [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+  [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+    [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  [Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>]: Localized names for the plan configuration.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]: Localized names for configured buckets in the plan configuration.
-      [ExternalBucketId <String>]: Application-specified identifier of the bucket.
-      [Name <String>]: Name of the bucket.
-    [LanguageTag <String>]: The language code associated with the localized names in this object.
-    [PlanTitle <String>]: Localized title of the plan.
-
-BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>: List the buckets that should be created in the plan.
-  [ExternalBucketId <String>]: Application-specified identifier of the bucket.
+    [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
 
 CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -789,29 +831,30 @@ INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [UniqueName <String>]: Alternate key of businessScenario
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Application <IMicrosoftGraphIdentity>]: identity
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [DisplayName <String>]: The display name of the identity.
+MENTIONS <IMicrosoftGraphPlannerTaskChatMention[]>: The list of mentions in the message.
+  [MentionType <String>]: plannerTaskChatMentionType
+  [Mentioned <String>]: The ID of the mentioned user.
+  [Position <Int32?>]: The zero-based position of the mention in the message content.
+
+REACTIONS <IMicrosoftGraphPlannerTaskChatReaction[]>: The reactions on the message.
+  [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Application <IMicrosoftGraphIdentity>]: identity
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    [Id <String>]: Unique identifier for the identity or actor.
+        [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  [Device <IMicrosoftGraphIdentity>]: identity
-  [User <IMicrosoftGraphIdentity>]: identity
-
-LOCALIZATIONS <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>: Localized names for the plan configuration.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]: Localized names for configured buckets in the plan configuration.
-    [ExternalBucketId <String>]: Application-specified identifier of the bucket.
-    [Name <String>]: Name of the bucket.
-  [LanguageTag <String>]: The language code associated with the localized names in this object.
-  [PlanTitle <String>]: Localized title of the plan.
+      [Device <IMicrosoftGraphIdentity>]: identity
+      [User <IMicrosoftGraphIdentity>]: identity
+    [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannerplanconfiguration)
-- [](https://learn.microsoft.com/graph/api/plannerplanconfiguration-update?view=graph-rest-beta)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskmessage)

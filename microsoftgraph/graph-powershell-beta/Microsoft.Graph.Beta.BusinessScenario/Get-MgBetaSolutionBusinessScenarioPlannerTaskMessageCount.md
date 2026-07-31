@@ -1,39 +1,40 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenario
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskmessagecount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaSolutionBusinessScenario
+title: Get-MgBetaSolutionBusinessScenarioPlannerTaskMessageCount
 ---
 
-# Remove-MgBetaSolutionBusinessScenario
+# Get-MgBetaSolutionBusinessScenarioPlannerTaskMessageCount
 
 ## SYNOPSIS
 
-Delete a businessScenario object.
-The deletion of a scenario causes all data associated with the scenario to be deleted.
+Get the number of the resource
 
 ## SYNTAX
 
-### Delete (Default)
+### Get (Default)
 
 ```
-Remove-MgBetaSolutionBusinessScenario -BusinessScenarioId <string> [-IfMatch <string>]
+Get-MgBetaSolutionBusinessScenarioPlannerTaskMessageCount -BusinessScenarioId <string>
+ -BusinessScenarioTaskId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
-### DeleteViaIdentity
+### GetViaIdentity
 
 ```
-Remove-MgBetaSolutionBusinessScenario -InputObject <IBusinessScenarioIdentity> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Get-MgBetaSolutionBusinessScenarioPlannerTaskMessageCount -InputObject <IBusinessScenarioIdentity>
+ [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -43,16 +44,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a businessScenario object.
-The deletion of a scenario causes all data associated with the scenario to be deleted.
+Get the number of the resource
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Beta.BusinessScenario
+{{ Add code here }}
 
-Remove-MgBetaSolutionBusinessScenario -BusinessScenarioId $businessScenarioId
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -87,7 +89,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: Get
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -98,16 +100,36 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Confirm
+### -BusinessScenarioTaskId
 
-Prompts you for confirmation before running the cmdlet.
+The unique identifier of businessScenarioTask
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- cf
+Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Filter
+
+Filter items by property values
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -183,27 +205,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -215,31 +216,10 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -332,16 +312,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -WhatIf
+### -Search
 
-Runs the command in a mode that only reports what would happen without performing the actions.
+Search items by search phrases
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- wi
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -373,7 +352,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### System.Int32
 
 {{ Fill in the Description }}
 
@@ -394,5 +373,4 @@ INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenario)
-- [](https://learn.microsoft.com/graph/api/businessscenario-delete?view=graph-rest-beta)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskmessagecount)
