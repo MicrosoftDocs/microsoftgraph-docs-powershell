@@ -69,12 +69,17 @@ Read the properties and relationships of webApplicationFirewallProvider object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityRiskPreventionWebApplicationFirewallProvider
+
+```
+This example shows how to use the Get-MgIdentityRiskPreventionWebApplicationFirewallProvider Cmdlet.
+
 
 ## PARAMETERS
 

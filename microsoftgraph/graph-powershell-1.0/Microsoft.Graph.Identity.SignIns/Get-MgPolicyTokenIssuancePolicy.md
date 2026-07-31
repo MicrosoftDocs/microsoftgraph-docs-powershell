@@ -67,12 +67,17 @@ The policy that specifies the characteristics of SAML tokens issued by Microsoft
 | Application | Policy.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyTokenIssuancePolicy
+
+```
+This example shows how to use the Get-MgPolicyTokenIssuancePolicy Cmdlet.
+
 
 ## PARAMETERS
 
