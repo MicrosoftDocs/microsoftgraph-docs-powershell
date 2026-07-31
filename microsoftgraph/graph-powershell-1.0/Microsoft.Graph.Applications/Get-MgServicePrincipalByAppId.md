@@ -57,16 +57,6 @@ This API can be used to get agentIdentityBlueprintPrincipal objects as well by t
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Application.Read.All, AgentIdentity.Read.All, AgentIdentityBlueprintPrincipal.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AppId
@@ -387,6 +377,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalbyappid)
 - [](https://learn.microsoft.com/graph/api/serviceprincipal-get?view=graph-rest-1.0)
+
 
 
 

@@ -59,12 +59,17 @@ All the progress, including job state, is persisted, and the job will continue f
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
 Suspend-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
+```
+This example shows how to use the Suspend-MgServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 
