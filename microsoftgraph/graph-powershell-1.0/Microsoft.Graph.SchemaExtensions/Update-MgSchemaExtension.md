@@ -702,8 +702,8 @@ For more information, see Supported property data types.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension)
-- [](https://learn.microsoft.com/graph/api/schemaextension-update?view=graph-rest-1.0)
+- [Update-MgSchemaExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-update?view=graph-rest-1.0)
 
 
 
