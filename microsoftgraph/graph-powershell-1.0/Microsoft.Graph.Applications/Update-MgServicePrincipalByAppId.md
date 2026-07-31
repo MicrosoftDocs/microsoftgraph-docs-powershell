@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgServicePrincipalByAppId
 ---
@@ -15,9 +15,6 @@ title: Update-MgServicePrincipalByAppId
 
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint if it doesn't exist, or update properties of an existing agentIdentityBlueprintPrincipal, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,7 +56,6 @@ Update-MgServicePrincipalByAppId -AppId <string> [-ResponseHeadersVariable <stri
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -100,7 +96,6 @@ Update-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-AppId <s
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -110,7 +105,6 @@ Update-MgServicePrincipalByAppId -AppId <string> -BodyParameter <IMicrosoftGraph
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -120,7 +114,7 @@ Update-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity>
  -BodyParameter <IMicrosoftGraphServicePrincipal> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -134,24 +128,8 @@ Create a new servicePrincipal object if it doesn't exist, or update the properti
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint if it doesn't exist, or update properties of an existing agentIdentityBlueprintPrincipal, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
 
 ## EXAMPLES
-### Example 1: Create a new servicePrincipal if it doesn't exist
 
-```powershell
-
-Import-Module Microsoft.Graph.Applications
-
-$params = @{
-	displayName = "My app instance"
-}
-
-Update-MgServicePrincipalByAppId -BodyParameter $params
-
-```
-This example will create a new serviceprincipal if it doesn't exist
-
-### Example 2: Update an existing servicePrincipal
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
@@ -161,9 +139,15 @@ $params = @{
 
 Update-MgServicePrincipalByAppId -BodyParameter $params
 
-```
-This example will update an existing serviceprincipal
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	displayName = "My app instance"
+}
+
+Update-MgServicePrincipalByAppId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -785,7 +769,7 @@ HelpMessage: ''
 
 ### -DelegatedPermissionClassifications
 
-
+.
 To construct, see NOTES section for DELEGATEDPERMISSIONCLASSIFICATIONS properties and create a hash table.
 
 ```yaml
@@ -928,7 +912,7 @@ HelpMessage: ''
 
 ### -Endpoints
 
-
+.
 To construct, see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
@@ -1188,7 +1172,7 @@ HelpMessage: ''
 
 ### -IsDisabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -2034,7 +2018,7 @@ HelpMessage: ''
 
 ### -TransitiveMemberOf
 
-
+.
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
@@ -2173,14 +2157,22 @@ Always null when the object hasn't been deleted.
   [Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]: customAppManagementConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
     [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: The collection of customSecurityAttributeExemption to exempt from the policy enforcement.
+Limit of 5.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Operator <String>]: customSecurityAttributeComparisonOperator
       [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
       [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
       [RestrictionType <String>]: appKeyCredentialRestrictionType
       [State <String>]: appManagementRestrictionState
     [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: Collection of password restrictions settings to be applied to an application or service principal.
+      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
       [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -2188,6 +2180,19 @@ This property is required when restrictionType is set to passwordLifetime.
 For existing applications, the enforcement date can be retroactively applied.
       [RestrictionType <String>]: appCredentialRestrictionType
       [State <String>]: appManagementRestrictionState
+    [ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]: customAppManagementApplicationConfiguration
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]: identifierUriConfiguration
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+          [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
+          [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
+          [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+          [State <String>]: appManagementRestrictionState
+        [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
 
 APPROLEASSIGNEDTO <IMicrosoftGraphAppRoleAssignment[]>: App role assignments for this app or service, granted to users, groups, and other service principals.
 Supports $expand.
@@ -2268,12 +2273,12 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipal>`: servicePrincipal
+BODYPARAMETER <IMicrosoftGraphServicePrincipal>: servicePrincipal
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -2318,14 +2323,22 @@ Always null when the object hasn't been deleted.
     [Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]: customAppManagementConfiguration
       [(Any) <Object>]: This indicates any property can be added to this object.
       [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+        [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: The collection of customSecurityAttributeExemption to exempt from the policy enforcement.
+Limit of 5.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Operator <String>]: customSecurityAttributeComparisonOperator
         [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
         [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
         [RestrictionType <String>]: appKeyCredentialRestrictionType
         [State <String>]: appManagementRestrictionState
       [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: Collection of password restrictions settings to be applied to an application or service principal.
+        [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
         [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to passwordLifetime.
@@ -2333,6 +2346,19 @@ This property is required when restrictionType is set to passwordLifetime.
 For existing applications, the enforcement date can be retroactively applied.
         [RestrictionType <String>]: appCredentialRestrictionType
         [State <String>]: appManagementRestrictionState
+      [ApplicationRestrictions <IMicrosoftGraphCustomAppManagementApplicationConfiguration>]: customAppManagementApplicationConfiguration
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [IdentifierUris <IMicrosoftGraphIdentifierUriConfiguration>]: identifierUriConfiguration
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+            [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
+            [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
+            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
+            [State <String>]: appManagementRestrictionState
+          [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
   [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -2390,8 +2416,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -2592,8 +2618,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [OwnedObjects <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this service principal owns.
@@ -3067,7 +3093,7 @@ Always null when the object hasn't been deleted.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INFO `<IMicrosoftGraphInformationalUrl>`: informationalUrl
+INFO <IMicrosoftGraphInformationalUrl>: informationalUrl
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LogoUrl <String>]: CDN URL to the application's logo, Read-only.
   [MarketingUrl <String>]: Link to the application's marketing page.
@@ -3079,7 +3105,7 @@ For example, https://www.contoso.com/app/support
   [TermsOfServiceUrl <String>]: Link to the application's terms of service statement.
 For example, https://www.contoso.com/app/termsofservice
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -3185,8 +3211,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
   [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
@@ -3226,7 +3252,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
-REMOTEDESKTOPSECURITYCONFIGURATION `<IMicrosoftGraphRemoteDesktopSecurityConfiguration>`: remoteDesktopSecurityConfiguration
+REMOTEDESKTOPSECURITYCONFIGURATION <IMicrosoftGraphRemoteDesktopSecurityConfiguration>: remoteDesktopSecurityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3250,11 +3276,11 @@ Read-only.
   [IsEnabled <Boolean?>]: Indicates whether the permission is enabled.
   [Value <String>]: The value of the permission.
 
-SAMLSINGLESIGNONSETTINGS `<IMicrosoftGraphSamlSingleSignOnSettings>`: samlSingleSignOnSettings
+SAMLSINGLESIGNONSETTINGS <IMicrosoftGraphSamlSingleSignOnSettings>: samlSingleSignOnSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RelayState <String>]: The relative URI the service provider would redirect to after completion of the single sign-on flow.
 
-SYNCHRONIZATION `<IMicrosoftGraphSynchronization>`: synchronization
+SYNCHRONIZATION <IMicrosoftGraphSynchronization>: synchronization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3549,7 +3575,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
+VERIFIEDPUBLISHER <IMicrosoftGraphVerifiedPublisher>: verifiedPublisher
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AddedDateTime <DateTime?>]: The timestamp when the verified publisher was first added or most recently updated.
   [DisplayName <String>]: The verified publisher name from the app publisher's Partner Center account.
@@ -3558,27 +3584,5 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
 
 ## RELATED LINKS
 
-- [Update-MgServicePrincipalByAppId](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0)

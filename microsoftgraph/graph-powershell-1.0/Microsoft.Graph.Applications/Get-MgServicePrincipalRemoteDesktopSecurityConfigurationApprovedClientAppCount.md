@@ -1,45 +1,40 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalClaimMappingPolicyByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientappcount
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgServicePrincipalClaimMappingPolicyByRef
+title: Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount
 ---
 
-# Remove-MgServicePrincipalClaimMappingPolicyByRef
+# Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount
 
 ## SYNOPSIS
 
-Remove a claimsMappingPolicy from a servicePrincipal.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef?view=graph-powershell-beta)
+Get the number of the resource
 
 ## SYNTAX
 
-### Delete (Default)
+### Get (Default)
 
 ```
-Remove-MgServicePrincipalClaimMappingPolicyByRef -ClaimsMappingPolicyId <string>
- -ServicePrincipalId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount
+ -ServicePrincipalId <string> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
-### DeleteViaIdentity
+### GetViaIdentity
 
 ```
-Remove-MgServicePrincipalClaimMappingPolicyByRef
- -InputObject <IApplicationsIdentity> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount
+ -InputObject <IApplicationsIdentity> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,28 +44,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove a claimsMappingPolicy from a servicePrincipal.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+Get the number of the resource
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Applications
+{{ Add code here }}
 
-Remove-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $servicePrincipalId -ClaimsMappingPolicyId $claimsMappingPolicyId
+### EXAMPLE 2
 
-```
-This example shows how to use the Remove-MgServicePrincipalClaimMappingPolicyByRef Cmdlet.
-
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -95,37 +79,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ClaimsMappingPolicyId
+### -Filter
 
-The unique identifier of claimsMappingPolicy
+Filter items by property values
 
 ```yaml
 Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Confirm
-
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- cf
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -201,27 +163,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -233,31 +174,10 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -350,6 +270,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Search
+
+Search items by search phrases
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ServicePrincipalId
 
 The unique identifier of servicePrincipal
@@ -360,31 +301,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: Get
   Position: Named
   IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -WhatIf
-
-Runs the command in a mode that only reports what would happen without performing the actions.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- wi
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -412,7 +331,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### System.Int32
 
 {{ Fill in the Description }}
 
@@ -423,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -453,27 +372,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgServicePrincipalClaimMappingPolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalClaimMappingPolicyByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-delete-claimsmappingpolicies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientappcount)

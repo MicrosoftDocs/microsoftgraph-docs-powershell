@@ -1,45 +1,52 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationAppManagementPolicyByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgApplicationAppManagementPolicyByRef
+title: Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
 
-# Remove-MgApplicationAppManagementPolicyByRef
+# Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 
 ## SYNOPSIS
 
-Remove an appManagementPolicy policy object from an application or service principal object.
-When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef?view=graph-powershell-beta)
+Read the properties and relationships of a approvedClientApp object for the remoteDesktopSecurityConfiguration object on a servicePrincipal.
 
 ## SYNTAX
 
-### Delete (Default)
+### List (Default)
 
 ```
-Remove-MgApplicationAppManagementPolicyByRef -AppManagementPolicyId <string>
- -ApplicationId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -ServicePrincipalId <string> [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter <string>]
+ [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
+ [-CountVariable <string>]
 ```
 
-### DeleteViaIdentity
+### Get
 
 ```
-Remove-MgApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -ApprovedClientAppId <string> -ServicePrincipalId <string> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+```
+
+### GetViaIdentity
+
+```
+Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -InputObject <IApplicationsIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,38 +56,31 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove an appManagementPolicy policy object from an application or service principal object.
-When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
+Read the properties and relationships of a approvedClientApp object for the remoteDesktopSecurityConfiguration object on a servicePrincipal.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
-Remove-MgApplicationAppManagementPolicyByRef -ApplicationId $applicationId -AppManagementPolicyId $appManagementPolicyId
-
-```
-This example shows how to use the Remove-MgApplicationAppManagementPolicyByRef Cmdlet.
-
+Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId
 
 ## PARAMETERS
 
-### -ApplicationId
+### -All
 
-The unique identifier of application
+List all pages.
 
 ```yaml
-Type: System.String
-DefaultValue: ''
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
-Aliases:
-- ObjectId
+Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: List
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -89,9 +89,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -AppManagementPolicyId
+### -ApprovedClientAppId
 
-The unique identifier of appManagementPolicy
+The unique identifier of approvedClientApp
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: Get
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -131,18 +131,62 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Confirm
+### -CountVariable
 
-Prompts you for confirmation before running the cmdlet.
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- cf
+- CV
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ExpandProperty
+
+Expand related entities
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- Expand
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Filter
+
+Filter items by property values
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -216,27 +260,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -248,7 +271,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -259,15 +282,37 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PassThru
+### -PageSize
 
-Returns true when the command succeeds
+Sets the page size of results.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
+Type: System.Int32
+DefaultValue: 0
 SupportsWildcards: false
 Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Property
+
+Select properties to be returned
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- Select
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -365,18 +410,109 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -WhatIf
+### -Search
 
-Runs the command in a mode that only reports what would happen without performing the actions.
+Search items by search phrases
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ServicePrincipalId
+
+The unique identifier of servicePrincipal
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Skip
+
+Skip the first n items
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Sort
+
+Order items by property values
+
+```yaml
+Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- wi
+- OrderBy
 ParameterSets:
-- Name: (All)
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Top
+
+Show only the first n items
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases:
+- Limit
+ParameterSets:
+- Name: List
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -406,7 +542,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovedClientApp
 
 {{ Fill in the Description }}
 
@@ -417,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -447,27 +583,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgApplicationAppManagementPolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationAppManagementPolicyByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
+- [](https://learn.microsoft.com/graph/api/approvedclientapp-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-list-approvedclientapps?view=graph-rest-1.0)

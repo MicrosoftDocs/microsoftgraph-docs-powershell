@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationappmanagementpolicyappmanagementpolicybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef
 ---
@@ -16,9 +16,6 @@ title: Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef
 Remove an appManagementPolicy policy object from an application or service principal object.
 When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,7 +26,6 @@ Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef -AppManagementPo
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -39,7 +35,6 @@ Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef -InputObject <IA
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -53,17 +48,12 @@ Remove an appManagementPolicy policy object from an application or service princ
 When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef -ApplicationId $applicationId -AppManagementPolicyId $appManagementPolicyId
-
-```
-This example shows how to use the Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -417,7 +407,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -447,27 +437,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationappmanagementpolicyappmanagementpolicybyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationappmanagementpolicyappmanagementpolicybyref)
+- [](https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-1.0)

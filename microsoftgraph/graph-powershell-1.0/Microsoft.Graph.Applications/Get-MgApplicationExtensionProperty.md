@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationExtensionProperty
 ---
@@ -14,9 +14,6 @@ title: Get-MgApplicationExtensionProperty
 ## SYNOPSIS
 
 Read a directory extension definition represented by an extensionProperty object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgApplicationExtensionProperty -ApplicationId <string> [-ExpandProperty <str
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +35,7 @@ Get-MgApplicationExtensionProperty -ApplicationId <string> -ExtensionPropertyId 
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -47,7 +44,7 @@ Get-MgApplicationExtensionProperty -ApplicationId <string> -ExtensionPropertyId 
 Get-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -59,26 +56,13 @@ This cmdlet has the following aliases,
 
 Read a directory extension definition represented by an extensionProperty object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All,  |
-| Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationExtensionProperty -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgApplicationExtensionProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -568,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -598,28 +582,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgApplicationExtensionProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty)
+- [](https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-1.0)

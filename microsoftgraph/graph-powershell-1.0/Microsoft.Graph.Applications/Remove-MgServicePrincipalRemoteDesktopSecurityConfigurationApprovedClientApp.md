@@ -1,45 +1,40 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef
+title: Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
 
-# Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef
+# Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 
 ## SYNOPSIS
 
-Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta)
+Delete approvedClientApp
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef
- -HomeRealmDiscoveryPolicyId <string> -ServicePrincipalId <string> [-IfMatch <string>]
+Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -ApprovedClientAppId <string> -ServicePrincipalId <string> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 
 ```
-Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef
+Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
  -InputObject <IApplicationsIdentity> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,30 +44,38 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
+Delete approvedClientApp
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
-Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
-
-```
-This example shows how to use the Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef Cmdlet.
-
+Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId -ApprovedClientAppId $approvedClientAppId
 
 ## PARAMETERS
+
+### -ApprovedClientAppId
+
+The unique identifier of approvedClientApp
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -131,27 +134,6 @@ ParameterSets:
   Position: Named
   IsRequired: false
   ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -HomeRealmDiscoveryPolicyId
-
-The unique identifier of homeRealmDiscoveryPolicy
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -423,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -453,27 +435,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-delete-homerealmdiscoverypolicies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
+- [](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-delete-approvedclientapps?view=graph-rest-1.0)

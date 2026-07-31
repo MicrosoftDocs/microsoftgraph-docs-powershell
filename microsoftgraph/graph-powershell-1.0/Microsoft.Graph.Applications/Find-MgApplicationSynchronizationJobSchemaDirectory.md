@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgapplicationsynchronizationjobschemadirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgApplicationSynchronizationJobSchemaDirectory
 ---
@@ -15,9 +15,6 @@ title: Find-MgApplicationSynchronizationJobSchemaDirectory
 
 Discover the latest schema definition for provisioning to an application.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Find-MgBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Discover (Default)
@@ -27,7 +24,7 @@ Find-MgApplicationSynchronizationJobSchemaDirectory -ApplicationId <string>
  -DirectoryDefinitionId <string> -SynchronizationJobId <string> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### DiscoverViaIdentity
@@ -37,7 +34,6 @@ Find-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsI
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Discover the latest schema definition for provisioning to an application.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -380,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -410,28 +416,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Find-MgApplicationSynchronizationJobSchemaDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgapplicationsynchronizationjobschemadirectory)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgapplicationsynchronizationjobschemadirectory)
+- [](https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-1.0)

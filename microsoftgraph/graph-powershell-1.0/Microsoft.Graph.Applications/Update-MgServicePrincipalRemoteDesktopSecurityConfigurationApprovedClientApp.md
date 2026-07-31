@@ -1,44 +1,63 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Applications-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationOwnerByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgApplicationOwnerByRef
+title: Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
 
-# Remove-MgApplicationOwnerByRef
+# Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 
 ## SYNOPSIS
 
-Remove an owner from an application.
-As a recommended best practice, apps should have at least two owners.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationOwnerDirectoryObjectByRef?view=graph-powershell-beta)
+Update the properties of an approvedClientApp object for a remotedesktopsecurityconfiguration.
 
 ## SYNTAX
 
-### Delete (Default)
+### UpdateExpanded (Default)
 
 ```
-Remove-MgApplicationOwnerByRef -ApplicationId <string> -DirectoryObjectId <string>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -ApprovedClientAppId <string> -ServicePrincipalId <string> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### DeleteViaIdentity
+### Update
 
 ```
-Remove-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -ApprovedClientAppId <string> -ServicePrincipalId <string>
+ -BodyParameter <IMicrosoftGraphApprovedClientApp> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentityExpanded
+
+```
+Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -InputObject <IApplicationsIdentity> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentity
+
+```
+Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
+ -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphApprovedClientApp>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -48,47 +67,98 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove an owner from an application.
-As a recommended best practice, apps should have at least two owners.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
+Update the properties of an approvedClientApp object for a remotedesktopsecurityconfiguration.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
-Remove-MgApplicationOwnerByRef -ApplicationId $applicationId -DirectoryObjectId $directoryObjectId
+$params = @{
+	"@odata.type" = "#microsoft.graph.approvedClientApp"
+	displayName = "Client App 1"
+}
 
-```
-This example shows how to use the Remove-MgApplicationOwnerByRef Cmdlet.
-
+Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId -ApprovedClientAppId $approvedClientAppId -BodyParameter $params
 
 ## PARAMETERS
 
-### -ApplicationId
+### -AdditionalProperties
 
-The unique identifier of application
+Additional Parameters
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ApprovedClientAppId
+
+The unique identifier of approvedClientApp
 
 ```yaml
 Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- ObjectId
+Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: UpdateExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+approvedClientApp
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovedClientApp
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -139,9 +209,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -DirectoryObjectId
+### -DisplayName
 
-The unique identifier of directoryObject
+The display name of the approved client application.
 
 ```yaml
 Type: System.String
@@ -149,9 +219,15 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: UpdateViaIdentityExpanded
   Position: Named
-  IsRequired: true
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -223,9 +299,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
+### -Id
 
-ETag
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: System.String
@@ -233,7 +310,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -255,31 +338,16 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: UpdateViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
+- Name: UpdateViaIdentity
   Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -372,6 +440,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ServicePrincipalId
+
+The unique identifier of servicePrincipal
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -407,13 +502,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovedClientApp
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovedClientApp
 
 {{ Fill in the Description }}
 
@@ -424,7 +523,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+BODYPARAMETER <IMicrosoftGraphApprovedClientApp>: approvedClientApp
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DisplayName <String>]: The display name of the approved client application.
+
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -454,27 +559,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgApplicationOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationOwnerByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
+- [](https://learn.microsoft.com/graph/api/approvedclientapp-update?view=graph-rest-1.0)

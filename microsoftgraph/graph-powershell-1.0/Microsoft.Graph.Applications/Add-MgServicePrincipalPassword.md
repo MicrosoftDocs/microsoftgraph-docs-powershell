@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgServicePrincipalPassword
 ---
@@ -24,7 +24,7 @@ Add-MgServicePrincipalPassword -ServicePrincipalId <string> [-ResponseHeadersVar
  [-AdditionalProperties <hashtable>] [-PasswordCredential <IMicrosoftGraphPasswordCredential>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Add
@@ -35,7 +35,6 @@ Add-MgServicePrincipalPassword -ServicePrincipalId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
@@ -46,7 +45,6 @@ Add-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
  [-PasswordCredential <IMicrosoftGraphPasswordCredential>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AddViaIdentity
@@ -57,7 +55,6 @@ Add-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -69,18 +66,9 @@ This cmdlet has the following aliases,
 
 Add a strong password or secret to a servicePrincipal object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All, Application.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
@@ -91,10 +79,6 @@ $params = @{
 }
 
 Add-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
-This example shows how to use the Add-MgServicePrincipalPassword Cmdlet.
-
 
 ## PARAMETERS
 
@@ -127,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -483,7 +467,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsIeboplServiceprincipalsServiceprincipalIdMicrosoftGraphAddpasswordPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsIeboplServiceprincipalsServiceprincipalIdMicrosoftGraphAddpasswordPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PasswordCredential <IMicrosoftGraphPasswordCredential>]: passwordCredential
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -504,7 +488,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -531,7 +515,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [UniqueName <String>]: Alternate key of application
   [UserId <String>]: The unique identifier of user
 
-PASSWORDCREDENTIAL `<IMicrosoftGraphPasswordCredential>`: passwordCredential
+PASSWORDCREDENTIAL <IMicrosoftGraphPasswordCredential>: passwordCredential
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomKeyIdentifier <Byte[]>]: Do not use.
   [DisplayName <String>]: Friendly name for the password.
@@ -553,27 +537,5 @@ Optional.
 
 ## RELATED LINKS
 
-- [Add-MgServicePrincipalPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-addpassword?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-addpassword?view=graph-rest-1.0)
