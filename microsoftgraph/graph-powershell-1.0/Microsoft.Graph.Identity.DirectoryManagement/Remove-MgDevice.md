@@ -56,12 +56,17 @@ Delete a registered device.
 | Application | Device.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgDevice -DeviceId $deviceId
+
+```
+This example shows how to use the Remove-MgDevice Cmdlet.
+
 
 ## PARAMETERS
 
