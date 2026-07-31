@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAnswerCommunicationCall
 ---
@@ -21,9 +21,6 @@ The current timeout value is 15 seconds.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 This API supports the following PSTN scenarios:
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAnswerCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgAnswerCommunicationCall?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### AnswerExpanded (Default)
@@ -35,7 +32,6 @@ Invoke-MgBetaAnswerCommunicationCall -CallId <string> [-ResponseHeadersVariable 
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Answer
@@ -46,7 +42,6 @@ Invoke-MgBetaAnswerCommunicationCall -CallId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AnswerViaIdentityExpanded
@@ -59,7 +54,6 @@ Invoke-MgBetaAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AnswerViaIdentity
@@ -70,7 +64,6 @@ Invoke-MgBetaAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -88,18 +81,9 @@ The current timeout value is 15 seconds.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 This API supports the following PSTN scenarios:
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -116,18 +100,14 @@ callOptions = @{
 	"@odata.type" = "#microsoft.graph.incomingCallOptions"
 	isContentSharingNotificationEnabled = $true
 	isDeltaRosterEnabled = $true
+	isInteractiveRosterEnabled = $true
 }
 participantCapacity = 200
 }
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
-```
-This example shows how to use the Invoke-MgBetaAnswerCommunicationCall Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -144,15 +124,11 @@ mediaConfig = @{
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
-```
-This example shows how to use the Invoke-MgBetaAnswerCommunicationCall Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AcceptedModalities
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -206,7 +182,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -255,7 +231,7 @@ HelpMessage: ''
 
 ### -CallbackUri
 
-
+.
 
 ```yaml
 Type: System.String
@@ -477,7 +453,7 @@ HelpMessage: ''
 
 ### -ParticipantCapacity
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -664,7 +640,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcceptedModalities <String[]>]: 
   [CallOptions <IMicrosoftGraphIncomingCallOptions>]: incomingCallOptions
@@ -679,7 +655,7 @@ BODYPARAMETER `<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostReq
     [RemoveFromDefaultAudioGroup <Boolean?>]: Remove media from the default audio group.
   [ParticipantCapacity <Int32?>]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -706,34 +682,12 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [ToDateTime <DateTime?>]: Usage: toDateTime={toDateTime}
   [UserId <String>]: The unique identifier of user
 
-MEDIACONFIG `<IMicrosoftGraphMediaConfig>`: mediaConfig
+MEDIACONFIG <IMicrosoftGraphMediaConfig>: mediaConfig
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RemoveFromDefaultAudioGroup <Boolean?>]: Remove media from the default audio group.
 
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaAnswerCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/call-answer?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall)
+- [](https://learn.microsoft.com/graph/api/call-answer?view=graph-rest-beta)
