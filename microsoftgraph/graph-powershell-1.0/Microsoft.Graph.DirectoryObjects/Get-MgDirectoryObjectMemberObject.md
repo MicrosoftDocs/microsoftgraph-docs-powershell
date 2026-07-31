@@ -13,7 +13,7 @@ title: Get-MgDirectoryObjectMemberObject
 
 ## SYNOPSIS
 
-Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r- user\r- group\r- service principal\r- organizational contact\r- device\r- directory object This function is transitive.
 Only users and role-enabled groups can be members of directory roles.
 
 ## SYNTAX
@@ -64,7 +64,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r- user\r- group\r- service principal\r- organizational contact\r- device\r- directory object This function is transitive.
 Only users and role-enabled groups can be members of directory roles.
 
 ## EXAMPLES
@@ -465,11 +465,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths16Hhl7EDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths16Hhl7EDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SecurityEnabledOnly <Boolean?>]: 
 
-INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
+INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
   [CertificateAuthorityDetailId <String>]: The unique identifier of certificateAuthorityDetail
   [CertificateBasedAuthPkiId <String>]: The unique identifier of certificateBasedAuthPki
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
@@ -479,3 +479,25 @@ INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmemberobject)
 - [](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
