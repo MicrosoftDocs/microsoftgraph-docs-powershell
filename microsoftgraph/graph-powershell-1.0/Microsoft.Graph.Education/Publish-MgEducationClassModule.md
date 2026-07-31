@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassmodule
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Publish-MgEducationClassModule
 ---
@@ -18,9 +18,6 @@ Only teachers in the class can perform this operation.
 When a module is in draft status, students can't see the module.
 When you call this API, the module appears in the student's class work list.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Publish-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassModule?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Publish (Default)
@@ -30,7 +27,6 @@ Publish-MgEducationClassModule -EducationClassId <string> -EducationModuleId <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### PublishViaIdentity
@@ -39,7 +35,7 @@ Publish-MgEducationClassModule -EducationClassId <string> -EducationModuleId <st
 Publish-MgEducationClassModule -InputObject <IEducationIdentity> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -54,26 +50,13 @@ Only teachers in the class can perform this operation.
 When a module is in draft status, students can't see the module.
 When you call this API, the module appears in the student's class work list.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduCurricula.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduCurricula.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Publish-MgEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
-
-```
-This example shows how to use the Publish-MgEducationClassModule Cmdlet.
-
 
 ## PARAMETERS
 
@@ -384,7 +367,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -409,27 +392,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Publish-MgEducationClassModule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassmodule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-publish?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassmodule)
+- [](https://learn.microsoft.com/graph/api/educationmodule-publish?view=graph-rest-1.0)

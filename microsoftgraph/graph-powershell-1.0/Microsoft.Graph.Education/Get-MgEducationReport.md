@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreport
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationReport
 ---
@@ -15,9 +15,6 @@ title: Get-MgEducationReport
 
 Get reports from education
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationReport](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReport?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -26,7 +23,7 @@ Get reports from education
 Get-MgEducationReport [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get reports from education
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -276,27 +283,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgEducationReport](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreport)

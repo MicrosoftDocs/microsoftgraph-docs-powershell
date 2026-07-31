@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentresourcedependentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgEducationUserAssignmentResourceDependentResource
 ---
@@ -14,9 +14,6 @@ title: Remove-MgEducationUserAssignmentResourceDependentResource
 ## SYNOPSIS
 
 Delete navigation property dependentResources for education
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaEducationUserAssignmentResourceDependentResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserAssignmentResourceDependentResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Remove-MgEducationUserAssignmentResourceDependentResource -EducationAssignmentId
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -39,7 +35,6 @@ Remove-MgEducationUserAssignmentResourceDependentResource -InputObject <IEducati
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property dependentResources for education
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -444,7 +449,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -469,27 +474,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgEducationUserAssignmentResourceDependentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentresourcedependentresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentresourcedependentresource)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentrubric
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationUserAssignmentRubric
 ---
@@ -15,9 +15,6 @@ title: Get-MgEducationUserAssignmentRubric
 
 When set, the grading rubric attached to this assignment.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentRubric?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -27,7 +24,7 @@ Get-MgEducationUserAssignmentRubric -EducationAssignmentId <string> -EducationUs
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -36,7 +33,7 @@ Get-MgEducationUserAssignmentRubric -EducationAssignmentId <string> -EducationUs
 Get-MgEducationUserAssignmentRubric -InputObject <IEducationIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 When set, the grading rubric attached to this assignment.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -357,7 +364,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -382,27 +389,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationUserAssignmentRubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentrubric)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentrubric)

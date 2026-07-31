@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuser
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationUser
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationUser
 ## SYNOPSIS
 
 Read the properties and relationships of an educationUser object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgEducationUser [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get1
@@ -37,7 +34,7 @@ Get-MgEducationUser [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter
 Get-MgEducationUser -EducationUserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get
@@ -46,7 +43,7 @@ Get-MgEducationUser -EducationUserId <string> [-ExpandProperty <string[]>] [-Pro
 Get-MgEducationUser -EducationUserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -55,7 +52,7 @@ Get-MgEducationUser -EducationUserId <string> [-ExpandProperty <string[]>] [-Pro
 Get-MgEducationUser -InputObject <IEducationIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -64,7 +61,7 @@ Get-MgEducationUser -InputObject <IEducationIdentity> [-ExpandProperty <string[]
 Get-MgEducationUser -InputObject <IEducationIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -76,26 +73,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an educationUser object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationUser
-
-```
-This example shows how to use the Get-MgEducationUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -573,7 +557,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -598,28 +582,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationUser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationuser-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationuser-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuser)
+- [](https://learn.microsoft.com/graph/api/educationuser-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/educationuser-list?view=graph-rest-1.0)

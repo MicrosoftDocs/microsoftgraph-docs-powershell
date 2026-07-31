@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategorybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationClassAssignmentCategoryByRef
 ---
@@ -16,9 +16,6 @@ title: New-MgEducationClassAssignmentCategoryByRef
 Add one or more existing educationCategory objects to the specified  educationAssignment.
 Only teachers can perform this operation.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentCategoryByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,7 +26,6 @@ New-MgEducationClassAssignmentCategoryByRef -EducationAssignmentId <string>
  [-AdditionalProperties <hashtable>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -40,7 +36,6 @@ New-MgEducationClassAssignmentCategoryByRef -EducationAssignmentId <string>
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -51,7 +46,6 @@ New-MgEducationClassAssignmentCategoryByRef -InputObject <IEducationIdentity> -O
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -62,7 +56,6 @@ New-MgEducationClassAssignmentCategoryByRef -InputObject <IEducationIdentity>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,18 +68,9 @@ This cmdlet has the following aliases,
 Add one or more existing educationCategory objects to the specified  educationAssignment.
 Only teachers can perform this operation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
@@ -95,10 +79,6 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentCategoryByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationClassAssignmentCategoryByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -131,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -535,12 +515,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -565,27 +545,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgEducationClassAssignmentCategoryByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategorybyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategorybyref)
+- [](https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-1.0)

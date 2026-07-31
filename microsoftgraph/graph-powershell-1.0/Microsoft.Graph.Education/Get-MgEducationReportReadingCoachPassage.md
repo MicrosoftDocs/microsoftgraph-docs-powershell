@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingcoachpassage
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationReportReadingCoachPassage
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationReportReadingCoachPassage
 ## SYNOPSIS
 
 Details of practiced Reading Coach passages.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationReportReadingCoachPassage](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReportReadingCoachPassage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgEducationReportReadingCoachPassage [-ExpandProperty <string[]>] [-Property
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +35,7 @@ Get-MgEducationReportReadingCoachPassage -ReadingCoachPassageId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +45,7 @@ Get-MgEducationReportReadingCoachPassage -InputObject <IEducationIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -59,6 +56,20 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Details of practiced Reading Coach passages.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationReportReadingCoachPassage
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationReportReadingCoachPassage -Filter "practicedAtDateTime gt 2025-06-22T00:00:00Z and practicedAtDateTime lt 2025-06-23T00:00:00Z"
 
 ## PARAMETERS
 
@@ -520,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -545,29 +556,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationReportReadingCoachPassage](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingcoachpassage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingcoachpassage)
+- [](https://learn.microsoft.com/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-1.0)
