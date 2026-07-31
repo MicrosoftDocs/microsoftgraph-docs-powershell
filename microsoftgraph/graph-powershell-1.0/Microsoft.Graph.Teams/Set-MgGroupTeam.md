@@ -2227,7 +2227,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -5984,8 +5984,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -6593,7 +6593,7 @@ This is the URL that you get when you right-click a channel in Microsoft Teams a
 This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-BODYPARAMETER <IMicrosoftGraphTeam>: team
+BODYPARAMETER `<IMicrosoftGraphTeam>`: team
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -7510,7 +7510,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -10962,8 +10962,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -12785,7 +12785,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -16542,8 +16542,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -17151,14 +17151,14 @@ This is the URL that you get when you right-click a channel in Microsoft Teams a
 This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-FUNSETTINGS <IMicrosoftGraphTeamFunSettings>: teamFunSettings
+FUNSETTINGS `<IMicrosoftGraphTeamFunSettings>`: teamFunSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowCustomMemes <Boolean?>]: If set to true, enables users to include custom memes.
   [AllowGiphy <Boolean?>]: If set to true, enables Giphy use.
   [AllowStickersAndMemes <Boolean?>]: If set to true, enables users to include stickers and memes.
   [GiphyContentRating <String>]: giphyRatingType
 
-GROUP <IMicrosoftGraphGroup>: Represents a Microsoft Entra group.
+GROUP `<IMicrosoftGraphGroup>`: Represents a Microsoft Entra group.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -18184,7 +18184,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -22142,8 +22142,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -22438,7 +22438,7 @@ Returned by default.
 Nullable.
   [WelcomeMessageEnabled <Boolean?>]: 
 
-GUESTSETTINGS <IMicrosoftGraphTeamGuestSettings>: teamGuestSettings
+GUESTSETTINGS `<IMicrosoftGraphTeamGuestSettings>`: teamGuestSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowCreateUpdateChannels <Boolean?>]: If set to true, guests can add and update channels.
   [AllowDeleteChannels <Boolean?>]: If set to true, guests can delete channels.
@@ -23356,7 +23356,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -27113,8 +27113,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -27722,7 +27722,7 @@ This is the URL that you get when you right-click a channel in Microsoft Teams a
 This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -27817,7 +27817,7 @@ An Out-of-tenant external member is assigned the owner role.
   [VisibleHistoryStartDateTime <DateTime?>]: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-MEMBERSETTINGS <IMicrosoftGraphTeamMemberSettings>: teamMemberSettings
+MEMBERSETTINGS `<IMicrosoftGraphTeamMemberSettings>`: teamMemberSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowAddRemoveApps <Boolean?>]: If set to true, members can add and remove apps.
   [AllowCreatePrivateChannels <Boolean?>]: If set to true, members can add and update private channels.
@@ -27826,7 +27826,7 @@ MEMBERSETTINGS <IMicrosoftGraphTeamMemberSettings>: teamMemberSettings
   [AllowCreateUpdateRemoveTabs <Boolean?>]: If set to true, members can add, update, and remove tabs.
   [AllowDeleteChannels <Boolean?>]: If set to true, members can delete channels.
 
-MESSAGINGSETTINGS <IMicrosoftGraphTeamMessagingSettings>: teamMessagingSettings
+MESSAGINGSETTINGS `<IMicrosoftGraphTeamMessagingSettings>`: teamMessagingSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowChannelMentions <Boolean?>]: If set to true, @channel mentions are allowed.
   [AllowOwnerDeleteMessages <Boolean?>]: If set to true, owners can delete any message.
@@ -27867,7 +27867,7 @@ Read-only.
   [ResourceAppId <String>]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
 
-PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
+PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -27876,7 +27876,7 @@ Read-only.
   [Width <Int32?>]: The width of the photo.
 Read-only.
 
-PRIMARYCHANNEL <IMicrosoftGraphChannel>: channel
+PRIMARYCHANNEL `<IMicrosoftGraphChannel>`: channel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -28790,7 +28790,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -32547,8 +32547,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -33156,7 +33156,7 @@ This is the URL that you get when you right-click a channel in Microsoft Teams a
 This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-SCHEDULE <IMicrosoftGraphSchedule>: schedule
+SCHEDULE `<IMicrosoftGraphSchedule>`: schedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -33381,7 +33381,7 @@ Required.
 Required.
   [WorkforceIntegrationIds <String[]>]: The IDs for the workforce integrations associated with this schedule.
 
-SUMMARY <IMicrosoftGraphTeamSummary>: teamSummary
+SUMMARY `<IMicrosoftGraphTeamSummary>`: teamSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GuestsCount <Int32?>]: Count of guests in a team.
   [MembersCount <Int32?>]: Count of members in a team.
@@ -33408,3 +33408,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam)
 - [](https://learn.microsoft.com/graph/api/team-put-teams?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
