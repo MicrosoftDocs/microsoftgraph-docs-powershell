@@ -588,7 +588,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgidentityb2xuserflowpostfederationsignupbyref)
+- [Set-MgIdentityB2XUserFlowPostFederationSignupByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgidentityb2xuserflowpostfederationsignupbyref)
 
 
 

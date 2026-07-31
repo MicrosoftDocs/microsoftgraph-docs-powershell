@@ -601,8 +601,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganization)
-- [](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-1.0)
+- [Update-MgTenantRelationshipMultiTenantOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-1.0)
 
 
 

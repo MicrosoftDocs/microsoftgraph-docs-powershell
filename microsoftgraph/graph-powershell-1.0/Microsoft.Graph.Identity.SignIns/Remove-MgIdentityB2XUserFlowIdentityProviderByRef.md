@@ -1,66 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationemailmethod
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
-title: Update-MgUserAuthenticationEmailMethod
+title: Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 ---
 
-# Update-MgUserAuthenticationEmailMethod
+# Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 
 ## SYNOPSIS
 
-Update a user's email address represented by an emailAuthenticationMethod object.
-Self-service operations aren't supported.
+Delete ref of navigation property userFlowIdentityProviders for identity
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Delete (Default)
 
 ```
-Update-MgUserAuthenticationEmailMethod -EmailAuthenticationMethodId <string> -UserId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-CreatedDateTime <datetime>] [-EmailAddress <string>] [-Id <string>] [-Break]
+Remove-MgIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <string>
+ -IdentityProviderBaseId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Update
+### DeleteViaIdentity
 
 ```
-Update-MgUserAuthenticationEmailMethod -EmailAuthenticationMethodId <string> -UserId <string>
- -BodyParameter <IMicrosoftGraphEmailAuthenticationMethod> [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### UpdateViaIdentityExpanded
-
-```
-Update-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-CreatedDateTime <datetime>] [-EmailAddress <string>] [-Id <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### UpdateViaIdentity
-
-```
-Update-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphEmailAuthenticationMethod> [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -70,84 +46,24 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update a user's email address represented by an emailAuthenticationMethod object.
-Self-service operations aren't supported.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthMethod-Email.ReadWrite, UserAuthMethod-Email.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Email.ReadWrite.All,  |
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	emailAddress = "kim@contoso.com"
-}
-
-Update-MgUserAuthenticationEmailMethod -UserId $userId -EmailAuthenticationMethodId $emailAuthenticationMethodId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgUserAuthenticationEmailMethod Cmdlet.
-
+Delete ref of navigation property userFlowIdentityProviders for identity
 
 ## PARAMETERS
 
-### -AdditionalProperties
+### -B2XIdentityUserFlowId
 
-Additional Parameters
+The unique identifier of b2xIdentityUserFlow
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -BodyParameter
-
-emailAuthenticationMethod
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAuthenticationMethod
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentity
+- Name: Delete
   Position: Named
   IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Update
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -190,88 +106,6 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -CreatedDateTime
-
-Represents the date and time when an entity was created.
-Read-only.
-
-```yaml
-Type: System.DateTime
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -EmailAddress
-
-The email address registered to this user.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -EmailAuthenticationMethodId
-
-The unique identifier of emailAuthenticationMethod
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Update
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -343,10 +177,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Id
+### -IdentityProviderBaseId
 
-The unique identifier for an entity.
-Read-only.
+The unique identifier of identityProviderBase
 
 ```yaml
 Type: System.String
@@ -354,13 +187,28 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: Delete
   Position: Named
-  IsRequired: false
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IfMatch
+
+ETag
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -382,16 +230,31 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateViaIdentity
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PassThru
+
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
   Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -484,33 +347,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -UserId
-
-The unique identifier of user
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Update
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -546,17 +382,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAuthenticationMethod
-
-{{ Fill in the Description }}
-
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAuthenticationMethod
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -566,14 +398,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
-
-BODYPARAMETER `<IMicrosoftGraphEmailAuthenticationMethod>`: emailAuthenticationMethod
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [CreatedDateTime <DateTime?>]: Represents the date and time when an entity was created.
-Read-only.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [EmailAddress <String>]: The email address registered to this user.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
@@ -645,8 +469,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgUserAuthenticationEmailMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationemailmethod)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/emailauthenticationmethod-update?view=graph-rest-1.0)
+- [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgIdentityB2XUserFlowIdentityProviderByRef)
+
 
 
 

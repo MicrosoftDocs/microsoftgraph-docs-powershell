@@ -611,9 +611,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrant)
-- [](https://learn.microsoft.com/graph/api/oauth2permissiongrant-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/oauth2permissiongrant-list?view=graph-rest-1.0)
+- [Get-MgOauth2PermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/oauth2permissiongrant-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/oauth2permissiongrant-list?view=graph-rest-1.0)
 
 
 

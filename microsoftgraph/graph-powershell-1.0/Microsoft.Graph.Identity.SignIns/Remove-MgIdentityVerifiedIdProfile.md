@@ -460,8 +460,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityverifiedidprofile)
-- [](https://learn.microsoft.com/graph/api/identityverifiedidroot-delete-profiles?view=graph-rest-1.0)
+- [Remove-MgIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityverifiedidprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityverifiedidroot-delete-profiles?view=graph-rest-1.0)
 
 
 
