@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgCommunicationOnlineMeeting
 ---
@@ -14,9 +14,6 @@ title: Get-MgCommunicationOnlineMeeting
 ## SYNOPSIS
 
 Get onlineMeetings from communications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Get-MgCommunicationOnlineMeeting [-ResponseHeadersVariable <string>]
  [-StartDateTime <datetime>] [-Subject <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -39,7 +35,6 @@ Get-MgCommunicationOnlineMeeting -OnlineMeetingId <string> [-ExpandProperty <str
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -49,7 +44,7 @@ Get-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### List
@@ -60,7 +55,7 @@ Get-MgCommunicationOnlineMeeting [-ExpandProperty <string[]>] [-Property <string
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CountVariable <string>] [-WhatIf] [-Confirm]
 ```
 
 ### Get1
@@ -71,7 +66,6 @@ Get-MgCommunicationOnlineMeeting
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -84,17 +78,12 @@ This cmdlet has the following aliases,
 Get onlineMeetings from communications
 
 ## EXAMPLES
-### Example 1: Retrieve an online meeting by videoTeleconferenceId
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'" 
-
-```
-This example will retrieve an online meeting by videoteleconferenceid
-
+Get-MgCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
 
 ## PARAMETERS
 
@@ -142,7 +131,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -252,7 +241,7 @@ HelpMessage: ''
 
 ### -EndDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -307,7 +296,7 @@ HelpMessage: ''
 
 ### -ExternalId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -681,7 +670,7 @@ HelpMessage: ''
 
 ### -StartDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -702,7 +691,7 @@ HelpMessage: ''
 
 ### -Subject
 
-
+.
 
 ```yaml
 Type: System.String
@@ -799,7 +788,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChatInfo <IMicrosoftGraphChatInfo>]: chatInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -827,13 +816,13 @@ For example, in the access reviews decisions API, this property might record the
   [StartDateTime <DateTime?>]: 
   [Subject <String>]: 
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MessageId <String>]: The unique identifier of a message in a Microsoft Teams channel.
   [ReplyChainMessageId <String>]: The ID of the reply message.
   [ThreadId <String>]: The unique identifier for a thread in Microsoft Teams.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -854,7 +843,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [SessionId <String>]: The unique identifier of session
   [UserId <String>]: The unique identifier of user
 
-PARTICIPANTS `<IMicrosoftGraphMeetingParticipants>`: meetingParticipants
+PARTICIPANTS <IMicrosoftGraphMeetingParticipants>: meetingParticipants
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]: Information about the meeting attendees.
     [Identity <IMicrosoftGraphIdentitySet>]: identitySet
@@ -874,28 +863,6 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Get-MgCommunicationOnlineMeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting)
+- [](https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0)

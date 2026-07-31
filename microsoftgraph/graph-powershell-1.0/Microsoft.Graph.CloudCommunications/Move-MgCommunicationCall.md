@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Move-MgCommunicationCall
 ---
@@ -17,9 +17,6 @@ Transfer an active peer-to-peer call or group call.
 A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
 This is opposed to transfering the call directly.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Move-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Move-MgBetaCommunicationCall?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### TransferExpanded (Default)
@@ -30,7 +27,6 @@ Move-MgCommunicationCall -CallId <string> [-ResponseHeadersVariable <string>]
  [-Transferee <IMicrosoftGraphParticipantInfo>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Transfer
@@ -41,7 +37,6 @@ Move-MgCommunicationCall -CallId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### TransferViaIdentityExpanded
@@ -53,7 +48,6 @@ Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [-Transferee <IMicrosoftGraphParticipantInfo>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### TransferViaIdentity
@@ -64,7 +58,6 @@ Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -79,9 +72,8 @@ A consultative transfer means that the transferor can inform the person they wan
 This is opposed to transfering the call directly.
 
 ## EXAMPLES
-### Example 1: Call transfer from a peer-to-peer call
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -99,12 +91,7 @@ $params = @{
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
-```
-This example will call transfer from a peer-to-peer call
-
-### Example 2: Consultative transfer from a peer-to-peer call
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -126,12 +113,7 @@ $params = @{
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
-```
-This example will consultative transfer from a peer-to-peer call
-
-### Example 3: Call transfer from a peer-to-peer call to PSTN number
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -152,12 +134,7 @@ $params = @{
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
-```
-This example will call transfer from a peer-to-peer call to pstn number
-
-### Example 4: Consultative transfer from a peer-to-peer call to PSTN number
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -181,12 +158,7 @@ $params = @{
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
-```
-This example will consultative transfer from a peer-to-peer call to pstn number
-
-### Example 5: Call transfer from a group call
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -212,10 +184,6 @@ $params = @{
 }
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example will call transfer from a group call
-
 
 ## PARAMETERS
 
@@ -248,7 +216,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -653,7 +621,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TransferTarget <IMicrosoftGraphInvitationParticipantInfo>]: invitationParticipantInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -691,7 +659,7 @@ This can be a country, a continent, or a larger geographic region.
 This doesn't change based on the participant's current physical location.
 Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -712,7 +680,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [SessionId <String>]: The unique identifier of session
   [UserId <String>]: The unique identifier of user
 
-TRANSFEREE `<IMicrosoftGraphParticipantInfo>`: participantInfo
+TRANSFEREE <IMicrosoftGraphParticipantInfo>: participantInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CountryCode <String>]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
@@ -736,7 +704,7 @@ This can be a country, a continent, or a larger geographic region.
 This doesn't change based on the participant's current physical location.
 Read-only.
 
-TRANSFERTARGET `<IMicrosoftGraphInvitationParticipantInfo>`: invitationParticipantInfo
+TRANSFERTARGET <IMicrosoftGraphInvitationParticipantInfo>: invitationParticipantInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Hidden <Boolean?>]: Optional.
 Whether to hide the participant from the roster.
@@ -761,27 +729,5 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 
 ## RELATED LINKS
 
-- [Move-MgCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/call-transfer?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall)
+- [](https://learn.microsoft.com/graph/api/call-transfer?view=graph-rest-1.0)

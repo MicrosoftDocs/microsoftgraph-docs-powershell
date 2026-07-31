@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingrecording
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserOnlineMeetingRecording
 ---
@@ -18,9 +18,6 @@ This API supports the retrieval of call recordings from all meeting types except
 For a recording, this API returns the metadata of the single recording associated with the online meeting or an ad hoc call.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingRecording?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get1 (Default)
@@ -32,7 +29,7 @@ Get-MgUserOnlineMeetingRecording -UserId <string> [-ExpandProperty <string[]>]
  [-StartDateTime <datetime>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### Get
@@ -42,7 +39,7 @@ Get-MgUserOnlineMeetingRecording -CallRecordingId <string> -OnlineMeetingId <str
  -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### List
@@ -54,7 +51,6 @@ Get-MgUserOnlineMeetingRecording -OnlineMeetingId <string> -UserId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -66,7 +62,7 @@ Get-MgUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
  [-Sort <string[]>] [-StartDateTime <datetime>] [-Top <int>] [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -76,7 +72,7 @@ Get-MgUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -91,26 +87,13 @@ This API supports the retrieval of call recordings from all meeting types except
 For a recording, this API returns the metadata of the single recording associated with the online meeting or an ad hoc call.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OnlineMeetingRecording.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat,  |
-
 ## EXAMPLES
-### Example 1: Get a callRecording
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgUserOnlineMeetingRecording -UserId $userId -OnlineMeetingId $onlineMeetingId -CallRecordingId $callRecordingId
-
-```
-This example will get a callrecording
-
 
 ## PARAMETERS
 
@@ -806,7 +789,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -830,28 +813,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserOnlineMeetingRecording](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingrecording)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingrecording)
+- [](https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationadhoccall
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgCommunicationAdhocCall
 ---
@@ -14,9 +14,6 @@ title: Update-MgCommunicationAdhocCall
 ## SYNOPSIS
 
 Update the navigation property adhocCalls in communications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationAdhocCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationAdhocCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Update-MgCommunicationAdhocCall -AdhocCallId <string> [-ResponseHeadersVariable 
  [-Transcripts <IMicrosoftGraphCallTranscript[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -38,7 +34,6 @@ Update-MgCommunicationAdhocCall -AdhocCallId <string> -BodyParameter <IMicrosoft
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,7 +44,7 @@ Update-MgCommunicationAdhocCall -InputObject <ICloudCommunicationsIdentity>
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-Transcripts <IMicrosoftGraphCallTranscript[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -59,7 +54,7 @@ Update-MgCommunicationAdhocCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphAdhocCall> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -70,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property adhocCalls in communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -516,7 +521,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAdhocCall>`: adhocCall
+BODYPARAMETER <IMicrosoftGraphAdhocCall>: adhocCall
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -578,7 +583,7 @@ Read-only.
     [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -670,27 +675,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgCommunicationAdhocCall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationadhoccall)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationadhoccall)

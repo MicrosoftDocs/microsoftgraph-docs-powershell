@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingconversationmessagereply
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgCommunicationOnlineMeetingConversationMessageReply
 ---
@@ -14,9 +14,6 @@ title: Update-MgCommunicationOnlineMeetingConversationMessageReply
 ## SYNOPSIS
 
 Update the navigation property replies in communications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationOnlineMeetingConversationMessageReply](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationOnlineMeetingConversationMessageReply?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,7 +31,7 @@ Update-MgCommunicationOnlineMeetingConversationMessageReply
  [-ReplyTo <IMicrosoftGraphEngagementConversationMessage>] [-ReplyToId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -46,7 +43,7 @@ Update-MgCommunicationOnlineMeetingConversationMessageReply
  -BodyParameter <IMicrosoftGraphEngagementConversationMessage> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -62,7 +59,7 @@ Update-MgCommunicationOnlineMeetingConversationMessageReply
  [-ReplyTo <IMicrosoftGraphEngagementConversationMessage>] [-ReplyToId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -73,7 +70,7 @@ Update-MgCommunicationOnlineMeetingConversationMessageReply
  -BodyParameter <IMicrosoftGraphEngagementConversationMessage> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -84,6 +81,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property replies in communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -748,12 +755,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphEngagementConversationMessage>`: A Viva Engage conversation message.
+BODYPARAMETER <IMicrosoftGraphEngagementConversationMessage>: A Viva Engage conversation message.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -791,7 +798,7 @@ Read-only.
   [ReplyTo <IMicrosoftGraphEngagementConversationMessage>]: A Viva Engage conversation message.
   [ReplyToId <String>]: The ID of the parent message to which this message is a reply, if applicable.
 
-CONVERSATION `<IMicrosoftGraphEngagementConversation>`: Represents a conversation in Viva Engage.
+CONVERSATION <IMicrosoftGraphEngagementConversation>: Represents a conversation in Viva Engage.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -828,7 +835,7 @@ Read-only.
   [Starter <IMicrosoftGraphEngagementConversationMessage>]: A Viva Engage conversation message.
   [StarterId <String>]: The unique ID of the first message in a Viva Engage conversation.
 
-FROM `<IMicrosoftGraphEngagementIdentitySet>`: The Viva Engage identities.
+FROM <IMicrosoftGraphEngagementIdentitySet>: The Viva Engage identities.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -841,7 +848,7 @@ For example, in the access reviews decisions API, this property might record the
   [Audience <IMicrosoftGraphIdentity>]: identity
   [Group <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -916,7 +923,7 @@ Read-only.
   [ReplyTo <IMicrosoftGraphEngagementConversationMessage>]: A Viva Engage conversation message.
   [ReplyToId <String>]: The ID of the parent message to which this message is a reply, if applicable.
 
-REPLYTO `<IMicrosoftGraphEngagementConversationMessage>`: A Viva Engage conversation message.
+REPLYTO <IMicrosoftGraphEngagementConversationMessage>: A Viva Engage conversation message.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -957,27 +964,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgCommunicationOnlineMeetingConversationMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingconversationmessagereply)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingconversationmessagereply)
