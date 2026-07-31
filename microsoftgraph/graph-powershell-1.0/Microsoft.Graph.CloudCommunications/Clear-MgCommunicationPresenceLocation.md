@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Clear the work location signals for a user, including both the manual and automatic layers for the current date.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -392,6 +382,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresencelocation)
 - [](https://learn.microsoft.com/graph/api/presence-clearlocation?view=graph-rest-1.0)
+
 
 
 
