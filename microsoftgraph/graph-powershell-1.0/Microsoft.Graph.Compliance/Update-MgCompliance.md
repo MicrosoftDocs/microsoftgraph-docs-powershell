@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgcompliance
 Locale: en-US
 Module Name: Microsoft.Graph.Compliance
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgCompliance
 ---
@@ -15,9 +15,6 @@ title: Update-MgCompliance
 
 Update compliance
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaCompliance?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -26,7 +23,7 @@ Update compliance
 Update-MgCompliance [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -35,7 +32,7 @@ Update-MgCompliance [-ResponseHeadersVariable <string>] [-AdditionalProperties <
 Update-MgCompliance -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update compliance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -331,27 +338,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Update-MgCompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgcompliance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgcompliance)
