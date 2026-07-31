@@ -60,6 +60,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Authentication.IGraphOption
 
+{{ Fill in the Description }}
 
 ## NOTES
 

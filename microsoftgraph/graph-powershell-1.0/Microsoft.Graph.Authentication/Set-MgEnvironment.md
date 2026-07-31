@@ -164,11 +164,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.String
 
+{{ Fill in the Description }}
 
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Authentication.Models.GraphEnvironment
 
+{{ Fill in the Description }}
 
 ## NOTES
 
