@@ -58,12 +58,17 @@ When invoked with delegated permissions, this operation only works for tenant ad
 | Application | Chat.ManageDeletion.Chat, Chat.ManageDeletion.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgChat -ChatId $chatId
+
+```
+This example shows how to use the Remove-MgChat Cmdlet.
+
 
 ## PARAMETERS
 

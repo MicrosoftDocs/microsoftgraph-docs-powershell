@@ -98,8 +98,9 @@ This API can't create a new chat; you must use the list chats method to retrieve
 | Application | Teamwork.Migrate.All,  |
 
 ## EXAMPLES
+### Example 1: Send inline images along with the message
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -126,7 +127,12 @@ $params = @{
 
 New-MgChatMessage -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will send inline images along with the message
+
+### Example 2: Send a message with an emoji
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -138,6 +144,10 @@ $params = @{
 }
 
 New-MgChatMessage -ChatId $chatId -BodyParameter $params
+
+```
+This example will send a message with an emoji
+
 
 ## PARAMETERS
 
