@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedge
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgAdminEdge
 ---
@@ -15,9 +15,6 @@ title: Update-MgAdminEdge
 
 Update the navigation property edge in admin
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdge?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -27,7 +24,7 @@ Update-MgAdminEdge [-ResponseHeadersVariable <string>] [-AdditionalProperties <h
  [-Id <string>] [-InternetExplorerMode <IMicrosoftGraphInternetExplorerMode>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -36,7 +33,7 @@ Update-MgAdminEdge [-ResponseHeadersVariable <string>] [-AdditionalProperties <h
 Update-MgAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -47,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property edge in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -380,7 +387,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEdge>`: edge
+BODYPARAMETER <IMicrosoftGraphEdge>: edge
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -456,7 +463,7 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
         [WebUrl <String>]: The URL of the site.
       [Status <BrowserSiteListStatus?>]: browserSiteListStatus
 
-INTERNETEXPLORERMODE `<IMicrosoftGraphInternetExplorerMode>`: internetExplorerMode
+INTERNETEXPLORERMODE <IMicrosoftGraphInternetExplorerMode>: internetExplorerMode
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -531,27 +538,4 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
 
 ## RELATED LINKS
 
-- [Update-MgAdminEdge](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedge)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedge)
