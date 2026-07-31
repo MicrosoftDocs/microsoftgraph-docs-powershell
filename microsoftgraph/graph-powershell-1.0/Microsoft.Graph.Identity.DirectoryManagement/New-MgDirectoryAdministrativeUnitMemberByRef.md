@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Use this API to add a member (user, group, or device) to an administrative unit.
 Currently it's only possible to add one member at a time to an administrative unit.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Group.Create, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
