@@ -56,12 +56,17 @@ Deletes an accessReviewScheduleDefinition object.
 | Application | AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
+
+```
+This example shows how to use the Remove-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
+
 
 ## PARAMETERS
 
