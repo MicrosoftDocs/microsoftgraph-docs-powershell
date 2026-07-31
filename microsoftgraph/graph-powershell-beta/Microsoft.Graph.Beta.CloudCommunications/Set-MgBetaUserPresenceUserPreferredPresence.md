@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresenceuserpreferredpresence
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaUserPresenceUserPreferredPresence
 ---
@@ -20,9 +20,6 @@ Otherwise, the user's presence stays as Offline.
 A presence session can be created as a result of a successful setPresence operation, or if the user is signed in on a Teams client.
 Read more about presence sessions and their time-out and expiration.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserPresenceUserPreferredPresence?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -33,7 +30,6 @@ Set-MgBetaUserPresenceUserPreferredPresence -UserId <string> [-ResponseHeadersVa
  [-ExpirationDuration <timespan>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set
@@ -44,7 +40,6 @@ Set-MgBetaUserPresenceUserPreferredPresence -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -55,7 +50,6 @@ Set-MgBetaUserPresenceUserPreferredPresence -InputObject <ICloudCommunicationsId
  [-Availability <string>] [-ExpirationDuration <timespan>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -66,7 +60,6 @@ Set-MgBetaUserPresenceUserPreferredPresence -InputObject <ICloudCommunicationsId
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -83,18 +76,9 @@ Otherwise, the user's presence stays as Offline.
 A presence session can be created as a result of a successful setPresence operation, or if the user is signed in on a Teams client.
 Read more about presence sessions and their time-out and expiration.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Presence.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Presence.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -106,15 +90,11 @@ $params = @{
 
 Set-MgBetaUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
 
-```
-This example shows how to use the Set-MgBetaUserPresenceUserPreferredPresence Cmdlet.
-
-
 ## PARAMETERS
 
 ### -Activity
 
-
+.
 
 ```yaml
 Type: System.String
@@ -168,7 +148,7 @@ HelpMessage: ''
 
 ### -Availability
 
-
+.
 
 ```yaml
 Type: System.String
@@ -195,7 +175,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -266,7 +246,7 @@ HelpMessage: ''
 
 ### -ExpirationDuration
 
-
+.
 
 ```yaml
 Type: System.TimeSpan
@@ -571,13 +551,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Activity <String>]: 
   [Availability <String>]: 
   [ExpirationDuration <TimeSpan?>]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -607,27 +587,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaUserPresenceUserPreferredPresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresenceuserpreferredpresence)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresenceuserpreferredpresence)
+- [](https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta)

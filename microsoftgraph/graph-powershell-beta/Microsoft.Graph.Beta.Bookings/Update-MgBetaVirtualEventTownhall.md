@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhall
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaVirtualEventTownhall
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaVirtualEventTownhall
 
 Update the properties of a virtualEventTownhall object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventTownhall](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventTownhall?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -25,17 +22,19 @@ Update the properties of a virtualEventTownhall object.
 ```
 Update-MgBetaVirtualEventTownhall -VirtualEventTownhallId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Audience <string>]
- [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
+ [-Capacity <int>] [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <IMicrosoftGraphItemBody>]
  [-DisplayName <string>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
  [-ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>] [-Id <string>]
- [-InvitedAttendees <IMicrosoftGraphIdentity[]>] [-IsInviteOnly]
- [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
+ [-InvitedAttendees <IMicrosoftGraphIdentity[]>] [-IsInviteOnly] [-IsRegistrationEnabled]
+ [-IsRegistrationRequired] [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
+ [-RegistrationConfiguration <hashtable>]
+ [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
  [-Settings <IMicrosoftGraphVirtualEventSettings>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -45,7 +44,7 @@ Update-MgBetaVirtualEventTownhall -VirtualEventTownhallId <string>
  -BodyParameter <IMicrosoftGraphVirtualEventTownhall> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,17 +52,19 @@ Update-MgBetaVirtualEventTownhall -VirtualEventTownhallId <string>
 ```
 Update-MgBetaVirtualEventTownhall -InputObject <IBookingsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Audience <string>]
- [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
+ [-Capacity <int>] [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <IMicrosoftGraphItemBody>]
  [-DisplayName <string>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
  [-ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>] [-Id <string>]
- [-InvitedAttendees <IMicrosoftGraphIdentity[]>] [-IsInviteOnly]
- [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
+ [-InvitedAttendees <IMicrosoftGraphIdentity[]>] [-IsInviteOnly] [-IsRegistrationEnabled]
+ [-IsRegistrationRequired] [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
+ [-RegistrationConfiguration <hashtable>]
+ [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
  [-Settings <IMicrosoftGraphVirtualEventSettings>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -73,7 +74,7 @@ Update-MgBetaVirtualEventTownhall -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphVirtualEventTownhall> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -86,9 +87,8 @@ This cmdlet has the following aliases,
 Update the properties of a virtualEventTownhall object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
@@ -104,10 +104,6 @@ $params = @{
 }
 
 Update-MgBetaVirtualEventTownhall -VirtualEventTownhallId $virtualEventTownhallId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaVirtualEventTownhall Cmdlet.
-
 
 ## PARAMETERS
 
@@ -204,6 +200,33 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Capacity
+
+.
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -580,6 +603,60 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IsRegistrationEnabled
+
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IsRegistrationRequired
+
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Presenters
 
 The virtual event presenters.
@@ -661,6 +738,61 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -RegistrationConfiguration
+
+virtualEventTownhallRegistrationConfiguration
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Registrations
+
+Registration records of the town hall.
+To construct, see NOTES section for REGISTRATIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventRegistration[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -887,7 +1019,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventTownhall>`: virtualEventTownhall
+BODYPARAMETER <IMicrosoftGraphVirtualEventTownhall>: virtualEventTownhall
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>]: communicationsIdentitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -927,6 +1059,8 @@ Read-only.
 This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
 Optional.
 If set, the maximum supported length is 256 characters.
+  [IsRegistrationEnabled <Boolean?>]: 
+  [IsRegistrationRequired <Boolean?>]: 
   [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: The virtual event presenters.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -972,6 +1106,10 @@ Read-only.
             [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
             [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
           [EmailAddress <String>]: Email address of the user associated with this attendance record.
+          [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+            [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+            [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+            [EngagementType <String>]: meetingEngagementType
           [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -1014,6 +1152,11 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+      [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [MoreInfoWebUrl <String>]: 
+        [TenantKey <String>]: 
+        [VideoTeleconferenceId <String>]: 
       [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1054,6 +1197,7 @@ Read-only.
         [IsEnabledForVideo <Boolean?>]: Indicates whether to apply a watermark to everyone's video feed.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [Capacity <Int32?>]: Represents the expected number of attendees for town hall session.
       [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
       [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: 
       [Registrations <IMicrosoftGraphVirtualEventRegistration[]>]: 
@@ -1097,6 +1241,7 @@ Only appears when the registrant is registered in Microsoft Entra ID.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Audience <String>]: meetingAudience
+  [Capacity <Int32?>]: 
   [CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]: Identity information of the coorganizers of the town hall.
     [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1108,6 +1253,21 @@ For example, in the access reviews decisions API, this property might record the
 The supported identities are: communicationsUserIdentity and communicationsGuestIdentity.
   [IsInviteOnly <Boolean?>]: Indicates whether the town hall is only open to invited people and groups within your organization.
 The isInviteOnly property can only be true if the value of the audience property is set to organization.
+  [RegistrationConfiguration <IMicrosoftGraphVirtualEventTownhallRegistrationConfiguration>]: virtualEventTownhallRegistrationConfiguration
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Capacity <Int32?>]: Total capacity of the virtual event.
+    [IsManualApprovalEnabled <Boolean?>]: Indicates whether registrations require organizer approval before a participant is confirmed.
+    [IsWaitlistEnabled <Boolean?>]: Indicates whether more registrants are automatically placed on a waitlist when capacity is reached.
+    [Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>]: Registration questions.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [DisplayName <String>]: Display name of the registration question.
+      [IsRequired <Boolean?>]: Indicates whether an answer to the question is required.
+The default value is false.
+    [RegistrationWebUrl <String>]: Registration URL of the virtual event.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Registrations <IMicrosoftGraphVirtualEventRegistration[]>]: Registration records of the town hall.
 
 COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity[]>: Identity information of the coorganizers of the town hall.
   [DisplayName <String>]: The display name of the identity.
@@ -1117,7 +1277,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [TenantId <String>]: The user's tenant ID.
 
-CREATEDBY `<IMicrosoftGraphCommunicationsIdentitySet>`: communicationsIdentitySet
+CREATEDBY <IMicrosoftGraphCommunicationsIdentitySet>: communicationsIdentitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1137,12 +1297,12 @@ For example, in the access reviews decisions API, this property might record the
   [OnPremises <IMicrosoftGraphIdentity>]: identity
   [Phone <IMicrosoftGraphIdentity>]: identity
 
-DESCRIPTION `<IMicrosoftGraphItemBody>`: itemBody
+DESCRIPTION <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -1158,7 +1318,7 @@ This association bundles all the information (both supported and not supported i
 Optional.
 If set, the maximum supported length is 256 characters.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1242,6 +1402,10 @@ Read-only.
           [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
           [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
         [EmailAddress <String>]: Email address of the user associated with this attendance record.
+        [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+          [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+          [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+          [EngagementType <String>]: meetingEngagementType
         [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -1290,6 +1454,11 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+    [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [MoreInfoWebUrl <String>]: 
+      [TenantKey <String>]: 
+      [VideoTeleconferenceId <String>]: 
     [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1330,6 +1499,7 @@ Read-only.
       [IsEnabledForVideo <Boolean?>]: Indicates whether to apply a watermark to everyone's video feed.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [Capacity <Int32?>]: Represents the expected number of attendees for town hall session.
     [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
@@ -1370,6 +1540,198 @@ Only appears when the registrant is registered in Microsoft Entra ID.
     [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [VideoOnDemandWebUrl <String>]: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
+REGISTRATIONS <IMicrosoftGraphVirtualEventRegistration[]>: Registration records of the town hall.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [CancelationDateTime <DateTime?>]: Date and time when the registrant cancels their registration for the virtual event.
+Only appears when applicable.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [Email <String>]: Email address of the registrant.
+  [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
+Optional.
+    [RegistrationId <String>]: The identifier for a virtualEventExternalRegistrationInformation object.
+Optional.
+If set, the maximum supported length is 256 characters.
+  [FirstName <String>]: First name of the registrant.
+  [LastName <String>]: Last name of the registrant.
+  [PreferredLanguage <String>]: The registrant's preferred language.
+  [PreferredTimezone <String>]: The registrant's time zone details.
+  [RegistrantVideoOnDemandWebUrl <String>]: 
+  [RegistrationDateTime <DateTime?>]: Date and time when the registrant registers for the virtual event.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]: The registrant's answer to the registration questions.
+    [BooleanValue <Boolean?>]: Boolean answer to the virtualEventRegistrationCustomQuestion.
+Only appears when answerInputType is boolean.
+    [DisplayName <String>]: Display name of the registration question.
+    [MultiChoiceValues <String[]>]: A collection of text answers to the virtualEventRegistrationCustomQuestion.
+Only appears when answerInputType is multiChoice.
+    [QuestionId <String>]: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+    [Value <String>]: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
+Appears when answerInputType is text, multilineText or singleChoice.
+  [Sessions <IMicrosoftGraphVirtualEventSession[]>]: Sessions for a registration.
+    [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
+    [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
+    [AllowBreakoutRooms <Boolean?>]: Indicates whether breakout rooms are enabled for the meeting.
+    [AllowCopyingAndSharingMeetingContent <Boolean?>]: Indicates whether copying and sharing meeting content is enabled for the meeting.
+    [AllowLiveShare <String>]: meetingLiveShareOptions
+    [AllowMeetingChat <String>]: meetingChatMode
+    [AllowParticipantsToChangeName <Boolean?>]: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    [AllowPowerPointSharing <Boolean?>]: Indicates whether PowerPoint live is enabled for the meeting.
+    [AllowRecording <Boolean?>]: Indicates whether recording is enabled for the meeting.
+    [AllowTeamworkReactions <Boolean?>]: Indicates if Teams reactions are enabled for the meeting.
+    [AllowTranscription <Boolean?>]: Indicates whether transcription is enabled for the meeting.
+    [AllowWhiteboard <Boolean?>]: Indicates whether whiteboard is enabled for the meeting.
+    [AllowedLobbyAdmitters <String>]: allowedLobbyAdmitterRoles
+    [AllowedPresenters <String>]: onlineMeetingPresenters
+    [AnonymizeIdentityForRoles <String[]>]: Specifies whose identity is anonymized in the meeting.
+The possible values are: attendee.
+The attendee value can't be removed through a PATCH operation once added.
+    [AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]: The attendance reports of an online meeting.
+Read-only.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]: List of attendance records of an attendance report.
+Read-only.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]: List of time periods between joining and leaving a meeting.
+          [DurationInSeconds <Int32?>]: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+          [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
+          [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
+        [EmailAddress <String>]: Email address of the user associated with this attendance record.
+        [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+          [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+          [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+          [EngagementType <String>]: meetingEngagementType
+        [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
+        [Identity <IMicrosoftGraphIdentity>]: identity
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+        [RegistrantId <String>]: Unique identifier of a meetingRegistrant.
+Presents when the participant has registered for the meeting.
+(deprecated)
+        [RegistrationId <String>]: Unique identifier of a virtualEventRegistration.
+Presents for all participant who has registered for the virtualEventWebinar.
+        [Role <String>]: Role of the attendee.
+The possible values are: None, Attendee, Presenter, and Organizer.
+        [TotalAttendanceInSeconds <Int32?>]: Total duration of the attendances in seconds.
+      [ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>]: The external information of a virtual event.
+Returned only for event organizers or coorganizers.
+Read-only.
+        [ApplicationId <String>]: Identifier of the application that hosts the externalEventId.
+Read-only.
+        [ExternalEventId <String>]: The identifier for a virtualEventExternalInformation object that associates the virtual event with an event ID in an external application.
+This association bundles all the information (both supported and not supported in virtualEvent) into one virtual event object.
+Optional.
+If set, the maximum supported length is 256 characters.
+      [MeetingEndDateTime <DateTime?>]: UTC time when the meeting ended.
+Read-only.
+      [MeetingStartDateTime <DateTime?>]: UTC time when the meeting started.
+Read-only.
+      [TotalParticipantCount <Int32?>]: Total number of participants.
+Read-only.
+    [AudioConferencing <IMicrosoftGraphAudioConferencing>]: audioConferencing
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [ConferenceId <String>]: The conference id of the online meeting.
+      [DialinUrl <String>]: A URL to the externally-accessible web page that contains dial-in information.
+      [TollFreeNumber <String>]: The toll-free number that connects to the Audio Conference Provider.
+      [TollFreeNumbers <String[]>]: List of toll-free numbers that are displayed in the meeting invite.
+      [TollNumber <String>]: The toll number that connects to the Audio Conference Provider.
+      [TollNumbers <String[]>]: List of toll numbers that are displayed in the meeting invite.
+    [ChatInfo <IMicrosoftGraphChatInfo>]: chatInfo
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [MessageId <String>]: The unique identifier for a message in a Microsoft Teams channel.
+      [ReplyChainMessageId <String>]: The ID of the reply message.
+      [ThreadId <String>]: The unique identifier for a thread in Microsoft Teams.
+    [ChatRestrictions <IMicrosoftGraphChatRestrictions>]: chatRestrictions
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
+Optional.
+    [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [MoreInfoWebUrl <String>]: 
+      [TenantKey <String>]: 
+      [VideoTeleconferenceId <String>]: 
+    [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [IsEndToEndEncryptionEnabled <Boolean?>]: Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.
+    [IsEntryExitAnnounced <Boolean?>]: Indicates whether to announce when callers join or leave.
+    [JoinInformation <IMicrosoftGraphItemBody>]: itemBody
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Content <String>]: The content of the item.
+      [ContentType <String>]: bodyType
+    [JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]: joinMeetingIdSettings
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [IsPasscodeRequired <Boolean?>]: Indicates whether a passcode is required to join a meeting when using joinMeetingId.
+Optional.
+      [JoinMeetingId <String>]: The meeting ID to be used to join a meeting.
+Optional.
+Read-only.
+      [Passcode <String>]: The passcode to join a meeting.
+ Optional.
+Read-only.
+    [JoinWebUrl <String>]: The join URL of the online meeting.
+Read-only.
+    [LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]: lobbyBypassSettings
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
+Optional.
+      [Scope <String>]: lobbyBypassScope
+    [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
+This link allows only the organizer to configure meeting settings.
+    [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+    [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
+    [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [SensitivityLabelId <String>]: Id of the sensitivity label that is applied to the Teams meeting.
+    [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
+    [Subject <String>]: The subject of the online meeting.
+    [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
+    [WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]: watermarkProtectionValues
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [IsEnabledForContentSharing <Boolean?>]: Indicates whether to apply a watermark to any shared content.
+      [IsEnabledForVideo <Boolean?>]: Indicates whether to apply a watermark to everyone's video feed.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Capacity <Int32?>]: Represents the expected number of attendees for town hall session.
+    [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
+For example, '2019-04-16T09:00:00'.
+      [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
+See below for possible values.
+    [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Email <String>]: Email address of the presenter.
+      [Identity <IMicrosoftGraphIdentity>]: identity
+      [PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]: virtualEventPresenterDetails
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Bio <IMicrosoftGraphItemBody>]: itemBody
+        [Company <String>]: The presenter's company name.
+        [JobTitle <String>]: The presenter's job title.
+        [LinkedInProfileWebUrl <String>]: The presenter's LinkedIn profile URL.
+        [PersonalSiteWebUrl <String>]: The presenter's personal website URL.
+        [Photo <Byte[]>]: The content stream of the presenter's photo.
+        [TwitterProfileWebUrl <String>]: The presenter's Twitter profile URL.
+      [Sessions <IMicrosoftGraphVirtualEventSession[]>]: 
+    [Registrations <IMicrosoftGraphVirtualEventRegistration[]>]: 
+    [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
+    [VideoOnDemandWebUrl <String>]: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
+  [Status <String>]: virtualEventAttendeeRegistrationStatus
+  [UserId <String>]: The registrant's ID in Microsoft Entra ID.
+Only appears when the registrant is registered in Microsoft Entra ID.
+
 SESSIONS <IMicrosoftGraphVirtualEventSession[]>: The sessions for the virtual event.
   [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
   [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
@@ -1401,6 +1763,10 @@ Read-only.
         [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
         [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
       [EmailAddress <String>]: Email address of the user associated with this attendance record.
+      [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+        [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+        [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+        [EngagementType <String>]: meetingEngagementType
       [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -1455,6 +1821,11 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+  [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [MoreInfoWebUrl <String>]: 
+    [TenantKey <String>]: 
+    [VideoTeleconferenceId <String>]: 
   [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1498,6 +1869,7 @@ Read-only.
     [IsEnabledForVideo <Boolean?>]: Indicates whether to apply a watermark to everyone's video feed.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [Capacity <Int32?>]: Represents the expected number of attendees for town hall session.
   [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
@@ -1552,11 +1924,11 @@ Only appears when the registrant is registered in Microsoft Entra ID.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [VideoOnDemandWebUrl <String>]: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
-SETTINGS `<IMicrosoftGraphVirtualEventSettings>`: virtualEventSettings
+SETTINGS <IMicrosoftGraphVirtualEventSettings>: virtualEventSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAttendeeEmailNotificationEnabled <Boolean?>]: Indicates whether virtual event attendees receive email notifications.
 
-STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -1566,27 +1938,5 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [Update-MgBetaVirtualEventTownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhall)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventtownhall-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhall)
+- [](https://learn.microsoft.com/graph/api/virtualeventtownhall-update?view=graph-rest-beta)

@@ -1,10 +1,10 @@
----
+﻿---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/stop-mgbetasolutionbackuprestoreprotectionunitoffboard
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaSolutionBackupRestoreProtectionUnitOffboard
 ---
@@ -15,9 +15,6 @@ title: Stop-MgBetaSolutionBackupRestoreProtectionUnitOffboard
 
 Cancel the offboarding of a protectionUnitBase.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgSolutionBackupRestoreProtectionUnitOffboard](/powershell/module/Microsoft.Graph.BackupRestore/Stop-MgSolutionBackupRestoreProtectionUnitOffboard?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Cancel (Default)
@@ -27,7 +24,6 @@ Stop-MgBetaSolutionBackupRestoreProtectionUnitOffboard -ProtectionUnitBaseId <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CancelViaIdentity
@@ -37,7 +33,6 @@ Stop-MgBetaSolutionBackupRestoreProtectionUnitOffboard -InputObject <IBackupRest
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Cancel the offboarding of a protectionUnitBase.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -337,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -384,28 +389,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgBetaSolutionBackupRestoreProtectionUnitOffboard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/stop-mgbetasolutionbackuprestoreprotectionunitoffboard)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/protectionunitbase-canceloffboard?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/stop-mgbetasolutionbackuprestoreprotectionunitoffboard)
+- [](https://learn.microsoft.com/graph/api/protectionunitbase-canceloffboard?view=graph-rest-beta)
