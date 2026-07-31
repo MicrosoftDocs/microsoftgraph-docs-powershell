@@ -587,9 +587,9 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoresharepointrestoresessionsiterestoreartifactbulkadditionrequest)
-- [](https://learn.microsoft.com/graph/api/siterestoreartifactsbulkadditionrequest-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/sharepointrestoresession-list-siterestoreartifactsbulkadditionrequests?view=graph-rest-1.0)
+- [Get-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoresharepointrestoresessionsiterestoreartifactbulkadditionrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/siterestoreartifactsbulkadditionrequest-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointrestoresession-list-siterestoreartifactsbulkadditionrequests?view=graph-rest-1.0)
 
 
 
