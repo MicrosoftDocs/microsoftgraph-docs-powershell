@@ -4,7 +4,10 @@ Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
-    [string] $AuthLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Authentication")
+    [string] $AuthLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Authentication"),
+    [ValidateSet("both", "v1.0", "beta")]
+    [string] $GraphProfileFilter = "both",
+    [string] $ModuleFilter = ""
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -19,19 +22,22 @@ function Start-Repair {
         $ModulesToGenerate = @()
     )
     
-    #Cleanup Authentication Module first
-    $files = Get-ChildItem -Path $AuthLoadDocsPath -Filter *.md -Recurse
-    foreach ($file in $files) {
-        $content = Get-Content -Path $file.FullName
-        # Remove lines that contain '{{ Fill in the Description }}' or '### This' or '### *' or '### have' or '### certain' or '### the'
-        $cleanedContent = $content | Where-Object { $_ -notmatch '^\s*{{ Fill in the Description }}|^\s*### This|^\s*### \*|^\s*### have|^\s*### certain|^\s*### the' }
-        # Write the cleaned content back to the file
-        $cleanedContent | Set-Content -Path $file.FullName
+    #Cleanup Authentication Module first (only on a full run or the Authentication stage).
+    if ([string]::IsNullOrWhiteSpace($ModuleFilter) -or $ModuleFilter -eq "Authentication") {
+        $files = Get-ChildItem -Path $AuthLoadDocsPath -Filter *.md -Recurse
+        foreach ($file in $files) {
+            $content = Get-Content -Path $file.FullName
+            # Remove lines that contain '{{ Fill in the Description }}' or '### This' or '### *' or '### have' or '### certain' or '### the'
+            $cleanedContent = $content | Where-Object { $_ -notmatch '^\s*{{ Fill in the Description }}|^\s*### This|^\s*### \*|^\s*### have|^\s*### certain|^\s*### the' }
+            # Write the cleaned content back to the file
+            $cleanedContent | Set-Content -Path $file.FullName
+        }
     }
     $ModulePrefix = "Microsoft.Graph"
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
+        if ($GraphProfileFilter -ne "both" -and $graphProfile -ne $GraphProfileFilter) { return }
         $profilePath = "graph-powershell-1.0"
         if ($graphProfile -eq "beta") {
             $profilePath = "graph-powershell-beta"
@@ -41,7 +47,12 @@ function Start-Repair {
     git config --global user.email "GraphTooling@service.microsoft.com"
     git config --global user.name "Microsoft Graph DevX Tooling"
     git add .
-    git commit -m "Remove boiler plate code injected by Autorest" 
+    $pending = git status --porcelain
+    if (-not [string]::IsNullOrWhiteSpace($pending)) {
+        git commit -m "Remove boiler plate code injected by Autorest"
+    } else {
+        $global:LASTEXITCODE = 0
+    }
 }
 function Get-FilesByProfile {
     Param(
@@ -118,5 +129,8 @@ if ($ModulesToGenerate.Count -eq 0) {
 }
 
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
+if (-not [string]::IsNullOrWhiteSpace($ModuleFilter)) {
+    $ModulesToGenerate = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
+}
 Start-Repair -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"

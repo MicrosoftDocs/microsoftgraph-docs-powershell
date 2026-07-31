@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/find-mggraphcommand
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgGraphCommand
 ---
@@ -20,19 +20,19 @@ Find-MgGraphCommand aims to make it easier for you to discover which API path a 
 ### FindByCommandOrUri (Default)
 
 ```
-Find-MgGraphCommand [-InputObject] <Object[]> [-ApiVersion <string>] [<CommonParameters>]
+Find-MgGraphCommand [-InputObject] <Object[]> [-ApiVersion <string>]
 ```
 
 ### FindByUri
 
 ```
-Find-MgGraphCommand [-Uri] <string[]> [-Method <string>] [-ApiVersion <string>] [<CommonParameters>]
+Find-MgGraphCommand [-Uri] <string[]> [-Method <string>] [-ApiVersion <string>]
 ```
 
 ### FindByCommand
 
 ```
-Find-MgGraphCommand -Command <string[]> [-ApiVersion <string>] [<CommonParameters>]
+Find-MgGraphCommand -Command <string[]> [-ApiVersion <string>]
 ```
 
 ## ALIASES

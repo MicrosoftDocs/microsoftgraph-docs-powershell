@@ -1,6 +1,9 @@
 param(
     [string]$MgCommandMetadatJsonFile = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json"),
-    [string[]]$CmdList = @()
+    [string[]]$CmdList = @(),
+    [ValidateSet("both", "v1.0", "beta")]
+    [string] $GraphProfileFilter = "both",
+    [string] $ModuleFilter = ""
 )
 
 function Start-Generator {
@@ -11,6 +14,9 @@ function Start-Generator {
             $CommandName = $_.Command;
             $ApiVersion = $_.ApiVersion
             $Module = $_.Module;
+            if ($GraphProfileFilter -ne "both" -and $ApiVersion -ne $GraphProfileFilter) { return }
+            $normalizedModule = $Module -replace "^Beta\.", ""
+            if (-not [string]::IsNullOrWhiteSpace($ModuleFilter) -and $normalizedModule -ne $ModuleFilter) { return }
             #Array for DelegatedWork Permissions
             $DelegatedWorkPermissions = @();
             #Array for Application Permissions
@@ -70,7 +76,12 @@ function Start-Generator {
         git config --global user.email "GraphTooling@service.microsoft.com"
         git config --global user.name "Microsoft Graph DevX Tooling"
         git add .
-        git commit -m "Inserted permissions Table"
+        $pending = git status --porcelain
+        if (-not [string]::IsNullOrWhiteSpace($pending)) {
+            git commit -m "Inserted permissions Table"
+        } else {
+            $global:LASTEXITCODE = 0
+        }
     }
     catch {
         Write-Host "Error in $_";
@@ -136,7 +147,12 @@ function New-ReferenceTable {
 "@;
 
 
-                if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
+                if ((Get-Content -Raw -Path $File) -match '\*\*Permissions\*\*') {
+                    # A permissions table has already been inserted on a previous run.
+                    # Skip to avoid prepending a duplicate '**Permissions**' block.
+                    Write-Host "Skipping $CommandName as it already has a permissions table";
+                }
+                elseif ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
                     $Link = "**Permissions**`r`n`n$markdownTable`r`n`n## EXAMPLES"
     (Get-Content $File) | 
                     Foreach-Object { $_ -replace '## EXAMPLES', $Link }  | 
