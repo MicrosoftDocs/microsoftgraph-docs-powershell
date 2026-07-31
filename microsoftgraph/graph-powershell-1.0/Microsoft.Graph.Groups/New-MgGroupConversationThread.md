@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupConversationThread
 ---
@@ -15,12 +15,9 @@ title: New-MgGroupConversationThread
 
 Create a new thread in the specified conversation.
 A thread and post are created as specified.
-Use reply thread to further post \rto that thread.
+Use reply thread to further post \r\nto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,7 +31,7 @@ New-MgGroupConversationThread -ConversationId <string> -GroupId <string>
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <string>] [-UniqueSenders <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -44,7 +41,7 @@ New-MgGroupConversationThread -ConversationId <string> -GroupId <string>
  -BodyParameter <IMicrosoftGraphConversationThread> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -57,7 +54,6 @@ New-MgGroupConversationThread -InputObject <IGroupsIdentity> [-ResponseHeadersVa
  [-UniqueSenders <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -67,7 +63,7 @@ New-MgGroupConversationThread -InputObject <IGroupsIdentity>
  -BodyParameter <IMicrosoftGraphConversationThread> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -79,22 +75,13 @@ This cmdlet has the following aliases,
 
 Create a new thread in the specified conversation.
 A thread and post are created as specified.
-Use reply thread to further post \rto that thread.
+Use reply thread to further post \r\nto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
@@ -111,10 +98,6 @@ $params = @{
 }
 
 New-MgGroupConversationThread -GroupId $groupId -ConversationId $conversationId -BodyParameter $params
-
-```
-This example shows how to use the New-MgGroupConversationThread Cmdlet.
-
 
 ## PARAMETERS
 
@@ -504,7 +487,7 @@ HelpMessage: ''
 
 ### -Posts
 
-
+.
 To construct, see NOTES section for POSTS properties and create a hash table.
 
 ```yaml
@@ -785,7 +768,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConversationThread>`: conversationThread
+BODYPARAMETER <IMicrosoftGraphConversationThread>: conversationThread
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -876,7 +859,7 @@ Requires $select to retrieve.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -971,27 +954,5 @@ Requires $select to retrieve.
 
 ## RELATED LINKS
 
-- [New-MgGroupConversationThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread)
+- [](https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-1.0)
