@@ -780,8 +780,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaalluserchatmessage)
-- [](https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-beta)
+- [Get-MgBetaAllUserChatMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaalluserchatmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-beta)
 
 
 

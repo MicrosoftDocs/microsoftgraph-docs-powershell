@@ -552,8 +552,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetatranslateuserexchangeid)
-- [](https://learn.microsoft.com/graph/api/user-translateexchangeids?view=graph-rest-beta)
+- [Invoke-MgBetaTranslateUserExchangeId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetatranslateuserexchangeid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-translateexchangeids?view=graph-rest-beta)
 
 
 

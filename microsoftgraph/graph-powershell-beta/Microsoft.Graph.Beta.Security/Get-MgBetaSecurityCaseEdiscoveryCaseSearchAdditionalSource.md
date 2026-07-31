@@ -690,8 +690,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchadditionalsource)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverysearch-list-additionalsources?view=graph-rest-beta)
+- [Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchadditionalsource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverysearch-list-additionalsources?view=graph-rest-beta)
 
 
 

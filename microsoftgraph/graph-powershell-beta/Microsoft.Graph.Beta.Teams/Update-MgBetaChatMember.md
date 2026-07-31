@@ -633,7 +633,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatmember)
+- [Update-MgBetaChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatmember)
 
 
 

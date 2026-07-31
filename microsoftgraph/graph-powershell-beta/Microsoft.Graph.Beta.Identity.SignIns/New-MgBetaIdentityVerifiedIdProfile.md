@@ -675,8 +675,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityverifiedidprofile)
-- [](https://learn.microsoft.com/graph/api/identityverifiedidroot-post-profiles?view=graph-rest-beta)
+- [New-MgBetaIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityverifiedidprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityverifiedidroot-post-profiles?view=graph-rest-beta)
 
 
 

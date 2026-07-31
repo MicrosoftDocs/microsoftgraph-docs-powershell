@@ -28369,7 +28369,7 @@ Read only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannel)
+- [New-MgBetaGroupTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannel)
 
 
 

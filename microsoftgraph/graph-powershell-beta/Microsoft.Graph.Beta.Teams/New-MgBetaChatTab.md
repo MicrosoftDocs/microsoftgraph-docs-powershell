@@ -925,8 +925,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab)
-- [](https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-beta)
+- [New-MgBetaChatTab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-beta)
 
 
 

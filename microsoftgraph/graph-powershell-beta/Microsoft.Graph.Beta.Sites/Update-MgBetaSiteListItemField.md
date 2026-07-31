@@ -597,8 +597,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemfield)
-- [](https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-beta)
+- [Update-MgBetaSiteListItemField](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemfield)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-beta)
 
 
 

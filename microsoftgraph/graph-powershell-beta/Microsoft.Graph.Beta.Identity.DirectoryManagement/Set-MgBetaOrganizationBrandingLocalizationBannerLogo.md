@@ -544,8 +544,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationbannerlogo)
-- [](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-beta)
+- [Set-MgBetaOrganizationBrandingLocalizationBannerLogo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationbannerlogo)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-beta)
 
 
 

@@ -498,8 +498,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamphotocontent)
-- [](https://learn.microsoft.com/graph/api/profilephoto-update?view=graph-rest-beta)
+- [Set-MgBetaTeamPhotoContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamphotocontent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/profilephoto-update?view=graph-rest-beta)
 
 
 

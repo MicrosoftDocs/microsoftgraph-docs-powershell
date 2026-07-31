@@ -18642,7 +18642,7 @@ Required.Supports $filter(eq, ne).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowtask)
+- [Update-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowtask)
 
 
 

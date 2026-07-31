@@ -610,8 +610,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskattachmentuploadsession)
-- [](https://learn.microsoft.com/graph/api/taskfileattachment-createuploadsession?view=graph-rest-beta)
+- [New-MgBetaUserTodoListTaskAttachmentUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskattachmentuploadsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/taskfileattachment-createuploadsession?view=graph-rest-beta)
 
 
 

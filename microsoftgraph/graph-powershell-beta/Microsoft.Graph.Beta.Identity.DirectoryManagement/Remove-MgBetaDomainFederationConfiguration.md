@@ -484,8 +484,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadomainfederationconfiguration)
-- [](https://learn.microsoft.com/graph/api/internaldomainfederation-delete?view=graph-rest-beta)
+- [Remove-MgBetaDomainFederationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadomainfederationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/internaldomainfederation-delete?view=graph-rest-beta)
 
 
 

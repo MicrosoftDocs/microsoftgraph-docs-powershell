@@ -438,8 +438,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingcustomblockpage)
-- [](https://learn.microsoft.com/graph/api/networkaccess-customblockpage-update?view=graph-rest-beta)
+- [Update-MgBetaNetworkAccessSettingCustomBlockPage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingcustomblockpage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-customblockpage-update?view=graph-rest-beta)
 
 
 

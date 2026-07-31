@@ -456,8 +456,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetatransactionnetworkaccessreportsummary)
-- [](https://learn.microsoft.com/graph/api/networkaccess-reports-transactionsummaries?view=graph-rest-beta)
+- [Invoke-MgBetaTransactionNetworkAccessReportSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetatransactionnetworkaccessreportsummary)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-reports-transactionsummaries?view=graph-rest-beta)
 
 
 

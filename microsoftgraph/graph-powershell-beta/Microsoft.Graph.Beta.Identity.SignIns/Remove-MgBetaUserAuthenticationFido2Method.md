@@ -520,8 +520,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationfido2method)
-- [](https://learn.microsoft.com/graph/api/fido2authenticationmethod-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserAuthenticationFido2Method](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationfido2method)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/fido2authenticationmethod-delete?view=graph-rest-beta)
 
 
 

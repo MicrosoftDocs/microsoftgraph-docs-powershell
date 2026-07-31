@@ -367,7 +367,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/unblock-mgbetausermanagedapp)
+- [Unblock-MgBetaUserManagedApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/unblock-mgbetausermanagedapp)
 
 
 

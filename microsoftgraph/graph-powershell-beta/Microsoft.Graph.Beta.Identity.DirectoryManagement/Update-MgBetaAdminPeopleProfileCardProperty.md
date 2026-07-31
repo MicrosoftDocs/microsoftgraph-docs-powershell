@@ -662,8 +662,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilecardproperty)
-- [](https://learn.microsoft.com/graph/api/profilecardproperty-update?view=graph-rest-beta)
+- [Update-MgBetaAdminPeopleProfileCardProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilecardproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/profilecardproperty-update?view=graph-rest-beta)
 
 
 
