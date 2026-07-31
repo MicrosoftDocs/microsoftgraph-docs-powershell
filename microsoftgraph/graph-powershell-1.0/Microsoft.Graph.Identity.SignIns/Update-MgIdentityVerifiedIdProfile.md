@@ -730,7 +730,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphVerifiedIdProfile>: verifiedIdProfile
+BODYPARAMETER `<IMicrosoftGraphVerifiedIdProfile>`: verifiedIdProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -769,14 +769,14 @@ Required.
   [VerifierDid <String>]: Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange.
 Required.
 
-FACECHECKCONFIGURATION <IMicrosoftGraphFaceCheckConfiguration>: faceCheckConfiguration
+FACECHECKCONFIGURATION `<IMicrosoftGraphFaceCheckConfiguration>`: faceCheckConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Defines if Face Check is required.
 Currently must always be true.
   [SourcePhotoClaimName <String>]: Source of photo to validate Face Check against.
 Currently must always be portrait.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -843,7 +843,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-VERIFIEDIDPROFILECONFIGURATION <IMicrosoftGraphVerifiedIdProfileConfiguration>: verifiedIdProfileConfiguration
+VERIFIEDIDPROFILECONFIGURATION `<IMicrosoftGraphVerifiedIdProfileConfiguration>`: verifiedIdProfileConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcceptedIssuer <String>]: Trusted Verified ID issuer.
   [ClaimBindingSource <String>]: claimBindingSource
@@ -867,3 +867,25 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityverifiedidprofile)
 - [](https://learn.microsoft.com/graph/api/verifiedidprofile-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

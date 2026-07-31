@@ -654,7 +654,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphCustomAuthenticationExtension>: customAuthenticationExtension
+BODYPARAMETER `<IMicrosoftGraphCustomAuthenticationExtension>`: customAuthenticationExtension
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]: customExtensionAuthenticationConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -675,7 +675,7 @@ Read-only.
   [BehaviorOnError <IMicrosoftGraphCustomExtensionBehaviorOnError>]: customExtensionBehaviorOnError
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-CLIENTCONFIGURATION <IMicrosoftGraphCustomExtensionClientConfiguration>: customExtensionClientConfiguration
+CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MaximumRetries <Int32?>]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
@@ -684,7 +684,7 @@ If null, the default for the service applies.
 The valid range is between 200 and 2000 milliseconds.
 Default duration is 1000.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -756,3 +756,25 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentitycustomauthenticationextension)
 - [](https://learn.microsoft.com/graph/api/customauthenticationextension-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
