@@ -18,9 +18,6 @@ When deleted, apps are moved to a temporary container and can be restored within
 After that time, they are permanently deleted.
 This API can also delete an agentIdentityBlueprint object by its ID.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationByUniqueName](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationByUniqueName?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -52,6 +49,16 @@ Delete an application object.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 This API can also delete an agentIdentityBlueprint object by its ID.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -383,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -413,28 +420,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgApplicationByUniqueName](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationbyuniquename)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationbyuniquename)
+- [](https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-1.0)

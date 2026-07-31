@@ -15,9 +15,6 @@ title: Get-MgApplicationExtensionProperty
 
 Read a directory extension definition represented by an extensionProperty object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -59,26 +56,13 @@ This cmdlet has the following aliases,
 
 Read a directory extension definition represented by an extensionProperty object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All,  |
-| Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationExtensionProperty -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgApplicationExtensionProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -568,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -598,28 +582,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgApplicationExtensionProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty)
+- [](https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-1.0)
