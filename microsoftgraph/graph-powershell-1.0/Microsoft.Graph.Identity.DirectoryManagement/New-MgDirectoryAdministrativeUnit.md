@@ -736,8 +736,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit)
-- [](https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0)
+- [New-MgDirectoryAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0)
 
 
 
