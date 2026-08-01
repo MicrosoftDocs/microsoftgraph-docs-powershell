@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetwork
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessConnectivityRemoteNetwork
 ---
@@ -28,7 +28,7 @@ New-MgBetaNetworkAccessConnectivityRemoteNetwork [-ResponseHeadersVariable <stri
  [-LastModifiedDateTime <datetime>] [-Name <string>] [-Region <string>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +38,7 @@ New-MgBetaNetworkAccessConnectivityRemoteNetwork
  -BodyParameter <IMicrosoftGraphNetworkaccessRemoteNetwork> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -51,9 +51,8 @@ This cmdlet has the following aliases,
 Create a new remote network.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -64,12 +63,7 @@ $params = @{
 
 New-MgBetaNetworkAccessConnectivityRemoteNetwork -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaNetworkAccessConnectivityRemoteNetwork Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -85,12 +79,7 @@ $params = @{
 
 New-MgBetaNetworkAccessConnectivityRemoteNetwork -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaNetworkAccessConnectivityRemoteNetwork Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -126,10 +115,6 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessConnectivityRemoteNetwork -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaNetworkAccessConnectivityRemoteNetwork Cmdlet.
-
 
 ## PARAMETERS
 
@@ -593,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessRemoteNetwork>`: remoteNetwork
+BODYPARAMETER <IMicrosoftGraphNetworkaccessRemoteNetwork>: remoteNetwork
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Name <String>]: Name of the entity
   [Id <String>]: The unique identifier for an entity.
@@ -643,32 +628,9 @@ Read-only.
 Required only when you select zoneRedundancy redindancyTier when creating a deviceLink.
   [ForwardingProfiles <IMicrosoftGraphNetworkaccessForwardingProfile[]>]: Each forwarding profile associated with a remote network is specified.
 Supports $expand and $select.
-    [Description <String>]: Description.
-    [LastModifiedDateTime <DateTime?>]: The date and time when the profile was last modified.
-    [Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>]: The traffic forwarding policies associated with this profile.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [Policy <IMicrosoftGraphNetworkaccessPolicy>]: policy
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [Description <String>]: Description.
-        [Name <String>]: Policy name.
-        [PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-          [Id <String>]: The unique identifier for an entity.
-Read-only.
-          [Name <String>]: Name.
-        [Version <String>]: Version.
-      [State <String>]: status
-      [Version <String>]: Version.
-    [State <String>]: status
-    [Version <String>]: Profile version.
-    [Name <String>]: Name of the entity
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [Associations <IMicrosoftGraphNetworkaccessAssociation[]>]: Specifies the users, groups, devices, and remote networks whose traffic is associated with the given traffic forwarding profile.
+    [Associations <IMicrosoftGraphNetworkaccessAssociation[]>]: 
     [IsCustomProfile <Boolean?>]: 
-    [Priority <Int32?>]: Profile priority.
+    [Priority <Int32?>]: 
     [ServicePrincipal <IMicrosoftGraphServicePrincipal>]: servicePrincipal
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -724,7 +686,7 @@ Read-only.
                 [Operator <String>]: customSecurityAttributeComparisonOperator
             [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
             [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
             [RestrictionType <String>]: appKeyCredentialRestrictionType
@@ -759,7 +721,7 @@ For existing applications, the enforcement date can be retroactively applied.
               [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-                [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+                [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
                 [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
                 [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
@@ -879,8 +841,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -1213,8 +1175,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -1549,11 +1511,34 @@ Read-only.
         [DisplayName <String>]: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
         [VerifiedPublisherId <String>]: The ID of the verified publisher from the app publisher's Partner Center account.
     [TrafficForwardingType <String>]: trafficForwardingType
+    [Description <String>]: Description.
+    [LastModifiedDateTime <DateTime?>]: The date and time when the profile was last modified.
+    [Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>]: The traffic forwarding policies associated with this profile.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Policy <IMicrosoftGraphNetworkaccessPolicy>]: policy
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Description <String>]: Description.
+        [Name <String>]: Policy name.
+        [PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Name <String>]: Name.
+        [Version <String>]: Version.
+      [State <String>]: status
+      [Version <String>]: Version.
+    [State <String>]: status
+    [Version <String>]: Profile version.
+    [Name <String>]: Name of the entity
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
   [LastModifiedDateTime <DateTime?>]: last modified time.
   [Region <String>]: region
   [Version <String>]: Remote network version.
 
-CONNECTIVITYCONFIGURATION `<IMicrosoftGraphNetworkaccessRemoteNetworkConnectivityConfiguration>`: remoteNetworkConnectivityConfiguration
+CONNECTIVITYCONFIGURATION <IMicrosoftGraphNetworkaccessRemoteNetworkConnectivityConfiguration>: remoteNetworkConnectivityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Links <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink[]>]: List of connectivity configurations for deviceLink objects.
     [Id <String>]: The unique identifier for an entity.
@@ -1600,32 +1585,9 @@ Required only when you select zoneRedundancy redindancyTier when creating a devi
 
 FORWARDINGPROFILES <IMicrosoftGraphNetworkaccessForwardingProfile[]>: Each forwarding profile associated with a remote network is specified.
 Supports $expand and $select.
-  [Description <String>]: Description.
-  [LastModifiedDateTime <DateTime?>]: The date and time when the profile was last modified.
-  [Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>]: The traffic forwarding policies associated with this profile.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [Policy <IMicrosoftGraphNetworkaccessPolicy>]: policy
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [Description <String>]: Description.
-      [Name <String>]: Policy name.
-      [PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [Name <String>]: Name.
-      [Version <String>]: Version.
-    [State <String>]: status
-    [Version <String>]: Version.
-  [State <String>]: status
-  [Version <String>]: Profile version.
-  [Name <String>]: Name of the entity
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [Associations <IMicrosoftGraphNetworkaccessAssociation[]>]: Specifies the users, groups, devices, and remote networks whose traffic is associated with the given traffic forwarding profile.
+  [Associations <IMicrosoftGraphNetworkaccessAssociation[]>]: 
   [IsCustomProfile <Boolean?>]: 
-  [Priority <Int32?>]: Profile priority.
+  [Priority <Int32?>]: 
   [ServicePrincipal <IMicrosoftGraphServicePrincipal>]: servicePrincipal
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -1681,7 +1643,7 @@ Read-only.
               [Operator <String>]: customSecurityAttributeComparisonOperator
           [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
           [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
           [RestrictionType <String>]: appKeyCredentialRestrictionType
@@ -1716,7 +1678,7 @@ For existing applications, the enforcement date can be retroactively applied.
             [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
               [(Any) <Object>]: This indicates any property can be added to this object.
               [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-              [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+              [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
               [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
               [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
@@ -1836,8 +1798,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -2170,8 +2132,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -2506,31 +2468,32 @@ Read-only.
       [DisplayName <String>]: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
       [VerifiedPublisherId <String>]: The ID of the verified publisher from the app publisher's Partner Center account.
   [TrafficForwardingType <String>]: trafficForwardingType
+  [Description <String>]: Description.
+  [LastModifiedDateTime <DateTime?>]: The date and time when the profile was last modified.
+  [Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>]: The traffic forwarding policies associated with this profile.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Policy <IMicrosoftGraphNetworkaccessPolicy>]: policy
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Description <String>]: Description.
+      [Name <String>]: Policy name.
+      [PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Name <String>]: Name.
+      [Version <String>]: Version.
+    [State <String>]: status
+    [Version <String>]: Version.
+  [State <String>]: status
+  [Version <String>]: Profile version.
+  [Name <String>]: Name of the entity
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
 
 
 ## RELATED LINKS
 
-- [New-MgBetaNetworkAccessConnectivityRemoteNetwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetwork)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-connectivity-post-remotenetworks?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetwork)
+- [](https://learn.microsoft.com/graph/api/networkaccess-connectivity-post-remotenetworks?view=graph-rest-beta)

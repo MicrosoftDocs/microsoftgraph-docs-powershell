@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessSetting
 ---
@@ -28,7 +28,7 @@ Update-MgBetaNetworkAccessSetting [-ResponseHeadersVariable <string>]
  [-ForwardingOptions <IMicrosoftGraphNetworkaccessForwardingOptions>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +38,6 @@ Update-MgBetaNetworkAccessSetting -BodyParameter <IMicrosoftGraphNetworkaccessSe
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property settings in networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -448,7 +457,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessSettings>`: settings
+BODYPARAMETER <IMicrosoftGraphNetworkaccessSettings>: settings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -475,19 +484,19 @@ Read-only.
 Read-only.
     [SkipDnsLookupState <String>]: status
 
-CONDITIONALACCESS `<IMicrosoftGraphNetworkaccessConditionalAccessSettings>`: conditionalAccessSettings
+CONDITIONALACCESS <IMicrosoftGraphNetworkaccessConditionalAccessSettings>: conditionalAccessSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [SignalingStatus <String>]: status
 
-CROSSTENANTACCESS `<IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>`: crossTenantAccessSettings
+CROSSTENANTACCESS <IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>: crossTenantAccessSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [NetworkPacketTaggingStatus <String>]: status
 
-CUSTOMBLOCKPAGE `<IMicrosoftGraphNetworkaccessCustomBlockPage>`: customBlockPage
+CUSTOMBLOCKPAGE <IMicrosoftGraphNetworkaccessCustomBlockPage>: customBlockPage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -495,7 +504,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
   [State <String>]: status
 
-FORWARDINGOPTIONS `<IMicrosoftGraphNetworkaccessForwardingOptions>`: forwardingOptions
+FORWARDINGOPTIONS <IMicrosoftGraphNetworkaccessForwardingOptions>: forwardingOptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -504,27 +513,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaNetworkAccessSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssetting)
