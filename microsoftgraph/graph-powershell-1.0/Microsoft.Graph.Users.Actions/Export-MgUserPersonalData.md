@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Export-MgUserPersonalData
 ---
@@ -17,9 +17,6 @@ Submit a data policy operation request from a company administrator or an applic
 This data includes the user's data stored in OneDrive and their activity reports.
 For more information about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Export-MgBetaUserPersonalData](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Export-MgBetaUserPersonalData?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### ExportExpanded (Default)
@@ -29,7 +26,6 @@ Export-MgUserPersonalData -UserId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-StorageLocation <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Export
@@ -40,7 +36,6 @@ Export-MgUserPersonalData -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ExportViaIdentityExpanded
@@ -50,7 +45,6 @@ Export-MgUserPersonalData -InputObject <IUsersActionsIdentity> [-ResponseHeaders
  [-AdditionalProperties <hashtable>] [-StorageLocation <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ExportViaIdentity
@@ -61,7 +55,6 @@ Export-MgUserPersonalData -InputObject <IUsersActionsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,18 +68,9 @@ Submit a data policy operation request from a company administrator or an applic
 This data includes the user's data stored in OneDrive and their activity reports.
 For more information about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Export.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.Export.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -95,10 +79,6 @@ $params = @{
 }
 
 Export-MgUserPersonalData -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Export-MgUserPersonalData Cmdlet.
-
 
 ## PARAMETERS
 
@@ -131,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -399,7 +379,7 @@ HelpMessage: ''
 
 ### -StorageLocation
 
-
+.
 
 ```yaml
 Type: System.String
@@ -507,37 +487,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IComponents1Fpckw4RequestbodiesExportpersonaldatarequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponents1Fpckw4RequestbodiesExportpersonaldatarequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [StorageLocation <String>]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
 
 ## RELATED LINKS
 
-- [Export-MgUserPersonalData](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata)
+- [](https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0)

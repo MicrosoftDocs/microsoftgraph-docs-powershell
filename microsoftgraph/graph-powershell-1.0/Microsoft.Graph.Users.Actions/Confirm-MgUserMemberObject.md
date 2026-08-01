@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/confirm-mgusermemberobject
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgUserMemberObject
 ---
@@ -15,9 +15,6 @@ title: Confirm-MgUserMemberObject
 
 Invoke action checkMemberObjects
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaUserMemberObject](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Confirm-MgBetaUserMemberObject?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CheckExpanded (Default)
@@ -27,7 +24,6 @@ Confirm-MgUserMemberObject -UserId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Ids <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Check
@@ -38,7 +34,6 @@ Confirm-MgUserMemberObject -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CheckViaIdentityExpanded
@@ -48,7 +43,6 @@ Confirm-MgUserMemberObject -InputObject <IUsersActionsIdentity> [-ResponseHeader
  [-AdditionalProperties <hashtable>] [-Ids <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
@@ -59,7 +53,6 @@ Confirm-MgUserMemberObject -InputObject <IUsersActionsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -71,17 +64,10 @@ This cmdlet has the following aliases,
 
 Invoke action checkMemberObjects
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, User.ReadWrite.All, Directory.Read.All, User.Read, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Application.ReadWrite.All, Device.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.Read.All, GroupMember.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, User.ReadWrite.All, Device.ReadWrite.All, Device.Read.All, Application.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Using the Confirm-MgUserMemberObject Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	Ids = @(
@@ -93,9 +79,6 @@ $params = @{
 }
 # A UPN can also be used as -UserId.
 Confirm-MgUserMemberObject -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Confirm-MgUserMemberObject Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -128,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -262,7 +245,7 @@ HelpMessage: ''
 
 ### -Ids
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -483,36 +466,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsJ9Yxi4UsersUserIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsJ9Yxi4UsersUserIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Ids <String[]>]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
 
 ## RELATED LINKS
 
-- [Confirm-MgUserMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/confirm-mgusermemberobject)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/confirm-mgusermemberobject)
