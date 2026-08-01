@@ -461,8 +461,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalapproleassignedto)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-delete-approleassignedto?view=graph-rest-beta)
+- [Remove-MgBetaServicePrincipalAppRoleAssignedTo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalapproleassignedto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-delete-approleassignedto?view=graph-rest-beta)
 
 
 

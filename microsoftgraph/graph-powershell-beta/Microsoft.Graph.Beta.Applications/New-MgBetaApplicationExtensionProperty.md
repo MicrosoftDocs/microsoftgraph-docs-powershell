@@ -760,8 +760,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationextensionproperty)
-- [](https://learn.microsoft.com/graph/api/application-post-extensionproperty?view=graph-rest-beta)
+- [New-MgBetaApplicationExtensionProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationextensionproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-post-extensionproperty?view=graph-rest-beta)
 
 
 

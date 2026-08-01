@@ -3478,7 +3478,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnectorgroup)
+- [Update-MgBetaOnPremisePublishingProfileConnectorGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnectorgroup)
 
 
 
