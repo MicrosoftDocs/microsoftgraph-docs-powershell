@@ -468,8 +468,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityuserflowattribute)
-- [](https://learn.microsoft.com/graph/api/identityuserflowattribute-delete?view=graph-rest-1.0)
+- [Remove-MgIdentityUserFlowAttribute](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityuserflowattribute)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityuserflowattribute-delete?view=graph-rest-1.0)
 
 
 
