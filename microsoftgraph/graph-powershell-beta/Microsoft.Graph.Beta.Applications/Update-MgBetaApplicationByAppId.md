@@ -133,16 +133,6 @@ This cmdlet has the following aliases,
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 This API can also create an agentIdentityBlueprint object from an agentIdentityBlueprint if it doesn't exist, or update properties of an existing agentIdentityBlueprint, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprint.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -4865,6 +4855,7 @@ Only available for applications that support the PersonalMicrosoftAccount signIn
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyappid)
 - [](https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-beta)
+
 
 
 
