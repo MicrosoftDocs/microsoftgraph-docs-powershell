@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetatimeuseroutlook
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaTimeUserOutlook
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaTimeUserOutlook
 
 Invoke function supportedTimeZones
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgTimeUserOutlook](/powershell/module/Microsoft.Graph.Users/Invoke-MgTimeUserOutlook?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Time (Default)
@@ -26,7 +23,7 @@ Invoke function supportedTimeZones
 Invoke-MgBetaTimeUserOutlook -UserId <string> [-Count] [-Filter <string>] [-Search <string>]
  [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Time1
@@ -36,7 +33,7 @@ Invoke-MgBetaTimeUserOutlook -UserId <string> -TimeZoneStandard <string> [-Count
  [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### TimeViaIdentity1
@@ -46,7 +43,7 @@ Invoke-MgBetaTimeUserOutlook -InputObject <IUsersIdentity> [-Count] [-Filter <st
  [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### TimeViaIdentity
@@ -56,7 +53,7 @@ Invoke-MgBetaTimeUserOutlook -InputObject <IUsersIdentity> [-Count] [-Filter <st
  [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -68,13 +65,15 @@ This cmdlet has the following aliases,
 
 Invoke function supportedTimeZones
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.ReadBasic.All,  |
-| Delegated (personal Microsoft account) | User.Read,  |
-| Application | User.Read.All, User.ReadBasic.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -459,7 +458,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -496,27 +495,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaTimeUserOutlook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetatimeuseroutlook)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetatimeuseroutlook)

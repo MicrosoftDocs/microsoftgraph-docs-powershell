@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetaviewusersettingworkhourandlocationoccurrence
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence
 Get work plan occurrences from your own work plan within a specified date range.
 This function requires the startDateTime and endDateTime parameters.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgViewUserSettingWorkHourAndLocationOccurrence](/powershell/module/Microsoft.Graph.Users/Invoke-MgViewUserSettingWorkHourAndLocationOccurrence?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### View (Default)
@@ -29,7 +26,7 @@ Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence -EndDateTime <string>
  [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### ViewViaIdentity
@@ -40,7 +37,7 @@ Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence -InputObject <IUsersId
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -52,6 +49,15 @@ This cmdlet has the following aliases,
 
 Get work plan occurrences from your own work plan within a specified date range.
 This function requires the startDateTime and endDateTime parameters.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Users
+
+# A UPN can also be used as -UserId.
+Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence -UserId $userId
 
 ## PARAMETERS
 
@@ -511,7 +517,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -548,28 +554,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetaviewusersettingworkhourandlocationoccurrence)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetaviewusersettingworkhourandlocationoccurrence)
+- [](https://learn.microsoft.com/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-beta)

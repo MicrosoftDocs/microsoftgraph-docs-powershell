@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users
-Module Guid: 84329f6f-bec6-47c2-bb72-a25f2d98ca73
+Module Guid: a2b6f9d5-fde9-46fe-bf02-1314e2f4e81e
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.users/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -339,7 +339,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserSponsor](Get-MgBetaUserSponsor.md)
 
-### [Get-MgBetaUserSponsor](Get-MgBetaUserSponsor.md)
+### [Get-MgBetaUserSponsorByRef](Get-MgBetaUserSponsorByRef.md)
 
 ### [Get-MgBetaUserSponsorCount](Get-MgBetaUserSponsorCount.md)
 
@@ -483,6 +483,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaUserSettingWorkHourAndLocationRecurrence](New-MgBetaUserSettingWorkHourAndLocationRecurrence.md)
 
+### [New-MgBetaUserSponsorByRef](New-MgBetaUserSponsorByRef.md)
+
 ### [New-MgBetaUserTodoList](New-MgBetaUserTodoList.md)
 
 ### [New-MgBetaUserTodoListExtension](New-MgBetaUserTodoListExtension.md)
@@ -576,6 +578,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaUserSettingWorkHourAndLocationOccurrence](Remove-MgBetaUserSettingWorkHourAndLocationOccurrence.md)
 
 ### [Remove-MgBetaUserSettingWorkHourAndLocationRecurrence](Remove-MgBetaUserSettingWorkHourAndLocationRecurrence.md)
+
+### [Remove-MgBetaUserSponsorByRef](Remove-MgBetaUserSponsorByRef.md)
+
+### [Remove-MgBetaUserSponsorDirectoryObjectByRef](Remove-MgBetaUserSponsorDirectoryObjectByRef.md)
 
 ### [Remove-MgBetaUserTodoList](Remove-MgBetaUserTodoList.md)
 
@@ -682,23 +688,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserTodoListTaskExtension](Update-MgBetaUserTodoListTaskExtension.md)
 
 ### [Update-MgBetaUserTodoListTaskLinkedResource](Update-MgBetaUserTodoListTaskLinkedResource.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

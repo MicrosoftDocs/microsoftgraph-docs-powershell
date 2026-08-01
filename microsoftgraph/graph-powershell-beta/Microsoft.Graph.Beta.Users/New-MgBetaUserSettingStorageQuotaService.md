@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingstoragequotaservice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserSettingStorageQuotaService
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaUserSettingStorageQuotaService
 
 Create new navigation property to services for users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserSettingStorageQuotaService](/powershell/module/Microsoft.Graph.Users/New-MgUserSettingStorageQuotaService?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,7 +24,7 @@ New-MgBetaUserSettingStorageQuotaService -UserId <string> [-ResponseHeadersVaria
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-ManageWebUrl <string>]
  [-Used <long>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -37,7 +34,6 @@ New-MgBetaUserSettingStorageQuotaService -UserId <string> -BodyParameter <hashta
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -48,7 +44,6 @@ New-MgBetaUserSettingStorageQuotaService -InputObject <IUsersIdentity>
  [-Id <string>] [-ManageWebUrl <string>] [-Used <long>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -58,7 +53,6 @@ New-MgBetaUserSettingStorageQuotaService -InputObject <IUsersIdentity> -BodyPara
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -69,6 +63,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to services for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -171,7 +175,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -317,7 +321,7 @@ HelpMessage: ''
 
 ### -ManageWebUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -429,7 +433,7 @@ HelpMessage: ''
 
 ### -Used
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -537,7 +541,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -574,27 +578,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaUserSettingStorageQuotaService](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingstoragequotaservice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingstoragequotaservice)

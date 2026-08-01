@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserSettingStorageQuota
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaUserSettingStorageQuota
 
 Read the properties and relationships of a unifiedStorageQuota object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingStorageQuota](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingStorageQuota?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -26,7 +23,7 @@ Read the properties and relationships of a unifiedStorageQuota object.
 Get-MgBetaUserSettingStorageQuota -UserId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +32,7 @@ Get-MgBetaUserSettingStorageQuota -UserId <string> [-ExpandProperty <string[]>]
 Get-MgBetaUserSettingStorageQuota -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,50 +44,27 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a unifiedStorageQuota object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Get the unified quota information for the current user
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserSettingStorageQuota -UserId $userId
 
-```
-This example will get the unified quota information for the current user
-
-### Example 2: Get the unified quota information for the current user
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Users
 
 Get-MgBetaUserSettingStorageQuota -UserId $userId
 
-```
-This example will get the unified quota information for the current user
-
-### Example 3: Get the unified quota information, along with the service breakdowns, for the current user
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Users
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserSettingStorageQuota -UserId $userId -ExpandProperty "services" 
-
-```
-This example will get the unified quota information, along with the service breakdowns, for the current user
-
+Get-MgBetaUserSettingStorageQuota -UserId $userId -ExpandProperty "services"
 
 ## PARAMETERS
 
@@ -380,7 +354,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -417,27 +391,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserSettingStorageQuota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedstoragequota-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota)
+- [](https://learn.microsoft.com/graph/api/unifiedstoragequota-get?view=graph-rest-beta)
