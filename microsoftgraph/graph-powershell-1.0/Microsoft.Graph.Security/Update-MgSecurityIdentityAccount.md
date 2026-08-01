@@ -719,7 +719,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityaccount)
+- [Update-MgSecurityIdentityAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityaccount)
 
 
 
