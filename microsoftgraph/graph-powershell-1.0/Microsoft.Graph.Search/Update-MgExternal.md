@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgExternal
 ---
@@ -15,9 +15,6 @@ title: Update-MgExternal
 
 Update external
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -27,7 +24,7 @@ Update-MgExternal [-ResponseHeadersVariable <string>] [-AdditionalProperties <ha
  [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -37,7 +34,6 @@ Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update external
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -139,7 +145,7 @@ HelpMessage: ''
 
 ### -Connections
 
-
+.
 To construct, see NOTES section for CONNECTIONS properties and create a hash table.
 
 ```yaml
@@ -359,7 +365,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternal>: external
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -648,27 +654,4 @@ Required.
 
 ## RELATED LINKS
 
-- [Update-MgExternal](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal)
