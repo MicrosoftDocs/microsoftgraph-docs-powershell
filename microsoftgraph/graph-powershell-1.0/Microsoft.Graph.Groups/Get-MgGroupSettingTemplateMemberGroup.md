@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatemembergroup
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSettingTemplateMemberGroup
 ---
@@ -28,7 +28,7 @@ Get-MgGroupSettingTemplateMemberGroup -GroupSettingTemplateId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-SecurityEnabledOnly]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Get
@@ -39,7 +39,6 @@ Get-MgGroupSettingTemplateMemberGroup -GroupSettingTemplateId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
@@ -49,7 +48,7 @@ Get-MgGroupSettingTemplateMemberGroup -InputObject <IGroupsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-SecurityEnabledOnly]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### GetViaIdentity
@@ -60,7 +59,6 @@ Get-MgGroupSettingTemplateMemberGroup -InputObject <IGroupsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,6 +73,16 @@ This function is transitive.
 This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the DirectoryResultSizeLimitExceeded error code.
 If you get the DirectoryResultSizeLimitExceeded error code, use the List group transitive memberOf API instead.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -107,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -381,7 +389,7 @@ HelpMessage: ''
 
 ### -SecurityEnabledOnly
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -462,11 +470,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths5WxavkGroupsettingtemplatesGroupsettingtemplateIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths5WxavkGroupsettingtemplatesGroupsettingtemplateIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SecurityEnabledOnly <Boolean?>]: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -490,28 +498,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupSettingTemplateMemberGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatemembergroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatemembergroup)
+- [](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0)

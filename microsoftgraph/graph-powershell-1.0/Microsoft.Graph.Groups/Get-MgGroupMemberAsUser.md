@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberasuser
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupMemberAsUser
 ---
@@ -17,9 +17,6 @@ Get a list of the group's direct members.
 A group can have users, organizational contacts, devices, service principals and other groups as members.
 This operation is not transitive.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberAsUser?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -30,7 +27,7 @@ Get-MgGroupMemberAsUser -GroupId <string> [-ExpandProperty <string[]>] [-Propert
  [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -40,7 +37,7 @@ Get-MgGroupMemberAsUser -DirectoryObjectId <string> -GroupId <string> [-ExpandPr
  [-Property <string[]>] [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -50,7 +47,7 @@ Get-MgGroupMemberAsUser -InputObject <IGroupsIdentity> [-ExpandProperty <string[
  [-Property <string[]>] [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -65,18 +62,12 @@ A group can have users, organizational contacts, devices, service principals and
 This operation is not transitive.
 
 ## EXAMPLES
-### Example 1: Use $searchand OData cast to get user membership in groups with display names that contain the letters 'Pr' including a count of returned objects
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:Pr"' -Property "displayName,id"  -ConsistencyLevel eventual 
-
-
-```
-This example will use $searchand odata cast to get user membership in groups with display names that contain the letters 'pr' including a count of returned objects
-
+Get-MgGroupMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:Pr"' -Property "displayName,id"  -ConsistencyLevel eventual
 
 ## PARAMETERS
 
@@ -587,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -611,27 +602,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupMemberAsUser](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberasuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberasuser)
+- [](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)

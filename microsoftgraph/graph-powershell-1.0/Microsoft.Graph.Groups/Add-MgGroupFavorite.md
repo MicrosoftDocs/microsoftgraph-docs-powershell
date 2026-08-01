@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgGroupFavorite
 ---
@@ -17,9 +17,6 @@ Add the group to the list of the current user's favorite groups.
 The group shows up in Outlook and Teams favorites.
 Supported for Microsoft 365 groups only.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupFavorite?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Add (Default)
@@ -29,7 +26,6 @@ Add-MgGroupFavorite -GroupId <string> [-ResponseHeadersVariable <string>] [-Brea
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AddViaIdentity
@@ -39,7 +35,6 @@ Add-MgGroupFavorite -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <st
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,17 +49,12 @@ The group shows up in Outlook and Teams favorites.
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Add-MgGroupFavorite -GroupId $groupId
-
-```
-This example shows how to use the Add-MgGroupFavorite Cmdlet.
-
 
 ## PARAMETERS
 
@@ -375,7 +365,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -399,27 +389,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Add-MgGroupFavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-addfavorite?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite)
+- [](https://learn.microsoft.com/graph/api/group-addfavorite?view=graph-rest-1.0)

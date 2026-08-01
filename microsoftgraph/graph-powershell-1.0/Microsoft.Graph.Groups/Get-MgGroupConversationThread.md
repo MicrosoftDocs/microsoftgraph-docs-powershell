@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthread
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupConversationThread
 ---
@@ -18,9 +18,6 @@ A navigation property.
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThread?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -32,7 +29,6 @@ Get-MgGroupConversationThread -ConversationId <string> -GroupId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -42,7 +38,7 @@ Get-MgGroupConversationThread -ConversationId <string> -ConversationThreadId <st
  -GroupId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -51,7 +47,7 @@ Get-MgGroupConversationThread -ConversationId <string> -ConversationThreadId <st
 Get-MgGroupConversationThread -InputObject <IGroupsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -66,26 +62,13 @@ A navigation property.
 Read-only.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-Conversation.Read.All, Group.ReadWrite.All, Group.Read.All, Group-Conversation.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group-Conversation.Read.All, Group.ReadWrite.All, Group.Read.All, Group-Conversation.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupConversationThread -GroupId $groupId -ConversationId $conversationId
-
-```
-This example shows how to use the Get-MgGroupConversationThread Cmdlet.
-
 
 ## PARAMETERS
 
@@ -601,7 +584,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -625,27 +608,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupConversationThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthread)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversation-list-threads?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthread)
+- [](https://learn.microsoft.com/graph/api/conversation-list-threads?view=graph-rest-1.0)

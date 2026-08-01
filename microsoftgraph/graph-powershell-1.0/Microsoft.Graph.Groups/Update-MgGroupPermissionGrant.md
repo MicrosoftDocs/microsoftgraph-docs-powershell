@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouppermissiongrant
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupPermissionGrant
 ---
@@ -14,9 +14,6 @@ title: Update-MgGroupPermissionGrant
 ## SYNOPSIS
 
 Update the navigation property permissionGrants in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Update-MgGroupPermissionGrant -GroupId <string> -ResourceSpecificPermissionGrant
  [-PermissionType <string>] [-ResourceAppId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -39,7 +35,7 @@ Update-MgGroupPermissionGrant -GroupId <string> -ResourceSpecificPermissionGrant
  -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,7 +46,7 @@ Update-MgGroupPermissionGrant -InputObject <IGroupsIdentity> [-ResponseHeadersVa
  [-DeletedDateTime <datetime>] [-Id <string>] [-Permission <string>] [-PermissionType <string>]
  [-ResourceAppId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -60,7 +56,7 @@ Update-MgGroupPermissionGrant -InputObject <IGroupsIdentity>
  -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -71,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property permissionGrants in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -655,7 +661,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphResourceSpecificPermissionGrant>`: resourceSpecificPermissionGrant
+BODYPARAMETER <IMicrosoftGraphResourceSpecificPermissionGrant>: resourceSpecificPermissionGrant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -673,7 +679,7 @@ Read-only.
   [ResourceAppId <String>]: ID of the Microsoft Entra app that is hosting the resource.
 Read-only.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -697,27 +703,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgGroupPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouppermissiongrant)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouppermissiongrant)
