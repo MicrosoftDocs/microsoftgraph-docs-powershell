@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoiceline
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanyPurchaseInvoiceLine
 ---
@@ -31,7 +31,7 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -CompanyId <string> -PurchaseIn
  [-TaxPercent <decimal>] [-TotalTaxAmount <decimal>] [-UnitCost <decimal>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateExpanded1
@@ -48,7 +48,7 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -CompanyId <string> -PurchaseIn
  [-Sequence <int>] [-TaxCode <string>] [-TaxPercent <decimal>] [-TotalTaxAmount <decimal>]
  [-UnitCost <decimal>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update1
@@ -59,7 +59,6 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -CompanyId <string> -PurchaseIn
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -69,7 +68,7 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -CompanyId <string> -PurchaseIn
  -BodyParameter <IMicrosoftGraphPurchaseInvoiceLine> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -86,7 +85,7 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -InputObject <IFinancialsIdenti
  [-TaxPercent <decimal>] [-TotalTaxAmount <decimal>] [-UnitCost <decimal>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -103,7 +102,7 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -InputObject <IFinancialsIdenti
  [-TaxPercent <decimal>] [-TotalTaxAmount <decimal>] [-UnitCost <decimal>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity1
@@ -113,7 +112,7 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -InputObject <IFinancialsIdenti
  -BodyParameter <IMicrosoftGraphPurchaseInvoiceLine> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -123,7 +122,7 @@ Update-MgBetaFinancialCompanyPurchaseInvoiceLine -InputObject <IFinancialsIdenti
  -BodyParameter <IMicrosoftGraphPurchaseInvoiceLine> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -134,6 +133,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property purchaseInvoiceLines in financials
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -179,7 +188,7 @@ HelpMessage: ''
 
 ### -AccountId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -257,7 +266,7 @@ HelpMessage: ''
 
 ### -AmountExcludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -296,7 +305,7 @@ HelpMessage: ''
 
 ### -AmountIncludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -457,7 +466,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -496,7 +505,7 @@ HelpMessage: ''
 
 ### -DiscountAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -535,7 +544,7 @@ HelpMessage: ''
 
 ### -DiscountAppliedBeforeTax
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -574,7 +583,7 @@ HelpMessage: ''
 
 ### -DiscountPercent
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -613,7 +622,7 @@ HelpMessage: ''
 
 ### -DocumentId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -652,7 +661,7 @@ HelpMessage: ''
 
 ### -ExpectedReceiptDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -834,7 +843,7 @@ HelpMessage: ''
 
 ### -InvoiceDiscountAllocation
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -913,7 +922,7 @@ HelpMessage: ''
 
 ### -ItemId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -952,7 +961,7 @@ HelpMessage: ''
 
 ### -LineType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -991,7 +1000,7 @@ HelpMessage: ''
 
 ### -NetAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1030,7 +1039,7 @@ HelpMessage: ''
 
 ### -NetAmountIncludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1069,7 +1078,7 @@ HelpMessage: ''
 
 ### -NetTaxAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1237,7 +1246,7 @@ HelpMessage: ''
 
 ### -Quantity
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1298,7 +1307,7 @@ HelpMessage: ''
 
 ### -Sequence
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -1337,7 +1346,7 @@ HelpMessage: ''
 
 ### -TaxCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1376,7 +1385,7 @@ HelpMessage: ''
 
 ### -TaxPercent
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1415,7 +1424,7 @@ HelpMessage: ''
 
 ### -TotalTaxAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1454,7 +1463,7 @@ HelpMessage: ''
 
 ### -UnitCost
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1547,7 +1556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCOUNT `<IMicrosoftGraphAccount>`: account
+ACCOUNT <IMicrosoftGraphAccount>: account
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Blocked <Boolean?>]: 
   [Category <String>]: 
@@ -1557,7 +1566,7 @@ ACCOUNT `<IMicrosoftGraphAccount>`: account
   [Number <String>]: 
   [SubCategory <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphPurchaseInvoiceLine>`: purchaseInvoiceLine
+BODYPARAMETER <IMicrosoftGraphPurchaseInvoiceLine>: purchaseInvoiceLine
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1622,7 +1631,7 @@ Read-only.
   [TotalTaxAmount <Decimal?>]: 
   [UnitCost <Decimal?>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1660,7 +1669,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-ITEM `<IMicrosoftGraphItem>`: item
+ITEM <IMicrosoftGraphItem>: item
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BaseUnitOfMeasureId <String>]: 
   [Blocked <Boolean?>]: 
@@ -1694,27 +1703,4 @@ ITEM `<IMicrosoftGraphItem>`: item
 
 ## RELATED LINKS
 
-- [Update-MgBetaFinancialCompanyPurchaseInvoiceLine](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoiceline)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoiceline)
