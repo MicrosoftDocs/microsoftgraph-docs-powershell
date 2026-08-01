@@ -420,8 +420,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagepermanent)
-- [](https://learn.microsoft.com/graph/api/message-permanentdelete?view=graph-rest-beta)
+- [Remove-MgBetaUserMessagePermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagepermanent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-permanentdelete?view=graph-rest-beta)
 
 
 
