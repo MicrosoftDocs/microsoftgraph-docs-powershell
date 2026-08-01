@@ -435,8 +435,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetacreationuserauthenticationfido2methodoption)
-- [](https://learn.microsoft.com/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-beta)
+- [Invoke-MgBetaCreationUserAuthenticationFido2MethodOption](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetacreationuserauthenticationfido2methodoption)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-beta)
 
 
 

@@ -496,8 +496,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationqrcodepinmethodstandardqrcode)
-- [](https://learn.microsoft.com/graph/api/qrcode-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationqrcodepinmethodstandardqrcode)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/qrcode-delete?view=graph-rest-beta)
 
 
 

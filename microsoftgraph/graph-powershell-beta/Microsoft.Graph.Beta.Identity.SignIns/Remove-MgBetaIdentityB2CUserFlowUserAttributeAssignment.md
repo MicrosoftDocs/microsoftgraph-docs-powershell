@@ -518,8 +518,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowuserattributeassignment)
-- [](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-delete?view=graph-rest-beta)
+- [Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowuserattributeassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-delete?view=graph-rest-beta)
 
 
 

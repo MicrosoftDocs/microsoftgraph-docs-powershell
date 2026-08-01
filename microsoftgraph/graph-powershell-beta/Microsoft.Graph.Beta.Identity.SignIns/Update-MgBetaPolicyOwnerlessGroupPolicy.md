@@ -582,8 +582,8 @@ When notifyMembers is blockSelected, members in these security groups are exclud
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyownerlessgrouppolicy)
-- [](https://learn.microsoft.com/graph/api/ownerlessgrouppolicy-upsert?view=graph-rest-beta)
+- [Update-MgBetaPolicyOwnerlessGroupPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyownerlessgrouppolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ownerlessgrouppolicy-upsert?view=graph-rest-beta)
 
 
 

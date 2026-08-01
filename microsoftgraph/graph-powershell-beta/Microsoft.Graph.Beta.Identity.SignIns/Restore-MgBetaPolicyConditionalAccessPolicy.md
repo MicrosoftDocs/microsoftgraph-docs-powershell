@@ -433,8 +433,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetapolicyconditionalaccesspolicy)
-- [](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-restore?view=graph-rest-beta)
+- [Restore-MgBetaPolicyConditionalAccessPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetapolicyconditionalaccesspolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-restore?view=graph-rest-beta)
 
 
 
