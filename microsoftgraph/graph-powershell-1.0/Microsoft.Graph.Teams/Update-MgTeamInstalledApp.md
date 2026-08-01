@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteaminstalledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgTeamInstalledApp
 ---
@@ -14,9 +14,6 @@ title: Update-MgTeamInstalledApp
 ## SYNOPSIS
 
 Upgrade an app installation within a chat.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Update-MgTeamInstalledApp -TeamId <string> -TeamsAppInstallationId <string>
  [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Upgrade
@@ -39,7 +35,6 @@ Update-MgTeamInstalledApp -TeamId <string> -TeamsAppInstallationId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpgradeViaIdentityExpanded
@@ -50,7 +45,6 @@ Update-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-ResponseHeadersVariabl
  [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpgradeViaIdentity
@@ -61,7 +55,6 @@ Update-MgTeamInstalledApp -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,22 +66,12 @@ This cmdlet has the following aliases,
 
 Upgrade an app installation within a chat.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ReadWriteAndConsentForTeam, TeamsAppInstallation.ManageSelectedForTeam, Group.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ManageSelectedForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Using the Update-MgTeamInstalledApp Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Teams
 Update-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
-```
-This example shows how to use the Update-MgTeamInstalledApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -121,7 +104,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -525,7 +508,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Nx4L8PTeamsTeamIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Nx4L8PTeamsTeamIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]: teamsAppPermissionSet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -533,13 +516,13 @@ BODYPARAMETER `<IPaths1Nx4L8PTeamsTeamIdInstalledappsTeamsappinstallationIdMicro
       [PermissionType <String>]: teamsAppResourceSpecificPermissionType
       [PermissionValue <String>]: The name of the resource-specific permission.
 
-CONSENTEDPERMISSIONSET `<IMicrosoftGraphTeamsAppPermissionSet>`: teamsAppPermissionSet
+CONSENTEDPERMISSIONSET <IMicrosoftGraphTeamsAppPermissionSet>: teamsAppPermissionSet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]: A collection of resource-specific permissions.
     [PermissionType <String>]: teamsAppResourceSpecificPermissionType
     [PermissionValue <String>]: The name of the resource-specific permission.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -560,6 +543,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -579,27 +563,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgTeamInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteaminstalledapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteaminstalledapp)
+- [](https://learn.microsoft.com/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-1.0)

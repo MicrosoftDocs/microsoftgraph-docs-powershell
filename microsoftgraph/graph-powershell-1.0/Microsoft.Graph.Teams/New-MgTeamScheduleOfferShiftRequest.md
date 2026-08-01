@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgTeamScheduleOfferShiftRequest
 ---
@@ -14,9 +14,6 @@ title: New-MgTeamScheduleOfferShiftRequest
 ## SYNOPSIS
 
 Create an instance of an offerShiftRequest.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,7 +28,6 @@ New-MgTeamScheduleOfferShiftRequest -TeamId <string> [-ResponseHeadersVariable <
  [-SenderShiftId <string>] [-State <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -41,7 +37,7 @@ New-MgTeamScheduleOfferShiftRequest -TeamId <string>
  -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -55,7 +51,6 @@ New-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
  [-SenderShiftId <string>] [-State <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -65,7 +60,7 @@ New-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -77,18 +72,9 @@ This cmdlet has the following aliases,
 
 Create an instance of an offerShiftRequest.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -99,10 +85,6 @@ $params = @{
 }
 
 New-MgTeamScheduleOfferShiftRequest -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamScheduleOfferShiftRequest Cmdlet.
-
 
 ## PARAMETERS
 
@@ -738,7 +720,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOfferShiftRequest>`: offerShiftRequest
+BODYPARAMETER <IMicrosoftGraphOfferShiftRequest>: offerShiftRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignedTo <String>]: scheduleChangeRequestActor
   [ManagerActionMessage <String>]: The message sent by the manager regarding the scheduleChangeRequest.
@@ -763,7 +745,7 @@ Read-only.
   [RecipientUserId <String>]: The recipient's user ID.
   [SenderShiftId <String>]: The sender's shift ID.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -774,7 +756,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -795,6 +777,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -811,7 +794,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -825,27 +808,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgTeamScheduleOfferShiftRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest)
+- [](https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-1.0)

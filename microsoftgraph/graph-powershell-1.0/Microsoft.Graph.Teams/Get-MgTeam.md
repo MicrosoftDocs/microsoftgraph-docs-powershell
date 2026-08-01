@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeam
 ---
@@ -14,9 +14,6 @@ title: Get-MgTeam
 ## SYNOPSIS
 
 Retrieve the properties and relationships of the specified team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Get-MgTeam [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -37,7 +33,7 @@ Get-MgTeam [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter <string>
 Get-MgTeam -TeamId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +42,7 @@ Get-MgTeam -TeamId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
 Get-MgTeam -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -58,48 +54,25 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of the specified team.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamSettings.Read.Group, TeamSettings.ReadWrite.Group, TeamSettings.ReadWrite.All, TeamSettings.Read.All, Team.ReadBasic.All, Group.ReadWrite.All, Group.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get a list of teams
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeam
 
-```
-This example will get a list of teams
-
-### Example 2: Use $filter and $top to get two teams with a display name that starts with 'A'
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeam -Filter "startswith(displayName, 'A')" -Top 2 
+Get-MgTeam -Filter "startswith(displayName, 'A')" -Top 2
 
-```
-This example will use $filter and $top to get two teams with a display name that starts with 'a'
-
-### Example 3: Use $filter and $select to get id and description for team with displayName equals "A Contoso Team"
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description" 
-
-```
-This example will use $filter and $select to get id and description for team with displayname equals "a contoso team"
-
+Get-MgTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description"
 
 ## PARAMETERS
 
@@ -561,7 +534,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -582,6 +555,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -601,28 +575,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teams-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam)
+- [](https://learn.microsoft.com/graph/api/team-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/teams-list?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeamChannelMessage
 ---
@@ -15,9 +15,6 @@ title: Get-MgTeamChannelMessage
 
 Retrieve a single message or a message reply in a channel or a chat.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessage?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get1 (Default)
@@ -27,7 +24,7 @@ Get-MgTeamChannelMessage -TeamId <string> [-ExpandProperty <string[]>] [-Propert
  [-Count] [-Filter <string>] [-Model <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### List
@@ -38,7 +35,7 @@ Get-MgTeamChannelMessage -ChannelId <string> -TeamId <string> [-ExpandProperty <
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -48,7 +45,7 @@ Get-MgTeamChannelMessage -ChannelId <string> -ChatMessageId <string> -TeamId <st
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -59,7 +56,7 @@ Get-MgTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <string[
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -68,7 +65,7 @@ Get-MgTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <string[
 Get-MgTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -80,26 +77,13 @@ This cmdlet has the following aliases,
 
 Retrieve a single message or a message reply in a channel or a chat.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChannelMessage.Read.All, Group.ReadWrite.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMessage.Read.Group, Group.ReadWrite.All, Group.Read.All, ChannelMessage.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get a message in a channel
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
-
-```
-This example will get a message in a channel
-
 
 ## PARAMETERS
 
@@ -741,7 +725,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -762,6 +746,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -781,29 +766,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgTeamChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessage)
+- [](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-1.0)

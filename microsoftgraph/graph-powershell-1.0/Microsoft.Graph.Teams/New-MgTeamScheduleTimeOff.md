@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgTeamScheduleTimeOff
 ---
@@ -14,9 +14,6 @@ title: New-MgTeamScheduleTimeOff
 ## SYNOPSIS
 
 Create a new timeOff instance in a schedule.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ New-MgTeamScheduleTimeOff -TeamId <string> [-ResponseHeadersVariable <string>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SharedTimeOff <IMicrosoftGraphTimeOffItem>]
  [-UserId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +36,6 @@ New-MgTeamScheduleTimeOff -TeamId <string> -BodyParameter <IMicrosoftGraphTimeOf
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -51,7 +47,7 @@ New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-ResponseHeadersVariabl
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SharedTimeOff <IMicrosoftGraphTimeOffItem>]
  [-UserId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +57,6 @@ New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,18 +68,9 @@ This cmdlet has the following aliases,
 
 Create a new timeOff instance in a schedule.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -101,10 +87,6 @@ $params = @{
 }
 
 New-MgTeamScheduleTimeOff -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamScheduleTimeOff Cmdlet.
-
 
 ## PARAMETERS
 
@@ -660,7 +642,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTimeOff>`: timeOff
+BODYPARAMETER <IMicrosoftGraphTimeOff>: timeOff
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -687,7 +669,7 @@ Required.
   [UserId <String>]: ID of the user assigned to the timeOff.
 Required.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -698,7 +680,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DRAFTTIMEOFF `<IMicrosoftGraphTimeOffItem>`: timeOffItem
+DRAFTTIMEOFF <IMicrosoftGraphTimeOffItem>: timeOffItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [StartDateTime <DateTime?>]: 
@@ -706,7 +688,7 @@ DRAFTTIMEOFF `<IMicrosoftGraphTimeOffItem>`: timeOffItem
   [TimeOffReasonId <String>]: ID of the timeOffReason for this timeOffItem.
 Required.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -727,6 +709,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -743,7 +726,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -754,7 +737,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-SHAREDTIMEOFF `<IMicrosoftGraphTimeOffItem>`: timeOffItem
+SHAREDTIMEOFF <IMicrosoftGraphTimeOffItem>: timeOffItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [StartDateTime <DateTime?>]: 
@@ -765,27 +748,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgTeamScheduleTimeOff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-post-timesoff?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff)
+- [](https://learn.microsoft.com/graph/api/schedule-post-timesoff?view=graph-rest-1.0)

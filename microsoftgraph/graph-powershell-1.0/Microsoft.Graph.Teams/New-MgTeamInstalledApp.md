@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteaminstalledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgTeamInstalledApp
 ---
@@ -14,9 +14,6 @@ title: New-MgTeamInstalledApp
 ## SYNOPSIS
 
 Install an app to the specified team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ New-MgTeamInstalledApp -TeamId <string> [-ResponseHeadersVariable <string>]
  [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +36,6 @@ New-MgTeamInstalledApp -TeamId <string> -BodyParameter <IMicrosoftGraphTeamsAppI
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -51,7 +47,7 @@ New-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <
  [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +57,7 @@ New-MgTeamInstalledApp -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphTeamsAppInstallation> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -73,18 +69,9 @@ This cmdlet has the following aliases,
 
 Install an app to the specified team.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ManageSelectedForTeam, Group.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ManageSelectedForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Install an app in a team
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -94,12 +81,7 @@ $params = @{
 
 New-MgTeamInstalledApp -TeamId $teamId -BodyParameter $params
 
-```
-This example will install an app in a team
-
-### Example 2: Install an app in a team with consent to the resource-specific permissions required by the app
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
@@ -120,10 +102,6 @@ $params = @{
 }
 
 New-MgTeamInstalledApp -TeamId $teamId -BodyParameter $params
-
-```
-This example will install an app in a team with consent to the resource-specific permissions required by the app
-
 
 ## PARAMETERS
 
@@ -596,7 +574,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppInstallation>`: teamsAppInstallation
+BODYPARAMETER <IMicrosoftGraphTeamsAppInstallation>: teamsAppInstallation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -642,13 +620,13 @@ For example, in the access reviews decisions API, this property might record the
     [ExternalId <String>]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   [TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]: teamsAppDefinition
 
-CONSENTEDPERMISSIONSET `<IMicrosoftGraphTeamsAppPermissionSet>`: teamsAppPermissionSet
+CONSENTEDPERMISSIONSET <IMicrosoftGraphTeamsAppPermissionSet>: teamsAppPermissionSet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]: A collection of resource-specific permissions.
     [PermissionType <String>]: teamsAppResourceSpecificPermissionType
     [PermissionValue <String>]: The name of the resource-specific permission.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -669,6 +647,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -685,7 +664,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-TEAMSAPP `<IMicrosoftGraphTeamsApp>`: teamsApp
+TEAMSAPP <IMicrosoftGraphTeamsApp>: teamsApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -725,7 +704,7 @@ For example, in the access reviews decisions API, this property might record the
   [DistributionMethod <String>]: teamsAppDistributionMethod
   [ExternalId <String>]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
-TEAMSAPPDEFINITION `<IMicrosoftGraphTeamsAppDefinition>`: teamsAppDefinition
+TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition>: teamsAppDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -762,27 +741,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgTeamInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteaminstalledapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteaminstalledapp)
+- [](https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-1.0)

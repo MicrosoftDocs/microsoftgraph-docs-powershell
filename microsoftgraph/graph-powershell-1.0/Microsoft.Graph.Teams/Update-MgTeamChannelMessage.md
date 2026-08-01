@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgTeamChannelMessage
 ---
@@ -14,14 +14,11 @@ title: Update-MgTeamChannelMessage
 ## SYNOPSIS
 
 Update a chatMessage object.
-\rExcept for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\rOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+\r\nExcept for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\r\nOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation fails.
 This method doesn't support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,7 +40,7 @@ Update-MgTeamChannelMessage -ChannelId <string> -ChatMessageId <string> -TeamId 
  [-ReplyToId <string>] [-Subject <string>] [-Summary <string>] [-WebUrl <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -53,7 +50,7 @@ Update-MgTeamChannelMessage -ChannelId <string> -ChatMessageId <string> -TeamId 
  -BodyParameter <IMicrosoftGraphChatMessage> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -73,7 +70,7 @@ Update-MgTeamChannelMessage -InputObject <ITeamsIdentity> [-ResponseHeadersVaria
  [-ReplyToId <string>] [-Subject <string>] [-Summary <string>] [-WebUrl <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -83,7 +80,7 @@ Update-MgTeamChannelMessage -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphChatMessage> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -94,16 +91,15 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update a chatMessage object.
-\rExcept for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\rOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+\r\nExcept for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\r\nOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation fails.
 This method doesn't support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 ## EXAMPLES
-### Example 1: Update policyViolation property using application permissions
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -123,12 +119,7 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-```
-This example will update policyviolation property using application permissions
-
-### Example 2: Update any property of a message using delegated permissions
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
@@ -164,12 +155,7 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-```
-This example will update any property of a message using delegated permissions
-
-### Example 3: Update the mentions of a message using delegated permissions
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Teams
 
@@ -238,12 +224,7 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-```
-This example will update the mentions of a message using delegated permissions
-
-### Example 4: Update the content with attachments of a message using delegated permissions
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Teams
 
@@ -342,12 +323,7 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-```
-This example will update the content with attachments of a message using delegated permissions
-
-### Example 5: Update the reactions in a message using delegated permissions
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Teams
 
@@ -677,10 +653,6 @@ $params = @{
 }
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
-```
-This example will update the reactions in a message using delegated permissions
-
 
 ## PARAMETERS
 
@@ -1813,12 +1785,12 @@ For example, if you set contentType to application/word and set contentUrl to th
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphChatMessage>`: chatMessage
+BODYPARAMETER <IMicrosoftGraphChatMessage>: chatMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1887,7 +1859,7 @@ Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1944,7 +1916,7 @@ Only applies to channel chat messages, not chat messages in a chat.
   [WebUrl <String>]: Read-only.
 Link to the message in Microsoft Teams.
 
-CHANNELIDENTITY `<IMicrosoftGraphChannelIdentity>`: channelIdentity
+CHANNELIDENTITY <IMicrosoftGraphChannelIdentity>: channelIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChannelId <String>]: The identity of the channel in which the message was posted.
   [TeamId <String>]: The identity of the team in which the message was posted.
@@ -1958,7 +1930,7 @@ such as image/png, image/jpg.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1979,6 +1951,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -1998,7 +1971,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 MENTIONS <IMicrosoftGraphChatMessageMention[]>: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
   [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
   [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
   [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -2041,7 +2014,7 @@ For example, in the access reviews decisions API, this property might record the
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
 
-POLICYVIOLATION `<IMicrosoftGraphChatMessagePolicyViolation>`: chatMessagePolicyViolation
+POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyViolation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DlpAction <String>]: chatMessagePolicyViolationDlpActionTypes
   [JustificationText <String>]: Justification text provided by the sender of the message when overriding a policy violation.
@@ -2142,7 +2115,7 @@ Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -2202,27 +2175,5 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [Update-MgTeamChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmessage)
+- [](https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-1.0)

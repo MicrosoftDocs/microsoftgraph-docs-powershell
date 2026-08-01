@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserChat
 ---
@@ -17,9 +17,6 @@ Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChat?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -30,7 +27,7 @@ Get-MgUserChat -UserId <string> [-ExpandProperty <string[]>] [-Property <string[
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -39,7 +36,7 @@ Get-MgUserChat -UserId <string> [-ExpandProperty <string[]>] [-Property <string[
 Get-MgUserChat -ChatId <string> -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +45,7 @@ Get-MgUserChat -ChatId <string> -UserId <string> [-ExpandProperty <string[]>] [-
 Get-MgUserChat -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -62,26 +59,13 @@ Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ReadBasic.WhereInstalled, ChatSettings.ReadWrite.Chat, ChatSettings.Read.Chat, Chat.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.Manage.Chat,  |
-
 ## EXAMPLES
-### Example 1: Get a user's one on one chat
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgUserChat -UserId $userId -ChatId $chatId
-
-```
-This example will get a user's one on one chat
-
 
 ## PARAMETERS
 
@@ -570,7 +554,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -591,6 +575,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -610,28 +595,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat)
+- [](https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0)

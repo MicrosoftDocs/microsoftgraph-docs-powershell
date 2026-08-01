@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserJoinedTeam
 ---
@@ -14,9 +14,6 @@ title: Get-MgUserJoinedTeam
 ## SYNOPSIS
 
 Get joinedTeams from users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgUserJoinedTeam -UserId <string> [-ExpandProperty <string[]>] [-Filter <str
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ## ALIASES
@@ -40,27 +37,14 @@ This cmdlet has the following aliases,
 
 Get joinedTeams from users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Team.ReadBasic.All, User.ReadWrite.All, TeamSettings.ReadWrite.All, User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, TeamSettings.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Team.ReadBasic.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.Read.All, TeamSettings.ReadWrite.All, TeamSettings.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 # A UPN can also be used as -UserId.
 Get-MgUserJoinedTeam -UserId $userId
-
-```
-This example shows how to use the Get-MgUserJoinedTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -493,26 +477,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgUserJoinedTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam)

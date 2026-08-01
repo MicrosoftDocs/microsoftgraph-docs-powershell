@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamworkdeletedteamchannelfilefoldercontent
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgTeamworkDeletedTeamChannelFileFolderContent
 ---
@@ -15,9 +15,6 @@ title: Set-MgTeamworkDeletedTeamChannelFileFolderContent
 
 The content stream, if the item represents a file.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaTeamworkDeletedTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamworkDeletedTeamChannelFileFolderContent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -27,7 +24,7 @@ Set-MgTeamworkDeletedTeamChannelFileFolderContent -ChannelId <string> -DeletedTe
  -InFile <string> [-Data <Stream>] [-ResponseHeadersVariable <string>] [-Break]
  [-ContentType <string>] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### SetViaIdentity
@@ -37,7 +34,7 @@ Set-MgTeamworkDeletedTeamChannelFileFolderContent -InputObject <ITeamsIdentity> 
  [-Data <Stream>] [-ResponseHeadersVariable <string>] [-Break] [-ContentType <string>]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The content stream, if the item represents a file.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -138,7 +145,7 @@ HelpMessage: ''
 
 ### -Data
 
-
+.
 
 ```yaml
 Type: System.IO.Stream
@@ -431,7 +438,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -452,6 +459,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -471,27 +479,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgTeamworkDeletedTeamChannelFileFolderContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamworkdeletedteamchannelfilefoldercontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamworkdeletedteamchannelfilefoldercontent)

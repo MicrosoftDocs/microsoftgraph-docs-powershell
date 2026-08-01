@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteamchannel
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgUnarchiveTeamChannel
 ---
@@ -18,9 +18,6 @@ Unarchiving restores the ability for users to send messages and edit the channel
 Channels are archived via the channel: archive method.
 Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchiving operation completes successfully, which might occur after this method responds.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUnarchiveTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveTeamChannel?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Unarchive (Default)
@@ -30,7 +27,6 @@ Invoke-MgUnarchiveTeamChannel -ChannelId <string> -TeamId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UnarchiveViaIdentity
@@ -40,7 +36,6 @@ Invoke-MgUnarchiveTeamChannel -InputObject <ITeamsIdentity> [-ResponseHeadersVar
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -55,37 +50,19 @@ Unarchiving restores the ability for users to send messages and edit the channel
 Channels are archived via the channel: archive method.
 Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchiving operation completes successfully, which might occur after this method responds.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChannelSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Unarchive a channel
 
-```powershell
-
-Import-Module Microsoft.Graph.Teams
-
-Invoke-MgUnarchiveTeamChannel -TeamId $teamId -ChannelId $channelId
-
-```
-This example will unarchive a channel
-
-### Example 2: Unarchive a channel when the team is archived
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Invoke-MgUnarchiveTeamChannel -TeamId $teamId -ChannelId $channelId
 
-```
-This example will unarchive a channel when the team is archived
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Teams
+
+Invoke-MgUnarchiveTeamChannel -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
@@ -417,7 +394,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -438,6 +415,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -457,27 +435,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgUnarchiveTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteamchannel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteamchannel)
+- [](https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-1.0)

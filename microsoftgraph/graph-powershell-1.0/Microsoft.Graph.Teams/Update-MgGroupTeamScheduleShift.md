@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleshift
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupTeamScheduleShift
 ---
@@ -14,9 +14,6 @@ title: Update-MgGroupTeamScheduleShift
 ## SYNOPSIS
 
 Update the navigation property shifts in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleShift?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ Update-MgGroupTeamScheduleShift -GroupId <string> -ShiftId <string>
  [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -40,7 +36,7 @@ Update-MgGroupTeamScheduleShift -GroupId <string> -ShiftId <string>
  -BodyParameter <IMicrosoftGraphShift> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,7 +49,6 @@ Update-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-ResponseHeadersV
  [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -63,7 +58,6 @@ Update-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IM
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property shifts in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -684,7 +688,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphShift>`: shift
+BODYPARAMETER <IMicrosoftGraphShift>: shift
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -731,7 +735,7 @@ Required.
   [UserId <String>]: ID of the user assigned to the shift.
 Required.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -742,7 +746,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DRAFTSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
+DRAFTSHIFT <IMicrosoftGraphShiftItem>: shiftItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [StartDateTime <DateTime?>]: 
@@ -768,7 +772,7 @@ Required.
   [DisplayName <String>]: The shift label of the shiftItem.
   [Notes <String>]: The shift notes for the shiftItem.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -789,6 +793,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -805,7 +810,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -816,7 +821,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-SHAREDSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
+SHAREDSHIFT <IMicrosoftGraphShiftItem>: shiftItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [StartDateTime <DateTime?>]: 
@@ -845,27 +850,4 @@ Required.
 
 ## RELATED LINKS
 
-- [Update-MgGroupTeamScheduleShift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleshift)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleshift)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelemail
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgTeamChannelEmail
 ---
@@ -16,9 +16,6 @@ title: Remove-MgTeamChannelEmail
 Remove the email address of a channel.
 You can remove an email address only if it was provisioned using the provisionEmail method or through the Microsoft Teams client.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTeamChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannelEmail?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Remove (Default)
@@ -28,7 +25,6 @@ Remove-MgTeamChannelEmail -ChannelId <string> -TeamId <string> [-ResponseHeaders
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
@@ -38,7 +34,6 @@ Remove-MgTeamChannelEmail -InputObject <ITeamsIdentity> [-ResponseHeadersVariabl
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,13 +47,12 @@ Remove the email address of a channel.
 You can remove an email address only if it was provisioned using the provisionEmail method or through the Microsoft Teams client.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgTeamChannelEmail Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Teams
+
 Remove-MgTeamChannelEmail -TeamId $teamId -ChannelId $channelId
-```
-This example shows how to use the Remove-MgTeamChannelEmail Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -390,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -411,6 +405,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -430,27 +425,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgTeamChannelEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelemail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-removeemail?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelemail)
+- [](https://learn.microsoft.com/graph/api/channel-removeemail?view=graph-rest-1.0)

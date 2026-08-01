@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedchat
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgTeamworkDeletedChat
 ---
@@ -15,9 +15,6 @@ title: New-MgTeamworkDeletedChat
 
 Create new navigation property to deletedChats for teamwork
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedChat?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -26,7 +23,7 @@ Create new navigation property to deletedChats for teamwork
 New-MgTeamworkDeletedChat [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Id <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -35,7 +32,7 @@ New-MgTeamworkDeletedChat [-ResponseHeadersVariable <string>] [-AdditionalProper
 New-MgTeamworkDeletedChat -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to deletedChats for teamwork
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -353,27 +360,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [New-MgTeamworkDeletedChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedchat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedchat)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelemail
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupTeamPrimaryChannelEmail
 ---
@@ -18,9 +18,6 @@ Microsoft Teams doesn't automatically provision an email address for a channel b
 To have Teams provision an email address, you can call provisionEmail, or through the Teams user interface, select Get email address, which triggers Teams to generate an email address if it has not already provisioned one.
 To remove the email address of a channel, use the removeEmail method.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamPrimaryChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamPrimaryChannelEmail?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Provision (Default)
@@ -29,7 +26,7 @@ To remove the email address of a channel, use the removeEmail method.
 New-MgGroupTeamPrimaryChannelEmail -GroupId <string> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### ProvisionViaIdentity
@@ -38,7 +35,7 @@ New-MgGroupTeamPrimaryChannelEmail -GroupId <string> [-ResponseHeadersVariable <
 New-MgGroupTeamPrimaryChannelEmail -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -52,6 +49,16 @@ Provision an email address for a channel.
 Microsoft Teams doesn't automatically provision an email address for a channel by default.
 To have Teams provision an email address, you can call provisionEmail, or through the Teams user interface, select Get email address, which triggers Teams to generate an email address if it has not already provisioned one.
 To remove the email address of a channel, use the removeEmail method.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -341,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -362,6 +369,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -381,28 +389,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgGroupTeamPrimaryChannelEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelemail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelemail)
+- [](https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-1.0)

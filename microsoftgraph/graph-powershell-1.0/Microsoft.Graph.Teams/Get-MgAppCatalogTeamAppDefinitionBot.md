@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitionbot
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAppCatalogTeamAppDefinitionBot
 ---
@@ -15,9 +15,6 @@ title: Get-MgAppCatalogTeamAppDefinitionBot
 
 Get the bot associated with a specific definition of the  TeamsApp.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -27,7 +24,7 @@ Get-MgAppCatalogTeamAppDefinitionBot -TeamsAppDefinitionId <string> -TeamsAppId 
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -36,7 +33,7 @@ Get-MgAppCatalogTeamAppDefinitionBot -TeamsAppDefinitionId <string> -TeamsAppId 
 Get-MgAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -48,26 +45,13 @@ This cmdlet has the following aliases,
 
 Get the bot associated with a specific definition of the  TeamsApp.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppCatalog.Read.All, AppCatalog.Submit, AppCatalog.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AppCatalog.Read.All, AppCatalog.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
-
-```
-This example shows how to use the Get-MgAppCatalogTeamAppDefinitionBot Cmdlet.
-
 
 ## PARAMETERS
 
@@ -378,7 +362,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -399,6 +383,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -418,27 +403,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgAppCatalogTeamAppDefinitionBot](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitionbot)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworkbot-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitionbot)
+- [](https://learn.microsoft.com/graph/api/teamworkbot-get?view=graph-rest-1.0)

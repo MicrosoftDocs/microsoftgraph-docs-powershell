@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserteamwork
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserTeamwork
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserTeamwork
 ## SYNOPSIS
 
 Update the navigation property teamwork in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserTeamwork?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Update-MgUserTeamwork -UserId <string> [-ResponseHeadersVariable <string>]
  [-Id <string>] [-InstalledApps <IMicrosoftGraphUserScopeTeamsAppInstallation[]>] [-Locale <string>]
  [-Region <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +35,6 @@ Update-MgUserTeamwork -UserId <string> -BodyParameter <IMicrosoftGraphUserTeamwo
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,7 +45,7 @@ Update-MgUserTeamwork -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <s
  [-Id <string>] [-InstalledApps <IMicrosoftGraphUserScopeTeamsAppInstallation[]>] [-Locale <string>]
  [-Region <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -59,7 +55,6 @@ Update-MgUserTeamwork -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -70,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property teamwork in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -897,11 +902,14 @@ Read-only.
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [ClientExtensionResults <IMicrosoftGraphWebauthnAuthenticationExtensionsClientOutputs>]: webauthnAuthenticationExtensionsClientOutputs
                   [(Any) <Object>]: This indicates any property can be added to this object.
-                [Id <String>]: 
+                [Id <String>]: The credential ID created by the WebAuthn Authenticator.
+This value is Base64URL-encoded without padding.
                 [Response <IMicrosoftGraphWebauthnAuthenticatorAttestationResponse>]: webauthnAuthenticatorAttestationResponse
                   [(Any) <Object>]: This indicates any property can be added to this object.
-                  [AttestationObject <String>]: 
-                  [ClientDataJson <String>]: 
+                  [AttestationObject <String>]: A CBOR-encoded attestation object containing the authenticator data and attestation statement.
+This value is Base64URL-encoded without padding.
+                  [ClientDataJson <String>]: Contains the JSON-compatible serialization of client data passed to the authenticator by the client.
+This value is Base64URL-encoded without padding.
             [Methods <IMicrosoftGraphAuthenticationMethod[]>]: Represents all authentication methods registered to a user.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1490,7 +1498,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1558,7 +1566,8 @@ For example, if a user changes their display name the API might show the new val
                 [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                 [UserIdentityType <String>]: teamworkUserIdentityType
-            [OriginalCreatedDateTime <DateTime?>]: 
+            [OriginalCreatedDateTime <DateTime?>]: Timestamp of the original creation time for the chat.
+The value is null if the chat never entered migration mode.
             [PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]: A collection of permissions granted to apps for the chat.
               [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1595,6 +1604,47 @@ Required.
               [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
               [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
+            [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+              [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
+              [Body <IMicrosoftGraphItemBody>]: itemBody
+              [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
+              [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+              [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
+              [DeletedDateTime <DateTime?>]: Read only.
+Timestamp at which the chat message was deleted, or null if not deleted.
+              [Etag <String>]: Read-only.
+Version number of the chat message.
+              [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
+              [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+              [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+              [Importance <String>]: chatMessageImportance
+              [LastEditedDateTime <DateTime?>]: Read only.
+Timestamp when edits to the chat message were made.
+Triggers an 'Edited' flag in the Teams UI.
+If no edits are made the value is null.
+              [LastModifiedDateTime <DateTime?>]: Read only.
+Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
+              [Locale <String>]: Locale of the chat message set by the client.
+Always set to en-us.
+              [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
+Supported entities are: user, bot, team, channel, chat, and tag.
+              [MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
+              [MessageType <String>]: chatMessageType
+              [PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]: chatMessagePolicyViolation
+              [Reactions <IMicrosoftGraphChatMessageReaction[]>]: Reactions for this chat message (for example, Like).
+              [Replies <IMicrosoftGraphChatMessage[]>]: Replies for a specified message.
+Supports $expand for channel messages.
+              [ReplyToId <String>]: Read-only.
+ID of the parent chat message or root chat message of the thread.
+(Only applies to chat messages in channels, not chats.)
+              [Subject <String>]: The subject of the chat message, in plaintext.
+              [Summary <String>]: Summary text of the chat message that could be used for push notifications and summary views or fall back views.
+Only applies to channel chat messages, not chat messages in a chat.
+              [WebUrl <String>]: Read-only.
+Link to the message in Microsoft Teams.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Recipient <IMicrosoftGraphIdentity>]: identity
             [TenantId <String>]: The identifier of the tenant in which the chat was created.
 Read-only.
             [Topic <String>]: (Optional) Subject or topic for the chat.
@@ -4348,6 +4398,7 @@ Supported only on the Get group API (GET /groups/{ID}).
 The default value is false.
 Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
+                [InfoCatalogs <String[]>]: 
                 [IsArchived <Boolean?>]: When a group is associated with a team, this property determines whether the team is in read-only mode.To read this property, use the /group/{groupId}/team endpoint or the Get team API.
 To update this property, use the archiveTeam and unarchiveTeam APIs.
                 [IsAssignableToRole <Boolean?>]: Indicates whether this group can be assigned to a Microsoft Entra role.
@@ -4638,7 +4689,7 @@ Users can control this setting in Office Delve.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [PrimaryMailboxId <String>]: 
+              [PrimaryMailboxId <String>]: The unique identifier for the user's primary mailbox.
             [ItemInsights <IMicrosoftGraphUserInsightsSettings>]: userInsightsSettings
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Id <String>]: The unique identifier for an entity.
@@ -4894,8 +4945,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5489,7 +5540,8 @@ The default value is false.
 A navigation property.
 Nullable.
       [MigrationMode <String>]: migrationMode
-      [OriginalCreatedDateTime <DateTime?>]: 
+      [OriginalCreatedDateTime <DateTime?>]: Timestamp of the original creation time for the channel.
+The value is null if the channel never entered migration mode.
       [SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>]: A collection of teams with which a channel is shared.
         [DisplayName <String>]: The name of the team.
         [Team <IMicrosoftGraphTeam>]: team
@@ -5806,7 +5858,7 @@ This URL should be treated as an opaque blob, and not parsed.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUserTeamwork>`: userTeamwork
+BODYPARAMETER <IMicrosoftGraphUserTeamwork>: userTeamwork
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -6133,11 +6185,14 @@ Read-only.
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [ClientExtensionResults <IMicrosoftGraphWebauthnAuthenticationExtensionsClientOutputs>]: webauthnAuthenticationExtensionsClientOutputs
                     [(Any) <Object>]: This indicates any property can be added to this object.
-                  [Id <String>]: 
+                  [Id <String>]: The credential ID created by the WebAuthn Authenticator.
+This value is Base64URL-encoded without padding.
                   [Response <IMicrosoftGraphWebauthnAuthenticatorAttestationResponse>]: webauthnAuthenticatorAttestationResponse
                     [(Any) <Object>]: This indicates any property can be added to this object.
-                    [AttestationObject <String>]: 
-                    [ClientDataJson <String>]: 
+                    [AttestationObject <String>]: A CBOR-encoded attestation object containing the authenticator data and attestation statement.
+This value is Base64URL-encoded without padding.
+                    [ClientDataJson <String>]: Contains the JSON-compatible serialization of client data passed to the authenticator by the client.
+This value is Base64URL-encoded without padding.
               [Methods <IMicrosoftGraphAuthenticationMethod[]>]: Represents all authentication methods registered to a user.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -6726,7 +6781,7 @@ Always set to en-us.
                 [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                   [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                   [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                   [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -6794,7 +6849,8 @@ For example, if a user changes their display name the API might show the new val
                   [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                   [UserIdentityType <String>]: teamworkUserIdentityType
-              [OriginalCreatedDateTime <DateTime?>]: 
+              [OriginalCreatedDateTime <DateTime?>]: Timestamp of the original creation time for the chat.
+The value is null if the chat never entered migration mode.
               [PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]: A collection of permissions granted to apps for the chat.
                 [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -6831,6 +6887,47 @@ Required.
                 [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
                 [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
+              [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+                [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
+                [Body <IMicrosoftGraphItemBody>]: itemBody
+                [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
+                [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+                [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
+                [DeletedDateTime <DateTime?>]: Read only.
+Timestamp at which the chat message was deleted, or null if not deleted.
+                [Etag <String>]: Read-only.
+Version number of the chat message.
+                [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
+                [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+                [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+                [Importance <String>]: chatMessageImportance
+                [LastEditedDateTime <DateTime?>]: Read only.
+Timestamp when edits to the chat message were made.
+Triggers an 'Edited' flag in the Teams UI.
+If no edits are made the value is null.
+                [LastModifiedDateTime <DateTime?>]: Read only.
+Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
+                [Locale <String>]: Locale of the chat message set by the client.
+Always set to en-us.
+                [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
+Supported entities are: user, bot, team, channel, chat, and tag.
+                [MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
+                [MessageType <String>]: chatMessageType
+                [PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]: chatMessagePolicyViolation
+                [Reactions <IMicrosoftGraphChatMessageReaction[]>]: Reactions for this chat message (for example, Like).
+                [Replies <IMicrosoftGraphChatMessage[]>]: Replies for a specified message.
+Supports $expand for channel messages.
+                [ReplyToId <String>]: Read-only.
+ID of the parent chat message or root chat message of the thread.
+(Only applies to chat messages in channels, not chats.)
+                [Subject <String>]: The subject of the chat message, in plaintext.
+                [Summary <String>]: Summary text of the chat message that could be used for push notifications and summary views or fall back views.
+Only applies to channel chat messages, not chat messages in a chat.
+                [WebUrl <String>]: Read-only.
+Link to the message in Microsoft Teams.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Recipient <IMicrosoftGraphIdentity>]: identity
               [TenantId <String>]: The identifier of the tenant in which the chat was created.
 Read-only.
               [Topic <String>]: (Optional) Subject or topic for the chat.
@@ -9584,6 +9681,7 @@ Supported only on the Get group API (GET /groups/{ID}).
 The default value is false.
 Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
+                  [InfoCatalogs <String[]>]: 
                   [IsArchived <Boolean?>]: When a group is associated with a team, this property determines whether the team is in read-only mode.To read this property, use the /group/{groupId}/team endpoint or the Get team API.
 To update this property, use the archiveTeam and unarchiveTeam APIs.
                   [IsAssignableToRole <Boolean?>]: Indicates whether this group can be assigned to a Microsoft Entra role.
@@ -9874,7 +9972,7 @@ Users can control this setting in Office Delve.
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
-                [PrimaryMailboxId <String>]: 
+                [PrimaryMailboxId <String>]: The unique identifier for the user's primary mailbox.
               [ItemInsights <IMicrosoftGraphUserInsightsSettings>]: userInsightsSettings
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [Id <String>]: The unique identifier for an entity.
@@ -10111,8 +10209,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -10706,7 +10804,8 @@ The default value is false.
 A navigation property.
 Nullable.
         [MigrationMode <String>]: migrationMode
-        [OriginalCreatedDateTime <DateTime?>]: 
+        [OriginalCreatedDateTime <DateTime?>]: Timestamp of the original creation time for the channel.
+The value is null if the channel never entered migration mode.
         [SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>]: A collection of teams with which a channel is shared.
           [DisplayName <String>]: The name of the team.
           [Team <IMicrosoftGraphTeam>]: team
@@ -11038,7 +11137,7 @@ For users with multigeo licenses, the property contains the user's region (if av
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
 The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -11059,6 +11158,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -11223,7 +11323,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -11291,7 +11391,8 @@ For example, if a user changes their display name the API might show the new val
         [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         [UserIdentityType <String>]: teamworkUserIdentityType
-    [OriginalCreatedDateTime <DateTime?>]: 
+    [OriginalCreatedDateTime <DateTime?>]: Timestamp of the original creation time for the chat.
+The value is null if the chat never entered migration mode.
     [PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]: A collection of permissions granted to apps for the chat.
       [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -11328,6 +11429,47 @@ Required.
       [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
       [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
+    [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+      [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
+      [Body <IMicrosoftGraphItemBody>]: itemBody
+      [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
+      [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+      [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
+      [DeletedDateTime <DateTime?>]: Read only.
+Timestamp at which the chat message was deleted, or null if not deleted.
+      [Etag <String>]: Read-only.
+Version number of the chat message.
+      [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
+      [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+      [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+      [Importance <String>]: chatMessageImportance
+      [LastEditedDateTime <DateTime?>]: Read only.
+Timestamp when edits to the chat message were made.
+Triggers an 'Edited' flag in the Teams UI.
+If no edits are made the value is null.
+      [LastModifiedDateTime <DateTime?>]: Read only.
+Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
+      [Locale <String>]: Locale of the chat message set by the client.
+Always set to en-us.
+      [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
+Supported entities are: user, bot, team, channel, chat, and tag.
+      [MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
+      [MessageType <String>]: chatMessageType
+      [PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]: chatMessagePolicyViolation
+      [Reactions <IMicrosoftGraphChatMessageReaction[]>]: Reactions for this chat message (for example, Like).
+      [Replies <IMicrosoftGraphChatMessage[]>]: Replies for a specified message.
+Supports $expand for channel messages.
+      [ReplyToId <String>]: Read-only.
+ID of the parent chat message or root chat message of the thread.
+(Only applies to chat messages in channels, not chats.)
+      [Subject <String>]: The subject of the chat message, in plaintext.
+      [Summary <String>]: Summary text of the chat message that could be used for push notifications and summary views or fall back views.
+Only applies to channel chat messages, not chat messages in a chat.
+      [WebUrl <String>]: Read-only.
+Link to the message in Microsoft Teams.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Recipient <IMicrosoftGraphIdentity>]: identity
     [TenantId <String>]: The identifier of the tenant in which the chat was created.
 Read-only.
     [Topic <String>]: (Optional) Subject or topic for the chat.
@@ -11343,27 +11485,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgUserTeamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserteamwork)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserteamwork)

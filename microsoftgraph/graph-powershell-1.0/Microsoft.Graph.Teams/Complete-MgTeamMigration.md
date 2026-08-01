@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteammigration
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Complete-MgTeamMigration
 ---
@@ -18,9 +18,6 @@ Migration mode is a special state where certain operations are barred, like mess
 After a completeMigration request is made, you can't import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Complete-MgBetaTeamMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamMigration?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Complete (Default)
@@ -30,7 +27,6 @@ Complete-MgTeamMigration -TeamId <string> [-ResponseHeadersVariable <string>] [-
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CompleteViaIdentity
@@ -40,7 +36,6 @@ Complete-MgTeamMigration -InputObject <ITeamsIdentity> [-ResponseHeadersVariable
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -56,17 +51,12 @@ After a completeMigration request is made, you can't import additional messages 
 You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Complete-MgTeamMigration -TeamId $teamId
-
-```
-This example shows how to use the Complete-MgTeamMigration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -377,7 +367,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -398,6 +388,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -417,27 +408,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Complete-MgTeamMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteammigration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-completemigration?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteammigration)
+- [](https://learn.microsoft.com/graph/api/team-completemigration?view=graph-rest-1.0)

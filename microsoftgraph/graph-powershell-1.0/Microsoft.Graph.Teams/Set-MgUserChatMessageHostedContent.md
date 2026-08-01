@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mguserchatmessagehostedcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgUserChatMessageHostedContent
 ---
@@ -16,9 +16,6 @@ title: Set-MgUserChatMessageHostedContent
 The unique identifier for an entity.
 Read-only.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaUserChatMessageHostedContent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -29,7 +26,6 @@ Set-MgUserChatMessageHostedContent -ChatId <string> -ChatMessageHostedContentId 
  [-ResponseHeadersVariable <string>] [-Break] [-ContentType <string>] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -39,7 +35,6 @@ Set-MgUserChatMessageHostedContent -InputObject <ITeamsIdentity> -InFile <string
  [-ResponseHeadersVariable <string>] [-Break] [-ContentType <string>] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,6 +46,16 @@ This cmdlet has the following aliases,
 
 The unique identifier for an entity.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -183,7 +188,7 @@ HelpMessage: ''
 
 ### -Data
 
-
+.
 
 ```yaml
 Type: System.IO.Stream
@@ -497,7 +502,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -518,6 +523,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -537,27 +543,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgUserChatMessageHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mguserchatmessagehostedcontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mguserchatmessagehostedcontent)

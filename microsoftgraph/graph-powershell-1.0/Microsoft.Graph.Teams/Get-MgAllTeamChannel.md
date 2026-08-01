@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAllTeamChannel
 ---
@@ -14,9 +14,6 @@ title: Get-MgAllTeamChannel
 ## SYNOPSIS
 
 List of channels either hosted in or shared with the team (incoming channels).
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAllTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgAllTeamChannel -TeamId <string> [-ExpandProperty <string[]>] [-Property <s
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +34,7 @@ Get-MgAllTeamChannel -TeamId <string> [-ExpandProperty <string[]>] [-Property <s
 Get-MgAllTeamChannel -ChannelId <string> -TeamId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +43,7 @@ Get-MgAllTeamChannel -ChannelId <string> -TeamId <string> [-ExpandProperty <stri
 Get-MgAllTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -59,28 +56,18 @@ This cmdlet has the following aliases,
 List of channels either hosted in or shared with the team (incoming channels).
 
 ## EXAMPLES
-### Example 1: List all channels
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgAllTeamChannel -TeamId $teamId
 
-```
-This example will list all channels
-
-### Example 2: List all shared channels
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
-
-```
-This example will list all shared channels
-
+Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
 
 ## PARAMETERS
 
@@ -569,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -590,6 +577,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -609,27 +597,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgAllTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-list-allchannels?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallteamchannel)
+- [](https://learn.microsoft.com/graph/api/team-list-allchannels?view=graph-rest-1.0)

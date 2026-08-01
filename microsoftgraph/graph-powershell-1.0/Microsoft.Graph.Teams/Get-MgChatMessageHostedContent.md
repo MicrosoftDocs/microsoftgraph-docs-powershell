@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagehostedcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgChatMessageHostedContent
 ---
@@ -14,9 +14,6 @@ title: Get-MgChatMessageHostedContent
 ## SYNOPSIS
 
 Retrieve the properties and relationships of chatMessageHostedContent object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgChatMessageHostedContent -ChatId <string> -ChatMessageId <string> [-Expand
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get1
@@ -38,7 +35,7 @@ Get-MgChatMessageHostedContent -ChatId <string> -ChatMessageHostedContentId <str
  -ChatMessageId <string> -OutFile <string> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-PassThru] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-PassThru]
 ```
 
 ### Get
@@ -48,7 +45,7 @@ Get-MgChatMessageHostedContent -ChatId <string> -ChatMessageHostedContentId <str
  -ChatMessageId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -57,7 +54,7 @@ Get-MgChatMessageHostedContent -ChatId <string> -ChatMessageHostedContentId <str
 Get-MgChatMessageHostedContent -InputObject <ITeamsIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PassThru] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PassThru]
 ```
 
 ### GetViaIdentity
@@ -66,7 +63,7 @@ Get-MgChatMessageHostedContent -InputObject <ITeamsIdentity> -OutFile <string>
 Get-MgChatMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -78,26 +75,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.Read, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMessage.Read.Chat, Group.ReadWrite.All, Group.Read.All, Chat.ReadWrite.All, Chat.Read.All,  |
-
 ## EXAMPLES
-### Example 1: List hosted content for message in a chat
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
-
-```
-This example will list hosted content for message in a chat
-
 
 ## PARAMETERS
 
@@ -719,7 +703,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -740,6 +724,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -759,28 +744,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgChatMessageHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagehostedcontent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessagehostedcontent-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagehostedcontent)
+- [](https://learn.microsoft.com/graph/api/chatmessagehostedcontent-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamgroupserviceprovisioningerror
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupTeamGroupServiceProvisioningError
 ---
@@ -16,9 +16,6 @@ title: Get-MgGroupTeamGroupServiceProvisioningError
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamGroupServiceProvisioningError?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -29,7 +26,7 @@ Get-MgGroupTeamGroupServiceProvisioningError -GroupId <string> [-ExpandProperty 
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ## ALIASES
@@ -41,6 +38,16 @@ This cmdlet has the following aliases,
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -473,27 +480,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgGroupTeamGroupServiceProvisioningError](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamgroupserviceprovisioningerror)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamgroupserviceprovisioningerror)
