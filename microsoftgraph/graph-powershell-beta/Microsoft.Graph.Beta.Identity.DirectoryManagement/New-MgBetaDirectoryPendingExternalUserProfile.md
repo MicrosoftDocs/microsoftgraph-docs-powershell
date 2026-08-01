@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 
 Create a new pendingExternalUserProfile object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PendingExternalUserProfile.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PendingExternalUserProfile.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
