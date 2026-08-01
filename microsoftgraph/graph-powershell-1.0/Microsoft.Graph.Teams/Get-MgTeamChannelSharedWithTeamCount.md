@@ -15,6 +15,9 @@ title: Get-MgTeamChannelSharedWithTeamCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelSharedWithTeamCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelSharedWithTeamCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
