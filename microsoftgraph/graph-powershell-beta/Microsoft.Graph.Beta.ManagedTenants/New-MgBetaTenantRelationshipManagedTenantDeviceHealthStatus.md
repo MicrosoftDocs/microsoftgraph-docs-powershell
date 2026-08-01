@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicehealthstatus
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus
 ---
@@ -28,7 +28,7 @@ New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus [-ResponseHeadersVar
  [-TenantDisplayName <string>] [-TenantId <string>] [-TopProcesses <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +39,6 @@ New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to deviceHealthStatuses for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -76,7 +85,7 @@ HelpMessage: ''
 
 ### -BlueScreenCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -119,7 +128,7 @@ HelpMessage: ''
 
 ### -BootTotalDurationInSeconds
 
-
+.
 
 ```yaml
 Type: System.Double
@@ -183,7 +192,7 @@ HelpMessage: ''
 
 ### -DeviceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -204,7 +213,7 @@ HelpMessage: ''
 
 ### -DeviceMake
 
-
+.
 
 ```yaml
 Type: System.String
@@ -225,7 +234,7 @@ HelpMessage: ''
 
 ### -DeviceModel
 
-
+.
 
 ```yaml
 Type: System.String
@@ -246,7 +255,7 @@ HelpMessage: ''
 
 ### -DeviceName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -288,7 +297,7 @@ HelpMessage: ''
 
 ### -HealthStatus
 
-
+.
 
 ```yaml
 Type: System.String
@@ -373,7 +382,7 @@ HelpMessage: ''
 
 ### -LastUpdatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -394,7 +403,7 @@ HelpMessage: ''
 
 ### -OSVersion
 
-
+.
 
 ```yaml
 Type: System.String
@@ -415,7 +424,7 @@ HelpMessage: ''
 
 ### -PrimaryDiskType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -521,7 +530,7 @@ HelpMessage: ''
 
 ### -RestartCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -542,7 +551,7 @@ HelpMessage: ''
 
 ### -StartupPerformanceScore
 
-
+.
 
 ```yaml
 Type: System.Double
@@ -563,7 +572,7 @@ HelpMessage: ''
 
 ### -TenantDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -584,7 +593,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -605,7 +614,7 @@ HelpMessage: ''
 
 ### -TopProcesses
 
-
+.
 
 ```yaml
 Type: System.String
@@ -676,7 +685,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsDeviceHealthStatus>`: deviceHealthStatus
+BODYPARAMETER <IMicrosoftGraphManagedTenantsDeviceHealthStatus>: deviceHealthStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -699,27 +708,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicehealthstatus)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicehealthstatus)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantappperformance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipManagedTenantAppPerformance
 ---
@@ -27,7 +27,7 @@ New-MgBetaTenantRelationshipManagedTenantAppPerformance [-ResponseHeadersVariabl
  [-TotalActiveDeviceCount <int>] [-TotalAppCrashCount <int>] [-TotalAppFreezeCount <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -37,7 +37,7 @@ New-MgBetaTenantRelationshipManagedTenantAppPerformance
  -BodyParameter <IMicrosoftGraphManagedTenantsAppPerformance> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -48,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to appPerformances for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -74,7 +84,7 @@ HelpMessage: ''
 
 ### -AppFriendlyName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -95,7 +105,7 @@ HelpMessage: ''
 
 ### -AppName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -116,7 +126,7 @@ HelpMessage: ''
 
 ### -AppPublisher
 
-
+.
 
 ```yaml
 Type: System.String
@@ -287,7 +297,7 @@ HelpMessage: ''
 
 ### -LastUpdatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -308,7 +318,7 @@ HelpMessage: ''
 
 ### -MeanTimeToFailureInMinutes
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -414,7 +424,7 @@ HelpMessage: ''
 
 ### -TenantDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -435,7 +445,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -456,7 +466,7 @@ HelpMessage: ''
 
 ### -TotalActiveDeviceCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -477,7 +487,7 @@ HelpMessage: ''
 
 ### -TotalAppCrashCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -498,7 +508,7 @@ HelpMessage: ''
 
 ### -TotalAppFreezeCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -569,7 +579,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsAppPerformance>`: appPerformance
+BODYPARAMETER <IMicrosoftGraphManagedTenantsAppPerformance>: appPerformance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -587,27 +597,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaTenantRelationshipManagedTenantAppPerformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantappperformance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantappperformance)

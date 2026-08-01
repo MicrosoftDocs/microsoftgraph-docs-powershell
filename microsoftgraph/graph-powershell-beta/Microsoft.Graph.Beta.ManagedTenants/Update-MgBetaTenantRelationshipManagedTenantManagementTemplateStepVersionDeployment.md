@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversiondeployment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
 ---
@@ -28,7 +28,7 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeploym
  [-TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]
  [-TenantId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -40,7 +40,6 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeploym
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,7 +53,7 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeploym
  [-TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>]
  [-TenantId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -66,7 +65,6 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeploym
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property deployments in tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -180,7 +188,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -207,7 +215,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -381,7 +389,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -408,7 +416,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -629,7 +637,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -710,7 +718,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment>`: managementTemplateStepDeployment
+BODYPARAMETER <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment>: managementTemplateStepDeployment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -836,12 +844,12 @@ Read-only.
     [VersionInformation <String>]: 
   [TenantId <String>]: 
 
-ERROR `<IMicrosoftGraphManagedTenantsGraphApiErrorDetails>`: graphAPIErrorDetails
+ERROR <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>: graphAPIErrorDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: 
   [Message <String>]: 
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -881,7 +889,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
   [WindowsDeviceMalwareStateId <String>]: The unique identifier of windowsDeviceMalwareState
   [WindowsProtectionStateId <String>]: The unique identifier of windowsProtectionState
 
-TEMPLATESTEPVERSION `<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>`: managementTemplateStepVersion
+TEMPLATESTEPVERSION <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>: managementTemplateStepVersion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1009,27 +1017,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversiondeployment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversiondeployment)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmyrole
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipManagedTenantMyRole
 ---
@@ -24,7 +24,7 @@ New-MgBetaTenantRelationshipManagedTenantMyRole [-ResponseHeadersVariable <strin
  [-AdditionalProperties <hashtable>] [-Assignments <IMicrosoftGraphManagedTenantsRoleAssignment[]>]
  [-TenantId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -34,7 +34,6 @@ New-MgBetaTenantRelationshipManagedTenantMyRole -BodyParameter <IMicrosoftGraphM
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -45,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to myRoles for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -386,7 +395,7 @@ ASSIGNMENTS <IMicrosoftGraphManagedTenantsRoleAssignment[]>: A collection of rol
     [DisplayName <String>]: The display name for the role assignment.
     [TemplateId <String>]: The unique identifier for the template.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsMyRole>`: myRole
+BODYPARAMETER <IMicrosoftGraphManagedTenantsMyRole>: myRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assignments <IMicrosoftGraphManagedTenantsRoleAssignment[]>]: A collection of role assignments for the managed tenant.
     [AssignmentType <String>]: delegatedPrivilegeStatus
@@ -401,27 +410,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaTenantRelationshipManagedTenantMyRole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmyrole)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmyrole)

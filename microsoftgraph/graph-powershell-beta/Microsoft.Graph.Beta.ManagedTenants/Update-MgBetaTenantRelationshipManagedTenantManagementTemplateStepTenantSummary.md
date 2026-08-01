@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatesteptenantsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
 ---
@@ -31,7 +31,7 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
  [-ManagementTemplateStepId <string>] [-NotCompliantTenantsCount <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -43,7 +43,6 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -60,7 +59,7 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
  [-ManagementTemplateStepId <string>] [-NotCompliantTenantsCount <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -72,7 +71,6 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -83,6 +81,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property managementTemplateStepTenantSummaries in tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -115,7 +123,7 @@ HelpMessage: ''
 
 ### -AssignedTenantsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -191,7 +199,7 @@ HelpMessage: ''
 
 ### -CompliantTenantsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -240,7 +248,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -267,7 +275,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -294,7 +302,7 @@ HelpMessage: ''
 
 ### -DismissedTenantsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -412,7 +420,7 @@ HelpMessage: ''
 
 ### -IneligibleTenantsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -467,7 +475,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -494,7 +502,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -521,7 +529,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateCollectionDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -548,7 +556,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateCollectionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -575,7 +583,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -602,7 +610,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -629,7 +637,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateStepDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -656,7 +664,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateStepId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -710,7 +718,7 @@ HelpMessage: ''
 
 ### -NotCompliantTenantsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -876,7 +884,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary>`: managementTemplateStepTenantSummary
+BODYPARAMETER <IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary>: managementTemplateStepTenantSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -896,7 +904,7 @@ Read-only.
   [ManagementTemplateStepId <String>]: 
   [NotCompliantTenantsCount <Int32?>]: 
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -939,27 +947,4 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatesteptenantsummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatesteptenantsummary)

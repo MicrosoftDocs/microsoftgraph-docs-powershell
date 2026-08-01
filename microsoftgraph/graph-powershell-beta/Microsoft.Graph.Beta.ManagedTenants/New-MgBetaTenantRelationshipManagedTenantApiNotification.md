@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantapinotification
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipManagedTenantApiNotification
 ---
@@ -27,7 +27,6 @@ New-MgBetaTenantRelationshipManagedTenantApiNotification [-ResponseHeadersVariab
  [-Title <string>] [-UserId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -38,7 +37,6 @@ New-MgBetaTenantRelationshipManagedTenantApiNotification
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to managedTenantApiNotifications for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -162,7 +170,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -183,7 +191,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -289,7 +297,7 @@ HelpMessage: ''
 
 ### -IsAcknowledged
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -310,7 +318,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -331,7 +339,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -352,7 +360,7 @@ HelpMessage: ''
 
 ### -Message
 
-
+.
 
 ```yaml
 Type: System.String
@@ -458,7 +466,7 @@ HelpMessage: ''
 
 ### -Title
 
-
+.
 
 ```yaml
 Type: System.String
@@ -479,7 +487,7 @@ HelpMessage: ''
 
 ### -UserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -550,7 +558,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERT `<IMicrosoftGraphManagedTenantsManagedTenantAlert>`: managedTenantAlert
+ALERT <IMicrosoftGraphManagedTenantsManagedTenantAlert>: managedTenantAlert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -642,7 +650,7 @@ Read-only.
   [TenantId <String>]: 
   [Title <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantApiNotification>`: managedTenantApiNotification
+BODYPARAMETER <IMicrosoftGraphManagedTenantsManagedTenantApiNotification>: managedTenantApiNotification
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -738,27 +746,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaTenantRelationshipManagedTenantApiNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantapinotification)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantapinotification)
