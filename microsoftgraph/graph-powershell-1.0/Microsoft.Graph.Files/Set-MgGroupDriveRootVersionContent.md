@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 The content stream for this version of the item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -491,6 +481,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdriverootversioncontent)
+
 
 
 
