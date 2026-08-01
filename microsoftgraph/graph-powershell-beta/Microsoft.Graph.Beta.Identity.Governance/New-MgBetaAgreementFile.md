@@ -15,6 +15,9 @@ title: New-MgBetaAgreementFile
 
 Create new navigation property to files for agreements
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
