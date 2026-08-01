@@ -60,14 +60,17 @@ This cmdlet has the following aliases,
 Defines the partner-specific Microsoft 365 cross-tenant capabilities for inbound access from the partner organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
+Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
 
-{{ Add code here }}
+```
+This example shows how to use the Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability Cmdlet.
+
 
 ## PARAMETERS
 

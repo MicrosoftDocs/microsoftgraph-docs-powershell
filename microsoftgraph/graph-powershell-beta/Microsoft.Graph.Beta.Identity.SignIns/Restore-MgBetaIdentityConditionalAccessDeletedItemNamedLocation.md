@@ -46,12 +46,17 @@ This cmdlet has the following aliases,
 Restore a deleted countryNamedLocation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation -NamedLocationId $namedLocationId
+
+```
+This example shows how to use the Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,12 +46,17 @@ This cmdlet has the following aliases,
 Permanently delete a policyDeletableItem object, which might be one of the following deleted policy types:\r- crossTenantAccessPolicyConfigurationPartner\r- crossTenantIdentitySyncPolicyPartner\r- conditionalAccessPolicy\r- namedLocation
 
 ## EXAMPLES
+### Example 1: Permanently delete a deleted namedLocation object
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaIdentityConditionalAccessDeletedItemNamedLocation -NamedLocationId $namedLocationId
+
+```
+This example will permanently delete a deleted namedlocation object
+
 
 ## PARAMETERS
 

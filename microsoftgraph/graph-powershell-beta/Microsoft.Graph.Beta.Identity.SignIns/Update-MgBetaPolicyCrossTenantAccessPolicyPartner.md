@@ -108,8 +108,9 @@ Update the properties of a partner-specific configuration.
 | Application | Policy.ReadWrite.CrossTenantAccess,  |
 
 ## EXAMPLES
+### Example 1: Configure inbound trust settings
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -123,7 +124,12 @@ $params = @{
 
 Update-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will configure inbound trust settings
+
+### Example 2: Configure automaticUserConsent settings
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -136,7 +142,12 @@ $params = @{
 
 Update-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will configure automaticuserconsent settings
+
+### Example 3: Configure tenant restrictions settings
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -164,6 +175,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
+
+```
+This example will configure tenant restrictions settings
+
 
 ## PARAMETERS
 

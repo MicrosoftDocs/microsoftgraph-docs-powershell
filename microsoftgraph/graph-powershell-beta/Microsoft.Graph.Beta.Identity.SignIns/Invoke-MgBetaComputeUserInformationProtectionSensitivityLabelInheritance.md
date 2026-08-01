@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Calculate the sensitivity label that should be inherited by an output artifact, given a set of sensitivity labels from input or referenced artifacts.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -466,6 +456,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetacomputeuserinformationprotectionsensitivitylabelinheritance)
 - [](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-beta)
+
 
 
 
