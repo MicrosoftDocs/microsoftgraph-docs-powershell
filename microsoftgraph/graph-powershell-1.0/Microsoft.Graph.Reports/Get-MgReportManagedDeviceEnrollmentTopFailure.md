@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmenttopfailure
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportManagedDeviceEnrollmentTopFailure
 ---
@@ -15,9 +15,6 @@ title: Get-MgReportManagedDeviceEnrollmentTopFailure
 
 Invoke function managedDeviceEnrollmentTopFailures
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportManagedDeviceEnrollmentTopFailure](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportManagedDeviceEnrollmentTopFailure?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Top (Default)
@@ -26,7 +23,7 @@ Invoke function managedDeviceEnrollmentTopFailures
 Get-MgReportManagedDeviceEnrollmentTopFailure -OutFile <string> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Top1
@@ -35,7 +32,7 @@ Get-MgReportManagedDeviceEnrollmentTopFailure -OutFile <string> [-ResponseHeader
 Get-MgReportManagedDeviceEnrollmentTopFailure -Period <string> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### TopViaIdentity
@@ -44,7 +41,7 @@ Get-MgReportManagedDeviceEnrollmentTopFailure -Period <string> -OutFile <string>
 Get-MgReportManagedDeviceEnrollmentTopFailure -InputObject <IReportsIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -56,13 +53,15 @@ This cmdlet has the following aliases,
 
 Invoke function managedDeviceEnrollmentTopFailures
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -350,7 +349,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -377,27 +376,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportManagedDeviceEnrollmentTopFailure](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmenttopfailure)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmenttopfailure)

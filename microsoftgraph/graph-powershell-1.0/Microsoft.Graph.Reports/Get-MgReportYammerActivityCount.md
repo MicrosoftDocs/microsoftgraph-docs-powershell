@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportYammerActivityCount
 ---
@@ -15,9 +15,6 @@ title: Get-MgReportYammerActivityCount
 
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerActivityCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -26,7 +23,7 @@ Get the trends on the amount of Yammer activity in your organization by how many
 Get-MgReportYammerActivityCount -Period <string> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +32,7 @@ Get-MgReportYammerActivityCount -Period <string> -OutFile <string>
 Get-MgReportYammerActivityCount -InputObject <IReportsIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -48,17 +45,12 @@ This cmdlet has the following aliases,
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportYammerActivityCount -Period $periodId 
-
-```
-This example shows how to use the Get-MgReportYammerActivityCount Cmdlet.
-
+Get-MgReportYammerActivityCount -Period $periodId
 
 ## PARAMETERS
 
@@ -346,7 +338,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -373,27 +365,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportYammerActivityCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0)

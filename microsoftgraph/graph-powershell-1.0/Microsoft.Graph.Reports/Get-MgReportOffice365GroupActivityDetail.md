@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitydetail
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportOffice365GroupActivityDetail
 ---
@@ -15,9 +15,6 @@ title: Get-MgReportOffice365GroupActivityDetail
 
 Get details about Microsoft 365 groups activity by group.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365GroupActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityDetail?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -26,7 +23,7 @@ Get details about Microsoft 365 groups activity by group.
 Get-MgReportOffice365GroupActivityDetail -Date <datetime> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get1
@@ -35,7 +32,7 @@ Get-MgReportOffice365GroupActivityDetail -Date <datetime> -OutFile <string>
 Get-MgReportOffice365GroupActivityDetail -Period <string> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -44,7 +41,7 @@ Get-MgReportOffice365GroupActivityDetail -Period <string> -OutFile <string>
 Get-MgReportOffice365GroupActivityDetail -InputObject <IReportsIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -53,7 +50,7 @@ Get-MgReportOffice365GroupActivityDetail -InputObject <IReportsIdentity> -OutFil
 Get-MgReportOffice365GroupActivityDetail -InputObject <IReportsIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -64,6 +61,20 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get details about Microsoft 365 groups activity by group.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+{{ Add output here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -378,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -405,28 +416,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportOffice365GroupActivityDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitydetail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitydetail)
+- [](https://learn.microsoft.com/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0)

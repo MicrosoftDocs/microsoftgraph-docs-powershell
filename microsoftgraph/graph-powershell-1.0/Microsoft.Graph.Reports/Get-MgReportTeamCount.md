@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportTeamCount
 ---
@@ -15,9 +15,6 @@ title: Get-MgReportTeamCount
 
 Get the number of teams of a particular type in an instance of Microsoft Teams.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -26,7 +23,7 @@ Get the number of teams of a particular type in an instance of Microsoft Teams.
 Get-MgReportTeamCount -Period <string> -OutFile <string> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +32,7 @@ Get-MgReportTeamCount -Period <string> -OutFile <string> [-ResponseHeadersVariab
 Get-MgReportTeamCount -InputObject <IReportsIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -46,6 +43,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the number of teams of a particular type in an instance of Microsoft Teams.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportTeamCount -Format "text/csv"  -Period $periodId
 
 ## PARAMETERS
 
@@ -333,7 +338,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -360,28 +365,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportTeamCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getteamsteamcounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getteamsteamcounts?view=graph-rest-1.0)

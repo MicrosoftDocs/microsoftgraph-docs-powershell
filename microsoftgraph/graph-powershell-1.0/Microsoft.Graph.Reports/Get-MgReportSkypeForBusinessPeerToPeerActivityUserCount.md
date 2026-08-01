@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinesspeertopeeractivityusercount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount
 ---
@@ -16,9 +16,6 @@ title: Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount
 Get usage trends on the number of unique users and type of peer-to-peer sessions held in your organization.
 Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessPeerToPeerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessPeerToPeerActivityUserCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -27,7 +24,7 @@ Types of sessions include IM, audio, video, application sharing, and file transf
 Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount -Period <string> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -36,7 +33,7 @@ Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount -Period <string> -OutFil
 Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount -InputObject <IReportsIdentity>
  -OutFile <string> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -50,17 +47,12 @@ Get usage trends on the number of unique users and type of peer-to-peer sessions
 Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount -Period $periodId 
-
-```
-This example shows how to use the Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount Cmdlet.
-
+Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount -Period $periodId
 
 ## PARAMETERS
 
@@ -348,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -375,27 +367,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinesspeertopeeractivityusercount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinesspeertopeeractivityusercount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-1.0)
