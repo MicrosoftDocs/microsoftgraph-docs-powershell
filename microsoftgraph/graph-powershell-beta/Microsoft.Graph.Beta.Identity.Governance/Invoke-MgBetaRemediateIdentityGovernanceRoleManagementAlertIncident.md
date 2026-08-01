@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Invoke action remediate
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagementAlert.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagementAlert.ReadWrite.Directory,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
