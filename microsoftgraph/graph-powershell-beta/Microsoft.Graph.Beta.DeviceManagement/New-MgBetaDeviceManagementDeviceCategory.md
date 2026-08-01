@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementDeviceCategory
 
 Create new navigation property to deviceCategories for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
