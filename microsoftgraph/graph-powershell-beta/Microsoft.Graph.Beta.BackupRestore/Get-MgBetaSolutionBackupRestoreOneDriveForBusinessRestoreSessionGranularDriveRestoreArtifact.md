@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 A collection of browse session id and item key details that can be used to restore OneDrive for work or school files and folders.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -605,6 +595,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiongranulardriverestoreartifact)
 - [](https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-list-granulardriverestoreartifacts?view=graph-rest-beta)
+
 
 
 

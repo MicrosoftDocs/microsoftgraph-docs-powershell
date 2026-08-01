@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property sharePointBrowseSessions for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -432,6 +422,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresharepointbrowsesession)
+
 
 
 
