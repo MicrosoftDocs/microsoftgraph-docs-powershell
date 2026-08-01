@@ -1465,7 +1465,7 @@ Use outOfBoxExperienceSetting instead.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotdeploymentprofile)
+- [Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotdeploymentprofile)
 
 
 
