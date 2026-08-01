@@ -13,7 +13,7 @@ title: Update-MgBetaAppCatalogTeamAppDefinition
 
 ## SYNOPSIS
 
-Publish an app to the Microsoft Teams app catalog.\r\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\r\nthe created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\rSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\rthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
@@ -79,7 +79,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Publish an app to the Microsoft Teams app catalog.\r\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\r\nthe created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\rSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\rthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
@@ -917,7 +917,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATION <IMicrosoftGraphTeamsAppAuthorization>: teamsAppAuthorization
+AUTHORIZATION `<IMicrosoftGraphTeamsAppAuthorization>`: teamsAppAuthorization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClientAppId <String>]: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
   [RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]: teamsAppPermissionSet
@@ -926,7 +926,7 @@ AUTHORIZATION <IMicrosoftGraphTeamsAppAuthorization>: teamsAppAuthorization
       [PermissionType <String>]: teamsAppResourceSpecificPermissionType
       [PermissionValue <String>]: The name of the resource-specific permission.
 
-BODYPARAMETER <IMicrosoftGraphTeamsAppDefinition>: teamsAppDefinition
+BODYPARAMETER `<IMicrosoftGraphTeamsAppDefinition>`: teamsAppDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1001,7 +1001,7 @@ Required.
   [TeamsAppId <String>]: The ID from the Teams app manifest.
   [Version <String>]: The version number of the application.
 
-COLORICON <IMicrosoftGraphTeamsAppIcon>: teamsAppIcon
+COLORICON `<IMicrosoftGraphTeamsAppIcon>`: teamsAppIcon
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1015,7 +1015,7 @@ Bytes for the hosted content (such as images).
 Content type, such as image/png, image/jpg.
   [WebUrl <String>]: The web URL that can be used for downloading the image.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1052,7 +1052,7 @@ For example, 'officeUIFabricIconName': 'Search'.
   [PickerGroupId <String>]: ID for the group in the card picker.
 Required.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1099,7 +1099,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-OUTLINEICON <IMicrosoftGraphTeamsAppIcon>: teamsAppIcon
+OUTLINEICON `<IMicrosoftGraphTeamsAppIcon>`: teamsAppIcon
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1118,3 +1118,25 @@ Content type, such as image/png, image/jpg.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition)
 - [](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
