@@ -562,7 +562,7 @@ Supports $expand.
 Read-only.
   [DisplayName <String>]: Display name for the client application.
 
-BODYPARAMETER <IMicrosoftGraphRemoteDesktopSecurityConfiguration>: remoteDesktopSecurityConfiguration
+BODYPARAMETER `<IMicrosoftGraphRemoteDesktopSecurityConfiguration>`: remoteDesktopSecurityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -577,7 +577,7 @@ Read-only.
 Read-only.
     [DisplayName <String>]: Display name for the target device group.
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -625,3 +625,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfiguration)
 - [](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

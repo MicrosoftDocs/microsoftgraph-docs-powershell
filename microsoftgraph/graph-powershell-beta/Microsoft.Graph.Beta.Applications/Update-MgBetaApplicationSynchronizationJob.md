@@ -664,7 +664,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSynchronizationJob>: synchronizationJob
+BODYPARAMETER `<IMicrosoftGraphSynchronizationJob>`: synchronizationJob
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -895,7 +895,7 @@ Some settings are inherited from the template.
     [Value <String>]: Value for this key-value pair
   [TemplateId <String>]: Identifier of the synchronization template this job is based on.
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -933,7 +933,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [UniqueName <String>]: Alternate key of application
   [UserId <String>]: The unique identifier of user
 
-SCHEDULE <IMicrosoftGraphSynchronizationSchedule>: synchronizationSchedule
+SCHEDULE `<IMicrosoftGraphSynchronizationSchedule>`: synchronizationSchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Expiration <DateTime?>]: Date and time when this job will expire.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -943,7 +943,7 @@ The value is represented in ISO 8601  format for durations.
 For example, P1M represents a period of one month and PT1M represents a period of one minute.
   [State <String>]: synchronizationScheduleState
 
-SCHEMA <IMicrosoftGraphSynchronizationSchema>: synchronizationSchema
+SCHEMA `<IMicrosoftGraphSynchronizationSchema>`: synchronizationSchema
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1085,7 +1085,7 @@ Must match one of the directory definitions in synchronizationSchema.
 Must match one of the directory definitions in synchronizationSchema.
   [Version <String>]: The version of the schema, updated automatically with every schema change.
 
-STATUS <IMicrosoftGraphSynchronizationStatus>: synchronizationStatus
+STATUS `<IMicrosoftGraphSynchronizationStatus>`: synchronizationStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: synchronizationStatusCode
   [CountSuccessiveCompleteFailures <Int64?>]: Number of consecutive times this job failed.
@@ -1162,3 +1162,25 @@ Some settings are inherited from the template.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationjob)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
