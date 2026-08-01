@@ -15,6 +15,9 @@ title: Remove-MgVirtualEventWebinarSession
 
 Delete navigation property sessions for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinarSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
