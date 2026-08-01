@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Rename-MgCommunicationCallScreenSharingRole
 ---
@@ -15,9 +15,6 @@ title: Rename-MgCommunicationCallScreenSharingRole
 
 Allow applications to share screen content with the participants of a group call.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Rename-MgBetaCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Rename-MgBetaCommunicationCallScreenSharingRole?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### ChangeExpanded (Default)
@@ -27,7 +24,6 @@ Rename-MgCommunicationCallScreenSharingRole -CallId <string> [-ResponseHeadersVa
  [-AdditionalProperties <hashtable>] [-Role <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Change
@@ -38,7 +34,6 @@ Rename-MgCommunicationCallScreenSharingRole -CallId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ChangeViaIdentityExpanded
@@ -49,7 +44,6 @@ Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsId
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ChangeViaIdentity
@@ -60,7 +54,6 @@ Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsId
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,9 +66,8 @@ This cmdlet has the following aliases,
 Allow applications to share screen content with the participants of a group call.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -84,10 +76,6 @@ $params = @{
 }
 
 Rename-MgCommunicationCallScreenSharingRole -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Rename-MgCommunicationCallScreenSharingRole Cmdlet.
-
 
 ## PARAMETERS
 
@@ -120,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -496,11 +484,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsOj95ZpCommunicationsCallsCallIdMicrosoftGraphChangescreensharingrolePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsOj95ZpCommunicationsCallsCallIdMicrosoftGraphChangescreensharingrolePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Role <String>]: screenSharingRole
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -524,27 +512,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Rename-MgCommunicationCallScreenSharingRole](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/call-changescreensharingrole?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole)
+- [](https://learn.microsoft.com/graph/api/call-changescreensharingrole?view=graph-rest-1.0)

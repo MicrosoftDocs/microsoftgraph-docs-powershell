@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgCommunicationCall
 ---
@@ -16,9 +16,6 @@ title: New-MgCommunicationCall
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You need to register the calling bot and go through the list of permissions needed.
 This API supports the following PSTN scenarios:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,7 +37,6 @@ New-MgCommunicationCall [-ResponseHeadersVariable <string>] [-AdditionalProperti
  [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -49,7 +45,7 @@ New-MgCommunicationCall [-ResponseHeadersVariable <string>] [-AdditionalProperti
 New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -63,18 +59,9 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You need to register the calling bot and go through the list of permissions needed.
 This API supports the following PSTN scenarios:
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Calls.JoinGroupCalls.Chat, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.InitiateGroupCall.All, Calls.Initiate.All,  |
-
 ## EXAMPLES
-### Example 1: Create peer-to-peer VoIP call with service hosted media
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -108,12 +95,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will create peer-to-peer voip call with service hosted media
-
-### Example 2: Create peer-to-peer VoIP call with application hosted media
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -157,12 +139,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will create peer-to-peer voip call with application hosted media
-
-### Example 3: Create a group call with service hosted media
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -217,12 +194,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will create a group call with service hosted media
-
-### Example 4: Create a group call with application hosted media
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -277,12 +249,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will create a group call with application hosted media
-
-### Example 5: Join scheduled meeting with service hosted media
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -320,12 +287,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will join scheduled meeting with service hosted media
-
-### Example 6: Join scheduled meeting with application hosted media
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -362,12 +324,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will join scheduled meeting with application hosted media
-
-### Example 7: Join a scheduled meeting with joinMeetingId and passcode
-
-```powershell
+### EXAMPLE 7
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -392,12 +349,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will join a scheduled meeting with joinmeetingid and passcode
-
-### Example 8: Join a scheduled meeting with joinMeetingId
-
-```powershell
+### EXAMPLE 8
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -422,12 +374,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will join a scheduled meeting with joinmeetingid
-
-### Example 9: Create peer-to-peer PSTN call with service hosted media
-
-```powershell
+### EXAMPLE 9
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -472,12 +419,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will create peer-to-peer pstn call with service hosted media
-
-### Example 100: Create peer-to-peer PSTN call with application hosted media
-
-```powershell
+### EXAMPLE 10
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -523,10 +465,6 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will create peer-to-peer pstn call with application hosted media
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -552,7 +490,7 @@ HelpMessage: ''
 
 ### -AudioRoutingGroups
 
-
+.
 To construct, see NOTES section for AUDIOROUTINGGROUPS properties and create a hash table.
 
 ```yaml
@@ -750,7 +688,7 @@ HelpMessage: ''
 
 ### -ContentSharingSessions
 
-
+.
 To construct, see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
 
 ```yaml
@@ -964,7 +902,7 @@ HelpMessage: ''
 
 ### -MyParticipantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -985,7 +923,7 @@ HelpMessage: ''
 
 ### -Operations
 
-
+.
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -1007,7 +945,7 @@ HelpMessage: ''
 
 ### -Participants
 
-
+.
 To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
@@ -1245,7 +1183,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1367,7 +1305,7 @@ Read-only.
   [RoutingMode <String>]: routingMode
   [Sources <String[]>]: List of source participant ids.
 
-BODYPARAMETER `<IMicrosoftGraphCall>`: call
+BODYPARAMETER <IMicrosoftGraphCall>: call
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1503,7 +1441,7 @@ For peer-to-peer case, the call will be dropped once the participant is added su
     [LastModifiedDateTime <DateTime?>]: The state modified time in UTC.
     [State <String>]: callTranscriptionState
 
-CALLOPTIONS `<IMicrosoftGraphCallOptions>`: callOptions
+CALLOPTIONS <IMicrosoftGraphCallOptions>: callOptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [HideBotAfterEscalation <Boolean?>]: Indicates whether to hide the app after the call is escalated.
   [IsContentSharingNotificationEnabled <Boolean?>]: Indicates whether content sharing notifications should be enabled for the call.
@@ -1525,7 +1463,7 @@ For example, in the access reviews decisions API, this property might record the
   [Original <IMicrosoftGraphIdentitySet>]: identitySet
   [RoutingType <String>]: routingType
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MessageId <String>]: The unique identifier of a message in a Microsoft Teams channel.
   [ReplyChainMessageId <String>]: The ID of the reply message.
@@ -1535,7 +1473,7 @@ CONTENTSHARINGSESSIONS <IMicrosoftGraphContentSharingSession[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INCOMINGCONTEXT `<IMicrosoftGraphIncomingContext>`: incomingContext
+INCOMINGCONTEXT <IMicrosoftGraphIncomingContext>: incomingContext
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ObservedParticipantId <String>]: The ID of the participant that is under observation.
 Read-only.
@@ -1553,7 +1491,7 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   [Transferor <IMicrosoftGraphIdentitySet>]: identitySet
 
-MEDIASTATE `<IMicrosoftGraphCallMediaState>`: callMediaState
+MEDIASTATE <IMicrosoftGraphCallMediaState>: callMediaState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Audio <String>]: mediaState
 
@@ -1617,13 +1555,13 @@ Read-only.
     [VideoDisabled <String>]: onlineMeetingVideoDisabledReason
   [RosterSequenceNumber <Int64?>]: Indicates the roster sequence number in which the participant was last updated.
 
-RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
+RESULTINFO <IMicrosoftGraphResultInfo>: resultInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <Int32?>]: The result code.
   [Message <String>]: The message.
   [Subcode <Int32?>]: The result subcode.
 
-SOURCE `<IMicrosoftGraphParticipantInfo>`: participantInfo
+SOURCE <IMicrosoftGraphParticipantInfo>: participantInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CountryCode <String>]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
@@ -1669,12 +1607,12 @@ Whether to remove them from the main mixer.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
-TONEINFO `<IMicrosoftGraphToneInfo>`: toneInfo
+TONEINFO <IMicrosoftGraphToneInfo>: toneInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SequenceId <Int64?>]: An incremental identifier used for ordering DTMF events.
   [Tone <String>]: tone
 
-TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
+TRANSCRIPTION <IMicrosoftGraphCallTranscriptionInfo>: callTranscriptionInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastModifiedDateTime <DateTime?>]: The state modified time in UTC.
   [State <String>]: callTranscriptionState
@@ -1682,27 +1620,5 @@ TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
 
 ## RELATED LINKS
 
-- [New-MgCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall)
+- [](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-1.0)
