@@ -15,6 +15,9 @@ title: Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 
 Delete navigation property serviceManagementDetails for tenantRelationships
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Remove-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
