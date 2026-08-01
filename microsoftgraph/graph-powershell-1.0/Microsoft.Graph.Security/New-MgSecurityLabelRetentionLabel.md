@@ -59,8 +59,9 @@ Create a new retentionLabel object.
 To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -97,6 +98,10 @@ defaultRecordBehavior = "startLocked"
 }
 
 New-MgSecurityLabelRetentionLabel -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityLabelRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 
