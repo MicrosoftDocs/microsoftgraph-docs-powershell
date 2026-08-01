@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceTermsOfUseAgreement
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaIdentityGovernanceTermsOfUseAgreement
 ## SYNOPSIS
 
 Create a new agreement object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreement [-ResponseHeadersVariable <strin
  [-TermsExpiration <IMicrosoftGraphTermsExpiration>] [-UserReacceptRequiredFrequency <timespan>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -41,7 +38,6 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphA
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,9 +50,8 @@ This cmdlet has the following aliases,
 Create a new agreement object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -76,10 +71,6 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaIdentityGovernanceTermsOfUseAgreement Cmdlet.
-
 
 ## PARAMETERS
 
@@ -597,7 +588,7 @@ Supports $filter (eq) and eq for null values.
 Supports $filter (eq).
   [UserPrincipalName <String>]: UPN of the user when the acceptance was recorded.
 
-BODYPARAMETER `<IMicrosoftGraphAgreement>`: agreement
+BODYPARAMETER <IMicrosoftGraphAgreement>: agreement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -717,7 +708,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [UserReacceptRequiredFrequency <TimeSpan?>]: The duration after which the user must reaccept the terms of use.
 The value is represented in ISO 8601 format for durations.
 
-FILE `<IMicrosoftGraphAgreementFile>`: agreementFile
+FILE <IMicrosoftGraphAgreementFile>: agreementFile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The date time representing when the file was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -839,7 +830,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-TERMSEXPIRATION `<IMicrosoftGraphTermsExpiration>`: termsExpiration
+TERMSEXPIRATION <IMicrosoftGraphTermsExpiration>: termsExpiration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Frequency <TimeSpan?>]: Represents the frequency at which the terms will expire, after its first expiration as set in startDateTime.
 The value is represented in ISO 8601 format for durations.
@@ -851,27 +842,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityGovernanceTermsOfUseAgreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreement)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreement)
+- [](https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-beta)

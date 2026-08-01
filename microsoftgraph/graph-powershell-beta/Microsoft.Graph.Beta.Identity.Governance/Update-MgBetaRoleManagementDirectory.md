@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaRoleManagementDirectory
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaRoleManagementDirectory
 ## SYNOPSIS
 
 Update the navigation property directory in roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectory](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,7 +35,7 @@ Update-MgBetaRoleManagementDirectory [-ResponseHeadersVariable <string>]
  [-TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -48,7 +45,6 @@ Update-MgBetaRoleManagementDirectory -BodyParameter <IMicrosoftGraphRbacApplicat
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -59,6 +55,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property directory in roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -298,7 +304,7 @@ HelpMessage: ''
 
 ### -ResourceNamespaces
 
-
+.
 To construct, see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml
@@ -342,7 +348,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentApprovals
 
-
+.
 To construct, see NOTES section for ROLEASSIGNMENTAPPROVALS properties and create a hash table.
 
 ```yaml
@@ -364,7 +370,7 @@ HelpMessage: ''
 
 ### -RoleAssignments
 
-
+.
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -386,7 +392,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentScheduleInstances
 
-
+.
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
@@ -408,7 +414,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentScheduleRequests
 
-
+.
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
@@ -430,7 +436,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentSchedules
 
-
+.
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULES properties and create a hash table.
 
 ```yaml
@@ -452,7 +458,7 @@ HelpMessage: ''
 
 ### -RoleDefinitions
 
-
+.
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
@@ -474,7 +480,7 @@ HelpMessage: ''
 
 ### -RoleEligibilityScheduleInstances
 
-
+.
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
@@ -496,7 +502,7 @@ HelpMessage: ''
 
 ### -RoleEligibilityScheduleRequests
 
-
+.
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
@@ -518,7 +524,7 @@ HelpMessage: ''
 
 ### -RoleEligibilitySchedules
 
-
+.
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULES properties and create a hash table.
 
 ```yaml
@@ -540,7 +546,7 @@ HelpMessage: ''
 
 ### -TransitiveRoleAssignments
 
-
+.
 To construct, see NOTES section for TRANSITIVEROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -612,7 +618,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRbacApplication>`: rbacApplication
+BODYPARAMETER <IMicrosoftGraphRbacApplication>: rbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2195,27 +2201,4 @@ Supports $filter (eq, in).
 
 ## RELATED LINKS
 
-- [Update-MgBetaRoleManagementDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectory)

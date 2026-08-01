@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistribution
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution
 ---
@@ -27,7 +27,7 @@ New-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributio
  [-LowRiskProfile <IMicrosoftGraphRiskProfile>] [-MediumRiskProfile <IMicrosoftGraphRiskProfile>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +38,6 @@ New-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistributio
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to permissionsCreepIndexDistributions for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -469,7 +478,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATIONSYSTEM `<IMicrosoftGraphAuthorizationSystem>`: authorizationSystem
+AUTHORIZATIONSYSTEM <IMicrosoftGraphAuthorizationSystem>: authorizationSystem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -487,7 +496,7 @@ Read-only.
     [Entitlements <IMicrosoftGraphEntitlementsDataCollectionInfo>]: entitlementsDataCollectionInfo
       [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphPermissionsCreepIndexDistribution>`: permissionsCreepIndexDistribution
+BODYPARAMETER <IMicrosoftGraphPermissionsCreepIndexDistribution>: permissionsCreepIndexDistribution
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -516,17 +525,17 @@ Read-only.
   [LowRiskProfile <IMicrosoftGraphRiskProfile>]: riskProfile
   [MediumRiskProfile <IMicrosoftGraphRiskProfile>]: riskProfile
 
-HIGHRISKPROFILE `<IMicrosoftGraphRiskProfile>`: riskProfile
+HIGHRISKPROFILE <IMicrosoftGraphRiskProfile>: riskProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [HumanCount <Int32?>]: This is the count of human identities that have been assigned to this riskScoreBracket,
   [NonHumanCount <Int32?>]: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
 
-LOWRISKPROFILE `<IMicrosoftGraphRiskProfile>`: riskProfile
+LOWRISKPROFILE <IMicrosoftGraphRiskProfile>: riskProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [HumanCount <Int32?>]: This is the count of human identities that have been assigned to this riskScoreBracket,
   [NonHumanCount <Int32?>]: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
 
-MEDIUMRISKPROFILE `<IMicrosoftGraphRiskProfile>`: riskProfile
+MEDIUMRISKPROFILE <IMicrosoftGraphRiskProfile>: riskProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [HumanCount <Int32?>]: This is the count of human identities that have been assigned to this riskScoreBracket,
   [NonHumanCount <Int32?>]: This is the count of nonhuman identities that have been assigned to this riskScoreBracket
@@ -534,27 +543,4 @@ MEDIUMRISKPROFILE `<IMicrosoftGraphRiskProfile>`: riskProfile
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistribution)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionanalyticgcppermissioncreepindexdistribution)

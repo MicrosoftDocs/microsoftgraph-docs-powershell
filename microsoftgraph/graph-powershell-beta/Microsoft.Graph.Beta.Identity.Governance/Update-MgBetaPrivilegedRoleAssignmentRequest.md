@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignmentrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPrivilegedRoleAssignmentRequest
 ---
@@ -28,7 +28,6 @@ Update-MgBetaPrivilegedRoleAssignmentRequest -PrivilegedRoleAssignmentRequestId 
  [-TicketSystem <string>] [-Type <string>] [-UserId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -38,7 +37,7 @@ Update-MgBetaPrivilegedRoleAssignmentRequest -PrivilegedRoleAssignmentRequestId 
  -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignmentRequest> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,7 +51,6 @@ Update-MgBetaPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceId
  [-TicketSystem <string>] [-Type <string>] [-UserId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +60,7 @@ Update-MgBetaPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceId
  -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignmentRequest> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -73,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update entity in privilegedRoleAssignmentRequests
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -105,7 +113,7 @@ HelpMessage: ''
 
 ### -AssignmentState
 
-
+.
 
 ```yaml
 Type: System.String
@@ -203,7 +211,7 @@ HelpMessage: ''
 
 ### -Duration
 
-
+.
 
 ```yaml
 Type: System.String
@@ -439,7 +447,7 @@ HelpMessage: ''
 
 ### -Reason
 
-
+.
 
 ```yaml
 Type: System.String
@@ -466,7 +474,7 @@ HelpMessage: ''
 
 ### -RequestedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -515,7 +523,7 @@ HelpMessage: ''
 
 ### -RoleId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -598,7 +606,7 @@ HelpMessage: ''
 
 ### -Status
 
-
+.
 
 ```yaml
 Type: System.String
@@ -625,7 +633,7 @@ HelpMessage: ''
 
 ### -TicketNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -652,7 +660,7 @@ HelpMessage: ''
 
 ### -TicketSystem
 
-
+.
 
 ```yaml
 Type: System.String
@@ -679,7 +687,7 @@ HelpMessage: ''
 
 ### -Type
 
-
+.
 
 ```yaml
 Type: System.String
@@ -706,7 +714,7 @@ HelpMessage: ''
 
 ### -UserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -787,7 +795,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedRoleAssignmentRequest>`: privilegedRoleAssignmentRequest
+BODYPARAMETER <IMicrosoftGraphPrivilegedRoleAssignmentRequest>: privilegedRoleAssignmentRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -852,7 +860,7 @@ Only Once is supported for now.
   [Type <String>]: 
   [UserId <String>]: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -963,7 +971,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-ROLEINFO `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
+ROLEINFO <IMicrosoftGraphPrivilegedRole>: privilegedRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1001,7 +1009,7 @@ Read-only.
     [Status <String>]: roleSummaryStatus
     [UsersCount <Int32?>]: 
 
-SCHEDULE `<IMicrosoftGraphGovernanceSchedule>`: governanceSchedule
+SCHEDULE <IMicrosoftGraphGovernanceSchedule>: governanceSchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Duration <TimeSpan?>]: The duration of a role assignment.
 It is in format of a TimeSpan.
@@ -1018,27 +1026,4 @@ Only Once is supported for now.
 
 ## RELATED LINKS
 
-- [Update-MgBetaPrivilegedRoleAssignmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignmentrequest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignmentrequest)

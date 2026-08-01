@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaentitlementmanagementaccesspackageassignmentrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest
 ---
@@ -28,7 +28,6 @@ Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Resume
@@ -40,7 +39,6 @@ Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ResumeViaIdentityExpanded
@@ -52,7 +50,6 @@ Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ResumeViaIdentity
@@ -64,7 +61,6 @@ Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -78,18 +74,9 @@ Resume a user's access package request after waiting for a callback from a custo
 In Microsoft Entra entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
 It's performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -106,12 +93,7 @@ $params = @{
 
 Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
 
-```
-This example shows how to use the Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -128,9 +110,43 @@ $params = @{
 
 Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
 
-```
-This example shows how to use the Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet.
+### EXAMPLE 3
 
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	source = "Contoso.CustoEXT"
+	type = "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated"
+	data = @{
+		"@odata.type" = "microsoft.graph.microsoft.graph.assignmentRequestApprovalStageCallbackData"
+		approvalStage = @{
+			durationBeforeAutomaticDenial = "P2D"
+			escalationApprovers = @(
+			)
+			fallbackEscalationApprovers = @(
+			)
+			fallbackPrimaryApprovers = @(
+			)
+			isApproverJustificationRequired = $false
+			isEscalationEnabled = $false
+			primaryApprovers = @(
+				@{
+					"@@odata.type" = "#microsoft.graph.singleUser"
+					description = "Primary approver of access package assignment."
+					id = ""
+					isBackup = $false
+				}
+			)
+		}
+		customExtensionStageInstanceDetail = "A approval stage from Logic Apps"
+		customExtensionStageInstanceId = "@{triggerBody()?['CustomExtensionStageInstanceId']}"
+		stage = "assignmentRequestDeterminingApprovalRequirements"
+	}
+	source = "LogicApps"
+	type = "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated"
+}
+
+Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -190,7 +206,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -485,7 +501,7 @@ HelpMessage: ''
 
 ### -Source
 
-
+.
 
 ```yaml
 Type: System.String
@@ -512,7 +528,7 @@ HelpMessage: ''
 
 ### -Type
 
-
+.
 
 ```yaml
 Type: System.String
@@ -593,14 +609,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsMdeg1MIdentitygovernanceEntitlementmanagementAccesspackageassignmentrequestsAccesspackageassignmentrequestIdMicrosoftGraphResumePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsMdeg1MIdentitygovernanceEntitlementmanagementAccesspackageassignmentrequestsAccesspackageassignmentrequestIdMicrosoftGraphResumePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Data <IMicrosoftGraphCustomExtensionData>]: customExtensionData
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Source <String>]: 
   [Type <String>]: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -714,27 +730,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaentitlementmanagementaccesspackageassignmentrequest)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-resume?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaentitlementmanagementaccesspackageassignmentrequest)
+- [](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-resume?view=graph-rest-beta)

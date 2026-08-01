@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementfile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceTermsOfUseAgreementFile
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaIdentityGovernanceTermsOfUseAgreementFile
 ## SYNOPSIS
 
 Create a new localized agreement file.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreementFile -AgreementId <string>
  [-IsMajorVersion] [-Language <string>] [-Versions <IMicrosoftGraphAgreementFileVersion[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -40,7 +37,7 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreementFile -AgreementId <string>
  -BodyParameter <IMicrosoftGraphAgreementFileLocalization> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -53,7 +50,7 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGover
  [-IsMajorVersion] [-Language <string>] [-Versions <IMicrosoftGraphAgreementFileVersion[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -63,7 +60,7 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGover
  -BodyParameter <IMicrosoftGraphAgreementFileLocalization> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -76,9 +73,8 @@ This cmdlet has the following aliases,
 Create a new localized agreement file.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -94,10 +90,6 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceTermsOfUseAgreementFile -AgreementId $agreementId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaIdentityGovernanceTermsOfUseAgreementFile Cmdlet.
-
 
 ## PARAMETERS
 
@@ -716,7 +708,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAgreementFileLocalization>`: agreementFileLocalization
+BODYPARAMETER <IMicrosoftGraphAgreementFileLocalization>: agreementFileLocalization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The date time representing when the file was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -766,14 +758,14 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-FILEDATA `<IMicrosoftGraphAgreementFileData>`: agreementFileData
+FILEDATA <IMicrosoftGraphAgreementFileData>: agreementFileData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Data <Byte[]>]: Data that represents the terms of use PDF document.
 Read-only.
 Note: You can use the .NET Convert.ToBase64String method to convert your file to binary data for uploading using the Create agreements API.
 A sample syntax using this method in PowerShell is [convert]::ToBase64String((Get-Content -path 'yourfilepath' -Encoding byte)).
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -915,27 +907,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityGovernanceTermsOfUseAgreementFile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementfile)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementfile)
+- [](https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourcescopeaccesspackageresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResource
 ---
@@ -26,7 +26,6 @@ Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageRes
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateExpanded
@@ -46,7 +45,7 @@ Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageRes
  [-UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>] [-Url <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -57,7 +56,7 @@ Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageRes
  -BodyParameter <IMicrosoftGraphAccessPackageResource> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -76,7 +75,7 @@ Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageRes
  [-UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>] [-Url <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -87,7 +86,6 @@ Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageRes
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RefreshViaIdentity
@@ -98,7 +96,6 @@ Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageRes
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -110,6 +107,16 @@ This cmdlet has the following aliases,
 
 In Microsoft Entra entitlement management, refresh the accessPackageResource object to fetch the latest details for displayName, description, and resourceType from the origin system.
 For the AadApplication originSystem, this operation also updates the displayName and description for the accessPackageResourceRole.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -883,7 +890,7 @@ HelpMessage: ''
 
 ### -UploadSessions
 
-
+.
 To construct, see NOTES section for UPLOADSESSIONS properties and create a hash table.
 
 ```yaml
@@ -996,7 +1003,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGERESOURCEENVIRONMENT `<IMicrosoftGraphAccessPackageResourceEnvironment>`: accessPackageResourceEnvironment
+ACCESSPACKAGERESOURCEENVIRONMENT <IMicrosoftGraphAccessPackageResourceEnvironment>: accessPackageResourceEnvironment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1338,7 +1345,7 @@ Read-only.
   [IsEditable <Boolean?>]: Specifies whether or not an existing attribute value can be edited by the requester.
   [IsPersistedOnAssignmentRemoval <Boolean?>]: Specifies whether the attribute will remain in the end system after an assignment ends.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
+BODYPARAMETER <IMicrosoftGraphAccessPackageResource>: accessPackageResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1447,7 +1454,7 @@ This should be set to the customdataprovidedresource's name when creating the se
 The only possible value currently is: accessReviewDataUploadTriggerCallbackData
   [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
-EXTERNALORIGINRESOURCECONNECTOR `<IMicrosoftGraphExternalOriginResourceConnector>`: externalOriginResourceConnector
+EXTERNALORIGINRESOURCECONNECTOR <IMicrosoftGraphExternalOriginResourceConnector>: externalOriginResourceConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1462,7 +1469,7 @@ Read-only.
   [ModifiedBy <String>]: 
   [ModifiedDateTime <DateTime?>]: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1594,28 +1601,5 @@ The only possible value currently is: accessReviewDataUploadTriggerCallbackData
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourcescopeaccesspackageresource)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageresource-refresh?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourcescopeaccesspackageresource)
+- [](https://learn.microsoft.com/graph/api/accesspackageresource-refresh?view=graph-rest-beta)
