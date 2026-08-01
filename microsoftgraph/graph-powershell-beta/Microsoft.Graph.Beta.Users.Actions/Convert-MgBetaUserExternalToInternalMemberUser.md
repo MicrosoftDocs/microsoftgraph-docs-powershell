@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Convert-MgBetaUserExternalToInternalMemberUser
 ---
@@ -27,7 +27,7 @@ Convert-MgBetaUserExternalToInternalMemberUser -UserId <string> [-ResponseHeader
  [-PasswordProfile <IMicrosoftGraphPasswordProfile>] [-UserPrincipalName <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Convert
@@ -38,7 +38,6 @@ Convert-MgBetaUserExternalToInternalMemberUser -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ConvertViaIdentityExpanded
@@ -49,7 +48,7 @@ Convert-MgBetaUserExternalToInternalMemberUser -InputObject <IUsersActionsIdenti
  [-PasswordProfile <IMicrosoftGraphPasswordProfile>] [-UserPrincipalName <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### ConvertViaIdentity
@@ -60,7 +59,6 @@ Convert-MgBetaUserExternalToInternalMemberUser -InputObject <IUsersActionsIdenti
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,18 +72,9 @@ Convert an externally authenticated user into an internal user.
 The user is able to sign into the host tenant as an internal user and access resources as a member.
 For more information about this conversion, see Convert external users to internal users.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User-ConvertToInternal.ReadWrite.All, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User-ConvertToInternal.ReadWrite.All, User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Convert a cloud user and require them to reset their password on next sign in
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -99,12 +88,7 @@ $params = @{
 
 Convert-MgBetaUserExternalToInternalMemberUser -UserId $userId -BodyParameter $params
 
-```
-This example will convert a cloud user and require them to reset their password on next sign in
-
-### Example 2: Convert a cloud user, change their mail address, and require password reset on next sign in
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -119,20 +103,11 @@ $params = @{
 
 Convert-MgBetaUserExternalToInternalMemberUser -UserId $userId -BodyParameter $params
 
-```
-This example will convert a cloud user, change their mail address, and require password reset on next sign in
-
-### Example 3: Convert external User to internal for a user synchronized from on-premises AD
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
 Convert-MgBetaUserExternalToInternalMemberUser -UserId $userId
-
-```
-This example will convert external user to internal for a user synchronized from on-premises ad
-
 
 ## PARAMETERS
 
@@ -165,7 +140,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -187,7 +162,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -343,7 +318,7 @@ HelpMessage: ''
 
 ### -Mail
 
-
+.
 
 ```yaml
 Type: System.String
@@ -510,7 +485,7 @@ HelpMessage: ''
 
 ### -UserPrincipalName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -591,7 +566,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema>`: .
+BODY <IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Mail <String>]: 
   [PasswordProfile <IMicrosoftGraphPasswordProfile>]: passwordProfile
@@ -609,7 +584,7 @@ The password must satisfy minimum requirements as specified by the user's passwo
 By default, a strong password is required.
   [UserPrincipalName <String>]: 
 
-BODYPARAMETER `<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Mail <String>]: 
   [PasswordProfile <IMicrosoftGraphPasswordProfile>]: passwordProfile
@@ -627,10 +602,10 @@ The password must satisfy minimum requirements as specified by the user's passwo
 By default, a strong password is required.
   [UserPrincipalName <String>]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
-PASSWORDPROFILE `<IMicrosoftGraphPasswordProfile>`: passwordProfile
+PASSWORDPROFILE <IMicrosoftGraphPasswordProfile>: passwordProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ForceChangePasswordNextSignIn <Boolean?>]: true if the user must change their password on the next sign-in; otherwise false.
 If not set, default is false.
@@ -647,27 +622,5 @@ By default, a strong password is required.
 
 ## RELATED LINKS
 
-- [Convert-MgBetaUserExternalToInternalMemberUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser)
+- [](https://learn.microsoft.com/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-beta)

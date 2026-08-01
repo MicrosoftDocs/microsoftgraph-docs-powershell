@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Actions
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgBetaUserMeetingTime
 ---
@@ -14,12 +14,9 @@ title: Find-MgBetaUserMeetingTime
 ## SYNOPSIS
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
-If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\rBased on this value, you can better adjust the parameters and call findMeetingTimes again.
+If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\r\nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,7 +30,7 @@ Find-MgBetaUserMeetingTime -UserId <string> [-ResponseHeadersVariable <string>]
  [-ReturnSuggestionReasons] [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Find
@@ -44,7 +41,6 @@ Find-MgBetaUserMeetingTime -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### FindViaIdentityExpanded
@@ -57,7 +53,7 @@ Find-MgBetaUserMeetingTime -InputObject <IUsersActionsIdentity> [-ResponseHeader
  [-ReturnSuggestionReasons] [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### FindViaIdentity
@@ -68,7 +64,6 @@ Find-MgBetaUserMeetingTime -InputObject <IUsersActionsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -79,67 +74,59 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
-If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\rBased on this value, you can better adjust the parameters and call findMeetingTimes again.
+If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\r\nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.Read.Shared, Calendars.ReadWrite.Shared,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Using the Find-MgBetaUserMeetingTime Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	Attendees = @(
+	attendees = @(
 		@{
-			Type = "required"
-			EmailAddress = @{
-				Name = "Alex Wilbur"
-				Address = "alexw@contoso.onmicrosoft.com"
+			type = "required"
+			emailAddress = @{
+				name = "Alex Wilbur"
+				address = "alexw@contoso.com"
 			}
 		}
 	)
-	LocationConstraint = @{
-		IsRequired = "false"
-		SuggestLocation = "false"
-		Locations = @(
+	locationConstraint = @{
+		isRequired = "false"
+		suggestLocation = "false"
+		locations = @(
 			@{
-				ResolveAvailability = "false"
-				DisplayName = "Conf room Hood"
+				resolveAvailability = "false"
+				displayName = "Conf room Hood"
 			}
 		)
 	}
-	TimeConstraint = @{
-		ActivityDomain = "work"
-		TimeSlots = @(
+	timeConstraint = @{
+		activityDomain = "work"
+		timeSlots = @(
 			@{
-				Start = @{
-					DateTime = "2019-04-16T09:00:00"
-					TimeZone = "Pacific Standard Time"
+				start = @{
+					dateTime = "2019-04-16T09:00:00"
+					timeZone = "Pacific Standard Time"
 				}
-				End = @{
-					DateTime = "2019-04-18T17:00:00"
-					TimeZone = "Pacific Standard Time"
+				end = @{
+					dateTime = "2019-04-18T17:00:00"
+					timeZone = "Pacific Standard Time"
 				}
 			}
 		)
 	}
-	IsOrganizerOptional = "false"
-	MeetingDuration = "PT1H"
-	ReturnSuggestionReasons = "true"
-	MinimumAttendeePercentage = "100"
+	isOrganizerOptional = "false"
+	meetingDuration = "PT1H"
+	returnSuggestionReasons = "true"
+	minimumAttendeePercentage = 100
 }
+
 # A UPN can also be used as -UserId.
 Find-MgBetaUserMeetingTime -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Find-MgBetaUserMeetingTime Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -172,7 +159,7 @@ HelpMessage: ''
 
 ### -Attendees
 
-
+.
 To construct, see NOTES section for ATTENDEES properties and create a hash table.
 
 ```yaml
@@ -200,7 +187,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -362,7 +349,7 @@ HelpMessage: ''
 
 ### -IsOrganizerOptional
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -417,7 +404,7 @@ HelpMessage: ''
 
 ### -MaxCandidates
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -444,7 +431,7 @@ HelpMessage: ''
 
 ### -MeetingDuration
 
-
+.
 
 ```yaml
 Type: System.TimeSpan
@@ -471,7 +458,7 @@ HelpMessage: ''
 
 ### -MinimumAttendeePercentage
 
-
+.
 
 ```yaml
 Type: System.Double
@@ -583,7 +570,7 @@ HelpMessage: ''
 
 ### -ReturnSuggestionReasons
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -726,7 +713,7 @@ ATTENDEES <IMicrosoftGraphAttendeeBase[]>: .
     [Name <String>]: The display name of an entity instance.
   [Type <String>]: attendeeType
 
-BODYPARAMETER `<IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Attendees <IMicrosoftGraphAttendeeBase[]>]: 
     [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
@@ -817,10 +804,10 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
       [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
-LOCATIONCONSTRAINT `<IMicrosoftGraphLocationConstraint>`: locationConstraint
+LOCATIONCONSTRAINT <IMicrosoftGraphLocationConstraint>: locationConstraint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsRequired <Boolean?>]: The client requests the service to include in the response a meeting location for the meeting.
 If this is true and all the resources are busy, findMeetingTimes won't return any meeting time suggestions.
@@ -855,7 +842,7 @@ If set to false and the specified resource is busy, findMeetingTimes returns the
 Default is true.
   [SuggestLocation <Boolean?>]: The client requests the service to suggest one or more meeting locations.
 
-TIMECONSTRAINT `<IMicrosoftGraphTimeConstraint>`: timeConstraint
+TIMECONSTRAINT <IMicrosoftGraphTimeConstraint>: timeConstraint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityDomain <String>]: activityDomain
   [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
@@ -902,27 +889,5 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [Find-MgBetaUserMeetingTime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime)
+- [](https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-beta)
