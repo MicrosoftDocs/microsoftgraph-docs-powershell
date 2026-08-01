@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/enable-mgbetausermanageddevicelostmode
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Enable-MgBetaUserManagedDeviceLostMode
 ---
@@ -25,7 +25,6 @@ Enable-MgBetaUserManagedDeviceLostMode -ManagedDeviceId <string> -UserId <string
  [-Message <string>] [-PhoneNumber <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Enable
@@ -36,7 +35,6 @@ Enable-MgBetaUserManagedDeviceLostMode -ManagedDeviceId <string> -UserId <string
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### EnableViaIdentityExpanded
@@ -47,7 +45,6 @@ Enable-MgBetaUserManagedDeviceLostMode -InputObject <IDevicesCorporateManagement
  [-Message <string>] [-PhoneNumber <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### EnableViaIdentity
@@ -58,7 +55,6 @@ Enable-MgBetaUserManagedDeviceLostMode -InputObject <IDevicesCorporateManagement
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -69,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Enable lost mode
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -101,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -172,7 +178,7 @@ HelpMessage: ''
 
 ### -Footer
 
-
+.
 
 ```yaml
 Type: System.String
@@ -317,7 +323,7 @@ HelpMessage: ''
 
 ### -Message
 
-
+.
 
 ```yaml
 Type: System.String
@@ -365,7 +371,7 @@ HelpMessage: ''
 
 ### -PhoneNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -558,13 +564,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsM5KcdlUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsM5KcdlUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Footer <String>]: 
   [Message <String>]: 
   [PhoneNumber <String>]: 
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -642,27 +648,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Enable-MgBetaUserManagedDeviceLostMode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/enable-mgbetausermanageddevicelostmode)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/enable-mgbetausermanageddevicelostmode)
