@@ -55,8 +55,9 @@ Create a new yearTimePeriodDefinition object.
 | Application | IndustryData-TimePeriod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -70,6 +71,10 @@ $params = @{
 }
 
 New-MgBetaExternalIndustryDataYear -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaExternalIndustryDataYear Cmdlet.
+
 
 ## PARAMETERS
 
