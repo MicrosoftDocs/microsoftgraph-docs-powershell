@@ -550,7 +550,7 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskprogresstaskboardformat)
+- [Update-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskprogresstaskboardformat)
 
 
 
