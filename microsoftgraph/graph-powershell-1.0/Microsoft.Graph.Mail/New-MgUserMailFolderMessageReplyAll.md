@@ -87,16 +87,6 @@ Alternatively, reply-all to a message in a single action.
 | Delegated (personal Microsoft account) | Mail.ReadWrite,  |
 | Application | Mail.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -777,6 +767,7 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagereplyall)
 - [](https://learn.microsoft.com/graph/api/message-createreplyall?view=graph-rest-1.0)
+
 
 
 
