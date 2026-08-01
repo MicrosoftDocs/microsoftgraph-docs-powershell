@@ -575,7 +575,7 @@ Supports $filter (eq) and eq for null values.
 Supports $filter (eq).
   [UserPrincipalName <String>]: UPN of the user when the acceptance was recorded.
 
-BODYPARAMETER <IMicrosoftGraphAgreement>: agreement
+BODYPARAMETER `<IMicrosoftGraphAgreement>`: agreement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -695,7 +695,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [UserReacceptRequiredFrequency <TimeSpan?>]: The duration after which the user must reaccept the terms of use.
 The value is represented in ISO 8601 format for durations.
 
-FILE <IMicrosoftGraphAgreementFile>: agreementFile
+FILE `<IMicrosoftGraphAgreementFile>`: agreementFile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The date time representing when the file was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -817,7 +817,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-TERMSEXPIRATION <IMicrosoftGraphTermsExpiration>: termsExpiration
+TERMSEXPIRATION `<IMicrosoftGraphTermsExpiration>`: termsExpiration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Frequency <TimeSpan?>]: Represents the frequency at which the terms will expire, after its first expiration as set in startDateTime.
 The value is represented in ISO 8601 format for durations.
@@ -830,3 +830,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreement)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
