@@ -1,35 +1,57 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerroster
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/clear-mgbetaplannertaskmessagereaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaPlannerRoster
+title: Clear-MgBetaPlannerTaskMessageReaction
 ---
 
-# Remove-MgBetaPlannerRoster
+# Clear-MgBetaPlannerTaskMessageReaction
 
 ## SYNOPSIS
 
-Delete a plannerRoster object.
+Remove a reaction from a plannerTaskChatMessage for the current user.
 
 ## SYNTAX
 
-### Delete (Default)
+### UnsetExpanded (Default)
 
 ```
-Remove-MgBetaPlannerRoster -PlannerRosterId <string> [-IfMatch <string>]
+Clear-MgBetaPlannerTaskMessageReaction -PlannerTaskChatMessageId <string> -PlannerTaskId <string>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-ReactionType <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### Unset
+
+```
+Clear-MgBetaPlannerTaskMessageReaction -PlannerTaskChatMessageId <string> -PlannerTaskId <string>
+ -BodyParameter <IPathsPwbyjdPlannerTasksPlannertaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### DeleteViaIdentity
+### UnsetViaIdentityExpanded
 
 ```
-Remove-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-IfMatch <string>]
+Clear-MgBetaPlannerTaskMessageReaction -InputObject <IPlannerIdentity>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-ReactionType <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UnsetViaIdentity
+
+```
+Clear-MgBetaPlannerTaskMessageReaction -InputObject <IPlannerIdentity>
+ -BodyParameter <IPathsPwbyjdPlannerTasksPlannertaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -42,7 +64,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a plannerRoster object.
+Remove a reaction from a plannerTaskChatMessage for the current user.
 
 ## EXAMPLES
 
@@ -50,9 +72,68 @@ Delete a plannerRoster object.
 
 Import-Module Microsoft.Graph.Beta.Planner
 
-Remove-MgBetaPlannerRoster -PlannerRosterId $plannerRosterId
+$params = @{
+	reactionType = "like"
+}
+
+Clear-MgBetaPlannerTaskMessageReaction -PlannerTaskId $plannerTaskId -PlannerTaskChatMessageId $plannerTaskChatMessageId -BodyParameter $params
 
 ## PARAMETERS
+
+### -AdditionalProperties
+
+Additional Parameters
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UnsetViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UnsetExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsPwbyjdPlannerTasksPlannertaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UnsetViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Unset
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -160,27 +241,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -192,7 +252,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: UnsetViaIdentityExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UnsetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -224,9 +290,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PlannerRosterId
+### -PlannerTaskChatMessageId
 
-The unique identifier of plannerRoster
+The unique identifier of plannerTaskChatMessage
 
 ```yaml
 Type: System.String
@@ -234,7 +300,40 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: UnsetExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Unset
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PlannerTaskId
+
+The unique identifier of plannerTask
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UnsetExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Unset
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -308,6 +407,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ReactionType
+
+.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UnsetViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UnsetExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -361,6 +487,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsPwbyjdPlannerTasksPlannertaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema
+
+{{ Fill in the Description }}
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
 
 {{ Fill in the Description }}
@@ -382,6 +512,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER <IPathsPwbyjdPlannerTasksPlannertaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>: .
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [ReactionType <String>]: 
+
 INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
@@ -396,5 +530,5 @@ INPUTOBJECT <IPlannerIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerroster)
-- [](https://learn.microsoft.com/graph/api/plannerroster-delete?view=graph-rest-beta)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/clear-mgbetaplannertaskmessagereaction)
+- [](https://learn.microsoft.com/graph/api/plannertaskchatmessage-unsetreaction?view=graph-rest-beta)

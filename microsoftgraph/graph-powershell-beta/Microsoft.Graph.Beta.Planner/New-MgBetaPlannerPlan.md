@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlannerPlan
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaPlannerPlan
 ## SYNOPSIS
 
 Create a new plannerPlan object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerPlan?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,7 +31,6 @@ New-MgBetaPlannerPlan [-ResponseHeadersVariable <string>] [-AdditionalProperties
  [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -44,7 +40,6 @@ New-MgBetaPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -56,18 +51,9 @@ This cmdlet has the following aliases,
 
 Create a new plannerPlan object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -79,10 +65,6 @@ $params = @{
 }
 
 New-MgBetaPlannerPlan -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -710,7 +692,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ARCHIVALINFO `<IMicrosoftGraphPlannerArchivalInfo>`: plannerArchivalInfo
+ARCHIVALINFO <IMicrosoftGraphPlannerArchivalInfo>: plannerArchivalInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Justification <String>]: Read-only.
 Reason why the entity was archived or unarchived.
@@ -728,7 +710,7 @@ For example, in the access reviews decisions API, this property might record the
   [StatusChangedDateTime <DateTime?>]: Read-only.
 Date and time at which the entity's archive status changed.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlan>`: plannerPlan
+BODYPARAMETER <IMicrosoftGraphPlannerPlan>: plannerPlan
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -878,7 +860,10 @@ If true, it shows the task.
       [IsOnMyDayLastModifiedDate <DateTime?>]: Read-only.
 The date on which task is added to or removed from MyDay.
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-      [LastModifiedDateTime <DateTime?>]: 
+      [LastModifiedDateTime <DateTime?>]: Read-only.
+Date and time at which this is last modified.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
 Nullable.
 Chat messages associated with the task.
@@ -1198,7 +1183,10 @@ If true, it shows the task.
     [IsOnMyDayLastModifiedDate <DateTime?>]: Read-only.
 The date on which task is added to or removed from MyDay.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: 
+    [LastModifiedDateTime <DateTime?>]: Read-only.
+Date and time at which this is last modified.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
 Nullable.
 Chat messages associated with the task.
@@ -1293,7 +1281,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [Title <String>]: Title of the task.
 
-CONTAINER `<IMicrosoftGraphPlannerPlanContainer>`: plannerPlanContainer
+CONTAINER <IMicrosoftGraphPlannerPlanContainer>: plannerPlanContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContainerId <String>]: The identifier of the resource that contains the plan.
 Optional.
@@ -1301,7 +1289,7 @@ Optional.
   [Url <String>]: The full canonical URL of the container.
 Optional.
 
-CONTENTSENSITIVITYLABELASSIGNMENT `<IMicrosoftGraphContentSensitivityLabelAssignment>`: contentSensitivityLabelAssignment
+CONTENTSENSITIVITYLABELASSIGNMENT <IMicrosoftGraphContentSensitivityLabelAssignment>: contentSensitivityLabelAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
   [JustificationText <String>]: The justification text provided when you change the sensitivity label.
@@ -1311,7 +1299,7 @@ Optional.
 This ID corresponds to a label defined in the Microsoft Information Protection policy.
   [TenantId <String>]: The unique identifier of the tenant where the sensitivity label is defined and applied.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1323,11 +1311,11 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-CREATIONSOURCE `<IMicrosoftGraphPlannerPlanCreation>`: plannerPlanCreation
+CREATIONSOURCE <IMicrosoftGraphPlannerPlanCreation>: plannerPlanCreation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreationSourceKind <String>]: plannerCreationSourceKind
 
-DETAILS `<IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
+DETAILS <IMicrosoftGraphPlannerPlanDetails>: plannerPlanDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1500,7 +1488,10 @@ If true, it shows the task.
   [IsOnMyDayLastModifiedDate <DateTime?>]: Read-only.
 The date on which task is added to or removed from MyDay.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: 
+  [LastModifiedDateTime <DateTime?>]: Read-only.
+Date and time at which this is last modified.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
 Nullable.
 Chat messages associated with the task.
@@ -1598,27 +1589,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [New-MgBetaPlannerPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan)
+- [](https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-beta)

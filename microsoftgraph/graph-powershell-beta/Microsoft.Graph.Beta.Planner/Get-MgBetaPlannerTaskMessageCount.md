@@ -1,38 +1,38 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerroster
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskmessagecount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaPlannerRoster
+title: Get-MgBetaPlannerTaskMessageCount
 ---
 
-# Remove-MgBetaPlannerRoster
+# Get-MgBetaPlannerTaskMessageCount
 
 ## SYNOPSIS
 
-Delete a plannerRoster object.
+Get the number of the resource
 
 ## SYNTAX
 
-### Delete (Default)
+### Get (Default)
 
 ```
-Remove-MgBetaPlannerRoster -PlannerRosterId <string> [-IfMatch <string>]
+Get-MgBetaPlannerTaskMessageCount -PlannerTaskId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
-### DeleteViaIdentity
+### GetViaIdentity
 
 ```
-Remove-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Get-MgBetaPlannerTaskMessageCount -InputObject <IPlannerIdentity> [-Filter <string>]
+ [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -42,15 +42,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a plannerRoster object.
+Get the number of the resource
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Beta.Planner
+{{ Add code here }}
 
-Remove-MgBetaPlannerRoster -PlannerRosterId $plannerRosterId
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -75,16 +77,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Confirm
+### -Filter
 
-Prompts you for confirmation before running the cmdlet.
+Filter items by property values
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- cf
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -160,27 +161,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -192,7 +172,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -203,30 +183,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PassThru
+### -PlannerTaskId
 
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PlannerRosterId
-
-The unique identifier of plannerRoster
+The unique identifier of plannerTask
 
 ```yaml
 Type: System.String
@@ -234,7 +193,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: Get
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -330,16 +289,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -WhatIf
+### -Search
 
-Runs the command in a mode that only reports what would happen without performing the actions.
+Search items by search phrases
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- wi
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -371,7 +329,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### System.Int32
 
 {{ Fill in the Description }}
 
@@ -396,5 +354,4 @@ INPUTOBJECT <IPlannerIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerroster)
-- [](https://learn.microsoft.com/graph/api/plannerroster-delete?view=graph-rest-beta)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskmessagecount)

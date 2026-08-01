@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannerrostersensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaPlannerRosterSensitivityLabel
 ---
@@ -25,7 +25,6 @@ Set-MgBetaPlannerRosterSensitivityLabel -PlannerRosterId <string>
  [-AssignmentMethod <string>] [-SensitivityLabelId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Assign
@@ -36,7 +35,6 @@ Set-MgBetaPlannerRosterSensitivityLabel -PlannerRosterId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
@@ -47,7 +45,6 @@ Set-MgBetaPlannerRosterSensitivityLabel -InputObject <IPlannerIdentity>
  [-AssignmentMethod <string>] [-SensitivityLabelId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
@@ -58,7 +55,6 @@ Set-MgBetaPlannerRosterSensitivityLabel -InputObject <IPlannerIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -70,18 +66,9 @@ This cmdlet has the following aliases,
 
 Assign a sensitivity label to a plannerRoster object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -91,10 +78,6 @@ $params = @{
 }
 
 Set-MgBetaPlannerRosterSensitivityLabel -PlannerRosterId $plannerRosterId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgBetaPlannerRosterSensitivityLabel Cmdlet.
-
 
 ## PARAMETERS
 
@@ -154,7 +137,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -428,7 +411,7 @@ HelpMessage: ''
 
 ### -SensitivityLabelId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -509,12 +492,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ne9639PlannerRostersPlannerrosterIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ne9639PlannerRostersPlannerrosterIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
   [SensitivityLabelId <String>]: 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
@@ -528,27 +511,5 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaPlannerRosterSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannerrostersensitivitylabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannerrostersensitivitylabel)
+- [](https://learn.microsoft.com/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta)

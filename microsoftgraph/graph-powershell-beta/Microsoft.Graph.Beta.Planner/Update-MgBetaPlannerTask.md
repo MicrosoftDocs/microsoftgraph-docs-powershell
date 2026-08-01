@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlannerTask
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPlannerTask
 ## SYNOPSIS
 
 Update the properties of plannertask object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,7 +41,7 @@ Update-MgBetaPlannerTask -PlannerTaskId <string> -IfMatch <string>
  [-SpecifiedCompletionRequirements <string>] [-StartDateTime <datetime>] [-Title <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -54,7 +51,7 @@ Update-MgBetaPlannerTask -PlannerTaskId <string> -IfMatch <string>
  -BodyParameter <IMicrosoftGraphPlannerTask> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -81,7 +78,7 @@ Update-MgBetaPlannerTask -InputObject <IPlannerIdentity> -IfMatch <string>
  [-SpecifiedCompletionRequirements <string>] [-StartDateTime <datetime>] [-Title <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -91,7 +88,7 @@ Update-MgBetaPlannerTask -InputObject <IPlannerIdentity> -IfMatch <string>
  -BodyParameter <IMicrosoftGraphPlannerTask> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -103,18 +100,9 @@ This cmdlet has the following aliases,
 
 Update the properties of plannertask object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -140,12 +128,7 @@ $params = @{
 	}
 }
 
-Update-MgBetaPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
-
-
-```
-This example shows how to use the Update-MgBetaPlannerTask Cmdlet.
-
+Update-MgBetaPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
 
 ## PARAMETERS
 
@@ -1039,7 +1022,10 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+Read-only.
+Date and time at which this is last modified.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: System.DateTime
@@ -1570,7 +1556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ARCHIVALINFO `<IMicrosoftGraphPlannerArchivalInfo>`: plannerArchivalInfo
+ARCHIVALINFO <IMicrosoftGraphPlannerArchivalInfo>: plannerArchivalInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Justification <String>]: Read-only.
 Reason why the entity was archived or unarchived.
@@ -1588,7 +1574,7 @@ For example, in the access reviews decisions API, this property might record the
   [StatusChangedDateTime <DateTime?>]: Read-only.
 Date and time at which the entity's archive status changed.
 
-ASSIGNEDTOTASKBOARDFORMAT `<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>`: plannerAssignedToTaskBoardTaskFormat
+ASSIGNEDTOTASKBOARDFORMAT <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>: plannerAssignedToTaskBoardTaskFormat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1597,7 +1583,7 @@ Read-only.
   [UnassignedOrderHint <String>]: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTask>`: plannerTask
+BODYPARAMETER <IMicrosoftGraphPlannerTask>: plannerTask
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1725,7 +1711,10 @@ If true, it shows the task.
   [IsOnMyDayLastModifiedDate <DateTime?>]: Read-only.
 The date on which task is added to or removed from MyDay.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: 
+  [LastModifiedDateTime <DateTime?>]: Read-only.
+Date and time at which this is last modified.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
 Nullable.
 Chat messages associated with the task.
@@ -1820,14 +1809,14 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   [Title <String>]: Title of the task.
 
-BUCKETTASKBOARDFORMAT `<IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>`: plannerBucketTaskBoardTaskFormat
+BUCKETTASKBOARDFORMAT <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>: plannerBucketTaskBoardTaskFormat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [OrderHint <String>]: Hint used to order tasks in the bucket view of the task board.
 For details about the supported format, see Using order hints in Planner.
 
-COMPLETEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+COMPLETEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1839,7 +1828,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1851,7 +1840,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-CREATIONSOURCE `<IMicrosoftGraphPlannerTaskCreation>`: plannerTaskCreation
+CREATIONSOURCE <IMicrosoftGraphPlannerTaskCreation>: plannerTaskCreation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreationSourceKind <String>]: plannerCreationSourceKind
   [TeamsPublicationInfo <IMicrosoftGraphPlannerTeamsPublicationInfo>]: plannerTeamsPublicationInfo
@@ -1872,7 +1861,7 @@ Read-only.
 This display name is for reference only, and might not represent the most up-to-date name of the team.
 Read-only.
 
-DETAILS `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
+DETAILS <IMicrosoftGraphPlannerTaskDetails>: plannerTaskDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1905,7 +1894,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [References <IMicrosoftGraphPlannerExternalReferences>]: plannerExternalReferences
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
@@ -1916,7 +1905,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [UserId <String>]: The unique identifier of user
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1965,14 +1954,14 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
 
-PROGRESSTASKBOARDFORMAT `<IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>`: plannerProgressTaskBoardTaskFormat
+PROGRESSTASKBOARDFORMAT <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>: plannerProgressTaskBoardTaskFormat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [OrderHint <String>]: Hint value used to order the task on the progress view of the task board.
 For details about the supported format, see Using order hints in Planner.
 
-RECURRENCE `<IMicrosoftGraphPlannerTaskRecurrence>`: plannerTaskRecurrence
+RECURRENCE <IMicrosoftGraphPlannerTaskRecurrence>: plannerTaskRecurrence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [NextInSeriesTaskId <String>]: The taskId of the next task in this series.
 This value is assigned at the time the next task in the series is created, and is null prior to that time.
@@ -2019,27 +2008,5 @@ A GUID-based value that serves as the unique identifier for a series.
 
 ## RELATED LINKS
 
-- [Update-MgBetaPlannerTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertask-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask)
+- [](https://learn.microsoft.com/graph/api/plannertask-update?view=graph-rest-beta)

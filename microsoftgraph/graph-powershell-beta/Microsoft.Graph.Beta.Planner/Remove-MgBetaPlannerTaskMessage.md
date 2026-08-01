@@ -1,27 +1,27 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerroster
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertaskmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaPlannerRoster
+title: Remove-MgBetaPlannerTaskMessage
 ---
 
-# Remove-MgBetaPlannerRoster
+# Remove-MgBetaPlannerTaskMessage
 
 ## SYNOPSIS
 
-Delete a plannerRoster object.
+Delete a plannerTaskChatMessage object.
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgBetaPlannerRoster -PlannerRosterId <string> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Remove-MgBetaPlannerTaskMessage -PlannerTaskChatMessageId <string> -PlannerTaskId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -29,7 +29,7 @@ Remove-MgBetaPlannerRoster -PlannerRosterId <string> [-IfMatch <string>]
 ### DeleteViaIdentity
 
 ```
-Remove-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-IfMatch <string>]
+Remove-MgBetaPlannerTaskMessage -InputObject <IPlannerIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -42,7 +42,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a plannerRoster object.
+Delete a plannerTaskChatMessage object.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Delete a plannerRoster object.
 
 Import-Module Microsoft.Graph.Beta.Planner
 
-Remove-MgBetaPlannerRoster -PlannerRosterId $plannerRosterId
+Remove-MgBetaPlannerTaskMessage -PlannerTaskId $plannerTaskId -PlannerTaskChatMessageId $plannerTaskChatMessageId
 
 ## PARAMETERS
 
@@ -224,9 +224,30 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PlannerRosterId
+### -PlannerTaskChatMessageId
 
-The unique identifier of plannerRoster
+The unique identifier of plannerTaskChatMessage
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PlannerTaskId
+
+The unique identifier of plannerTask
 
 ```yaml
 Type: System.String
@@ -396,5 +417,5 @@ INPUTOBJECT <IPlannerIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerroster)
-- [](https://learn.microsoft.com/graph/api/plannerroster-delete?view=graph-rest-beta)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertaskmessage)
+- [](https://learn.microsoft.com/graph/api/plannertaskchatmessage-delete?view=graph-rest-beta)

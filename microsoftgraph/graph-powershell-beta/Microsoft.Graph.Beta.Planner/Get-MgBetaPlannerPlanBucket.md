@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplanbucket
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlannerPlanBucket
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaPlannerPlanBucket
 ## SYNOPSIS
 
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanBucket?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgBetaPlannerPlanBucket -PlannerPlanId <string> [-ExpandProperty <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ## ALIASES
@@ -40,26 +37,13 @@ This cmdlet has the following aliases,
 
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.ReadWrite.All, Group.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerPlanBucket -PlannerPlanId $plannerPlanId
-
-```
-This example shows how to use the Get-MgBetaPlannerPlanBucket Cmdlet.
-
 
 ## PARAMETERS
 
@@ -492,27 +476,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaPlannerPlanBucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplanbucket)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-list-buckets?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplanbucket)
+- [](https://learn.microsoft.com/graph/api/plannerplan-list-buckets?view=graph-rest-beta)
