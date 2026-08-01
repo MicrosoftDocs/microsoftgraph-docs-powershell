@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejobdocument
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPrintShareJobDocument
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPrintShareJobDocument
 ## SYNOPSIS
 
 Update the navigation property documents in print
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrintShareJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShareJobDocument?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ Update-MgBetaPrintShareJobDocument -PrintDocumentId <string> -PrintJobId <string
  [-UploadedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -41,7 +37,6 @@ Update-MgBetaPrintShareJobDocument -PrintDocumentId <string> -PrintJobId <string
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,7 +49,6 @@ Update-MgBetaPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity>
  [-UploadedDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -64,7 +58,7 @@ Update-MgBetaPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IMicrosoftGraphPrintDocument> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -75,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property documents in print
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -262,7 +266,7 @@ HelpMessage: ''
 
 ### -DownloadedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -602,7 +606,7 @@ HelpMessage: ''
 
 ### -UploadedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -683,7 +687,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintDocument>`: printDocument
+BODYPARAMETER <IMicrosoftGraphPrintDocument>: printDocument
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -727,7 +731,7 @@ Read-only.
 Read-only.
   [UploadedDateTime <DateTime?>]: 
 
-CONFIGURATION `<IMicrosoftGraphPrinterDocumentConfiguration>`: printerDocumentConfiguration
+CONFIGURATION <IMicrosoftGraphPrinterDocumentConfiguration>: printerDocumentConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Collate <Boolean?>]: 
   [ColorMode <String>]: printColorMode
@@ -759,7 +763,7 @@ CONFIGURATION `<IMicrosoftGraphPrinterDocumentConfiguration>`: printerDocumentCo
   [Quality <String>]: printQuality
   [Scaling <String>]: printScaling
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -777,27 +781,4 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPrintShareJobDocument](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejobdocument)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejobdocument)
