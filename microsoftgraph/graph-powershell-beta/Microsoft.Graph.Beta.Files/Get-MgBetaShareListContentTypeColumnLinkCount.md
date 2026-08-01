@@ -15,6 +15,9 @@ title: Get-MgBetaShareListContentTypeColumnLinkCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListContentTypeColumnLinkCount](/powershell/module/Microsoft.Graph.Files/Get-MgShareListContentTypeColumnLinkCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

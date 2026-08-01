@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveListItemDocumentSetVersion
 
 Delete navigation property documentSetVersions for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

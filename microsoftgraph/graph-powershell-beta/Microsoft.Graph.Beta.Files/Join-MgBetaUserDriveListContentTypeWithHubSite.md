@@ -15,6 +15,9 @@ title: Join-MgBetaUserDriveListContentTypeWithHubSite
 
 Invoke action associateWithHubSites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Join-MgUserDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Files/Join-MgUserDriveListContentTypeWithHubSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)
