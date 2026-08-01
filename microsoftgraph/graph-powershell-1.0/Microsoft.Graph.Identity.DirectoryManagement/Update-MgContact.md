@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontact
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgContact
 ---
@@ -14,9 +14,6 @@ title: Update-MgContact
 ## SYNOPSIS
 
 Update entity in contacts
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,7 +34,6 @@ Update-MgContact -OrgContactId <string> [-ResponseHeadersVariable <string>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -47,7 +43,6 @@ Update-MgContact -OrgContactId <string> -BodyParameter <IMicrosoftGraphOrgContac
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -68,7 +63,6 @@ Update-MgContact -InputObject <IIdentityDirectoryManagementIdentity>
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -78,7 +72,7 @@ Update-MgContact -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphOrgContact> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -89,6 +83,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update entity in contacts
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1092,7 +1096,7 @@ It's a free-format string value, for example, 'United States'.
   [State <String>]: The state.
   [Street <String>]: The street.
 
-BODYPARAMETER `<IMicrosoftGraphOrgContact>`: orgContact
+BODYPARAMETER <IMicrosoftGraphOrgContact>: orgContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1186,7 +1190,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -1221,7 +1225,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
 
-MANAGER `<IMicrosoftGraphDirectoryObject>`: directoryObject
+MANAGER <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1248,7 +1252,7 @@ Other objects contain the same value for the property.
 Current possible values: UserPrincipalName or ProxyAddress
   [Value <String>]: Value of the property causing the error.
 
-ONPREMISESSYNCBEHAVIOR `<IMicrosoftGraphOnPremisesSyncBehavior>`: onPremisesSyncBehavior
+ONPREMISESSYNCBEHAVIOR <IMicrosoftGraphOnPremisesSyncBehavior>: onPremisesSyncBehavior
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1279,27 +1283,4 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [Update-MgContact](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontact)

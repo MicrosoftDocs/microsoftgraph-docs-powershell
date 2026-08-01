@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceRegisteredOwner
 ---
@@ -18,9 +18,6 @@ A registered owner is the user that cloud joined the device or registered their 
 The registered owner is set at the time of registration.
 Currently, there can be only one owner.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwner?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -31,7 +28,7 @@ Get-MgDeviceRegisteredOwner -DeviceId <string> [-ExpandProperty <string[]>] [-Fi
  [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ## ALIASES
@@ -46,26 +43,13 @@ A registered owner is the user that cloud joined the device or registered their 
 The registered owner is set at the time of registration.
 Currently, there can be only one owner.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Device.Read.All, Directory.ReadWrite.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Device.Read.All, Directory.ReadWrite.All, Directory.Read.All, Device.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDeviceRegisteredOwner -DeviceId $deviceId
-
-```
-This example shows how to use the Get-MgDeviceRegisteredOwner Cmdlet.
-
 
 ## PARAMETERS
 
@@ -520,27 +504,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgDeviceRegisteredOwner](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner)
+- [](https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-1.0)

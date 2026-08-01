@@ -1,45 +1,63 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/Remove-MgDirectoryAdministrativeUnitMemberByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilesourcebysourceid
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgDirectoryAdministrativeUnitMemberByRef
+title: Update-MgAdminPeopleProfileSourceBySourceId
 ---
 
-# Remove-MgDirectoryAdministrativeUnitMemberByRef
+# Update-MgAdminPeopleProfileSourceBySourceId
 
 ## SYNOPSIS
 
-Use this API to remove a member (user, group, or device) from an administrative unit.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAdministrativeUnitMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitMemberDirectoryObjectByRef?view=graph-powershell-beta)
+Update the properties of a profileSource object.
 
 ## SYNTAX
 
-### Delete (Default)
+### UpdateExpanded (Default)
 
 ```
-Remove-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId <string>
- -DirectoryObjectId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
+Update-MgAdminPeopleProfileSourceBySourceId -SourceId <string> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Kind <string>]
+ [-Localizations <IMicrosoftGraphProfileSourceLocalization[]>] [-SourceId1 <string>]
+ [-WebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentityExpanded
+
+```
+Update-MgAdminPeopleProfileSourceBySourceId -InputObject <IIdentityDirectoryManagementIdentity>
+ [-SourceId <string>] [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-DisplayName <string>] [-Id <string>] [-Kind <string>]
+ [-Localizations <IMicrosoftGraphProfileSourceLocalization[]>] [-WebUrl <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### DeleteViaIdentity
+### Update
 
 ```
-Remove-MgDirectoryAdministrativeUnitMemberByRef
- -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgAdminPeopleProfileSourceBySourceId -SourceId <string>
+ -BodyParameter <IMicrosoftGraphProfileSource> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentity
+
+```
+Update-MgAdminPeopleProfileSourceBySourceId -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphProfileSource> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -49,45 +67,86 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Use this API to remove a member (user, group, or device) from an administrative unit.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AdministrativeUnit.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AdministrativeUnit.ReadWrite.All,  |
+Update the properties of a profileSource object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Remove-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId -DirectoryObjectId $directoryObjectId
+$params = @{
+	"@odata.type" = "#microsoft.graph.profileSource"
+	sourceId = "bamboohr1"
+	kind = "BambooHR"
+	displayName = "BambooHR Updated"
+	webUrl = "https://bamboohr.contoso.com/login"
+	localizations = @(
+		@{
+			displayName = "HR-Platform"
+			webUrl = "http://bamboohr.contoso.com/en-us/login"
+			languageTag = "en-us"
+		}
+		@{
+			displayName = "HR-Plattform"
+			webUrl = "http://bamboohr.contoso.com/de/login"
+			languageTag = "de"
+		}
+	)
+}
 
-```
-This example shows how to use the Remove-MgDirectoryAdministrativeUnitMemberByRef Cmdlet.
-
+Update-MgAdminPeopleProfileSourceBySourceId -BodyParameter $params -SourceId $sourceIdId
 
 ## PARAMETERS
 
-### -AdministrativeUnitId
+### -AdditionalProperties
 
-The unique identifier of administrativeUnit
+Additional Parameters
 
 ```yaml
-Type: System.String
+Type: System.Collections.Hashtable
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+profileSource
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileSource
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentity
   Position: Named
   IsRequired: true
-  ValueFromPipeline: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -138,9 +197,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -DirectoryObjectId
+### -DisplayName
 
-The unique identifier of directoryObject
+Name of the profile source intended to inform users about the profile source name.
 
 ```yaml
 Type: System.String
@@ -148,9 +207,15 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: UpdateViaIdentityExpanded
   Position: Named
-  IsRequired: true
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -222,9 +287,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
+### -Id
 
-ETag
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: System.String
@@ -232,7 +298,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -254,7 +326,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -265,17 +343,51 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PassThru
+### -Kind
 
-Returns true when the command succeeds
+Type of the profile source.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
+Type: System.String
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Localizations
+
+Alternative localized labels specified by an administrator.
+To construct, see NOTES section for LOCALIZATIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileSourceLocalization[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -371,6 +483,87 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SourceId
+
+Alternate key of profileSource
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -SourceId1
+
+Profile source identifier used as an alternate key.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -WebUrl
+
+Web URL of the profile source that directs users to the page view of the profile data.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -406,13 +599,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileSource
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileSource
 
 {{ Fill in the Description }}
 
@@ -423,7 +620,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+BODYPARAMETER <IMicrosoftGraphProfileSource>: profileSource
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DisplayName <String>]: Name of the profile source intended to inform users about the profile source name.
+  [Kind <String>]: Type of the profile source.
+  [Localizations <IMicrosoftGraphProfileSourceLocalization[]>]: Alternative localized labels specified by an administrator.
+    [DisplayName <String>]: Localized display name.
+    [LanguageTag <String>]: Language locale.
+    [WebUrl <String>]: Localized profile source URL.
+  [SourceId <String>]: Profile source identifier used as an alternate key.
+  [WebUrl <String>]: Web URL of the profile source that directs users to the page view of the profile data.
+
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -458,30 +668,13 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
 
+LOCALIZATIONS <IMicrosoftGraphProfileSourceLocalization[]>: Alternative localized labels specified by an administrator.
+  [DisplayName <String>]: Localized display name.
+  [LanguageTag <String>]: Language locale.
+  [WebUrl <String>]: Localized profile source URL.
+
 
 ## RELATED LINKS
 
-- [Remove-MgDirectoryAdministrativeUnitMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/Remove-MgDirectoryAdministrativeUnitMemberByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/administrativeunit-delete-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilesourcebysourceid)
+- [](https://learn.microsoft.com/graph/api/profilesource-update?view=graph-rest-1.0)

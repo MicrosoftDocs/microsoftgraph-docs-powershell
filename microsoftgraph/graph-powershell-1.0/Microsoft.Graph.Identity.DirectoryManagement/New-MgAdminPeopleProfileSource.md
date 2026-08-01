@@ -1,44 +1,40 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/Remove-MgDeviceRegisteredOwnerByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilesource
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgDeviceRegisteredOwnerByRef
+title: New-MgAdminPeopleProfileSource
 ---
 
-# Remove-MgDeviceRegisteredOwnerByRef
+# New-MgAdminPeopleProfileSource
 
 ## SYNOPSIS
 
-Remove a user as a registered owner of the device.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef?view=graph-powershell-beta)
+Create a new profileSource object.
 
 ## SYNTAX
 
-### Delete (Default)
+### CreateExpanded (Default)
 
 ```
-Remove-MgDeviceRegisteredOwnerByRef -DeviceId <string> -DirectoryObjectId <string>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgAdminPeopleProfileSource [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Kind <string>]
+ [-Localizations <IMicrosoftGraphProfileSourceLocalization[]>] [-SourceId <string>]
+ [-WebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### DeleteViaIdentity
+### Create
 
 ```
-Remove-MgDeviceRegisteredOwnerByRef
- -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <string>]
+New-MgAdminPeopleProfileSource -BodyParameter <IMicrosoftGraphProfileSource>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -48,22 +44,74 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove a user as a registered owner of the device.
+Create a new profileSource object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Remove-MgDeviceRegisteredOwnerByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
+$params = @{
+	sourceId = "bamboohr1"
+	displayName = "HR Platform"
+	kind = "BambooHR"
+	webUrl = "https://bamboohr.contoso.com/login"
+	localizations = @(
+		@{
+			displayName = "HR-Plattform"
+			webUrl = "http://bamboohr.contoso.com/de/login"
+			languageTag = "de"
+		}
+	)
+}
 
-```
-This example shows how to use the Remove-MgDeviceRegisteredOwnerByRef Cmdlet.
-
+New-MgAdminPeopleProfileSource -BodyParameter $params
 
 ## PARAMETERS
+
+### -AdditionalProperties
+
+Additional Parameters
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+profileSource
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileSource
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -108,30 +156,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -DeviceId
+### -DisplayName
 
-The unique identifier of device
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -DirectoryObjectId
-
-The unique identifier of directoryObject
+Name of the profile source intended to inform users about the profile source name.
 
 ```yaml
 Type: System.String
@@ -139,9 +166,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: CreateExpanded
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -213,9 +240,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
+### -Id
 
-ETag
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: System.String
@@ -223,7 +251,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -234,21 +262,20 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -InputObject
+### -Kind
 
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+Type of the profile source.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: CreateExpanded
   Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -256,17 +283,18 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PassThru
+### -Localizations
 
-Returns true when the command succeeds
+Alternative localized labels specified by an administrator.
+To construct, see NOTES section for LOCALIZATIONS properties and create a hash table.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileSourceLocalization[]
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -362,6 +390,48 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SourceId
+
+Profile source identifier used as an alternate key.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -WebUrl
+
+Web URL of the profile source that directs users to the page view of the profile data.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -393,7 +463,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileSource
 
 {{ Fill in the Description }}
 
@@ -403,7 +473,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileSource
 
 {{ Fill in the Description }}
 
@@ -414,65 +484,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
-  [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
-  [AllowedValueId <String>]: The unique identifier of allowedValue
-  [AttributeSetId <String>]: The unique identifier of attributeSet
-  [CertificateAuthorityDetailId <String>]: The unique identifier of certificateAuthorityDetail
-  [CertificateBasedAuthPkiId <String>]: The unique identifier of certificateBasedAuthPki
-  [CommerceSubscriptionId <String>]: Alternate key of companySubscription
-  [CompanySubscriptionId <String>]: The unique identifier of companySubscription
-  [ContractId <String>]: The unique identifier of contract
-  [CustomSecurityAttributeDefinitionId <String>]: The unique identifier of customSecurityAttributeDefinition
-  [DeviceId <String>]: The unique identifier of device
-  [DeviceLocalCredentialInfoId <String>]: The unique identifier of deviceLocalCredentialInfo
-  [DirectoryObjectId <String>]: The unique identifier of directoryObject
-  [DirectoryRoleId <String>]: The unique identifier of directoryRole
-  [DirectoryRoleTemplateId <String>]: The unique identifier of directoryRoleTemplate
-  [DomainDnsRecordId <String>]: The unique identifier of domainDnsRecord
-  [DomainId <String>]: The unique identifier of domain
-  [DomainName <String>]: Usage: domainName='{domainName}'
-  [ExtensionId <String>]: The unique identifier of extension
-  [IdentityProviderBaseId <String>]: The unique identifier of identityProviderBase
-  [InternalDomainFederationId <String>]: The unique identifier of internalDomainFederation
-  [OnPremisesDirectorySynchronizationId <String>]: The unique identifier of onPremisesDirectorySynchronization
-  [OrgContactId <String>]: The unique identifier of orgContact
-  [OrganizationId <String>]: The unique identifier of organization
-  [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
-  [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
-  [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
-  [ProfileSourceId <String>]: The unique identifier of profileSource
-  [RoleTemplateId <String>]: Alternate key of directoryRole
-  [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
-  [SourceId <String>]: Alternate key of profileSource
-  [SubscribedSkuId <String>]: The unique identifier of subscribedSku
-  [TenantId <String>]: Usage: tenantId='{tenantId}'
-  [UserId <String>]: The unique identifier of user
+BODYPARAMETER <IMicrosoftGraphProfileSource>: profileSource
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DisplayName <String>]: Name of the profile source intended to inform users about the profile source name.
+  [Kind <String>]: Type of the profile source.
+  [Localizations <IMicrosoftGraphProfileSourceLocalization[]>]: Alternative localized labels specified by an administrator.
+    [DisplayName <String>]: Localized display name.
+    [LanguageTag <String>]: Language locale.
+    [WebUrl <String>]: Localized profile source URL.
+  [SourceId <String>]: Profile source identifier used as an alternate key.
+  [WebUrl <String>]: Web URL of the profile source that directs users to the page view of the profile data.
+
+LOCALIZATIONS <IMicrosoftGraphProfileSourceLocalization[]>: Alternative localized labels specified by an administrator.
+  [DisplayName <String>]: Localized display name.
+  [LanguageTag <String>]: Language locale.
+  [WebUrl <String>]: Localized profile source URL.
 
 
 ## RELATED LINKS
 
-- [Remove-MgDeviceRegisteredOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/Remove-MgDeviceRegisteredOwnerByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-delete-registeredowners?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilesource)
+- [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilesources?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregisteredownerdirectoryobjectbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef
 ---
@@ -15,9 +15,6 @@ title: Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef
 
 Remove a user as a registered owner of the device.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -27,7 +24,6 @@ Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef -DeviceId <string> -Directory
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,7 +34,6 @@ Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,17 +46,12 @@ This cmdlet has the following aliases,
 Remove a user as a registered owner of the device.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
-
-```
-This example shows how to use the Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -414,7 +404,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -452,27 +442,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregisteredownerdirectoryobjectbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-delete-registeredowners?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregisteredownerdirectoryobjectbyref)
+- [](https://learn.microsoft.com/graph/api/device-delete-registeredowners?view=graph-rest-1.0)
