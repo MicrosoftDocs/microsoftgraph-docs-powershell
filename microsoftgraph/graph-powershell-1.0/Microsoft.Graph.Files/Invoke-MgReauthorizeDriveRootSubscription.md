@@ -406,8 +406,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedriverootsubscription)
-- [](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)
+- [Invoke-MgReauthorizeDriveRootSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedriverootsubscription)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)
 
 
 
