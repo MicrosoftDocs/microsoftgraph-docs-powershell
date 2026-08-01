@@ -802,7 +802,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphParticipant>: participant
+BODYPARAMETER `<IMicrosoftGraphParticipant>`: participant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -857,7 +857,7 @@ Read-only.
     [VideoDisabled <String>]: onlineMeetingVideoDisabledReason
   [RosterSequenceNumber <Int64?>]: Indicates the roster sequence number the participant was last updated in.
 
-INFO <IMicrosoftGraphParticipantInfo>: participantInfo
+INFO `<IMicrosoftGraphParticipantInfo>`: participantInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CountryCode <String>]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
@@ -884,7 +884,7 @@ Read-only.
 The region doesn't change based on the participant's current physical location, unlike countryCode.
 Read-only.
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -918,7 +918,7 @@ MEDIASTREAMS <IMicrosoftGraphMediaStream[]>: The list of media streams.
   [ServerMuted <Boolean?>]: Indicates whether the server has muted the media.
   [SourceId <String>]: The source ID.
 
-RECORDINGINFO <IMicrosoftGraphRecordingInfo>: recordingInfo
+RECORDINGINFO `<IMicrosoftGraphRecordingInfo>`: recordingInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [InitiatedBy <IMicrosoftGraphParticipantInfo>]: participantInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -949,11 +949,11 @@ Read-only.
   [Initiator <IMicrosoftGraphIdentitySet>]: identitySet
   [RecordingStatus <String>]: recordingStatus
 
-REMOVEDSTATE <IMicrosoftGraphRemovedState>: removedState
+REMOVEDSTATE `<IMicrosoftGraphRemovedState>`: removedState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Reason <String>]: The removal reason for the participant resource.
 
-RESTRICTEDEXPERIENCE <IMicrosoftGraphOnlineMeetingRestricted>: onlineMeetingRestricted
+RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRestricted
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentSharingDisabled <String>]: onlineMeetingContentSharingDisabledReason
   [VideoDisabled <String>]: onlineMeetingVideoDisabledReason
@@ -962,3 +962,25 @@ RESTRICTEDEXPERIENCE <IMicrosoftGraphOnlineMeetingRestricted>: onlineMeetingRest
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallparticipant)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
