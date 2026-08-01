@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingattendancereportattendancerecord
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
 
 List of attendance records of an attendance report.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get1
@@ -40,7 +37,7 @@ Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -AttendanceRecordId 
  -OnlineMeetingId <string> -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get
@@ -51,7 +48,7 @@ Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -AttendanceRecordId 
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### List
@@ -63,7 +60,7 @@ Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceRe
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### GetViaIdentity1
@@ -73,7 +70,7 @@ Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
  -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -83,7 +80,7 @@ Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
  -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -97,30 +94,20 @@ List of attendance records of an attendance report.
 Read-only.
 
 ## EXAMPLES
-### Example 1: List attendance records
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingAttendanceReportId $meetingAttendanceReportId
-
-```
-This example will list attendance records
-
-### Example 2: List attendance records containing Azure Communication Services users
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingAttendanceReportId $meetingAttendanceReportId
 
-```
-This example will list attendance records containing azure communication services users
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingAttendanceReportId $meetingAttendanceReportId
 
 ## PARAMETERS
 
@@ -747,7 +734,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -777,26 +764,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingattendancereportattendancerecord)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingattendancereportattendancerecord)

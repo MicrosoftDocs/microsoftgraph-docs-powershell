@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationonlinemeetingjoinweburlvirtualappointmentremindersm
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm
 ---
@@ -27,7 +27,6 @@ Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -Joi
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Send
@@ -38,7 +37,6 @@ Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm -Joi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
@@ -50,7 +48,6 @@ Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm
  [-RemindBeforeTimeInMinutesType <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SendViaIdentity
@@ -62,7 +59,6 @@ Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,6 +70,16 @@ This cmdlet has the following aliases,
 
 Send an SMS reminder to external attendees for a Teams Virtual Appointment.
 This feature requires Teams Premium and attendees must have a valid United States phone number to receive SMS notifications.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -106,7 +112,7 @@ HelpMessage: ''
 
 ### -Attendees
 
-
+.
 To construct, see NOTES section for ATTENDEES properties and create a hash table.
 
 ```yaml
@@ -134,7 +140,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -517,7 +523,7 @@ Required.
 The timeZone property can be set to any of the time zones currently supported by Windows.
 Required.
 
-BODYPARAMETER `<IPathsM5H45JCommunicationsOnlinemeetingsJoinweburlMicrosoftGraphSendvirtualappointmentremindersmsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsM5H45JCommunicationsOnlinemeetingsJoinweburlMicrosoftGraphSendvirtualappointmentremindersmsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Attendees <IMicrosoftGraphAttendeeNotificationInfo[]>]: 
     [PhoneNumber <String>]: The phone number of the external attendee.
@@ -527,7 +533,7 @@ The timeZone property can be set to any of the time zones currently supported by
 Required.
   [RemindBeforeTimeInMinutesType <String>]: remindBeforeTimeInMinutesType
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -557,28 +563,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Send-MgBetaCommunicationOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationonlinemeetingjoinweburlvirtualappointmentremindersm)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationonlinemeetingjoinweburlvirtualappointmentremindersm)
+- [](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetakeepcommunicationcallalive
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaKeepCommunicationCallAlive
 ---
@@ -21,9 +21,6 @@ Make sure that these requests are successful to prevent the call from timing out
 Attempting to send a request to a call that ended results in a 404 Not Found error.
 The resources related to the call should be cleaned up on the application side.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgKeepCommunicationCallAlive?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Keep (Default)
@@ -33,7 +30,6 @@ Invoke-MgBetaKeepCommunicationCallAlive -CallId <string> [-ResponseHeadersVariab
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### KeepViaIdentity
@@ -43,7 +39,6 @@ Invoke-MgBetaKeepCommunicationCallAlive -InputObject <ICloudCommunicationsIdenti
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -61,26 +56,13 @@ Make sure that these requests are successful to prevent the call from timing out
 Attempting to send a request to a call that ended results in a 404 Not Found error.
 The resources related to the call should be cleaned up on the application side.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Invoke-MgBetaKeepCommunicationCallAlive -CallId $callId
-
-```
-This example shows how to use the Invoke-MgBetaKeepCommunicationCallAlive Cmdlet.
-
 
 ## PARAMETERS
 
@@ -391,7 +373,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -421,27 +403,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaKeepCommunicationCallAlive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetakeepcommunicationcallalive)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/call-keepalive?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetakeepcommunicationcallalive)
+- [](https://learn.microsoft.com/graph/api/call-keepalive?view=graph-rest-beta)

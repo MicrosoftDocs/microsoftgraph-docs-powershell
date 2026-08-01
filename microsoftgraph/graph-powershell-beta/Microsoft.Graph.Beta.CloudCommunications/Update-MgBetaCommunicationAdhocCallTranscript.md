@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationadhoccalltranscript
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaCommunicationAdhocCallTranscript
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaCommunicationAdhocCallTranscript
 ## SYNOPSIS
 
 Update the navigation property transcripts in communications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationAdhocCallTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationAdhocCallTranscript?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,6 @@ Update-MgBetaCommunicationAdhocCallTranscript -AdhocCallId <string> -CallTranscr
  [-TranscriptContentUrl <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -41,7 +37,7 @@ Update-MgBetaCommunicationAdhocCallTranscript -AdhocCallId <string> -CallTranscr
  -BodyParameter <IMicrosoftGraphCallTranscript> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -55,7 +51,6 @@ Update-MgBetaCommunicationAdhocCallTranscript -InputObject <ICloudCommunications
  [-TranscriptContentUrl <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +60,7 @@ Update-MgBetaCommunicationAdhocCallTranscript -InputObject <ICloudCommunications
  -BodyParameter <IMicrosoftGraphCallTranscript> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -76,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property transcripts in communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -747,7 +752,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCallTranscript>`: callTranscript
+BODYPARAMETER <IMicrosoftGraphCallTranscript>: callTranscript
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -783,7 +788,7 @@ Read-only.
   [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -810,7 +815,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [ToDateTime <DateTime?>]: Usage: toDateTime={toDateTime}
   [UserId <String>]: The unique identifier of user
 
-MEETINGORGANIZER `<IMicrosoftGraphIdentitySet>`: identitySet
+MEETINGORGANIZER <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -825,27 +830,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgBetaCommunicationAdhocCallTranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationadhoccalltranscript)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationadhoccalltranscript)

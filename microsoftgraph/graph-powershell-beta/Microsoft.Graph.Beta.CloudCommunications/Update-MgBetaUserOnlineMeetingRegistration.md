@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserOnlineMeetingRegistration
 ---
@@ -29,7 +29,6 @@ Update-MgBetaUserOnlineMeetingRegistration -OnlineMeetingId <string> -UserId <st
  [-StartDateTime <datetime>] [-Subject <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -39,7 +38,7 @@ Update-MgBetaUserOnlineMeetingRegistration -OnlineMeetingId <string> -UserId <st
  -BodyParameter <IMicrosoftGraphMeetingRegistration> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,7 +53,6 @@ Update-MgBetaUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIde
  [-StartDateTime <datetime>] [-Subject <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -64,7 +62,7 @@ Update-MgBetaUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIde
  -BodyParameter <IMicrosoftGraphMeetingRegistration> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -77,8 +75,9 @@ This cmdlet has the following aliases,
 Update the navigation property registration in users
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserOnlineMeetingRegistration Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	Subject = "Microsoft Ignite: Day 1"
@@ -97,9 +96,6 @@ $params = @{
 }
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserOnlineMeetingRegistration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -790,7 +786,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMeetingRegistration>`: meetingRegistration
+BODYPARAMETER <IMicrosoftGraphMeetingRegistration>: meetingRegistration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedRegistrant <String>]: meetingAudience
   [Registrants <IMicrosoftGraphMeetingRegistrantBase[]>]: Registrants of the online meeting.
@@ -829,7 +825,7 @@ Read-only.
   [IsRequired <Boolean?>]: Indicates whether the question is required.
 Default value is false.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -869,26 +865,4 @@ SPEAKERS <IMicrosoftGraphMeetingSpeaker[]>: The meeting speaker's information.
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserOnlineMeetingRegistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingregistration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingregistration)

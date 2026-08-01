@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingconversationmessagereply
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaCommunicationOnlineMeetingConversationMessageReply
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaCommunicationOnlineMeetingConversationMessageReply
 ## SYNOPSIS
 
 Delete navigation property replies for communications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationOnlineMeetingConversationMessageReply](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationOnlineMeetingConversationMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Remove-MgBetaCommunicationOnlineMeetingConversationMessageReply
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -40,7 +36,6 @@ Remove-MgBetaCommunicationOnlineMeetingConversationMessageReply
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property replies for communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -424,7 +429,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -454,27 +459,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaCommunicationOnlineMeetingConversationMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingconversationmessagereply)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingconversationmessagereply)
