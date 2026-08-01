@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarbyuserrole
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventWebinarByUserRole
 ---
@@ -15,9 +15,6 @@ title: Get-MgVirtualEventWebinarByUserRole
 
 Get a virtualEventWebinar collection where the signed-in user is either the organizer or a coorganizer.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarByUserRole](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarByUserRole?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -27,7 +24,7 @@ Get-MgVirtualEventWebinarByUserRole -Role <string> [-Count] [-ExpandProperty <st
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -38,7 +35,7 @@ Get-MgVirtualEventWebinarByUserRole -InputObject <IBookingsIdentity> [-Count]
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -50,26 +47,13 @@ This cmdlet has the following aliases,
 
 Get a virtualEventWebinar collection where the signed-in user is either the organizer or a coorganizer.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | VirtualEvent.Read.Chat, VirtualEvent.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
-Get-MgVirtualEventWebinarByUserRole -Role $roleId 
-
-```
-This example shows how to use the Get-MgVirtualEventWebinarByUserRole Cmdlet.
-
+Get-MgVirtualEventWebinarByUserRole -Role $roleId
 
 ## PARAMETERS
 
@@ -487,7 +471,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -511,27 +495,5 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgVirtualEventWebinarByUserRole](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarbyuserrole)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventwebinar-getbyuserrole?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarbyuserrole)
+- [](https://learn.microsoft.com/graph/api/virtualeventwebinar-getbyuserrole?view=graph-rest-1.0)

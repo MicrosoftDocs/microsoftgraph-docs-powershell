@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservice
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBookingBusinessService
 ---
@@ -14,9 +14,6 @@ title: Get-MgBookingBusinessService
 ## SYNOPSIS
 
 Get the properties and relationships of a bookingService object in the specified bookingBusiness.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessService?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgBookingBusinessService -BookingBusinessId <string> [-ExpandProperty <strin
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +35,7 @@ Get-MgBookingBusinessService -BookingBusinessId <string> -BookingServiceId <stri
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -47,7 +44,7 @@ Get-MgBookingBusinessService -BookingBusinessId <string> -BookingServiceId <stri
 Get-MgBookingBusinessService -InputObject <IBookingsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -59,26 +56,13 @@ This cmdlet has the following aliases,
 
 Get the properties and relationships of a bookingService object in the specified bookingBusiness.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Read.All, Bookings.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgBookingBusinessService -BookingBusinessId $bookingBusinessId
-
-```
-This example shows how to use the Get-MgBookingBusinessService Cmdlet.
-
 
 ## PARAMETERS
 
@@ -567,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -591,28 +575,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBookingBusinessService](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservice)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingservice-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-list-services?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservice)
+- [](https://learn.microsoft.com/graph/api/bookingservice-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/bookingbusiness-list-services?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBookingBusinessStaffMember
 ---
@@ -15,9 +15,6 @@ title: New-MgBookingBusinessStaffMember
 
 Create a new bookingStaffMember in the specified bookingBusiness.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,7 +24,6 @@ New-MgBookingBusinessStaffMember -BookingBusinessId <string> [-ResponseHeadersVa
  [-AdditionalProperties <hashtable>] [-Id <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -37,7 +33,6 @@ New-MgBookingBusinessStaffMember -BookingBusinessId <string> -BodyParameter <has
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -47,7 +42,7 @@ New-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -57,7 +52,6 @@ New-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParameter
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -69,18 +63,9 @@ This cmdlet has the following aliases,
 
 Create a new bookingStaffMember in the specified bookingBusiness.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Bookings.ReadWrite.All, Bookings.Manage.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -164,10 +149,6 @@ $params = @{
 }
 
 New-MgBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBookingBusinessStaffMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -555,7 +536,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -579,27 +560,5 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBookingBusinessStaffMember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember)
+- [](https://learn.microsoft.com/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-1.0)
