@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauseractivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserActivity
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaUserActivity
 
 Delete navigation property activities for users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Remove-MgUserActivity?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -27,7 +24,6 @@ Remove-MgBetaUserActivity -UserActivityId <string> -UserId <string> [-IfMatch <s
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,7 +33,6 @@ Remove-MgBetaUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-IfMat
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,27 +44,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property activities for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp,  |
-| Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp,  |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CrossDeviceExperiences
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserActivity -UserId $userId -UserActivityId $userActivityId
-
-```
-This example shows how to use the Remove-MgBetaUserActivity Cmdlet.
-
 
 ## PARAMETERS
 
@@ -422,7 +404,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   [ActivityHistoryItemId <String>]: The unique identifier of activityHistoryItem
   [CommandId <String>]: The unique identifier of command
   [DeviceId <String>]: The unique identifier of device
@@ -436,26 +418,4 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauseractivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauseractivity)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceusagerights
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserDeviceUsageRights
 ---
@@ -24,7 +24,6 @@ Remove-MgBetaUserDeviceUsageRights -DeviceId <string> -UsageRightId <string> -Us
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -34,7 +33,6 @@ Remove-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -45,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property usageRights for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -418,7 +426,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   [ActivityHistoryItemId <String>]: The unique identifier of activityHistoryItem
   [CommandId <String>]: The unique identifier of command
   [DeviceId <String>]: The unique identifier of device
@@ -432,27 +440,4 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserDeviceUsageRights](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceusagerights)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceusagerights)

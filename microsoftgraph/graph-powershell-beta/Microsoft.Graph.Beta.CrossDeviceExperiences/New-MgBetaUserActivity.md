@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauseractivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserActivity
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaUserActivity
 ## SYNOPSIS
 
 Create new navigation property to activities for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserActivity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,7 +29,6 @@ New-MgBetaUserActivity -UserId <string> [-ResponseHeadersVariable <string>]
  [-VisualElements <IMicrosoftGraphVisualInfo>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -42,7 +38,6 @@ New-MgBetaUserActivity -UserId <string> -BodyParameter <IMicrosoftGraphUserActiv
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -58,7 +53,6 @@ New-MgBetaUserActivity -InputObject <ICrossDeviceExperiencesIdentity>
  [-VisualElements <IMicrosoftGraphVisualInfo>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -68,7 +62,7 @@ New-MgBetaUserActivity -InputObject <ICrossDeviceExperiencesIdentity>
  -BodyParameter <IMicrosoftGraphUserActivity> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -79,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to activities for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -865,7 +869,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserActivity>`: userActivity
+BODYPARAMETER <IMicrosoftGraphUserActivity>: userActivity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1018,7 +1022,7 @@ Required for timeline history.
 The timezone in which the user's device used to generate the activity was located at activity creation time.
 Values supplied as Olson IDs in order to support cross-platform representation.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   [ActivityHistoryItemId <String>]: The unique identifier of activityHistoryItem
   [CommandId <String>]: The unique identifier of command
   [DeviceId <String>]: The unique identifier of device
@@ -1029,7 +1033,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   [UserActivityId <String>]: The unique identifier of userActivity
   [UserId <String>]: The unique identifier of user
 
-VISUALELEMENTS `<IMicrosoftGraphVisualInfo>`: visualInfo
+VISUALELEMENTS <IMicrosoftGraphVisualInfo>: visualInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Attribution <IMicrosoftGraphImageInfo>]: imageInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1051,27 +1055,4 @@ Short text description of the user's unique activity (for example, document name
 
 ## RELATED LINKS
 
-- [New-MgBetaUserActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauseractivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauseractivity)

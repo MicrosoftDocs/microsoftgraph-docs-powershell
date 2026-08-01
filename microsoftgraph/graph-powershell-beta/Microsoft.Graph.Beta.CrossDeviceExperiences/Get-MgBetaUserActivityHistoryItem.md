@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauseractivityhistoryitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserActivityHistoryItem
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaUserActivityHistoryItem
 
 Optional.
 NavigationProperty/Containment; navigation property to the activity's activityHistoryItems.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserActivityHistoryItem](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserActivityHistoryItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ Get-MgBetaUserActivityHistoryItem -UserActivityId <string> -UserId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -40,7 +36,7 @@ Get-MgBetaUserActivityHistoryItem -ActivityHistoryItemId <string> -UserActivityI
  -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -50,7 +46,7 @@ Get-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -62,6 +58,16 @@ This cmdlet has the following aliases,
 
 Optional.
 NavigationProperty/Containment; navigation property to the activity's activityHistoryItems.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -577,7 +583,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   [ActivityHistoryItemId <String>]: The unique identifier of activityHistoryItem
   [CommandId <String>]: The unique identifier of command
   [DeviceId <String>]: The unique identifier of device
@@ -591,28 +597,4 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserActivityHistoryItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauseractivityhistoryitem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauseractivityhistoryitem)

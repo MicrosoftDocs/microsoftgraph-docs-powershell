@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredowner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserDeviceRegisteredOwner
 ---
@@ -30,7 +30,6 @@ Get-MgBetaUserDeviceRegisteredOwner -DeviceId <string> -UserId <string> [-Expand
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -45,6 +44,16 @@ The registered owner is set at the time of registration.
 Read-only.
 Nullable.
 Supports $expand.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -520,27 +529,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserDeviceRegisteredOwner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredowner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredowner)

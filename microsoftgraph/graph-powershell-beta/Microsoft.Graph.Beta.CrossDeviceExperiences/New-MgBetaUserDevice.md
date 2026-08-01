@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdevice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserDevice
 ---
@@ -42,7 +42,6 @@ New-MgBetaUserDevice -UserId <string> [-ResponseHeadersVariable <string>] [-Acco
  [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -52,7 +51,6 @@ New-MgBetaUserDevice -UserId <string> -BodyParameter <IMicrosoftGraphDevice>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -80,7 +78,6 @@ New-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity>
  [-UsageRights <IMicrosoftGraphUsageRight[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -90,7 +87,7 @@ New-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity>
  -BodyParameter <IMicrosoftGraphDevice> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -101,6 +98,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to devices for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1860,7 +1867,7 @@ Supports $filter (eq, not, ge, le).
   [Key <Byte[]>]: For internal use only.
   [Type <Int32?>]: For internal use only.
 
-BODYPARAMETER `<IMicrosoftGraphDevice>`: device
+BODYPARAMETER <IMicrosoftGraphDevice>: device
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -2288,7 +2295,7 @@ An owner has full privileges over the device template and doesn't require other 
 There can be a maximum of 100 owners on a device template.
  Supports $expand.
 
-EXTENSIONATTRIBUTES `<IMicrosoftGraphOnPremisesExtensionAttributes>`: onPremisesExtensionAttributes
+EXTENSIONATTRIBUTES <IMicrosoftGraphOnPremisesExtensionAttributes>: onPremisesExtensionAttributes
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExtensionAttribute1 <String>]: First customizable extension attribute.
   [ExtensionAttribute10 <String>]: Tenth customizable extension attribute.
@@ -2312,7 +2319,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   [ActivityHistoryItemId <String>]: The unique identifier of activityHistoryItem
   [CommandId <String>]: The unique identifier of command
   [DeviceId <String>]: The unique identifier of device
@@ -2370,27 +2377,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaUserDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdevice)
