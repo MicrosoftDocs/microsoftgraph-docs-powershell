@@ -555,7 +555,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatesummary)
+- [Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatesummary)
 
 
 
