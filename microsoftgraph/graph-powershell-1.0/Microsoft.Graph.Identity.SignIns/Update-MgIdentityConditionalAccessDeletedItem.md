@@ -225,7 +225,7 @@ HelpMessage: ''
 
 ### -NamedLocations
 
-.
+
 To construct, see NOTES section for NAMEDLOCATIONS properties and create a hash table.
 
 ```yaml
@@ -247,7 +247,7 @@ HelpMessage: ''
 
 ### -Policies
 
-.
+
 To construct, see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
