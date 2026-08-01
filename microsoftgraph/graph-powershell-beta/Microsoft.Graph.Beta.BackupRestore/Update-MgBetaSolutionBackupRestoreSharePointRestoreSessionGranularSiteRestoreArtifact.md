@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact
 ---
@@ -23,12 +23,12 @@ Update the navigation property granularSiteRestoreArtifacts in solutions
 Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact
  -GranularSiteRestoreArtifactId <string> -SharePointRestoreSessionId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-BrowseSessionId <string>]
- [-CompletionDateTime <datetime>] [-Id <string>] [-RestorePointDateTime <datetime>]
- [-RestoredItemKey <string>] [-RestoredItemPath <string>] [-RestoredItemWebUrl <string>]
- [-SiteId <string>] [-StartDateTime <datetime>] [-Status <string>] [-WebUrl <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-CompletionDateTime <datetime>] [-DestinationType <string>] [-Id <string>]
+ [-RestorePointDateTime <datetime>] [-RestoredItemKey <string>] [-RestoredItemPath <string>]
+ [-RestoredItemWebUrl <string>] [-SiteId <string>] [-StartDateTime <datetime>] [-Status <string>]
+ [-WebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -39,7 +39,7 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArt
  -BodyParameter <IMicrosoftGraphGranularSiteRestoreArtifact> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,12 +48,12 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArt
 Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact
  -InputObject <IBackupRestoreIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-BrowseSessionId <string>] [-CompletionDateTime <datetime>]
- [-Id <string>] [-RestorePointDateTime <datetime>] [-RestoredItemKey <string>]
- [-RestoredItemPath <string>] [-RestoredItemWebUrl <string>] [-SiteId <string>]
- [-StartDateTime <datetime>] [-Status <string>] [-WebUrl <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-DestinationType <string>] [-Id <string>] [-RestorePointDateTime <datetime>]
+ [-RestoredItemKey <string>] [-RestoredItemPath <string>] [-RestoredItemWebUrl <string>]
+ [-SiteId <string>] [-StartDateTime <datetime>] [-Status <string>] [-WebUrl <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -64,7 +64,6 @@ Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArt
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,6 +74,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property granularSiteRestoreArtifacts in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -220,6 +229,33 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DestinationType
+
+destinationType
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -518,7 +554,7 @@ HelpMessage: ''
 
 ### -RestoredItemWebUrl
 
-The web url of the restord artifact.
+The web url of the restored artifact.
 
 ```yaml
 Type: System.String
@@ -761,15 +797,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGranularSiteRestoreArtifact>`: granularSiteRestoreArtifact
+BODYPARAMETER <IMicrosoftGraphGranularSiteRestoreArtifact>: granularSiteRestoreArtifact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BrowseSessionId <String>]: The unique identifier of the browseSession
   [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+  [DestinationType <String>]: destinationType
   [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
   [RestoredItemKey <String>]: The unique identifier for the restored artifact.
   [RestoredItemPath <String>]: The path of the restored artifact.
 It's the path of the folder where all the artifacts are restored within a granular restore session.
-  [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+  [RestoredItemWebUrl <String>]: The web url of the restored artifact.
   [StartDateTime <DateTime?>]: The start time of the restoration.
   [Status <String>]: artifactRestoreStatus
   [WebUrl <String>]: The original web url of the artifact being restored.
@@ -777,7 +814,7 @@ It's the path of the folder where all the artifacts are restored within a granul
 Read-only.
   [SiteId <String>]: Id of the site in which artifact is present.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -824,27 +861,4 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact)

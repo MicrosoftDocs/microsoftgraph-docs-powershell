@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessrestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession
 ## SYNOPSIS
 
 Create new navigation property to oneDriveForBusinessRestoreSessions for solutions
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,7 +32,7 @@ New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession [-ResponseHeade
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -46,7 +43,6 @@ New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -57,6 +53,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to oneDriveForBusinessRestoreSessions for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -627,7 +633,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOneDriveForBusinessRestoreSession>`: oneDriveForBusinessRestoreSession
+BODYPARAMETER <IMicrosoftGraphOneDriveForBusinessRestoreSession>: oneDriveForBusinessRestoreSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletedDateTime <DateTime?>]: The time of completion of the restore session.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -691,6 +697,11 @@ Read-only.
         [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
         [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+        [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [EffectiveFromDateTime <DateTime?>]: 
+          [Status <String>]: retentionPeriodChangeStatus
+          [TargetRetentionPeriodInDays <Int32?>]: 
         [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
         [ProtectionSources <String>]: protectionSource
         [Status <String>]: protectionUnitStatus
@@ -725,11 +736,12 @@ Read-only.
   [GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>]: A collection of browse session id and item key details that can be used to restore OneDrive for work or school files and folders.
     [BrowseSessionId <String>]: The unique identifier of the browseSession
     [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+    [DestinationType <String>]: destinationType
     [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
     [RestoredItemKey <String>]: The unique identifier for the restored artifact.
     [RestoredItemPath <String>]: The path of the restored artifact.
 It's the path of the folder where all the artifacts are restored within a granular restore session.
-    [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+    [RestoredItemWebUrl <String>]: The web url of the restored artifact.
     [StartDateTime <DateTime?>]: The start time of the restoration.
     [Status <String>]: artifactRestoreStatus
     [WebUrl <String>]: The original web url of the artifact being restored.
@@ -737,7 +749,7 @@ It's the path of the folder where all the artifacts are restored within a granul
 Read-only.
     [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -795,6 +807,11 @@ For example, in the access reviews decisions API, this property might record the
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
       [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+      [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [EffectiveFromDateTime <DateTime?>]: 
+        [Status <String>]: retentionPeriodChangeStatus
+        [TargetRetentionPeriodInDays <Int32?>]: 
       [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
       [ProtectionSources <String>]: protectionSource
       [Status <String>]: protectionUnitStatus
@@ -852,7 +869,7 @@ Read-only.
   [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
   [Drives <String[]>]: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -871,11 +888,12 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
 GRANULARDRIVERESTOREARTIFACTS <IMicrosoftGraphGranularDriveRestoreArtifact[]>: A collection of browse session id and item key details that can be used to restore OneDrive for work or school files and folders.
   [BrowseSessionId <String>]: The unique identifier of the browseSession
   [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+  [DestinationType <String>]: destinationType
   [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
   [RestoredItemKey <String>]: The unique identifier for the restored artifact.
   [RestoredItemPath <String>]: The path of the restored artifact.
 It's the path of the folder where all the artifacts are restored within a granular restore session.
-  [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+  [RestoredItemWebUrl <String>]: The web url of the restored artifact.
   [StartDateTime <DateTime?>]: The start time of the restoration.
   [Status <String>]: artifactRestoreStatus
   [WebUrl <String>]: The original web url of the artifact being restored.
@@ -883,7 +901,7 @@ It's the path of the folder where all the artifacts are restored within a granul
 Read-only.
   [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -895,7 +913,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount
+RESTORESESSIONARTIFACTCOUNT <IMicrosoftGraphRestoreSessionArtifactCount>: restoreSessionArtifactCount
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Completed <Int32?>]: The number of artifacts whose restoration completed.
   [Failed <Int32?>]: The number of artifacts whose restoration failed.
@@ -905,27 +923,4 @@ RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: rest
 
 ## RELATED LINKS
 
-- [New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessrestoresession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessrestoresession)
