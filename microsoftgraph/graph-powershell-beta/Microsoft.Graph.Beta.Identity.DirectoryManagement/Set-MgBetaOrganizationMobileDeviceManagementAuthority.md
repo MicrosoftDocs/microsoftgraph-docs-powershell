@@ -413,7 +413,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationmobiledevicemanagementauthority)
+- [Set-MgBetaOrganizationMobileDeviceManagementAuthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationmobiledevicemanagementauthority)
 
 
 
