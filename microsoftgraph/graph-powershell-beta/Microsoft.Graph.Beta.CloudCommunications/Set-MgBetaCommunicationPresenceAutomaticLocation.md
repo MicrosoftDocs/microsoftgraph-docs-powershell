@@ -73,16 +73,6 @@ Update the automatic work location for a user.
 The automatic layer participates in the standard precedence model: Use this operation from clients or services that automatically detect location (for example, Teams, network and location agents, or OEM docking apps).
 It doesn't clear manual or scheduled signals.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -554,6 +544,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresenceautomaticlocation)
 - [](https://learn.microsoft.com/graph/api/presence-setautomaticlocation?view=graph-rest-beta)
+
 
 
 
