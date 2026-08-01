@@ -89,20 +89,6 @@ Update the properties of a printer object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Printer.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AcceptingJobs
@@ -28643,6 +28629,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter)
 - [](https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-beta)
+
 
 
 
