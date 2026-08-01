@@ -597,7 +597,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepagetemplatecanvalayoutverticalsectionwebpart)
+- [Update-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSectionWebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepagetemplatecanvalayoutverticalsectionwebpart)
 
 
 

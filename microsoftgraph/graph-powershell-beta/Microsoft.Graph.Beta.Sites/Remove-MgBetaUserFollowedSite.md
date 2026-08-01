@@ -18737,8 +18737,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetauserfollowedsite)
-- [](https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-beta)
+- [Remove-MgBetaUserFollowedSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetauserfollowedsite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-beta)
 
 
 

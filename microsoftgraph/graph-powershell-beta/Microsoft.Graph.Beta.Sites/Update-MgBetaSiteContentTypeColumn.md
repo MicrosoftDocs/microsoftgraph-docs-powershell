@@ -1978,8 +1978,8 @@ For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttypecolumn)
-- [](https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-beta)
+- [Update-MgBetaSiteContentTypeColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttypecolumn)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-beta)
 
 
 
