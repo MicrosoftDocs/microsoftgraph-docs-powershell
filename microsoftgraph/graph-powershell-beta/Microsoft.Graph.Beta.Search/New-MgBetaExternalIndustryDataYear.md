@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatayear
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaExternalIndustryDataYear
 ---
@@ -25,7 +25,6 @@ New-MgBetaExternalIndustryDataYear [-ResponseHeadersVariable <string>]
  [-StartDate <datetime>] [-Year <hashtable>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -36,7 +35,6 @@ New-MgBetaExternalIndustryDataYear
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,18 +46,9 @@ This cmdlet has the following aliases,
 
 Create a new yearTimePeriodDefinition object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IndustryData-TimePeriod.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IndustryData-TimePeriod.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -73,10 +62,6 @@ $params = @{
 }
 
 New-MgBetaExternalIndustryDataYear -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaExternalIndustryDataYear Cmdlet.
-
 
 ## PARAMETERS
 
@@ -473,7 +458,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataYearTimePeriodDefinition>`: yearTimePeriodDefinition
+BODYPARAMETER <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>: yearTimePeriodDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -498,27 +483,5 @@ Must be unique within the referenceType.
 
 ## RELATED LINKS
 
-- [New-MgBetaExternalIndustryDataYear](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatayear)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatayear)
+- [](https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-post?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaExternalIndustryDataInboundFlow
 ---
@@ -28,7 +28,6 @@ Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <string>
  [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -38,7 +37,7 @@ Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <string>
  -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,7 +51,6 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
  [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +60,7 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
  -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -74,18 +72,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an inboundApiFlow object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IndustryData-InboundFlow.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IndustryData-InboundFlow.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -95,10 +84,6 @@ $params = @{
 }
 
 Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId $inboundFlowId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaExternalIndustryDataInboundFlow Cmdlet.
-
 
 ## PARAMETERS
 
@@ -683,7 +668,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataInboundFlow>`: inboundFlow
+BODYPARAMETER <IMicrosoftGraphIndustryDataInboundFlow>: inboundFlow
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The name of the activity.
 Maximum supported length is 100 characters.
@@ -751,7 +736,7 @@ Maximum supported length is 100 characters.
       [Code <String>]: The code of the desired referenceDefinition entry.
       [Value <IMicrosoftGraphIndustryDataReferenceDefinition>]: referenceDefinition
 
-DATACONNECTOR `<IMicrosoftGraphIndustryDataConnector>`: industryDataConnector
+DATACONNECTOR <IMicrosoftGraphIndustryDataConnector>: industryDataConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -793,7 +778,7 @@ Read-only.
     [Vendor <String>]: The name of the vendor who supplies the source system.
 Maximum supported length is 100 characters.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [AuthorizationSystemId <String>]: The unique identifier of authorizationSystem
   [BookmarkId <String>]: The unique identifier of bookmark
@@ -816,7 +801,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   [SourceSystemDefinitionId <String>]: The unique identifier of sourceSystemDefinition
   [YearTimePeriodDefinitionId <String>]: The unique identifier of yearTimePeriodDefinition
 
-YEAR `<IMicrosoftGraphIndustryDataYearTimePeriodDefinition>`: yearTimePeriodDefinition
+YEAR <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>: yearTimePeriodDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -841,27 +826,5 @@ Must be unique within the referenceType.
 
 ## RELATED LINKS
 
-- [Update-MgBetaExternalIndustryDataInboundFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow)
+- [](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-update?view=graph-rest-beta)
