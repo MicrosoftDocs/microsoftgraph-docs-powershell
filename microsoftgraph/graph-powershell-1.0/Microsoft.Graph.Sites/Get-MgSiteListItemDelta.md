@@ -14,10 +14,10 @@ title: Get-MgSiteListItemDelta
 ## SYNOPSIS
 
 Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
-Your app begins by calling delta without any parameters.\r\nThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\r\nYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
-After you received all the changes, you can apply them to your local state.\r\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Your app begins by calling delta without any parameters.\rThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\rYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 The delta feed shows the latest state for each item, not each change.
-If an item was renamed twice, it only shows up once, with its latest name.\r\nThe same item might appear more than once in a delta feed, for various reasons.
+If an item was renamed twice, it only shows up once, with its latest name.\rThe same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Items with this property should be removed from your local state.
 
@@ -73,10 +73,10 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
-Your app begins by calling delta without any parameters.\r\nThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\r\nYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
-After you received all the changes, you can apply them to your local state.\r\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Your app begins by calling delta without any parameters.\rThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\rYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 The delta feed shows the latest state for each item, not each change.
-If an item was renamed twice, it only shows up once, with its latest name.\r\nThe same item might appear more than once in a delta feed, for various reasons.
+If an item was renamed twice, it only shows up once, with its latest name.\rThe same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Items with this property should be removed from your local state.
 
@@ -665,7 +665,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -715,3 +715,25 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemdelta)
 - [](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
