@@ -436,7 +436,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomainverificationdnsrecord)
+- [Remove-MgDomainVerificationDnsRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomainverificationdnsrecord)
 
 
 

@@ -470,8 +470,8 @@ BODYPARAMETER `<IPaths7Cg04SContactsMicrosoftGraphValidatepropertiesPostRequestb
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgcontactproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+- [Test-MgContactProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgcontactproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
 
 
 

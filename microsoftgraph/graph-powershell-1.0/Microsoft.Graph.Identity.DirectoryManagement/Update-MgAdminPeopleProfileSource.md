@@ -658,8 +658,8 @@ LOCALIZATIONS <IMicrosoftGraphProfileSourceLocalization[]>: Alternative localize
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilesource)
-- [](https://learn.microsoft.com/graph/api/profilesource-update?view=graph-rest-1.0)
+- [Update-MgAdminPeopleProfileSource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilesource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/profilesource-update?view=graph-rest-1.0)
 
 
 
