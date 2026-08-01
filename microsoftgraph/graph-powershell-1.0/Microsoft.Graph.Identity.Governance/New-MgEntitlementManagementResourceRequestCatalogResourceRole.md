@@ -1195,7 +1195,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerequestcatalogresourcerole)
+- [New-MgEntitlementManagementResourceRequestCatalogResourceRole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerequestcatalogresourcerole)
 
 
 
