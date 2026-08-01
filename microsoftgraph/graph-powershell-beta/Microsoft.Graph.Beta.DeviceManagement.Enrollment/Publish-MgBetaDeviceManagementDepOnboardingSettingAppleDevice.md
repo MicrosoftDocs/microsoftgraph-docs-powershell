@@ -1,61 +1,59 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/set-mgbetadevicemanagementwindowsautopilotdeviceidentityusertodevice
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/publish-mgbetadevicemanagementdeponboardingsettingappledevice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
+title: Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice
 ---
 
-# Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
+# Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice
 
 ## SYNOPSIS
 
-Assigns user to Autopilot devices.
+Invoke action releaseAppleDevices
 
 ## SYNTAX
 
-### AssignExpanded (Default)
+### ReleaseExpanded (Default)
 
 ```
-Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
- -WindowsAutopilotDeviceIdentityId <string> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-AddressableUserName <string>] [-UserPrincipalName <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice -DepOnboardingSettingId <string>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DepToken <string>]
+ [-DeviceSerialNumbers <string[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Assign
+### Release
 
 ```
-Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
- -WindowsAutopilotDeviceIdentityId <string>
- -BodyParameter <IPathsLgvh1ODevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignusertodevicePostRequestbodyContentApplicationJsonSchema>
+Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice -DepOnboardingSettingId <string>
+ -BodyParameter <IPaths1O9Ihb6DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphReleaseappledevicesPostRequestbodyContentApplicationJsonSchema>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### AssignViaIdentityExpanded
+### ReleaseViaIdentityExpanded
 
 ```
-Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
+Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice
  -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-AddressableUserName <string>] [-UserPrincipalName <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-AdditionalProperties <hashtable>] [-DepToken <string>] [-DeviceSerialNumbers <string[]>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### AssignViaIdentity
+### ReleaseViaIdentity
 
 ```
-Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
+Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice
  -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IPathsLgvh1ODevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignusertodevicePostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPaths1O9Ihb6DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphReleaseappledevicesPostRequestbodyContentApplicationJsonSchema>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -68,7 +66,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Assigns user to Autopilot devices.
+Invoke action releaseAppleDevices
 
 ## EXAMPLES
 
@@ -92,40 +90,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: AssignViaIdentityExpanded
+- Name: ReleaseViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: AssignExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -AddressableUserName
-
-.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: AssignViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: AssignExpanded
+- Name: ReleaseExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -142,18 +113,18 @@ HelpMessage: ''
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsLgvh1ODevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignusertodevicePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1O9Ihb6DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphReleaseappledevicesPostRequestbodyContentApplicationJsonSchema
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: AssignViaIdentity
+- Name: ReleaseViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Assign
+- Name: Release
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -197,6 +168,87 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DepOnboardingSettingId
+
+The unique identifier of depOnboardingSetting
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: ReleaseExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Release
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DepToken
+
+.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: ReleaseViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: ReleaseExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DeviceSerialNumbers
+
+.
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: ReleaseViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: ReleaseExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -281,13 +333,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: AssignViaIdentityExpanded
+- Name: ReleaseViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: AssignViaIdentity
+- Name: ReleaseViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -404,33 +456,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -UserPrincipalName
-
-.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: AssignViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: AssignExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -453,33 +478,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -WindowsAutopilotDeviceIdentityId
-
-The unique identifier of windowsAutopilotDeviceIdentity
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: AssignExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Assign
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -493,7 +491,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.Beta.PowerShell.Models.IPathsLgvh1ODevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignusertodevicePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1O9Ihb6DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphReleaseappledevicesPostRequestbodyContentApplicationJsonSchema
 
 {{ Fill in the Description }}
 
@@ -514,10 +512,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsLgvh1ODevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignusertodevicePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPaths1O9Ihb6DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphReleaseappledevicesPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [AddressableUserName <String>]: 
-  [UserPrincipalName <String>]: 
+  [DepToken <String>]: 
+  [DeviceSerialNumbers <String[]>]: 
 
 INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
@@ -551,4 +549,4 @@ INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/set-mgbetadevicemanagementwindowsautopilotdeviceidentityusertodevice)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/publish-mgbetadevicemanagementdeponboardingsettingappledevice)

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-Module Guid: db393a0a-c87d-4bbb-b186-c452258c5f92
+Module Guid: 0bffbb95-58b3-451c-a568-07bf86d06f1a
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -443,6 +443,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaRoleManagementExchangeTransitiveRoleAssignment](New-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
 
+### [Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice](Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice.md)
+
 ### [Remove-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Remove-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
 
 ### [Remove-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](Remove-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
@@ -668,23 +670,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment](Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
 
 ### [Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

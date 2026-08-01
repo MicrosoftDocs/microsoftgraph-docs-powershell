@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeploymentprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile
 ---
@@ -34,7 +34,6 @@ New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile [-ResponseHeadersVar
  [-RoleScopeTagIds <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -45,7 +44,6 @@ New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -57,13 +55,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to windowsAutopilotDeploymentProfiles for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1012,7 +1012,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: Windows Autopilot Deployment Profile
+BODYPARAMETER <IMicrosoftGraphWindowsAutopilotDeploymentProfile>: Windows Autopilot Deployment Profile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1169,7 +1169,7 @@ When false, Windows Autopilot for pre-provisioned deployment mode for OOBE is no
 The default is FALSE.
   [RoleScopeTagIds <String[]>]: List of role scope tags for the deployment profile.
 
-ENROLLMENTSTATUSSCREENSETTINGS `<IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>`: Enrollment status screen setting
+ENROLLMENTSTATUSSCREENSETTINGS <IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>: Enrollment status screen setting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowDeviceUseBeforeProfileAndAppInstallComplete <Boolean?>]: Allow or block user to use device before profile and app installation complete
   [AllowDeviceUseOnInstallFailure <Boolean?>]: Allow the user to continue using the device on installation failure
@@ -1179,7 +1179,7 @@ ENROLLMENTSTATUSSCREENSETTINGS `<IMicrosoftGraphWindowsEnrollmentStatusScreenSet
   [HideInstallationProgress <Boolean?>]: Show or hide installation progress to user
   [InstallProgressTimeoutInMinutes <Int32?>]: Set installation progress timeout in minutes
 
-OUTOFBOXEXPERIENCESETTING `<IMicrosoftGraphOutOfBoxExperienceSetting>`: The Windows Autopilot Deployment Profile settings used by the device for the out-of-box experience.
+OUTOFBOXEXPERIENCESETTING <IMicrosoftGraphOutOfBoxExperienceSetting>: The Windows Autopilot Deployment Profile settings used by the device for the out-of-box experience.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1197,7 +1197,7 @@ When FALSE, privacy settings is shown to the end user during OOBE.
 Default value is FALSE.
   [UserType <WindowsUserType?>]: windowsUserType
 
-OUTOFBOXEXPERIENCESETTINGS `<IMicrosoftGraphOutOfBoxExperienceSettings>`: The Windows Autopilot Deployment Profile settings used by the Autopilot device for out-of-box experience.
+OUTOFBOXEXPERIENCESETTINGS <IMicrosoftGraphOutOfBoxExperienceSettings>: The Windows Autopilot Deployment Profile settings used by the Autopilot device for out-of-box experience.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
 Read-Only.
@@ -1214,27 +1214,4 @@ Use outOfBoxExperienceSetting instead.
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeploymentprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeploymentprofile)

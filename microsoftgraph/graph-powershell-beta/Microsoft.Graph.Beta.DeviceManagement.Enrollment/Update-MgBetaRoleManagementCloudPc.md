@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpc
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaRoleManagementCloudPc
 ---
@@ -27,7 +27,6 @@ Update-MgBetaRoleManagementCloudPc [-ResponseHeadersVariable <string>]
  [-RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -37,7 +36,6 @@ Update-MgBetaRoleManagementCloudPc -BodyParameter <IMicrosoftGraphRbacApplicatio
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property cloudPC in roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -287,7 +295,7 @@ HelpMessage: ''
 
 ### -ResourceNamespaces
 
-
+.
 To construct, see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml
@@ -331,7 +339,7 @@ HelpMessage: ''
 
 ### -RoleAssignments
 
-
+.
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -353,7 +361,7 @@ HelpMessage: ''
 
 ### -RoleDefinitions
 
-
+.
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
@@ -425,7 +433,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
+BODYPARAMETER <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -734,27 +742,4 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [Update-MgBetaRoleManagementCloudPc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpc)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpc)

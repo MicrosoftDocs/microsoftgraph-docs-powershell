@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetahasdevicemanagementwindowsautopilotdeploymentprofilepayloadlink
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaHasDeviceManagementWindowsAutopilotDeploymentProfilePayloadLink
 ---
@@ -24,7 +24,7 @@ Invoke-MgBetaHasDeviceManagementWindowsAutopilotDeploymentProfilePayloadLink
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-PayloadIds <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Link
@@ -35,7 +35,6 @@ Invoke-MgBetaHasDeviceManagementWindowsAutopilotDeploymentProfilePayloadLink
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -46,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action hasPayloadLinks
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -72,7 +81,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -200,7 +209,7 @@ HelpMessage: ''
 
 ### -PayloadIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -356,34 +365,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPathsRrufjsDevicemanagementWindowsautopilotdeploymentprofilesMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPathsRrufjsDevicemanagementWindowsautopilotdeploymentprofilesMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PayloadIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaHasDeviceManagementWindowsAutopilotDeploymentProfilePayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetahasdevicemanagementwindowsautopilotdeploymentprofilepayloadlink)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetahasdevicemanagementwindowsautopilotdeploymentprofilepayloadlink)

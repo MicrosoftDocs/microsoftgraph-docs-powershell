@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaRoleManagement
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaRoleManagement
 ## SYNOPSIS
 
 Update roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,7 +29,6 @@ Update-MgBetaRoleManagement [-ResponseHeadersVariable <string>] [-AdditionalProp
  [-Exchange <IMicrosoftGraphUnifiedRbacApplication>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -42,7 +38,6 @@ Update-MgBetaRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,13 +49,15 @@ This cmdlet has the following aliases,
 
 Update roleManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -240,7 +237,7 @@ HelpMessage: ''
 
 ### -EnterpriseApps
 
-
+.
 To construct, see NOTES section for ENTERPRISEAPPS properties and create a hash table.
 
 ```yaml
@@ -504,7 +501,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRoleManagement>`: roleManagement
+BODYPARAMETER <IMicrosoftGraphRoleManagement>: roleManagement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CloudPc <IMicrosoftGraphRbacApplicationMultiple>]: rbacApplicationMultiple
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -993,7 +990,7 @@ Read-only.
     [RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]: The roles allowed by RBAC providers and the permissions assigned to the roles.
     [TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]: Resource to grant access to users or groups that are transitive.
 
-CLOUDPC `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
+CLOUDPC <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1127,7 +1124,7 @@ Read-only when isBuiltIn is true.
     [RoleDefinitionId <String>]: Identifier of the unifiedRoleDefinition the assignment is for.
   [RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]: 
 
-DEFENDER `<IMicrosoftGraphUnifiedRbacApplicationMultiple>`: unifiedRbacApplicationMultiple
+DEFENDER <IMicrosoftGraphUnifiedRbacApplicationMultiple>: unifiedRbacApplicationMultiple
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -1270,7 +1267,7 @@ Read-only.
     [CustomAttributes <IMicrosoftGraphCustomAppScopeAttributesDictionary>]: customAppScopeAttributesDictionary
       [(Any) <Object>]: This indicates any property can be added to this object.
 
-DEVICEMANAGEMENT `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
+DEVICEMANAGEMENT <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1404,7 +1401,7 @@ Read-only when isBuiltIn is true.
     [RoleDefinitionId <String>]: Identifier of the unifiedRoleDefinition the assignment is for.
   [RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]: 
 
-DIRECTORY `<IMicrosoftGraphRbacApplication>`: rbacApplication
+DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2251,7 +2248,7 @@ Supports $filter (eq, ne).
   [RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]: 
   [TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]: 
 
-ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication>`: rbacApplication
+ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2675,7 +2672,7 @@ Supports $filter (eq, ne).
   [RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]: 
   [TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]: 
 
-EXCHANGE `<IMicrosoftGraphUnifiedRbacApplication>`: unifiedRbacApplication
+EXCHANGE <IMicrosoftGraphUnifiedRbacApplication>: unifiedRbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2823,27 +2820,4 @@ Supports $filter (eq, in).
 
 ## RELATED LINKS
 
-- [Update-MgBetaRoleManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement)
