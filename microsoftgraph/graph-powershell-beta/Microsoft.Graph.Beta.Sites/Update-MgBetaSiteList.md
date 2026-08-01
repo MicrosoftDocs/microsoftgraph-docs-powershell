@@ -87,16 +87,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property lists in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -56461,6 +56451,7 @@ See the possible resource path values for each supported resource.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelist)
+
 
 
 
