@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenoteresource
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupOnenoteResource
 ---
@@ -18,9 +18,6 @@ Getting a resources collection isn't supported, but you can get the binary conte
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteResource?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -31,7 +28,7 @@ Get-MgGroupOnenoteResource -GroupId <string> [-ExpandProperty <string[]>] [-Prop
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -41,7 +38,7 @@ Get-MgGroupOnenoteResource -GroupId <string> -OnenoteResourceId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -50,7 +47,7 @@ Get-MgGroupOnenoteResource -GroupId <string> -OnenoteResourceId <string>
 Get-MgGroupOnenoteResource -InputObject <INotesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -64,6 +61,16 @@ The image and other file resources in OneNote pages.
 Getting a resources collection isn't supported, but you can get the binary content of a specific resource.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -552,7 +559,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -569,28 +576,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupOnenoteResource](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenoteresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenoteresource)

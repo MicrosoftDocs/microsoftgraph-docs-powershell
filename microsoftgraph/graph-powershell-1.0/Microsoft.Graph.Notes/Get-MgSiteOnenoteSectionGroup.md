@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectiongroup
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteOnenoteSectionGroup
 ---
@@ -17,9 +17,6 @@ The section groups in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteSectionGroup?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -30,7 +27,7 @@ Get-MgSiteOnenoteSectionGroup -SiteId <string> [-ExpandProperty <string[]>] [-Pr
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### List1
@@ -41,7 +38,7 @@ Get-MgSiteOnenoteSectionGroup -SectionGroupId <string> -SiteId <string> [-Expand
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get1
@@ -51,7 +48,7 @@ Get-MgSiteOnenoteSectionGroup -SectionGroupId <string> -SiteId <string> -Section
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### Get
@@ -60,7 +57,7 @@ Get-MgSiteOnenoteSectionGroup -SectionGroupId <string> -SiteId <string> -Section
 Get-MgSiteOnenoteSectionGroup -SectionGroupId <string> -SiteId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -69,7 +66,7 @@ Get-MgSiteOnenoteSectionGroup -SectionGroupId <string> -SiteId <string> [-Expand
 Get-MgSiteOnenoteSectionGroup -InputObject <INotesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -78,7 +75,7 @@ Get-MgSiteOnenoteSectionGroup -InputObject <INotesIdentity> [-ExpandProperty <st
 Get-MgSiteOnenoteSectionGroup -InputObject <INotesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -92,13 +89,15 @@ The section groups in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Create, Notes.ReadWrite.All, Notes.ReadWrite, Notes.Read.All, Notes.Read,  |
-| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite, Notes.Read,  |
-| Application | Notes.Read.All, Notes.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -686,7 +685,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -703,28 +702,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSiteOnenoteSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectiongroup)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectiongroup)
