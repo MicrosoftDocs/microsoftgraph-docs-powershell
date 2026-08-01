@@ -1,44 +1,65 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartnerm365capability
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef
+title: New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability
 ---
 
-# Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef
+# New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability
 
 ## SYNOPSIS
 
-Delete ref of navigation property userFlowIdentityProviders for identity
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityB2XUserFlowIdentityProviderBaseByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlowIdentityProviderBaseByRef?view=graph-powershell-1.0)
+Create a new Microsoft 365 cross-tenant capability for a partner organization in the cross-tenant access policy.
+The @odata.type property in the request body is required to specify which type of capability to create.
 
 ## SYNTAX
 
-### Delete (Default)
+### CreateExpanded (Default)
 
 ```
-Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <string>
- -IdentityProviderBaseId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
+New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability
+ -CrossTenantAccessPolicyConfigurationPartnerTenantId <string> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-Id <string>]
+ [-InboundAccess <IMicrosoftGraphM365CapabilityInboundAccess>] [-LastModifiedDateTime <datetime>]
+ [-Name <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### Create
+
+```
+New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability
+ -CrossTenantAccessPolicyConfigurationPartnerTenantId <string>
+ -BodyParameter <IMicrosoftGraphM365CapabilityBase> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### DeleteViaIdentity
+### CreateViaIdentityExpanded
 
 ```
-Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability -InputObject <IIdentitySignInsIdentity>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
+ [-InboundAccess <IMicrosoftGraphM365CapabilityInboundAccess>] [-LastModifiedDateTime <datetime>]
+ [-Name <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### CreateViaIdentity
+
+```
+New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphM365CapabilityBase> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -48,24 +69,69 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete ref of navigation property userFlowIdentityProviders for identity
+Create a new Microsoft 365 cross-tenant capability for a partner organization in the cross-tenant access policy.
+The @odata.type property in the request body is required to specify which type of capability to create.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
-### -B2XIdentityUserFlowId
+### -AdditionalProperties
 
-The unique identifier of b2xIdentityUserFlow
+Additional Parameters
 
 ```yaml
-Type: System.String
+Type: System.Collections.Hashtable
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+m365CapabilityBase
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphM365CapabilityBase
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentity
   Position: Named
   IsRequired: true
-  ValueFromPipeline: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -108,6 +174,33 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CrossTenantAccessPolicyConfigurationPartnerTenantId
+
+The unique identifier of crossTenantAccessPolicyConfigurationPartner
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -179,9 +272,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IdentityProviderBaseId
+### -Id
 
-The unique identifier of identityProviderBase
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: System.String
@@ -189,9 +283,15 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: CreateViaIdentityExpanded
   Position: Named
-  IsRequired: true
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -200,17 +300,24 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
+### -InboundAccess
 
-ETag
+m365CapabilityInboundAccess
+To construct, see NOTES section for INBOUNDACCESS properties and create a hash table.
 
 ```yaml
-Type: System.String
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphM365CapabilityInboundAccess
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -232,7 +339,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -243,17 +356,53 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PassThru
+### -LastModifiedDateTime
 
-Returns true when the command succeeds
+The automatically updated last modified timestamp for the capability.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
+Type: System.DateTime
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Name
+
+The name or identifier of the capability.
+Key.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -384,13 +533,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphM365CapabilityBase
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphM365CapabilityBase
 
 {{ Fill in the Description }}
 
@@ -401,7 +554,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+BODYPARAMETER <IMicrosoftGraphM365CapabilityBase>: m365CapabilityBase
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [InboundAccess <IMicrosoftGraphM365CapabilityInboundAccess>]: m365CapabilityInboundAccess
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [IsAllowed <Boolean?>]: Indicates whether this capability should be allowed or blocked for inbound access.
+    [ResourceScopes <IMicrosoftGraphM365CapabilityResourceScopes>]: m365CapabilityResourceScopes
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Excluded <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to exclude from the scope.
+If a resource appears in both included and excluded, the excluded property takes precedence.
+        [ResourceId <String>]: The ID of the resource to modify (a user or group ID).
+        [ResourceType <String>]: m365ResourceType
+      [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
+  [LastModifiedDateTime <DateTime?>]: The automatically updated last modified timestamp for the capability.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+  [Name <String>]: The name or identifier of the capability.
+Key.
+
+INBOUNDACCESS <IMicrosoftGraphM365CapabilityInboundAccess>: m365CapabilityInboundAccess
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [IsAllowed <Boolean?>]: Indicates whether this capability should be allowed or blocked for inbound access.
+  [ResourceScopes <IMicrosoftGraphM365CapabilityResourceScopes>]: m365CapabilityResourceScopes
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Excluded <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to exclude from the scope.
+If a resource appears in both included and excluded, the excluded property takes precedence.
+      [ResourceId <String>]: The ID of the resource to modify (a user or group ID).
+      [ResourceType <String>]: m365ResourceType
+    [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
+
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -451,6 +635,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -501,27 +686,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartnerm365capability)
+- [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities?view=graph-rest-beta)

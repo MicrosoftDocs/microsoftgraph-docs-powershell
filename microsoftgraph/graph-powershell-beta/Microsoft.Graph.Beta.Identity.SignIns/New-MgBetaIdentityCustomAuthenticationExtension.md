@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityCustomAuthenticationExtension
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaIdentityCustomAuthenticationExtension
 
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ New-MgBetaIdentityCustomAuthenticationExtension [-ResponseHeadersVariable <strin
  [-DisplayName <string>] [-EndpointConfiguration <hashtable>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -41,7 +38,7 @@ New-MgBetaIdentityCustomAuthenticationExtension
  -BodyParameter <IMicrosoftGraphCustomAuthenticationExtension> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -54,18 +51,9 @@ This cmdlet has the following aliases,
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CustomAuthenticationExtension.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CustomAuthenticationExtension.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create an onTokenIssuanceStartCustomExtension object
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -97,12 +85,7 @@ $params = @{
 
 New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter $params
 
-```
-This example will create an ontokenissuancestartcustomextension object
-
-### Example 2: Create an onAttributeCollectionStartCustomExtension object
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -126,12 +109,7 @@ $params = @{
 
 New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter $params
 
-```
-This example will create an onattributecollectionstartcustomextension object
-
-### Example 3: Create an onAttributeCollectionSubmitCustomExtension object
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -154,10 +132,6 @@ $params = @{
 }
 
 New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter $params
-
-```
-This example will create an onattributecollectionsubmitcustomextension object
-
 
 ## PARAMETERS
 
@@ -596,7 +570,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCustomAuthenticationExtension>`: customAuthenticationExtension
+BODYPARAMETER <IMicrosoftGraphCustomAuthenticationExtension>: customAuthenticationExtension
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]: customExtensionAuthenticationConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -617,7 +591,7 @@ Read-only.
   [BehaviorOnError <IMicrosoftGraphCustomExtensionBehaviorOnError>]: customExtensionBehaviorOnError
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
+CLIENTCONFIGURATION <IMicrosoftGraphCustomExtensionClientConfiguration>: customExtensionClientConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MaximumRetries <Int32?>]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
@@ -629,27 +603,5 @@ If null, the default for the service applies.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityCustomAuthenticationExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension)
+- [](https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-beta)

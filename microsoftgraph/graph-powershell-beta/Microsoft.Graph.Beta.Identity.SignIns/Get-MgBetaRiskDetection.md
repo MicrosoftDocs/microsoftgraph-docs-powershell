@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaRiskDetection
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaRiskDetection
 ## SYNOPSIS
 
 Retrieve the properties of a riskDetection object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskDetection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgBetaRiskDetection [-ExpandProperty <string[]>] [-Property <string[]>] [-Fi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +34,7 @@ Get-MgBetaRiskDetection [-ExpandProperty <string[]>] [-Property <string[]>] [-Fi
 Get-MgBetaRiskDetection -RiskDetectionId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +43,7 @@ Get-MgBetaRiskDetection -RiskDetectionId <string> [-ExpandProperty <string[]>]
 Get-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -58,17 +55,10 @@ This cmdlet has the following aliases,
 
 Retrieve the properties of a riskDetection object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskEvent.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskEvent.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get all riskDetections
-```powershell
+
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -All | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
 
@@ -82,12 +72,9 @@ Jason Mayer     unlikelyTravel                medium    4/21/2022 10:42:04 PM
 Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
 Alice Su        unfamiliarFeatures            low       5/2/2022 12:01:44 AM
 Alice Su        unlikelyTravel                low       5/2/2022 2:16:22 AM
-```
 
-This command returns a list of all users.
+### EXAMPLE 2
 
-### Example 2: Get riskDetections by user displayname
-```powershell
 Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "UserDisplayname eq 'Jason Mayer'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
 
@@ -99,12 +86,9 @@ Jason Mayer     anonymizedIPAddress           high      4/21/2022 9:50:28 PM
 Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
 Jason Mayer     unlikelyTravel                medium    4/21/2022 10:42:04 PM
 Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
-```
 
-This command returns all risk detections for the specified user 
+### EXAMPLE 3
 
-### Example 3: Get riskDetections by risk type
-```powershell
 Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "RiskType eq 'anonymizedIPAddress'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
 
@@ -113,12 +97,9 @@ UserDisplayName RiskType            RiskLevel DetectedDateTime
 Jason Mayer     anonymizedIPAddress high      4/21/2022 9:50:28 PM
 Jason Mayer     anonymizedIPAddress medium    4/19/2022 10:44:40 PM
 Alex  Su        anonymizedIPAddress high      6/9/2022 4:31:19 AM
-```
 
-This command returns all risk detections for the anonymizedIPAddress risk detection
+### EXAMPLE 4
 
-### Example 4: Get all riskDetections for a particular user with high risk
-```powershell
 Connect-MgGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "UserDisplayName eq 'Jason Mayer' and Risklevel eq 'high'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
 
@@ -126,8 +107,6 @@ UserDisplayName RiskType                      RiskLevel DetectedDateTime
 --------------- --------                      --------- ----------------
 Jason Mayer     anonymizedIPAddress           high      4/21/2022 9:50:28 PM
 Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
-```
-This command returns all risk detections with high risks for the specified user 
 
 ## PARAMETERS
 
@@ -589,7 +568,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -639,6 +618,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -689,28 +669,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskdetection-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskdetection-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection)
+- [](https://learn.microsoft.com/graph/api/riskdetection-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/riskdetection-list?view=graph-rest-beta)

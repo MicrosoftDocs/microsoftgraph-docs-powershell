@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyagentsafe
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgBetaRiskyAgentSafe
 ---
@@ -25,7 +25,6 @@ Confirm-MgBetaRiskyAgentSafe [-ResponseHeadersVariable <string>] [-AdditionalPro
  [-AgentIds <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Confirm
@@ -36,7 +35,6 @@ Confirm-MgBetaRiskyAgentSafe
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,13 +47,20 @@ This cmdlet has the following aliases,
 Confirm one or more riskyAgent objects as safe.
 This action sets the targeted agent's riskLevel to none.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskyAgent.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskyAgent.ReadWrite.All,  |
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	agentIds = @(
+	"29f270bb-4d23-4f68-8a57-dc73dc0d4caf"
+"20f91ec9-d140-4d90-9cd9-f618587a1471"
+)
+}
+
+Confirm-MgBetaRiskyAgentSafe -BodyParameter $params
 
 ## PARAMETERS
 
@@ -82,7 +87,7 @@ HelpMessage: ''
 
 ### -AgentIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -103,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -387,35 +392,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsTohbfIdentityprotectionRiskyagentsMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsTohbfIdentityprotectionRiskyagentsMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AgentIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Confirm-MgBetaRiskyAgentSafe](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyagentsafe)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyagent-confirmsafe?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyagentsafe)
+- [](https://learn.microsoft.com/graph/api/riskyagent-confirmsafe?view=graph-rest-beta)

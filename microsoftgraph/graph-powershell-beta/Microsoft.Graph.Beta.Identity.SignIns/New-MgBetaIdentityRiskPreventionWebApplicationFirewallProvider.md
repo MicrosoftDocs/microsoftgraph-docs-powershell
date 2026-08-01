@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
 ---
@@ -16,9 +16,6 @@ title: New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
 Create a new webApplicationFirewallProvider object.
 You can create one of the following subtypes that are derived from webApplicationFirewallProvider.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityRiskPreventionWebApplicationFirewallProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityRiskPreventionWebApplicationFirewallProvider?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -28,7 +25,7 @@ New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider [-ResponseHeaders
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +35,7 @@ New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
  -BodyParameter <IMicrosoftGraphWebApplicationFirewallProvider> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -50,6 +47,36 @@ This cmdlet has the following aliases,
 
 Create a new webApplicationFirewallProvider object.
 You can create one of the following subtypes that are derived from webApplicationFirewallProvider.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.akamaiWebApplicationFirewallProvider"
+	displayName = "Akamai Provider Example"
+	hostPrefix = "akab-exampleprefix"
+	clientSecret = "akamai_example_secret_123"
+	clientToken = "akamai_example_token_456"
+	accessToken = "akamai_example_token_789"
+}
+
+New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudFlareWebApplicationFirewallProvider"
+	displayName = "Cloudflare Provider Example"
+	zoneId = "11111111111111111111111111111111"
+	apiToken = "cf_example_token_123"
+}
+
+New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -BodyParameter $params
 
 ## PARAMETERS
 
@@ -382,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWebApplicationFirewallProvider>`: webApplicationFirewallProvider
+BODYPARAMETER <IMicrosoftGraphWebApplicationFirewallProvider>: webApplicationFirewallProvider
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -391,28 +418,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallprovider)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-webapplicationfirewallproviders?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallprovider)
+- [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-webapplicationfirewallproviders?view=graph-rest-beta)

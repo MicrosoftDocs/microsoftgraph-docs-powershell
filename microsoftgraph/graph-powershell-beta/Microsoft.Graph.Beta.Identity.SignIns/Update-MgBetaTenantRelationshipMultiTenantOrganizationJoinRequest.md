@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationjoinrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
 ---
@@ -18,9 +18,6 @@ Before a tenant added to a multi-tenant organization can participate in the mult
 To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -32,7 +29,7 @@ Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
  [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -43,7 +40,6 @@ Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -58,18 +54,9 @@ Before a tenant added to a multi-tenant organization can participate in the mult
 To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | MultiTenantOrganization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | MultiTenantOrganization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Join a multi-tenant organization
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -79,12 +66,7 @@ $params = @{
 
 Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest -BodyParameter $params
 
-```
-This example will join a multi-tenant organization
-
-### Example 2: Reset a failed join request
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -93,10 +75,6 @@ $params = @{
 }
 
 Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest -BodyParameter $params
-
-```
-This example will reset a failed join request
-
 
 ## PARAMETERS
 
@@ -495,7 +473,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>`: multiTenantOrganizationJoinRequestRecord
+BODYPARAMETER <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>: multiTenantOrganizationJoinRequestRecord
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -511,7 +489,7 @@ Required.
 Read-only.
     [Status <String>]: multiTenantOrganizationMemberProcessingStatus
 
-TRANSITIONDETAILS `<IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>`: multiTenantOrganizationJoinRequestTransitionDetails
+TRANSITIONDETAILS <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>: multiTenantOrganizationJoinRequestTransitionDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DesiredMemberState <String>]: multiTenantOrganizationMemberState
   [Details <String>]: Details that explain the processing status if any.
@@ -521,27 +499,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationjoinrequest)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganizationjoinrequestrecord-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationjoinrequest)
+- [](https://learn.microsoft.com/graph/api/multitenantorganizationjoinrequestrecord-update?view=graph-rest-beta)

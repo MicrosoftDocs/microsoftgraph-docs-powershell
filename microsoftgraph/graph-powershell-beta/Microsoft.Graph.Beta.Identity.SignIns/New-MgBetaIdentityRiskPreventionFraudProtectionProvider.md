@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionfraudprotectionprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityRiskPreventionFraudProtectionProvider
 ---
@@ -16,9 +16,6 @@ title: New-MgBetaIdentityRiskPreventionFraudProtectionProvider
 Create a new fraudProtectionProvider object.
 You can create one of the following subtypes that are derived from fraudProtectionProvider.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityRiskPreventionFraudProtectionProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityRiskPreventionFraudProtectionProvider?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -28,7 +25,7 @@ New-MgBetaIdentityRiskPreventionFraudProtectionProvider [-ResponseHeadersVariabl
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +35,7 @@ New-MgBetaIdentityRiskPreventionFraudProtectionProvider
  -BodyParameter <IMicrosoftGraphFraudProtectionProvider> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -50,6 +47,36 @@ This cmdlet has the following aliases,
 
 Create a new fraudProtectionProvider object.
 You can create one of the following subtypes that are derived from fraudProtectionProvider.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.arkoseFraudProtectionProvider"
+	displayName = "Arkose Sign-Up Protection"
+	publicKey = "A1EE42E0-C88B-47FE-A176-5E9FB8F116FB"
+	privateKey = "19BBE628-7DEF-4E28-AB25-BF129C760B7E"
+	clientSubDomain = "client-api"
+	verifySubDomain = "verify-api"
+}
+
+New-MgBetaIdentityRiskPreventionFraudProtectionProvider -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.humanSecurityFraudProtectionProvider"
+	displayName = "HUMAN Security Sign-Up Protection"
+	appId = "XXyy1XXXy"
+	serverToken = "xxYYxxXXX1"
+}
+
+New-MgBetaIdentityRiskPreventionFraudProtectionProvider -BodyParameter $params
 
 ## PARAMETERS
 
@@ -382,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFraudProtectionProvider>`: fraudProtectionProvider
+BODYPARAMETER <IMicrosoftGraphFraudProtectionProvider>: fraudProtectionProvider
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -391,28 +418,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityRiskPreventionFraudProtectionProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionfraudprotectionprovider)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-fraudprotectionproviders?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionfraudprotectionprovider)
+- [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-fraudprotectionproviders?view=graph-rest-beta)

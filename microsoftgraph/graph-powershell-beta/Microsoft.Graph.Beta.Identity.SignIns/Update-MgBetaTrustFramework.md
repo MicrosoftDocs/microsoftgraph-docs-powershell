@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframework
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTrustFramework
 ---
@@ -25,7 +25,6 @@ Update-MgBetaTrustFramework [-ResponseHeadersVariable <string>] [-AdditionalProp
  [-Policies <IMicrosoftGraphTrustFrameworkPolicy[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -35,7 +34,6 @@ Update-MgBetaTrustFramework -BodyParameter <IMicrosoftGraphTrustFramework>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -46,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update trustFramework
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -200,7 +208,7 @@ HelpMessage: ''
 
 ### -KeySets
 
-
+.
 To construct, see NOTES section for KEYSETS properties and create a hash table.
 
 ```yaml
@@ -222,7 +230,7 @@ HelpMessage: ''
 
 ### -Policies
 
-
+.
 To construct, see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
@@ -379,7 +387,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTrustFramework>`: trustFramework
+BODYPARAMETER <IMicrosoftGraphTrustFramework>: trustFramework
   [(Any) <Object>]: This indicates any property can be added to this object.
   [KeySets <IMicrosoftGraphTrustFrameworkKeySet[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -529,27 +537,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaTrustFramework](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframework)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframework)

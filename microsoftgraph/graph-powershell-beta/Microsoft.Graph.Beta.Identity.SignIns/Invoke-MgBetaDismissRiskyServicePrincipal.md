@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDismissRiskyServicePrincipal
 ---
@@ -17,9 +17,6 @@ Dismiss the risk of one or more riskyServicePrincipal objects.
 This action sets the targeted service principal account's risk level to none.
 You can dismiss up to 60 service principal accounts in one request.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyServicePrincipal?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### DismissExpanded (Default)
@@ -30,7 +27,6 @@ Invoke-MgBetaDismissRiskyServicePrincipal [-ResponseHeadersVariable <string>]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Dismiss
@@ -41,7 +37,6 @@ Invoke-MgBetaDismissRiskyServicePrincipal
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -55,18 +50,9 @@ Dismiss the risk of one or more riskyServicePrincipal objects.
 This action sets the targeted service principal account's risk level to none.
 You can dismiss up to 60 service principal accounts in one request.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskyServicePrincipal.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskyServicePrincipal.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -77,10 +63,6 @@ $params = @{
 }
 
 Invoke-MgBetaDismissRiskyServicePrincipal -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaDismissRiskyServicePrincipal Cmdlet.
-
 
 ## PARAMETERS
 
@@ -107,7 +89,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -341,7 +323,7 @@ HelpMessage: ''
 
 ### -ServicePrincipalIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -412,34 +394,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ServicePrincipalIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaDismissRiskyServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal)
+- [](https://learn.microsoft.com/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta)

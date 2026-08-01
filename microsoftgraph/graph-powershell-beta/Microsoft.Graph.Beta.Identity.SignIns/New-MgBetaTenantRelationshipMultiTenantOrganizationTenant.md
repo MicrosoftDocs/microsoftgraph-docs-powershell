@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipMultiTenantOrganizationTenant
 ---
@@ -18,9 +18,6 @@ The administrator of an owner tenant has the permissions to add tenants to the m
 The added tenant is in the pending state until the administrator of the added tenant joins the multitenant organization by submitting a join request.
 A tenant can be part of only one multitenant organization.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -33,7 +30,7 @@ New-MgBetaTenantRelationshipMultiTenantOrganizationTenant [-ResponseHeadersVaria
  [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -43,7 +40,7 @@ New-MgBetaTenantRelationshipMultiTenantOrganizationTenant
  -BodyParameter <IMicrosoftGraphMultiTenantOrganizationMember> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -58,18 +55,9 @@ The administrator of an owner tenant has the permissions to add tenants to the m
 The added tenant is in the pending state until the administrator of the added tenant joins the multitenant organization by submitting a join request.
 A tenant can be part of only one multitenant organization.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | MultiTenantOrganization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | MultiTenantOrganization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -79,10 +67,6 @@ $params = @{
 }
 
 New-MgBetaTenantRelationshipMultiTenantOrganizationTenant -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTenantRelationshipMultiTenantOrganizationTenant Cmdlet.
-
 
 ## PARAMETERS
 
@@ -590,7 +574,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMultiTenantOrganizationMember>`: multiTenantOrganizationMember
+BODYPARAMETER <IMicrosoftGraphMultiTenantOrganizationMember>: multiTenantOrganizationMember
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -616,7 +600,7 @@ Key.
 Read-only.
     [Status <String>]: multiTenantOrganizationMemberProcessingStatus
 
-TRANSITIONDETAILS `<IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>`: multiTenantOrganizationMemberTransitionDetails
+TRANSITIONDETAILS <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>: multiTenantOrganizationMemberTransitionDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DesiredRole <String>]: multiTenantOrganizationMemberRole
   [DesiredState <String>]: multiTenantOrganizationMemberState
@@ -627,27 +611,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaTenantRelationshipMultiTenantOrganizationTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganization-post-tenants?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant)
+- [](https://learn.microsoft.com/graph/api/multitenantorganization-post-tenants?view=graph-rest-beta)

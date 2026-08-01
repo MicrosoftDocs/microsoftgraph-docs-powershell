@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityVerifiedId
 ---
@@ -24,7 +24,7 @@ Update-MgBetaIdentityVerifiedId [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Id <string>] [-Profiles <IMicrosoftGraphVerifiedIdProfile[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -34,7 +34,6 @@ Update-MgBetaIdentityVerifiedId -BodyParameter <IMicrosoftGraphIdentityVerifiedI
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -45,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property verifiedId in identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -378,7 +387,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityVerifiedIdRoot>`: identityVerifiedIdRoot
+BODYPARAMETER <IMicrosoftGraphIdentityVerifiedIdRoot>: identityVerifiedIdRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -391,7 +400,8 @@ Required.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [IsEnabled <Boolean?>]: Defines if Face Check is required.
 Currently must always be true.
-      [SourcePhotoClaimName <String>]: 
+      [SourcePhotoClaimName <String>]: Source of photo to validate Face Check against.
+Currently must always be portrait
     [LastModifiedDateTime <DateTime?>]: DateTime the profile was last modified.
 Optional.
     [Name <String>]: Display name for the verified ID profile.
@@ -404,8 +414,13 @@ Optional.
       [AcceptedIssuer <String>]: Trusted Verified ID issuer.
       [ClaimBindingSource <String>]: claimBindingSource
       [ClaimBindings <IMicrosoftGraphClaimBinding[]>]: Claim bindings from Verified ID to source attributes.
+        [MatchConfidenceLevel <String>]: matchConfidenceLevel
         [SourceAttribute <String>]: Source attribute value
         [VerifiedIdClaim <String>]: Entra ID attribute value
+      [ClaimValidation <IMicrosoftGraphClaimValidation>]: claimValidation
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [CustomExtensionId <String>]: The identifier of a custom extension for claim validation.
+        [IsEnabled <Boolean?>]: Indicates whether claim validation is enabled.
       [Type <String>]: Verified ID type.
     [VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]: Collection defining the usage purpose for the profile.
 The possible values are: recovery, onboarding, all, unknownFutureValue.
@@ -424,7 +439,8 @@ Required.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IsEnabled <Boolean?>]: Defines if Face Check is required.
 Currently must always be true.
-    [SourcePhotoClaimName <String>]: 
+    [SourcePhotoClaimName <String>]: Source of photo to validate Face Check against.
+Currently must always be portrait
   [LastModifiedDateTime <DateTime?>]: DateTime the profile was last modified.
 Optional.
   [Name <String>]: Display name for the verified ID profile.
@@ -437,8 +453,13 @@ Optional.
     [AcceptedIssuer <String>]: Trusted Verified ID issuer.
     [ClaimBindingSource <String>]: claimBindingSource
     [ClaimBindings <IMicrosoftGraphClaimBinding[]>]: Claim bindings from Verified ID to source attributes.
+      [MatchConfidenceLevel <String>]: matchConfidenceLevel
       [SourceAttribute <String>]: Source attribute value
       [VerifiedIdClaim <String>]: Entra ID attribute value
+    [ClaimValidation <IMicrosoftGraphClaimValidation>]: claimValidation
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [CustomExtensionId <String>]: The identifier of a custom extension for claim validation.
+      [IsEnabled <Boolean?>]: Indicates whether claim validation is enabled.
     [Type <String>]: Verified ID type.
   [VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]: Collection defining the usage purpose for the profile.
 The possible values are: recovery, onboarding, all, unknownFutureValue.
@@ -451,27 +472,4 @@ Required.
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityVerifiedId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedid)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedid)
