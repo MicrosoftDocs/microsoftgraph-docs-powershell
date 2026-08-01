@@ -81,8 +81,9 @@ For more information about this conversion, see Convert external users to intern
 | Application | User-ConvertToInternal.ReadWrite.All, User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Convert a cloud user and require them to reset their password on next sign in
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -96,7 +97,12 @@ $params = @{
 
 Convert-MgBetaUserExternalToInternalMemberUser -UserId $userId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will convert a cloud user and require them to reset their password on next sign in
+
+### Example 2: Convert a cloud user, change their mail address, and require password reset on next sign in
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -111,11 +117,20 @@ $params = @{
 
 Convert-MgBetaUserExternalToInternalMemberUser -UserId $userId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will convert a cloud user, change their mail address, and require password reset on next sign in
+
+### Example 3: Convert external User to internal for a user synchronized from on-premises AD
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
 Convert-MgBetaUserExternalToInternalMemberUser -UserId $userId
+
+```
+This example will convert external user to internal for a user synchronized from on-premises ad
+
 
 ## PARAMETERS
 
