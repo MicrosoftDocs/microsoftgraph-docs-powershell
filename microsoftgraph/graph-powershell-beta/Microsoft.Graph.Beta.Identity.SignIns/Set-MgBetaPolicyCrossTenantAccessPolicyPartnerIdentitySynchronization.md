@@ -74,6 +74,14 @@ This cmdlet has the following aliases,
 
 Create a cross-tenant user and optionally group synchronization policy for a partner-specific configuration.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.CrossTenantAccess,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.CrossTenantAccess,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
