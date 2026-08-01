@@ -44,14 +44,17 @@ Read the properties of an ownerlessGroupPolicy object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
-{{ Add code here }}
+Import-Module Microsoft.Graph.Identity.SignIns
 
-### EXAMPLE 2
+Get-MgPolicyOwnerlessGroupPolicy
 
-{{ Add code here }}
+```
+This example shows how to use the Get-MgPolicyOwnerlessGroupPolicy Cmdlet.
+
 
 ## PARAMETERS
 

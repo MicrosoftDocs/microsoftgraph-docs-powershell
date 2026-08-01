@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to authenticationMethodConfigurations for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -430,6 +420,7 @@ EXCLUDETARGETS <IMicrosoftGraphExcludeTarget[]>: Groups of users that are exclud
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
+
 
 
 
