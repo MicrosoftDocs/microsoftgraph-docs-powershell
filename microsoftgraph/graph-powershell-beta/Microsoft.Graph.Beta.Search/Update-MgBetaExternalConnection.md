@@ -1312,8 +1312,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnection)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-beta)
+- [Update-MgBetaExternalConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-beta)
 
 
 

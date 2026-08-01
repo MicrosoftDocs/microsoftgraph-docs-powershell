@@ -1086,8 +1086,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-beta)
+- [New-MgBetaExternalConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-beta)
 
 
 

@@ -358,7 +358,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflowcount)
+- [Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlowCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflowcount)
 
 
 

@@ -644,7 +644,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionitemactivity)
+- [Update-MgBetaExternalConnectionItemActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionitemactivity)
 
 
 
