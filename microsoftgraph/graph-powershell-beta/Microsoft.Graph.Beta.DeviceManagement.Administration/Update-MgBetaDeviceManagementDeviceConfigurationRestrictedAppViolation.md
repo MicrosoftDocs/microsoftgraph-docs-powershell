@@ -718,7 +718,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphRestrictedAppsViolation>: Violation of restricted apps configuration profile per device per user
+BODYPARAMETER `<IMicrosoftGraphRestrictedAppsViolation>`: Violation of restricted apps configuration profile per device per user
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -733,7 +733,7 @@ Read-only.
   [UserId <String>]: User unique identifier, must be Guid
   [UserName <String>]: User name
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -798,3 +798,25 @@ RESTRICTEDAPPS <IMicrosoftGraphManagedDeviceReportedApp[]>: List of violated res
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
