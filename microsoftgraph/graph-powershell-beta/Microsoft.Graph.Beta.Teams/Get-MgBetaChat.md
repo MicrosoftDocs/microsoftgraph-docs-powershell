@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaChat
 ---
@@ -17,9 +17,6 @@ Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgChat](/powershell/module/Microsoft.Graph.Teams/Get-MgChat?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -30,7 +27,7 @@ Get-MgBetaChat [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter <str
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -39,7 +36,7 @@ Get-MgBetaChat [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter <str
 Get-MgBetaChat -ChatId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +45,7 @@ Get-MgBetaChat -ChatId <string> [-ExpandProperty <string[]>] [-Property <string[
 Get-MgBetaChat -InputObject <ITeamsIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -62,59 +59,31 @@ Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ReadBasic.All, ChatSettings.ReadWrite.Chat, ChatSettings.Read.Chat, Chat.Read.All, Chat.Manage.Chat,  |
-
 ## EXAMPLES
-### Example 1: Get a group chat
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaChat -ChatId $chatId
-
-```
-This example will get a group chat
-
-### Example 2: Get a chat and all its members
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaChat -ChatId $chatId -ExpandProperty "members" 
-
-```
-This example will get a chat and all its members
-
-### Example 3: Get the meeting details of a chat associated with a Microsoft Teams meeting
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaChat -ChatId $chatId
 
-```
-This example will get the meeting details of a chat associated with a microsoft teams meeting
-
-### Example 4: Get the chat along with the preview of the last message sent in the chat
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaChat -ChatId $chatId -ExpandProperty "lastMessagePreview" 
+Get-MgBetaChat -ChatId $chatId -ExpandProperty "members"
 
-```
-This example will get the chat along with the preview of the last message sent in the chat
+### EXAMPLE 3
 
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaChat -ChatId $chatId
+
+### EXAMPLE 4
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaChat -ChatId $chatId -ExpandProperty "lastMessagePreview"
 
 ## PARAMETERS
 
@@ -576,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -626,28 +595,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaChat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachat)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachat)
+- [](https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/copy-mgbetagroupteam
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaGroupTeam
 ---
@@ -14,16 +14,13 @@ title: Copy-MgBetaGroupTeam
 ## SYNOPSIS
 
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.\rYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
+This operation also creates a copy of the corresponding group.\r\nYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
 The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen.
-\rIf the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
+\r\nIf the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
 Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgGroupTeam](/powershell/module/Microsoft.Graph.Teams/Copy-MgGroupTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,7 +33,6 @@ Copy-MgBetaGroupTeam -GroupId <string> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Clone
@@ -47,7 +43,6 @@ Copy-MgBetaGroupTeam -GroupId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CloneViaIdentityExpanded
@@ -59,7 +54,6 @@ Copy-MgBetaGroupTeam -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <st
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CloneViaIdentity
@@ -70,7 +64,6 @@ Copy-MgBetaGroupTeam -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -81,13 +74,23 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.\rYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
+This operation also creates a copy of the corresponding group.\r\nYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
 The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen.
-\rIf the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
+\r\nIf the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
 Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -120,7 +123,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -169,7 +172,7 @@ HelpMessage: ''
 
 ### -Classification
 
-
+.
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -390,7 +393,7 @@ HelpMessage: ''
 
 ### -MailNickname
 
-
+.
 
 ```yaml
 Type: System.String
@@ -631,7 +634,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Umefn4GroupsGroupIdTeamMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Umefn4GroupsGroupIdTeamMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Classification <String>]: 
   [Description <String>]: 
@@ -640,7 +643,7 @@ BODYPARAMETER `<IPaths1Umefn4GroupsGroupIdTeamMicrosoftGraphClonePostRequestbody
   [PartsToClone <String>]: clonableTeamParts
   [Visibility <String>]: teamVisibilityType
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -690,28 +693,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Copy-MgBetaGroupTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/copy-mgbetagroupteam)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-clone?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/copy-mgbetagroupteam)
+- [](https://learn.microsoft.com/graph/api/team-clone?view=graph-rest-beta)

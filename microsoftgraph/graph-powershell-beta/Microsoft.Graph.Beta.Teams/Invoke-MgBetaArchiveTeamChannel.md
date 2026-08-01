@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteamchannel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaArchiveTeamChannel
 ---
@@ -22,9 +22,6 @@ A channel without an owner or that belongs to a group that has no owner, can't b
 To restore a channel from its archived state, use the channel: unarchive method.
 A channel can’t be archived or unarchived if its team is archived.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgArchiveTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgArchiveTeamChannel?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### ArchiveExpanded (Default)
@@ -35,7 +32,6 @@ Invoke-MgBetaArchiveTeamChannel -ChannelId <string> -TeamId <string>
  [-ShouldSetSpoSiteReadOnlyForMembers] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Archive
@@ -46,7 +42,6 @@ Invoke-MgBetaArchiveTeamChannel -ChannelId <string> -TeamId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ArchiveViaIdentityExpanded
@@ -57,7 +52,6 @@ Invoke-MgBetaArchiveTeamChannel -InputObject <ITeamsIdentity> [-ResponseHeadersV
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ArchiveViaIdentity
@@ -68,7 +62,6 @@ Invoke-MgBetaArchiveTeamChannel -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -87,37 +80,19 @@ A channel without an owner or that belongs to a group that has no owner, can't b
 To restore a channel from its archived state, use the channel: unarchive method.
 A channel can’t be archived or unarchived if its team is archived.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChannelSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Archive a channel
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Teams
-
-Invoke-MgBetaArchiveTeamChannel -TeamId $teamId -ChannelId $channelId
-
-```
-This example will archive a channel
-
-### Example 2: Archive a channel when the team is archived
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Invoke-MgBetaArchiveTeamChannel -TeamId $teamId -ChannelId $channelId
 
-```
-This example will archive a channel when the team is archived
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Teams
+
+Invoke-MgBetaArchiveTeamChannel -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
@@ -150,7 +125,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -445,7 +420,7 @@ HelpMessage: ''
 
 ### -ShouldSetSpoSiteReadOnlyForMembers
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -553,11 +528,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1R5Aj03TeamsTeamIdChannelsChannelIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1R5Aj03TeamsTeamIdChannelsChannelIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ShouldSetSpoSiteReadOnlyForMembers <Boolean?>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -607,27 +582,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaArchiveTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteamchannel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-archive?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteamchannel)
+- [](https://learn.microsoft.com/graph/api/channel-archive?view=graph-rest-beta)

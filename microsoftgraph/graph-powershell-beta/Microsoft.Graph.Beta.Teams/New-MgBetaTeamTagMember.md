@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtagmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTeamTagMember
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaTeamTagMember
 
 Create a new teamworkTagMember object in a team.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamTagMember?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,7 +24,7 @@ New-MgBetaTeamTagMember -TeamId <string> -TeamworkTagId <string> [-ResponseHeade
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-TenantId <string>]
  [-UserId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -37,7 +34,7 @@ New-MgBetaTeamTagMember -TeamId <string> -TeamworkTagId <string>
  -BodyParameter <IMicrosoftGraphTeamworkTagMember> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -47,7 +44,7 @@ New-MgBetaTeamTagMember -InputObject <ITeamsIdentity> [-ResponseHeadersVariable 
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-TenantId <string>]
  [-UserId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -57,7 +54,7 @@ New-MgBetaTeamTagMember -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphTeamworkTagMember> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -70,9 +67,8 @@ This cmdlet has the following aliases,
 Create a new teamworkTagMember object in a team.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -81,10 +77,6 @@ $params = @{
 }
 
 New-MgBetaTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeamTagMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -581,7 +573,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkTagMember>`: teamworkTagMember
+BODYPARAMETER <IMicrosoftGraphTeamworkTagMember>: teamworkTagMember
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -589,7 +581,7 @@ Read-only.
   [TenantId <String>]: The ID of the tenant that the tag member is a part of.
   [UserId <String>]: The user ID of the member.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -639,27 +631,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaTeamTagMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtagmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtagmember)
+- [](https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-beta)

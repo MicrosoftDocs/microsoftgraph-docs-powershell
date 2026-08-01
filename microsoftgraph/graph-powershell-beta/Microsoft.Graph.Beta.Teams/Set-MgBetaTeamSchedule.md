@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamschedule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaTeamSchedule
 ---
@@ -14,13 +14,10 @@ title: Set-MgBetaTeamSchedule
 ## SYNOPSIS
 
 Create or replace a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\rWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\r\nWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamSchedule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,7 +41,7 @@ Set-MgBetaTeamSchedule -TeamId <string> [-ResponseHeadersVariable <string>]
  [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Set
@@ -54,7 +51,6 @@ Set-MgBetaTeamSchedule -TeamId <string> -BodyParameter <IMicrosoftGraphSchedule>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -77,7 +73,7 @@ Set-MgBetaTeamSchedule -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <
  [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### SetViaIdentity
@@ -87,7 +83,6 @@ Set-MgBetaTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -98,23 +93,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create or replace a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\rWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\r\nWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Update a schedule
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -125,12 +111,7 @@ $params = @{
 
 Set-MgBetaTeamSchedule -TeamId $teamId -BodyParameter $params
 
-```
-This example will update a schedule
-
-### Example 2: Enable location detection for time clock
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -151,10 +132,6 @@ $params = @{
 }
 
 Set-MgBetaTeamSchedule -TeamId $teamId -BodyParameter $params
-
-```
-This example will enable location detection for time clock
-
 
 ## PARAMETERS
 
@@ -1291,7 +1268,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSchedule>`: schedule
+BODYPARAMETER <IMicrosoftGraphSchedule>: schedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1579,7 +1556,7 @@ Read-only.
     [ContentType <String>]: bodyType
   [SharedDayNote <IMicrosoftGraphItemBody>]: itemBody
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1894,7 +1871,7 @@ If both are included in the request with different values, the value for isAtApp
   [State <String>]: timeCardState
   [UserId <String>]: User ID to which  the timeCard belongs.
 
-TIMECLOCKSETTINGS `<IMicrosoftGraphTimeClockSettings>`: timeClockSettings
+TIMECLOCKSETTINGS <IMicrosoftGraphTimeClockSettings>: timeClockSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApprovedLocation <IMicrosoftGraphGeoCoordinates>]: geoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1996,27 +1973,5 @@ Required.
 
 ## RELATED LINKS
 
-- [Set-MgBetaTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamschedule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamschedule)
+- [](https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaChatTab
 ---
@@ -14,10 +14,7 @@ title: New-MgBetaChatTab
 ## SYNOPSIS
 
 Add (pin) a tab to the specified chat.
-\rThe corresponding app must already be installed in the chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgChatTab](/powershell/module/Microsoft.Graph.Teams/New-MgChatTab?view=graph-powershell-1.0)
+\r\nThe corresponding app must already be installed in the chat.
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ New-MgBetaChatTab -ChatId <string> [-ResponseHeadersVariable <string>]
  [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppId <string>] [-WebUrl <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -40,7 +37,6 @@ New-MgBetaChatTab -ChatId <string> -BodyParameter <IMicrosoftGraphTeamsTab>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -52,7 +48,7 @@ New-MgBetaChatTab -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <strin
  [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppId <string>] [-WebUrl <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -62,7 +58,6 @@ New-MgBetaChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,20 +68,11 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Add (pin) a tab to the specified chat.
-\rThe corresponding app must already be installed in the chat.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWriteSelfForChat, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsTab.Create, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWrite.All, TeamsTab.Create.Chat,  |
+\r\nThe corresponding app must already be installed in the chat.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -102,10 +88,6 @@ $params = @{
 }
 
 New-MgBetaChatTab -ChatId $chatId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaChatTab Cmdlet.
-
 
 ## PARAMETERS
 
@@ -410,7 +392,7 @@ HelpMessage: ''
 
 ### -MessageId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -688,7 +670,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsTab>`: teamsTab
+BODYPARAMETER <IMicrosoftGraphTeamsTab>: teamsTab
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -788,7 +770,7 @@ Because this property is deprecated, we recommend expanding teamsApp to retrieve
   [WebUrl <String>]: Deep link URL of the tab instance.
 Read only.
 
-CONFIGURATION `<IMicrosoftGraphTeamsTabConfiguration>`: teamsTabConfiguration
+CONFIGURATION <IMicrosoftGraphTeamsTabConfiguration>: teamsTabConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentUrl <String>]: Url used for rendering tab contents in Teams.
 Required.
@@ -796,7 +778,7 @@ Required.
   [RemoveUrl <String>]: Url called by Teams client when a Tab is removed using the Teams Client.
   [WebsiteUrl <String>]: Url for showing tab contents outside of Teams.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -843,7 +825,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-TEAMSAPP `<IMicrosoftGraphTeamsApp>`: teamsApp
+TEAMSAPP <IMicrosoftGraphTeamsApp>: teamsApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -927,27 +909,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgBetaChatTab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab)
+- [](https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-beta)

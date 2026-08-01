@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasharegroupteamschedule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaShareGroupTeamSchedule
 ---
@@ -20,9 +20,6 @@ The draft version is viewable only by managers, and the shared version is viewab
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgShareGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Invoke-MgShareGroupTeamSchedule?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### ShareExpanded (Default)
@@ -33,7 +30,6 @@ Invoke-MgBetaShareGroupTeamSchedule -GroupId <string> [-ResponseHeadersVariable 
  [-StartDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Share
@@ -44,7 +40,6 @@ Invoke-MgBetaShareGroupTeamSchedule -GroupId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ShareViaIdentityExpanded
@@ -55,7 +50,6 @@ Invoke-MgBetaShareGroupTeamSchedule -InputObject <ITeamsIdentity>
  [-NotifyTeam] [-StartDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ShareViaIdentity
@@ -66,7 +60,6 @@ Invoke-MgBetaShareGroupTeamSchedule -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -82,6 +75,16 @@ Each shift, openshift and timeOff instance in a schedule supports a draft versio
 The draft version is viewable only by managers, and the shared version is viewable by employees and managers.
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -114,7 +117,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -185,7 +188,7 @@ HelpMessage: ''
 
 ### -EndDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -330,7 +333,7 @@ HelpMessage: ''
 
 ### -NotifyTeam
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -463,7 +466,7 @@ HelpMessage: ''
 
 ### -StartDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -544,13 +547,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1N3C8HgGroupsGroupIdTeamScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1N3C8HgGroupsGroupIdTeamScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [NotifyTeam <Boolean?>]: 
   [StartDateTime <DateTime?>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -600,28 +603,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaShareGroupTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasharegroupteamschedule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-share?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasharegroupteamschedule)
+- [](https://learn.microsoft.com/graph/api/schedule-share?view=graph-rest-beta)

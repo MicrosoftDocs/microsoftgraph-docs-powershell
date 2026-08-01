@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetauserchatactivitynotification
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgBetaUserChatActivityNotification
 ---
@@ -15,9 +15,6 @@ title: Send-MgBetaUserChatActivityNotification
 
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgUserChatActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgUserChatActivityNotification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,7 +29,6 @@ Send-MgBetaUserChatActivityNotification -ChatId <string> -UserId <string>
  [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Send
@@ -43,7 +39,6 @@ Send-MgBetaUserChatActivityNotification -ChatId <string> -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
@@ -57,7 +52,6 @@ Send-MgBetaUserChatActivityNotification -InputObject <ITeamsIdentity>
  [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SendViaIdentity
@@ -68,7 +62,6 @@ Send-MgBetaUserChatActivityNotification -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -81,11 +74,21 @@ This cmdlet has the following aliases,
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -ActivityType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -188,7 +191,7 @@ HelpMessage: ''
 
 ### -ChainId
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -327,7 +330,7 @@ HelpMessage: ''
 
 ### -IconId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -543,7 +546,7 @@ HelpMessage: ''
 
 ### -TeamsAppId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -570,7 +573,7 @@ HelpMessage: ''
 
 ### -TemplateParameters
 
-
+.
 To construct, see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
 
 ```yaml
@@ -707,7 +710,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityType <String>]: 
   [ChainId <Int64?>]: 
@@ -731,7 +734,7 @@ If the value is text, this must be a plain text value.
     [WebUrl <String>]: The link the user clicks when they select the notification.
 Optional when source is entityUrl; required when source is text.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -778,7 +781,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
+PREVIEWTEXT <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -787,7 +790,7 @@ TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair[]>: .
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
+TOPIC <IMicrosoftGraphTeamworkActivityTopic>: teamworkActivityTopic
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Source <String>]: teamworkActivityTopicSource
   [Value <String>]: The topic value.
@@ -799,28 +802,5 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [Send-MgBetaUserChatActivityNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetauserchatactivitynotification)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetauserchatactivitynotification)
+- [](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-beta)

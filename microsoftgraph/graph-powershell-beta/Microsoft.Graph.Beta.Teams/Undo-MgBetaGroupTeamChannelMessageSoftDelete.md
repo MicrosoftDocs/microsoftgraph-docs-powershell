@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetagroupteamchannelmessagesoftdelete
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Undo-MgBetaGroupTeamChannelMessageSoftDelete
 ---
@@ -15,9 +15,6 @@ title: Undo-MgBetaGroupTeamChannelMessageSoftDelete
 
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Undo-MgGroupTeamChannelMessageSoftDelete](/powershell/module/Microsoft.Graph.Teams/Undo-MgGroupTeamChannelMessageSoftDelete?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Undo (Default)
@@ -27,7 +24,6 @@ Undo-MgBetaGroupTeamChannelMessageSoftDelete -ChannelId <string> -ChatMessageId 
  -GroupId <string> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UndoViaIdentity
@@ -37,7 +33,6 @@ Undo-MgBetaGroupTeamChannelMessageSoftDelete -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -400,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -450,28 +455,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Undo-MgBetaGroupTeamChannelMessageSoftDelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetagroupteamchannelmessagesoftdelete)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetagroupteamchannelmessagesoftdelete)
+- [](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-beta)

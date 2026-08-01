@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetadetermineteamworkifinteractionisallowed
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed
 ---
@@ -25,7 +25,6 @@ Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed [-ResponseHeadersVariable <
  [-Users <IMicrosoftGraphIdentity[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Determine
@@ -36,7 +35,6 @@ Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,9 +47,8 @@ This cmdlet has the following aliases,
 Determine if a specified Microsoft Teams interaction is allowed between the signed-in user and specified users.
 
 ## EXAMPLES
-### Example 1: Determine if the signed-in user can create a chat with another user in the same tenant using their ID
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -67,12 +64,7 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-```
-This example will determine if the signed-in user can create a chat with another user in the same tenant using their id
-
-### Example 2: Determine if the signed-in user can create a chat with another user in a different tenant using their ID and tenant ID
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -89,12 +81,7 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-```
-This example will determine if the signed-in user can create a chat with another user in a different tenant using their id and tenant id
-
-### Example 3: Determine if the signed-in user can create a chat with another user using their user principal name
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -110,12 +97,7 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-```
-This example will determine if the signed-in user can create a chat with another user using their user principal name
-
-### Example 4: Determine if the signed-in user can create a chat with another user using their email
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -131,12 +113,7 @@ $params = @{
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
 
-```
-This example will determine if the signed-in user can create a chat with another user using their email
-
-### Example 5: Determine if the signed-in user can create a chat with three other users
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -159,10 +136,6 @@ $params = @{
 }
 
 Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed -BodyParameter $params
-
-```
-This example will determine if the signed-in user can create a chat with three other users
-
 
 ## PARAMETERS
 
@@ -189,7 +162,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -423,7 +396,7 @@ HelpMessage: ''
 
 ### -Users
 
-
+.
 To construct, see NOTES section for USERS properties and create a hash table.
 
 ```yaml
@@ -495,7 +468,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Go7X3MTeamworkMicrosoftGraphDetermineifinteractionisallowedPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1Go7X3MTeamworkMicrosoftGraphDetermineifinteractionisallowedPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [InteractionType <String>]: teamworkInteractionType
   [Users <IMicrosoftGraphIdentity[]>]: 
@@ -515,27 +488,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaDetermineTeamworkIfInteractionIsAllowed](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetadetermineteamworkifinteractionisallowed)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamwork-determineifinteractionisallowed?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetadetermineteamworkifinteractionisallowed)
+- [](https://learn.microsoft.com/graph/api/teamwork-determineifinteractionisallowed?view=graph-rest-beta)

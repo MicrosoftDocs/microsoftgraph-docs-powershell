@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaClockTeamScheduleTimeCardIn
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaClockTeamScheduleTimeCardIn
 ## SYNOPSIS
 
 Clock in to start a timeCard.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgClockTeamScheduleTimeCardIn](/powershell/module/Microsoft.Graph.Teams/Invoke-MgClockTeamScheduleTimeCardIn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId <string> [-ResponseHeadersVaria
  [-Notes <IMicrosoftGraphItemBody>] [-OnBehalfOfUserId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Clock
@@ -39,7 +35,6 @@ Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ClockViaIdentityExpanded
@@ -50,7 +45,7 @@ Invoke-MgBetaClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
  [-IsAtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-OnBehalfOfUserId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### ClockViaIdentity
@@ -61,7 +56,6 @@ Invoke-MgBetaClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,18 +67,9 @@ This cmdlet has the following aliases,
 
 Clock in to start a timeCard.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Clock in as yourself
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -98,12 +83,7 @@ $params = @{
 
 Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
 
-```
-This example will clock in as yourself
-
-### Example 2: Clock in on behalf of another user
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -113,10 +93,6 @@ $params = @{
 }
 
 Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
-
-```
-This example will clock in on behalf of another user
-
 
 ## PARAMETERS
 
@@ -149,7 +125,7 @@ HelpMessage: ''
 
 ### -AtApprovedLocation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +152,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -338,7 +314,7 @@ HelpMessage: ''
 
 ### -IsAtApprovedLocation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -393,7 +369,7 @@ HelpMessage: ''
 
 ### -OnBehalfOfUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -586,7 +562,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AtApprovedLocation <Boolean?>]: 
   [IsAtApprovedLocation <Boolean?>]: 
@@ -596,7 +572,7 @@ BODYPARAMETER `<IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPo
     [ContentType <String>]: bodyType
   [OnBehalfOfUserId <String>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -643,7 +619,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+NOTES <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -651,27 +627,5 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaClockTeamScheduleTimeCardIn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin)
+- [](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta)
