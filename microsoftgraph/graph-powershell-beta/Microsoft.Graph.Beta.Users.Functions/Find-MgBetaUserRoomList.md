@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Functions
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgBetaUserRoomList
 ---
@@ -15,7 +15,7 @@ title: Find-MgBetaUserRoomList
 
 Get the room lists defined in a tenant, as represented by their emailAddress objects.
 Tenants can organize meeting rooms into room lists.
-In this API, each meeting room and room list is represented by an emailAddress instance.\rYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
+In this API, each meeting room and room list is represented by an emailAddress instance.\r\nYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ In this API, each meeting room and room list is represented by an emailAddress i
 Find-MgBetaUserRoomList -UserId <string> [-Count] [-Filter <string>] [-Search <string>]
  [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### FindViaIdentity
@@ -35,7 +35,7 @@ Find-MgBetaUserRoomList -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter
  [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,29 +47,16 @@ This cmdlet has the following aliases,
 
 Get the room lists defined in a tenant, as represented by their emailAddress objects.
 Tenants can organize meeting rooms into room lists.
-In this API, each meeting room and room list is represented by an emailAddress instance.\rYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadBasic.All, User.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.Read.All, User.ReadBasic.All,  |
+In this API, each meeting room and room list is represented by an emailAddress instance.\r\nYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users.Functions
 
 # A UPN can also be used as -UserId.
 Find-MgBetaUserRoomList -UserId $userId
-
-```
-This example shows how to use the Find-MgBetaUserRoomList Cmdlet.
-
 
 ## PARAMETERS
 
@@ -421,7 +408,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   [EndDateTime <String>]: Usage: EndDateTime='{EndDateTime}'
   [RoomList <String>]: Usage: RoomList='{RoomList}'
   [Skip <Int32?>]: Usage: skip={skip}
@@ -432,27 +419,5 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Find-MgBetaUserRoomList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist)
+- [](https://learn.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta)
