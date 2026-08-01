@@ -16,6 +16,9 @@ title: Get-MgBetaPrintPrinterJobTaskTrigger
 The printTaskTrigger that triggered this task's execution.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterJobTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJobTaskTrigger?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
