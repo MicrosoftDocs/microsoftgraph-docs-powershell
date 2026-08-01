@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Search-MgDriveItem
 ---
@@ -13,10 +13,7 @@ title: Search-MgDriveItem
 
 ## SYNOPSIS
 
-Search the hierarchy of items for items matching a query.\rYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Search-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaDriveItem?view=graph-powershell-beta)
+Search the hierarchy of items for items matching a query.\r\nYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Search-MgDriveItem -DriveId <string> -DriveItemId <string> -Q <string> [-Count]
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### SearchViaIdentity
@@ -38,7 +35,7 @@ Search-MgDriveItem -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <stri
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -48,20 +45,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Search the hierarchy of items for items matching a query.\rYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
+Search the hierarchy of items for items matching a query.\r\nYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Files
 
 Search-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example shows how to use the Search-MgDriveItem Cmdlet.
-
 
 ## PARAMETERS
 
@@ -521,7 +513,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -550,27 +542,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Search-MgDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem)
+- [](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-1.0)

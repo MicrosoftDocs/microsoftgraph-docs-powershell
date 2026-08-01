@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowuserdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgFollowUserDriveItem
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgFollowUserDriveItem
 
 Follow a driveItem.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaFollowUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaFollowUserDriveItem?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Follow (Default)
@@ -27,7 +24,6 @@ Invoke-MgFollowUserDriveItem -DriveId <string> -DriveItemId <string> -UserId <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### FollowViaIdentity
@@ -36,7 +32,7 @@ Invoke-MgFollowUserDriveItem -DriveId <string> -DriveItemId <string> -UserId <st
 Invoke-MgFollowUserDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -47,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Follow a driveItem.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -378,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -407,28 +413,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgFollowUserDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowuserdriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowuserdriveitem)
+- [](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0)
