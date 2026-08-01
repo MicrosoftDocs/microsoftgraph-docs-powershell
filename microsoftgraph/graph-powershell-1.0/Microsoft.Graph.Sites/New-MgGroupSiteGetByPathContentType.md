@@ -2337,7 +2337,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathcontenttype)
+- [New-MgGroupSiteGetByPathContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathcontenttype)
 
 
 

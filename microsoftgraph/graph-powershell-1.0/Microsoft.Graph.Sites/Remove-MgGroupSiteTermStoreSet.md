@@ -530,7 +530,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoreset)
+- [Remove-MgGroupSiteTermStoreSet](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoreset)
 
 
 

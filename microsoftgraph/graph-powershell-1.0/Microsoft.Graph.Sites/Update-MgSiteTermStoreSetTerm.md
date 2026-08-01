@@ -1287,8 +1287,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetterm)
-- [](https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0)
+- [Update-MgSiteTermStoreSetTerm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetterm)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0)
 
 
 

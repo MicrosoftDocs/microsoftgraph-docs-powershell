@@ -2310,8 +2310,8 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttype)
-- [](https://learn.microsoft.com/graph/api/site-post-contenttypes?view=graph-rest-1.0)
+- [New-MgSiteContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-post-contenttypes?view=graph-rest-1.0)
 
 
 
