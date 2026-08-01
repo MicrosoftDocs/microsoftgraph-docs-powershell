@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightmonthlymfaregistereduser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaReportUserInsightMonthlyMfaRegisteredUser
 ---
@@ -24,7 +24,7 @@ New-MgBetaReportUserInsightMonthlyMfaRegisteredUser [-ResponseHeadersVariable <s
  [-AdditionalProperties <hashtable>] [-Count <long>] [-FactDate <datetime>] [-Id <string>]
  [-MfaType <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -34,7 +34,7 @@ New-MgBetaReportUserInsightMonthlyMfaRegisteredUser
  -BodyParameter <IMicrosoftGraphMfaUserCountMetric> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -45,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to mfaRegisteredUsers for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -136,7 +146,7 @@ HelpMessage: ''
 
 ### -Count
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -157,7 +167,7 @@ HelpMessage: ''
 
 ### -FactDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -419,7 +429,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMfaUserCountMetric>`: mfaUserCountMetric
+BODYPARAMETER <IMicrosoftGraphMfaUserCountMetric>: mfaUserCountMetric
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -430,27 +440,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaReportUserInsightMonthlyMfaRegisteredUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightmonthlymfaregistereduser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightmonthlymfaregistereduser)

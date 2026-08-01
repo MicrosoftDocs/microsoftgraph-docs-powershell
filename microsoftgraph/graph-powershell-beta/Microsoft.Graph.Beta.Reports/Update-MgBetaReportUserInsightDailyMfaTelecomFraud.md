@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightdailymfatelecomfraud
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaReportUserInsightDailyMfaTelecomFraud
 ---
@@ -27,7 +27,6 @@ Update-MgBetaReportUserInsightDailyMfaTelecomFraud -MfaTelecomFraudMetricId <str
  [-TelecomBlockedUserCount <long>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -37,7 +36,7 @@ Update-MgBetaReportUserInsightDailyMfaTelecomFraud -MfaTelecomFraudMetricId <str
  -BodyParameter <IMicrosoftGraphMfaTelecomFraudMetric> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,7 +49,6 @@ Update-MgBetaReportUserInsightDailyMfaTelecomFraud -InputObject <IReportsIdentit
  [-TelecomBlockedUserCount <long>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -60,7 +58,7 @@ Update-MgBetaReportUserInsightDailyMfaTelecomFraud -InputObject <IReportsIdentit
  -BodyParameter <IMicrosoftGraphMfaTelecomFraudMetric> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -71,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property mfaTelecomFraud in reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -152,7 +160,7 @@ HelpMessage: ''
 
 ### -CaptchaFailureCount
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -179,7 +187,7 @@ HelpMessage: ''
 
 ### -CaptchaNotTriggeredUserCount
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -206,7 +214,7 @@ HelpMessage: ''
 
 ### -CaptchaShownUserCount
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -233,7 +241,7 @@ HelpMessage: ''
 
 ### -CaptchaSuccessCount
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -282,7 +290,7 @@ HelpMessage: ''
 
 ### -FactDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -540,7 +548,7 @@ HelpMessage: ''
 
 ### -TelecomBlockedUserCount
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -621,7 +629,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMfaTelecomFraudMetric>`: mfaTelecomFraudMetric
+BODYPARAMETER <IMicrosoftGraphMfaTelecomFraudMetric>: mfaTelecomFraudMetric
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -632,7 +640,7 @@ Read-only.
   [FactDate <DateTime?>]: 
   [TelecomBlockedUserCount <Int64?>]: 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -688,27 +696,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaReportUserInsightDailyMfaTelecomFraud](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightdailymfatelecomfraud)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightdailymfatelecomfraud)

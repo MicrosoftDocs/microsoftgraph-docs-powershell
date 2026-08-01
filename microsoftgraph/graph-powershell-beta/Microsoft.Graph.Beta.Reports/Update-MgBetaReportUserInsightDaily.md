@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightdaily
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaReportUserInsightDaily
 ---
@@ -31,7 +31,6 @@ Update-MgBetaReportUserInsightDaily [-ResponseHeadersVariable <string>]
  [-UserCount <IMicrosoftGraphUserCountMetric[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -41,7 +40,6 @@ Update-MgBetaReportUserInsightDaily -BodyParameter <IMicrosoftGraphDailyUserInsi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property daily in reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -272,7 +280,7 @@ HelpMessage: ''
 
 ### -InactiveUsers
 
-
+.
 To construct, see NOTES section for INACTIVEUSERS properties and create a hash table.
 
 ```yaml
@@ -294,7 +302,7 @@ HelpMessage: ''
 
 ### -InactiveUsersByApplication
 
-
+.
 To construct, see NOTES section for INACTIVEUSERSBYAPPLICATION properties and create a hash table.
 
 ```yaml
@@ -338,7 +346,7 @@ HelpMessage: ''
 
 ### -MfaTelecomFraud
 
-
+.
 To construct, see NOTES section for MFATELECOMFRAUD properties and create a hash table.
 
 ```yaml
@@ -597,7 +605,7 @@ Supports $filter (eq).
   [SuccessCount <Int64?>]: Number of successful authentication requests.
 Supports $filter (eq).
 
-BODYPARAMETER `<IMicrosoftGraphDailyUserInsightMetricsRoot>`: dailyUserInsightMetricsRoot
+BODYPARAMETER <IMicrosoftGraphDailyUserInsightMetricsRoot>: dailyUserInsightMetricsRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -812,27 +820,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaReportUserInsightDaily](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightdaily)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightdaily)

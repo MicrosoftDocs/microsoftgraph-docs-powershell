@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportappcredentialsigninactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportAppCredentialSignInActivity
 ---
@@ -25,7 +25,7 @@ Get-MgBetaReportAppCredentialSignInActivity [-ExpandProperty <string[]>] [-Prope
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -35,7 +35,7 @@ Get-MgBetaReportAppCredentialSignInActivity -AppCredentialSignInActivityId <stri
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -45,7 +45,7 @@ Get-MgBetaReportAppCredentialSignInActivity -InputObject <IReportsIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -58,39 +58,24 @@ This cmdlet has the following aliases,
 Get an appCredentialSignInActivity object that contains recent activity of an application credential.
 
 ## EXAMPLES
-### Example 1: List all appCredentialSignInActivities
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportAppCredentialSignInActivity
 
-```
-This example will list all appcredentialsigninactivities
-
-### Example 2:  Get an appCredentialSignInActivitiy for a credential by keyId
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportAppCredentialSignInActivity -Filter "keyId eq '83f45296-fb8f-4aaa-a399-ac51084e02b7'" 
+Get-MgBetaReportAppCredentialSignInActivity -Filter "keyId eq '83f45296-fb8f-4aaa-a399-ac51084e02b7'"
 
-```
-This example will  get an appcredentialsigninactivitiy for a credential by keyid
-
-### Example 3:  Get an appCredentialSignInActivity for an application by appId
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportAppCredentialSignInActivity -Filter "appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'" 
-
-```
-This example will  get an appcredentialsigninactivity for an application by appid
-
+Get-MgBetaReportAppCredentialSignInActivity -Filter "appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'"
 
 ## PARAMETERS
 
@@ -552,7 +537,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -608,28 +593,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportAppCredentialSignInActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportappcredentialsigninactivity)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/appcredentialsigninactivity-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-list-appcredentialsigninactivities?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportappcredentialsigninactivity)
+- [](https://learn.microsoft.com/graph/api/appcredentialsigninactivity-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/reportroot-list-appcredentialsigninactivities?view=graph-rest-beta)
