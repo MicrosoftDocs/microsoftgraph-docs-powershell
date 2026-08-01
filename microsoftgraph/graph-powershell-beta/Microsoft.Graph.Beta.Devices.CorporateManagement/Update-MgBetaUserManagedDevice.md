@@ -29455,7 +29455,7 @@ Defaults to setting on client device.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevice)
+- [Update-MgBetaUserManagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevice)
 
 
 
