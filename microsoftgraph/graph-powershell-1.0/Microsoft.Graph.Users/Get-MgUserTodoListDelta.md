@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodolistdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserTodoListDelta
 ---
@@ -14,11 +14,8 @@ title: Get-MgUserTodoListDelta
 ## SYNOPSIS
 
 Get a set of todoTaskList resources that have been added, deleted, or removed in Microsoft To Do.
-A delta function call for todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, \ryou can query for incremental changes in the todoTaskList.
+A delta function call for todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, \r\nyou can query for incremental changes in the todoTaskList.
 This allows you to maintain and synchronize a local store of a user's todoTaskList without having to fetch all the todoTaskList from the server every time.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoListDelta](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoListDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Get-MgUserTodoListDelta -UserId <string> [-ExpandProperty <string[]>] [-Filter <
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### DeltaViaIdentity
@@ -40,7 +37,7 @@ Get-MgUserTodoListDelta -InputObject <IUsersIdentity> [-ExpandProperty <string[]
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-Count] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -51,30 +48,17 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a set of todoTaskList resources that have been added, deleted, or removed in Microsoft To Do.
-A delta function call for todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, \ryou can query for incremental changes in the todoTaskList.
+A delta function call for todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, \r\nyou can query for incremental changes in the todoTaskList.
 This allows you to maintain and synchronize a local store of a user's todoTaskList without having to fetch all the todoTaskList from the server every time.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
 Get-MgUserTodoListDelta -UserId $userId
-
-```
-This example shows how to use the Get-MgUserTodoListDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -557,7 +541,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -587,27 +571,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserTodoListDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodolistdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/todotasklist-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodolistdelta)
+- [](https://learn.microsoft.com/graph/api/todotasklist-delta?view=graph-rest-1.0)

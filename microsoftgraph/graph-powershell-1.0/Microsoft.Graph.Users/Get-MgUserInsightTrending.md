@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsighttrending
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserInsightTrending
 ---
@@ -17,9 +17,6 @@ Calculated relationship that identifies documents trending around a user.
 Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for work or school and SharePoint.
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightTrending](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightTrending?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -30,7 +27,7 @@ Get-MgUserInsightTrending -UserId <string> [-ExpandProperty <string[]>] [-Proper
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -39,7 +36,7 @@ Get-MgUserInsightTrending -UserId <string> [-ExpandProperty <string[]>] [-Proper
 Get-MgUserInsightTrending -TrendingId <string> -UserId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +45,7 @@ Get-MgUserInsightTrending -TrendingId <string> -UserId <string> [-ExpandProperty
 Get-MgUserInsightTrending -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -61,6 +58,16 @@ This cmdlet has the following aliases,
 Calculated relationship that identifies documents trending around a user.
 Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for work or school and SharePoint.
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -549,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -579,27 +586,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserInsightTrending](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsighttrending)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsighttrending)

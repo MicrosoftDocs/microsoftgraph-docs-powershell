@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskattachment
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserTodoListTaskAttachment
 ---
@@ -14,9 +14,6 @@ title: New-MgUserTodoListTaskAttachment
 ## SYNOPSIS
 
 Create new navigation property to attachments for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ New-MgUserTodoListTaskAttachment -TodoTaskId <string> -TodoTaskListId <string> -
  [-Id <string>] [-LastModifiedDateTime <datetime>] [-Name <string>] [-Size <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +35,7 @@ New-MgUserTodoListTaskAttachment -TodoTaskId <string> -TodoTaskListId <string> -
  -BodyParameter <IMicrosoftGraphAttachmentBase> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -49,7 +46,6 @@ New-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> [-ResponseHeaders
  [-LastModifiedDateTime <datetime>] [-Name <string>] [-Size <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -59,7 +55,7 @@ New-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity>
  -BodyParameter <IMicrosoftGraphAttachmentBase> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -71,18 +67,10 @@ This cmdlet has the following aliases,
 
 Create new navigation property to attachments for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Users
 
 $params = @{
@@ -94,11 +82,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserTodoListTaskAttachment -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
-```
-This example shows how to use the New-MgUserTodoListTaskAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -651,7 +634,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAttachmentBase>`: attachmentBase
+BODYPARAMETER <IMicrosoftGraphAttachmentBase>: attachmentBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -662,7 +645,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 This doesn't need to be the actual file name.
   [Size <Int32?>]: The length of the attachment in bytes.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -692,26 +675,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgUserTodoListTaskAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskattachment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskattachment)

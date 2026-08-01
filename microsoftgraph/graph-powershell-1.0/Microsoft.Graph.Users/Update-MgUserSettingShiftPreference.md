@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserSettingShiftPreference
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserSettingShiftPreference
 ## SYNOPSIS
 
 Update the properties and relationships of a shiftPreferences object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Update-MgUserSettingShiftPreference -UserId <string> [-ResponseHeadersVariable <
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -39,7 +35,7 @@ Update-MgUserSettingShiftPreference -UserId <string>
  -BodyParameter <IMicrosoftGraphShiftPreferences> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,7 +47,6 @@ Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity>
  [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -61,7 +56,7 @@ Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity>
  -BodyParameter <IMicrosoftGraphShiftPreferences> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -73,18 +68,9 @@ This cmdlet has the following aliases,
 
 Update the properties and relationships of a shiftPreferences object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserShiftPreferences.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users
 
@@ -114,10 +100,6 @@ timeSlots = $null
 }
 
 Update-MgUserSettingShiftPreference -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgUserSettingShiftPreference Cmdlet.
-
 
 ## PARAMETERS
 
@@ -628,7 +610,7 @@ Required.
     [StartTime <String>]: Start time for the time range.
   [TimeZone <String>]: Specifies the time zone for the indicated time.
 
-BODYPARAMETER `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
+BODYPARAMETER <IMicrosoftGraphShiftPreferences>: shiftPreferences
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -681,7 +663,7 @@ Required.
       [StartTime <String>]: Start time for the time range.
     [TimeZone <String>]: Specifies the time zone for the indicated time.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -692,7 +674,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -719,7 +701,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -733,27 +715,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgUserSettingShiftPreference](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/shiftpreferences-put?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference)
+- [](https://learn.microsoft.com/graph/api/shiftpreferences-put?view=graph-rest-1.0)

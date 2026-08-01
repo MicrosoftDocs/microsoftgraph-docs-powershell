@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserSponsor
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserSponsor
 Get an agentUser's sponsors.
 Sponsors are users and groups that are responsible for this agent user's privileges in the tenant and for keeping the agent user's information and access up to date.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserSponsor](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsor?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
@@ -29,7 +26,7 @@ Get-MgUserSponsor -UserId <string> [-ExpandProperty <string[]>] [-Filter <string
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ## ALIASES
@@ -43,17 +40,12 @@ Get an agentUser's sponsors.
 Sponsors are users and groups that are responsible for this agent user's privileges in the tenant and for keeping the agent user's information and access up to date.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users
 
 Get-MgUserSponsor -UserId $userId
-
-```
-This example shows how to use the Get-MgUserSponsor Cmdlet.
-
 
 ## PARAMETERS
 
@@ -486,27 +478,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgUserSponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-sponsors?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor)
+- [](https://learn.microsoft.com/graph/api/agentuser-list-sponsors?view=graph-rest-1.0)

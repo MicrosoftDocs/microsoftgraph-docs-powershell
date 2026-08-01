@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserManager
 ---
@@ -15,9 +15,6 @@ title: Get-MgUserManager
 
 Returns the user or organizational contact assigned as the agentUser's manager.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManager?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -26,7 +23,7 @@ Returns the user or organizational contact assigned as the agentUser's manager.
 Get-MgUserManager -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +32,7 @@ Get-MgUserManager -UserId <string> [-ExpandProperty <string[]>] [-Property <stri
 Get-MgUserManager -InputObject <IUsersIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,26 +44,15 @@ This cmdlet has the following aliases,
 
 Returns the user or organizational contact assigned as the agentUser's manager.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a user's manager
 
-```powershell
+### EXAMPLE 1
+
 Get-MgUserManager -UserId '0ec3a5e8-b4b6-4678-90ff-ce786055065f'
 
 Id                                   DeletedDateTime
 --                                   ---------------
 e1428c8c-4219-4beb-b5cb-765c2590278b
-```
-
-The commands gets the manager of the specified user.
 
 ## PARAMETERS
 
@@ -378,7 +364,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -408,27 +394,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserManager](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-manager?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager)
+- [](https://learn.microsoft.com/graph/api/agentuser-list-manager?view=graph-rest-1.0)

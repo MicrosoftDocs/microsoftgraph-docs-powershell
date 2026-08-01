@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusermanagerbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgUserManagerByRef
 ---
@@ -15,9 +15,6 @@ title: Set-MgUserManagerByRef
 
 Assign a user's manager.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserManagerByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -27,7 +24,6 @@ Set-MgUserManagerByRef -UserId <string> -OdataId <string> [-ResponseHeadersVaria
  [-AdditionalProperties <hashtable>] [-OdataType <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set
@@ -37,7 +33,6 @@ Set-MgUserManagerByRef -UserId <string> -BodyParameter <IReferenceUpdate>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -48,7 +43,6 @@ Set-MgUserManagerByRef -InputObject <IUsersIdentity> -OdataId <string>
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -58,7 +52,6 @@ Set-MgUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IReferenceU
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -70,28 +63,15 @@ This cmdlet has the following aliases,
 
 Assign a user's manager.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadWrite.All, Directory.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Update a user's manager
 
-```powershell
+### EXAMPLE 1
+
 $NewManager = @{
   "@odata.id"="https://graph.microsoft.com/v1.0/users/075b32dd-edb7-47cf-89ef-f3f733683a3f"
   }
 
 Set-MgUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' -BodyParameter $NewManager
-```
-
-In this example, the first command defines the new manager using the $NewManager variable with id `075b32dd-edb7-47cf-89ef-f3f733683a3f`.
-The second command sets the manager for user defined by the UserId as the value provided on the $NewManager variable.
-
 
 ## PARAMETERS
 
@@ -124,7 +104,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -314,7 +294,7 @@ HelpMessage: ''
 
 ### -OdataType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -528,13 +508,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceUpdate>`: .
+BODYPARAMETER <IReferenceUpdate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
   [OdataType <String>]: 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -564,27 +544,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgUserManagerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusermanagerbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusermanagerbyref)
+- [](https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-1.0)

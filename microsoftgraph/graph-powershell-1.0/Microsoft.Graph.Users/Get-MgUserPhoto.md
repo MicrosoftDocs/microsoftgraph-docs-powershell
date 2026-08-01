@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphoto
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserPhoto
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserPhoto
 The user's profile photo.
 Read-only.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserPhoto?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -27,7 +24,7 @@ Read-only.
 Get-MgUserPhoto -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### List
@@ -38,7 +35,7 @@ Get-MgUserPhoto -UserId <string> [-ExpandProperty <string[]>] [-Property <string
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get1
@@ -47,7 +44,7 @@ Get-MgUserPhoto -UserId <string> [-ExpandProperty <string[]>] [-Property <string
 Get-MgUserPhoto -UserId <string> -ProfilePhotoId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -56,7 +53,7 @@ Get-MgUserPhoto -UserId <string> -ProfilePhotoId <string> [-ExpandProperty <stri
 Get-MgUserPhoto -InputObject <IUsersIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -65,7 +62,7 @@ Get-MgUserPhoto -InputObject <IUsersIdentity> [-ExpandProperty <string[]>] [-Pro
 Get-MgUserPhoto -InputObject <IUsersIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -78,26 +75,15 @@ This cmdlet has the following aliases,
 The user's profile photo.
 Read-only.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.ReadBasic.All, ProfilePhoto.ReadWrite.All, ProfilePhoto.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ProfilePhoto.Read.All, User.ReadWrite.CrossCloud, User.ReadBasic.All, User.Read.All, ProfilePhoto.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a user's photo properties
 
-```powershell
+### EXAMPLE 1
+
 Get-MgUserPhoto -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe'
 
 Id      Height Width
 --      ------ -----
 240X240 240    240
-```
-
-This example retrieves the profile photo properties for the specified user.
 
 ## PARAMETERS
 
@@ -598,7 +584,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -628,26 +614,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserPhoto](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphoto)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphoto)

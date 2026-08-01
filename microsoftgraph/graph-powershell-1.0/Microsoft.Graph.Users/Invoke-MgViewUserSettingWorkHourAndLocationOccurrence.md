@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgviewusersettingworkhourandlocationoccurrence
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgViewUserSettingWorkHourAndLocationOccurrence
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgViewUserSettingWorkHourAndLocationOccurrence
 Get work plan occurrences from your own work plan within a specified date range.
 This function requires the startDateTime and endDateTime parameters.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence](/powershell/module/Microsoft.Graph.Beta.Users/Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### View (Default)
@@ -29,7 +26,7 @@ Invoke-MgViewUserSettingWorkHourAndLocationOccurrence -EndDateTime <string> -Sta
  [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### ViewViaIdentity
@@ -40,7 +37,7 @@ Invoke-MgViewUserSettingWorkHourAndLocationOccurrence -InputObject <IUsersIdenti
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -52,6 +49,15 @@ This cmdlet has the following aliases,
 
 Get work plan occurrences from your own work plan within a specified date range.
 This function requires the startDateTime and endDateTime parameters.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Users
+
+# A UPN can also be used as -UserId.
+Invoke-MgViewUserSettingWorkHourAndLocationOccurrence -UserId $userId
 
 ## PARAMETERS
 
@@ -511,7 +517,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -541,28 +547,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgViewUserSettingWorkHourAndLocationOccurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgviewusersettingworkhourandlocationoccurrence)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgviewusersettingworkhourandlocationoccurrence)
+- [](https://learn.microsoft.com/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-1.0)

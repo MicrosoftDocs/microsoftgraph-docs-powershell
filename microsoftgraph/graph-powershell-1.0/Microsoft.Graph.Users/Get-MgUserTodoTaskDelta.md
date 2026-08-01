@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserTodoTaskDelta
 ---
@@ -17,9 +17,6 @@ Get a set of todoTask resources that have been added, deleted, or updated in a s
 A delta function call for todoTask resources in a todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the todoTask in that todoTaskList.
 This allows you to maintain and synchronize a local store of a user's todoTask resources without having to fetch the entire set from the server every time.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskDelta?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delta (Default)
@@ -30,7 +27,7 @@ Get-MgUserTodoTaskDelta -TodoTaskListId <string> -UserId <string> [-ExpandProper
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### DeltaViaIdentity
@@ -40,7 +37,7 @@ Get-MgUserTodoTaskDelta -InputObject <IUsersIdentity> [-ExpandProperty <string[]
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-Count] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -54,27 +51,14 @@ Get a set of todoTask resources that have been added, deleted, or updated in a s
 A delta function call for todoTask resources in a todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the todoTask in that todoTaskList.
 This allows you to maintain and synchronize a local store of a user's todoTask resources without having to fetch the entire set from the server every time.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Tasks.Read, Tasks.ReadWrite,  |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
-Get-MgUserTodoTaskDelta -UserId $userId -TodoTaskListId $todoTaskListId -Deltatoken "w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM" 
-
-```
-This example shows how to use the Get-MgUserTodoTaskDelta Cmdlet.
-
+Get-MgUserTodoTaskDelta -UserId $userId -TodoTaskListId $todoTaskListId -Deltatoken "w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM"
 
 ## PARAMETERS
 
@@ -578,7 +562,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -608,27 +592,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserTodoTaskDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/todotask-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskdelta)
+- [](https://learn.microsoft.com/graph/api/todotask-delta?view=graph-rest-1.0)

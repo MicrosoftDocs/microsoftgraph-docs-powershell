@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgsupporteduseroutlooklanguage
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgSupportedUserOutlookLanguage
 ---
@@ -15,10 +15,7 @@ title: Invoke-MgSupportedUserOutlookLanguage
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
-You can subsequently get the preferred language by\rgetting the user's mailbox settings.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
+You can subsequently get the preferred language by\r\ngetting the user's mailbox settings.
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ Invoke-MgSupportedUserOutlookLanguage -UserId <string> [-Count] [-Filter <string
  [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### SupportedViaIdentity
@@ -39,7 +36,7 @@ Invoke-MgSupportedUserOutlookLanguage -InputObject <IUsersIdentity> [-Count] [-F
  [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -51,29 +48,16 @@ This cmdlet has the following aliases,
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
-You can subsequently get the preferred language by\rgetting the user's mailbox settings.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.ReadBasic.All,  |
-| Delegated (personal Microsoft account) | User.Read,  |
-| Application | User.Read.All, User.ReadBasic.All,  |
+You can subsequently get the preferred language by\r\ngetting the user's mailbox settings.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
 Invoke-MgSupportedUserOutlookLanguage -UserId $userId
-
-```
-This example shows how to use the Invoke-MgSupportedUserOutlookLanguage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -425,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -455,27 +439,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgSupportedUserOutlookLanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgsupporteduseroutlooklanguage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/outlookuser-supportedlanguages?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgsupporteduseroutlooklanguage)
+- [](https://learn.microsoft.com/graph/api/outlookuser-supportedlanguages?view=graph-rest-1.0)

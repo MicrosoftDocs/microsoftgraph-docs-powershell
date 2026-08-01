@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserOutlookMasterCategory
 ---
@@ -15,9 +15,6 @@ title: New-MgUserOutlookMasterCategory
 
 Create new navigation property to masterCategories for users
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,7 +24,7 @@ New-MgUserOutlookMasterCategory -UserId <string> [-ResponseHeadersVariable <stri
  [-AdditionalProperties <hashtable>] [-Color <string>] [-DisplayName <string>] [-Id <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -37,7 +34,6 @@ New-MgUserOutlookMasterCategory -UserId <string> -BodyParameter <IMicrosoftGraph
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -47,7 +43,7 @@ New-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-ResponseHeadersV
  [-AdditionalProperties <hashtable>] [-Color <string>] [-DisplayName <string>] [-Id <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -57,7 +53,7 @@ New-MgUserOutlookMasterCategory -InputObject <IUsersIdentity>
  -BodyParameter <IMicrosoftGraphOutlookCategory> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -69,18 +65,10 @@ This cmdlet has the following aliases,
 
 Create new navigation property to masterCategories for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | MailboxSettings.ReadWrite,  |
-| Delegated (personal Microsoft account) | MailboxSettings.ReadWrite,  |
-| Application | MailboxSettings.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Users
 
 $params = @{
@@ -90,11 +78,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOutlookMasterCategory -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgUserOutlookMasterCategory Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -539,7 +522,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOutlookCategory>`: outlookCategory
+BODYPARAMETER <IMicrosoftGraphOutlookCategory>: outlookCategory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -548,7 +531,7 @@ Read-only.
 After a category is created, the name cannot be changed.
 Read-only.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -578,26 +561,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgUserOutlookMasterCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory)
