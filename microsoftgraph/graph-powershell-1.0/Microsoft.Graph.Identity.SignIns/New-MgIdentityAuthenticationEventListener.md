@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityAuthenticationEventListener
 ---
@@ -16,9 +16,6 @@ title: New-MgIdentityAuthenticationEventListener
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,7 +26,7 @@ New-MgIdentityAuthenticationEventListener [-ResponseHeadersVariable <string>]
  [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-DisplayName <string>] [-Id <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +36,7 @@ New-MgIdentityAuthenticationEventListener
  -BodyParameter <IMicrosoftGraphAuthenticationEventListener> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EventListener.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EventListener.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -88,12 +76,7 @@ $params = @{
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
-```
-This example shows how to use the New-MgIdentityAuthenticationEventListener Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -122,12 +105,7 @@ $params = @{
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
-```
-This example shows how to use the New-MgIdentityAuthenticationEventListener Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -156,9 +134,33 @@ $params = @{
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
-```
-This example shows how to use the New-MgIdentityAuthenticationEventListener Cmdlet.
+### EXAMPLE 4
 
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onPasswordSubmitListener"
+	displayName = "JIT migration listener"
+	conditions = @{
+		applications = @{
+			includeAllApplications = $false
+			includeApplications = @(
+				@{
+					appId = "00011111-aaaa-2222-bbbb-3333cccc4444"
+				}
+			)
+		}
+	}
+	handler = @{
+		"@odata.type" = "#microsoft.graph.onPasswordMigrationCustomExtensionHandler"
+		migrationPropertyId = "extension_b7b1c57b532f40b8b5ed4b7a7ba67401_requiresMigration"
+		customExtension = @{
+			id = "6fc5012e-7665-43d6-9708-4370863f4e6e"
+		}
+	}
+}
+
+New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
 ## PARAMETERS
 
@@ -534,7 +536,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEventListener
+BODYPARAMETER <IMicrosoftGraphAuthenticationEventListener>: authenticationEventListener
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -547,7 +549,7 @@ Read-only.
         [AppId <String>]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
   [DisplayName <String>]: The display name of the listener.
 
-CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
+CONDITIONS <IMicrosoftGraphAuthenticationConditions>: authenticationConditions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Applications <IMicrosoftGraphAuthenticationConditionsApplications>]: authenticationConditionsApplications
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -557,27 +559,5 @@ CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
 
 ## RELATED LINKS
 
-- [New-MgIdentityAuthenticationEventListener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener)
+- [](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0)

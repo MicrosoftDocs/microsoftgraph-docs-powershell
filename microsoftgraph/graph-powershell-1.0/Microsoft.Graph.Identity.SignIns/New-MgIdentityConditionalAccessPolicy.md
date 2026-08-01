@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityConditionalAccessPolicy
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityConditionalAccessPolicy
 ## SYNOPSIS
 
 Create a new conditionalAccessPolicy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ New-MgIdentityConditionalAccessPolicy [-ResponseHeadersVariable <string>]
  [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <string>]
  [-TemplateId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -41,7 +38,6 @@ New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditional
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -53,18 +49,9 @@ This cmdlet has the following aliases,
 
 Create a new conditionalAccessPolicy.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Application.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -105,12 +92,7 @@ builtInControls = @(
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 
-```
-This example will require mfa to access exchange online outside of trusted locations
-
-### Example 2: Block access to Exchange Online from nontrusted regions
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -147,12 +129,7 @@ builtInControls = @(
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 
-```
-This example will block access to exchange online from nontrusted regions
-
-### Example 3: Use all conditions and controls
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -258,12 +235,7 @@ isEnabled = $true
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 
-```
-This example will use all conditions and controls
-
-### Example 4: Require MFA to Exchange Online from noncompliant devices
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -291,10 +263,6 @@ builtInControls = @(
 }
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
-
-```
-This example will require mfa to exchange online from noncompliant devices
-
 
 ## PARAMETERS
 
@@ -431,7 +399,7 @@ HelpMessage: ''
 
 ### -DeletedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -452,7 +420,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -824,7 +792,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy>`: conditionalAccessPolicy
+BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy>: conditionalAccessPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: 
   [Conditions <IMicrosoftGraphConditionalAccessConditionSet>]: conditionalAccessConditionSet
@@ -955,7 +923,7 @@ Readonly.
   [TemplateId <String>]: Specifies the unique identifier of a Conditional Access template.
 Inherited from entity.
 
-CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet>`: conditionalAccessConditionSet
+CONDITIONS <IMicrosoftGraphConditionalAccessConditionSet>: conditionalAccessConditionSet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1018,7 +986,7 @@ Required.
     [IncludeRoles <String[]>]: Role IDs in scope of policy unless explicitly excluded.
     [IncludeUsers <String[]>]: User IDs in scope of policy unless explicitly excluded, None, All, or GuestsOrExternalUsers.
 
-GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls>`: conditionalAccessGrantControls
+GRANTCONTROLS <IMicrosoftGraphConditionalAccessGrantControls>: conditionalAccessGrantControls
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]: authenticationStrengthPolicy
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1047,7 +1015,7 @@ For more information, see Custom controls.
 Possible values: AND, OR.
   [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.
 
-SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditionalAccessSessionControls
+SESSIONCONTROLS <IMicrosoftGraphConditionalAccessSessionControls>: conditionalAccessSessionControls
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplicationEnforcedRestrictions <IMicrosoftGraphApplicationEnforcedRestrictionsSessionControl>]: applicationEnforcedRestrictionsSessionControl
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1075,27 +1043,5 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditional
 
 ## RELATED LINKS
 
-- [New-MgIdentityConditionalAccessPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-policies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy)
+- [](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-policies?view=graph-rest-1.0)
