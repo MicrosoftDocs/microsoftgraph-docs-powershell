@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 Mark a schedulingGroup as inactive by setting its isActive property.\rThis method does not remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Schedule.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
