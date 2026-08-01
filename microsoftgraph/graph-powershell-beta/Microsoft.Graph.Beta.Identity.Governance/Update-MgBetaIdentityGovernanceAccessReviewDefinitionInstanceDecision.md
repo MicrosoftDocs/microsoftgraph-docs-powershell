@@ -92,8 +92,9 @@ This cmdlet has the following aliases,
 Update access decisions, known as accessReviewInstanceDecisionItems, for which the user is the reviewer.
 
 ## EXAMPLES
+### Example 1: Update a applyResult on an accessReviewInstance
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -103,6 +104,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -BodyParameter $params
+
+```
+This example will update a applyresult on an accessreviewinstance
+
 
 ## PARAMETERS
 

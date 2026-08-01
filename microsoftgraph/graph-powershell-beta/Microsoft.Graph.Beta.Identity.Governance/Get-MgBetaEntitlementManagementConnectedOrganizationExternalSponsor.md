@@ -52,12 +52,17 @@ The external sponsors are a set of users who can approve requests on behalf of o
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor -ConnectedOrganizationId $connectedOrganizationId
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor Cmdlet.
+
 
 ## PARAMETERS
 

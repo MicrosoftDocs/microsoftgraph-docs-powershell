@@ -78,16 +78,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property resources in privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1774,6 +1764,7 @@ The setting is not supported for now.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresource)
+
 
 
 
