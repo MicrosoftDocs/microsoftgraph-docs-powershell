@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamPrimaryChannelTab
 
 Delete navigation property tabs for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPrimaryChannelTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

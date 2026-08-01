@@ -15,6 +15,9 @@ title: Get-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContentCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContentCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

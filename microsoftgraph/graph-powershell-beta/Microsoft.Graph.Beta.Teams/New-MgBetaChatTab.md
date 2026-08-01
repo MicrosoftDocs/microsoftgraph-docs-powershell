@@ -16,6 +16,9 @@ title: New-MgBetaChatTab
 Add (pin) a tab to the specified chat.
 \rThe corresponding app must already be installed in the chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgChatTab](/powershell/module/Microsoft.Graph.Teams/New-MgChatTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

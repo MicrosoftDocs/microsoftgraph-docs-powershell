@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamScheduleTimeOffReason
 
 Update the navigation property timeOffReasons in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
