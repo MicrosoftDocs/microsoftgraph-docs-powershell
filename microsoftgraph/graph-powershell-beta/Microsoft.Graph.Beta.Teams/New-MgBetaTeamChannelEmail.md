@@ -425,8 +425,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelemail)
-- [](https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-beta)
+- [New-MgBetaTeamChannelEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-beta)
 
 
 

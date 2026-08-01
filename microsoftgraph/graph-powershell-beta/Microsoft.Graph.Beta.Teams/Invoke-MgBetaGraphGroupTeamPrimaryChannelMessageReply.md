@@ -987,8 +987,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphgroupteamprimarychannelmessagereply)
-- [](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-beta)
+- [Invoke-MgBetaGraphGroupTeamPrimaryChannelMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphgroupteamprimarychannelmessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-beta)
 
 
 

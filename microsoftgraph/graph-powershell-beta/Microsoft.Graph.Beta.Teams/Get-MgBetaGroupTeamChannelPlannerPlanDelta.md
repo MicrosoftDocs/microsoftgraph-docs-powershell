@@ -602,8 +602,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelplannerplandelta)
-- [](https://learn.microsoft.com/graph/api/plannerplan-delta?view=graph-rest-beta)
+- [Get-MgBetaGroupTeamChannelPlannerPlanDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelplannerplandelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-delta?view=graph-rest-beta)
 
 
 

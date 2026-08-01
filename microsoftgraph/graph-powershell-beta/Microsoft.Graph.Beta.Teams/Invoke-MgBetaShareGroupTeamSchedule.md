@@ -596,8 +596,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasharegroupteamschedule)
-- [](https://learn.microsoft.com/graph/api/schedule-share?view=graph-rest-beta)
+- [Invoke-MgBetaShareGroupTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasharegroupteamschedule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-share?view=graph-rest-beta)
 
 
 

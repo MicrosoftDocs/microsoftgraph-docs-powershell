@@ -428,8 +428,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionbot)
-- [](https://learn.microsoft.com/graph/api/teamworkbot-get?view=graph-rest-beta)
+- [Get-MgBetaAppCatalogTeamAppDefinitionBot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionbot)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworkbot-get?view=graph-rest-beta)
 
 
 
