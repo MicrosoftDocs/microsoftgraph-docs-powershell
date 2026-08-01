@@ -28627,8 +28627,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter)
-- [](https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-beta)
+- [Update-MgBetaPrintPrinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-beta)
 
 
 
