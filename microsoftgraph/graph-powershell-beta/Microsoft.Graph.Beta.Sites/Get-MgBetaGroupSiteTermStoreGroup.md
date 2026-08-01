@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteTermStoreGroup
 
 Collection of all groups available in the term store.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

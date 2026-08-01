@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteListOperation
 
 The collection of long-running operations on the list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
