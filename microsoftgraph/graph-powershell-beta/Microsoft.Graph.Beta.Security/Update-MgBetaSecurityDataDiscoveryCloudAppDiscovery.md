@@ -436,7 +436,7 @@ Possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscoverycloudappdiscovery)
+- [Update-MgBetaSecurityDataDiscoveryCloudAppDiscovery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscoverycloudappdiscovery)
 
 
 

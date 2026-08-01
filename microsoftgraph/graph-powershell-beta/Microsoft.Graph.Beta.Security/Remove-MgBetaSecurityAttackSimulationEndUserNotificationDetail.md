@@ -501,7 +501,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationendusernotificationdetail)
+- [Remove-MgBetaSecurityAttackSimulationEndUserNotificationDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationendusernotificationdetail)
 
 
 
