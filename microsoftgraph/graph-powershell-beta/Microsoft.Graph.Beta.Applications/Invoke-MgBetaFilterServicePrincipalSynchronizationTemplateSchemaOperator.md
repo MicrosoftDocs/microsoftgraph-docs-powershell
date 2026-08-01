@@ -15,6 +15,9 @@ title: Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator
 
 List all operators supported in the scoping filters.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterServicePrincipalSynchronizationTemplateSchemaOperator](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFilterServicePrincipalSynchronizationTemplateSchemaOperator?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Filter (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaGroupAppRoleAssignment
 
 Update the navigation property appRoleAssignments in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Update-MgGroupAppRoleAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaServicePrincipalSynchronizationSecretCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationSecretCount](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationSecretCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
