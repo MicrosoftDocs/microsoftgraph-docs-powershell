@@ -689,7 +689,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ARCHIVALINFO <IMicrosoftGraphPlannerArchivalInfo>: plannerArchivalInfo
+ARCHIVALINFO `<IMicrosoftGraphPlannerArchivalInfo>`: plannerArchivalInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Justification <String>]: Read-only.
 Reason why the entity was archived or unarchived.
@@ -707,7 +707,7 @@ For example, in the access reviews decisions API, this property might record the
   [StatusChangedDateTime <DateTime?>]: Read-only.
 Date and time at which the entity's archive status changed.
 
-BODYPARAMETER <IMicrosoftGraphPlannerBucket>: plannerBucket
+BODYPARAMETER `<IMicrosoftGraphPlannerBucket>`: plannerBucket
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -949,11 +949,11 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [Title <String>]: Title of the task.
 
-CREATIONSOURCE <IMicrosoftGraphPlannerBucketCreation>: plannerBucketCreation
+CREATIONSOURCE `<IMicrosoftGraphPlannerBucketCreation>`: plannerBucketCreation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreationSourceKind <String>]: plannerCreationSourceKind
 
-INPUTOBJECT <IPlannerIdentity>: Identity Parameter
+INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
@@ -1196,3 +1196,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerbucket)
 - [](https://learn.microsoft.com/graph/api/plannerbucket-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
