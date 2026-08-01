@@ -444,7 +444,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileskill)
+- [Remove-MgBetaUserProfileSkill](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileskill)
 
 
 
