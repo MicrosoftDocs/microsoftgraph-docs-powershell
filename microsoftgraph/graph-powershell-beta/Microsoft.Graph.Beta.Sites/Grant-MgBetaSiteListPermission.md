@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitelistpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Grant-MgBetaSiteListPermission
 ---
@@ -25,7 +25,7 @@ Grant-MgBetaSiteListPermission -ListId <string> -PermissionId <string> -SiteId <
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Grant
@@ -36,7 +36,6 @@ Grant-MgBetaSiteListPermission -ListId <string> -PermissionId <string> -SiteId <
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GrantViaIdentityExpanded
@@ -46,7 +45,7 @@ Grant-MgBetaSiteListPermission -InputObject <ISitesIdentity> [-ResponseHeadersVa
  [-AdditionalProperties <hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>]
  [-Roles <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### GrantViaIdentity
@@ -57,7 +56,6 @@ Grant-MgBetaSiteListPermission -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -68,6 +66,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Grant users access to a link represented by a permission.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -100,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -379,7 +387,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-
+.
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -429,7 +437,7 @@ HelpMessage: ''
 
 ### -Roles
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -537,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1X6KryuSitesSiteIdListsListIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1X6KryuSitesSiteIdListsListIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Recipients <IMicrosoftGraphDriveRecipient[]>]: 
     [Alias <String>]: The alias of the domain object, for cases where an email address is unavailable (for example, security groups).
@@ -545,7 +553,7 @@ BODYPARAMETER `<IPaths1X6KryuSitesSiteIdListsListIdPermissionsPermissionIdMicros
     [ObjectId <String>]: The unique identifier for the recipient in the directory.
   [Roles <String[]>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -615,28 +623,5 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [Grant-MgBetaSiteListPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitelistpermission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitelistpermission)
+- [](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)

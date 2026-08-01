@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemlink
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSiteListItemLink
 ---
@@ -14,11 +14,8 @@ title: New-MgBetaSiteListItemLink
 ## SYNOPSIS
 
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\rIf a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\r\nIf a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteListItemLink](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItemLink?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,7 +29,6 @@ New-MgBetaSiteListItemLink -ListId <string> -ListItemId <string> -SiteId <string
  [-SendNotification] [-Type <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -43,7 +39,6 @@ New-MgBetaSiteListItemLink -ListId <string> -ListItemId <string> -SiteId <string
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -55,7 +50,6 @@ New-MgBetaSiteListItemLink -InputObject <ISitesIdentity> [-ResponseHeadersVariab
  [-Scope <string>] [-SendNotification] [-Type <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -66,7 +60,6 @@ New-MgBetaSiteListItemLink -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,21 +70,12 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\rIf a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\r\nIf a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
-| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create an anonymous sharing link
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -110,12 +94,7 @@ $params = @{
 
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 
-```
-This example will create an anonymous sharing link
-
-### Example 2: Creating company sharable links
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -126,12 +105,7 @@ $params = @{
 
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 
-```
-This example shows creating company sharable links
-
-### Example 3: Creating embeddable links
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -140,10 +114,6 @@ $params = @{
 }
 
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
-
-```
-This example shows creating embeddable links
-
 
 ## PARAMETERS
 
@@ -176,7 +146,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -247,7 +217,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -419,7 +389,7 @@ HelpMessage: ''
 
 ### -Message
 
-
+.
 
 ```yaml
 Type: System.String
@@ -446,7 +416,7 @@ HelpMessage: ''
 
 ### -Password
 
-
+.
 
 ```yaml
 Type: System.String
@@ -536,7 +506,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-
+.
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -586,7 +556,7 @@ HelpMessage: ''
 
 ### -RetainInheritedPermissions
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -613,7 +583,7 @@ HelpMessage: ''
 
 ### -Scope
 
-
+.
 
 ```yaml
 Type: System.String
@@ -640,7 +610,7 @@ HelpMessage: ''
 
 ### -SendNotification
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -694,7 +664,7 @@ HelpMessage: ''
 
 ### -Type
 
-
+.
 
 ```yaml
 Type: System.String
@@ -775,7 +745,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpirationDateTime <DateTime?>]: 
   [Message <String>]: 
@@ -789,7 +759,7 @@ BODYPARAMETER `<IPaths1HqqvqwSitesSiteIdListsListIdItemsListitemIdMicrosoftGraph
   [SendNotification <Boolean?>]: 
   [Type <String>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -859,27 +829,5 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [New-MgBetaSiteListItemLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemlink)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemlink)
+- [](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta)

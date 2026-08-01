@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectionpolicylabelclassificationresult
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult
 ---
@@ -29,7 +29,6 @@ Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult -GroupI
  [-ContentInfo <IMicrosoftGraphContentInfo>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Evaluate
@@ -41,7 +40,6 @@ Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult -GroupI
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
@@ -54,7 +52,6 @@ Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult
  [-ContentInfo <IMicrosoftGraphContentInfo>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
@@ -66,7 +63,6 @@ Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -80,6 +76,16 @@ Using classification results, compute the information protection label that shou
 This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
 To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
 The API returns an informationProtectionAction that contains one of more of the following:
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -112,7 +118,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -161,7 +167,7 @@ HelpMessage: ''
 
 ### -ClassificationResults
 
-
+.
 To construct, see NOTES section for CLASSIFICATIONRESULTS properties and create a hash table.
 
 ```yaml
@@ -523,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1X07Bu3GroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1X07Bu3GroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClassificationResults <IMicrosoftGraphClassificationResult[]>]: 
     [ConfidenceLevel <Int32?>]: The confidence level, 0 to 100, of the result.
@@ -543,7 +549,7 @@ CLASSIFICATIONRESULTS <IMicrosoftGraphClassificationResult[]>: .
   [Count <Int32?>]: The number of instances of the specific information type in the input.
   [SensitiveTypeId <String>]: The GUID of the discovered sensitive information type.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphContentInfo>: contentInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Format <String>]: contentFormat
   [Identifier <String>]: Identifier used for Azure Information Protection Analytics.
@@ -552,7 +558,7 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
     [Value <String>]: Value for this key-value pair
   [State <String>]: contentState
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -617,28 +623,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectionpolicylabelclassificationresult)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectionpolicylabelclassificationresult)
+- [](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta)

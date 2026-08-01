@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/revoke-mgbetasitelistpermissiongrant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Revoke-MgBetaSiteListPermissionGrant
 ---
@@ -25,7 +25,6 @@ Revoke-MgBetaSiteListPermissionGrant -ListId <string> -PermissionId <string> -Si
  [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Revoke
@@ -36,7 +35,6 @@ Revoke-MgBetaSiteListPermissionGrant -ListId <string> -PermissionId <string> -Si
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RevokeViaIdentityExpanded
@@ -47,7 +45,6 @@ Revoke-MgBetaSiteListPermissionGrant -InputObject <ISitesIdentity>
  [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RevokeViaIdentity
@@ -58,7 +55,6 @@ Revoke-MgBetaSiteListPermissionGrant -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -69,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Revoke access to a listItem or driveItem granted via a sharing link by removing the specified recipient from the link.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -101,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -172,7 +178,7 @@ HelpMessage: ''
 
 ### -Grantees
 
-
+.
 To construct, see NOTES section for GRANTEES properties and create a hash table.
 
 ```yaml
@@ -511,7 +517,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Wubu4BSitesSiteIdListsListIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Wubu4BSitesSiteIdListsListIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Grantees <IMicrosoftGraphDriveRecipient[]>]: 
     [Alias <String>]: The alias of the domain object, for cases where an email address is unavailable (for example, security groups).
@@ -523,7 +529,7 @@ GRANTEES <IMicrosoftGraphDriveRecipient[]>: .
   [Email <String>]: The email address for the recipient, if the recipient has an associated email address.
   [ObjectId <String>]: The unique identifier for the recipient in the directory.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -588,28 +594,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Revoke-MgBetaSiteListPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/revoke-mgbetasitelistpermissiongrant)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/revoke-mgbetasitelistpermissiongrant)
+- [](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)

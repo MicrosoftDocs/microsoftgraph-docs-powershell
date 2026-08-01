@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabelsublabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabelSublabel
 ---
@@ -26,7 +26,7 @@ Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabelSublabel -GroupId 
  [-ProtectedContents <IMicrosoftGraphProtectedContent[]>] [-SupportedContentFormats <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### And
@@ -38,7 +38,6 @@ Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabelSublabel -GroupId 
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AndViaIdentityExpanded
@@ -50,7 +49,7 @@ Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabelSublabel -InputObj
  [-ProtectedContents <IMicrosoftGraphProtectedContent[]>] [-SupportedContentFormats <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### AndViaIdentity
@@ -61,7 +60,6 @@ Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabelSublabel -InputObj
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -72,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -104,7 +112,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -126,7 +134,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -191,7 +199,7 @@ HelpMessage: ''
 
 ### -DelegatedUserEmail
 
-
+.
 
 ```yaml
 Type: System.String
@@ -336,7 +344,7 @@ HelpMessage: ''
 
 ### -Locale
 
-
+.
 
 ```yaml
 Type: System.String
@@ -363,7 +371,7 @@ HelpMessage: ''
 
 ### -ProtectedContents
 
-
+.
 To construct, see NOTES section for PROTECTEDCONTENTS properties and create a hash table.
 
 ```yaml
@@ -530,7 +538,7 @@ HelpMessage: ''
 
 ### -SupportedContentFormats
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -611,7 +619,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPathsVhamkgGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPathsVhamkgGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -621,7 +629,7 @@ BODY `<IPathsVhamkgGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabel
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-BODYPARAMETER `<IPathsVhamkgGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsVhamkgGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -631,7 +639,7 @@ BODYPARAMETER `<IPathsVhamkgGroupsGroupIdSitesSiteIdInformationprotectionSensiti
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -701,28 +709,5 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabelSublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabelsublabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabelsublabel)
+- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)

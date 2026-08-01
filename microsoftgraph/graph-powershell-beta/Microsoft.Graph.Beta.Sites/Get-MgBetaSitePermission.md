@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSitePermission
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSitePermission
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a permission object on a site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgBetaSitePermission -SiteId <string> [-ExpandProperty <string[]>] [-Propert
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +34,7 @@ Get-MgBetaSitePermission -SiteId <string> [-ExpandProperty <string[]>] [-Propert
 Get-MgBetaSitePermission -PermissionId <string> -SiteId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +43,7 @@ Get-MgBetaSitePermission -PermissionId <string> -SiteId <string> [-ExpandPropert
 Get-MgBetaSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -59,17 +56,12 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of a permission object on a site.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSitePermission -SiteId $siteId
-
-```
-This example shows how to use the Get-MgBetaSitePermission Cmdlet.
-
 
 ## PARAMETERS
 
@@ -558,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -623,28 +615,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSitePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepermission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-get-permission?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepermission)
+- [](https://learn.microsoft.com/graph/api/site-get-permission?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-beta)

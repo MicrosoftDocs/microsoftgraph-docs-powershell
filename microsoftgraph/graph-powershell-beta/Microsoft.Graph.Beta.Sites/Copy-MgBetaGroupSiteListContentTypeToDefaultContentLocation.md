@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsitelistcontenttypetodefaultcontentlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation
 ---
@@ -14,9 +14,6 @@ title: Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation
 ## SYNOPSIS
 
 Invoke action copyToDefaultContentLocation
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgGroupSiteListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Sites/Copy-MgGroupSiteListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -ContentTypeId <stri
  [-SourceFile <IMicrosoftGraphItemReference>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Copy
@@ -41,7 +37,6 @@ Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -ContentTypeId <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
@@ -53,7 +48,6 @@ Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -InputObject <ISites
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
@@ -64,7 +58,6 @@ Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -InputObject <ISites
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action copyToDefaultContentLocation
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -107,7 +110,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -205,7 +208,7 @@ HelpMessage: ''
 
 ### -DestinationFileName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -592,7 +595,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths2L9E8PGroupsGroupIdSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths2L9E8PGroupsGroupIdSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DestinationFileName <String>]: 
   [SourceFile <IMicrosoftGraphItemReference>]: itemReference
@@ -624,7 +627,7 @@ The value is the same as the id property of that site resource.
 It's an opaque string that consists of three identifiers of the site.
 For OneDrive, this property isn't populated.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -686,7 +689,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-SOURCEFILE `<IMicrosoftGraphItemReference>`: itemReference
+SOURCEFILE <IMicrosoftGraphItemReference>: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -718,28 +721,5 @@ For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 
-- [Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsitelistcontenttypetodefaultcontentlocation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsitelistcontenttypetodefaultcontentlocation)
+- [](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-beta)
