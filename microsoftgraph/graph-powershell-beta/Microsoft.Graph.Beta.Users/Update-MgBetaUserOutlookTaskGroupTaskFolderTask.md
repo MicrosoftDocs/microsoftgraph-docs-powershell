@@ -1392,7 +1392,7 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskgrouptaskfoldertask)
+- [Update-MgBetaUserOutlookTaskGroupTaskFolderTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskgrouptaskfoldertask)
 
 
 

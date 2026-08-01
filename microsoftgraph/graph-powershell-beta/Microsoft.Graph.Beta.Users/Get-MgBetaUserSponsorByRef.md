@@ -433,8 +433,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorbyref)
-- [](https://learn.microsoft.com/graph/api/agentuser-list-sponsors?view=graph-rest-beta)
+- [Get-MgBetaUserSponsorByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-sponsors?view=graph-rest-beta)
 
 
 
