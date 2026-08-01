@@ -377,7 +377,7 @@ HelpMessage: ''
 
 ### -ReferenceTemplateVersion
 
-.
+
 
 ```yaml
 Type: System.Int32
