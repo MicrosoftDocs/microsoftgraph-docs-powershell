@@ -427,7 +427,7 @@ Read-only.
     [Entitlements <IMicrosoftGraphEntitlementsDataCollectionInfo>]: entitlementsDataCollectionInfo
       [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternal>: external
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthorizationSystems <IMicrosoftGraphAuthorizationSystem[]>]: Represents an onboarded Amazon Web Services (AWS) account, Azure subscription, or Google Cloud Platform (GCP) project that Microsoft Entra Permissions Management collects and analyzes permissions and actions on.
     [Id <String>]: The unique identifier for an entity.
@@ -882,7 +882,7 @@ For example, the property name may not contain control characters, whitespace, o
 Maximum of 2 search result templates per connection.
   [State <String>]: connectionState
 
-INDUSTRYDATA <IMicrosoftGraphIndustryDataRoot>: industryDataRoot
+INDUSTRYDATA `<IMicrosoftGraphIndustryDataRoot>`: industryDataRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1016,3 +1016,25 @@ Maximum supported length is 100 characters.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

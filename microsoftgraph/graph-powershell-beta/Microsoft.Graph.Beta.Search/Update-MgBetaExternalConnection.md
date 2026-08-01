@@ -933,12 +933,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITYSETTINGS <IMicrosoftGraphExternalConnectorsActivitySettings>: activitySettings
+ACTIVITYSETTINGS `<IMicrosoftGraphExternalConnectorsActivitySettings>`: activitySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]: Specifies configurations to identify an externalItem based on a shared URL.
     [Priority <Int32?>]: The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated.
 
-BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection>: externalConnection
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalConnection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1100,7 +1100,7 @@ For example, the property name may not contain control characters, whitespace, o
 Maximum of 2 search result templates per connection.
   [State <String>]: connectionState
 
-COMPLIANCESETTINGS <IMicrosoftGraphExternalConnectorsComplianceSettings>: complianceSettings
+COMPLIANCESETTINGS `<IMicrosoftGraphExternalConnectorsComplianceSettings>`: complianceSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EDiscoveryResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]: 
     [Id <String>]: The text identifier for the display template; for example, contosoTickets.
@@ -1122,7 +1122,7 @@ One or more specified strings are matched with the specified property using the 
 Required.
       [ValuesJoinedBy <String>]: binaryOperator
 
-CONFIGURATION <IMicrosoftGraphExternalConnectorsConfiguration>: configuration
+CONFIGURATION `<IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthorizedAppIds <String[]>]: A collection of application IDs for registered Microsoft Entra apps allowed to manage the externalConnection and index content in the externalConnection.
 
@@ -1139,7 +1139,7 @@ You can add Microsoft Entra users, Microsoft Entra groups, or other externalGrou
 Read-only.
     [Type <String>]: identityType
 
-INPUTOBJECT <ISearchIdentity>: Identity Parameter
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [AuthorizationSystemId <String>]: The unique identifier of authorizationSystem
   [BookmarkId <String>]: The unique identifier of bookmark
@@ -1215,7 +1215,7 @@ Read-only.
     [Target <String>]: The target of the error.
   [Status <String>]: connectionOperationStatus
 
-QUOTA <IMicrosoftGraphExternalConnectorsConnectionQuota>: connectionQuota
+QUOTA `<IMicrosoftGraphExternalConnectorsConnectionQuota>`: connectionQuota
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1223,7 +1223,7 @@ Read-only.
 The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} – {number of items in the connection}, {tenant quota} – {number of items indexed in all connections}).
 If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
 
-SCHEMA <IMicrosoftGraphExternalConnectorsSchema>: schema
+SCHEMA `<IMicrosoftGraphExternalConnectorsSchema>`: schema
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1270,7 +1270,7 @@ For example, the property name may not contain control characters, whitespace, o
       [ImportanceScore <String>]: importanceScore
     [Type <String>]: propertyType
 
-SEARCHSETTINGS <IMicrosoftGraphExternalConnectorsSearchSettings>: searchSettings
+SEARCHSETTINGS `<IMicrosoftGraphExternalConnectorsSearchSettings>`: searchSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed.
 Maximum of 2 search result templates per connection.
@@ -1298,3 +1298,25 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnection)
 - [](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
