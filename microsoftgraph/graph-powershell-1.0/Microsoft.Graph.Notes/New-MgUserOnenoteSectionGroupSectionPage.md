@@ -15,6 +15,9 @@ title: New-MgUserOnenoteSectionGroupSectionPage
 
 Create new navigation property to pages for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteSectionGroupSectionPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
