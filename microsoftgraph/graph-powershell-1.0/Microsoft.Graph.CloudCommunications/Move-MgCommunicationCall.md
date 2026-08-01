@@ -757,8 +757,8 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall)
-- [](https://learn.microsoft.com/graph/api/call-transfer?view=graph-rest-1.0)
+- [Move-MgCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-transfer?view=graph-rest-1.0)
 
 
 
