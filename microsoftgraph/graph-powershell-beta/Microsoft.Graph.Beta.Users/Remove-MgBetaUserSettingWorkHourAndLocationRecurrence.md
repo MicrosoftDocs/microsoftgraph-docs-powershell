@@ -15,6 +15,9 @@ title: Remove-MgBetaUserSettingWorkHourAndLocationRecurrence
 
 Delete navigation property recurrences for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserSettingWorkHourAndLocationRecurrence](/powershell/module/Microsoft.Graph.Users/Remove-MgUserSettingWorkHourAndLocationRecurrence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
