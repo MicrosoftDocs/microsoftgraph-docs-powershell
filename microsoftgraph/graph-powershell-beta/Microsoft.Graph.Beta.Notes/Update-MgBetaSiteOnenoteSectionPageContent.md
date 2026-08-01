@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotesectionpagecontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSiteOnenoteSectionPageContent
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSiteOnenoteSectionPageContent
 ## SYNOPSIS
 
 Invoke action onenotePatchContent
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteOnenoteSectionPageContent](/powershell/module/Microsoft.Graph.Notes/Update-MgSiteOnenoteSectionPageContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Update-MgBetaSiteOnenoteSectionPageContent -OnenotePageId <string> -OnenoteSecti
  [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Patch
@@ -40,7 +36,6 @@ Update-MgBetaSiteOnenoteSectionPageContent -OnenotePageId <string> -OnenoteSecti
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### PatchViaIdentityExpanded
@@ -51,7 +46,6 @@ Update-MgBetaSiteOnenoteSectionPageContent -InputObject <INotesIdentity>
  [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### PatchViaIdentity
@@ -62,7 +56,6 @@ Update-MgBetaSiteOnenoteSectionPageContent -InputObject <INotesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,6 +66,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action onenotePatchContent
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -154,7 +157,7 @@ HelpMessage: ''
 
 ### -Commands
 
-
+.
 To construct, see NOTES section for COMMANDS properties and create a hash table.
 
 ```yaml
@@ -536,7 +539,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths119Fs5ZSitesSiteIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths119Fs5ZSitesSiteIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Commands <IMicrosoftGraphOnenotePatchContentCommand[]>]: 
     [Action <String>]: onenotePatchActionType
@@ -544,7 +547,7 @@ BODYPARAMETER `<IPaths119Fs5ZSitesSiteIdOnenoteSectionsOnenotesectionIdPagesOnen
 If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
     [Position <String>]: onenotePatchInsertPosition
     [Target <String>]: The element to update.
-Must be the #`<data-id>` or the generated {id} of the element, or the body or title keyword.
+Must be the #<data-id> or the generated {id} of the element, or the body or title keyword.
 
 COMMANDS <IMicrosoftGraphOnenotePatchContentCommand[]>: .
   [Action <String>]: onenotePatchActionType
@@ -552,9 +555,9 @@ COMMANDS <IMicrosoftGraphOnenotePatchContentCommand[]>: .
 If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
   [Position <String>]: onenotePatchInsertPosition
   [Target <String>]: The element to update.
-Must be the #`<data-id>` or the generated {id} of the element, or the body or title keyword.
+Must be the #<data-id> or the generated {id} of the element, or the body or title keyword.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -571,27 +574,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaSiteOnenoteSectionPageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotesectionpagecontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotesectionpagecontent)

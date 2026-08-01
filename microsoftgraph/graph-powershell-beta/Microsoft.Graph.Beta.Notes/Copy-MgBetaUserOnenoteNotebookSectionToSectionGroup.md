@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetauseronenotenotebooksectiontosectiongroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaUserOnenoteNotebookSectionToSectionGroup
 ---
@@ -16,9 +16,6 @@ title: Copy-MgBetaUserOnenoteNotebookSectionToSectionGroup
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgUserOnenoteNotebookSectionToSectionGroup](/powershell/module/Microsoft.Graph.Notes/Copy-MgUserOnenoteNotebookSectionToSectionGroup?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -29,7 +26,7 @@ Copy-MgBetaUserOnenoteNotebookSectionToSectionGroup -NotebookId <string> -Onenot
  [-GroupId <string>] [-Id <string>] [-RenameAs <string>] [-SiteCollectionId <string>]
  [-SiteId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Copy
@@ -41,7 +38,6 @@ Copy-MgBetaUserOnenoteNotebookSectionToSectionGroup -NotebookId <string> -Onenot
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
@@ -52,7 +48,7 @@ Copy-MgBetaUserOnenoteNotebookSectionToSectionGroup -InputObject <INotesIdentity
  [-Id <string>] [-RenameAs <string>] [-SiteCollectionId <string>] [-SiteId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CopyViaIdentity
@@ -63,7 +59,6 @@ Copy-MgBetaUserOnenoteNotebookSectionToSectionGroup -InputObject <INotesIdentity
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,6 +70,16 @@ This cmdlet has the following aliases,
 
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -107,7 +112,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -178,7 +183,7 @@ HelpMessage: ''
 
 ### -GroupId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -268,7 +273,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -440,7 +445,7 @@ HelpMessage: ''
 
 ### -RenameAs
 
-
+.
 
 ```yaml
 Type: System.String
@@ -489,7 +494,7 @@ HelpMessage: ''
 
 ### -SiteCollectionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -516,7 +521,7 @@ HelpMessage: ''
 
 ### -SiteId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -624,7 +629,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsJ97B30UsersUserIdOnenoteNotebooksNotebookIdSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsJ97B30UsersUserIdOnenoteNotebooksNotebookIdSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupId <String>]: 
   [Id <String>]: 
@@ -632,7 +637,7 @@ BODYPARAMETER `<IPathsJ97B30UsersUserIdOnenoteNotebooksNotebookIdSectionsOnenote
   [SiteCollectionId <String>]: 
   [SiteId <String>]: 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -649,28 +654,5 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Copy-MgBetaUserOnenoteNotebookSectionToSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetauseronenotenotebooksectiontosectiongroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetauseronenotenotebooksectiontosectiongroup)
+- [](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-beta)
