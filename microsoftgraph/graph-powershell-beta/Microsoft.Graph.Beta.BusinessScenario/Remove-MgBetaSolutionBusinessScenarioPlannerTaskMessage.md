@@ -1,42 +1,39 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskbuckettaskboardformat
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertaskmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat
+title: Remove-MgBetaSolutionBusinessScenarioPlannerTaskMessage
 ---
 
-# Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat
+# Remove-MgBetaSolutionBusinessScenarioPlannerTaskMessage
 
 ## SYNOPSIS
 
-Read-only.
-Nullable.
-Used to render the task correctly in the task board view when grouped by bucket.
+Delete navigation property messages for solutions
 
 ## SYNTAX
 
-### Get (Default)
+### Delete (Default)
 
 ```
-Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat -BusinessScenarioId <string>
- -BusinessScenarioTaskId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
+Remove-MgBetaSolutionBusinessScenarioPlannerTaskMessage -BusinessScenarioId <string>
+ -BusinessScenarioTaskId <string> -PlannerTaskChatMessageId <string> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### GetViaIdentity
+### DeleteViaIdentity
 
 ```
-Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat
- -InputObject <IBusinessScenarioIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+Remove-MgBetaSolutionBusinessScenarioPlannerTaskMessage -InputObject <IBusinessScenarioIdentity>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -46,9 +43,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read-only.
-Nullable.
-Used to render the task correctly in the task board view when grouped by bucket.
+Delete navigation property messages for solutions
 
 ## EXAMPLES
 
@@ -93,7 +88,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Get
+- Name: Delete
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -114,7 +109,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Get
+- Name: Delete
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -125,16 +120,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ExpandProperty
+### -Confirm
 
-Expand related entities
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.String[]
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- Expand
+- cf
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -210,6 +205,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IfMatch
+
+ETag
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -InputObject
 
 Identity Parameter
@@ -221,7 +237,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: GetViaIdentity
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -232,20 +248,40 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Property
+### -PassThru
 
-Select properties to be returned
+Returns true when the command succeeds
 
 ```yaml
-Type: System.String[]
-DefaultValue: ''
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
-Aliases:
-- Select
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PlannerTaskChatMessageId
+
+The unique identifier of plannerTaskChatMessage
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -339,6 +375,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -WhatIf
+
+Runs the command in a mode that only reports what would happen without performing the actions.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -358,7 +416,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerBucketTaskBoardTaskFormat
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -379,4 +437,4 @@ INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskbuckettaskboardformat)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertaskmessage)

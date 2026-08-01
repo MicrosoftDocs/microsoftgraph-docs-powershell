@@ -1,29 +1,27 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskbuckettaskboardformat
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskmessagecount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat
+title: Get-MgBetaSolutionBusinessScenarioPlannerTaskMessageCount
 ---
 
-# Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat
+# Get-MgBetaSolutionBusinessScenarioPlannerTaskMessageCount
 
 ## SYNOPSIS
 
-Read-only.
-Nullable.
-Used to render the task correctly in the task board view when grouped by bucket.
+Get the number of the resource
 
 ## SYNTAX
 
 ### Get (Default)
 
 ```
-Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat -BusinessScenarioId <string>
- -BusinessScenarioTaskId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
+Get-MgBetaSolutionBusinessScenarioPlannerTaskMessageCount -BusinessScenarioId <string>
+ -BusinessScenarioTaskId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
@@ -32,11 +30,11 @@ Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat -BusinessScen
 ### GetViaIdentity
 
 ```
-Get-MgBetaSolutionBusinessScenarioPlannerTaskBucketTaskBoardFormat
- -InputObject <IBusinessScenarioIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+Get-MgBetaSolutionBusinessScenarioPlannerTaskMessageCount -InputObject <IBusinessScenarioIdentity>
+ [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -46,9 +44,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read-only.
-Nullable.
-Used to render the task correctly in the task board view when grouped by bucket.
+Get the number of the resource
 
 ## EXAMPLES
 
@@ -125,16 +121,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ExpandProperty
+### -Filter
 
-Expand related entities
+Filter items by property values
 
 ```yaml
-Type: System.String[]
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- Expand
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -232,28 +227,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Property
-
-Select properties to be returned
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- Select
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -Proxy
 
 The URI for the proxy server to use
@@ -339,6 +312,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Search
+
+Search items by search phrases
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -358,7 +352,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerBucketTaskBoardTaskFormat
+### System.Int32
 
 {{ Fill in the Description }}
 
@@ -379,4 +373,4 @@ INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskbuckettaskboardformat)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannertaskmessagecount)
