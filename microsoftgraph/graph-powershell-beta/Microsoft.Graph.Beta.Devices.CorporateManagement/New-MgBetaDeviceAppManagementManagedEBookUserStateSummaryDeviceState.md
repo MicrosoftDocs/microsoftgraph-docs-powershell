@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState
 
 Create new navigation property to deviceStates for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
