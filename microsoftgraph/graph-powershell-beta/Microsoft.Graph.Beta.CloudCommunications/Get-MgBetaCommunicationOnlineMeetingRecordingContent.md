@@ -16,6 +16,9 @@ title: Get-MgBetaCommunicationOnlineMeetingRecordingContent
 The content of the recording.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingRecordingContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
