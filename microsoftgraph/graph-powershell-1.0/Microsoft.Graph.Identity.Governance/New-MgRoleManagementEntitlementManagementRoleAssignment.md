@@ -61,8 +61,9 @@ Create a new unifiedRoleAssignment object.
 | Application | EntitlementManagement.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Create a role assignment with access package catalog scope
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -73,6 +74,10 @@ $params = @{
 }
 
 New-MgRoleManagementEntitlementManagementRoleAssignment -BodyParameter $params
+
+```
+This example will create a role assignment with access package catalog scope
+
 
 ## PARAMETERS
 
