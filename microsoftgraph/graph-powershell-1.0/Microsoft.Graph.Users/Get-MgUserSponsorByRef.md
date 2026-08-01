@@ -46,16 +46,6 @@ Sponsors are users and groups that are responsible for this agent user's privile
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -445,6 +435,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorbyref)
 - [](https://learn.microsoft.com/graph/api/agentuser-list-sponsors?view=graph-rest-1.0)
+
 
 
 
