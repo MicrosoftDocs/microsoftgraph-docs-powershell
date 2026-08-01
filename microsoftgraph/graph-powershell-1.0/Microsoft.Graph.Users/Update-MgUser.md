@@ -56200,8 +56200,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser)
-- [](https://learn.microsoft.com/graph/api/user-update?view=graph-rest-1.0)
+- [Update-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-update?view=graph-rest-1.0)
 
 
 

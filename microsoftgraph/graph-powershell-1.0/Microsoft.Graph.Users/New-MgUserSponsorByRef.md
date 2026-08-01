@@ -533,8 +533,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersponsorbyref)
-- [](https://learn.microsoft.com/graph/api/agentuser-post-sponsors?view=graph-rest-1.0)
+- [New-MgUserSponsorByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersponsorbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-post-sponsors?view=graph-rest-1.0)
 
 
 

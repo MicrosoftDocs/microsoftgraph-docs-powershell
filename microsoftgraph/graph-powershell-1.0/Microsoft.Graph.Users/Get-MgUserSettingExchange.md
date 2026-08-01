@@ -369,8 +369,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingexchange)
-- [](https://learn.microsoft.com/graph/api/usersettings-list-exchange?view=graph-rest-1.0)
+- [Get-MgUserSettingExchange](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingexchange)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/usersettings-list-exchange?view=graph-rest-1.0)
 
 
 
