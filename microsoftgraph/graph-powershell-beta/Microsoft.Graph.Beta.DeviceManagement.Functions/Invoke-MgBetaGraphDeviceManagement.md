@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetagraphdevicemanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaGraphDeviceManagement
 ---
@@ -23,7 +23,7 @@ Invoke function scopedForResource
 Invoke-MgBetaGraphDeviceManagement -Resource <string> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GraphViaIdentity
@@ -32,7 +32,7 @@ Invoke-MgBetaGraphDeviceManagement -Resource <string> [-ResponseHeadersVariable 
 Invoke-MgBetaGraphDeviceManagement -InputObject <IDeviceManagementFunctionsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -44,13 +44,15 @@ This cmdlet has the following aliases,
 
 Invoke function scopedForResource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -296,7 +298,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   [DomainName <String>]: Usage: domainName='{domainName}'
   [EnrollmentType <String>]: Usage: enrollmentType='{enrollmentType}'
   [Ids <String[]>]: Usage: ids={ids}
@@ -307,27 +309,4 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaGraphDeviceManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetagraphdevicemanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetagraphdevicemanagement)

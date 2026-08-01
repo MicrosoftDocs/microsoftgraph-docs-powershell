@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementrolescopetagbyresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementRoleScopeTagByResource
 ---
@@ -25,7 +25,7 @@ Get-MgBetaDeviceManagementRoleScopeTagByResource -Resource <string> [-Count]
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -36,7 +36,7 @@ Get-MgBetaDeviceManagementRoleScopeTagByResource -InputObject <IDeviceManagement
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke function getRoleScopeTagsByResource
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -464,7 +474,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   [DomainName <String>]: Usage: domainName='{domainName}'
   [EnrollmentType <String>]: Usage: enrollmentType='{enrollmentType}'
   [Ids <String[]>]: Usage: ids={ids}
@@ -475,27 +485,4 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDeviceManagementRoleScopeTagByResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementrolescopetagbyresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementrolescopetagbyresource)
