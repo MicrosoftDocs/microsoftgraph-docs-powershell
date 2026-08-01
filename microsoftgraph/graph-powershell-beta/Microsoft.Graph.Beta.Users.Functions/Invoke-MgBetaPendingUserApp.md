@@ -414,7 +414,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetapendinguserapp)
+- [Invoke-MgBetaPendingUserApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetapendinguserapp)
 
 
 
