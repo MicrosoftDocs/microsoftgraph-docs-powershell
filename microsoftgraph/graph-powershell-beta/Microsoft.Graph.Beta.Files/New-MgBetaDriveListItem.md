@@ -55883,7 +55883,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistitem)
+- [New-MgBetaDriveListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistitem)
 
 
 

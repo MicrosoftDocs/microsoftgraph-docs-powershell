@@ -1076,7 +1076,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemsubscription)
+- [Update-MgBetaDriveItemSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemsubscription)
 
 
 

@@ -36967,7 +36967,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemanalytic)
+- [Update-MgBetaDriveItemAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemanalytic)
 
 
 

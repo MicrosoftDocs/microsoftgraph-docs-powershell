@@ -2262,7 +2262,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistcontenttype)
+- [New-MgBetaDriveListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistcontenttype)
 
 
 
