@@ -74,6 +74,14 @@ This cmdlet has the following aliases,
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
