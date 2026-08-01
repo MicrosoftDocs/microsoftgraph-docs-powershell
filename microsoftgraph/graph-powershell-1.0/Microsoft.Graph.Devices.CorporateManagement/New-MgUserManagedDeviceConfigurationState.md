@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to deviceConfigurationStates for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -745,6 +735,7 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState[]>: .
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddeviceconfigurationstate)
+
 
 
 
