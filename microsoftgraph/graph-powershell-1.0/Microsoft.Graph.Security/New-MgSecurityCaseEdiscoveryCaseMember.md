@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasemember
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityCaseEdiscoveryCaseMember
 ---
@@ -16,9 +16,6 @@ title: New-MgSecurityCaseEdiscoveryCaseMember
 Add an ediscoveryCaseMember to an ediscoveryCase.
 The ediscoveryCaseMember can be one of two types: a user or a role group.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseMember](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseMember?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,7 +26,6 @@ New-MgSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId <string>
  [-Id <string>] [-RecipientType <string>] [-SmtpAddress <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +35,7 @@ New-MgSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId <string>
  -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseMember> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -50,7 +46,6 @@ New-MgSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity>
  [-Id <string>] [-RecipientType <string>] [-SmtpAddress <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -60,7 +55,7 @@ New-MgSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseMember> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -73,13 +68,51 @@ This cmdlet has the following aliases,
 Add an ediscoveryCaseMember to an ediscoveryCase.
 The ediscoveryCaseMember can be one of two types: a user or a role group.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	recipientType = "user"
+	smtpAddress = "johnadams@microsoft.com"
+}
+
+New-MgSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	recipientType = "roleGroup"
+	displayName = "Security Administrator"
+}
+
+New-MgSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+### EXAMPLE 3
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	recipientType = "user"
+	id = "c4af6f9d-37f6-43f9-9e17-601544234146"
+}
+
+New-MgSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+### EXAMPLE 4
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	recipientType = "roleGroup"
+	id = "b9fb4f22-5f90-47a0-b309-44fe96a959fd"
+}
+
+New-MgSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -551,7 +584,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCaseMember>`: ediscoveryCaseMember
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryCaseMember>: ediscoveryCaseMember
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -561,7 +594,7 @@ Allowed only for case members of type roleGroup.
   [SmtpAddress <String>]: The smtp address of the eDiscovery case member.
 Allowed only for case members of type user.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -637,28 +670,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgSecurityCaseEdiscoveryCaseMember](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasemember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasemember)
+- [](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-post?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityTriggerRetentionEvent
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityTriggerRetentionEvent
 ## SYNOPSIS
 
 Create a new retentionEvent object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,7 +31,6 @@ New-MgSecurityTriggerRetentionEvent [-ResponseHeadersVariable <string>]
  [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -44,7 +40,6 @@ New-MgSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityReten
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -56,18 +51,9 @@ This cmdlet has the following aliases,
 
 Create a new retentionEvent object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RecordsManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RecordsManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -85,10 +71,6 @@ $params = @{
 }
 
 New-MgSecurityTriggerRetentionEvent -BodyParameter $params
-
-```
-This example shows how to use the New-MgSecurityTriggerRetentionEvent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -658,7 +640,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityRetentionEvent>`: retentionEvent
+BODYPARAMETER <IMicrosoftGraphSecurityRetentionEvent>: retentionEvent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -717,7 +699,7 @@ Read-only.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: The latest date time when the retentionEventType was modified.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -739,7 +721,7 @@ EVENTQUERIES <IMicrosoftGraphSecurityEventQuery[]>: Represents the workload (Sha
 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
   [QueryType <String>]: queryType
 
-EVENTSTATUS `<IMicrosoftGraphSecurityRetentionEventStatus>`: retentionEventStatus
+EVENTSTATUS <IMicrosoftGraphSecurityRetentionEventStatus>: retentionEventStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -758,7 +740,7 @@ EVENTSTATUS `<IMicrosoftGraphSecurityRetentionEventStatus>`: retentionEventStatu
     [Target <String>]: The target of the error.
   [Status <String>]: eventStatusType
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -769,7 +751,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-RETENTIONEVENTTYPE `<IMicrosoftGraphSecurityRetentionEventType>`: retentionEventType
+RETENTIONEVENTTYPE <IMicrosoftGraphSecurityRetentionEventType>: retentionEventType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -792,27 +774,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgSecurityTriggerRetentionEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent)
+- [](https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0)

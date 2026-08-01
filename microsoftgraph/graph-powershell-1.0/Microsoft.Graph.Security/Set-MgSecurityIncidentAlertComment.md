@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityincidentalertcomment
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgSecurityIncidentAlertComment
 ---
@@ -14,9 +14,6 @@ title: Set-MgSecurityIncidentAlertComment
 ## SYNOPSIS
 
 Sets a new value for the collection of alertComment.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaSecurityIncidentAlertComment](/powershell/module/Microsoft.Graph.Beta.Security/Set-MgBetaSecurityIncidentAlertComment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Set-MgSecurityIncidentAlertComment -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set
@@ -39,7 +35,6 @@ Set-MgSecurityIncidentAlertComment -AlertId <string> -IncidentId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Sets a new value for the collection of alertComment.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -382,7 +387,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlertComment
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
 
 {{ Fill in the Description }}
 
@@ -391,10 +396,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 {{ Fill in the Description }}
 
 ### System.Collections.IDictionary
-
-{{ Fill in the Description }}
-
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
 
 {{ Fill in the Description }}
 
@@ -416,7 +417,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityAlertComment[]>: Array of microsoft.graph.
   [CreatedByDisplayName <String>]: The person or app name that submitted the comment.
   [CreatedDateTime <DateTime?>]: The time when the comment was submitted.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
@@ -492,27 +493,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgSecurityIncidentAlertComment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityincidentalertcomment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityincidentalertcomment)
