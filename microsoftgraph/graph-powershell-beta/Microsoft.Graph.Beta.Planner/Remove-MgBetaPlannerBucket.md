@@ -413,8 +413,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerbucket)
-- [](https://learn.microsoft.com/graph/api/plannerbucket-delete?view=graph-rest-beta)
+- [Remove-MgBetaPlannerBucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerbucket)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerbucket-delete?view=graph-rest-beta)
 
 
 

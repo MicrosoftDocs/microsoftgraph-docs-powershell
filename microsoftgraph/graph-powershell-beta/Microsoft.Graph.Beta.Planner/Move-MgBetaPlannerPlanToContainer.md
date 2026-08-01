@@ -507,8 +507,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/move-mgbetaplannerplantocontainer)
-- [](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta)
+- [Move-MgBetaPlannerPlanToContainer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/move-mgbetaplannerplantocontainer)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta)
 
 
 

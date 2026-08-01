@@ -578,9 +578,9 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrostermember)
-- [](https://learn.microsoft.com/graph/api/plannerrostermember-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/plannerroster-list-members?view=graph-rest-beta)
+- [Get-MgBetaPlannerRosterMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrostermember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerrostermember-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerroster-list-members?view=graph-rest-beta)
 
 
 
