@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserMailFolderDelta
 ---
@@ -14,11 +14,8 @@ title: Get-MgBetaUserMailFolderDelta
 ## SYNOPSIS
 
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
-A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls,you can query for incremental changes in the mail folders.
-This allows you to maintain and synchronizea local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderDelta](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderDelta?view=graph-powershell-1.0)
+A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriately\napplying state tokens in one or more of these calls,\nyou can query for incremental changes in the mail folders.
+This allows you to maintain and synchronize\na local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Get-MgBetaUserMailFolderDelta -UserId <string> [-ExpandProperty <string[]>] [-Fi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### DeltaViaIdentity
@@ -40,7 +37,7 @@ Get-MgBetaUserMailFolderDelta -InputObject <IMailIdentity> [-ExpandProperty <str
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-Count] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -51,16 +48,18 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
-A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls,you can query for incremental changes in the mail folders.
-This allows you to maintain and synchronizea local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
+A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriately\napplying state tokens in one or more of these calls,\nyou can query for incremental changes in the mail folders.
+This allows you to maintain and synchronize\na local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
-| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
-| Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -543,7 +542,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -559,28 +558,5 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserMailFolderDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderdelta)
+- [](https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-beta)

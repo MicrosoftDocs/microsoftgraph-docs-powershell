@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassificationoverride
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserInferenceClassificationOverride
 ---
@@ -17,9 +17,6 @@ A set of overrides for a user to always classify messages from specific senders 
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Get-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -30,7 +27,7 @@ Get-MgBetaUserInferenceClassificationOverride -UserId <string> [-ExpandProperty 
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -40,7 +37,7 @@ Get-MgBetaUserInferenceClassificationOverride -InferenceClassificationOverrideId
  -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -50,7 +47,7 @@ Get-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -65,18 +62,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserInferenceClassificationOverride -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserInferenceClassificationOverride Cmdlet.
-
 
 ## PARAMETERS
 
@@ -565,7 +557,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -581,26 +573,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserInferenceClassificationOverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassificationoverride)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassificationoverride)

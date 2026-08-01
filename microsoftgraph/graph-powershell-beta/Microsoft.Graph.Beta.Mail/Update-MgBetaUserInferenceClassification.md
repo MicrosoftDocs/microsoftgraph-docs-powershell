@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassification
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserInferenceClassification
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserInferenceClassification
 ## SYNOPSIS
 
 Update the navigation property inferenceClassification in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserInferenceClassification](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Update-MgBetaUserInferenceClassification -UserId <string> [-ResponseHeadersVaria
  [-Overrides <IMicrosoftGraphInferenceClassificationOverride[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -38,7 +34,7 @@ Update-MgBetaUserInferenceClassification -UserId <string>
  -BodyParameter <IMicrosoftGraphInferenceClassification> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,7 +45,6 @@ Update-MgBetaUserInferenceClassification -InputObject <IMailIdentity>
  [-Overrides <IMicrosoftGraphInferenceClassificationOverride[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -59,7 +54,7 @@ Update-MgBetaUserInferenceClassification -InputObject <IMailIdentity>
  -BodyParameter <IMicrosoftGraphInferenceClassification> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -70,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property inferenceClassification in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -488,7 +493,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphInferenceClassification>`: inferenceClassification
+BODYPARAMETER <IMicrosoftGraphInferenceClassification>: inferenceClassification
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -503,7 +508,7 @@ Read-only.
       [Address <String>]: The email address of an entity instance.
       [Name <String>]: The display name of an entity instance.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -530,27 +535,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserInferenceClassification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassification)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassification)

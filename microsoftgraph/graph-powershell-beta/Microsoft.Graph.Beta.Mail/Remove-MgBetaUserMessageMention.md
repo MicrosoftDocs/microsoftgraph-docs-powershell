@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagemention
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserMessageMention
 ---
@@ -24,7 +24,6 @@ Remove-MgBetaUserMessageMention -MentionId <string> -MessageId <string> -UserId 
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -34,7 +33,6 @@ Remove-MgBetaUserMessageMention -InputObject <IMailIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -46,23 +44,13 @@ This cmdlet has the following aliases,
 
 Delete navigation property mentions for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
-| Application | Mail.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaUserMessageMention Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Mail
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserMessageMention -UserId $userId -MessageId $messageId -MentionId $mentionId
-```
-This example shows how to use the Remove-MgBetaUserMessageMention Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -436,7 +424,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -452,26 +440,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserMessageMention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagemention)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagemention)

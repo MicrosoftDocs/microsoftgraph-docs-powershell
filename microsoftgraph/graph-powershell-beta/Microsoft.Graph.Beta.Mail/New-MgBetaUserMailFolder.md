@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolder
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserMailFolder
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaUserMailFolder
 ## SYNOPSIS
 
 Create new navigation property to mailFolders for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,7 +31,7 @@ New-MgBetaUserMailFolder -UserId <string> [-ResponseHeadersVariable <string>]
  [-UserConfigurations <IMicrosoftGraphUserConfiguration[]>] [-WellKnownName <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -44,7 +41,6 @@ New-MgBetaUserMailFolder -UserId <string> -BodyParameter <IMicrosoftGraphMailFol
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -61,7 +57,7 @@ New-MgBetaUserMailFolder -InputObject <IMailIdentity> [-ResponseHeadersVariable 
  [-UserConfigurations <IMicrosoftGraphUserConfiguration[]>] [-WellKnownName <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -71,7 +67,6 @@ New-MgBetaUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoft
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -83,18 +78,10 @@ This cmdlet has the following aliases,
 
 Create new navigation property to mailFolders for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
-| Application | Mail.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Mail
 
 $params = @{
@@ -104,11 +91,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMailFolder -UserId $userId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserMailFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -528,7 +510,7 @@ HelpMessage: ''
 
 ### -Operations
 
-
+.
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -752,7 +734,7 @@ HelpMessage: ''
 
 ### -UserConfigurations
 
-
+.
 To construct, see NOTES section for USERCONFIGURATIONS properties and create a hash table.
 
 ```yaml
@@ -891,7 +873,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMailFolder>`: mailFolder
+BODYPARAMETER <IMicrosoftGraphMailFolder>: mailFolder
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1330,7 +1312,7 @@ The possible values are listed above.
 This property is only set for default folders created by Outlook.
 For other folders, this property is null.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -1564,26 +1546,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaUserMailFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolder)

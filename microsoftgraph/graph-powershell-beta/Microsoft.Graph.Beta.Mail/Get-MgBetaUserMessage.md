@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserMessage
 ---
@@ -17,9 +17,6 @@ The messages in a mailbox or folder.
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessage?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -31,7 +28,6 @@ Get-MgBetaUserMessage -UserId <string> [-ExpandProperty <string[]>]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -41,7 +37,7 @@ Get-MgBetaUserMessage -MessageId <string> -UserId <string> [-ExpandProperty <str
  [-IncludeHiddenMessages <string>] [-Property <string[]>] [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -51,7 +47,7 @@ Get-MgBetaUserMessage -InputObject <IMailIdentity> [-ExpandProperty <string[]>]
  [-IncludeHiddenMessages <string>] [-Property <string[]>] [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -65,63 +61,35 @@ The messages in a mailbox or folder.
 Read-only.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Read, Mail.ReadBasic,  |
-| Delegated (personal Microsoft account) | Mail.Read, Mail.ReadBasic,  |
-| Application | Mail.Read, Mail.ReadBasic.All,  |
-
 ## EXAMPLES
-### Example 1: Get a specific message
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId
-```
-This example shows how to use the Get-MgBetaUserMessage Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
 
-### Example 2: Get all mentions in a specific message
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId -ExpandProperty "mentions"
-```
-This example shows how to use the Get-MgBetaUserMessage Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 3
 
-### Example 3: Get message body in text format
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId -Property "subject,body,bodyPreview,uniqueBody"
-```
-This example shows how to use the Get-MgBetaUserMessage Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 4
 
-### Example 4: Get Internet message headers
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId -Property "internetMessageHeaders"
-```
-This example shows how to use the Get-MgBetaUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -631,7 +599,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -647,26 +615,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessage)

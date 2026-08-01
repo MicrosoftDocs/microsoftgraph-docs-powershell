@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolder
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserMailFolder
 ---
@@ -17,9 +17,6 @@ The user's mail folders.
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolder?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -31,7 +28,6 @@ Get-MgBetaUserMailFolder -UserId <string> [-ExpandProperty <string[]>]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -41,7 +37,7 @@ Get-MgBetaUserMailFolder -MailFolderId <string> -UserId <string> [-ExpandPropert
  [-IncludeHiddenFolders <string>] [-Property <string[]>] [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -51,7 +47,7 @@ Get-MgBetaUserMailFolder -InputObject <IMailIdentity> [-ExpandProperty <string[]
  [-IncludeHiddenFolders <string>] [-Property <string[]>] [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -65,39 +61,21 @@ The user's mail folders.
 Read-only.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
-| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
-| Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
-
 ## EXAMPLES
-### Example 1: Get a mail folder
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Mail
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
-
-```
-This example will get a mail folder
-
-### Example 2: Get a mail search folder
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
 
-```
-This example will get a mail search folder
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Mail
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
 
 ## PARAMETERS
 
@@ -607,7 +585,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -623,26 +601,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserMailFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolder)

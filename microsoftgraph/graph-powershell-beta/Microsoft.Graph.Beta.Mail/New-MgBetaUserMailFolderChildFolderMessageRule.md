@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessagerule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserMailFolderChildFolderMessageRule
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaUserMailFolderChildFolderMessageRule
 ## SYNOPSIS
 
 Create new navigation property to messageRules for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,6 @@ New-MgBetaUserMailFolderChildFolderMessageRule -MailFolderId <string> -MailFolde
  [-Id <string>] [-IsEnabled] [-IsReadOnly] [-Sequence <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -40,7 +36,7 @@ New-MgBetaUserMailFolderChildFolderMessageRule -MailFolderId <string> -MailFolde
  -UserId <string> -BodyParameter <IMicrosoftGraphMessageRule> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -53,7 +49,6 @@ New-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
  [-Id <string>] [-IsEnabled] [-IsReadOnly] [-Sequence <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -63,7 +58,7 @@ New-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
  -BodyParameter <IMicrosoftGraphMessageRule> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -74,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to messageRules for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -736,7 +741,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIONS `<IMicrosoftGraphMessageRuleActions>`: messageRuleActions
+ACTIONS <IMicrosoftGraphMessageRuleActions>: messageRuleActions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignCategories <String[]>]: A list of categories to be assigned to a message.
   [CopyToFolder <String>]: The ID of a folder that a message is to be copied to.
@@ -754,7 +759,7 @@ ACTIONS `<IMicrosoftGraphMessageRuleActions>`: messageRuleActions
   [RedirectTo <IMicrosoftGraphRecipient[]>]: The email address to which a message should be redirected.
   [StopProcessingRules <Boolean?>]: Indicates whether subsequent rules should be evaluated.
 
-BODYPARAMETER `<IMicrosoftGraphMessageRule>`: messageRule
+BODYPARAMETER <IMicrosoftGraphMessageRule>: messageRule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -818,7 +823,7 @@ Read-only.
   [IsReadOnly <Boolean?>]: Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
   [Sequence <Int32?>]: Indicates the order in which the rule is executed, among other rules.
 
-CONDITIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
+CONDITIONS <IMicrosoftGraphMessageRulePredicates>: messageRulePredicates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BodyContains <String[]>]: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
   [BodyOrSubjectContains <String[]>]: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
@@ -858,7 +863,7 @@ CONDITIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
     [MaximumSize <Int32?>]: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
     [MinimumSize <Int32?>]: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
 
-EXCEPTIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
+EXCEPTIONS <IMicrosoftGraphMessageRulePredicates>: messageRulePredicates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BodyContains <String[]>]: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
   [BodyOrSubjectContains <String[]>]: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
@@ -898,7 +903,7 @@ EXCEPTIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
     [MaximumSize <Int32?>]: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
     [MinimumSize <Int32?>]: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -914,27 +919,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaUserMailFolderChildFolderMessageRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessagerule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessagerule)

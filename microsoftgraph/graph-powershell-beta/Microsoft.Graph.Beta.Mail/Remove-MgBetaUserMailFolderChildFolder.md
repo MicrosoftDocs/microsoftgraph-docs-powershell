@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolder
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserMailFolderChildFolder
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaUserMailFolderChildFolder
 ## SYNOPSIS
 
 Delete navigation property childFolders for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Remove-MgBetaUserMailFolderChildFolder -MailFolderId <string> -MailFolderId1 <st
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,7 +34,6 @@ Remove-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> [-IfMatch <s
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property childFolders for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -422,7 +427,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -438,27 +443,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserMailFolderChildFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolder)

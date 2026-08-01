@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserInferenceClassificationOverride
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserInferenceClassificationOverride
 ## SYNOPSIS
 
 Update the navigation property overrides in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Update-MgBetaUserInferenceClassificationOverride -InferenceClassificationOverrid
  [-ClassifyAs <string>] [-Id <string>] [-SenderEmailAddress <IMicrosoftGraphEmailAddress>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -39,7 +36,6 @@ Update-MgBetaUserInferenceClassificationOverride -InferenceClassificationOverrid
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,7 +46,7 @@ Update-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity>
  [-Id <string>] [-SenderEmailAddress <IMicrosoftGraphEmailAddress>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -60,7 +56,7 @@ Update-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity>
  -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -72,18 +68,10 @@ This cmdlet has the following aliases,
 
 Update the navigation property overrides in users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
-| Application | Mail.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Mail
 
 $params = @{
@@ -92,11 +80,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserInferenceClassificationOverride -UserId $userId -InferenceClassificationOverrideId $inferenceClassificationOverrideId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserInferenceClassificationOverride Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -567,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphInferenceClassificationOverride>`: inferenceClassificationOverride
+BODYPARAMETER <IMicrosoftGraphInferenceClassificationOverride>: inferenceClassificationOverride
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -577,7 +560,7 @@ Read-only.
     [Address <String>]: The email address of an entity instance.
     [Name <String>]: The display name of an entity instance.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -590,7 +573,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   [UserConfigurationId <String>]: The unique identifier of userConfiguration
   [UserId <String>]: The unique identifier of user
 
-SENDEREMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
+SENDEREMAILADDRESS <IMicrosoftGraphEmailAddress>: emailAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <String>]: The email address of an entity instance.
   [Name <String>]: The display name of an entity instance.
@@ -598,26 +581,4 @@ SENDEREMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserInferenceClassificationOverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride)
