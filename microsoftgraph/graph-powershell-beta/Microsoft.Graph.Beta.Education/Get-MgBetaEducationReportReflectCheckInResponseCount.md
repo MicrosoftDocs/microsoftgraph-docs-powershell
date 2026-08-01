@@ -15,6 +15,9 @@ title: Get-MgBetaEducationReportReflectCheckInResponseCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationReportReflectCheckInResponseCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationReportReflectCheckInResponseCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

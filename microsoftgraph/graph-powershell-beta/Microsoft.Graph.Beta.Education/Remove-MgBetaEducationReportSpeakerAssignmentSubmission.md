@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationReportSpeakerAssignmentSubmission
 
 Delete navigation property speakerAssignmentSubmissions for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationReportSpeakerAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationReportSpeakerAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

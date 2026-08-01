@@ -15,6 +15,9 @@ title: New-MgBetaEducationSchoolClassByRef
 
 Add a class to a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchoolClassByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
