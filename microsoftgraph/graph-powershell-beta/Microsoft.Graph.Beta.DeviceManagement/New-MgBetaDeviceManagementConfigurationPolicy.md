@@ -682,7 +682,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationPolicy>: Device Management Configuration Policy
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicy>`: Device Management Configuration Policy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -760,7 +760,7 @@ Applicable for reusable setting.
     [TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]: Describes the TemplateFamily for the Template entity
     [TemplateId <String>]: Template id
 
-PRIORITYMETADATA <IMicrosoftGraphDeviceManagementPriorityMetaData>: Priority metadata of the policy.
+PRIORITYMETADATA `<IMicrosoftGraphDeviceManagementPriorityMetaData>`: Priority metadata of the policy.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Priority <Int32?>]: Priority of the policy.
 Valid values 1 to 500
@@ -812,7 +812,7 @@ Applicable for reusable setting.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [SettingInstanceTemplateId <String>]: Setting instance template id
 
-TEMPLATEREFERENCE <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>: Policy template reference information
+TEMPLATEREFERENCE `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>`: Policy template reference information
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]: Describes the TemplateFamily for the Template entity
   [TemplateId <String>]: Template id
@@ -821,3 +821,25 @@ TEMPLATEREFERENCE <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateRef
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
