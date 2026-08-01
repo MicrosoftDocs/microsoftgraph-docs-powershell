@@ -49,8 +49,9 @@ This cmdlet has the following aliases,
 Remove the favorite status of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
@@ -62,6 +63,10 @@ $params = @{
 }
 
 Invoke-MgBetaUnfavoriteServiceAnnouncementMessage -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaUnfavoriteServiceAnnouncementMessage Cmdlet.
+
 
 ## PARAMETERS
 
