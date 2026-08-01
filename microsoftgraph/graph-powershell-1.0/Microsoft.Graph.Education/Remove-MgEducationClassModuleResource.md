@@ -59,12 +59,17 @@ Only teachers in the class can remove a resource.
 | Application | EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
+
+```
+This example shows how to use the Remove-MgEducationClassModuleResource Cmdlet.
+
 
 ## PARAMETERS
 
