@@ -1,29 +1,30 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouprejectedsenderdirectoryobjectbyref
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupOwnerByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgGroupRejectedSenderDirectoryObjectByRef
+title: Remove-MgGroupOwnerByRef
 ---
 
-# Remove-MgGroupRejectedSenderDirectoryObjectByRef
+# Remove-MgGroupOwnerByRef
 
 ## SYNOPSIS
 
-Remove rejectedSender
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupOwnerDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgGroupRejectedSenderDirectoryObjectByRef -DirectoryObjectId <string> -GroupId <string>
+Remove-MgGroupOwnerByRef -DirectoryObjectId <string> -GroupId <string>
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -32,7 +33,7 @@ Remove-MgGroupRejectedSenderDirectoryObjectByRef -DirectoryObjectId <string> -Gr
 ### DeleteViaIdentity
 
 ```
-Remove-MgGroupRejectedSenderDirectoryObjectByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
+Remove-MgGroupOwnerByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -45,7 +46,29 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove rejectedSender
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+Remove-MgGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgGroupOwnerByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -422,9 +445,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgGroupRejectedSenderDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouprejectedsenderdirectoryobjectbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-1.0)
-
+- [Remove-MgGroupOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupOwnerByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0)
 
 
 

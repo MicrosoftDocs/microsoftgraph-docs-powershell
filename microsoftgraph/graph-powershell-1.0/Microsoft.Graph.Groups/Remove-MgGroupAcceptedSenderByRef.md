@@ -1,29 +1,29 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouprejectedsenderdirectoryobjectbyref
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupAcceptedSenderByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgGroupRejectedSenderDirectoryObjectByRef
+title: Remove-MgGroupAcceptedSenderByRef
 ---
 
-# Remove-MgGroupRejectedSenderDirectoryObjectByRef
+# Remove-MgGroupAcceptedSenderByRef
 
 ## SYNOPSIS
 
-Remove rejectedSender
+Remove acceptedSender
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgGroupRejectedSenderDirectoryObjectByRef -DirectoryObjectId <string> -GroupId <string>
+Remove-MgGroupAcceptedSenderByRef -DirectoryObjectId <string> -GroupId <string>
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -32,7 +32,7 @@ Remove-MgGroupRejectedSenderDirectoryObjectByRef -DirectoryObjectId <string> -Gr
 ### DeleteViaIdentity
 
 ```
-Remove-MgGroupRejectedSenderDirectoryObjectByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
+Remove-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -45,7 +45,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove rejectedSender
+Remove acceptedSender
 
 ## PARAMETERS
 
@@ -422,8 +422,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgGroupRejectedSenderDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouprejectedsenderdirectoryobjectbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-1.0)
+- [Remove-MgGroupAcceptedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupAcceptedSenderByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-1.0)
 
 
 

@@ -970,8 +970,8 @@ Requires $select to retrieve.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread)
-- [](https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-1.0)
+- [New-MgGroupConversationThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-1.0)
 
 
 
