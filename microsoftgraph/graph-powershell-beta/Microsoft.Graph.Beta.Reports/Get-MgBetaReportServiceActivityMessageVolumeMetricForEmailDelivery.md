@@ -510,8 +510,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymessagevolumemetricforemaildelivery)
-- [](https://learn.microsoft.com/graph/api/serviceactivity-getmessagevolumemetricsforemaildelivery?view=graph-rest-beta)
+- [Get-MgBetaReportServiceActivityMessageVolumeMetricForEmailDelivery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymessagevolumemetricforemaildelivery)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceactivity-getmessagevolumemetricsforemaildelivery?view=graph-rest-beta)
 
 
 

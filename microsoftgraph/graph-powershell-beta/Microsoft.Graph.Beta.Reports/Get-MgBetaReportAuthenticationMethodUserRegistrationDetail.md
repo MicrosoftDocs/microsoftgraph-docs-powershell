@@ -597,9 +597,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserregistrationdetail)
-- [](https://learn.microsoft.com/graph/api/userregistrationdetails-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userregistrationdetails?view=graph-rest-beta)
+- [Get-MgBetaReportAuthenticationMethodUserRegistrationDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserregistrationdetail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userregistrationdetails-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userregistrationdetails?view=graph-rest-beta)
 
 
 
