@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgSiteContentTypePublished
 ---
@@ -15,9 +15,6 @@ title: Test-MgSiteContentTypePublished
 
 Check the publishing status of a contentType in a content type hub site.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaSiteContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Sites/Test-MgBetaSiteContentTypePublished?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Is (Default)
@@ -26,7 +23,7 @@ Check the publishing status of a contentType in a content type hub site.
 Test-MgSiteContentTypePublished -ContentTypeId <string> -SiteId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### IsViaIdentity
@@ -35,7 +32,7 @@ Test-MgSiteContentTypePublished -ContentTypeId <string> -SiteId <string>
 Test-MgSiteContentTypePublished -InputObject <ISitesIdentity> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,26 +44,13 @@ This cmdlet has the following aliases,
 
 Check the publishing status of a contentType in a content type hub site.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.FullControl.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.FullControl.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
 Test-MgSiteContentTypePublished -SiteId $siteId -ContentTypeId $contentTypeId
-
-```
-This example shows how to use the Test-MgSiteContentTypePublished Cmdlet.
-
 
 ## PARAMETERS
 
@@ -333,7 +317,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -381,27 +365,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Test-MgSiteContentTypePublished](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished)
+- [](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
