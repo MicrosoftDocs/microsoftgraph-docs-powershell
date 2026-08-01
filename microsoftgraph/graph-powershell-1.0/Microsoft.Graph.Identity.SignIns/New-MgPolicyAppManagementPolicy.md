@@ -547,7 +547,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-BODYPARAMETER <IMicrosoftGraphAppManagementPolicy>: appManagementPolicy
+BODYPARAMETER `<IMicrosoftGraphAppManagementPolicy>`: appManagementPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description for this policy.
 Required.
@@ -603,7 +603,7 @@ For existing applications, the enforcement date can be retroactively applied.
           [State <String>]: appManagementRestrictionState
         [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
 
-RESTRICTIONS <IMicrosoftGraphCustomAppManagementConfiguration>: customAppManagementConfiguration
+RESTRICTIONS `<IMicrosoftGraphCustomAppManagementConfiguration>`: customAppManagementConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of keyCredential restrictions settings to be applied to an application or service principal.
     [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
@@ -648,3 +648,25 @@ For existing applications, the enforcement date can be retroactively applied.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyappmanagementpolicy)
 - [](https://learn.microsoft.com/graph/api/appmanagementpolicy-post?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
