@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDriveListActivity
 ---
@@ -25,7 +25,7 @@ Get-MgBetaDriveListActivity -DriveId <string> [-ExpandProperty <string[]>] [-Fil
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ## ALIASES
@@ -36,6 +36,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The recent activities that took place within this list.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -468,27 +478,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaDriveListActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistactivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistactivity)

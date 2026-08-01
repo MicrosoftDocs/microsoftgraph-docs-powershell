@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistitemversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaShareListItemVersion
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaShareListItemVersion
 ## SYNOPSIS
 
 Create new navigation property to versions for shares
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgShareListItemVersion](/powershell/module/Microsoft.Graph.Files/New-MgShareListItemVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ New-MgBetaShareListItemVersion -SharedDriveItemId <string> [-ResponseHeadersVari
  [-Publication <IMicrosoftGraphPublicationFacet>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateExpanded
@@ -41,7 +37,6 @@ New-MgBetaShareListItemVersion -ListItemId <string> -SharedDriveItemId <string>
  [-Publication <IMicrosoftGraphPublicationFacet>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -51,7 +46,7 @@ New-MgBetaShareListItemVersion -ListItemId <string> -SharedDriveItemId <string>
  -BodyParameter <IMicrosoftGraphListItemVersion> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create1
@@ -61,7 +56,7 @@ New-MgBetaShareListItemVersion -SharedDriveItemId <string>
  -BodyParameter <IMicrosoftGraphListItemVersion> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -73,7 +68,6 @@ New-MgBetaShareListItemVersion -InputObject <IFilesIdentity> [-ResponseHeadersVa
  [-Publication <IMicrosoftGraphPublicationFacet>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -85,7 +79,6 @@ New-MgBetaShareListItemVersion -InputObject <IFilesIdentity> [-ResponseHeadersVa
  [-Publication <IMicrosoftGraphPublicationFacet>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
@@ -95,7 +88,7 @@ New-MgBetaShareListItemVersion -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphListItemVersion> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -105,7 +98,7 @@ New-MgBetaShareListItemVersion -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphListItemVersion> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -116,6 +109,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to versions for shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -750,7 +753,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphListItemVersion>`: listItemVersion
+BODYPARAMETER <IMicrosoftGraphListItemVersion>: listItemVersion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -780,7 +783,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -807,7 +810,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -819,7 +822,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+PUBLICATION <IMicrosoftGraphPublicationFacet>: publicationFacet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CheckedOutBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -841,27 +844,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaShareListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistitemversion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistitemversion)

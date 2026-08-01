@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistcontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDriveListContentType
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDriveListContentType
 ## SYNOPSIS
 
 Create new navigation property to contentTypes for drives
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/New-MgDriveListContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,7 +31,6 @@ New-MgBetaDriveListContentType -DriveId <string> [-ResponseHeadersVariable <stri
  [-PropagateChanges] [-ReadOnly] [-Sealed] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -44,7 +40,6 @@ New-MgBetaDriveListContentType -DriveId <string> -BodyParameter <IMicrosoftGraph
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -61,7 +56,6 @@ New-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-ResponseHeadersVa
  [-PropagateChanges] [-ReadOnly] [-Sealed] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -71,7 +65,7 @@ New-MgBetaDriveListContentType -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphContentType> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -82,6 +76,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to contentTypes for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -996,7 +1000,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BASE `<IMicrosoftGraphContentType>`: contentType
+BASE <IMicrosoftGraphContentType>: contentType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1459,7 +1463,7 @@ For OneDrive, this property isn't populated.
   [Sealed <Boolean?>]: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
 
-BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
+BODYPARAMETER <IMicrosoftGraphContentType>: contentType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2020,7 +2024,7 @@ User will be prompted with this message if validation fails.
     [Formula <String>]: The formula to validate column value.
 For examples, see Examples of common formulas in lists
 
-DOCUMENTSET `<IMicrosoftGraphDocumentSet>`: documentSet
+DOCUMENTSET <IMicrosoftGraphDocumentSet>: documentSet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]: Content types allowed in document set.
     [Id <String>]: The ID of the content type.
@@ -2192,7 +2196,7 @@ For examples, see Examples of common formulas in lists
   [WelcomePageColumns <IMicrosoftGraphColumnDefinition[]>]: 
   [WelcomePageUrl <String>]: Welcome page absolute URL.
 
-DOCUMENTTEMPLATE `<IMicrosoftGraphDocumentSetContent>`: documentSetContent
+DOCUMENTTEMPLATE <IMicrosoftGraphDocumentSetContent>: documentSetContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentType <IMicrosoftGraphContentTypeInfo>]: contentTypeInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2201,7 +2205,7 @@ DOCUMENTTEMPLATE `<IMicrosoftGraphDocumentSetContent>`: documentSetContent
   [FileName <String>]: Name of the file in resource folder that should be added as a default content or a template in the document set
   [FolderName <String>]: Folder name in which the file will be placed when a new document set is created in the library.
 
-INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
+INHERITEDFROM <IMicrosoftGraphItemReference>: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -2230,7 +2234,7 @@ The value is the same as the id property of that site resource.
 It's an opaque string that consists of three identifiers of the site.
 For OneDrive, this property isn't populated.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -2257,7 +2261,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
+ORDER <IMicrosoftGraphContentTypeOrder>: contentTypeOrder
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Default <Boolean?>]: Indicates whether this is the default content type.
   [Position <Int32?>]: Specifies the position in which the content type appears in the selection UI.
@@ -2265,27 +2269,4 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 
 ## RELATED LINKS
 
-- [New-MgBetaDriveListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistcontenttype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistcontenttype)

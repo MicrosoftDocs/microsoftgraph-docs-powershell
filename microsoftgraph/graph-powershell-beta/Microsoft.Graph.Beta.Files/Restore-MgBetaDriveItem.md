@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgBetaDriveItem
 ---
@@ -14,9 +14,6 @@ title: Restore-MgBetaDriveItem
 ## SYNOPSIS
 
 Restore a deleted driveItem that is currently in the recycle bin.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Restore-MgBetaDriveItem -DriveId <string> -DriveItemId <string> [-ResponseHeader
  [-ParentReference <IMicrosoftGraphItemReference>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Restore
@@ -39,7 +35,6 @@ Restore-MgBetaDriveItem -DriveId <string> -DriveItemId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RestoreViaIdentityExpanded
@@ -50,7 +45,6 @@ Restore-MgBetaDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable 
  [-ParentReference <IMicrosoftGraphItemReference>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
@@ -61,7 +55,6 @@ Restore-MgBetaDriveItem -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,9 +67,8 @@ This cmdlet has the following aliases,
 Restore a deleted driveItem that is currently in the recycle bin.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -88,10 +80,6 @@ $params = @{
 }
 
 Restore-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
-
-```
-This example shows how to use the Restore-MgBetaDriveItem Cmdlet.
-
 
 ## PARAMETERS
 
@@ -124,7 +112,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -340,7 +328,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -534,7 +522,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths17Wfo8EDrivesDriveIdItemsDriveitemIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths17Wfo8EDrivesDriveIdItemsDriveitemIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Name <String>]: 
   [ParentReference <IMicrosoftGraphItemReference>]: itemReference
@@ -566,7 +554,7 @@ The value is the same as the id property of that site resource.
 It's an opaque string that consists of three identifiers of the site.
 For OneDrive, this property isn't populated.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -593,7 +581,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
+PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -625,27 +613,5 @@ For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 
-- [Restore-MgBetaDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitem)
+- [](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta)

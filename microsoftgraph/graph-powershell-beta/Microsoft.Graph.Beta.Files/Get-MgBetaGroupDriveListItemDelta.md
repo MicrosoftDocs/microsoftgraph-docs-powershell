@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistitemdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupDriveListItemDelta
 ---
@@ -14,16 +14,13 @@ title: Get-MgBetaGroupDriveListItemDelta
 ## SYNOPSIS
 
 Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
-Your app begins by calling delta without any parameters.\rThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\rYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
-After you received all the changes, you can apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Your app begins by calling delta without any parameters.\r\nThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\r\nYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.\r\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 The delta feed shows the latest state for each item, not each change.
-If an item was renamed twice, it only shows up once, with its latest name.\rThe same item might appear more than once in a delta feed, for various reasons.
+If an item was renamed twice, it only shows up once, with its latest name.\r\nThe same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Deleted items are returned with the deleted facet.
-Deleted indicates that the item is deleted and can't be restored.\rItems with this property should be removed from your local state.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListItemDelta](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListItemDelta?view=graph-powershell-1.0)
+Deleted indicates that the item is deleted and can't be restored.\r\nItems with this property should be removed from your local state.
 
 ## SYNTAX
 
@@ -35,7 +32,7 @@ Get-MgBetaGroupDriveListItemDelta -DriveId <string> -GroupId <string> [-ExpandPr
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Delta1
@@ -47,7 +44,6 @@ Get-MgBetaGroupDriveListItemDelta -DriveId <string> -GroupId <string> -Token <st
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity1
@@ -57,7 +53,7 @@ Get-MgBetaGroupDriveListItemDelta -InputObject <IFilesIdentity> [-ExpandProperty
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-Count] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### DeltaViaIdentity
@@ -67,7 +63,7 @@ Get-MgBetaGroupDriveListItemDelta -InputObject <IFilesIdentity> [-ExpandProperty
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-Count] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -78,13 +74,23 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
-Your app begins by calling delta without any parameters.\rThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\rYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
-After you received all the changes, you can apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Your app begins by calling delta without any parameters.\r\nThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\r\nYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.\r\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 The delta feed shows the latest state for each item, not each change.
-If an item was renamed twice, it only shows up once, with its latest name.\rThe same item might appear more than once in a delta feed, for various reasons.
+If an item was renamed twice, it only shows up once, with its latest name.\r\nThe same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Deleted items are returned with the deleted facet.
-Deleted indicates that the item is deleted and can't be restored.\rItems with this property should be removed from your local state.
+Deleted indicates that the item is deleted and can't be restored.\r\nItems with this property should be removed from your local state.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -651,7 +657,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -681,28 +687,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupDriveListItemDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistitemdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistitemdelta)
+- [](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta)

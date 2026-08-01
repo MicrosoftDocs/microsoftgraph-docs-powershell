@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetadrivelistcontenttypewithhubsite
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Join-MgBetaDriveListContentTypeWithHubSite
 ---
@@ -14,9 +14,6 @@ title: Join-MgBetaDriveListContentTypeWithHubSite
 ## SYNOPSIS
 
 Invoke action associateWithHubSites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Join-MgDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Files/Join-MgDriveListContentTypeWithHubSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Join-MgBetaDriveListContentTypeWithHubSite -ContentTypeId <string> -DriveId <str
  [-PropagateToExistingLists] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Associate
@@ -39,7 +35,6 @@ Join-MgBetaDriveListContentTypeWithHubSite -ContentTypeId <string> -DriveId <str
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AssociateViaIdentityExpanded
@@ -50,7 +45,6 @@ Join-MgBetaDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
  [-PropagateToExistingLists] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AssociateViaIdentity
@@ -61,7 +55,6 @@ Join-MgBetaDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -72,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action associateWithHubSites
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -292,7 +295,7 @@ HelpMessage: ''
 
 ### -HubSiteUrls
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -368,7 +371,7 @@ HelpMessage: ''
 
 ### -PropagateToExistingLists
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -534,12 +537,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [HubSiteUrls <String[]>]: 
   [PropagateToExistingLists <Boolean?>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -569,28 +572,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Join-MgBetaDriveListContentTypeWithHubSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetadrivelistcontenttypewithhubsite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetadrivelistcontenttypewithhubsite)
+- [](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta)

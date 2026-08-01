@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupDriveRootVersion
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaGroupDriveRootVersion
 ## SYNOPSIS
 
 Create new navigation property to versions for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ New-MgBetaGroupDriveRootVersion -DriveId <string> -GroupId <string>
  [-LastModifiedDateTime <datetime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-Size <long>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +36,7 @@ New-MgBetaGroupDriveRootVersion -DriveId <string> -GroupId <string>
  -BodyParameter <IMicrosoftGraphDriveItemVersion> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -51,7 +48,6 @@ New-MgBetaGroupDriveRootVersion -InputObject <IFilesIdentity> [-ResponseHeadersV
  [-Publication <IMicrosoftGraphPublicationFacet>] [-Size <long>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +57,7 @@ New-MgBetaGroupDriveRootVersion -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphDriveItemVersion> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -72,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to versions for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -625,7 +631,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDriveItemVersion>`: driveItemVersion
+BODYPARAMETER <IMicrosoftGraphDriveItemVersion>: driveItemVersion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -653,7 +659,7 @@ Read-only.
   [Content <Byte[]>]: 
   [Size <Int64?>]: Indicates the size of the content stream for this version of the item.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -680,7 +686,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -692,7 +698,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+PUBLICATION <IMicrosoftGraphPublicationFacet>: publicationFacet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CheckedOutBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -714,27 +720,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupDriveRootVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootversion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootversion)

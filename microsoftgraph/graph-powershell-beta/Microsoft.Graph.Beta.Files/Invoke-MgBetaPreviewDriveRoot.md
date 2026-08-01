@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveroot
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaPreviewDriveRoot
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaPreviewDriveRoot
 
 Invoke action preview
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgPreviewDriveRoot?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### PreviewExpanded (Default)
@@ -27,7 +24,7 @@ Invoke-MgBetaPreviewDriveRoot -DriveId <string> [-ResponseHeadersVariable <strin
  [-AdditionalProperties <hashtable>] [-AllowEdit] [-Chromeless] [-Page <string>] [-Viewer <string>]
  [-Zoom <double>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Preview
@@ -38,7 +35,6 @@ Invoke-MgBetaPreviewDriveRoot -DriveId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### PreviewViaIdentityExpanded
@@ -48,7 +44,7 @@ Invoke-MgBetaPreviewDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVar
  [-AdditionalProperties <hashtable>] [-AllowEdit] [-Chromeless] [-Page <string>] [-Viewer <string>]
  [-Zoom <double>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### PreviewViaIdentity
@@ -59,7 +55,6 @@ Invoke-MgBetaPreviewDriveRoot -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -70,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action preview
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -102,7 +107,7 @@ HelpMessage: ''
 
 ### -AllowEdit
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +134,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -178,7 +183,7 @@ HelpMessage: ''
 
 ### -Chromeless
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -345,7 +350,7 @@ HelpMessage: ''
 
 ### -Page
 
-
+.
 
 ```yaml
 Type: System.String
@@ -457,7 +462,7 @@ HelpMessage: ''
 
 ### -Viewer
 
-
+.
 
 ```yaml
 Type: System.String
@@ -506,7 +511,7 @@ HelpMessage: ''
 
 ### -Zoom
 
-
+.
 
 ```yaml
 Type: System.Double
@@ -565,7 +570,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1X99IewDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1X99IewDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowEdit <Boolean?>]: 
   [Chromeless <Boolean?>]: 
@@ -573,7 +578,7 @@ BODYPARAMETER `<IPaths1X99IewDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbo
   [Viewer <String>]: 
   [Zoom <Double?>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -603,27 +608,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaPreviewDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveroot)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveroot)

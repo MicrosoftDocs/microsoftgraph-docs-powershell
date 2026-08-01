@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitemcreatedbyuserserviceprovisioningerror
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDriveListItemCreatedByUserServiceProvisioningError
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaDriveListItemCreatedByUserServiceProvisioningError
 ## SYNOPSIS
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveListItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemCreatedByUserServiceProvisioningError?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Get-MgBetaDriveListItemCreatedByUserServiceProvisioningError -DriveId <string> -
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -40,6 +36,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -493,27 +499,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaDriveListItemCreatedByUserServiceProvisioningError](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitemcreatedbyuserserviceprovisioningerror)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitemcreatedbyuserserviceprovisioningerror)

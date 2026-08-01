@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaFollowDriveItem
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaFollowDriveItem
 
 Follow a driveItem.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgFollowDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgFollowDriveItem?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Follow (Default)
@@ -27,7 +24,6 @@ Invoke-MgBetaFollowDriveItem -DriveId <string> -DriveItemId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### FollowViaIdentity
@@ -36,7 +32,7 @@ Invoke-MgBetaFollowDriveItem -DriveId <string> -DriveItemId <string>
 Invoke-MgBetaFollowDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -48,26 +44,13 @@ This cmdlet has the following aliases,
 
 Follow a driveItem.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Invoke-MgBetaFollowDriveItem -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example shows how to use the Invoke-MgBetaFollowDriveItem Cmdlet.
-
 
 ## PARAMETERS
 
@@ -378,7 +361,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -408,27 +391,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaFollowDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveitem)
+- [](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-beta)

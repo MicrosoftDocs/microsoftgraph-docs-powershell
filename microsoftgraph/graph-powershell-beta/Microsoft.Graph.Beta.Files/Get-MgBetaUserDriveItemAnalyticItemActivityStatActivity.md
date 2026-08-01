@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemanalyticitemactivitystatactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity
 ## SYNOPSIS
 
 Exposes the itemActivities represented in this itemActivityStat resource.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity -DriveId <string> -Drive
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ## ALIASES
@@ -40,6 +37,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Exposes the itemActivities represented in this itemActivityStat resource.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -535,27 +542,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemanalyticitemactivitystatactivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemanalyticitemactivitystatactivity)

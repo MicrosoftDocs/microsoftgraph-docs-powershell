@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemretentionlabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaDriveItemRetentionLabel
 ---
@@ -17,9 +17,6 @@ Remove the retention label from a driveItem.
 This operation clears the retention label and all associated retention settings enforced on the item.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemRetentionLabel?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,7 +26,6 @@ Remove-MgBetaDriveItemRetentionLabel -DriveId <string> -DriveItemId <string> [-I
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -39,7 +35,6 @@ Remove-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity> [-IfMatch <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,17 +49,18 @@ This operation clears the retention label and all associated retention settings 
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Remove-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
 
-```
-This example shows how to use the Remove-MgBetaDriveItemRetentionLabel Cmdlet.
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Files
+
+Remove-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
 
 ## PARAMETERS
 
@@ -417,7 +413,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -447,27 +443,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaDriveItemRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemretentionlabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemretentionlabel)
+- [](https://learn.microsoft.com/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta)

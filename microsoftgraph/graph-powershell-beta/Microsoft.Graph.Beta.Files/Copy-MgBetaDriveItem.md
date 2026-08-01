@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgBetaDriveItem
 ---
@@ -20,9 +20,6 @@ Use the monitor URL to track progress until the operation completes.
 The copy operation is restricted to 30,000 driveItems.
 For more information, see SharePoint limits.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveItem?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -33,7 +30,6 @@ Copy-MgBetaDriveItem -DriveId <string> -DriveItemId <string> [-ResponseHeadersVa
  [-ParentReference <IMicrosoftGraphItemReference>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Copy
@@ -44,7 +40,6 @@ Copy-MgBetaDriveItem -DriveId <string> -DriveItemId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
@@ -55,7 +50,6 @@ Copy-MgBetaDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <st
  [-ParentReference <IMicrosoftGraphItemReference>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
@@ -66,7 +60,6 @@ Copy-MgBetaDriveItem -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -83,18 +76,9 @@ Use the monitor URL to track progress until the operation completes.
 The copy operation is restricted to 30,000 driveItems.
 For more information, see SharePoint limits.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
-| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -108,12 +92,7 @@ $params = @{
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-```
-This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -127,12 +106,7 @@ $params = @{
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-```
-This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -145,12 +119,7 @@ $params = @{
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-```
-This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -163,12 +132,7 @@ $params = @{
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -@microsoft.graph.conflictbehavior "replace"  -BodyParameter $params
 
-```
-This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
-
-### Example 5: Code snippet
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -182,12 +146,7 @@ $params = @{
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -@microsoft.graph.conflictbehavior "replace"  -BodyParameter $params
 
-```
-This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
-
-### Example 6: Code snippet
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -200,10 +159,6 @@ $params = @{
 }
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
-
-```
-This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
-
 
 ## PARAMETERS
 
@@ -236,7 +191,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -285,7 +240,7 @@ HelpMessage: ''
 
 ### -ChildrenOnly
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -451,7 +406,7 @@ HelpMessage: ''
 
 ### -IncludeAllVersionHistory
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -506,7 +461,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -700,7 +655,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths17Tusw5DrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths17Tusw5DrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChildrenOnly <Boolean?>]: 
   [IncludeAllVersionHistory <Boolean?>]: 
@@ -734,7 +689,7 @@ The value is the same as the id property of that site resource.
 It's an opaque string that consists of three identifiers of the site.
 For OneDrive, this property isn't populated.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -761,7 +716,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
+PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -793,27 +748,5 @@ For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 
-- [Copy-MgBetaDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveitem)
+- [](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)

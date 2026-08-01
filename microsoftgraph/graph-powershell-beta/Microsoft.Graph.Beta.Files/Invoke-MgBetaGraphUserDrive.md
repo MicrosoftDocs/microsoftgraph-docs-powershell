@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetagraphuserdrive
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaGraphUserDrive
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgBetaGraphUserDrive
 Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they're items from a different drive.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphUserDrive](/powershell/module/Microsoft.Graph.Files/Invoke-MgGraphUserDrive?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Graph (Default)
@@ -28,7 +25,7 @@ Invoke-MgBetaGraphUserDrive -DriveId <string> -UserId <string> [-Count] [-Expand
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GraphViaIdentity
@@ -38,7 +35,7 @@ Invoke-MgBetaGraphUserDrive -InputObject <IFilesIdentity> [-Count] [-ExpandPrope
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 
 Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they're items from a different drive.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -488,7 +495,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -518,28 +525,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaGraphUserDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetagraphuserdrive)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetagraphuserdrive)
+- [](https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-beta)

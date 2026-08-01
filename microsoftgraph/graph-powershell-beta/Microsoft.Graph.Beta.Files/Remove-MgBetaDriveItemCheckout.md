@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemcheckout
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaDriveItemCheckout
 ---
@@ -19,9 +19,6 @@ Any changes made to the item while it was checked out are discarded.
 The same user that performed the checkout must discard it.
 Another alternative is to use application permissions.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDriveItemCheckout](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemCheckout?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Discard (Default)
@@ -31,7 +28,6 @@ Remove-MgBetaDriveItemCheckout -DriveId <string> -DriveItemId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DiscardViaIdentity
@@ -41,7 +37,6 @@ Remove-MgBetaDriveItemCheckout -InputObject <IFilesIdentity> [-ResponseHeadersVa
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -57,26 +52,13 @@ Any changes made to the item while it was checked out are discarded.
 The same user that performed the checkout must discard it.
 Another alternative is to use application permissions.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
-| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Remove-MgBetaDriveItemCheckout -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example shows how to use the Remove-MgBetaDriveItemCheckout Cmdlet.
-
 
 ## PARAMETERS
 
@@ -408,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -438,27 +420,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaDriveItemCheckout](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemcheckout)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-discardcheckout?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemcheckout)
+- [](https://learn.microsoft.com/graph/api/driveitem-discardcheckout?view=graph-rest-beta)

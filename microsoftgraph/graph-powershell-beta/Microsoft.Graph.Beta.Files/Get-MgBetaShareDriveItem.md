@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaShareDriveItem
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaShareDriveItem
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgShareDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareDriveItem?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -27,7 +24,7 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 Get-MgBetaShareDriveItem -SharedDriveItemId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -36,7 +33,7 @@ Get-MgBetaShareDriveItem -SharedDriveItemId <string> [-ExpandProperty <string[]>
 Get-MgBetaShareDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,37 +46,19 @@ This cmdlet has the following aliases,
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
-| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 2: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId
 
-```
-This example shows how to use the Get-MgBetaShareDriveItem Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Files
 
-Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children" 
-
-```
-This example shows how to use the Get-MgBetaShareDriveItem Cmdlet.
-
+Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
 
 ## PARAMETERS
 
@@ -369,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -399,27 +378,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaShareDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitem)
+- [](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetadriveitempermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaDriveItemPermission
 ---
@@ -14,9 +14,6 @@ title: Test-MgBetaDriveItemPermission
 ## SYNOPSIS
 
 Invoke action validatePermission
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Test-MgDriveItemPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,6 @@ Test-MgBetaDriveItemPermission -DriveId <string> -DriveItemId <string>
  [-Password <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Validate
@@ -39,7 +35,6 @@ Test-MgBetaDriveItemPermission -DriveId <string> -DriveItemId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ValidateViaIdentityExpanded
@@ -50,7 +45,6 @@ Test-MgBetaDriveItemPermission -InputObject <IFilesIdentity> [-ResponseHeadersVa
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ValidateViaIdentity
@@ -61,7 +55,6 @@ Test-MgBetaDriveItemPermission -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -72,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action validatePermission
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -153,7 +156,7 @@ HelpMessage: ''
 
 ### -ChallengeToken
 
-
+.
 
 ```yaml
 Type: System.String
@@ -368,7 +371,7 @@ HelpMessage: ''
 
 ### -Password
 
-
+.
 
 ```yaml
 Type: System.String
@@ -534,12 +537,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChallengeToken <String>]: 
   [Password <String>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -569,27 +572,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Test-MgBetaDriveItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetadriveitempermission)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetadriveitempermission)

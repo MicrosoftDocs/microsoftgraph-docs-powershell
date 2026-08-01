@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentdrive
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRecentDrive
 ---
@@ -13,10 +13,7 @@ title: Invoke-MgBetaRecentDrive
 
 ## SYNOPSIS
 
-List a set of items recently used by the signed-in user.\rThis collection includes items that are in the user's drive and items they have access to from other drives.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRecentDrive](/powershell/module/Microsoft.Graph.Files/Invoke-MgRecentDrive?view=graph-powershell-1.0)
+List a set of items recently used by the signed-in user.\r\nThis collection includes items that are in the user's drive and items they have access to from other drives.
 
 ## SYNTAX
 
@@ -27,7 +24,7 @@ Invoke-MgBetaRecentDrive -DriveId <string> [-Count] [-ExpandProperty <string[]>]
  [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### RecentViaIdentity
@@ -37,7 +34,7 @@ Invoke-MgBetaRecentDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,20 +44,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-List a set of items recently used by the signed-in user.\rThis collection includes items that are in the user's drive and items they have access to from other drives.
+List a set of items recently used by the signed-in user.\r\nThis collection includes items that are in the user's drive and items they have access to from other drives.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Invoke-MgBetaRecentDrive -DriveId $driveId
-
-```
-This example shows how to use the Invoke-MgBetaRecentDrive Cmdlet.
-
 
 ## PARAMETERS
 
@@ -478,7 +470,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -508,27 +500,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaRecentDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentdrive)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentdrive)
+- [](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-beta)

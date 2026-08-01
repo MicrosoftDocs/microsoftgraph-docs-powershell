@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemchild
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDriveItemChild
 ---
@@ -18,9 +18,6 @@ Only items representing folders have children.
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemChild](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemChild?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -31,7 +28,7 @@ Get-MgBetaDriveItemChild -DriveId <string> -DriveItemId <string> [-ExpandPropert
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -41,7 +38,7 @@ Get-MgBetaDriveItemChild -DriveId <string> -DriveItemId <string> -DriveItemId1 <
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -50,7 +47,7 @@ Get-MgBetaDriveItemChild -DriveId <string> -DriveItemId <string> -DriveItemId1 <
 Get-MgBetaDriveItemChild -InputObject <IFilesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -66,28 +63,18 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Files
-
-Get-MgBetaDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example shows how to use the Get-MgBetaDriveItemChild Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
 
-```
-This example shows how to use the Get-MgBetaDriveItemChild Cmdlet.
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Files
+
+Get-MgBetaDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
 
 ## PARAMETERS
 
@@ -603,7 +590,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -633,26 +620,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDriveItemChild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemchild)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemchild)

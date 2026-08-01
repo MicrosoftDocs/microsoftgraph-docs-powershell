@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemdocumentsetversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDriveRootListItemDocumentSetVersion
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDriveRootListItemDocumentSetVersion
 ## SYNOPSIS
 
 Create new navigation property to documentSetVersions for drives
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,6 @@ New-MgBetaDriveRootListItemDocumentSetVersion -DriveId <string> [-ResponseHeader
  [-ShouldCaptureMinorVersion] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -41,7 +37,7 @@ New-MgBetaDriveRootListItemDocumentSetVersion -DriveId <string>
  -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -55,7 +51,7 @@ New-MgBetaDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity>
  [-Publication <IMicrosoftGraphPublicationFacet>] [-ShouldCaptureMinorVersion] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -65,7 +61,7 @@ New-MgBetaDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphDocumentSetVersion> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -76,6 +72,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to documentSetVersions for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -713,7 +719,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDocumentSetVersion>`: documentSetVersion
+BODYPARAMETER <IMicrosoftGraphDocumentSetVersion>: documentSetVersion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -752,7 +758,7 @@ Read-only.
   [ShouldCaptureMinorVersion <Boolean?>]: If true, minor versions of items are also captured; otherwise, only major versions are captured.
 The default value is false.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -764,7 +770,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -796,7 +802,7 @@ ITEMS <IMicrosoftGraphDocumentSetVersionItem[]>: Items within the document set t
   [Title <String>]: The title of the item.
   [VersionId <String>]: The version ID of the item.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -808,7 +814,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+PUBLICATION <IMicrosoftGraphPublicationFacet>: publicationFacet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CheckedOutBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -830,27 +836,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaDriveRootListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemdocumentsetversion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemdocumentsetversion)

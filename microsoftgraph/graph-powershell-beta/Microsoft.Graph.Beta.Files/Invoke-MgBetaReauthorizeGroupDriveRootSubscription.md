@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizegroupdriverootsubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReauthorizeGroupDriveRootSubscription
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaReauthorizeGroupDriveRootSubscription
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Invoke-MgReauthorizeGroupDriveRootSubscription?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Reauthorize (Default)
@@ -27,7 +24,6 @@ Invoke-MgBetaReauthorizeGroupDriveRootSubscription -DriveId <string> -GroupId <s
  -SubscriptionId <string> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ReauthorizeViaIdentity
@@ -37,7 +33,6 @@ Invoke-MgBetaReauthorizeGroupDriveRootSubscription -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -400,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -430,28 +435,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaReauthorizeGroupDriveRootSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizegroupdriverootsubscription)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizegroupdriverootsubscription)
+- [](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-beta)

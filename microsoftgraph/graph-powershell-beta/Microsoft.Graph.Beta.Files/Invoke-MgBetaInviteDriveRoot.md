@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainvitedriveroot
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaInviteDriveRoot
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaInviteDriveRoot
 
 Send a sharing invitation for a driveItem.
 A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgInviteDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Invoke-MgBetaInviteDriveRoot -DriveId <string> [-ResponseHeadersVariable <string
  [-RetainInheritedPermissions] [-Roles <string[]>] [-SendInvitation] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Invite
@@ -41,7 +38,6 @@ Invoke-MgBetaInviteDriveRoot -DriveId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### InviteViaIdentityExpanded
@@ -53,7 +49,7 @@ Invoke-MgBetaInviteDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVari
  [-RetainInheritedPermissions] [-Roles <string[]>] [-SendInvitation] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### InviteViaIdentity
@@ -64,7 +60,6 @@ Invoke-MgBetaInviteDriveRoot -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -76,6 +71,16 @@ This cmdlet has the following aliases,
 
 Send a sharing invitation for a driveItem.
 A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -108,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -206,7 +211,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-
+.
 
 ```yaml
 Type: System.String
@@ -324,7 +329,7 @@ HelpMessage: ''
 
 ### -Message
 
-
+.
 
 ```yaml
 Type: System.String
@@ -351,7 +356,7 @@ HelpMessage: ''
 
 ### -Password
 
-
+.
 
 ```yaml
 Type: System.String
@@ -441,7 +446,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-
+.
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -469,7 +474,7 @@ HelpMessage: ''
 
 ### -RequireSignIn
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -518,7 +523,7 @@ HelpMessage: ''
 
 ### -RetainInheritedPermissions
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -545,7 +550,7 @@ HelpMessage: ''
 
 ### -Roles
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -572,7 +577,7 @@ HelpMessage: ''
 
 ### -SendInvitation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -653,7 +658,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths33Yl5KDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths33Yl5KDrivesDriveIdRootMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpirationDateTime <String>]: 
   [Message <String>]: 
@@ -667,7 +672,7 @@ BODYPARAMETER `<IPaths33Yl5KDrivesDriveIdRootMicrosoftGraphInvitePostRequestbody
   [Roles <String[]>]: 
   [SendInvitation <Boolean?>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -702,28 +707,5 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaInviteDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainvitedriveroot)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainvitedriveroot)
+- [](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-beta)

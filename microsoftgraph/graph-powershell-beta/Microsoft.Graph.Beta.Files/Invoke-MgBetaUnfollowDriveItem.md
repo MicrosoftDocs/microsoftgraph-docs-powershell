@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaunfollowdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUnfollowDriveItem
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaUnfollowDriveItem
 
 Unfollow a driveItem.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUnfollowDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgUnfollowDriveItem?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Unfollow (Default)
@@ -27,7 +24,6 @@ Invoke-MgBetaUnfollowDriveItem -DriveId <string> -DriveItemId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UnfollowViaIdentity
@@ -37,7 +33,6 @@ Invoke-MgBetaUnfollowDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVa
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,17 +45,12 @@ This cmdlet has the following aliases,
 Unfollow a driveItem.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Invoke-MgBetaUnfollowDriveItem -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example shows how to use the Invoke-MgBetaUnfollowDriveItem Cmdlet.
-
 
 ## PARAMETERS
 
@@ -392,7 +382,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -422,27 +412,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaUnfollowDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaunfollowdriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaunfollowdriveitem)
+- [](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-beta)

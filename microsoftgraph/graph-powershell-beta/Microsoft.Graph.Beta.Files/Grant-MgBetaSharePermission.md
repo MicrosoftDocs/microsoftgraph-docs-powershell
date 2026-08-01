@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetasharepermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Grant-MgBetaSharePermission
 ---
@@ -15,9 +15,6 @@ title: Grant-MgBetaSharePermission
 
 Grant users access to a link represented by a permission.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Grant-MgSharePermission](/powershell/module/Microsoft.Graph.Files/Grant-MgSharePermission?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### GrantExpanded (Default)
@@ -27,7 +24,7 @@ Grant-MgBetaSharePermission -SharedDriveItemId <string> [-ResponseHeadersVariabl
  [-AdditionalProperties <hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>]
  [-Roles <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Grant
@@ -38,7 +35,6 @@ Grant-MgBetaSharePermission -SharedDriveItemId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GrantViaIdentityExpanded
@@ -48,7 +44,7 @@ Grant-MgBetaSharePermission -InputObject <IFilesIdentity> [-ResponseHeadersVaria
  [-AdditionalProperties <hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>]
  [-Roles <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### GrantViaIdentity
@@ -59,7 +55,6 @@ Grant-MgBetaSharePermission -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -71,18 +66,9 @@ This cmdlet has the following aliases,
 
 Grant users access to a link represented by a permission.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Sites.ReadWrite.All, Files.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -101,10 +87,6 @@ $params = @{
 }
 
 Grant-MgBetaSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
-
-```
-This example shows how to use the Grant-MgBetaSharePermission Cmdlet.
-
 
 ## PARAMETERS
 
@@ -137,7 +119,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -362,7 +344,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-
+.
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -412,7 +394,7 @@ HelpMessage: ''
 
 ### -Roles
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -520,7 +502,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Mcxy93SharesShareddriveitemIdPermissionMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Mcxy93SharesShareddriveitemIdPermissionMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Recipients <IMicrosoftGraphDriveRecipient[]>]: 
     [Alias <String>]: The alias of the domain object, for cases where an email address is unavailable (for example, security groups).
@@ -528,7 +510,7 @@ BODYPARAMETER `<IPaths1Mcxy93SharesShareddriveitemIdPermissionMicrosoftGraphGran
     [ObjectId <String>]: The unique identifier for the recipient in the directory.
   [Roles <String[]>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -563,27 +545,5 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [Grant-MgBetaSharePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetasharepermission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetasharepermission)
+- [](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)

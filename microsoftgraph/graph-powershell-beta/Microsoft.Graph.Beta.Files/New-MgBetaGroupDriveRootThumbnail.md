@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootthumbnail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupDriveRootThumbnail
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaGroupDriveRootThumbnail
 ## SYNOPSIS
 
 Create new navigation property to thumbnails for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootThumbnail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ New-MgBetaGroupDriveRootThumbnail -DriveId <string> -GroupId <string>
  [-Small <IMicrosoftGraphThumbnail>] [-Source <IMicrosoftGraphThumbnail>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +36,7 @@ New-MgBetaGroupDriveRootThumbnail -DriveId <string> -GroupId <string>
  -BodyParameter <IMicrosoftGraphThumbnailSet> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -51,7 +48,6 @@ New-MgBetaGroupDriveRootThumbnail -InputObject <IFilesIdentity> [-ResponseHeader
  [-Source <IMicrosoftGraphThumbnail>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +57,7 @@ New-MgBetaGroupDriveRootThumbnail -InputObject <IFilesIdentity>
  -BodyParameter <IMicrosoftGraphThumbnailSet> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -72,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to thumbnails for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -599,7 +605,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphThumbnailSet>`: The ThumbnailSet resource is a keyed collection of thumbnail resources.
+BODYPARAMETER <IMicrosoftGraphThumbnailSet>: The ThumbnailSet resource is a keyed collection of thumbnail resources.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -615,7 +621,7 @@ This is only available when a folder thumbnail is requested.
   [Small <IMicrosoftGraphThumbnail>]: thumbnail
   [Source <IMicrosoftGraphThumbnail>]: thumbnail
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -642,7 +648,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-LARGE `<IMicrosoftGraphThumbnail>`: thumbnail
+LARGE <IMicrosoftGraphThumbnail>: thumbnail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <Byte[]>]: The content stream for the thumbnail.
   [Height <Int32?>]: The height of the thumbnail, in pixels.
@@ -651,7 +657,7 @@ This is only available when a folder thumbnail is requested.
   [Url <String>]: The URL used to fetch the thumbnail content.
   [Width <Int32?>]: The width of the thumbnail, in pixels.
 
-MEDIUM `<IMicrosoftGraphThumbnail>`: thumbnail
+MEDIUM <IMicrosoftGraphThumbnail>: thumbnail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <Byte[]>]: The content stream for the thumbnail.
   [Height <Int32?>]: The height of the thumbnail, in pixels.
@@ -660,7 +666,7 @@ This is only available when a folder thumbnail is requested.
   [Url <String>]: The URL used to fetch the thumbnail content.
   [Width <Int32?>]: The width of the thumbnail, in pixels.
 
-SMALL `<IMicrosoftGraphThumbnail>`: thumbnail
+SMALL <IMicrosoftGraphThumbnail>: thumbnail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <Byte[]>]: The content stream for the thumbnail.
   [Height <Int32?>]: The height of the thumbnail, in pixels.
@@ -669,7 +675,7 @@ This is only available when a folder thumbnail is requested.
   [Url <String>]: The URL used to fetch the thumbnail content.
   [Width <Int32?>]: The width of the thumbnail, in pixels.
 
-SOURCE `<IMicrosoftGraphThumbnail>`: thumbnail
+SOURCE <IMicrosoftGraphThumbnail>: thumbnail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <Byte[]>]: The content stream for the thumbnail.
   [Height <Int32?>]: The height of the thumbnail, in pixels.
@@ -681,27 +687,4 @@ This is only available when a folder thumbnail is requested.
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupDriveRootThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootthumbnail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriverootthumbnail)
