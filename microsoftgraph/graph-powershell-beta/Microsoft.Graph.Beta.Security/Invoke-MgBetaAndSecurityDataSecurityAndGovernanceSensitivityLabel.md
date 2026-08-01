@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaandsecuritydatasecurityandgovernancesensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel
 ## SYNOPSIS
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel](/powershell/module/Microsoft.Graph.Security/Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel
  [-ProtectedContents <IMicrosoftGraphProtectedContent[]>] [-SupportedContentFormats <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### And
@@ -40,7 +37,6 @@ Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,18 +48,9 @@ This cmdlet has the following aliases,
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SensitivityLabel.Evaluate, SensitivityLabel.Evaluate.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -81,10 +68,6 @@ $params = @{
 }
 
 Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel Cmdlet.
-
 
 ## PARAMETERS
 
@@ -111,7 +94,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -176,7 +159,7 @@ HelpMessage: ''
 
 ### -DelegatedUserEmail
 
-
+.
 
 ```yaml
 Type: System.String
@@ -260,7 +243,7 @@ HelpMessage: ''
 
 ### -Locale
 
-
+.
 
 ```yaml
 Type: System.String
@@ -281,7 +264,7 @@ HelpMessage: ''
 
 ### -ProtectedContents
 
-
+.
 To construct, see NOTES section for PROTECTEDCONTENTS properties and create a hash table.
 
 ```yaml
@@ -388,7 +371,7 @@ HelpMessage: ''
 
 ### -SupportedContentFormats
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -459,7 +442,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Bfgf7OSecurityDatasecurityandgovernanceSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1Bfgf7OSecurityDatasecurityandgovernanceSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -477,27 +460,5 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaandsecuritydatasecurityandgovernancesensitivitylabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaandsecuritydatasecurityandgovernancesensitivitylabel)
+- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)

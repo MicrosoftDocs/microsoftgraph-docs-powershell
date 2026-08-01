@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincidenttask
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityIncidentTask
 ---
@@ -28,7 +28,7 @@ New-MgBetaSecurityIncidentTask [-ResponseHeadersVariable <string>] [-ActionStatu
  [-ResponseAction <IMicrosoftGraphSecurityIncidentTaskResponseAction>] [-Source <string>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +38,6 @@ New-MgBetaSecurityIncidentTask -BodyParameter <IMicrosoftGraphSecurityIncidentTa
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to incidentTasks for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -618,7 +627,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIncidentTask>`: incidentTask
+BODYPARAMETER <IMicrosoftGraphSecurityIncidentTask>: incidentTask
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -723,7 +732,7 @@ This value is specific to the type of action being performed.
   [Source <String>]: incidentTaskSource
   [Status <String>]: incidentTaskStatus
 
-INCIDENT `<IMicrosoftGraphSecurityIncident>`: incident
+INCIDENT <IMicrosoftGraphSecurityIncident>: incident
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -805,7 +814,7 @@ When applicable, the summary contains details of what occurred, impacted assets,
   [SystemTags <String[]>]: The collection of system tags that are associated with the incident.
   [TenantId <String>]: The Microsoft Entra tenant in which the alert was created.
 
-RESPONSEACTION `<IMicrosoftGraphSecurityIncidentTaskResponseAction>`: incidentTaskResponseAction
+RESPONSEACTION <IMicrosoftGraphSecurityIncidentTaskResponseAction>: incidentTaskResponseAction
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IdentifierValue <String>]: Required.
 The identifier value for the response action.
@@ -814,27 +823,4 @@ This value is specific to the type of action being performed.
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityIncidentTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincidenttask)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincidenttask)

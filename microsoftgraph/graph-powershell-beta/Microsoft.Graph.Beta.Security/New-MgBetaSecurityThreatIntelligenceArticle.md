@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticle
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityThreatIntelligenceArticle
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSecurityThreatIntelligenceArticle
 ## SYNOPSIS
 
 Create new navigation property to articles for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceArticle?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,6 @@ New-MgBetaSecurityThreatIntelligenceArticle [-ResponseHeadersVariable <string>]
  [-Tags <string[]>] [-Title <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -41,7 +37,6 @@ New-MgBetaSecurityThreatIntelligenceArticle -BodyParameter <IMicrosoftGraphSecur
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to articles for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -559,12 +564,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+BODY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of this formattedContent.
   [Format <String>]: contentFormat
 
-BODYPARAMETER `<IMicrosoftGraphSecurityArticle>`: article
+BODYPARAMETER <IMicrosoftGraphSecurityArticle>: article
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -601,7 +606,7 @@ Read-only.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+SUMMARY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of this formattedContent.
   [Format <String>]: contentFormat
@@ -609,27 +614,4 @@ SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityThreatIntelligenceArticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticle)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticle)

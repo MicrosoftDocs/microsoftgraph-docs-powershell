@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecuritySecureScore
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSecuritySecureScore
 ## SYNOPSIS
 
 Create new navigation property to secureScores for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySecureScore?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ New-MgBetaSecuritySecureScore [-ResponseHeadersVariable <string>] [-ActiveUserCo
  [-MaxScore <double>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -41,7 +38,6 @@ New-MgBetaSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -52,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to secureScores for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -580,7 +586,7 @@ AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore[]>: Average sco
   [AverageScore <Double?>]: Average score within a specified basis.
   [Basis <String>]: Scope type (by AllTenants, TotalSeats, IndustryTypes).
 
-BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
+BODYPARAMETER <IMicrosoftGraphSecureScore>: secureScore
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -614,7 +620,7 @@ CONTROLSCORES <IMicrosoftGraphControlScore[]>: Contains tenant scores for a set 
   [Description <String>]: Description of the control.
   [Score <Double?>]: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -626,27 +632,4 @@ Required
 
 ## RELATED LINKS
 
-- [New-MgBetaSecuritySecureScore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore)

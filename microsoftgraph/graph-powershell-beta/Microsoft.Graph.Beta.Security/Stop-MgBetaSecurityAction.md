@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaSecurityAction
 ---
@@ -24,7 +24,6 @@ Stop-MgBetaSecurityAction -SecurityActionId <string> [-ResponseHeadersVariable <
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CancelViaIdentity
@@ -34,7 +33,6 @@ Stop-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-ResponseHeadersVari
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -47,17 +45,12 @@ This cmdlet has the following aliases,
 Cancel a security operation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Stop-MgBetaSecurityAction -SecurityActionId $securityActionId
-
-```
-This example shows how to use the Stop-MgBetaSecurityAction Cmdlet.
-
 
 ## PARAMETERS
 
@@ -368,7 +361,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -470,27 +463,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgBetaSecurityAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction)
+- [](https://learn.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)

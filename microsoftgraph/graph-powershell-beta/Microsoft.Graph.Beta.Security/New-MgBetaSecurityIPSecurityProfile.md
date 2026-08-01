@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityIPSecurityProfile
 ---
@@ -29,7 +29,6 @@ New-MgBetaSecurityIPSecurityProfile [-ResponseHeadersVariable <string>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +38,6 @@ New-MgBetaSecurityIPSecurityProfile -BodyParameter <IMicrosoftGraphIPSecurityPro
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,11 +49,21 @@ This cmdlet has the following aliases,
 
 Create new navigation property to ipSecurityProfiles for security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -97,7 +105,7 @@ HelpMessage: ''
 
 ### -Address
 
-
+.
 
 ```yaml
 Type: System.String
@@ -118,7 +126,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -139,7 +147,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -225,7 +233,7 @@ HelpMessage: ''
 
 ### -CountHits
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -246,7 +254,7 @@ HelpMessage: ''
 
 ### -CountHosts
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -267,7 +275,7 @@ HelpMessage: ''
 
 ### -FirstSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -373,7 +381,7 @@ HelpMessage: ''
 
 ### -IPCategories
 
-
+.
 To construct, see NOTES section for IPCATEGORIES properties and create a hash table.
 
 ```yaml
@@ -395,7 +403,7 @@ HelpMessage: ''
 
 ### -IPReferenceData
 
-
+.
 To construct, see NOTES section for IPREFERENCEDATA properties and create a hash table.
 
 ```yaml
@@ -417,7 +425,7 @@ HelpMessage: ''
 
 ### -LastSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -523,7 +531,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-
+.
 
 ```yaml
 Type: System.String
@@ -544,7 +552,7 @@ HelpMessage: ''
 
 ### -Tags
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -637,7 +645,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIPSecurityProfile>`: ipSecurityProfile
+BODYPARAMETER <IMicrosoftGraphIPSecurityProfile>: ipSecurityProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -684,7 +692,7 @@ IPREFERENCEDATA <IMicrosoftGraphIPReferenceData[]>: .
   [State <String>]: 
   [Vendor <String>]: 
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -696,27 +704,4 @@ Required
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityIPSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile)

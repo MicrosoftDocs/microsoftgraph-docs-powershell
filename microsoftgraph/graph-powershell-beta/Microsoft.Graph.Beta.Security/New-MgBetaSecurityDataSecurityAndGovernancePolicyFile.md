@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydatasecurityandgovernancepolicyfile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityDataSecurityAndGovernancePolicyFile
 ---
@@ -25,7 +25,6 @@ New-MgBetaSecurityDataSecurityAndGovernancePolicyFile [-ResponseHeadersVariable 
  [-Id <string>] [-Status <string>] [-Version <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -35,7 +34,6 @@ New-MgBetaSecurityDataSecurityAndGovernancePolicyFile -BodyParameter <IMicrosoft
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -46,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to policyFiles for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -370,7 +378,7 @@ HelpMessage: ''
 
 ### -Version
 
-
+.
 
 ```yaml
 Type: System.String
@@ -441,7 +449,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPolicyFile>`: policyFile
+BODYPARAMETER <IMicrosoftGraphPolicyFile>: policyFile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -453,27 +461,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityDataSecurityAndGovernancePolicyFile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydatasecurityandgovernancepolicyfile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydatasecurityandgovernancepolicyfile)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityAlertMultiple
 ---
@@ -24,7 +24,7 @@ Update-MgBetaSecurityAlertMultiple [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Value <IMicrosoftGraphAlert[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update1
@@ -35,7 +35,6 @@ Update-MgBetaSecurityAlertMultiple
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -47,18 +46,9 @@ This cmdlet has the following aliases,
 
 Update multiple alerts in one request instead of multiple requests.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityEvents.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityEvents.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -90,10 +80,6 @@ $params = @{
 
 Update-MgBetaSecurityAlertMultiple -BodyParameter $params
 
-```
-This example shows how to use the Update-MgBetaSecurityAlertMultiple Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -119,7 +105,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -332,7 +318,7 @@ HelpMessage: ''
 
 ### -Value
 
-
+.
 To construct, see NOTES section for VALUE properties and create a hash table.
 
 ```yaml
@@ -404,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Value <IMicrosoftGraphAlert[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -827,27 +813,5 @@ Required
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityAlertMultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple)
+- [](https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityPartner
 ---
@@ -25,7 +25,6 @@ Update-MgBetaSecurityPartner [-ResponseHeadersVariable <string>] [-AdditionalPro
  [-SecurityScore <IMicrosoftGraphPartnerSecurityScore>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -35,7 +34,6 @@ Update-MgBetaSecurityPartner -BodyParameter <IMicrosoftGraphPartnerSecurity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -46,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property partner in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -401,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPartnerSecurity>`: partnerSecurity
+BODYPARAMETER <IMicrosoftGraphPartnerSecurity>: partnerSecurity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -529,7 +537,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [SubscriptionId <String>]: The subscription associated with the alert for the customer.
   [ValueAddedResellerTenantId <String>]: The value-added reseller tenant associated with the partner tenant and customer tenant.
 
-SECURITYSCORE `<IMicrosoftGraphPartnerSecurityScore>`: partnerSecurityScore
+SECURITYSCORE <IMicrosoftGraphPartnerSecurityScore>: partnerSecurityScore
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -569,27 +577,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityPartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartner)

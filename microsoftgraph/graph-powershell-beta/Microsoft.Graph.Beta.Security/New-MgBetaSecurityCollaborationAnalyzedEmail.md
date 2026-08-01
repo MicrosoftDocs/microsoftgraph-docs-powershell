@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycollaborationanalyzedemail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityCollaborationAnalyzedEmail
 ---
@@ -44,7 +44,6 @@ New-MgBetaSecurityCollaborationAnalyzedEmail [-ResponseHeadersVariable <string>]
  [-Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -54,7 +53,6 @@ New-MgBetaSecurityCollaborationAnalyzedEmail -BodyParameter <IMicrosoftGraphSecu
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -65,6 +63,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to analyzedEmails for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1208,7 +1216,7 @@ However, you see the downloaded file in the detonation chain.
   [TenantAllowBlockListDetailInfo <String>]: Details of entries in tenant allow/block list configured by tenant.
   [ThreatType <String>]: threatType
 
-AUTHENTICATIONDETAILS `<IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail>`: analyzedEmailAuthenticationDetail
+AUTHENTICATIONDETAILS <IMicrosoftGraphSecurityAnalyzedEmailAuthenticationDetail>: analyzedEmailAuthenticationDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompositeAuthentication <String>]: A value used by Microsoft 365 to combine email authentication such as SPF, DKIM, and DMARC, to determine whether the message is authentic.
   [Dkim <String>]: DomainKeys identified mail (DKIM).
@@ -1218,7 +1226,7 @@ Indicates whether it was pass/fail/soft fail.
   [SenderPolicyFramework <String>]: Sender Policy Framework (SPF).
 Indicates whether it was pass/fail/soft fail.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAnalyzedEmail>`: analyzedEmail
+BODYPARAMETER <IMicrosoftGraphSecurityAnalyzedEmail>: analyzedEmail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1356,26 +1364,26 @@ EXCHANGETRANSPORTRULES <IMicrosoftGraphSecurityAnalyzedEmailExchangeTransportRul
   [Name <String>]: Name of the Exchange transport rules (ETRs) that are part of the email.
   [RuleId <String>]: The ETR rule ID.
 
-LATESTDELIVERY `<IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>`: analyzedEmailDeliveryDetail
+LATESTDELIVERY <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>: analyzedEmailDeliveryDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <String>]: deliveryAction
   [LatestThreats <String>]: Latest known threat on the email.
   [Location <String>]: deliveryLocation
   [OriginalThreats <String>]: Threats identified at the time of delivery.
 
-ORIGINALDELIVERY `<IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>`: analyzedEmailDeliveryDetail
+ORIGINALDELIVERY <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>: analyzedEmailDeliveryDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <String>]: deliveryAction
   [LatestThreats <String>]: Latest known threat on the email.
   [Location <String>]: deliveryLocation
   [OriginalThreats <String>]: Threats identified at the time of delivery.
 
-RECIPIENTDETAIL `<IMicrosoftGraphSecurityAnalyzedEmailRecipientDetail>`: analyzedEmailRecipientDetail
+RECIPIENTDETAIL <IMicrosoftGraphSecurityAnalyzedEmailRecipientDetail>: analyzedEmailRecipientDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CcRecipients <String[]>]: Recipient address in the cc field.
   [DomainName <String>]: Domain name of the recipient.
 
-SENDERDETAIL `<IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>`: analyzedEmailSenderDetail
+SENDERDETAIL <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>: analyzedEmailSenderDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: Display name of sender from address.
   [DomainCreationDateTime <DateTime?>]: Date and time of creation of the sender domain.
@@ -1442,27 +1450,4 @@ This is full URL string, including query parameters.
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityCollaborationAnalyzedEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycollaborationanalyzedemail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycollaborationanalyzedemail)
