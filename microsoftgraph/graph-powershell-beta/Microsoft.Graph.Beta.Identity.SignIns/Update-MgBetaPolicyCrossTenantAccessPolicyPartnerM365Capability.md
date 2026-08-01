@@ -580,7 +580,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphM365CapabilityBase>: m365CapabilityBase
+BODYPARAMETER `<IMicrosoftGraphM365CapabilityBase>`: m365CapabilityBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -600,7 +600,7 @@ For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
   [Name <String>]: The name or identifier of the capability.
 Key.
 
-INBOUNDACCESS <IMicrosoftGraphM365CapabilityInboundAccess>: m365CapabilityInboundAccess
+INBOUNDACCESS `<IMicrosoftGraphM365CapabilityInboundAccess>`: m365CapabilityInboundAccess
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAllowed <Boolean?>]: Indicates whether this capability should be allowed or blocked for inbound access.
   [ResourceScopes <IMicrosoftGraphM365CapabilityResourceScopes>]: m365CapabilityResourceScopes
@@ -611,7 +611,7 @@ If a resource appears in both included and excluded, the excluded property takes
       [ResourceType <String>]: m365ResourceType
     [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -713,3 +713,25 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicypartnerm365capability)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
