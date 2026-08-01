@@ -67,12 +67,17 @@ Retrieve the metadata for a content type in a site or a list.
 | Application | Sites.Read.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteContentType -SiteId $siteId
+
+```
+This example shows how to use the Get-MgSiteContentType Cmdlet.
+
 
 ## PARAMETERS
 
