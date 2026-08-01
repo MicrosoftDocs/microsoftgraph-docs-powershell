@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudience
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaWindowsUpdatesDeploymentAudience
 ---
@@ -31,7 +31,6 @@ Update-MgBetaWindowsUpdatesDeploymentAudience -DeploymentId <string>
  [-RemoveMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -42,7 +41,6 @@ Update-MgBetaWindowsUpdatesDeploymentAudience -DeploymentId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -56,7 +54,6 @@ Update-MgBetaWindowsUpdatesDeploymentAudience -InputObject <IWindowsUpdatesIdent
  [-RemoveMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -67,7 +64,6 @@ Update-MgBetaWindowsUpdatesDeploymentAudience -InputObject <IWindowsUpdatesIdent
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -83,8 +79,9 @@ If the same updatableAsset gets included in the exclusions and members collectio
 If all updatableAsset objects are the same type, you can also use the method updateAudienceById to update the deploymentAudience.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaWindowsUpdatesDeploymentAudience Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
 	AddMembers = @(
@@ -113,15 +110,12 @@ $params = @{
 	)
 }
 Update-MgBetaWindowsUpdatesDeploymentAudience -DeploymentId $deploymentId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaWindowsUpdatesDeploymentAudience Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
 ### -AddExclusions
 
-
+.
 To construct, see NOTES section for ADDEXCLUSIONS properties and create a hash table.
 
 ```yaml
@@ -176,7 +170,7 @@ HelpMessage: ''
 
 ### -AddMembers
 
-
+.
 To construct, see NOTES section for ADDMEMBERS properties and create a hash table.
 
 ```yaml
@@ -204,7 +198,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -477,7 +471,7 @@ HelpMessage: ''
 
 ### -RemoveExclusions
 
-
+.
 To construct, see NOTES section for REMOVEEXCLUSIONS properties and create a hash table.
 
 ```yaml
@@ -505,7 +499,7 @@ HelpMessage: ''
 
 ### -RemoveMembers
 
-
+.
 To construct, see NOTES section for REMOVEMEMBERS properties and create a hash table.
 
 ```yaml
@@ -617,7 +611,7 @@ ADDMEMBERS <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODYPARAMETER `<IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AddExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -626,7 +620,7 @@ Read-only.
   [RemoveExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]: 
   [RemoveMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]: 
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -657,27 +651,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaWindowsUpdatesDeploymentAudience](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudience)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-deploymentaudience-updateaudience?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudience)
+- [](https://learn.microsoft.com/graph/api/windowsupdates-deploymentaudience-updateaudience?view=graph-rest-beta)

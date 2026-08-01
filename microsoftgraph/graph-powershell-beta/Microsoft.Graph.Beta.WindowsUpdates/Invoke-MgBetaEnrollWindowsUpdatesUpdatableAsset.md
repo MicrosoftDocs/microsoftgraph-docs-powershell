@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableasset
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset
 ---
@@ -28,7 +28,6 @@ Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset [-ResponseHeadersVariable <strin
  [-UpdateCategory <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Enroll
@@ -39,7 +38,6 @@ Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,13 +52,15 @@ You can enroll an azureADDevice resource in update management, but may not enrol
 Enrolling a Microsoft Entra device in update management automatically creates an azureADDevice object if it does not already exist.
 You can also use the method enrollAssetsById to enroll assets.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WindowsUpdates.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -87,7 +87,7 @@ HelpMessage: ''
 
 ### -Assets
 
-
+.
 To construct, see NOTES section for ASSETS properties and create a hash table.
 
 ```yaml
@@ -109,7 +109,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -418,7 +418,7 @@ ASSETS <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>: .
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODY `<IPaths1T34IjjAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1T34IjjAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -428,27 +428,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableasset)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableasset)
