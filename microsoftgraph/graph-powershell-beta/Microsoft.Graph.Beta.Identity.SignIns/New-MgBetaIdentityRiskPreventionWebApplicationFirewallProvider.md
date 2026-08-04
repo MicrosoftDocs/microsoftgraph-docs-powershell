@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
 ---
@@ -28,7 +28,7 @@ New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider [-ResponseHeaders
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +38,7 @@ New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
  -BodyParameter <IMicrosoftGraphWebApplicationFirewallProvider> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -50,6 +50,46 @@ This cmdlet has the following aliases,
 
 Create a new webApplicationFirewallProvider object.
 You can create one of the following subtypes that are derived from webApplicationFirewallProvider.
+
+## EXAMPLES
+### Example 1: Create a new AkamaiWebApplicationFirewallProvider object
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.akamaiWebApplicationFirewallProvider"
+	displayName = "Akamai Provider Example"
+	hostPrefix = "akab-exampleprefix"
+	clientSecret = "akamai_example_secret_123"
+	clientToken = "akamai_example_token_456"
+	accessToken = "akamai_example_token_789"
+}
+
+New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -BodyParameter $params
+
+```
+This example will create a new akamaiwebapplicationfirewallprovider object
+
+### Example 2: Create a new cloudFlareWebApplicationFirewallProvider object
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudFlareWebApplicationFirewallProvider"
+	displayName = "Cloudflare Provider Example"
+	zoneId = "11111111111111111111111111111111"
+	apiToken = "cf_example_token_123"
+}
+
+New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -BodyParameter $params
+
+```
+This example will create a new cloudflarewebapplicationfirewallprovider object
+
 
 ## PARAMETERS
 
@@ -393,7 +433,6 @@ Read-only.
 
 - [New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallprovider)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-webapplicationfirewallproviders?view=graph-rest-beta)
-
 
 
 

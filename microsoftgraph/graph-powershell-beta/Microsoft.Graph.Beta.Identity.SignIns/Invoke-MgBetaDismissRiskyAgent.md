@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyagent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDismissRiskyAgent
 ---
@@ -25,7 +25,6 @@ Invoke-MgBetaDismissRiskyAgent [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AgentIds <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Dismiss
@@ -36,7 +35,6 @@ Invoke-MgBetaDismissRiskyAgent
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -56,6 +54,26 @@ This action sets the targeted agent's riskLevel to none.
 | Delegated (work or school account) | IdentityRiskyAgent.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IdentityRiskyAgent.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	agentIds = @(
+	"29f270bb-4d23-4f68-8a57-dc73dc0d4caf"
+"20f91ec9-d140-4d90-9cd9-f618587a1471"
+)
+}
+
+Invoke-MgBetaDismissRiskyAgent -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaDismissRiskyAgent Cmdlet.
+
 
 ## PARAMETERS
 
@@ -396,7 +414,6 @@ BODYPARAMETER `<IPathsZhzgo2IdentityprotectionRiskyagentsMicrosoftGraphDismissPo
 
 - [Invoke-MgBetaDismissRiskyAgent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyagent)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/riskyagent-dismiss?view=graph-rest-beta)
-
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyCrossTenantAccessPolicyPartner
 ---
@@ -34,14 +34,14 @@ New-MgBetaPolicyCrossTenantAccessPolicyPartner [-ResponseHeadersVariable <string
  [-BlockServiceProviderOutboundAccess] [-DeletedDateTime <datetime>]
  [-IdentitySynchronization <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>]
  [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsInMultiTenantOrganization]
- [-IsServiceProvider]
+ [-IsServiceProvider] [-M365Capabilities <IMicrosoftGraphM365CapabilityBase[]>]
  [-M365CollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationInboundSetting>]
  [-M365CollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationOutboundSetting>]
  [-TenantId <string>]
  [-TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -52,7 +52,6 @@ New-MgBetaPolicyCrossTenantAccessPolicyPartner
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -268,7 +267,8 @@ HelpMessage: ''
 
 ### -BlockServiceProviderOutboundAccess
 
-
+Specifies whether users can use granular delegated admin privileges (GDAP) to sign-in and access resources in other organizations.
+Default value is false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -508,6 +508,28 @@ Identifies whether the partner-specific configuration is a Cloud Service Provide
 ```yaml
 Type: System.Management.Automation.SwitchParameter
 DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -M365Capabilities
+
+Defines the partner-specific Microsoft 365 cross-tenant capabilities for inbound access from the partner organization.
+To construct, see NOTES section for M365CAPABILITIES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphM365CapabilityBase[]
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -830,7 +852,8 @@ BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner>`: cr
   [B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
   [B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
   [B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]: crossTenantAccessPolicyB2BSetting
-  [BlockServiceProviderOutboundAccess <Boolean?>]: 
+  [BlockServiceProviderOutboundAccess <Boolean?>]: Specifies whether users can use granular delegated admin privileges (GDAP) to sign-in and access resources in other organizations.
+Default value is false.
   [IdentitySynchronization <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>]: crossTenantIdentitySyncPolicyPartner
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
@@ -858,6 +881,24 @@ This property has no impact on existing users who have already been synchronized
     [IsMfaAccepted <Boolean?>]: Specifies whether MFA from external Microsoft Entra organizations is trusted.
   [IsInMultiTenantOrganization <Boolean?>]: Identifies whether a tenant is a member of a multitenant organization.
   [IsServiceProvider <Boolean?>]: Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization.
+  [M365Capabilities <IMicrosoftGraphM365CapabilityBase[]>]: Defines the partner-specific Microsoft 365 cross-tenant capabilities for inbound access from the partner organization.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [InboundAccess <IMicrosoftGraphM365CapabilityInboundAccess>]: m365CapabilityInboundAccess
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [IsAllowed <Boolean?>]: Indicates whether this capability should be allowed or blocked for inbound access.
+      [ResourceScopes <IMicrosoftGraphM365CapabilityResourceScopes>]: m365CapabilityResourceScopes
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Excluded <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to exclude from the scope.
+If a resource appears in both included and excluded, the excluded property takes precedence.
+          [ResourceId <String>]: The ID of the resource to modify (a user or group ID).
+          [ResourceType <String>]: m365ResourceType
+        [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
+    [LastModifiedDateTime <DateTime?>]: The automatically updated last modified timestamp for the capability.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+    [Name <String>]: The name or identifier of the capability.
+Key.
   [M365CollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationInboundSetting>]: crossTenantAccessPolicyM365CollaborationInboundSetting
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Users <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
@@ -903,6 +944,25 @@ INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenant
   [IsCompliantDeviceAccepted <Boolean?>]: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
   [IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
   [IsMfaAccepted <Boolean?>]: Specifies whether MFA from external Microsoft Entra organizations is trusted.
+
+M365CAPABILITIES <IMicrosoftGraphM365CapabilityBase[]>: Defines the partner-specific Microsoft 365 cross-tenant capabilities for inbound access from the partner organization.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [InboundAccess <IMicrosoftGraphM365CapabilityInboundAccess>]: m365CapabilityInboundAccess
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [IsAllowed <Boolean?>]: Indicates whether this capability should be allowed or blocked for inbound access.
+    [ResourceScopes <IMicrosoftGraphM365CapabilityResourceScopes>]: m365CapabilityResourceScopes
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Excluded <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to exclude from the scope.
+If a resource appears in both included and excluded, the excluded property takes precedence.
+        [ResourceId <String>]: The ID of the resource to modify (a user or group ID).
+        [ResourceType <String>]: m365ResourceType
+      [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
+  [LastModifiedDateTime <DateTime?>]: The automatically updated last modified timestamp for the capability.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+  [Name <String>]: The name or identifier of the capability.
+Key.
 
 M365COLLABORATIONINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationInboundSetting>`: crossTenantAccessPolicyM365CollaborationInboundSetting
   [(Any) <Object>]: This indicates any property can be added to this object.

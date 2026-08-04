@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-Module Guid: fb72027d-2ce8-4626-b65a-2e8118775267
+Module Guid: 45923a16-ff2f-4bf3-93da-55d94d42c16a
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.signins/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -501,6 +501,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyDefault](Get-MgBetaPolicyCrossTenantAccessPolicyDefault.md)
 
+### [Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
+### [Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
+### [Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365CapabilityCount](Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365CapabilityCount.md)
+
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyPartner](Get-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
 
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyPartner](Get-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
@@ -508,6 +514,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerCount](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerCount.md)
 
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+
+### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
+
+### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
+
+### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount.md)
 
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyTemplate](Get-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
 
@@ -526,6 +538,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerCount](Get-MgBetaPolicyDeletedItemCrossTenantPartnerCount.md)
 
 ### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization](Get-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization.md)
+
+### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
+
+### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
+
+### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365CapabilityCount](Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365CapabilityCount.md)
 
 ### [Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner.md)
 
@@ -610,6 +628,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaPolicyOnPremAuthenticationPolicyApplyToCount](Get-MgBetaPolicyOnPremAuthenticationPolicyApplyToCount.md)
 
 ### [Get-MgBetaPolicyOnPremAuthenticationPolicyCount](Get-MgBetaPolicyOnPremAuthenticationPolicyCount.md)
+
+### [Get-MgBetaPolicyOwnerlessGroupPolicy](Get-MgBetaPolicyOwnerlessGroupPolicy.md)
 
 ### [Get-MgBetaPolicyPermissionGrantPolicy](Get-MgBetaPolicyPermissionGrantPolicy.md)
 
@@ -1133,9 +1153,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaPolicyClaimMappingPolicy](New-MgBetaPolicyClaimMappingPolicy.md)
 
+### [New-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](New-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
 ### [New-MgBetaPolicyCrossTenantAccessPolicyPartner](New-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
 
+### [New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
+
 ### [New-MgBetaPolicyDeletedItemCrossTenantPartner](New-MgBetaPolicyDeletedItemCrossTenantPartner.md)
+
+### [New-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](New-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
 
 ### [New-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](New-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner.md)
 
@@ -1389,9 +1415,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaPolicyCrossTenantAccessPolicyDefault](Remove-MgBetaPolicyCrossTenantAccessPolicyDefault.md)
 
+### [Remove-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](Remove-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
 ### [Remove-MgBetaPolicyCrossTenantAccessPolicyPartner](Remove-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
 
 ### [Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+
+### [Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
 
 ### [Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate](Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
 
@@ -1406,6 +1436,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaPolicyDeletedItemCrossTenantPartner](Remove-MgBetaPolicyDeletedItemCrossTenantPartner.md)
 
 ### [Remove-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization](Remove-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization.md)
+
+### [Remove-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](Remove-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
 
 ### [Remove-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](Remove-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner.md)
 
@@ -1753,7 +1785,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyDefault](Update-MgBetaPolicyCrossTenantAccessPolicyDefault.md)
 
+### [Update-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](Update-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyPartner](Update-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
+
+### [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](Update-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
 
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyTemplate](Update-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
 
@@ -1766,6 +1802,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaPolicyDeletedItem](Update-MgBetaPolicyDeletedItem.md)
 
 ### [Update-MgBetaPolicyDeletedItemCrossTenantPartner](Update-MgBetaPolicyDeletedItemCrossTenantPartner.md)
+
+### [Update-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](Update-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
 
 ### [Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy](Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy.md)
 
@@ -1784,6 +1822,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaPolicyMobileDeviceManagementPolicy](Update-MgBetaPolicyMobileDeviceManagementPolicy.md)
 
 ### [Update-MgBetaPolicyOnPremAuthenticationPolicy](Update-MgBetaPolicyOnPremAuthenticationPolicy.md)
+
+### [Update-MgBetaPolicyOwnerlessGroupPolicy](Update-MgBetaPolicyOwnerlessGroupPolicy.md)
 
 ### [Update-MgBetaPolicyPermissionGrantPolicy](Update-MgBetaPolicyPermissionGrantPolicy.md)
 

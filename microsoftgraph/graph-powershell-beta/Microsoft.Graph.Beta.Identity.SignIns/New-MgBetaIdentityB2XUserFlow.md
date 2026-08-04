@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityB2XUserFlow
 ---
@@ -33,7 +33,6 @@ New-MgBetaIdentityB2XUserFlow [-ResponseHeadersVariable <string>]
  [-UserFlowTypeVersion <float>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -43,7 +42,6 @@ New-MgBetaIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -64,8 +62,9 @@ Create a new b2xIdentityUserFlow object.
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a user flow with the default values
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -77,7 +76,12 @@ $params = @{
 
 New-MgBetaIdentityB2XUserFlow -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a user flow with the default values
+
+### Example 2: Create a user flow with the default values and an identity provider
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -96,7 +100,12 @@ $params = @{
 
 New-MgBetaIdentityB2XUserFlow -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create a user flow with the default values and an identity provider
+
+### Example 3: Create a user flow with the default values and configuration for API connectors
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -115,6 +124,10 @@ $params = @{
 }
 
 New-MgBetaIdentityB2XUserFlow -BodyParameter $params
+
+```
+This example will create a user flow with the default values and configuration for api connectors
+
 
 ## PARAMETERS
 

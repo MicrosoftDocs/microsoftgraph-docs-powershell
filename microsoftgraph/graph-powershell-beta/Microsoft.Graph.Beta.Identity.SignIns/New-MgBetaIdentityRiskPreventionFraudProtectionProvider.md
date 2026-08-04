@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionfraudprotectionprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityRiskPreventionFraudProtectionProvider
 ---
@@ -28,7 +28,7 @@ New-MgBetaIdentityRiskPreventionFraudProtectionProvider [-ResponseHeadersVariabl
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +38,7 @@ New-MgBetaIdentityRiskPreventionFraudProtectionProvider
  -BodyParameter <IMicrosoftGraphFraudProtectionProvider> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -50,6 +50,46 @@ This cmdlet has the following aliases,
 
 Create a new fraudProtectionProvider object.
 You can create one of the following subtypes that are derived from fraudProtectionProvider.
+
+## EXAMPLES
+### Example 1: Create a new arkoseFraudProtectionProvider object
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.arkoseFraudProtectionProvider"
+	displayName = "Arkose Sign-Up Protection"
+	publicKey = "A1EE42E0-C88B-47FE-A176-5E9FB8F116FB"
+	privateKey = "19BBE628-7DEF-4E28-AB25-BF129C760B7E"
+	clientSubDomain = "client-api"
+	verifySubDomain = "verify-api"
+}
+
+New-MgBetaIdentityRiskPreventionFraudProtectionProvider -BodyParameter $params
+
+```
+This example will create a new arkosefraudprotectionprovider object
+
+### Example 2: Create a new humanSecurityFraudProtectionProvider object
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.humanSecurityFraudProtectionProvider"
+	displayName = "HUMAN Security Sign-Up Protection"
+	appId = "XXyy1XXXy"
+	serverToken = "xxYYxxXXX1"
+}
+
+New-MgBetaIdentityRiskPreventionFraudProtectionProvider -BodyParameter $params
+
+```
+This example will create a new humansecurityfraudprotectionprovider object
+
 
 ## PARAMETERS
 
@@ -393,7 +433,6 @@ Read-only.
 
 - [New-MgBetaIdentityRiskPreventionFraudProtectionProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionfraudprotectionprovider)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-fraudprotectionproviders?view=graph-rest-beta)
-
 
 
 
