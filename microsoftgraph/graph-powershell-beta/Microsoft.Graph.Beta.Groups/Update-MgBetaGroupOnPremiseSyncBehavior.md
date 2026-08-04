@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponpremisesyncbehavior
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaGroupOnPremiseSyncBehavior
 ---
@@ -27,7 +27,7 @@ Update-MgBetaGroupOnPremiseSyncBehavior -GroupId <string> [-ResponseHeadersVaria
  [-AdditionalProperties <hashtable>] [-Id <string>] [-IsCloudManaged] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -37,7 +37,7 @@ Update-MgBetaGroupOnPremiseSyncBehavior -GroupId <string>
  -BodyParameter <IMicrosoftGraphOnPremisesSyncBehavior> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -47,7 +47,7 @@ Update-MgBetaGroupOnPremiseSyncBehavior -InputObject <IGroupsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
  [-IsCloudManaged] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -57,7 +57,7 @@ Update-MgBetaGroupOnPremiseSyncBehavior -InputObject <IGroupsIdentity>
  -BodyParameter <IMicrosoftGraphOnPremisesSyncBehavior> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -76,6 +76,24 @@ Update the properties of an onPremisesSyncBehavior object.
 | Delegated (work or school account) | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onPremisesSyncBehavior"
+	isCloudManaged = $true
+}
+
+Update-MgBetaGroupOnPremiseSyncBehavior -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaGroupOnPremiseSyncBehavior Cmdlet.
+
 
 ## PARAMETERS
 
@@ -528,7 +546,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [Update-MgBetaGroupOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponpremisesyncbehavior)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/onpremisessyncbehavior-update?view=graph-rest-beta)
-
 
 
 
