@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangerestoresessiongranularmailboxrestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact
 ---
@@ -31,7 +31,7 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtif
  [-RestoredItemCount <int>] [-SearchResponseId <string>] [-StartDateTime <datetime>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -42,7 +42,6 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtif
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -56,7 +55,7 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtif
  [-RestoredItemCount <int>] [-SearchResponseId <string>] [-StartDateTime <datetime>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -67,7 +66,7 @@ New-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtif
  -BodyParameter <IMicrosoftGraphGranularMailboxRestoreArtifact> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -788,6 +787,11 @@ For example, in the access reviews decisions API, this property might record the
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
       [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+      [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [EffectiveFromDateTime <DateTime?>]: 
+        [Status <String>]: retentionPeriodChangeStatus
+        [TargetRetentionPeriodInDays <Int32?>]: 
       [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
       [ProtectionSources <String>]: protectionSource
       [Status <String>]: protectionUnitStatus
@@ -902,6 +906,11 @@ For example, in the access reviews decisions API, this property might record the
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
     [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+    [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [EffectiveFromDateTime <DateTime?>]: 
+      [Status <String>]: retentionPeriodChangeStatus
+      [TargetRetentionPeriodInDays <Int32?>]: 
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
     [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus

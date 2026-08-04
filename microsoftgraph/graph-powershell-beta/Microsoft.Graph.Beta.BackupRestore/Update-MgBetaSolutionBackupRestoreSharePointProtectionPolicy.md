@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy
 ---
@@ -39,7 +39,7 @@ Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -SharePointProtecti
  [-SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob[]>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -49,7 +49,7 @@ Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -SharePointProtecti
  -BodyParameter <IMicrosoftGraphSharePointProtectionPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -70,7 +70,7 @@ Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -InputObject <IBack
  [-SiteProtectionUnitsBulkAdditionJobs <IMicrosoftGraphSiteProtectionUnitsBulkAdditionJob[]>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -80,7 +80,7 @@ Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -InputObject <IBack
  -BodyParameter <IMicrosoftGraphSharePointProtectionPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -733,7 +733,7 @@ HelpMessage: ''
 
 ### -SiteExclusionUnits
 
-
+The site exclusion units associated with the SharePoint protection policy.
 To construct, see NOTES section for SITEEXCLUSIONUNITS properties and create a hash table.
 
 ```yaml
@@ -761,7 +761,7 @@ HelpMessage: ''
 
 ### -SiteExclusionUnitsBulkAdditionJobs
 
-
+The list of bulk addition jobs for site exclusion units associated with the SharePoint protection policy.
 To construct, see NOTES section for SITEEXCLUSIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -993,9 +993,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Status <String>]: protectionPolicyStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [SiteExclusionUnits <IMicrosoftGraphSiteExclusionUnit[]>]: 
+  [SiteExclusionUnits <IMicrosoftGraphSiteExclusionUnit[]>]: The site exclusion units associated with the SharePoint protection policy.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: 
+    [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Error <IMicrosoftGraphPublicError>]: publicError
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Code <String>]: Represents the error code.
@@ -1012,22 +1014,28 @@ Read-only.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: 
-    [PolicyId <String>]: 
+    [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [SiteId <String>]: 
-  [SiteExclusionUnitsBulkAdditionJobs <IMicrosoftGraphSiteExclusionUnitsBulkAdditionJob[]>]: 
+    [SiteId <String>]: The unique identifier of the SharePoint site.
+  [SiteExclusionUnitsBulkAdditionJobs <IMicrosoftGraphSiteExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for site exclusion units associated with the SharePoint protection policy.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: 
-    [DisplayName <String>]: 
+    [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [DisplayName <String>]: The display name of the bulk addition job.
     [Error <IMicrosoftGraphPublicError>]: publicError
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: 
+    [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Status <String>]: exclusionUnitBulkJobStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [SiteWebUrls <String[]>]: 
+    [SiteWebUrls <String[]>]: The URLs of SharePoint sites to be added as exclusion units to the protection policy.
   [SiteInclusionRules <IMicrosoftGraphSiteProtectionRule[]>]: The rules associated with the SharePoint Protection policy.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The time of creation of the rule.
@@ -1049,6 +1057,11 @@ For examples, see siteExpression example.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
     [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+    [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [EffectiveFromDateTime <DateTime?>]: 
+      [Status <String>]: retentionPeriodChangeStatus
+      [TargetRetentionPeriodInDays <Int32?>]: 
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
     [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
@@ -1147,7 +1160,7 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting[]>: Contains the retention se
   [Interval <String>]: The frequency of the backup.
   [Period <TimeSpan?>]: The period of time to retain the protected data for a single Microsoft 365 service.
 
-SITEEXCLUSIONUNITS <IMicrosoftGraphSiteExclusionUnit[]>: .
+SITEEXCLUSIONUNITS <IMicrosoftGraphSiteExclusionUnit[]>: The site exclusion units associated with the SharePoint protection policy.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
@@ -1159,7 +1172,9 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: 
+  [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -1176,13 +1191,15 @@ For example, in the access reviews decisions API, this property might record the
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: 
-  [PolicyId <String>]: 
+  [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [SiteId <String>]: 
+  [SiteId <String>]: The unique identifier of the SharePoint site.
 
-SITEEXCLUSIONUNITSBULKADDITIONJOBS <IMicrosoftGraphSiteExclusionUnitsBulkAdditionJob[]>: .
+SITEEXCLUSIONUNITSBULKADDITIONJOBS <IMicrosoftGraphSiteExclusionUnitsBulkAdditionJob[]>: The list of bulk addition jobs for site exclusion units associated with the SharePoint protection policy.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
@@ -1194,8 +1211,10 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: 
-  [DisplayName <String>]: 
+  [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [DisplayName <String>]: The display name of the bulk addition job.
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -1212,11 +1231,13 @@ For example, in the access reviews decisions API, this property might record the
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: 
+  [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Status <String>]: exclusionUnitBulkJobStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [SiteWebUrls <String[]>]: 
+  [SiteWebUrls <String[]>]: The URLs of SharePoint sites to be added as exclusion units to the protection policy.
 
 SITEINCLUSIONRULES <IMicrosoftGraphSiteProtectionRule[]>: The rules associated with the SharePoint Protection policy.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1288,6 +1309,11 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
   [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+  [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [EffectiveFromDateTime <DateTime?>]: 
+    [Status <String>]: retentionPeriodChangeStatus
+    [TargetRetentionPeriodInDays <Int32?>]: 
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
   [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus

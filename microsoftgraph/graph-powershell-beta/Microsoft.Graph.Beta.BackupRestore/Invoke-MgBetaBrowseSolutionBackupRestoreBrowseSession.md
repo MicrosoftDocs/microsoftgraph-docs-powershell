@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetabrowsesolutionbackuprestorebrowsesession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaBrowseSolutionBackupRestoreBrowseSession
 ---
@@ -25,7 +25,7 @@ Invoke-MgBetaBrowseSolutionBackupRestoreBrowseSession -BrowseSessionBaseId <stri
  [-BrowseLocationItemKey <string>] [-BrowseResourceType <string>] [-Sort <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Browse1
@@ -36,7 +36,6 @@ Invoke-MgBetaBrowseSolutionBackupRestoreBrowseSession -BrowseSessionBaseId <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Browse
@@ -47,7 +46,6 @@ Invoke-MgBetaBrowseSolutionBackupRestoreBrowseSession -BrowseSessionBaseId <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### BrowseViaIdentityExpanded
@@ -58,7 +56,7 @@ Invoke-MgBetaBrowseSolutionBackupRestoreBrowseSession -InputObject <IBackupResto
  [-BrowseLocationItemKey <string>] [-BrowseResourceType <string>] [-Sort <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### BrowseViaIdentity1
@@ -69,7 +67,6 @@ Invoke-MgBetaBrowseSolutionBackupRestoreBrowseSession -InputObject <IBackupResto
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### BrowseViaIdentity
@@ -80,7 +77,6 @@ Invoke-MgBetaBrowseSolutionBackupRestoreBrowseSession -InputObject <IBackupResto
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

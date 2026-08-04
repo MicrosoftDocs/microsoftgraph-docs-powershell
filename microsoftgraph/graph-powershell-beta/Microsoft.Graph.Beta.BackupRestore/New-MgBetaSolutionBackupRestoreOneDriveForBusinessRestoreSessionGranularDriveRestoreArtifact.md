@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiongranulardriverestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact
 ---
@@ -23,12 +23,12 @@ Create new navigation property to granularDriveRestoreArtifacts for solutions
 New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact
  -OneDriveForBusinessRestoreSessionId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-BrowseSessionId <string>] [-CompletionDateTime <datetime>]
- [-DirectoryObjectId <string>] [-Id <string>] [-RestorePointDateTime <datetime>]
- [-RestoredItemKey <string>] [-RestoredItemPath <string>] [-RestoredItemWebUrl <string>]
- [-StartDateTime <datetime>] [-Status <string>] [-WebUrl <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-DestinationType <string>] [-DirectoryObjectId <string>] [-Id <string>]
+ [-RestorePointDateTime <datetime>] [-RestoredItemKey <string>] [-RestoredItemPath <string>]
+ [-RestoredItemWebUrl <string>] [-StartDateTime <datetime>] [-Status <string>] [-WebUrl <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +39,7 @@ New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRes
  -BodyParameter <IMicrosoftGraphGranularDriveRestoreArtifact> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -48,12 +48,12 @@ New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRes
 New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact
  -InputObject <IBackupRestoreIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-BrowseSessionId <string>] [-CompletionDateTime <datetime>]
- [-DirectoryObjectId <string>] [-Id <string>] [-RestorePointDateTime <datetime>]
- [-RestoredItemKey <string>] [-RestoredItemPath <string>] [-RestoredItemWebUrl <string>]
- [-StartDateTime <datetime>] [-Status <string>] [-WebUrl <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-DestinationType <string>] [-DirectoryObjectId <string>] [-Id <string>]
+ [-RestorePointDateTime <datetime>] [-RestoredItemKey <string>] [-RestoredItemPath <string>]
+ [-RestoredItemWebUrl <string>] [-StartDateTime <datetime>] [-Status <string>] [-WebUrl <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -64,7 +64,6 @@ New-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRes
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -220,6 +219,33 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DestinationType
+
+destinationType
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -545,7 +571,7 @@ HelpMessage: ''
 
 ### -RestoredItemWebUrl
 
-The web url of the restord artifact.
+The web url of the restored artifact.
 
 ```yaml
 Type: System.String
@@ -738,11 +764,12 @@ BODYPARAMETER `<IMicrosoftGraphGranularDriveRestoreArtifact>`: granularDriveRest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BrowseSessionId <String>]: The unique identifier of the browseSession
   [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+  [DestinationType <String>]: destinationType
   [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
   [RestoredItemKey <String>]: The unique identifier for the restored artifact.
   [RestoredItemPath <String>]: The path of the restored artifact.
 It's the path of the folder where all the artifacts are restored within a granular restore session.
-  [RestoredItemWebUrl <String>]: The web url of the restord artifact.
+  [RestoredItemWebUrl <String>]: The web url of the restored artifact.
   [StartDateTime <DateTime?>]: The start time of the restoration.
   [Status <String>]: artifactRestoreStatus
   [WebUrl <String>]: The original web url of the artifact being restored.

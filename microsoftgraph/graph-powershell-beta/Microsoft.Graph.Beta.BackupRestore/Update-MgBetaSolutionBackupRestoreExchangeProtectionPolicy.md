@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreexchangeprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy
 ---
@@ -38,7 +38,7 @@ Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -ExchangeProtectionPo
  [-RetentionSettings <IMicrosoftGraphRetentionSetting[]>] [-Status <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -48,7 +48,7 @@ Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -ExchangeProtectionPo
  -BodyParameter <IMicrosoftGraphExchangeProtectionPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -68,7 +68,7 @@ Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackup
  [-RetentionSettings <IMicrosoftGraphRetentionSetting[]>] [-Status <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -78,7 +78,7 @@ Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -InputObject <IBackup
  -BodyParameter <IMicrosoftGraphExchangeProtectionPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -534,7 +534,7 @@ HelpMessage: ''
 
 ### -MailboxExclusionUnits
 
-
+The mailbox exclusion units associated with the Exchange protection policy.
 To construct, see NOTES section for MAILBOXEXCLUSIONUNITS properties and create a hash table.
 
 ```yaml
@@ -562,7 +562,7 @@ HelpMessage: ''
 
 ### -MailboxExclusionUnitsBulkAdditionJobs
 
-
+The list of bulk addition jobs for mailbox exclusion units associated with the Exchange protection policy.
 To construct, see NOTES section for MAILBOXEXCLUSIONUNITSBULKADDITIONJOBS properties and create a hash table.
 
 ```yaml
@@ -991,9 +991,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Status <String>]: protectionPolicyStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [MailboxExclusionUnits <IMicrosoftGraphMailboxExclusionUnit[]>]: 
+  [MailboxExclusionUnits <IMicrosoftGraphMailboxExclusionUnit[]>]: The mailbox exclusion units associated with the Exchange protection policy.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: 
+    [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Error <IMicrosoftGraphPublicError>]: publicError
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Code <String>]: Represents the error code.
@@ -1010,23 +1012,29 @@ Read-only.
       [Message <String>]: A non-localized message for the developer.
       [Target <String>]: The target of the error.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: 
-    [PolicyId <String>]: 
+    [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DirectoryObjectId <String>]: 
+    [DirectoryObjectId <String>]: The unique identifier of the directory object (user) associated with the mailbox.
     [MailboxType <String>]: mailboxType
-  [MailboxExclusionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxExclusionUnitsBulkAdditionJob[]>]: 
+  [MailboxExclusionUnitsBulkAdditionJobs <IMicrosoftGraphMailboxExclusionUnitsBulkAdditionJob[]>]: The list of bulk addition jobs for mailbox exclusion units associated with the Exchange protection policy.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [CreatedDateTime <DateTime?>]: 
-    [DisplayName <String>]: 
+    [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [DisplayName <String>]: The display name of the bulk addition job.
     [Error <IMicrosoftGraphPublicError>]: publicError
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-    [LastModifiedDateTime <DateTime?>]: 
+    [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Status <String>]: exclusionUnitBulkJobStatus
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Mailboxes <String[]>]: 
+    [Mailboxes <String[]>]: The email addresses of the mailboxes to be added as exclusion units to the protection policy.
   [MailboxInclusionRules <IMicrosoftGraphMailboxProtectionRule[]>]: The rules associated with the Exchange protection policy.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [CreatedDateTime <DateTime?>]: The time of creation of the rule.
@@ -1048,6 +1056,11 @@ For examples, see mailboxExpression examples.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
     [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+    [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [EffectiveFromDateTime <DateTime?>]: 
+      [Status <String>]: retentionPeriodChangeStatus
+      [TargetRetentionPeriodInDays <Int32?>]: 
     [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
     [ProtectionSources <String>]: protectionSource
     [Status <String>]: protectionUnitStatus
@@ -1136,7 +1149,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-MAILBOXEXCLUSIONUNITS <IMicrosoftGraphMailboxExclusionUnit[]>: .
+MAILBOXEXCLUSIONUNITS <IMicrosoftGraphMailboxExclusionUnit[]>: The mailbox exclusion units associated with the Exchange protection policy.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
@@ -1148,7 +1161,9 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: 
+  [CreatedDateTime <DateTime?>]: The date and time when the exclusion unit was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -1165,14 +1180,16 @@ For example, in the access reviews decisions API, this property might record the
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: 
-  [PolicyId <String>]: 
+  [LastModifiedDateTime <DateTime?>]: The date and time when the exclusion unit was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [PolicyId <String>]: The unique identifier of the protection policy that contains this exclusion unit.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DirectoryObjectId <String>]: 
+  [DirectoryObjectId <String>]: The unique identifier of the directory object (user) associated with the mailbox.
   [MailboxType <String>]: mailboxType
 
-MAILBOXEXCLUSIONUNITSBULKADDITIONJOBS <IMicrosoftGraphMailboxExclusionUnitsBulkAdditionJob[]>: .
+MAILBOXEXCLUSIONUNITSBULKADDITIONJOBS <IMicrosoftGraphMailboxExclusionUnitsBulkAdditionJob[]>: The list of bulk addition jobs for mailbox exclusion units associated with the Exchange protection policy.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Application <IMicrosoftGraphIdentity>]: identity
@@ -1184,8 +1201,10 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
-  [CreatedDateTime <DateTime?>]: 
-  [DisplayName <String>]: 
+  [CreatedDateTime <DateTime?>]: The date and time when the bulk addition job was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [DisplayName <String>]: The display name of the bulk addition job.
   [Error <IMicrosoftGraphPublicError>]: publicError
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Code <String>]: Represents the error code.
@@ -1202,11 +1221,13 @@ For example, in the access reviews decisions API, this property might record the
     [Message <String>]: A non-localized message for the developer.
     [Target <String>]: The target of the error.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-  [LastModifiedDateTime <DateTime?>]: 
+  [LastModifiedDateTime <DateTime?>]: The date and time when the bulk addition job was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Status <String>]: exclusionUnitBulkJobStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Mailboxes <String[]>]: 
+  [Mailboxes <String[]>]: The email addresses of the mailboxes to be added as exclusion units to the protection policy.
 
 MAILBOXINCLUSIONRULES <IMicrosoftGraphMailboxProtectionRule[]>: The rules associated with the Exchange protection policy.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1278,6 +1299,11 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
   [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+  [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [EffectiveFromDateTime <DateTime?>]: 
+    [Status <String>]: retentionPeriodChangeStatus
+    [TargetRetentionPeriodInDays <Int32?>]: 
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
   [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus

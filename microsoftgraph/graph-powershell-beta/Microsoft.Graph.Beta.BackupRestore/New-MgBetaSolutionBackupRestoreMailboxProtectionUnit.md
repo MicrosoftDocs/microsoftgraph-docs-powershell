@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoremailboxprotectionunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreMailboxProtectionUnit
 ---
@@ -28,11 +28,11 @@ New-MgBetaSolutionBackupRestoreMailboxProtectionUnit [-ResponseHeadersVariable <
  [-BillingPolicyId <string>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-DirectoryObjectId <string>] [-Error <IMicrosoftGraphPublicError>] [-Id <string>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-MailboxType <string>] [-OffboardRequestedDateTime <datetime>] [-PolicyId <string>]
+ [-MailboxType <string>] [-OffboardRequestedDateTime <datetime>]
+ [-PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>] [-PolicyId <string>]
  [-ProtectionSources <string>] [-Status <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -42,7 +42,7 @@ New-MgBetaSolutionBackupRestoreMailboxProtectionUnit
  -BodyParameter <IMicrosoftGraphMailboxProtectionUnit> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -440,6 +440,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PendingRetentionPeriodChange
+
+retentionPeriodChange
+To construct, see NOTES section for PENDINGRETENTIONPERIODCHANGE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRetentionPeriodChange
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -PolicyId
 
 The unique identifier of the protection policy based on which protection unit was created.
@@ -674,6 +696,11 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
   [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+  [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [EffectiveFromDateTime <DateTime?>]: 
+    [Status <String>]: retentionPeriodChangeStatus
+    [TargetRetentionPeriodInDays <Int32?>]: 
   [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
   [ProtectionSources <String>]: protectionSource
   [Status <String>]: protectionUnitStatus
@@ -721,6 +748,12 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
+
+PENDINGRETENTIONPERIODCHANGE `<IMicrosoftGraphRetentionPeriodChange>`: retentionPeriodChange
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [EffectiveFromDateTime <DateTime?>]: 
+  [Status <String>]: retentionPeriodChangeStatus
+  [TargetRetentionPeriodInDays <Int32?>]:
 
 
 ## RELATED LINKS
