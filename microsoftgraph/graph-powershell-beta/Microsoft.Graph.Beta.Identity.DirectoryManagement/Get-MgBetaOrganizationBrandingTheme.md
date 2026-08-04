@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandingtheme
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaOrganizationBrandingTheme
 ---
@@ -25,7 +25,7 @@ Get-MgBetaOrganizationBrandingTheme -OrganizationId <string> [-ExpandProperty <s
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -35,7 +35,7 @@ Get-MgBetaOrganizationBrandingTheme -OrganizationId <string> -OrganizationalBran
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -45,7 +45,7 @@ Get-MgBetaOrganizationBrandingTheme -InputObject <IIdentityDirectoryManagementId
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -64,6 +64,19 @@ Read the properties and relationships of organizationalBrandingTheme object.
 | Delegated (work or school account) | OrganizationalBranding.Read.All, OrganizationalBranding.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.Read.All, OrganizationalBranding.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaOrganizationBrandingTheme -OrganizationId $organizationId
+
+```
+This example shows how to use the Get-MgBetaOrganizationBrandingTheme Cmdlet.
+
 
 ## PARAMETERS
 
@@ -624,8 +637,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 - [Get-MgBetaOrganizationBrandingTheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandingtheme)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbrandingtheme-get?view=graph-rest-beta)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbranding-list-themes?view=graph-rest-beta)
-
-
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandingthemelocalization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaOrganizationBrandingThemeLocalization
 ---
@@ -40,7 +40,7 @@ New-MgBetaOrganizationBrandingThemeLocalization -OrganizationId <string>
  [-TermsOfUse <IMicrosoftGraphLoginPageBrandingVisualElement>] [-UsernameHintText <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -52,7 +52,6 @@ New-MgBetaOrganizationBrandingThemeLocalization -OrganizationId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -78,7 +77,7 @@ New-MgBetaOrganizationBrandingThemeLocalization -InputObject <IIdentityDirectory
  [-TermsOfUse <IMicrosoftGraphLoginPageBrandingVisualElement>] [-UsernameHintText <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -89,7 +88,6 @@ New-MgBetaOrganizationBrandingThemeLocalization -InputObject <IIdentityDirectory
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -108,6 +106,28 @@ Create a new organizationalBrandingThemeLocalization object.
 | Delegated (work or school account) | OrganizationalBranding.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.organizationalBrandingThemeLocalization"
+	locale = "fr-FR"
+	headerBackgroundColor = "#3377ffff"
+	pageBackgroundColor = "#FFFF33"
+	signInPageText = "Welcome to Contoso"
+	usernameHintText = "ContosoUsername "
+}
+
+New-MgBetaOrganizationBrandingThemeLocalization -OrganizationId $organizationId -OrganizationalBrandingThemeId $organizationalBrandingThemeId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaOrganizationBrandingThemeLocalization Cmdlet.
+
 
 ## PARAMETERS
 
@@ -1555,7 +1575,6 @@ Maximum length: 128.
 
 - [New-MgBetaOrganizationBrandingThemeLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandingthemelocalization)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbrandingtheme-post-localizations?view=graph-rest-beta)
-
 
 
 

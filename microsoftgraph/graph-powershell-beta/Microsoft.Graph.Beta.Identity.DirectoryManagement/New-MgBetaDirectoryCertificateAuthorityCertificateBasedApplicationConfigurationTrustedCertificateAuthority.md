@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority
 ---
@@ -26,7 +26,7 @@ New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationT
  [-IsRootAuthority] [-Issuer <string>] [-IssuerSubjectKeyIdentifier <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -37,7 +37,7 @@ New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationT
  -BodyParameter <IMicrosoftGraphCertificateAuthorityAsEntity> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -49,7 +49,7 @@ New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationT
  [-IsRootAuthority] [-Issuer <string>] [-IssuerSubjectKeyIdentifier <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -60,7 +60,7 @@ New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationT
  -BodyParameter <IMicrosoftGraphCertificateAuthorityAsEntity> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -76,9 +76,9 @@ Create a new trusted certificate authority in a certificateBasedApplicationConfi
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All,  |
+| Delegated (work or school account) | AppCertTrustConfiguration.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All,  |
+| Application | AppCertTrustConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminPeople
 ---
@@ -29,7 +29,7 @@ Update-MgBetaAdminPeople [-ResponseHeadersVariable <string>] [-AdditionalPropert
  [-ProfileSources <IMicrosoftGraphProfileSource[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -39,7 +39,6 @@ Update-MgBetaAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -554,7 +553,7 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
 Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
 When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
-    [IsVisible <Boolean?>]: 
+    [IsVisible <Boolean?>]: Indicates whether the given directory property should be shown on a user’s profile card.
   [ProfilePropertySettings <IMicrosoftGraphProfilePropertySetting[]>]: A collection of profile property configuration settings defined by an administrator for an organization.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -618,7 +617,7 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
 Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
 When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
-  [IsVisible <Boolean?>]: 
+  [IsVisible <Boolean?>]: Indicates whether the given directory property should be shown on a user’s profile card.
 
 PROFILEPROPERTYSETTINGS <IMicrosoftGraphProfilePropertySetting[]>: A collection of profile property configuration settings defined by an administrator for an organization.
   [Id <String>]: The unique identifier for an entity.

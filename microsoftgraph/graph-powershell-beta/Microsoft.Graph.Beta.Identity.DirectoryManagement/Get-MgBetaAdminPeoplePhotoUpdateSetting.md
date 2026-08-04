@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplephotoupdatesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAdminPeoplePhotoUpdateSetting
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaAdminPeoplePhotoUpdateSetting
 
 ## SYNOPSIS
 
-Read the properties and relationships of a photoUpdateSettings object.
+Get the properties of a photoUpdateSettings object.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Read the properties and relationships of a photoUpdateSettings object.
 Get-MgBetaAdminPeoplePhotoUpdateSetting [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -33,7 +33,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read the properties and relationships of a photoUpdateSettings object.
+Get the properties of a photoUpdateSettings object.
 
 **Permissions**
 
@@ -295,7 +295,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgBetaAdminPeoplePhotoUpdateSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplephotoupdatesetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/photoupdatesettings-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-list-photoupdatesettings?view=graph-rest-beta)
 
 
 

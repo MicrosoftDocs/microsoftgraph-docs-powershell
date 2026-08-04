@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandingtheme
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOrganizationBrandingTheme
 ---
@@ -26,7 +26,7 @@ Update-MgBetaOrganizationBrandingTheme -OrganizationId <string>
  [-Localizations <IMicrosoftGraphOrganizationalBrandingThemeLocalization[]>] [-Name <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -37,7 +37,6 @@ Update-MgBetaOrganizationBrandingTheme -OrganizationId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,7 +47,7 @@ Update-MgBetaOrganizationBrandingTheme -InputObject <IIdentityDirectoryManagemen
  [-IsDefaultTheme] [-Localizations <IMicrosoftGraphOrganizationalBrandingThemeLocalization[]>]
  [-Name <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -58,7 +57,7 @@ Update-MgBetaOrganizationBrandingTheme -InputObject <IIdentityDirectoryManagemen
  -BodyParameter <IMicrosoftGraphOrganizationalBrandingTheme> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -77,6 +76,25 @@ Update the properties of an organizationalBrandingTheme object.
 | Delegated (work or school account) | OrganizationalBranding.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | OrganizationalBranding.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.organizationalBrandingTheme"
+	name = "ContosoTheme"
+	isDefaultTheme = $true
+}
+
+Update-MgBetaOrganizationBrandingTheme -OrganizationId $organizationId -OrganizationalBrandingThemeId $organizationalBrandingThemeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaOrganizationBrandingTheme Cmdlet.
+
 
 ## PARAMETERS
 
@@ -859,7 +877,6 @@ Optional.
 
 - [Update-MgBetaOrganizationBrandingTheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandingtheme)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbrandingtheme-update?view=graph-rest-beta)
-
 
 
 

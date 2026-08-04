@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryoutboundshareduserprofilecount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryOutboundSharedUserProfileCount
 ---
@@ -23,7 +23,7 @@ Get the number of the resource
 Get-MgBetaDirectoryOutboundSharedUserProfileCount [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -39,7 +39,7 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CrossTenantUserProfileSharing.Read, CrossTenantUserProfileSharing.ReadWrite.All, CrossTenantUserProfileSharing.ReadWrite, CrossTenantUserProfileSharing.Read.All,  |
+| Delegated (work or school account) | CrossTenantUserProfileSharing.Read, CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite, CrossTenantUserProfileSharing.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All,  |
 
