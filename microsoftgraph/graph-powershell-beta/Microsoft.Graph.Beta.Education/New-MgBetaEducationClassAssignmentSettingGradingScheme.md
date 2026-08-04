@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingscheme
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEducationClassAssignmentSettingGradingScheme
 ---
@@ -29,7 +29,7 @@ New-MgBetaEducationClassAssignmentSettingGradingScheme -EducationClassId <string
  [-Grades <IMicrosoftGraphEducationGradingSchemeGrade[]>] [-HidePointsDuringGrading] [-Id <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +39,7 @@ New-MgBetaEducationClassAssignmentSettingGradingScheme -EducationClassId <string
  -BodyParameter <IMicrosoftGraphEducationGradingScheme> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -50,7 +50,7 @@ New-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducationI
  [-Grades <IMicrosoftGraphEducationGradingSchemeGrade[]>] [-HidePointsDuringGrading] [-Id <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -60,7 +60,7 @@ New-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducationI
  -BodyParameter <IMicrosoftGraphEducationGradingScheme> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -80,6 +80,35 @@ Only teachers can perform this operation.
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+	displayName = "PassFailScheme"
+	grades = @(
+		@{
+			displayName = "Pass"
+			minPercentage = 70
+			defaultPercentage = 90
+		}
+		@{
+			displayName = "Fail"
+			minPercentage = 0
+			defaultPercentage = 50
+		}
+	)
+}
+
+New-MgBetaEducationClassAssignmentSettingGradingScheme -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationClassAssignmentSettingGradingScheme Cmdlet.
+
 
 ## PARAMETERS
 
@@ -595,7 +624,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [New-MgBetaEducationClassAssignmentSettingGradingScheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingscheme)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignmentsettings-post-gradingschemes?view=graph-rest-beta)
-
 
 
 

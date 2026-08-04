@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationClassDelta
 ---
@@ -29,7 +29,7 @@ Get-MgBetaEducationClassDelta [-ExpandProperty <string[]>] [-Filter <string>] [-
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ## ALIASES
@@ -46,9 +46,9 @@ See Use delta query for details.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.ReadWrite, EduRoster.Read,  |
+| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.Read, EduRoster.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.ReadBasic.All, EduRoster.ReadWrite.All, EduRoster.Read.All,  |
+| Application | EduRoster.ReadBasic.All, EduRoster.Read.All, EduRoster.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEducationClassAssignmentSetting
 ---
@@ -32,7 +32,6 @@ Update-MgBetaEducationClassAssignmentSetting -EducationClassId <string>
  [-SubmissionAnimationDisabled] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -42,7 +41,7 @@ Update-MgBetaEducationClassAssignmentSetting -EducationClassId <string>
  -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -56,7 +55,6 @@ Update-MgBetaEducationClassAssignmentSetting -InputObject <IEducationIdentity>
  [-SubmissionAnimationDisabled] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -66,7 +64,7 @@ Update-MgBetaEducationClassAssignmentSetting -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationAssignmentSettings> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -88,7 +86,7 @@ Only teachers can update these settings.
 | Application | Not supported |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Update submissionAnimationDisabled
 
 ```powershell
 
@@ -101,9 +99,9 @@ $params = @{
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
 ```
-This example shows how to use the Update-MgBetaEducationClassAssignmentSetting Cmdlet.
+This example will update submissionanimationdisabled
 
-### Example 2: Code snippet
+### Example 2: Create grading categories
 
 ```powershell
 
@@ -129,7 +127,96 @@ $params = @{
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
 ```
-This example shows how to use the Update-MgBetaEducationClassAssignmentSetting Cmdlet.
+This example will create grading categories
+
+### Example 3: Delta payload to delete, modify, and add grading categories
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+	"gradingCategories@delta" = @(
+		@{
+			id = "fb859cd3-943b-4cd6-9bbe-fe1c39eace0e"
+			displayName = "Lab Test"
+		}
+		@{
+			"@odata.context" = "https://graph.microsoft.com/beta/$metadata#gradingCategories/$deletedEntity"
+			id = "e2a86277-24f9-4f29-8196-8c83fc69d00d"
+			reason = "deleted"
+		}
+		@{
+			displayName = "Lab Practice"
+			percentageWeight = 
+		}
+		@{
+			displayName = "Lab Theory"
+			percentageWeight = 
+		}
+	)
+}
+
+Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example will delta payload to delete, modify, and add grading categories
+
+### Example 4: Create grading schemes
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+	gradingSchemes = @(
+		@{
+			displayName = "Pass/fail"
+			grades = @(
+				@{
+					displayName = "Pass"
+					minPercentage = 60
+					defaultPercentage = 100
+				}
+				@{
+					displayName = "Fail"
+					minPercentage = 0
+					defaultPercentage = 0
+				}
+			)
+		}
+		@{
+			displayName = "Letters"
+			grades = @(
+				@{
+					displayName = "A"
+					minPercentage = 90
+				}
+				@{
+					displayName = "B"
+					minPercentage = 80
+				}
+				@{
+					displayName = "C"
+					minPercentage = 70
+				}
+				@{
+					displayName = "D"
+					minPercentage = 60
+				}
+				@{
+					displayName = "F"
+					minPercentage = 0
+				}
+			)
+		}
+	)
+}
+
+Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example will create grading schemes
 
 
 ## PARAMETERS
