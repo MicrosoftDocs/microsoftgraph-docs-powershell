@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Compliance
-Module Guid: a8db4713-edf1-49db-bc71-38c917013835
+Module Guid: 9bb5c093-f4d0-4507-a49c-eb4fe9e1f789
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
