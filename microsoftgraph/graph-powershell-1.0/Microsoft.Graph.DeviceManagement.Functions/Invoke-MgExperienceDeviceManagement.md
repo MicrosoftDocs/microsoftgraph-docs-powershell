@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgexperiencedevicemanagement
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgExperienceDeviceManagement
 ---
@@ -26,7 +26,7 @@ Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 Invoke-MgExperienceDeviceManagement [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
