@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDirectory
 ---
@@ -35,7 +35,6 @@ Update-MgDirectory [-ResponseHeadersVariable <string>] [-AdditionalProperties <h
  [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -44,7 +43,7 @@ Update-MgDirectory [-ResponseHeadersVariable <string>] [-AdditionalProperties <h
 Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -754,6 +753,7 @@ The threshold is either an absolute number of objects or a percentage number of 
         [SynchronizationPreventionType <String>]: onPremisesDirectorySynchronizationDeletionPreventionType
     [Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>]: onPremisesDirectorySynchronizationFeature
       [(Any) <Object>]: This indicates any property can be added to this object.
+      [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
       [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
       [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
@@ -914,6 +914,7 @@ The threshold is either an absolute number of objects or a percentage number of 
       [SynchronizationPreventionType <String>]: onPremisesDirectorySynchronizationDeletionPreventionType
   [Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>]: onPremisesDirectorySynchronizationFeature
     [(Any) <Object>]: This indicates any property can be added to this object.
+    [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
     [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
     [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.

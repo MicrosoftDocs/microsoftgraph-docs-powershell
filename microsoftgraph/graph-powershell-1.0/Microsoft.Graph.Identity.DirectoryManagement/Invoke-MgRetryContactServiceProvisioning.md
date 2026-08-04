@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgretrycontactserviceprovisioning
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgRetryContactServiceProvisioning
 ---
@@ -27,7 +27,6 @@ Invoke-MgRetryContactServiceProvisioning -OrgContactId <string> [-ResponseHeader
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RetryViaIdentity
@@ -37,7 +36,6 @@ Invoke-MgRetryContactServiceProvisioning -InputObject <IIdentityDirectoryManagem
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +46,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retry the orgContact service provisioning.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Invoke-MgRetryContactServiceProvisioning -OrgContactId $orgContactId
+
+```
+This example shows how to use the Invoke-MgRetryContactServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 
@@ -398,7 +409,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [Invoke-MgRetryContactServiceProvisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgretrycontactserviceprovisioning)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-1.0)
-
 
 
 

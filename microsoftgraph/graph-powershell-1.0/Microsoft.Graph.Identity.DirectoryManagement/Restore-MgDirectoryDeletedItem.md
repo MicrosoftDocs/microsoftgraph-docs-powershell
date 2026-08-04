@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgDirectoryDeletedItem
 ---
@@ -31,7 +31,7 @@ After 30 days, the item is permanently deleted.
 Restore-MgDirectoryDeletedItem -DirectoryObjectId <string> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### RestoreViaIdentity
@@ -41,7 +41,6 @@ Restore-MgDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIdentit
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -62,9 +61,9 @@ After 30 days, the item is permanently deleted.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.DeleteRestore.All, User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, AgentIdentityBlueprint.DeleteRestore.All, AgentIdentity.DeleteRestore.All,  |
+| Delegated (work or school account) | User.DeleteRestore.All, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprint.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.DeleteRestore.All, User.ReadWrite.CrossCloud, User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, AgentIdentityBlueprint.DeleteRestore.All, AgentIdentity.DeleteRestore.All,  |
+| Application | User.DeleteRestore.All, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprint.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All, User.ReadWrite.CrossCloud,  |
 
 ## EXAMPLES
 ### Example 1: Restore a deleted item
