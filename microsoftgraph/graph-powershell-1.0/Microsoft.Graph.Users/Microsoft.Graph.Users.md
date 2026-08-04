@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 714022b2-74b6-43a5-a632-19deaa24890f
+Module Guid: 49fc86e3-f24a-4fcc-9eb2-615d1560ddae
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -215,6 +215,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserSetting](Get-MgUserSetting.md)
 
+### [Get-MgUserSettingExchange](Get-MgUserSettingExchange.md)
+
 ### [Get-MgUserSettingItemInsight](Get-MgUserSettingItemInsight.md)
 
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
@@ -257,7 +259,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserSponsor](Get-MgUserSponsor.md)
 
-### [Get-MgUserSponsor](Get-MgUserSponsor.md)
+### [Get-MgUserSponsorByRef](Get-MgUserSponsorByRef.md)
 
 ### [Get-MgUserSponsorCount](Get-MgUserSponsorCount.md)
 
@@ -369,6 +371,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgUserSettingWorkHourAndLocationRecurrence](New-MgUserSettingWorkHourAndLocationRecurrence.md)
 
+### [New-MgUserSponsorByRef](New-MgUserSponsorByRef.md)
+
 ### [New-MgUserTodoList](New-MgUserTodoList.md)
 
 ### [New-MgUserTodoListExtension](New-MgUserTodoListExtension.md)
@@ -430,6 +434,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgUserSettingWorkHourAndLocationOccurrence](Remove-MgUserSettingWorkHourAndLocationOccurrence.md)
 
 ### [Remove-MgUserSettingWorkHourAndLocationRecurrence](Remove-MgUserSettingWorkHourAndLocationRecurrence.md)
+
+### [Remove-MgUserSponsorByRef](Remove-MgUserSponsorByRef.md)
+
+### [Remove-MgUserSponsorDirectoryObjectByRef](Remove-MgUserSponsorDirectoryObjectByRef.md)
 
 ### [Remove-MgUserTodoList](Remove-MgUserTodoList.md)
 

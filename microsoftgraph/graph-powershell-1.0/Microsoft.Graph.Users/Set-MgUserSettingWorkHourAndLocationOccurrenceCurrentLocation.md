@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusersettingworkhourandlocationoccurrencecurrentlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation
 ---
@@ -29,7 +29,6 @@ Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation -UserId <string>
  [-UpdateScope <string>] [-WorkLocationType <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set
@@ -40,7 +39,6 @@ Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -51,7 +49,6 @@ Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation -InputObject <IUse
  [-UpdateScope <string>] [-WorkLocationType <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -62,7 +59,6 @@ Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation -InputObject <IUse
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,6 +70,43 @@ This cmdlet has the following aliases,
 
 Update your work location for the current day or current active segment.
 This action allows you to quickly update your work location without modifying individual occurrences.
+
+## EXAMPLES
+### Example 1: Set the current location to office
+
+```powershell
+
+Import-Module Microsoft.Graph.Users
+
+$params = @{
+	updateScope = "currentDay"
+	workLocationType = "office"
+	placeId = "12345678-1234-1234-1234-123456789012"
+}
+
+# A UPN can also be used as -UserId.
+Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation -UserId $userId -BodyParameter $params
+
+```
+This example will set the current location to office
+
+### Example 2: Set current location to remote
+
+```powershell
+
+Import-Module Microsoft.Graph.Users
+
+$params = @{
+	updateScope = "currentSegment"
+	workLocationType = "remote"
+}
+
+# A UPN can also be used as -UserId.
+Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation -UserId $userId -BodyParameter $params
+
+```
+This example will set current location to remote
+
 
 ## PARAMETERS
 
@@ -574,7 +607,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusersettingworkhourandlocationoccurrencecurrentlocation)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-1.0)
-
 
 
 

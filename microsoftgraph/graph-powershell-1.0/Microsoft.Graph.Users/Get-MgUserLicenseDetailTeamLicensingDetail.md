@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetailteamlicensingdetail
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserLicenseDetailTeamLicensingDetail
 ---
@@ -26,7 +26,7 @@ Get the license status of a user in Microsoft Teams.
 Get-MgUserLicenseDetailTeamLicensingDetail -UserId <string> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +35,7 @@ Get-MgUserLicenseDetailTeamLicensingDetail -UserId <string> [-ResponseHeadersVar
 Get-MgUserLicenseDetailTeamLicensingDetail -InputObject <IUsersIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -51,9 +51,22 @@ Get the license status of a user in Microsoft Teams.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users
+
+Get-MgUserLicenseDetailTeamLicensingDetail -UserId $userId
+
+```
+This example shows how to use the Get-MgUserLicenseDetailTeamLicensingDetail Cmdlet.
+
 
 ## PARAMETERS
 
@@ -331,7 +344,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [Get-MgUserLicenseDetailTeamLicensingDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetailteamlicensingdetail)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-1.0)
-
 
 
 

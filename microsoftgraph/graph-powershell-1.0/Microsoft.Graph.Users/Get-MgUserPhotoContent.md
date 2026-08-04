@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphotocontent
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserPhotoContent
 ---
@@ -27,7 +27,7 @@ Read-only.
 Get-MgUserPhotoContent -UserId <string> -OutFile <string> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get1
@@ -36,7 +36,7 @@ Get-MgUserPhotoContent -UserId <string> -OutFile <string> [-ResponseHeadersVaria
 Get-MgUserPhotoContent -UserId <string> -ProfilePhotoId <string> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -45,7 +45,7 @@ Get-MgUserPhotoContent -UserId <string> -ProfilePhotoId <string> -OutFile <strin
 Get-MgUserPhotoContent -InputObject <IUsersIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -54,7 +54,7 @@ Get-MgUserPhotoContent -InputObject <IUsersIdentity> -OutFile <string>
 Get-MgUserPhotoContent -InputObject <IUsersIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -71,9 +71,9 @@ Read-only.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.ReadBasic.All, ProfilePhoto.ReadWrite.All, ProfilePhoto.Read.All,  |
+| Delegated (work or school account) | User.Read, ProfilePhoto.Read.All, ProfilePhoto.ReadWrite.All, User.ReadBasic.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ProfilePhoto.Read.All, User.ReadWrite.CrossCloud, User.ReadBasic.All, User.Read.All, ProfilePhoto.ReadWrite.All,  |
+| Application | ProfilePhoto.Read.All, ProfilePhoto.ReadWrite.All, User.Read.All, User.ReadBasic.All, User.ReadWrite.CrossCloud,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
