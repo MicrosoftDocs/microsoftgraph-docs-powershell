@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityriskpreventionfraudprotectionprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityRiskPreventionFraudProtectionProvider
 ---
@@ -29,7 +29,7 @@ Get-MgIdentityRiskPreventionFraudProtectionProvider [-ExpandProperty <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -39,7 +39,7 @@ Get-MgIdentityRiskPreventionFraudProtectionProvider -FraudProtectionProviderId <
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -49,7 +49,7 @@ Get-MgIdentityRiskPreventionFraudProtectionProvider -InputObject <IIdentitySignI
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -69,6 +69,19 @@ The following derived types are currently supported.
 | Delegated (work or school account) | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgIdentityRiskPreventionFraudProtectionProvider
+
+```
+This example shows how to use the Get-MgIdentityRiskPreventionFraudProtectionProvider Cmdlet.
+
 
 ## PARAMETERS
 
@@ -603,8 +616,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [Get-MgIdentityRiskPreventionFraudProtectionProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityriskpreventionfraudprotectionprovider)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/fraudprotectionprovider-get?view=graph-rest-1.0)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-list-fraudprotectionproviders?view=graph-rest-1.0)
-
-
 
 
 

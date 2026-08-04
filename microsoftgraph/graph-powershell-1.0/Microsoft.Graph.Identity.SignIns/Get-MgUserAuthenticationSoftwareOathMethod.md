@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationsoftwareoathmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserAuthenticationSoftwareOathMethod
 ---
@@ -28,7 +28,7 @@ Get-MgUserAuthenticationSoftwareOathMethod -UserId <string> [-ExpandProperty <st
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +38,7 @@ Get-MgUserAuthenticationSoftwareOathMethod -SoftwareOathAuthenticationMethodId <
  -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +48,7 @@ Get-MgUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignInsIdentit
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -64,9 +64,9 @@ The software OATH time-based one-time password (TOTP) applications registered to
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-SoftwareOATH.Read, UserAuthMethod-SoftwareOATH.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite, UserAuthMethod-SoftwareOATH.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.Read,  |
+| Delegated (work or school account) | UserAuthMethod-SoftwareOATH.Read, UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.Read.All, UserAuthMethod-SoftwareOATH.ReadWrite, UserAuthMethod-SoftwareOATH.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthMethod-SoftwareOATH.Read.All, UserAuthMethod-SoftwareOATH.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All,  |
+| Application | UserAuthMethod-SoftwareOATH.Read.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

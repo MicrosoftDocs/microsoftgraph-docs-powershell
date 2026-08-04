@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationfido2method
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserAuthenticationFido2Method
 ---
@@ -27,7 +27,6 @@ Remove-MgUserAuthenticationFido2Method -Fido2AuthenticationMethodId <string> -Us
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,7 +36,6 @@ Remove-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -53,7 +51,7 @@ Deletes a user's FIDO2 security key authentication method object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite, UserAuthenticationMethod.ReadWrite,  |
+| Delegated (work or school account) | UserAuthMethod-Passkey.ReadWrite, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All,  |
 

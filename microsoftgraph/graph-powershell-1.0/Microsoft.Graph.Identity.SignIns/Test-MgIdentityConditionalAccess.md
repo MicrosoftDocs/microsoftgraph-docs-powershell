@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentityconditionalaccess
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgIdentityConditionalAccess
 ---
@@ -29,7 +29,6 @@ Test-MgIdentityConditionalAccess [-ResponseHeadersVariable <string>]
  [-SignInIdentity <hashtable>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Evaluate
@@ -40,7 +39,6 @@ Test-MgIdentityConditionalAccess
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -56,9 +54,9 @@ Evaluates the applicability of Conditional Access Policies in your tenant based 
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+| Delegated (work or school account) | Policy.Read.ConditionalAccess, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+| Application | Policy.Read.ConditionalAccess, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
 ### Example 1: Identify conditional access policies that would apply to a user accessing an application

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityConditionalAccessPolicy
 ---
@@ -31,7 +31,7 @@ New-MgIdentityConditionalAccessPolicy [-ResponseHeadersVariable <string>]
  [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <string>]
  [-TemplateId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -41,7 +41,6 @@ New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditional
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -57,9 +56,9 @@ Create a new conditionalAccessPolicy.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+| Delegated (work or school account) | Application.Read.All, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Application.Read.All,  |
+| Application | Policy.Read.All, Application.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations

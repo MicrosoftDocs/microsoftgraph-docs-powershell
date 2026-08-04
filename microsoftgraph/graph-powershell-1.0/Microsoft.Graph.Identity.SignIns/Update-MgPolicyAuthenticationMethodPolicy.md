@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyAuthenticationMethodPolicy
 ---
@@ -31,7 +31,7 @@ Update-MgPolicyAuthenticationMethodPolicy [-ResponseHeadersVariable <string>]
  [-RegistrationEnforcement <IMicrosoftGraphRegistrationEnforcement>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -41,7 +41,7 @@ Update-MgPolicyAuthenticationMethodPolicy
  -BodyParameter <IMicrosoftGraphAuthenticationMethodsPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -617,7 +617,7 @@ Read-only.
         [Id <String>]: The object identifier of a Microsoft Entra user or group.
         [TargetType <String>]: authenticationMethodTargetType
         [TargetedAuthenticationMethod <String>]: The authentication method that the user is prompted to register.
-The value must be microsoftAuthenticator.
+The value can be Fido2 or microsoftAuthenticator.
       [SnoozeDurationInDays <Int32?>]: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt.
 Minimum: 0 days.
 Maximum: 14 days.
@@ -635,7 +635,7 @@ REGISTRATIONENFORCEMENT `<IMicrosoftGraphRegistrationEnforcement>`: registration
       [Id <String>]: The object identifier of a Microsoft Entra user or group.
       [TargetType <String>]: authenticationMethodTargetType
       [TargetedAuthenticationMethod <String>]: The authentication method that the user is prompted to register.
-The value must be microsoftAuthenticator.
+The value can be Fido2 or microsoftAuthenticator.
     [SnoozeDurationInDays <Int32?>]: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt.
 Minimum: 0 days.
 Maximum: 14 days.

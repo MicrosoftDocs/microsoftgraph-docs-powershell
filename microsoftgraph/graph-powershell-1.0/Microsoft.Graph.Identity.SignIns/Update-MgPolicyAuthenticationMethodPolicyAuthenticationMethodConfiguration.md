@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 ---
@@ -29,7 +29,6 @@ Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  [-Id <string>] [-State <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -41,7 +40,6 @@ Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,7 +51,6 @@ Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  [-Id <string>] [-State <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +62,6 @@ Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -86,51 +82,29 @@ Update the properties of an externalAuthenticationMethodConfiguration object.
 | Application | Policy.ReadWrite.AuthenticationMethod,  |
 
 ## EXAMPLES
-### Example 1: Using the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
+
 $params = @{
-	"@odata.type" = "#microsoft.graph.emailAuthenticationMethodConfiguration"
-	AllowExternalIdToUseEmailOtp = "enabled"
+	"@odata.type" = "#microsoft.graph.externalAuthenticationMethodConfiguration"
+	includeTargets = @(
+		@{
+			targetType = "group"
+			id = "b183b746-e7db-4fa2-bafc-69ecf18850dd"
+			isRegistrationRequired = $false
+		}
+	)
+	state = "enabled"
 }
+
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-$params = @{
-	"@odata.type" = "#microsoft.graph.fido2AuthenticationMethodConfiguration"
-	State = "enabled"
-	IsAttestationEnforced = "true"
-}
-Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
-```
-This example shows how to use the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-$params = @{
-	"@odata.type" = "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration"
-	State = "String"
-}
-Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
-```
-This example shows how to use the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-$params = @{
-	"@odata.type" = "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration"
-	IsUsableOnce = $true
-}
-Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
-```
-This example shows how to use the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPolicyDeviceRegistrationPolicy
 ---
@@ -27,7 +27,7 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 Get-MgPolicyDeviceRegistrationPolicy [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -44,9 +44,22 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration, Policy.Read.All,  |
+| Delegated (work or school account) | Policy.Read.DeviceConfiguration, Policy.Read.All, Policy.ReadWrite.DeviceConfiguration,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyDeviceRegistrationPolicy
+
+```
+This example shows how to use the Get-MgPolicyDeviceRegistrationPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -288,7 +301,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [Get-MgPolicyDeviceRegistrationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/deviceregistrationpolicy-get?view=graph-rest-1.0)
-
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityriskpreventionwebapplicationfirewallprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityRiskPreventionWebApplicationFirewallProvider
 ---
@@ -28,7 +28,7 @@ Get-MgIdentityRiskPreventionWebApplicationFirewallProvider [-ExpandProperty <str
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +38,7 @@ Get-MgIdentityRiskPreventionWebApplicationFirewallProvider
  -WebApplicationFirewallProviderId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +48,7 @@ Get-MgIdentityRiskPreventionWebApplicationFirewallProvider -InputObject <IIdenti
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -67,6 +67,19 @@ Read the properties and relationships of webApplicationFirewallProvider object.
 | Delegated (work or school account) | RiskPreventionProviders.Read.All, RiskPreventionProviders.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgIdentityRiskPreventionWebApplicationFirewallProvider
+
+```
+This example shows how to use the Get-MgIdentityRiskPreventionWebApplicationFirewallProvider Cmdlet.
+
 
 ## PARAMETERS
 
@@ -601,8 +614,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 - [Get-MgIdentityRiskPreventionWebApplicationFirewallProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityriskpreventionwebapplicationfirewallprovider)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/webapplicationfirewallprovider-get?view=graph-rest-1.0)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-list-webapplicationfirewallproviders?view=graph-rest-1.0)
-
-
 
 
 

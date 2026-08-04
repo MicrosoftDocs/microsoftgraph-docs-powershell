@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgidentityriskpreventionwebapplicationfirewallprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider
 ---
@@ -29,7 +29,6 @@ Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider
  [-AdditionalProperties <hashtable>] [-HostName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Verify
@@ -41,7 +40,6 @@ Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### VerifyViaIdentityExpanded
@@ -52,7 +50,6 @@ Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider
  [-AdditionalProperties <hashtable>] [-HostName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### VerifyViaIdentity
@@ -64,7 +61,6 @@ Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -76,6 +72,23 @@ This cmdlet has the following aliases,
 
 Initiate a verification operation for a webApplicationFirewallProvider object.
 This API triggers provider-specific verification logic and returns a webApplicationFirewallVerificationModel object describing the verification result.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	hostName = "www.contoso.com"
+}
+
+Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider -WebApplicationFirewallProviderId $webApplicationFirewallProviderId -BodyParameter $params
+
+```
+This example shows how to use the Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider Cmdlet.
+
 
 ## PARAMETERS
 
@@ -539,7 +552,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgidentityriskpreventionwebapplicationfirewallprovider)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/webapplicationfirewallprovider-verify?view=graph-rest-1.0)
-
 
 
 

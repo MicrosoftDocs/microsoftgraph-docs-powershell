@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityriskpreventionwebapplicationfirewallverification
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification
 ---
@@ -28,7 +28,6 @@ Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -39,7 +38,6 @@ Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,6 +48,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a webApplicationFirewallVerificationModel object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification -WebApplicationFirewallVerificationModelId $webApplicationFirewallVerificationModelId
+
+```
+This example shows how to use the Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification Cmdlet.
+
 
 ## PARAMETERS
 
@@ -453,7 +464,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityriskpreventionwebapplicationfirewallverification)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-delete-webapplicationfirewallverifications?view=graph-rest-1.0)
-
 
 
 

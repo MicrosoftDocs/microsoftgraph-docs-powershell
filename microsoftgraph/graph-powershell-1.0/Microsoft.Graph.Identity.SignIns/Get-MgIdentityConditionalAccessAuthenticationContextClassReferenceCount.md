@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessauthenticationcontextclassreferencecount
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityConditionalAccessAuthenticationContextClassReferenceCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgIdentityConditionalAccessAuthenticationContextClassReferenceCount [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -42,9 +42,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuthenticationContext.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.ConditionalAccess, AuthenticationContext.ReadWrite.All,  |
+| Delegated (work or school account) | AuthenticationContext.Read.All, AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AuthenticationContext.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.ConditionalAccess, AuthenticationContext.ReadWrite.All,  |
+| Application | AuthenticationContext.Read.All, AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess,  |
 
 ## PARAMETERS
 

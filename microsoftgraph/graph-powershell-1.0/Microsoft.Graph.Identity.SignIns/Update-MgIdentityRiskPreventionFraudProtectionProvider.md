@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskpreventionfraudprotectionprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityRiskPreventionFraudProtectionProvider
 ---
@@ -28,7 +28,7 @@ Update-MgIdentityRiskPreventionFraudProtectionProvider -FraudProtectionProviderI
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
  [-Id <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +38,7 @@ Update-MgIdentityRiskPreventionFraudProtectionProvider -FraudProtectionProviderI
  -BodyParameter <IMicrosoftGraphFraudProtectionProvider> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,7 +48,7 @@ Update-MgIdentityRiskPreventionFraudProtectionProvider -InputObject <IIdentitySi
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
  [-Id <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -58,7 +58,7 @@ Update-MgIdentityRiskPreventionFraudProtectionProvider -InputObject <IIdentitySi
  -BodyParameter <IMicrosoftGraphFraudProtectionProvider> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -70,6 +70,24 @@ This cmdlet has the following aliases,
 
 Update the properties of a fraudProtectionProvider object.
 The following derived types are currently supported.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.arkoseFraudProtectionProvider"
+	displayName = "Arkose Sign-Up Protection Updated"
+}
+
+Update-MgIdentityRiskPreventionFraudProtectionProvider -FraudProtectionProviderId $fraudProtectionProviderId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgIdentityRiskPreventionFraudProtectionProvider Cmdlet.
+
 
 ## PARAMETERS
 
@@ -563,7 +581,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [Update-MgIdentityRiskPreventionFraudProtectionProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskpreventionfraudprotectionprovider)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/fraudprotectionprovider-update?view=graph-rest-1.0)
-
 
 
 

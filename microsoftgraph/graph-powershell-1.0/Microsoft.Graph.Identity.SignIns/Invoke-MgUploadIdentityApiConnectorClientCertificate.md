@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityapiconnectorclientcertificate
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgUploadIdentityApiConnectorClientCertificate
 ---
@@ -29,7 +29,7 @@ Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId <st
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Password <string>]
  [-Pkcs12Value <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Upload
@@ -40,7 +40,6 @@ Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UploadViaIdentityExpanded
@@ -50,7 +49,7 @@ Invoke-MgUploadIdentityApiConnectorClientCertificate -InputObject <IIdentitySign
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Password <string>]
  [-Pkcs12Value <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UploadViaIdentity
@@ -61,7 +60,6 @@ Invoke-MgUploadIdentityApiConnectorClientCertificate -InputObject <IIdentitySign
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

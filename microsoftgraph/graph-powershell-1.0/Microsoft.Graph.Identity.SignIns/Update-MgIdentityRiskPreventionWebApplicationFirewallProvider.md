@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskpreventionwebapplicationfirewallprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityRiskPreventionWebApplicationFirewallProvider
 ---
@@ -28,7 +28,7 @@ Update-MgIdentityRiskPreventionWebApplicationFirewallProvider
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -39,7 +39,7 @@ Update-MgIdentityRiskPreventionWebApplicationFirewallProvider
  -BodyParameter <IMicrosoftGraphWebApplicationFirewallProvider> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -50,7 +50,7 @@ Update-MgIdentityRiskPreventionWebApplicationFirewallProvider
  [-AdditionalProperties <hashtable>] [-DisplayName <string>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -61,7 +61,7 @@ Update-MgIdentityRiskPreventionWebApplicationFirewallProvider
  -BodyParameter <IMicrosoftGraphWebApplicationFirewallProvider> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -72,6 +72,24 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of a webApplicationFirewallProvider object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudFlareWebApplicationFirewallProvider"
+	displayName = "String"
+}
+
+Update-MgIdentityRiskPreventionWebApplicationFirewallProvider -WebApplicationFirewallProviderId $webApplicationFirewallProviderId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgIdentityRiskPreventionWebApplicationFirewallProvider Cmdlet.
+
 
 ## PARAMETERS
 
@@ -565,7 +583,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [Update-MgIdentityRiskPreventionWebApplicationFirewallProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskpreventionwebapplicationfirewallprovider)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/webapplicationfirewallprovider-update?view=graph-rest-1.0)
-
 
 
 

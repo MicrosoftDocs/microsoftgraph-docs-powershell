@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganizationtenant
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgTenantRelationshipMultiTenantOrganizationTenant
 ---
@@ -31,7 +31,7 @@ Update-MgTenantRelationshipMultiTenantOrganizationTenant -MultiTenantOrganizatio
  [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -41,7 +41,7 @@ Update-MgTenantRelationshipMultiTenantOrganizationTenant -MultiTenantOrganizatio
  -BodyParameter <IMicrosoftGraphMultiTenantOrganizationMember> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,7 +54,7 @@ Update-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentity
  [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -64,7 +64,7 @@ Update-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentity
  -BodyParameter <IMicrosoftGraphMultiTenantOrganizationMember> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -84,6 +84,23 @@ Only owner tenants can call this API.
 | Delegated (work or school account) | MultiTenantOrganization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | MultiTenantOrganization.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	role = "owner"
+}
+
+Update-MgTenantRelationshipMultiTenantOrganizationTenant -MultiTenantOrganizationMemberId $multiTenantOrganizationMemberId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTenantRelationshipMultiTenantOrganizationTenant Cmdlet.
+
 
 ## PARAMETERS
 
@@ -828,7 +845,6 @@ Read-only.
 
 - [Update-MgTenantRelationshipMultiTenantOrganizationTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganizationtenant)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganizationmember-update?view=graph-rest-1.0)
-
 
 
 

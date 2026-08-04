@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgusagepolicyauthenticationstrengthpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgUsagePolicyAuthenticationStrengthPolicy
 ---
@@ -28,7 +28,7 @@ Policies in the former category are restricted in what kinds of changes may be m
 Invoke-MgUsagePolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### UsageViaIdentity
@@ -37,7 +37,7 @@ Invoke-MgUsagePolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId
 Invoke-MgUsagePolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -55,9 +55,9 @@ Policies in the former category are restricted in what kinds of changes may be m
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod, Policy.Read.All,  |
+| Delegated (work or school account) | Policy.Read.AuthenticationMethod, Policy.Read.All, Policy.ReadWrite.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod, Policy.Read.All,  |
+| Application | Policy.Read.AuthenticationMethod, Policy.Read.All, Policy.ReadWrite.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

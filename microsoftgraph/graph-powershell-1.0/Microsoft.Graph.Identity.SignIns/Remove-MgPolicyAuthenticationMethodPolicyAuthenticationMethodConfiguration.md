@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 ---
@@ -28,7 +28,6 @@ Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -39,7 +38,6 @@ Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -60,34 +58,17 @@ Delete an externalAuthenticationMethodConfiguration object.
 | Application | Policy.ReadWrite.AuthenticationMethod,  |
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
+
 Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
+
 ```
 This example shows how to use the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
-```
-This example shows how to use the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
-```
-This example shows how to use the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
-```
-This example shows how to use the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

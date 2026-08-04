@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationsoftwareoathmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserAuthenticationSoftwareOathMethod
 ---
@@ -28,7 +28,6 @@ Remove-MgUserAuthenticationSoftwareOathMethod -SoftwareOathAuthenticationMethodI
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,7 +37,6 @@ Remove-MgUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignInsIden
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,7 +52,7 @@ Delete a user's Software OATH token authentication method object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthMethod-SoftwareOATH.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite, UserAuthenticationMethod.ReadWrite.All,  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite, UserAuthMethod-SoftwareOATH.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite.All,  |
 
