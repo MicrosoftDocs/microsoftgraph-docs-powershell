@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Bookings
-Module Guid: c85c1113-96e5-4cbf-b536-59511aa79526
+Module Guid: a8263f03-0bfd-4122-ac82-e51ccba33caf
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.bookings/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -140,6 +140,32 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaVirtualEventTownhallPresenterSessionByJoinWebUrl](Get-MgBetaVirtualEventTownhallPresenterSessionByJoinWebUrl.md)
 
 ### [Get-MgBetaVirtualEventTownhallPresenterSessionCount](Get-MgBetaVirtualEventTownhallPresenterSessionCount.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistration](Get-MgBetaVirtualEventTownhallRegistration.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistration](Get-MgBetaVirtualEventTownhallRegistration.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistrationByEmail](Get-MgBetaVirtualEventTownhallRegistrationByEmail.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistrationByUserId](Get-MgBetaVirtualEventTownhallRegistrationByUserId.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistrationConfiguration](Get-MgBetaVirtualEventTownhallRegistrationConfiguration.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion](Get-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion](Get-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistrationConfigurationQuestionCount](Get-MgBetaVirtualEventTownhallRegistrationConfigurationQuestionCount.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistrationCount](Get-MgBetaVirtualEventTownhallRegistrationCount.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistrationSession](Get-MgBetaVirtualEventTownhallRegistrationSession.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistrationSession](Get-MgBetaVirtualEventTownhallRegistrationSession.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistrationSessionByJoinWebUrl](Get-MgBetaVirtualEventTownhallRegistrationSessionByJoinWebUrl.md)
+
+### [Get-MgBetaVirtualEventTownhallRegistrationSessionCount](Get-MgBetaVirtualEventTownhallRegistrationSessionCount.md)
 
 ### [Get-MgBetaVirtualEventTownhallSession](Get-MgBetaVirtualEventTownhallSession.md)
 
@@ -293,6 +319,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaVirtualEventTownhallPresenter](New-MgBetaVirtualEventTownhallPresenter.md)
 
+### [New-MgBetaVirtualEventTownhallRegistration](New-MgBetaVirtualEventTownhallRegistration.md)
+
+### [New-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion](New-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion.md)
+
 ### [New-MgBetaVirtualEventTownhallSession](New-MgBetaVirtualEventTownhallSession.md)
 
 ### [New-MgBetaVirtualEventTownhallSessionAttendanceReport](New-MgBetaVirtualEventTownhallSessionAttendanceReport.md)
@@ -349,6 +379,16 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaVirtualEventTownhallPresenter](Remove-MgBetaVirtualEventTownhallPresenter.md)
 
+### [Remove-MgBetaVirtualEventTownhallRegistration](Remove-MgBetaVirtualEventTownhallRegistration.md)
+
+### [Remove-MgBetaVirtualEventTownhallRegistrationByEmail](Remove-MgBetaVirtualEventTownhallRegistrationByEmail.md)
+
+### [Remove-MgBetaVirtualEventTownhallRegistrationByUserId](Remove-MgBetaVirtualEventTownhallRegistrationByUserId.md)
+
+### [Remove-MgBetaVirtualEventTownhallRegistrationConfiguration](Remove-MgBetaVirtualEventTownhallRegistrationConfiguration.md)
+
+### [Remove-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion](Remove-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion.md)
+
 ### [Remove-MgBetaVirtualEventTownhallSession](Remove-MgBetaVirtualEventTownhallSession.md)
 
 ### [Remove-MgBetaVirtualEventTownhallSessionAttendanceReport](Remove-MgBetaVirtualEventTownhallSessionAttendanceReport.md)
@@ -386,6 +426,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Stop-MgBetaBookingBusinessCalendarView](Stop-MgBetaBookingBusinessCalendarView.md)
 
 ### [Stop-MgBetaVirtualEvent](Stop-MgBetaVirtualEvent.md)
+
+### [Stop-MgBetaVirtualEventTownhallRegistration](Stop-MgBetaVirtualEventTownhallRegistration.md)
+
+### [Stop-MgBetaVirtualEventTownhallRegistrationEmail](Stop-MgBetaVirtualEventTownhallRegistrationEmail.md)
+
+### [Stop-MgBetaVirtualEventTownhallRegistrationUserId](Stop-MgBetaVirtualEventTownhallRegistrationUserId.md)
 
 ### [Stop-MgBetaVirtualEventWebinarRegistration](Stop-MgBetaVirtualEventWebinarRegistration.md)
 
@@ -426,6 +472,16 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaVirtualEventTownhall](Update-MgBetaVirtualEventTownhall.md)
 
 ### [Update-MgBetaVirtualEventTownhallPresenter](Update-MgBetaVirtualEventTownhallPresenter.md)
+
+### [Update-MgBetaVirtualEventTownhallRegistration](Update-MgBetaVirtualEventTownhallRegistration.md)
+
+### [Update-MgBetaVirtualEventTownhallRegistrationByEmail](Update-MgBetaVirtualEventTownhallRegistrationByEmail.md)
+
+### [Update-MgBetaVirtualEventTownhallRegistrationByUserId](Update-MgBetaVirtualEventTownhallRegistrationByUserId.md)
+
+### [Update-MgBetaVirtualEventTownhallRegistrationConfiguration](Update-MgBetaVirtualEventTownhallRegistrationConfiguration.md)
+
+### [Update-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion](Update-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion.md)
 
 ### [Update-MgBetaVirtualEventTownhallSession](Update-MgBetaVirtualEventTownhallSession.md)
 

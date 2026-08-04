@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarregistrationconfigurationquestion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion
 ---
@@ -13,8 +13,8 @@ title: Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion
 
 ## SYNOPSIS
 
-Delete a registration question from a webinar.
-The question can either be a predefined registration question or a custom registration question.
+Delete a registration question from a webinar or town hall.
+\rThe question can either be a predefined registration question or a custom registration question.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion?view=graph-powershell-1.0)
@@ -29,7 +29,6 @@ Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -39,7 +38,6 @@ Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,8 +47,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a registration question from a webinar.
-The question can either be a predefined registration question or a custom registration question.
+Delete a registration question from a webinar or town hall.
+\rThe question can either be a predefined registration question or a custom registration question.
 
 ## EXAMPLES
 ### Example 1: Code snippet

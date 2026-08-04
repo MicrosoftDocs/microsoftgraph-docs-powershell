@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarregistrationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaVirtualEventWebinarRegistrationConfiguration
 ---
@@ -29,18 +29,16 @@ Update-MgBetaVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId
  [-Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>] [-RegistrationWebUrl <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
 
 ```
 Update-MgBetaVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId <string>
- -BodyParameter <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,18 +50,16 @@ Update-MgBetaVirtualEventWebinarRegistrationConfiguration -InputObject <IBooking
  [-Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>] [-RegistrationWebUrl <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
 
 ```
 Update-MgBetaVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -107,10 +103,9 @@ HelpMessage: ''
 ### -BodyParameter
 
 virtualEventWebinarRegistrationConfiguration
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration
+Type: System.Collections.Hashtable
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -323,7 +318,7 @@ HelpMessage: ''
 
 ### -IsManualApprovalEnabled
 
-
+Indicates whether registrations require organizer approval before a participant is confirmed.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -350,7 +345,7 @@ HelpMessage: ''
 
 ### -IsWaitlistEnabled
 
-
+Indicates whether more registrants are automatically placed on a waitlist when capacity is reached.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -577,7 +572,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration
+### System.Collections.Hashtable
 
 {{ Fill in the Description }}
 
@@ -597,21 +592,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
-
-BODYPARAMETER `<IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>`: virtualEventWebinarRegistrationConfiguration
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Capacity <Int32?>]: Total capacity of the virtual event.
-  [Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>]: Registration questions.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [DisplayName <String>]: Display name of the registration question.
-    [IsRequired <Boolean?>]: Indicates whether an answer to the question is required.
-The default value is false.
-  [RegistrationWebUrl <String>]: Registration URL of the virtual event.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [IsManualApprovalEnabled <Boolean?>]: 
-  [IsWaitlistEnabled <Boolean?>]: 
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord

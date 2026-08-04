@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistrationconfigurationquestion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion
 ---
@@ -13,7 +13,7 @@ title: New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion
 
 ## SYNOPSIS
 
-Create a registration question for a webinar.
+Create a registration question for a webinar or town hall.
 You can create either a predefined registration question or a custom registration question.
 
 > [!NOTE]
@@ -29,7 +29,6 @@ New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebi
  [-Id <string>] [-IsRequired] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -40,7 +39,6 @@ New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -51,7 +49,6 @@ New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBo
  [-Id <string>] [-IsRequired] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -62,7 +59,6 @@ New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBo
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -72,7 +68,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a registration question for a webinar.
+Create a registration question for a webinar or town hall.
 You can create either a predefined registration question or a custom registration question.
 
 ## EXAMPLES
