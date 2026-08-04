@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointreportcloudpcrecommendationreport
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport
 ---
@@ -27,7 +27,6 @@ Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -OutFile 
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Retrieve
@@ -38,7 +37,6 @@ Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -OutFile 
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -58,6 +56,62 @@ The usage category report categorizes a Cloud PC as Undersized, Oversized, Right
 | Delegated (work or school account) | CloudPC.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CloudPC.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Get device recommendation reports grouped by service plan and usage category
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	reportType = "cloudPcUsageCategoryReport"
+	select = @(
+	"ServicePlanId"
+"ServicePlanName"
+"UsageInsight"
+)
+groupBy = @(
+"ServicePlanId"
+"ServicePlanName"
+"UsageInsight"
+)
+}
+
+Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
+
+```
+This example will get device recommendation reports grouped by service plan and usage category
+
+### Example 2: Get device usage category reports for Cloud PCs
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	reportType = "cloudPcUsageCategoryReport"
+	filter = ""
+	select = @(
+	"CloudPcId"
+"ManagedDeviceName"
+"UserPrincipalName"
+"ServicePlanId"
+"ServicePlanName"
+"UsageInsight"
+"RecommendedPlanId"
+"RecommendedPlanName"
+)
+search = ""
+skip = 0
+top = 15
+}
+
+Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
+
+```
+This example will get device usage category reports for cloud pcs
+
 
 ## PARAMETERS
 
@@ -576,7 +630,6 @@ BODY `<IPathsG53J94DevicemanagementVirtualendpointReportMicrosoftGraphRetrievecl
 
 - [Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointreportcloudpcrecommendationreport)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcreport-retrievecloudpcrecommendationreports?view=graph-rest-1.0)
-
 
 
 
