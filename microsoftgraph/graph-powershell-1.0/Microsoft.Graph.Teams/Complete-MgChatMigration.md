@@ -1,0 +1,455 @@
+---
+document type: cmdlet
+external help file: Microsoft.Graph.Teams-Help.xml
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgchatmigration
+Locale: en-US
+Module Name: Microsoft.Graph.Teams
+ms.date: 08/01/2026
+PlatyPS schema version: 2024-05-01
+title: Complete-MgChatMigration
+---
+
+# Complete-MgChatMigration
+
+## SYNOPSIS
+
+Complete the migration of external messages by removing migration mode from a chat.
+Complete migration operations were initially restricted to newly created standard channels using migration templates specifically designed for the initial migration process.
+For more information, see Import third-party platform messages to Teams using Microsoft Graph.
+After a completeMigration request is made for an existing or new chat, you can start a migration session by calling chat: startMigration.
+This API supportes the following channel types.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Complete-MgBetaChatMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaChatMigration?view=graph-powershell-beta)
+
+## SYNTAX
+
+### Complete (Default)
+
+```
+Complete-MgChatMigration -ChatId <string> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### CompleteViaIdentity
+
+```
+Complete-MgChatMigration -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+## ALIASES
+
+This cmdlet has the following aliases,
+  {{Insert list of aliases}}
+
+## DESCRIPTION
+
+Complete the migration of external messages by removing migration mode from a chat.
+Complete migration operations were initially restricted to newly created standard channels using migration templates specifically designed for the initial migration process.
+For more information, see Import third-party platform messages to Teams using Microsoft Graph.
+After a completeMigration request is made for an existing or new chat, you can start a migration session by calling chat: startMigration.
+This API supportes the following channel types.
+
+## EXAMPLES
+### Example 1: Complete the migration of external messages in a chat
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Complete-MgChatMigration -ChatId $chatId
+
+```
+This example will complete the migration of external messages in a chat
+
+### Example 2: Complete the migration when a chat is already in migration mode
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Complete-MgChatMigration -ChatId $chatId
+
+```
+This example will complete the migration when a chat is already in migration mode
+
+
+## PARAMETERS
+
+### -Break
+
+Wait for .NET debugger to attach
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ChatId
+
+The unique identifier of chat
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Complete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Confirm
+
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Headers
+
+Optional headers that will be added to the request.
+
+```yaml
+Type: System.Collections.IDictionary
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelineAppend
+
+SendAsync Pipeline Steps to be appended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HttpPipelinePrepend
+
+SendAsync Pipeline Steps to be prepended to the front of the pipeline
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Runtime.SendAsyncStep[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -InputObject
+
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CompleteViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PassThru
+
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Proxy
+
+The URI for the proxy server to use
+
+```yaml
+Type: System.Uri
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyCredential
+
+Credentials for a proxy server to use for the remote call
+
+```yaml
+Type: System.Management.Automation.PSCredential
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ProxyUseDefaultCredentials
+
+Use the default credentials for the proxy
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ResponseHeadersVariable
+
+Optional Response Headers Variable.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -WhatIf
+
+Runs the command in a mode that only reports what would happen without performing the actions.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### CommonParameters
+
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
+-InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable,
+-ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see
+[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
+{{ Fill in the Description }}
+
+### System.Collections.IDictionary
+
+{{ Fill in the Description }}
+
+## OUTPUTS
+
+### System.Boolean
+
+{{ Fill in the Description }}
+
+## NOTES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+  [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
+  [ChannelId <String>]: The unique identifier of channel
+  [ChatId <String>]: The unique identifier of chat
+  [ChatMessageHostedContentId <String>]: The unique identifier of chatMessageHostedContent
+  [ChatMessageId <String>]: The unique identifier of chatMessage
+  [ChatMessageId1 <String>]: The unique identifier of chatMessage
+  [ConversationMemberId <String>]: The unique identifier of conversationMember
+  [DayNoteId <String>]: The unique identifier of dayNote
+  [DeletedChatId <String>]: The unique identifier of deletedChat
+  [DeletedTeamId <String>]: The unique identifier of deletedTeam
+  [GroupId <String>]: The unique identifier of group
+  [OfferShiftRequestId <String>]: The unique identifier of offerShiftRequest
+  [OpenShiftChangeRequestId <String>]: The unique identifier of openShiftChangeRequest
+  [OpenShiftId <String>]: The unique identifier of openShift
+  [PinnedChatMessageInfoId <String>]: The unique identifier of pinnedChatMessageInfo
+  [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
+  [SchedulingGroupId <String>]: The unique identifier of schedulingGroup
+  [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
+  [ShiftId <String>]: The unique identifier of shift
+  [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
+  [TeamId <String>]: The unique identifier of team
+  [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
+  [TeamsAppId <String>]: The unique identifier of teamsApp
+  [TeamsAppInstallationId <String>]: The unique identifier of teamsAppInstallation
+  [TeamsAsyncOperationId <String>]: The unique identifier of teamsAsyncOperation
+  [TeamsTabId <String>]: The unique identifier of teamsTab
+  [TeamworkTagId <String>]: The unique identifier of teamworkTag
+  [TeamworkTagMemberId <String>]: The unique identifier of teamworkTagMember
+  [TimeCardId <String>]: The unique identifier of timeCard
+  [TimeOffId <String>]: The unique identifier of timeOff
+  [TimeOffReasonId <String>]: The unique identifier of timeOffReason
+  [TimeOffRequestId <String>]: The unique identifier of timeOffRequest
+  [UserId <String>]: The unique identifier of user
+  [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
+  [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
+
+
+## RELATED LINKS
+
+- [Complete-MgChatMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgchatmigration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-completemigration?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

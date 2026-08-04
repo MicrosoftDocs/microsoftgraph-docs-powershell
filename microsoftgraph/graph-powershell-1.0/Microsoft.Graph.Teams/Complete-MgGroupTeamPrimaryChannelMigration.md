@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mggroupteamprimarychannelmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Complete-MgGroupTeamPrimaryChannelMigration
 ---
@@ -13,10 +13,11 @@ title: Complete-MgGroupTeamPrimaryChannelMigration
 
 ## SYNOPSIS
 
-Complete the message migration process by removing migration mode from a channel in a team.
-Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a completeMigration request is made, you can't import additional messages into the team.
-You can add members to the team after the request returns a successful response.
+Complete migration on existing channels or new channels.
+Complete migration operations were initially restricted to newly created standard channels using migration templates specifically designed for the initial migration process.
+For more information, see Import third-party platform messages to Teams using Microsoft Graph.
+Consider the following points when completing migration for new and existing channels: After a completeMigration request is made for existing or new channels, you can still import more messages into the team by calling channel: startMigration.
+This API supportes the following channel types.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Complete-MgBetaGroupTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaGroupTeamPrimaryChannelMigration?view=graph-powershell-beta)
@@ -30,7 +31,6 @@ Complete-MgGroupTeamPrimaryChannelMigration -GroupId <string> [-ResponseHeadersV
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CompleteViaIdentity
@@ -40,7 +40,6 @@ Complete-MgGroupTeamPrimaryChannelMigration -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,10 +49,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Complete the message migration process by removing migration mode from a channel in a team.
-Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a completeMigration request is made, you can't import additional messages into the team.
-You can add members to the team after the request returns a successful response.
+Complete migration on existing channels or new channels.
+Complete migration operations were initially restricted to newly created standard channels using migration templates specifically designed for the initial migration process.
+For more information, see Import third-party platform messages to Teams using Microsoft Graph.
+Consider the following points when completing migration for new and existing channels: After a completeMigration request is made for existing or new channels, you can still import more messages into the team by calling channel: startMigration.
+This API supportes the following channel types.
 
 ## PARAMETERS
 
@@ -385,6 +385,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp

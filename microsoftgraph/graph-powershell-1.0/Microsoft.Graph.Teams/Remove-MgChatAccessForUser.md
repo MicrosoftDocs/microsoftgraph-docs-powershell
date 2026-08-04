@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchataccessforuser
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgChatAccessForUser
 ---
@@ -28,7 +28,6 @@ Remove-MgChatAccessForUser -ChatId <string> [-ResponseHeadersVariable <string>]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Remove
@@ -39,7 +38,6 @@ Remove-MgChatAccessForUser -ChatId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RemoveViaIdentityExpanded
@@ -50,7 +48,6 @@ Remove-MgChatAccessForUser -InputObject <ITeamsIdentity> [-ResponseHeadersVariab
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
@@ -61,7 +58,6 @@ Remove-MgChatAccessForUser -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -72,6 +68,27 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Remove access to a chat for a user.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+	user = @{
+		"@odata.type" = "microsoft.graph.teamworkUserIdentity"
+		id = "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+		tenantId = "a1b2c3d4-e5f6-7890-1234-567890abcdef"
+	}
+}
+
+Remove-MgChatAccessForUser -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgChatAccessForUser Cmdlet.
+
 
 ## PARAMETERS
 
@@ -512,6 +529,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -541,7 +559,6 @@ For example, in the access reviews decisions API, this property might record the
 
 - [Remove-MgChatAccessForUser](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchataccessforuser)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/chat-removeallaccessforuser?view=graph-rest-1.0)
-
 
 
 

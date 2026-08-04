@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Teams
-Module Guid: db869cb9-ab13-4c98-812a-de8fd8a28497
+Module Guid: 01ca82e1-4cf4-465d-ab58-e5e987a5355b
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.teams/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -43,6 +43,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Clear-MgChatMessageReplyReaction](Clear-MgChatMessageReplyReaction.md)
 
+### [Clear-MgChatTargetedMessageReplyReaction](Clear-MgChatTargetedMessageReplyReaction.md)
+
 ### [Clear-MgGroupTeamChannelMessageReaction](Clear-MgGroupTeamChannelMessageReaction.md)
 
 ### [Clear-MgGroupTeamChannelMessageReplyReaction](Clear-MgGroupTeamChannelMessageReplyReaction.md)
@@ -67,6 +69,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Clear-MgUserChatMessageReplyReaction](Clear-MgUserChatMessageReplyReaction.md)
 
+### [Clear-MgUserChatTargetedMessageReplyReaction](Clear-MgUserChatTargetedMessageReplyReaction.md)
+
+### [Complete-MgChatMigration](Complete-MgChatMigration.md)
+
 ### [Complete-MgGroupTeamChannelMigration](Complete-MgGroupTeamChannelMigration.md)
 
 ### [Complete-MgGroupTeamMigration](Complete-MgGroupTeamMigration.md)
@@ -80,6 +86,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Complete-MgTeamPrimaryChannelMigration](Complete-MgTeamPrimaryChannelMigration.md)
 
 ### [Complete-MgTeamworkDeletedTeamChannelMigration](Complete-MgTeamworkDeletedTeamChannelMigration.md)
+
+### [Complete-MgUserChatMigration](Complete-MgUserChatMigration.md)
 
 ### [Confirm-MgGroupTeamScheduleTimeCard](Confirm-MgGroupTeamScheduleTimeCard.md)
 
@@ -197,6 +205,32 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgChatTabTeamApp](Get-MgChatTabTeamApp.md)
 
+### [Get-MgChatTargetedMessage](Get-MgChatTargetedMessage.md)
+
+### [Get-MgChatTargetedMessage](Get-MgChatTargetedMessage.md)
+
+### [Get-MgChatTargetedMessageCount](Get-MgChatTargetedMessageCount.md)
+
+### [Get-MgChatTargetedMessageHostedContent](Get-MgChatTargetedMessageHostedContent.md)
+
+### [Get-MgChatTargetedMessageHostedContent](Get-MgChatTargetedMessageHostedContent.md)
+
+### [Get-MgChatTargetedMessageHostedContentCount](Get-MgChatTargetedMessageHostedContentCount.md)
+
+### [Get-MgChatTargetedMessageReply](Get-MgChatTargetedMessageReply.md)
+
+### [Get-MgChatTargetedMessageReply](Get-MgChatTargetedMessageReply.md)
+
+### [Get-MgChatTargetedMessageReplyCount](Get-MgChatTargetedMessageReplyCount.md)
+
+### [Get-MgChatTargetedMessageReplyDelta](Get-MgChatTargetedMessageReplyDelta.md)
+
+### [Get-MgChatTargetedMessageReplyHostedContent](Get-MgChatTargetedMessageReplyHostedContent.md)
+
+### [Get-MgChatTargetedMessageReplyHostedContent](Get-MgChatTargetedMessageReplyHostedContent.md)
+
+### [Get-MgChatTargetedMessageReplyHostedContentCount](Get-MgChatTargetedMessageReplyHostedContentCount.md)
+
 ### [Get-MgGroupTeam](Get-MgGroupTeam.md)
 
 ### [Get-MgGroupTeamChannel](Get-MgGroupTeamChannel.md)
@@ -206,6 +240,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupTeamChannelAllMemberCount](Get-MgGroupTeamChannelAllMemberCount.md)
 
 ### [Get-MgGroupTeamChannelCount](Get-MgGroupTeamChannelCount.md)
+
+### [Get-MgGroupTeamChannelEnabledApp](Get-MgGroupTeamChannelEnabledApp.md)
+
+### [Get-MgGroupTeamChannelEnabledApp](Get-MgGroupTeamChannelEnabledApp.md)
+
+### [Get-MgGroupTeamChannelEnabledAppCount](Get-MgGroupTeamChannelEnabledAppCount.md)
 
 ### [Get-MgGroupTeamChannelFileFolder](Get-MgGroupTeamChannelFileFolder.md)
 
@@ -314,6 +354,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupTeamPrimaryChannel](Get-MgGroupTeamPrimaryChannel.md)
 
 ### [Get-MgGroupTeamPrimaryChannelAllMemberCount](Get-MgGroupTeamPrimaryChannelAllMemberCount.md)
+
+### [Get-MgGroupTeamPrimaryChannelEnabledApp](Get-MgGroupTeamPrimaryChannelEnabledApp.md)
+
+### [Get-MgGroupTeamPrimaryChannelEnabledApp](Get-MgGroupTeamPrimaryChannelEnabledApp.md)
+
+### [Get-MgGroupTeamPrimaryChannelEnabledAppCount](Get-MgGroupTeamPrimaryChannelEnabledAppCount.md)
 
 ### [Get-MgGroupTeamPrimaryChannelFileFolder](Get-MgGroupTeamPrimaryChannelFileFolder.md)
 
@@ -467,6 +513,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamChannelCount](Get-MgTeamChannelCount.md)
 
+### [Get-MgTeamChannelEnabledApp](Get-MgTeamChannelEnabledApp.md)
+
+### [Get-MgTeamChannelEnabledApp](Get-MgTeamChannelEnabledApp.md)
+
+### [Get-MgTeamChannelEnabledAppCount](Get-MgTeamChannelEnabledAppCount.md)
+
 ### [Get-MgTeamChannelFileFolder](Get-MgTeamChannelFileFolder.md)
 
 ### [Get-MgTeamChannelFileFolderContent](Get-MgTeamChannelFileFolderContent.md)
@@ -574,6 +626,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgTeamPrimaryChannel](Get-MgTeamPrimaryChannel.md)
 
 ### [Get-MgTeamPrimaryChannelAllMemberCount](Get-MgTeamPrimaryChannelAllMemberCount.md)
+
+### [Get-MgTeamPrimaryChannelEnabledApp](Get-MgTeamPrimaryChannelEnabledApp.md)
+
+### [Get-MgTeamPrimaryChannelEnabledApp](Get-MgTeamPrimaryChannelEnabledApp.md)
+
+### [Get-MgTeamPrimaryChannelEnabledAppCount](Get-MgTeamPrimaryChannelEnabledAppCount.md)
 
 ### [Get-MgTeamPrimaryChannelFileFolder](Get-MgTeamPrimaryChannelFileFolder.md)
 
@@ -735,6 +793,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamworkDeletedTeamChannelCount](Get-MgTeamworkDeletedTeamChannelCount.md)
 
+### [Get-MgTeamworkDeletedTeamChannelEnabledApp](Get-MgTeamworkDeletedTeamChannelEnabledApp.md)
+
+### [Get-MgTeamworkDeletedTeamChannelEnabledApp](Get-MgTeamworkDeletedTeamChannelEnabledApp.md)
+
+### [Get-MgTeamworkDeletedTeamChannelEnabledAppCount](Get-MgTeamworkDeletedTeamChannelEnabledAppCount.md)
+
 ### [Get-MgTeamworkDeletedTeamChannelFileFolder](Get-MgTeamworkDeletedTeamChannelFileFolder.md)
 
 ### [Get-MgTeamworkDeletedTeamChannelFileFolderContent](Get-MgTeamworkDeletedTeamChannelFileFolderContent.md)
@@ -875,6 +939,32 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserChatTabTeamApp](Get-MgUserChatTabTeamApp.md)
 
+### [Get-MgUserChatTargetedMessage](Get-MgUserChatTargetedMessage.md)
+
+### [Get-MgUserChatTargetedMessage](Get-MgUserChatTargetedMessage.md)
+
+### [Get-MgUserChatTargetedMessageCount](Get-MgUserChatTargetedMessageCount.md)
+
+### [Get-MgUserChatTargetedMessageHostedContent](Get-MgUserChatTargetedMessageHostedContent.md)
+
+### [Get-MgUserChatTargetedMessageHostedContent](Get-MgUserChatTargetedMessageHostedContent.md)
+
+### [Get-MgUserChatTargetedMessageHostedContentCount](Get-MgUserChatTargetedMessageHostedContentCount.md)
+
+### [Get-MgUserChatTargetedMessageReply](Get-MgUserChatTargetedMessageReply.md)
+
+### [Get-MgUserChatTargetedMessageReply](Get-MgUserChatTargetedMessageReply.md)
+
+### [Get-MgUserChatTargetedMessageReplyCount](Get-MgUserChatTargetedMessageReplyCount.md)
+
+### [Get-MgUserChatTargetedMessageReplyDelta](Get-MgUserChatTargetedMessageReplyDelta.md)
+
+### [Get-MgUserChatTargetedMessageReplyHostedContent](Get-MgUserChatTargetedMessageReplyHostedContent.md)
+
+### [Get-MgUserChatTargetedMessageReplyHostedContent](Get-MgUserChatTargetedMessageReplyHostedContent.md)
+
+### [Get-MgUserChatTargetedMessageReplyHostedContentCount](Get-MgUserChatTargetedMessageReplyHostedContentCount.md)
+
 ### [Get-MgUserJoinedTeam](Get-MgUserJoinedTeam.md)
 
 ### [Get-MgUserTeamwork](Get-MgUserTeamwork.md)
@@ -896,6 +986,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserTeamworkInstalledAppTeamApp](Get-MgUserTeamworkInstalledAppTeamApp.md)
 
 ### [Get-MgUserTeamworkInstalledAppTeamAppDefinition](Get-MgUserTeamworkInstalledAppTeamAppDefinition.md)
+
+### [Get-MgUserTeamworkRetainedTargetedMessage](Get-MgUserTeamworkRetainedTargetedMessage.md)
+
+### [Get-MgUserTeamworkTargetedMessage](Get-MgUserTeamworkTargetedMessage.md)
 
 ### [Hide-MgChatForUser](Hide-MgChatForUser.md)
 
@@ -925,7 +1019,39 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgGraphChat](Invoke-MgGraphChat.md)
 
+### [Invoke-MgGraphChatMessage](Invoke-MgGraphChatMessage.md)
+
+### [Invoke-MgGraphChatMessageReply](Invoke-MgGraphChatMessageReply.md)
+
+### [Invoke-MgGraphChatTargetedMessageReply](Invoke-MgGraphChatTargetedMessageReply.md)
+
+### [Invoke-MgGraphGroupTeamChannelMessage](Invoke-MgGraphGroupTeamChannelMessage.md)
+
+### [Invoke-MgGraphGroupTeamChannelMessageReply](Invoke-MgGraphGroupTeamChannelMessageReply.md)
+
+### [Invoke-MgGraphGroupTeamPrimaryChannelMessage](Invoke-MgGraphGroupTeamPrimaryChannelMessage.md)
+
+### [Invoke-MgGraphGroupTeamPrimaryChannelMessageReply](Invoke-MgGraphGroupTeamPrimaryChannelMessageReply.md)
+
+### [Invoke-MgGraphTeamChannelMessage](Invoke-MgGraphTeamChannelMessage.md)
+
+### [Invoke-MgGraphTeamChannelMessageReply](Invoke-MgGraphTeamChannelMessageReply.md)
+
+### [Invoke-MgGraphTeamPrimaryChannelMessage](Invoke-MgGraphTeamPrimaryChannelMessage.md)
+
+### [Invoke-MgGraphTeamPrimaryChannelMessageReply](Invoke-MgGraphTeamPrimaryChannelMessageReply.md)
+
+### [Invoke-MgGraphTeamworkDeletedTeamChannelMessage](Invoke-MgGraphTeamworkDeletedTeamChannelMessage.md)
+
+### [Invoke-MgGraphTeamworkDeletedTeamChannelMessageReply](Invoke-MgGraphTeamworkDeletedTeamChannelMessageReply.md)
+
 ### [Invoke-MgGraphUserChat](Invoke-MgGraphUserChat.md)
+
+### [Invoke-MgGraphUserChatMessage](Invoke-MgGraphUserChatMessage.md)
+
+### [Invoke-MgGraphUserChatMessageReply](Invoke-MgGraphUserChatMessageReply.md)
+
+### [Invoke-MgGraphUserChatTargetedMessageReply](Invoke-MgGraphUserChatTargetedMessageReply.md)
 
 ### [Invoke-MgHaveGroupTeamChannel](Invoke-MgHaveGroupTeamChannel.md)
 
@@ -953,6 +1079,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgSoftChatMessageReplyDelete](Invoke-MgSoftChatMessageReplyDelete.md)
 
+### [Invoke-MgSoftChatTargetedMessageReplyDelete](Invoke-MgSoftChatTargetedMessageReplyDelete.md)
+
 ### [Invoke-MgSoftGroupTeamChannelMessageDelete](Invoke-MgSoftGroupTeamChannelMessageDelete.md)
 
 ### [Invoke-MgSoftGroupTeamChannelMessageReplyDelete](Invoke-MgSoftGroupTeamChannelMessageReplyDelete.md)
@@ -976,6 +1104,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgSoftUserChatMessageDelete](Invoke-MgSoftUserChatMessageDelete.md)
 
 ### [Invoke-MgSoftUserChatMessageReplyDelete](Invoke-MgSoftUserChatMessageReplyDelete.md)
+
+### [Invoke-MgSoftUserChatTargetedMessageReplyDelete](Invoke-MgSoftUserChatTargetedMessageReplyDelete.md)
 
 ### [Invoke-MgUnarchiveGroupTeam](Invoke-MgUnarchiveGroupTeam.md)
 
@@ -1014,6 +1144,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgChatPinnedMessage](New-MgChatPinnedMessage.md)
 
 ### [New-MgChatTab](New-MgChatTab.md)
+
+### [New-MgChatTargetedMessage](New-MgChatTargetedMessage.md)
+
+### [New-MgChatTargetedMessageHostedContent](New-MgChatTargetedMessageHostedContent.md)
+
+### [New-MgChatTargetedMessageReply](New-MgChatTargetedMessageReply.md)
+
+### [New-MgChatTargetedMessageReplyHostedContent](New-MgChatTargetedMessageReplyHostedContent.md)
 
 ### [New-MgGroupTeamChannel](New-MgGroupTeamChannel.md)
 
@@ -1197,6 +1335,14 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgUserChatTab](New-MgUserChatTab.md)
 
+### [New-MgUserChatTargetedMessage](New-MgUserChatTargetedMessage.md)
+
+### [New-MgUserChatTargetedMessageHostedContent](New-MgUserChatTargetedMessageHostedContent.md)
+
+### [New-MgUserChatTargetedMessageReply](New-MgUserChatTargetedMessageReply.md)
+
+### [New-MgUserChatTargetedMessageReplyHostedContent](New-MgUserChatTargetedMessageReplyHostedContent.md)
+
 ### [New-MgUserTeamworkAssociatedTeam](New-MgUserTeamworkAssociatedTeam.md)
 
 ### [New-MgUserTeamworkInstalledApp](New-MgUserTeamworkInstalledApp.md)
@@ -1224,6 +1370,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgChatPinnedMessage](Remove-MgChatPinnedMessage.md)
 
 ### [Remove-MgChatTab](Remove-MgChatTab.md)
+
+### [Remove-MgChatTargetedMessage](Remove-MgChatTargetedMessage.md)
+
+### [Remove-MgChatTargetedMessageHostedContent](Remove-MgChatTargetedMessageHostedContent.md)
+
+### [Remove-MgChatTargetedMessageReply](Remove-MgChatTargetedMessageReply.md)
+
+### [Remove-MgChatTargetedMessageReplyHostedContent](Remove-MgChatTargetedMessageReplyHostedContent.md)
 
 ### [Remove-MgGroupTeam](Remove-MgGroupTeam.md)
 
@@ -1435,11 +1589,21 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgUserChatTab](Remove-MgUserChatTab.md)
 
+### [Remove-MgUserChatTargetedMessage](Remove-MgUserChatTargetedMessage.md)
+
+### [Remove-MgUserChatTargetedMessageHostedContent](Remove-MgUserChatTargetedMessageHostedContent.md)
+
+### [Remove-MgUserChatTargetedMessageReply](Remove-MgUserChatTargetedMessageReply.md)
+
+### [Remove-MgUserChatTargetedMessageReplyHostedContent](Remove-MgUserChatTargetedMessageReplyHostedContent.md)
+
 ### [Remove-MgUserTeamwork](Remove-MgUserTeamwork.md)
 
 ### [Remove-MgUserTeamworkAssociatedTeam](Remove-MgUserTeamworkAssociatedTeam.md)
 
 ### [Remove-MgUserTeamworkInstalledApp](Remove-MgUserTeamworkInstalledApp.md)
+
+### [Remove-MgUserTeamworkTargetedMessage](Remove-MgUserTeamworkTargetedMessage.md)
 
 ### [Send-MgChatActivityNotification](Send-MgChatActivityNotification.md)
 
@@ -1460,6 +1624,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Set-MgChatMessageReplyHostedContent](Set-MgChatMessageReplyHostedContent.md)
 
 ### [Set-MgChatMessageReplyReaction](Set-MgChatMessageReplyReaction.md)
+
+### [Set-MgChatTargetedMessageHostedContent](Set-MgChatTargetedMessageHostedContent.md)
+
+### [Set-MgChatTargetedMessageReplyHostedContent](Set-MgChatTargetedMessageReplyHostedContent.md)
+
+### [Set-MgChatTargetedMessageReplyReaction](Set-MgChatTargetedMessageReplyReaction.md)
 
 ### [Set-MgGroupTeam](Set-MgGroupTeam.md)
 
@@ -1529,9 +1699,29 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgUserChatMessageReplyReaction](Set-MgUserChatMessageReplyReaction.md)
 
+### [Set-MgUserChatTargetedMessageHostedContent](Set-MgUserChatTargetedMessageHostedContent.md)
+
+### [Set-MgUserChatTargetedMessageReplyHostedContent](Set-MgUserChatTargetedMessageReplyHostedContent.md)
+
+### [Set-MgUserChatTargetedMessageReplyReaction](Set-MgUserChatTargetedMessageReplyReaction.md)
+
+### [Start-MgChatMigration](Start-MgChatMigration.md)
+
+### [Start-MgGroupTeamChannelMigration](Start-MgGroupTeamChannelMigration.md)
+
+### [Start-MgGroupTeamPrimaryChannelMigration](Start-MgGroupTeamPrimaryChannelMigration.md)
+
 ### [Start-MgGroupTeamScheduleTimeCardBreak](Start-MgGroupTeamScheduleTimeCardBreak.md)
 
+### [Start-MgTeamChannelMigration](Start-MgTeamChannelMigration.md)
+
+### [Start-MgTeamPrimaryChannelMigration](Start-MgTeamPrimaryChannelMigration.md)
+
 ### [Start-MgTeamScheduleTimeCardBreak](Start-MgTeamScheduleTimeCardBreak.md)
+
+### [Start-MgTeamworkDeletedTeamChannelMigration](Start-MgTeamworkDeletedTeamChannelMigration.md)
+
+### [Start-MgUserChatMigration](Start-MgUserChatMigration.md)
 
 ### [Stop-MgGroupTeamScheduleTimeCardBreak](Stop-MgGroupTeamScheduleTimeCardBreak.md)
 
@@ -1540,6 +1730,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Undo-MgChatMessageReplySoftDelete](Undo-MgChatMessageReplySoftDelete.md)
 
 ### [Undo-MgChatMessageSoftDelete](Undo-MgChatMessageSoftDelete.md)
+
+### [Undo-MgChatTargetedMessageReplySoftDelete](Undo-MgChatTargetedMessageReplySoftDelete.md)
 
 ### [Undo-MgGroupTeamChannelMessageReplySoftDelete](Undo-MgGroupTeamChannelMessageReplySoftDelete.md)
 
@@ -1567,6 +1759,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Undo-MgUserChatMessageSoftDelete](Undo-MgUserChatMessageSoftDelete.md)
 
+### [Undo-MgUserChatTargetedMessageReplySoftDelete](Undo-MgUserChatTargetedMessageReplySoftDelete.md)
+
 ### [Update-MgAppCatalogTeamApp](Update-MgAppCatalogTeamApp.md)
 
 ### [Update-MgAppCatalogTeamAppDefinition](Update-MgAppCatalogTeamAppDefinition.md)
@@ -1592,6 +1786,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgChatPinnedMessage](Update-MgChatPinnedMessage.md)
 
 ### [Update-MgChatTab](Update-MgChatTab.md)
+
+### [Update-MgChatTargetedMessage](Update-MgChatTargetedMessage.md)
+
+### [Update-MgChatTargetedMessageHostedContent](Update-MgChatTargetedMessageHostedContent.md)
+
+### [Update-MgChatTargetedMessageReply](Update-MgChatTargetedMessageReply.md)
+
+### [Update-MgChatTargetedMessageReplyHostedContent](Update-MgChatTargetedMessageReplyHostedContent.md)
 
 ### [Update-MgGroupTeamChannel](Update-MgGroupTeamChannel.md)
 
@@ -1774,6 +1976,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserChatPinnedMessage](Update-MgUserChatPinnedMessage.md)
 
 ### [Update-MgUserChatTab](Update-MgUserChatTab.md)
+
+### [Update-MgUserChatTargetedMessage](Update-MgUserChatTargetedMessage.md)
+
+### [Update-MgUserChatTargetedMessageHostedContent](Update-MgUserChatTargetedMessageHostedContent.md)
+
+### [Update-MgUserChatTargetedMessageReply](Update-MgUserChatTargetedMessageReply.md)
+
+### [Update-MgUserChatTargetedMessageReplyHostedContent](Update-MgUserChatTargetedMessageReplyHostedContent.md)
 
 ### [Update-MgUserTeamwork](Update-MgUserTeamwork.md)
 
