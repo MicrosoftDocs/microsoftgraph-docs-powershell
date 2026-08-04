@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetasupporteduseroutlooklanguage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaSupportedUserOutlookLanguage
 ---
@@ -29,7 +29,7 @@ Invoke-MgBetaSupportedUserOutlookLanguage -UserId <string> [-Count] [-Filter <st
  [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### SupportedViaIdentity
@@ -39,7 +39,7 @@ Invoke-MgBetaSupportedUserOutlookLanguage -InputObject <IUsersIdentity> [-Count]
  [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

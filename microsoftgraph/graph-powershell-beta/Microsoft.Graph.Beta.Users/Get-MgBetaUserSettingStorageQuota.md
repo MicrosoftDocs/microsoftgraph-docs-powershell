@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserSettingStorageQuota
 ---
@@ -26,7 +26,7 @@ Read the properties and relationships of a unifiedStorageQuota object.
 Get-MgBetaUserSettingStorageQuota -UserId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +35,7 @@ Get-MgBetaUserSettingStorageQuota -UserId <string> [-ExpandProperty <string[]>]
 Get-MgBetaUserSettingStorageQuota -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -52,7 +52,7 @@ Read the properties and relationships of a unifiedStorageQuota object.
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Not supported |
 
 ## EXAMPLES

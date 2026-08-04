@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausersettingworkhourandlocationoccurrence
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaUserSettingWorkHourAndLocationOccurrence
 ---
@@ -30,7 +30,6 @@ Set-MgBetaUserSettingWorkHourAndLocationOccurrence -UserId <string> -WorkPlanOcc
  [-WorkLocationType <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set
@@ -40,7 +39,7 @@ Set-MgBetaUserSettingWorkHourAndLocationOccurrence -UserId <string> -WorkPlanOcc
  -BodyParameter <IMicrosoftGraphWorkPlanOccurrence> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### SetViaIdentityExpanded
@@ -53,7 +52,6 @@ Set-MgBetaUserSettingWorkHourAndLocationOccurrence -InputObject <IUsersIdentity>
  [-WorkLocationType <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -63,7 +61,7 @@ Set-MgBetaUserSettingWorkHourAndLocationOccurrence -InputObject <IUsersIdentity>
  -BodyParameter <IMicrosoftGraphWorkPlanOccurrence> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

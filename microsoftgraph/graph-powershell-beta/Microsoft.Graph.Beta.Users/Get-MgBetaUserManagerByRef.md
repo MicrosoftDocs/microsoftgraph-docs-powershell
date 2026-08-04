@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermanagerbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserManagerByRef
 ---
@@ -26,7 +26,7 @@ Returns the user or organizational contact assigned as the agentUser's manager.
 Get-MgBetaUserManagerByRef -UserId <string> [-ConsistencyLevel <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +35,7 @@ Get-MgBetaUserManagerByRef -UserId <string> [-ConsistencyLevel <string>]
 Get-MgBetaUserManagerByRef -InputObject <IUsersIdentity> [-ConsistencyLevel <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -51,9 +51,9 @@ Returns the user or organizational contact assigned as the agentUser's manager.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
+| Delegated (work or school account) | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
+| Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
 
 ## PARAMETERS
 

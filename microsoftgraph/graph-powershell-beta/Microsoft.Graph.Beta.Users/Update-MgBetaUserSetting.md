@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserSetting
 ---
@@ -35,7 +35,7 @@ Update-MgBetaUserSetting -UserId <string> [-ResponseHeadersVariable <string>]
  [-WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -45,7 +45,6 @@ Update-MgBetaUserSetting -UserId <string> -BodyParameter <IMicrosoftGraphUserSet
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -63,7 +62,7 @@ Update-MgBetaUserSetting -InputObject <IUsersIdentity> [-ResponseHeadersVariable
  [-WorkHoursAndLocations <IMicrosoftGraphWorkHoursAndLocationsSetting>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -73,7 +72,6 @@ Update-MgBetaUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosof
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -89,9 +87,9 @@ Update the navigation property settings in users
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
+| Delegated (work or school account) | User.ReadWrite, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All,  |
+| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
 
 ## PARAMETERS
 
@@ -780,7 +778,7 @@ Users can control this setting in Office Delve.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [InPlaceArchiveMailboxId <String>]: 
+    [InPlaceArchiveMailboxId <String>]: The unique identifier for the user's In-Place Archive mailbox.
     [PrimaryMailboxId <String>]: The unique identifier for the user's primary mailbox.
   [ItemInsights <IMicrosoftGraphUserInsightsSettings>]: userInsightsSettings
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -961,7 +959,7 @@ EXCHANGE `<IMicrosoftGraphExchangeSettings>`: exchangeSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [InPlaceArchiveMailboxId <String>]: 
+  [InPlaceArchiveMailboxId <String>]: The unique identifier for the user's In-Place Archive mailbox.
   [PrimaryMailboxId <String>]: The unique identifier for the user's primary mailbox.
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter

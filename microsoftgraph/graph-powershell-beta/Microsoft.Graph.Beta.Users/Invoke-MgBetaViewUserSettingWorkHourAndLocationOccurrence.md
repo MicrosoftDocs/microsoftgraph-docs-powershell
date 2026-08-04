@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetaviewusersettingworkhourandlocationoccurrence
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence
 ---
@@ -29,7 +29,7 @@ Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence -EndDateTime <string>
  [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### ViewViaIdentity
@@ -40,7 +40,7 @@ Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence -InputObject <IUsersId
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -52,6 +52,20 @@ This cmdlet has the following aliases,
 
 Get work plan occurrences from your own work plan within a specified date range.
 This function requires the startDateTime and endDateTime parameters.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users
+
+# A UPN can also be used as -UserId.
+Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence -UserId $userId
+
+```
+This example shows how to use the Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence Cmdlet.
+
 
 ## PARAMETERS
 
@@ -550,7 +564,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetaviewusersettingworkhourandlocationoccurrence)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-beta)
-
 
 
 

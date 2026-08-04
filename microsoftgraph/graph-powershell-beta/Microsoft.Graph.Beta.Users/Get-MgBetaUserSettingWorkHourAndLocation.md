@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingworkhourandlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserSettingWorkHourAndLocation
 ---
@@ -26,7 +26,7 @@ The user's settings for work hours and location preferences for scheduling and a
 Get-MgBetaUserSettingWorkHourAndLocation -UserId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +35,7 @@ Get-MgBetaUserSettingWorkHourAndLocation -UserId <string> [-ExpandProperty <stri
 Get-MgBetaUserSettingWorkHourAndLocation -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -51,7 +51,7 @@ The user's settings for work hours and location preferences for scheduling and a
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | MailboxSettings.Read, MailboxSettings.ReadWrite, Calendars.ReadWrite, Calendars.Read,  |
+| Delegated (work or school account) | MailboxSettings.Read, Calendars.Read, Calendars.ReadWrite, MailboxSettings.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 

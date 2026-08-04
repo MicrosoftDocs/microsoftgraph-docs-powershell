@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequotaservice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserSettingStorageQuotaService
 ---
@@ -28,7 +28,7 @@ Get-MgBetaUserSettingStorageQuotaService -UserId <string> [-ExpandProperty <stri
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +38,7 @@ Get-MgBetaUserSettingStorageQuotaService -ServiceStorageQuotaBreakdownId <string
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -47,7 +47,7 @@ Get-MgBetaUserSettingStorageQuotaService -ServiceStorageQuotaBreakdownId <string
 Get-MgBetaUserSettingStorageQuotaService -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -64,7 +64,7 @@ The breakdown of services contributing to the user's quota usage.
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Not supported |
 
 ## PARAMETERS
