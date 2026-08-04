@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallparticipantholdmusic
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgCommunicationCallParticipantHoldMusic
 ---
@@ -27,7 +27,7 @@ Stop-MgCommunicationCallParticipantHoldMusic -CallId <string> -ParticipantId <st
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-ClientContext <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Stop
@@ -38,7 +38,6 @@ Stop-MgCommunicationCallParticipantHoldMusic -CallId <string> -ParticipantId <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### StopViaIdentityExpanded
@@ -48,7 +47,7 @@ Stop-MgCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsI
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-ClientContext <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### StopViaIdentity
@@ -59,7 +58,6 @@ Stop-MgCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsI
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

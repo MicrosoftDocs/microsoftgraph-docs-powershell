@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguserpresencemanuallocation
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgUserPresenceManualLocation
 ---
@@ -29,7 +29,6 @@ Set-MgUserPresenceManualLocation -UserId <string> [-ResponseHeadersVariable <str
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set
@@ -40,7 +39,6 @@ Set-MgUserPresenceManualLocation -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -51,7 +49,6 @@ Set-MgUserPresenceManualLocation -InputObject <ICloudCommunicationsIdentity>
  [-WorkLocationType <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -62,7 +59,6 @@ Set-MgUserPresenceManualLocation -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,6 +70,25 @@ This cmdlet has the following aliases,
 
 Set the manual work location signal for a user.
 The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	workLocationType = "office"
+	placeId = "eb706f15-137e-4722-b4d1-b601481d9251"
+}
+
+# A UPN can also be used as -UserId.
+Set-MgUserPresenceManualLocation -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgUserPresenceManualLocation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -540,7 +555,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [Set-MgUserPresenceManualLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguserpresencemanuallocation)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/presence-setmanuallocation?view=graph-rest-1.0)
-
 
 
 

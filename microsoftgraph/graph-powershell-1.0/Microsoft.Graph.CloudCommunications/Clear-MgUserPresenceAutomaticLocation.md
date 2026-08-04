@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mguserpresenceautomaticlocation
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Clear-MgUserPresenceAutomaticLocation
 ---
@@ -28,7 +28,6 @@ Clear-MgUserPresenceAutomaticLocation -UserId <string> [-ResponseHeadersVariable
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ClearViaIdentity
@@ -38,7 +37,6 @@ Clear-MgUserPresenceAutomaticLocation -InputObject <ICloudCommunicationsIdentity
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,6 +48,20 @@ This cmdlet has the following aliases,
 
 Clear the automatic work location signal for a user.
 After clearing, the user’s final aggregated work location is recomputed according to the precedence rules: Use this operation when you need to remove the current autodetected signal without affecting manual or scheduled layers.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Clear-MgUserPresenceAutomaticLocation -UserId $userId
+
+```
+This example shows how to use the Clear-MgUserPresenceAutomaticLocation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -386,7 +398,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [Clear-MgUserPresenceAutomaticLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mguserpresenceautomaticlocation)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/presence-clearautomaticlocation?view=graph-rest-1.0)
-
 
 
 

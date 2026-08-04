@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mguserpresencelocation
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Clear-MgUserPresenceLocation
 ---
@@ -27,7 +27,6 @@ Clear-MgUserPresenceLocation -UserId <string> [-ResponseHeadersVariable <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ClearViaIdentity
@@ -37,7 +36,6 @@ Clear-MgUserPresenceLocation -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +46,20 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Clear the work location signals for a user, including both the manual and automatic layers for the current date.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Clear-MgUserPresenceLocation -UserId $userId
+
+```
+This example shows how to use the Clear-MgUserPresenceLocation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -384,7 +396,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [Clear-MgUserPresenceLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mguserpresencelocation)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/presence-clearlocation?view=graph-rest-1.0)
-
 
 
 

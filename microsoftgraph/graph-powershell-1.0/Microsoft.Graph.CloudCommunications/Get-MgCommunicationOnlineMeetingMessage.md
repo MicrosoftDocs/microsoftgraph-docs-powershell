@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingmessage
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgCommunicationOnlineMeetingMessage
 ---
@@ -29,7 +29,7 @@ Get-MgCommunicationOnlineMeetingMessage [-Count] [-ExpandProperty <string[]>] [-
  [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -42,6 +42,19 @@ This cmdlet has the following aliases,
 Get all Teams question and answer (Q&A) conversation messages in a tenant.
 This function returns a snapshot of all Q&A activity in JSON format.
 The export includes:\r- The original question or discussion text\r- The user who posted the message\r- All replies and responders\r- Vote counts\r- Moderation status (pending or dismissed)\r- Private replies\r- The meeting ID and organizer ID that are used for mapping to meeting metadata.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgCommunicationOnlineMeetingMessage -ExpandProperty "conversation" 
+
+```
+This example shows how to use the Get-MgCommunicationOnlineMeetingMessage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -411,7 +424,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [Get-MgCommunicationOnlineMeetingMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingmessage)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/cloudcommunications-getallonlinemeetingmessages?view=graph-rest-1.0)
-
 
 
 

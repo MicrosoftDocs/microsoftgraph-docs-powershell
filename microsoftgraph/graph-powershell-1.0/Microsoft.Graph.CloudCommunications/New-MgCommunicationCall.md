@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgCommunicationCall
 ---
@@ -40,7 +40,6 @@ New-MgCommunicationCall [-ResponseHeadersVariable <string>] [-AdditionalProperti
  [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -49,7 +48,7 @@ New-MgCommunicationCall [-ResponseHeadersVariable <string>] [-AdditionalProperti
 New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -69,7 +68,7 @@ This API supports the following PSTN scenarios:
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | Not supported |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Calls.JoinGroupCalls.Chat, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.InitiateGroupCall.All, Calls.Initiate.All,  |
+| Application | Calls.JoinGroupCalls.Chat, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All,  |
 
 ## EXAMPLES
 ### Example 1: Create peer-to-peer VoIP call with service hosted media
