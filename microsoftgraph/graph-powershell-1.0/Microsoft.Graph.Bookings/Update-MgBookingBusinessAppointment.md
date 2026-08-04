@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBookingBusinessAppointment
 ---
@@ -39,7 +39,6 @@ Update-MgBookingBusinessAppointment -BookingAppointmentId <string> -BookingBusin
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -49,7 +48,7 @@ Update-MgBookingBusinessAppointment -BookingAppointmentId <string> -BookingBusin
  -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -71,7 +70,6 @@ Update-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
  [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -81,7 +79,7 @@ Update-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphBookingAppointment> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -97,9 +95,67 @@ Update the properties of a bookingAppointment object in the specified bookingBus
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All,  |
+| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Read.All, Bookings.Manage.All,  |
+| Application | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Change the date of service
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.bookingAppointment"
+	end = @{
+		"@odata.type" = "#microsoft.graph.dateTimeTimeZone"
+		dateTime = "2018-05-06T12:30:00.0000000+00:00"
+		timeZone = "UTC"
+	}
+	start = @{
+		"@odata.type" = "#microsoft.graph.dateTimeTimeZone"
+		dateTime = "2018-05-06T12:00:00.0000000+00:00"
+		timeZone = "UTC"
+	}
+}
+
+Update-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
+
+```
+This example will change the date of service
+
+### Example 2: Update the customers for an appointment
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.bookingAppointment"
+	customers = @(
+		@{
+			"@odata.type" = "#microsoft.graph.bookingCustomerInformation"
+			customerId = "cd56bb19-c348-42c6-af5c-09818c87fb8c"
+			name = "John Doe"
+			emailAddress = "john.doe@example.com"
+			phone = "313-555-5555"
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.bookingCustomerInformation"
+			customerId = "72f148fa-9a86-4c59-b277-f5089d9ea0e7"
+			name = "Jane Smith"
+			emailAddress = "jane.smith@example.com"
+			phone = "248-555-5678"
+		}
+	)
+}
+
+Update-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
+
+```
+This example will update the customers for an appointment
+
 
 ## PARAMETERS
 
@@ -1503,7 +1559,6 @@ See below for more possible values.
 
 - [Update-MgBookingBusinessAppointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
-
 
 
 

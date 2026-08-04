@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallbyuserrole
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventTownhallByUserRole
 ---
@@ -27,7 +27,7 @@ Get-MgVirtualEventTownhallByUserRole -Role <string> [-Count] [-ExpandProperty <s
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -38,7 +38,7 @@ Get-MgVirtualEventTownhallByUserRole -InputObject <IBookingsIdentity> [-Count]
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -57,6 +57,19 @@ Get a list of virtualEventTownhall objects where the signed-in user is either th
 | Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | VirtualEvent.Read.Chat, VirtualEvent.Read.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+Get-MgVirtualEventTownhallByUserRole -Role $roleId 
+
+```
+This example shows how to use the Get-MgVirtualEventTownhallByUserRole Cmdlet.
+
 
 ## PARAMETERS
 
@@ -500,7 +513,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [Get-MgVirtualEventTownhallByUserRole](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallbyuserrole)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventtownhall-getbyuserrole?view=graph-rest-1.0)
-
 
 
 

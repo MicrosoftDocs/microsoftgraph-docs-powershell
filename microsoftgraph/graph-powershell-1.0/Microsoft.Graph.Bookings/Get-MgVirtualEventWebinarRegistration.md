@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventWebinarRegistration
 ---
@@ -28,7 +28,7 @@ Get-MgVirtualEventWebinarRegistration -VirtualEventWebinarId <string> [-ExpandPr
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +38,7 @@ Get-MgVirtualEventWebinarRegistration -VirtualEventRegistrationId <string>
  -VirtualEventWebinarId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -47,7 +47,7 @@ Get-MgVirtualEventWebinarRegistration -VirtualEventRegistrationId <string>
 Get-MgVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -65,7 +65,7 @@ Get the properties and relationships of a virtualEventRegistration object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | VirtualEvent.Read.Chat, VirtualEventRegistration-Anon.ReadWrite.All, VirtualEvent.Read.All,  |
+| Application | VirtualEvent.Read.Chat, VirtualEvent.Read.All, VirtualEventRegistration-Anon.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
