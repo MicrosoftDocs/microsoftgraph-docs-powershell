@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementcompliancepolicyscheduledactionforrulecount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleCount
 ---
@@ -24,7 +24,7 @@ Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleCount
  -DeviceManagementCompliancePolicyId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -34,7 +34,7 @@ Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleCount
  -InputObject <IDeviceManagementIdentity> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

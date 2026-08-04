@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaappdevicemanagementmanageddevicediagnostic
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAppDeviceManagementManagedDeviceDiagnostic
 ---
@@ -24,7 +24,7 @@ Invoke-MgBetaAppDeviceManagementManagedDeviceDiagnostic -Upn <string> [-Count] [
  [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### AppViaIdentity
@@ -34,7 +34,7 @@ Invoke-MgBetaAppDeviceManagementManagedDeviceDiagnostic -InputObject <IDeviceMan
  [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

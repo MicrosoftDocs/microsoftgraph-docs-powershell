@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/disable-mgbetadevicemanagementcomanageddevice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Disable-MgBetaDeviceManagementComanagedDevice
 ---
@@ -24,7 +24,6 @@ Disable-MgBetaDeviceManagementComanagedDevice -ManagedDeviceId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DisableViaIdentity
@@ -34,7 +33,6 @@ Disable-MgBetaDeviceManagementComanagedDevice -InputObject <IDeviceManagementIde
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

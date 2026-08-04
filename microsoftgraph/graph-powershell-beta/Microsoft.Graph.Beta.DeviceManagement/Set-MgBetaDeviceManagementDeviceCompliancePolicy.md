@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementdevicecompliancepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaDeviceManagementDeviceCompliancePolicy
 ---
@@ -28,7 +28,7 @@ Set-MgBetaDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId <stri
  [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Assign
@@ -39,7 +39,6 @@ Set-MgBetaDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
@@ -50,7 +49,7 @@ Set-MgBetaDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagement
  [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### AssignViaIdentity
@@ -61,7 +60,6 @@ Set-MgBetaDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagement
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequestdownloadurl
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl
 ---
@@ -28,7 +28,6 @@ New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDo
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -38,7 +37,7 @@ New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDo
  -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -54,9 +53,9 @@ Invoke action createDownloadUrl
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+| Delegated (work or school account) | DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+| Application | DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
 ## PARAMETERS
 

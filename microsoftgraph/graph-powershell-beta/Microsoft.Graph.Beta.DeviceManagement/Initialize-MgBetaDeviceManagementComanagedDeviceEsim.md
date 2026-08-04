@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/initialize-mgbetadevicemanagementcomanageddeviceesim
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgBetaDeviceManagementComanagedDeviceEsim
 ---
@@ -25,7 +25,6 @@ Initialize-MgBetaDeviceManagementComanagedDeviceEsim -ManagedDeviceId <string>
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Activate
@@ -36,7 +35,6 @@ Initialize-MgBetaDeviceManagementComanagedDeviceEsim -ManagedDeviceId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ActivateViaIdentityExpanded
@@ -47,7 +45,6 @@ Initialize-MgBetaDeviceManagementComanagedDeviceEsim -InputObject <IDeviceManage
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
@@ -58,7 +55,6 @@ Initialize-MgBetaDeviceManagementComanagedDeviceEsim -InputObject <IDeviceManage
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

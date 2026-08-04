@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/enable-mgbetadevicemanagementdevicehealthscriptglobalscript
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Enable-MgBetaDeviceManagementDeviceHealthScriptGlobalScript
 ---
@@ -24,7 +24,6 @@ Enable-MgBetaDeviceManagementDeviceHealthScriptGlobalScript [-ResponseHeadersVar
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -40,9 +39,9 @@ Invoke action enableGlobalScripts
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementScripts.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementScripts.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementScripts.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementScripts.ReadWrite.All,  |
 
 ## PARAMETERS
 

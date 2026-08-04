@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceshellscriptassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementDeviceShellScriptAssignment
 ---
@@ -26,7 +26,6 @@ Get-MgBetaDeviceManagementDeviceShellScriptAssignment -DeviceShellScriptId <stri
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -36,7 +35,7 @@ Get-MgBetaDeviceManagementDeviceShellScriptAssignment -DeviceManagementScriptAss
  -DeviceShellScriptId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +45,7 @@ Get-MgBetaDeviceManagementDeviceShellScriptAssignment -InputObject <IDeviceManag
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -62,9 +61,9 @@ The list of group assignments for the device management script.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
 ## PARAMETERS
 

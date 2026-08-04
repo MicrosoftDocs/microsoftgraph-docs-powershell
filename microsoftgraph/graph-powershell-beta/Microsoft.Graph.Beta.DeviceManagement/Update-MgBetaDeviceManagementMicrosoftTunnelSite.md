@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmicrosofttunnelsite
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementMicrosoftTunnelSite
 ---
@@ -30,7 +30,6 @@ Update-MgBetaDeviceManagementMicrosoftTunnelSite -MicrosoftTunnelSiteId <string>
  [-UpgradeWindowUtcOffsetInMinutes <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -40,7 +39,7 @@ Update-MgBetaDeviceManagementMicrosoftTunnelSite -MicrosoftTunnelSiteId <string>
  -BodyParameter <IMicrosoftGraphMicrosoftTunnelSite> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -56,7 +55,6 @@ Update-MgBetaDeviceManagementMicrosoftTunnelSite -InputObject <IDeviceManagement
  [-UpgradeWindowUtcOffsetInMinutes <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -66,7 +64,7 @@ Update-MgBetaDeviceManagementMicrosoftTunnelSite -InputObject <IDeviceManagement
  -BodyParameter <IMicrosoftGraphMicrosoftTunnelSite> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaexecutedevicemanagementcomanageddeviceaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaExecuteDeviceManagementComanagedDeviceAction
 ---
@@ -27,7 +27,6 @@ Invoke-MgBetaExecuteDeviceManagementComanagedDeviceAction [-ResponseHeadersVaria
  [-OrganizationalUnitPath <string>] [-PersistEsimDataPlan] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Execute
@@ -38,7 +37,6 @@ Invoke-MgBetaExecuteDeviceManagementComanagedDeviceAction
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,9 +52,9 @@ Invoke action executeAction
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.PrivilegedOperations.All,  |
+| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.PrivilegedOperations.All, DeviceManagementManagedDevices.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.PrivilegedOperations.All,  |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.PrivilegedOperations.All, DeviceManagementManagedDevices.Read.All,  |
 
 ## PARAMETERS
 

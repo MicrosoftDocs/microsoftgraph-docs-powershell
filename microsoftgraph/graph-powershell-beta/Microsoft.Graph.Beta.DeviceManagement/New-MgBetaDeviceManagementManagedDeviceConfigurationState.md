@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceconfigurationstate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementManagedDeviceConfigurationState
 ---
@@ -30,7 +30,6 @@ New-MgBetaDeviceManagementManagedDeviceConfigurationState -ManagedDeviceId <stri
  [-UserId <string>] [-UserPrincipalName <string>] [-Version <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -40,7 +39,7 @@ New-MgBetaDeviceManagementManagedDeviceConfigurationState -ManagedDeviceId <stri
  -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -53,7 +52,6 @@ New-MgBetaDeviceManagementManagedDeviceConfigurationState -InputObject <IDeviceM
  [-UserId <string>] [-UserPrincipalName <string>] [-Version <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -63,7 +61,7 @@ New-MgBetaDeviceManagementManagedDeviceConfigurationState -InputObject <IDeviceM
  -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

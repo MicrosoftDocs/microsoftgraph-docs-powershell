@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationuserstatusoverview
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview
 ---
@@ -29,7 +29,7 @@ Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview -DeviceConfig
  [-Id <string>] [-LastUpdateDateTime <datetime>] [-NotApplicableCount <int>] [-PendingCount <int>]
  [-SuccessCount <int>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -39,7 +39,7 @@ Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview -DeviceConfig
  -BodyParameter <IMicrosoftGraphDeviceConfigurationUserOverview> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,7 +52,7 @@ Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview
  [-NotApplicableCount <int>] [-PendingCount <int>] [-SuccessCount <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -63,7 +63,7 @@ Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview
  -BodyParameter <IMicrosoftGraphDeviceConfigurationUserOverview> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

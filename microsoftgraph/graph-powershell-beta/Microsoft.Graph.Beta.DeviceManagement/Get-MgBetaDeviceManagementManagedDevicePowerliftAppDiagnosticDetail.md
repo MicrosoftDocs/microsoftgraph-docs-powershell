@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddevicepowerliftappdiagnosticdetail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementManagedDevicePowerliftAppDiagnosticDetail
 ---
@@ -24,7 +24,7 @@ Get-MgBetaDeviceManagementManagedDevicePowerliftAppDiagnosticDetail -UserPrincip
  [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### RetrieveViaIdentity
@@ -34,7 +34,7 @@ Get-MgBetaDeviceManagementManagedDevicePowerliftAppDiagnosticDetail
  -InputObject <IDeviceManagementIdentity> [-Count] [-Filter <string>] [-Search <string>]
  [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -50,9 +50,9 @@ Invoke function retrievePowerliftAppDiagnosticsDetails
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+| Delegated (work or school account) | DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All,  |
+| Application | DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
 ## PARAMETERS
 

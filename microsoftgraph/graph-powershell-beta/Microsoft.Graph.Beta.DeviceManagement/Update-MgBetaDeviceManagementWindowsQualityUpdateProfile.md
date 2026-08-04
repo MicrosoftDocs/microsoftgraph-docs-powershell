@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementwindowsqualityupdateprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementWindowsQualityUpdateProfile
 ---
@@ -29,7 +29,7 @@ Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -WindowsQualityUpdatePr
  [-LastModifiedDateTime <datetime>] [-ReleaseDateDisplayName <string>] [-RoleScopeTagIds <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -39,7 +39,7 @@ Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -WindowsQualityUpdatePr
  -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfile> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,7 +54,7 @@ Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -InputObject <IDeviceMa
  [-LastModifiedDateTime <datetime>] [-ReleaseDateDisplayName <string>] [-RoleScopeTagIds <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -64,7 +64,7 @@ Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -InputObject <IDeviceMa
  -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfile> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -742,6 +742,7 @@ Read-only.
   [ExpeditedUpdateSettings <IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>]: A complex type to store the expedited quality update settings such as release date and days until forced reboot.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DaysUntilForcedReboot <Int32?>]: The number of days after installation that forced reboot will happen.
+    [QualityUpdateCatalogItemId <String>]: The unique identifier for the quality update catalog item targeted by the expedite.
     [QualityUpdateRelease <String>]: The release date to identify a quality update.
   [LastModifiedDateTime <DateTime?>]: The date time that the profile was last modified.
   [ReleaseDateDisplayName <String>]: Friendly release date to display for a Quality Update release
@@ -750,6 +751,7 @@ Read-only.
 EXPEDITEDUPDATESETTINGS `<IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>`: A complex type to store the expedited quality update settings such as release date and days until forced reboot.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DaysUntilForcedReboot <Int32?>]: The number of days after installation that forced reboot will happen.
+  [QualityUpdateCatalogItemId <String>]: The unique identifier for the quality update catalog item targeted by the expedite.
   [QualityUpdateRelease <String>]: The release date to identify a quality update.
 
 INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter

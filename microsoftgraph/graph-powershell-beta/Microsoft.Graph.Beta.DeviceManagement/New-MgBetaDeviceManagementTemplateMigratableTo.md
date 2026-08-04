@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtemplatemigratableto
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementTemplateMigratableTo
 ---
@@ -29,7 +29,7 @@ New-MgBetaDeviceManagementTemplateMigratableTo -DeviceManagementTemplateId <stri
  [-TemplateSubtype <DeviceManagementTemplateSubtype>] [-TemplateType <DeviceManagementTemplateType>]
  [-VersionInfo <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +39,7 @@ New-MgBetaDeviceManagementTemplateMigratableTo -DeviceManagementTemplateId <stri
  -BodyParameter <IMicrosoftGraphDeviceManagementTemplate> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -54,7 +54,7 @@ New-MgBetaDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagementId
  [-TemplateSubtype <DeviceManagementTemplateSubtype>] [-TemplateType <DeviceManagementTemplateType>]
  [-VersionInfo <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -64,7 +64,7 @@ New-MgBetaDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagementId
  -BodyParameter <IMicrosoftGraphDeviceManagementTemplate> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
