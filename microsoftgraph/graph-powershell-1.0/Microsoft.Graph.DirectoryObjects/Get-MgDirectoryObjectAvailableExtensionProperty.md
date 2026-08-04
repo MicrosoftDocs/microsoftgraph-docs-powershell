@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DirectoryObjects-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty
 Locale: en-US
 Module Name: Microsoft.Graph.DirectoryObjects
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryObjectAvailableExtensionProperty
 ---
@@ -25,7 +25,6 @@ Get-MgDirectoryObjectAvailableExtensionProperty [-ResponseHeadersVariable <strin
  [-AdditionalProperties <hashtable>] [-IsSyncedFromOnPremises] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -36,7 +35,6 @@ Get-MgDirectoryObjectAvailableExtensionProperty
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

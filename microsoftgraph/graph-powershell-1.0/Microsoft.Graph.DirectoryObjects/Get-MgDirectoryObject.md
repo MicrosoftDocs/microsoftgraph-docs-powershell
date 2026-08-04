@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DirectoryObjects-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobject
 Locale: en-US
 Module Name: Microsoft.Graph.DirectoryObjects
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryObject
 ---
@@ -28,7 +28,7 @@ Get-MgDirectoryObject [-ExpandProperty <string[]>] [-Property <string[]>] [-Filt
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +37,7 @@ Get-MgDirectoryObject [-ExpandProperty <string[]>] [-Property <string[]>] [-Filt
 Get-MgDirectoryObject -DirectoryObjectId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +46,7 @@ Get-MgDirectoryObject -DirectoryObjectId <string> [-ExpandProperty <string[]>]
 Get-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
