@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 07/31/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedCl
 ## SYNOPSIS
 
 Update the properties of an approvedClientApp object for a remotedesktopsecurityconfiguration.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
