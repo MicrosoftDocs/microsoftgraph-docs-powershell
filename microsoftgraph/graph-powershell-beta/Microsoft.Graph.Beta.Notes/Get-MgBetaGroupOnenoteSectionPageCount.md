@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotesectionpagecount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupOnenoteSectionPageCount
 ---
@@ -27,7 +27,7 @@ Get-MgBetaGroupOnenoteSectionPageCount -GroupId <string> -OnenoteSectionId <stri
  [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -36,7 +36,7 @@ Get-MgBetaGroupOnenoteSectionPageCount -GroupId <string> -OnenoteSectionId <stri
 Get-MgBetaGroupOnenoteSectionPageCount -InputObject <INotesIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -52,7 +52,7 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Read, Notes.ReadWrite.All, Notes.ReadWrite, Notes.Read.All,  |
+| Delegated (work or school account) | Notes.Read, Notes.Read.All, Notes.ReadWrite, Notes.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Notes.Read, Notes.ReadWrite,  |
 | Application | Notes.Read.All, Notes.ReadWrite.All,  |
 

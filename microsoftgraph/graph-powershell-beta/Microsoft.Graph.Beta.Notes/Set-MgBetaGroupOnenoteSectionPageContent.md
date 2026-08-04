@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetagrouponenotesectionpagecontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaGroupOnenoteSectionPageContent
 ---
@@ -27,7 +27,7 @@ Set-MgBetaGroupOnenoteSectionPageContent -GroupId <string> -OnenotePageId <strin
  -OnenoteSectionId <string> -InFile <string> [-Data <Stream>] [-ResponseHeadersVariable <string>]
  [-Break] [-ContentType <string>] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### SetViaIdentity
@@ -37,7 +37,7 @@ Set-MgBetaGroupOnenoteSectionPageContent -InputObject <INotesIdentity> -InFile <
  [-Data <Stream>] [-ResponseHeadersVariable <string>] [-Break] [-ContentType <string>]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
