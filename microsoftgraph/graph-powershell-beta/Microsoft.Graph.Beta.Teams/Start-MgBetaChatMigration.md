@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetachatmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaChatMigration
 ---
@@ -31,7 +31,6 @@ Start-MgBetaChatMigration -ChatId <string> [-ResponseHeadersVariable <string>]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Start
@@ -42,7 +41,6 @@ Start-MgBetaChatMigration -ChatId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### StartViaIdentityExpanded
@@ -53,7 +51,6 @@ Start-MgBetaChatMigration -InputObject <ITeamsIdentity> [-ResponseHeadersVariabl
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### StartViaIdentity
@@ -64,7 +61,6 @@ Start-MgBetaChatMigration -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -81,6 +77,30 @@ You can define a minimum timestamp for content migration that enables the import
 The specified timestamp must be earlier than the current createdDateTime of the chat.
 Imported content is always limited by the createdDateTime of the target thread.
 An optional createdDateTime property in the payload allows you to update this value, but with strict rules: This API supportes the following channel types.
+
+## EXAMPLES
+### Example 1: Start the migration in a chat
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Start-MgBetaChatMigration -ChatId $chatId
+
+```
+This example will start the migration in a chat
+
+### Example 2: Start the migration when a chat is already in migration mode
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Start-MgBetaChatMigration -ChatId $chatId
+
+```
+This example will start the migration when a chat is already in migration mode
+
 
 ## PARAMETERS
 
@@ -545,7 +565,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [Start-MgBetaChatMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetachatmigration)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/chat-startmigration?view=graph-rest-beta)
-
 
 
 

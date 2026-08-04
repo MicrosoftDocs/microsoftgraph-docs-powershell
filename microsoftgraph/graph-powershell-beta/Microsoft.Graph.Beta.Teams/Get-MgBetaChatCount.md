@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaChatCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgBetaChatCount [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -42,9 +42,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, Chat.ReadWrite, Chat.Read,  |
+| Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ReadBasic.All, Chat.ReadWrite.All, Chat.Read.All,  |
+| Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All,  |
 
 ## PARAMETERS
 

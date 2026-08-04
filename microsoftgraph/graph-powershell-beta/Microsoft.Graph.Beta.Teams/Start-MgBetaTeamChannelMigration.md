@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamchannelmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaTeamChannelMigration
 ---
@@ -31,7 +31,6 @@ Start-MgBetaTeamChannelMigration -ChannelId <string> -TeamId <string>
  [-ConversationCreationDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Start
@@ -42,7 +41,6 @@ Start-MgBetaTeamChannelMigration -ChannelId <string> -TeamId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### StartViaIdentityExpanded
@@ -53,7 +51,6 @@ Start-MgBetaTeamChannelMigration -InputObject <ITeamsIdentity> [-ResponseHeaders
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### StartViaIdentity
@@ -64,7 +61,6 @@ Start-MgBetaTeamChannelMigration -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -81,6 +77,30 @@ Users are also allowed to define a minimum timestamp for content to be migrated,
 The provided timestamp must be older than the current createdDateTime for a channel.
 The provided timestamp is used to replace the existing createdDateTime of the channel.
 This API supportes the following channel types.
+
+## EXAMPLES
+### Example 1: Start the migration on an existing channel with a specific timestamp
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Start-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+
+```
+This example will start the migration on an existing channel with a specific timestamp
+
+### Example 2: Start the migration when a channel is already in migration mode
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Start-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+
+```
+This example will start the migration when a channel is already in migration mode
+
 
 ## PARAMETERS
 
@@ -572,7 +592,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [Start-MgBetaTeamChannelMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamchannelmigration)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/channel-startmigration?view=graph-rest-beta)
-
 
 
 

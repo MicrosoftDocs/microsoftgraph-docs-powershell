@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateam
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTeam
 ---
@@ -43,7 +43,6 @@ New-MgBetaTeam [-ResponseHeadersVariable <string>] [-AdditionalProperties <hasht
  [-TenantId <string>] [-Visibility <string>] [-WebUrl <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -52,7 +51,7 @@ New-MgBetaTeam [-ResponseHeadersVariable <string>] [-AdditionalProperties <hasht
 New-MgBetaTeam -BodyParameter <IMicrosoftGraphTeam> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -68,9 +67,9 @@ Create a new team.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Team.Create, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | Team.Create, Directory.ReadWrite.All, Group.ReadWrite.All, Teamwork.Migrate.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

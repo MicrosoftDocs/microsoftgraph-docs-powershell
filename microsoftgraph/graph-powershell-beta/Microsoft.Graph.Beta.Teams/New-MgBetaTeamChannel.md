@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTeamChannel
 ---
@@ -39,7 +39,7 @@ New-MgBetaTeamChannel -TeamId <string> [-ResponseHeadersVariable <string>]
  [-Summary <IMicrosoftGraphChannelSummary>] [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <string>]
  [-WebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -49,7 +49,6 @@ New-MgBetaTeamChannel -TeamId <string> -BodyParameter <IMicrosoftGraphChannel>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -68,7 +67,7 @@ New-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <s
  [-Summary <IMicrosoftGraphChannelSummary>] [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <string>]
  [-WebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -78,7 +77,6 @@ New-MgBetaTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -97,9 +95,9 @@ You can add a maximum of 200 members when you create a private channel.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Channel.Create, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Channel.Create.Group, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All, Channel.Create,  |
+| Application | Channel.Create.Group, Channel.Create, Directory.ReadWrite.All, Group.ReadWrite.All, Teamwork.Migrate.All,  |
 
 ## EXAMPLES
 ### Example 1: Create a standard channel

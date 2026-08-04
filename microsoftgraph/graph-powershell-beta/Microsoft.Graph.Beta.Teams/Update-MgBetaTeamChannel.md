@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTeamChannel
 ---
@@ -36,7 +36,7 @@ Update-MgBetaTeamChannel -ChannelId <string> -TeamId <string> [-ResponseHeadersV
  [-Summary <IMicrosoftGraphChannelSummary>] [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <string>]
  [-WebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -46,7 +46,7 @@ Update-MgBetaTeamChannel -ChannelId <string> -TeamId <string>
  -BodyParameter <IMicrosoftGraphChannel> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -65,7 +65,7 @@ Update-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-ResponseHeadersVariable
  [-Summary <IMicrosoftGraphChannelSummary>] [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <string>]
  [-WebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -75,7 +75,6 @@ Update-MgBetaTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -91,9 +90,9 @@ Update the properties of the specified channel.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | ChannelSettings.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelSettings.ReadWrite.Group, Group.ReadWrite.All, Directory.ReadWrite.All, ChannelSettings.ReadWrite.All,  |
+| Application | ChannelSettings.ReadWrite.Group, ChannelSettings.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -111,6 +110,36 @@ $params = @{
 		allowNewMessageFromBots = $true
 		allowNewMessageFromConnectors = $true
 	}
+}
+
+Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTeamChannel Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = @{
+	layoutType = "chat"
+}
+
+Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTeamChannel Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = @{
+	layoutType = "post"
 }
 
 Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId -BodyParameter $params
