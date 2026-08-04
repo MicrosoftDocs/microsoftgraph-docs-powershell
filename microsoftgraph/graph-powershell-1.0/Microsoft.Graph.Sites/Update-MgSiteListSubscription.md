@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistsubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSiteListSubscription
 ---
@@ -32,7 +32,7 @@ Update-MgSiteListSubscription -ListId <string> -SiteId <string> -SubscriptionId 
  [-NotificationQueryOptions <string>] [-NotificationUrl <string>] [-NotificationUrlAppId <string>]
  [-Resource <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -42,7 +42,7 @@ Update-MgSiteListSubscription -ListId <string> -SiteId <string> -SubscriptionId 
  -BodyParameter <IMicrosoftGraphSubscription> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -56,7 +56,7 @@ Update-MgSiteListSubscription -InputObject <ISitesIdentity> [-ResponseHeadersVar
  [-NotificationQueryOptions <string>] [-NotificationUrl <string>] [-NotificationUrlAppId <string>]
  [-Resource <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -66,7 +66,7 @@ Update-MgSiteListSubscription -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphSubscription> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

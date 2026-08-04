@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupsetchild
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteTermStoreGroupSetChild
 ---
@@ -29,7 +29,6 @@ Get-MgSiteTermStoreGroupSetChild -GroupId <string> -SetId <string> -SiteId <stri
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### List3
@@ -41,7 +40,7 @@ Get-MgSiteTermStoreGroupSetChild -GroupId <string> -SetId <string> -SiteId <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### List2
@@ -53,7 +52,6 @@ Get-MgSiteTermStoreGroupSetChild -GroupId <string> -SetId <string> -SiteId <stri
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### List1
@@ -65,7 +63,7 @@ Get-MgSiteTermStoreGroupSetChild -GroupId <string> -SetId <string> -SiteId <stri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get3
@@ -75,7 +73,7 @@ Get-MgSiteTermStoreGroupSetChild -GroupId <string> -SetId <string> -SiteId <stri
  -StoreId <string> -TermId1 <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get2
@@ -85,7 +83,7 @@ Get-MgSiteTermStoreGroupSetChild -GroupId <string> -SetId <string> -SiteId <stri
  -TermId1 <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get1
@@ -95,7 +93,7 @@ Get-MgSiteTermStoreGroupSetChild -GroupId <string> -SetId <string> -SiteId <stri
  -StoreId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get
@@ -105,7 +103,7 @@ Get-MgSiteTermStoreGroupSetChild -GroupId <string> -SetId <string> -SiteId <stri
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity3
@@ -114,7 +112,7 @@ Get-MgSiteTermStoreGroupSetChild -GroupId <string> -SetId <string> -SiteId <stri
 Get-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity2
@@ -123,7 +121,7 @@ Get-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-ExpandProperty 
 Get-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -132,7 +130,7 @@ Get-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-ExpandProperty 
 Get-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -141,7 +139,7 @@ Get-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-ExpandProperty 
 Get-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

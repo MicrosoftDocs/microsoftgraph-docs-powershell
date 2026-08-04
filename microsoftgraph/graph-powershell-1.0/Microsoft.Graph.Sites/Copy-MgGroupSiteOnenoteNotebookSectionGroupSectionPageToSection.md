@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsiteonenotenotebooksectiongroupsectionpagetosection
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionPageToSection
 ---
@@ -30,7 +30,7 @@ Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionPageToSection -GroupId <string
  [-GroupId1 <string>] [-Id <string>] [-SiteCollectionId <string>] [-SiteId1 <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CopyViaIdentityExpanded
@@ -41,7 +41,7 @@ Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionPageToSection -InputObject <IS
  [-AdditionalProperties <hashtable>] [-Id <string>] [-SiteCollectionId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Copy
@@ -54,7 +54,6 @@ Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionPageToSection -GroupId <string
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
@@ -65,7 +64,6 @@ Copy-MgGroupSiteOnenoteNotebookSectionGroupSectionPageToSection -InputObject <IS
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroupcount
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteTermStoreGroupCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgGroupSiteTermStoreGroupCount -GroupId <string> -SiteId <string> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get1
@@ -36,7 +36,7 @@ Get-MgGroupSiteTermStoreGroupCount -GroupId <string> -SiteId <string> -StoreId <
  [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -45,7 +45,7 @@ Get-MgGroupSiteTermStoreGroupCount -GroupId <string> -SiteId <string> -StoreId <
 Get-MgGroupSiteTermStoreGroupCount -InputObject <ISitesIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -54,7 +54,7 @@ Get-MgGroupSiteTermStoreGroupCount -InputObject <ISitesIdentity> [-Filter <strin
 Get-MgGroupSiteTermStoreGroupCount -InputObject <ISitesIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

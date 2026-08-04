@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetchildrelationtoterm
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteTermStoreSetChildRelationToTerm
 ---
@@ -28,7 +28,7 @@ Get-MgSiteTermStoreSetChildRelationToTerm -RelationId <string> -SetId <string> -
  -TermId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get3
@@ -38,7 +38,7 @@ Get-MgSiteTermStoreSetChildRelationToTerm -RelationId <string> -SetId <string> -
  -TermId <string> -StoreId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get2
@@ -48,7 +48,7 @@ Get-MgSiteTermStoreSetChildRelationToTerm -RelationId <string> -SetId <string> -
  -TermId <string> -TermId1 <string> -StoreId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get
@@ -58,7 +58,7 @@ Get-MgSiteTermStoreSetChildRelationToTerm -RelationId <string> -SetId <string> -
  -TermId <string> -TermId1 <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity3
@@ -67,7 +67,7 @@ Get-MgSiteTermStoreSetChildRelationToTerm -RelationId <string> -SetId <string> -
 Get-MgSiteTermStoreSetChildRelationToTerm -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity2
@@ -76,7 +76,7 @@ Get-MgSiteTermStoreSetChildRelationToTerm -InputObject <ISitesIdentity> [-Expand
 Get-MgSiteTermStoreSetChildRelationToTerm -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -85,7 +85,7 @@ Get-MgSiteTermStoreSetChildRelationToTerm -InputObject <ISitesIdentity> [-Expand
 Get-MgSiteTermStoreSetChildRelationToTerm -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -94,7 +94,7 @@ Get-MgSiteTermStoreSetChildRelationToTerm -InputObject <ISitesIdentity> [-Expand
 Get-MgSiteTermStoreSetChildRelationToTerm -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

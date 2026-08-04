@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupsettermchildset
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteTermStoreGroupSetTermChildSet
 ---
@@ -27,7 +27,7 @@ Get-MgSiteTermStoreGroupSetTermChildSet -GroupId <string> -SetId <string> -SiteI
  -TermId <string> -TermId1 <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get1
@@ -37,7 +37,7 @@ Get-MgSiteTermStoreGroupSetTermChildSet -GroupId <string> -SetId <string> -SiteI
  -TermId <string> -TermId1 <string> -StoreId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -46,7 +46,7 @@ Get-MgSiteTermStoreGroupSetTermChildSet -GroupId <string> -SetId <string> -SiteI
 Get-MgSiteTermStoreGroupSetTermChildSet -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -55,7 +55,7 @@ Get-MgSiteTermStoreGroupSetTermChildSet -InputObject <ISitesIdentity> [-ExpandPr
 Get-MgSiteTermStoreGroupSetTermChildSet -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

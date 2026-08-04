@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecount
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteContentTypeCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgSiteContentTypeCount [-SiteId <string>] [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +35,7 @@ Get-MgSiteContentTypeCount [-SiteId <string>] [-Filter <string>] [-Search <strin
 Get-MgSiteContentTypeCount -InputObject <ISitesIdentity> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -51,9 +51,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
+| Delegated (work or school account) | Sites.Read.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
+| Application | Sites.Read.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
 
 ## PARAMETERS
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepageassitepagecanvalayouthorizontalsection
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection
 ---
@@ -28,7 +28,7 @@ New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection -BaseSitePageId <strin
  [-Columns <IMicrosoftGraphHorizontalSectionColumn[]>] [-Emphasis <string>] [-Id <string>]
  [-Layout <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -39,7 +39,6 @@ New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection -BaseSitePageId <strin
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -50,7 +49,7 @@ New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISitesId
  [-Columns <IMicrosoftGraphHorizontalSectionColumn[]>] [-Emphasis <string>] [-Id <string>]
  [-Layout <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -60,7 +59,7 @@ New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISitesId
  -BodyParameter <IMicrosoftGraphHorizontalSection> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

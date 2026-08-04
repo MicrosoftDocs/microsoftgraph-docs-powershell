@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewgroupsiteonenotesectionpage
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgPreviewGroupSiteOnenoteSectionPage
 ---
@@ -27,7 +27,7 @@ Invoke-MgPreviewGroupSiteOnenoteSectionPage -GroupId <string> -OnenotePageId <st
  -OnenoteSectionId <string> -SiteId <string> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### PreviewViaIdentity
@@ -36,7 +36,7 @@ Invoke-MgPreviewGroupSiteOnenoteSectionPage -GroupId <string> -OnenotePageId <st
 Invoke-MgPreviewGroupSiteOnenoteSectionPage -InputObject <ISitesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

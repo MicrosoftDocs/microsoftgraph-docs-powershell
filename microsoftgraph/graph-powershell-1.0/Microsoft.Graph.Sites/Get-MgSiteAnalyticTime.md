@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalytictime
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteAnalyticTime
 ---
@@ -26,7 +26,7 @@ Get allTime from sites
 Get-MgSiteAnalyticTime [-SiteId <string>] [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +35,7 @@ Get-MgSiteAnalyticTime [-SiteId <string>] [-ExpandProperty <string[]>] [-Propert
 Get-MgSiteAnalyticTime -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -51,9 +51,9 @@ Get allTime from sites
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.Read, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All, Files.ReadWrite, Files.Read.All,  |
+| Delegated (work or school account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Files.Read.All, Sites.ReadWrite.All, Sites.Read.All, Files.ReadWrite.All,  |
+| Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## PARAMETERS
 

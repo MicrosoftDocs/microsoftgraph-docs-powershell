@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsiteonenotenotebooksectionpagetosection
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgGroupSiteOnenoteNotebookSectionPageToSection
 ---
@@ -30,7 +30,6 @@ Copy-MgGroupSiteOnenoteNotebookSectionPageToSection -GroupId <string> -NotebookI
  [-Id <string>] [-SiteCollectionId <string>] [-SiteId1 <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
@@ -41,7 +40,7 @@ Copy-MgGroupSiteOnenoteNotebookSectionPageToSection -InputObject <ISitesIdentity
  [-AdditionalProperties <hashtable>] [-Id <string>] [-SiteCollectionId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Copy
@@ -53,7 +52,6 @@ Copy-MgGroupSiteOnenoteNotebookSectionPageToSection -GroupId <string> -NotebookI
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
@@ -64,7 +62,6 @@ Copy-MgGroupSiteOnenoteNotebookSectionPageToSection -InputObject <ISitesIdentity
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

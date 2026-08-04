@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupsetchildcount
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteTermStoreSetParentGroupSetChildCount
 ---
@@ -27,7 +27,7 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -GroupId <string> -SetId <st
  -SetId1 <string> -SiteId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get3
@@ -37,7 +37,7 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -GroupId <string> -SetId <st
  -SetId1 <string> -SiteId <string> -StoreId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get2
@@ -47,7 +47,7 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -GroupId <string> -SetId <st
  -SetId1 <string> -SiteId <string> -TermId <string> -StoreId <string> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### Get
@@ -57,7 +57,7 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -GroupId <string> -SetId <st
  -SetId1 <string> -SiteId <string> -TermId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity3
@@ -66,7 +66,7 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -GroupId <string> -SetId <st
 Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -InputObject <ISitesIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity2
@@ -75,7 +75,7 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -InputObject <ISitesIdentity
 Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -InputObject <ISitesIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -84,7 +84,7 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -InputObject <ISitesIdentity
 Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -InputObject <ISitesIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -93,7 +93,7 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -InputObject <ISitesIdentity
 Get-MgGroupSiteTermStoreSetParentGroupSetChildCount -InputObject <ISitesIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

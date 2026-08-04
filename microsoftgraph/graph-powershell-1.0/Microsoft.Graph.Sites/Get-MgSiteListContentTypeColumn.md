@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecolumn
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteListContentTypeColumn
 ---
@@ -29,7 +29,6 @@ Get-MgSiteListContentTypeColumn -ContentTypeId <string> -ListId <string> -SiteId
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -39,7 +38,7 @@ Get-MgSiteListContentTypeColumn -ColumnDefinitionId <string> -ContentTypeId <str
  -ListId <string> -SiteId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +47,7 @@ Get-MgSiteListContentTypeColumn -ColumnDefinitionId <string> -ContentTypeId <str
 Get-MgSiteListContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -64,9 +63,9 @@ The collection of column definitions for this content type.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
+| Delegated (work or school account) | Sites.Read.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
+| Application | Sites.Read.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
 
 ## PARAMETERS
 

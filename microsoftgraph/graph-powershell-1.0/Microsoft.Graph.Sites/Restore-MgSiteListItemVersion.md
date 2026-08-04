@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemversion
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgSiteListItemVersion
 ---
@@ -28,7 +28,6 @@ Restore-MgSiteListItemVersion -ListId <string> -ListItemId <string> -ListItemVer
  -SiteId <string> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
@@ -38,7 +37,6 @@ Restore-MgSiteListItemVersion -InputObject <ISitesIdentity> [-ResponseHeadersVar
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -55,9 +53,9 @@ This will create a new version with the contents of the previous version, but pr
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
+| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
+| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

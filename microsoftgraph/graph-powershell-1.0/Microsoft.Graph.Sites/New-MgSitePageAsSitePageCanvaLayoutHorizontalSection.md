@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepageassitepagecanvalayouthorizontalsection
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSitePageAsSitePageCanvaLayoutHorizontalSection
 ---
@@ -28,7 +28,7 @@ New-MgSitePageAsSitePageCanvaLayoutHorizontalSection -BaseSitePageId <string> -S
  [-Columns <IMicrosoftGraphHorizontalSectionColumn[]>] [-Emphasis <string>] [-Id <string>]
  [-Layout <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +38,7 @@ New-MgSitePageAsSitePageCanvaLayoutHorizontalSection -BaseSitePageId <string> -S
  -BodyParameter <IMicrosoftGraphHorizontalSection> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -49,7 +49,7 @@ New-MgSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIdentit
  [-Columns <IMicrosoftGraphHorizontalSectionColumn[]>] [-Emphasis <string>] [-Id <string>]
  [-Layout <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -59,7 +59,7 @@ New-MgSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIdentit
  -BodyParameter <IMicrosoftGraphHorizontalSection> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

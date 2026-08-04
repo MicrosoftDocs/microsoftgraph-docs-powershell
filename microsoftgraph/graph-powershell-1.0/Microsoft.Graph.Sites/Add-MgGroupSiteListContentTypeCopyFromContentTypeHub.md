@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsitelistcontenttypecopyfromcontenttypehub
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgGroupSiteListContentTypeCopyFromContentTypeHub
 ---
@@ -30,7 +30,7 @@ Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -GroupId <string> -ListId <
  -SiteId <string> [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-ContentTypeId <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Add
@@ -42,7 +42,6 @@ Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -GroupId <string> -ListId <
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
@@ -52,7 +51,7 @@ Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -InputObject <ISitesIdentit
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-ContentTypeId <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### AddViaIdentity
@@ -63,7 +62,6 @@ Add-MgGroupSiteListContentTypeCopyFromContentTypeHub -InputObject <ISitesIdentit
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
