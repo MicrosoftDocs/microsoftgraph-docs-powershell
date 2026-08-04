@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication
 ---
@@ -28,7 +28,6 @@ Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -UserId 
  [-LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Evaluate
@@ -39,7 +38,6 @@ Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -UserId 
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
@@ -51,7 +49,6 @@ Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication
  [-LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
@@ -63,7 +60,6 @@ Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalertv2
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityAlertV2
 ---
@@ -28,7 +28,7 @@ Get-MgBetaSecurityAlertV2 [-ExpandProperty <string[]>] [-Property <string[]>] [-
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +37,7 @@ Get-MgBetaSecurityAlertV2 [-ExpandProperty <string[]>] [-Property <string[]>] [-
 Get-MgBetaSecurityAlertV2 -AlertId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +46,7 @@ Get-MgBetaSecurityAlertV2 -AlertId <string> [-ExpandProperty <string[]>] [-Prope
 Get-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -67,7 +67,7 @@ Get the properties and relationships of an alert object.
 | Application | SecurityAlert.Read.All, SecurityAlert.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get all alerts
 
 ```powershell
 
@@ -76,7 +76,18 @@ Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityAlertV2
 
 ```
-This example shows how to use the Get-MgBetaSecurityAlertV2 Cmdlet.
+This example will get all alerts
+
+### Example 2: Get all alerts from Microsoft Sentinel
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityAlertV2 -Filter "serviceSource eq 'microsoftSentinel'" 
+
+```
+This example will get all alerts from microsoft sentinel
 
 
 ## PARAMETERS
