@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 8d8ab9aa-d4c7-4d0e-9b0c-344ccf7845cc
+Module Guid: 28327f0e-0556-466e-b3d6-73c5e55dc5ea
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -494,6 +494,16 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgEntitlementManagementResourceScopeResourceRoleResourceEnvironment](Get-MgEntitlementManagementResourceScopeResourceRoleResourceEnvironment.md)
 
 ### [Get-MgEntitlementManagementSetting](Get-MgEntitlementManagementSetting.md)
+
+### [Get-MgEntitlementManagementSubject](Get-MgEntitlementManagementSubject.md)
+
+### [Get-MgEntitlementManagementSubject](Get-MgEntitlementManagementSubject.md)
+
+### [Get-MgEntitlementManagementSubjectByObjectId](Get-MgEntitlementManagementSubjectByObjectId.md)
+
+### [Get-MgEntitlementManagementSubjectConnectedOrganization](Get-MgEntitlementManagementSubjectConnectedOrganization.md)
+
+### [Get-MgEntitlementManagementSubjectCount](Get-MgEntitlementManagementSubjectCount.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinition](Get-MgIdentityGovernanceAccessReviewDefinition.md)
 
@@ -1509,6 +1519,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgEntitlementManagementResourceScopeResourceRole](New-MgEntitlementManagementResourceScopeResourceRole.md)
 
+### [New-MgEntitlementManagementSubject](New-MgEntitlementManagementSubject.md)
+
 ### [New-MgIdentityGovernanceAccessReviewDefinition](New-MgIdentityGovernanceAccessReviewDefinition.md)
 
 ### [New-MgIdentityGovernanceAccessReviewDefinitionInstance](New-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
@@ -1798,6 +1810,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgEntitlementManagementResourceScopeResourceRole](Remove-MgEntitlementManagementResourceScopeResourceRole.md)
 
 ### [Remove-MgEntitlementManagementResourceScopeResourceRoleResource](Remove-MgEntitlementManagementResourceScopeResourceRoleResource.md)
+
+### [Remove-MgEntitlementManagementSubject](Remove-MgEntitlementManagementSubject.md)
+
+### [Remove-MgEntitlementManagementSubjectByObjectId](Remove-MgEntitlementManagementSubjectByObjectId.md)
 
 ### [Remove-MgIdentityGovernanceAccessReviewDefinition](Remove-MgIdentityGovernanceAccessReviewDefinition.md)
 
@@ -2138,6 +2154,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgEntitlementManagementResourceScopeResourceRoleResource](Update-MgEntitlementManagementResourceScopeResourceRoleResource.md)
 
 ### [Update-MgEntitlementManagementSetting](Update-MgEntitlementManagementSetting.md)
+
+### [Update-MgEntitlementManagementSubject](Update-MgEntitlementManagementSubject.md)
+
+### [Update-MgEntitlementManagementSubjectByObjectId](Update-MgEntitlementManagementSubjectByObjectId.md)
 
 ### [Update-MgIdentityGovernanceAccessReviewDefinitionInstance](Update-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
 
