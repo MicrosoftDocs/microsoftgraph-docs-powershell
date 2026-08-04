@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportspeakerassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationReportSpeakerAssignmentSubmission
 ---
@@ -28,7 +28,7 @@ Get-MgEducationReportSpeakerAssignmentSubmission [-ExpandProperty <string[]>] [-
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +38,7 @@ Get-MgEducationReportSpeakerAssignmentSubmission -SpeakerAssignmentSubmissionId 
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -48,7 +48,7 @@ Get-MgEducationReportSpeakerAssignmentSubmission -InputObject <IEducationIdentit
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -59,6 +59,30 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Details of submitted speaker assignments.
+
+## EXAMPLES
+### Example 1: Get a list of the speaker assignment submissions from the last 24 hours
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationReportSpeakerAssignmentSubmission
+
+```
+This example will get a list of the speaker assignment submissions from the last 24 hours
+
+### Example 2: Get a list of the speaker assignment submissions for a specific date using $filter
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationReportSpeakerAssignmentSubmission -Filter "submissionDateTime gt 2025-05-28T00:00:00Z and submissionDateTime lt 2025-05-29T00:00:00Z" 
+
+```
+This example will get a list of the speaker assignment submissions for a specific date using $filter
+
 
 ## PARAMETERS
 
@@ -547,8 +571,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Get-MgEducationReportSpeakerAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportspeakerassignmentsubmission)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-1.0)
-
-
 
 
 

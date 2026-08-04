@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentsettinggradingscheme
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgEducationClassAssignmentSettingGradingScheme
 ---
@@ -28,7 +28,6 @@ Remove-MgEducationClassAssignmentSettingGradingScheme -EducationClassId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,7 +37,6 @@ Remove-MgEducationClassAssignmentSettingGradingScheme -InputObject <IEducationId
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -57,6 +55,19 @@ Delete an educationGradingScheme object.
 | Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Remove-MgEducationClassAssignmentSettingGradingScheme -EducationClassId $educationClassId -EducationGradingSchemeId $educationGradingSchemeId
+
+```
+This example shows how to use the Remove-MgEducationClassAssignmentSettingGradingScheme Cmdlet.
+
 
 ## PARAMETERS
 
@@ -436,7 +447,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [Remove-MgEducationClassAssignmentSettingGradingScheme](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentsettinggradingscheme)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/educationgradingscheme-delete?view=graph-rest-1.0)
-
 
 
 

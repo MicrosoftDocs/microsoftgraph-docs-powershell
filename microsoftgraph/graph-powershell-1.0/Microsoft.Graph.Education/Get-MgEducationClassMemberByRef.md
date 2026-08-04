@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassMemberByRef
 ---
@@ -28,7 +28,6 @@ Get-MgEducationClassMemberByRef -EducationClassId <string> [-Filter <string>] [-
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -46,7 +45,7 @@ Retrieves the educationUser members of an educationClass.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | EduRoster.ReadBasic,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, Member.Read.Hidden, EduRoster.ReadWrite.All,  |
+| Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Member.Read.Hidden,  |
 
 ## PARAMETERS
 
