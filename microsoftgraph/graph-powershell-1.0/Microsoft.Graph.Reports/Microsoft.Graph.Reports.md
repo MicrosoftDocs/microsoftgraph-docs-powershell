@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Reports
-Module Guid: e5903d35-b6c6-4917-a66d-41e7e5fb53cf
+Module Guid: 3fe3034a-7a42-4a97-ad1a-99bbfd0f8591
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.reports/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
