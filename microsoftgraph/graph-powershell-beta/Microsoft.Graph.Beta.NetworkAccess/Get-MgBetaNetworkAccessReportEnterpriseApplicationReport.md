@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportenterpriseapplicationreport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessReportEnterpriseApplicationReport
 ---
@@ -24,7 +24,7 @@ Get-MgBetaNetworkAccessReportEnterpriseApplicationReport -EndDateTime <datetime>
  -StartDateTime <datetime> [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
  [-UserId <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -34,7 +34,7 @@ Get-MgBetaNetworkAccessReportEnterpriseApplicationReport -InputObject <INetworkA
  [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>] [-UserId <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -45,6 +45,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a collection of enterprise application reports based on aggregated traffic logs for a specified time period in Global Secure Access.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+Get-MgBetaNetworkAccessReportEnterpriseApplicationReport -StartDateTime $startDateTimeId -EndDateTime $endDateTimeId -UserId $userIdId 
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessReportEnterpriseApplicationReport Cmdlet.
+
 
 ## PARAMETERS
 
@@ -471,7 +484,6 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 - [Get-MgBetaNetworkAccessReportEnterpriseApplicationReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportenterpriseapplicationreport)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-reports-getenterpriseapplicationreport?view=graph-rest-beta)
-
 
 
 

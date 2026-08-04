@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingcustomblockpage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessSettingCustomBlockPage
 ---
@@ -24,7 +24,7 @@ Update-MgBetaNetworkAccessSettingCustomBlockPage [-ResponseHeadersVariable <stri
  [-AdditionalProperties <hashtable>] [-Configuration <hashtable>] [-Id <string>] [-State <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -34,7 +34,7 @@ Update-MgBetaNetworkAccessSettingCustomBlockPage
  -BodyParameter <IMicrosoftGraphNetworkaccessCustomBlockPage> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -53,6 +53,27 @@ Update the properties of a customBlockPage object.
 | Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+$params = @{
+	state = "enabled"
+	configuration = @{
+		"@odata.type" = "#microsoft.graph.networkaccess.markdownBlockMessageConfiguration"
+		body = "Your admin at NaaSLitware has blocked your access. [Click here for NaaSLitware's Terms of Use](https://www.bing.com)."
+	}
+}
+
+Update-MgBetaNetworkAccessSettingCustomBlockPage -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessSettingCustomBlockPage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -419,7 +440,6 @@ Read-only.
 
 - [Update-MgBetaNetworkAccessSettingCustomBlockPage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingcustomblockpage)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-customblockpage-update?view=graph-rest-beta)
-
 
 
 

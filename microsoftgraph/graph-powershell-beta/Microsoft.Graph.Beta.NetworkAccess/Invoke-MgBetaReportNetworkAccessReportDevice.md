@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetareportnetworkaccessreportdevice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReportNetworkAccessReportDevice
 ---
@@ -21,22 +21,24 @@ Invoke function deviceReport
 
 ```
 Invoke-MgBetaReportNetworkAccessReportDevice -EndDateTime <datetime> -StartDateTime <datetime>
- [-ApplicationId <string>] [-Count] [-DiscoveredApplicationSegmentId <string>] [-Filter <string>]
- [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-AiAgentId <string>] [-AiAgentName <string>] [-ApplicationId <string>]
+ [-CloudApplicationName <string>] [-Count] [-DestinationUrl <string>]
+ [-DiscoveredApplicationSegmentId <string>] [-Filter <string>] [-Search <string>] [-Skip <int>]
+ [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### ReportViaIdentity
 
 ```
 Invoke-MgBetaReportNetworkAccessReportDevice -InputObject <INetworkAccessIdentity>
- [-ApplicationId <string>] [-Count] [-DiscoveredApplicationSegmentId <string>] [-Filter <string>]
- [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-AiAgentId <string>] [-AiAgentName <string>] [-ApplicationId <string>]
+ [-CloudApplicationName <string>] [-Count] [-DestinationUrl <string>]
+ [-DiscoveredApplicationSegmentId <string>] [-Filter <string>] [-Search <string>] [-Skip <int>]
+ [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,6 +51,48 @@ This cmdlet has the following aliases,
 Invoke function deviceReport
 
 ## PARAMETERS
+
+### -AiAgentId
+
+Usage: aiAgentId='@aiAgentId'
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AiAgentName
+
+Usage: aiAgentName='@aiAgentName'
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -ApplicationId
 
@@ -92,6 +136,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -CloudApplicationName
+
+Usage: cloudApplicationName='@cloudApplicationName'
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Count
 
 Include count of items
@@ -99,6 +164,27 @@ Include count of items
 ```yaml
 Type: System.Management.Automation.SwitchParameter
 DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DestinationUrl
+
+Usage: destinationUrl='@destinationUrl'
+
+```yaml
+Type: System.String
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:

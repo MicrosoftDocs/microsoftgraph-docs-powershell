@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetwork
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessConnectivityRemoteNetwork
 ---
@@ -28,7 +28,7 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetwork -RemoteNetworkId <string>
  [-LastModifiedDateTime <datetime>] [-Name <string>] [-Region <string>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +38,7 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetwork -RemoteNetworkId <string>
  -BodyParameter <IMicrosoftGraphNetworkaccessRemoteNetwork> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,7 +52,7 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetwork -InputObject <INetworkAccess
  [-LastModifiedDateTime <datetime>] [-Name <string>] [-Region <string>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +62,7 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetwork -InputObject <INetworkAccess
  -BodyParameter <IMicrosoftGraphNetworkaccessRemoteNetwork> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -705,32 +705,9 @@ Read-only.
 Required only when you select zoneRedundancy redindancyTier when creating a deviceLink.
   [ForwardingProfiles <IMicrosoftGraphNetworkaccessForwardingProfile[]>]: Each forwarding profile associated with a remote network is specified.
 Supports $expand and $select.
-    [Description <String>]: Description.
-    [LastModifiedDateTime <DateTime?>]: The date and time when the profile was last modified.
-    [Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>]: The traffic forwarding policies associated with this profile.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [Policy <IMicrosoftGraphNetworkaccessPolicy>]: policy
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [Description <String>]: Description.
-        [Name <String>]: Policy name.
-        [PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-          [Id <String>]: The unique identifier for an entity.
-Read-only.
-          [Name <String>]: Name.
-        [Version <String>]: Version.
-      [State <String>]: status
-      [Version <String>]: Version.
-    [State <String>]: status
-    [Version <String>]: Profile version.
-    [Name <String>]: Name of the entity
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [Associations <IMicrosoftGraphNetworkaccessAssociation[]>]: Specifies the users, groups, devices, and remote networks whose traffic is associated with the given traffic forwarding profile.
+    [Associations <IMicrosoftGraphNetworkaccessAssociation[]>]: 
     [IsCustomProfile <Boolean?>]: 
-    [Priority <Int32?>]: Profile priority.
+    [Priority <Int32?>]: 
     [ServicePrincipal <IMicrosoftGraphServicePrincipal>]: servicePrincipal
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -786,7 +763,7 @@ Read-only.
                 [Operator <String>]: customSecurityAttributeComparisonOperator
             [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
             [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
             [RestrictionType <String>]: appKeyCredentialRestrictionType
@@ -821,7 +798,7 @@ For existing applications, the enforcement date can be retroactively applied.
               [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-                [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+                [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
                 [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
                 [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
@@ -1611,6 +1588,29 @@ Read-only.
         [DisplayName <String>]: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
         [VerifiedPublisherId <String>]: The ID of the verified publisher from the app publisher's Partner Center account.
     [TrafficForwardingType <String>]: trafficForwardingType
+    [Description <String>]: Description.
+    [LastModifiedDateTime <DateTime?>]: The date and time when the profile was last modified.
+    [Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>]: The traffic forwarding policies associated with this profile.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Policy <IMicrosoftGraphNetworkaccessPolicy>]: policy
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Description <String>]: Description.
+        [Name <String>]: Policy name.
+        [PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Name <String>]: Name.
+        [Version <String>]: Version.
+      [State <String>]: status
+      [Version <String>]: Version.
+    [State <String>]: status
+    [Version <String>]: Profile version.
+    [Name <String>]: Name of the entity
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
   [LastModifiedDateTime <DateTime?>]: last modified time.
   [Region <String>]: region
   [Version <String>]: Remote network version.
@@ -1662,32 +1662,9 @@ Required only when you select zoneRedundancy redindancyTier when creating a devi
 
 FORWARDINGPROFILES <IMicrosoftGraphNetworkaccessForwardingProfile[]>: Each forwarding profile associated with a remote network is specified.
 Supports $expand and $select.
-  [Description <String>]: Description.
-  [LastModifiedDateTime <DateTime?>]: The date and time when the profile was last modified.
-  [Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>]: The traffic forwarding policies associated with this profile.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [Policy <IMicrosoftGraphNetworkaccessPolicy>]: policy
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [Description <String>]: Description.
-      [Name <String>]: Policy name.
-      [PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [Name <String>]: Name.
-      [Version <String>]: Version.
-    [State <String>]: status
-    [Version <String>]: Version.
-  [State <String>]: status
-  [Version <String>]: Profile version.
-  [Name <String>]: Name of the entity
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [Associations <IMicrosoftGraphNetworkaccessAssociation[]>]: Specifies the users, groups, devices, and remote networks whose traffic is associated with the given traffic forwarding profile.
+  [Associations <IMicrosoftGraphNetworkaccessAssociation[]>]: 
   [IsCustomProfile <Boolean?>]: 
-  [Priority <Int32?>]: Profile priority.
+  [Priority <Int32?>]: 
   [ServicePrincipal <IMicrosoftGraphServicePrincipal>]: servicePrincipal
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
@@ -1743,7 +1720,7 @@ Read-only.
               [Operator <String>]: customSecurityAttributeComparisonOperator
           [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
           [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
           [RestrictionType <String>]: appKeyCredentialRestrictionType
@@ -1778,7 +1755,7 @@ For existing applications, the enforcement date can be retroactively applied.
             [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
               [(Any) <Object>]: This indicates any property can be added to this object.
               [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-              [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+              [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
               [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
               [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
@@ -2568,6 +2545,29 @@ Read-only.
       [DisplayName <String>]: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
       [VerifiedPublisherId <String>]: The ID of the verified publisher from the app publisher's Partner Center account.
   [TrafficForwardingType <String>]: trafficForwardingType
+  [Description <String>]: Description.
+  [LastModifiedDateTime <DateTime?>]: The date and time when the profile was last modified.
+  [Policies <IMicrosoftGraphNetworkaccessPolicyLink[]>]: The traffic forwarding policies associated with this profile.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Policy <IMicrosoftGraphNetworkaccessPolicy>]: policy
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Description <String>]: Description.
+      [Name <String>]: Policy name.
+      [PolicyRules <IMicrosoftGraphNetworkaccessPolicyRule[]>]: Represents the definition of the policy ruleset that makes up the core definition of a policy.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Name <String>]: Name.
+      [Version <String>]: Version.
+    [State <String>]: status
+    [Version <String>]: Version.
+  [State <String>]: status
+  [Version <String>]: Profile version.
+  [Name <String>]: Name of the entity
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
 
 INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}

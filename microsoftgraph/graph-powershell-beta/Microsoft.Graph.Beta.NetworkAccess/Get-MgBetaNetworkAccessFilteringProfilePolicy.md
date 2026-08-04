@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessFilteringProfilePolicy
 ---
@@ -27,7 +27,6 @@ Get-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get1
@@ -37,7 +36,7 @@ Get-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId <string> -Poli
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### Get
@@ -47,7 +46,7 @@ Get-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId <string> -Poli
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity1
@@ -57,7 +56,7 @@ Get-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIdenti
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -67,7 +66,7 @@ Get-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIdenti
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -81,16 +80,16 @@ Get a filteringPolicyLink object.
 The returned object can be a:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 2: Get a tlsInspectionPolicyLink
 
 ```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
-Get-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -Filter "isof('microsoft.graph.networkaccess.securityProviderPolicyLink')" 
+Get-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
 
 ```
-This example shows how to use the Get-MgBetaNetworkAccessFilteringProfilePolicy Cmdlet.
+This example will get a tlsinspectionpolicylink
 
 
 ## PARAMETERS

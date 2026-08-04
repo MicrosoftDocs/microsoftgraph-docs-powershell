@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessFilteringProfilePolicy
 ---
@@ -26,7 +26,7 @@ New-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId <string>
  [-Policy <IMicrosoftGraphNetworkaccessPolicy>] [-State <string>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -36,7 +36,7 @@ New-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId <string>
  -BodyParameter <IMicrosoftGraphNetworkaccessPolicyLink> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -47,7 +47,7 @@ New-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIdenti
  [-Policy <IMicrosoftGraphNetworkaccessPolicy>] [-State <string>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -57,7 +57,7 @@ New-MgBetaNetworkAccessFilteringProfilePolicy -InputObject <INetworkAccessIdenti
  -BodyParameter <IMicrosoftGraphNetworkaccessPolicyLink> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -77,6 +77,28 @@ The policy can be one of the following types:
 | Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.networkaccess.tlsInspectionPolicyLink"
+	state = "enabled"
+	policy = @{
+		"@odata.type" = "#microsoft.graph.networkaccess.tlsInspectionPolicy"
+		id = "b712c469-e7cd-e7cb-738f-94b199570b0d"
+	}
+}
+
+New-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaNetworkAccessFilteringProfilePolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -610,7 +632,6 @@ Read-only.
 
 - [New-MgBetaNetworkAccessFilteringProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessfilteringprofilepolicy)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-post?view=graph-rest-beta)
-
 
 
 

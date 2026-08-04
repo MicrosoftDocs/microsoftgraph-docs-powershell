@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetareportnetworkaccessreportdestination
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReportNetworkAccessReportDestination
 ---
@@ -21,20 +21,20 @@ Invoke function destinationReport
 
 ```
 Invoke-MgBetaReportNetworkAccessReportDestination -EndDateTime <datetime> -StartDateTime <datetime>
- [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-AiAgentId <string>] [-AiAgentName <string>] [-Count] [-Filter <string>] [-Search <string>]
+ [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### ReportViaIdentity
 
 ```
-Invoke-MgBetaReportNetworkAccessReportDestination -InputObject <INetworkAccessIdentity> [-Count]
- [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Invoke-MgBetaReportNetworkAccessReportDestination -InputObject <INetworkAccessIdentity>
+ [-AiAgentId <string>] [-AiAgentName <string>] [-Count] [-Filter <string>] [-Search <string>]
+ [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,6 +47,48 @@ This cmdlet has the following aliases,
 Invoke function destinationReport
 
 ## PARAMETERS
+
+### -AiAgentId
+
+Usage: aiAgentId='@aiAgentId'
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AiAgentName
+
+Usage: aiAgentName='@aiAgentName'
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingcustomblockpage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessSettingCustomBlockPage
 ---
@@ -23,7 +23,7 @@ Read the properties and relationships of microsoft.graph.networkaccess.customBlo
 Get-MgBetaNetworkAccessSettingCustomBlockPage [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -42,6 +42,19 @@ Read the properties and relationships of microsoft.graph.networkaccess.customBlo
 | Delegated (work or school account) | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+Get-MgBetaNetworkAccessSettingCustomBlockPage
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessSettingCustomBlockPage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -283,7 +296,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [Get-MgBetaNetworkAccessSettingCustomBlockPage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingcustomblockpage)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-customblockpage-get?view=graph-rest-beta)
-
 
 
 
